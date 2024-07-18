@@ -1,10 +1,9 @@
 version="0.1"
+picture="thumbnail.png"
 tags={
 	"Alternative History"
-	"Events"
-	"National Focuses"
-	"Map"
+	"Graphics"
+	"Gameplay"
 }
-name="Kaisertum: DEV"
-supported_version="1.14.7"
-replace_path="common/bookmarks"
+name="Kaisertum"
+supported_version="1.14.*"

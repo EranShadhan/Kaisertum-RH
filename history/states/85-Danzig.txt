@@ -9,6 +9,7 @@ state={
 		victory_points = {
 			362 10
 		}
+		
 		buildings = {
 			infrastructure = 3
 			arms_factory = 2
@@ -19,6 +20,7 @@ state={
 			}
 		}
 		add_core_of = GER
+		add_core_of = DNZ
 		add_core_of = KSH
 	}
 

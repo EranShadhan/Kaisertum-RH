@@ -9,7 +9,7 @@ state={
 	state_category = large_city
 	
 	history={
-		owner = CZE
+		owner = AUS
 		victory_points = { 11542 30 }
 		victory_points = { 6418 5 }
 		victory_points = { 9569 5 }
@@ -21,12 +21,8 @@ state={
 			anti_air_building = 5
 			air_base = 5
 		}
+		add_core_of = AUS
 		add_core_of = CZE
-
-		1939.3.14 = {
-			owner = GER
-			controller = GER
-		}
 	}
 
 	provinces={
