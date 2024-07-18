@@ -260,21 +260,6 @@ bookmarks = {
 				RAJ_the_smiling_buddha
 			}
 		}
-		"CZE"={
-			minor = yes
-			history = "CZE_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				CZE_skoda_works
-				CZE_divided_nation
-			}
-			focuses = {
-				CZE_sudeten_1
-				CZE_industrial_legacy
-				CZE_military_research_institute
-			}
-		}
-
 		"HUN"={
 			minor = yes
 			history = "HUN_GATHERING_STORM_DESC"

@@ -11903,7 +11903,7 @@
 11902;172;204;227;land;false;forest;2
 11903;172;207;42;land;false;plains;6
 11904;172;207;192;land;true;hills;6
-11905;172;210;7;land;true;mountain;1
+11905;172;210;7;land;false;mountain;1
 11906;172;210;157;land;false;mountain;6
 11907;172;210;212;land;false;hills;7
 11908;173;0;27;land;false;mountain;6

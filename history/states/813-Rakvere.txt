@@ -4,7 +4,7 @@ state={
 	name="STATE_813"
 
 	history={
-		owner = EST
+		owner = LAT
 		victory_points = {
 			4640 1 #Narva
 		}
@@ -19,7 +19,7 @@ state={
 			}
 
 		}
-		add_core_of = EST
+		add_core_of = LAT
 
 	}
 

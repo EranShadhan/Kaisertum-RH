@@ -52,12 +52,6 @@ state={
 
 		}
 		add_core_of = GER
-		add_claim_by = FRA
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 4
-			}
-		}
 	}
 
 	provinces={

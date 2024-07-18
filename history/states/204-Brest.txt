@@ -12,9 +12,9 @@ state = {
 			3350 3
 		}
 
-		#victory_points = {
-		#	11313 1 # Salihorsk was not founded until 1958 earliest
-		#}
+		victory_points = {
+			11313 1 
+		}
 
 		owner = SOV
 
@@ -27,7 +27,7 @@ state = {
 	}
 
 	provinces = {
-		304 331 360 386 3350 3759 6373 11313 
+		215 304 331 360 386 3203 3293 3350 3507 3759 6319 6373 9249 11313 
 	}
 
 	local_supplies = 0.0 

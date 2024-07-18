@@ -11,7 +11,7 @@ state={
 	state_category = city
 
 	history={
-		owner = SOV
+		owner = UKR
 		victory_points = {
 			525 25
 		}
@@ -22,7 +22,6 @@ state={
 			fuel_silo = 1
 			air_base = 8
 		}
-		add_core_of = SOV
 		add_core_of = UKR
 		1939.1.1 = {
 			buildings = {
