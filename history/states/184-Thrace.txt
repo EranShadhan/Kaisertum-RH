@@ -2,10 +2,6 @@
 state={
 	id=184
 	name="STATE_184"
-	manpower = 382500
-
-	state_category = rural
-
 	resources={
 		chromium=11.000
 	}
@@ -21,13 +17,13 @@ state={
 
 		}
 		add_core_of = BUL
-		add_claim_by = GRE
-		add_claim_by = TUR
 	}
 
 	provinces={
-		9791 9930 11774 11905 
+		11774 11905 
 	}
-
-	local_supplies=9.0 
+	manpower=382500
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=9.000
 }

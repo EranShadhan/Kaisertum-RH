@@ -1,31 +1,31 @@
 
 state={
 	id=32
-	name="STATE_32" 
-	manpower = 1007500
-	
-	state_category = town
-	
+	name="STATE_32"
 	resources={
-		steel=16 #was:30 was: 56
-		aluminium=30 # was: 58
+		steel=16.000
+		aluminium=30.000
 	}
 
 	history={
 		owner = FRA
 		buildings = {
 			infrastructure = 2
+
 		}
 		victory_points = {
 			3768 1 
 		}
 		add_core_of = OCC
 		add_core_of = FRA
+
 	}
 
 	provinces={
-		762 780 3589 3768 6784 11713 
+		762 764 780 3589 3768 6784 11713 
 	}
-
-	local_supplies=9.0 
+	manpower=1007500
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=9.000
 }

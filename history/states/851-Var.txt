@@ -12,24 +12,23 @@ state={
 			911 1 
 		}
 		buildings = {
-			infrastructure = 3
-			dockyard = 3
+			infrastructure = 2
+			industrial_complex = 1
+			dockyard = 1
+			arms_factory = 1
+			fuel_silo = 1
+			air_base = 10
 			911 = {
-				naval_base = 10
+				naval_base = 2
 				coastal_bunker = 1
 			}
 		}
 		add_core_of = OCC
 		add_core_of = FRA
-		1939.1.1 = {
-			buildings = {
-				dockyard = 1
-			}
-		}
 	}
 
 	provinces={
-		911 956 3928 3961
+	 3928 911
 	}
 
 	local_supplies=0.0 
