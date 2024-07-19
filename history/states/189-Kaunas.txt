@@ -7,7 +7,11 @@ state={
 	}
 
 	history={
+
 		owner = LAT
+
+		owner = UBD
+
 		victory_points = {
 			9483 3
 		}
@@ -22,7 +26,12 @@ state={
 			}
 
 		}
+
 		add_core_of = LAT
+
+
+		add_core_of = UBD
+		add_core_of = LIT
 
 	}
 

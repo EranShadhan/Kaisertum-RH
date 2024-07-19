@@ -4,7 +4,7 @@ state={
 	name="STATE_11"
 
 	history={
-		owner = LAT
+		owner = UBD
 		victory_points = {
 			6296 5
 		}
@@ -17,8 +17,11 @@ state={
 			industrial_complex = 3
 
 		}
+
 		add_core_of = LAT
 
+		add_core_of = UBD
+		add_core_of = LIT
 	}
 
 	provinces={

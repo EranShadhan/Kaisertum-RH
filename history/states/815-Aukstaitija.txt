@@ -5,6 +5,7 @@ state={
 
 	history={
 		owner = LAT
+		owner = UBD
 		victory_points = {
 			6229 1 #Panevezys
 		}
@@ -14,6 +15,8 @@ state={
 		}
 		add_core_of = LAT
 
+		add_core_of = UBD
+		add_core_of = LIT
 	}
 
 	provinces={

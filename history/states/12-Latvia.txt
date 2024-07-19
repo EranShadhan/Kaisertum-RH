@@ -10,7 +10,7 @@ state={
 	state_category = rural
 	
 	history={
-		owner = LAT
+		owner = UBD
 		victory_points = {
 			10493 1 #Valmiera
 		}
@@ -19,6 +19,7 @@ state={
 			industrial_complex = 1
 			air_base = 3
 		}
+		add_core_of = UBD
 		add_core_of = LAT
 	}
 

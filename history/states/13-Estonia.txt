@@ -8,6 +8,9 @@ state={
 
 	history={
 		owner = LAT
+
+		owner = UBD
+
 		victory_points = {
 			3174 1 #Voru
 		}
@@ -19,6 +22,10 @@ state={
 
 		}
 		add_core_of = LAT
+
+		add_core_of = UBD
+		add_core_of = EST
+
 
 	}
 
