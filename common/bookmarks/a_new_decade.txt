@@ -82,11 +82,10 @@ bookmarks = {
 			}
 		}
 		"GER"={
-			history = "GER_GATHERING_STORM_DESC"
-			ideology = fascism
+			history = "GER_NEW_DECADE_DESC"
+			ideology = democratic
 			available = { has_dlc = "Waking the Tiger" }
 			ideas = {
-				sour_loser
 				general_staff
 				GER_mefo_bills_1
 			}
@@ -97,11 +96,10 @@ bookmarks = {
 			}
 		}
 		"GER"={
-			history = "GER_GATHERING_STORM_DESC"
-			ideology = fascism
+			history = "GER_NEW_DECADE_DESC"
+			ideology = democratic
 			available = { NOT = { has_dlc = "Waking the Tiger" } }
 			ideas = {
-				sour_loser
 				general_staff
 				GER_mefo_bills_1
 			}
