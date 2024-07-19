@@ -83,10 +83,17 @@ if = {
 	}
 }
 
+set_politics = {
+	ruling_party = democratic
+	last_election = "1927.1.1"
+	election_frequency = 60
+	elections_allowed = no
+}
 set_popularities = {
-	democratic = 20
-	fascism = 30
-	communism = 50
+	democratic = 50
+	fascism = 10
+	neutrality = 20
+	communism = 20
 }
 
 create_country_leader = {
@@ -123,7 +130,7 @@ create_country_leader = {
 }
 
 #create_country_leader = {
-#	name = ""
+#	name = "Zelensksk"
 #	desc = ""
 #	picture = ""
 #	expire = "1953.3.1"

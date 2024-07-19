@@ -386,7 +386,7 @@ set_popularities = {
 
 create_faction = GER_central_powers
 add_to_faction = GER
-add_to_faction = LAT
+add_to_faction = UBD
 add_to_faction = POL
 add_to_faction = AUS
 add_to_faction = HUN

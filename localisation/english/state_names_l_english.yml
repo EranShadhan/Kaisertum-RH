@@ -985,5 +985,9 @@
  STATE_967: "Amazon" # impassables
  STATE_968: "Amazon" # impassables
  STATE_969: "Rio Branco"
+ STATE_970: "Lile"
+ STATE_971: "Eupen Malmedy"
+ STATE_972: "Annecy"
+ STATE_973: "Atalia"
  
 
