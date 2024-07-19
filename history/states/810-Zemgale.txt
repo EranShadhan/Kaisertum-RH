@@ -4,7 +4,7 @@ state={
 	name="STATE_810"
 
 	history={
-		owner = LAT
+		owner = UBD
 		victory_points = {
 			6222 3 #Jelgava
 		}
@@ -22,8 +22,8 @@ state={
 			}
 
 		}
+		add_core_of = UBD
 		add_core_of = LAT
-
 	}
 
 	provinces={
