@@ -2,21 +2,17 @@
 state={
 	id=339
 	name="STATE_339"
-	manpower = 1401889
 	resources={
-		chromium=50 # was: 86
+		chromium=50.000
 	}
-	
-	state_category = large_town
 
 	history={
-		owner = TUR
-		
+		owner = GRE
 		victory_points = {
-			4112 15
+			4112 15 
 		}
 		victory_points = {
-			928 5
+			928 5 
 		}
 		buildings = {
 			infrastructure = 2
@@ -24,14 +20,19 @@ state={
 			air_base = 2
 			4112 = {
 				naval_base = 5
+
 			}
+
 		}
-		add_core_of = TUR
+		add_core_of = GRE
+
 	}
 
 	provinces={
-		928 3927 4112 6992 7130 9921 9929 10038 11848 11898 
+		4112 7130 11848 
 	}
-
-	local_supplies=8.0 
+	manpower=1401889
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=8.000
 }
