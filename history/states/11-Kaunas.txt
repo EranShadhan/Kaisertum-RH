@@ -17,11 +17,8 @@ state={
 			industrial_complex = 3
 
 		}
-
-		add_core_of = LAT
-
 		add_core_of = UBD
-		add_core_of = LIT
+        add_core_of = LIT
 	}
 
 	provinces={

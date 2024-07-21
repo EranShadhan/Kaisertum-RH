@@ -22,7 +22,8 @@ state={
 
 		}
 		add_core_of = UBD
-		add_core_of = LAT
+        add_core_of = LAT
+		
 	}
 
 	provinces={

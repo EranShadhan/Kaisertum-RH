@@ -5,4 +5,9 @@ spriteTypes = {
 		name = "GFX_portrait_GER_otto_wels"
 		texturefile = "gfx/leaders/GER/portrait_germany_otto_wels.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_portrait_SOV_alexander_kelensky"
+		texturefile = "gfx/leaders/SOV/portrait_alexander_kelensky.dds"
+	}
 }
