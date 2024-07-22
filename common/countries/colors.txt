@@ -17,8 +17,8 @@ SWE = {
 	color_ui = rgb { 47 172 255 }
 }
 FRA = {
-	color = rgb { 57 113 228 }
-	color_ui = rgb { 74 147 255 }
+	color = rgb { 120 40 40 }
+	color_ui = rgb { 120 40 40 }
 }
 LUX = {
 	color = rgb { 65 175 179 }
@@ -74,8 +74,8 @@ SWI = {
 	color_ui = rgb { 193 81 81 }
 }
 TUR = {
-	color = rgb { 171 190 152 }
-	color_ui = rgb { 222 247 198 }
+	color = rgb { 255 51 51 }
+	color_ui = rgb { 255 51 51 }
 }
 GRE = {
 	color = rgb { 93 181 227 }

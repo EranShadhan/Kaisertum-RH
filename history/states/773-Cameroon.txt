@@ -7,7 +7,7 @@ state={
 	state_category = rural
 
 	history={
-		owner = FRA
+		owner = GER
 		add_core_of = CMR
 		victory_points = {
 			2080 1
@@ -24,7 +24,7 @@ state={
 	}
 
 	provinces={
-		2080 5036 5054 6039 7963 9137 11194 
+		1993 11012 2080 5036 5054 6039 7963 9137 11194 
 	}
 
 	local_supplies=0.0 

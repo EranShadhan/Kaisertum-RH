@@ -7,7 +7,7 @@ state={
 		rubber=3 # was: 4
 	}
 	history={
-		owner = ENG
+		owner = GER
 		buildings = {
 			infrastructure = 2
 
