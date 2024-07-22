@@ -3,7 +3,8 @@ state={
 	name="STATE_634"
 
 	history={
-		owner = AST
+		owner = GPI
+		add_core_of = GPI
 		add_core_of = SOL
 		buildings = {
 			infrastructure = 1

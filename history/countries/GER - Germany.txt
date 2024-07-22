@@ -39,6 +39,22 @@ if = {
 	}
 }
 
+set_autonomy = {
+        target = GPI
+        autonomous_state = autonomy_colony
+    }
+set_autonomy = {
+        target = UBD
+        autonomous_state = autonomy_dominion
+    }
+set_autonomy = {
+        target = NMB
+        autonomous_state = autonomy_colony
+    }
+set_autonomy = {
+        target = BEL
+        autonomous_state = autonomy_puppet
+    }
 starting_train_buffer = 2
 set_fuel_ratio = 0.8
 
