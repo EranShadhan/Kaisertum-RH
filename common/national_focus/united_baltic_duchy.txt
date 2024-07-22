@@ -1,0 +1,401 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = united_baltic_duchy_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = UBD
+		}
+	}
+	
+
+	default = no
+
+	continuous_focus_position = { x = 20 y = 1000 }
+
+#	focus = {
+#		id = LAT_
+#		icon = GFX_
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+#		x = -3
+#		y = 0
+#		relative_position_id = 
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+	
+	########################################
+	#### Continuing the status quo path ####
+	########################################
+	focus = {
+		id = UBD_status_quo
+		icon = GFX_focus_UBD_status_quo
+		mutually_exclusive = { focus = UBD_dreams_of_baltic_freedom }
+		x = 10
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	# Democratic path
+	focus = {
+		id = UBD_work_with_the_forest_brothers
+		icon = GFX_focus_UBD_status_quo
+		prerequisite = {
+			focus = UBD_status_quo
+		}
+		mutually_exclusive = { focus = UBD_invite_german_settlers }
+		x = 0
+		y = 1
+		relative_position_id = UBD_status_quo
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = UBD_baltic_resistance_idea_5
+				add_idea = UBD_baltic_resistance_idea_4
+			}
+		}
+	}
+	focus = {
+		id = UBD_stop_germanisation
+		icon = GFX_focus_UBD_status_quo
+		prerequisite = {
+			focus = UBD_work_with_the_forest_brothers
+		}
+		x = -1
+		y = 1
+		relative_position_id = UBD_work_with_the_forest_brothers
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+			GER = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = medium_decrease
+				}
+			}
+			remove_ideas = UBD_germanisation_idea
+			swap_ideas = {
+				remove_idea = UBD_baltic_resistance_idea_4
+				add_idea = UBD_baltic_resistance_idea_3
+			}
+		}
+	}
+	focus = {
+		id = UBD_grant_local_autonomy
+		icon = GFX_focus_UBD_status_quo
+		prerequisite = {
+			focus = UBD_work_with_the_forest_brothers
+		}
+		x = 1
+		y = 1
+		relative_position_id = UBD_work_with_the_forest_brothers
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_completed_focus = UBD_stop_germanisation
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			swap_ideas = {
+				remove_idea = UBD_baltic_resistance_idea_3
+				add_idea = UBD_baltic_resistance_idea_2
+			}
+			custom_effect_tooltip = remove_local_resistance_estonia_lithuania_tt
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = EST
+							is_core_of = LIT
+						}
+					}
+					remove_dynamic_modifier = {
+						modifier = UBD_local_resistance_modifier
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = UBD_limit_the_kaisers_authority
+		icon = GFX_focus_UBD_status_quo
+		prerequisite = {
+			focus = UBD_grant_local_autonomy
+		}
+		x = 0
+		y = 1
+		relative_position_id = UBD_grant_local_autonomy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.1
+			}
+			swap_ideas = {
+				remove_idea = UBD_baltic_resistance_idea_2
+				add_idea = UBD_baltic_resistance_idea_1
+			}
+			custom_effect_tooltip = remove_local_resistance_lativa_tt
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = LAT
+					}
+					remove_dynamic_modifier = {
+						modifier = UBD_local_resistance_modifier
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = UBD_establish_the_baltic_federation
+		icon = GFX_focus_UBD_status_quo
+		prerequisite = {
+			focus = UBD_limit_the_kaisers_authority
+		}
+		prerequisite = {
+			focus = UBD_stop_germanisation
+		}
+		x = -1
+		y = 1
+		relative_position_id = UBD_limit_the_kaisers_authority
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+			remove_ideas = UBD_baltic_resistance_idea_1
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+				election_frequency = 48
+			}
+		}
+	}
+
+
+
+
+	# German path
+	focus = {
+		id = UBD_invite_german_settlers
+		icon = GFX_focus_UBD_status_quo
+		prerequisite = {
+			focus = UBD_status_quo
+		}
+		mutually_exclusive = { focus = UBD_work_with_the_forest_brothers }
+		x = -4
+		y = 1
+		relative_position_id = UBD_status_quo
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = UBD_germanisation_idea
+				add_idea = UBD_germanisation_idea_2
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+	focus = {
+		id = UBD_dreams_of_baltic_freedom
+		icon = GFX_focus_UBD_dreams_of_baltic_freedom
+		mutually_exclusive = { focus = UBD_status_quo }
+		x = 15
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	###END OF DEMOCRACY###
+}

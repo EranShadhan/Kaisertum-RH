@@ -27,12 +27,9 @@ if = {
 add_ideas = {
 	limited_conscription
 }
-IF = {
-	limit = { has_dlc = "No Step Back" }
-	add_ideas = {
-		LAT_perkonkrust_idea
-		democratic_opposition
-	}
+add_ideas = {
+	UBD_germanisation_idea
+	UBD_baltic_resistance_idea_5
 }
 
 set_technology = {
@@ -70,10 +67,10 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 30
+	democratic = 20
 	fascism = 15
-	communism = 15
-	neutrality = 40
+	communism = 10
+	neutrality = 55
 }
 
 # probably needs some adjustment before nazi occupation in 1940
