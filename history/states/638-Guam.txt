@@ -6,9 +6,9 @@ state=
 	manpower=75153
 	history=
 	{
-		owner = API
+		owner = GPI
 		add_core_of = GUM
-		add_core_of = API
+		add_core_of = GPI
 		buildings = {
 			infrastructure = 3 #was: 5
 			12140 = {

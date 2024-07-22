@@ -39,6 +39,10 @@ if = {
 	}
 }
 
+set_autonomy = {
+        target = GPI
+        autonomous_state = autonomy_colony
+    }
 starting_train_buffer = 2
 set_fuel_ratio = 0.8
 
