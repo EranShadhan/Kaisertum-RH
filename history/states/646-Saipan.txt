@@ -6,8 +6,8 @@ state=
 	manpower=21657
 	history=
 	{
-		owner = JAP
-		add_core_of = JAP
+		owner = API
+		add_core_of = API
 		add_core_of = GUM
 		buildings = {
 			infrastructure = 2

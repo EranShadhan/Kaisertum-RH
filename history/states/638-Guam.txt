@@ -6,8 +6,9 @@ state=
 	manpower=75153
 	history=
 	{
-		owner = USA
+		owner = API
 		add_core_of = GUM
+		add_core_of = API
 		buildings = {
 			infrastructure = 3 #was: 5
 			12140 = {

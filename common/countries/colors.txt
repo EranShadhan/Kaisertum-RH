@@ -1,5 +1,9 @@
 #reload countrycolors
 
+GPI = {
+	color = rgb { 96  96  96 }
+	color_ui = rgb { 96  96  96 }
+}
 GER = {
 	color = rgb { 83 93 74 }
 	color_ui = rgb { 83 93 74 }
@@ -226,8 +230,8 @@ SAF = {
 	color_ui = rgb { 198 169 248 }
 }
 SAU = {
-	color = rgb { 171 190 152 }
-	color_ui = rgb { 222 247 198 }
+	color = rgb { 38 128 0 }
+	color_ui = rgb { 38 128 0 }
 }
 SIA = {
 	color = rgb { 171 190 152 }

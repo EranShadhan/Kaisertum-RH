@@ -4,7 +4,8 @@ state={
 
 	history={
 		add_core_of = PNG
-		owner = AST
+		add_core_of = GPI
+		owner = GPI
 		buildings = {
 			infrastructure = 1
 			air_base = 1

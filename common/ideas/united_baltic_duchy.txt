@@ -1,0 +1,159 @@
+ideas = {
+
+	country = {
+
+		UBD_germanisation_idea = {
+
+			picture = UBD_germanisation
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				weekly_manpower = 250
+			}
+		}
+		UBD_germanisation_idea_2 = {
+
+			picture = UBD_germanisation
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				weekly_manpower = 500
+			}
+		}
+		UBD_baltic_resistance_idea_5 = {
+
+			picture = UBD_baltic_resistance
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.2
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
+				political_advisor_cost_factor = 0.1
+				trade_laws_cost_factor = 0.1
+				mobilization_laws_cost_factor = 0.1
+				economy_cost_factor = 0.1
+			}
+		}
+		UBD_baltic_resistance_idea_4 = {
+
+			picture = UBD_baltic_resistance
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.2
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+				political_advisor_cost_factor = 0.1
+				trade_laws_cost_factor = 0.1
+				mobilization_laws_cost_factor = 0.1
+				economy_cost_factor = 0.1
+			}
+		}
+		UBD_baltic_resistance_idea_3 = {
+
+			picture = UBD_baltic_resistance
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				political_advisor_cost_factor = 0.05
+				trade_laws_cost_factor = 0.1
+				mobilization_laws_cost_factor = 0.1
+				economy_cost_factor = 0.1
+			}
+		}
+		UBD_baltic_resistance_idea_2 = {
+
+			picture = UBD_baltic_resistance
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				trade_laws_cost_factor = 0.05
+				mobilization_laws_cost_factor = 0.05
+				economy_cost_factor = 0.05
+			}
+		}
+		UBD_baltic_resistance_idea_1 = {
+
+			picture = UBD_baltic_resistance
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+			}
+		}
+	}
+}
