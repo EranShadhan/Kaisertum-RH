@@ -36,8 +36,6 @@ UBD_local_resistance_modifier = {
 	icon = GFX_modifiers_sabotaged_resource
 
 	army_speed_factor_for_controller = -0.1
-	resistance_target = 0.25
-	resistance_growth = 0.15
 	conscription_factor = UBD.baltic_manpower
 	production_speed_buildings_factor = -0.1
 }

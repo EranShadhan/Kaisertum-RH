@@ -2379,5 +2379,4 @@
  if_no_depression_get_stuff_TT:0 "\nIf the §H$CAN_great_depression_1$§! has been removed, a different bonus will be applied.\n\n"
 
 # Modded focus trees
- remove_local_resistance_estonia_lithuania_tt: "Removes §YLocal Resistance§! from all §YEstonian§! and §YLithuanian§! states"
- remove_local_resistance_lativa_tt: "Removes §YLocal Resistance§! from all §YLatvian§! states"
+ unlock_industrial_branch_tt: "Unlocks the §GIndustrial Branch§!"

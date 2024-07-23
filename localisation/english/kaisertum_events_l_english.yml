@@ -1,0 +1,15 @@
+﻿l_english:
+ UBD_events.1.t: "Violent Protests"
+ UBD_events.1.d: "We cannot hide the fact that there are protests in our great state"
+ UBD_events.1.a: "Ignore it"
+ UBD_events.1.b: "Arrest all suspects"
+
+ UBD_events.2.t: "Baltic resistance groups seek support"
+ UBD_events.2.d: "We have gotten requests from several baltic resistance groups to give aid for a future rebellion. This could lend us an oppurunity to gain infuence in the baltic"
+ UBD_events.2.a: "Grant them aid"
+ UBD_events.2.b: "Deny the requests"
+
+ UBD_events.3.t: "Russia accepts"
+ UBD_events.3.d: "Russia has accepted our proposal"
+ UBD_events.3.a: "Yay"
+ russian_support_independance_war_tt: "Upon our rebellion, we will get "
