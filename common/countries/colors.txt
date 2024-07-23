@@ -1,5 +1,9 @@
 #reload countrycolors
 
+NAT = {
+	color = rgb { 238 30 58 }
+	color_ui = rgb { 238 30 58 }
+}
 GPI = {
 	color = rgb { 96  96  96 }
 	color_ui = rgb { 96  96  96 }

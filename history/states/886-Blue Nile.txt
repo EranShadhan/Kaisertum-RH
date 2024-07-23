@@ -4,8 +4,9 @@ state = {
 	manpower = 661102
 	state_category = pastoral
 	history = {
-		owner = ENG
+		owner = EGY
 		add_core_of = SUD
+		add_core_of = EGY
 		buildings = {
 			infrastructure = 1
 		}

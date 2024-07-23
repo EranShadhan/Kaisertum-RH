@@ -6,7 +6,7 @@ state={
 	name="STATE_545"
 
 	history={
-		owner = ENG
+		owner = SAF
 		buildings = {
 			infrastructure = 2
 
@@ -15,6 +15,7 @@ state={
 			10929 1 
 		}
 		add_core_of = ZIM
+		add_core_of = SAF
 	}
 
 	provinces={

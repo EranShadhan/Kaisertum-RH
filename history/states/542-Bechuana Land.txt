@@ -11,11 +11,12 @@ state={
 	}
 
 	history={
-		owner = ENG
+		owner = SAF
 		buildings = {
 			infrastructure = 1
 		}
 		add_core_of = BOT
+		add_core_of = SAF
 		victory_points = {
 			8214 1
 		}
