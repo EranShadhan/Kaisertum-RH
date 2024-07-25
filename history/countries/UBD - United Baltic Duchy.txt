@@ -28,9 +28,13 @@ add_ideas = {
 	limited_conscription
 }
 add_ideas = {
-	UBD_germanisation_idea
-	UBD_baltic_resistance_idea_5
+	UBD_germanisation_programme_idea
+	UBD_overworked_administration_idea
+	UBD_lack_of_workers_idea
 }
+
+set_stability = 0.4
+set_war_support = 0.2
 
 set_technology = {
 	infantry_weapons = 1

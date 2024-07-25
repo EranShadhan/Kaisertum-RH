@@ -68,7 +68,7 @@ focus_tree = {
 		x = 10
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -90,19 +90,17 @@ focus_tree = {
 			add_political_power = 100
 		}
 	}
-	# Democratic path
 	focus = {
-		id = UBD_work_with_the_forest_brothers
+		id = UBD_halt_germanisation
 		icon = GFX_focus_UBD_status_quo
 		prerequisite = {
 			focus = UBD_status_quo
 		}
-		mutually_exclusive = { focus = UBD_invite_german_settlers }
 		x = 0
 		y = 1
 		relative_position_id = UBD_status_quo
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -121,72 +119,172 @@ focus_tree = {
 
 		
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = UBD_baltic_resistance_idea_5
-				add_idea = UBD_baltic_resistance_idea_4
-			}
-		}
-	}
-	focus = {
-		id = UBD_stop_germanisation
-		icon = GFX_focus_UBD_status_quo
-		prerequisite = {
-			focus = UBD_work_with_the_forest_brothers
-		}
-		x = -1
-		y = 1
-		relative_position_id = UBD_work_with_the_forest_brothers
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		
-		completion_reward = {
+			remove_ideas = UBD_germanisation_programme_idea
 			GER = {
 				add_opinion_modifier = {
 					target = ROOT
-					modifier = medium_decrease
+					modifier = large_decrease
 				}
-			}
-			remove_ideas = UBD_germanisation_idea
-			swap_ideas = {
-				remove_idea = UBD_baltic_resistance_idea_4
-				add_idea = UBD_baltic_resistance_idea_3
 			}
 		}
 	}
 	focus = {
-		id = UBD_grant_local_autonomy
+		id = UBD_employ_local_governors
 		icon = GFX_focus_UBD_status_quo
 		prerequisite = {
-			focus = UBD_work_with_the_forest_brothers
+			focus = UBD_halt_germanisation
 		}
-		x = 1
+		x = -1
 		y = 1
-		relative_position_id = UBD_work_with_the_forest_brothers
+		relative_position_id = UBD_halt_germanisation
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-			has_completed_focus = UBD_stop_germanisation
+			has_completed_focus = UBD_form_the_bundestag
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = UBD_overworked_administration_idea_2
+				add_idea = UBD_overworked_administration_idea_3
+			}
+		}
+	}
+	focus = {
+		id = UBD_form_the_bundestag
+		icon = GFX_focus_UBD_status_quo
+		prerequisite = {
+			focus = UBD_halt_germanisation
+		}
+		x = 1
+		y = 1
+		relative_position_id = UBD_halt_germanisation
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = UBD_overworked_administration_idea
+				add_idea = UBD_overworked_administration_idea_2
+			}
+		}
+	}
+	focus = {
+		id = UBD_address_the_workers_shortage
+		icon = GFX_focus_UBD_status_quo
+		prerequisite = {
+			focus = UBD_halt_germanisation
+		}
+		x = 0
+		y = 2
+		relative_position_id = UBD_halt_germanisation
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = UBD_employ_baltic_workers
+		icon = GFX_focus_UBD_status_quo
+		prerequisite = {
+			focus = UBD_address_the_workers_shortage
+		}
+		x = 0
+		y = 1
+		relative_position_id = UBD_address_the_workers_shortage
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = UBD_lack_of_workers_idea
+				add_idea = UBD_lack_of_workers_idea_2
+			}
+			custom_effect_tooltip = unlock_industrial_branch_tt
+		}
+	}
+	focus = {
+		id = UBD_governate_of_estonia
+		icon = GFX_focus_UBD_status_quo
+		prerequisite = {
+			focus = UBD_employ_local_governors
+		}
+		x = 0
+		y = 3
+		relative_position_id = UBD_employ_local_governors
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			democratic > 0.2
 		}
 
 		bypass = {
@@ -203,44 +301,49 @@ focus_tree = {
 				ideology = democratic
 				popularity = 0.05
 			}
-			swap_ideas = {
-				remove_idea = UBD_baltic_resistance_idea_3
-				add_idea = UBD_baltic_resistance_idea_2
+			every_state = {
+				limit = {
+					is_core_of = EST
+				}
+				remove_dynamic_modifier = {
+					modifier = UBD_local_resistance_modifier
+				}
 			}
-			custom_effect_tooltip = remove_local_resistance_estonia_lithuania_tt
-			hidden_effect = {
-				every_state = {
-					limit = {
-						OR = {
-							is_core_of = EST
-							is_core_of = LIT
-						}
-					}
-					remove_dynamic_modifier = {
-						modifier = UBD_local_resistance_modifier
-					}
+			IF = {
+				limit = {
+					has_idea = UBD_overworked_administration_idea_3
+				}
+				swap_ideas = {
+					remove_idea = UBD_overworked_administration_idea_3
+					add_idea = UBD_overworked_administration_idea_4
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = UBD_overworked_administration_idea_4
+					add_idea = UBD_overworked_administration_idea_5
 				}
 			}
 		}
 	}
 	focus = {
-		id = UBD_limit_the_kaisers_authority
+		id = UBD_governate_of_lithuania
 		icon = GFX_focus_UBD_status_quo
 		prerequisite = {
-			focus = UBD_grant_local_autonomy
+			focus = UBD_form_the_bundestag
 		}
 		x = 0
-		y = 1
-		relative_position_id = UBD_grant_local_autonomy
+		y = 3
+		relative_position_id = UBD_form_the_bundestag
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-
+			democratic > 0.2
 		}
 
 		bypass = {
@@ -254,47 +357,55 @@ focus_tree = {
 		
 		completion_reward = {
 			add_popularity = {
-				ideology = neutrality
-				popularity = -0.1
+				ideology = democratic
+				popularity = 0.05
 			}
-			swap_ideas = {
-				remove_idea = UBD_baltic_resistance_idea_2
-				add_idea = UBD_baltic_resistance_idea_1
+			every_state = {
+				limit = {
+					is_core_of = LIT
+				}
+				remove_dynamic_modifier = {
+					modifier = UBD_local_resistance_modifier
+				}
 			}
-			custom_effect_tooltip = remove_local_resistance_lativa_tt
-			hidden_effect = {
-				every_state = {
-					limit = {
-						is_core_of = LAT
-					}
-					remove_dynamic_modifier = {
-						modifier = UBD_local_resistance_modifier
-					}
+			IF = {
+				limit = {
+					has_idea = UBD_overworked_administration_idea_3
+				}
+				swap_ideas = {
+					remove_idea = UBD_overworked_administration_idea_3
+					add_idea = UBD_overworked_administration_idea_4
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = UBD_overworked_administration_idea_4
+					add_idea = UBD_overworked_administration_idea_5
 				}
 			}
 		}
 	}
 	focus = {
-		id = UBD_establish_the_baltic_federation
+		id = UBD_governate_of_latvia
 		icon = GFX_focus_UBD_status_quo
 		prerequisite = {
-			focus = UBD_limit_the_kaisers_authority
+			focus = UBD_governate_of_estonia
 		}
 		prerequisite = {
-			focus = UBD_stop_germanisation
+			focus = UBD_governate_of_lithuania
 		}
-		x = -1
-		y = 1
-		relative_position_id = UBD_limit_the_kaisers_authority
+		x = 0
+		y = 2
+		relative_position_id = UBD_employ_baltic_workers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-
+			democratic > 0.35
 		}
 
 		bypass = {
@@ -307,52 +418,51 @@ focus_tree = {
 
 		
 		completion_reward = {
-			remove_ideas = UBD_baltic_resistance_idea_1
+			every_state = {
+				limit = {
+					is_core_of = LAT
+				}
+				remove_dynamic_modifier = {
+					modifier = UBD_local_resistance_modifier
+				}
+			}
+			remove_ideas = UBD_overworked_administration_idea_5
+		}
+	}
+	focus = {
+		id = UBD_form_the_baltic_federation
+		icon = GFX_focus_UBD_status_quo
+		prerequisite = {
+			focus = UBD_governate_of_latvia
+		}
+		x = 0
+		y = 1
+		relative_position_id = UBD_governate_of_latvia
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			democratic > 0.5
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
 			set_politics = {
 				ruling_party = democratic
 				elections_allowed = yes
 				election_frequency = 48
-			}
-		}
-	}
-
-
-
-
-	# German path
-	focus = {
-		id = UBD_invite_german_settlers
-		icon = GFX_focus_UBD_status_quo
-		prerequisite = {
-			focus = UBD_status_quo
-		}
-		mutually_exclusive = { focus = UBD_work_with_the_forest_brothers }
-		x = -4
-		y = 1
-		relative_position_id = UBD_status_quo
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = UBD_germanisation_idea
-				add_idea = UBD_germanisation_idea_2
 			}
 		}
 	}
@@ -393,7 +503,120 @@ focus_tree = {
 
 		
 		completion_reward = {
-			add_political_power = 100
+			country_event = UBD_events.1
+			swap_ideas = {
+				remove_idea = UBD_baltic_resistance_idea_5
+				add_idea = UBD_baltic_resistance_idea_6
+			}
+		}
+	}
+	focus = {
+		id = UBD_establish_underground_resistance_networks
+		icon = GFX_focus_UBD_dreams_of_baltic_freedom
+		prerequisite = {
+			focus = UBD_dreams_of_baltic_freedom
+		}
+		relative_position_id = UBD_dreams_of_baltic_freedom
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = UBD_baltic_resistance_idea_6
+				add_idea = UBD_baltic_resistance_idea_7
+			}
+		}
+	}
+	focus = {
+		id = UBD_establish_underground_resistance_networks
+		icon = GFX_focus_UBD_dreams_of_baltic_freedom
+		prerequisite = {
+			focus = UBD_establish_underground_resistance_networks
+		}
+		relative_position_id = UBD_establish_underground_resistance_networks
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = UBD_violent_protests_1
+				add_idea = UBD_violent_protests_2
+			}
+		}
+	}
+	focus = {
+		id = UBD_seek_russian_support
+		icon = GFX_focus_UBD_dreams_of_baltic_freedom
+		prerequisite = {
+			focus = UBD_dreams_of_baltic_freedom
+		}
+		relative_position_id = UBD_dreams_of_baltic_freedom
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+			SOV = {
+				exists = no
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+			SOV = {
+				country_event = {
+					id = UBD_events.2
+					days = 3
+				}
+			}
 		}
 	}
 	

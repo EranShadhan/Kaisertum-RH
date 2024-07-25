@@ -325,108 +325,6 @@ bookmarks = {
 				CHI_invite_the_flying_tigers
 			}
 		}
-		"PRC"={
-			minor = yes
-			history = "PRC_GATHERING_STORM_DESC"
-			ideology = communism
-			ideas = {
-				PRC_the_long_march_1
-				PRC_low_popular_support_3
-				PRC_power_struggles
-			}
-			focuses = {
-				PRC_infiltration
-				PRC_maoism
-				PRC_anti_japanese_expedition
-			}
-		}
-		"MAN"={
-			minor = yes
-			history = "MAN_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				MAN_banditry
-				MAN_kwantung_veto
-				MAN_low_legitimacy_5
-			}
-			focuses = {
-				MAN_obedience
-				MAN_independence_war
-				MAN_claim_the_mandate_of_heaven
-			}
-		}
-		
-		"GXC"={
-			minor = yes
-			history = "WARLORDS_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				PRC_government_corruption
-				CHI_ineffective_bureaucracy_warlord
-			}
-			focuses = {
-				CHI_join_the_republican_government
-				CHI_provoke_border_clashes
-				CHI_join_the_chinese_soviet
-			}
-		}		
-		"YUN"={
-			minor = yes
-			history = "WARLORDS_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				PRC_government_corruption
-				CHI_ineffective_bureaucracy_warlord
-			}
-			focuses = {
-				CHI_join_the_republican_government
-				CHI_provoke_border_clashes
-				CHI_join_the_chinese_soviet
-			}
-		}		
-		"SHX"={
-			minor = yes
-			history = "WARLORDS_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				PRC_government_corruption
-				CHI_ineffective_bureaucracy_warlord
-			}
-			focuses = {
-				CHI_join_the_republican_government
-				CHI_provoke_border_clashes
-				CHI_join_the_chinese_soviet
-			}
-		}		
-		"XSM"={
-			minor = yes
-			history = "WARLORDS_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				PRC_government_corruption
-				CHI_ineffective_bureaucracy_warlord
-			}
-			focuses = {
-				CHI_join_the_republican_government
-				CHI_provoke_border_clashes
-				CHI_join_the_chinese_soviet
-			}
-		}		
-		"SIK"={
-			minor = yes
-			history = "WARLORDS_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				PRC_government_corruption
-				CHI_ineffective_bureaucracy_warlord
-			}
-			focuses = {
-				CHI_join_the_republican_government
-				CHI_provoke_border_clashes
-				CHI_join_the_chinese_soviet
-			}
-		}
-		
 		"MEX"={
 			minor = yes
 			history = "MEXICO_GATHERING_STORM_DESC"
@@ -535,52 +433,6 @@ bookmarks = {
 				TUR_ratify_the_six_arrows
 				TUR_reaffirm_the_balkan_pact
 				TUR_pivot_to_the_past
-			}
-		}
-		
-		
-		"LIT"={
-			minor = yes
-			history = "LIT_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				LIT_agrarian_society
-				LIT_iron_wolf_idea_bad_1
-			}
-			focuses = {
-				LIT_free_voldemares
-				LIT_a_king_for_our_people
-				LIT_reminder_of_true_enemy
-			}
-		}
-		
-		"LAT"={
-			minor = yes
-			history = "LAT_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				LAT_perkonkrust_idea
-				democratic_opposition
-			}
-			focuses = {
-				LAT_military_dictatorship
-				LAT_womens_aizsargi
-				LAT_the_old_ways
-			}
-		}
-		
-		"EST"={
-			minor = yes
-			history = "EST_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				EST_vaps_idea_1
-				democratic_opposition
-			}
-			focuses = {
-				EST_era_of_silence
-				EST_fight_the_vaps
-				EST_unite_our_nations
 			}
 		}
 		"POL"={
@@ -722,7 +574,7 @@ bookmarks = {
 		}
 
 		effect = {
-			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			randomize_weather = 22345 # <- Obligatory in every bookmark ! ## DO NOT REMOVE IT WILL BRICK THE GAME
 			#123 = { rain_light = yes }
 		}
 	}

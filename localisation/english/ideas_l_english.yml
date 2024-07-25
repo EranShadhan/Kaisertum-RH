@@ -2712,11 +2712,13 @@
 # Modded ideas
  UBD_local_resistance_modifier: "Local Resistance"
 
- UBD_germanisation_idea: "Germanisation"
- UBD_germanisation_idea_2: "Germanisation"
+ UBD_germanisation_programme_idea: "Germanisation Programme"
 
- UBD_baltic_resistance_idea_5: "Baltic Resistance"
- UBD_baltic_resistance_idea_4: "Baltic Resistance"
- UBD_baltic_resistance_idea_3: "Baltic Resistance"
- UBD_baltic_resistance_idea_2: "Baltic Resistance"
- UBD_baltic_resistance_idea_1: "Baltic Resistance"
+ UBD_overworked_administration_idea: "Overworked Administration"
+ UBD_overworked_administration_idea_2: "Overworked Administration"
+ UBD_overworked_administration_idea_3: "Overworked Administration"
+ UBD_overworked_administration_idea_4: "Overworked Administration"
+ UBD_overworked_administration_idea_5: "Overworked Administration"
+
+ UBD_lack_of_workers_idea: "Lack of workers"
+ UBD_lack_of_workers_idea_2: "Lack of workers"
