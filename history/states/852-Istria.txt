@@ -8,7 +8,7 @@ state = {
 
 
 	history = {
-		owner = YUG
+		owner = AUS
 		victory_points = { #Fiume (Rijeka)
 			11564 1 
 		}
@@ -20,7 +20,7 @@ state = {
 			}
 		}
 		add_claim_by = ITA
-		add_core_of = YUG
+		add_core_of = AUS
 		add_core_of = SLV
 
 		#CONTROLLED BY ITALY AT GAME START -> ITALIAN NAMES
