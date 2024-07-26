@@ -319,16 +319,16 @@ set_convoys = 300
 
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = fascism
 	last_election = "1928.5.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 30
-	fascism = 10
-	neutrality = 8
-	communism = 52
+	democratic = 8
+	fascism = 46
+	neutrality = 6
+	communism = 40
 }
 
 add_ideas = {
@@ -341,10 +341,7 @@ add_ideas = {
 	FRA_inefficient_economy_2
 }
 
-give_guarantee = CZE
-give_guarantee = YUG
-give_guarantee = ROM
-
+recruit_character = FRA_georges_valois
 recruit_character = FRA_philippe_petain
 recruit_character = FRA_maurice_thorez
 recruit_character = FRA_pierre_laval
