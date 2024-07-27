@@ -10,4 +10,9 @@ spriteTypes = {
 		name = "GFX_portrait_SOV_alexander_kelensky"
 		texturefile = "gfx/leaders/SOV/portrait_alexander_kelensky.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_portrait_fra_georges_valois"
+		texturefile = "gfx/leaders/FRA/portrait_france_georges_valois.dds"
+	}
 }

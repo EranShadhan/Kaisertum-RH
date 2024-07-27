@@ -263,6 +263,7 @@ RIG = "countries/Rio Grande.txt"
 QUE = "countries/Quebec.txt"
 GPI = "countries/German Pacific Islands.txt"
 NAT = "countries/Natal.txt"
+NFL = "countries/New Found Land.txt"
 
 # WELSH ARGENTINA
 WLA = "countries/Welsh Argentina.txt"

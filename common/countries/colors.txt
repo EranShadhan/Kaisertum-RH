@@ -1,5 +1,9 @@
 #reload countrycolors
 
+NFL = {
+	color = rgb { 225 47 47 }
+	color_ui = rgb { 225 47 47 }
+}
 NAT = {
 	color = rgb { 238 30 58 }
 	color_ui = rgb { 238 30 58 }
@@ -25,8 +29,8 @@ SWE = {
 	color_ui = rgb { 47 172 255 }
 }
 FRA = {
-	color = rgb { 120 40 40 }
-	color_ui = rgb { 120 40 40 }
+	color = rgb { 175 16 16 }
+	color_ui = rgb { 175 16 16 }
 }
 LUX = {
 	color = rgb { 65 175 179 }

@@ -8,9 +8,9 @@ state = {
 		victory_points = {
 			6626 3
 		}
-		owner = YUG
+		owner = AUS
 		add_claim_by = ITA
-		add_core_of = YUG
+		add_core_of = AUS
 		add_core_of = SLV
 		buildings = {
 			infrastructure = 1
