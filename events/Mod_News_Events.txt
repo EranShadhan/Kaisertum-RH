@@ -1,0 +1,20 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = kaisertum_news
+
+news_event = {
+	id = kaisertum_news.1
+	title = "Reza Shah Pahlavi Died In a Accident"
+	desc = Persia_King_Deadnews.1.d
+	picture = GFX_report_event_persia_king_dead
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+	   name = "Rest In Peace Bozo"
+	}
+}

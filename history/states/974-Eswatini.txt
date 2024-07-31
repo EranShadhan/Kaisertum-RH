@@ -3,7 +3,7 @@ state={
 	name="STATE_974"
 	
 	history={
-		owner = SAF
+		owner = NAT
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -13,7 +13,7 @@ state={
 		victory_points = {
 			7900 2 
 		}
-		add_core_of = SAF
+		add_core_of = NAT
 
 	}
 	
