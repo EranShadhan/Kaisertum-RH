@@ -31,6 +31,7 @@ set_technology = {
 	basic_train = 1
 }
 
+recruit_character = AUS_otto_von_habsburg
 recruit_character = AUS_kurt_schuschnigg
 recruit_character = AUS_karl_renner
 recruit_character = AUS_arthur_seyss-inquart
