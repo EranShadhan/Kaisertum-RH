@@ -10,7 +10,8 @@ state={
 	}
 	history={
 		add_core_of = BRM
-		owner = BRM
+		add_core_of = RAJ
+		owner = RAJ
 		buildings = {
 			infrastructure = 2
 			air_base = 1
