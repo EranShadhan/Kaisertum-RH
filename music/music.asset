@@ -3,7 +3,7 @@
 music = {
 	name = "maintheme"
 	file = "hoi4mainthemeallies.ogg"
-	volume = 0.85
+	volume = 1
 }
 
 # General Peace:
