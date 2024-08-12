@@ -309,6 +309,34 @@ bookmarks = {
 				CHI_invite_the_flying_tigers
 			}
 		}
+		"PRC"={
+			minor = yes
+			history = "PRC_BLITZKRIEG_DESC"
+			ideology = communism
+			ideas = {
+				PRC_the_long_march_1
+				PRC_low_popular_support_1
+				PRC_power_struggles
+			}
+			focuses = {
+				PRC_infiltration
+				PRC_maoism
+				PRC_anti_japanese_expedition
+			}
+		}
+		"GXC"={
+			minor = yes
+			history = "WARLORDS_BLITZKRIEG_DESC"
+			ideology = fascism
+			ideas = {
+				CHI_long_term_economic_planning
+			}
+			focuses = {
+				CHI_join_the_republican_government
+				CHI_power_struggle
+				CHI_heavy_weapons_development
+			}
+		}
 		"MEX"={
 			minor = yes
 			history = "MEXICO_GATHERING_STORM_DESC"
