@@ -81,5 +81,9 @@ set_autonomy = {
     }
 set_autonomy = {
         target = UKR
-        autonomous_state = autonomy_integrated_puppet
+        autonomous_state = autonomy_dominion
+    }
+set_autonomy = {
+        target = SER
+        autonomous_state = autonomy_dominion
     }
