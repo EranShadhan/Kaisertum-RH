@@ -1,12 +1,4 @@
 ﻿capital = 64
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_oob = "GER_1936"
-}
 
 if = {
 	limit = { has_dlc = "By Blood Alone" }
@@ -200,14 +192,8 @@ add_to_faction = YUG
 
 
 add_ideas = {
-	sour_loser
-	general_staff
-	limited_exports
-	limited_conscription
-	partial_economic_mobilisation
-#	SWE_historical_trade_with_Germany_dummy CUT
+	spd
 }
-add_ideas = GER_mefo_bills_1
 
 activate_mission = GER_mefo_bills_mission
 

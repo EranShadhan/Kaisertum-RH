@@ -1,0 +1,40 @@
+ideas = {
+
+	country = {
+		a_conservative_germany = {
+			
+			allowed = {
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.01
+				political_power_gain = 0.50
+				consumer_goods_factor = -0.15
+				global_building_slots_factor = 0.15
+				stability_factor = 0.10
+			}
+			rule = {
+			}
+		}
+		spd = {
+			
+			allowed = {
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			}
+			rule = {
+			}
+		}
+	}
+}

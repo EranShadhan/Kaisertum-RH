@@ -7,9 +7,12 @@ state={
 	state_category = town
 
 	history={
-		owner = FRA
+		owner = SAU
 		victory_points = {
 			792 5 
+		}
+		victory_points = {
+			1065 1 
 		}
 		buildings = {
 			infrastructure = 2
@@ -20,11 +23,11 @@ state={
 			}
 		}
 
-		add_core_of = LEB
+		add_core_of = SAU
 	}
 
 	provinces={
-		792 1108 11919 
+		792 1065 1108 11919 
 	}
 
 	local_supplies=0.0 

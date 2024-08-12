@@ -2,7 +2,7 @@
 state= {
 	id=341
 	name="STATE_341"
-	manpower = 363947
+	manpower = 163947
 	resources={
 
 	}
@@ -10,9 +10,9 @@ state= {
 	state_category = town
 
 	history= {
-		owner = BUL
+		owner = GRE
 		victory_points = {
-			11842 5
+			849 1
 		}
 		buildings = {
 			infrastructure = 2
@@ -22,11 +22,11 @@ state= {
 				coastal_bunker = 2
 			}
 		}
-		add_core_of = BUL
+		add_core_of = GRE
 	}
 	provinces=
 	{
-849 922 3879 3893 6895 11842 	}
+849 922 3879 3893 6895 	}
 
 	local_supplies=0.0 
 }
