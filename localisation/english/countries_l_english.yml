@@ -99,6 +99,8 @@
  ENG_fascism_DEF:0 "the British Empire"
  ENG_democratic:0 "Britain"
  ENG_democratic_DEF:0 "the United Kingdom"
+ ENG_democratic:0 "Great Britain"
+ ENG_democratic_DEF:0 "the Great Britain"
  ENG_neutrality:0 "Great Britain"
  ENG_neutrality_DEF:0 "Great Britain"
  ENG_communism:0 "Union of Britain"
