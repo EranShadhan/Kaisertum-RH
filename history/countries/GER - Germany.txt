@@ -162,8 +162,8 @@ set_variable = { GER_narvik_shipments = 0 }
 set_variable = { GER_narvik_civs = 0 }
 set_research_slots = 4
 set_convoys = 200
-set_stability = 0.75 
-set_war_support = 0.3
+set_stability = 0.65 
+set_war_support = 0.2
 
 
 set_politics = {
@@ -190,6 +190,8 @@ add_to_faction = FIN
 
 add_ideas = {
 	spd
+	GER_wilhelm_ii
+	FRA_victors_of_wwi
 }
 
 activate_mission = GER_mefo_bills_mission

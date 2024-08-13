@@ -36,5 +36,22 @@ ideas = {
 			rule = {
 			}
 		}
+		GER_wilhelm_ii = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_ger_wilhelm_ii
+
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
 	}
 }

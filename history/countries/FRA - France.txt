@@ -332,7 +332,6 @@ set_popularities = {
 }
 
 add_ideas = {
-	FRA_victors_of_wwi
 	FRA_disjointed_government
 	FRA_protected_by_the_maginot_line
 	limited_conscription

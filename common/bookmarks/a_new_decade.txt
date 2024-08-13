@@ -68,29 +68,17 @@ bookmarks = {
 		"GER"={
 			history = "GER_NEW_DECADE_DESC"
 			ideology = democratic
-			available = { has_dlc = "Waking the Tiger" }
+			available = {
+			}
 			ideas = {
-				general_staff
-				GER_mefo_bills_1
+				spd
+				GER_wilhelm_ii
+				FRA_victors_of_wwi
 			}
 			focuses = {
 				GER_anschluss
 				GER_danzig_or_war
 				GER_revive_the_kaiserreich
-			}
-		}
-		"GER"={
-			history = "GER_NEW_DECADE_DESC"
-			ideology = democratic
-			available = { NOT = { has_dlc = "Waking the Tiger" } }
-			ideas = {
-				general_staff
-				GER_mefo_bills_1
-			}
-			focuses = {
-				GER_anschluss
-				GER_danzig_or_war
-				GER_ussr_war_goal
 			}
 		}
 		"ITA"={

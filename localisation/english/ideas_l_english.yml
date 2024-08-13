@@ -2545,6 +2545,8 @@
  GER_revive_the_kaiserreich2:0 "Revive the Kaiserreich"
  GER_communist_refugees:0 "Communist Refugees"
  GER_redirecting_naval_production:0 "Redirecting Naval Production"
+ GER_wilhelm_ii:0 "Wilhelm II"
+ GER_wilhelm_ii_desc:0 "Wilhem II is the Kaiser of Germany who led her to victory but he is increasingly becoming unpopular due to poor management of Germany"
  GER_wilhelm_iii:0 "Wilhelm III"
  GER_preparing_ITA_coup:0 "Rising Monarchist Sentiments"
  GER_preparing_ITA_coup2:0 "Rising Monarchist Sentiments"
