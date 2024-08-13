@@ -2722,3 +2722,52 @@
 
  UBD_lack_of_workers_idea: "Lack of workers"
  UBD_lack_of_workers_idea_2: "Lack of workers"
+ 
+ FRA_secret_rearmament:0 "Secret Rearmament"
+ FRA_secret_rearmament_desc:0 "The French nation is lacking the vital war resources of coal and steel. This means that we have to secretly obtain these resources from Russia if we want to have a chance to topple the German hegemony over Europe, and to reclaim our lost lands in the Great War! \n\nThe problem is that the Germans are searching passing Russian ships through the Baltic sea, so any coal and steel cannot be transported, as the Germans fear it will reach France. The French and Russians have figured out a way to work around it, as they have started transporting crates of grain, glass, and other non-war materials. \n\nWhile the Germans are focusing on the contents of the crates, the shipping crates themselves contain steel nails, which France can use to build tanks. The wood from the crates is also a suppliment for coal. \n\nThis is without a doubt extremelly inneficient, but there is no other way for France to get these vital war resources. The French and Russians have even started implementing a new strategy, where a merchant ship from Russia would reach France and be melted for it's steel, surpassing the blockade imposed by Germany."
+ 
+ FRA_embargoed_by_germany:0 "German Customs Union Embargo"
+ FRA_embargoed_by_germany_desc:0 "After the 1928 French Elections, the people voted for a fascist regime, which was not well-received from the international community. Due to actions of the Secret Police, France has been embargoed by Germany and it's economic customs union. This puts strain to our already lacking resources!"
+ 
+ FRA_communist_opposition:0 "Communist Opposition"
+ FRA_communist_opposition_desc:0 "While the Fascist French Revival won the elections of 1928, there is still 42% for communism within our population. This has been causing many issues are there are general riots, but also opposition to our rule and a possible coup d'état. We must get rid of the communist opposition in any way we see fit, in order to secure a prosperous France!"
+ 
+ FRA_colonial_army:0 "Colonial Army"
+ FRA_colonial_army_desc:0 "The colonies of France were not so enthusiastic about the fascist takeover, but they understand that this would bring prosperity and glory to France, unlike the Republican Front. It is because of this understanding that the colonies are willing to work with the new regime. \n\nAnother reason why the colonies are loyal is because they know that if they break free, they will become German puppets, or even worse!"
+ 
+ FRA_republican_front_collapse:0 "Collapse of the Republican Front"
+ FRA_republican_front_collapse_desc:0 "The Republican Front was the major democratic political party before and during the Great War. After the defeat of France, the party continued to rule, but it saw opposition from Independent Radicals, Communists, and Fascists. \n\nAfter the party failed to keep Morocco as a protectorate, all of the opposition started blaming the Republican Front for France's situation. When the Ottoman Empire was partitioned in 1925, France was politically stuck and could not take action. \n\nThe People of France have shifted away from any democratic ideas, as to them this lost them the Great War and caused trouble in the interwar period."
+ 
+ FRA_secret_police:0 "French Secret Police"
+ FRA_secret_police_desc:0 "The Secret Police is the greatest asset of the Fascist French Revival. It allowes for propaganda to be distributed among the entire nation, but also to silence any opposition. \n\nThe role of the Secret Police is to make sure that the French Revival remains in charge by any means necessary, so assassinations and executions are common practice. Most importantly, the Secret Police is overseeing it's citizens, making sure there is no counter-revolution."
+ 
+ FRA_lore:0 "French Lore"
+ FRA_lore_desc:0 "After the Germans captured Paris in late 1914, the French were determined to take the city back. The problem was that due to inadequate uniforms and poor tactics, this was never achieved. Morale of the French army plummeted and in 1916 France surrendered, ending the Great War. \n\nIn the Interwar period, the French were led by the Republican Front, who was blamed for the loss of the war and paved the way for more extremist political parties to rise to power. In 1921 the French had to fight an insurgency in Algeria, which was called by the Ottoman Empire when they called for a jihad and for the Muslims to liberate themselves from the Europeans. \n\nThis insurgency was followed with Morocco declaring independence and France working with them in order to pacify the Algerian rebels. Politically, France entered a stalemate, as no political ideology had the support required to form a stable government. \n\nIn 1926 the Republican front collapsed and formally seized to exist. The parties left were the fascist French Revival, socialist Popular Front, and neutral Independent Radicals. The Independent Radicals have had enough and held a vote among themselves regarding which political party they want to join, only for the sake of getting France a stable government. \n\nAfter an intense vote, the French Revival won with 56.8% of the votes. This put the fascists in charge, who are now in the process of turning the country into a dictatorship and taking revenge on Germany. \n\nYou can watch the YouTube series of the whole lore behind the mod called 'Project Kaisertum' by Rewriting History."
+ 
+ german_customs_union_member:0 "German Customs Union Member"
+ german_customs_union_member_desc:0 "The German Customs Union was formed among members in the German Sphere right after the Great War. It's aim was to have a shared customs union and a shared market. \n\nThis would help the poorer nations that Germany had just conquered the most, as they can sell their resources for a higher price. The Germans would benefit from this the most, however, as they would be getting cheap resources from the countries that they had just conquered. \n\nStill, a lot of countries in Europe, mostly former German allies in the Great War, saw an economic opportunity in joining this Customs Union and it was expanded again in 1921. \n\nThe German Customs Union has put an embargo on France, due to them becoming Fascist and eliminating the political opposition, as well as terrorizing it's own people. This has damaged France greatly, as they cannot trade for coal and steel, which are vital war resources. \n\nThe future of the German Customs Union is uncertain, as the main beneficiary is Germany, and with Eastern Europe starting to recover economically, some may wish to leave the Customs Union behind."
+ 
+FRA_super_heavy_tank_programme:0 "French Super Heavy Tank Programme"
+FRA_super_heavy_tank_programme_desc:0 "Due to lack of coal and steel, the French Millitary cannot rely on conventional warfare. The cost of a single rifle is too much for France considering their chronic lack of resources. \n\nAn idea was born, where instead of using the steel for consumables like rifles and ammunition, there could be a weapon that is created once and never destroyed, so it can be used indefinetly - the super heavy tank. \n\nThis needs to be done in secret, because it's vital for the French Millitary that Germany does not see it in action until it's too late. This would give the French Army the advantage in the early war, up until Germany develops a counter. Only time will tell if this project will pay off."
+
+FRA_eliminating_communist_opposition:0 "Eliminating the Communist Opposition"
+FRA_eliminating_communist_opposition_desc:0 "The Communist Popular Front is the largest tread to the stability and longevity of the Fascist Republican Front. As the Republican Front controls the Secret Police, it's resources would be used to hunt down the communist and socialist supporters and eliminate them. This will take some time, but it will ensure that the French Revival will have no political rivals."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+spriteTypes = {
+	spriteType = {
+		name = "Gustav_V"
+		texturefile = "gfx/leaders/SWE/Gustav_V.dds"
+	}
+	spriteType = {
+		name = "George_Obrenovic"
+		texturefile = "gfx/leaders/YUG/George_Obrenovic.dds"
+	}
+	spriteType = {
+		name = "Taisho"
+		texturefile = "gfx/leaders/JAP/Taisho.dds"
+	}
+	spriteType = {
+		name = "Carol_I"
+		texturefile = "gfx/leaders/ROM/Carol_I.dds"
+	}
+	spriteType = {
+		name = "Alfonso_XIII"
+		texturefile = "gfx/leaders/SPR/Alfonso_XIII.dds"
+	}
+	spriteType = {
+		name = "Nicolas_I"
+		texturefile = "gfx/leaders/MNT/Nicolas_I.dds"
+	}
+	spriteType = {
+		name = "Manuel_II"
+		texturefile = "gfx/leaders/POR/Manuel_II.dds"
+	}
+	spriteType = {
+		name = "Frederick_VIII"
+		texturefile = "gfx/leaders/DEN/Frederick_VIII.dds"
+	}
+	spriteType = {
+		name = "Porfirio_Diaz"
+		texturefile = "gfx/leaders/MEX/Porfirio_Diaz.dds"
+	}
+	spriteType = {
+		name = "George_I"
+		texturefile = "gfx/leaders/GRE/George_I.dds"
+	}
+	spriteType = {
+		name = "Menelik_II"
+		texturefile = "gfx/leaders/ETH/Menelik_II.dds"
+	}
+	spriteType = {
+		name = "Albert_I"
+		texturefile = "gfx/leaders/BEL/Albert_I.dds"
+	}
+	spriteType = {
+		name = "William_IV"
+		texturefile = "gfx/leaders/LUX/William_IV.dds"
+	}
+	spriteType = {
+		name = "Wilhelmina"
+		texturefile = "gfx/leaders/HOL/Wilhelmina.dds"
+	}
+	spriteType = {
+		name = "Tsai_Feng"
+		texturefile = "gfx/leaders/CHI/Tsai_Feng.dds"
+	}
+}

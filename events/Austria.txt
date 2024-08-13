@@ -22,25 +22,24 @@ country_event = {
 			add_core_of = POL
 			remove_core_of = AUS
 		}
-		UKR = {
+		POL = {
 			transfer_state = 80
 			transfer_state = 89
 			transfer_state = 91
 		}
 		80 = {
-			add_core_of = UKR
+			add_core_of = POL
 			remove_core_of = AUS
 		}
 		91 = {
-			add_core_of = UKR
+			add_core_of = POL
 			remove_core_of = AUS
 		}
 		89 = {
-			add_core_of = UKR
+			add_core_of = POL
 			remove_core_of = AUS
 		}
 		hidden_effect = {
-			country_event = { days = 1 id = news.15 }
 		}
 	}
 }

@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+			name = "Mehmed_V"
+			texturefile = "gfx/leaders/TUR/Mehmed_V.dds"
+	}
+}

@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "Nicolas_II"
+		texturefile = "gfx/leaders/SOV/Nicolas_II.dds"
+	}
+}

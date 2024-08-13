@@ -21,6 +21,7 @@ if = {
 }
 create_faction = GRE_salonica_pact
 add_to_faction = BUL
+add_to_faction = ALB
 ###################
 #### 3D MODELS ####
 ###################

@@ -1,0 +1,21 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_MCO_invest_in_SAN"
+		texturefile = "gfx/event_pictures/MCO_invest_in_SAN.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_MCO_event_promote_french_ideals"
+		texturefile = "gfx/event_pictures/GFX_MCO_event_promote_french_ideals.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RGW_news_welcome"
+		texturefile = "gfx/event_pictures/RGW_news_welcome.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_MCO_request_Savoy"
+		texturefile = "gfx/event_pictures/GFX_MCO_request_Savoy.dds"
+	}
+}
