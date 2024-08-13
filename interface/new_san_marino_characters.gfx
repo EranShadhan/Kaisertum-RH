@@ -1,6 +1,0 @@
-spriteTypes = {
-	spriteType = {
-			name = "Grand_and_General_Council"
-			texturefile = "gfx/leaders/SAN/Grand_and_General_Council.dds"
-		}
-}

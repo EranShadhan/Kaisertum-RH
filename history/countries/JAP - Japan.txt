@@ -8,11 +8,12 @@ set_war_support = 0.8
 set_research_slots = 4
 set_fuel_ratio = 1.0
 add_ideas = {
-	JAP_hirohito
 	state_shintoism
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
+
+	JAP_zaibatsus
 	JAP_duplicate_research_efforts
 	JAP_militarism
 }
@@ -86,10 +87,7 @@ if = {
 	add_ideas = MTG_naval_treaty_adherent
 }
 
-create_faction = JAP_asian_communism_alliance
-add_to_faction = JAP
-add_to_faction = PRC
-add_to_faction = GXC
+
 
 set_technology = {
 	infantry_weapons = 1
@@ -225,13 +223,13 @@ create_import = {
 set_convoys = 400
 
 set_politics = {
-	ruling_party = communism
-	last_election = "1928.7.4"
-	election_frequency = 60
-	elections_allowed = yes
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
 }
 set_popularities = {
-	communism = 100
+	fascism = 100
 }
 
 recruit_character = JAP_tetsu_katayama

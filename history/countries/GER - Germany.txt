@@ -1,4 +1,12 @@
 ﻿capital = 64
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_oob = "GER_1936"
+}
 
 if = {
 	limit = { has_dlc = "By Blood Alone" }
@@ -162,8 +170,8 @@ set_variable = { GER_narvik_shipments = 0 }
 set_variable = { GER_narvik_civs = 0 }
 set_research_slots = 4
 set_convoys = 200
-set_stability = 0.65 
-set_war_support = 0.2
+set_stability = 0.75 
+set_war_support = 0.3
 
 
 set_politics = {
@@ -183,15 +191,16 @@ create_faction = GER_central_powers
 add_to_faction = GER
 add_to_faction = UBD
 add_to_faction = POL
+add_to_faction = AUS
+add_to_faction = HUN
 add_to_faction = BEL
 add_to_faction = UKR
 add_to_faction = FIN
+add_to_faction = YUG
 
 
 add_ideas = {
-	spd
-	GER_wilhelm_ii
-	FRA_victors_of_wwi
+	german_customs_union_member
 }
 
 activate_mission = GER_mefo_bills_mission

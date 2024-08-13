@@ -1,6 +1,11 @@
 ﻿capital = 112
 
 oob = "POR_1936"
+
+add_ideas = {
+	german_customs_union_member
+}
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "POR_1936_naval_mtg"
@@ -58,45 +63,7 @@ if = {
 	}
 }
 
-if = {
-	limit = { has_dlc = "La Resistance" }	
-	add_ideas = POR_unreliable_army
-	add_ideas = POR_unstable_republic
-	set_stability = 0.60
-	set_war_support = 0.15	
-	set_research_slots = 2
-
-	ENG = {
-		add_opinion_modifier = {
-			target = POR 
-			modifier  = POR_anglo_portuguese_alliance
-		}
-	}
-
-	POR = {
-		add_opinion_modifier = {
-			target = ENG 
-			modifier  = POR_anglo_portuguese_alliance
-		}
-	}
-
-	GER = {
-		add_opinion_modifier = {
-			target = POR
-			modifier = fascism_leanings_good
-		}
-	}
-
-	ITA = {
-		add_opinion_modifier = {
-			target = POR
-			modifier = fascism_leanings_good
-		}
-	}
-	
-}
-
-	give_guarantee = BRA
+give_guarantee = BRA
 
 set_convoys = 50
 set_politics = {
@@ -110,18 +77,6 @@ set_popularities = {
 	communism = 10
 	neutrality = 60
 	democratic = 20
-}
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1938.10.30"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		neutrality = 100
-	}
 }
 
 set_convoys = 100

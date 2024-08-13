@@ -33,8 +33,8 @@ SWE = {
 	color_ui = rgb { 47 172 255 }
 }
 FRA = {
-	color = rgb { 16 16 175 }
-	color_ui = rgb { 16 16 175 }
+	color = rgb { 175 16 16 }
+	color_ui = rgb { 175 16 16 }
 }
 LUX = {
 	color = rgb { 65 175 179 }
@@ -198,8 +198,8 @@ IRQ = {
 	color_ui = rgb { 231 148 129 }
 }
 JAP = {
-	color = rgb { 206 110 110 }
-	color_ui = rgb { 206 110 110 }
+	color = hsv { 0.05 0.3 1 }
+	color_ui = hsv { 0.05 0.25 1.2 }
 }
 LIB = {
 	color = rgb { 152 130 191 }
@@ -226,8 +226,8 @@ PAN = {
 	color_ui = rgb { 198 169 248 }
 }
 PER = {
-	color = rgb { 0 84 18 }
-	color_ui = rgb { 0 84 18 }
+	color = rgb { 0 41 18 }
+	color_ui = rgb { 0 41 18 }
 }
 PHI = {
 	color = rgb { 152 130 191 }
@@ -325,13 +325,13 @@ CRO = {
 }
 
 PRC = {
-	color = rgb { 162 60 80 }
-	color_ui = rgb { 162 60 80 }
+	color = rgb { 245 12 55 }
+	color_ui = rgb { 178 34 60 }
 }
 
 GXC = {
-	color = rgb { 162 60 80 }
-	color_ui = rgb { 162 60 80 }
+	color = rgb { 71 113 97 }
+	color_ui = rgb { 71 113 97 }
 }
 
 SHX = {
