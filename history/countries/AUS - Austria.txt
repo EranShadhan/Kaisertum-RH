@@ -1,11 +1,6 @@
 ﻿capital = 4
 
 oob = "AUS_1936"
-
-add_ideas = {
-	german_customs_union_member
-}
-
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "AUS_1936_air_bba"
@@ -85,6 +80,6 @@ set_autonomy = {
         autonomous_state = autonomy_integrated_puppet
     }
 set_autonomy = {
-        target = UKR
-        autonomous_state = autonomy_integrated_puppet
+        target = SER
+        autonomous_state = autonomy_dominion
     }

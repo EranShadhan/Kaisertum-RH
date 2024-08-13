@@ -4,18 +4,12 @@ state={
 	name="STATE_350"
 
 	history={
-		owner = KUR
+		owner = TUR
 		victory_points = {
 			4512 5 
 		}
 		victory_points = {
 			9823 1 
-		}
-		victory_points = {
-			1549 1
-		}
-		victory_points = {
-			12387 1 
 		}
 		buildings = {
 			infrastructure = 2
@@ -23,12 +17,13 @@ state={
 
 		}
 			add_core_of = KUR
+			add_core_of = TUR
 	}
 
 	provinces={
-		1549 1578 4512 9823 11759 11871 12387 12416 
+		1578 4512 9823 11759 11871 12416 
 	}
-	manpower=571935
+	manpower=371935
 	state_category=town
 
 	local_supplies=0.0 
