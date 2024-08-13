@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = PER
+		owner = SAU
 		victory_points = {
 			2097 10
 		}
@@ -34,7 +34,7 @@ state={
 			}
 		}
 		add_core_of = SAU
-		add_core_of = PER
+		add_core_of = IRQ
 	}
 
 	provinces={

@@ -1,0 +1,15 @@
+characters={
+	JAP_Taisho = {
+		name="Emperor Taishō"
+		portraits={
+			civilian={
+				large="Taisho"
+			}
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

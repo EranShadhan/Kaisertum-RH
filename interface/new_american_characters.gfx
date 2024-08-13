@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "William_Taft"
+		texturefile = "gfx/leaders/USA/William_Taft.dds"
+	}
+}

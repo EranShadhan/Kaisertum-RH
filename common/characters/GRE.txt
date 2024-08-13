@@ -1,0 +1,15 @@
+characters={
+	GRE_George_I = {
+		name="George I"
+		portraits={
+			civilian={
+				large="George_I"
+			}
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

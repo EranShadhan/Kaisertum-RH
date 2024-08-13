@@ -1,0 +1,15 @@
+characters={
+	LUX_William_IV = {
+		name="William IV"
+		portraits={
+			civilian={
+				large="William_IV"
+			}
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,15 @@
+characters={
+	ETH_Menelik_II = {
+		name="Menelik II"
+		portraits={
+			civilian={
+				large="Menelik_II"
+			}
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

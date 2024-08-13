@@ -1,0 +1,129 @@
+ideas = {
+	country = {
+		MCO_country_lore = {
+			allowed = {
+				tag = MCO
+			}
+		}
+	}
+
+	country = {
+		SAN_country_lore = {
+			allowed = {
+				tag = SAN
+			}
+		}
+	}
+
+	country = {
+		LIE_country_lore = {
+			allowed = {
+				tag = LIE
+			}
+		}
+	}
+
+	country = {
+		TUR_country_lore = {
+			allowed = {
+				tag = TUR
+			}
+		}
+	}
+
+	country = {
+		USA_country_lore = {
+			allowed = {
+				tag = USA
+			}
+		}
+	}
+
+	country = {
+		SPR_country_lore = {
+			allowed = {
+				tag = SPR
+			}
+		}
+	}
+
+	country = {
+		YUG_country_lore = {
+			allowed = {
+				tag = YUG
+			}
+		}
+	}
+
+	country = {
+		ENG_country_lore = {
+			allowed = {
+				tag = ENG
+			}
+		}
+	}
+
+	country = {
+		GER_country_lore = {
+			allowed = {
+				tag = GER
+			}
+		}
+	}
+
+	country = {
+		AUS_country_lore = {
+			allowed = {
+				tag = AUS
+			}
+		}
+	}
+
+	country = {
+		SWE_country_lore = {
+			allowed = {
+				tag = SWE
+			}
+		}
+	}
+
+	country = {
+		MEX_country_lore = {
+			allowed = {
+				tag = MEX
+			}
+		}
+	}
+
+	country = {
+		CHI_country_lore = {
+			allowed = {
+				tag = CHI
+			}
+		}
+	}
+
+	country = {
+		JAP_country_lore = {
+			allowed = {
+				tag = JAP
+			}
+		}
+	}
+
+	country = {
+		PHI_country_lore = {
+			allowed = {
+				tag = PHI
+			}
+		}
+	}
+
+	country = {
+		SOV_country_lore = {
+			allowed = {
+				tag = SOV
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+characters={
+	SAN_GGC = {
+		name="Grand and General Council"
+		portraits={
+			civilian={
+				large="Grand_and_General_Council"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

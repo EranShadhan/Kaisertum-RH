@@ -1,0 +1,15 @@
+characters={
+	LIE_Johann_II = {
+		name="Johann II"
+		portraits={
+			civilian={
+				large="Johann_II"
+			}
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,15 @@
+characters={
+	USA_Taft = {
+		name="William H. Taft"
+		portraits={
+			civilian={
+				large="William_Taft"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

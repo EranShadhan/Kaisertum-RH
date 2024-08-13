@@ -1,0 +1,38 @@
+spriteTypes = {	
+	SpriteType = {
+		name = "GFX_idea_casino_profits"
+		texturefile = "gfx/interface/ideas/idea_MCO_casino_profits.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_unpopular_monarchy"
+		texturefile = "gfx/interface/ideas/idea_MCO_unpopular_monarchy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_foreign_spies"
+		texturefile = "gfx/interface/ideas/idea_MCO_foreign_spies.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_focus_on_production"
+		texturefile = "gfx/interface/ideas/idea_MCO_focus_on_production.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_work_with_revolutionaries"
+		texturefile = "gfx/interface/ideas/idea_MCO_work_with_revolutionaries.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_supress_revolts"
+		texturefile = "gfx/interface/ideas/idea_MCO_supress_revolts.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_improve_worker_conditions"
+		texturefile = "gfx/interface/ideas/idea_MCO_improve_worker_conditions.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_crackdown_on_corruption"
+		texturefile = "gfx/interface/ideas/idea_MCO_crackdown_on_corruption.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_tourism_capital"
+		texturefile = "gfx/interface/ideas/idea_MCO_tourism_capital.dds"
+	}
+}

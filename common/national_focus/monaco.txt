@@ -1,0 +1,2525 @@
+﻿focus_tree = {
+	id = monaco_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MCO
+		}
+	}
+
+	default = no
+	continuous_focus_position = { x = 50 y = 2000 }
+    	initial_show_position = { focus = GFX_goal_MCO_promise_for_a_change }
+
+	focus = {
+		id = MCO_promise_for_a_change
+		icon = GFX_goal_MCO_promise_for_a_change
+		x = 5
+		y = 0
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = MCO_promote_french_ideals
+		icon = GFX_goal_MCO_promote_french_ideals
+		x = -2
+		y = 1
+		relative_position_id = MCO_promise_for_a_change
+		prerequisite = { focus = MCO_promise_for_a_change }
+		mutually_exclusive = { focus = MCO_house_of_monaco }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.2
+			country_event = monaco.1
+		}
+	}
+
+	focus = {
+		id = MCO_house_of_monaco
+		icon = GFX_goal_MCO_house_of_monaco
+		x = 2
+		y = 1
+		relative_position_id = MCO_promise_for_a_change
+		prerequisite = { focus = MCO_promise_for_a_change }
+		mutually_exclusive = { focus = MCO_promote_french_ideals }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.2
+		}
+	}
+
+	focus = {
+		id = MCO_move_capital_to_paris
+		icon = GFX_goal_MCO_move_capital_to_paris
+		x = 0
+		y = 1
+		relative_position_id = MCO_promote_french_ideals
+		prerequisite = { focus = MCO_promote_french_ideals }
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_capital = {state = 16 remember_old_capital = no }
+			add_political_power = -150
+			add_popularity = {
+    				ideology = democratic
+    				popularity = 0.25
+			}
+		}
+	}
+
+	focus = {
+		id = MCO_proclaim_french_republic
+		icon = GFX_goal_MCO_proclaim_french_republic
+		x = 0
+		y = 1
+		relative_position_id = MCO_move_capital_to_paris
+		prerequisite = { focus = MCO_move_capital_to_paris }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			add_popularity = {
+    				ideology = democratic
+    				popularity = 0.10
+			}
+			remove_ideas = { unpopular_monarchy }
+		}
+	}
+
+	focus = {
+		id = MCO_move_away_from_gambling
+		icon = GFX_goal_MCO_move_away_from_gambling
+		x = 0
+		y = 1
+		relative_position_id = MCO_proclaim_french_republic
+		prerequisite = { focus = MCO_proclaim_french_republic }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			remove_ideas = { casino_profits }
+		}
+	}
+
+	focus = {
+		id = MCO_crackdown_on_foreign_spies
+		icon = GFX_goal_MCO_crackdown_on_foreign_spies
+		x = 0
+		y = 1
+		relative_position_id = MCO_move_away_from_gambling
+		prerequisite = { focus = MCO_move_away_from_gambling }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			remove_ideas = { foreign_spies }
+		}
+	}
+
+	focus = {
+		id = MCO_focus_on_production
+		icon = GFX_goal_MCO_focus_on_production
+		x = -2
+		y = 1
+		relative_position_id = MCO_crackdown_on_foreign_spies
+		prerequisite = { focus = MCO_crackdown_on_foreign_spies }
+		mutually_exclusive = { focus = MCO_focus_on_services }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+            		add_ideas = focus_on_production
+		}
+	}
+
+	focus = {
+		id = MCO_focus_on_services
+		icon = GFX_goal_MCO_focus_on_services
+		x = 2
+		y = 1
+		relative_position_id = MCO_crackdown_on_foreign_spies
+		prerequisite = { focus = MCO_crackdown_on_foreign_spies focus = MCO_build_hotels_in_monaco }
+		mutually_exclusive = { focus = MCO_focus_on_production }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_offsite_building = { type = industrial_complex level = 3 }
+		}
+	}
+
+	focus = {
+		id = MCO_become_the_factory_of_the_world
+		icon = GFX_goal_MCO_become_the_factory_of_the_world
+		x = 0
+		y = 1
+		relative_position_id = MCO_focus_on_production
+		prerequisite = { focus = MCO_focus_on_production }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MCO_become_the_bank_of_the_world
+		icon = GFX_goal_MCO_become_the_bank_of_the_world
+		x = 0
+		y = 1
+		relative_position_id = MCO_focus_on_services
+		prerequisite = { focus = MCO_focus_on_services }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_offsite_building = { type = industrial_complex level = 5 }
+			add_opinion_modifier = { target = SWI modifier = large_decrease }
+		}
+	}
+
+	focus = {
+		id = MCO_expand_the_textile_industry
+		icon = GFX_goal_MCO_expand_the_textile_industry
+		x = -1
+		y = 1
+		relative_position_id = MCO_become_the_factory_of_the_world
+		prerequisite = { focus = MCO_become_the_factory_of_the_world }
+		mutually_exclusive = { focus = MCO_expand_the_arms_industry }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MCO_expand_the_arms_industry
+		icon = GFX_goal_MCO_expand_the_arms_industry
+		x = 1
+		y = 1
+		relative_position_id = MCO_become_the_factory_of_the_world
+		prerequisite = { focus = MCO_become_the_factory_of_the_world }
+		mutually_exclusive = { focus = MCO_expand_the_textile_industry }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MCO_invest_in_san_marino
+		icon = GFX_goal_MCO_invest_in_san_marino
+		x = 0
+		y = 1
+		relative_position_id = MCO_become_the_bank_of_the_world
+		prerequisite = { focus = MCO_become_the_bank_of_the_world }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_government = democratic
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = monaco.6
+			add_offsite_building = { type = industrial_complex level = 1 }
+		}
+	}
+
+	focus = {
+		id = MCO_invest_in_switzerland
+		icon = GFX_goal_MCO_invest_in_switzerland
+		x = 4
+		y = 1
+		relative_position_id = MCO_become_the_bank_of_the_world
+		prerequisite = { focus = MCO_become_the_bank_of_the_world }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = monaco.8
+			add_offsite_building = { type = industrial_complex level = 1 }
+		}
+	}
+
+	focus = {
+		id = MCO_invest_in_benelux
+		icon = GFX_goal_MCO_invest_in_benelux
+		x = 2
+		y = 1
+		relative_position_id = MCO_become_the_bank_of_the_world
+		prerequisite = { focus = MCO_become_the_bank_of_the_world }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_government = democratic
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = monaco.7
+			add_offsite_building = { type = industrial_complex level = 1 }
+		}
+	}
+
+	focus = {
+		id = MCO_invest_in_germany
+		icon = GFX_goal_MCO_invest_in_germany
+		x = 6
+		y = 1
+		relative_position_id = MCO_become_the_bank_of_the_world
+		prerequisite = { focus = MCO_become_the_bank_of_the_world }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_government = neutrality
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = monaco.9
+			add_offsite_building = { type = industrial_complex level = 1 }
+		}
+	}
+
+	focus = {
+		id = MCO_invest_in_spain
+		icon = GFX_goal_MCO_invest_in_spain
+		x = 8
+		y = 1
+		relative_position_id = MCO_become_the_bank_of_the_world
+		prerequisite = { focus = MCO_become_the_bank_of_the_world }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_government = neutrality
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = monaco.10
+			add_offsite_building = { type = industrial_complex level = 1 }
+		}
+	}
+
+	focus = {
+		id = MCO_request_savoy
+		icon = GFX_goal_MCO_request_savoy
+		x = 0
+		y = 1
+		relative_position_id = MCO_invest_in_san_marino
+		prerequisite = { focus = MCO_invest_in_san_marino }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			SAN = { country_event = { id = monaco.2 }}
+		}
+	}
+
+	focus = {
+		id = MCO_request_catalunya
+		icon = GFX_goal_MCO_request_catalunya
+		x = 0
+		y = 1
+		relative_position_id = MCO_invest_in_spain
+		prerequisite = { focus = MCO_invest_in_spain }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			SPR = { country_event = { id = monaco.11 }}
+		}
+	}
+
+	focus = {
+		id = MCO_request_alsace_lorraine
+		icon = GFX_goal_MCO_request_alsace_lorraine
+		x = 0
+		y = 1
+		relative_position_id = MCO_invest_in_germany
+		prerequisite = { focus = MCO_invest_in_germany }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			GER = { country_event = { id = monaco.17 }}
+		}
+	}
+
+	focus = {
+		id = MCO_request_annecy
+		icon = GFX_goal_MCO_request_annecy
+		x = 0
+		y = 1
+		relative_position_id = MCO_invest_in_switzerland
+		prerequisite = { focus = MCO_invest_in_switzerland }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			SWI = { country_event = { id = monaco.14 }}
+		}
+	}
+
+	focus = {
+		id = MCO_request_alliance_benelux
+		icon = GFX_goal_MCO_request_alliance_benelux
+		x = 0
+		y = 2
+		relative_position_id = MCO_invest_in_benelux
+		prerequisite = { focus = MCO_invest_in_benelux }
+		mutually_exclusive = { focus = MCO_request_alliance_san_marino }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_faction = "Mutual Defense Pact"
+			HOL = { country_event = { id = monaco.20 } }
+			BEL = { country_event = { id = monaco.21 } }
+			LUX = { country_event = { id = monaco.22 } }
+		}
+	}
+
+	focus = {
+		id = MCO_request_alliance_san_marino
+		icon = GFX_goal_MCO_request_alliance_san_marino
+		x = 0
+		y = 1
+		relative_position_id = MCO_request_savoy
+		prerequisite = { focus = MCO_request_savoy }
+		mutually_exclusive = { focus = MCO_request_alliance_benelux }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_faction = "Latin Bloc"
+			SAN = { country_event = { id = monaco.23 } }
+		}
+	}
+
+	focus = {
+		id = MCO_request_alliance_germany
+		icon = GFX_goal_MCO_request_alliance_germany
+		x = 0
+		y = 1
+		relative_position_id = MCO_request_alsace_lorraine
+		prerequisite = { focus = MCO_request_alsace_lorraine }
+		mutually_exclusive = { focus = MCO_request_alliance_spain }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_faction = "Berlin-Monaco Axis"
+			GER = { country_event = { id = monaco.24 } }
+		}
+	}
+
+	focus = {
+		id = MCO_request_alliance_spain
+		icon = GFX_goal_MCO_request_alliance_spain
+		x = 0
+		y = 1
+		relative_position_id = MCO_request_catalunya
+		prerequisite = { focus = MCO_request_catalunya }
+		mutually_exclusive = { focus = MCO_request_alliance_germany }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_faction = "The Paris Protocols"
+			SPR = { country_event = { id = monaco.25 } }
+		}
+	}
+
+	focus = {
+		id = MCO_prepare_for_war
+		icon = GFX_goal_MCO_prepare_for_war
+		x = -1
+		y = 1
+		relative_position_id = MCO_request_alliance_spain
+		prerequisite = { focus = MCO_request_alliance_spain focus = MCO_request_alliance_germany }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MCO_rally_the_people
+		icon = GFX_goal_MCO_rally_the_people
+		x = 0
+		y = 1
+		relative_position_id = MCO_prepare_for_war
+		prerequisite = { focus = MCO_prepare_for_war }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_war_support = 0.2
+			#army_core_defence_factor = 0.1
+		}
+	}
+
+	focus = {
+		id = MCO_the_enemy_is_germany
+		icon = GFX_goal_MCO_the_enemy_is_germany
+		x = 0
+		y = 1
+		relative_position_id = MCO_request_alliance_san_marino
+		prerequisite = { focus = MCO_request_alliance_san_marino focus = MCO_request_alliance_benelux }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#attack bonus against country
+		}
+	}
+
+	focus = {
+		id = MCO_the_enemy_is_britain
+		icon = GFX_goal_MCO_the_enemy_is_britain
+		x = 2
+		y = 1
+		relative_position_id = MCO_request_alliance_san_marino
+		prerequisite = { focus = MCO_request_alliance_san_marino focus = MCO_request_alliance_benelux }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#attack bonus against country
+		}
+	}
+
+	focus = {
+		id = MCO_reinvest_profits_into_education
+		icon = GFX_goal_MCO_reinvest_profits_into_education
+		x = 0
+		y = 1
+		relative_position_id = MCO_expand_the_textile_industry
+		prerequisite = { focus = MCO_expand_the_textile_industry focus = MCO_expand_the_arms_industry }
+		mutually_exclusive = { focus = MCO_reinvest_profits_into_industry }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = MCO_reinvest_profits_into_industry
+		icon = GFX_goal_MCO_reinvest_profits_into_industry
+		x = 2
+		y = 1
+		relative_position_id = MCO_expand_the_textile_industry
+		prerequisite = { focus = MCO_expand_the_textile_industry focus = MCO_expand_the_arms_industry }
+		mutually_exclusive = { focus = MCO_reinvest_profits_into_education }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MCO_improve_the_infrastructure
+		icon = GFX_goal_MCO_improve_the_infrastructure
+		x = 0
+		y = 1
+		relative_position_id = MCO_reinvest_profits_into_education
+		prerequisite = { focus = MCO_reinvest_profits_into_education focus = MCO_reinvest_profits_into_industry }
+		mutually_exclusive = { focus = MCO_improve_the_factories }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MCO_improve_the_factories
+		icon = GFX_goal_MCO_improve_the_factories
+		x = 2
+		y = 1
+		relative_position_id = MCO_reinvest_profits_into_education
+		prerequisite = { focus = MCO_reinvest_profits_into_education focus = MCO_reinvest_profits_into_industry }
+		mutually_exclusive = { focus = MCO_improve_the_infrastructure }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = focus_on_production
+				add_idea = focus_on_production2
+
+			}
+		}
+	}
+
+	focus = {
+		id = MCO_prepare_for_war1
+		icon = GFX_goal_MCO_prepare_for_war1
+		x = 1
+		y = 1
+		relative_position_id = MCO_improve_the_infrastructure
+		prerequisite = { focus = MCO_improve_the_infrastructure focus = MCO_improve_the_factories }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 150
+			add_war_support = 0.15
+		}
+	}
+
+	focus = {
+		id = MCO_claim_alsace_lorraine
+		icon = GFX_goal_MCO_claim_alsace_lorraine
+		x = 1
+		y = 1
+		relative_position_id = MCO_prepare_for_war1
+		prerequisite = { focus = MCO_prepare_for_war1 focus = MCO_the_enemy_is_germany focus = MCO_the_enemy_is_britain }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_state_claim = 28
+		}
+	}
+
+	focus = {
+		id = MCO_claim_catalunya
+		icon = GFX_goal_MCO_claim_catalunya
+		x = 3
+		y = 1
+		relative_position_id = MCO_prepare_for_war1
+		prerequisite = { focus = MCO_prepare_for_war1 focus = MCO_the_enemy_is_germany focus = MCO_the_enemy_is_britain }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_state_claim = 165
+		}
+	}
+
+	focus = {
+		id = MCO_claim_british_colonies
+		icon = GFX_goal_MCO_claim_british_colonies
+		x = 5
+		y = 1
+		relative_position_id = MCO_prepare_for_war1
+		prerequisite = { focus = MCO_prepare_for_war1 focus = MCO_the_enemy_is_germany focus = MCO_the_enemy_is_britain }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_state_claim = 272
+			add_state_claim = 701
+			add_state_claim = 700
+			add_state_claim = 274
+			add_state_claim = 543
+		}
+	}
+
+	focus = {
+		id = MCO_ultimatum_to_germany
+		icon = GFX_goal_MCO_ultimatum_to_germany
+		x = 0
+		y = 1
+		relative_position_id = MCO_claim_alsace_lorraine
+		prerequisite = { focus = MCO_claim_alsace_lorraine }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+    				type = take_state_focus
+    				target = GER
+    				generator = { 123 321 }
+    				expire = 180
+			}
+		}
+	}
+
+	focus = {
+		id = MCO_ultimatum_to_spain
+		icon = GFX_goal_MCO_ultimatum_to_spain
+		x = 0
+		y = 1
+		relative_position_id = MCO_claim_catalunya
+		prerequisite = { focus = MCO_claim_catalunya }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+    				type = take_state_focus
+    				target = SPR
+    				generator = { 123 321 }
+    				expire = 180
+			}
+		}
+	}
+
+	focus = {
+		id = MCO_ultimatum_to_britain
+		icon = GFX_goal_MCO_ultimatum_to_britain
+		x = 0
+		y = 1
+		relative_position_id = MCO_claim_british_colonies
+		prerequisite = { focus = MCO_claim_british_colonies }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+    				type = take_state_focus
+    				target = ENG
+    				generator = { 123 321 }
+    				expire = 180
+			}
+		}
+	}
+
+	focus = {
+		id = MCO_incorporate_annecy
+		icon = GFX_goal_MCO_incorporate_annecy
+		x = 0
+		y = 1
+		relative_position_id = MCO_request_annecy
+		prerequisite = { focus = MCO_request_annecy }
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_state_core = 935
+		}
+	}
+
+	focus = {
+		id = MCO_supress_revolts
+		icon = GFX_goal_MCO_supress_revolts
+		x = 0
+		y = 1
+		relative_position_id = MCO_house_of_monaco
+		prerequisite = { focus = MCO_house_of_monaco }
+		mutually_exclusive = { focus = MCO_nagotiate_with_the_revolutionaries }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.1
+			add_ideas = supress_revolts
+		}
+	}
+
+	focus = {
+		id = MCO_nagotiate_with_the_revolutionaries
+		icon = GFX_goal_MCO_nagotiate_with_the_revolutionaries
+		x = 2
+		y = 1
+		relative_position_id = MCO_house_of_monaco
+		prerequisite = { focus = MCO_house_of_monaco }
+		mutually_exclusive = { focus = MCO_supress_revolts }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+			add_ideas = work_with_revolutionaries
+		}
+	}
+
+	focus = {
+		id = MCO_improve_worker_conditions
+		icon = GFX_goal_MCO_improve_worker_conditions
+		x = 0
+		y = 1
+		relative_position_id = MCO_nagotiate_with_the_revolutionaries
+		prerequisite = { focus = MCO_nagotiate_with_the_revolutionaries focus = MCO_supress_revolts }
+		mutually_exclusive = { focus = MCO_crackdown_on_corruption }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = improve_worker_conditions
+		}
+	}
+
+	focus = {
+		id = MCO_crackdown_on_corruption
+		icon = GFX_goal_MCO_crackdown_on_corruption
+		x = -2
+		y = 1
+		relative_position_id = MCO_nagotiate_with_the_revolutionaries
+		prerequisite = { focus = MCO_nagotiate_with_the_revolutionaries focus = MCO_supress_revolts }
+		mutually_exclusive = { focus = MCO_improve_worker_conditions }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = -100
+			add_ideas = crackdown_on_corruption
+		}
+	}
+
+	focus = {
+		id = MCO_double_down_on_gambling
+		icon = GFX_goal_MCO_double_down_on_gambling
+		x = 1
+		y = 1
+		relative_position_id = MCO_crackdown_on_corruption
+		prerequisite = { focus = MCO_crackdown_on_corruption focus = MCO_improve_worker_conditions }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas {
+				remove_idea = casino_profits
+				add_idea = casino_profits2
+			}
+		}
+	}
+
+	focus = {
+		id = MCO_build_hotels_in_monaco
+		icon = GFX_goal_MCO_build_hotels_in_monaco
+		x = 0
+		y = 1
+		relative_position_id = MCO_double_down_on_gambling
+		prerequisite = { focus = MCO_double_down_on_gambling }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = tourism_capital
+		}
+	}
+
+	focus = {
+		id = MCO_declare_neutrality
+		icon = GFX_goal_MCO_declare_neutrality
+		x = 7
+		y = 1
+		relative_position_id = MCO_build_hotels_in_monaco
+		prerequisite = { focus = MCO_build_hotels_in_monaco }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = neutrality_idea
+		}
+	}
+
+	focus = {
+		id = MCO_fortify_german_border
+		icon = GFX_goal_MCO_fortify_german_border
+		x = 0
+		y = 1
+		relative_position_id = MCO_declare_neutrality
+		prerequisite = { focus = MCO_declare_neutrality }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			17 = {
+				add_building_construction = {
+					type = bunker
+					province = 11516
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 521
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 698
+					level = 5
+					instant_build = yes
+				}
+			}
+
+			18 = {
+				add_building_construction = {
+					type = bunker
+					province = 5291
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MCO_fortify_spanish_border
+		icon = GFX_goal_MCO_fortify_spanish_border
+		x = 2
+		y = 1
+		relative_position_id = MCO_declare_neutrality
+		prerequisite = { focus = MCO_declare_neutrality }
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			31 = {
+				add_building_construction = {
+					type = bunker
+					province = 9853
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 6915
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 6931
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 3915
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 9882
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 9884
+					level = 3
+					instant_build = yes
+				}
+			}
+
+			806 = {
+				add_building_construction = {
+					type = bunker
+					province = 11697
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 743
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MCO_build_coastal_forts
+		icon = GFX_goal_MCO_build_coastal_forts
+		x = 4
+		y = 1
+		relative_position_id = MCO_declare_neutrality
+		prerequisite = { focus = MCO_declare_neutrality }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			14 = {
+				add_building_construction = {
+					type = naval_base
+					province = 3552
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province = 6536
+					level = 3
+					instant_build = yes
+				}
+			}
+
+			15 = {
+				add_building_construction = {
+					type = naval_base
+					province = 6449
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province = 9434
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province = 485
+					level = 3
+					instant_build = yes
+				}
+			}
+
+			29 = {
+				add_building_construction = {
+					type = naval_base
+					province = 11548
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province = 575
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MCO_prepare_for_the_great_war
+		icon = GFX_goal_MCO_prepare_for_the_great_war
+		x = 0
+		y = 1
+		relative_position_id = MCO_fortify_spanish_border
+		prerequisite = { focus = MCO_fortify_spanish_border focus = MCO_build_coastal_forts focus = MCO_fortify_german_border }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_war_support = 0.15
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MCO_build_arms_industry
+		icon = GFX_goal_MCO_build_arms_industry
+		x = -2
+		y = 1
+		relative_position_id = MCO_prepare_for_the_great_war
+		prerequisite = { focus = MCO_prepare_for_the_great_war }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MCO_build_arms_industry2
+		icon = GFX_goal_MCO_build_arms_industry2
+		x = 0
+		y = 1
+		relative_position_id = MCO_build_arms_industry
+		prerequisite = { focus = MCO_build_arms_industry }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MCO_build_arms_industry3
+		icon = GFX_goal_MCO_build_arms_industry3
+		x = 0
+		y = 1
+		relative_position_id = MCO_build_arms_industry2
+		prerequisite = { focus = MCO_build_arms_industry2 }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MCO_build_civilian_industry
+		icon = GFX_goal_MCO_build_civilian_industry
+		x = 0
+		y = 1
+		relative_position_id = MCO_prepare_for_the_great_war
+		prerequisite = { focus = MCO_prepare_for_the_great_war }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MCO_build_civilian_industry2
+		icon = GFX_goal_MCO_build_civilian_industry2
+		x = 0
+		y = 1
+		relative_position_id = MCO_build_civilian_industry
+		prerequisite = { focus = MCO_build_civilian_industry }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MCO_build_civilian_industry3
+		icon = GFX_goal_MCO_build_civilian_industry3
+		x = 0
+		y = 1
+		relative_position_id = MCO_build_civilian_industry2
+		prerequisite = { focus = MCO_build_civilian_industry2}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MCO_nationwide_infrastructure_improvements
+		icon = GFX_goal_MCO_nationwide_infrastructure_improvements
+		x = 2
+		y = 1
+		relative_position_id = MCO_prepare_for_the_great_war
+		prerequisite = { focus = MCO_prepare_for_the_great_war }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MCO_nationwide_infrastructure_improvements2
+		icon = GFX_goal_MCO_nationwide_infrastructure_improvements2
+		x = 0
+		y = 1
+		relative_position_id = MCO_nationwide_infrastructure_improvements
+		prerequisite = { focus = MCO_nationwide_infrastructure_improvements }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MCO_nationwide_infrastructure_improvements3
+		icon = GFX_goal_MCO_nationwide_infrastructure_improvements3
+		x = 0
+		y = 1
+		relative_position_id = MCO_nationwide_infrastructure_improvements2
+		prerequisite = { focus = MCO_nationwide_infrastructure_improvements2 }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MCO_strike_germany_first
+		icon = GFX_goal_MCO_strike_germany_first
+		x = -2
+		y = 1
+		relative_position_id = MCO_nationwide_infrastructure_improvements3
+		prerequisite = { focus = MCO_nationwide_infrastructure_improvements3 focus = MCO_build_civilian_industry3 focus = MCO_build_arms_industry3 }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+    				type = take_state_focus
+    				target = GER
+    				generator = { 123 321 }
+    				expire = 180
+			}
+		}
+	}
+
+	focus = {
+		id = MCO_partition_the_benelux
+		icon = GFX_goal_MCO_partition_the_benelux
+		x = -2
+		y = 1
+		relative_position_id = MCO_rally_the_people
+		prerequisite = { focus = MCO_rally_the_people }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+    				type = take_state_focus
+    				target = HOL
+    				generator = { 123 321 }
+    				expire = 180
+			}
+			create_wargoal = {
+    				type = take_state_focus
+    				target = BEL
+    				generator = { 123 321 }
+    				expire = 180
+			}
+			create_wargoal = {
+    				type = take_state_focus
+    				target = LUX
+    				generator = { 123 321 }
+    				expire = 180
+			}
+			GER = {
+				create_wargoal = {
+    					type = take_state_focus
+    					target = HOL
+    					generator = { 123 321 }
+    					expire = 180
+				}
+				create_wargoal = {
+    					type = take_state_focus
+    					target = BEL
+    					generator = { 123 321 }
+    					expire = 180
+				}
+				create_wargoal = {
+    					type = take_state_focus
+    					target = LUX
+    					generator = { 123 321 }
+    					expire = 180
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MCO_destroy_san_marino
+		icon = GFX_goal_MCO_destroy_san_marino
+		x = 2
+		y = 1
+		relative_position_id = MCO_rally_the_people
+		prerequisite = { focus = MCO_rally_the_people }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+    				type = take_state_focus
+    				target = SAN
+    				generator = { 123 321 }
+    				expire = 180
+			}
+		}
+	}
+}

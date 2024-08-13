@@ -17,12 +17,15 @@ state={
 		victory_points = {
 			947 10 
 		}
+		victory_points = {
+			9799 5 
+		}
 		add_core_of = TUR
 
 	}
 
 	provinces={
-		785 947 3786 3851 6864 6912 9887 11778 11867 11898 
+		785 928 947 3786 3851 6864 6912 9799 9887 9921 11778 11867 11898 
 	}
 	manpower=1077853
 	buildings_max_level_factor=1.000

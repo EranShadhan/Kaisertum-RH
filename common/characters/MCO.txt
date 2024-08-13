@@ -1,0 +1,29 @@
+characters={
+	MCO_Louis_II = {
+		name="Louis II"
+		portraits={
+			civilian={
+				large="Louis_II"
+			}
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	MCO_Raymond_Poincare = {
+		name="Raymond Poincaré"
+		portraits={
+			civilian={
+				large="Raymond_Poincare"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

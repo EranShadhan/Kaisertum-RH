@@ -1,0 +1,15 @@
+characters={
+	SPR_Alfonso_XIII = {
+		name="Alfonso XIII"
+		portraits={
+			civilian={
+				large="Alfonso_XIII"
+			}
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,15 @@
+characters={
+	SWE_Gustav_V = {
+		name="Gustav V"
+		portraits={
+			civilian={
+				large="Gustav_V"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

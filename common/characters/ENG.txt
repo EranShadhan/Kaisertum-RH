@@ -1,0 +1,15 @@
+characters={
+	ENG_George_V = {
+		name="George V"
+		portraits={
+			civilian={
+				large="George_V"
+			}
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

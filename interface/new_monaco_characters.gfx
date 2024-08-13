@@ -1,0 +1,11 @@
+spriteTypes = {
+	spriteType = {
+			name = "Louis_II"
+			texturefile = "gfx/leaders/MCO/Louis_II.dds"
+	}
+	
+	spriteType = {
+			name = "Raymond_Poincare"
+			texturefile = "gfx/leaders/MCO/Raymond_Poincare.dds"
+	}
+}

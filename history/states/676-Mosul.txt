@@ -11,7 +11,7 @@ state={
 
 
 	history={
-		owner = PER
+		owner = KUR
 		buildings = {
 			infrastructure = 2
 		}
@@ -25,7 +25,6 @@ state={
 			6826 1
 		}
 		add_core_of = KUR
-		add_core_of = PER
 	}
 	
 	provinces={

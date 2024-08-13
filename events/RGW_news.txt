@@ -1,0 +1,22 @@
+﻿add_namespace = RGW_news
+
+news_event = {
+	id = RGW_news.1
+	title = "Welcome to Rewriting the Great War"
+	desc = RGW_news.1.d
+	picture = GFX_RGW_news_welcome
+	
+	#major = yes
+	is_triggered_only = yes
+
+	trigger = {
+		date > 1910.1.2
+	}
+	option = {
+		name = "I 100% will read what is written!"
+	}
+}
+
+
+
+

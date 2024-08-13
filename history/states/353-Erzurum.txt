@@ -4,12 +4,15 @@ state={
 	name="STATE_353"
 
 	history={
-		owner = TUR
+		owner = SOV
 		victory_points = {
 			11853 3
 		}
 		victory_points = {
 			9860 1
+		}
+		victory_points = {
+			876 1
 		}
 		victory_points = {
 			9868 1
@@ -19,11 +22,11 @@ state={
 
 		}
 			add_core_of = KUR
-			add_core_of = TUR
+			add_core_of = SOV
 	}
 
 	provinces={
-	 9860 9868 9954 11797  
+		876 9858 9860 9868 9954 10399 11797  
 	}
 	manpower=523537
 	buildings_max_level_factor=1.000

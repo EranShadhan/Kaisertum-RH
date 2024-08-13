@@ -1,0 +1,181 @@
+bookmarks = {
+	bookmark = {
+		name = "Rewriting the Great War!"
+		desc = RGW_desc
+		date = 1910.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "MCO"
+		default = yes
+		
+		"MCO"={
+			history = MCO_RGW_desc
+
+			ideology = neutrality
+			ideas = {
+				casino_profits
+				unpopular_monarchy
+				foreign_spies
+			}
+			focuses = {
+				MCO_become_the_bank_of_the_world
+				MCO_request_alliance_germany
+				MCO_ultimatum_to_germany
+			}
+		}
+
+		"SAN"={
+			history = SAN_RGW_desc
+			ideology = democratic
+			ideas = {
+
+			}	
+			focuses = {
+
+			}		
+		}
+
+		"USA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+
+		"GER"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+
+		"JAP"={
+			history = "JAP_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}	
+			focuses = {
+
+			}			
+		}
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}
+			focuses = {
+
+			}	
+		}
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+
+		# minors from DLC ####
+		
+		"YUG"={
+			minor = yes
+			history = "YUG_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"CHI"={
+			minor = yes
+			history = "CHI_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		
+		"MEX"={
+			minor = yes
+			history = "MEXICO_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+
+		"SPR"={
+			minor = yes
+			history = "SPAIN_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+
+		"TUR"={
+			minor = yes
+			history = "TUR_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+
+		"SWE"={
+			minor = yes
+			history = "SWE_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+
+		"LIE"={
+			minor = yes
+			history = "SWE_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+	}
+}

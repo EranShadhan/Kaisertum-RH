@@ -1,10 +1,10 @@
 NDefines = {
 
 NGame = {
-	START_DATE = "1930.1.1.12",
+	START_DATE = "1910.1.1.12",
 	END_DATE = "1949.1.1.1",
 	MAP_SCALE_PIXEL_TO_KM = 7.114,					-- Yes, we did the math
-	SAVE_VERSION = 22,								-- 1.14.0 (ToA)
+	SAVE_VERSION = 20,								-- 1.13.0 (TAAT)
 	CHECKSUM_SALT = "zwOdv5d9wm9uDSOT",				-- Data to modify generated checksum when game binaries have changed but not any content files.
 	LAG_DAYS_FOR_LOWER_SPEED = 10,					-- Days of client lag for decrease of gamespeed
 	LAG_DAYS_FOR_PAUSE = 25,						-- Days of client lag for pause of gamespeed.
@@ -13,7 +13,6 @@ NGame = {
 	TRADE_ROUTE_RECALCULATE_FREQUENCY_DAYS = 30, -- Max recalculation time for all trade routes (0 means we do not recalucate prediodically trade routes)
 	COMBAT_LOG_MAX_MONTHS = 12,
 	MESSAGE_TIMEOUT_DAYS = 60,						-- Useful if running the handsoff game. The popup messages that doesn't require the player respond will automatically hide after some timeout.
-	INFO_MESSAGE_TIMEOUT_DAYS = 3,					-- Same but for unimportant messages.
 	AIR_LOG_TIMEOUT_HOURS = 24,						-- Data storring data
 	EVENT_TIMEOUT_DEFAULT = 13,						-- Default days before an event times out if not scripted
 	MISSION_REMOVE_FROM_INTERFACE_DEFAULT = 13,		-- Default days before a mission is removed from the interface after having failed or completed
@@ -21,7 +20,7 @@ NGame = {
 	FUEL_RESOURCE = "oil",							-- resource that will give country fuel
 	MAX_EFFECT_ITERATION = 1000,					-- maximum allowed iteration for loop effects
 	MAX_SCRIPTED_LOC_RECURSION = 30,				-- max recursion for scripted localizations
-	HANDS_OFF_START_TAG = "HAI",					-- tag for player country for -hands_off runs. use an existing tag that is less likely to affect the game
+	HANDS_OFF_START_TAG = "URG",					-- tag for player country for -hands_off runs. use an existing tag that is less likely to affect the game
 	ALERT_SFX_COOLDOWN_DAYS = 14,					-- After playing an alert sound, don't play the same sound for XXX days, even if it fires again.
 	MUSIC_PLAYER_RECENTLY_PLAYED_SIZE = 10,			-- The music player keeps track of recently played music to try and avoid playing the same songs too often. This determines the max number of songs in the recently played list.
 },
@@ -220,10 +219,10 @@ NDiplomacy = {
 	CAPITAL_CAPITULATE_BONUS_SCORE_MUL = 1.5,		-- extra bonus multiplier when deciding who to capitulate to (applied to capital holder)
 	IDEOLOGY_JOIN_FACTION_MIN_LEVEL = 0.3,			-- ideology limit required to join faction
 	JOIN_FACTION_LIMIT_CHANGE_AT_WAR = 0.5,			-- if in defensive war this or your modifier is counted as limit to join factions (so if you have 80% join limit this now means you can join at 50%)
-	LICENSE_ACCEPTANCE_OPINION_FACTOR = 0.4,		-- Opinion modifier for acceptance of license production requests.
-	LICENSE_ACCEPTANCE_PUPPET_BASE = 15,			-- Acceptance modifier for puppets requesting production licenses.
-	LICENSE_ACCEPTANCE_TECH_DIFFERENCE = 2, 		-- Acceptance modifier for each year of technology difference.
-	LICENSE_ACCEPTANCE_TECH_DIFFERENCE_BASE = 10,    -- Acceptance base for tech difference
+	LICENSE_ACCEPTANCE_OPINION_FACTOR = 0.2,		-- Opinion modifier for acceptance of license production requests.
+	LICENSE_ACCEPTANCE_PUPPET_BASE = 20,			-- Acceptance modifier for puppets requesting production licenses.
+	LICENSE_ACCEPTANCE_TECH_DIFFERENCE = 5, 		-- Acceptance modifier for each year of technology difference.
+	LICENSE_ACCEPTANCE_TECH_DIFFERENCE_BASE = 20,    -- Acceptance base for tech difference
 	LICENSE_ACCEPTANCE_SAME_FACTION = 20,			-- Acceptance modifier for being in the same faction
 
 	WARGOAL_COST_LEND_LEASE = -0.25,                -- cost modifier to wargoaljustification for LL
@@ -636,7 +635,6 @@ NProduction = {
 	SHIP_REFIT_DAMAGE_TO_PROGRESS_FACTOR = 0.5,			-- When a ship is being damaged (for example port strike) while refitting, the damage is transferred to the production line progress instead. This variable is used to balance it.
 	MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_VALUE = 1,		-- The minimum number of factories we have to put on consumer goods, by value.
 	MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0.1,	-- The minimum number of factories we have to put on consumer goods, in percent.
-	INITIAL_ALLOWED_FACTORY_RATIO_FOR_REPAIRS = 1.0,					-- max % of factories allowed on autorepairs
 },
 
 NMarket = {
@@ -1238,8 +1236,7 @@ NAir = {
 
 	ACCIDENT_CHANCE_BASE = 0.1,							-- Base chance % (0 - 100) for accident to happen. Reduced with higher reliability stat.
 	ACCIDENT_CHANCE_CARRIER_MULT = 1.5,					-- The total accident chance is scaled up when it happens on the carrier ship.
-	ACCIDENT_CHANCE_BALANCE_MULT = 0.10,				-- Multiplier for balancing how often the air accident really happens. The higher mult, the more often.
-	ACCIDENT_CHANCE_RELIABILITY_MULT = 2.0,				-- Multiplier to accident chance per point of missing reliability.
+	ACCIDENT_CHANCE_BALANCE_MULT = 1,					-- Multiplier for balancing how often the air accident really happens. The higher mult, the more often.
 	ACCIDENT_EFFECT_MULT = 0.007,						-- Multiplier for balancing the effect of accidents
 	ACE_DEATH_CHANCE_BASE = 0.005,						-- Base chance % for ace pilot die when an airplane is shot down in the Ace wing.
 	ACE_DEATH_BY_OTHER_ACE_CHANCE = 1.0,				-- chance to an ace dying by another ace if it was hit by ace in combat
@@ -1306,7 +1303,7 @@ NAir = {
 	AIR_WING_XP_RECON_MISSION_COMPLETED_GAIN = 0.05, 					--recon mission
 
 	AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.003, 					--Factor on country Air XP gained from wing training
-	AIR_WING_XP_TRAINING_MISSION_ACCIDENT_FACTOR = 0.2, 				--Training exercises cause more accidents
+	AIR_WING_XP_TRAINING_MISSION_ACCIDENT_FACTOR = 1.2, 				--Training exercises cause more accidents
 	AIR_WING_XP_LOSS_REDUCTION_OVER_FRIENDLY_TERRITORY_FACTOR = 0.3, 	--Reduction on XP loss over friendly territory
 
 	DISRUPTION_FACTOR = 4.0,									-- multiplier on disruption damage to scale its effects on planes
@@ -1417,10 +1414,10 @@ NAir = {
 
 NNavy = {
 	-- Peace Conference
-	WAR_SCORE_GAIN_FOR_SUNK_SHIP_MANPOWER_FACTOR = 0.004,			-- war score gained for every manpower killed when sinking a ship
-	WAR_SCORE_GAIN_FOR_SUNK_SHIP_PRODUCTION_COST_FACTOR = 0.020,		-- war score gained for every IC of the sunk ship
-	WAR_SCORE_GAIN_FOR_SUNK_CONVOY = 0.08,							-- war score gained for every sunk convoy
-	WAR_SCORE_DECAY_FOR_BUILT_CONVOY = 0.01,  						-- war score deducted when convoy-raided enemy produces one new convoy
+	WAR_SCORE_GAIN_FOR_SUNK_SHIP_MANPOWER_FACTOR = 0.001,			-- war score gained for every manpower killed when sinking a ship
+	WAR_SCORE_GAIN_FOR_SUNK_SHIP_PRODUCTION_COST_FACTOR = 0.004,		-- war score gained for every IC of the sunk ship
+	WAR_SCORE_GAIN_FOR_SUNK_CONVOY = 0.05,							-- war score gained for every sunk convoy
+	WAR_SCORE_DECAY_FOR_BUILT_CONVOY = 0.03,  						-- war score deducted when convoy-raided enemy produces one new convoy
 	PEACE_ACTION_TRANSFER_NAVY_EXPERIENCE_RETAINED = 0.25,			-- % of experience to retain after being transferred in a peace conference
 	
 	-- Convoy Priorities START
@@ -2092,17 +2089,14 @@ NAI = {
 	DIPLO_MAX_CONTAINMENT_ACCEPTANCE = 100,		-- Max value for 'wants to contain' diplo acceptance
 
 	RESEARCH_DAYS_BETWEEN_WEIGHT_UPDATE = 7, 	-- Refreshes need scores based on country situation.
-	RESEARCH_WEIGHT_TRUNCATION_THRESHOLD = 0.75,    -- When choosing a tech to research, use this truncation selection threshold. (for example, if the top score is 10, a threshold of 0.75 will pick randomly from anything above 7.5 score)
 	RESEARCH_LAND_DOCTRINE_NEED_GAIN_FACTOR = 0.15, -- Multiplies value based on relative military industry size / country size.
 	RESEARCH_NAVAL_DOCTRINE_NEED_GAIN_FACTOR = 0.05, -- Multiplies value based on relative naval industry size / country size.
 	RESEARCH_AIR_DOCTRINE_NEED_GAIN_FACTOR = 0.07, -- Multiplies value based on relative number of air base / country size.
+	RESEARCH_NEW_WEIGHT_FACTOR = 0.3, 			-- Impact of previously unexplored tech weights. Higher means more random exploration.
 	RESEARCH_NEW_DOCTRINE_RANDOM_FACTOR = 0.05,	-- How much randomness is allowed to contribute to do new research expressed as a factor of total tech weights. Higher means more random exploration.
-	RESEARCH_AHEAD_BONUS_FACTOR = 4.0,          -- To which extent AI should care about ahead of time bonuses to research
-	RESEARCH_BONUS_FACTOR = 5.0,                -- To which extent AI should care about research speed bonuses
-	RESEARCH_YEARS_BEHIND_FACTOR = 0.2,         -- To which extent AI should care about not falling behind (i.e. increase weight for old tech)
-	RESEARCH_NEEDS_FACTOR = 0.01,               -- To which extent AI should care about its research needs (research needs are matched against the tech category)
-	RESEARCH_LENGTH_FACTOR = 3,                 -- To which extent AI should care about how long it takes to research something (it prefers short research times)
-	MAX_AHEAD_RESEARCH_PENALTY = 3,             -- Max ahead of time penalty AI will ever consider (this also includes BASE_YEAR_AHEAD_PENALTY_FACTOR, so not the raw time)
+	RESEARCH_AHEAD_BONUS_FACTOR = 2.0,          -- To which extent AI should care about ahead of time bonuses to research
+	RESEARCH_BONUS_FACTOR = 0.9, 				-- To which extent AI should care about bonuses to research
+	MAX_AHEAD_RESEARCH_PENALTY = 2,             -- max ahead of tiem penalty ai will pick ever
 	RESEARCH_AHEAD_OF_TIME_FACTOR = 4.0, 		-- To which extent AI should care about ahead of time penalties to research
 	RESEARCH_BASE_DAYS = 60,					-- AI adds a base number of days when weighting completion time for techs to ensure it doesn't only research quick techs
 	DECLARE_WAR_RELATIVE_FORCE_FACTOR = 0.5,	-- Weight of relative force between nations that consider going to war
@@ -2215,9 +2209,9 @@ NAI = {
 	DESIRE_USE_XP_TO_UPGRADE_LAND_EQUIPMENT = 1.0,  -- How quickly is desire to update/create land equipment variants accumulated?
 	DESIRE_USE_XP_TO_UPGRADE_NAVAL_EQUIPMENT = 1.0, -- How quickly is desire to update/create naval equipment variants accumulated?
 	DESIRE_USE_XP_TO_UPGRADE_AIR_EQUIPMENT = 1.0,   -- How quickly is desire to update/create air equipment variants accumulated?
-	DESIRE_USE_XP_TO_UNLOCK_ARMY_SPIRIT = 0.20,     -- How quickly is desire to unlock army spirits accumulated?
-	DESIRE_USE_XP_TO_UNLOCK_NAVY_SPIRIT = 0.20,      -- How quickly is desire to unlock naval spirits accumulated?
-	DESIRE_USE_XP_TO_UNLOCK_AIR_SPIRIT = 0.25,      -- How quickly is desire to unlock air spirits accumulated?
+	DESIRE_USE_XP_TO_UNLOCK_ARMY_SPIRIT = 0.3,      -- How quickly is desire to unlock army spirits accumulated?
+	DESIRE_USE_XP_TO_UNLOCK_NAVY_SPIRIT = 0.3,      -- How quickly is desire to unlock naval spirits accumulated?
+	DESIRE_USE_XP_TO_UNLOCK_AIR_SPIRIT = 0.3,       -- How quickly is desire to unlock air spirits accumulated?
 
 	DAYS_BETWEEN_CHECK_BEST_DOCTRINE = 7;       -- Recalculate desired best doctrine to unlock with this many days inbetween.
 	DAYS_BETWEEN_CHECK_BEST_TEMPLATE = 7;       -- Recalculate desired best template to upgrade with this many days inbetween.

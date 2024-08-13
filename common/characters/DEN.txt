@@ -1,0 +1,15 @@
+characters={
+	DEN_Frederick_VIII = {
+		name="Frederick VIII"
+		portraits={
+			civilian={
+				large="Frederick_VIII"
+			}
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

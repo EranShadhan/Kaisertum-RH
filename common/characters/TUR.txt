@@ -1,0 +1,15 @@
+characters={
+	TUR_Mehmed_V = {
+		name="Mehmed V"
+		portraits={
+			civilian={
+				large="Mehmed_V"
+			}
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,15 @@
+characters={
+	CHI_Tsai_Feng = {
+		name="Tsai Feng"
+		portraits={
+			civilian={
+				large="Tsai_Feng"
+			}
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}
