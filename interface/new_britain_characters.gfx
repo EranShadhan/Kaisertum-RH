@@ -1,6 +1,0 @@
-spriteTypes = {
-	spriteType = {
-			name = "George_V"
-			texturefile = "gfx/leaders/ENG/George_V.dds"
-		}
-}

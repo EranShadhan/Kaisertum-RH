@@ -82,8 +82,8 @@ ROM = {
 	color_ui = rgb { 255 255 120 }
 }
 YUG = {
-	color = rgb { 72 73 126 }
-	color_ui = rgb { 94 95 164 }
+	color = rgb { 243 243 238 }
+	color_ui = rgb { 243 243 238 }
 }
 SWI = {
 	color = rgb { 224 5 5 }
@@ -126,8 +126,8 @@ IRE = {
 	color_ui = rgb { 196 103 75 }
 }
 HUN = {
-	color = rgb { 249 126 98 }
-	color_ui = rgb { 255 164 127 }
+	color = rgb { 250 250 241 }
+	color_ui = rgb { 250 250 241 }
 }
 AFG = {
 	color = rgb { 242 239 242 }
@@ -375,8 +375,8 @@ SYR = {
 }
 
 SER = {
-	color = rgb { 160 110 110 }
-	color_ui = rgb { 160 110 110 }
+	color = rgb { 224 224 224 }
+	color_ui = rgb { 224 224 224 }
 }
 
 ICE = {
