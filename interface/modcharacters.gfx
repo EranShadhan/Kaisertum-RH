@@ -18,4 +18,8 @@ spriteTypes = {
 		name = "GFX_portrait_fra_georges_valois"
 		texturefile = "gfx/leaders/FRA/portrait_france_georges_valois.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_ahmad_amir_ahmadi"
+		texturefile = "gfx/leaders/PER/Portrait_PER_Ahmad_Amir_Ahmadi.dds"
+	}
 }
