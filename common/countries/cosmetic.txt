@@ -3,6 +3,11 @@ IRE_UK = {
     color_ui = rgb { 242 71 71 }
 }
 
+SER_MNT = {
+    color = rgb { 121 73 255 }
+    color_ui = rgb { 121 73 255 }
+}
+
 MAL_UK = {
     color = rgb { 201 56 93 }
     color_ui = rgb { 255 73 121 }

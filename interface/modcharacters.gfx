@@ -1,6 +1,9 @@
 spriteTypes = {	
 
-	
+	spriteType = {
+		name = "GFX_portrait_SER_Elisabeth_Marie"
+		texturefile = "gfx/leaders/SER/Portrait_SER_elisabeth_austria.dds"
+	}
 	spriteType = {
 		name = "GFX_portrait_GER_otto_wels"
 		texturefile = "gfx/leaders/GER/portrait_germany_otto_wels.dds"
