@@ -33,8 +33,8 @@ SWE = {
 	color_ui = rgb { 47 172 255 }
 }
 FRA = {
-	color = rgb { 175 16 16 }
-	color_ui = rgb { 175 16 16 }
+	color = rgb { 16 16 175 }
+	color_ui = rgb { 16 16 175 }
 }
 LUX = {
 	color = rgb { 65 175 179 }
@@ -82,8 +82,8 @@ ROM = {
 	color_ui = rgb { 255 255 120 }
 }
 YUG = {
-	color = rgb { 72 73 126 }
-	color_ui = rgb { 94 95 164 }
+	color = rgb { 243 243 238 }
+	color_ui = rgb { 243 243 238 }
 }
 SWI = {
 	color = rgb { 224 5 5 }
@@ -126,8 +126,8 @@ IRE = {
 	color_ui = rgb { 196 103 75 }
 }
 HUN = {
-	color = rgb { 249 126 98 }
-	color_ui = rgb { 255 164 127 }
+	color = rgb { 250 250 241 }
+	color_ui = rgb { 250 250 241 }
 }
 AFG = {
 	color = rgb { 242 239 242 }
@@ -198,8 +198,8 @@ IRQ = {
 	color_ui = rgb { 231 148 129 }
 }
 JAP = {
-	color = hsv { 0.05 0.3 1 }
-	color_ui = hsv { 0.05 0.25 1.2 }
+	color = rgb { 206 110 110 }
+	color_ui = rgb { 206 110 110 }
 }
 LIB = {
 	color = rgb { 152 130 191 }
@@ -226,8 +226,8 @@ PAN = {
 	color_ui = rgb { 198 169 248 }
 }
 PER = {
-	color = rgb { 0 41 18 }
-	color_ui = rgb { 0 41 18 }
+	color = rgb { 0 84 18 }
+	color_ui = rgb { 0 84 18 }
 }
 PHI = {
 	color = rgb { 152 130 191 }
@@ -325,13 +325,13 @@ CRO = {
 }
 
 PRC = {
-	color = rgb { 245 12 55 }
-	color_ui = rgb { 178 34 60 }
+	color = rgb { 162 60 80 }
+	color_ui = rgb { 162 60 80 }
 }
 
 GXC = {
-	color = rgb { 71 113 97 }
-	color_ui = rgb { 71 113 97 }
+	color = rgb { 162 60 80 }
+	color_ui = rgb { 162 60 80 }
 }
 
 SHX = {
@@ -375,8 +375,8 @@ SYR = {
 }
 
 SER = {
-	color = rgb { 160 110 110 }
-	color_ui = rgb { 160 110 110 }
+	color = rgb { 224 224 224 }
+	color_ui = rgb { 224 224 224 }
 }
 
 ICE = {

@@ -1,0 +1,200 @@
+ideas = {
+	country = {
+		casino_profits = {
+			picture = casino_profits
+			
+			allowed = {
+				tag = MCO
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.20
+				monthly_population = 1
+				stability_factor = 0.4
+				war_support_factor = -0.3
+				production_speed_buildings_factor = -0.2
+			}
+		}
+
+		casino_profits2 = {
+			picture = casino_profits
+			
+			allowed = {
+				tag = MCO
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.30
+				monthly_population = 2
+				stability_factor = 0.5
+				war_support_factor = -0.4
+				production_speed_buildings_factor = -0.3
+			}
+		}
+
+		unpopular_monarchy = {
+			picture = unpopular_monarchy 
+			
+			allowed = {
+				tag = MCO
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = -0.1
+				war_support_factor = -0.2
+				production_speed_buildings_factor = -0.1
+			}
+		}
+
+		foreign_spies = {
+			picture = foreign_spies
+			
+			allowed = {
+				tag = MCO
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.1
+				intel_network_gain_factor = -0.5
+				own_operative_forced_into_hiding_time_factor = 0.5
+				own_operative_capture_chance_factor = 0.5
+				operation_cost = 0.5
+			}
+		}
+
+		focus_on_production = {
+			picture = focus_on_production
+			
+			allowed = {
+				tag = MCO
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				industrial_capacity_factory = 0.2
+				line_change_production_efficiency_factor = 0.2
+			}
+		}
+
+		focus_on_production2 = {
+			picture = focus_on_production
+			
+			allowed = {
+				tag = MCO
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				industrial_capacity_factory = 0.3
+				line_change_production_efficiency_factor = 0.3
+				production_speed_industrial_complex_factor = 0.2
+			}
+		}
+
+		supress_revolts = {
+			picture = supress_revolts
+			
+			allowed = {
+				tag = MCO
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		work_with_revolutionaries = {
+			picture = work_with_revolutionaries
+			
+			allowed = {
+				tag = MCO
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.1
+			}
+		}
+
+		improve_worker_conditions = {
+			picture = improve_worker_conditions
+			
+			allowed = {
+				tag = MCO
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				industrial_capacity_factory = 0.2
+			}
+		}
+
+		crackdown_on_corruption = {
+			picture = crackdown_on_corruption
+			
+			allowed = {
+				tag = MCO
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				production_speed_buildings_factor = 0.2
+			}
+		}
+
+		tourism_capital = {
+			picture = tourism_capital
+			
+			allowed = {
+				tag = MCO
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				monthly_population = 5
+				stability_factor = -0.1
+				war_support_factor = -0.1
+			}
+		}
+	}
+}

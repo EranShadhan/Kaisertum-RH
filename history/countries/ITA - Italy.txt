@@ -20,10 +20,12 @@ starting_train_buffer = 1.5
 set_research_slots = 4
 set_stability = 0.6
 set_war_support = 0.7
-
 add_ideas = {
-	german_customs_union_member
 	vittorio_emanuele
+	vittoria_mutilata
+	limited_exports
+	limited_conscription
+	partial_economic_mobilisation
 }
 
 # RESISTANCE / COMPLIANCE
@@ -440,6 +442,13 @@ if = {
 			CAS1 = 1
 		}
 	}
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	add_ideas = MTG_naval_treaty_cheating
 }
 
 give_guarantee = ALB

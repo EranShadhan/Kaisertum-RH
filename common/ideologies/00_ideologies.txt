@@ -12,6 +12,11 @@ ideologies = {
 
 			socialism = {
 			}
+			
+			japsocdem = {
+				color = { 205 20 60 }
+				can_be_randomly_selected = no
+			}
 
 			populism = {
 			}
@@ -78,6 +83,11 @@ ideologies = {
 			}
 
 			stalinism = {
+			}
+			
+			japsoccom = {
+				color = { 205 20 60 }
+				can_be_randomly_selected = no
 			}
 
 			anti_revisionism = {

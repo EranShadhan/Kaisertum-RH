@@ -7087,5 +7087,225 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_SOV_the_berlin_moscow_axis_ccp_2d_sov_compatibility"
 		texturefile = "gfx/interface/goals/goal_generic_dangerous_deal.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_eliminate_communist_opposition"
+		texturefile = "gfx/interface/goals/focus_fra_eliminate_communist_opposition.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_promises_war_victory_greatness"
+		texturefile = "gfx/interface/goals/focus_fra_promises_war_victory_greatness.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_secret_police_increase_stability"
+		texturefile = "gfx/interface/goals/focus_fra_secret_police_increase_stability.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_reduce_unemployment"
+		texturefile = "gfx/interface/goals/focus_fra_reduce_unemployment.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_improve_secret_police"
+		texturefile = "gfx/interface/goals/focus_fra_improve_secret_police.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_fra_discredit_republican_front"
+		texturefile = "gfx/interface/goals/focus_fra_discredit_republican_front.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_choose_wing_to_support"
+		texturefile = "gfx/interface/goals/focus_fra_choose_wing_to_support.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_support_ultra_fascists"
+		texturefile = "gfx/interface/goals/focus_fra_support_ultra_fascists.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_support_moderate_fascists"
+		texturefile = "gfx/interface/goals/focus_fra_support_moderate_fascists.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_claim_french_speaking_lands"
+		texturefile = "gfx/interface/goals/focus_fra_claim_french_speaking_lands.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_retake_morocco"
+		texturefile = "gfx/interface/goals/focus_fra_retake_morocco.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_claim_lost_lands"
+		texturefile = "gfx/interface/goals/focus_fra_claim_lost_lands.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_secure_neutral_spain"
+		texturefile = "gfx/interface/goals/focus_fra_secure_neutral_spain.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_strike_germany"
+		texturefile = "gfx/interface/goals/focus_fra_strike_germany.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_trade_with_italian_mafia"
+		texturefile = "gfx/interface/goals/focus_fra_trade_with_italian_mafia.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_improve_our_economy"
+		texturefile = "gfx/interface/goals/focus_fra_improve_our_economy.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_support_textile_industry"
+		texturefile = "gfx/interface/goals/focus_fra_support_textile_industry.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_increase_taxes"
+		texturefile = "gfx/interface/goals/focus_fra_increase_taxes.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_invest_in_research"
+		texturefile = "gfx/interface/goals/focus_fra_invest_in_research.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_consolidate_the_land"
+		texturefile = "gfx/interface/goals/focus_fra_consolidate_the_land.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_prioritize_civilian_industry"
+		texturefile = "gfx/interface/goals/focus_fra_prioritize_civilian_industry.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_prioritize_military_industry"
+		texturefile = "gfx/interface/goals/focus_fra_prioritize_military_industry.dds"
 	}	
+	
+	SpriteType = {
+		name = "GFX_focus_fra_invest_in_colonies"
+		texturefile = "gfx/interface/goals/focus_fra_invest_in_colonies.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_invest_in_mainland"
+		texturefile = "gfx/interface/goals/focus_fra_invest_in_mainland.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_focus_employ_cheap_workers"
+		texturefile = "gfx/interface/goals/focus_fra_focus_employ_cheap_workers.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_improve_infrastructure"
+		texturefile = "gfx/interface/goals/focus_fra_improve_infrastructure.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_mines_in_africa"
+		texturefile = "gfx/interface/goals/focus_fra_mines_in_africa.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_expand_public_services"
+		texturefile = "gfx/interface/goals/focus_fra_expand_public_services.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_peacetime_civilian_factories"
+		texturefile = "gfx/interface/goals/focus_fra_peacetime_civilian_factories.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_peacetime_military_factories"
+		texturefile = "gfx/interface/goals/focus_fra_peacetime_military_factories.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_stability_civilian_factories"
+		texturefile = "gfx/interface/goals/focus_fra_stability_civilian_factories.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_stability_military_factories"
+		texturefile = "gfx/interface/goals/focus_fra_stability_military_factories.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_wartime_civilian_factories"
+		texturefile = "gfx/interface/goals/focus_fra_wartime_civilian_factories.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_wartime_military_factories"
+		texturefile = "gfx/interface/goals/focus_fra_wartime_military_factories.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_double_down_on_tanks"
+		texturefile = "gfx/interface/goals/focus_fra_double_down_on_tanks.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_convensional_tactics"
+		texturefile = "gfx/interface/goals/focus_fra_convensional_tactics.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_increase_armour"
+		texturefile = "gfx/interface/goals/focus_fra_increase_armour.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_tank_doctrine"
+		texturefile = "gfx/interface/goals/focus_fra_tank_doctrine.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_land_fortress"
+		texturefile = "gfx/interface/goals/focus_fra_land_fortress.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_improve_artillery"
+		texturefile = "gfx/interface/goals/focus_fra_improve_artillery.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_use_motorized_equipment"
+		texturefile = "gfx/interface/goals/focus_fra_use_motorized_equipment.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_kickstart_airplane_programme"
+		texturefile = "gfx/interface/goals/focus_fra_kickstart_airplane_programme.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_focus_on_fighters"
+		texturefile = "gfx/interface/goals/focus_fra_focus_on_fighters.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_focus_on_cas"
+		texturefile = "gfx/interface/goals/focus_fra_focus_on_cas.dds"
+	}
 }
