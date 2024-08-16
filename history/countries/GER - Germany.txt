@@ -31,6 +31,8 @@ if = {
 	}
 }
 
+set_oob= "GER_1936_nsb"
+
 set_autonomy = {
         target = GPI
         autonomous_state = autonomy_colony

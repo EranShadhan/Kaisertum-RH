@@ -22,4 +22,8 @@ spriteTypes = {
 		name = "GFX_portrait_ahmad_amir_ahmadi"
 		texturefile = "gfx/leaders/PER/Portrait_PER_Ahmad_Amir_Ahmadi.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_USA_charles_curtis"
+		texturefile = "gfx/leaders/USA/Portrait_USA_Charles_Curtis.dds"
+	}
 }
