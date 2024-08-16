@@ -2026,7 +2026,6 @@
 		icon = GFX_focus_ger_reichskommisariats
 		prerequisite = { focus = GER_german_war_economy focus = GER_integrate_war_economies }
 		available = {
-			has_government = fascism
 		}
 		x = 1
 		y = 1

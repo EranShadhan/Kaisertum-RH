@@ -420,7 +420,7 @@
 
 	focus = {
 		id = FRA_trade_with_italian_mafia
-		icon = GFX_focus_fra_strike_germany
+		icon = GFX_focus_fra_trade_with_italian_mafia
 		x = 7
 		y = 0
 		
@@ -490,7 +490,7 @@
 
 	focus = {
 		id = FRA_support_textile_industry
-		icon = GFX_focus_fra_improve_our_economy
+		icon = GFX_focus_fra_support_textile_industry
 		x = 2
 		y = 1
 		relative_position_id = FRA_trade_with_italian_mafia
@@ -619,7 +619,7 @@
 
 	focus = {
 		id = FRA_prioritize_civilian_industry
-		icon = GFX_focus_fra_consolidate_the_land
+		icon = GFX_focus_fra_prioritize_civilian_industry
 		x = -1
 		y = 1
 		relative_position_id = FRA_increase_taxes
@@ -660,7 +660,7 @@
 
 	focus = {
 		id = FRA_prioritize_military_industry
-		icon = GFX_focus_fra_consolidate_the_land
+		icon = GFX_focus_fra_prioritize_military_industry
 		x = 1
 		y = 1
 		relative_position_id = FRA_increase_taxes
@@ -955,7 +955,7 @@
 
 	focus = {
 		id = FRA_stability_civilian_factories
-		icon = GFX_focus_fra_peacetime_military_factories
+		icon = GFX_focus_fra_stability_civilian_factories
 		x = 0
 		y = 1
 		relative_position_id = FRA_peacetime_civilian_factories
@@ -983,7 +983,7 @@
 
 	focus = {
 		id = FRA_stability_military_factories
-		icon = GFX_focus_fra_peacetime_military_factories
+		icon = GFX_focus_fra_stability_military_factories
 		x = 2
 		y = 1
 		relative_position_id = FRA_peacetime_civilian_factories
@@ -1007,7 +1007,7 @@
 
 	focus = {
 		id = FRA_wartime_civilian_factories
-		icon = GFX_focus_fra_peacetime_military_factories
+		icon = GFX_focus_fra_wartime_civilian_factories
 		x = 0
 		y = 1
 		relative_position_id = FRA_stability_civilian_factories
@@ -1031,7 +1031,7 @@
 
 	focus = {
 		id = FRA_wartime_military_factories
-		icon = GFX_focus_fra_peacetime_military_factories
+		icon = GFX_focus_fra_wartime_military_factories
 		x = 2
 		y = 1
 		relative_position_id = FRA_stability_civilian_factories
@@ -1101,7 +1101,7 @@
 
 	focus = {
 		id = FRA_increase_armour
-		icon = GFX_focus_fra_increase armour
+		icon = GFX_focus_fra_increase_armour
 		x = 0
 		y = 1
 		relative_position_id = FRA_double_down_on_tanks
