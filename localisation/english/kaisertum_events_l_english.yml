@@ -13,3 +13,29 @@
  UBD_events.3.d: "Russia has accepted our proposal"
  UBD_events.3.a: "Yay"
  russian_support_independance_war_tt: "Upon our rebellion, we will get "
+
+ RUS_events.1.t: "As Years Pass By..."
+ RUS_events.1.d: "'Why' is a question some have started to dare ask of Kerensky. 14 years have passed since the Great War and yet his promise of democratization hasn't been fulfilled. The Old Guard of Russia had always been sceptical of Kerensky, but overtime they have grown to enjoy the uncertain times: The limited liberties Kerensky had brought thus far while cementing power in his presidential grasp had given the Aristocrats and Capitalists alike some breathing space. The Army that was once the bulwark of Imperial Russia has grown to become spiritually connected with the Kerensky regime. It would seem that there are political allies that wish to see the Transitional Period become eternal.\n\n And yet the formerly young copatriots of his yearn for a change. Almost a generation ago they rose up alongside Kerensky and hoped for a better future for Russia. Kerensky has not yet fulfilled his promise and as years pass by and last vestiges of youth escape them they are growing disillusioned with Kerensky. \n\n Can he fulfill the promises he had made?"
+ RUS_events.1.a: "We will assure the liberal minded intelligentsia that change is going to come."
+ RUS_events.1.b: "We will assure the conservative old guard that status quo is going to survive."
+ 
+ RUS_events.2.t: "Article 4117"
+ RUS_events.2.d: "The economy of Russia was in desperate need for a new solution. If they are actually going to surpass Germany the systemic corruption needs to be ripped out from its bed. Economy needs massive reforms - ones that are too large to solve in a single lifetime. Currently both civilian and military complex are lagging. Kerensky can sign a decree and try enforce a reform that will only show its results in future."
+ RUS_events.2.a: "We will target the Military Industry."
+ RUS_events.2.b: "Economic might breathes in the Civilian Economy."
+
+ RUS_events.3.t: "Minorities' status"
+ RUS_events.3.d: "As ballots are placed a curious problem emerged: We need to decide who gets to vote in the upcoming elections."
+ RUS_events.3.c: "Every Subject of Russian people gets the privilege of participating."
+ RUS_events.3.e: "If minorities want to vote they need to be Russian."
+
+ RUS_events.4.t: "Russia's place in the globe"
+ RUS_events.4.d: "Russia has one strong ally: France. We ought to provide a diplomatic gesture and remind the world that Entente - though weakened - still lives on within us two."
+ RUS_events.4.a: "Russia and France - Together against the Tyranny of Germans!"
+ RUS_events.4.b: "Russia has moved past the need of France!"
+
+ RUS_events.5.t: "State Council of the President"
+ RUS_events.5.d: "State Council was an advisory - undemocratic even - body that bowed more openly to the whim of the Tsar. \n\n The more conservative bodies in our regime propose full restoration of State Council with little adjustments to it. They argue that the president always needs to have control over the legislation and implementation of laws if he is to ensure the state never strays away from the will of the strong President. \n\n Liberals argue that the reason why Russia was so backwards was because of the top-down bureaucracy. If democracy is going to properly have effect we need to ensure all of Government is democratically electable. \n\n For now the decision is up to Kerensky."
+ RUS_events.5.a: "State Council shall be reformed into a democratically elected Senate."
+ RUS_events.5.b: "State Council shall be restored into a presidential advisorial council."
+
