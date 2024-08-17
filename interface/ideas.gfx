@@ -8956,5 +8956,45 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_FRA_eliminating_communist_opposition"
 		texturefile = "gfx/interface/ideas/idea_FRA_eliminating_communist_opposition.dds"
-	}	 
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_FRA_ultra_fascists"
+		texturefile = "gfx/interface/ideas/FRA_ultra_fascists.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_FRA_moderate_fascists"
+		texturefile = "gfx/interface/ideas/FRA_moderate_fascists.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_FRA_developed_colonial_army"
+		texturefile = "gfx/interface/ideas/FRA_developed_colonial_army.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_increased_taxes_idea"
+		texturefile = "gfx/interface/ideas/increased_taxes_idea.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_employed_public"
+		texturefile = "gfx/interface/ideas/employed_public.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_focused_civilian_factories"
+		texturefile = "gfx/interface/ideas/focused_civilian_factories.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_focused_military_factories"
+		texturefile = "gfx/interface/ideas/focused_military_factories.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_cheap_workforce"
+		texturefile = "gfx/interface/ideas/cheap_workforce.dds"
+	}
 }

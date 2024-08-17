@@ -18,6 +18,12 @@ if = {
 		}
 	}
 }
+
+add_ideas = {
+	AUS_country_lore
+	german_customs_union_member
+}
+
 set_research_slots = 3
 
 set_technology = {

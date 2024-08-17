@@ -11,6 +11,11 @@ spriteTypes = {
 	### new tfv nat spirit icons
 
 	spriteType = {
+		name = "GFX_idea_ger_wilhelm_ii"
+		texturefile = "gfx/interface/ideas/idea_GER_wilhelm_ii.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_idea_generic_degauss_ship_hulls"
 		texturefile = "gfx/interface/ideas/idea_generic_degauss_ship_hulls.dds"
 	}		
@@ -8908,7 +8913,6 @@ spriteTypes = {
 		name = "GFX_idea_SOV_an_empire_in_the_pacific_idea_ccp_sov_compatibility"
 		texturefile = "gfx/interface/ideas/idea_generic_sea_focused_navy.dds"
 	}
-	
 	spriteType = {
 		name = "GFX_idea_FRA_secret_rearmament"
 		texturefile = "gfx/interface/ideas/idea_FRA_secret_rearmament.dds"
@@ -8942,5 +8946,45 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_german_customs_union_member"
 		texturefile = "gfx/interface/ideas/idea_german_customs_union_member.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_FRA_super_heavy_tank_programme"
+		texturefile = "gfx/interface/ideas/idea_FRA_super_heavy_tank_programme.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_FRA_eliminating_communist_opposition"
+		texturefile = "gfx/interface/ideas/idea_FRA_eliminating_communist_opposition.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_FRA_ultra_fascists"
+		texturefile = "gfx/interface/ideas/FRA_ultra_fascists.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_FRA_moderate_fascists"
+		texturefile = "gfx/interface/ideas/FRA_moderate_fascists.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_FRA_developed_colonial_army"
+		texturefile = "gfx/interface/ideas/FRA_developed_colonial_army.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_increased_taxes_idea"
+		texturefile = "gfx/interface/ideas/increased_taxes_idea.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_employed_public"
+		texturefile = "gfx/interface/ideas/employed_public.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_focused_civilian_factories"
+		texturefile = "gfx/interface/ideas/focused_civilian_factories.dds"
 	}
 }

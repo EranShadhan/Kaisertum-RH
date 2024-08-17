@@ -19,6 +19,13 @@ if = {
 		}
 	}
 }
+
+add_ideas = {
+	GRE_country_lore
+	german_customs_union_member
+	GRE_george_ii
+}
+
 create_faction = GRE_salonica_pact
 add_to_faction = BUL
 add_to_faction = ALB
@@ -101,17 +108,6 @@ if = {
 			modifier = BFTB_balkan_pact_enemy
 		}
 		set_country_flag = GRE_factions_unlocked
-		add_ideas = {
-			export_focus
-			limited_conscription
-			civilian_economy
-			GRE_george_ii
-			GRE_debt_to_the_ifc
-			GRE_foreign_monopolies
-			GRE_schachtplan
-			GRE_political_instability
-			GRE_agrarian_society
-		}
 
 		set_variable = { var = GRE_debt_to_the_ifc_britain_var value = 10 }
 		set_variable = { var = GRE_debt_to_the_ifc_france_var value = 10 }
@@ -132,11 +128,6 @@ if = {
 
 	if = {
 		limit = { NOT = { has_dlc = "Battle for the Bosporus" } }
-		add_ideas = {
-			export_focus
-			limited_conscription
-			civilian_economy
-		}
 	}
 }
 
@@ -160,31 +151,7 @@ set_convoys = 10
 		complete_national_focus = GRE_reevaluating_the_drachma
 		complete_national_focus = GRE_utilize_our_strengths
 		complete_national_focus = GRE_hellenic_armed_forces
-		remove_ideas = {
-			civilian_economy
-			GRE_political_instability
-			GRE_political_instability_metaxas
-			GRE_debt_to_the_ifc
-			GRE_agrarian_society
-			GRE_state_of_the_nation_monarchism
-		}
-		add_ideas = {
-			partial_economic_mobilisation
-			limited_conscription
-			export_focus
-			GRE_george_ii
-			GRE_farmer_culture
-			GRE_state_of_the_nation_metaxism
-			GRE_foreign_monopolies
-			GRE_debt_to_the_ifc_2
-			GRE_schachtplan
-			GRE_eon
-			GRE_metaxism_2
-		}
-		add_timed_idea = {
-			idea = GRE_four_year_plan_spirit
-			days = 730
-		}
+
 		set_popularities = {
 			democratic = 10
 			fascism = 22
@@ -230,12 +197,6 @@ set_convoys = 10
 		complete_national_focus = industrial_effort
 		complete_national_focus = construction_effort
 		complete_national_focus = production_effort
-
-		add_ideas = {
-			partial_economic_mobilisation
-			export_focus
-			limited_conscription
-		}
 	}
 	
 	oob = "GRE_1939"

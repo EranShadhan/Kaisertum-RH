@@ -412,7 +412,7 @@
 
 		completion_reward = {
 			declare_war_on = {
-    				target = MOR
+    				target = GER
     				type = annex_everything
 			}
 		}

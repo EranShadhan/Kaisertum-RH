@@ -156,7 +156,6 @@ if = {
 		basic_fire_control_system = 1
 		basic_dp_light_battery = 1
 	}
-	add_ideas = MTG_naval_treaty_adherent
 	set_global_flag = MTG_second_london_conference
 	set_global_flag = { flag = MTG_naval_treaty_signatories value = 5 }
 }
@@ -173,8 +172,7 @@ if = {
 set_variable = { var = eng_gateway_to_europe_influence value = 0 }
 
 add_ideas = {
-	stiff_upper_lip
-	ENG_the_war_to_end_all_wars
+	ENG_country_lore
 	george_v
 }
 	
@@ -242,25 +240,10 @@ if = {
 	add_command_power = 100
 	
 	#adding ministers
-	add_ideas = {
-		ENG_ernest_bevin
-		bernard_montgomery
-		rsaf_enfield
-		archibald_wavell
-		charles_portal
-		english_electric		
-
-		#laws
-		partial_economic_mobilisation
-		limited_conscription
-
-		ENG_george_vi
-	}
 
 	recruit_character = ENG_neville_chamberlain
 	promote_character = ENG_neville_chamberlain
 	retire_character = ENG_stanley_baldwin
-	remove_ideas = george_v #Dead
 
 	complete_national_focus = limited_rearmament_focus
 	complete_national_focus = air_defense_focus
@@ -434,8 +417,7 @@ if = {
 			advanced_dp_light_battery = 1
 			improved_sonar = 1
 		}
-		remove_ideas = MTG_naval_treaty_adherent
-		add_ideas = MTG_naval_treaty_adherent_reduced
+
 		clr_global_flag = MTG_second_london_conference
 		modify_global_flag = { flag = MTG_naval_treaty_signatories value = -2 }
 	}

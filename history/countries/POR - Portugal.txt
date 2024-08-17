@@ -1,6 +1,12 @@
 ﻿capital = 112
 
 oob = "POR_1936"
+
+add_ideas = {
+	POR_country_lore
+	german_customs_union_member
+}
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "POR_1936_naval_mtg"
@@ -60,8 +66,6 @@ if = {
 
 if = {
 	limit = { has_dlc = "La Resistance" }	
-	add_ideas = POR_unreliable_army
-	add_ideas = POR_unstable_republic
 	set_stability = 0.60
 	set_war_support = 0.15	
 	set_research_slots = 2

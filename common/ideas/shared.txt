@@ -65,7 +65,7 @@ ideas = {
 
 		focused_civilian_factories = {
 
-			picture = increased_taxes_idea
+			picture = focused_civilian_factories
 			
 			allowed = {
 				always = no
@@ -84,7 +84,7 @@ ideas = {
 
 		focused_military_factories = {
 
-			picture = increased_taxes_idea
+			picture = focused_military_factories
 			
 			allowed = {
 				always = no

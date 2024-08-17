@@ -21,11 +21,9 @@ set_research_slots = 4
 set_stability = 0.6
 set_war_support = 0.7
 add_ideas = {
+	ITA_country_lore
+	german_customs_union_member
 	vittorio_emanuele
-	vittoria_mutilata
-	limited_exports
-	limited_conscription
-	partial_economic_mobilisation
 }
 
 # RESISTANCE / COMPLIANCE
@@ -210,7 +208,6 @@ set_variable = { ITA_military_industry_dm_industrial_capacity_dockyard = 0 }
 set_variable = { ITA_military_industry_air_equipment_upgrade_xp_cost = 0 }
 
 add_dynamic_modifier = { modifier = ITA_military_industry_dynamic_modifier }
-add_ideas = ITA_hidden_research_penalties_ns #TODO_Manu: Hidden NS to apply research penalties as part of the Military Industry Dynamic Modifier. Delete when code support is in
 
 
 #REGIO ESERCITO
@@ -442,13 +439,6 @@ if = {
 			CAS1 = 1
 		}
 	}
-}
-
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	add_ideas = MTG_naval_treaty_cheating
 }
 
 give_guarantee = ALB
