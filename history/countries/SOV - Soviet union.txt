@@ -711,12 +711,13 @@ if = {
 
 set_country_flag = SOV_TEST_REMOVE_VANILLA_ADVISORS_flag
 
-add_ideas = {	
-	home_of_revolution
-	trotskyite_plot_nsb
-	SOV_politicized_military
 
-	SOV_genrikh_yagoda #NKVD Chief (political advisor)
+add_ideas = {	
+	Transitional_Period
+	Stagnated_Russification
+	Systemic_Corruption
+	Revanchism_For_WW1
+	SOV_country_lore
 }
 
 

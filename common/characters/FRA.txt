@@ -14,7 +14,21 @@ characters={
 		}
 	}
 	
-	FRA_georges_valois={ #Starting leader
+	FRA_joseph_darnaud={ #Starting leader
+		name=FRA_joseph_darnaud
+		portraits={
+			civilian={
+				large="GFX_portrait_FRA_joseph_darnaud"
+			}
+		}
+		country_leader={
+			ideology=rexism
+			traits={ dictator warmonger }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	FRA_georges_valois={ #Can seize power
 		name=FRA_georges_valois
 		portraits={
 			civilian={

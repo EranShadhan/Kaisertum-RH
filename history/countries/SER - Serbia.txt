@@ -6,6 +6,7 @@ set_research_slots = 3
 
 add_ideas = {
 	anti_german_military
+	SER_country_lore
 }
 
 set_technology = {

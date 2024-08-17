@@ -30,7 +30,9 @@ set_technology = {
 	tech_trucks = 1
 	basic_train = 1
 }
-
+add_ideas = {
+	AUS_country_lore
+}
 recruit_character = AUS_otto_von_habsburg
 recruit_character = AUS_kurt_schuschnigg
 recruit_character = AUS_karl_renner

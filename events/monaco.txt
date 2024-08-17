@@ -1,0 +1,1030 @@
+﻿add_namespace = monaco
+
+country_event = {
+	id = monaco.1
+	title = "French Ideals are not so popular!"
+	desc = "The French Monarchy last ruled 39 years ago. Most people in Monaco don't even remember it. French Nationalism is at an all time low. As a result of that, the people are not so motivated to restore France."
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Double down on the idea!"
+		ai_chance = { factor = 60 }
+		add_popularity = {
+    			ideology = democratic
+    			popularity = 0.1
+		}
+    		add_stability = -0.1
+	}
+
+	option = {
+		name = "A change needs to happen slowly!"
+		ai_chance = { factor = 40 }
+		add_popularity = {
+    			ideology = democratic
+    			popularity = -0.1
+		}
+    		add_stability = 0.1
+	}
+}
+
+##################################
+### San Marino Border War START
+##################################
+
+country_event = {
+	id = monaco.2
+	title = "France demands Savoy!"
+	desc = ""
+	picture = GFX_MCO_request_Savoy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Let them have it..."
+		ai_chance = { factor = 60 }
+    		add_stability = 0.1
+		MCO = { transfer_state = 735 }
+		MCO = { country_event = { id = monaco.38 } }
+	}
+
+	option = {
+		name = "We will start a border war over it!"
+		ai_chance = { factor = 40 }
+    		add_stability = -0.1
+		MCO = { country_event = { id = monaco.39 } }
+	}
+}
+
+country_event = {
+	id = monaco.3
+	title = "France wins the Battle for Savoy!"
+	desc = "France has defeated San Marino in the Battle for Savoy! The disputed territory is now in the hands of the French Republic!"
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Savoy is part of France now!"
+		ai_chance = { factor = 100 }
+		MCO = { transfer_state = 735 }
+	}
+}
+
+country_event = {
+	id = monaco.4
+	title = "San Marino wins the battle for Savoy!"
+	desc = "The French Republic put up a good fight against San Marino, but their efforts were not enough to overpower the Appenine Republic. The disputed territory remains in control of San Marino!"
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Savoy remains part of San Marino!"
+		ai_chance = { factor = 100 }
+		army_experience = 10
+	}
+}
+
+country_event = {
+	id = monaco.5
+	title = "The border war is canceled?"
+	desc = china.1.d
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "WHAT? WHY?"
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = monaco.38
+	title = "San Marino gives up Savoy!"
+	desc = ""
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent!"
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = monaco.39
+	title = "San Marino starts a border war!"
+	desc = ""
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Must win the battle!"
+		ai_chance = { factor = 100 }
+		start_border_war = {
+    		change_state_after_war = no
+   		attacker = {
+        		state = 851
+        		num_provinces = 4
+        		on_win = monaco.3
+        		on_lose = monaco.4
+			on_cancel = monaco.5
+        		modifier = 0.1
+        		dig_in_factor = 0
+        		terrain_factor = 0
+    		}	
+    		defender = {
+        		state = 735
+        		num_provinces = 4
+        		on_win = monaco.4
+        		on_lose = monaco.3
+			on_cancel = monaco.5
+    			}
+		}
+	}
+}
+
+##################################
+### San Marino Border War END
+##################################
+
+##################################
+### Country Investing START
+##################################
+
+country_event = {
+	id = monaco.6
+	title = "Invest in San Marino"
+	desc = "The Republic of San Marino is lacking financial industry. Luckily for them, we can provide these services. This would ensure that we have economic dominance over the country, owning some of their industry! The question remains - how much do we invest in San Marino?"
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Light Investment"
+		ai_chance = { factor = 50 }
+		add_political_power = -50
+		SAN = { add_offsite_building = { type = industrial_complex level = 1 }}
+		add_opinion_modifier = { target = SAN modifier = medium_increase }
+	}
+
+	option = {
+		name = "Medium Investment"
+		ai_chance = { factor = 30 }
+		add_political_power = -100
+		SAN = { add_offsite_building = { type = industrial_complex level = 2 }}
+		add_opinion_modifier = { target = SAN modifier = large_increase }
+	}
+
+	option = {
+		name = "Large Investment"
+		ai_chance = { factor = 20 }
+		add_political_power = -150
+		SAN = { add_offsite_building = { type = industrial_complex level = 3 }}
+		add_opinion_modifier = { target = SAN modifier = huge_increase }
+	}
+}
+
+country_event = {
+	id = monaco.7
+	title = "Invest in the Benelux"
+	desc = "The Benelux is lacking financial industry. Luckily for them, we can provide these services. This would ensure that we have economic dominance over the region, owning some of their industry! The question remains - how much do we invest in the Benelux?"
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Light Investment"
+		ai_chance = { factor = 50 }
+		add_political_power = -50
+		HOL = { add_offsite_building = { type = industrial_complex level = 1 }}
+		add_opinion_modifier = { target = HOL modifier = medium_increase }
+	}
+
+	option = {
+		name = "Medium Investment"
+		ai_chance = { factor = 30 }
+		add_political_power = -100
+		HOL = { add_offsite_building = { type = industrial_complex level = 1 }}
+		add_opinion_modifier = { target = HOL modifier = medium_increase }
+		BEL = { add_offsite_building = { type = industrial_complex level = 1 }}
+		add_opinion_modifier = { target = BEL modifier = medium_increase }
+	}
+
+	option = {
+		name = "Large Investment"
+		ai_chance = { factor = 20 }
+		add_political_power = -150
+		HOL = { add_offsite_building = { type = industrial_complex level = 1 }}
+		add_opinion_modifier = { target = HOL modifier = medium_increase }
+		BEL = { add_offsite_building = { type = industrial_complex level = 1 }}
+		add_opinion_modifier = { target = BEL modifier = medium_increase }
+		LUX = { add_offsite_building = { type = industrial_complex level = 1 }}
+		add_opinion_modifier = { target = LUX modifier = medium_increase }
+	}
+}
+
+country_event = {
+	id = monaco.8
+	title = "Invest in Switzerland"
+	desc = "Switzerland is lacking arms industry. Luckily for them, we can build these factories on their behalf. This would ensure that we have economic dominance over the country, owning some of their industry! The question remains - how much do we invest in Switzerland?"
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Light Investment"
+		ai_chance = { factor = 50 }
+		add_political_power = -50
+		SWI = { add_offsite_building = { type = arms_factory level = 1 }}
+		add_opinion_modifier = { target = SWI modifier = medium_increase }
+	}
+
+	option = {
+		name = "Medium Investment"
+		ai_chance = { factor = 30 }
+		add_political_power = -100
+		SWI = { add_offsite_building = { type = arms_factory level = 2 }}
+		add_opinion_modifier = { target = SWI modifier = large_increase }
+	}
+
+	option = {
+		name = "Large Investment"
+		ai_chance = { factor = 20 }
+		add_political_power = -150
+		SWI = { add_offsite_building = { type = arms_factory level = 3 }}
+		add_opinion_modifier = { target = SWI modifier = huge_increase }
+	}
+}
+
+country_event = {
+	id = monaco.9
+	title = "Invest in Germany"
+	desc = "Germany is currently isolated. A small investment can help us secure an alliance! There is also no doubt that the Germans are the masters of war, so we can invest in their arms industry."
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Light Investment"
+		ai_chance = { factor = 50 }
+		add_political_power = -50
+		GER = { add_offsite_building = { type = arms_factory level = 1 }}
+	}
+
+	option = {
+		name = "Medium Investment"
+		ai_chance = { factor = 30 }
+		add_political_power = -100
+		GER = { add_offsite_building = { type = arms_factory level = 2 }}
+		diplomatic_relation = {
+    			country = FRA
+    			relation = non_aggression_pact
+    			active = yes
+		}
+	}
+
+	option = {
+		name = "Large Investment"
+		ai_chance = { factor = 20 }
+		add_political_power = -150
+		GER = { add_offsite_building = { type = arms_factory level = 3 }}
+		diplomatic_relation = {
+    			country = FRA
+    			relation = guarantee
+    			active = yes
+		}
+	}
+}
+
+country_event = {
+	id = monaco.10
+	title = "Invest in Spain"
+	desc = "The Spanish Monarchy is in a very poor state right now. We can send advisors there to help cool the situation. This would improve relations with the Spanish Monarch."
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Light Investment"
+		ai_chance = { factor = 50 }
+		add_political_power = -50
+		SPR = { add_stability = 0.1 }
+	}
+
+	option = {
+		name = "Medium Investment"
+		ai_chance = { factor = 30 }
+		add_political_power = -100
+		SPR = { add_stability = 0.2 }
+	}
+
+	option = {
+		name = "Large Investment"
+		ai_chance = { factor = 20 }
+		add_political_power = -150
+		SPR = { add_stability = 0.3 }
+		#SPR = { remove_idea = }
+	}
+}
+
+##################################
+### Country Investing END
+##################################
+
+##################################
+### Spain Border War START
+##################################
+
+country_event = {
+	id = monaco.11
+	title = "Monaco demands Catalunya!"
+	desc = "Monaco saw our weakness and now is demanding territory! We must consider their ultimatum, as a possible war is maybe more costly than Catalunya itself. What should we do?"
+	picture = GFX_MCO_request_Savoy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Let them have it..."
+		ai_chance = { factor = 20 }
+    		add_stability = 0.1
+		MCO = { transfer_state = 165 }
+		MCO = { country_event = { id = monaco.40 } }
+	}
+
+	option = {
+		name = "We will start a border war over it!"
+		ai_chance = { factor = 80 }
+    		add_stability = -0.1
+		MCO = { country_event = { id = monaco.41 } }
+	}
+}
+
+country_event = {
+	id = monaco.12
+	title = "Monaco wins the Battle for Catalunya!"
+	desc = "Monaco has defeated Spain in the Battle for Catalunya! The disputed territory is now in the hands of the Principality of Monaco!"
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Catalunya is part of Monaco now"
+		ai_chance = { factor = 100 }
+		MCO = { transfer_state = 165 }
+	}
+}
+
+country_event = {
+	id = monaco.13
+	title = "Spain wins the battle for Catalunya!"
+	desc = "The Principality of Monaco put up a good fight against the Spanish Monarchy, but their efforts were not enough to overpower the Iberian Monarchy. The disputed territory remains in control of Spain!"
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Catalunya remains part of Spain!"
+		ai_chance = { factor = 100 }
+		army_experience = 10
+	}
+}
+
+country_event = {
+	id = monaco.40
+	title = "Spain gives up Savoy!"
+	desc = ""
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent!"
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = monaco.41
+	title = "Spain starts a border war!"
+	desc = ""
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Must win the battle!"
+		ai_chance = { factor = 100 }
+		start_border_war = {
+    		change_state_after_war = no
+   		attacker = {
+        		state = 31
+        		num_provinces = 4
+        		on_win = monaco.12
+        		on_lose = monaco.13
+			on_cancel = monaco.5
+        		modifier = 0.1
+        		dig_in_factor = 0
+        		terrain_factor = 0
+    		}
+    		defender = {
+        		state = 165
+        		num_provinces = 4
+        		on_win = monaco.13
+        		on_lose = monaco.12
+			on_cancel = monaco.5
+    			}
+		}
+	}
+}
+
+##################################
+### Spain Border War END
+##################################
+
+##################################
+### Switzerland Border War START
+##################################
+
+country_event = {
+	id = monaco.14
+	title = "Monaco demands Annecy!"
+	desc = "Switzerland bought Annecy from Sardinia-Piedmont in 1863 during the war between Sardinia-Piedmont and San Marino. In the territory, there are a lot of French Speakers, which our western neighbor would like to control. What should we do?"
+	picture = GFX_MCO_request_Savoy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Let them have it..."
+		ai_chance = { factor = 40 }
+    		add_stability = 0.1
+		MCO = { transfer_state = 935 }
+		MCO = { country_event = { id = monaco.42 } }
+	}
+
+	option = {
+		name = "We will start a border war over it!"
+		ai_chance = { factor = 60 }
+    		add_stability = -0.1
+		MCO = { country_event = { id = monaco.43 } }
+	}
+}
+
+country_event = {
+	id = monaco.15
+	title = "Monaco wins the Battle for Annecy!"
+	desc = "Monaco has defeated Switzerland in the Battle for Annecy! The disputed territory is now in the hands of the Principality of Monaco!"
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Annecy is part of Monaco now"
+		ai_chance = { factor = 100 }
+		MCO = { transfer_state = 935 }
+	}
+}
+
+country_event = {
+	id = monaco.16
+	title = "Switzerland wins the battle for Annecy!"
+	desc = "The Principality of Monaco put up a good fight against Switzerland, but their efforts were not enough to overpower the Swiss. The disputed territory remains in control of Switzerland!"
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Annecy remains part of Switzerland!"
+		ai_chance = { factor = 100 }
+		army_experience = 10
+	}
+}
+
+country_event = {
+	id = monaco.42
+	title = "Switzerland gives up Annecy!"
+	desc = ""
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent!"
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = monaco.43
+	title = "Switzerland starts a border war!"
+	desc = ""
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Must win the battle!"
+		ai_chance = { factor = 100 }
+		start_border_war = {
+    		change_state_after_war = no
+   		attacker = {
+        		state = 32
+        		num_provinces = 4
+        		on_win = monaco.15
+        		on_lose = monaco.16
+			on_cancel = monaco.5
+        		modifier = 0.1
+        		dig_in_factor = 0
+        		terrain_factor = 0
+    		}	
+    		defender = {
+        		state = 935
+        		num_provinces = 4
+        		on_win = monaco.16
+        		on_lose = monaco.15
+			on_cancel = monaco.5
+    			}
+		}
+	}
+}
+
+##################################
+### Switzerland Border War END
+##################################
+
+##################################
+### Germany Border War START
+##################################
+
+country_event = {
+	id = monaco.17
+	title = "Monaco demands Alsace-Lorraine!"
+	desc = "Germany took away Alsace-Lorraine from us in 1871 during the Franco-Prussian war! We are in a position to fight and most likely win in a conflict, but should we start one? Monaco can become a welcome ally to us, since we are very isolated from other Major Powers. What should we do?"
+	picture = GFX_MCO_request_Savoy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Let them have it..."
+		ai_chance = { factor = 70 }
+    		add_stability = 0.1
+		MCO = { transfer_state = 28 }
+		MCO = { country_event = { id = monaco.44 } }
+	}
+
+	option = {
+		name = "We will start a border war over it!"
+		ai_chance = { factor = 30 }
+    		add_stability = -0.1
+		MCO = { country_event = { id = monaco.45 } }
+	}
+}
+
+country_event = {
+	id = monaco.18
+	title = "Monaco wins the Battle for Alsace-Lorraine!"
+	desc = "Monaco has defeated Imperial Germany in the Battle for Alsace-Lorraine! The disputed territory is now in the hands of the Principality of Monaco!"
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Alsace-Lorraine is part of Monaco now!"
+		ai_chance = { factor = 100 }
+		MCO = { transfer_state = 28 }
+	}
+}
+
+country_event = {
+	id = monaco.19
+	title = "Germany wins the battle for Alsace-Lorraine!"
+	desc = "The Principality of Monaco put up a good fight against Germany, but their efforts were not enough to overpower the greatest military in the world! The disputed territory remains in control of Imperial Germany!"
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Alsace-Lorraine remains part of Germany!"
+		ai_chance = { factor = 100 }
+		army_experience = 10
+	}
+}
+
+country_event = {
+	id = monaco.44
+	title = "Germany gives up Alsace-Lorraine!"
+	desc = ""
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent!"
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = monaco.45
+	title = "Germany starts a border war!"
+	desc = ""
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Must win the battle!"
+		ai_chance = { factor = 100 }
+		start_border_war = {
+    		change_state_after_war = no
+   		attacker = {
+        		state = 17
+        		num_provinces = 4
+        		on_win = monaco.18
+        		on_lose = monaco.19
+			on_cancel = monaco.5
+        		modifier = 0.1
+        		dig_in_factor = 0
+        		terrain_factor = 0
+    		}	
+    		defender = {
+        		state = 28
+        		num_provinces = 4
+        		on_win = monaco.19
+        		on_lose = monaco.18
+			on_cancel = monaco.5
+    			}
+		}
+	}
+}
+
+##################################
+### Germany Border War END
+##################################
+
+##################################
+### Invite Holland START
+##################################
+
+country_event = {
+	id = monaco.20
+	title = "France proposes an alliance!"
+	desc = ""
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Join the faction!"
+		ai_chance = { factor = 70 }
+		MCO = { country_event = { id = monaco.28 } }
+	}
+
+	option = {
+		name = "Refuse the offer!"
+		ai_chance = { factor = 30 }
+		MCO = { country_event = { id = monaco.29 } }
+	}
+}
+
+country_event = {
+	id = monaco.28
+	title = "The Netherlands joins the Alliance!"
+	desc = ""
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Join the faction!"
+		ai_chance = { factor = 90 }
+	     	MCO = { add_to_faction = HOL }
+	}
+}
+
+country_event = {
+	id = monaco.29
+	title = "The Netherlands refused to join the Alliance!"
+	desc = ""
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We can force them trough war!"
+		ai_chance = { factor = 90 }
+		add_opinion_modifier = { target = HOL modifier = medium_decrease }
+		MCO = { create_wargoal = { type = puppet_wargoal_focus target = HOL } }
+	}
+}
+
+##################################
+### Invite Holland END
+##################################
+
+##################################
+### Invite Belgium START
+##################################
+
+country_event = {
+	id = monaco.21
+	title = "France proposes an alliance!"
+	desc = ""
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Join the faction!"
+		ai_chance = { factor = 70 }
+		MCO = { country_event = { id = monaco.30 } }
+	}
+
+	option = {
+		name = "Refuse the offer!"
+		ai_chance = { factor = 30 }
+		MCO = { country_event = { id = monaco.31 } }
+	}
+}
+
+country_event = {
+	id = monaco.30
+	title = "Belgium joins the Alliance!"
+	desc = ""
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Join the faction!"
+		ai_chance = { factor = 100 }
+	     	MCO = { add_to_faction = BEL }
+	}
+}
+
+country_event = {
+	id = monaco.31
+	title = "Belgium refused to join the Alliance!"
+	desc = ""
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We can force them trough war!"
+		ai_chance = { factor = 100 }
+		add_opinion_modifier = { target = BEL modifier = medium_decrease }
+		MCO = { create_wargoal = { type = puppet_wargoal_focus target = BEL } }
+	}
+}
+
+##################################
+### Invite Belgium END
+##################################
+
+##################################
+### Invite Luxembourg START
+##################################
+
+country_event = {
+	id = monaco.22
+	title = "France proposes an alliance!"
+	desc = ""
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Join the faction!"
+		ai_chance = { factor = 70 }
+		MCO = { country_event = { id = monaco.32 } }
+	}
+
+	option = {
+		name = "Refuse the offer!"
+		ai_chance = { factor = 30 }
+		MCO = { country_event = { id = monaco.33 } }
+	}
+}
+
+country_event = {
+	id = monaco.32
+	title = "Luxembourg joins the Alliance!"
+	desc = ""
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Join the faction!"
+		ai_chance = { factor = 100 }
+	     	MCO = { add_to_faction = BEL }
+	}
+}
+
+country_event = {
+	id = monaco.33
+	title = "Luxembourg refused to join the Alliance!"
+	desc = ""
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We can force them trough war!"
+		ai_chance = { factor = 100 }
+		add_opinion_modifier = { target = LUX modifier = medium_decrease }
+		MCO = { create_wargoal = { type = puppet_wargoal_focus target = LUX } }
+	}
+}
+
+
+##################################
+### Invite Luxembourg END
+##################################
+
+##################################
+### Invite San Marino START
+##################################
+
+country_event = {
+	id = monaco.23
+	title = "France proposes an alliance!"
+	desc = ""
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Join the faction!"
+		ai_chance = { factor = 70 }
+		MCO = { country_event = { id = monaco.36 } }
+	}
+
+	option = {
+		name = "Refuse the offer!"
+		ai_chance = { factor = 30 }
+		MCO = { country_event = { id = monaco.37 } }
+	}
+}
+
+country_event = {
+	id = monaco.36
+	title = "San Marino joins the Alliance!"
+	desc = ""
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Join the faction!"
+		ai_chance = { factor = 100 }
+	        MCO = { add_to_faction = SAN }
+	}
+}
+
+country_event = {
+	id = monaco.37
+	title = "San Marino refused to join the Alliance!"
+	desc = ""
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We can force them trough war!"
+		ai_chance = { factor = 100 }
+		add_opinion_modifier = { target = SAN modifier = medium_decrease }
+		MCO = { create_wargoal = { type = puppet_wargoal_focus target = SAN } }
+	}
+}
+
+##################################
+### Invite San Marino END
+##################################
+
+##################################
+### Invite Germany START
+##################################
+
+country_event = {
+	id = monaco.24
+	title = "Monaco proposes an alliance!"
+	desc = ""
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Join the faction!"
+		ai_chance = { factor = 90 }
+		MCO = { country_event = { id = monaco.34 } }
+	}
+
+	option = {
+		name = "Refuse the offer!"
+		ai_chance = { factor = 10 }
+		MCO = { country_event = { id = monaco.35 } }
+	}
+}
+
+country_event = {
+	id = monaco.34
+	title = "Germany joins the Alliance!"
+	desc = ""
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Join the faction!"
+		ai_chance = { factor = 100 }
+	        MCO = { add_to_faction = GER }
+		GER = { transfer_state = 28 }
+	}
+}
+
+country_event = {
+	id = monaco.35
+	title = "Germany refused to join the Alliance!"
+	desc = ""
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We can force them trough war!"
+		ai_chance = { factor = 100 }
+		add_opinion_modifier = { target = GER modifier = medium_decrease }
+		MCO = { create_wargoal = { type = puppet_wargoal_focus target = GER } }
+	}
+}
+
+##################################
+### Invite Germany END
+##################################
+
+##################################
+### Invite Spain START
+##################################
+
+country_event = {
+	id = monaco.25
+	title = "Monaco proposes an alliance!"
+	desc = ""
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Join the faction!"
+		ai_chance = { factor = 80 }
+		MCO = { country_event = { id = monaco.26 } }
+	}
+
+	option = {
+		name = "Refuse the offer!"
+		ai_chance = { factor = 20 }
+		MCO = { country_event = { id = monaco.27 } }
+	}
+}
+
+country_event = {
+	id = monaco.26
+	title = "Spain joins the Alliance!"
+	desc = ""
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Join the faction!"
+		ai_chance = { factor = 90 }
+	     	MCO = { add_to_faction = SPR }
+		MCO = { puppet = SPR }
+	}
+}
+
+country_event = {
+	id = monaco.27
+	title = "Spain refused to join the Alliance!"
+	desc = ""
+	picture = GFX_MCO_event_promote_french_ideals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We can force them trough war!"
+		ai_chance = { factor = 90 }
+		add_opinion_modifier = { target = SPR modifier = medium_decrease }
+		MCO = { create_wargoal = { type = puppet_wargoal_focus target = SPR } }
+	}
+}
+##################################
+### Invite Spain END
+##################################

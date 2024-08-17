@@ -1,9 +1,10 @@
 ﻿capital = 10
 
 oob = "POL_1936"
-
+set_cosmetic_tag = POL_KINGDOM
 add_ideas = {
 	german_customs_union_member
+	POL_country_lore
 }
 
 if = {
@@ -129,6 +130,7 @@ set_popularities = {
 	}
 }
 
+recruit_character = POL_cyryl_second
 recruit_character = POL_ignacy_moscicki
 recruit_character = POL_wladyslaw_sikorski
 recruit_character = POL_boleslaw_wieniawa_glugoszowski

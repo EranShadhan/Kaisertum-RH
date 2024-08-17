@@ -2026,7 +2026,6 @@
 		icon = GFX_focus_ger_reichskommisariats
 		prerequisite = { focus = GER_german_war_economy focus = GER_integrate_war_economies }
 		available = {
-			has_government = fascism
 		}
 		x = 1
 		y = 1
@@ -2729,11 +2728,12 @@ focus = {
 		completion_reward = {
 			add_war_support = 0.1
 			GER = {
-					declare_war_on = {
-						target = AUS
-						type = topple_government
-					}
+				declare_war_on = {
+					target = AUS
+					type = annex
 				}
+				country_event = { days = 1 id = austria.1 }
+			}
 		}
 	}
 	focus = {
@@ -2800,4 +2800,46 @@ focus = {
 		completion_reward = {
 		}
 	}
+	focus = {
+		id = GER_intergreate_new_territories
+		icon = GFX_focus_generic_pope
+		prerequisite = { focus = GER_crush_bohemian_resistance }
+		prerequisite = { focus = GER_crush_austrian_resistance }
+		x = 1
+		y = 1
+		relative_position_id = GER_crush_bohemian_resistance
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+			}
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_state_core = 4
+			add_state_core = 152
+			add_state_core = 153
+			add_state_core = 69
+			add_state_core = 75
+			add_state_core = 9
+			add_state_core = 74
+			add_state_core = 848
+			add_state_core = 102
+			
+		}
+	}
+
 }

@@ -15,31 +15,172 @@ country_event = {
 	
 	option = {
 		name = austria.1.a
-		POL = { 
-			transfer_state = 88
-		}
-		88 = {
-			add_core_of = POL
-			remove_core_of = AUS
-		}
-		POL = {
-			transfer_state = 80
-			transfer_state = 89
-			transfer_state = 91
-		}
-		80 = {
-			add_core_of = POL
-			remove_core_of = AUS
-		}
-		91 = {
-			add_core_of = POL
-			remove_core_of = AUS
-		}
-		89 = {
-			add_core_of = POL
-			remove_core_of = AUS
-		}
 		hidden_effect = {
+			88 = {
+			add_core_of = POL
+			remove_core_of = AUS
+			}
+			80 = {
+				add_core_of = UKR
+				remove_core_of = AUS
+			}
+			91 = {
+				add_core_of = UKR
+				remove_core_of = AUS
+			}
+			89 = {
+				add_core_of = UKR
+				remove_core_of = AUS
+			}
+			72 = {
+				add_core_of = POL
+				remove_core_of = AUS
+			}
+			POL = {
+				declare_war_on = {
+					target = AUS
+					type = puppet_wargoal_focus
+				}
+			}
+			UKR = {
+				declare_war_on = {
+					target = AUS
+					type = puppet_wargoal_focus
+				}
+			}
+			country_event = { days = 1 id = austria.2 }
+		}
+	}
+}
+
+
+country_event = {
+	id = austria.2
+	title = austria.2.t
+	desc = austria.2.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = austria.1.a
+		hidden_effect = {
+			set_autonomy = { target = HUN autonomy_state = autonomy_free }
+			HUN = {
+				declare_war_on = {
+					target = AUS
+					type = puppet_wargoal_focus
+				}
+			}
+			76 = {
+				add_core_of = ROM
+			}
+			82 = {
+				add_core_of = ROM
+			}
+			83 = {
+				add_core_of = ROM
+			}
+			84 = {
+				add_core_of = ROM
+			}
+			764 = {
+				add_core_of = ROM
+			}
+			ROM = { country_event = { days = 28 id = austria.4 } }
+			ITA = { country_event = { days = 10 id = austria.3 } }
+		}
+	}
+}
+
+country_event = {
+	id = austria.3
+	title = austria.3.t
+	desc = austria.3.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = austria.1.a
+		hidden_effect = {
+			850 = {
+			add_core_of = ITA
+			remove_core_of = AUS
+			}
+			39 = {
+				add_core_of = ITA
+				remove_core_of = AUS
+			}
+			736 = {
+				add_core_of = ITA
+				remove_core_of = AUS
+			}
+			852 = {
+				add_core_of = ITA
+				remove_core_of = AUS
+			}
+			853 = {
+				add_core_of = ITA
+				remove_core_of = AUS
+			}
+			163 = {
+				add_core_of = ITA
+			}
+			ITA = {
+				declare_war_on = {
+					target = AUS
+					type = puppet_wargoal_focus
+				}
+				set_autonomy = {
+					target = YUG
+					autonomy_state = autonomy_personal_union
+				}	
+			}
+		}
+	}
+}
+country_event = {
+	id = austria.4
+	title = austria.4.t
+	desc = austria.4.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = austria.1.a
+		hidden_effect = {
+			107 = {
+				add_core_of = BUL
+			}
+			105 = {
+				add_core_of = BUL
+			}
+			802 = {
+				add_core_of = ALB
+			}
+			ROM = {
+				declare_war_on = {
+					target = AUS
+					type = puppet_wargoal_focus
+				}
+			}	
+			BUL = {
+				declare_war_on = {
+					target = AUS
+					type = puppet_wargoal_focus
+				}
+			}
+			ALB = {
+				declare_war_on = {
+					target = AUS
+					type = puppet_wargoal_focus
+				}
+			}
+			GRE = {
+				add_to_faction = ROM
+			}
 		}
 	}
 }
