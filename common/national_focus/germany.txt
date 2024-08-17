@@ -2642,7 +2642,7 @@ focus = {
 		cost = 8
 
 		ai_will_do = {
-			factor = 200
+			factor = 1
 		}
 
 		available = {
@@ -2671,7 +2671,7 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 200
+			factor = 16
 		}
 
 		available = {
@@ -2700,7 +2700,7 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 200
+			factor = 16
 		}
 
 		available = {
@@ -2736,7 +2736,7 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 200
+			factor = 16
 			modifier = {
 				factor = 1
 			}
@@ -2767,7 +2767,7 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 200
+			factor = 16
 		}
 
 		available = {
@@ -2796,7 +2796,7 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 200
+			factor = 16
 			modifier = {
 			}
 		}
