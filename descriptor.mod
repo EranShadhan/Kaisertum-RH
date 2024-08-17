@@ -1,9 +1,9 @@
 version="0.1"
-picture="thumbnail.png"
 tags={
 	"Alternative History"
 	"Graphics"
 	"Gameplay"
 }
-name="Kaisertum"
+name="Kaisertum: Demo release"
+picture="thumbnail.png"
 supported_version="1.14.*"
