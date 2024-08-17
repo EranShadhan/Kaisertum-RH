@@ -25,6 +25,7 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
 	ITA_country_lore
+    german_customs_union_member
 }
 
 # RESISTANCE / COMPLIANCE

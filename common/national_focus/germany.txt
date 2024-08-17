@@ -2643,9 +2643,6 @@ focus = {
 
 		ai_will_do = {
 			factor = 200
-			modifier = {
-				factor = 0
-			}
 		}
 
 		available = {
@@ -2675,10 +2672,6 @@ focus = {
 
 		ai_will_do = {
 			factor = 200
-			modifier = {
-				JAP = { has_government = communism }
-				factor = 0
-			}
 		}
 
 		available = {
@@ -2708,10 +2701,6 @@ focus = {
 
 		ai_will_do = {
 			factor = 200
-			modifier = {
-				JAP = { has_government = communism }
-				factor = 0
-			}
 		}
 
 		available = {
@@ -2749,8 +2738,7 @@ focus = {
 		ai_will_do = {
 			factor = 200
 			modifier = {
-				JAP = { has_government = communism }
-				factor = 0
+				factor = 1
 			}
 		}
 
@@ -2780,10 +2768,6 @@ focus = {
 
 		ai_will_do = {
 			factor = 200
-			modifier = {
-				JAP = { has_government = communism }
-				factor = 0
-			}
 		}
 
 		available = {

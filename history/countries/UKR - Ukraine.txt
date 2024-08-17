@@ -23,6 +23,7 @@ set_technology = {
 
 add_ideas = {
 	UKR_country_lore
+	german_customs_union_member
 	}
 if = {
 	limit = {
