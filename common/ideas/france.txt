@@ -134,7 +134,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_weekly = -0.003
+				stability_weekly = -0.001
 			}
 		}
 
@@ -242,5 +242,24 @@ ideas = {
 				consumer_goods_factor = 0.05
 			}
 		}
+		
+		FRA_small_scale_defeatism = {
+
+			picture = FRA_secret_rearmament
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = -0.1
+			}
+		}		
 	}
 }

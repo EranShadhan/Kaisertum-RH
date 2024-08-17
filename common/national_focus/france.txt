@@ -65,9 +65,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_stability = 0.1
-			add_war_support = 0.1
-			add_political_power = 50
+			add_war_support = 0.2
+			remove_idea = FRA_small_scale_defeatism
 		}
 	}
 
@@ -299,9 +298,9 @@
 		icon = GFX_focus_fra_retake_morocco
 		x = 0
 		y = 1
-		relative_position_id = FRA_claim_french_speaking_lands
+		relative_position_id = FRA_claim_lost_lands
 		
-		prerequisite = { focus = FRA_claim_french_speaking_lands }
+		prerequisite = { focus = FRA_claim_lost_lands }
 		mutually_exclusive = { }
 
 		cost = 5
@@ -369,9 +368,9 @@
 		icon = GFX_focus_fra_secure_neutral_spain
 		x = 0
 		y = 1
-		relative_position_id = FRA_claim_lost_lands
+		relative_position_id = FRA_claim_french_speaking_lands
 		
-		prerequisite = { focus = FRA_claim_lost_lands }
+		prerequisite = { focus = FRA_claim_french_speaking_lands }
 		mutually_exclusive = { }
 
 		cost = 5
@@ -396,9 +395,9 @@
 		icon = GFX_focus_fra_strike_germany
 		x = -2
 		y = 1
-		relative_position_id = FRA_secure_neutral_spain
+		relative_position_id = FRA_retake_morocco
 		
-		prerequisite = { focus = FRA_secure_neutral_spain focus = FRA_retake_morocco }
+		prerequisite = { focus = FRA_retake_morocco focus = FRA_secure_neutral_spain }
 		mutually_exclusive = { }
 
 		cost = 5
@@ -464,21 +463,21 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
                 		add_building_construction = {
                     			type = infrastructure
                     			level = 1
                     			instant_build = yes
 				}
                 	}
-			random_owned_state = {
+			random_core_state = {
                 		add_building_construction = {
                     			type = infrastructure
                     			level = 1
                     			instant_build = yes
 				}
                 	}
-			random_owned_state = {
+			random_core_state = {
                 		add_building_construction = {
                     			type = infrastructure
                     			level = 1
@@ -508,7 +507,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
                 		add_building_construction = {
                     			type = industrial_complex
                     			level = 1
@@ -517,7 +516,7 @@
 				add_extra_state_shared_building_slots = 1
                 	}
 
-			random_owned_state = {
+			random_core_state = {
                 		add_building_construction = {
                     			type = industrial_complex
                     			level = 1
@@ -597,7 +596,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
                 		add_building_construction = {
                     			type = industrial_complex
                     			level = 1
@@ -606,7 +605,7 @@
 				add_extra_state_shared_building_slots = 1
                 	}
 
-			random_owned_state = {
+			random_core_state = {
                 		add_building_construction = {
                     			type = industrial_complex
                     			level = 1
@@ -637,7 +636,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
                 		add_building_construction = {
                     			type = industrial_complex
                     			level = 1
@@ -646,7 +645,7 @@
 				add_extra_state_shared_building_slots = 1
                 	}
 
-			random_owned_state = {
+			random_core_state = {
                 		add_building_construction = {
                     			type = industrial_complex
                     			level = 1
@@ -678,7 +677,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
                 		add_building_construction = {
                     			type = arms_factory
                     			level = 1
@@ -687,7 +686,7 @@
 				add_extra_state_shared_building_slots = 1
                 	}
 
-			random_owned_state = {
+			random_core_state = {
                 		add_building_construction = {
                     			type = arms_factory
                     			level = 1
@@ -746,7 +745,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
                 		add_building_construction = {
                     			type = industrial_complex
                     			level = 1
@@ -755,7 +754,7 @@
 				add_extra_state_shared_building_slots = 1
                 	}
 
-			random_owned_state = {
+			random_core_state = {
                 		add_building_construction = {
                     			type = arms_factory
                     			level = 1
@@ -811,7 +810,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
                 		add_building_construction = {
                     			type = infrastructure
                     			level = 2
@@ -819,7 +818,7 @@
 				}
                 	}
 
-			random_owned_state = {
+			random_core_state = {
                 		add_building_construction = {
                     			type = infrastructure
                     			level = 2
@@ -827,7 +826,7 @@
 				}
                 	}
 
-			random_owned_state = {
+			random_core_state = {
                 		add_building_construction = {
                     			type = infrastructure
                     			level = 2

@@ -11,6 +11,9 @@ bookmarks = {
 			history = "FRA_NEW_DECADE_DESC"
 			ideology = fascism
 			ideas = {
+			FRA_lore
+			FRA_republican_front_collapse
+			FRA_communist_opposition
 			}
 			focuses = {
 			}
