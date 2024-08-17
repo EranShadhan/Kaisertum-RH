@@ -35,6 +35,9 @@ bookmarks = {
 			history = "GER_NEW_DECADE_DESC"
 			ideology = democratic
 			ideas = {
+				GER_country_lore
+				GER_wilhelm_ii
+				german_customs_union_member
 			}
 			focuses = {
 			}
@@ -43,6 +46,9 @@ bookmarks = {
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
+				ITA_country_lore
+                german_customs_union_member
+
 			}	
 			focuses = {
 			}		
