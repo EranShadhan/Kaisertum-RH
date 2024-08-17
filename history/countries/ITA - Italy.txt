@@ -21,8 +21,6 @@ set_research_slots = 4
 set_stability = 0.6
 set_war_support = 0.7
 add_ideas = {
-	vittorio_emanuele
-	vittoria_mutilata
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
@@ -456,16 +454,16 @@ give_guarantee = ALB
 set_convoys = 200
 
 set_politics = {
-	ruling_party = fascism
-	last_election = "1934.3.26"
+	ruling_party = neutrality
+	last_election = "1925.11.17"
 	election_frequency = 60
-	elections_allowed = no
+	elections_allowed = yes
 }
 set_popularities = {
 	democratic = 20
-	fascism = 73
+	fascism = 5
 	communism = 2
-	neutrality = 5
+	neutrality = 73
 }
 
 recruit_character = ITA_benito_mussolini

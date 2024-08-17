@@ -26,4 +26,12 @@ spriteTypes = {
 		name = "GFX_portrait_USA_charles_curtis"
 		texturefile = "gfx/leaders/USA/Portrait_USA_Charles_Curtis.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_FRA_joseph_darnaud"
+		texturefile = "gfx/leaders/FRA/Portrait_france_joseph_darnaud.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_POL_king_cyryl"
+		texturefile = "gfx/leaders/POL/Portrait_POL_king_Cyryl.dds"
+	}
 }

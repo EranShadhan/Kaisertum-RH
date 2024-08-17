@@ -318,7 +318,7 @@ set_convoys = 700
 
 set_politics = {
 	ruling_party = democratic
-	last_election = "1932.11.8"
+	last_election = "1928.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }

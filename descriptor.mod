@@ -5,5 +5,6 @@ tags={
 	"Graphics"
 	"Gameplay"
 }
-name="Kaisertum"
+picture="thumbnail.png"
+name="Kaisertum: Demo release"
 supported_version="1.14.*"
