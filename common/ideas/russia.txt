@@ -1,0 +1,194 @@
+ideas = {
+
+	country = {
+
+        	Transitional_Period
+		 = {
+
+			picture = GFX_goal_generic_social_reforms
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+                add_democracy_growth = -0.01
+                political_power_cost = 0.3
+			}
+		}
+
+        	Democratic_Period
+		 = {
+
+			picture = GFX_goal_generic_social_reforms
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 5
+                political_power_gain = 0.1
+                add_democracy_growth = 0.01
+			}
+		}
+
+        	Stagnated_Russification
+		 = {
+
+			picture = GFX_goal_generic_social_reforms
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.10
+                non_core_manpower = -0.3
+			}
+		}
+        	Slight_Derussification
+		 = {
+
+			picture = GFX_goal_generic_social_reforms
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+                non_core_manpower = -0.1
+                political_power_factor = 0.1
+                weekly_manpower = 150
+			}
+		}
+
+            DeFacto_Russification
+		 = {
+
+			picture = GFX_goal_generic_social_reforms
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.10
+                non_core_manpower = -0.5
+                weekly_manpower = 350
+			}
+		}
+            Systemic_Corruption
+		 = {
+
+			picture = GFX_goal_generic_social_reforms
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.3
+                production_speed_buildings_factor = -0.1
+                industrial_capacity_factory = -0.2
+			}
+		}
+            
+            Systemic_Corruption_Industry
+		 = {
+
+			picture = GFX_goal_generic_social_reforms
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 123
+			
+			modifier = {
+				consumer_goods_factor = -0.25
+                production_speed_buildings_factor = 0.15
+			}
+		}
+            Systemic_Corruption_Military
+		 = {
+
+			picture = GFX_goal_generic_social_reforms
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 123
+			
+			modifier = {
+                industrial_capacity_factory = 0.3
+			}
+		}
+
+    }
+}
+
+            Critique # for intro
+            Free Press # for Democracy
+            Alliance with Bolsheviks # for Socialist Candidate
+            Liberal Russia # for Kerensky victory
+            Moral Russia # for Conservative victory
+            Eternal_Transitional_Period # for Authoritarian
+            #DeJure_Russification For Fascists
+	        Systemic_Corruption
+            Systemic_Corruption_Industry
+            Systemic_Corruption_Military
+	        Systemic_Corruption_Aristocratic
+            Systemic_Corruption_Capitalist
+            Revanchism_For_WW1
+	        Revanchism_For_WW1_Solo # Reward for not buddying up with France
+	        #Revanchism_For_WW1_Fascist For Fascists
+			Liberal State Council # Extra PP
+			Conservative State Council # Extra defence against ideology growth
