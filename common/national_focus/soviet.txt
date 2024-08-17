@@ -471,7 +471,6 @@ focus = {
     available_if_capitulated = false
     completion_reward = {
         add_political_power = 100
-        add_aristocratic_influence = 20
     }
     ai_will_do = {
         factor = 1
@@ -490,7 +489,6 @@ focus = {
     available_if_capitulated = false
     completion_reward = {
         add_political_power = 100
-        add_aristocratic_influence = 30
         create_event = {
             id = RUS_aristocratic_alliance_event
         }
@@ -516,7 +514,6 @@ focus = {
     available_if_capitulated = false
     completion_reward = {
         add_political_power = 100
-        add_capitalist_influence = 20
     }
     ai_will_do = {
         factor = 1
@@ -535,7 +532,6 @@ focus = {
     available_if_capitulated = false
     completion_reward = {
         add_political_power = 100
-        add_capitalist_influence = 30
         create_event = {
             id = RUS_capitalist_alliance_event
         }
@@ -558,7 +554,6 @@ focus = {
     available_if_capitulated = false
     completion_reward = {
         add_political_power = 100
-        add_army_influence = 20
     }
     ai_will_do = {
         factor = 1
@@ -577,7 +572,6 @@ focus = {
     available_if_capitulated = false
     completion_reward = {
         add_political_power = 100
-        add_army_influence = 30
         create_event = {
             id = RUS_army_alliance_event
         }
