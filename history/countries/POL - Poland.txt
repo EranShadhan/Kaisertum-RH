@@ -4,6 +4,7 @@ oob = "POL_1936"
 set_cosmetic_tag = POL_KINGDOM
 add_ideas = {
 	german_customs_union_member
+	POL_country_lore
 }
 
 if = {

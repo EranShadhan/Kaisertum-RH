@@ -75,6 +75,7 @@ if = {
 		YUG_idea_macedonian_opposition
 		YUG_idea_slovene_nationalism
 		YUG_idea_serbian_general_staff
+		YUG_country_lore
 	}
 }
 add_ideas = {

@@ -191,9 +191,9 @@ add_to_faction = FIN
 
 
 add_ideas = {
-	spd
 	GER_wilhelm_ii
 	FRA_victors_of_wwi
+	GER_country_lore
 }
 
 activate_mission = GER_mefo_bills_mission

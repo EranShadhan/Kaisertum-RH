@@ -28,6 +28,10 @@ set_party_name = { # DLC
 	long_name = BUL_fascism_party_bulgarian_long
 }
 
+add_ideas {
+	BUL_country_lore
+}
+
 if = { #DLC
 	limit = {
 		has_dlc = "Battle for the Bosporus"

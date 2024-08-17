@@ -1,64 +1,8 @@
 ideas = {
 	country = {
-		MCO_country_lore = {
+		ITA_country_lore = {
 			allowed = {
-				tag = MCO
-			}
-		}
-	}
-
-	country = {
-		SAN_country_lore = {
-			allowed = {
-				tag = SAN
-			}
-		}
-	}
-
-	country = {
-		LIE_country_lore = {
-			allowed = {
-				tag = LIE
-			}
-		}
-	}
-
-	country = {
-		TUR_country_lore = {
-			allowed = {
-				tag = TUR
-			}
-		}
-	}
-
-	country = {
-		USA_country_lore = {
-			allowed = {
-				tag = USA
-			}
-		}
-	}
-
-	country = {
-		SPR_country_lore = {
-			allowed = {
-				tag = SPR
-			}
-		}
-	}
-
-	country = {
-		YUG_country_lore = {
-			allowed = {
-				tag = YUG
-			}
-		}
-	}
-
-	country = {
-		ENG_country_lore = {
-			allowed = {
-				tag = ENG
+				tag = ITA
 			}
 		}
 	}
@@ -72,49 +16,34 @@ ideas = {
 	}
 
 	country = {
-		AUS_country_lore = {
+		BUL_country_lore = {
 			allowed = {
-				tag = AUS
+				tag = BUL
 			}
 		}
 	}
 
 	country = {
-		SWE_country_lore = {
+		TUR_country_lore = {
 			allowed = {
-				tag = SWE
+				tag = TUR
 			}
 		}
 	}
 
 	country = {
-		MEX_country_lore = {
+		ENG_country_lore = {
 			allowed = {
-				tag = MEX
+				tag = ENG
 			}
 		}
 	}
 
-	country = {
-		CHI_country_lore = {
-			allowed = {
-				tag = CHI
-			}
-		}
-	}
 
 	country = {
-		JAP_country_lore = {
+		GRE_country_lore = {
 			allowed = {
-				tag = JAP
-			}
-		}
-	}
-
-	country = {
-		PHI_country_lore = {
-			allowed = {
-				tag = PHI
+				tag = GRE
 			}
 		}
 	}
@@ -123,6 +52,78 @@ ideas = {
 		SOV_country_lore = {
 			allowed = {
 				tag = SOV
+			}
+		}
+	}
+
+	country = {
+		UBD_country_lore = {
+			allowed = {
+				tag = UBD
+			}
+		}
+	}
+
+	country = {
+		POL_country_lore = {
+			allowed = {
+				tag = POL
+			}
+		}
+	}
+
+	country = {
+		UKR_country_lore = {
+			allowed = {
+				tag = UKR
+			}
+		}
+	}
+
+	country = {
+		POR_country_lore = {
+			allowed = {
+				tag = POR
+			}
+		}
+	}
+
+	country = {
+		EGY_country_lore = {
+			allowed = {
+				tag = EGY
+			}
+		}
+	}
+
+	country = {
+		AUS_country_lore = {
+			allowed = {
+				tag = AUS
+			}
+		}
+	}
+
+	country = {
+		HUN_country_lore = {
+			allowed = {
+				tag = HUN
+			}
+		}
+	}
+
+	country = {
+		YUG_country_lore = {
+			allowed = {
+				tag = YUG
+			}
+		}
+	}
+
+	country = {
+		SER_country_lore = {
+			allowed = {
+				tag = SER
 			}
 		}
 	}

@@ -24,6 +24,7 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
+	ITA_country_lore
 }
 
 # RESISTANCE / COMPLIANCE

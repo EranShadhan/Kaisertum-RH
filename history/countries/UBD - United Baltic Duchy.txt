@@ -26,6 +26,7 @@ if = {
 
 add_ideas = {
 	limited_conscription
+	UBD_country_lore
 }
 add_ideas = {
 	UBD_germanisation_programme_idea
