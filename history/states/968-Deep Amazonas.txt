@@ -9,8 +9,7 @@ state={
 		add_core_of = BRA
 	}
 	manpower=12300
-	impassable = yes
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category=wasteland
+	state_category=pastoral
 }

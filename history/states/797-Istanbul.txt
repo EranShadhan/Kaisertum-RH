@@ -6,7 +6,7 @@ state={
 	history={
 		owner = GRE
 		victory_points = {
-			9833 25 
+			9833 12 
 		}
 		buildings = {
 			infrastructure = 3
@@ -20,7 +20,7 @@ state={
 
 		}
 		add_core_of = GRE
-		add_claim_by = GRE		
+		add_claim_by = TUR	
 	}
 
 	provinces={
