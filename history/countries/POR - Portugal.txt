@@ -1,6 +1,11 @@
 ﻿capital = 112
 
 oob = "POR_1936"
+
+add_ideas = {
+	german_customs_union_member
+}
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "POR_1936_naval_mtg"
@@ -100,6 +105,7 @@ if = {
 	give_guarantee = BRA
 
 set_convoys = 50
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1933.3.5"
@@ -111,18 +117,6 @@ set_popularities = {
 	communism = 10
 	neutrality = 60
 	democratic = 20
-}
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1938.10.30"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		neutrality = 100
-	}
 }
 
 set_convoys = 100

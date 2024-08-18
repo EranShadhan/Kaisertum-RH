@@ -25,7 +25,7 @@ focus_tree = {
 		}
 	}
 
-	default = yes
+	default = no
 
 	# Central Linear Tree
 	focus = {

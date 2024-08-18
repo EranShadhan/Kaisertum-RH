@@ -178,6 +178,8 @@ add_ideas = {
 	FRA_secret_rearmament
 	FRA_super_heavy_tank_programme
 	FRA_colonial_army
+    FRA_small_scale_defeatism
+	international_isolation
 }
 
 recruit_character = FRA_joseph_darnaud

@@ -142,11 +142,6 @@ recruit_character = HOL_dirk_jan_de_geer
 recruit_character = HOL_pieter_sjoerds_gerbrandy
 recruit_character = HOL_wilhelmina
 
-1939.1.1 = {
-	add_ideas = {
-		limited_conscription
-	}
-
 	add_political_power = 1198
 	add_command_power = 100
 	

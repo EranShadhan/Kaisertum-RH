@@ -3,9 +3,19 @@ IRE_UK = {
     color_ui = rgb { 242 71 71 }
 }
 
+HUN_AS = {
+    color = rgb { 181 186 209 }
+    color_ui = rgb { 255 255 255 }
+}
+
+YUG_AS = {
+    color = rgb { 202 207 229 }
+    color_ui = rgb { 255 255 255 }
+}
+
 SER_MNT = {
-    color = rgb { 121 73 255 }
-    color_ui = rgb { 121 73 255 }
+    color = rgb { 224 225 223 }
+    color_ui = rgb { 255 255 255 }
 }
 
 MAL_UK = {
