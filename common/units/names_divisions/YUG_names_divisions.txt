@@ -1,0 +1,294 @@
+YUG_INF_01 = 
+{
+	name = "Pješačke divizije"
+
+	for_countries = { YUG }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { YUG_GAR_01 }
+
+	fallback_name = "%d. Pješačka divizija"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Pješačka divizija" }
+		2 = { "%d. Pješačka divizija" }
+		3 = { "%d. Pješačka divizija" }
+		4 = { "%d. Pješačka divizija" }
+		5 = { "%d. Pješačka divizija" }
+		6 = { "%d. Pješačka divizija" }
+		7 = { "%d. Pješačka divizija" }
+		8 = { "%d. Pješačka divizija" }
+		9 = { "%d. Pješačka divizija" }
+		10 = { "%d. Pješačka divizija" }
+
+	}
+}
+
+YUG_CAV_01 = 
+{
+	name = "Konjičke divizije"
+
+	for_countries = { YUG }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "%d. Konjička divizija"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Konjička divizija" }
+		2 = { "%d. Konjička divizija" }
+		3 = { "%d. Konjička divizija" }
+		4 = { "%d. Konjička divizija" }
+		5 = { "%d. Konjička divizija" }
+		6 = { "%d. Konjička divizija" }
+		7 = { "%d. Konjička divizija" }
+		8 = { "%d. Konjička divizija" }
+		9 = { "%d. Konjička divizija" }
+		10 = { "%d. Konjička divizija" }
+
+	}
+}
+
+YUG_MOT_01 = 
+{
+	name = "Motorizirana divizija"
+
+	for_countries = { YUG }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { YUG_INF_01 }
+
+	fallback_name = "%d. Motorizirana divizija"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Motorizirana divizija" }
+		2 = { "%d. Motorizirana divizija" }
+		3 = { "%d. Motorizirana divizija" }
+		4 = { "%d. Motorizirana divizija" }
+		5 = { "%d. Motorizirana divizija" }
+		6 = { "%d. Motorizirana divizija" }
+		7 = { "%d. Motorizirana divizija" }
+		8 = { "%d. Motorizirana divizija" }
+		9 = { "%d. Motorizirana divizija" }
+		10 = { "%d. Motorizirana divizija" }
+
+	}
+}
+
+YUG_ARM_01 = 
+{
+	name = "Tenkovska divizija"
+
+	for_countries = { YUG }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { YUG_INF_01 }
+
+	fallback_name = "%d. Tenkovska divizija"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Tenkovska divizija" }
+		2 = { "%d. Tenkovska divizija" }
+		3 = { "%d. Tenkovska divizija" }
+		4 = { "%d. Tenkovska divizija" }
+		5 = { "%d. Tenkovska divizija" }
+		6 = { "%d. Tenkovska divizija" }
+		7 = { "%d. Tenkovska divizija" }
+		8 = { "%d. Tenkovska divizija" }
+		9 = { "%d. Tenkovska divizija" }
+		10 = { "%d. Tenkovska divizija" }
+
+	}
+}
+
+YUG_MEC_01 = 
+{
+	name = "Mehanizirana divizija"
+
+	for_countries = { YUG }
+
+	can_use = { always = yes }
+
+	division_types = { "mechanized"  }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { YUG_INF_01 }
+
+	fallback_name = "%d. Mehanizirana divizija"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Mehanizirana divizija" }
+		2 = { "%d. Mehanizirana divizija" }
+		3 = { "%d. Mehanizirana divizija" }
+		4 = { "%d. Mehanizirana divizija" }
+		5 = { "%d. Mehanizirana divizija" }
+		6 = { "%d. Mehanizirana divizija" }
+		7 = { "%d. Mehanizirana divizija" }
+		8 = { "%d. Mehanizirana divizija" }
+		9 = { "%d. Mehanizirana divizija" }
+		10 = { "%d. Mehanizirana divizija" }
+
+	}
+}
+
+YUG_GAR_01 = 
+{
+	name = "Garnizoni"
+
+	for_countries = { YUG }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { YUG_INF_01 }
+
+	fallback_name = "%d. Lučki garnizoni"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Lučki garnizoni" }
+		2 = { "%d. Lučki garnizoni" }
+		3 = { "%d. Lučki garnizoni" }
+		4 = { "%d. Lučki garnizoni" }
+		5 = { "%d. Lučki garnizoni" }
+		6 = { "%d. Lučki garnizoni" }
+		7 = { "%d. Lučki garnizoni" }
+		8 = { "%d. Lučki garnizoni" }
+		9 = { "%d. Lučki garnizoni" }
+		10 = { "%d. Lučki garnizoni" }
+	}
+}
+
+YUG_MAR_01 = 
+{
+	name = "Mornaričke divizije"
+
+	for_countries = { YUG }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { YUG_GAR_01 }
+
+	fallback_name = "%d. Mornaričke divizije"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Mornaričke divizije" }
+		2 = { "%d. Mornaričke divizije" }
+		3 = { "%d. Mornaričke divizije" }
+		4 = { "%d. Mornaričke divizije" }
+		5 = { "%d. Mornaričke divizije" }
+		6 = { "%d. Mornaričke divizije" }
+		7 = { "%d. Mornaričke divizije" }
+		8 = { "%d. Mornaričke divizije" }
+		9 = { "%d. Mornaričke divizije" }
+		10 = { "%d. Mornaričke divizije" }
+
+	}
+}
+
+YUG_MTN_01 = 
+{
+	name = "Gorski odred"
+
+	for_countries = { YUG }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { YUG_INF_01 }
+
+	fallback_name = "%d. Gorski odred"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Gorski odred" }
+		2 = { "%d. Gorski odred" }
+		3 = { "%d. Gorski odred" }
+		4 = { "%d. Gorski odred" }
+		5 = { "%d. Gorski odred" }
+		6 = { "%d. Gorski odred" }
+		7 = { "%d. Gorski odred" }
+		8 = { "%d. Gorski odred" }
+		9 = { "%d. Gorski odred" }
+		10 = { "%d. Gorski odred" }
+
+	}
+}
+
+YUG_PAR_01 = 
+{
+	name = "Paratrooper Divisions"
+
+	for_countries = { YUG }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	# Number reservation system will tie to another group.
+
+	fallback_name = "%d. Padobranska Divizija"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Padobranska Divizija" }
+		2 = { "%d. Padobranska Divizija" }
+		3 = { "%d. Padobranska Divizija" }
+		4 = { "%d. Padobranska Divizija" }
+		5 = { "%d. Padobranska Divizija" }
+		6 = { "%d. Padobranska Divizija" }
+		7 = { "%d. Padobranska Divizija" }
+		8 = { "%d. Padobranska Divizija" }
+		9 = { "%d. Padobranska Divizija" }
+		10 = { "%d. Padobranska Divizija" }
+
+	}
+}
