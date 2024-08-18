@@ -764,7 +764,7 @@ focus = {
 focus = {
 
     id = ROM_pol_1
-    icon = GFX_ROM_pol_1
+    icon = GFX_goal_the_nation
     x = 40
     y = 1
     relative_position_id = 
@@ -795,7 +795,7 @@ focus = {
 focus = {
 
     id = ROM_pol_2
-    icon = GFX_ROM_pol_2
+    icon = GFX_goal_the_nation
     x = -2
     y = 1
     relative_position_id = ROM_pol_1
