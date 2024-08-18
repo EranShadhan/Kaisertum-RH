@@ -1,0 +1,46 @@
+focus_tree = {
+	id = polish_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = POL
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 2000 }
+	
+	focus = {
+		id = POL_begin_reforms_of_22_free_trade_act
+		icon = GFX_Goal_Money
+		x = 6
+		y = 0
+		cost = 10
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			subtract_from_variable = {
+				var = liberalist_popularity
+				value = 2
+				tooltip = liberals_lost_2_popularity
+			}
+			add_to_from_variable = {
+				var = pilsudzki_popularity
+				value = 2
+				tooltip = pilsudzki_gain_2_popularity
+			}			
+		}
+	}
+}

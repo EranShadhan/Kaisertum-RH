@@ -7308,4 +7308,11 @@ spriteTypes = {
 		name = "GFX_focus_fra_focus_on_cas"
 		texturefile = "gfx/interface/goals/focus_fra_focus_on_cas.dds"
 	}
+	
+	#Goal_Money
+	
+	SpriteType = {
+		name = "GFX_Goal_Money"
+		texturefile = "gfx/interface/goals/Goal_Money.dds"
+	}
 }
