@@ -2,7 +2,7 @@ ideas = {
 	country = {
 		german_customs_union_member = {
 
-			picture = german_customs_union_member
+			picture = tradeuniongermany
 			
 			allowed = {
 				always = no
