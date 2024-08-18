@@ -1,0 +1,10 @@
+defined_text = { 
+	name = GetLore
+
+	text = {
+		trigger = {
+			original_tag = GER
+		}
+		localization_key = GER_country_lore
+	}
+}

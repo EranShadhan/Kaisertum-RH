@@ -19,7 +19,7 @@ state={
 		add_core_of = AUS
 	}
 	provinces={
-		577 9548
+		577 9548 6761 11689
 	}
 
 	local_supplies=0.0 
