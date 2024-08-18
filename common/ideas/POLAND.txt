@@ -1,0 +1,47 @@
+ideas = {
+
+	country = {
+	
+		POL_german_economic_influence = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+				add_stability = -0.15
+				add_political_power = -0.15
+			}
+		}
+		POL_pilsudzki_campaing = {
+					
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription = 0.025
+				neutrality_drift = 0.15
+			}
+		}
+
+	}
+}
