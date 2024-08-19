@@ -34,6 +34,12 @@ if = {
 	}
 }
 
+add_ideas = {
+	limited_conscription
+	export_focus
+	civilian_economy
+}
+
 ###################
 #### 3D MODELS ####
 ###################
@@ -158,16 +164,6 @@ if = {
 		356 = {
 			add_dynamic_modifier = { modifier = islamist_opposition }
 		}
-		add_ideas = {
-			limited_conscription
-			export_focus
-			civilian_economy
-			TUR_kemalist_army_officers_limited_power_loyal
-			TUR_sectarian_woes
-			TUR_disorganised_armed_forces
-			TUR_debt_council
-			TUR_country_lore
-		}
 		
 		353 = {
 			start_resistance = yes
@@ -229,16 +225,6 @@ if = {
 		add_opinion_modifier = { 
 			target = HUN
 			modifier = BFTB_balkan_pact_enemy
-		}
-	}
-
-	if = { 
-		limit = { NOT = { has_dlc = "Battle for the Bosporus" }	}
-		add_ideas = {
-			limited_conscription
-			export_focus
-			civilian_economy
-			TUR_country_lore
 		}
 	}
 }

@@ -191,7 +191,6 @@ add_to_faction = FIN
 
 
 add_ideas = {
-	GER_country_lore
 	GER_wilhelm_ii
 	FRA_victors_of_wwi
 	german_customs_union_member
