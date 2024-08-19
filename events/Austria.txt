@@ -204,7 +204,13 @@ country_event = {
 		}
 
 		POL = {
-			
+			transfer_state = 88
+			transfer_state = 72
+		}
+
+		UKR = {
+			transfer_state = 91
+			transfer_state = 89
 		}
 
 		ITA = {

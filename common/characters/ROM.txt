@@ -13,6 +13,18 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+		advisor={
+				cost = 150
+				slot = political_advisor
+				idea_token = codreanu
+				ledger = civilian
+				allowed = {
+					original_tag = ROM
+				}
+				traits = {
+					fasicm_drift = 0.01
+				}
+		}
 	}
 
 }

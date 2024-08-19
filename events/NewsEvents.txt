@@ -13360,6 +13360,8 @@ news_event = {
 	trigger = {
 		4 = { is_controlled_by = HUN} 
 		4 = { is_owned_by = AUS }
+		NOT = { 9 = is is_controlled_by = AUS }
+		9 = { is_owned_by = AUS }
 		HUN = { has_war_with = AUS }
 		NOT = { has_global_flag = fall_of_viena }
 	}
