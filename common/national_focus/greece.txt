@@ -1,0 +1,17 @@
+focus_tree = {
+	id = greek_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GRE
+		}
+	}
+	
+
+	default = no
+
+	continuous_focus_position = { x = 20 y = 1600 }
+	
+}
