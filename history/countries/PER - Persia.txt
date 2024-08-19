@@ -22,6 +22,31 @@ set_technology = {
 	gw_artillery = 1
 }
 
+add_ideas = {
+	victory_in_the_sgtw
+	PER_german_persian_oil_company
+	PER_army_1_focus
+	PER_monarchist_resistance
+	PER_disloyal_military
+	PER_traditional_islam_gov
+}
+
+give_resource_rights = {
+    receiver = GER
+    state = 291
+    resources = { oil }
+}
+give_resource_rights = {
+    receiver = GER
+    state = 413
+    resources = { oil }
+}
+give_resource_rights = {
+    receiver = GER
+    state = 412
+    resources = { oil }
+}
+
 recruit_character = PER_ahmad_amir_ahmadi
 recruit_character = PER_reza_shah_pahlavi
 recruit_character = PER_soleyman_mirza_eskandari
@@ -44,74 +69,6 @@ recruit_character = PER_hossein_afkhami
 recruit_character = PER_ali_zohayli
 recruit_character = PER_mahmud_jam
 recruit_character = PER_ali_khan_mansour
-
-1939.1.1 = {
-
-	add_political_power = 1198
-	add_command_power = 100
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "PER_1939"
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "PER_1936_air_bba" #intentionally using 36 oob (No significant airforce expansion)
-		else = {
-			set_air_oob = "PER_1936_air_legacy"
-		}
-	}
-	set_technology = {
-		tech_support = 1
-		tech_recon = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		gw_artillery = 1
-		interwar_antiair = 1
-		interwar_artillery = 1
-
-		#doctrines
-		air_superiority = 1
-		mass_assault = 1
-		pocket_defence = 1
-		defence_in_depth = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		fuel_silos = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-	if = {
-		limit = {
-			NOT = { has_dlc = "No Step Back" }
-		}
-		set_technology = {
-			gwtank = 1
-		}
-	}
-}
 
 set_convoys = 10
 set_politics = {

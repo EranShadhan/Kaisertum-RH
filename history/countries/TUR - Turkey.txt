@@ -3,7 +3,7 @@
 set_oob = "TUR_1936"
 
 add_ideas = {
-	TUR_country_lore
+	victory_in_the_sgtw
 	TUR_german_influence_in_government
 	TUR_humiliation_of_25
 	TUR_international_bidding_war
