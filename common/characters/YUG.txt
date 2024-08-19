@@ -1,0 +1,22 @@
+characters = {
+
+	YUG_Ivan_Subasic = {
+		name = YUG_Ivan_Subasic
+		portraits = {
+			civilian = {
+				large = GFX_YUG_Ivan_Subasic
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			expire = "1953.3.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1953.3.1.1"
+			id = -1
+		}
+	}
+
+}

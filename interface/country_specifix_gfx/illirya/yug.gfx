@@ -1,0 +1,8 @@
+spriteTypes = {	
+	
+	spriteType = {
+		name = "GFX_YUG_Ivan_Subasic"
+		texturefile = "gfx/leaders/YUG/YUG_portrait_Ivan_Subasic.png"
+	}
+	
+}

@@ -1,8 +1,0 @@
-spriteTypes = {	
-	
-	spriteType = {
-		name = "GFX_idea_tradeuniongermany"
-		texturefile = "gfx/interface/ideas/germantradeunion.png"
-	}
-	
-}
