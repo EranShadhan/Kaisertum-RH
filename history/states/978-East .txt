@@ -20,6 +20,7 @@ state={
 		}
 		add_core_of = TUR
 		add_claim_by = GRE
+		set_demilitarized_zone = yes
 	}
 
 	provinces={
