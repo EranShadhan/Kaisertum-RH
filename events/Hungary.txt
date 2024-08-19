@@ -1,0 +1,37 @@
+#Hungay hippy
+
+country_event = {
+	id = hungary.1
+	title = hungary.1.t
+	desc = hungary.1.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary.1.a
+		hidden_effect = {
+			tag = HUN
+
+			ROM= {
+				annex_country = HUN
+				release = HUN
+			}
+
+			ROM = {
+				transfer_state = 82
+				transfer_state = 84
+				transfer_state = 76
+				transfer_state = 83
+			}
+
+			SER = {
+				transfer_state = 45
+				transfer_state = 764
+			}
+
+			}
+			
+	}
+	
+}
