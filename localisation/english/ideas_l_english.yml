@@ -1,4 +1,4 @@
-﻿l_english:
+﻿﻿l_english:
  fascist_influence:0 "Fascist Influence"
  fascist_influence_desc:0 "Fascist pressure has made fascism very popular, and the country is susceptible to align with other fascists."
  communist_influence:0 "Communist Influence"
@@ -2749,3 +2749,15 @@ FRA_super_heavy_tank_programme_desc:0 "Due to lack of coal and steel, the French
 
 FRA_eliminating_communist_opposition:0 "Eliminating the Communist Opposition"
 FRA_eliminating_communist_opposition_desc:0 "The Communist Popular Front is the largest tread to the stability and longevity of the Fascist Republican Front. As the Republican Front controls the Secret Police, it's resources would be used to hunt down the communist and socialist supporters and eliminate them. This will take some time, but it will ensure that the French Revival will have no political rivals."
+
+TUR_german_influence_in_government:0 "German Influence in the Government"
+TUR_german_influence_in_government_desc:0 "After the collapse of the Ottoman Empire, the Turkish Sultanate has been extremely unstable, leading to a power vacuum forming in the government. Several nations tried to influence the Sultanate, filling the vacuum, but Germany has managed to influence our government the most. If the Turkish Sultanate wants to act as a truly independent state, the German influence shall be diminished."
+
+TUR_international_bidding_war:0 "International Bidding War"
+TUR_international_bidding_war_desc:0 "With the great powers vying for a Turkish alliance, we are far more prosperous than the Ottoman Empire of the old was for centuries. This may be the chance we need to start a new. Whether that be a peaceful bastion, or a new empire remains to be seen."
+
+TUR_traditional_society:0 "Traditional Society"
+TUR_traditional_society_desc:0 "For decades the Young Turk movement has tried to modernize the Ottoman Empire, and when they finally seized power in 1908 it was looking like the Turkish State was finally going to modernize. But to no avail. The Ottoman Empire returned to traditionalism after the end of the Great War, opposing the european values and modernization as a whole. But the traditional society the Ottoman Empire has built is a major roadblock to research and scientific activities."
+
+TUR_humiliation_of_25:0 "Humiliation of 1925"
+TUR_humiliation_of_25_desc:0 "1925. The year of the collapse of the Ottoman Empire, which proved how incompetent the Turkish military became. While left unattended, the once great Turkish Military who once stood at the gates of Vienna were now forced to sit in defence themselves. The Turkish best generals are drinking alcohol more than doing their job, and without a major military reform the Turkish State would not survive an invasion by a relevant power"
