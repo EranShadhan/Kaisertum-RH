@@ -170,7 +170,6 @@ set_popularities = {
 }
 
 add_ideas = {
-	FRA_lore
 	FRA_republican_front_collapse
 	FRA_communist_opposition
 	FRA_embargoed_by_germany

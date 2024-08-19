@@ -41,6 +41,12 @@ add_ideas = {
 	TUR_traditional_society
 }
 
+add_ideas = {
+	limited_conscription
+	export_focus
+	civilian_economy
+}
+
 ###################
 #### 3D MODELS ####
 ###################
@@ -226,16 +232,6 @@ if = {
 		add_opinion_modifier = { 
 			target = HUN
 			modifier = BFTB_balkan_pact_enemy
-		}
-	}
-
-	if = { 
-		limit = { NOT = { has_dlc = "Battle for the Bosporus" }	}
-		add_ideas = {
-			limited_conscription
-			export_focus
-			civilian_economy
-			TUR_country_lore
 		}
 	}
 }

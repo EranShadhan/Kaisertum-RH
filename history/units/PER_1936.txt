@@ -30,33 +30,75 @@ division_template = {
 
 units = {
 	######## LAND OOB ########
-	##### Royal Iranian Army #####
+	##### Iranian Army #####
 	division = {
-		name = "Persian Cossack Brigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 1896
-		division_template = "Cavalry Brigade"		
+		division_template = "Cavalry Brigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 2097
+		division_template = "Cavalry Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10106
+		division_template = "Cavalry Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 2089
+		division_template = "Cavalry Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "South Persia Rifles"
 		location = 10913
-		division_template = "Infantry Brigade"		
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
 	}
 	division = {
-		name = "Imperial Gendarmerie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 10837
-		division_template = "Infantry Brigade"		
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 7661
+		division_template = "Infantry Brigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
-
-	######## No Naval OOB ########
 }
 
 
@@ -69,8 +111,8 @@ instant_effect = {
 			type = infantry_equipment_1
 			creator = "PER"
 		}
-		requested_factories = 1
-		progress = 0.31
-		efficiency = 100
+		requested_factories = 2
+		progress = 0.68
+		efficiency = 79
 	}
 }

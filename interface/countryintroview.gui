@@ -1,7 +1,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "intro_gui_button_container"
-		position = { x = 970 y = 5 }
+		position = { x = 675 y = 35 }
 		Orientation = UPPER_LEFT
 
 		buttonType = {
@@ -35,7 +35,7 @@ guiTypes = {
 		}
 
 		instantTextboxType = {
-			name = "intro_lore"
+			name = "intro_lore_tb"
 			text = "intro_lore"
 			position = { x = 40 y = 130 }
 			font = "hoi_18b"
@@ -46,13 +46,23 @@ guiTypes = {
 
 		buttonType = {
 			name = "intro_gui_button"
-			position = { x = 190 y = 450 }
+			position = { x = 123 y = 450 }
 			quadTextureSprite ="GFX_button_123x34"
-			buttonText = "Continue"
+			buttonText = "Exit"
 			buttonFont = "Main_22"
 			clicksound = click_ok
 			oversound = ui_menu_over
 			shortcut = "ESCAPE"
+		}
+
+		buttonType = {
+			name = "intro_gui_button_two"
+			position = { x = 246 y = 450 }
+			quadTextureSprite ="GFX_button_123x34"
+			buttonText = "Toggle Lore"
+			buttonFont = "Main_22"
+			clicksound = click_ok
+			oversound = ui_menu_over
 		}
 	}
 }

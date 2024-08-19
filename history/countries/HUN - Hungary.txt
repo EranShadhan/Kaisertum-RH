@@ -3,7 +3,6 @@
 oob = "HUN_1936"
 
 add_ideas = {
-	HUN_country_lore
 	german_customs_union_member
 }
 

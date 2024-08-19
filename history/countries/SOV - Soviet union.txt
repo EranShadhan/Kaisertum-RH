@@ -717,7 +717,6 @@ add_ideas = {
 	Stagnated_Russification
 	Systemic_Corruption
 	Revanchism_For_WW1
-	SOV_country_lore
 }
 
 

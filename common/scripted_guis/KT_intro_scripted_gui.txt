@@ -30,6 +30,17 @@ scripted_gui = {
 			intro_gui_button_click = {
 				set_variable = { show_intro = 0.0 }
 			}
+			intro_gui_button_two_click = {
+				if = {
+					limit = {
+						check_variable = { show_credits > 0.0 }
+					}
+					set_variable = { show_credits = 0.0 }
+					else = {
+						set_variable = { show_credits = 1.0 }
+					}
+				}
+			}
 		}
 	}
 }
