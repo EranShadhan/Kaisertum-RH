@@ -14,16 +14,18 @@ state={
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
-		 11774 = {
+			11774 = {
 				naval_base = 3
+
 			}
 
 		}
 		add_core_of = BUL
+
 	}
 
 	provinces={
-		11774 11905 
+		11774 11905 13366 
 	}
 	manpower=382500
 	buildings_max_level_factor=1.000

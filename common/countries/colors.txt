@@ -954,3 +954,7 @@ UBD = {
 	color = rgb { 61 68 97 }
 	color_ui = rgb { 61 68 97 }
 }
+CPE = {
+	color = rgb { 194 66 18 }
+	color_ui = rgb { 194 66 18 }
+}

@@ -1,23 +1,5 @@
 ideas = {
 	country = {
-		FRA_lore = {
-
-			picture = FRA_lore
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				random_stuff = 0
-			}
-		}
 	
 		FRA_secret_rearmament = {
 

@@ -13,6 +13,7 @@ bookmarks = {
 			ideas = {
 				FRA_republican_front_collapse
 				FRA_communist_opposition
+				FRA_super_heavy_tank_programme
 			}
 			focuses = {
 			}
@@ -21,6 +22,9 @@ bookmarks = {
 			history = "ENG_NEW_DECADE_DESC"
 			ideology = democratic
 			ideas = {
+				stiff_upper_lip
+				ENG_the_war_to_end_all_wars
+				george_v
 			}
 			focuses = {
 			}
@@ -57,6 +61,7 @@ bookmarks = {
 			history = "SOV_NEW_DECADE_DESC"
 			ideology = communism
 			ideas = {
+				victory_in_the_sgtw
 			}
 			focuses = {
 			}
@@ -73,6 +78,8 @@ bookmarks = {
 			history = "USA_NEW_DECADE_DESC"
 			ideology = democratic
 			ideas = {
+				great_depression
+				home_of_the_free
 			}
 			focuses = {
 			}
@@ -80,11 +87,24 @@ bookmarks = {
 
 
 		###  MINORS ###
+		"UBD"={
+			minor = yes
+			history = "UBD_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+				UBD_germanisation_programme_idea
+				UBD_overworked_administration_idea
+				UBD_lack_of_workers_idea
+			}
+			focuses = {
+			}
+		}
 		"ROM"={
 			minor = yes
 			history = "ROM_NEW_DECADE_DESC"
 			ideology = neutrality
 			ideas = {
+				german_customs_union_member
 			}
 			focuses = {
 			}
@@ -94,9 +114,9 @@ bookmarks = {
 			history = "PER_NEW_DECADE_DESC"
 			ideology = neutrality
 			ideas = {
-				victory_in_the_sgtw
 				PER_german_persian_oil_company
 				PER_army_1_focus
+				PER_traditional_islam_gov
 			}
 			focuses = {
 			}
@@ -106,6 +126,9 @@ bookmarks = {
 			history = "TUR_NEW_DECADE_DESC"
 			ideology = neutrality
 			ideas = {
+				TUR_humiliation_of_25
+				TUR_international_bidding_war
+				TUR_traditional_society
 			}
 			focuses = {
 			}

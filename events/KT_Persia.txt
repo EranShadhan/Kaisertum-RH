@@ -1,0 +1,48 @@
+﻿###########################
+# Persian Kaisertum Events
+###########################
+
+add_namespace = KT_persia
+
+# Communist Revolution
+country_event = {
+	id = KT_persia.1
+	title = KT_persia.1.t
+	desc = KT_persia.1.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = PER_commie_revolution
+			CPE = {
+				set_country_flag = PER_commie_revolution
+				transfer_state = 229
+				transfer_state = 419
+				transfer_state = 352
+				transfer_state = 800
+				transfer_state = 676
+				transfer_state = 421
+				transfer_state = 291
+				transfer_state = 675
+				transfer_state = 656
+			}
+			declare_war_on = {
+				target = PER
+				type = civil_war
+			}
+		}
+	}
+	
+	option = {
+		name = KT_persia.1.a
+	}
+
+	option = {
+		name = KT_persia.1.b
+		CPE = {
+			change_tag_from = PER
+		}
+	}
+}

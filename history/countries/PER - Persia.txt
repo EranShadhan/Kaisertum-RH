@@ -29,22 +29,8 @@ add_ideas = {
 	PER_monarchist_resistance
 	PER_disloyal_military
 	PER_traditional_islam_gov
-}
-
-give_resource_rights = {
-    receiver = GER
-    state = 291
-    resources = { oil }
-}
-give_resource_rights = {
-    receiver = GER
-    state = 413
-    resources = { oil }
-}
-give_resource_rights = {
-    receiver = GER
-    state = 412
-    resources = { oil }
+	PER_agrarian_society
+	PER_dream
 }
 
 recruit_character = PER_ahmad_amir_ahmadi

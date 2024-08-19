@@ -1,0 +1,32 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			give_resource_rights = {
+				receiver = GER
+				state = 291
+				resources = { oil }
+			}
+			give_resource_rights = {
+				receiver = GER
+				state = 413
+				resources = { oil }
+			}
+			give_resource_rights = {
+				receiver = GER
+				state = 412
+				resources = { oil }
+			}
+		}
+	}
+	on_daily_PER = {
+		effect = {
+			if = {
+				limit = {
+					has_idea = PER_disloyal_military
+					stability>0.3
+				}
+				#Iranian commie revolution
+			}
+		}
+	}
+}
