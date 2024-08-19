@@ -71,6 +71,7 @@ country_event = {
 					target = AUS
 					type = puppet_wargoal_focus
 				}
+				set_cosmetic_tag = 0
 			}
 			76 = {
 				add_core_of = ROM
@@ -87,7 +88,7 @@ country_event = {
 			764 = {
 				add_core_of = ROM
 			}
-			ROM = { country_event = { days = 28 id = austria.4 } }
+			BUL = { country_event = { days = 28 id = austria.4 } }
 			ITA = { country_event = { days = 10 id = austria.3 } }
 		}
 	}
@@ -159,22 +160,74 @@ country_event = {
 			}
 			802 = {
 				add_core_of = ALB
-			}
-			ROM = {
-				declare_war_on = {
-					target = AUS
-					type = puppet_wargoal_focus
-				}
 			}	
 			BUL = {
 				declare_war_on = {
-					target = AUS
+					target = SER
+					type = puppet_wargoal_focus
+				}
+			}
+			ROM = {
+				declare_war_on = {
+					target = HUN
 					type = puppet_wargoal_focus
 				}
 			}
 			ALB = {
 				declare_war_on = {
-					target = AUS
+					target = SER
+					type = puppet_wargoal_focus
+				}
+			}
+			GRE = {
+				add_to_faction = ROM
+			}
+		}
+	}
+}
+country_event = {
+	id = austria.5
+	title = austria.4.t
+	desc = austria.4.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger {
+		4 = { is_controlled_by = GER }
+		4 = { is_owned_by = AUS }
+		GER = { has_war_with = AUS }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = austria.1.a
+		hidden_effect = {
+			107 = {
+				add_core_of = BUL
+			}
+			105 = {
+				add_core_of = BUL
+			}
+			802 = {
+				add_core_of = ALB
+			}	
+			BUL = {
+				declare_war_on = {
+					target = SER
+					type = puppet_wargoal_focus
+				}
+			}
+			ROM = {
+				declare_war_on = {
+					target = HUN
+					type = puppet_wargoal_focus
+				}
+			}
+			ALB = {
+				declare_war_on = {
+					target = SER
 					type = puppet_wargoal_focus
 				}
 			}
