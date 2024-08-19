@@ -13349,6 +13349,53 @@ news_event = {
 	}
 }
 
+news_event = {
+	id = news.410
+	title = news.410.t
+	desc = news.410.desc
+	picture = GFX_news_event_074
+
+	major = yes
+
+	trigger = {
+		4 = { is_controlled_by = HUN} 
+		4 = { is_owned_by = AUS }
+		HUN = { has_war_with = AUS }
+		NOT = { has_global_flag = fall_of_viena }
+	}
+
+	immediate = { 
+					set_global_flag = fall_of_viena
+					AUS = {
+						country_event = austria.5
+					}
+				}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = news.410.a
+		trigger = {
+			TAG = { has_war_with = AUS }
+		}
+		AUS = {
+			country_event = {
+				id = austria.5
+			}
+		}
+	}
+	option = {
+		name = news.410.b
+		trigger = {
+				TAG = AUS
+		}
+	}
+
+}
+
+
 
 
 

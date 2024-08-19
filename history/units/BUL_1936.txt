@@ -75,6 +75,246 @@ units = {
 
 	}
 	division = {
+		#name = "1-va 'Sofiya' Pekhotna Divizija"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949  # Sofia
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		#name = "1-va 'Sofiya' Pekhotna Divizija"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949  # Sofia
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		#name = "1-va 'Sofiya' Pekhotna Divizija"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949  # Sofia
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		#name = "1-va 'Sofiya' Pekhotna Divizija"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949  # Sofia
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		#name = "1-va 'Sofiya' Pekhotna Divizija"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949  # Sofia
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		#name = "1-va 'Sofiya' Pekhotna Divizija"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949  # Sofia
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		#name = "1-va 'Sofiya' Pekhotna Divizija"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949  # Sofia
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		#name = "1-va 'Sofiya' Pekhotna Divizija"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949  # Sofia
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		#name = "1-va 'Sofiya' Pekhotna Divizija"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949  # Sofia
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		#name = "1-va 'Sofiya' Pekhotna Divizija"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949  # Sofia
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		#name = "1-va 'Sofiya' Pekhotna Divizija"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949  # Sofia
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		#name = "1-va 'Sofiya' Pekhotna Divizija"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949  # Sofia
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		#name = "1-va 'Sofiya' Pekhotna Divizija"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949  # Sofia
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		#name = "1-va 'Sofiya' Pekhotna Divizija"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949  # Sofia
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		#name = "1-va 'Sofiya' Pekhotna Divizija"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949  # Sofia
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		#name = "1-va 'Sofiya' Pekhotna Divizija"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949  # Sofia
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		#name = "1-va 'Sofiya' Pekhotna Divizija"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949  # Sofia
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		#name = "1-va 'Sofiya' Pekhotna Divizija"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949  # Sofia
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		#name = "1-va 'Sofiya' Pekhotna Divizija"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949  # Sofia
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		#name = "1-va 'Sofiya' Pekhotna Divizija"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949  # Sofia
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
 		#name = "7-ma 'Dupnica' Pekhotna Divizija"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
