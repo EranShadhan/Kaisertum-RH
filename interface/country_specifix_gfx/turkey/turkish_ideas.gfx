@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_german_influence_in_government"
+		texturefile = "gfx/interface/ideas/turkish_ideas/german_influence_in_government.png"
+	}
+	spriteType = {
+		name = "GFX_idea_international_bidding_war"
+		texturefile = "gfx/interface/ideas/turkish_ideas/international_bidding_war.png"
+	}
+	spriteType = {
+		name = "GFX_idea_traditional_society"
+		texturefile = "gfx/interface/ideas/turkish_ideas/traditional_society.png"
+	}
+	spriteType = {
+		name = "GFX_idea_humiliation_of_25"
+		texturefile = "gfx/interface/ideas/turkish_ideas/humiliation_of_25.png"
+	}
+}
