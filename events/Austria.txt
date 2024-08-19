@@ -203,6 +203,10 @@ country_event = {
 			}
 		}
 
+		POL = {
+			
+		}
+
 		ITA = {
 			transfer_state = 850
 			transfer_state = 39
