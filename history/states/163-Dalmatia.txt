@@ -1,9 +1,9 @@
 state = {
 	id = 163
 	name = "STATE_163"
-	manpower = 18000
+	manpower = 494666
 	
-	state_category = enclave
+	state_category = large_town
 	
 	history = {
 		owner = YUG
@@ -11,16 +11,17 @@ state = {
 			3943 5 
 		}
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 3
+			dockyard = 1
+			industrial_complex = 1
 			3943 = {
 				naval_base = 1
 			}
 		}
 		add_core_of = YUG
-		add_core_of = CRO
 	}
 	provinces = {	
-		3943 
+		3943 3974 984 11901 6611 591 3601
 	}
 
 	local_supplies = 0.0 

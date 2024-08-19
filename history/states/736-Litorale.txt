@@ -10,6 +10,7 @@ state = {
 		}
 		owner = AUS
 		add_claim_by = ITA
+		add_claim_by = YUG
 		add_core_of = AUS
 		add_core_of = SLV
 		buildings = {
