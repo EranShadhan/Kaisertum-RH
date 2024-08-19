@@ -23,6 +23,9 @@
 		ai_will_do = {
 			factor = 12
 		}
+		available = {
+			has_completed_focus = GER_to_kill_an_empire
+		}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_tech_bonus = {
@@ -2054,7 +2057,9 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		available = {
+			has_completed_focus = GER_to_kill_an_empire
+		}
 		available_if_capitulated = yes
 		complete_tooltip = {
 			air_experience = 25
@@ -2347,7 +2352,9 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		available = {
+			has_completed_focus = GER_to_kill_an_empire
+		}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -2639,7 +2646,7 @@ focus = {
 		y = 0
 		#relative_position_id = AST_empower_the_workers
 
-		cost = 8
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -2657,7 +2664,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-				add_political_power = 100
+			add_political_power = 100
+			country_event = germany.1
 		}
 	}
 	focus = {
@@ -2668,7 +2676,7 @@ focus = {
 		y = 1
 		relative_position_id = GER_a_new_decade
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 16
@@ -2686,7 +2694,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-				add_political_power = 100
+			add_war_support = 0.1
 		}
 	}
 	focus = {

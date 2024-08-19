@@ -1,7 +1,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "intro_gui_button_container"
-		position = { x = 675 y = 35 }
+		position = { x = 970 y = 5 }
 		Orientation = UPPER_LEFT
 
 		buttonType = {
