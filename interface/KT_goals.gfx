@@ -1,0 +1,45 @@
+spriteTypes = {
+
+	
+	SpriteType = {
+		name = "GFX_focus_fra_promises_war_victory_greatness"
+		texturefile = "gfx/interface/goals/focus_fra_promises_war_victory_greatness.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_fra_strike_germany"
+		texturefile = "gfx/interface/goals/focus_fra_strike_germany.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_improve_our_economy"
+		texturefile = "gfx/interface/goals/focus_fra_improve_our_economy.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_support_textile_industry"
+		texturefile = "gfx/interface/goals/focus_fra_support_textile_industry.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_focus_fra_invest_in_colonies"
+		texturefile = "gfx/interface/goals/focus_fra_invest_in_colonies.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_invest_in_mainland"
+		texturefile = "gfx/interface/goals/focus_fra_invest_in_mainland.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_fra_expand_public_services"
+		texturefile = "gfx/interface/goals/focus_fra_expand_public_services.dds"
+	}
+	
+	#Goal_Money
+	
+	SpriteType = {
+		name = "GFX_Goal_Money"
+		texturefile = "gfx/interface/goals/Goal_Money.dds"
+	}
+}

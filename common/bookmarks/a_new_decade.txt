@@ -11,23 +11,14 @@ bookmarks = {
 			history = "FRA_NEW_DECADE_DESC"
 			ideology = fascism
 			ideas = {
-			FRA_lore
-			FRA_republican_front_collapse
-			FRA_communist_opposition
-			}
-			focuses = {
-			}
-		}
-		"USA"={
-			history = "USA_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
+				FRA_republican_front_collapse
+				FRA_communist_opposition
 			}
 			focuses = {
 			}
 		}
 		"ENG"={
-			history = "ENG_GATHERING_STORM_DESC"
+			history = "ENG_NEW_DECADE_DESC"
 			ideology = democratic
 			ideas = {
 			}
@@ -38,7 +29,6 @@ bookmarks = {
 			history = "GER_NEW_DECADE_DESC"
 			ideology = democratic
 			ideas = {
-				GER_country_lore
 				GER_wilhelm_ii
 				german_customs_union_member
 			}
@@ -46,35 +36,81 @@ bookmarks = {
 			}
 		}
 		"ITA"={
-			history = "ITA_GATHERING_STORM_DESC"
-			ideology = fascism
+			history = "ITA_NEW_DECADE_DESC"
+			ideology = neutrality
 			ideas = {
-				ITA_country_lore
                 german_customs_union_member
-
 			}	
 			focuses = {
 			}		
 		}
-		"JAP"={
-			history = "JAP_GATHERING_STORM_DESC"
-			ideology = fascism
+		"AUS"={
+			history = "AUS_NEW_DECADE_DESC"
+			ideology = neutrality
 			ideas = {
+                german_customs_union_member
 			}	
 			focuses = {
-			}			
+			}		
 		}
 		"SOV"={
-			history = "SOV_GATHERING_STORM_DESC"
+			history = "SOV_NEW_DECADE_DESC"
 			ideology = communism
 			ideas = {
 			}
 			focuses = {
+			}
+		}
+		"JAP"={
+			history = "JAP_NEW_DECADE_DESC"
+			ideology = communism
+			ideas = {
 			}	
+			focuses = {
+			}
+		}
+		"USA"={
+			history = "USA_NEW_DECADE_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
 		}
 
 
-		# minors from DLC ####
+		###  MINORS ###
+		"ROM"={
+			minor = yes
+			history = "ROM_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"PER"={
+			minor = yes
+			history = "PER_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+				victory_in_the_sgtw
+				PER_german_persian_oil_company
+				PER_army_1_focus
+			}
+			focuses = {
+			}
+		}
+		"TUR"={
+			minor = yes
+			history = "TUR_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		#NOT REWORKED FROM NOW ON
 		"GPI"={
 			minor = yes
 			ideology = neutrality
@@ -132,16 +168,6 @@ bookmarks = {
 		"HUN"={
 			minor = yes
 			history = "HUN_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-
-		"ROM"={
-			minor = yes
-			history = "ROM_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
 			}
@@ -227,15 +253,6 @@ bookmarks = {
 			}
 		}
 
-		"TUR"={
-			minor = yes
-			history = "TUR_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-			}
-			focuses = {
-			}
-		}
 		"POL"={
 			minor = yes
 			history = "POL_GATHERING_STORM_DESC"

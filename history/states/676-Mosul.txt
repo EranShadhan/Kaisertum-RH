@@ -6,7 +6,7 @@ state={
 	state_category = town
 	
 	resources={
-		oil=8 # was: 10
+		oil=10
 	}
 
 
@@ -25,7 +25,6 @@ state={
 			6826 1
 		}
 		add_core_of = KUR
-		add_core_of = PER
 	}
 	
 	provinces={

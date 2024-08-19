@@ -21,7 +21,7 @@ ideas = {
 	
 		FRA_secret_rearmament = {
 
-			picture = FRA_secret_rearmament
+			picture = chi_army_corruption3
 			
 			allowed = {
 				always = no
@@ -40,7 +40,7 @@ ideas = {
 		
 		FRA_embargoed_by_germany = {
 
-			picture = FRA_embargoed_by_germany
+			picture = can_wartime_prices_and_trade_board
 			
 			allowed = {
 				always = no
@@ -81,7 +81,7 @@ ideas = {
 		
 		FRA_colonial_army = {
 
-			picture = FRA_colonial_army
+			picture = por_colonial_army
 			
 			allowed = {
 				always = no
@@ -101,7 +101,7 @@ ideas = {
 		
 		FRA_republican_front_collapse = {
 
-			picture = FRA_republican_front_collapse
+			picture = FRA_political_violence
 			
 			allowed = {
 				always = no
@@ -121,7 +121,7 @@ ideas = {
 		
 		FRA_secret_police = {
 
-			picture = FRA_secret_police
+			picture = generic_secret_police
 			
 			allowed = {
 				always = no
@@ -140,7 +140,7 @@ ideas = {
 
 		FRA_super_heavy_tank_programme = {
 
-			picture = FRA_super_heavy_tank_programme
+			picture = generic_acquire_tanks
 			
 			allowed = {
 				always = no
@@ -162,7 +162,7 @@ ideas = {
 
 		FRA_eliminating_communist_opposition = {
 
-			picture = FRA_eliminating_communist_opposition
+			picture = generic_communism_banned
 			
 			allowed = {
 				always = no
@@ -183,7 +183,7 @@ ideas = {
 
 		FRA_ultra_fascists = {
 
-			picture = FRA_ultra_fascists
+			picture = generic_fascism_rising
 			
 			allowed = {
 				always = no
@@ -206,7 +206,7 @@ ideas = {
 
 		FRA_moderate_fascists = {
 
-			picture = FRA_moderate_fascists
+			picture = generic_fascist_workers
 			
 			allowed = {
 				always = no
@@ -245,7 +245,7 @@ ideas = {
 		
 		FRA_small_scale_defeatism = {
 
-			picture = FRA_secret_rearmament
+			picture = chi_army_corruption3
 			
 			allowed = {
 				always = no
