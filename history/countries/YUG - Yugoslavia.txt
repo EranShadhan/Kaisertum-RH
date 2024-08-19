@@ -6,7 +6,7 @@ set_cosmetic_tag = YUG_AS
 
 oob = "YUG_1936"
 
-
+recruit_character = YUG_Ivan_Subasic
 recruit_character = YUG_milan_stojadinovic
 recruit_character = YUG_milan_grol
 recruit_character = YUG_josip_broz_tito
