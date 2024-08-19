@@ -42,7 +42,7 @@ set_research_slots = 3
 set_stability = 0.6
 set_war_support = 0.6
 
-recruit_character = ROM_gheorghe_tatarescu
+recruit_character = ROM_corneliu_zelea_codreanu
 recruit_character = ROM_constantin_ion_parhon
 recruit_character = ROM_armand_calinescu
 recruit_character = ROM_corneliu_codreanu
@@ -146,13 +146,13 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1933.12.20"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 60
-	fascism = 18
+	democratic = 40
+	fascism = 30
 	communism = 2
-	neutrality = 20
+	neutrality = 28
 }
 
 1939.1.1 = {

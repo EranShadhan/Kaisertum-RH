@@ -1,4 +1,9 @@
-spriteTypes = {	
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_portrait_ROM_Corneliu_Zelea_Codreanu"
+		texturefile = "gfx/leaders/ROM/Portrait_ROM_Corneliu_Zelea_Codreanu.dds"
+	}
 
 	spriteType = {
 		name = "GFX_portrait_SER_Elisabeth_Marie"
