@@ -1,0 +1,18 @@
+characters={
+
+	ROM_corneliu_zelea_codreanu={
+		name = ROM_corneliu_zelea_codreanu
+		portraits = {
+			civilian={
+				large = GFX_portrait_ROM_Corneliu_Zelea_Codreanu
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ economic_reformer }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

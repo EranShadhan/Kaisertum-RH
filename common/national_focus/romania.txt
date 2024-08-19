@@ -764,10 +764,11 @@ focus = {
 focus = {
 
     id = ROM_pol_1
-    icon = GFX_goal_the_nation
+    icon = GFX_ROM_pol_1
     x = 40
     y = 1
-    relative_position_id = 
+
+	cost = 3
 
     ai_will_do = {
 			factor = 1
@@ -795,7 +796,7 @@ focus = {
 focus = {
 
     id = ROM_pol_2
-    icon = GFX_goal_the_nation
+    icon = GFX_ROM_pol_2
     x = -2
     y = 1
     relative_position_id = ROM_pol_1
@@ -1405,10 +1406,12 @@ focus = {
 
 		id = ROM_pol_kw_10
 		icon = GFX_ROM_pol_kw_10
-		x = -2
+		x = -1
 		y = 5
 		relative_position_id = ROM_pol_kw_1
-	
+		
+		mutually_exclusive = { focus = ROM_pol_kw_11 }
+
 		prerequisite = { focus = ROM_pol_kw_9 }
 
 		ai_will_do = {
@@ -1438,10 +1441,12 @@ focus = {
 
 		id = ROM_pol_kw_11
 		icon = GFX_ROM_pol_kw_11
-		x = 2
+		x = 1
 		y = 5
 		relative_position_id = ROM_pol_kw_1
-	
+		
+		mutually_exclusive = { focus = ROM_pol_kw_10 }
+
 		prerequisite = { focus = ROM_pol_kw_9 }
 
 		ai_will_do = {
@@ -1471,7 +1476,7 @@ focus = {
 
 		id = ROM_pol_kw_12
 		icon = GFX_ROM_pol_kw_12
-		x = -1
+		x = -2
 		y = 6
 		relative_position_id = ROM_pol_kw_1
 	
@@ -1504,7 +1509,7 @@ focus = {
 
 		id = ROM_pol_kw_13
 		icon = GFX_ROM_pol_kw_13
-		x = 1
+		x = 2
 		y = 6
 		relative_position_id = ROM_pol_kw_1
 	
@@ -1533,39 +1538,6 @@ focus = {
 			}
 	}
 
-	focus = {
-
-		id = ROM_pol_kw_14
-		icon = GFX_ROM_pol_kw_14
-		x = 0
-		y = 7
-		relative_position_id = ROM_pol_kw_1
-	
-		prerequisite = { focus = ROM_pol_kw_13 }
-		prerequisite = { focus = ROM_pol_kw_12 }
-
-		ai_will_do = {
-				factor = 1
-			}
-	
-			available = {
-	
-			}
-	
-			bypass = {
-	
-			}
-	
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
-	
-			
-	
-			completion_reward = {
-				
-			}
-	}
 
 	focus = {
 
@@ -1878,6 +1850,108 @@ focus = {
 	
 		prerequisite = { focus = ROM_pol_rc_9}
 		prerequisite = { focus = ROM_pol_rc_8}
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_rc_11
+		icon = GFX_ROM_pol_rc_11
+		x = -2
+		y = 7
+		relative_position_id = ROM_pol_rc_1
+	
+		prerequisite = { focus = ROM_pol_rc_10}
+
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_rc_12
+		icon = GFX_ROM_pol_rc_12
+		x = 0
+		y = 7
+		relative_position_id = ROM_pol_rc_1
+	
+		prerequisite = { focus = ROM_pol_rc_10}
+
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_rc_13
+		icon = GFX_ROM_pol_rc_13
+		x = 2
+		y = 7
+		relative_position_id = ROM_pol_rc_1
+	
+		prerequisite = { focus = ROM_pol_rc_10}
+
 
 		ai_will_do = {
 				factor = 1
