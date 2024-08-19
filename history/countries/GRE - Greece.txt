@@ -38,6 +38,7 @@ add_ideas = {
 	limited_conscription
 	civilian_economy
 	german_customs_union_member
+	victory_in_the_sgtw
 }
 
 set_research_slots = 3
