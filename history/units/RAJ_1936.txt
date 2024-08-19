@@ -47,29 +47,6 @@ division_template = {
 ####### OOB #######
 units = {
 	#India Command
-	
-	#Northern Command
-	
-	division= {	# "Pashawar District"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 101
-		}
-		location = 12717
-		division_template = "District Garrison"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-	division= {	# "Kohat District"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 102
-		}
-		location = 4998
-		division_template = "District Garrison"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
 	division= {	# "Rawalpindi District"
 		division_name = {
 			is_name_ordered = yes
@@ -90,17 +67,6 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 	}
-	division= {	# "Waziristan District"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 105
-		}
-		location = 1978
-		division_template = "District Garrison"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-	
 	#Eastern Command
 	division= {	# "Meerut District"
 		division_name = {
