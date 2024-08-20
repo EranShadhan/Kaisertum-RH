@@ -1907,7 +1907,7 @@ focus_tree = {
 		id = PER_aviation_effort_2
 		text = aviation_effort_2
 		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus = PER_bomber_focus focus = fighter_focus }
+		prerequisite = { focus = PER_bomber_focus focus = PER_fighter_focus }
 		x = -1
 		y = 1
 		relative_position_id = PER_bomber_focus
@@ -2267,7 +2267,7 @@ focus_tree = {
 		id = PER_submarine_effort
 		text = submarine_effort
 		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = PER_flexible_navy focus = large_navy }
+		prerequisite = { focus = PER_flexible_navy focus = PER_large_navy }
 		x = 0
 		y = 1
 		relative_position_id = PER_flexible_navy
@@ -2306,7 +2306,7 @@ focus_tree = {
 		id = PER_cruiser_effort
 		text = cruiser_effort
 		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = PER_large_navy focus = flexible_navy }
+		prerequisite = { focus = PER_large_navy focus = PER_flexible_navy }
 		x = 0
 		y = 1
 		relative_position_id = PER_large_navy
