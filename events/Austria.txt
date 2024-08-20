@@ -277,6 +277,7 @@ country_event = {
 				982 = {
 					add_core_of = HUN
 				}
+				white_peace = YUG
 			}
 			HUN = {
 				transfer_state = 982
