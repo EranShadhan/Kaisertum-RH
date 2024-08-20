@@ -6,28 +6,45 @@ the_fiume_crisis = {
 		
 		
 		available = {
-			
+			has_global_flag = austrian_collapse
 		}
 		
 		fire_only_once = no		
-		days_re_enable = 7
+		days_re_enable = 1
 
 		visible = {
-			tag = YUG
+			or = {
+				tag = YUG
+				tag = ITA
+			}
 		}		
 
 		cost = 25	
 		
 		# EFFECTS OF THIS DECISION/MISSION
 
-		complete_effect = {		
-			
-		}
+	complete_effect = {
 		
-		# AI LOGIC FOR THIS DECISION/MISSION
-
-		ai_will_do = {	
-			factor = 25			
+		if = {
+				limit = {
+					TAG = YUG
+				}
+					add_to_variable = {
+						var = YUG_fiume_crisis_var
+						value = 5
+						tooltip = ITA_YUG_invest_money
+					}
+			}
+		else_if = {
+				limit = {
+					TAG = ITA
+				}
+					add_to_variable = {
+						var = ITA_fiume_crisis_var
+						value = 5
+						tooltip = ITA_YUG_invest_money
+					}
+			}
 		}
 	}
 	spread_croatian_propaganda = {
@@ -37,11 +54,11 @@ the_fiume_crisis = {
 		
 		
 		available = {
-			
+			has_global_flag = austrian_collapse
 		}
 		
 		fire_only_once = no		
-		days_re_enable = 7
+		days_re_enable = 1
 
 		visible = {
 			tag = YUG
@@ -51,8 +68,50 @@ the_fiume_crisis = {
 		
 		# EFFECTS OF THIS DECISION/MISSION
 
-		complete_effect = {		
-			
+	complete_effect = {
+		ITA = {
+			add_to_variable = {
+				var = ITA_fiume_crisis_var
+				value = -2.5
+				tooltip = ITA_YUG_invest_money
+			}
+		}
+	}
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	
+			factor = 25			
+		}
+	}
+	spread_italian_propaganda = {
+
+		icon = GFX_decision_icon_default		
+		
+		
+		
+		available = {
+			has_global_flag = austrian_collapse
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 1
+
+		visible = {
+			tag = ITA
+		}		
+
+		cost = 30	
+		
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {
+			YUG = {
+				add_to_variable = {
+					var = YUG_fiume_crisis_var
+					value = -2.5
+					tooltip = ITA_YUG_propaganda
+				}
+			}
 		}
 		
 		# AI LOGIC FOR THIS DECISION/MISSION
@@ -68,14 +127,17 @@ the_fiume_crisis = {
 		
 		
 		available = {
-			
+			has_global_flag = austrian_collapse
 		}
 		
 		fire_only_once = no		
-		days_re_enable = 7
+		days_re_enable = 1
 
 		visible = {
-			tag = YUG
+			or = {
+				tag = YUG
+				tag = ITA
+			}
 		}		
 
 		cost = 10	

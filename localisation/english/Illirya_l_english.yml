@@ -1,6 +1,9 @@
 ﻿l_english:
  the_fiume_crisis:0 "The fiume Crisis"
- the_fiume_crisis_desc:0 "Now that the austrian empire has been dissolved, the city of Rijeka is in chaos, we have now become aligned with the italians, the city of Fiume is in our way, while the city is majority Slavic, there is an italian minority which seeks to have the city annexed by italy. While we are allies to the italians, Rijeka is illyrian and we will have to convince the people to join us"
- invest_money:0 "Invest money for the people"
+ the_fiume_crisis_desc:0 "Now that the austrian empire has been dissolved, the city of Rijeka is in chaos, we have now become aligned with the italians, the city of Fiume is in our way, while the city is majority Slavic, there is an italian minority which seeks to have the city annexed by italy. While we are allies to the italians, Rijeka is Illyrian and we will have to convince the people to join us. \n§YItalian influence = [?ITA.ITA_fiume_crisis_var]§! \n§YIllyrian influence = [?YUG.YUG_fiume_crisis_var]§!"
  spread_croatian_propaganda:0 "Spread illyrian propaganda"
+ spread_italian_propaganda:0 "Spread italian propaganda"
  promise_eqality_for_the_italians:0 "Promise equality for the italians"
+ invest_money:0 "Invest money for the people"
+ ITA_YUG_invest_money:0 "Choosing this decision will make the people look at us in a more favourable way §Y (+5 to [ROOT.GetName])§!"
+ ITA_YUG_propaganda:0 "This will convince the people to trust more us instead of the other §Y (-5 to your enemy)§!"

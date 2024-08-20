@@ -113,7 +113,7 @@ country_event = {
 				add_core_of = ITA
 				remove_core_of = AUS
 			}
-			736 = {
+			736 = { 
 				add_core_of = ITA
 				remove_core_of = AUS
 			}
@@ -122,7 +122,11 @@ country_event = {
 				remove_core_of = AUS
 			}
 			853 = {
-				add_core_of = ITA
+				add_core_of = YUG
+				remove_core_of = AUS
+			}
+			102 = {
+				add_core_of = YUG
 				remove_core_of = AUS
 			}
 			163 = {
@@ -188,7 +192,13 @@ country_event = {
 				set_cosmetic_tag = CZE_reichskommissariat
 			}
 			GER = {
-				annex_country = AUS
+				transfer_state = 848
+				transfer_state = 152
+				transfer_state = 4
+				transfer_state = 153
+				transfer_state = 74
+				transfer_state = 69
+				transfer_state = 102
 			}
 		}
 	}
@@ -216,7 +226,13 @@ country_event = {
 				relation = puppet
 				active = yes
 			}
-			annex_country = AUS
+			transfer_state = 848
+			transfer_state = 152
+			transfer_state = 4
+			transfer_state = 153
+			transfer_state = 74
+			transfer_state = 69
+			transfer_state = 102
 		}
 
 		POL = {
@@ -229,10 +245,35 @@ country_event = {
 			transfer_state = 89
 		}
 
+				
+		set_global_flag = austrian_collapse
+		
 		ITA = {
 			transfer_state = 850
 			transfer_state = 39
 			transfer_state = 736
+			set_variable = {
+				ITA_fiume_crisis_var = 5
+			}
+		}
+
+		YUG ={
+			transfer_state = 105
+			transfer_state = 852
+			transfer_state = 853
+			set_variable = {
+				YUG_fiume_crisis_var = 5
+			}
+			white_peace = HUN
+			white_peace = GER
+			white_peace = POL
+			white_peace = UKR
+			852 = {
+				set_demilitarized_zone = yes
+			}
+			set_variable = {
+				YUG_fiume_crisis_var = 5
+			}
 		}
 
 		BUL = {
@@ -257,15 +298,6 @@ country_event = {
 
 		CZE = {
 			set_cosmetic_tag = CZE_reichskommissariat
-		}
-
-		YUG ={
-			transfer_state = 105
-			transfer_state = 852
-			transfer_state = 853
-			852 = {
-				set_demilitarized_zone = yes
-			}
 		}
 
 		ROM = {
