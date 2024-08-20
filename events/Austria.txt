@@ -200,6 +200,10 @@ country_event = {
 	option = {
 		name = austria.1.a
 
+		HUN = {
+			transfer_state = 892
+		}
+
 		GER = {
 			annex_country = {
 				target = AUS
