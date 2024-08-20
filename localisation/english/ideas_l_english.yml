@@ -2764,3 +2764,6 @@ TUR_humiliation_of_25_desc:0 "1925. The year of the collapse of the Ottoman Empi
 
  islam_religion:0 "Muslim Faith"
  islam_religion_desc:0 "[ROOT.GetName] is overwhelmingly a muslim majority country."
+
+ discrimination_focus:0 "Discrimination"
+ discrimination_focus_desc:0 "[ROOT.GetAdjective] people are biologically the stromgest people and to remain in that position other racial and religious groups need to become invisisble."
