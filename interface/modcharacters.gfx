@@ -38,4 +38,8 @@ spriteTypes = {
 		name = "GFX_portrait_FRA_marcel_deat"
 		texturefile = "gfx/leaders/FRA/Portrait_France_Marcel_Deat.dds"
 	}
+	spriteType = {
+		name = "GFX_Portrait_UKR_Vasyl_Habsburg"
+		texturefile = "gfx/leaders/FRA/Portrait_UKR_Vasyl_Habsburg.dds"
+	}
 }
