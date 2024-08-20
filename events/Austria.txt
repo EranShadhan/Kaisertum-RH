@@ -182,6 +182,10 @@ country_event = {
 			GRE = {
 				add_to_faction = ROM
 			}
+			CZE = {
+				transfer_state = 9
+				transfer_state = 75
+			}
 		}
 	}
 }
@@ -199,7 +203,21 @@ country_event = {
 		GER = {
 			annex_country = {
 				target = AUS
-				transfer_troops = yes
+				transfer_troops = no
+			}
+		}
+
+		CZE = {
+			transfer_state = 9
+			transfer_state = 75
+			set_cosmetic_tag = CZE_ONLY
+		}
+
+		GER = {
+			diplomatic_relation = {
+				country = CZE
+				relation = puppet
+				active = yes
 			}
 		}
 
@@ -250,6 +268,9 @@ country_event = {
 		}
 
 		hidden_effect = {
+			HUN = {
+				add_ideas = HUN_debuff
+			}
 			107 = {
 				add_core_of = BUL
 			}
@@ -258,8 +279,12 @@ country_event = {
 			}
 			802 = {
 				add_core_of = ALB
+			}
+			BUL = {
+				add_ideas = { against_hungary }
 			}	
 			ROM = {
+				add_ideas = { against_hungary }
 				declare_war_on = {
 					target = HUN
 					type = puppet_wargoal_focus
@@ -272,6 +297,7 @@ country_event = {
 				}
 			}
 			GRE = {
+				add_ideas = { against_hungary }
 				add_to_faction = ROM
 			}
 		}

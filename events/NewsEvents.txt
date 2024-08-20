@@ -13306,46 +13306,37 @@ news_event = {
 
 ### Yellow river blown
 news_event = {
-	id = news.409
-	title = news.409.t
-	desc = news.409.desc
+	id = news.411
+	title = news.411.t
+	desc = news.411.desc
 	picture = GFX_news_event_074
 	
 	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = news.409.a
-		trigger = {
-			OR = {
-				TAG = CHI
-				is_in_faction_with = CHI
-			}
+
+	trigger = {
+		OR = {
+			4 = { is_controlled_by = HUN is_owned_by = AUS }
+			9 = { is_controlled_by = GER is_owned_by = AUS }
+			surrender_progress > 0.25
 		}
+		
+		HUN = { has_war_with = ROM }
+		NOT = { has_global_flag = fall_of_buda }
 	}
-	option = {
-		name = news.409.b
-		trigger = {
-			OR = {
-				TAG = JAP
-				is_in_faction_with = JAP
-			}
-		}
-	}
-	option = {
-		name = news.409.c
-		trigger = {
-			NOT = {
-				OR = {
-					TAG = CHI
-					OR = {
-						TAG = JAP
-						is_in_faction_with = JAP
+
+	immediate = { 
+					set_global_flag = fall_of_buda
+					HUN = {
+						country_event = hungary.1
 					}
 				}
-			}
-		}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = news.410a
 	}
 }
 
@@ -13405,43 +13396,7 @@ news_event = {
 	desc = news.411.desc
 	picture = GFX_news_event_074
 
-	major = yes
-
-	trigger = {
-		OR = {
-			4 = { is_controlled_by = HUN is_owned_by = AUS }
-			9 = { is_controlled_by = GER is_owned_by = AUS }
-			surrender_progress > 0.25
-		}
-		
-		HUN = { has_war_with = ROM }
-		NOT = { has_global_flag = fall_of_buda }
-	}
-
-	immediate = { 
-					set_global_flag = fall_of_buda
-					AUS = {
-						country_event = austria.5
-					}
-				}
-
-	mean_time_to_happen = {
-		days = 2
-	}
 	
-	option = {
-		name = news.410.a
-		trigger ={
-			TAG = { has_War_with = HUN }
-		}
-	}
-	option = {
-		name = news.410.b
-		trigger = {
-				TAG = AUS
-		}
-	}
-
 }
 
 
