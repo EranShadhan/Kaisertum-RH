@@ -210,7 +210,7 @@ country_event = {
 		CZE = {
 			transfer_state = 9
 			transfer_state = 75
-			set_cosmetic_tag = CZE_ONLY
+			set_cosmetic_tag = CCZE_reichskommissariat
 		}
 
 		GER = {
