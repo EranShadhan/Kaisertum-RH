@@ -1,0 +1,14 @@
+characters = {
+	UKR_Wilhelm_Franz_von_Habsburg_Lorithgen = {
+		name = "Vasyl Vyshivanyi"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UKR/Portrait_UKR_Vasyl_Habsburg.dds"
+			}
+		}
+				country_leader={
+			expire = "1965.1.1.1"
+			ideology = despotism
+		}
+	}
+}

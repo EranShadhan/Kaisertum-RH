@@ -40,6 +40,11 @@ country_event = {
 				set_politics = {
 					ruling_party = democratic
 				}
+				release = SLO
+			}
+
+			CZE = {
+				set_cosmetic_tag = CZE_reichskommissariat
 			}
 
 			SLO = {
@@ -67,8 +72,6 @@ country_event = {
 		hidden_effect = {
 
 		HUN = {
-
-			release = SLO
 
 			664 = {
 				set_demilitarized_zone = yes

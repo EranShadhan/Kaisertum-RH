@@ -185,6 +185,10 @@ country_event = {
 			CZE = {
 				transfer_state = 9
 				transfer_state = 75
+				set_cosmetic_tag = CZE_reichskommissariat
+			}
+			GER = {
+				annex_country = AUS
 			}
 		}
 	}
@@ -200,21 +204,10 @@ country_event = {
 	option = {
 		name = austria.1.a
 
-		HUN = {
-			transfer_state = 892
-		}
-
-		GER = {
-			annex_country = {
-				target = AUS
-				transfer_troops = no
-			}
-		}
-
 		CZE = {
 			transfer_state = 9
 			transfer_state = 75
-			set_cosmetic_tag = CZE_ONLY
+			set_cosmetic_tag = CZE_reichskommissariat
 		}
 
 		GER = {
@@ -223,6 +216,7 @@ country_event = {
 				relation = puppet
 				active = yes
 			}
+			annex_country = AUS
 		}
 
 		POL = {
@@ -261,6 +255,10 @@ country_event = {
 			transfer_state = 802
 		}
 
+		CZE = {
+			set_cosmetic_tag = CZE_reichskommissariat
+		}
+
 		YUG ={
 			transfer_state = 105
 			transfer_state = 852
@@ -276,7 +274,13 @@ country_event = {
 
 		hidden_effect = {
 			HUN = {
-				add_ideas = HUN_debuff
+					add_ideas = HUN_debuff
+				transfer_state = 982
+				white_peace = GER
+				982 = {
+					add_core_of = HUN
+				}
+				white_peace = YUG
 			}
 			HUN = {
 				transfer_state = 982
@@ -290,11 +294,21 @@ country_event = {
 			802 = {
 				add_core_of = ALB
 			}
+			982 = {
+				add_core_of = HUN
+			}
+
 			BUL = {
-				add_ideas = { against_hungary }
+				if = {
+					limit = { HUN = { is_ai = yes } }
+					add_ideas = against_hungary
+				}
 			}	
 			ROM = {
-				add_ideas = { against_hungary }
+				if = {
+					limit = { HUN = { is_ai = yes } }
+					add_ideas = against_hungary
+				}
 				declare_war_on = {
 					target = HUN
 					type = puppet_wargoal_focus
@@ -307,7 +321,10 @@ country_event = {
 				}
 			}
 			GRE = {
-				add_ideas = { against_hungary }
+				if = {
+					limit = { HUN = { is_ai = yes } }
+					add_ideas = against_hungary
+				}
 				add_to_faction = ROM
 			}
 		}

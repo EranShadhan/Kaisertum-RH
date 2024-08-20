@@ -253,8 +253,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				#custom_modifier_tooltip = PER_disloyal_military_tt
-				#KT_PER_on_actions - now does nothing
+				custom_modifier_tooltip = PER_disloyal_military_tt
 			}
 		}
 
