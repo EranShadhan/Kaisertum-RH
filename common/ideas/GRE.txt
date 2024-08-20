@@ -113,6 +113,36 @@ ideas = {
 			}
 			
 		}
+		GRE_commandos = {
+			
+
+			picture = hol_expand_the_colonial_army
+
+			
+			removal_cost = -1
+            modifier = {
+			special_forces_cap = 0.20
+			special_forces_attack_factor = 0.15
+			special_forces_cap_flat = 10
+			}
+			
+		}
+		GRE_rifle_soldiers = {
+			
+
+			picture = mex_politicised_army_2
+
+			
+			removal_cost = -1
+            modifier = {
+			army_attack_factor = 0.1
+			army_defence_factor = 0.1
+			army_strength_factor = 0.05
+			army_org_factor = 0.05
+			
+			}
+			
+		}
 		GRE_stronk = {
 			
 

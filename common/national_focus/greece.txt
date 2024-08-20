@@ -31,7 +31,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	         army_experience = 75
+	         army_experience = 125
 		    }
 		}
 	
@@ -45,7 +45,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GRE_royal_hellenic_army
-		cost = 5
+		cost = 6
 		ai_will_do = {
 			base = 0
 		}
@@ -66,7 +66,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GRE_ioannis_metaxas_general
-		cost = 5
+		cost = 6
 		ai_will_do = {
 			base = 0
 		}
@@ -91,7 +91,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GRE_form_a_new_army
-		cost = 5
+		cost = 6
 		ai_will_do = {
 			base = 0
 		}
@@ -245,7 +245,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GRE_ioannis_metaxas_general
-		cost = 5
+		cost = 6
 		ai_will_do = {
 			base = 0
 		}
@@ -270,7 +270,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GRE_reform_the_royal_forces
-		cost = 5
+		cost = 6
 		ai_will_do = {
 			base = 0
 		}
@@ -359,7 +359,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	         
+	         add_ideas = GRE_rifle_soldiers
 		    }
 		}
 	focus = {
@@ -419,7 +419,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	         
+	         add_ideas = GRE_commandos
 		    }
 		}
 	
