@@ -278,6 +278,9 @@ country_event = {
 			HUN = {
 				add_ideas = HUN_debuff
 			}
+			HUN = {
+				transfer_state = 982
+			}
 			107 = {
 				add_core_of = BUL
 			}

@@ -29,13 +29,14 @@ country_event = {
 			}
 
 			SER = {
-				transfer_state = 45
 				transfer_state = 764
 			}
 
-			HUN = {
-				release = SLO
+			YUG = {
+				transfer_state = 45
+			}
 
+			HUN = {
 				set_politics = {
 					ruling_party = democratic
 				}
@@ -66,19 +67,20 @@ country_event = {
 		hidden_effect = {
 
 		HUN = {
+
+			release = SLO
+
 			664 = {
 				set_demilitarized_zone = yes
 			}
 			transfer_state = 664
-		}
+			transfer_state = 73
 
-		CZE = {
-			drop_cosmetic_tag = yes
-			annex_country = SLO
-			CZE = {
-				transfer_state = 70
-				transfer_state = 71
-			} 
+			73 = {
+				set_demilitarized_zone = yes
+			}
+
+
 		}
 
 		}	
