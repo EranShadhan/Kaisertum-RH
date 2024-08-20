@@ -1,4 +1,19 @@
 characters={
+	FRA_marcel_deat={ #Communist Leader
+		name=FRA_marcel_deat
+		portraits={
+			civilian={
+				large="GFX_portrait_FRA_marcel_deat"
+			}
+		}
+		country_leader={
+			ideology=neosocialism
+			traits={ militant_socialist warmonger }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
 	FRA_pierre_laval={ #Democratic Leader
 		name=FRA_pierre_laval
 		portraits={
@@ -36,7 +51,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=neosocialism
+			ideology=falangism
 			traits={ dictator warmonger }
 			expire="1965.1.1.1"
 			id=-1
