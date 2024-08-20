@@ -111,6 +111,16 @@ bookmarks = {
 			focuses = {
 			}
 		}
+		"UKR"={
+			minor = yes
+			history = "UKR_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+				UKR_
+			}
+			focuses = {
+			}
+		}
 		"AUS"={
 			minor = yes
 			history = "AUS_NEW_DECADE_DESC"
@@ -138,7 +148,6 @@ bookmarks = {
 			ideas = {
 				GRE_eee_enemy
 				GRE_megali_idea_partial_restoration
-				
 				GRE_on_going_population_exchange
 			}
 			focuses = {
