@@ -187,6 +187,9 @@ country_event = {
 				transfer_state = 75
 				set_cosmetic_tag = CZE_reichskommissariat
 			}
+			GER = {
+				annex_country = AUS
+			}
 		}
 	}
 }
