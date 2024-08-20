@@ -1,0 +1,13 @@
+the_fiume_crisis = {
+	
+	priority = 9
+	icon = GFX_category_icon
+	
+	allowed = {
+		always = yes
+	}
+	visible = {
+	
+	}
+}
+
