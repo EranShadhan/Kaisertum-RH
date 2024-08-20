@@ -11,9 +11,6 @@ state = {
 	}
 
 	history = {
-		victory_points = { #Bolzano
-			11598 1
-		}
 		owner = AUS
 		buildings = {
 			infrastructure = 2 # was 3 before split
@@ -25,7 +22,7 @@ state = {
 	}
 
 	provinces = {
-		656 6675 9630 11598 11615
+		6675 9630 11615
 	}
 
 	local_supplies = 0.0 
