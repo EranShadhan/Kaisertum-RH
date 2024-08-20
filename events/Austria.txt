@@ -185,6 +185,7 @@ country_event = {
 			CZE = {
 				transfer_state = 9
 				transfer_state = 75
+				set_cosmetic_tag = CZE_reichskommissariat
 			}
 		}
 	}
@@ -199,13 +200,6 @@ country_event = {
 
 	option = {
 		name = austria.1.a
-
-		GER = {
-			annex_country = {
-				target = AUS
-				transfer_troops = no
-			}
-		}
 
 		CZE = {
 			transfer_state = 9
@@ -276,7 +270,7 @@ country_event = {
 
 		hidden_effect = {
 			HUN = {
-				add_ideas = HUN_debuff
+					add_ideas = HUN_debuff
 				transfer_state = 982
 				white_peace = GER
 				982 = {
@@ -300,10 +294,16 @@ country_event = {
 			}
 
 			BUL = {
-				add_ideas = { against_hungary }
+				if = {
+					limit = { HUN = { is_ai = yes } }
+					add_ideas = against_hungary
+				}
 			}	
 			ROM = {
-				add_ideas = { against_hungary }
+				if = {
+					limit = { HUN = { is_ai = yes } }
+					add_ideas = against_hungary
+				}
 				declare_war_on = {
 					target = HUN
 					type = puppet_wargoal_focus
@@ -316,7 +316,10 @@ country_event = {
 				}
 			}
 			GRE = {
-				add_ideas = { against_hungary }
+				if = {
+					limit = { HUN = { is_ai = yes } }
+					add_ideas = against_hungary
+				}
 				add_to_faction = ROM
 			}
 		}
