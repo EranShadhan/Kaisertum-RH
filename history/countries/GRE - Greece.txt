@@ -41,7 +41,7 @@ add_ideas = {
 	limited_conscription
 	civilian_economy
 	GRE_megali_idea_partial_restoration
-	GRE_eee_enemyGRE_eee_enemy
+	GRE_eee_enemy
 	german_customs_union_member
 	victory_in_the_sgtw
 }
