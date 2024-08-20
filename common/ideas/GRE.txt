@@ -217,7 +217,8 @@ ideas = {
 				experience_gain_navy = 0.1
 				experience_gain_navy_factor = 0.35
 				 naval_coordination  = 0.05
-			    industrial_capacity_dockyard = 0.2 
+				 production_speed_dockyard_factor = 0.05
+			    industrial_capacity_dockyard = 0.25 
 			}
 		}
 		GRE_fund_ship_research = {

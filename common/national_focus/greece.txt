@@ -237,7 +237,7 @@ focus_tree = {
 		}	
       focus = {
 		id = GRE_viable_navy
-		icon = GFX_focus_NORDIC_dem_capstone_navy
+		icon = GFX_focus_POL_develop_polish_shipbuilding
 
 
 		
