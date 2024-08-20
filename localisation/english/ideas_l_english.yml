@@ -2760,4 +2760,7 @@ TUR_traditional_society:0 "Traditional Society"
 TUR_traditional_society_desc:0 "For decades the Young Turk movement has tried to modernize the Ottoman Empire, and when they finally seized power in 1908 it was looking like the Turkish State was finally going to modernize. But to no avail. The Ottoman Empire returned to traditionalism after the end of the Great War, opposing the european values and modernization as a whole. But the traditional society the Ottoman Empire has built is a major roadblock to research and scientific activities."
 
 TUR_humiliation_of_25:0 "Humiliation of 1925"
-TUR_humiliation_of_25_desc:0 "1925. The year of the collapse of the Ottoman Empire, which proved how incompetent the Turkish military became. While left unattended, the once great Turkish Military who once stood at the gates of Vienna were now forced to sit in defence themselves. The Turkish best generals are drinking alcohol more than doing their job, and without a major military reform the Turkish State would not survive an invasion by a relevant power"
+TUR_humiliation_of_25_desc:0 "1925. The year of the collapse of the Ottoman Empire, which proved how incompetent the Turkish military became. While left unattended, the once great Turkish Military who once stood at the gates of Vienna were now forced to sit in defence themselves. The Turkish best generals are drinking alcohol more than doing their job, and without a major military reform the Turkish State would not survive an invasion by a relevant power."
+
+ islam_religion:0 "Muslim Faith"
+ islam_religion_desc:0 "[ROOT.GetName] is overwhelmingly a muslim majority country."
