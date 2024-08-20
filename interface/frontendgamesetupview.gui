@@ -608,12 +608,12 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "title"
-			position = { x = 435 y = 12 }
+			position = { x = 415 y = 12 }
 			textureFile = ""
 			font = "hoi_24header"
 			borderSize = {x = 0 y = 0}
-			text = "FE_SELECT_COUNTRY"
-			maxWidth = 340
+			text = "FE_SELECT_COUNTRY_KT"
+			maxWidth = 390
 			maxHeight = 30
 			format = centre
 		}
@@ -623,7 +623,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_country_selection_bg"
 		}
 
-        # ButtonType = {
+        #ButtonType = {
 		#	name = "back_button"
 		#	position = { x = -158 y = -52 }
 		#	quadTextureSprite ="GFX_button_148x34"
@@ -695,6 +695,22 @@ guiTypes = {
 				max_slots_vertical = 2
 				format = "UPPER_LEFT"
 			}
+		}
+
+		iconType = {
+			name = "minor_country_gold_1"
+			quadTextureSprite ="GFX_country_selection_minor_gold"
+			position = { x = 915 y = 330 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "country_gold_1"
+			quadTextureSprite ="GFX_country_selection_gold"
+			position = { x = 15 y = 45 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
 		}
 
 		iconType = {

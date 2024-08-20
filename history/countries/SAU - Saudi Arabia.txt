@@ -26,6 +26,7 @@ if = {
 set_convoys = 5
 
 add_ideas = victory_in_the_sgtw
+add_ideas = islam_religion
 
 recruit_character = SAU_abdulaziz_ibn_saud
 recruit_character = SAU_philip_gordon_lee

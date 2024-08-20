@@ -10,4 +10,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_german_customs_union_member.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_islam_religion"
+		texturefile = "gfx/interface/ideas/islam_religion.dds"
+	}
+
 }

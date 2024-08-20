@@ -16,6 +16,9 @@ bookmarks = {
 				FRA_super_heavy_tank_programme
 			}
 			focuses = {
+				FRA_eliminate_communist_opposition
+				FRA_strike_germany
+				FRA_double_down_on_tanks
 			}
 		}
 		"ENG"={
@@ -86,6 +89,16 @@ bookmarks = {
 
 
 		###  MINORS ###
+		FIN={
+			minor = yes
+			history = "FIN_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+				german_customs_union_member
+			}
+			focuses = {
+			}
+		}
 		"UBD"={
 			minor = yes
 			history = "UBD_NEW_DECADE_DESC"
@@ -94,6 +107,16 @@ bookmarks = {
 				UBD_germanisation_programme_idea
 				UBD_overworked_administration_idea
 				UBD_lack_of_workers_idea
+			}
+			focuses = {
+			}
+		}
+		"AUS"={
+			minor = yes
+			history = "AUS_NEW_DECADE_DESC"
+			ideology = democratic
+			ideas = {
+				german_customs_union_member
 			}
 			focuses = {
 			}
@@ -108,14 +131,13 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		"PER"={
+		"GRE"={
 			minor = yes
-			history = "PER_NEW_DECADE_DESC"
+			history = "GRE_NEW_DECADE_DESC"
 			ideology = neutrality
 			ideas = {
-				PER_german_persian_oil_company
-				PER_army_1_focus
-				PER_traditional_islam_gov
+				german_customs_union_member
+				victory_in_the_sgtw
 			}
 			focuses = {
 			}
@@ -130,6 +152,21 @@ bookmarks = {
 				TUR_traditional_society
 			}
 			focuses = {
+			}
+		}
+		"PER"={
+			minor = yes
+			history = "PER_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+				PER_german_persian_oil_company
+				PER_army_1_focus
+				PER_traditional_islam_gov
+			}
+			focuses = {
+				PER_go_german
+				PER_our_place_in_the_world
+				PER_persian_carpets
 			}
 		}
 		#NOT REWORKED FROM NOW ON
@@ -265,16 +302,6 @@ bookmarks = {
 			}
 		}
 
-		"GRE"={
-			minor = yes
-			history = "GRE_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-
 		"POL"={
 			minor = yes
 			history = "POL_GATHERING_STORM_DESC"
@@ -302,20 +329,10 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		FIN={
-			minor = yes
-			history = FIN_GATHERING_STORM_DESC
-			ideology = neutrality
-			ideas = {
-			}
-			focuses = {
-			}
-		}
 		SWE={
 			minor = yes
 			history = "SWE_GATHERING_STORM_DESC"
 			ideology = democratic
-			available = { has_dlc = "Arms Against Tyranny" } 
 			ideas = {
 			}
 			focuses = {

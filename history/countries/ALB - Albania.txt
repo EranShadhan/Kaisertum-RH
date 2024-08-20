@@ -5,6 +5,7 @@ OOB = "ALB_1936"
 add_ideas = {
 	german_customs_union_member
 	victory_in_the_sgtw
+	islam_religion
 }
 
 set_technology = {

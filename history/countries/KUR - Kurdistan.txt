@@ -4,6 +4,7 @@ set_research_slots = 2
 
 add_ideas = {
 	limited_conscription
+	islam_religion
 }
 
 set_technology = {
