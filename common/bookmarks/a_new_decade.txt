@@ -43,16 +43,7 @@ bookmarks = {
 			history = "ITA_NEW_DECADE_DESC"
 			ideology = neutrality
 			ideas = {
-                german_customs_union_member
-			}	
-			focuses = {
-			}		
-		}
-		"AUS"={
-			history = "AUS_NEW_DECADE_DESC"
-			ideology = neutrality
-			ideas = {
-                german_customs_union_member
+				german_customs_union_member
 			}	
 			focuses = {
 			}		
@@ -62,6 +53,14 @@ bookmarks = {
 			ideology = communism
 			ideas = {
 				victory_in_the_sgtw
+			}
+			focuses = {
+			}
+		}
+		"CHI"={
+			history = "CHI_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
 			}
 			focuses = {
 			}
@@ -106,6 +105,16 @@ bookmarks = {
 				UBD_overworked_administration_idea
 				UBD_lack_of_workers_idea
 			}
+			focuses = {
+			}
+		}
+		"AUS"={
+			minor = yes
+			history = "AUS_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+				german_customs_union_member
+			}	
 			focuses = {
 			}
 		}
