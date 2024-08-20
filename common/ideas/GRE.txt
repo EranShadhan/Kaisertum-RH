@@ -158,6 +158,213 @@ ideas = {
 			}
 			
 		}
+		GRE_ancient_talents_in_navy = {
+				
+			allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_coastal_navy
+				
+			removal_cost = -1
+				
+			modifier = {
+				navy_leader_cost_factor = -0.25
+				navy_leader_start_level = 1
+				navy_leader_start_defense_level = 2
+				navy_leader_start_maneuvering_level = 2
+			}
+		}
+		GRE_reform_the_navy = {
+				
+			allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_the_london_naval_treaty
+				
+			removal_cost = -1
+				
+			modifier = {
+				experience_gain_navy = 0.1
+				experience_gain_navy_factor = 0.25
+			    industrial_capacity_dockyard = 0.2 
+			}
+		}
+		GRE_reform_the_navy2 = {
+				name = GRE_reform_the_navy
+			allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_the_london_naval_treaty
+				
+			removal_cost = -1
+				
+			modifier = {
+				experience_gain_navy = 0.1
+				experience_gain_navy_factor = 0.35
+				 naval_coordination  = 0.05
+			    industrial_capacity_dockyard = 0.2 
+			}
+		}
+		GRE_fund_ship_research = {
+				
+			allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_navy_carrier_bonus
+				
+			removal_cost = -1
+				
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+				
+		}
+		
+		GRE_fight_together = {
+				
+			allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = liberty_ships_focus
+				
+			removal_cost = -1
+				
+			modifier = {
+				naval_accidents_chance = -0.1
+				 positioning = 0.075
+				 naval_defense_factor = 0.1
+			}
+				
+		}
+		GRE_decisive_battle_tactics = {
+		allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = SWE_all_cards_on_deck
+
+			modifier = {
+				critical_receive_chance = -0.2
+				ships_at_battle_start = 0.2
+				naval_retreat_speed = 0.1
+				naval_retreat_chance_after_initial_combat = 0.05
+			}
+		}
+		GRE_frogmen = {
+           allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+            removal_cost = -1
+			picture = generic_coastal_navy
+			
+			modifier = {				
+			   
+				shore_bombardment_bonus = 0.2
+                 naval_invasion_penalty = -0.1
+				naval_invasion_capacity = 10
+				amphibious_invasion = 0.1
+				invasion_preparation = -0.15				
+				
+			}
+		}
+		GRE_med_fleet = {
+
+
+
+			 allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+            removal_cost = -1
+			equipment_bonus = {
+				screen_ship = {
+					naval_speed = 0.1 naval_range = 0.25
+				}
+				carrier = {
+					naval_speed = 0.1 naval_range = 0.25
+				}
+				capital_ship = {
+					naval_speed = 0.1 naval_range = 0.25
+				}
+				submarine = {
+					naval_speed = 0.1 naval_range = 0.25
+				}
+			}
+
+			picture = NORDIC_navy_democratic
+			
+			removal_cost = -1	
+
+		}
+		GRE_cheap_sub = {
+
+
+
+			 allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+            removal_cost = -1
+			equipment_bonus = {
+				
+				submarine = {
+					build_cost_ic = -0.25  defense = -0.15  instant = yes
+			
+				}
+			}
+			picture = SOV_shipyard_staff_purged
+			
+			removal_cost = -1	
+
+		}
+		
+		
+		
+		
+		
+		
+		
+		
 		GRE_eee_enemy = {
 			
 
