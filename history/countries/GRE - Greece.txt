@@ -32,11 +32,16 @@ add_to_faction = ALB
 #GRE_fascism
 #GRE_neutrality
 set_cosmetic_tag = GRE_neutrality
-
+add_timed_idea = {
+idea = GRE_on_going_population_exchange
+days = 366 
+}
 add_ideas = {
 	export_focus
 	limited_conscription
 	civilian_economy
+	GRE_megali_idea_partial_restoration
+	GRE_eee_enemyGRE_eee_enemy
 	german_customs_union_member
 	victory_in_the_sgtw
 }
@@ -107,15 +112,15 @@ set_convoys = 10
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1935.6.9"
+	last_election = "1929.6.9"
 	election_frequency = 7
 	elections_allowed = yes # none after offset 1
 }
 set_popularities = {
-	democratic = 43
-	fascism = 2
-	communism = 17
-	neutrality = 38
+	democratic = 37
+	fascism = 18
+	communism = 2
+	neutrality = 43
 }
 
 set_stability = 0.72
