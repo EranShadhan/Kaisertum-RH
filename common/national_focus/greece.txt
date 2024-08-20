@@ -13,10 +13,74 @@ focus_tree = {
 	default = no
 
 	continuous_focus_position = { x = 20 y = 1600 }
-	
+	focus = {
+		id = GRE_royal_hellenic_navy
+		icon = GFX_focus_GRE_navy
+
+		
+		available = {
+		}
+		x = 15
+		y = 0
+
+		cost = 10
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	         navy_experience = 125
+		    }
+		}
+	focus = {
+		id = GRE_honor_our_old_ships
+		icon = GFX_focus_GRE_a_long_and_proud_tradition
+
+		
+		prerequisite = { focus = GRE_royal_hellenic_navy  }
+		available = {
+		}
+		x = -1
+		y = 1
+		relative_position_id = GRE_royal_hellenic_navy
+
+		cost = 10
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	         army_experience = 125
+		    }
+		}	
+    focus = {
+		id = GRE_new_and_strong
+		icon = GFX_focus_generic_refit_civilian_ships
+
+
+		
+		prerequisite = { focus = GRE_royal_hellenic_navy  }
+		available = {
+		}
+		x = 1
+		y = 1
+		relative_position_id = GRE_royal_hellenic_navy
+
+		cost = 10
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	         army_experience = 125
+		    }
+		}		
 	focus = {
 		id = GRE_royal_hellenic_army
-		icon = GFX_fous_GRE_army
+		icon = GFX_focus_GRE_army
 
 		
 		available = {
@@ -57,7 +121,7 @@ focus_tree = {
 		}
 	focus = {
 		id = GRE_form_a_new_army
-		icon = GFX_fous_GRE_army2
+		icon = GFX_focus_GRE_army2
 
 		prerequisite = { focus = GRE_ioannis_metaxas_general  }
 		mutually_exclusive = { focus = GRE_reform_the_royal_forces }
