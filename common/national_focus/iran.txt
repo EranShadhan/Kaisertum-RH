@@ -1491,6 +1491,37 @@ focus_tree = {
 	}
 
 	focus = {
+		id = PER_army_5
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = PER_army_4 }
+		x = 0
+		y = 1
+		relative_position_id = PER_army_4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			PER_improve_army = yes
+		}
+	}
+
+	focus = {
 		id = PER_army_xp_1
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = PER_army_1 }
