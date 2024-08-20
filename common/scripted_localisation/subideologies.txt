@@ -128,12 +128,6 @@ defined_text = {
 		}
 		localization_key = rexism
 	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = neosocialism
-		}
-		localization_key = neosocialism
-	}
 }
 defined_text = {
 	name = GetSubIdeologyCom
@@ -173,6 +167,12 @@ defined_text = {
 			has_country_leader_ideology = japsoccom
 		}
 		localization_key = japsoccom
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = neosocialism
+		}
+		localization_key = neosocialism
 	}
 	
 }

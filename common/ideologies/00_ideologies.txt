@@ -95,6 +95,8 @@ ideologies = {
 
 			anarchist_communism = {
 			}
+			
+			neosocialism = { color = { 178 10 10 } } # it has diffrenct color wow
 		}
 
 		dynamic_faction_names = {
@@ -156,8 +158,6 @@ ideologies = {
 
 			rexism = {
 			}
-			
-			neosocialism = { color = { 178 10 10 } } # it has diffrenct color wow
 		}
 
 		dynamic_faction_names = {
