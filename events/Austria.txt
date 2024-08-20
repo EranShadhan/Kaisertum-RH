@@ -213,6 +213,7 @@ country_event = {
 				relation = puppet
 				active = yes
 			}
+			annex_country = AUS
 		}
 
 		POL = {
