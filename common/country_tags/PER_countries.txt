@@ -1,0 +1,1 @@
+CPE	= "countries/Persia.txt"

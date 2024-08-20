@@ -1,0 +1,18 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_goal_PER_carpet"
+		texturefile = "gfx/interface/goals/PER/PER_carpet.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PER_secularization"
+		texturefile = "gfx/interface/goals/PER/PER_secularization.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PER_muslim_royalty"
+		texturefile = "gfx/interface/goals/PER/PER_muslim_royalty.dds"
+	}
+
+}

@@ -20,7 +20,7 @@
 
 	focus = {
 		id = FRA_eliminate_communist_opposition
-		icon = GFX_focus_fra_eliminate_communist_opposition
+		icon = GFX_focus_BRA_ban_communist_party
 		x = 1
 		y = 0
 		
@@ -72,7 +72,7 @@
 
 	focus = {
 		id = FRA_secret_police_increase_stability
-		icon = GFX_focus_fra_secret_police_increase_stability
+		icon = GFX_focus_generic_secret_service_agency
 		x = 2
 		y = 1
 		relative_position_id = FRA_eliminate_communist_opposition
@@ -96,7 +96,7 @@
 
 	focus = {
 		id = FRA_reduce_unemployment
-		icon = GFX_focus_fra_reduce_unemployment
+		icon = GFX_focus_ITA_generic_fascist_workers
 		x = 0
 		y = 1
 		relative_position_id = FRA_promises_war_victory_greatness
@@ -120,7 +120,7 @@
 
 	focus = {
 		id = FRA_improve_secret_police
-		icon = GFX_focus_fra_improve_secret_police
+		icon = GFX_focus_fra_milice
 		x = 0
 		y = 1
 		relative_position_id = FRA_secret_police_increase_stability
@@ -144,7 +144,7 @@
 
 	focus = {
 		id = FRA_discredit_republican_front
-		icon = GFX_focus_fra_discredit_republican_front
+		icon = GFX_focus_fra_french_union
 		x = -2
 		y = 1
 		relative_position_id = FRA_improve_secret_police
@@ -168,7 +168,7 @@
 
 	focus = {
 		id = FRA_choose_wing_to_support
-		icon = GFX_focus_fra_choose_wing_to_support
+		icon = GFX_goal_generic_neutrality_focus
 		x = 0
 		y = 1
 		relative_position_id = FRA_discredit_republican_front
@@ -192,7 +192,7 @@
 
 	focus = {
 		id = FRA_support_ultra_fascists
-		icon = GFX_focus_fra_support_ultra_fascists
+		icon = GFX_focus_generic_spread_fascism
 		x = -2
 		y = 1
 		relative_position_id = FRA_choose_wing_to_support
@@ -218,7 +218,7 @@
 
 	focus = {
 		id = FRA_support_moderate_fascists
-		icon = GFX_focus_fra_support_moderate_fascists
+		icon = GFX_focus_SOV_womens_fascist_movement
 		x = 2
 		y = 1
 		relative_position_id = FRA_choose_wing_to_support
@@ -244,7 +244,7 @@
 
 	focus = {
 		id = FRA_claim_french_speaking_lands
-		icon = GFX_focus_fra_claim_french_speaking_lands
+		icon = GFX_focus_focus_fra_border
 		x = 0
 		y = 1
 		relative_position_id = FRA_support_ultra_fascists
@@ -295,7 +295,7 @@
 
 	focus = {
 		id = FRA_retake_morocco
-		icon = GFX_focus_fra_retake_morocco
+		icon = GFX_goal_generic_more_territorial_claims
 		x = 0
 		y = 1
 		relative_position_id = FRA_claim_lost_lands
@@ -322,7 +322,7 @@
 
 	focus = {
 		id = FRA_claim_lost_lands
-		icon = GFX_focus_fra_claim_lost_lands
+		icon = GFX_focus_chi_reach_out_to_france
 		x = 0
 		y = 1
 		relative_position_id = FRA_support_moderate_fascists
@@ -365,7 +365,7 @@
 
 	focus = {
 		id = FRA_secure_neutral_spain
-		icon = GFX_focus_fra_secure_neutral_spain
+		icon = GFX_focus_focus_fra_intervention_spain
 		x = 0
 		y = 1
 		relative_position_id = FRA_claim_french_speaking_lands
@@ -419,7 +419,7 @@
 
 	focus = {
 		id = FRA_trade_with_italian_mafia
-		icon = GFX_focus_fra_trade_with_italian_mafia
+		icon = GFX_focus_generic_steel
 		x = 7
 		y = 0
 		
@@ -529,7 +529,7 @@
 
 	focus = {
 		id = FRA_increase_taxes
-		icon = GFX_focus_fra_increase_taxes
+		icon = GFX_focus_fra_devalue_the_franc
 		x = 0
 		y = 1
 		relative_position_id = FRA_support_textile_industry
@@ -554,7 +554,7 @@
 
 	focus = {
 		id = FRA_invest_in_research
-		icon = GFX_focus_fra_invest_in_research
+		icon = GFX_focus_ARG_fascist_researchers
 		x = 3
 		y = 1
 		relative_position_id = FRA_increase_taxes
@@ -578,7 +578,7 @@
 
 	focus = {
 		id = FRA_consolidate_the_land
-		icon = GFX_focus_fra_consolidate_the_land
+		icon = GFX_focus_generic_land_reclamation
 		x = -3
 		y = 1
 		relative_position_id = FRA_increase_taxes
@@ -618,7 +618,7 @@
 
 	focus = {
 		id = FRA_prioritize_civilian_industry
-		icon = GFX_focus_fra_prioritize_civilian_industry
+		icon = GFX_focus_DEN_civilian_preparations
 		x = -1
 		y = 1
 		relative_position_id = FRA_increase_taxes
@@ -659,7 +659,7 @@
 
 	focus = {
 		id = FRA_prioritize_military_industry
-		icon = GFX_focus_fra_prioritize_military_industry
+		icon = GFX_goal_generic_fortify_city
 		x = 1
 		y = 1
 		relative_position_id = FRA_increase_taxes
@@ -767,7 +767,7 @@
 
 	focus = {
 		id = FRA_employ_cheap_workers
-		icon = GFX_focus_fra_focus_employ_cheap_workers
+		icon = GFX_focus_generic_public_works
 		x = 0
 		y = 1
 		relative_position_id = FRA_invest_in_colonies
@@ -792,7 +792,7 @@
 
 	focus = {
 		id = FRA_improve_infrastructure
-		icon = GFX_focus_fra_improve_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
 		x = 0
 		y = 1
 		relative_position_id = FRA_invest_in_mainland
@@ -838,7 +838,7 @@
 
 	focus = {
 		id = FRA_mines_in_africa
-		icon = GFX_focus_fra_mines_in_africa
+		icon = GFX_focus_generic_africa_infrastructure
 		x = 0
 		y = 1
 		relative_position_id = FRA_employ_cheap_workers
@@ -904,7 +904,7 @@
 
 	focus = {
 		id = FRA_peacetime_civilian_factories
-		icon = GFX_focus_fra_peacetime_civilian_factories
+		icon = GFX_goal_generic_construct_civ_factory
 		x = 1
 		y = 1
 		relative_position_id = FRA_mines_in_africa
@@ -929,7 +929,7 @@
 
 	focus = {
 		id = FRA_peacetime_military_factories
-		icon = GFX_focus_fra_peacetime_military_factories
+		icon = GFX_goal_generic_construct_mil_factory
 		x = -1
 		y = 1
 		relative_position_id = FRA_expand_public_services
@@ -954,7 +954,7 @@
 
 	focus = {
 		id = FRA_stability_civilian_factories
-		icon = GFX_focus_fra_stability_civilian_factories
+		icon = GFX_goal_generic_construct_civ_factory
 		x = 0
 		y = 1
 		relative_position_id = FRA_peacetime_civilian_factories
@@ -982,7 +982,7 @@
 
 	focus = {
 		id = FRA_stability_military_factories
-		icon = GFX_focus_fra_stability_military_factories
+		icon = GFX_goal_generic_construct_mil_factory
 		x = 2
 		y = 1
 		relative_position_id = FRA_peacetime_civilian_factories
@@ -1006,7 +1006,7 @@
 
 	focus = {
 		id = FRA_wartime_civilian_factories
-		icon = GFX_focus_fra_wartime_civilian_factories
+		icon = GFX_goal_generic_construct_civ_factory
 		x = 0
 		y = 1
 		relative_position_id = FRA_stability_civilian_factories
@@ -1030,7 +1030,7 @@
 
 	focus = {
 		id = FRA_wartime_military_factories
-		icon = GFX_focus_fra_wartime_military_factories
+		icon = GFX_goal_generic_construct_mil_factory
 		x = 2
 		y = 1
 		relative_position_id = FRA_stability_civilian_factories
@@ -1054,7 +1054,7 @@
 
 	focus = {
 		id = FRA_double_down_on_tanks
-		icon = GFX_focus_fra_double_down_on_tanks
+		icon = GFX_goal_generic_army_tanks
 		x = 15
 		y = 0
 		
@@ -1077,7 +1077,7 @@
 
 	focus = {
 		id = FRA_convensional_tactics
-		icon = GFX_focus_fra_convensional_tactics
+		icon = GFX_goal_generic_axis_build_infantry
 		x = 19
 		y = 0
 		
@@ -1100,7 +1100,7 @@
 
 	focus = {
 		id = FRA_increase_armour
-		icon = GFX_focus_fra_increase_armour
+		icon = GFX_goal_continuous_armor_production
 		x = 0
 		y = 1
 		relative_position_id = FRA_double_down_on_tanks
@@ -1124,7 +1124,7 @@
 
 	focus = {
 		id = FRA_tank_doctrine
-		icon = GFX_focus_fra_tank_doctrine
+		icon = GFX_goal_generic_army_doctrines
 		x = 0
 		y = 1
 		relative_position_id = FRA_increase_armour
@@ -1148,7 +1148,7 @@
 
 	focus = {
 		id = FRA_land_fortress
-		icon = GFX_focus_fra_land_fortress
+		icon = GFX_focus_NZL_bob_semple_tank
 		x = 0
 		y = 1
 		relative_position_id = FRA_tank_doctrine
@@ -1172,7 +1172,7 @@
 
 	focus = {
 		id = FRA_improve_artillery
-		icon = GFX_focus_fra_improve_artillery
+		icon = GFX_goal_generic_army_artillery2
 		x = 0
 		y = 1
 		relative_position_id = FRA_convensional_tactics
@@ -1196,7 +1196,7 @@
 
 	focus = {
 		id = FRA_use_motorized_equipment
-		icon = GFX_focus_fra_use_motorized_equipment
+		icon = GFX_goal_generic_army_motorized
 		x = 0
 		y = 1
 		relative_position_id = FRA_improve_artillery
@@ -1220,7 +1220,7 @@
 
 	focus = {
 		id = FRA_kickstart_airplane_programme
-		icon = GFX_focus_fra_kickstart_airplane_programme
+		icon = GFX_goal_generic_air_fighter2
 		x = 2
 		y = 1
 		relative_position_id = FRA_improve_artillery
@@ -1244,7 +1244,7 @@
 
 	focus = {
 		id = FRA_focus_on_fighters
-		icon = GFX_focus_fra_focus_on_fighters
+		icon = GFX_goal_generic_air_fighter
 		x = 0
 		y = 1
 		relative_position_id = FRA_kickstart_airplane_programme
@@ -1268,7 +1268,7 @@
 
 	focus = {
 		id = FRA_focus_on_cas
-		icon = GFX_focus_fra_focus_on_cas
+		icon = GFX_focus_generic_armored_air_support
 		x = 2
 		y = 1
 		relative_position_id = FRA_kickstart_airplane_programme

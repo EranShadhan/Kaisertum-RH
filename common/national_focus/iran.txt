@@ -1,0 +1,1583 @@
+focus_tree = {
+	id = iranian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = PER
+		}
+		modifier = {
+			add = 10
+			tag = CPE
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 20 y = 1500 }
+
+
+#	focus = {
+#		id = PER_
+#		icon = GFX_
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+#		x = -3
+#		y = 0
+#		relative_position_id = 
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		completion_reward = {
+#
+#		}
+#	}
+
+	focus = {
+		id = PER_go_german
+		icon = GFX_focus_generic_offshore_oil_rig
+		x = 4
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = PER_german_persian_oil_company_2
+				remove_idea = PER_german_persian_oil_company
+			}
+		}
+	}
+
+	focus = {
+		id = PER_socialist_gov
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = PER_go_german }
+		x = 5
+		y = 1
+		relative_position_id = PER_go_german
+
+		cost = 7.2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = PER_commie_revolution
+			has_government = communism
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.3
+			}
+			add_ideas = internationalism
+		}
+	}
+
+	focus = {
+		id = PER_political_correctness
+		text = political_correctness
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = PER_socialist_gov }
+		x = -1
+		y = 1
+		relative_position_id = PER_socialist_gov
+
+		cost = 7.2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			if = {
+				limit = { has_idea = neutrality_idea }
+				remove_ideas = neutrality_idea
+			}		
+			add_political_power = 200
+			add_ideas = idea_political_correctness
+		}
+	}
+
+	focus = {
+		id = PER_political_commissars
+		text = political_commissars
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = PER_political_correctness }
+		x = 0
+		y = 1
+		relative_position_id = PER_political_correctness
+
+		cost = 8.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = political_commissars_focus
+			add_popularity = {
+				ideology = communism
+				popularity = 0.2
+			}
+			add_political_power = 200
+		}
+	}
+
+	focus = {
+		id = PER_indoctrination
+		text = indoctrination_focus
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = PER_socialist_gov }
+		x = 1
+		y = 1
+		relative_position_id = PER_socialist_gov
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = indoctrination_focus
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = PER_militarized_schools
+		text = SOV_militarized_schools
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = PER_indoctrination }
+		x = 0
+		y = 1
+		relative_position_id = PER_indoctrination
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = militarized_schools
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = PER_workers_culture
+		text = SOV_workers_culture
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PER_militarized_schools }
+		prerequisite = { focus = PER_political_commissars }
+		x = 1
+		y = 1
+		relative_position_id = PER_political_commissars
+		cost = 8.6
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			add_ideas = workers_culture
+		}
+	}
+
+	focus = {
+		id = PER_neutrality
+		text = neutrality_focus
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = PER_workers_culture }
+		x = 0
+		y = 1
+		relative_position_id = PER_workers_culture
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			if = {
+				limit = { NOT = { has_idea = neutrality_idea } }
+				add_ideas = neutrality_idea
+			}
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = PER_solidify_control_mesopotamia
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = PER_go_german }
+		x = -4
+		y = 1
+		relative_position_id = PER_go_german
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_state_core = 675
+			add_state_core = 656
+			add_state_core = 291
+		}
+	}
+
+	focus = {
+		id = PER_solidify_control_kurdistan
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = PER_solidify_control_mesopotamia }
+		x = 0
+		y = 1
+		relative_position_id = PER_solidify_control_mesopotamia
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_state_core = 676
+			add_state_core = 352
+			add_state_core = 800
+		}
+	}
+
+	focus = {
+		id = PER_solidify_control_azerbajian
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = PER_solidify_control_kurdistan }
+		x = 0
+		y = 1
+		relative_position_id = PER_solidify_control_kurdistan
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_state_core = 229
+		}
+	}
+
+	focus = {
+		id = PER_continue_military_rule
+		icon = GFX_focus_generic_military_dictatorship
+		prerequisite = { focus = PER_go_german }
+		mutually_exclusive = { focus = PER_return_royalty }
+		x = -2
+		y = 1
+		relative_position_id = PER_go_german
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PER_monarchist_resistance
+				add_idea = PER_military_rule
+			}
+		}
+	}
+
+	focus = {
+		id = PER_purge_the_army
+		icon = GFX_focus_SOV_military_purge
+		prerequisite = { focus = PER_continue_military_rule focus = PER_return_royalty }
+		x = 2
+		y = 1
+		relative_position_id = PER_continue_military_rule
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = PER_disloyal_military
+			add_timed_idea = { idea = officers_purged_10 days = 250 }
+		}
+	}
+
+	focus = {
+		id = PER_secularization
+		icon = GFX_goal_PER_secularization
+		prerequisite = { focus = PER_continue_military_rule }
+		x = 0
+		y = 1
+		relative_position_id = PER_continue_military_rule
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = PER_traditional_islam_gov
+		}
+	}
+
+	focus = {
+		id = PER_radical_science
+		icon = GFX_focus_generic_university_3
+		prerequisite = { focus = PER_secularization }
+		x = 0
+		y = 1
+		relative_position_id = PER_secularization
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_research_slot = 1
+			add_ideas = PER_radical_science_idea
+		}
+	}
+
+	focus = {
+		id = PER_return_royalty
+		icon = GFX_focus_rom_royal_dictatorship
+		prerequisite = { focus = PER_go_german }
+		mutually_exclusive = { focus = PER_continue_military_rule }
+		x = 2
+		y = 1
+		relative_position_id = PER_go_german
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PER_monarchist_resistance
+				add_idea = PER_reza_shah_pahlavi
+			}
+		}
+	}
+
+	focus = {
+		id = PER_monarchist_propaganda
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = { focus = PER_return_royalty }
+		x = 0
+		y = 1
+		relative_position_id = PER_return_royalty
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PER_reza_shah_pahlavi
+				add_idea = PER_reza_shah_pahlavi_2
+			}
+		}
+	}
+
+	focus = {
+		id = PER_muslim_still_but_better
+		icon = GFX_goal_PER_muslim_royalty
+		prerequisite = { focus = PER_monarchist_propaganda }
+		x = 0
+		y = 1
+		relative_position_id = PER_monarchist_propaganda
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PER_traditional_islam_gov
+				add_idea = PER_traditional_islam_gov_2
+			}
+		}
+	}
+
+	focus = {
+		id = PER_ally_with_ger
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = PER_purge_the_army }
+		prerequisite = { focus = PER_monarchist_propaganda focus = PER_secularization }
+		x = 0
+		y = 1
+		relative_position_id = PER_purge_the_army
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			GER = {
+				is_faction_leader = yes
+			}
+			NOT = {
+				has_idea = officers_purged_10
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			GER = {
+				country_event = generic.2
+			}
+		}
+	}
+
+	focus = {
+		id = PER_our_place_in_the_world
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = PER_ally_with_ger }
+		prerequisite = { focus = PER_solidify_control_azerbajian }
+		x = 0
+		y = 1
+		relative_position_id = PER_ally_with_ger
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			is_puppet = no
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = PER_imperialism
+		}
+	}
+
+	focus = {
+		id = PER_invade_afg
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = PER_our_place_in_the_world }
+		will_lead_to_war_with = AFG
+		x = -2
+		y = 1
+		relative_position_id = PER_our_place_in_the_world
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			is_puppet = no
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_state_core = 415
+			add_state_core = 976
+			add_state_claim = 267
+			add_state_claim = 442
+			create_wargoal = {
+				target = AFG
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = PER_conquer_tur_kur
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = PER_our_place_in_the_world }
+		will_lead_to_war_with = TUR
+		x = 0
+		y = 1
+		relative_position_id = PER_our_place_in_the_world
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			is_puppet = no
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_state_core = 350
+			add_state_core = 353
+			add_state_core = 344
+			add_state_core = 799
+			create_wargoal = {
+				target = TUR
+				type = take_state_focus
+				generator = { 350 353 344 799 }
+			}
+		}
+	}
+
+	focus = {
+		id = PER_conquer_sau
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = PER_our_place_in_the_world }
+		will_lead_to_war_with = SAU
+		x = 2
+		y = 1
+		relative_position_id = PER_our_place_in_the_world
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			is_puppet = no
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_wargoal = {
+				target = SAU
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = PER_conquer_rus
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = PER_invade_afg }
+		prerequisite = { focus = PER_conquer_sau }
+		prerequisite = { focus = PER_conquer_tur_kur }
+		will_lead_to_war_with = SOV
+		x = 0
+		y = 2
+		relative_position_id = PER_our_place_in_the_world
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			is_puppet = no
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_state_core = 980
+			add_state_core = 230
+			add_state_core = 231
+			add_state_core = 826
+			add_state_core = 232
+			add_state_core = 821
+			add_state_core = 828
+			add_state_core = 827
+			add_state_core = 233
+			add_state_core = 584
+			add_state_core = 742
+			create_wargoal = {
+				target = SOV
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = PER_persian_carpets
+		icon = GFX_goal_PER_carpet
+		x = 13
+		y = 0
+
+		cost = 7.2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			controls_state = 417
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = PER_carpets
+			417 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PER_azeri_oil
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = PER_persian_carpets }
+		x = -1
+		y = 1
+		relative_position_id = PER_persian_carpets
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			controls_state = 229
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 25
+				state = 229
+			}
+			229 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PER_baghdad_tourism
+		icon = GFX_focus_generic_full_employment
+		prerequisite = { focus = PER_persian_carpets }
+		x = 1
+		y = 1
+		relative_position_id = PER_persian_carpets
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			controls_state = 291
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = PER_tourism_baghdad
+			291 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PER_expand_civ_fact
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PER_persian_carpets }
+		x = 0
+		y = 2
+		relative_position_id = PER_persian_carpets
+
+		cost = 5.8
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PER_expand_civ_fact_2
+		text = construction_effort
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PER_expand_civ_fact }
+		x = -1
+		y = 1
+		relative_position_id = PER_expand_civ_fact
+
+		cost = 7.2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PER_expand_civ_fact_3
+		text = construction_effort_2
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PER_expand_civ_fact_2 }
+		x = 0
+		y = 1
+		relative_position_id = PER_expand_civ_fact_2
+
+		cost = 7.2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PER_expand_civ_fact_4
+		text = construction_effort_3
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PER_expand_civ_fact_3 }
+		x = 0
+		y = 1
+		relative_position_id = PER_expand_civ_fact_3
+
+		cost = 7.2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PER_expand_arm_fact
+		text = production_effort
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = PER_expand_civ_fact }
+		x = 1
+		y = 1
+		relative_position_id = PER_expand_civ_fact
+
+		cost = 7.2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PER_expand_arm_fact_2
+		text = production_effort_2
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = PER_expand_arm_fact }
+		x = 0
+		y = 1
+		relative_position_id = PER_expand_arm_fact
+
+		cost = 7.2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PER_expand_arm_fact_3
+		text = production_effort_3
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = PER_expand_arm_fact_2 }
+		x = 0
+		y = 1
+		relative_position_id = PER_expand_arm_fact_2
+
+		cost = 7.2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PER_army_1
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 20
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			PER_improve_army = yes
+		}
+	}
+
+	focus = {
+		id = PER_army_2
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = PER_army_1 }
+		x = -2
+		y = 1
+		relative_position_id = PER_army_1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			PER_improve_army = yes
+		}
+	}
+
+	focus = {
+		id = PER_army_3
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = PER_army_2 }
+		x = 0
+		y = 1
+		relative_position_id = PER_army_2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			PER_improve_army = yes
+		}
+	}
+
+	focus = {
+		id = PER_army_4
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = PER_army_3 }
+		x = 0
+		y = 1
+		relative_position_id = PER_army_3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			PER_improve_army = yes
+		}
+	}
+
+	focus = {
+		id = PER_army_5
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = PER_army_4 }
+		x = 0
+		y = 1
+		relative_position_id = PER_army_4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			PER_improve_army = yes
+		}
+	}
+
+	focus = {
+		id = PER_army_xp_1
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = PER_army_1 }
+		x = 0
+		y = 1
+		relative_position_id = PER_army_1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			PER_improve_army = yes
+		}
+	}
+
+	focus = {
+		id = PER_army_xp_2
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = PER_army_xp_1 }
+		x = 0
+		y = 1
+		relative_position_id = PER_army_xp_1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = victory_in_the_sgtw
+		}
+	}
+
+}

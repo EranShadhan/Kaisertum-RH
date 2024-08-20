@@ -29,7 +29,7 @@ units = {
 	##### Eighth Route Army (CO: Mao Zedong, Zhu De) #####
 	division = {
 		name = "115 Bubing Shi"
-		location = 5007
+		location = 11913
 		division_template = "Juntuán"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
@@ -37,7 +37,7 @@ units = {
 	}
 	division = {
 		name = "120 Bubing Shi"
-		location = 7208
+		location = 11913
 		division_template = "Juntuán"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
@@ -45,7 +45,7 @@ units = {
 	}
 	division = {
 		name = "129 Bubing Shi"
-		location = 517
+		location = 11913
 		division_template = "Juntuán"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
@@ -58,7 +58,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 12156
+		location = 11913
 		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
 		start_equipment_factor = 0.5
 
@@ -68,7 +68,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 10733
+		location = 11913
 		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
 		start_equipment_factor = 0.5
 
@@ -78,7 +78,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 10733
+		location = 11913
 		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
 		start_equipment_factor = 0.5
 
@@ -88,7 +88,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 8049
+		location = 11913
 		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
 		start_equipment_factor = 0.5
 
@@ -98,7 +98,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 8049
+		location = 11913
 		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
 		start_equipment_factor = 0.5
 
