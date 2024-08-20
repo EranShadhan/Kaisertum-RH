@@ -10,6 +10,8 @@
  MAL_subject:0 "$OVERLORDADJ$ Malaya"
  LBA_subject:0 "$OVERLORDADJ$ North Africa"
  SAU_subject:0 "$OVERLORDADJ$ Central Arabia"
+ CZE_reichskommissariat_democratic:0 "Tschechische Republik"
+ CZE_reichskommissariat_democratic_DEF:0 "Tschechische Republik"
  MAL_UK_democratic:0 "British Malaya"
  MAL_UK_democratic_DEF:0 "British Malaya"
  SER_MNT_democratic:0 "Republic of Serbia-Montenegro"

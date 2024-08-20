@@ -24,7 +24,9 @@ on_actions = {
 					has_idea = PER_disloyal_military
 					stability>0.3
 				}
-				#Iranian commie revolution
+				PER = {
+					country_event = { country_event = KT_persia.1 }
+				}
 			}
 		}
 	}

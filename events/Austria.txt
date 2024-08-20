@@ -261,6 +261,10 @@ country_event = {
 			transfer_state = 802
 		}
 
+		CZE = {
+			set_cosmetic_tag = CZE_reichskommissariat
+		}
+
 		YUG ={
 			transfer_state = 105
 			transfer_state = 852
@@ -277,6 +281,8 @@ country_event = {
 		hidden_effect = {
 			HUN = {
 				add_ideas = HUN_debuff
+				transfer_state = 982
+				white_peace = GER
 			}
 			HUN = {
 				transfer_state = 982
@@ -290,6 +296,10 @@ country_event = {
 			802 = {
 				add_core_of = ALB
 			}
+			982 = {
+				add_core_of = HUN
+			}
+
 			BUL = {
 				add_ideas = { against_hungary }
 			}	

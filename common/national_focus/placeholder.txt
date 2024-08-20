@@ -1,11 +1,15 @@
 focus_tree = {
-	id = turkish_focus # PLACEHOLDER TO FIX BOOKMARK FOR NOW
+	id = placeholder_focus # PLACEHOLDER TO FIX BOOKMARK FOR NOW
 	
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
 			tag = TUR
+		}
+		modifier = {
+			add = 10
+			tag = UKR
 		}
 	}
 	

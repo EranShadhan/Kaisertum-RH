@@ -4,7 +4,7 @@ ideas = {
 
 		UBD_germanisation_programme_idea = {
 
-			picture = UBD_germanisation
+			picture = UBD_germanization
 			
 			allowed = {
 				always = no
@@ -26,7 +26,7 @@ ideas = {
 
 		UBD_overworked_administration_idea = {
 
-			picture = UBD_baltic_resistance
+			picture = generic_disjointed_gov
 			
 			allowed = {
 				always = no
@@ -50,7 +50,7 @@ ideas = {
 		}
 		UBD_overworked_administration_idea_2 = {
 
-			picture = UBD_baltic_resistance
+			picture = generic_disjointed_gov
 			
 			allowed = {
 				always = no
@@ -74,7 +74,7 @@ ideas = {
 		}
 		UBD_overworked_administration_idea_3 = {
 
-			picture = UBD_baltic_resistance
+			picture = generic_disjointed_gov
 			
 			allowed = {
 				always = no
@@ -98,7 +98,7 @@ ideas = {
 		}
 		UBD_overworked_administration_idea_4 = {
 
-			picture = UBD_baltic_resistance
+			picture = generic_disjointed_gov
 			
 			allowed = {
 				always = no
@@ -122,7 +122,7 @@ ideas = {
 		}
 		UBD_overworked_administration_idea_5 = {
 
-			picture = UBD_baltic_resistance
+			picture = generic_disjointed_gov
 			
 			allowed = {
 				always = no
@@ -143,8 +143,6 @@ ideas = {
 		}
 
 		UBD_lack_of_workers_idea = {
-
-			picture = UBD_baltic_resistance
 			
 			allowed = {
 				always = no
@@ -165,7 +163,7 @@ ideas = {
 		}
 		UBD_lack_of_workers_idea_2 = {
 
-			picture = UBD_baltic_resistance
+			picture = UBD_lack_of_workers_idea
 			
 			allowed = {
 				always = no

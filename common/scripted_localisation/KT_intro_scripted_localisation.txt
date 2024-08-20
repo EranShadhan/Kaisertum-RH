@@ -17,7 +17,7 @@ defined_text = {
 		trigger = {
 			original_tag = FRA
 		}
-		localization_key = FRA_country_lore_desc
+		localization_key = FRA_lore_desc
 	}
 	text = {
 		trigger = {
