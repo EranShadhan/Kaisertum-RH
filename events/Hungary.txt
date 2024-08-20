@@ -1,5 +1,7 @@
 #Hungay hippy
 
+add_namespace = Hungary
+
 country_event = {
 	id = hungary.1
 	title = hungary.1.t
@@ -9,12 +11,13 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = hungary.1.a
+		name = ungary.1
 		hidden_effect = {
-			tag = HUN
 
 			ROM= {
-				annex_country = HUN
+				annex_country = {
+					target = HUN
+				}
 				release = HUN
 			}
 
@@ -28,6 +31,14 @@ country_event = {
 			SER = {
 				transfer_state = 45
 				transfer_state = 764
+			}
+
+			HUN = {
+				release = SLO
+
+				set_politics = {
+					ruling_party = democratic
+				}
 			}
 
 			}

@@ -13400,7 +13400,7 @@ news_event = {
 }
 
 news_event = {
-	id = news.411
+	id = news.1000
 	title = news.411.t
 	desc = news.411.desc
 	picture = GFX_news_event_074
@@ -13408,35 +13408,37 @@ news_event = {
 	major = yes
 
 	trigger = {
-		43 = { is_controlled_by = GER }
-		43 = { is_owned_by = HUN }
+		OR = {
+			4 = { is_controlled_by = HUN is_owned_by = AUS }
+			9 = { is_controlled_by = GER is_owned_by = AUS }
+			surrender_progress > 0.25
+		}
 		
-		NOT = { has_global_flag = fall_of_budapest}
+		HUN = { has_war_with = ROM }
+		NOT = { has_global_flag = fall_of_buda }
 	}
 
 	immediate = { 
-					set_global_flag = fall_of_viena
-					HUN = {
-						country_event = hungary.1
+					set_global_flag = fall_of_buda
+					AUS = {
+						country_event = austria.5
 					}
 				}
 
+	mean_time_to_happen = {
+		days = 2
+	}
 	
 	option = {
 		name = news.410.a
-		trigger = {
-			TAG = { has_war_with = HUN }
-		}
-		AUS = {
-			country_event = {
-				id = hungary.1
-			}
+		trigger ={
+			TAG = { has_War_with = HUN }
 		}
 	}
 	option = {
 		name = news.410.b
 		trigger = {
-				TAG = HUN
+				TAG = AUS
 		}
 	}
 
