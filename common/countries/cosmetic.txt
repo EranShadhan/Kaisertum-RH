@@ -185,7 +185,7 @@ HRE_UNIFIED = {
 
 CZE_reichskommissariat = {
 	color = rgb { 115 115 115 }
-	color_ui = rgb { 122 145 93 }
+	color_ui = rgb { 115 115 115 }
 }
 
 HOL_reichskommissariat = {

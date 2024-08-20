@@ -200,10 +200,6 @@ country_event = {
 	option = {
 		name = austria.1.a
 
-		HUN = {
-			transfer_state = 892
-		}
-
 		GER = {
 			annex_country = {
 				target = AUS
@@ -283,6 +279,9 @@ country_event = {
 				add_ideas = HUN_debuff
 				transfer_state = 982
 				white_peace = GER
+				982 = {
+					add_core_of = HUN
+				}
 			}
 			HUN = {
 				transfer_state = 982
