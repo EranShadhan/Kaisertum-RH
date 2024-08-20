@@ -1,6 +1,24 @@
 spriteTypes = {
 
-	
+	#GREEK FOCUSES
+	SpriteType = {
+		name = "GFX_focus_hellenic_tanks"
+		texturefile = "gfx/interface/goals/GRE/goal_hellenic_tanks.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GRE_pyrkal"
+		texturefile = "gfx/interface/goals/GRE/goal_GRE_pyrkal.dds"
+	}
+	SpriteType = {
+		name = "GFX_fous_GRE_army"
+		texturefile = "gfx/interface/goals/GRE/goal_GRE_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_fous_GRE_army2"
+		texturefile = "gfx/interface/goals/GRE/goal_GRE_army2.dds"
+	}
+
+	#OTHER
 	SpriteType = {
 		name = "GFX_focus_fra_promises_war_victory_greatness"
 		texturefile = "gfx/interface/goals/focus_fra_promises_war_victory_greatness.dds"
