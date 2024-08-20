@@ -136,8 +136,10 @@ bookmarks = {
 			history = "GRE_NEW_DECADE_DESC"
 			ideology = neutrality
 			ideas = {
-				german_customs_union_member
-				victory_in_the_sgtw
+				GRE_eee_enemy
+				GRE_megali_idea_partial_restoration
+				
+				GRE_on_going_population_exchange
 			}
 			focuses = {
 			}

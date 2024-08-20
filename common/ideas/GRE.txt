@@ -128,6 +128,46 @@ ideas = {
 			}
 			
 		}
+		GRE_eee_enemy = {
+			
+
+			picture = gre_eee_opposition
+
+			
+			removal_cost = -1
+            modifier = {
+			stability_factor = -0.15
+			drift_defence_factor = -0.2
+			political_power_gain = -0.1
+			}
+			
+		}
+		GRE_megali_idea_partial_restoration = {
+			
+
+			picture = GRE_megali
+
+			
+			removal_cost = -1
+            modifier = {
+			surrender_limit = 0.1
+			war_support_factor = 0.05
+			}
+			
+		}
+		GRE_on_going_population_exchange = {
+			
+
+			picture = GRE_exchange
+
+			
+			removal_cost = -1
+            modifier = {
+			weekly_manpower = -75
+			monthly_population = -0.2
+			}
+			
+		}
    }
    
 }
