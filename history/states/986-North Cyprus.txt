@@ -1,35 +1,27 @@
-
 state={
-	id=183
-	name="STATE_183"
-	resources={
-		chromium=3.000
+	id=986
+	name="STATE_986"
+	provinces={
+		11984 
 	}
-
 	history={
 		owner = GRE
 		add_core_of = CYP
 		add_core_of = GRE
 		victory_points = {
-			7193 3 
+			11984 5 
 		}
+		
 		buildings = {
 			infrastructure = 2
-			air_base = 2
-			7193 = {
-				naval_base = 2
-
-			}
+			air_base = 1
+			
 
 		}
 
 	}
-
-	provinces={
-		7193 
-	}
-	manpower=277959
+    state_category=rural
+	manpower=71890
 	buildings_max_level_factor=1.000
-	state_category=rural
 	local_supplies=0.000
 }
