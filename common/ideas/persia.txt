@@ -204,7 +204,7 @@ ideas = {
 			}
 		}
 
-		PER_reza_shah_pahlavi = {
+		PER_mohammad_hassan_shah_qajar = {
 
 			allowed = {
 				always = no
@@ -219,11 +219,11 @@ ideas = {
 			traits = { popular_figurehead3 }
 		}
 
-		PER_reza_shah_pahlavi_2 = {
+		PER_mohammad_hassan_shah_qajar_2 = {
 
-			name = PER_reza_shah_pahlavi
+			name = PER_mohammad_hassan_shah_qajar
 
-			picture = PER_reza_shah_pahlavi
+			picture = PER_mohammad_hassan_shah_qajar
 
 			allowed = {
 				always = no

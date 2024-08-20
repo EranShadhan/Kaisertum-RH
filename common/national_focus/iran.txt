@@ -565,7 +565,7 @@ focus_tree = {
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = PER_monarchist_resistance
-				add_idea = PER_reza_shah_pahlavi
+				add_idea = PER_mohammad_hassan_shah_qajar
 			}
 		}
 	}
@@ -598,8 +598,8 @@ focus_tree = {
 
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = PER_reza_shah_pahlavi
-				add_idea = PER_reza_shah_pahlavi_2
+				remove_idea = PER_mohammad_hassan_shah_qajar
+				add_idea = PER_mohammad_hassan_shah_qajar_2
 			}
 		}
 	}
@@ -1549,6 +1549,237 @@ focus_tree = {
 
 		completion_reward = {
 			remove_ideas = victory_in_the_sgtw
+		}
+	}
+
+	focus = {
+		id = PER_motorized
+		text = motorization_effort
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = PER_army_1 }
+		x = 2
+		y = 1
+		relative_position_id = PER_army_1
+
+		cost = 7.2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 20
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 2.5
+				technology = motorised_infantry
+			}
+		}
+	}
+
+	focus = {
+		id = PER_panzer
+		text = armor_effort
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = PER_motorized }
+		x = 2
+		y = 1
+		relative_position_id = PER_motorized
+
+		cost = 7.2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 20
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = PER_panzer_2
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = PER_panzer }
+		x = 0
+		y = 1
+		relative_position_id = PER_panzer
+
+		cost = 7.2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 20
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = PER_mechanized
+		text = mechanization_effort
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = PER_motorized }
+		x = 0
+		y = 1
+		relative_position_id = PER_motorized
+
+		cost = 7.2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 20
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = PER_mechanized_2
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = PER_mechanized }
+		x = 0
+		y = 1
+		relative_position_id = PER_mechanized
+
+		cost = 7.2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 20
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = PER_special_forces
+		text = special_forces
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = PER_army_xp_2 }
+		x = 0
+		y = 1
+		relative_position_id = PER_army_xp_2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 50
+			add_ideas = special_forces
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
 		}
 	}
 

@@ -15,6 +15,7 @@
  PER_radical_science_idea:0 "Radical Science"
  PER_dream:0 "Persian Dream"
  PER_agrarian_society:0 "Agrarian Society"
+ PER_mohammad_hassan_shah_qajar:0 "Mohammed Hassan Shah Qajar"
 
  PER_go_german:0 "Revision of the Oil Treaties"
  PER_go_german_desc:0 "German-Iranian Oil Company Treaty was forcefully signed by the Iranian regime to benefit the Germans for a very cheap. These treaties have to be redone to be more fair and less onesided."
@@ -75,6 +76,12 @@
  PER_army_xp_1_desc:0 ""
  PER_army_xp_2:0 "Veto the Military Protection Act"
  PER_army_xp_2_desc:0 "Military Protection Act was signed during the Second Great Turkish War to supress pacifists and to force people to believe in the greatness of the army. This howewer slows down development as criticism is banned even inside the army."
+ PER_army_xp_2:0 "Veto the Military Protection Act"
+ PER_army_xp_2_desc:0 "Military Protection Act was signed during the Second Great Turkish War to supress pacifists and to force people to believe in the greatness of the army. This howewer slows down development as criticism is banned even inside the army."
+ PER_panzer_2:0 "Armor Effort II"
+ PER_panzer_2_desc:0 ""
+ PER_mechanized_2:0 "Mechanization Effort II"
+ PER_mechanized_2_desc:0 ""
 
  PER_german_persian_oil_company_tt:0 "Oil Concessions to the §Y[GER.GetName]§! in §Y[291.GetName]§!, §Y[413.GetName]§! and §Y[412.GetName]§!"
  PER_disloyal_military_tt:0 "§RIf stability drops below 30% a communist uprising will happen§!"

@@ -1,20 +1,19 @@
 on_actions = {
 	on_startup = {
 		effect = {
-			give_resource_rights = {
-				receiver = GER
-				state = 291
-				resources = { oil }
-			}
-			give_resource_rights = {
-				receiver = GER
-				state = 413
-				resources = { oil }
-			}
-			give_resource_rights = {
-				receiver = GER
-				state = 412
-				resources = { oil }
+			PER = {
+				give_resource_rights = {
+					receiver = GER
+					state = 291
+				}
+				give_resource_rights = {
+					receiver = GER
+					state = 413
+				}
+				give_resource_rights = {
+					receiver = GER
+					state = 412
+				}
 			}
 		}
 	}
