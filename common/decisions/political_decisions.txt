@@ -1,0 +1,178 @@
+
+political_actions = {
+	give_refuge_sov = {
+
+		icon = generic_research
+
+		allowed = {
+			always = yes
+		}
+
+		visible = {
+			has_government = democratic
+			is_major = yes
+			is_government_in_exile = no
+		}
+
+		cost = 100
+		fire_only_once = yes
+		
+		days_remove = -1
+
+		available = {
+			NOT = {
+				OR = {
+					SOV = { has_government = democratic }
+					SOV = { has_government = neutrality }
+				}
+			}
+			hidden_trigger = {
+				NOT = { has_global_flag = give_refuge_sov_now }
+			}
+		}
+
+		modifier = {
+			research_speed_factor = 0.1
+			stability_factor = -0.05
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_global_flag = give_refuge_sov_now
+			}
+		}
+
+		remove_trigger = {
+			OR = {
+				NOT = {
+					OR = {
+						SOV = { has_government = democratic }
+						SOV = { has_government = neutrality }
+					}
+				}
+				SOV = { has_government = democratic }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				tag = ENG
+				has_War = no
+				date < 1937.3.1
+				factor = 0
+			}
+		}
+	}
+	give_refuge_fra = {
+
+		icon = generic_research
+
+		allowed = {
+			always = yes
+		}
+
+		visible = {
+			NOT = { has_government = fascism }
+			NOT = { has_government = communism }
+			is_major = yes
+			is_government_in_exile = no
+		}
+		cost = 100
+		fire_only_once = yes
+		days_remove = -1
+
+		available = {
+			NOT = {
+				FRA = { has_government = democratic }
+			}
+			hidden_trigger = {
+				NOT = { has_global_flag = give_refuge_fra_now }
+			}
+		}
+
+		modifier = {
+			research_speed_factor = 0.1
+			stability_factor = -0.05
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_global_flag = give_refuge_fra_now
+			}
+		}
+
+		remove_trigger = {
+			OR = {
+				NOT = {
+					has_government = democratic
+				}
+				FRA = { has_government = democratic }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				tag = ENG
+				has_War = no
+				date < 1937.3.1
+				factor = 0
+			}
+		}
+	}
+	give_refuge_jap = {
+
+		icon = generic_research
+
+		allowed = {
+			always = yes
+		}
+
+		visible = {
+			NOT = { has_government = fascism }
+			NOT = { has_government = communism }
+			is_major = yes
+			is_government_in_exile = no
+		}
+		cost = 100
+		fire_only_once = yes
+		days_remove = -1
+
+		available = {
+			NOT = {
+				OR = {
+					JAP = { has_government = democratic }
+					JAP = { has_government = neutrality }
+				}
+			}
+			hidden_trigger = {
+				NOT = { has_global_flag = give_refuge_jap_now }
+			}
+		}
+
+		modifier = {
+			research_speed_factor = 0.1
+			stability_factor = -0.05
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_global_flag = give_refuge_jap_now
+			}
+		}
+
+		remove_trigger = {
+			OR = {
+				JAP = { has_government = democratic }
+				JAP = { has_government = neutrality }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				tag = USA
+				factor = 1
+			}
+		}
+	}
+}
