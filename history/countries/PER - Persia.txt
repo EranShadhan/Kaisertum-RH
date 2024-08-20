@@ -29,6 +29,7 @@ add_ideas = {
 	PER_monarchist_resistance
 	PER_disloyal_military
 	PER_traditional_islam_gov
+	islam_religion
 	PER_agrarian_society
 	PER_dream
 }

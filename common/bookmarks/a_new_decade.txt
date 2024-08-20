@@ -87,6 +87,16 @@ bookmarks = {
 
 
 		###  MINORS ###
+		FIN={
+			minor = yes
+			history = "FIN_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+				german_customs_union_member
+			}
+			focuses = {
+			}
+		}
 		"UBD"={
 			minor = yes
 			history = "UBD_NEW_DECADE_DESC"
@@ -105,6 +115,17 @@ bookmarks = {
 			ideology = neutrality
 			ideas = {
 				german_customs_union_member
+			}
+			focuses = {
+			}
+		}
+		"GRE"={
+			minor = yes
+			history = "GRE_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				german_customs_union_member
+				victory_in_the_sgtw
 			}
 			focuses = {
 			}
@@ -266,16 +287,6 @@ bookmarks = {
 			}
 		}
 
-		"GRE"={
-			minor = yes
-			history = "GRE_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-
 		"POL"={
 			minor = yes
 			history = "POL_GATHERING_STORM_DESC"
@@ -298,15 +309,6 @@ bookmarks = {
 			minor = yes
 			history = "SWI_GATHERING_STORM_DESC"
 			ideology = democratic
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-		FIN={
-			minor = yes
-			history = FIN_GATHERING_STORM_DESC
-			ideology = neutrality
 			ideas = {
 			}
 			focuses = {

@@ -22,6 +22,26 @@ ideas = {
 				experience_gain_air_factor = -0.33
 			}
 		}
+
+		islam_religion = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.02
+				communism_drift = -0.05
+			}
+		}
 	}
 
 }
