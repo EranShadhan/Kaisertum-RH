@@ -182,6 +182,7 @@ add_ideas = {
 }
 
 recruit_character = FRA_joseph_darnaud
+recruit_character = FRA_marcel_deat
 recruit_character = FRA_georges_valois
 recruit_character = FRA_philippe_petain
 recruit_character = FRA_maurice_thorez
