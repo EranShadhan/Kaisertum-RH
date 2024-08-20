@@ -11,7 +11,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = ungary.1
+		name = hungary.1
 		hidden_effect = {
 
 			ROM= {
@@ -41,8 +41,51 @@ country_event = {
 				}
 			}
 
+			SLO = {
+				transfer_state = 664
+			}
+
+			country_event = { days = 10 id = hungary.2 }
+
 			}
 			
+	}
+	
+}
+
+country_event = {
+	id = hungary.2
+	title = hungary.2.t
+	desc = hungary.2.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary.2.a
+		hidden_effect = {
+
+		HUN = {
+			664 = {
+				set_demilitarized_zone = yes
+			}
+			transfer_state = 664
+		}
+
+		UKR = {
+			transfer_state = 73
+		}
+
+		CZE = {
+			drop_cosmetic_tag = yes
+			annex_country = SLO
+			CZE = {
+				transfer_state = 70
+				transfer_state = 71
+			} 
+		}
+
+		}	
 	}
 	
 }
