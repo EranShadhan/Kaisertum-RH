@@ -4,7 +4,7 @@ bookmarks = {
 		desc = "NEW_DECDADE_DESC"
 		date = 1930.1.1.12
 		picture = "GFX_select_date_1936"
-		default_country = "GER"
+		default_country = "FRA"
 		default = yes
 		
 		"FRA"={
@@ -43,7 +43,15 @@ bookmarks = {
 			history = "ITA_NEW_DECADE_DESC"
 			ideology = neutrality
 			ideas = {
-				german_customs_union_member
+                german_customs_union_member
+			}	
+			focuses = {
+			}		
+		}
+		"CHI"={
+			history = "AUS_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
 			}	
 			focuses = {
 			}		
@@ -53,14 +61,6 @@ bookmarks = {
 			ideology = communism
 			ideas = {
 				victory_in_the_sgtw
-			}
-			focuses = {
-			}
-		}
-		"CHI"={
-			history = "CHI_NEW_DECADE_DESC"
-			ideology = neutrality
-			ideas = {
 			}
 			focuses = {
 			}
@@ -86,16 +86,6 @@ bookmarks = {
 
 
 		###  MINORS ###
-		FIN={
-			minor = yes
-			history = "FIN_NEW_DECADE_DESC"
-			ideology = neutrality
-			ideas = {
-				german_customs_union_member
-			}
-			focuses = {
-			}
-		}
 		"UBD"={
 			minor = yes
 			history = "UBD_NEW_DECADE_DESC"
@@ -108,33 +98,12 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		"AUS"={
-			minor = yes
-			history = "AUS_NEW_DECADE_DESC"
-			ideology = neutrality
-			ideas = {
-				german_customs_union_member
-			}	
-			focuses = {
-			}
-		}
 		"ROM"={
 			minor = yes
 			history = "ROM_NEW_DECADE_DESC"
 			ideology = neutrality
 			ideas = {
 				german_customs_union_member
-			}
-			focuses = {
-			}
-		}
-		"GRE"={
-			minor = yes
-			history = "GRE_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				german_customs_union_member
-				victory_in_the_sgtw
 			}
 			focuses = {
 			}
@@ -296,6 +265,16 @@ bookmarks = {
 			}
 		}
 
+		"GRE"={
+			minor = yes
+			history = "GRE_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
 		"POL"={
 			minor = yes
 			history = "POL_GATHERING_STORM_DESC"
@@ -318,6 +297,15 @@ bookmarks = {
 			minor = yes
 			history = "SWI_GATHERING_STORM_DESC"
 			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		FIN={
+			minor = yes
+			history = FIN_GATHERING_STORM_DESC
+			ideology = neutrality
 			ideas = {
 			}
 			focuses = {

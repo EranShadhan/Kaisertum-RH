@@ -1,0 +1,95 @@
+the_fiume_crisis = {		
+	invest_money = {
+
+		icon = GFX_decision_icon_default		
+		
+		
+		
+		available = {
+			
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 7
+
+		visible = {
+			tag = YUG
+		}		
+
+		cost = 25	
+		
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		
+			
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	
+			factor = 25			
+		}
+	}
+	spread_croatian_propaganda = {
+
+		icon = GFX_decision_icon_default		
+		
+		
+		
+		available = {
+			
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 7
+
+		visible = {
+			tag = YUG
+		}		
+
+		cost = 30	
+		
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		
+			
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	
+			factor = 25			
+		}
+	}
+	promise_eqality_for_the_italians = {
+
+		icon = GFX_decision_icon_default		
+		
+		
+		
+		available = {
+			
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 7
+
+		visible = {
+			tag = YUG
+		}		
+
+		cost = 10	
+		
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		
+			
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	
+			factor = 25			
+		}
+	}
+}

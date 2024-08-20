@@ -72,10 +72,6 @@ country_event = {
 			transfer_state = 664
 		}
 
-		UKR = {
-			transfer_state = 73
-		}
-
 		CZE = {
 			drop_cosmetic_tag = yes
 			annex_country = SLO

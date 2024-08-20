@@ -69,13 +69,36 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				army_attack_factor = -0.5
+				army_defence_factor = -0.5
+				army_speed_factor = -0.5
+			}
+		}
+
+		PER_army_2_focus = {
+
+			name = PER_army_1_focus
+
+			picture = PER_army_1_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
 				army_attack_factor = -0.4
 				army_defence_factor = -0.4
 				army_speed_factor = -0.4
 			}
 		}
 
-		PER_army_2_focus = {
+		PER_army_3_focus = {
 
 			name = PER_army_1_focus
 
@@ -98,7 +121,7 @@ ideas = {
 			}
 		}
 
-		PER_army_3_focus = {
+		PER_army_4_focus = {
 
 			name = PER_army_1_focus
 
@@ -121,7 +144,7 @@ ideas = {
 			}
 		}
 
-		PER_army_4_focus = {
+		PER_army_5_focus = {
 
 			name = PER_army_1_focus
 
@@ -141,26 +164,6 @@ ideas = {
 				army_attack_factor = -0.1
 				army_defence_factor = -0.1
 				army_speed_factor = -0.1
-			}
-		}
-
-		PER_army_5_focus = {
-
-			picture = PER_army_1_focus
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			modifier = {
-				army_attack_factor = 0.05
-				army_defence_factor = 0.05
 			}
 		}
 
@@ -258,27 +261,6 @@ ideas = {
 			}
 		}
 
-		PER_dream = {
-
-			picture = FRA_national_mobilization_focus
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			modifier = {
-				war_support_factor = 0.1
-				conscription = 0.015
-				justify_war_goal_time = -0.25
-			}
-		}
-
 		PER_imperialism = {
 
 			picture = FRA_scw_intervention_nationalists_focus
@@ -294,10 +276,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				war_support_factor = 0.25
-				subjects_autonomy_gain = 0.5
-				conscription = 0.015
-				justify_war_goal_time = -0.25
+				war_support_factor = 0.15
+				subjects_autonomy_gain = -0.1
 			}
 		}
 
@@ -395,6 +375,27 @@ ideas = {
 
 			modifier = {
 				research_speed_factor = 0.2
+			}
+		}
+
+		PER_dream = {
+
+			picture = FRA_national_mobilization_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.1
+				conscription = 0.015
+				justify_war_goal_time = -0.25
 			}
 		}
 
