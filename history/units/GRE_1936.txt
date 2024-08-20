@@ -69,6 +69,50 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
+	division = { # "XX Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 20
+		}
+		location = 9805
+		division_template = "Tetrágono Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+
+	}
+	division = { # "XVII Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 17
+		}
+		location = 9837
+		division_template = "Tetrágono Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+
+	}
+	division = { # "XVIII Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 18
+		}
+		location = 11984
+		division_template = "Tetrágono Pezikoú" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "XIX Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 19
+		}
+		location = 7193
+		division_template = "Tetrágono Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
 	division = { # "VIII Merarchía Pezikoú"
 		division_name = {
 				is_name_ordered = yes
@@ -80,15 +124,86 @@ units = {
 		start_equipment_factor = 0.7
 
 	}
+	division = { # "XIII Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 13
+		}
+		location = 9799
+		division_template = "Trigonikó Pezikoú" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = { # "XX Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 20
+		}
+		location = 4112
+		division_template = "Trigonikó Pezikoú" 
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "XIV Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 14
+		}
+		location = 9929
+		division_template = "Trigonikó Pezikoú" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = { # "XVI Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 16
+		}
+		location = 8435
+		division_template = "Tetrágono Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
 	division = {
 		name = "Merarchía Ippikoú"
 		location = 11818
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
 		division_template = "Merarchía Ippikoú" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
+    division = {
+		name = "Merarchía Ippikoú"
+		location = 3973
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		division_template = "Merarchía Ippikoú" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
 
+	}
+	  division = {
+		name = "Merarchía Ippikoú"
+		location = 6895
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		division_template = "Merarchía Ippikoú" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
 	# A Sóma Stratoú
 	division = { # "II Merarchía Pezikoú"
 		division_name = {
@@ -157,7 +272,7 @@ units = {
 		location = 3526
 		division_template = "Trigonikó Pezikoú" 
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.6
 
 	}
 	division = { # "X Merarchía Pezikoú"
@@ -179,7 +294,7 @@ units = {
 		location = 11818
 		division_template = "Trigonikó Pezikoú" 
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.6
 
 	}
 
@@ -192,7 +307,7 @@ units = {
 		location = 9791
 		division_template = "Trigonikó Pezikoú" 
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.6
 
 	}
 
@@ -202,10 +317,10 @@ units = {
 				is_name_ordered = yes
 				name_order = 12
 		}
-		location = 11774
+		location = 849
 		division_template = "Trigonikó Pezikoú" 
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.6
 
 	}
 }
