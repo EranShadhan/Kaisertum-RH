@@ -1,0 +1,12 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_bop_GRE_metaxas"
+		texturefile = "gfx/interface/bop/GRE/bop_metaxas.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_bop_GRE_george"
+		texturefile = "gfx/interface/bop/GRE/bop_george.dds"
+	}
+	
+}
