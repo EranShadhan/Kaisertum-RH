@@ -41,8 +41,14 @@ spriteTypes = {
 		name = "GFX_focus_THE_MAN_THE_MYTH_THE_LEGEND_ONASSIS"
 		texturefile = "gfx/interface/goals/GRE/THE_MAN_THE_MYTH_THE_LEGEND_ONASSIS.dds"
 	}
-	
-	
+	SpriteType = {
+		name = "GFX_focus_GRE_air_academy"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_air_academy.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GRE_nukes"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_nukes.dds"
+	}
 	
 	#OTHER
 	SpriteType = {
