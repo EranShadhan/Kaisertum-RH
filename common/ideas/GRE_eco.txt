@@ -1,0 +1,37 @@
+ ideas = {
+    
+		economy = { 
+		ifc_economy = {
+        
+            picture = ifc_economy
+			desc = ifc_economy_desc
+			removal_cost = -1
+            allowed = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_expected_value = 0.6
+				production_speed_industrial_complex_factor = -0.2
+				production_speed_arms_factory_factor = -0.35
+				production_speed_dockyard_factor = 0.2
+			    conversion_cost_civ_to_mil_factor= 0.2
+				conversion_cost_mil_to_civ_factor = 0.2
+				civilian_intel_to_others = 25
+				army_intel_to_others = 25
+				navy_intel_to_others = 25
+				airforce_intel_to_others = 25
+				custom_modifier_tooltip = GRE_debt_paid_total_tt
+			}
+			allowed_to_remove = {
+			    check_variable = { var = GRE_debt_to_the_ifc_britain_var value = 0 compare = equals }
+				check_variable = { var = GRE_debt_to_the_ifc_france_var value = 0 compare = equals }
+				check_variable = { var = GRE_debt_to_the_ifc_italy_var value = 0 compare = equals }
+				check_variable = { var = GRE_debt_to_the_ifc_russia_var value = 0 compare = equals }
+				check_variable = { var = GRE_debt_to_the_ifc_germany_var value = 0 compare = equals }
+				check_variable = { var = GRE_debt_to_the_ifc_austriahungary_var value = 0 compare = equals }
+			}
+
+			cancel_if_invalid = no
+		}	
+    }
+}

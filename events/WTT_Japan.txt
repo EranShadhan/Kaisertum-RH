@@ -10,7 +10,64 @@
 #  #  # #  #   #  # #   #  # #  # #  # 
  ##    #   ### #  # ###  ##  #  # ###  
 
-#Japans asks to take overlordship if country has capitulated
+country_event = {
+	id = wtt_japan.9
+	title = wtt_japan.11.t
+	desc = wtt_japan.11.desc
+	picture = GFX_report_event_japan_europe_pact
+
+	is_triggered_only = yes
+	
+	#Accept NAP
+	option = {
+		name = wtt_japan.11.a
+		ai_chance = {
+			base = 10
+		}
+		diplomatic_relation = {
+			country = FRA
+			relation = non_aggression_pact
+			active = yes
+		}
+		FRA = { country_event = { id = wtt_japan.10 days = 1 } }
+	}
+}
+
+country_event = {
+	id = wtt_japan.10
+	title = wtt_japan.12.t
+	desc = wtt_japan.12.desc
+	picture = GFX_report_event_japan_europe_pact
+
+	is_triggered_only = yes
+	
+	#Accept NAP
+	option = {
+		name = wtt_japan.11.a
+		ai_chance = {
+			base = 10
+		}
+		JAP = {
+			give_military_access = FRA
+			transfer_state = 741
+			transfer_state = 286
+			transfer_state = 670
+			transfer_state = 671
+		}
+		GXC = {
+			transfer_state = 728
+		}
+		give_military_access = JAP
+		
+		add_resource = {
+			type = rubber
+			amount = 50
+			state = 15
+		}
+	}
+}
+
+
 country_event = {
 	id = wtt_japan.1
 	title = wtt_japan.1.t
