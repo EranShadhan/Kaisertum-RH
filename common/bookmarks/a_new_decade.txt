@@ -63,7 +63,7 @@ bookmarks = {
 			history = "SOV_NEW_DECADE_DESC"
 			ideology = communism
 			ideas = {
-				victory_in_the_sgtw
+				victory_in_the_sgtwrus
 			}
 			focuses = {
 			}

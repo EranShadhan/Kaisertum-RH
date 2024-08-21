@@ -43,7 +43,7 @@ add_ideas = {
 	GRE_megali_idea_partial_restoration
 	GRE_eee_enemy
 	german_customs_union_member
-	victory_in_the_sgtw
+	victory_in_the_sgtwgre
 }
 
 set_research_slots = 3

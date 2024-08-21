@@ -5,7 +5,7 @@ oob = "BUL_1936" #VANILLA & DLC
 
 add_ideas = {
 	german_customs_union_member
-	victory_in_the_sgtw
+	victory_in_the_sgtwbul
 	limited_conscription
 }
 

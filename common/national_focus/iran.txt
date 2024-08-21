@@ -1548,7 +1548,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			remove_ideas = victory_in_the_sgtw
+			remove_ideas = victory_in_the_sgtwper
 		}
 	}
 

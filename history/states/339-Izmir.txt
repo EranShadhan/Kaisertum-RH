@@ -3,7 +3,7 @@ state={
 	id=339
 	name="STATE_339"
 	resources={
-		chromium=50.000
+		chromium=43.000
 	}
 
 	history={
@@ -32,9 +32,9 @@ state={
 	}
 
 	provinces={
-		928 4112 6992 7130 9799 9941 10038 9921 9929 11848 
+		928 4112 6992 7130 9799 9921 11848 
 	}
-	manpower=1401889
+	manpower=1131889
 	buildings_max_level_factor=1.000
 	state_category=large_town
 	local_supplies=8.000

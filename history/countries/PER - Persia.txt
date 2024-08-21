@@ -26,7 +26,7 @@ set_technology = {
 }
 
 add_ideas = {
-	victory_in_the_sgtw
+	victory_in_the_sgtwper
 	PER_german_persian_oil_company
 	PER_army_1_focus
 	PER_monarchist_resistance
