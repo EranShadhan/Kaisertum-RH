@@ -18,6 +18,7 @@ focus_tree = {
 
 	focus = {
 		id = TUR_start_military_reforms
+		icon = GFX_TUR_start_military_reforms
 		x = 20
 
 	
@@ -48,6 +49,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_addressing_the_army
+		icon = GFX_TUR_addressing_the_army
 		x = -7
 	
 		y = 1
@@ -82,6 +84,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_invite_russian_military_mission
+		icon = GFX_TUR_invite_russian_military_mission
 		cost = 5
 		x = 1
 		y = 1
@@ -106,6 +109,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_invite_german_military_mission
+		icon = GFX_TUR_invite_german_military_mission
 		cost = 5
 		x = -1
 		y = 1
@@ -131,6 +135,7 @@ focus_tree = {
 	
 	focus = {
 		id = TUR_cappadocia_exercises
+		icon = GFX_TUR_cappadocia_exercises
 		cost = 6
 		x = 0
 		y = 2
@@ -151,6 +156,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_promote_younger_officers
+		icon = GFX_focus_generic_military_mission
 		cost = 5
 		x = -1
 		y = 1
@@ -170,6 +176,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_improve_logistics_in_the_east
+		icon = GFX_focus_generic_supply_line
 		cost = 5
 		x = 1
 		y = 1
@@ -206,6 +213,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_buy_german_artillery
+		icon = GFX_TUR_buy_german_artillery
 		cost = 5
 		x = 0
 		y = 2
@@ -227,6 +235,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_motorized_focus
+		icon = GFX_goal_generic_army_motorized
 		cost = 5
 		x = -2
 		y = 1
@@ -244,6 +253,7 @@ focus_tree = {
 
 	focus = {
 		id = TUR_new_special_forces
+		icon = GFX_goal_generic_special_forces
 		cost = 5
 		x = 0
 		y = 1
@@ -260,6 +270,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_tank_program
+		icon = GFX_focus_generic_tank_production
 		cost = 5
 		x = 2
 		y = 1
@@ -276,6 +287,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_a_truly_modern_army
+		icon = GFX_TUR_a_truly_modern_military
 		cost = 5
 		x = 0
 		y = 2
@@ -301,6 +313,7 @@ focus_tree = {
 
 	focus = {
 		id = TUR_airforce_expansion
+		icon = GFX_goal_generic_build_airforce
 		cost = 5
 		x = 0
 		y = 1
@@ -317,6 +330,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_construct_airfields_in_the_east
+		icon = GFX_focus_generic_aircraft_production
 		cost = 6
 		x = 0
 		y = 1
@@ -360,6 +374,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_fund_research_on_fighters
+		icon = GFX_goal_generic_air_fighter2
 		cost = 5
 		x = -1
 		y = 1
@@ -382,6 +397,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_fund_research_on_bombers
+		icon = GFX_goal_generic_air_bomber
 		cost = 5
 		x = 1
 		y = 1
@@ -403,6 +419,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_heavy_fighter_improvements
+		icon = GFX_goal_generic_air_fighter
 		cost = 5
 		x = -1
 		y = 1
@@ -423,6 +440,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_naval_bomber_focus
+		icon = GFX_goal_generic_air_naval_bomber
 		cost = 5
 		x = -1
 		y = 1
@@ -443,6 +461,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_cas_improvements
+		icon = GFX_focus_generic_cas_aircraft
 		cost = 5
 		x = 1
 		y = 1
@@ -466,6 +485,7 @@ focus_tree = {
 
 	focus = {
 		id = TUR_continue_navy_reforms
+		icon = GFX_goal_generic_build_navy
 		cost = 6
 		x = 7
 		y = 1
@@ -493,6 +513,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_invite_german_naval_mission
+		icon = GFX_TUR_invite_german_naval_mission
 		cost = 5
 		x = 0
 		y = 1
@@ -515,6 +536,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_old_reliable_ways
+		icon = GFX_focus_generic_naval_discipline
 		cost = 5
 		x = -2
 		y = 1
@@ -550,6 +572,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_prioritize_battleships
+		icon = GFX_goal_generic_navy_battleship
 		cost = 5
 		x = -1
 		y = 1
@@ -573,6 +596,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_focus_on_cruisers
+		icon = GFX_goal_generic_navy_cruiser
 		cost = 5
 		x = 1
 		y = 1
@@ -597,6 +621,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_turkish_carriers
+		icon = GFX_goal_generic_navy_carrier
 		cost = 5
 		x = -1
 		y = 1
@@ -623,6 +648,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_utilize_new_naval_technologies
+		icon = GFX_focus_generic_midget_submarines
 		cost = 5
 		x = 2
 		y = 1
@@ -647,6 +673,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_underwater_warfare
+		icon = GFX_goal_generic_navy_submarine
 		cost = 5
 		x = -1
 		y = 1
@@ -670,6 +697,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_battlecruiser_improvements
+		icon = GFX_focus_generic_navy_battleship2
 		cost = 5
 		x = 1
 		y = 1
@@ -695,6 +723,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_navy_modernization
+		icon = GFX_focus_SMB_blue_water_fleet
 		cost = 5
 		x = -1
 		y = 1

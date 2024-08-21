@@ -10,7 +10,7 @@ state = {
 	history = {
 		owner = AUS
 		victory_points = { #Fiume (Rijeka)
-			11564 1 
+			11564 10
 		}
 		buildings = {
 			infrastructure = 3
