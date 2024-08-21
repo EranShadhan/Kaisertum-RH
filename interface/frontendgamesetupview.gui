@@ -700,7 +700,7 @@ guiTypes = {
 		iconType = {
 			name = "minor_country_gold_1"
 			quadTextureSprite ="GFX_country_selection_minor_gold"
-			position = { x = 915 y = 330 }
+			position = { x = 1065 y = 330 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}

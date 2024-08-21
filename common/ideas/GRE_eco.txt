@@ -4,7 +4,7 @@
 		ifc_economy = {
         
             picture = ifc_economy
-			
+			desc = ifc_economy_desc
 			removal_cost = -1
             allowed = {
 				always = no
