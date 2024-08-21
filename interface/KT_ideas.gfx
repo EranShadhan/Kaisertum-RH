@@ -16,6 +16,10 @@ spriteTypes = {
 	}
    #GREECE
    spriteType = {
+		name = "GFX_idea_ifc_economy"
+		texturefile = "gfx/interface/ideas/GRE/ieda_GRE_debt_simulator.dds"
+	}
+   spriteType = {
 		name = "GFX_idea_gre_eee_opposition"
 		texturefile = "gfx/interface/ideas/GRE/gre_byzantium.dds"
 	}
@@ -26,5 +30,30 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_GRE_exchange"
 		texturefile = "gfx/interface/ideas/GRE/idea_GRE_exchange.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GRE_Memories_of_1925"
+		texturefile = "gfx/interface/ideas/GRE/idea_GRE_Memories_of_1922or25.dds"
+	}
+	#SECOND GRAEAT TURKISH WAR
+	spriteType = {
+		name = "GFX_idea_BUL_memories_of_1925"
+		texturefile = "gfx/interface/ideas/SGTW/idea_BUL_memories_of_1925.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ALB_1925"
+		texturefile = "gfx/interface/ideas/SGTW/idea_ALB_1925.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_1925"
+		texturefile = "gfx/interface/ideas/SGTW/idea_RUS_1925.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PER_1925"
+		texturefile = "gfx/interface/ideas/SGTW/idea_PER_memories_of_1925.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SAU_1925"
+		texturefile = "gfx/interface/ideas/SGTW/idea_SAU_memories_of_1925.dds"
 	}
 }

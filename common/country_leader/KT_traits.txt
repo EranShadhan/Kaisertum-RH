@@ -1,0 +1,8 @@
+leader_traits = {
+
+UKR_red_prince = {
+		random = no
+		stability_factor = 0.1
+		monthly_population = 0.05
+	}
+}

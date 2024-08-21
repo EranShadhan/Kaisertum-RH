@@ -38,7 +38,26 @@ ideas = {
 				local_resources = -0.3
 			}
 		}
-		
+		FRA_communist_opposition_2 = {
+
+			picture = FRA_communist_opposition
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.15
+				stability_factor = -0.25
+				weekly_manpower = -2000
+			}
+		}
 		FRA_communist_opposition = {
 
 			picture = FRA_communist_opposition
@@ -48,7 +67,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				always = no
 			}
 
 			removal_cost = -1
@@ -56,7 +75,6 @@ ideas = {
 			modifier = {
 				communism_drift = 0.03
 				stability_factor = -0.2
-				war_support_factor = -0.3
 				weekly_manpower = -1000
 			}
 		}

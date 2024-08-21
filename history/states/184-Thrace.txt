@@ -8,16 +8,12 @@ state={
 
 	history={
 		victory_points = {
-			11774 1 
+			11905 1 
 		}
 		owner = BUL
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			arms_factory = 1
-			11774 = {
-				naval_base = 3
-
-			}
 
 		}
 		add_core_of = BUL
@@ -25,7 +21,7 @@ state={
 	}
 
 	provinces={
-		11774 11905 13366 
+		 11774 11905 13366
 	}
 	manpower=382500
 	buildings_max_level_factor=1.000

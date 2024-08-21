@@ -1,4 +1,5 @@
 ﻿l_english:
+# focus tree
  FRA_eliminate_communist_opposition:0 "Eliminate the Communist Opposition"
  FRA_eliminate_communist_opposition_desc:0 "Since the 1928 election, the communists have been causing a lot of trouble in France. If they are not elimnated in time, there is going to be a counter-revolution. We must stop them!"
  
@@ -37,6 +38,9 @@
  
  FRA_secure_neutral_spain:0 "Secure a neutral Spain"
  FRA_secure_neutral_spain_desc:0 "Spain is a swing-state, as they can potentially join the Germans, due to them giving Gibraltar to Spain for free. Still, the Spanish are very unstable politically, so we can take advantage of this and invade the country. The Germans and Italians would obviously oppose this, but they would prioritize dealing with Austria-Hungary, so we have a window of time we can use to put a favorable government in Spain."
+ 
+ FRA_axis_of_revenge:0 "Axis of Revenge"
+ FRA_axis_of_revenge_desc:0 "The time came right to establish the Axis of Revenge against the Germans, we shall seek our revenge against the evil state of Germany and to liberate her occupied puppets"
  
  FRA_strike_germany:0 "Strike Germany, before it's too late!"
  FRA_strike_germany_desc:0 "The Germans are expanding politically and economically greater than glorious France and it's allies. This is worrying as if we don't strike right now, then the Germans would outscale us and make it impossible for us to reverse the German Hegemony over Europe. While the time may not be favorable, we need to strike now! This is our only option!"
@@ -130,3 +134,34 @@
  
  FRA_focus_on_cas:0 "Focus on close air support"
  FRA_focus_on_cas_desc:0 "The close air support in combination with our super-heavy tanks will win us the war. We need to research and develop more close air support airwings, that we can use in combat. This will for sure give us an unfair advantage over the enemy and may be enough to win us the war!"
+ 
+ FRA_resist_fascist_opression:0 "Resist Fascist Pressure"
+ FRA_resist_fascist_opression_desc:0 "Despite their recent victory in the Elections, we can save France from their Fascistic dreams, We shall resist this pressure and prepare for a coup"
+ 
+ FRA_preperations_for_worst:0 "Prepare for the worst"
+ FRA_preperations_for_worst_desc:0 "We need to prepare for everything, including a possible coup deta against the insane regime, We shall contact Generals in order to prepare for it"
+ 
+ FRA_communist_coup:0 "The Socialist coup Coup"
+ FRA_communist_coup_desc:0 "We need to prepare for everything, including a possible coup deta against the insane regime, We shall contact Generals in order to prepare for it"
+ 
+ # ideas
+ FRA_secret_rearmament:0 "Secret Rearmament"
+ FRA_secret_rearmament_desc:0 "The French nation is lacking the vital war resources of coal and steel. This means that we have to secretly obtain these resources from Russia if we want to have a chance to topple the German hegemony over Europe, and to reclaim our lost lands in the Great War! \n\nThe problem is that the Germans are searching passing Russian ships through the Baltic sea, so any coal and steel cannot be transported, as the Germans fear it will reach France. The French and Russians have figured out a way to work around it, as they have started transporting crates of grain, glass, and other non-war materials. \n\nWhile the Germans are focusing on the contents of the crates, the shipping crates themselves contain steel nails, which France can use to build tanks. The wood from the crates is also a suppliment for coal. \n\nThis is without a doubt extremelly inneficient, but there is no other way for France to get these vital war resources. The French and Russians have even started implementing a new strategy, where a merchant ship from Russia would reach France and be melted for it's steel, surpassing the blockade imposed by Germany."
+ 
+ FRA_embargoed_by_germany:0 "German Customs Union Embargo"
+ FRA_embargoed_by_germany_desc:0 "After the 1928 French Elections, the people voted for a fascist regime, which was not well-received from the international community. Due to actions of the Secret Police, France has been embargoed by Germany and it's economic customs union. This puts strain to our already lacking resources!"
+ 
+ FRA_communist_opposition:0 "Communist Opposition"
+ FRA_communist_opposition_desc:0 "While the Fascist French Revival won the elections of 1928, there is still 42% for communism within our population. This has been causing many issues are there are general riots, but also opposition to our rule and a possible coup d'état. We must get rid of the communist opposition in any way we see fit, in order to secure a prosperous France!"
+ 
+ FRA_colonial_army:0 "Colonial Army"
+ FRA_colonial_army_desc:0 "The colonies of France were not so enthusiastic about the fascist takeover, but they understand that this would bring prosperity and glory to France, unlike the Republican Front. It is because of this understanding that the colonies are willing to work with the new regime. \n\nAnother reason why the colonies are loyal is because they know that if they break free, they will become German puppets, or even worse!"
+ 
+ FRA_republican_front_collapse:0 "Collapse of the Republican Front"
+ FRA_republican_front_collapse_desc:0 "The Republican Front was the major democratic political party before and during the Great War. After the defeat of France, the party continued to rule, but it saw opposition from Independent Radicals, Communists, and Fascists. \n\nAfter the party failed to keep Morocco as a protectorate, all of the opposition started blaming the Republican Front for France's situation. When the Ottoman Empire was partitioned in 1925, France was politically stuck and could not take action. \n\nThe People of France have shifted away from any democratic ideas, as to them this lost them the Great War and caused trouble in the interwar period."
+ 
+ FRA_secret_police:0 "French Secret Police"
+ FRA_secret_police_desc:0 "The Secret Police is the greatest asset of the Fascist French Revival. It allowes for propaganda to be distributed among the entire nation, but also to silence any opposition. \n\nThe role of the Secret Police is to make sure that the French Revival remains in charge by any means necessary, so assassinations and executions are common practice. Most importantly, the Secret Police is overseeing it's citizens, making sure there is no counter-revolution."
+  
+ FRA_communist_opposition_2:0 "Communist Opposition"
+ FRA_communist_opposition_2_desc:0 "While the Fascist French Revival won the elections of 1928, we can still overthrow this insane government and install a proper one. We shall prepare to launch a possible coup d'état against this government. We must get rid of the fascist regime in any way shape or form, in order to secure a prosperous France!"

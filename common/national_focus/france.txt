@@ -19,13 +19,147 @@
 	continuous_focus_position = { x = 50 y = 2000 }
 
 	focus = {
-		id = FRA_eliminate_communist_opposition
-		icon = GFX_focus_BRA_ban_communist_party
-		x = 1
+		id = FRA_resist_fascist_opression
+		icon = GFX_focus_fra_resist_fascism
+		x = 2
 		y = 0
 		
 		prerequisite = {}
+		mutually_exclusive = { focus = FRA_eliminate_communist_opposition }
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = { 
+				remove_idea = FRA_communist_opposition 
+				add_idea = FRA_communist_opposition_2 
+			}	
+		}
+	}
+	focus = {
+		id = FRA_preperations_for_worst
+		icon = GFX_focus_fra_communist_coup
+		x = 0
+		y = 1
+		
+		relative_position_id = FRA_resist_fascist_opression
+		prerequisite = { focus = FRA_resist_fascist_opression }
 		mutually_exclusive = { }
+
+		cost = 8
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = FRA_communist_coup
+		icon = GFX_focus_fra_communist_coup
+		x = 0
+		y = 1
+		
+		relative_position_id = FRA_preperations_for_worst
+		prerequisite = { focus = FRA_preperations_for_worst }
+		mutually_exclusive = { }
+
+		cost = 3 
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+				election_frequency = 48
+			}
+		}
+	}
+	focus = {
+		id = FRA_establish_sub_africa
+		icon = GFX_focus_fra_communist_coup
+		x = -2
+		y = 1
+		
+		relative_position_id = FRA_communist_coup
+		prerequisite = { focus = FRA_communist_coup }
+		mutually_exclusive = { }
+
+		cost = 2 
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			VOL = {
+				transfer_state = 272
+				add_state_core = 272
+				transfer_state = 780
+				add_state_core = 780
+				transfer_state = 782
+				add_state_core = 782
+				transfer_state = 556
+				add_state_core = 556
+				transfer_state = 899
+				add_state_core = 899
+				transfer_state = 786
+				add_state_core = 786
+				transfer_state = 274
+				add_state_core = 274
+				transfer_state = 898
+				add_state_core = 898
+				transfer_state = 778
+				add_state_core = 778
+				transfer_state = 781
+				add_state_core = 781
+				transfer_state = 515
+				add_state_core = 515
+				transfer_state = 775
+				add_state_core = 775
+				transfer_state = 557
+				add_state_core = 557
+				transfer_state = 779
+				add_state_core = 779
+				transfer_state = 776
+				add_state_core = 776
+			}
+			puppet = VOL
+		}
+	}
+	focus = {
+		id = FRA_eliminate_communist_opposition
+		icon = GFX_focus_BRA_ban_communist_party
+		x = 10
+		y = 0
+		
+		relative_position_id = FRA_resist_fascist_opression
+		prerequisite = { }
+		mutually_exclusive = { focus = FRA_resist_fascist_opression }
 
 		cost = 5
 			ai_will_do = {
@@ -391,13 +525,38 @@
 	}
 
 	focus = {
-		id = FRA_strike_germany
-		icon = GFX_focus_fra_strike_germany
+		id = FRA_axis_of_revenge
+		icon = GFX_focus_SOV_patriarch_of_all_russia
 		x = -2
 		y = 1
 		relative_position_id = FRA_retake_morocco
 		
 		prerequisite = { focus = FRA_retake_morocco focus = FRA_secure_neutral_spain }
+		mutually_exclusive = { }
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_faction = FRA_axis_revenge
+			add_to_faction = HUN
+			add_to_faction = SOV
+		}
+	}
+	focus = {
+		id = FRA_strike_germany
+		icon = GFX_focus_fra_strike_germany
+		x = 0
+		y = 1
+		relative_position_id = FRA_axis_of_revenge
+		
+		prerequisite = { focus = FRA_axis_of_revenge }
 		mutually_exclusive = { }
 
 		cost = 5

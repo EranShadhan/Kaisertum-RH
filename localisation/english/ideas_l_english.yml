@@ -2740,31 +2740,33 @@
  
  FRA_secret_police:0 "French Secret Police"
  FRA_secret_police_desc:0 "The Secret Police is the greatest asset of the Fascist French Revival. It allowes for propaganda to be distributed among the entire nation, but also to silence any opposition. \n\nThe role of the Secret Police is to make sure that the French Revival remains in charge by any means necessary, so assassinations and executions are common practice. Most importantly, the Secret Police is overseeing it's citizens, making sure there is no counter-revolution."
-
+ 
  german_customs_union_member:0 "German Customs Union Member"
  german_customs_union_member_desc:0 "The German Customs Union was formed among members in the German Sphere right after the Great War. It's aim was to have a shared customs union and a shared market. \n\nThis would help the poorer nations that Germany had just conquered the most, as they can sell their resources for a higher price. The Germans would benefit from this the most, however, as they would be getting cheap resources from the countries that they had just conquered. \n\nStill, a lot of countries in Europe, mostly former German allies in the Great War, saw an economic opportunity in joining this Customs Union and it was expanded again in 1921. \n\nThe German Customs Union has put an embargo on France, due to them becoming Fascist and eliminating the political opposition, as well as terrorizing it's own people. This has damaged France greatly, as they cannot trade for coal and steel, which are vital war resources. \n\nThe future of the German Customs Union is uncertain, as the main beneficiary is Germany, and with Eastern Europe starting to recover economically, some may wish to leave the Customs Union behind."
  
-FRA_super_heavy_tank_programme:0 "French Super Heavy Tank Programme"
-FRA_super_heavy_tank_programme_desc:0 "Due to lack of coal and steel, the French Millitary cannot rely on conventional warfare. The cost of a single rifle is too much for France considering their chronic lack of resources. \n\nAn idea was born, where instead of using the steel for consumables like rifles and ammunition, there could be a weapon that is created once and never destroyed, so it can be used indefinetly - the super heavy tank. \n\nThis needs to be done in secret, because it's vital for the French Millitary that Germany does not see it in action until it's too late. This would give the French Army the advantage in the early war, up until Germany develops a counter. Only time will tell if this project will pay off."
+ FRA_super_heavy_tank_programme:0 "French Super Heavy Tank Programme"
+ FRA_super_heavy_tank_programme_desc:0 "Due to lack of coal and steel, the French Millitary cannot rely on conventional warfare. The cost of a single rifle is too much for France considering their chronic lack of resources. \n\nAn idea was born, where instead of using the steel for consumables like rifles and ammunition, there could be a weapon that is created once and never destroyed, so it can be used indefinetly - the super heavy tank. \n\nThis needs to be done in secret, because it's vital for the French Millitary that Germany does not see it in action until it's too late. This would give the French Army the advantage in the early war, up until Germany develops a counter. Only time will tell if this project will pay off."
 
-FRA_eliminating_communist_opposition:0 "Eliminating the Communist Opposition"
-FRA_eliminating_communist_opposition_desc:0 "The Communist Popular Front is the largest tread to the stability and longevity of the Fascist Republican Front. As the Republican Front controls the Secret Police, it's resources would be used to hunt down the communist and socialist supporters and eliminate them. This will take some time, but it will ensure that the French Revival will have no political rivals."
+ TUR_german_influence_in_government:0 "German Influence in the Government"
+ TUR_german_influence_in_government_desc:0 "After the collapse of the Ottoman Empire, the Turkish Sultanate has been extremely unstable, leading to a power vacuum forming in the government. Several nations tried to influence the Sultanate, filling the vacuum, but Germany has managed to influence our government the most. If the Turkish Sultanate wants to act as a truly independent state, the German influence shall be diminished."
 
-TUR_german_influence_in_government:0 "German Influence in the Government"
-TUR_german_influence_in_government_desc:0 "After the collapse of the Ottoman Empire, the Turkish Sultanate has been extremely unstable, leading to a power vacuum forming in the government. Several nations tried to influence the Sultanate, filling the vacuum, but Germany has managed to influence our government the most. If the Turkish Sultanate wants to act as a truly independent state, the German influence shall be diminished."
+ TUR_international_bidding_war:0 "International Bidding War"
+ TUR_international_bidding_war_desc:0 "With the great powers vying for a Turkish alliance, we are far more prosperous than the Ottoman Empire of the old was for centuries. This may be the chance we need to start a new. Whether that be a peaceful bastion, or a new empire remains to be seen."
 
-TUR_international_bidding_war:0 "International Bidding War"
-TUR_international_bidding_war_desc:0 "With the great powers vying for a Turkish alliance, we are far more prosperous than the Ottoman Empire of the old was for centuries. This may be the chance we need to start a new. Whether that be a peaceful bastion, or a new empire remains to be seen."
+ TUR_traditional_society:0 "Traditional Society"
+ TUR_traditional_society_desc:0 "For decades the Young Turk movement has tried to modernize the Ottoman Empire, and when they finally seized power in 1908 it was looking like the Turkish State was finally going to modernize. But to no avail. The Ottoman Empire returned to traditionalism after the end of the Great War, opposing the european values and modernization as a whole. But the traditional society the Ottoman Empire has built is a major roadblock to research and scientific activities."
 
-TUR_traditional_society:0 "Traditional Society"
-TUR_traditional_society_desc:0 "For decades the Young Turk movement has tried to modernize the Ottoman Empire, and when they finally seized power in 1908 it was looking like the Turkish State was finally going to modernize. But to no avail. The Ottoman Empire returned to traditionalism after the end of the Great War, opposing the european values and modernization as a whole. But the traditional society the Ottoman Empire has built is a major roadblock to research and scientific activities."
-
-TUR_humiliation_of_25:0 "Humiliation of 1925"
-TUR_humiliation_of_25_desc:0 "1925. The year of the collapse of the Ottoman Empire, which proved how incompetent the Turkish military became. While left unattended, the once great Turkish Military who once stood at the gates of Vienna were now forced to sit in defence themselves. The Turkish best generals are drinking alcohol more than doing their job, and without a major military reform the Turkish State would not survive an invasion by a relevant power."
+ TUR_humiliation_of_25:0 "Humiliation of 1925"
+ TUR_humiliation_of_25_desc:0 "1925. The year of the collapse of the Ottoman Empire, which proved how incompetent the Turkish military became. While left unattended, the once great Turkish Military who once stood at the gates of Vienna were now forced to sit in defence themselves. The Turkish best generals are drinking alcohol more than doing their job, and without a major military reform the Turkish State would not survive an invasion by a relevant power."
 
  islam_religion:0 "Muslim Faith"
  islam_religion_desc:0 "[ROOT.GetName] is overwhelmingly a muslim majority country."
  
  UKR_sugar_businesses:0 "Sugar Businesses"
- UKR_sugar_businesses_desc:0 "Before the Great War, the right bank produced almost 90% of sugar in the Russian Empire, today Ukraine is actively using this opportunity to improve the economic capabilities of the state."
+ UKR_sugar_businesses_desc:0 "Before the Great War, the right bank of Ukraine produced almost 90% of the sugar in the Russian Empire, today Ukraine actively uses this opportunity to improve the economic capabilities of the state."
  
+ discrimination_focus:0 "Discrimination"
+ discrimination_focus_desc:0 "[ROOT.GetAdjective] people are biologically the stromgest people and to remain in that position other racial and religious groups need to become invisisble."
+  
+ FRA_eliminating_communist_opposition:0 "Eliminating the Communist Opposition"
+ FRA_eliminating_communist_opposition_desc:0 "The Communist Popular Front is the largest tread to the stability and longevity of the Fascist Republican Front. As the Republican Front controls the Secret Police, it's resources would be used to hunt down the communist and socialist supporters and eliminate them. This will take some time, but it will ensure that the French Revival will have no political rivals."

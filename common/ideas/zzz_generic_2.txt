@@ -42,6 +42,24 @@ ideas = {
 				communism_drift = -0.05
 			}
 		}
+
+		discrimination_focus = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				stability_factor=-0.05
+				war_support_factor=0.2
+			}
+		}
 	}
 
 }
