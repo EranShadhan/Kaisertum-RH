@@ -34,9 +34,40 @@ recruit_character = YUG_ivo_lola_ribar
 
 add_ideas = {
 	german_customs_union_member
+	YUG_devided_brothers
+	YUG_payment_to_hungary
+	YUG_muslim_cristian_tensions
+	YUG_underground_italian_connections
 }
 
+add_dynamic_modifier = { modifier = YUG_army }
 
+YUG = {
+	set_variable = {
+		YUG_var_org = -0.15
+	}
+	set_variable = {
+		YUG_var_breaktrough = -0.10
+	}
+	set_variable = {
+		YUG_var_speed = -0.05
+	}
+	set_variable = {
+		YUG_var_cd = 0.1
+	}
+	set_variable = {
+		YUG_var_ca = 0.1
+	}
+	set_variable = {
+		YUG_var_dig = -0.10
+	}
+	set_variable = {
+		YUG_var_orgloss = +0.15
+	}
+	set_variable = {
+		YUG_var_plan_speed = -0.15
+	}
+}
 
 set_technology = {
 	tech_support = 1		

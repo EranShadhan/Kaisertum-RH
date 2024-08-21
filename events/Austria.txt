@@ -165,6 +165,10 @@ country_event = {
 					autonomy_state = autonomy_personal_union
 				}	
 			}
+			YUG = {
+				remove_ideas = YUG_payment_to_hungary
+				remove_ideas = YUG_underground_italian_connections
+			}
 		}
 	}
 }

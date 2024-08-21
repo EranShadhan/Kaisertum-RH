@@ -1,0 +1,13 @@
+YUG_army = { 
+	icon = GFX_idea_illiryan_army
+
+	army_org_factor = YUG_var_org
+	breakthrough_factor = YUG_var_breaktrough
+	army_speed_factor = YUG_var_speed
+	army_core_defence_factor = YUG_var_cd
+	army_core_attack_factor = YUG_var_ca
+	dig_in_speed_factor = YUG_var_dig
+	org_loss_when_moving = YUG_var_orgloss
+	planning_speed = YUG_var_plan_speed
+	
+}

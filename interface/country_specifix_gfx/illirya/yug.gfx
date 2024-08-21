@@ -8,5 +8,24 @@ spriteTypes = {
 		name = "GFX_FCF_gabriele_dannunzio"
 		texturefile = "gfx/leaders/YUG/FCF_portrait_gabriele_dannunzio.png"
 	}
-	
+	spriteType = {
+		name = "GFX_idea_paying_the_hungarians"
+		texturefile = "gfx/interface/ideas/YUG/paying_the_hungarians.png"
+	}
+	spriteType = {
+		name = "GFX_idea_devided_brothers"
+		texturefile = "gfx/interface/ideas/YUG/devided_brothers.png"
+	}
+	spriteType = {
+		name = "GFX_idea_cristian_muslim_tensions"
+		texturefile = "gfx/interface/ideas/YUG/muslim_cristian_problems.png"
+	}
+	spriteType = {
+		name = "GFX_idea_italian_connections"
+		texturefile = "gfx/interface/ideas/YUG/italian_connections.png"
+	}
+	spriteType = {
+		name = "GFX_idea_illiryan_army"
+		texturefile = "gfx/interface/ideas/YUG/The_illiryan_army.png"
+	}
 }
