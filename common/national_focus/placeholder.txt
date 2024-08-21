@@ -7,10 +7,6 @@ focus_tree = {
 			add = 10
 			tag = TUR
 		}
-		modifier = {
-			add = 10
-			tag = UKR
-		}
 	}
 
 	#Generic tree
