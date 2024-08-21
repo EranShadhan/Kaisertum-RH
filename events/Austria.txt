@@ -176,7 +176,6 @@ country_event = {
 					target = HUN
 					type = puppet_wargoal_focus
 				}
-			
 			}
 			ALB = {
 				declare_war_on = {
@@ -186,7 +185,6 @@ country_event = {
 			}
 			GRE = {
 				add_to_faction = ROM
-			
 			}
 			CZE = {
 				transfer_state = 9
@@ -261,10 +259,8 @@ country_event = {
 
 		YUG ={
 			transfer_state = 105
+			transfer_state = 852
 			transfer_state = 853
-			853 = {
-				add_core_of = YUG
-			}
 			set_variable = {
 				YUG_fiume_crisis_var = 5
 			}
@@ -272,20 +268,14 @@ country_event = {
 			white_peace = GER
 			white_peace = POL
 			white_peace = UKR
-			
+			852 = {
+				set_demilitarized_zone = yes
+			}
 			set_variable = {
 				YUG_fiume_crisis_var = 5
 			}
 		}
-		
-		FCF = {
-			transfer_state = 852
-			852 = {
-				set_demilitarized_zone = yes
-				add_core_of = FCF
-			}
-		}
-		
+
 		BUL = {
 			annex_country = {
 				target = SER
@@ -349,18 +339,11 @@ country_event = {
 			ROM = {
 				if = {
 					limit = { HUN = { is_ai = yes } }
-					add_timed_idea = { idea = against_hungary days = 120 }
+					add_ideas = against_hungary
 				}
 				declare_war_on = {
 					target = HUN
 					type = puppet_wargoal_focus
-				}
-					hidden_effect = {
-				add_ai_strategy = {
-                    type = alliance
-                    id = GRE
-                    value = 200
-                }
 				}
 			}
 			ALB = {
@@ -372,16 +355,62 @@ country_event = {
 			GRE = {
 				if = {
 					limit = { HUN = { is_ai = yes } }
-						add_timed_idea = { idea = against_hungary days = 120 }
+					add_ideas = against_hungary
 				}
 				add_to_faction = ROM
-					hidden_effect = {
-				add_ai_strategy = {
-                    type = alliance
-                    id = ROM
-                    value = 200
-                }
+			}
+		}
+	}
+}
+country_event = {
+	id = austria.7
+	title = austria.7.t
+	desc = austria.7.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = austria.7.a
+		hidden_effect = {
+			ENG {
+					remove_from_faction = IRE
+			}
+			NIR {
+				country_event = { days = 2 id = austria.9 }
+			}
+			IRE {
+				country_event = { days = 1 id = austria.8 }
+			}
+			NIR = {
+				transfer_state = 134
+				transfer_state = 135
+				load_oob = NIR_1932
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					election_frequency = 48
 				}
+				add_popularity = {
+					ideology = communism
+					popularity = 1
+				}
+				declare_war_on = {
+					target = IRE
+					type = annex_everything
+				}
+			}
+			113 = {
+				add_core_of = NIR
+			}
+			119 = {
+			add_core_of = NIR
+			}
+			134 = {
+				add_core_of = NIR
+			}
+			135 = {
+				add_core_of = NIR
 			}
 		}
 	}

@@ -253,11 +253,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_fra_strike_germany_shine"
-		texturefile = "gfx/interface/goals/FRA/focus_fra_strike_germany.dds"
+		name = "GFX_focus_attack_germany_shine"
+		texturefile = "gfx/interface/goals/FRA/focus_attack_germany.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA/focus_fra_strike_germany.dds"
+			animationmaskfile = "gfx/interface/goals/FRA/focus_attack_germany.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -270,7 +270,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA/focus_fra_strike_germany.dds"
+			animationmaskfile = "gfx/interface/goals/FRA/focus_attack_germany.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -445,7 +445,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GRE/goal_GRE_army2.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GRE/goal_GRE_army2.dds"
+			animationmaskfile = "gfx/interface/goals/GRE/goal_GRE_army.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -507,7 +507,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GRE/goal_GRE_navy2.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GRE/goal_GRE_navy2.dds"
+			animationmaskfile = "gfx/interface/goals/GRE/goal_GRE_navy.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -569,7 +569,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GRE/goal_GRE_air2.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GRE/goal_GRE_air2.dds"
+			animationmaskfile = "gfx/interface/goals/GRE/goal_GRE_air.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -583,37 +583,6 @@ spriteTypes = {
 
 		animation = {
 			animationmaskfile = "gfx/interface/goals/GRE/goal_GRE_air2.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = no			# yes or no ;)
-			animationtime = 0.75				# in seconds
-			animationdelay = 0			# in seconds
-			animationblendmode = "add"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
-	 SpriteType = {
-		name = "GFX_focus_THE_MAN_THE_MYTH_THE_LEGEND_ONASSIS_shine"
-		texturefile = "gfx/interface/goals/GRE/THE_MAN_THE_MYTH_THE_LEGEND_ONASSIS.dds"
-				effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GRE/THE_MAN_THE_MYTH_THE_LEGEND_ONASSIS.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = no			# yes or no ;)
-			animationtime = 0.75				# in seconds
-			animationdelay = 0			# in seconds
-			animationblendmode = "add"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GRE/THE_MAN_THE_MYTH_THE_LEGEND_ONASSIS.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)

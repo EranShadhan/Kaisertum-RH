@@ -154,7 +154,30 @@
  FRA_bastion_against_monarchism:0 "Bastion Against Monarchy"
  FRA_bastion_against_monarchism_desc:0 "Since the days of the first revolution, we were against the authoritarian ways of the Monarch, Now just like Napoleon we shall be against this system"
  
+ FRA_form_liberation:0 "Form the Liberation Pact"
+ FRA_form_liberation_desc:0 "To secure ourselves from the other Powers that are hostile to us, We shall create a faction in order to consolidate our revolution and our homeland"
  
+ FRA_remember_our_lands:0 "Remember the lost lands"
+ FRA_remember_our_lands_desc:0 "DESCRIPTION"
+ 
+ FRA_stir_irish_reb:0 "Stir the Irish"
+ FRA_stir_irish_reb_desc:0 "We shall start a rebellion in Ireland against the british opressors, In the hopes that Ireland will join the Liberation pact"
+ FRA_stir_irish_reb_tt:0 "We will start an irish rebellion"
+ austria.7.t:0 "Irish rebellion begins"
+ austria.7.d:0 "The Irish People had enough of the British rule in the green island, So Edward Dawson talked with us to sponser an irish rebellion Against the british occupiers. Now that he got back to ireland he started a Rebellion in Cork and has spread to all of Western Ireland, We shall hope that he suceedes in this goal"
+ 
+ FRA_foreign_volunteers:0 "Get Foreign Volunteers"
+ FRA_foreign_volunteers_desc:0 "With our country being the bastion of the new revolution, we will need help from fellow socialists from the opressed countries of Europe, They shall move to us, to the bastion of Socialism and Help us build the revolution to prepare and spread it"
+ 
+ FRA_indochina_for_alliance:0 "Indochina for Alliance"
+ FRA_indochina_for_alliance_desc:0 "With the Socialist Japanese being a potential ally, it may be a wise move to give the French indochina in exchange for peace in the pacific, docking rights and An ally against Germany"
+ 
+ FRA_plan_with_allies:0 "Plan with allies"
+ FRA_strike_against_evil:0 "Strike Against Evil"
+ FRA_strike_against_evil_desc:0 "The time has come, the holy war against evil has came to be, We shall Strike The German Empire along with Our allies, LONG LIVE THE REVOLUTION LONG LIVE FRANCE"
+
+ FRA_strike_against_tratiors:0 "Strike Against Tratiors"
+ FRA_strike_against_tratiors_desc:0 "The time has come, the holy war against tratiors has came to be, We shall Strike Great Britain along with Our allies, LONG LIVE THE REVOLUTION LONG LIVE FRANCE"
  # ideas
  FRA_secret_rearmament:0 "Secret Rearmament"
  FRA_secret_rearmament_desc:0 "The French nation is lacking the vital war resources of coal and steel. This means that we have to secretly obtain these resources from Russia if we want to have a chance to topple the German hegemony over Europe, and to reclaim our lost lands in the Great War! \n\nThe problem is that the Germans are searching passing Russian ships through the Baltic sea, so any coal and steel cannot be transported, as the Germans fear it will reach France. The French and Russians have figured out a way to work around it, as they have started transporting crates of grain, glass, and other non-war materials. \n\nWhile the Germans are focusing on the contents of the crates, the shipping crates themselves contain steel nails, which France can use to build tanks. The wood from the crates is also a suppliment for coal. \n\nThis is without a doubt extremelly inneficient, but there is no other way for France to get these vital war resources. The French and Russians have even started implementing a new strategy, where a merchant ship from Russia would reach France and be melted for it's steel, surpassing the blockade imposed by Germany."
