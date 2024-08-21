@@ -138,8 +138,6 @@
 				add_state_core = 899
 				transfer_state = 786
 				add_state_core = 786
-				transfer_state = 274
-				add_state_core = 274
 				transfer_state = 898
 				add_state_core = 898
 				transfer_state = 778
@@ -283,6 +281,168 @@
 			add_state_core = 35
 			add_state_core = 36
 			add_state_core = 7
+		}
+	}
+	focus = {
+		id = FRA_stir_irish_reb
+		icon = GFX_focus_ITA_peasants_rise
+		x = 0
+		y = 1
+		
+		relative_position_id = FRA_remember_our_lands
+		prerequisite = { focus = FRA_remember_our_lands }
+		mutually_exclusive = { }
+
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = FRA_stir_irish_reb_tt
+				set_autonomy = { target = IRE autonomy_state = autonomy_free }
+				IRE {
+					drop_cosmetic_tag = yes
+				}
+				country_event = austria.7
+				set_rule = { can_send_volunteers = yes }
+		}
+	}
+	focus = {
+		id = FRA_foreign_volunteers
+		icon = GFX_focus_ITA_corpo_volontari_della_liberta
+		x = -1
+		y = 1
+		
+		relative_position_id = FRA_form_liberation
+		prerequisite = { focus = FRA_form_liberation }
+		mutually_exclusive = { }
+
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_popularity = {
+					ideology = communism
+					popularity = 0.1
+			}
+			add_war_support = 0.1
+			add_stability = -0.05
+			army_experience = 100
+		}
+	}
+	focus = {
+		id = FRA_indochina_for_alliance
+		icon = GFX_focus_usa_focus_on_asia
+		x = 0
+		y = 1
+		
+		relative_position_id = FRA_foreign_volunteers
+		prerequisite = { focus = FRA_foreign_volunteers }
+		mutually_exclusive = { }
+
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			JAP = {
+				country_event = wtt_japan.9
+			}
+		}
+	}
+	focus = {
+		id = FRA_plan_with_allies
+		icon = GFX_goal_generic_alliance
+		x = 1
+		y = 1
+		
+		relative_position_id = FRA_indochina_for_alliance
+		prerequisite = { focus = FRA_indochina_for_alliance }
+		prerequisite = { focus = FRA_stir_irish_reb }
+		mutually_exclusive = { }
+
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_to_faction = SOV
+			add_to_faction = NIR
+			add_to_faction = SPR
+			set_autonomy = { target = SPR autonomy_state = autonomy_puppet }
+		}
+	}
+	focus = {
+		id = FRA_strike_at_evil
+		icon = GFX_focus_fra_strike_germany
+		x = 1
+		y = 1
+		
+		relative_position_id = FRA_plan_with_allies
+		prerequisite = { focus = FRA_plan_with_allies }
+		mutually_exclusive = { }
+
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_wargoal = {
+    				type = puppet_wargoal_focus
+    				target = GER
+			}
+		}
+	}
+	focus = {
+		id = FRA_strike_at_tratiors
+		icon = GFX_focus_attack_britain
+		x = -1
+		y = 1
+		
+		relative_position_id = FRA_plan_with_allies
+		prerequisite = { focus = FRA_plan_with_allies }
+		mutually_exclusive = { }
+
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_wargoal = {
+    				type = puppet_wargoal_focus
+    				target = ENG
+			}
 		}
 	}
 
