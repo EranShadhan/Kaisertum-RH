@@ -65,11 +65,11 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_fra_resist_fascism"
-		texturefile = "gfx/interface/goals/FRA/focus_fra_resist_fascist_opression.dds
+		texturefile = "gfx/interface/goals/FRA/focus_fra_resist_fascist_opression.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_fra_strike_germany"
-		texturefile = "gfx/interface/goals/FRA/focus_attack_germany.dds
+		texturefile = "gfx/interface/goals/FRA/focus_attack_germany.dds"
 	}
 	
 	SpriteType = {

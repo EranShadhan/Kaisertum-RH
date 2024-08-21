@@ -1,87 +1,86 @@
 ﻿l_english:
-# focus tree
  FRA_eliminate_communist_opposition:0 "Eliminate the Communist Opposition"
  FRA_eliminate_communist_opposition_desc:0 "Since the 1928 election, the communists have been causing a lot of trouble in France. If they are not elimnated in time, there is going to be a counter-revolution. We must stop them!"
  
- FRA_promises_war_victory_greatness:0 "Make promises of war, victory and greatness"
+ FRA_promises_war_victory_greatness:0 "Victory and Greatness!"
  FRA_promises_war_victory_greatness_desc:0 "We don't have to eliminate the communist opposition, but we can get the public on our side. The communists are more focused on economic matters, so we can expand on their poins and promise greatness through war!"
  
- FRA_secret_police_increase_stability:0 "Use the Secret Police to increase stability"
+ FRA_secret_police_increase_stability:0 "Supress Dissent"
  FRA_secret_police_increase_stability_desc:0 "The gretest asset of the French Revival is the Secret Police, which can be used to deal with disloyal citizens, but also, high ranking opposition politician. We can make these politicians dissapear by tasking the Secret Police to deal with them covertly."
  
- FRA_reduce_unemployment:0 "Reduce unemployment"
+ FRA_reduce_unemployment:0 "Rural Development Grants"
  FRA_reduce_unemployment_desc:0 "One way to beat the communists is at their own game. Right now we're in charge of the country, so we can apply some of their policies and make it pointless for people to support them. We should reduce unemployment in rural areas, where communism is the most popular. This would prevent the communists from rising!"
  
- FRA_improve_secret_police:0 "Improve the Secret Police"
+ FRA_improve_secret_police:0 "Expand the Secret Police"
  FRA_improve_secret_police_desc:0 "The Secret Police has served us well in eliminating some key members of the Popular Front. The next step is for us to strenghten the Secret Police by formally integrating them into our government. Right now it is a separate institution that we don't have a lot of power over. Once they're integrated, we can use all of their assets without suffering any hardships."
  
  FRA_discredit_republican_front:0 "Discredit the Republican Front"
  FRA_discredit_republican_front_desc:0 "Memories of the Republican Front are still present in our great country! We must remind the people that democracy lost us the Great War, but also prevented us from getting Morocco and parts of the Ottoman Empire. Once the memory of the Republican Front is gone from the people's minds, and we have already delt with the communists, they will know only one ideology - fascism!"
  
- FRA_choose_wing_to_support:0 "Choose which wing to support"
+ FRA_choose_wing_to_support:0 "Split in the Party"
  FRA_choose_wing_to_support_desc:0 "The Fascist French Revival political party has two major wings, the ultra fascists and the moderate fascists. The Moderate fascists want only to reverse the gains of Germany in the Great War and restore the former lands of France. The ultra-fascists aim to not only restore the glory of France, but to annex all French-speaking lands and establish puppet states in the Rhine, Switzerland, Belgium, and Spain."
  
- FRA_support_ultra_fascists:0 "Support the Ultra-Fascists"
- FRA_support_ultra_fascists_desc:0 "While they may seem extreme, the ultra-fascists have the best interests for France and the French people. It is unacceptable for over 5 million French-speakers to live outside the boundries of the French nation. The natural step is to unite all of them under our banner!"
+ FRA_support_ultra_fascists:0 "Support the Extreme Ultranationalists"
+ FRA_support_ultra_fascists_desc:0 "While they may seem extreme, the extreme ultranationalists have the best interests for France and the French people. It is unacceptable for over 5 million French-speakers to live outside the boundries of the French nation. The natural step is to unite all of them under our banner!"
  
  FRA_support_moderate_fascists:0 "Support the Moderate Faction"
  FRA_support_moderate_fascists_desc:0 "The moderate fascists would not put France in a major war with almost all of their neighboring countries, which is desirable by most of the population. This is why the moderate fascists need to consolidate power and focus on restoring the former glory of France by striking Germany."
  
- FRA_claim_french_speaking_lands:0 "Claim ALL French-Speaking lands"
+ FRA_claim_french_speaking_lands:0 "Francophonism"
  FRA_claim_french_speaking_lands_desc:0 "France is a nation for all of the French-speakers, so it's natural for us to want to expand into these territories and openly claim them! There are French-speakers surrounding France and the French border. This means that we pretty much border our own people, who reside in different countries. We must tell the world that this is unacceptable!"
  
  FRA_retake_morocco:0 "Retake Morocco"
  FRA_retake_morocco_desc:0 "Our first step is to retake Morocco, as we can practically get away with doing so. Germany is unlikely to start a war over Morocco, considering their own political situation. Also if we manage to retake Morocco, we can start reversing the losses of the Third French Republic. This would gain us even more credibility. To war!"
  
- FRA_claim_lost_lands:0 "Claim our lost lands"
+ FRA_claim_lost_lands:0 "Assert Northern Claims"
  FRA_claim_lost_lands_desc:0 "France needs to reclaim only it's lost lands to Germany, Belgium, and Italy. Claiming any more would make us overextend themselves, making sure we fail in achieving any of our goals. This is why we need to openly claim only our former lands, which would be supported by our population who seeks revenge against the German faction."
  
- FRA_secure_neutral_spain:0 "Secure a neutral Spain"
+ FRA_secure_neutral_spain:0 "Secure Spanish Neutrality"
  FRA_secure_neutral_spain_desc:0 "Spain is a swing-state, as they can potentially join the Germans, due to them giving Gibraltar to Spain for free. Still, the Spanish are very unstable politically, so we can take advantage of this and invade the country. The Germans and Italians would obviously oppose this, but they would prioritize dealing with Austria-Hungary, so we have a window of time we can use to put a favorable government in Spain."
  
  FRA_axis_of_revenge:0 "Axis of Revenge"
  FRA_axis_of_revenge_desc:0 "The time came right to establish the Axis of Revenge against the Germans, we shall seek our revenge against the evil state of Germany and to liberate her occupied puppets"
  
- FRA_strike_germany:0 "Strike Germany, before it's too late!"
+ FRA_strike_germany:0 "Strike the Germans"
  FRA_strike_germany_desc:0 "The Germans are expanding politically and economically greater than glorious France and it's allies. This is worrying as if we don't strike right now, then the Germans would outscale us and make it impossible for us to reverse the German Hegemony over Europe. While the time may not be favorable, we need to strike now! This is our only option!"
  
- FRA_trade_with_italian_mafia:0 "Trade with the Italian Mafia"
+ FRA_trade_with_italian_mafia:0 "Trade with Italian Mafia"
  FRA_trade_with_italian_mafia_desc:0 "Due to our losses of steel, we need to get it from elsewhere. The Russians are helping us in covertly sending us steel supplies, but Italy is one nation that can help a lot. The Italian mafia can buy resources from their shared market with Europe and sell them to France for a profit, making benefiting both the Italian Mafia and France."
  
- FRA_improve_our_economy:0 "Improve our economy"
+ FRA_improve_our_economy:0 "Public Works"
  FRA_improve_our_economy_desc:0 "Rather than focusing on working with a foreign mafia, we need to improve our own economy. By far the best way to do this is by improving infrastructure, which would make it more appealing for factories to be build in these states. By doing this, we will secure our own domestic industry, rather than relying on somebody else."
  
- FRA_support_textile_industry:0 "Support the textile industry"
+ FRA_support_textile_industry:0 "Support the Textile Industry"
  FRA_support_textile_industry_desc:0 "The French industry is pretty much synonimous with textiles. This is because the French are the best and most efficient at making it. We need to double down on these strenghts and produce more textiles, which can be exported abroad. This would greatly benefit us and out crumbling industry. We need to double down on our strenghts, rather than trying out something new."
  
- FRA_increase_taxes:0 "Increase taxes"
+ FRA_increase_taxes:0 "Increase Taxes"
  FRA_increase_taxes_desc:0 "Nobody likes paying more taxes, but it is necessary for us to increase them. This would give us more resources that can go towards the military. This should hopefully benefit the military and secure us a victory in an eventual war with the Germans and their allies."
  
- FRA_invest_in_research:0 "Invest in Research"
+ FRA_invest_in_research:0 "Research Investments"
  FRA_invest_in_research_desc:0 "The French scientists are among the best in the world! This is seen with our covert operation of producing super-heavy tanks, the only ones in the world! If we need to win in a potential war against Germany, we will need to be technologically superior than the enemy. Employing more researchers would benefit us with that!"
  
- FRA_consolidate_the_land:0 "Consolidate the land"
+ FRA_consolidate_the_land:0 "Land Collectivization" #yes even for fascists
  FRA_consolidate_the_land_desc:0 "Since France is a nation for the French-speakers, it is very insulting that there are non-French citizens who own property and land. We need to seize it from them and redistribute it to the French-people, as this is their land! Land must be seized from everyone who is not French, but also from the Jews, no matter which language they speak. The Jews are a plague in France!"
  
- FRA_prioritize_civilian_industry:0 "Prioritize civilian industry"
+ FRA_prioritize_civilian_industry:0 "People First!"
  FRA_prioritize_civilian_industry_desc:0 "The civilian industry will not win us the war directly, but being able to build more of these factories would employ our people and specialize us in building such factories. This has military value, as we can use these factories to trade for goods, repair damaged infrastructure, but most importantly to build and maintain these military factories. We need civilian factories before we will need military ones!"
  
- FRA_prioritize_military_industry:0 "Prioritize military industry"
+ FRA_prioritize_military_industry:0 "Guns First!"
  FRA_prioritize_military_industry_desc:0 "The destiny of France is to go to war and take what is ours by force! The only way we can achieve this is by focusing on our military industry and neglecting the civilian one. This can be justified with us seizing the civilian factories of other countries by force, so it's not worth it for us to build our own."
  
- FRA_invest_in_colonies:0 "Invest in the colonies"
+ FRA_invest_in_colonies:0 "Colonial Investments"
  FRA_invest_in_colonies_desc:0 "The colonies are a great asset! They provide us with manpower, but they cost maintenance from metropolitan France, so we're losing money on them. By investing in our colonies, it's fair to say that they can become more self-reliant, but we can still benefit from taking their manpower and using it as our own."
  
- FRA_invest_in_mainland:0 "Invest in the mainland"
- FRA_invest_in_mainland_desc:0 "The mainland of France is the heart of the French people! It is pointless to invest anywhere else than metropolitan France. Once we invest in there, we can become wealthier and actually win the war against Germany and it's allies!"
+ FRA_invest_in_mainland:0 "Metropolitan Investments"
+ FRA_invest_in_mainland_desc:0 "Metropolitan France is the heart of the French people! It is pointless to invest anywhere else than metropolitan France. Once we invest in there, we can become wealthier and actually win the war against Germany and it's allies!"
  
- FRA_employ_cheap_workers:0 "Employ the cheap workers"
+ FRA_employ_cheap_workers:0 "Forced Labor"
  FRA_employ_cheap_workers_desc:0 "The colonies can help not only with providing manpower, but they can also serve us as cheap workers. While these reforms will not be well-received, this will benefit our industry a lot, which would also help the war effort against Germany."
  
- FRA_improve_infrastructure:0 "Improve the infrastructure"
+ FRA_improve_infrastructure:0 "Extend the Public Works"
  FRA_improve_infrastructure_desc:0 "Infrastructure is the backbone of an economy. It would help us to build more factories in this region, so we should prioritize building it before anything else. Eventually this would pay off, once we start building military factories in there, which would scale greatly and potentially win us the war against Germany!"
  
- FRA_mines_in_africa:0 "Mines in Africa"
+ FRA_mines_in_africa:0 "Exploit African Resources"
  FRA_mines_in_africa_desc:0 "The African lands that we still hold have a lot of natural resources, but we have neglected them for decades. This is because it was cheaper for France to get these resources domestically, but now, the Germans have seized 80% of the French coal and steel mines. This leaves us only with the underdeveloped African mines, which we need to expand and start using."
  
  FRA_expand_public_services:0 "Expand Public Services"
@@ -148,7 +147,7 @@
  FRA_establish_sub_africa:0 "Establish African Protectorate"
  FRA_establish_sub_africa_desc:0 "As a part of the Reforms, we shall establish puppets in our Foreign lands"
  
- FRA_solidify_neosocialism:0 "solidify Neo Socialism"
+ FRA_solidify_neosocialism:0 "Solidify Neo Socialism"
  FRA_solidify_neosocialism_desc:0 "Now that we are in Power we shall solidify our ideology on the basis of Marcel deat, He will be seen as the saviour of France from radicalism yet still fight the Germanic menace"
  
  FRA_bastion_against_monarchism:0 "Bastion Against Monarchy"
