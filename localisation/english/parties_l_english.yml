@@ -110,6 +110,8 @@
  FRA_democratic_party:0 "Parti Radical"
  FRA_fascism_party:0 "Parti Revival Francais"
  FRA_neutrality_party:0 "Action Francaise"
+ NIR_communism_party:0 "IRA"
+ NIR_communism_party_desc:0 "Irish revolutionary Army"
  SOV_communism_party:0 "All-Union Communist Party"
  SOV_communism_party_russian:0 "VKP(B)"
  SOV_communism_party_russian_long:0 "Vsesoyuznaya Kommunisticheskaya Partiya (Bolshevikov)"

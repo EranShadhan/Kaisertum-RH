@@ -1,0 +1,28 @@
+focus_tree = {
+	id = placeholder_focus # PLACEHOLDER TO FIX BOOKMARK FOR NOW
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TUR
+		}
+		modifier = {
+			add = 10
+			tag = UKR
+		}
+	}
+
+	#Generic tree
+	shared_focus = army_effort
+	shared_focus = aviation_effort
+	shared_focus = naval_effort
+	shared_focus = industrial_effort
+	shared_focus = political_effort
+	
+
+	default = no
+
+	continuous_focus_position = { x = 20 y = 1600 }
+	
+}
