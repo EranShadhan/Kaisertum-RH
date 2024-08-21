@@ -46,3 +46,22 @@
  GRE_debt_0:0 "§Y0%§!"
  
  GRE_foreign_designs_tt:0 "We will gain §Y1x§! §G45%§! Research Bonus for §YAircrafts§! for each major country that has more than 70 opinion of us, that we are not at war with"
+ 
+ GRE_power_balance:0 "The Second National Schism"
+ 
+ GRE_mid_range:0 "King-Government Cooperation"
+ 
+ GRE_default_left_side:0 "Metaxas' Democratic Coup"
+ GRE_left_side_range:0 "Uniting The Opposition"
+ GRE_middle_left_side_range:0 "Rallying Democratic Support"
+ GRE_far_left_side_range:0 "Promoting Democratic Values"
+ GRE_farr_left_side_range:0 "Metaxas Takes Power"
+ GRE_coup_left_side_range:0 "Securing Greece's Freedom"
+ 
+ GRE_default_right_side:0 "King's Government"
+ GRE_right_side_range:0 "Securing Loyalty"
+ GRE_middle_right_side_range:0 "Anti-Democratic Propaganda"
+ GRE_far_right_side_range:0 "Discredit The Democratic Party"
+ GRE_farr_right_side_range:0 "The King Stands Strong"
+ GRE_coup_right_side_range:0 "The Right To Rule"
+ 

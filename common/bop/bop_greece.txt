@@ -65,6 +65,7 @@ GRE_power_balance = {
 				war_support_factor = 0.15
 				
 				political_power_factor = 0.15
+				conscription_factor = 0.05
 			}
 
 					
