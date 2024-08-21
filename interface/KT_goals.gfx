@@ -39,6 +39,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/FRA/focus_fra_promises_war_victory_greatness.dds"
 	}
 	SpriteType = {
+		name = "GFX_focus_fra_solidify_neosocialism"
+		texturefile = "gfx/interface/goals/FRA/focus_fra_solidify_neosocialism.dds"
+	}
+	SpriteType = {
 		name = "GFX_focus_fra_communist_coup"
 		texturefile = "gfx/interface/goals/FRA/focus_fra_socialist_coup.dds"
 	}
