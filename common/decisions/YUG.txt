@@ -54,11 +54,21 @@ the_fiume_crisis = {
 			base = 35
 			modifier = {
 				tag = ITA
-				add = 20
+				check_variable = {
+					var = ITA_fiume_crisis_var
+					value = 100
+					compare = greater_than_or_equals
+				}
+				add = -3000
 			}
 			modifier = {
 				tag = YUG
-				add = 60
+				check_variable = {
+					var = YUG_fiume_crisis_var
+					value = 100
+					compare = greater_than_or_equals
+				}
+				add = -3000
 			}
 		}
 	}
@@ -101,11 +111,21 @@ the_fiume_crisis = {
 			base = 35
 			modifier = {
 				tag = ITA
-				add = 20
+				check_variable = {
+					var = ITA_fiume_crisis_var
+					value = 100
+					compare = greater_than_or_equals
+				}
+				add = -3000
 			}
 			modifier = {
 				tag = YUG
-				add = 30
+				check_variable = {
+					var = YUG_fiume_crisis_var
+					value = 100
+					compare = greater_than_or_equals
+				}
+				add = -3000
 			}
 		}
 	}
@@ -150,11 +170,21 @@ the_fiume_crisis = {
 			base = 35
 			modifier = {
 				tag = ITA
-				add = 20
+				check_variable = {
+					var = ITA_fiume_crisis_var
+					value = 100
+					compare = greater_than_or_equals
+				}
+				add = -3000
 			}
 			modifier = {
 				tag = YUG
-				add = 30
+				check_variable = {
+					var = YUG_fiume_crisis_var
+					value = 100
+					compare = greater_than_or_equals
+				}
+				add = -3000
 			}
 		}
 	}
@@ -273,7 +303,25 @@ the_fiume_crisis = {
 		# AI LOGIC FOR THIS DECISION/MISSION
 
 		ai_will_do = {	
-			factor = 25			
+			base = 15
+			modifier = {
+				tag = ITA
+				check_variable = {
+					var = ITA_fiume_crisis_var
+					value = 100
+					compare = greater_than_or_equals
+				}
+				add = -3000
+			}
+			modifier = {
+				tag = YUG
+				check_variable = {
+					var = YUG_fiume_crisis_var
+					value = 100
+					compare = greater_than_or_equals
+				}
+				add = -3000
+			}
 		}
 	}
 	force_construction_of_new_civs = {
@@ -341,14 +389,24 @@ the_fiume_crisis = {
 		}
 		
 		ai_will_do = {
-			base = 10
+			base = 30
 			modifier = {
 				tag = ITA
-				add = 30
+				check_variable = {
+					var = ITA_fiume_crisis_var
+					value = 100
+					compare = greater_than_or_equals
+				}
+				add = -3000
 			}
 			modifier = {
 				tag = YUG
-				add = 30
+				check_variable = {
+					var = YUG_fiume_crisis_var
+					value = 100
+					compare = greater_than_or_equals
+				}
+				add = -3000
 			}
 		}
 		
@@ -418,14 +476,24 @@ the_fiume_crisis = {
 		}
 		
 		ai_will_do = {
-			base = 10
+			base = 30
 			modifier = {
 				tag = ITA
-				add = 30
+				check_variable = {
+					var = ITA_fiume_crisis_var
+					value = 100
+					compare = greater_than_or_equals
+				}
+				add = -3000
 			}
 			modifier = {
 				tag = YUG
-				add = 30
+				check_variable = {
+					var = YUG_fiume_crisis_var
+					value = 100
+					compare = greater_than_or_equals
+				}
+				add = -3000
 			}
 		}
 		

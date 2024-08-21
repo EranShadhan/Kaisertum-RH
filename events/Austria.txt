@@ -268,11 +268,16 @@ country_event = {
 			white_peace = GER
 			white_peace = POL
 			white_peace = UKR
-			852 = {
-				set_demilitarized_zone = yes
-			}
 			set_variable = {
 				YUG_fiume_crisis_var = 5
+			}
+		}
+
+		FCF = {
+			transfer_state = 852
+			852 = {
+				set_demilitarized_zone = yes
+				add_core_of = FCF
 			}
 		}
 
