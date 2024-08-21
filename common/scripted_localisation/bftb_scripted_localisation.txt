@@ -796,7 +796,7 @@ defined_text = {
 	text = {
 		trigger = {
 			original_tag = GRE
-			check_variable = { var = GRE_debt_to_the_ifc_britain_var value = 10 compare = equals }
+			check_variable = { var = GRE_debt_to_the_ifc_russia_var value = 10 compare = equals }
 		}
 		localization_key = GRE_debt_100
 	}
@@ -951,86 +951,164 @@ defined_text = {
 	text = {
 		trigger = {
 			original_tag = GRE
-			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 30 compare = equals }
+			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 60 compare = equals }
 		}
 		localization_key = GRE_debt_paid_100
 	}
 	text = {
 		trigger = {
 			original_tag = GRE
-			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 27.5 compare = equals }
+			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 55 compare = equals }
 		}
-		localization_key = GRE_debt_paid_9107
+		localization_key = GRE_debt_paid_9509
 	}
 	text = {
 		trigger = {
 			original_tag = GRE
-			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 25 compare = equals }
+			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 52.5 compare = equals }
+		}
+		localization_key = GRE_debt_paid_8706
+	}
+	text = {
+		trigger = {
+			original_tag = GRE
+			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 50 compare = equals }
 		}
 		localization_key = GRE_debt_paid_8304
 	}
 	text = {
 		trigger = {
 			original_tag = GRE
-			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 22.5 compare = equals }
+			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 47.5 compare = equals }
+		}
+		localization_key = GRE_debt_paid_7902
+	}
+	text = {
+		trigger = {
+			original_tag = GRE
+			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 45 compare = equals }
 		}
 		localization_key = GRE_debt_paid_75
 	}
 	text = {
 		trigger = {
 			original_tag = GRE
-			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 20 compare = equals }
+			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 42.5 compare = equals }
+		}
+		localization_key = GRE_debt_paid_7109
+	}
+	text = {
+		trigger = {
+			original_tag = GRE
+			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 40 compare = equals }
 		}
 		localization_key = GRE_debt_paid_6607
 	}
 	text = {
 		trigger = {
 			original_tag = GRE
-			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 17.5 compare = equals }
+			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 37.5 compare = equals }
+		}
+		localization_key = GRE_debt_paid_6205
+	}
+	text = {
+		trigger = {
+			original_tag = GRE
+			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 35 compare = equals }
 		}
 		localization_key = GRE_debt_paid_5804
 	}
 	text = {
 		trigger = {
 			original_tag = GRE
-			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 15 compare = equals }
+			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 32.5 compare = equals }
+		}
+		localization_key = GRE_debt_paid_5402
+	}
+	text = {
+		trigger = {
+			original_tag = GRE
+			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 30 compare = equals }
 		}
 		localization_key = GRE_debt_paid_50
 	}
 	text = {
 		trigger = {
 			original_tag = GRE
-			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 12.5 compare = equals }
+			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 27.5 compare = equals }
+		}
+		localization_key = GRE_debt_paid_4509
+	}
+	text = {
+		trigger = {
+			original_tag = GRE
+			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 25 compare = equals }
 		}
 		localization_key = GRE_debt_paid_4107
 	}
 	text = {
 		trigger = {
 			original_tag = GRE
-			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 10 compare = equals }
+			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 22.5 compare = equals }
+		}
+		localization_key = GRE_debt_paid_3706
+	}
+	text = {
+		trigger = {
+			original_tag = GRE
+			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 20 compare = equals }
 		}
 		localization_key = GRE_debt_paid_3304
 	}
 	text = {
 		trigger = {
 			original_tag = GRE
-			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 7.5 compare = equals }
+			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 17.5 compare = equals }
+		}
+		localization_key = GRE_debt_paid_2902
+	}
+	
+	text = {
+		trigger = {
+			original_tag = GRE
+			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 15 compare = equals }
 		}
 		localization_key = GRE_debt_paid_25
 	}
 	text = {
 		trigger = {
 			original_tag = GRE
-			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 5 compare = equals }
+			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 12.5 compare = equals }
+		}
+		localization_key = GRE_debt_paid_2009
+	}
+	text = {
+		trigger = {
+			original_tag = GRE
+			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 10 compare = equals }
 		}
 		localization_key = GRE_debt_paid_1607
 	}
 	text = {
 		trigger = {
 			original_tag = GRE
-			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 2.5 compare = equals }
+			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 7.5 compare = equals }
+		}
+		localization_key = GRE_debt_paid_1205
+	}
+	text = {
+		trigger = {
+			original_tag = GRE
+			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 5 compare = equals }
 		}
 		localization_key = GRE_debt_paid_804
+	}
+	text = {
+		trigger = {
+			original_tag = GRE
+			check_variable = { var = GRE_debt_to_the_ifc_paid_var value = 2.5 compare = equals }
+		}
+		localization_key = GRE_debt_paid_402
 	}
 	text = {
 		trigger = {
