@@ -35,6 +35,10 @@ spriteTypes = {
 		name = "GFX_idea_GRE_Memories_of_1925"
 		texturefile = "gfx/interface/ideas/GRE/idea_GRE_Memories_of_1922or25.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_GRE_all_serve"
+		texturefile = "gfx/interface/ideas/GRE/GRE_all_serve.dds"
+	}
 	#SECOND GRAEAT TURKISH WAR
 	spriteType = {
 		name = "GFX_idea_BUL_memories_of_1925"

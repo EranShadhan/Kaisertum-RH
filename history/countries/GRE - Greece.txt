@@ -38,7 +38,7 @@ days = 366
 }
 add_ideas = {
 	export_focus
-	limited_conscription
+	for_hellas
 	ifc_economy
 	GRE_megali_idea_partial_restoration
 	GRE_eee_enemy
