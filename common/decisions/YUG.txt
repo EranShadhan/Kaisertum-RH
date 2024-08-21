@@ -72,8 +72,8 @@ the_fiume_crisis = {
 		ITA = {
 			add_to_variable = {
 				var = ITA_fiume_crisis_var
-				value = -2.5
-				tooltip = ITA_YUG_invest_money
+				value = -4
+				tooltip = ITA_YUG_propaganda
 			}
 		}
 	}
@@ -108,7 +108,7 @@ the_fiume_crisis = {
 			YUG = {
 				add_to_variable = {
 					var = YUG_fiume_crisis_var
-					value = -2.5
+					value = -4
 					tooltip = ITA_YUG_propaganda
 				}
 			}
@@ -120,7 +120,7 @@ the_fiume_crisis = {
 			factor = 25			
 		}
 	}
-	promise_eqality_for_the_italians = {
+	bring_more_ethnic_people_there = {
 
 		icon = GFX_decision_icon_default		
 		
@@ -140,18 +140,274 @@ the_fiume_crisis = {
 			}
 		}		
 
-		cost = 10	
+		cost = 60	
 		
 		# EFFECTS OF THIS DECISION/MISSION
 
 		complete_effect = {		
 			
-		}
+			if = {
+				limit = {
+					TAG = YUG
+				}
+					random_owned_state = {	
+						prioritize = { 104 163 103 105 977 853 109 }
+						add_manpower = -10000
+					}
+					random_owned_state = {	
+						prioritize = { 104 163 103 105 977 853 109 }
+						add_manpower = -10000
+					}
+					random_owned_state = {	
+						prioritize = { 104 163 103 105 977 853 109 }
+						add_manpower = -10000
+					}
+					random_owned_state = {	
+						prioritize = { 104 163 103 105 977 853 109 }
+						add_manpower = -10000
+					}
+					852 = {	
+						add_manpower = 40000
+						add_resistance = -10
+						add_compliance = 15
+					}
+					YUG = {
+						add_to_variable = {
+							var = YUG_fiume_crisis_var
+							value = 10
+							tooltip = ITA_YUG_moving_pop
+						}
+					}
+					ITA = {
+						add_to_variable = {
+							var = ITA_fiume_crisis_var
+							value = -5
+						}
+					}
+					
+			}
+			else_if = {
+				limit = {
+					TAG = ITA
+				}
+					random_owned_state = {	
+						prioritize = { 2 162 159 158 117 160 115 }
+						add_manpower = -10000
+					}
+					random_owned_state = {	
+						prioritize = { 2 162 159 158 117 160 115 }
+						add_manpower = -10000
+					}
+					random_owned_state = {	
+						prioritize = { 2 162 159 158 117 160 115 }
+						add_manpower = -10000
+					}
+					random_owned_state = {	
+						prioritize = { 2 162 159 158 117 160 115 }
+						add_manpower = -10000
+					}
+					852 = {	
+						add_manpower = 40000
+						add_resistance = -10
+						add_compliance = 15
+					}
+					YUG = {
+						add_to_variable = {
+							var = YUG_fiume_crisis_var
+							value = -5
+							
+						}
+					}
+					ITA = {
+						add_to_variable = {
+							var = ITA_fiume_crisis_var
+							value = 10
+							tooltip = ITA_YUG_moving_pop
+						}
+					}
+				}
+			}
 		
 		# AI LOGIC FOR THIS DECISION/MISSION
 
 		ai_will_do = {	
 			factor = 25			
+		}
+	}
+	force_construction_of_new_civs = {
+
+		icon = GFX_decision_icon_default		
+		
+		
+		
+		available = {
+			has_global_flag = austrian_collapse
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 1
+
+		visible = {
+			or = {
+				tag = YUG
+				tag = ITA
+			}
+		}		
+
+		cost = 40
+		
+		# EFFECTS OF THIS DECISION/MISSION
+
+	complete_effect = {
+		if = {
+				limit = {
+					TAG = YUG
+				}
+					add_to_variable = {
+						var = YUG_fiume_crisis_var
+						value = -8
+						tooltip = ITA_YUG_forcingbuildings
+					}
+					852 = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+		else_if = {
+				limit = {
+					TAG = ITA
+				}
+					add_to_variable = {
+						var = ITA_fiume_crisis_var
+						value = -8
+						tooltip = ITA_YUG_forcingbuildings
+					}
+					852 = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+		}
+	}
+	force_construction_of_new_mils = {
+
+		icon = GFX_decision_icon_default		
+		
+		
+		
+		available = {
+			has_global_flag = austrian_collapse
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 1
+
+		visible = {
+			or = {
+				tag = YUG
+				tag = ITA
+			}
+		}		
+
+		cost = 40
+		
+		# EFFECTS OF THIS DECISION/MISSION
+
+	complete_effect = {
+		if = {
+				limit = {
+					TAG = YUG
+				}
+					add_to_variable = {
+						var = YUG_fiume_crisis_var
+						value = -8
+						tooltip = ITA_YUG_forcingbuildings
+					}
+					852 = {
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+		else_if = {
+				limit = {
+					TAG = ITA
+				}
+					add_to_variable = {
+						var = ITA_fiume_crisis_var
+						value = -8
+						tooltip = ITA_YUG_forcingbuildings
+					}
+					852 = {
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+			}
+		}
+	}
+	march_into_the_city = {
+
+		icon = GFX_decision_icon_default		
+		
+		
+		
+		available = {
+		custom_trigger_tooltip = { tooltip = ITA_YUG_march_into_the_city }
+			if = {
+				limit = {
+					TAG = YUG
+				}
+				check_variable = {
+					var = YUG_fiume_crisis_var
+					value = 100
+					compare = greater_than_or_equals
+				}
+				
+			}
+			else_if = {
+				limit = {
+					TAG = ITA
+				}
+				check_variable = {
+					var = ITA_fiume_crisis_var
+					value = 100
+					compare = greater_than_or_equals
+					}
+				}
+			}
+		
+		fire_only_once = no		
+		days_re_enable = 1
+
+		visible = {
+			or = {
+				tag = YUG
+				tag = ITA
+			}
+		}		
+
+		cost = 40
+		
+		# EFFECTS OF THIS DECISION/MISSION
+
+	complete_effect = {
+		ROOT = {
+			transfer_state = 852
+		}
+		852 = {
+			add_core_of = ROOT
+			set_demilitarized_zone = NO
 		}
 	}
 }
