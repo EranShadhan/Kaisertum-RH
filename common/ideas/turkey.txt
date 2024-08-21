@@ -76,11 +76,202 @@ ideas = {
 
 
 			modifier = {
+                offence = -0.2
+                army_speed_factor = -0.2
+                breakthrough_factor = -0.35
+                army_org_factor = -0.3
+                experience_gain_army_factor = -0.3
+			}
+		}
+		TUR_humiliation_of_25_2 = {
+            picture = humiliation_of_25
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+
+			modifier = {
+                offence = -0.15
+                army_speed_factor = -0.15
+                breakthrough_factor = -0.3
+                army_org_factor = -0.25
+                experience_gain_army_factor = -0.25
+			}
+		}
+		TUR_humiliation_of_25_3 = {
+            picture = humiliation_of_25
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+
+			modifier = {
                 offence = -0.1
                 army_speed_factor = -0.1
                 breakthrough_factor = -0.2
-                army_org_factor = -0.25
+                army_org_factor = -0.2
                 experience_gain_army_factor = -0.2
+			}
+		}
+		TUR_humiliation_of_25_4 = {
+            picture = humiliation_of_25
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+
+			modifier = {
+                offence = -0.05
+                army_speed_factor = -0.05
+                breakthrough_factor = -0.1
+                army_org_factor = -0.15
+                experience_gain_army_factor = -0.15
+			}
+		}
+		TUR_german_military_mission = {
+			allowed = {
+				original_tag = TUR
+			}
+			available = {
+				NOT = {
+					has_war_with = GER
+				}
+			}
+			allowed_civil_war = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			modifier = {
+				army_morale = 5
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.05
+				army_infantry_attack_factor = 0.2
+			}
+		}
+		TUR_russian_military_mission = {
+			allowed = {
+				original_tag = TUR
+			}
+			available = {
+				NOT = {
+					has_war_with = SOV
+				}
+			}
+			allowed_civil_war = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			modifier = {
+				army_org = 5
+				army_core_attack_factor = 0.07
+				army_core_defence_factor = 0.07
+				army_strength_factor = 0.1
+			}
+		}
+		TUR_motorized_focus_idea = {
+			allowed = {
+				original_tag = TUR
+			}
+			available = {
+				always = no
+			}
+			allowed_civil_war = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			modifier = {
+				motorized_attack_factor = 0.15
+				motorized_defence_factor = 0.15
+				motorized_speed_factor = 0.3
+			}
+		}
+		TUR_special_forces_improvements = {
+			allowed = {
+				original_tag = TUR
+			}
+			available = {
+				always = no
+			}
+			allowed_civil_war = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			modifier = {
+				special_forces_attack_factor = 0.25
+				special_forces_defence_factor = 0.2
+				special_forces_speed_factor = 0.25
+			}
+		}
+		TUR_tank_program_idea = {
+			allowed = {
+				original_tag = TUR
+			}
+			available = {
+				always = no
+			}
+			allowed_civil_war = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			research_bonus = {
+    			armor = 0.2
+			}
+		}
+		TUR_german_naval_mission = {
+			allowed = {
+				original_tag = TUR
+			}
+			available = {
+				NOT = {
+					has_war_with = GER
+				}
+			}
+			allowed_civil_war = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			modifier = {
+				naval_morale_factor = 0.3
+				naval_speed_factor = 0.3
+				navy_org_factor = 0.2
+				repair_speed_factor = -0.1
+			}
+		}
+		TUR_navy_modernization_idea = {
+			allowed = {
+				original_tag = TUR
+			}
+			available = {
+				always = no
+			}
+			allowed_civil_war = {
+				original_tag = TUR
+			}
+			removal_cost = -1
+			modifier = {
+				experience_gain_navy_unit_factor = 0.2
+				convoy_raiding_efficiency_factor = 0.3
+				naval_coordination = 0.15
+				naval_damage_factor = 0.1
+				naval_morale_factor = 0.2
 			}
 		}
 
