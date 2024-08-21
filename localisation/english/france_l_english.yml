@@ -142,7 +142,18 @@
  FRA_preperations_for_worst_desc:0 "We need to prepare for everything, including a possible coup deta against the insane regime, We shall contact Generals in order to prepare for it"
  
  FRA_communist_coup:0 "The Socialist coup Coup"
- FRA_communist_coup_desc:0 "We need to prepare for everything, including a possible coup deta against the insane regime, We shall contact Generals in order to prepare for it"
+ FRA_communist_coup_desc:0 "The time had came, After a few months of preperations we are Now ready to Launch the coup against this regime, LONG LIVE FRANCE!"
+ FRA_communist_coup_tt:0 "We shall commence the Coup"
+ 
+ FRA_establish_sub_africa:0 "Establish African Protectorate"
+ FRA_establish_sub_africa_desc:0 "As a part of the Reforms, we shall establish puppets in our Foreign lands"
+ 
+ FRA_solidify_neosocialism:0 "solidify Neo Socialism"
+ FRA_solidify_neosocialism_desc:0 "Now that we are in Power we shall solidify our ideology on the basis of Marcel deat, He will be seen as the saviour of France from radicalism yet still fight the Germanic menace"
+ 
+ FRA_bastion_against_monarchism:0 "Bastion Against Monarchy"
+ FRA_bastion_against_monarchism_desc:0 "Since the days of the first revolution, we were against the authoritarian ways of the Monarch, Now just like Napoleon we shall be against this system"
+ 
  
  # ideas
  FRA_secret_rearmament:0 "Secret Rearmament"
@@ -165,3 +176,6 @@
   
  FRA_communist_opposition_2:0 "Communist Opposition"
  FRA_communist_opposition_2_desc:0 "While the Fascist French Revival won the elections of 1928, we can still overthrow this insane government and install a proper one. We shall prepare to launch a possible coup d'état against this government. We must get rid of the fascist regime in any way shape or form, in order to secure a prosperous France!"
+ 
+ # op modif
+ against_monarchy_mod:0 "Against Monarchies"

@@ -89,16 +89,24 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			set_politics = {
-				ruling_party = communism
-				elections_allowed = no
-				election_frequency = 48
+			custom_effect_tooltip = FRA_communist_coup_tt
+			hidden_effect = {
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					election_frequency = 48
+				}
+				remove_ideas = FRA_communist_opposition_2
+				add_popularity = {
+					ideology = communism
+					popularity = 0.1
+				}
 			}
 		}
 	}
 	focus = {
 		id = FRA_establish_sub_africa
-		icon = GFX_focus_fra_communist_coup
+		icon = GFX_focus_generic_africa_liberation
 		x = -2
 		y = 1
 		
@@ -116,6 +124,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+		hidden_effect = {
 			VOL = {
 				transfer_state = 272
 				add_state_core = 272
@@ -149,8 +158,134 @@
 				add_state_core = 776
 			}
 			puppet = VOL
+			}
 		}
 	}
+	focus = {
+		id = FRA_solidify_neosocialism
+		icon = GFX_focus_fra_solidify_neosocialism
+		x = 0
+		y = 1
+		
+		relative_position_id = FRA_communist_coup
+		prerequisite = { focus = FRA_communist_coup }
+		mutually_exclusive = { }
+
+		cost = 2 
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			FRA = {
+				add_state_core = 459
+				add_state_core = 460
+				add_state_core = 513
+				add_state_core = 514
+			}
+		}
+	}
+	focus = {
+		id = FRA_bastion_against_monarchism
+		icon = GFX_focus_NOR_send_the_king_back_to_denmark
+		x = 2
+		y = 1
+		
+		relative_position_id = FRA_communist_coup
+		prerequisite = { focus = FRA_communist_coup }
+		mutually_exclusive = { }
+
+		cost = 2 
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			GER = {
+				add_opinion_modifier = { target = FRA modifier = against_monarchy_mod }
+			}
+			ENG = {
+				add_opinion_modifier = { target = FRA modifier = against_monarchy_mod }
+			}
+			ITA = {
+				add_opinion_modifier = { target = FRA modifier = against_monarchy_mod }
+			}
+			FRA = {
+				add_opinion_modifier = { target = GER modifier = against_monarchy_mod }
+				add_opinion_modifier = { target = ENG modifier = against_monarchy_mod }
+				add_opinion_modifier = { target = ITA` modifier = against_monarchy_mod }
+			}
+		}
+	}
+	focus = {
+		id = FRA_form_liberation
+		icon = GFX_focus_SWE_form_rfsu
+		x = -2
+		y = 1
+		
+		relative_position_id = FRA_bastion_against_monarchism
+		prerequisite = { focus = FRA_bastion_against_monarchism }
+		prerequisite = { focus = FRA_solidify_neosocialism }
+		prerequisite = { focus = FRA_establish_sub_africa }
+		mutually_exclusive = { }
+
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_faction = FRA_liberation_pact
+			remove_ideas = FRA_republican_front_collapse
+		}
+	}
+	focus = {
+		id = FRA_remember_our_lands
+		icon = GFX_focus_focus_fra_border
+		x = 1
+		y = 1
+		
+		relative_position_id = FRA_form_liberation
+		prerequisite = { focus = FRA_form_liberation }
+		mutually_exclusive = { }
+
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_state_core = 845
+			add_state_core = 28
+			add_state_core = 8
+			add_state_core = 34
+			add_state_core = 970
+			add_state_core = 972
+			add_state_core = 735
+			add_state_core = 1
+			add_state_core = 6
+			add_state_core = 35
+			add_state_core = 36
+			add_state_core = 7
+		}
+	}
+
 	focus = {
 		id = FRA_eliminate_communist_opposition
 		icon = GFX_focus_BRA_ban_communist_party
