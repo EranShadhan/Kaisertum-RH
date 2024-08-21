@@ -1,10 +1,12 @@
 spriteTypes = {	
-	SpriteType = {
-		name = "GFX_focus_fra_solidify_neosocialism_shine"
-		texturefile = "gfx/interface/goals/FRA/focus_fra_solidify_neosocialism.dds"
+
+#GREECE
+	 SpriteType = {
+		name = "GFX_focus_hellenic_tanks_shine"
+		texturefile = "gfx/interface/goals/GRE/goal_hellenic_tanks.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA/focus_fra_solidify_neosocialism.dds"
+			animationmaskfile = "gfx/interface/goals/GRE/goal_hellenic_tanks.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -17,7 +19,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA/focus_fra_solidify_neosocialism.dds"
+			animationmaskfile = "gfx/interface/goals/GRE/goal_hellenic_tanks.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -30,12 +32,12 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	SpriteType = {
-		name = "GFX_focus_fra_communist_coup_shine"
-		texturefile = "gfx/interface/goals/FRA/focus_fra_socialist_coup.dds"
+	 SpriteType = {
+		name = "GFX_focus_GRE_shipyard_shine"
+		texturefile = "gfx/interface/goals/GRE/goal_GRE_shipyard.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA/focus_fra_socialist_coup.dds"
+			animationmaskfile = "gfx/interface/goals/GRE/goal_GRE_shipyard.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -48,7 +50,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA/focus_fra_socialist_coup.dds"
+			animationmaskfile = "gfx/interface/goals/GRE/goal_GRE_shipyard.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -59,14 +61,14 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
-		legacy_lazy_load = no
+		legacy_lazy_load = no 
 	}
-	SpriteType = {
-		name = "GFX_focus_fra_resist_fascism_shine"
-		texturefile = "gfx/interface/goals/FRA/focus_fra_resist_fascist_opression.dds"
+	 SpriteType = {
+		name = "GFX_focus_GRE_pyrkal_shine"
+		texturefile = "gfx/interface/goals/GRE/goal_GRE_pyrkal.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA/focus_fra_resist_fascist_opression.dds"
+			animationmaskfile = "gfx/interface/goals/GRE/goal_GRE_pyrkal.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -79,7 +81,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA/focus_fra_resist_fascist_opression.dds"
+			animationmaskfile = "gfx/interface/goals/GRE/goal_GRE_pyrkal.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -90,14 +92,14 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
-		legacy_lazy_load = no
+		legacy_lazy_load = no 
 	}
-	SpriteType = {
-		name = "GFX_focus_fra_expand_public_services_shine"
-		texturefile = "gfx/interface/goals/FRA/focus_fra_expand_public_services.dds"
+     SpriteType = {
+		name = "GFX_focus_GRE_army_shine"
+		texturefile = "gfx/interface/goals/GRE/goal_GRE_army.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA/focus_fra_expand_public_services.dds"
+			animationmaskfile = "gfx/interface/goals/GRE/goal_GRE_army.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -110,7 +112,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA/focus_fra_expand_public_services.dds"
+			animationmaskfile = "gfx/interface/goals/GRE/goal_GRE_army.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -122,14 +124,13 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		legacy_lazy_load = no
-	}
-
-	SpriteType = {
-		name = "GFX_focus_fra_invest_in_mainland_shine"
-		texturefile = "gfx/interface/goals/FRA/focus_fra_invest_in_mainland.dds"
+	} 
+	  SpriteType = {
+		name = "GFX_focus_GRE_army2_shine"
+		texturefile = "gfx/interface/goals/GRE/goal_GRE_army2.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA/focus_fra_invest_in_mainland.dds"
+			animationmaskfile = "gfx/interface/goals/GRE/goal_GRE_army2.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -142,7 +143,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA/focus_fra_invest_in_mainland.dds"
+			animationmaskfile = "gfx/interface/goals/GRE/goal_GRE_army2.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -155,13 +156,12 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-
-	SpriteType = {
-		name = "GFX_focus_fra_invest_in_colonies_shine"
-		texturefile = "gfx/interface/goals/FRA/focus_fra_invest_in_colonies.dds"
+	   SpriteType = {
+		name = "GFX_focus_GRE_navy_shine"
+		texturefile = "gfx/interface/goals/GRE/goal_GRE_navy.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA/focus_fra_invest_in_colonies.dds"
+			animationmaskfile = "gfx/interface/goals/GRE/goal_GRE_navy.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -174,7 +174,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA/focus_fra_invest_in_colonies.dds"
+			animationmaskfile = "gfx/interface/goals/GRE/goal_GRE_navy.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -186,14 +186,13 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		legacy_lazy_load = no
-	}
-
-	SpriteType = {
-		name = "GFX_focus_fra_support_textile_industry_shine"
-		texturefile = "gfx/interface/goals/FRA/focus_fra_support_textile_industry.dds"
+	} 
+	  SpriteType = {
+		name = "GFX_focus_GRE_navy2_shine"
+		texturefile = "gfx/interface/goals/GRE/goal_GRE_navy2.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA/focus_fra_support_textile_industry.dds"
+			animationmaskfile = "gfx/interface/goals/GRE/goal_GRE_navy2.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -206,7 +205,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA/focus_fra_support_textile_industry.dds"
+			animationmaskfile = "gfx/interface/goals/GRE/goal_GRE_navy2.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -219,13 +218,12 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-
-	SpriteType = {
-		name = "GFX_focus_fra_improve_our_economy_shine"
-		texturefile = "gfx/interface/goals/FRA/focus_fra_improve_our_economy.dds"
+	   SpriteType = {
+		name = "GFX_focus_GRE_air_shine"
+		texturefile = "gfx/interface/goals/GRE/goal_GRE_air.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA/focus_fra_improve_our_economy.dds"
+			animationmaskfile = "gfx/interface/goals/GRE/goal_GRE_air.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -238,7 +236,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA/focus_fra_improve_our_economy.dds"
+			animationmaskfile = "gfx/interface/goals/GRE/goal_GRE_air.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -250,14 +248,13 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		legacy_lazy_load = no
-	}
-
-	SpriteType = {
-		name = "GFX_focus_attack_germany_shine"
-		texturefile = "gfx/interface/goals/FRA/focus_attack_germany.dds"
+	} 
+	  SpriteType = {
+		name = "GFX_focus_GRE_air2_shine"
+		texturefile = "gfx/interface/goals/GRE/goal_GRE_air2.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA/focus_attack_germany.dds"
+			animationmaskfile = "gfx/interface/goals/GRE/goal_GRE_air2.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -270,7 +267,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA/focus_attack_germany.dds"
+			animationmaskfile = "gfx/interface/goals/GRE/goal_GRE_air2.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -283,13 +280,12 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-
-	SpriteType = {
-		name = "GFX_focus_fra_promises_war_victory_greatness_shine"
-		texturefile = "gfx/interface/goals/FRA/focus_fra_promises_war_victory_greatness.dds"
+	  SpriteType = {
+		name = "GFX_focus_THE_MAN_THE_MYTH_THE_LEGEND_ONASSIS_shine"
+		texturefile = "gfx/interface/goals/GRE/THE_MAN_THE_MYTH_THE_LEGEND_ONASSIS.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA/focus_fra_promises_war_victory_greatness.dds"
+			animationmaskfile = "gfx/interface/goals/GRE/THE_MAN_THE_MYTH_THE_LEGEND_ONASSIS.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -302,7 +298,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/FRA/focus_fra_promises_war_victory_greatness.dds"
+			animationmaskfile = "gfx/interface/goals/GRE/THE_MAN_THE_MYTH_THE_LEGEND_ONASSIS.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -315,6 +311,66 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-     
+	 SpriteType = {
+		name = "GFX_focus_GRE_air_academy_shine"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_air_academy.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GRE/focus_GRE_air_academy.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GRE/focus_GRE_air_academy.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	 SpriteType = {
+		name = "GFX_focus_GRE_nukes_shine"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_nukes.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GRE/focus_GRE_nukes.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GRE/focus_GRE_nukes.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}	
 }
-

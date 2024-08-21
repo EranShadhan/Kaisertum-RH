@@ -1,54 +1,5 @@
 spriteTypes = {
 
-	#GREEK FOCUSES
-	SpriteType = {
-		name = "GFX_focus_hellenic_tanks"
-		texturefile = "gfx/interface/goals/GRE/goal_hellenic_tanks.dds"
-	}
-	SpriteType = {
-		name = "GFX_focus_GRE_pyrkal"
-		texturefile = "gfx/interface/goals/GRE/goal_GRE_pyrkal.dds"
-	}
-	SpriteType = {
-		name = "GFX_focus_GRE_shipyard"
-		texturefile = "gfx/interface/goals/GRE/goal_GRE_shipyard.dds"
-	}
-	SpriteType = {
-		name = "GFX_focus_GRE_army"
-		texturefile = "gfx/interface/goals/GRE/goal_GRE_army.dds"
-	}
-	SpriteType = {
-		name = "GFX_focus_GRE_army2"
-		texturefile = "gfx/interface/goals/GRE/goal_GRE_army2.dds"
-	}
-    SpriteType = {
-		name = "GFX_focus_GRE_navy"
-		texturefile = "gfx/interface/goals/GRE/goal_GRE_navy.dds"
-	}
-	SpriteType = {
-		name = "GFX_focus_GRE_navy2"
-		texturefile = "gfx/interface/goals/GRE/goal_GRE_navy2.dds"
-	}
-	SpriteType = {
-		name = "GFX_focus_GRE_air"
-		texturefile = "gfx/interface/goals/GRE/goal_GRE_air.dds"
-	}
-	SpriteType = {
-		name = "GFX_focus_GRE_air2"
-		texturefile = "gfx/interface/goals/GRE/goal_GRE_air2.dds"
-	}
-	SpriteType = {
-		name = "GFX_focus_THE_MAN_THE_MYTH_THE_LEGEND_ONASSIS"
-		texturefile = "gfx/interface/goals/GRE/THE_MAN_THE_MYTH_THE_LEGEND_ONASSIS.dds"
-	}
-	SpriteType = {
-		name = "GFX_focus_GRE_air_academy"
-		texturefile = "gfx/interface/goals/GRE/focus_GRE_air_academy.dds"
-	}
-	SpriteType = {
-		name = "GFX_focus_GRE_nukes"
-		texturefile = "gfx/interface/goals/GRE/focus_GRE_nukes.dds"
-	}
 	
 	#OTHER
 	SpriteType = {
