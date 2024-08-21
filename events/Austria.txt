@@ -259,8 +259,10 @@ country_event = {
 
 		YUG ={
 			transfer_state = 105
-			transfer_state = 852
 			transfer_state = 853
+			853 = {
+				add_core_of = YUG
+			}
 			set_variable = {
 				YUG_fiume_crisis_var = 5
 			}
@@ -268,14 +270,20 @@ country_event = {
 			white_peace = GER
 			white_peace = POL
 			white_peace = UKR
-			852 = {
-				set_demilitarized_zone = yes
-			}
+			
 			set_variable = {
 				YUG_fiume_crisis_var = 5
 			}
 		}
-
+		
+		FCF = {
+			transfer_state = 852
+			852 = {
+				set_demilitarized_zone = yes
+				add_core_of = FCF
+			}
+		}
+		
 		BUL = {
 			annex_country = {
 				target = SER

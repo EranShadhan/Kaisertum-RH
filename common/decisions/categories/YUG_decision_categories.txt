@@ -7,7 +7,9 @@ the_fiume_crisis = {
 		always = yes
 	}
 	visible = {
-	
+		NOT = {
+				has_global_flag = illirya_meccanic_finished
+			}
 	}
 }
 

@@ -4,5 +4,9 @@ spriteTypes = {
 		name = "GFX_YUG_Ivan_Subasic"
 		texturefile = "gfx/leaders/YUG/YUG_portrait_Ivan_Subasic.png"
 	}
+	spriteType = {
+		name = "GFX_FCF_gabriele_dannunzio"
+		texturefile = "gfx/leaders/YUG/FCF_portrait_gabriele_dannunzio.png"
+	}
 	
 }
