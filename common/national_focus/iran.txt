@@ -150,10 +150,6 @@ focus_tree = {
 			add_popularity = {
 				ideology = communism
 				popularity = 0.05
-			}
-			if = {
-				limit = { has_idea = neutrality_idea }
-				remove_ideas = neutrality_idea
 			}		
 			add_political_power = 200
 			add_ideas = idea_political_correctness
@@ -289,7 +285,8 @@ focus_tree = {
 		text = neutrality_focus
 		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { focus = PER_workers_culture }
-		x = 0
+		mutually_exclusive = { focus = PER_world_revolution }
+		x = -1
 		y = 1
 		relative_position_id = PER_workers_culture
 		cost = 5
@@ -305,6 +302,50 @@ focus_tree = {
 				add_ideas = neutrality_idea
 			}
 			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = PER_world_revolution
+		icon = GFX_focus_generic_join_comintern
+		prerequisite = { focus = PER_workers_culture }
+		mutually_exclusive = { focus = PER_neutrality }
+		x = 1
+		y = 1
+		relative_position_id = PER_workers_culture
+		cost = 7.2
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			if = {
+				limit = {
+					FRA = {
+						has_government = communism
+						is_faction_leader = yes
+					}
+				}
+				FRA = {
+					country_event = generic.2
+				}
+				else_if = {
+					limit = {
+						JAP = {
+							has_government = communism
+							is_faction_leader = yes
+						}
+					}
+					JAP = {
+						country_event = generic.2
+					}
+				}
+				else = {
+					create_faction=international_com_alliance
+				}
+			}
 		}
 	}
 
