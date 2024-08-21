@@ -16,10 +16,10 @@ the_fiume_crisis = {
 			or = {
 				tag = YUG
 				tag = ITA
+			}
 			NOT = {
 				has_global_flag = illirya_meccanic_finished
 				}
-			}
 		}		
 
 		cost = 25	
@@ -47,6 +47,18 @@ the_fiume_crisis = {
 						value = 5
 						tooltip = ITA_YUG_invest_money
 					}
+			}
+		}
+		
+		ai_will_do = {
+			base = 35
+			modifier = {
+				tag = ITA
+				add = 20
+			}
+			modifier = {
+				tag = YUG
+				add = 60
 			}
 		}
 	}
@@ -85,8 +97,16 @@ the_fiume_crisis = {
 	}
 		# AI LOGIC FOR THIS DECISION/MISSION
 
-		ai_will_do = {	
-			factor = 25			
+		ai_will_do = {
+			base = 35
+			modifier = {
+				tag = ITA
+				add = 20
+			}
+			modifier = {
+				tag = YUG
+				add = 30
+			}
 		}
 	}
 	spread_italian_propaganda = {
@@ -126,8 +146,16 @@ the_fiume_crisis = {
 		
 		# AI LOGIC FOR THIS DECISION/MISSION
 
-		ai_will_do = {	
-			factor = 25			
+		ai_will_do = {
+			base = 35
+			modifier = {
+				tag = ITA
+				add = 20
+			}
+			modifier = {
+				tag = YUG
+				add = 30
+			}
 		}
 	}
 	bring_more_ethnic_people_there = {
@@ -311,6 +339,19 @@ the_fiume_crisis = {
 					}
 			}
 		}
+		
+		ai_will_do = {
+			base = 10
+			modifier = {
+				tag = ITA
+				add = 30
+			}
+			modifier = {
+				tag = YUG
+				add = 30
+			}
+		}
+		
 	}
 	force_construction_of_new_mils = {
 
@@ -375,6 +416,19 @@ the_fiume_crisis = {
 					}
 			}
 		}
+		
+		ai_will_do = {
+			base = 10
+			modifier = {
+				tag = ITA
+				add = 30
+			}
+			modifier = {
+				tag = YUG
+				add = 30
+			}
+		}
+		
 	}
 	march_into_the_city = {
 
@@ -435,4 +489,17 @@ the_fiume_crisis = {
 		}
 		set_global_flag = illirya_meccanic_finished
 	}
+	
+	ai_will_do = {
+			base = 400
+			modifier = {
+				tag = ITA
+				add = 3600
+			}
+			modifier = {
+				tag = YUG
+				add = 3600
+			}
+		}
+	
 }
