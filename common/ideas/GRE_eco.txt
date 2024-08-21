@@ -2,7 +2,7 @@
     
 		economy = { 
 		ifc_economy = {
-
+        
             picture = ifc_economy
 			
 			removal_cost = -1
