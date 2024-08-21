@@ -1,5 +1,5 @@
 focus_tree = {
-	id = turkish_focus # PLACEHOLDER TO FIX BOOKMARK FOR NOW
+	id = turkish_focus
 	
 	country = {
 		factor = 0
