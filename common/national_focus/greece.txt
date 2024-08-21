@@ -14,6 +14,26 @@ focus_tree = {
 
 	continuous_focus_position = { x = 20 y = 1600 }
 	focus = {
+		id = GRE_royal_hellenic_airforce
+		icon = GFX_focus_GRE_air
+
+		
+		available = {
+		}
+		x = 25
+		y = 0
+
+		cost = 10
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	         air_experience = 125
+		    }
+		}
+	focus = {
 		id = GRE_royal_hellenic_navy
 		icon = GFX_focus_GRE_navy
 
@@ -386,7 +406,7 @@ focus = {
 		add_offsite_building = { type = dockyard level = 2 }
 	     add_tech_bonus = {
 				name = GRE_disrupting_the_great_powers
-				bonus = 0.75
+				bonus = 1.5
 				uses = 2
 				category = ss_tech
 			}

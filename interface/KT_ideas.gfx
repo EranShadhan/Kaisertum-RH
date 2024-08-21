@@ -16,6 +16,10 @@ spriteTypes = {
 	}
    #GREECE
    spriteType = {
+		name = "GFX_idea_ifc_economy"
+		texturefile = "gfx/interface/ideas/GRE/ieda_GRE_debt_simulator.dds"
+	}
+   spriteType = {
 		name = "GFX_idea_gre_eee_opposition"
 		texturefile = "gfx/interface/ideas/GRE/gre_byzantium.dds"
 	}

@@ -13,10 +13,7 @@ if = {
 		set_air_oob = "GRE_1936_air_bba"
 	else = {
 		set_air_oob = "GRE_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-			early_bomber = 1
-		}
+		
 	}
 }
 create_faction = GRE_salonica_pact
@@ -39,7 +36,7 @@ days = 366
 add_ideas = {
 	export_focus
 	limited_conscription
-	civilian_economy
+	ifc_economy
 	GRE_megali_idea_partial_restoration
 	GRE_eee_enemy
 	german_customs_union_member
@@ -59,6 +56,47 @@ set_technology = {
 	trench_warfare = 1
 	fuel_silos = 1
 	synth_oil_experiments = 1
+	interwar_antiair = 1
+	basic_train = 1
+	tech_maintenance_company = 1
+	infantry_weapons1 = 1
+}
+if = {
+	limit = { not = { has_dlc = "No Step Back" } }
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = { has_dlc = "No Step Back" }
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		armor_tech_1 = 1
+		engine_tech_1 = 1
+	}
+}
+if = {
+	limit = { not = { has_dlc = "By Blood Alone" } }
+	set_technology = {
+		early_fighter = 1
+		early_bomber = 1
+		CAS1 = 1
+		naval_bomber1 = 1
+		early_bomber = 1
+	}
+}
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	set_technology = {
+		iw_small_airframe = 1
+		iw_medium_airframe = 1
+		iw_large_airframe = 1
+		engines_1 = 1
+		aa_lmg = 1
+		early_bombs = 1
+	}
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
