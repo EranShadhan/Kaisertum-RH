@@ -10,22 +10,25 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GRE/goal_GRE_pyrkal.dds"
 	}
 	SpriteType = {
-<<<<<<< Updated upstream
 		name = "GFX_focus_GRE_shipyard"
 		texturefile = "gfx/interface/goals/GRE/goal_GRE_shipyard.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_GRE_army"
-=======
-		name = "GFX_fous_GRE_army"
->>>>>>> Stashed changes
 		texturefile = "gfx/interface/goals/GRE/goal_GRE_army.dds"
 	}
 	SpriteType = {
-		name = "GFX_fous_GRE_army2"
+		name = "GFX_focus_GRE_army2"
 		texturefile = "gfx/interface/goals/GRE/goal_GRE_army2.dds"
 	}
-
+    SpriteType = {
+		name = "GFX_focus_GRE_navy"
+		texturefile = "gfx/interface/goals/GRE/goal_GRE_navy.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GRE_navy2"
+		texturefile = "gfx/interface/goals/GRE/goal_GRE_navy2.dds"
+	}
 	#OTHER
 	SpriteType = {
 		name = "GFX_focus_fra_promises_war_victory_greatness"
