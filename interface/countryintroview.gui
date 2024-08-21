@@ -1,12 +1,12 @@
 guiTypes = {
 	containerWindowType = {
 		name = "intro_gui_button_container"
-		position = { x = 675 y = 35 }
+		position = { x = 1789 y = 62 }
 		Orientation = UPPER_LEFT
 
 		buttonType = {
 			name = "intro_gui_button_enable"
-			quadTextureSprite ="GFX_help_button"
+			quadTextureSprite = "GFX_book_button"
 			buttonText = ""
 			buttonFont = "Main_14_black"
 			clicksound = click_ok

@@ -1,29 +1,29 @@
-
 state={
-	id=80
-	name="STATE_80"
+	id=990
+	name="STATE_990"
 
 	history={
-		victory_points = {
-			577 1 
-		}
 		owner = AUS
+		victory_points = {
+			3483 5
+		}
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
+			industrial_complex = 3
+			air_base = 5
 
 		}
-		add_core_of = ROM
 		add_core_of = AUS
 		add_claim_by = UKR
+		add_claim_by = POL
 
 	}
 
 	provinces={
-		577 9548 
+		438 491 3483 3562 9454 9558 11427 
 	}
-	manpower=474600
+	manpower=1065174
+	state_category=town
 	buildings_max_level_factor=1.000
-	state_category=rural
 	local_supplies=0.000
 }
