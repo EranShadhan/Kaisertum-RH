@@ -5,7 +5,9 @@ state = {
 	manpower = 1286238 #1 8th removed due to Balta-Tiraspol
 	
 	state_category = city
-
+	resources={
+		chromium=26 
+	}
 	history = {
 		owner = UKR
 		victory_points = {
