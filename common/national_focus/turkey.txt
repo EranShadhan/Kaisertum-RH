@@ -1,0 +1,719 @@
+focus_tree = {
+	id = turkish_focus # PLACEHOLDER TO FIX BOOKMARK FOR NOW
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TUR
+		}
+	}
+	
+
+	default = no
+
+	continuous_focus_position = { x = 20 y = 1600 }
+
+	# ARMY BRANCH
+
+	focus = {
+		id = TUR_start_military_reforms
+		x = 20
+
+	
+		y = 0
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+			add_political_power = 20
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = TUR_addressing_the_army
+		x = -7
+	
+		y = 1
+
+		cost = 5
+		prerequisite = {
+		focus = TUR_start_military_reforms
+		}
+		relative_position_id = TUR_start_military_reforms
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_humiliation_of_25
+				add_idea = TUR_humiliation_of_25_2
+			}
+		}
+	}
+	focus = {
+		id = TUR_invite_russian_military_mission
+		cost = 5
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = TUR_invite_german_military_mission
+		}
+		relative_position_id = TUR_addressing_the_army
+		prerequisite = {
+		focus = TUR_addressing_the_army
+		}
+		available = {
+			NOT = {
+				has_war_with = SOV
+			}
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = TUR_russian_military_mission
+				days = 1461
+			}
+		}
+	}
+	focus = {
+		id = TUR_invite_german_military_mission
+		cost = 5
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = TUR_invite_russian_military_mission
+		}
+		relative_position_id = TUR_addressing_the_army
+		prerequisite = {
+		focus = TUR_addressing_the_army
+		}
+		available = {
+			NOT = {
+				has_war_with = GER
+			}
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = TUR_german_military_mission
+				days = 1461
+			}
+		}
+	}
+	
+	focus = {
+		id = TUR_cappadocia_exercises
+		cost = 6
+		x = 0
+		y = 2
+		relative_position_id = TUR_addressing_the_army
+		prerequisite = {
+		focus = TUR_invite_russian_military_mission
+		focus = TUR_invite_german_military_mission
+		}
+		available = {
+			}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_humiliation_of_25_2
+				add_idea = TUR_humiliation_of_25_3
+			}
+		}
+	}
+	focus = {
+		id = TUR_promote_younger_officers
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = TUR_cappadocia_exercises
+		prerequisite = {
+		   focus = TUR_cappadocia_exercises
+		}
+		available = {
+			}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_humiliation_of_25_3
+				add_idea = TUR_humiliation_of_25_4
+			}
+		}
+	}
+	focus = {
+		id = TUR_improve_logistics_in_the_east
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = TUR_cappadocia_exercises
+		prerequisite = {
+			focus = TUR_cappadocia_exercises
+		}
+		available = {
+			}
+		
+		completion_reward = {
+			353 = { #random ahh eastern states
+				add_building_construction = {
+                    			type = infrastructure
+                    			level = 2
+                    			instant_build = yes
+				}
+			}
+			354 = {
+				add_building_construction = {
+                    			type = infrastructure
+                    			level = 2
+                    			instant_build = yes
+				}
+			}
+			349 = {
+				add_building_construction = {
+                    			type = infrastructure
+                    			level = 2
+                    			instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_buy_german_artillery
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = TUR_cappadocia_exercises
+		prerequisite = { focus = TUR_promote_younger_officers }
+		prerequisite = { focus = TUR_improve_logistics_in_the_east }
+		available = {
+			NOT = {
+				has_war_with = GER
+			}
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+    			type = artillery_equipment
+    			amount = 200
+    			producer = GER
+			}
+		}
+	}
+	focus = {
+		id = TUR_motorized_focus
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = TUR_buy_german_artillery
+		prerequisite = {
+		focus = TUR_buy_german_artillery
+		}
+		available = {
+			}
+		
+		completion_reward = {
+			add_ideas = TUR_motorized_focus_idea
+		}
+	}
+
+	focus = {
+		id = TUR_new_special_forces
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TUR_buy_german_artillery
+		prerequisite = {
+		focus = TUR_buy_german_artillery
+		}
+		available = {
+			}
+		
+		completion_reward = {
+			add_ideas = TUR_special_forces_improvements
+		}
+	}
+	focus = {
+		id = TUR_tank_program
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = TUR_buy_german_artillery
+		prerequisite = {
+		focus = TUR_buy_german_artillery
+		}
+		available = {
+			}
+		
+		completion_reward = {
+			add_ideas = TUR_tank_program_idea
+		}
+	}
+	focus = {
+		id = TUR_a_truly_modern_army
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = TUR_buy_german_artillery
+		prerequisite = {
+		focus = TUR_motorized_focus
+		}
+		prerequisite = {
+		focus = TUR_new_special_forces
+		}
+		prerequisite = {
+		focus = TUR_tank_program
+		}
+		available = {
+			}
+		
+		completion_reward = {
+			remove_ideas = TUR_humiliation_of_25_4
+		}
+	}
+
+	# AIRFORCE BRANCH
+
+	focus = {
+		id = TUR_airforce_expansion
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TUR_start_military_reforms
+		prerequisite = {
+		focus = TUR_start_military_reforms
+		}
+		available = {
+			}
+		
+		completion_reward = {
+			air_experience = 20
+		}
+	}
+	focus = {
+		id = TUR_construct_airfields_in_the_east
+		cost = 6
+		x = 0
+		y = 1
+		relative_position_id = TUR_airforce_expansion
+		prerequisite = {
+		focus = TUR_airforce_expansion
+		}
+		available = {
+			}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				impassable = no
+			}
+			prioritize = {
+				349
+			}
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+			}
+			random_owned_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				impassable = no
+			}
+			prioritize = {
+				355
+			}
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}	
+		}
+	}
+	focus = {
+		id = TUR_fund_research_on_fighters
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = TUR_construct_airfields_in_the_east
+				mutually_exclusive = { focus = TUR_fund_research_on_bombers }
+		prerequisite = {
+		focus = TUR_construct_airfields_in_the_east
+		}
+		available = {
+			}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_fighter_focus
+				bonus = 1.0
+				uses = 1
+				category = light_fighter
+			}
+		}
+	}
+	focus = {
+		id = TUR_fund_research_on_bombers
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = TUR_construct_airfields_in_the_east
+		mutually_exclusive = { focus = TUR_fund_research_on_fighters }
+		prerequisite = {
+		focus = TUR_construct_airfields_in_the_east
+		}
+		available = {
+			}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = tactical_bomber
+			}
+		}
+	}
+	focus = {
+		id = TUR_heavy_fighter_improvements
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = TUR_fund_research_on_fighters
+		prerequisite = {
+		focus = TUR_fund_research_on_fighters
+		}
+		available = {
+			}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 1
+				category = cat_heavy_fighter
+			}
+		}
+	}
+	focus = {
+		id = TUR_naval_bomber_focus
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = TUR_fund_research_on_bombers
+		prerequisite = {
+		focus = TUR_fund_research_on_bombers
+		}
+		available = {
+			}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 1
+				category = naval_bomber
+			}
+		}
+	}
+	focus = {
+		id = TUR_cas_improvements
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = TUR_fund_research_on_bombers
+		prerequisite = {
+		focus = TUR_fund_research_on_bombers
+		}
+		available = {
+			}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+
+	# NAVY BRANCH
+
+	focus = {
+		id = TUR_continue_navy_reforms
+		cost = 6
+		x = 7
+		y = 1
+		relative_position_id = TUR_start_military_reforms
+		prerequisite = {
+		focus = TUR_start_military_reforms
+		}
+		available = {
+			}
+		
+		completion_reward = {
+			navy_experience = 20
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = yes
+						}
+					}
+					prioritize = { 973 } #Antalya
+			}
+		}
+	}
+	focus = {
+		id = TUR_invite_german_naval_mission
+		cost = 5
+		x = 0
+		y = 1
+
+		relative_position_id = TUR_continue_navy_reforms
+		prerequisite = {
+		focus = TUR_continue_navy_reforms
+		}
+		available = {
+			NOT = {
+				has_war_with = GER
+			}
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = TUR_german_naval_mission
+				days = 1461
+			}
+		}
+	}
+	focus = {
+		id = TUR_old_reliable_ways
+		cost = 5
+		x = -2
+		y = 1
+
+		relative_position_id = TUR_invite_german_naval_mission
+		prerequisite = {
+		focus = TUR_invite_german_naval_mission
+		}
+		mutually_exclusive =
+		{
+			focus = TUR_utilize_new_naval_technologies
+		}
+		available = {
+			NOT = {
+				has_war_with = GER
+			}
+		}
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					is_core_of = ROOT
+					is_coastal = yes
+					is_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_prioritize_battleships
+		cost = 5
+		x = -1
+		y = 1
+
+		relative_position_id = TUR_old_reliable_ways
+		prerequisite = {
+		focus = TUR_old_reliable_ways
+		}
+		available = {
+			NOT = {
+				has_war_with = GER
+			}
+		}
+			completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 2
+				category = bb_tech
+			}
+		}
+	}
+	focus = {
+		id = TUR_focus_on_cruisers
+		cost = 5
+		x = 1
+		y = 1
+
+		relative_position_id = TUR_old_reliable_ways
+		prerequisite = {
+		focus = TUR_old_reliable_ways
+		}
+		available = {
+			NOT = {
+				has_war_with = GER
+			}
+		}
+			completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 2
+				category = cl_tech
+				category = dd_tech
+			}
+		}
+	}
+	focus = {
+		id = TUR_turkish_carriers
+		cost = 5
+		x = -1
+		y = 1
+
+		relative_position_id = TUR_focus_on_cruisers
+		prerequisite = {
+		focus = TUR_prioritize_battleships
+		}
+		prerequisite = {
+		focus = TUR_focus_on_cruisers
+		}
+		available = {
+			NOT = {
+				has_war_with = GER
+			}
+		}
+			completion_reward = {
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = cv_tech
+			}
+		}
+	}
+	focus = {
+		id = TUR_utilize_new_naval_technologies
+		cost = 5
+		x = 2
+		y = 1
+
+		relative_position_id = TUR_invite_german_naval_mission
+		prerequisite = {
+		focus = TUR_invite_german_naval_mission
+		}
+		mutually_exclusive =
+		{
+			focus = TUR_old_reliable_ways
+		}
+		available = {
+			NOT = {
+				has_war_with = GER
+			}
+		}
+			completion_reward = {
+				navy_experience = 10
+
+			}
+	}
+	focus = {
+		id = TUR_underwater_warfare
+		cost = 5
+		x = -1
+		y = 1
+
+		relative_position_id = TUR_utilize_new_naval_technologies
+		prerequisite = {
+		focus = TUR_utilize_new_naval_technologies
+		}
+		available = {
+			NOT = {
+				has_war_with = GER
+			}
+		}
+			completion_reward = {
+				add_tech_bonus = {
+				bonus = 1.5
+				uses = 2
+				category = ss_tech
+			}
+		}
+	}
+	focus = {
+		id = TUR_battlecruiser_improvements
+		cost = 5
+		x = 1
+		y = 1
+
+		relative_position_id = TUR_utilize_new_naval_technologies
+		prerequisite = {
+		focus = TUR_utilize_new_naval_technologies
+		}
+		available = {
+			NOT = {
+				has_war_with = GER
+			}
+		}
+			completion_reward = {
+				add_tech_bonus = {
+				bonus = 1.5
+				uses = 2
+				category = bc_tech
+			}
+
+			
+		}
+	}
+	focus = {
+		id = TUR_navy_modernization
+		cost = 5
+		x = -1
+		y = 1
+
+		relative_position_id = TUR_battlecruiser_improvements
+		prerequisite = {
+		focus = TUR_underwater_warfare
+		}
+		prerequisite = {
+		focus = TUR_battlecruiser_improvements
+		}
+		available = {
+			NOT = {
+				has_war_with = GER
+			}
+		}
+		completion_reward = {
+			add_ideas = TUR_navy_modernization_idea
+		}
+	}
+}
+	
