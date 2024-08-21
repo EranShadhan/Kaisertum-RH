@@ -735,18 +735,66 @@ guiTypes = {
 			}
 		}
 
+#		iconType = {
+#			name = "minor_country_gold_1"
+#			quadTextureSprite ="GFX_country_selection_minor_gold"
+#			position = { x = 15 y = 333 }
+#			Orientation = "UPPER_LEFT"
+#			alwaystransparent = yes
+#		}
+
+#		iconType = {
+#			name = "minor_country_gold_2"
+#			quadTextureSprite ="GFX_country_selection_minor_gold"
+#			position = { x = 165 y = 333 }
+#			Orientation = "UPPER_LEFT"
+#			alwaystransparent = yes
+#		}
+
+#		iconType = {
+#			name = "minor_country_gold_3"
+#			quadTextureSprite ="GFX_country_selection_minor_gold"
+#			position = { x = 315 y = 333 }
+#			Orientation = "UPPER_LEFT"
+#			alwaystransparent = yes
+#		}
+
+#		iconType = {
+#			name = "minor_country_gold_4"
+#			quadTextureSprite ="GFX_country_selection_minor_gold"
+#			position = { x = 465 y = 333 }
+#			Orientation = "UPPER_LEFT"
+#			alwaystransparent = yes
+#		}
+
+#		iconType = {
+#			name = "minor_country_gold_5"
+#			quadTextureSprite ="GFX_country_selection_minor_gold"
+#			position = { x = 615 y = 333 }
+#			Orientation = "UPPER_LEFT"
+#			alwaystransparent = yes
+#		}
+
 		iconType = {
 			name = "minor_country_gold_6"
 			quadTextureSprite ="GFX_country_selection_minor_gold"
-			position = { x = 765 y = 330 }
+			position = { x = 765 y = 333 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
 
+#		iconType = {
+#			name = "minor_country_gold_7"
+#			quadTextureSprite ="GFX_country_selection_minor_gold"
+#			position = { x = 915 y = 333 }
+#			Orientation = "UPPER_LEFT"
+#			alwaystransparent = yes
+#		}
+
 		iconType = {
 			name = "minor_country_gold_8"
 			quadTextureSprite ="GFX_country_selection_minor_gold"
-			position = { x = 1065 y = 330 }
+			position = { x = 1065 y = 333 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
@@ -760,9 +808,23 @@ guiTypes = {
 		}
 
 		iconType = {
-			name = "country_difficult_1"
+			name = "country_difficult_minor_4"
 			spriteType ="GFX_missing_dlc_warning_sign"
 			position = { x = 480 y = 340 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType = {
+			name = "country_difficult_minor_6"
+			spriteType ="GFX_missing_dlc_warning_sign"
+			position = { x = 780 y = 340 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType = {
+			name = "country_difficult_minor_7"
+			spriteType ="GFX_missing_dlc_warning_sign"
+			position = { x = 930 y = 340 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -2035,7 +2097,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "date"
-					position = { x = -184 y = 65 }
+					position = { x = -184 y = 75 }
 					font = "hoi_24header"
 					borderSize = {x = 4 y = 4}
 					text = "Pikku Saippuakauppias Itkee!!"
@@ -2046,7 +2108,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "name"
-					position = { x = -184 y = 85 }
+					position = { x = -184 y = 112 }
 					font = "hoi_24header"
 					borderSize = {x = 4 y = 4}
 					text = "Pikku Saippuakauppias Itkee!!"
@@ -2058,7 +2120,7 @@ guiTypes = {
 
 				ButtonType = {
 					name = "scenario_button"
-					position = { x = -135 y = 115 }
+					position = { x = 99999999999999999999999999 y = 99999999999999999999999999 }
 					quadTextureSprite ="GFX_button_261x34"
 					buttonText = "FE_CHANGE_SCENARIO"
 					buttonFont = "hoi_20b"
