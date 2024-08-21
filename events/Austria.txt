@@ -237,12 +237,17 @@ country_event = {
 
 		POL = {
 			transfer_state = 88
+			transfer_state = 994
+			transfer_state = 993
+			transfer_state = 992
 			transfer_state = 72
 			transfer_state = 91
+			transfer_state = 991
 		}
 
 		UKR = {
 			transfer_state = 89
+			transfer_state = 990
 		}
 
 				
@@ -307,6 +312,7 @@ country_event = {
 
 		ROM = {
 			transfer_state = 80
+			transfer_state = 995
 		}
 
 		hidden_effect = {
