@@ -1,0 +1,27 @@
+state={
+	id=989
+	name="STATE_989"
+	resources={
+	}
+
+	history={
+		owner = YUG
+		
+		buildings = {
+			infrastructure = 4
+		}
+		victory_points = {
+			11581 15 
+		}
+		add_core_of = YUG
+
+	}
+
+	provinces={
+		11581
+	}
+	manpower=258024
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=8.000
+}

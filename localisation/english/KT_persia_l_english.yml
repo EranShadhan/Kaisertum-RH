@@ -19,6 +19,8 @@
  PER_go_german_desc:0 "German-Iranian Oil Company Treaty was forcefully signed by the Iranian regime to benefit the Germans for a very cheap. These treaties have to be redone to be more fair and less onesided."
  PER_socialist_gov:0 "A New Revolution"
  PER_socialist_gov_desc:0 ""
+ PER_world_revolution:0 "Commit to the Revolution"
+ PER_world_revolution_desc:0 ""
  PER_solidify_control_mesopotamia:0 "Solidify Control Over Mesopotamia"
  PER_solidify_control_mesopotamia_desc:0 ""
  PER_solidify_control_kurdistan:0 "Solidify Control Over Kurdistan"
@@ -84,3 +86,4 @@
  PER_german_persian_oil_company_tt:0 "Oil Concessions to the §Y[GER.GetName]§! in §Y[291.GetName]§!, §Y[413.GetName]§! and §Y[412.GetName]§!"
  PER_disloyal_military_tt:0 "§RIf stability drops below 30% a communist uprising will happen§!"
  PER_commie_revolution:0 "Communist revolution has begun"
+ international_com_alliance:0 "Third Socialist Internationale"

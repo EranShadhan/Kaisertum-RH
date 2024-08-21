@@ -133,6 +133,16 @@ bookmarks = {
 			focuses = {
 			}
 		}
+		"AFG"={
+			minor = yes
+			history = "AUS_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+				german_customs_union_member
+			}
+			focuses = {
+			}
+		}
 		"ROM"={
 			minor = yes
 			history = "ROM_NEW_DECADE_DESC"

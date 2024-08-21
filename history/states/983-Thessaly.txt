@@ -23,7 +23,7 @@ state={
 		add_core_of = GRE
 
 	}
-	manpower=387865
+	manpower=587865
 	state_category=town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

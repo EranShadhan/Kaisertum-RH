@@ -30,9 +30,26 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GRE/goal_GRE_navy2.dds"
 	}
 	SpriteType = {
+		name = "GFX_focus_GRE_air"
+		texturefile = "gfx/interface/goals/GRE/goal_GRE_air.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GRE_air2"
+		texturefile = "gfx/interface/goals/GRE/goal_GRE_air2.dds"
+	}
+	SpriteType = {
 		name = "GFX_focus_THE_MAN_THE_MYTH_THE_LEGEND_ONASSIS"
 		texturefile = "gfx/interface/goals/GRE/THE_MAN_THE_MYTH_THE_LEGEND_ONASSIS.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_GRE_air_academy"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_air_academy.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GRE_nukes"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_nukes.dds"
+	}
+	
 	#OTHER
 	SpriteType = {
 		name = "GFX_focus_fra_promises_war_victory_greatness"
@@ -48,11 +65,11 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_fra_resist_fascism"
-		texturefile = "gfx/interface/goals/FRA/focus_fra_resist_fascist_opression.dds
+		texturefile = "gfx/interface/goals/FRA/focus_fra_resist_fascist_opression.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_fra_strike_germany"
-		texturefile = "gfx/interface/goals/FRA/focus_fra_strike_germany.dds"
+		texturefile = "gfx/interface/goals/FRA/focus_attack_germany.dds"
 	}
 	
 	SpriteType = {

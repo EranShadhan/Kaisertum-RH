@@ -33,6 +33,547 @@ focus_tree = {
 	         air_experience = 125
 		    }
 		}
+		
+		focus = {
+		id = GRE_purchase_planes
+		icon = GFX_focus_SMB_purchase_aircraft
+        prerequisite = { focus = GRE_royal_hellenic_airforce }
+		relative_position_id = GRE_royal_hellenic_airforce
+		available = {
+		}
+		x = 1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	        	add_equipment_to_stockpile = {
+					type = large_plane_airframe
+					amount = 30
+					producer = SOV
+				}
+				add_equipment_to_stockpile = {
+					type = transport_plane_equipment
+					amount = 20
+					producer = FRA
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe
+					amount = 15
+					producer = ENG
+				}
+				add_equipment_to_stockpile = {
+					type = medium_plane_airframe
+					amount = 30
+					producer = GER
+				}
+				add_equipment_to_stockpile = {
+					type = large_plane_airframe
+					amount = 15
+					producer = GER
+				}
+		    }
+		}
+		focus = {
+		id = GRE_copy_designs
+		icon = GFX_focus_generic_copy_plane_designs
+        prerequisite = { focus = GRE_purchase_planes }
+		relative_position_id = GRE_purchase_planes
+		available = {
+		}
+		x = 1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	        	hidden_effect = {
+				every_other_country = {
+					limit = {
+						is_major = yes
+						NOT = { has_war_with = ROOT }
+						has_opinion = { target = GRE value > 75 }
+					}
+					ROOT = {
+						add_tech_bonus = {
+							name = SWE_foreign_designs
+							bonus = 0.45 
+							uses = 1
+							category = air_equipment 
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = GRE_foreign_designs_tt
+		    }
+		}
+		focus = {
+		id = GRE_up
+		icon = GFX_focus_generic_multi_role_aircraft
+        prerequisite = { focus = GRE_royal_hellenic_airforce }
+		relative_position_id = GRE_royal_hellenic_airforce
+		available = {
+		}
+		x = -1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	        
+		    }
+		}
+		focus = {
+		id = GRE_domestic_planes
+		icon = GFX_focus_generic_aircraft_production
+        prerequisite = { focus = GRE_up }
+		relative_position_id = GRE_up
+		available = {
+		}
+		x = -1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	        add_ideas = GRE_make_planes
+		    }
+		}
+		focus = {
+		id = GRE_airports
+		icon = GFX_focus_generic_air_bases
+        prerequisite = { focus = GRE_up focus = GRE_purchase_planes }
+		relative_position_id = GRE_up
+		available = {
+		}
+		x = 1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	        random_owned_controlled_state = {
+				prioritize = { 185 }
+				if = {
+					limit = { 
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = air_base
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+			random_owned_controlled_state = {	
+				prioritize = { 986 } 
+					if = {
+						limit = { 
+							is_controlled_by = ROOT
+						}
+						add_building_construction = {
+							type = air_base
+							level = 6
+							instant_build = yes
+						}
+					}
+				}
+			random_owned_controlled_state = {	
+				prioritize = { 182 }
+				if = {
+					limit = { 
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = air_base
+						level = 6
+						instant_build = yes
+					}
+				}
+			}
+			random_owned_controlled_state = {	
+				prioritize = { 341 }
+				if = {
+					limit = { 
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = air_base
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		    }
+		}
+		
+		
+		
+		
+	focus = {
+		id = GRE_assemble_a_new_greek_air_force
+		icon = GFX_focus_GRE_air2
+        prerequisite = { focus = GRE_domestic_planes }
+		relative_position_id = GRE_domestic_planes
+		available = {
+		}
+		x = 0
+		y = 1
+        mutually_exclusive = { focus = GRE_support_air_from_land }
+		cost = 6
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	        
+		    }
+		}
+	focus = {
+		id = GRE_dominate_the_skies
+		icon = GFX_focus_NORDIC_dem_selector_airforce
+        prerequisite = { focus = GRE_assemble_a_new_greek_air_force }
+		relative_position_id = GRE_assemble_a_new_greek_air_force
+		available = {
+		}
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	        add_doctrine_cost_reduction = {
+				name = GRE_protecting_our_skies
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+			
+			
+			add_tech_bonus = {
+				name = GRE_protecting_our_skies
+				bonus = 1.0
+				uses = 1
+				category = light_fighter
+			}
+		    }
+		}
+		focus = {
+		id = GRE_protecting_the_aegen
+		icon = GFX_goal_generic_air_naval_bomber
+        prerequisite = { focus = GRE_dominate_the_skies }
+		relative_position_id = GRE_dominate_the_skies
+		available = {
+		}
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	        add_doctrine_cost_reduction = {
+				name = GRE_defending_our_seas
+				cost_reduction = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+			add_tech_bonus = {
+				name = GRE_defending_our_seas
+				bonus = 1.5
+				uses = 1
+				category = naval_bomber
+			}
+		    }
+		}
+    	focus = {
+		id = GRE_heavier_bombs
+		icon = GFX_focus_CZE_military_aeronautical_institute
+        prerequisite = { focus = GRE_protecting_the_aegen }
+		relative_position_id = GRE_protecting_the_aegen
+		available = {
+		}
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	      add_ideas = GRE_bigger_bombs
+		    }
+		}
+focus = {
+		id = GRE_nuclear_bombs
+		icon = GFX_focus_GRE_nukes
+        prerequisite = { focus = GRE_navy_air_cooperation }
+		prerequisite = { focus = GRE_heavier_bombs focus = GRE_aircraft_advancements}
+		relative_position_id = GRE_heavier_bombs
+		available = {
+		}
+		x = 2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	     add_tech_bonus = {
+				name = POL_atomic_physics_institute
+				bonus = 1.5
+				uses = 2
+				ahead_reduction = 1
+				category = nuclear
+			}
+			add_ideas = GRE_nuclear_use
+		    }
+		}		
+		focus = {
+		id = GRE_support_air_from_land
+		icon = GFX_focus_generic_air_defense
+        prerequisite = { focus = GRE_copy_designs }
+		relative_position_id = GRE_copy_designs
+		mutually_exclusive = { focus = GRE_assemble_a_new_greek_air_force }
+		available = {
+		}
+		x = 0
+		y = 1
+
+		cost = 6
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	        random_owned_controlled_state = {	
+				prioritize = { 47 }
+				if = {
+					limit = { 
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		    random_owned_controlled_state = {	
+				prioritize = { 797 }
+				if = {
+					limit = { 
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			 random_owned_controlled_state = {	
+				prioritize = { 731 }
+				if = {
+					limit = { 
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		   }
+		}
+		focus = {
+		id = GRE_royal_airforce
+		icon = GFX_focus_NORDIC_mon_selector_airforce
+        prerequisite = { focus = GRE_support_air_from_land }
+		relative_position_id = GRE_support_air_from_land
+		available = {
+		}
+		x = 0
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	        
+		   }
+		}		
+		focus = {
+		id = GRE_the_academy
+		icon = GFX_focus_GRE_air_academy
+        prerequisite = { focus = GRE_royal_airforce }
+		relative_position_id = GRE_royal_airforce
+		available = {
+		}
+		x = 0
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	        add_ideas = GRE_hellenic_aiforce_academy
+		   }
+		}
+		focus = {
+		id = GRE_aircraft_advancements
+		icon = GFX_focus_generic_jet_planes
+        prerequisite = { focus = GRE_the_academy }
+		relative_position_id = GRE_the_academy
+		available = {
+		}
+		x = 0
+		y = 1
+
+		cost = 10
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+        	
+		add_tech_bonus = {
+			name = NORDIC_jet_engines
+			bonus = 1.5
+			uses = 2
+			category = air_equipment 
+		}
+		  add_tech_bonus = {
+			name = NORDIC_jet_engines
+			bonus = 1
+			ahead_reduction = 1
+			uses = 1
+			category = jet_technology 
+		}
+		   }
+		}
+		focus = {
+		id = GRE_army_air_cooperation
+		icon = GFX_focus_generic_tank_air_support
+        prerequisite = { focus = GRE_support_air_from_land focus = GRE_assemble_a_new_greek_air_force }
+		relative_position_id = GRE_support_air_from_land
+		available = {
+		}
+		x = -2
+		y = 1
+
+		cost = 10
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	       add_equipment_to_stockpile = { 
+				type = anti_air_equipment
+				amount = 250
+			}
+			add_ideas = GRE_bomb_raids
+		   }
+		}
+		focus = {
+		id = GRE_paratroopers
+		icon = GFX_focus_generic_paratrooper
+        prerequisite = { focus = GRE_army_air_cooperation }
+		relative_position_id = GRE_army_air_cooperation
+		available = {
+		}
+		x = 0
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = cat_paratroopers_doctrine
+			}
+			
+				add_doctrine_cost_reduction = {
+					cost_reduction = 1
+					uses = 2
+					category = para_tech
+				}
+			}		
+		}
+		focus = {
+		id = GRE_navy_air_cooperation
+		icon = GFX_goal_generic_navy_carrier
+        prerequisite = { focus = GRE_paratroopers }
+		relative_position_id = GRE_paratroopers
+		available = {
+		}
+		x = 0
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		add_tech_bonus = {
+	 		name = NORDIC_carrier_effort
+	 		bonus = 1
+	 		uses = 2
+	 		category = cv_tech
+	 	}
+		}
+       		
+		}
+		
+		
+		
+		
 	focus = {
 		id = GRE_royal_hellenic_navy
 		icon = GFX_focus_GRE_navy
@@ -61,7 +602,7 @@ focus_tree = {
 		prerequisite = { focus = GRE_royal_hellenic_navy  }
 		available = {
 		}
-		x = -2
+		x = 2
 		y = 1
 		relative_position_id = GRE_royal_hellenic_navy
 
@@ -75,9 +616,11 @@ focus_tree = {
 	         add_ideas = GRE_ancient_talents_in_navy
 		    }
 		}	
+	
 		focus = {
-		id = GRE_staying_together
-		icon = GFX_focus_generic_cruiser_submarines
+		id = GRE_hellenic_royal_navy
+		icon = GFX_focus_NORDIC_mon_navy
+
 
 		prerequisite = { focus = GRE_honor_our_old_ships  }
 		available = {
@@ -85,7 +628,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GRE_honor_our_old_ships
-
+          
 		cost = 5
 		ai_will_do = {
 			base = 0
@@ -93,19 +636,19 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	         add_ideas = GRE_fight_together
+	         add_ideas = GRE_fund_ship_research
 		    }
-		}
+		}	
 	focus = {
 		id = GRE_proffesional_sailors
 		icon = GFX_focus_generic_naval_discipline
 
-		prerequisite = { focus = GRE_staying_together  }
+		prerequisite = { focus = GRE_hellenic_royal_navy  }
 		available = {
 		}
 		x = 0
 		y = 1
-		relative_position_id = GRE_staying_together
+		relative_position_id = GRE_hellenic_royal_navy
 
 		cost = 5
 		ai_will_do = {
@@ -182,14 +725,14 @@ focus_tree = {
 		
     focus = {
 		id = GRE_new_and_strong
-		icon = GFX_focus_generic_refit_civilian_ships
+		icon = GFX_focus_GRE_navy2
 
 
 		mutually_exclusive = { focus = GRE_honor_our_old_ships }
 		prerequisite = { focus = GRE_royal_hellenic_navy  }
 		available = {
 		}
-		x = 2
+		x = -2
 		y = 1
 		relative_position_id = GRE_royal_hellenic_navy
           
@@ -203,10 +746,9 @@ focus_tree = {
 	         add_ideas = GRE_reform_the_navy
 		    }
 		}	
-       focus = {
-		id = GRE_hellenic_royal_navy
-		icon = GFX_focus_NORDIC_mon_navy
-
+       	focus = {
+		id = GRE_staying_together
+		icon = GFX_focus_generic_cruiser_submarines
 
 		prerequisite = { focus = GRE_new_and_strong  }
 		available = {
@@ -214,7 +756,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GRE_new_and_strong
-          
+
 		cost = 5
 		ai_will_do = {
 			base = 0
@@ -222,21 +764,21 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	         add_ideas = GRE_fund_ship_research
+	         add_ideas = GRE_fight_together
 		    }
-		}	
+		}
       focus = {
 		id = GRE_expand_athenian_ship_building
 		icon = GFX_focus_NORDIC_dem_capstone_navy
 
 
 		
-		prerequisite = { focus = GRE_hellenic_royal_navy  }
+		prerequisite = { focus = GRE_staying_together  }
 		available = {
 		}
 		x = 0
 		y = 1
-		relative_position_id = GRE_hellenic_royal_navy
+		relative_position_id = GRE_staying_together
           
 		cost = 5
 		ai_will_do = {
@@ -257,7 +799,7 @@ focus_tree = {
 		}	
       focus = {
 		id = GRE_viable_navy
-		icon = GFX_focus_POL_develop_polish_shipbuilding
+		icon = GFX_focus_generic_refit_civilian_ships
 
 
 		
@@ -331,7 +873,7 @@ focus_tree = {
 		prerequisite = { focus = GRE_honor_our_old_ships focus = GRE_new_and_strong  }
 		available = {
 		}
-		x = 2
+		x = -2
 		y = 1
 		relative_position_id = GRE_honor_our_old_ships
 
@@ -392,7 +934,7 @@ focus = {
 		prerequisite = { focus = GRE_steady_as_she_goes  }
 		available = {
 		}
-		x = -1
+		x = 1
 		y = 2
 		relative_position_id = GRE_a_fleet_fit_for_the_med
 
@@ -425,7 +967,7 @@ focus = {
 		prerequisite = { focus = GRE_hellenic_shipyard  }
 		available = {
 		}
-		x = 1
+		x = -1
 		y = 2
 		relative_position_id = GRE_a_fleet_fit_for_the_med
 
@@ -445,7 +987,7 @@ focus = {
 		prerequisite = { focus = GRE_disrupting_the_major_powers focus = GRE_cheap_subs }
 		available = {
 		}
-		x = -1
+		x = 1
 		y = 1
 		relative_position_id = GRE_cheap_subs
 
@@ -891,4 +1433,357 @@ focus = {
 	         add_ideas = GRE_stronk
 		    }
 		}
+		
+		
+				focus = {
+		id = GRE_prepare_for_the_future
+		icon = GRE_
+       
+		available = {
+		}
+		x = 35
+		y = 0
+		cost = 10
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	         47 = {
+			 add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            add_building_construction = {
+			type = 	dockyard
+			level = 1
+			instant_build = yes
+					}
+				}
+			}
+		}
+		focus = { 
+		id = GRE_first_five_year_plan
+		icon = GRE_
+        prerequisite = { focus = GRE_prepare_for_the_future}
+		available = {
+		}
+		x = 4
+		y = 1
+		relative_position_id = GRE_prepare_for_the_future
+		cost = 10
+			ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	         production_speed_buildings_factor = 20 
+		    }
+		}
+		focus = { 
+		id = GRE_land_reform
+		icon = GRE_
+        prerequisite = { focus = GRE_prepare_for_the_future}
+		available = {
+		}
+		x = 2
+		y = 1
+		relative_position_id = GRE_prepare_for_the_future
+		cost = 10
+			ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	         
+		    }
+		}
+		focus = { 
+		id = GRE_remilitarize_the_economy
+		icon = GRE_
+        prerequisite = { focus = GRE_prepare_for_the_future}
+		available = {
+		}
+		x = 0
+		y = 1
+		relative_position_id = GRE_prepare_for_the_future
+		cost = 10
+			ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	         
+		    }
+		}
+		focus = { 
+		id = GRE_industrial_improvements
+		icon = GRE_
+        prerequisite = { focus = GRE_prepare_for_the_future}
+		available = {
+		}
+		x = -2
+		y = 1
+		relative_position_id = GRE_prepare_for_the_future
+		cost = 10
+			ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	         
+		    }
+		}
+		focus = { 
+		id = question_the_infastructure
+		icon = GRE_
+        prerequisite = { focus = GRE_industrial_improvements }
+		available = {
+		}
+		x = 0
+		y = 1
+		relative_position_id = GRE_industrial_improvements
+		cost = 10
+			ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	         
+		    }
+		}
+		focus = { 
+		id = GRE_develop_epirus
+		icon = GRE_
+        prerequisite = { focus = question_the_infastructure }
+		
+		x = 0
+		y = 1
+		relative_position_id = question_the_infastructure
+		cost = 10
+			ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	         
+		    }
+		}
+		focus = { 
+		id = GRE_increase_greek_productivity
+		icon = GRE_
+        prerequisite = { focus =GRE_develop_epirus }
+		available = {
+		}
+		x = 0
+		y = 1
+		relative_position_id =GRE_develop_epirus
+		cost = 10
+			ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	         
+		    }
+		}
+		focus = { 
+		id = GRE_Militarize_consantinople
+		icon = GRE_
+		Prerequisite = { focus = GRE_remilitarize_the_economy }
+		available = {
+		}
+		x = 0
+		y = 1
+		relative_position_id = GRE_remilitarize_the_economy
+		cost = 10
+			ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	         
+		    }
+		}
+		focus = { 
+		id = GRE_forced_militerization
+		icon = GRE_
+       Prerequisite = { focus = GRE_Militarize_consantinople }
+		available = {
+		}
+		x = 0
+		y = 1
+		relative_position_id = GRE_Militarize_consantinople
+		cost = 10
+			ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	         
+		    }
+		}
+		focus = { 
+		id = GRE_Wartime_industries
+		Icon = GRE_
+		Prerequisite = { focus = GRE_forced_militerization }
+		available = {
+		}
+		x = 0
+		y = 1
+		relative_position_id = GRE_forced_militerization
+		cost = 10
+					ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	         
+		    }
+		}
+		focus = { 
+		id = GRE_diverse_markets
+		icon = GRE_
+        prerequisite = { focus = GRE_land_reform }
+		available = {
+		}
+		x = 0
+		y = 1
+		relative_position_id = GRE_land_reform
+		cost = 10
+			ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	         
+		    }
+		}
+		focus = { 
+		id = GRE_import_foreign_tech
+		icon = GRE_
+        prerequisite = { focus = GRE_diverse_markets }
+		available = {
+		}
+		x = 0
+		y = 1
+		relative_position_id = GRE_diverse_markets
+		cost = 10
+			ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	         
+		    }
+		}
+		focus = { 
+		id = GRE_build_university_of_athens
+		prerequisite = { focus = GRE_import_foreign_tech}
+		available = {
+		}
+		x = 0
+		y = 1
+		relative_position_id = GRE_import_foreign_tech
+		cost = 10
+			ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	       
+			}
+		}
+		focus = { 
+		id = GRE_modern_construction_technique
+		prerequisite = { focus = GRE_first_five_year_plan}
+		available = {
+		}
+		x = 0
+		y = 1
+		relative_position_id = GRE_first_five_year_plan
+		cost = 10
+			ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	       
+			}
+		}
+		focus = { 
+		id = GRE_tax_incentives
+		prerequisite = { focus = GRE_modern_construction_technique}
+		available = {
+		}
+		x = 0
+		y = 1
+		relative_position_id = GRE_modern_construction_technique
+		cost = 10
+			ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	       
+			}
+		}
+		focus = { 
+		id = Piraeus_city_of_wealth
+		prerequisite = { focus = GRE_tax_incentives}
+		available = {
+		}
+		x = 0
+		y = 1
+		relative_position_id = GRE_tax_incentives
+		cost = 10
+			ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	       
+			}
+		}
+		focus = { 
+		id = the_greek_golden_age
+		prerequisite = {focus = Piraeus_city_of_wealth}
+		prerequisite = {focus = GRE_build_university_of_athens}
+		prerequisite = {focus = GRE_Wartime_industries }
+		prerequisite = {focus = GRE_increase_greek_productivity }
+		available = {
+		}
+		x = -3
+		y = 1
+		relative_position_id = Piraeus_city_of_wealth
+		cost = 10
+			ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	       
+			}
+		}
+	}
 }

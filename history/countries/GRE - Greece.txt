@@ -1,5 +1,8 @@
 ﻿capital = 47
-
+set_power_balance = {
+		id = GRE_power_balance
+		set_default = yes  # whether or not to reset the power balance to the initial value, default = no
+	}
 oob = "GRE_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -35,7 +38,7 @@ days = 366
 }
 add_ideas = {
 	export_focus
-	limited_conscription
+	for_hellas
 	ifc_economy
 	GRE_megali_idea_partial_restoration
 	GRE_eee_enemy
@@ -75,6 +78,26 @@ if = {
 		basic_light_tank_chassis = 1
 		armor_tech_1 = 1
 		engine_tech_1 = 1
+	}
+	create_equipment_variant = { 
+		name = "Vouvali-G1"
+		type = light_tank_chassis_0
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_heavy_machine_gun
+			turret_type_slot = tank_light_three_man_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = secondary_turret_small_cannon
+			special_type_slot_2 = wet_ammo_storage
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 3
+		}
+		obsolete = no
+		icon = "GFX_GRE_gwtank_medium"
 	}
 }
 if = {
@@ -129,12 +152,14 @@ if = {
 	}
 }
 		set_country_flag = GRE_factions_unlocked
-
-		set_variable = { var = GRE_debt_to_the_ifc_britain_var value = 10 }
+        set_variable = { var = GRE_debt_to_the_ifc_britain_var value = 10 }
 		set_variable = { var = GRE_debt_to_the_ifc_france_var value = 10 }
 		set_variable = { var = GRE_debt_to_the_ifc_italy_var value = 10 }
+		set_variable = { var = GRE_debt_to_the_ifc_russia_var value = 10 }
+		set_variable = { var = GRE_debt_to_the_ifc_germany_var value = 10 }
+		set_variable = { var = GRE_debt_to_the_ifc_austriahungary_var value = 10 }
 		set_variable = { var = GRE_debt_to_the_ifc_paid_var value = 0 }
-
+#special_forces_cap_flat = 100
 		add_opinion_modifier = { 
 			target = GER
 			modifier = GRE_strong_trading_ties

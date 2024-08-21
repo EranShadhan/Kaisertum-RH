@@ -18,5 +18,17 @@ characters = {
 			id = -1
 		}
 	}
-
+	FCF_Gabriele_Dannunzio = {
+		name = FCF_Gabriele_Dannunzio
+		portraits = {
+			civilian = {
+				large = GFX_FCF_gabriele_dannunzio
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			expire = "1953.3.1.1"
+			id = -1
+		}
+	}
 }

@@ -296,6 +296,8 @@ ideas = {
 
 		PER_tourism_baghdad = {
 
+			picture = generic_economic_increase
+
 			allowed = {
 				always = no
 			}

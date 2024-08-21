@@ -16,6 +16,10 @@ GPI = {
 	color = rgb { 96  96  96 }
 	color_ui = rgb { 96  96  96 }
 }
+FCF = {
+	color = rgb { 217  176  65 }
+	color_ui = rgb { 217  176  65 }
+}
 GER = {
 	color = rgb { 82 94 68 }
 	color_ui = rgb { 82 94 68 }

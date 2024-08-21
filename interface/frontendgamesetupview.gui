@@ -698,7 +698,15 @@ guiTypes = {
 		}
 
 		iconType = {
-			name = "minor_country_gold_1"
+			name = "minor_country_gold_6"
+			quadTextureSprite ="GFX_country_selection_minor_gold"
+			position = { x = 765 y = 330 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "minor_country_gold_8"
 			quadTextureSprite ="GFX_country_selection_minor_gold"
 			position = { x = 1065 y = 330 }
 			Orientation = "UPPER_LEFT"
