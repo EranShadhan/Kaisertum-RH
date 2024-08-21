@@ -176,6 +176,7 @@ country_event = {
 					target = HUN
 					type = puppet_wargoal_focus
 				}
+			
 			}
 			ALB = {
 				declare_war_on = {
@@ -185,6 +186,7 @@ country_event = {
 			}
 			GRE = {
 				add_to_faction = ROM
+			
 			}
 			CZE = {
 				transfer_state = 9
@@ -347,11 +349,18 @@ country_event = {
 			ROM = {
 				if = {
 					limit = { HUN = { is_ai = yes } }
-					add_ideas = against_hungary
+					add_timed_idea = { idea = against_hungary days = 120 }
 				}
 				declare_war_on = {
 					target = HUN
 					type = puppet_wargoal_focus
+				}
+					hidden_effect = {
+				add_ai_strategy = {
+                    type = alliance
+                    id = GRE
+                    value = 200
+                }
 				}
 			}
 			ALB = {
@@ -363,9 +372,16 @@ country_event = {
 			GRE = {
 				if = {
 					limit = { HUN = { is_ai = yes } }
-					add_ideas = against_hungary
+						add_timed_idea = { idea = against_hungary days = 120 }
 				}
 				add_to_faction = ROM
+					hidden_effect = {
+				add_ai_strategy = {
+                    type = alliance
+                    id = ROM
+                    value = 200
+                }
+				}
 			}
 		}
 	}
