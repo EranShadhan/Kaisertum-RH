@@ -21,7 +21,7 @@ state = {
 		add_core_of = YUG
 	}
 	provinces = {	
-		3943 3974 984 11901 6611 591 3601
+		3943 3974 984 11901 6611 591
 	}
 
 	local_supplies = 0.0 
