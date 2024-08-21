@@ -421,7 +421,7 @@ focus = {
 		}
 		focus = {
 		id = GRE_invite_onassis
-		#icon = GFX_focus_generic_midget_submarines
+		icon = GFX_focus_THE_MAN_THE_MYTH_THE_LEGEND_ONASSIS
 		prerequisite = { focus = GRE_disrupting_the_major_powers focus = GRE_cheap_subs }
 		available = {
 		}
