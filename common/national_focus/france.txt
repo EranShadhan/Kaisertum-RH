@@ -53,7 +53,7 @@
 		prerequisite = { focus = FRA_resist_fascist_opression }
 		mutually_exclusive = { }
 
-		cost = 5
+		cost = 8
 			ai_will_do = {
 			factor = 1
 		}
@@ -79,7 +79,7 @@
 		prerequisite = { focus = FRA_preperations_for_worst }
 		mutually_exclusive = { }
 
-		cost = 2 
+		cost = 3 
 			ai_will_do = {
 			factor = 1
 		}
@@ -94,6 +94,61 @@
 				elections_allowed = no
 				election_frequency = 48
 			}
+		}
+	}
+	focus = {
+		id = FRA_establish_sub_africa
+		icon = GFX_focus_fra_communist_coup
+		x = -2
+		y = 1
+		
+		relative_position_id = FRA_communist_coup
+		prerequisite = { focus = FRA_communist_coup }
+		mutually_exclusive = { }
+
+		cost = 2 
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			VOL = {
+				transfer_state = 272
+				add_state_core = 272
+				transfer_state = 780
+				add_state_core = 780
+				transfer_state = 782
+				add_state_core = 782
+				transfer_state = 556
+				add_state_core = 556
+				transfer_state = 899
+				add_state_core = 899
+				transfer_state = 786
+				add_state_core = 786
+				transfer_state = 274
+				add_state_core = 274
+				transfer_state = 898
+				add_state_core = 898
+				transfer_state = 778
+				add_state_core = 778
+				transfer_state = 781
+				add_state_core = 781
+				transfer_state = 515
+				add_state_core = 515
+				transfer_state = 775
+				add_state_core = 775
+				transfer_state = 557
+				add_state_core = 557
+				transfer_state = 779
+				add_state_core = 779
+				transfer_state = 776
+				add_state_core = 776
+			}
+			puppet = VOL
 		}
 	}
 	focus = {
