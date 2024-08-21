@@ -33,6 +33,26 @@ focus_tree = {
 	         air_experience = 125
 		    }
 		}
+		focus = {
+		id = GRE_assemble_the_greek_air_force
+		icon = GFX_focus_GRE_air
+        prerequisite = { focus = GRE_royal_hellenic_airforce }
+		relative_position_id = GRE_royal_hellenic_airforce
+		available = {
+		}
+		x = 2
+		y = 1
+
+		cost = 6
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	         air_experience = 125
+		    }
+		}
 	focus = {
 		id = GRE_royal_hellenic_navy
 		icon = GFX_focus_GRE_navy

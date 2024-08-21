@@ -26,6 +26,9 @@
 			    check_variable = { var = GRE_debt_to_the_ifc_britain_var value = 0 compare = equals }
 				check_variable = { var = GRE_debt_to_the_ifc_france_var value = 0 compare = equals }
 				check_variable = { var = GRE_debt_to_the_ifc_italy_var value = 0 compare = equals }
+				check_variable = { var = GRE_debt_to_the_ifc_russia_var value = 0 compare = equals }
+				check_variable = { var = GRE_debt_to_the_ifc_germany_var value = 0 compare = equals }
+				check_variable = { var = GRE_debt_to_the_ifc_austriahungary_var value = 0 compare = equals }
 			}
 
 			cancel_if_invalid = no

@@ -1,5 +1,8 @@
 ﻿capital = 47
-
+set_power_balance = {
+		id = GRE_power_balance
+		set_default = yes  # whether or not to reset the power balance to the initial value, default = no
+	}
 oob = "GRE_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -129,10 +132,12 @@ if = {
 	}
 }
 		set_country_flag = GRE_factions_unlocked
-
-		set_variable = { var = GRE_debt_to_the_ifc_britain_var value = 10 }
+        set_variable = { var = GRE_debt_to_the_ifc_britain_var value = 10 }
 		set_variable = { var = GRE_debt_to_the_ifc_france_var value = 10 }
 		set_variable = { var = GRE_debt_to_the_ifc_italy_var value = 10 }
+		set_variable = { var = GRE_debt_to_the_ifc_russia_var value = 10 }
+		set_variable = { var = GRE_debt_to_the_ifc_germany_var value = 10 }
+		set_variable = { var = GRE_debt_to_the_ifc_austriahungary_var value = 10 }
 		set_variable = { var = GRE_debt_to_the_ifc_paid_var value = 0 }
 
 		add_opinion_modifier = { 

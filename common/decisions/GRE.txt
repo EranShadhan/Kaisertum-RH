@@ -1,0 +1,421 @@
+GRE_pay_back_debt_to_the_ifc_category2 = { 
+
+	GRE_small_installment_payment_ENG = {
+
+		icon = hol_attract_foreign_investors 
+
+		allowed = { 
+			original_tag = GRE
+		}
+
+		available = {
+			NOT = {
+				OR = {
+					has_country_flag = GRE_completely_debt_free
+					has_country_flag = GRE_defaulted_on_debt_flag
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				tag = ENG
+			}
+		}
+
+		days_remove = 60
+
+		cost = 25
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 10
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 5
+				date < 1938.01.01
+			}
+			modifier = {
+				factor = 15
+				date > 1938.01.01
+				NOT = { 
+					ENG = { has_government = communism }
+				}
+			}
+			modifier = {
+				factor = 0
+				ENG = { has_completed_focus = ENG_concessions_to_the_trade_unions }
+			}
+		}
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			add_ideas = GRE_paying_off_debt_small
+			hidden_effect = { 
+				set_country_flag = { flag = GRE_small_installment_payment_flag value = 1 days = 60 }
+			}
+		}
+
+		remove_effect = {
+			remove_ideas = GRE_paying_off_debt_small
+			FROM = { add_political_power = 25 }
+			GRE_small_payment_to_british_debt_effect = yes
+		}
+	}
+	GRE_small_installment_payment_FRA = {
+
+		icon = hol_attract_foreign_investors 
+
+		allowed = { 
+			original_tag = GRE
+		}
+
+		available = {
+			NOT = {
+				OR = {
+					has_country_flag = GRE_completely_debt_free
+					has_country_flag = GRE_defaulted_on_debt_flag
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				tag = FRA
+			}
+		}
+
+		days_remove = 60
+
+		cost = 25
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 5
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1938.01.01
+				date < 1942.01.01
+			}
+			modifier = {
+				factor = 0
+				date > 1942.01.01
+			}
+			modifier = {
+				factor = 0
+				FRA = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			add_ideas = GRE_paying_off_debt_small
+			hidden_effect = { 
+				set_country_flag = { flag = GRE_small_installment_payment_flag value = 1 days = 60 }
+			}
+		}
+
+		remove_effect = {
+			remove_ideas = GRE_paying_off_debt_small
+			FROM = { add_political_power = 25 }
+			GRE_small_payment_to_french_debt_effect = yes
+		}
+	}
+	GRE_small_installment_payment_ITA = {
+
+		icon = hol_attract_foreign_investors 
+
+		allowed = { 
+			original_tag = GRE
+		}
+
+		available = {
+			NOT = {
+				OR = {
+					has_country_flag = GRE_completely_debt_free
+					has_country_flag = GRE_defaulted_on_debt_flag
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				tag = ITA
+			}
+		}
+
+		days_remove = 60
+
+		cost = 25
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1938.01.01
+				date < 1940.01.01
+			}
+			modifier = {
+				factor = 0
+				date > 1940.01.01
+			}
+			modifier = {
+				factor = 0
+				ITA = { 
+					OR = { 
+						has_completed_focus = ITA_war_with_greece
+						has_completed_focus = ITA_befriend_turkey
+					}
+				}
+			}
+		}
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			add_ideas = GRE_paying_off_debt_small
+			hidden_effect = { 
+				set_country_flag = { flag = GRE_small_installment_payment_flag value = 1 days = 60 }
+			}
+		}
+
+		remove_effect = {
+			remove_ideas = GRE_paying_off_debt_small
+			FROM = { add_political_power = 25 }
+			GRE_small_payment_to_italians_debt_effect = yes
+		}
+	}
+	GRE_large_installment_payment_ENG = {
+
+		icon = gre_investment_decisions
+
+		allowed = { 
+			original_tag = GRE
+		}
+
+		available = {
+			NOT = {
+				OR = {
+					has_country_flag = GRE_completely_debt_free
+					has_country_flag = GRE_defaulted_on_debt_flag
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				tag = ENG
+			}
+		}
+
+		days_remove = 30
+
+		cost = 50
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 5
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1938.01.01
+				NOT = { 
+					ENG = { has_government = communism }
+				}
+			}
+			modifier = {
+				factor = 0
+				date < 1938.01.01
+			}
+			modifier = {
+				factor = 0
+				ENG = { has_completed_focus = ENG_concessions_to_the_trade_unions }
+			}
+		}
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			add_ideas = GRE_paying_off_debt_large
+			hidden_effect = { 
+				set_country_flag = { flag = GRE_large_installment_payment_flag value = 1 days = 30 }
+			}
+		}
+
+		remove_effect = {
+			FROM = { add_political_power = 50 }
+			remove_ideas = GRE_paying_off_debt_large
+			GRE_large_payment_to_british_debt_effect = yes
+		}
+	}
+	
+	GRE_large_installment_payment_FRA = {
+
+		icon = gre_investment_decisions
+
+		allowed = { 
+			original_tag = GRE
+		}
+
+		available = {
+			NOT = {
+				OR = {
+					has_country_flag = GRE_completely_debt_free
+					has_country_flag = GRE_defaulted_on_debt_flag
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				tag = FRA
+			}
+		}
+
+		days_remove = 30
+
+		cost = 50
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 10
+				date > 1938.01.01
+				date < 1942.01.01
+			}
+			modifier = {
+				factor = 0
+				date < 1938.01.01
+			}
+			modifier = {
+				factor = 0
+				FRA = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+		
+		}
+
+		complete_effect = {
+			add_ideas = GRE_paying_off_debt_large
+			hidden_effect = { 
+				set_country_flag = { flag = GRE_large_installment_payment_flag value = 1 days = 30 }
+			}
+		}
+
+		remove_effect = {
+			FROM = { add_political_power = 50 }
+			remove_ideas = GRE_paying_off_debt_large
+			GRE_large_payment_to_french_debt_effect = yes
+		}
+	}
+
+	GRE_large_installment_payment_ITA = {
+
+		icon = gre_investment_decisions
+
+		allowed = { 
+			original_tag = GRE
+		}
+
+		available = {
+			NOT = {
+				OR = {
+					has_country_flag = GRE_completely_debt_free
+					has_country_flag = GRE_defaulted_on_debt_flag
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				tag = ITA
+			}
+		}
+
+		days_remove = 30
+
+		cost = 50
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 5
+				date > 1938.01.01
+				date < 1940.01.01
+			}
+			modifier = {
+				factor = 0
+				date > 1940.01.01
+			}
+			modifier = {
+				factor = 0
+				ITA = { 
+					OR = { 
+						has_completed_focus = ITA_war_with_greece
+						has_completed_focus = ITA_befriend_turkey
+					}
+				}
+			}
+		}
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			add_ideas = GRE_paying_off_debt_large
+			hidden_effect = { 
+				set_country_flag = { flag = GRE_large_installment_payment_flag value = 1 days = 30 }
+			}
+		}
+
+		remove_effect = {
+			FROM = { add_political_power = 50 }
+			remove_ideas = GRE_paying_off_debt_large
+			GRE_large_payment_to_italians_debt_effect = yes
+		}
+	}
+}
