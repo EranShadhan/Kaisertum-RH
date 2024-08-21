@@ -15,4 +15,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/gold_icon.dds"
 	}
 
+	spriteType = {
+		name = "GFX_book_button"
+		texturefile = "gfx/interface/book_button.dds"
+	}
+
 }

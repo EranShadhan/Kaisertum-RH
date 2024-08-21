@@ -1,0 +1,23 @@
+state={
+	id=993
+	name="STATE_993"
+
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = AUS
+		add_claim_by = POL
+
+	}
+
+	provinces={
+		417 466 3410 
+	}
+	manpower=168675
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

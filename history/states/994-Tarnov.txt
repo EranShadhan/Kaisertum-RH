@@ -1,29 +1,29 @@
-
 state={
-	id=89
-	name="STATE_89"
+	id=994
+	name="STATE_994"
 
 	history={
-		victory_points = {
-			11411 1 
-		}
 		owner = AUS
+		victory_points = {
+			442 5
+		}
 		buildings = {
 			infrastructure = 3
-			air_base = 3
+			industrial_complex = 1
+			air_base = 1
 
 		}
 		add_core_of = AUS
-		add_claim_by = UKR
 		add_claim_by = POL
 
 	}
 
+
 	provinces={
-		3743 9425 11411 11550 
+		442 6499 6522 9412 11398 11413 11507 
 	}
-	manpower=1460801
+	manpower=2780488
+	state_category=city
 	buildings_max_level_factor=1.000
-	state_category=town
 	local_supplies=0.000
 }

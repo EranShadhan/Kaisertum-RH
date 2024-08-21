@@ -1,15 +1,15 @@
-
 state={
-	id=73
-	name="STATE_73"
+	id=996
+	name="STATE_996"
 
 	history={
 		victory_points = {
-			3548 1 
+			11691 1 
 		}
 		owner = HUN
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 1
 
 		}
 		add_core_of = SLO
@@ -19,10 +19,10 @@ state={
 	}
 
 	provinces={
-		3548 6571 9563 11536 
+		11691 
 	}
-	manpower=854300
-	buildings_max_level_factor=1.000
+	manpower=26675
 	state_category=rural
+	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

@@ -1,3 +1,4 @@
+
 state={
 	id=88
 	name="STATE_88"
@@ -9,19 +10,13 @@ state={
 	history={
 		owner = AUS
 		victory_points = {
-			9427 20 
-		}
-		victory_points = {
-			442 3 
-		}
-		victory_points = {
-			9494 1
+			9427 25
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 4
 			arms_factory = 1
 			industrial_complex = 3
-			air_base = 4
+			air_base = 2
 
 		}
 		add_core_of = AUS
@@ -30,11 +25,10 @@ state={
 	}
 
 	provinces={
-		417 442 466 3410 3434 6499 6522 9412 9427 9494 11398 11413 11507 13205 
+		9427 13205 
 	}
-	manpower=3692800
+	manpower=519300
 	buildings_max_level_factor=1.000
-	state_category=large_city
-
-	local_supplies=12.0 
+	state_category=city
+	local_supplies=12.000
 }
