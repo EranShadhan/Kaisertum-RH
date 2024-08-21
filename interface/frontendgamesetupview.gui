@@ -612,8 +612,46 @@ guiTypes = {
 			textureFile = ""
 			font = "hoi_24header"
 			borderSize = {x = 0 y = 0}
-			text = "FE_SELECT_COUNTRY_KT"
+			text = "FE_SELECT_COUNTRY"
 			maxWidth = 390
+			maxHeight = 30
+			format = centre
+		}
+
+		iconType = {
+			name = "country_gold_0"
+			spriteType ="GFX_gold_icon"
+			position = { x = 95 y = 12 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "title_gold"
+			position = { x = 115 y = 12 }
+			textureFile = ""
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "FE_SELECT_COUNTRY_GOLD"
+			maxWidth = 166
+			maxHeight = 30
+			format = centre
+		}
+
+		iconType = {
+			name = "country_difficult_0"
+			spriteType ="GFX_missing_dlc_warning_sign"
+			position = { x = 930 y = 12 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "title_diff"
+			position = { x = 960 y = 12 }
+			textureFile = ""
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "FE_SELECT_COUNTRY_DIFF"
+			maxWidth = 166
 			maxHeight = 30
 			format = centre
 		}
@@ -719,6 +757,13 @@ guiTypes = {
 			position = { x = 15 y = 45 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "country_difficult_1"
+			spriteType ="GFX_missing_dlc_warning_sign"
+			position = { x = 480 y = 340 }
+			Orientation = "UPPER_LEFT"
 		}
 
 		iconType = {

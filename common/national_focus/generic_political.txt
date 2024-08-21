@@ -489,6 +489,42 @@ shared_focus = {
 }
 
 shared_focus = {
+	id = centralization
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { focus = deterrence }
+	x = 0
+	y = 1
+	relative_position_id = deterrence
+	cost = 10
+	
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_ideas = centralization_focus
+	}
+}
+
+shared_focus = {
+	id = national_identity
+	icon = GFX_goal_anschluss
+	prerequisite = { focus = centralization }
+	x = 0
+	y = 1
+	relative_position_id = centralization
+	cost = 10
+	
+	search_filters = { FOCUS_FILTER_STABILITY }
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_stability = 0.075
+	}
+}
+
+shared_focus = {
 	id = interventionism_focus
 	icon = GFX_goal_generic_political_pressure
 	prerequisite = { focus = liberty_ethos }
@@ -560,7 +596,7 @@ shared_focus = {
 shared_focus = {
 	id = why_we_fight
 	icon = GFX_goal_generic_propaganda
-	prerequisite = { focus = foreign_expeditions focus = deterrence }
+	prerequisite = { focus = foreign_expeditions focus = national_identity }
 	available = { 
 		OR = { 
 			threat > 0.75 
@@ -570,9 +606,9 @@ shared_focus = {
 
 	continue_if_invalid = yes
 	
-	x = -2
+	x = 2
 	y = 1
-	relative_position_id = foreign_expeditions
+	relative_position_id = national_identity
 	cost = 10
 	
 	search_filters = { FOCUS_FILTER_POLITICAL }
@@ -606,7 +642,7 @@ shared_focus = {
 			}
 		}
 	}	
-	x = 2
+	x = 3
 	y = 1
 	relative_position_id = ideological_fanaticism
 	cost = 10
