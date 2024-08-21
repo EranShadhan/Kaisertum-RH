@@ -10,7 +10,6 @@ GRE_1936_election_category = {
 
 	allowed = {
 		tag = GRE
-		has_dlc = "Battle for the Bosporus"
 	}
 }
 
@@ -22,7 +21,6 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 
 	allowed = {
 		original_tag = GRE
-		has_dlc = "Battle for the Bosporus"
 	}
 }
 
@@ -32,7 +30,6 @@ GRE_investment_decisions_category  = {
 
 	allowed = {
 		original_tag = GRE
-		has_dlc = "Battle for the Bosporus"
 	}
 }
 
@@ -42,7 +39,6 @@ GRE_hellenic_academy_category  = {
 
 	allowed = {
 		original_tag = GRE
-		has_dlc = "Battle for the Bosporus"
 	}
 }
 
@@ -54,6 +50,5 @@ GRE_faction_management_category = {
 
 	allowed = {
 		original_tag = GRE
-		has_dlc = "Battle for the Bosporus"
 	}
 }

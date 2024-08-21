@@ -32,10 +32,7 @@ add_to_faction = ALB
 #GRE_fascism
 #GRE_neutrality
 set_cosmetic_tag = GRE_neutrality
-add_timed_idea = {
-idea = GRE_on_going_population_exchange
-days = 366 
-}
+
 add_ideas = {
 	export_focus
 	for_hellas
@@ -45,7 +42,10 @@ add_ideas = {
 	german_customs_union_member
 	victory_in_the_sgtwgre
 }
-
+add_timed_idea = {
+idea = GRE_on_going_population_exchange
+days = 366 
+}
 set_research_slots = 3
 
 set_technology = {

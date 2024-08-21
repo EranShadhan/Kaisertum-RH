@@ -514,7 +514,21 @@ ideas = {
 			}
 		}
 		
-		
+		GRE_schism = {
+			
+
+			picture = GRE_first_schism
+
+			
+			removal_cost = -1
+            modifier = {
+			stability_factor = -0.15
+			drift_defence_factor = -0.2
+			political_power_gain = -0.1
+			fascism_drift = 0.05
+			}
+			
+		}
 		GRE_eee_enemy = {
 			
 
@@ -526,6 +540,7 @@ ideas = {
 			stability_factor = -0.15
 			drift_defence_factor = -0.2
 			political_power_gain = -0.1
+			fascism_drift = 0.05
 			}
 			
 		}
@@ -554,7 +569,156 @@ ideas = {
 			monthly_population = -0.2
 			}
 			
+			
+			
 		}
+		GRE_Five_year_plan = {
+			
+
+			picture = GRE_
+
+			
+			removal_cost = -1
+            modifier = {
+			production_speed_buildings_factor = 0.15
+			consumer_goods_factor = -0.10
+			
+			}
+			
+		}
+		GRE_preprare_for_war = {
+			
+
+			picture = GRE_
+
+			
+			removal_cost = -1
+            modifier = {
+			production_speed_arms_factory_factor = 0.10
+			consumer_goods_factor = -0.05
+			
+			}
+			
+		}
+		GRE_increase_greek_productivity {
+			
+
+			picture = GRE_
+
+			
+			removal_cost = -1
+            modifier = {
+						
+			line_change_production_efficiency_factor = 0.1
+			production_factory_efficiency_gain_factor = 0.1
+
+			
+			}
+			
+		}
+		GRE_diverse_markets {
+			
+
+			picture = GRE_
+
+			
+			removal_cost = -1
+            modifier = {
+						
+			political_power_factor = 0.1
+			industrial_capacity_factory = 0.1
+
+			
+			}
+			
+		}
+			GRE_build_university_of_athens {
+			
+
+			picture = GRE_
+
+			
+			removal_cost = -1
+            modifier = {
+						
+			research_speed_factor = 0.1
+			
+
+			}
+			
+		}
+			GRE_modern_construction_technique {
+
+			
+
+			picture = GRE_
+
+			
+			removal_cost = -1
+            modifier = {
+			
+			global_building_slots = 1
+			
+
+			}
+			
+		}
+		GRE_tax_incentives {
+
+			
+
+			picture = GRE_
+
+			
+			removal_cost = -1
+            modifier = {
+			
+			production_speed_industrial_complex_factor = 0.1
+			local_resources_factor = 0.2
+			
+
+			}
+			
+		}
+		GRE_naval_capital_of_the_balkans {
+
+			
+
+			picture = GRE_
+
+			
+			removal_cost = -1
+            modifier = {
+			
+			industrial_capacity_dockyard = 0.10
+			production_factory_max_efficiency_factor = 0.1
+			
+
+			}
+		 }
+		GRE_the_greek_golden_age {
+
+			
+
+			picture = GRE_
+
+			
+			removal_cost = -1
+            modifier = {
+			
+			industrial_capacity_dockyard = 0.15
+			production_factory_max_efficiency_factor = 0.15
+			local_resources_factor = 0.3
+			production_speed_industrial_complex_factor = 0.15
+			research_speed_factor = 0.15
+			global_building_slots = 2
+			industrial_capacity_factory = 0.15
+			consumer_goods_factor = -0.2
+			production_speed_buildings_factor = 0.15
+			production_speed_arms_factory_factor = 0.15
+			}
+		 }
+	
    }
    
 }
