@@ -69,7 +69,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_fra_strike_germany"
-		texturefile = "gfx/interface/goals/FRA/focus_attack_germany.dds
+		texturefile = "gfx/interface/goals/FRA/focus_attack_germany.dds"
 	}
 	
 	SpriteType = {
