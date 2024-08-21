@@ -117,6 +117,8 @@ bookmarks = {
 			ideology = neutrality
 			ideas = {
 				UKR_
+				german_customs_union_member
+				UKR_sugar_businesses
 			}
 			focuses = {
 			}
@@ -180,7 +182,7 @@ bookmarks = {
 				PER_persian_carpets
 			}
 		}
-
+		
 		effect = {
 			randomize_weather = 22345
 		}
