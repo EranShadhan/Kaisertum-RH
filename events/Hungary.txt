@@ -27,13 +27,28 @@ country_event = {
 				transfer_state = 76
 				transfer_state = 83
 			}
+			82 = {
+				add_core_of = ROM
+			}
+			83	 = {
+				add_core_of = ROM
+			}
+			84 = {
+				add_core_of = ROM
+			}
 
 			SER = {
 				transfer_state = 764
 			}
-
+			764 = {
+				add_core_of = SER
+			}
+			
 			YUG = {
 				transfer_state = 45
+			}
+			45 = {
+				add_core_of = YUG
 			}
 
 			HUN = {
@@ -50,7 +65,15 @@ country_event = {
 			SLO = {
 				transfer_state = 664
 			}
-
+			76 = {
+				set_demilitarized_zone = yes
+			}
+			997 = {
+				set_demilitarized_zone = yes
+			}
+			998 = {
+				set_demilitarized_zone = yes
+			}
 			country_event = { days = 10 id = hungary.2 }
 
 			}
@@ -78,7 +101,11 @@ country_event = {
 			}
 			transfer_state = 664
 			transfer_state = 73
+			transfer_state = 996
 
+			996 = {
+				set_demilitarized_zone = yes
+			}
 			73 = {
 				set_demilitarized_zone = yes
 			}

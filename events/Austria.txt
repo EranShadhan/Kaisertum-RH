@@ -24,8 +24,28 @@ country_event = {
 				add_core_of = UKR
 				remove_core_of = AUS
 			}
-			91 = {
+			990 = {
 				add_core_of = UKR
+				remove_core_of = AUS
+			}
+			91 = {
+				add_core_of = POL
+				remove_core_of = AUS
+			}
+			991 = {
+				add_core_of = POL
+				remove_core_of = AUS
+			}
+			992 = {
+				add_core_of = POL
+				remove_core_of = AUS
+			}
+			993 = {
+				add_core_of = POL
+				remove_core_of = AUS
+			}
+			994 = {
+				add_core_of = POL
 				remove_core_of = AUS
 			}
 			89 = {
@@ -70,6 +90,9 @@ country_event = {
 				declare_war_on = {
 					target = AUS
 					type = puppet_wargoal_focus
+					rule = {
+						can_join_factions = no
+					}
 				}
 				set_cosmetic_tag = 0
 			}
