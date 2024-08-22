@@ -1,0 +1,449 @@
+focus_tree = {
+	id = illyria_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = YUG
+		}
+	}
+	
+
+	default = no
+
+	continuous_focus_position = { x = 20 y = 1600 }
+	focus = {
+		id = YUG_anti_austrian_preparements
+		icon = a
+		#prerequisite = { focus = }
+		available = {
+				
+				
+				
+			}
+			
+		x = 0
+		y = 0
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+	focus = {
+		id = YUG_sponsor_slovenian_revolts
+		icon = A
+		relative_position_id = YUG_anti_austrian_preparements
+		prerequisite = { focus = YUG_anti_austrian_preparements }
+		available = {
+				
+				
+				
+			}
+			
+		x = 1
+		y = 1
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+	focus = {
+		id = YUG_raid_austrian_armories
+		icon = a
+		relative_position_id = YUG_anti_austrian_preparements
+		prerequisite = { focus = YUG_anti_austrian_preparements }
+		available = {
+				
+				
+				
+			}
+			
+		x = -1
+		y = 1
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+	focus = {
+		id = YUG_death_of_an_empire
+		icon = a
+		relative_position_id = YUG_anti_austrian_preparements
+		prerequisite = { focus = YUG_raid_austrian_armories }
+		prerequisite = { focus = YUG_sponsor_slovenian_revolts }
+		available = {
+				
+				
+				
+			}
+			
+		x = 0
+		y = 2
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+	focus = {
+		id = YUG_industry1
+		icon = a
+		relative_position_id = YUG_death_of_an_empire
+		prerequisite = { focus = YUG_death_of_an_empire }
+		available = {
+				
+				
+				
+			}
+			
+		x = 10
+		y = 3
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+	focus = {
+		id = YUG_industry2
+		icon = a
+		relative_position_id = YUG_industry1
+		prerequisite = { focus = YUG_industry1 }
+		available = {
+				
+				
+				
+			}
+			
+		x = -1
+		y = 1
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+	focus = {
+		id = YUG_improve_infrastructure
+		icon = a
+		relative_position_id = YUG_industry2
+		prerequisite = { focus = YUG_industry2 }
+		available = {
+				
+				
+				
+			}
+			
+		x = -2
+		y = 1
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+	focus = {
+		id = XAD_collect_the_railroads
+		icon = a
+		relative_position_id = YUG_improve_infrastructure
+		prerequisite = { focus = YUG_improve_infrastructure }
+		available = {
+				
+				
+				
+			}
+			
+		x = 0
+		y = 1
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+	focus = {
+		id = YUG_industry_mils1
+		icon = a
+		relative_position_id = YUG_industry1
+		prerequisite = { focus = YUG_industry1 }
+		available = {
+				
+				
+				
+			}
+			
+		x = 4
+		y = 1
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+	focus = {
+		id = YUG_industry_mils2
+		icon = a
+		relative_position_id = YUG_industry_mils1
+		prerequisite = { focus = YUG_industry_mils1 }
+		available = {
+				
+				
+				
+			}
+			
+		x = 0
+		y = 1
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+	focus = {
+		id = YUG_illiryan_work
+		icon = a
+		relative_position_id = YUG_industry_mils2
+		prerequisite = { focus = YUG_industry_mils2 }
+		available = {
+				
+				
+				
+			}
+			
+		x = 0
+		y = 1
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+	focus = {
+		id = YUG_illiryan_work
+		icon = a
+		relative_position_id = YUG_industry_mils2
+		prerequisite = { focus = YUG_industry_mils2 }
+		available = {
+				
+				
+				
+			}
+			
+		x = 0
+		y = 1
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+}
+
