@@ -911,6 +911,225 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 
 GRE_faction_management_category = {
 
+GRE_metaxas_wants_support1 = {
+
+		
+		icon = {
+			key = GFX_decision_GRE_claim_state_1
+			
+		}
+
+		allowed = {
+			original_tag = GRE
+		}
+
+		available = {
+			
+		}
+
+		state_target = yes
+
+		on_map_mode = map_and_decisions_view
+		target_array = controlled_states
+
+		target_trigger = {
+			FROM = {
+					NOT = {	has_state_flag = GRE_metaxas1 }
+					is_core_of = GRE}
+				
+			}
+		
+
+		cost = 20
+
+		fire_only_once = yes
+
+		days_remove = 15
+
+		modifier = {
+		}
+
+		visible = {
+			tag = GRE
+			always = yes
+		}
+
+		complete_effect = {
+          FROM = {
+	
+				set_state_flag = GRE_metaxas1
+				}
+		}
+
+		remove_effect = {
+      
+		}
+	}
+
+GRE_metaxas_wants_support2 = {
+
+		
+		icon = {
+			key = GFX_decision_GRE_claim_state_2
+			
+		}
+
+		allowed = {
+			original_tag = GRE
+		}
+
+		available = {
+			
+		}
+
+		state_target = yes
+
+		on_map_mode = map_and_decisions_view
+		target_array = controlled_states
+
+		target_trigger = {
+			FROM = {
+						has_state_flag = GRE_metaxas1 
+					NOT = {	has_state_flag = GRE_metaxas2 }
+					is_core_of = GRE}
+				
+			}
+		
+
+		cost = 20
+
+		fire_only_once = yes
+
+		days_remove = 15
+
+		modifier = {
+		}
+
+		visible = {
+			tag = GRE
+			always = yes
+		}
+
+		complete_effect = {
+          FROM = {
+	
+				set_state_flag = GRE_metaxas2
+				}
+		}
+
+		remove_effect = {
+      
+		}
+	}
+GRE_metaxas_wants_support3 = {
+
+		
+		icon = {
+			key = GFX_decision_GRE_claim_state_3
+			
+		}
+
+		allowed = {
+			original_tag = GRE
+		}
+
+		available = {
+			
+		}
+
+		state_target = yes
+
+		on_map_mode = map_and_decisions_view
+		target_array = controlled_states
+
+		target_trigger = {
+			FROM = {
+					has_state_flag = GRE_metaxas1 
+						has_state_flag = GRE_metaxas2 
+						not = {has_state_flag = GRE_metaxas3}
+					is_core_of = GRE}
+				
+			}
+		
+
+		cost = 20
+
+		fire_only_once = yes
+
+		days_remove = 15
+
+		modifier = {
+		}
+
+		visible = {
+			tag = GRE
+			always = yes
+		}
+
+		complete_effect = {
+          FROM = {
+	
+				set_state_flag = GRE_metaxas3
+				}
+		}
+
+		remove_effect = {
+      
+		}
+	}	
+	GRE_metaxas_wants_support4 = {
+
+		
+		icon = {
+			key = GFX_decision_GRE_claim_state_4
+			
+		}
+
+		allowed = {
+			original_tag = GRE
+		}
+
+		available = {
+			always = no
+		}
+
+		state_target = yes
+
+		on_map_mode = map_and_decisions_view
+		target_array = controlled_states
+
+		target_trigger = {
+			FROM = {
+					has_state_flag = GRE_metaxas1 
+						has_state_flag = GRE_metaxas2 
+						has_state_flag = GRE_metaxas3
+					is_core_of = GRE}
+				
+			}
+		
+
+		cost = 20
+
+		fire_only_once = yes
+
+		days_remove = 15
+
+		modifier = {
+		}
+
+		visible = {
+			tag = GRE
+			always = yes
+		}
+
+		complete_effect = {
+          
+		}
+
+		remove_effect = {
+      
+		}
+	}	
 	GRE_eee_raids_factories  = { 
 
 		icon = generic_political_rally

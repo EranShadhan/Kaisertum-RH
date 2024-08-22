@@ -11,9 +11,9 @@ spriteTypes = {
 		name = "GFX_focus_GRE_islanddev"
 		texturefile = "gfx/interface/goals/GRE/focus_GRE_islanddev.dds"
 	}
-	sriteType = {
-		name = "GFX_focus_greek_agricultural_revolution"
-		texturefile = "gfx/interface/goals/GRE/GRE_greek_agricultural_revolution.dds"
+	spriteType = {
+		name = "GFX_focus_GRE_support_farmersn"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_support_farmers.dds"
 	} 
 	SpriteType = {
 		name = "GFX_focus_GRE_industrialize_athens"

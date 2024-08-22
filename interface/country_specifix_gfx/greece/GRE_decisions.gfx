@@ -1,0 +1,19 @@
+spriteTypes = {	
+		spriteType = {
+		name = "GFX_decision_GRE_claim_state_1"
+		texturefile = "gfx/interface/decisions/GRE/gre0.dds"
+	}		
+	spriteType = {
+		name = "GFX_decision_GRE_claim_state_2"
+		texturefile = "gfx/interface/decisions/GRE/gre1.dds"
+	}
+					
+	spriteType = {
+		name = "GFX_decision_GRE_claim_state_3"
+		texturefile = "gfx/interface/decisions/GRE/gre2.dds"
+	}	
+	spriteType = {
+		name = "GFX_decision_GRE_claim_state_4"
+		texturefile = "gfx/interface/decisions/GRE/gre3.dds"
+	}
+}

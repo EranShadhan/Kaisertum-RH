@@ -46,6 +46,8 @@
  GRE_debt_0:0 "§Y0%§!"
  
  GRE_foreign_designs_tt:0 "We will gain §Y1x§! §G45%§! Research Bonus for §YAircrafts§! for each major country that has more than 70 opinion of us, that we are not at war with"
+ GRE_golden_tt:0 "§RThis focus cannot be cancelled. Once The Focus Has Been Selected, we will lose the following national spirits§!: §YPrepare for War§!, §YBoost Greek Productivity§!, §YExpand into Diverse Markets§!, §YThe University Of Athens§!, §YModernize the Construction Techniques§!, §YTax Incentives§! and §YNaval Capital of the Balkans§!. §GOnce the focus has been completed, the ideas will be combined and further boosted into a new one.§! Add" 
+ GRE_pay_big_tt:0 "§YUnlocks Decisions for larger debt payments. In case a country we owe debt to is close to capitulation, we will be given the option to illegally write off our debts§!"
  
  GRE_power_balance:0 "The Second National Schism"
  

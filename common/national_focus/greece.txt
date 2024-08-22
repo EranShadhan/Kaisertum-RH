@@ -1471,7 +1471,7 @@ focus = {
         prerequisite = { focus = GRE_prepare_for_the_future}
 		available = {
 		}
-		x = 4
+		x = 3
 		y = 1
 		relative_position_id = GRE_prepare_for_the_future
 		cost = 5
@@ -1490,7 +1490,7 @@ focus = {
         prerequisite = { focus = GRE_prepare_for_the_future}
 		available = {
 		}
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = GRE_prepare_for_the_future
 		cost = 5
@@ -1532,7 +1532,7 @@ focus = {
         prerequisite = { focus = GRE_prepare_for_the_future}
 		available = {
 		}
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = GRE_prepare_for_the_future
 		cost = 4
@@ -1551,7 +1551,7 @@ focus = {
         prerequisite = { focus = GRE_prepare_for_the_future}
 		available = {
 		}
-		x = -2
+		x = -3
 		y = 1
 		relative_position_id = GRE_prepare_for_the_future
 		cost = 5
@@ -1615,7 +1615,7 @@ focus = {
 		}
 		focus = { 
 		id = GRE_develop_epirus
-		icon = GFX_focus_greek_agricultural_revolution
+		icon = GFX_focus_GRE_support_farmersn
         prerequisite = { focus = GRE_develop_our_islands }
 		
 		x = 0
@@ -1645,7 +1645,7 @@ focus = {
 		}
 		focus = { 
 		id = GRE_increase_greek_productivity
-		icon = GFX_focus_generic_industry_3
+		icon = GFX_focus_generic_public_works
         prerequisite = { focus =GRE_develop_epirus }
 		available = {
 		}
@@ -1664,7 +1664,7 @@ focus = {
 		}
 		focus = { 
 		id = GRE_Militarize_consantinople
-		icon = GFX_focus_NORDIC_com_army
+		icon = GFX_focus_TUR_the_montreux_convention
 		Prerequisite = { focus = GRE_remilitarize_the_economy }
 		available = {
 		}
@@ -1704,12 +1704,12 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	         
+	         custom_effect_tooltip = GRE_pay_big_tt
 		    }
 		}
 		focus = { 
 		id = GRE_Wartime_industries
-		Icon = GFX_goal_generic_construct_mil_factory
+		Icon = GFX_focus_generic_reorient_production
 		Prerequisite = { focus = paying_off_our_debts }
 		available = {
 		}
@@ -1736,7 +1736,7 @@ focus = {
 		}
 		focus = { 
 		id = GRE_diverse_markets
-		icon = GFX_focus_SOV_organize_wreckers
+		icon = GFX_goal_generic_positive_trade_relations
         prerequisite = { focus = GRE_land_reform }
 		available = {
 		}
@@ -1755,7 +1755,7 @@ focus = {
 		}
 		focus = { 
 		id = GRE_import_foreign_tech
-		icon = GFX_goal_generic_production
+		icon = GFX_focus_ARG_develop_the_electricity_sector
         prerequisite = { focus = GRE_diverse_markets }
 		available = {
 		}
@@ -1860,7 +1860,7 @@ focus = {
 		}
 		focus = { 
 		id = the_greek_golden_age
-		icon = GFX_focus_generic_the_giant_wakes
+		icon = GFX_focus_GRE_following_in_the_footsteps_of_giants
 		prerequisite = {focus = Piraeus_city_of_wealth}
 		prerequisite = {focus = GRE_build_university_of_athens}
 		prerequisite = {focus = GRE_Wartime_industries }
@@ -1869,22 +1869,29 @@ focus = {
 		}
 		x = -3
 		y = 1
+		cancelable = no
+       
 		relative_position_id = Piraeus_city_of_wealth
-		cost = 8
+		select_effect = {
+			remove_ideas = GRE_naval_capital_of_the_balkans_idea
+		    remove_ideas = GRE_tax_incentives_idea
+			remove_ideas = GRE_build_university_of_athens_idea
+			remove_ideas = GRE_diverse_markets_idea
+			remove_ideas = GRE_increase_greek_productivity_idea
+			remove_ideas = GRE_preprare_for_war_idea
+		}
+		cost = 14.3
 			ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	       remove_ideas = GRE_naval_capital_of_the_balkans_idea
-		    remove_ideas = GRE_tax_incentives_idea
-			remove_ideas = GRE_build_university_of_athens_idea
-			remove_ideas = GRE_diverse_markets_idea
-			remove_ideas = GRE_increase_greek_productivity_idea
-			remove_ideas = GRE_preprare_for_war_idea
+	       hidden_effect = {
 			add_ideas = GRE_the_greek_golden_age_idea
 			}
+	        custom_effect_tooltip = GRE_golden_tt
+			show_ideas_tooltip = GRE_the_greek_golden_age_idea
 		}
 	}
 
