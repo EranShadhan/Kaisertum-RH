@@ -14,19 +14,63 @@ characters={
 		}
 	}
 
+	GER_heinrich_bruening={
+		name=GER_heinrich_bruening
+		portraits={
+			civilian={
+				large=GFX_portrait_GER_heinrich_bruening
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	GER_ludwig_kaas={
+		name=GER_ludwig_kaas
+		portraits={
+			civilian={
+				large=GFX_portrait_GER_ludwig_kaas
+			}
+		}
+		#country_leader={
+		#	ideology=conservatism
+		#	expire="1965.1.1.1"
+		#	traits = { priestly_prime_minister }
+		#	id=-1
+		#}
+	}
+
 	GER_otto_wels={
 		name=GER_otto_wels
 		portraits={
 			civilian={
 				large=GFX_portrait_GER_otto_wels
+				small=GFX_portrait_GER_otto_wels_small
 			}
 		}
-		country_leader={
-			ideology=socialism
-			expire="1965.1.1.1"
-			id=-1
+		#country_leader = {
+		#	ideology = socialism
+		#	expire = "1965.1.1.1"
+		#	traits = { resolute_social_democrat }
+		#}
+		advisor={
+			slot = political_advisor
+			idea_token = GER_otto_wels
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				resolute_social_democrat
+			}
+			ai_will_do = {
+				factor = 0
+			}
 		}
 	}
+
 	GER_konrad_adenauer={
 		name=GER_konrad_adenauer
 		portraits={
@@ -51,21 +95,33 @@ characters={
 		}
 	}
 
-	GER_wilhelm_ii={ #Empty Wilhelm II so he doesn't become ruler automatically if the neutrals are in power
+	GER_wilhelm_ii={
 		name=GER_wilhelm_ii
 		portraits={
 			civilian={
 				large="GFX_portrait_ger_wilhelm_ii"
 			}	
 		}
+		country_leader={
+			ideology=stalinism
+			traits={ popular_figurehead3 imperial_connections }
+			expire="1941.1.1.1"
+			id=-1
+		}
 	}
 
-	GER_wilhelm_iii={ #Empty Wilhelm III so he doesn't become ruler automatically if the neutrals are in power
+	GER_wilhelm_iii={
 		name=GER_wilhelm_iii
 		portraits={
 			civilian={
 				large="GFX_portrait_ger_wilhelm_iii"
 			}	
+		}
+		country_leader={
+			ideology=stalinism
+			traits={ popular_figurehead conservative_grandee }
+			expire="1965.1.1.1"
+			id=-1
 		}
 	}
 
