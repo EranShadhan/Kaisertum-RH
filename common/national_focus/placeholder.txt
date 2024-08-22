@@ -9,10 +9,6 @@ focus_tree = {
 		}
 		modifier = {
 			add = 15
-			tag = ROM
-		}
-		modifier = {
-			add = 15
 			tag = FIN
 		}
 	}
