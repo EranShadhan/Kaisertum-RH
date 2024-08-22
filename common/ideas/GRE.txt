@@ -537,10 +537,103 @@ ideas = {
 			
 			removal_cost = -1
             modifier = {
-			stability_factor = -0.15
-			drift_defence_factor = -0.2
+			stability_factor = -0.1
+			drift_defence_factor = -0.05
 			political_power_gain = -0.1
 			fascism_drift = 0.05
+			}
+			
+		}
+		GRE_eee_enemy2 = {
+			name = GRE_eee_enemy
+
+			picture = gre_eee_opposition
+
+			
+			removal_cost = -1
+            modifier = {
+			stability_factor = -0.15
+			drift_defence_factor = -0.1
+			political_power_gain = -0.1
+			consumer_goods_factor = 0.05
+			fascism_drift = 0.07
+			}
+			
+			
+		}
+		GRE_eee_enemy3 = {
+			name = GRE_eee_enemy
+
+			picture = gre_eee_opposition
+
+			
+			removal_cost = -1
+            modifier = {
+			stability_factor = -0.2
+			drift_defence_factor = -0.15
+			political_power_gain = -0.15
+			consumer_goods_factor = 0.1
+			production_speed_arms_factory_factor = -0.05
+			fascism_drift = 0.1
+			}
+			
+		}
+		GRE_eee_enemy4 = {
+			name = GRE_eee_enemy
+
+			picture = gre_eee_opposition
+
+			
+			removal_cost = -1
+            modifier = {
+			stability_factor = -0.25
+			drift_defence_factor = -0.15
+			political_power_gain = -0.2
+			consumer_goods_factor = 0.1
+			production_speed_arms_factory_factor = -0.05
+			conscription_factor = -0.05
+			fascism_drift = 0.15
+			}
+			
+			
+		}
+		GRE_eee_enemy5 = {
+			name = GRE_eee_enemy
+
+			picture = gre_eee_opposition
+
+			
+			removal_cost = -1
+            modifier = {
+			stability_factor = -0.25
+			drift_defence_factor = -0.15
+			political_power_gain = -0.2
+			consumer_goods_factor = 0.1
+			production_speed_arms_factory_factor = -0.1
+			production_factory_efficiency_gain_factor = -0.1
+			industrial_capacity_factory  = -0.05
+			conscription_factor = -0.05
+			fascism_drift = 0.17
+			}
+			
+		}
+		GRE_eee_enemy6 = {
+			name = GRE_eee_enemy
+
+			picture = gre_eee_opposition
+
+			
+			removal_cost = -1
+            modifier = {
+			stability_factor = -0.35
+			drift_defence_factor = -0.2
+			political_power_gain = -0.25
+			consumer_goods_factor = 0.15
+			production_speed_arms_factory_factor = -0.15
+			production_factory_efficiency_gain_factor = -0.15
+			industrial_capacity_factory  = -0.1
+			conscription_factor = -0.1
+			fascism_drift = 0.2
 			}
 			
 		}

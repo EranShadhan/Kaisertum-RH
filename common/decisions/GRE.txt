@@ -910,7 +910,8 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 }
 
 GRE_faction_management_category = {
-	GRE_TET = {
+
+	GRE_eee_raids_factories  = { 
 
 		icon = generic_political_rally
 
@@ -919,37 +920,205 @@ GRE_faction_management_category = {
 		}
 
 		available = {
-			
+		not = { has_idea = GRE_hostile_fascists }
+		
 		}
 
-		cost = 250
-
+		days_mission_timeout = 165
+      
 		fire_only_once = yes
 
-		days_remove = 200
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 5
-				check_variable = { GRE_monarchist_loyalty = 0 compare = less_than_or_equals }
-			}
-			modifier = {
-				factor = 25
-				check_variable = { GRE_monarchist_loyalty = -1 compare = less_than_or_equals }
-			}
-		}
-
-		visible = {
+		activation = {
 			original_tag = GRE
 		}
 
-		complete_effect = {
-	
+		visible = {
+		original_tag = GRE
 		}
 
-		remove_effect = {
+		cancel_if_not_visible = no
+
+		is_good = no
+
+		complete_effect = {
 		
 		}
+
+		timeout_effect = {
+		swap_ideas = {
+		remove_idea = GRE_eee_enemy
+		add_idea = GRE_eee_enemy2
+		}
+		set_country_flag = eee_revolt_1
+	    }
+	}	
+	GRE_protest_over_low_mil_spending  = { 
+
+		icon = generic_political_rally
+
+		allowed = { 
+			original_tag = GRE
+		}
+
+		available = {
+		not = { has_idea = GRE_hostile_fascists }
+		
+		}
+
+		days_mission_timeout = 250
+      
+		fire_only_once = yes
+
+		activation = {
+			original_tag = GRE
+			has_country_flag = eee_revolt_1
+		}
+
+		visible = {
+		original_tag = GRE
+		}
+
+		cancel_if_not_visible = no
+
+		is_good = no
+
+		complete_effect = {
+		
+		}
+
+		timeout_effect = {
+		swap_ideas = {
+		remove_idea = GRE_eee_enemy2
+		add_idea = GRE_eee_enemy3
+		}
+		set_country_flag = eee_revolt_2
+	    }
+	}
+	GRE_engage_in_violence_with_refuges  = { 
+
+		icon = generic_political_rally
+
+		allowed = { 
+			original_tag = GRE
+		}
+
+		available = {
+		not = { has_idea = GRE_hostile_fascists }
+		
+		}
+
+		days_mission_timeout = 170
+      
+		fire_only_once = yes
+
+		activation = {
+			original_tag = GRE
+			has_country_flag = eee_revolt_2
+		}
+
+		visible = {
+		original_tag = GRE
+		}
+
+		cancel_if_not_visible = no
+
+		is_good = no
+
+		complete_effect = {
+		
+		}
+
+		timeout_effect = {
+		swap_ideas = {
+		remove_idea = GRE_eee_enemy3
+		add_idea = GRE_eee_enemy4
+		}
+		set_country_flag = eee_revolt_3
+	    }
+	}
+	GRE_raid_factories_and_distribute_goods  = { 
+
+		icon = generic_political_rally
+
+		allowed = { 
+			original_tag = GRE
+		}
+
+		available = {
+		not = { has_idea = GRE_hostile_fascists }
+		
+		}
+
+		days_mission_timeout = 210
+      
+		fire_only_once = yes
+
+		activation = {
+			original_tag = GRE
+		has_country_flag = eee_revolt_3
+		}
+
+		visible = {
+		original_tag = GRE
+		}
+
+		cancel_if_not_visible = no
+
+		is_good = no
+
+		complete_effect = {
+		
+		}
+
+		timeout_effect = {
+		swap_ideas = {
+		remove_idea = GRE_eee_enemy4
+		add_idea = GRE_eee_enemy5
+		
+		}
+		set_country_flag = eee_revolt_4
+		
+	    }
+	}
+	GRE_eee_arms_anatolian_citizens_to_fight_turks  = { 
+
+		icon = generic_political_rally
+
+		allowed = { 
+			original_tag = GRE
+		}
+
+		available = {
+		not = { has_idea = GRE_hostile_fascists }
+		
+		}
+
+		days_mission_timeout = 140
+      
+		fire_only_once = yes
+
+		activation = {
+			original_tag = GRE
+		has_country_flag = eee_revolt_4
+		}
+
+		visible = {
+		original_tag = GRE
+		}
+
+		cancel_if_not_visible = no
+
+		is_good = no
+
+		complete_effect = {
+		
+		}
+
+		timeout_effect = {
+		swap_ideas = {
+		remove_idea = GRE_eee_enemy5
+		add_idea = GRE_eee_enemy6
+		}
+	    }
 	}
 }

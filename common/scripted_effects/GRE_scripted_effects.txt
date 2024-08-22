@@ -1,5 +1,283 @@
 
 
+#Faction System Political Instability Update Effect - No longer ideology-limited
+GRE_political_instability_update_effect = { 
+	hidden_effect = {
+		### MONARCHISTS ###
+		if = { #LOYAL MONARCHISTS
+			limit = {
+				check_variable = { GRE_monarchist_loyalty = 2 compare = equals } #loyal
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = GRE_loyal_monarchists }
+				}
+				add_ideas = GRE_loyal_monarchists
+			}
+			if = {
+				limit = {
+					has_idea = GRE_friendly_monarchists
+				}
+				remove_ideas = GRE_friendly_monarchists
+			}
+			if = {
+				limit = {
+					has_idea = GRE_hostile_monarchists
+				}
+				remove_ideas = GRE_hostile_monarchists
+			}
+		}
+		else_if = { #FRIENDLY MONARCHISTS
+			limit = {
+				check_variable = { GRE_monarchist_loyalty = 1 compare = equals } #friendly
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = GRE_friendly_monarchists }
+				}
+				add_ideas = GRE_friendly_monarchists
+			}
+			if = {
+				limit = {
+					has_idea = GRE_loyal_monarchists
+				}
+				remove_ideas = GRE_loyal_monarchists
+			}
+			if = {
+				limit = {
+					has_idea = GRE_hostile_monarchists
+				}
+				remove_ideas = GRE_hostile_monarchists
+			}
+		}
+		else_if = { #HOSTILE MONARCHISTS
+			limit = {
+				check_variable = { GRE_monarchist_loyalty = -1 compare = equals } #hostile
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = GRE_hostile_monarchists }
+				}
+				add_ideas = GRE_hostile_monarchists
+			}
+			if = {
+				limit = {
+					has_idea = GRE_loyal_monarchists
+				}
+				remove_ideas = GRE_loyal_monarchists
+			}
+			if = {
+				limit = {
+					has_idea = GRE_friendly_monarchists
+				}
+				remove_ideas = GRE_friendly_monarchists
+			}
+		}
+		else = { #INDIFFERENT/INCONSEQUENTIAL MONARCHISTS
+			if = {
+				limit = {
+					has_idea = GRE_loyal_monarchists
+				}
+				remove_ideas = GRE_loyal_monarchists
+			}
+			if = {
+				limit = {
+					has_idea = GRE_friendly_monarchists
+				}
+				remove_ideas = GRE_friendly_monarchists
+			}
+			if = {
+				limit = {
+					has_idea = GRE_hostile_monarchists
+				}
+				remove_ideas = GRE_hostile_monarchists
+			}
+		}
+
+		### REPUBLICANS ###
+		if = { #LOYAL REPUBLICANS
+			limit = {
+				check_variable = { GRE_republican_loyalty = 2 compare = equals } #loyal
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = GRE_loyal_republicans }
+				}
+				add_ideas = GRE_loyal_republicans
+			}
+			if = {
+				limit = {
+					has_idea = GRE_friendly_republicans
+				}
+				remove_ideas = GRE_friendly_republicans
+			}
+			if = {
+				limit = {
+					has_idea = GRE_hostile_republicans
+				}
+				remove_ideas = GRE_hostile_republicans
+			}
+		}
+		else_if = { #FRIENDLY REPUBLICANS
+			limit = {
+				check_variable = { GRE_republican_loyalty = 1 compare = equals } #friendly
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = GRE_friendly_republicans }
+				}
+				add_ideas = GRE_friendly_republicans
+			}
+			if = {
+				limit = {
+					has_idea = GRE_loyal_republicans
+				}
+				remove_ideas = GRE_loyal_republicans
+			}
+			if = {
+				limit = {
+					has_idea = GRE_hostile_republicans
+				}
+				remove_ideas = GRE_hostile_republicans
+			}
+		}
+		else_if = { #HOSTILE REPUBLICANS
+			limit = {
+				check_variable = { GRE_republican_loyalty = -1 compare = equals } #hostile
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = GRE_hostile_republicans }
+				}
+				add_ideas = GRE_hostile_republicans
+			}
+			if = {
+				limit = {
+					has_idea = GRE_loyal_republicans
+				}
+				remove_ideas = GRE_loyal_republicans
+			}
+			if = {
+				limit = {
+					has_idea = GRE_friendly_republicans
+				}
+				remove_ideas = GRE_friendly_republicans
+			}
+		}
+		else = { #INDIFFERENT/INCONSEQUENTIAL REPUBLICANS
+			if = {
+				limit = {
+					has_idea = GRE_loyal_republicans
+				}
+				remove_ideas = GRE_loyal_republicans
+			}
+			if = {
+				limit = {
+					has_idea = GRE_friendly_republicans
+				}
+				remove_ideas = GRE_friendly_republicans
+			}
+			if = {
+				limit = {
+					has_idea = GRE_hostile_republicans
+				}
+				remove_ideas = GRE_hostile_republicans
+			}
+		}
+
+		### FASCISTS ###
+		if = { #LOYAL FASCISTS
+			limit = {
+				check_variable = { GRE_fascist_loyalty = 2 compare = equals } #loyal
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = GRE_loyal_fascists }
+				}
+				add_ideas = GRE_loyal_fascists
+			}
+			if = {
+				limit = {
+					has_idea = GRE_friendly_fascists
+				}
+				remove_ideas = GRE_friendly_fascists
+			}
+			if = {
+				limit = {
+					has_idea = GRE_hostile_fascists
+				}
+				remove_ideas = GRE_hostile_fascists
+			}
+		}
+		else_if = { #FRIENDLY FASCISTS
+			limit = {
+				check_variable = { GRE_fascist_loyalty = 1 compare = equals } #friendly
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = GRE_friendly_fascists }
+				}
+				add_ideas = GRE_friendly_fascists
+			}
+			if = {
+				limit = {
+					has_idea = GRE_loyal_fascists
+				}
+				remove_ideas = GRE_loyal_fascists
+			}
+			if = {
+				limit = {
+					has_idea = GRE_hostile_fascists
+				}
+				remove_ideas = GRE_hostile_fascists
+			}
+		}
+		else_if = { #HOSTILE FASCISTS
+			limit = {
+				check_variable = { GRE_fascist_loyalty = -1 compare = equals } #hostile
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = GRE_hostile_fascists }
+				}
+				add_ideas = GRE_hostile_fascists
+			}
+			if = {
+				limit = {
+					has_idea = GRE_loyal_fascists
+				}
+				remove_ideas = GRE_loyal_fascists
+			}
+			if = {
+				limit = {
+					has_idea = GRE_friendly_fascists
+				}
+				remove_ideas = GRE_friendly_fascists
+			}
+		}
+		else = { #INDIFFERENT/INCONSEQUENTIAL FASCISTS
+			if = {
+				limit = {
+					has_idea = GRE_loyal_fascists
+				}
+				remove_ideas = GRE_loyal_fascists
+			}
+			if = {
+				limit = {
+					has_idea = GRE_friendly_fascists
+				}
+				remove_ideas = GRE_friendly_fascists
+			}
+			if = {
+				limit = {
+					has_idea = GRE_hostile_fascists
+				}
+				remove_ideas = GRE_hostile_fascists
+			}
+		}
+	}
+}
+
 #Debt to the I.F.C. Debt Check Effect 
 GRE_debt_check_effect = {
 	hidden_effect = {

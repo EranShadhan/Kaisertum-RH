@@ -85,7 +85,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name ="GRE_republicans_attitude_status"
-			position = { x = 310 y = 55 }
+			position = { x = 300 y = 55 }
 			font = "hoi_18mbs"
 			text = "GRE_republicans_attitude_status_amount"
 			format = left
@@ -96,7 +96,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name ="GRE_fascists_attitude_status"
 			
-			position = { x = 160 y = 55 }
+			position = { x = 190 y = 55 }
 			font = "hoi_18mbs"
 			text = "GRE_fascists_attitude_status_amount"
 			format = left
@@ -120,35 +120,7 @@ guiTypes = {
 		    position = { x = 65 y = 95 }
 		}
 
-		instantTextBoxType = {
-			name ="GRE_monarchists_stability_status"
-			position = { x = 420 y = 100 }
-			font = "hoi_18mbs"
-			text = "GRE_monarchists_stability_status_amount"
-			format = left
-			maxwidth = 110
-		}
-
-		instantTextBoxType = {
-			name ="GRE_republicans_stability_status"
-			position = { x = 310 y = 100 }
-			font = "hoi_18mbs"
-			text = "GRE_republicans_stability_status_amount"
-			format = left
-			maxwidth = 110
-		}
-
-
-
-		instantTextBoxType = {
-			name ="GRE_fascists_stability_status"
-			position = { x = 210 y = 95 }
-			font = "hoi_18mbs"
-			text = "GRE_fascists_stability_status_amount"
-			format = left
-			maxwidth = 110
-		}
-
+	
 		#Tooltip
 		instantTextBoxType = {
 			name ="stability_tooltip_fake"
@@ -163,42 +135,15 @@ guiTypes = {
 		iconType = {
 			name ="manpower_header"
 			spriteType = "GFX_manpower_icon"
-			 position = { x = 65 y = 140 }
+			 position = { x = 65 y = 145 }
 		}
 
-		instantTextBoxType = {
-			name ="GRE_monarchists_manpower_status"
-			position = { x = 420 y = 140 }
-			font = "hoi_18mbs"
-			text = "GRE_monarchists_manpower_status_amount"
-			format = left
-			maxwidth = 120
-		}
-
-		instantTextBoxType = {
-			name ="GRE_republicans_manpower_status"
-			position = { x = 325 y = 140 }
-			font = "hoi_18mbs"
-			text = "GRE_republicans_manpower_status_amount"
-			format = left
-			maxwidth = 120
-		}
-
-
-
-		instantTextBoxType = {
-			name ="GRE_fascists_manpower_status"
-			position = { x = 210 y = 140 }
-			font = "hoi_18mbs"
-			text = "GRE_fascists_manpower_status_amount"
-			format = left
-			maxwidth = 120
-		}
+	
 
 		#Tooltip
 		instantTextBoxType = {
 			name ="manpower_tooltip_fake"
-			position = { x = 65 y = 140 }
+			position = { x = 65 y = 145 }
 			format = left
 			maxwidth = 25
 			maxHeight = 25
@@ -208,21 +153,20 @@ guiTypes = {
 		iconType = {
 			name ="factory_header"
 			spriteType = "GFX_non_available_factory_icon"
-			 position = { x = 65 y = 180 }
+			 position = { x = 65 y = 200 }
+			 
+			 
 		}
+	
+			
 		
 		#FACTORY ARMS
 		iconType = {
 			name ="factory_header2"
 			spriteType = "GFX_military_factory_icon"
-			 position = { x = 65 y = 220 }
+			 position = { x = 65 y = 255 }
 		}
 		
-		#DOCKYARD
-		iconType = {
-			name ="factory_header3"
-			spriteType = "GFX_dockyard_icon"
-			 position = { x = 65 y = 260 }
-		}
+	
 	}
 }
