@@ -4,8 +4,16 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 15
 			tag = UKR
+		}
+		modifier = {
+			add = 15
+			tag = ROM
+		}
+		modifier = {
+			add = 15
+			tag = FIN
 		}
 	}
 

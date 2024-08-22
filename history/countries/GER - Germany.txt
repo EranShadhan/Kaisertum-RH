@@ -31,24 +31,25 @@ if = {
 	}
 }
 
-set_oob= "GER_1936_nsb"
+set_oob ="GER_1930"
 
 set_autonomy = {
-        target = GPI
-        autonomous_state = autonomy_colony
-    }
+	target = GPI
+	autonomous_state = autonomy_colony
+}
 set_autonomy = {
-        target = UBD
-        autonomous_state = autonomy_dominion
-    }
+	target = UBD
+	autonomous_state = autonomy_dominion
+}
 set_autonomy = {
-        target = NMB
-        autonomous_state = autonomy_colony
-    }
+	target = NMB
+	autonomous_state = autonomy_colony
+}
 set_autonomy = {
-        target = BEL
-        autonomous_state = autonomy_puppet
-    }
+	target = BEL
+	autonomous_state = autonomy_puppet
+}
+
 starting_train_buffer = 2
 set_fuel_ratio = 0.8
 
@@ -158,8 +159,6 @@ if = {
 
 set_variable = { var = ger_gateway_to_europe_influence value = 0 }
 
-set_variable = { var = wehrmacht_anger value = 0 }
-set_variable = { var = ss_anger value = 0 }
 set_variable = { GER_narvik_shipments = 0 }
 set_variable = { GER_narvik_civs = 0 }
 set_research_slots = 4
@@ -192,12 +191,15 @@ add_to_faction = FIN
 
 add_ideas = {
 	GER_wilhelm_ii
-	FRA_victors_of_wwi
+	GER_victory_tgw
 	german_customs_union_member
+	GER_powerful_unions
 }
 
 activate_mission = GER_mefo_bills_mission
 
+recruit_character = GER_heinrich_bruening
+recruit_character = GER_ludwig_kaas
 recruit_character = GER_otto_wels
 recruit_character = GER_wilhelm_pieck
 recruit_character = GER_konrad_adenauer
@@ -514,7 +516,7 @@ if = {
 		name_group = GER_CA_HISTORICAL
 		parent_version = 0
 		modules = {
-        	fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_battery_slot = ship_heavy_battery_2
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_cruiser_1
@@ -522,7 +524,7 @@ if = {
 			fixed_ship_engine_slot = cruiser_ship_engine_2
 			rear_1_custom_slot = ship_torpedo_1
 			mid_1_custom_slot = ship_airplane_launcher_1
-    	}
+		}
 	}
 	create_equipment_variant = {
 		name = "Type 24"
