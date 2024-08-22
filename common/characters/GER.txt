@@ -21,11 +21,11 @@ characters={
 				large=GFX_portrait_GER_heinrich_bruening
 			}
 		}
-		country_leader={
-			ideology=conservatism
-			expire="1965.1.1.1"
-			id=-1
-		}
+		#country_leader={
+		#	ideology=conservatism
+		#	expire="1965.1.1.1"
+		#	id=-1
+		#}
 	}
 
 	GER_ludwig_kaas={
@@ -51,11 +51,11 @@ characters={
 				small=GFX_portrait_GER_otto_wels_small
 			}
 		}
-		#country_leader = {
-		#	ideology = socialism
-		#	expire = "1965.1.1.1"
-		#	traits = { resolute_social_democrat }
-		#}
+		country_leader = {
+			ideology = socialism
+			expire = "1965.1.1.1"
+			traits = { resolute_social_democrat }
+		}
 		advisor={
 			slot = political_advisor
 			idea_token = GER_otto_wels
