@@ -4132,6 +4132,8 @@ ideas = {
 		officers_purged_2 = {
 			removal_cost = -1
 
+			name = officers_purged
+
 			picture = officers_purged
 
 			allowed = {
@@ -4154,6 +4156,8 @@ ideas = {
 		}
 		officers_purged_3 = {
 			removal_cost = -1
+
+			name = officers_purged
 
 			picture = officers_purged
 
@@ -4178,6 +4182,8 @@ ideas = {
 		officers_purged_4 = {
 			removal_cost = -1
 
+			name = officers_purged
+
 			picture = officers_purged
 
 			allowed = {
@@ -4200,6 +4206,8 @@ ideas = {
 		}
 		officers_purged_5 = {
 			removal_cost = -1
+
+			name = officers_purged
 
 			picture = officers_purged
 
@@ -4224,6 +4232,8 @@ ideas = {
 		officers_purged_6 = {
 			removal_cost = -1
 
+			name = officers_purged
+
 			picture = officers_purged
 
 			allowed = {
@@ -4246,6 +4256,8 @@ ideas = {
 		}
 		officers_purged_7 = {
 			removal_cost = -1
+
+			name = officers_purged
 
 			picture = officers_purged
 
@@ -4270,6 +4282,8 @@ ideas = {
 		officers_purged_8 = {
 			removal_cost = -1
 
+			name = officers_purged
+
 			picture = officers_purged
 
 			allowed = {
@@ -4293,6 +4307,8 @@ ideas = {
 		officers_purged_9 = {
 			removal_cost = -1
 
+			name = officers_purged
+
 			picture = officers_purged
 
 			allowed = {
@@ -4315,6 +4331,8 @@ ideas = {
 		}
 		officers_purged_10 = {
 			removal_cost = -1
+
+			name = officers_purged
 
 			picture = officers_purged
 

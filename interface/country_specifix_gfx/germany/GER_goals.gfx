@@ -1,0 +1,18 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_goal_GER_bismarck_red"
+		texturefile = "gfx/interface/goals/GER/GER_bismarck_red.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_GER_bismarck_blue"
+		texturefile = "gfx/interface/goals/GER/GER_bismarck_blue.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_GER_bavaria"
+		texturefile = "gfx/interface/goals/GER/GER_bavaria.dds"
+	}
+
+}

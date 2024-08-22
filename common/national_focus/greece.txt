@@ -1437,7 +1437,7 @@ focus = {
 		
 		focus = {
 		id = GRE_prepare_for_the_future
-		icon = GFX_focus_generic_self_management
+		icon = GFX_focus_GRE_bedrock_of_balkan_stability
        
 		available = {
 		}
@@ -1467,7 +1467,7 @@ focus = {
 		}
 		focus = { 
 		id = GRE_first_five_year_plan
-		icon = GFX_focus_NORDIC_com_selector_civilian
+		icon = GFX_focus_GRE_5_year_plan_focus
         prerequisite = { focus = GRE_prepare_for_the_future}
 		available = {
 		}
@@ -1481,7 +1481,7 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	         add_ideas = GRE_five_year_plan
+	         add_ideas = GRE_five_year_plan_idea
 		    }
 		}
 		focus = { 
@@ -1528,7 +1528,7 @@ focus = {
 		}
 		focus = { 
 		id = GRE_remilitarize_the_economy
-		icon = GFX_focus_NORDIC_com_materiel
+		icon = GFX_focus_GRE_industrialize_athens
         prerequisite = { focus = GRE_prepare_for_the_future}
 		available = {
 		}
@@ -1542,7 +1542,7 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	          add_ideas = GRE_preprare_for_war
+	          add_ideas = GRE_preprare_for_war_idea
 		    }
 		}
 		focus = { 
@@ -1659,7 +1659,7 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	         add_ideas = GRE_increase_greek_productivity
+	         add_ideas = GRE_increase_greek_productivity_idea
 		    }
 		}
 		focus = { 
@@ -1750,7 +1750,7 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	          add_ideas = GRE_diverse_markets
+	          add_ideas = GRE_diverse_markets_idea
 		    }
 		}
 		focus = { 
@@ -1793,12 +1793,12 @@ focus = {
 		search_filters = {  }
 		completion_reward = {
 	       add_research_slot = 1
-		   add_ideas = GRE_build_university_of_athens
+		   add_ideas = GRE_build_university_of_athens_idea
 			}
 		}
 		focus = { 
 		id = GRE_modern_construction_technique
-		icon = GFX_focus_generic_steel
+		icon = GFX_focus_GRE_new_con
 		prerequisite = { focus = GRE_first_five_year_plan}
 		available = {
 		}
@@ -1812,7 +1812,7 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	       add_ideas = GRE_modern_construction_technique
+	       add_ideas = GRE_modern_construction_technique_idea
 		   add_tech_bonus = {
 				bonus = 1
 				uses = 2
@@ -1822,7 +1822,7 @@ focus = {
 		}
 		focus = { 
 		id = GRE_tax_incentives
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_GRE_tax_heaven
 		prerequisite = { focus = GRE_modern_construction_technique}
 		available = {
 		}
@@ -1836,7 +1836,7 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	       add_ideas = GRE_tax_incentives
+	       add_ideas = GRE_tax_incentives_idea
 			}
 		}
 		focus = { 
@@ -1855,7 +1855,7 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	     add_ideas = GRE_naval_capital_of_the_balkans
+	     add_ideas = GRE_naval_capital_of_the_balkans_idea
 			}
 		}
 		focus = { 
@@ -1877,14 +1877,13 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	       remove_ideas = GRE_naval_capital_of_the_balkans
-		    remove_ideas = GRE_tax_incentives
-			remove_ideas = GRE_build_university_of_athens
-			remove_ideas = GRE_diverse_markets
-			remove_ideas = GRE_increase_greek_productivity
-			remove_ideas = GRE_preprare_for_war
-			remove_ideas = GRE_five_year_plan
-			add_ideas = GRE_the_greek_golden_age
+	       remove_ideas = GRE_naval_capital_of_the_balkans_idea
+		    remove_ideas = GRE_tax_incentives_idea
+			remove_ideas = GRE_build_university_of_athens_idea
+			remove_ideas = GRE_diverse_markets_idea
+			remove_ideas = GRE_increase_greek_productivity_idea
+			remove_ideas = GRE_preprare_for_war_idea
+			add_ideas = GRE_the_greek_golden_age_idea
 			}
 		}
 	}

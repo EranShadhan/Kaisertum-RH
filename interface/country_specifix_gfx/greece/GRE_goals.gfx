@@ -6,6 +6,22 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GRE/goal_hellenic_tanks.dds"
 	}
 	SpriteType = {
+		name = "GFX_focus_GRE_industrialize_athens"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_industrialize_athens.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GRE_5_year_plan_focus"
+		texturefile = "gfx/interface/goals/GRE/GRE_5_year_plan_focus.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GRE_new_con"
+		texturefile = "gfx/interface/goals/GRE/GRE_new_con.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GRE_tax_heaven"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_tax_heaven.dds"
+	}
+	SpriteType = {
 		name = "GFX_focus_GRE_pyrkal"
 		texturefile = "gfx/interface/goals/GRE/goal_GRE_pyrkal.dds"
 	}
