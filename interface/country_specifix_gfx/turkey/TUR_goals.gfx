@@ -10,26 +10,26 @@ spriteTypes = {
 	}
 	SpriteType = {
 	name = "GFX_TUR_invite_german_military_mission"
-	texturefile = "gfx/interface/goals/TUR/invite_german_military_mission.dds"			
+	texturefile = "gfx/interface/goals/TUR/invite_german_military_mission.png"			
 	}
 	SpriteType = {
 	name = "GFX_TUR_invite_russian_military_mission"
-	texturefile = "gfx/interface/goals/TUR/invite_russian_military_mission.dds"			
+	texturefile = "gfx/interface/goals/TUR/invite_russian_military_mission.png"			
 	}
 	SpriteType = {
 	name = "GFX_TUR_cappadocia_exercises"
-	texturefile = "gfx/interface/goals/TUR/cappadocia_exercises.dds"			
+	texturefile = "gfx/interface/goals/TUR/cappadocia_exercises.png"			
 	}
 	SpriteType = {
 	name = "GFX_TUR_buy_german_artillery"
-	texturefile = "gfx/interface/goals/TUR/buy_german_artillery.dds"			
+	texturefile = "gfx/interface/goals/TUR/buy_german_artillery.png"			
 	}
 	SpriteType = {
 	name = "GFX_TUR_a_truly_modern_military"
-	texturefile = "gfx/interface/goals/TUR/a_truly_modern_military.dds"			
+	texturefile = "gfx/interface/goals/TUR/a_truly_modern_military.png"			
 	}
 	SpriteType = {
 	name = "GFX_TUR_invite_german_naval_mission"
-	texturefile = "gfx/interface/goals/TUR/invite_german_naval_mission.dds"			
+	texturefile = "gfx/interface/goals/TUR/invite_german_naval_mission.png"			
 	}
 }

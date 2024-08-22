@@ -550,9 +550,6 @@ focus_tree = {
 			focus = TUR_utilize_new_naval_technologies
 		}
 		available = {
-			NOT = {
-				has_war_with = GER
-			}
 		}
 		completion_reward = {
 			random_owned_state = {
@@ -582,9 +579,7 @@ focus_tree = {
 		focus = TUR_old_reliable_ways
 		}
 		available = {
-			NOT = {
-				has_war_with = GER
-			}
+
 		}
 			completion_reward = {
 			add_tech_bonus = {
@@ -606,9 +601,7 @@ focus_tree = {
 		focus = TUR_old_reliable_ways
 		}
 		available = {
-			NOT = {
-				has_war_with = GER
-			}
+
 		}
 			completion_reward = {
 			add_tech_bonus = {
@@ -634,9 +627,7 @@ focus_tree = {
 		focus = TUR_focus_on_cruisers
 		}
 		available = {
-			NOT = {
-				has_war_with = GER
-			}
+
 		}
 			completion_reward = {
 			add_tech_bonus = {
@@ -662,9 +653,7 @@ focus_tree = {
 			focus = TUR_old_reliable_ways
 		}
 		available = {
-			NOT = {
-				has_war_with = GER
-			}
+
 		}
 			completion_reward = {
 				navy_experience = 10
@@ -683,9 +672,7 @@ focus_tree = {
 		focus = TUR_utilize_new_naval_technologies
 		}
 		available = {
-			NOT = {
-				has_war_with = GER
-			}
+
 		}
 			completion_reward = {
 				add_tech_bonus = {
@@ -707,9 +694,7 @@ focus_tree = {
 		focus = TUR_utilize_new_naval_technologies
 		}
 		available = {
-			NOT = {
-				has_war_with = GER
-			}
+
 		}
 			completion_reward = {
 				add_tech_bonus = {
@@ -736,9 +721,6 @@ focus_tree = {
 		focus = TUR_battlecruiser_improvements
 		}
 		available = {
-			NOT = {
-				has_war_with = GER
-			}
 		}
 		completion_reward = {
 			add_ideas = TUR_navy_modernization_idea

@@ -64,10 +64,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_TUR_invite_german_military_mission_shine"
-		texturefile = "gfx/interface/goals/TUR/invite_german_military_mission.dds"
+		texturefile = "gfx/interface/goals/TUR/invite_german_military_mission.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR/invite_german_military_mission.dds"
+			animationmaskfile = "gfx/interface/goals/TUR/invite_german_military_mission.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -80,7 +80,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR/invite_german_military_mission.dds"
+			animationmaskfile = "gfx/interface/goals/TUR/invite_german_military_mission.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -95,10 +95,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_TUR_invite_russian_military_mission_shine"
-		texturefile = "gfx/interface/goals/TUR/invite_russian_military_mission.dds"
+		texturefile = "gfx/interface/goals/TUR/invite_russian_military_mission.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR/invite_russian_military_mission.dds"
+			animationmaskfile = "gfx/interface/goals/TUR/invite_russian_military_mission.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -111,7 +111,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR/invite_russian_military_mission.dds"
+			animationmaskfile = "gfx/interface/goals/TUR/invite_russian_military_mission.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -126,10 +126,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_TUR_cappadocia_exercises_shine"
-		texturefile = "gfx/interface/goals/TUR/cappadocia_exercises.dds"
+		texturefile = "gfx/interface/goals/TUR/cappadocia_exercises.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR/cappadocia_exercises.dds"
+			animationmaskfile = "gfx/interface/goals/TUR/cappadocia_exercises.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -142,7 +142,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR/cappadocia_exercises.dds"
+			animationmaskfile = "gfx/interface/goals/TUR/cappadocia_exercises.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -157,10 +157,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_TUR_buy_german_artillery_shine"
-		texturefile = "gfx/interface/goals/TUR/buy_german_artillery.dds"
+		texturefile = "gfx/interface/goals/TUR/buy_german_artillery.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR/buy_german_artillery.dds"
+			animationmaskfile = "gfx/interface/goals/TUR/buy_german_artillery.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -173,7 +173,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR/buy_german_artillery.dds"
+			animationmaskfile = "gfx/interface/goals/TUR/buy_german_artillery.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -188,10 +188,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_TUR_a_truly_modern_military_shine"
-		texturefile = "gfx/interface/goals/TUR/a_truly_modern_military.dds"
+		texturefile = "gfx/interface/goals/TUR/a_truly_modern_military.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR/a_truly_modern_military.dds"
+			animationmaskfile = "gfx/interface/goals/TUR/a_truly_modern_military.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -204,7 +204,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR/a_truly_modern_military.dds"
+			animationmaskfile = "gfx/interface/goals/TUR/a_truly_modern_military.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -219,10 +219,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_TUR_invite_german_naval_mission_shine"
-		texturefile = "gfx/interface/goals/TUR/invite_german_naval_mission.dds"
+		texturefile = "gfx/interface/goals/TUR/invite_german_naval_mission.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR/invite_german_naval_mission.dds"
+			animationmaskfile = "gfx/interface/goals/TUR/invite_german_naval_mission.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -235,7 +235,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/TUR/invite_german_naval_mission.dds"
+			animationmaskfile = "gfx/interface/goals/TUR/invite_german_naval_mission.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
