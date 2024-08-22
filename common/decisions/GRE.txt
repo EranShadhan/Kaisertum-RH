@@ -930,6 +930,7 @@ GRE_faction_management_category = {
 
 		activation = {
 			original_tag = GRE
+			date > 1930.1.2
 		}
 
 		visible = {

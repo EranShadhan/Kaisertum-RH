@@ -146,7 +146,7 @@ ideas = {
 		GRE_stronk = {
 			
 
-			picture = gre_venerate_the_ancient_hellenes_complete
+			picture = gre_martyrs_of_the_anatolian_catastrophe
 
 			
 			removal_cost = -1
@@ -665,54 +665,59 @@ ideas = {
 			
 			
 		}
-		GRE_Five_year_plan = {
+		GRE_five_year_plan_idea = {
 			
 
-			picture = GRE_
-
-			
-			removal_cost = -1
-            modifier = {
-			production_speed_buildings_factor = 0.15
-			consumer_goods_factor = -0.10
-			
-			}
-			
-		}
-		GRE_preprare_for_war = {
-			
-
-			picture = GRE_
+			picture = generic_production_bonus
 
 			
 			removal_cost = -1
             modifier = {
-			production_speed_arms_factory_factor = 0.10
-			consumer_goods_factor = -0.05
+			
+			production_speed_industrial_complex_factor = 0.25
+				production_speed_dockyard_factor = 0.1
+					production_speed_buildings_factor = 0.15
+					consumer_goods_factor = -0.05
+				production_speed_infrastructure_factor = 0.05
+				political_power_cost = 0.25
+			}
+			
+		}
+		GRE_preprare_for_war_idea = {
+			
+
+			picture = generic_reserve_divisions
+
+			
+			removal_cost = -1
+            modifier = {
+			production_speed_arms_factory_factor = 0.15
+			industrial_capacity_factory = 0.1
 			
 			}
 			
 		}
-		GRE_increase_greek_productivity {
+		GRE_increase_greek_productivity_idea {
 			
 
-			picture = GRE_
+			picture = generic_exploit_mines
 
 			
 			removal_cost = -1
             modifier = {
 						
 			line_change_production_efficiency_factor = 0.1
-			production_factory_efficiency_gain_factor = 0.1
+			production_factory_efficiency_gain_factor = 0.05
+			production_factory_max_efficiency_factor = 0.15
 
 			
 			}
 			
 		}
-		GRE_diverse_markets {
+		GRE_diverse_markets_idea {
 			
 
-			picture = GRE_
+			picture = fra_market_dynamism
 
 			
 			removal_cost = -1
@@ -720,15 +725,16 @@ ideas = {
 						
 			political_power_factor = 0.1
 			industrial_capacity_factory = 0.1
-
+             conversion_cost_civ_to_mil_factor= -0.25
+				conversion_cost_mil_to_civ_factor = -0.25
 			
 			}
 			
 		}
-			GRE_build_university_of_athens {
+			GRE_build_university_of_athens_idea {
 			
 
-			picture = GRE_
+			picture = jap_supremacy_of_technology
 
 			
 			removal_cost = -1
@@ -740,75 +746,75 @@ ideas = {
 			}
 			
 		}
-			GRE_modern_construction_technique {
+			GRE_modern_construction_technique_idea {
 
 			
 
-			picture = GRE_
+			picture = ARG_construction_guilds
 
 			
 			removal_cost = -1
             modifier = {
 			
 			global_building_slots = 1
-			
+			production_speed_buildings_factor= 0.05
 
 			}
 			
 		}
-		GRE_tax_incentives {
+		GRE_tax_incentives_idea {
 
 			
 
-			picture = GRE_
+			picture = NOR_printing_money
 
 			
 			removal_cost = -1
             modifier = {
 			
 			production_speed_industrial_complex_factor = 0.1
-			local_resources_factor = 0.2
-			
+			local_resources_factor = 0.25
+			production_lack_of_resource_penalty_factor = -0.1
 
 			}
 			
 		}
-		GRE_naval_capital_of_the_balkans {
+		GRE_naval_capital_of_the_balkans_idea {
 
 			
 
-			picture = GRE_
+			picture = GRE_balkan_navy
 
 			
 			removal_cost = -1
             modifier = {
 			
-			industrial_capacity_dockyard = 0.10
+			industrial_capacity_dockyard = 0.2
 			production_factory_max_efficiency_factor = 0.1
 			
 
 			}
 		 }
-		GRE_the_greek_golden_age {
+		GRE_the_greek_golden_age_idea {
 
 			
 
-			picture = GRE_
+			picture = gre_venerate_the_ancient_hellenes_complete
 
 			
 			removal_cost = -1
             modifier = {
 			
-			industrial_capacity_dockyard = 0.15
-			production_factory_max_efficiency_factor = 0.15
+			industrial_capacity_dockyard = 0.3
+			production_factory_max_efficiency_factor = 0.25
 			local_resources_factor = 0.3
 			production_speed_industrial_complex_factor = 0.15
 			research_speed_factor = 0.15
 			global_building_slots = 2
-			industrial_capacity_factory = 0.15
+			industrial_capacity_factory = 0.25
 			consumer_goods_factor = -0.2
-			production_speed_buildings_factor = 0.15
-			production_speed_arms_factory_factor = 0.15
+			production_speed_buildings_factor = 0.25
+			production_speed_arms_factory_factor = 0.25
 			}
 		 }
 	

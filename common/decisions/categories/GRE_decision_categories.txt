@@ -51,4 +51,5 @@ GRE_faction_management_category = {
 	allowed = {
 		original_tag = GRE
 	}
+	visible_when_empty = yes
 }
