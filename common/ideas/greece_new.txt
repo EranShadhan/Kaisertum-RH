@@ -475,7 +475,11 @@ ideas = {
 			picture = strategic_bombing_focus
 		
 			allowed = {
-				always = no
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
 			}
 			
 			removal_cost = -1
@@ -502,9 +506,12 @@ ideas = {
 		GRE_nuclear_use = {
 		
 			picture = GRE_nuclear
-		
-			allowed = {
-				always = no
+		allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
 			}
 			
 			removal_cost = -1
@@ -519,7 +526,13 @@ ideas = {
 
 			picture = GRE_first_schism
 
-			
+			allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
 			removal_cost = -1
             modifier = {
 			stability_factor = -0.15
@@ -533,7 +546,13 @@ ideas = {
 			
 
 			picture = gre_eee_opposition
+allowed = {
+				original_tag = GRE
+			}
 
+			allowed_civil_war = {
+				always = yes
+			}
 			
 			removal_cost = -1
             modifier = {
@@ -548,7 +567,13 @@ ideas = {
 			name = GRE_eee_enemy
 
 			picture = gre_eee_opposition
+allowed = {
+				original_tag = GRE
+			}
 
+			allowed_civil_war = {
+				always = yes
+			}
 			
 			removal_cost = -1
             modifier = {
@@ -565,7 +590,13 @@ ideas = {
 			name = GRE_eee_enemy
 
 			picture = gre_eee_opposition
+allowed = {
+				original_tag = GRE
+			}
 
+			allowed_civil_war = {
+				always = yes
+			}
 			
 			removal_cost = -1
             modifier = {
@@ -582,7 +613,13 @@ ideas = {
 			name = GRE_eee_enemy
 
 			picture = gre_eee_opposition
+allowed = {
+				original_tag = GRE
+			}
 
+			allowed_civil_war = {
+				always = yes
+			}
 			
 			removal_cost = -1
             modifier = {
@@ -601,7 +638,13 @@ ideas = {
 			name = GRE_eee_enemy
 
 			picture = gre_eee_opposition
+             allowed = {
+				original_tag = GRE
+			}
 
+			allowed_civil_war = {
+				always = yes
+			}
 			
 			removal_cost = -1
             modifier = {
@@ -622,7 +665,13 @@ ideas = {
 
 			picture = gre_eee_opposition
 
-			
+			allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
 			removal_cost = -1
             modifier = {
 			stability_factor = -0.35
@@ -639,7 +688,13 @@ ideas = {
 		}
 		GRE_megali_idea_partial_restoration = {
 			
+            allowed = {
+				original_tag = GRE
+			}
 
+			allowed_civil_war = {
+				always = yes
+			}
 			picture = GRE_megali
 
 			
@@ -655,7 +710,13 @@ ideas = {
 
 			picture = GRE_exchange
 
-			
+			allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
 			removal_cost = -1
             modifier = {
 			weekly_manpower = -75
@@ -667,10 +728,16 @@ ideas = {
 		}
 		GRE_five_year_plan_idea = {
 			
-
+ 
 			picture = generic_production_bonus
 
-			
+			allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
 			removal_cost = -1
             modifier = {
 			
@@ -687,7 +754,13 @@ ideas = {
 			
 
 			picture = generic_reserve_divisions
+            allowed = {
+				original_tag = GRE
+			}
 
+			allowed_civil_war = {
+				always = yes
+			}
 			
 			removal_cost = -1
             modifier = {
@@ -697,11 +770,17 @@ ideas = {
 			}
 			
 		}
-		GRE_increase_greek_productivity_idea {
+		GRE_increase_greek_productivity_idea = {
 			
 
 			picture = generic_exploit_mines
+           allowed = {
+				original_tag = GRE
+			}
 
+			allowed_civil_war = {
+				always = yes
+			}
 			
 			removal_cost = -1
             modifier = {
@@ -714,9 +793,15 @@ ideas = {
 			}
 			
 		}
-		GRE_diverse_markets_idea {
+		GRE_diverse_markets_idea = {
 			
+             allowed = {
+				original_tag = GRE
+			}
 
+			allowed_civil_war = {
+				always = yes
+			}
 			picture = fra_market_dynamism
 
 			
@@ -731,11 +816,17 @@ ideas = {
 			}
 			
 		}
-			GRE_build_university_of_athens_idea {
+			GRE_build_university_of_athens_idea = {
 			
 
 			picture = jap_supremacy_of_technology
+allowed = {
+				original_tag = GRE
+			}
 
+			allowed_civil_war = {
+				always = yes
+			}
 			
 			removal_cost = -1
             modifier = {
@@ -746,12 +837,18 @@ ideas = {
 			}
 			
 		}
-			GRE_modern_construction_technique_idea {
+			GRE_modern_construction_technique_idea = {
 
 			
 
 			picture = ARG_construction_guilds
+allowed = {
+				original_tag = GRE
+			}
 
+			allowed_civil_war = {
+				always = yes
+			}
 			
 			removal_cost = -1
             modifier = {
@@ -762,13 +859,19 @@ ideas = {
 			}
 			
 		}
-		GRE_tax_incentives_idea {
+		GRE_tax_incentives_idea = {
 
 			
 
 			picture = NOR_printing_money
 
-			
+			allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
 			removal_cost = -1
             modifier = {
 			
@@ -779,9 +882,15 @@ ideas = {
 			}
 			
 		}
-		GRE_naval_capital_of_the_balkans_idea {
+		GRE_naval_capital_of_the_balkans_idea = {
 
-			
+			allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
 
 			picture = GRE_balkan_navy
 
@@ -795,9 +904,15 @@ ideas = {
 
 			}
 		 }
-		GRE_the_greek_golden_age_idea {
+		GRE_the_greek_golden_age_idea = {
 
-			
+			allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
 
 			picture = gre_venerate_the_ancient_hellenes_complete
 

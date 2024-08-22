@@ -1547,7 +1547,7 @@ focus = {
 		}
 		focus = { 
 		id = GRE_industrial_improvements
-		icon =	GFX_focus_generic_modernize_industry
+		icon =	GFX_focus_CHL_domestic_production_of_the_willys_mb
         prerequisite = { focus = GRE_prepare_for_the_future}
 		available = {
 		}
@@ -1580,8 +1580,8 @@ focus = {
 		    }
 		}
 		focus = { 
-		id = develop_our_islands
-		icon = GFX_focus_generic_industry_1
+		id = GRE_develop_our_islands
+		icon = GFX_focus_GRE_islanddev
         prerequisite = { focus = GRE_industrial_improvements }
 		available = {
 		}
@@ -1615,12 +1615,12 @@ focus = {
 		}
 		focus = { 
 		id = GRE_develop_epirus
-		icon = GFX_focus_generic_industry_2
-        prerequisite = { focus = develop_our_islands }
+		icon = GFX_focus_greek_agricultural_revolution
+        prerequisite = { focus = GRE_develop_our_islands }
 		
 		x = 0
 		y = 1
-		relative_position_id = develop_our_islands
+		relative_position_id = GRE_develop_our_islands
 		cost = 5
 			ai_will_do = {
 			base = 0
@@ -1822,7 +1822,7 @@ focus = {
 		}
 		focus = { 
 		id = GRE_tax_incentives
-		icon = GFX_focus_GRE_tax_heaven
+		icon = GFX_focus_GRE_good_taxation
 		prerequisite = { focus = GRE_modern_construction_technique}
 		available = {
 		}

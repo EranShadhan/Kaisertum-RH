@@ -1,10 +1,20 @@
 spriteTypes = {
-
-	#GREEK FOCUSES
+    SpriteType = {
+		name = "GFX_focus_GRE_good_taxation"
+		texturefile = "gfx/interface/goals/GRE/GRE_good_taxation.dds"
+	}
 	SpriteType = {
 		name = "GFX_focus_hellenic_tanks"
 		texturefile = "gfx/interface/goals/GRE/goal_hellenic_tanks.dds"
+	} 
+	SpriteType = {
+		name = "GFX_focus_GRE_islanddev"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_islanddev.dds"
 	}
+	sriteType = {
+		name = "GFX_focus_greek_agricultural_revolution"
+		texturefile = "gfx/interface/goals/GRE/GRE_greek_agricultural_revolution.dds"
+	} 
 	SpriteType = {
 		name = "GFX_focus_GRE_industrialize_athens"
 		texturefile = "gfx/interface/goals/GRE/focus_GRE_industrialize_athens.dds"
@@ -12,14 +22,14 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_GRE_5_year_plan_focus"
 		texturefile = "gfx/interface/goals/GRE/GRE_5_year_plan_focus.dds"
-	}
+	} 
 	SpriteType = {
 		name = "GFX_focus_GRE_new_con"
 		texturefile = "gfx/interface/goals/GRE/GRE_new_con.dds"
 	}
 	SpriteType = {
-		name = "GFX_focus_GRE_tax_heaven"
-		texturefile = "gfx/interface/goals/GRE/focus_GRE_tax_heaven.dds"
+		name = "GFX_focus_secure_crete"
+		texturefile = "gfx/interface/goals/GRE/focus_secure_crete.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_GRE_pyrkal"
