@@ -75,3 +75,16 @@
  GRE_faction_indifferent2:1 "Indifferent"
  GRE_faction_hostile2:1 "§RThreat\n\n-15%\n\n\n-5%\n\n\n-10%\n\n\n-10%§!"
  GRE_faction_inconsequential2:1 "§gNeutral \n\n- 0%\n\n\n- 0%\n\n\n- 0%\n\n\n- 0%§!"
+ 
+ GRE_expand_influence_in_FROM:0 "Influence [FROM.getName]"
+ GRE_not_total_control:0 "Already under total Control"
+ from_variable:0 "[FROM.getName] currently has §Y[?FROM.GRE_garrison_control] Metaxas Allegiance Points§!"
+ GRE_will_lose_1:0 "Current Action will increase the King's Allegiance value by §R1§!"
+ GRE_will_gain_1:0 "Current Action will increase Metaxas' Allegiance value by §R1§!"
+ trigger_civil_war_now:0 "National Schism Escalation"
+ battle_of_influence:0 "§C[GRE.getDemocraticLeader]§! and §g[GRE.GetNeutralLeader]§! are politicaly fighting each other"
+ battle_of_influence_royalist_side:0 "§C[GRE.getDemocraticLeader]§! and §g[GRE.GetNeutralLeader]§! are politicaly fighting each other"
+ automatic_add_venizelists:0 "Metaxas Meeting"
+ trigger_civil_war_now_royalist:0 "Metaxas Uprising"
+ GRE_local_constantine_support:0 "Local George Support"
+ automatic_add_royalists:0 "George II Rally in [FROM.getName]

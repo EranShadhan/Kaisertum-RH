@@ -16,4 +16,25 @@ spriteTypes = {
 		name = "GFX_decision_GRE_claim_state_4"
 		texturefile = "gfx/interface/decisions/GRE/gre3.dds"
 	}
+		spriteType = {
+		name = "GFX_decision_GRE_claim_state_1_alt"
+		texturefile = "gfx/interface/decisions/GRE/greo0.dds"
+	}		
+	spriteType = {
+		name = "GFX_decision_GRE_claim_state_2_alt"
+		texturefile = "gfx/interface/decisions/GRE/greo1.dds"
+	}
+					
+	spriteType = {
+		name = "GFX_decision_GRE_claim_state_3_alt"
+		texturefile = "gfx/interface/decisions/GRE/greo2.dds"
+	}	
+	spriteType = {
+		name = "GFX_decision_GRE_claim_state_4_alt"
+		texturefile = "gfx/interface/decisions/GRE/greo3.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_gre_onassis_plan"
+		texturefile = "gfx/interface/decisions/GRE/gre_onassis_cat.dds"
+	}
 }

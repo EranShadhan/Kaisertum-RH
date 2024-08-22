@@ -910,226 +910,213 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 }
 
 GRE_faction_management_category = {
+GRE_expand_influence_in_FROM = {
+		allowed = { original_tag = GRE }
+		cost = 10
+		icon = {
+			key = GFX_decision_GRE_claim_state_4_alt
+			trigger = {
+				FROM = { check_variable = { var = GRE_garrison_control value = -3 compare = less_than_or_equals } }
+			}
+		}
 
-GRE_metaxas_wants_support1 = {
+		icon = {
+			key = GFX_decision_GRE_claim_state_3_alt
+			trigger = {
+				FROM = { check_variable = { var = GRE_garrison_control value = -2 compare = equals } }
+			}
+		}
 
-		
+		icon = {
+			key = GFX_decision_GRE_claim_state_2_alt
+			trigger = {
+				FROM = { check_variable = { var = GRE_garrison_control value = -1 compare = equals } }
+			}
+		}
+
+		icon = {
+			key = GFX_decision_GRE_claim_state_1_alt
+			trigger = {
+				FROM = { check_variable = { var = GRE_garrison_control value = 0 compare = equals } }
+			}
+		}
+
 		icon = {
 			key = GFX_decision_GRE_claim_state_1
-			
-		}
-
-		allowed = {
-			original_tag = GRE
-		}
-
-		available = {
-			
-		}
-
-		state_target = yes
-
-		on_map_mode = map_and_decisions_view
-		target_array = controlled_states
-
-		target_trigger = {
-			FROM = {
-					NOT = {	has_state_flag = GRE_metaxas1 }
-					is_core_of = GRE}
-				
+			trigger = {
+				FROM = { check_variable = { var = GRE_garrison_control value = 1 compare = equals } }
 			}
-		
-
-		cost = 20
-
-		fire_only_once = yes
-
-		days_remove = 15
-
-		modifier = {
 		}
-
-		visible = {
-			tag = GRE
-			always = yes
-		}
-
-		complete_effect = {
-          FROM = {
-	
-				set_state_flag = GRE_metaxas1
-				}
-		}
-
-		remove_effect = {
-      
-		}
-	}
-
-GRE_metaxas_wants_support2 = {
-
-		
 		icon = {
 			key = GFX_decision_GRE_claim_state_2
-			
-		}
-
-		allowed = {
-			original_tag = GRE
-		}
-
-		available = {
-			
-		}
-
-		state_target = yes
-
-		on_map_mode = map_and_decisions_view
-		target_array = controlled_states
-
-		target_trigger = {
-			FROM = {
-						has_state_flag = GRE_metaxas1 
-					NOT = {	has_state_flag = GRE_metaxas2 }
-					is_core_of = GRE}
-				
+			trigger = {
+				FROM = { check_variable = { var = GRE_garrison_control value = 2 compare = equals } }
 			}
-		
-
-		cost = 20
-
-		fire_only_once = yes
-
-		days_remove = 15
-
-		modifier = {
 		}
-
-		visible = {
-			tag = GRE
-			always = yes
-		}
-
-		complete_effect = {
-          FROM = {
-	
-				set_state_flag = GRE_metaxas2
-				}
-		}
-
-		remove_effect = {
-      
-		}
-	}
-GRE_metaxas_wants_support3 = {
-
-		
 		icon = {
 			key = GFX_decision_GRE_claim_state_3
-			
-		}
-
-		allowed = {
-			original_tag = GRE
-		}
-
-		available = {
-			
-		}
-
-		state_target = yes
-
-		on_map_mode = map_and_decisions_view
-		target_array = controlled_states
-
-		target_trigger = {
-			FROM = {
-					has_state_flag = GRE_metaxas1 
-						has_state_flag = GRE_metaxas2 
-						not = {has_state_flag = GRE_metaxas3}
-					is_core_of = GRE}
-				
+			trigger = {
+				FROM = { check_variable = { var = GRE_garrison_control value = 3 compare = equals } }
 			}
-		
-
-		cost = 20
-
-		fire_only_once = yes
-
-		days_remove = 15
-
-		modifier = {
 		}
-
-		visible = {
-			tag = GRE
-			always = yes
-		}
-
-		complete_effect = {
-          FROM = {
-	
-				set_state_flag = GRE_metaxas3
-				}
-		}
-
-		remove_effect = {
-      
-		}
-	}	
-	GRE_metaxas_wants_support4 = {
-
-		
 		icon = {
 			key = GFX_decision_GRE_claim_state_4
-			
+			trigger = {
+				FROM = { check_variable = { var = GRE_garrison_control value = 4 compare = greater_than_or_equals } }
+			}
 		}
-
-		allowed = {
+		visible = {
 			original_tag = GRE
 		}
-
-		available = {
-			always = no
-		}
-
 		state_target = yes
-
-		on_map_mode = map_and_decisions_view
-		target_array = controlled_states
-
 		target_trigger = {
+			
 			FROM = {
-					has_state_flag = GRE_metaxas1 
-						has_state_flag = GRE_metaxas2 
-						has_state_flag = GRE_metaxas3
-					is_core_of = GRE}
+					is_core_of = ROOT
+					is_owned_by = ROOT
+					
+				}
 				
 			}
 		
+		
 
-		cost = 20
+		fire_only_once = no
 
-		fire_only_once = yes
+		on_map_mode = map_and_decisions_view
 
-		days_remove = 15
-
-		modifier = {
-		}
-
-		visible = {
-			tag = GRE
-			always = yes
-		}
+		days_remove = 14
 
 		complete_effect = {
-          
+			set_country_flag = is_expanding_influence
 		}
 
 		remove_effect = {
-      
+			clr_country_flag = is_expanding_influence
+			if = {
+				limit = {
+					has_country_flag = national_schism_royalist_side
+				}
+				FROM = {
+					add_to_variable = { var = GRE_garrison_control value = -1 }
+				}
+				else = {
+					FROM = {
+						add_to_variable = { var = GRE_garrison_control value = 1 }
+					}
+				}
+			}
+			
+			custom_effect_tooltip = from_variable
 		}
-	}	
+		available = {
+			has_civil_war = no
+			NOT = {
+				has_country_flag = is_expanding_influence
+			}
+			if = {
+				limit = {
+					has_country_flag = national_schism_royalist_side
+				}
+				custom_trigger_tooltip = {
+					FROM = { check_variable = { var = GRE_garrison_control value = -3 compare = greater_than } }
+					tooltip = GRE_not_total_control
+				}
+				else = {
+					custom_trigger_tooltip = {
+						FROM = { check_variable = { var = GRE_garrison_control value = 4 compare = less_than } }
+						tooltip = GRE_not_total_control
+					}
+				}
+			}
+			
+		}
+
+		ai_will_do = {
+			base = 110
+		}
+	}
+	automatic_add_royalists = {
+		icon = GFX_decision_faction_gre_monarchist
+		allowed = { original_tag = GRE }
+		activation = { 
+			NOT = {
+				has_country_flag = national_schism_royalist_side
+			}
+			has_country_flag = nationa_schism_part2 
+		}
+		is_good = no
+		days_re_enable = 1
+		days_mission_timeout = 14
+		available = {
+			OR = {
+				NOT = {
+					has_country_flag = nationa_schism_part2 
+				}
+				has_country_flag = national_schism_royalist_side
+			}
+		}
+		timeout_effect = {
+			
+			if = {
+				limit = { 
+					any_state = {
+					check_variable = { var = GRE_garrison_control value = 1 compare = greater_than_or_equals }
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						has_variable = GRE_garrison_control
+						check_variable = { var = GRE_garrison_control value = -2 compare = greater_than_or_equals }
+						
+					}
+					subtract_from_variable = { var = GRE_garrison_control value = 1 }
+					custom_effect_tooltip = GRE_will_lose_1
+				}
+				
+			}
+		
+		}
+	}
+	automatic_add_metaxas = {
+		icon = GFX_decision_faction_gre_venezelist
+		allowed = { original_tag = GRE }
+		activation = { 
+			has_country_flag = national_schism_royalist_side
+			has_country_flag = nationa_schism_part2 
+		}
+		is_good = no
+		days_re_enable = 1
+		days_mission_timeout = 14
+		available = {
+			OR = {
+				NOT = {
+					has_country_flag = nationa_schism_part2 
+					
+				}
+			}
+		}
+		timeout_effect = {
+	          if = {
+				limit = { 
+					any_state = {
+					check_variable = { var = GRE_garrison_control value = 0 compare = less_than_or_equals }
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						has_variable = GRE_garrison_control
+						check_variable = { var = GRE_garrison_control value = 1 compare = less_than_or_equals }
+						
+					}
+					subtract_from_variable = { var = GRE_garrison_control value = -1 }
+					custom_effect_tooltip = GRE_will_gain_1
+				}
+				
+			}
+			
+		}
+	}
 	GRE_eee_raids_factories  = { 
 
 		icon = generic_political_rally
@@ -1342,3 +1329,556 @@ GRE_metaxas_wants_support3 = {
 	    }
 	}
 }
+GRE_onassis_dec_category = {
+GRE_trust_onassis_to_build_our_ships = {
+
+		icon = hol_attract_foreign_investors 
+
+		allowed = { 
+			original_tag = GRE
+		}
+
+		available = {
+			}
+
+	
+		days_remove = 30
+
+		cost = 25
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+			
+		}
+
+		visible = {
+			
+		
+		}
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+		}
+	}	
+	GRE_trust_niarchos_to_build_our_ships = {
+
+		icon = hol_attract_foreign_investors 
+
+		allowed = { 
+			original_tag = GRE
+		}
+
+		available = {
+			}
+
+	
+		days_remove = 30
+
+		cost = 25
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+			
+		}
+
+		visible = {
+			
+		
+		}
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+		}
+	}
+	GRE_trust_ger_to_build_our_ships = {
+
+		icon = hol_attract_foreign_investors 
+
+		allowed = { 
+			original_tag = GRE
+		}
+
+		available = {
+			}
+
+	
+		days_remove = 30
+
+		cost = 25
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+			
+		}
+
+		visible = {
+			
+		
+		}
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+		}
+	}
+GRE_trust_eng_to_build_our_ships = {
+
+		icon = hol_attract_foreign_investors 
+
+		allowed = { 
+			original_tag = GRE
+		}
+
+		available = {
+			}
+
+	
+		days_remove = 30
+
+		cost = 25
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+			
+		}
+
+		visible = {
+			
+		
+		}
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+		}
+	}	
+	GRE_buy_ships_fra = {
+
+		icon = hol_attract_foreign_investors 
+
+		allowed = { 
+			original_tag = GRE
+		}
+
+		available = {
+			}
+
+	
+		days_remove = 30
+
+		cost = 25
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+			
+		}
+
+		visible = {
+			
+		
+		}
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+		}
+	}
+	GRE_buy_subs_ita = {
+
+		icon = hol_attract_foreign_investors 
+
+		allowed = { 
+			original_tag = GRE
+		}
+
+		available = {
+			}
+
+	
+		days_remove = 30
+
+		cost = 25
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+			
+		}
+
+		visible = {
+			
+		
+		}
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+		}
+	}
+GRE_plan_omega = {
+
+		icon = hol_attract_foreign_investors 
+
+		allowed = { 
+			original_tag = GRE
+		}
+
+		available = {
+			}
+
+	
+		days_remove = 30
+
+		cost = 25
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+			
+		}
+
+		visible = {
+			
+		
+		}
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+		}
+	}
+GRE_expand_onassis = {
+
+		icon = hol_attract_foreign_investors 
+
+		allowed = { 
+			original_tag = GRE
+		}
+
+		available = {
+			}
+
+	
+		days_remove = 30
+
+		cost = 25
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+			
+		}
+
+		visible = {
+			
+		
+		}
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+		}
+	}
+	GRE_purchase_suez = {
+
+		icon = hol_attract_foreign_investors 
+
+		allowed = { 
+			original_tag = GRE
+		}
+
+		available = {
+			}
+
+	
+		days_remove = 30
+
+		cost = 25
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+			
+		}
+
+		visible = {
+			
+		
+		}
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+		}
+	}
+		GRE_purchase_panama = {
+
+		icon = hol_attract_foreign_investors 
+
+		allowed = { 
+			original_tag = GRE
+		}
+
+		available = {
+			}
+
+	
+		days_remove = 30
+
+		cost = 25
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+			
+		}
+
+		visible = {
+			
+		
+		}
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+		}
+	}
+		GRE_purchase_giblartar = {
+
+		icon = hol_attract_foreign_investors 
+
+		allowed = { 
+			original_tag = GRE
+		}
+
+		available = {
+			}
+
+	
+		days_remove = 30
+
+		cost = 25
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+			
+		}
+
+		visible = {
+			
+		
+		}
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+		}
+	}
+		GRE_arabia_oil_deal = {
+
+		icon = hol_attract_foreign_investors 
+
+		allowed = { 
+			original_tag = GRE
+		}
+
+		available = {
+			}
+
+	
+		days_remove = 30
+
+		cost = 25
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+			
+		}
+
+		visible = {
+			
+		
+		}
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+		}
+	}
+	GRE_persia_oil_deal = {
+
+		icon = hol_attract_foreign_investors 
+
+		allowed = { 
+			original_tag = GRE
+		}
+
+		available = {
+			}
+
+	
+		days_remove = 30
+
+		cost = 25
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+			
+		}
+
+		visible = {
+			
+		
+		}
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+		}
+	}	
+GRE_NUKES_FROM_SUBS = {
+
+		icon = hol_attract_foreign_investors 
+
+		allowed = { 
+			original_tag = GRE
+		}
+
+		available = {
+			}
+
+	
+		days_remove = 30
+
+		cost = 25
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+			
+		}
+
+		visible = {
+			
+		
+		}
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+		}
+	}
+	
+	
+	
+	
+}
+
