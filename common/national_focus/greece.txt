@@ -2436,7 +2436,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
     }
 		focus = {
 		id = GRE_the_former_ally
-		icon = GFX_focus_YUG_safeguard_bosnia
+		icon = GFX_focus_invite_yugoslavia
         prerequisite = { focus = GRE_the_traitor }
 		relative_position_id = GRE_the_traitor
   		available = { }
@@ -2488,7 +2488,151 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
         		
 		}
     }		
-	
+		focus = {
+		id = GRE_fight_italian_imperialism
+		icon = GFX_focus_ITA_a_colonial_empire
+        prerequisite = { focus = GRE_crush_the_italians }
+		relative_position_id = GRE_crush_the_italians
+  		available = { }
+		x = 2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { }
+		completion_reward = {
+        		
+		}
+    }	
+			focus = {
+		id = GRE_they_had_their_fun
+		icon = GFX_focus_ITA_bend_the_bars
+        prerequisite = { focus = GRE_fight_italian_imperialism }
+		relative_position_id = GRE_fight_italian_imperialism
+  		available = { }
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { }
+		completion_reward = {
+        		
+		}
+    }	
+	focus = {
+		id = GRE_fight_till_death
+		icon = GFX_focus_ITA_subdue_the_sentinels
+        prerequisite = { focus = GRE_they_had_their_fun }
+		relative_position_id = GRE_they_had_their_fun
+  		available = { }
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { }
+		completion_reward = {
+        		
+		}
+    }
+	focus = {
+		id = GRE_take_the_fight_on_italy
+		icon = GFX_focus_ITA_alpine_division
+        prerequisite = { focus = GRE_fight_till_death }
+		relative_position_id = GRE_fight_till_death
+  		available = { }
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { }
+		completion_reward = {
+        		
+		}
+    }
+	focus = {
+		id = GRE_the_eagle_gets_shot_but_he_stands_there_UNFAZED
+		icon = GFX_focus_GRE_eagle_stands
+        prerequisite = { focus = GRE_fight_italian_imperialism }
+		relative_position_id = GRE_fight_italian_imperialism
+  		available = { }
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { }
+		completion_reward = {
+        		
+		}
+    }	
+	focus = {
+		id = GRE_make_fun_of_their_king
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
+        prerequisite = { focus = GRE_the_eagle_gets_shot_but_he_stands_there_UNFAZED }
+		relative_position_id = GRE_the_eagle_gets_shot_but_he_stands_there_UNFAZED
+  		available = { }
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { }
+		completion_reward = {
+        		
+		}
+    }
+	focus = {
+		id = GRE_like_1821
+		icon = GFX_focus_FIN_a_cry_for_help
+        prerequisite = { focus = GRE_make_fun_of_their_king }
+		relative_position_id = GRE_make_fun_of_their_king
+  		available = { }
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { }
+		completion_reward = {
+        		
+		}
+    }	
+		focus = {
+		id = GRE_raid_the_shores
+		icon = GFX_focus_ARG_study_the_battle_of_the_river_plate
+        prerequisite = { focus = GRE_like_1821 }
+		 prerequisite = { focus = GRE_take_the_fight_on_italy }
+		relative_position_id = GRE_like_1821
+  		available = { }
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { }
+		completion_reward = {
+        		
+		}
+    }	
 		focus = {
 		id = GRE_have_faith_in_the_army
 		icon = GFX_GRE_hellenic_army_of_revenge
@@ -2561,7 +2705,42 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
         		
 		}
     }	
-
+		focus = {
+		id = GRE_women_in_aviation
+		icon = GFX_focus_SOV_women_in_aviation
+        prerequisite = { focus = GRE_new_fighters }
+		relative_position_id = GRE_new_fighters
+  		available = { }
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { }
+		completion_reward = {
+        		
+		}
+    }	
+			focus = {
+		id = GRE_give_venizelos_command_of_aviation
+		icon = GFX_focus_SOV_flying_clubs
+        prerequisite = { focus = GRE_women_in_aviation  }
+		relative_position_id = GRE_women_in_aviation
+  		available = { }
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { }
+		completion_reward = {
+        		
+		}
+    }	
 		focus = {
 		id = GRE_naval_dominance
 		icon = GFX_GRE_naval_power
@@ -2599,5 +2778,189 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
         		
 		}
     }		
+	
+		focus = {
+		id = GRE_secure_access_to_blacksea
+		icon = GFX_focus_SOV_reinforce_southern_naval_bases
+        prerequisite = { focus = GRE_mine }
+		relative_position_id = GRE_mine
+  		available = { }
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { }
+		completion_reward = {
+        		
+		}
+    }
+		focus = {
+		id = GRE_the_last_greco_turkish_war
+		icon = GFX_focus_GRE_NO_TURKEY
+        prerequisite = { focus = GRE_the_other_side_of_the_megali_idea }
+		relative_position_id = GRE_the_other_side_of_the_megali_idea
+  		available = { }
+		x = -2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { }
+		completion_reward = {
+        		
+		}
+    }	
+			focus = {
+		id = GRE_relocate_industry_away_from_anatolia
+		icon = GFX_focus_SOV_the_road_of_life
+        prerequisite = { focus = GRE_the_last_greco_turkish_war }
+		relative_position_id = GRE_the_last_greco_turkish_war
+  		available = { }
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { }
+		completion_reward = {
+        		
+		}
+		
+    }
+    	focus = {
+		id = GRE_evaluate_civs
+		icon = GFX_focus_generic_population_growth
+        prerequisite = { focus = GRE_relocate_industry_away_from_anatolia }
+		relative_position_id = GRE_relocate_industry_away_from_anatolia
+  		available = { }
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { }
+		completion_reward = {
+        		
+		}	
+		}
+		focus = {
+		id = GRE_secure_access_to_cyprus
+		icon = GFX_focus_SMB_blue_water_fleet
+        prerequisite = { focus = GRE_evaluate_civs }
+		relative_position_id = GRE_evaluate_civs
+  		available = { }
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { }
+		completion_reward = {
+        		
+		}	
+		}	
+			focus = {
+		id = GRE_prevent_another_galipoli
+		icon = GFX_GRE_claim_eastern_thrace
+        prerequisite = { focus = GRE_the_last_greco_turkish_war }
+		relative_position_id = GRE_the_last_greco_turkish_war
+  		available = { }
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { }
+		completion_reward = {
+        		
+		}
+		
+    }
+    	focus = {
+		id = GRE_fortify_constantinople
+		icon = GFX_goal_protect_constantinople
+        prerequisite = { focus = GRE_prevent_another_galipoli }
+		relative_position_id = GRE_prevent_another_galipoli
+  		available = { }
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { }
+		completion_reward = {
+        		
+		}	
+		}
+		focus = {
+		id = GRE_secure_smyrna
+		icon = GFX_goal_GRE_secure_smyrni
+        prerequisite = { focus = GRE_fortify_constantinople }
+		relative_position_id = GRE_fortify_constantinople
+  		available = { }
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { }
+		completion_reward = {
+        		
+		}	
+		}	
+				focus = {
+		id = GRE_secure_dardanelles
+		icon = GFX_focus_TUR_the_montreux_convention
+        prerequisite = { focus = GRE_fortify_constantinople }
+		relative_position_id = GRE_fortify_constantinople
+  		available = { }
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { }
+		completion_reward = {
+        		
+		}	
+		}	
+		focus = {
+		id = GRE_end_what_they_started
+		icon = GFX_focus_TUR_purge_the_kemalists
+        prerequisite = { focus = GRE_secure_access_to_cyprus}
+        prerequisite = { focus = GRE_secure_dardanelles }
+		relative_position_id = GRE_secure_access_to_cyprus
+  		available = { }
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { }
+		completion_reward = {
+        		
+		}	
+		}		
 	
 }

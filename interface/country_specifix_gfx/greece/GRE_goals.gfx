@@ -74,7 +74,31 @@ spriteTypes = {
 spriteType = {
 		name = "GFX_GRE_hellenic_army_of_revenge"
 		texturefile = "gfx/interface/goals/GRE/GRE_hellenic_army_of_revenge.dds"
-	}	
+	}
+	spriteType = {
+		name = "GFX_focus_GRE_NO_TURKEY"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_NO_TURKEY.dds"
+	}
+	spriteType = {
+		name = "GFX_GRE_claim_eastern_thrace"
+		texturefile = "gfx/interface/goals/GRE/GRE_claim_eastern_thrace.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_protect_constantinople"
+		texturefile = "gfx/interface/goals/GRE/goal_protect_constantinople.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_GRE_secure_smyrni"
+		texturefile = "gfx/interface/goals/GRE/GRE_secure_smyrni.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GRE_eagle_stands"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_eagle_stands.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_GRE_secure_smyrni"
+		texturefile = "gfx/interface/goals/GRE/GRE_secure_smyrni.dds"
+	}
 	SpriteType = {
 		name = "GFX_focus_GRE_industrialize_athens"
 		texturefile = "gfx/interface/goals/GRE/focus_GRE_industrialize_athens.dds"
