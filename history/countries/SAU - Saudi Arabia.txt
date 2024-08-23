@@ -25,8 +25,15 @@ if = {
 
 set_convoys = 5
 
-add_ideas = victory_in_the_sgtwsau
-add_ideas = islam_religion
+add_ideas ={
+	victory_in_the_sgtwsau
+	SAU_pre_modern_economy
+	SAU_Saudi_resistance
+	SAU_traditional_society
+	SAU_primitive_military
+	SAU_Arabian_ultra_nationalism
+	islam_religion
+}
 
 recruit_character = SAU_abdulaziz_ibn_saud
 recruit_character = SAU_philip_gordon_lee
