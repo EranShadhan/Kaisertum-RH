@@ -1,4 +1,6 @@
 ﻿l_english:
+ RULE_ALLOW_MEME_PATHS:0 "Meme/Schyzo Paths"
+
  FE_SELECT_COUNTRY_GOLD:0 "Recommended"
  FE_SELECT_COUNTRY_DIFF:0 "High Difficulty"
  FE_SELECT_COUNTRY_KT:0 "Select Country - Recommeding Golden"

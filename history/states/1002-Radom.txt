@@ -1,0 +1,26 @@
+state={
+	id=1002
+	name="STATE_1002"
+
+	history={
+		victory_points = {
+			3458 5 
+		}
+		owner = POL
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = POL
+
+	}
+
+	provinces={
+		467 3458 3482 6511 9400 11492 
+	}
+	manpower=750191
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

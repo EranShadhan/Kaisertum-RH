@@ -1,0 +1,24 @@
+state={
+	id=1006
+	name="STATE_1006"
+
+	history={
+		owner = FIN
+		victory_points = {
+			11452 1
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = FIN
+	}
+
+	provinces={
+		80 157 2998 6098 11146 
+	}
+	manpower=35000
+	state_category=wasteland
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
