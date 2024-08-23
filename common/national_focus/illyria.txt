@@ -271,14 +271,7 @@ focus_tree = {
 		relative_position_id = YUG_improve_infrastructure
 		prerequisite = { focus = YUG_improve_infrastructure }
 		available = {
-		if = {
-			limit = {
-				every_state = {
-						is_core_of = ENG
-					}
-				}
-			is_owned_by = FRA
-			}
+			
 		}
 			
 		x = 0
