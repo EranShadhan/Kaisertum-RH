@@ -104,6 +104,15 @@ characters={
 					military_theorist 
 				}
 		}
+		corps_commander={
+			traits={ brilliant_strategist infantry_officer war_hero trickster }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=0
+		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Sa'ad Shaddad al Outaibi"
 		portraits={
@@ -126,6 +135,15 @@ characters={
 				ai_will_do  = {
 					factor  = 1.000
 				}
+		}
+		corps_commander={
+			traits={ brilliant_strategist cavalry_officer war_hero trickster }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=0
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Karim Nassar"
@@ -191,6 +209,15 @@ characters={
 				ai_will_do  = {
 					factor  = 1.000
 				}
+		}
+		field_marshal={
+			traits={ inflexible_strategist career_officer offensive_doctrine }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Ismail Ali al-Salhi"
