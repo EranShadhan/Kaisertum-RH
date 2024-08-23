@@ -97,6 +97,7 @@ if = {
 
 set_convoys = 120
 
+recruit_character = IRE_micheal_collins
 recruit_character = IRE_Éamon_de_valera
 recruit_character = IRE_eoin_oduffy
 recruit_character = IRE_james_larkin
