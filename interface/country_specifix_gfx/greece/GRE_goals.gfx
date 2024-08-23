@@ -15,6 +15,66 @@ spriteTypes = {
 		name = "GFX_focus_GRE_support_farmersn"
 		texturefile = "gfx/interface/goals/GRE/focus_GRE_support_farmers.dds"
 	} 
+	spriteType = {
+		name = "GFX_GRE_Greek_Enonis_Under_The_Olive_Branch"
+		texturefile = "gfx/interface/goals/GRE/GRE_Greek_Enonis_Under_The_Olive_Branch.dds"
+	}
+	spriteType = {
+		name = "GFX_gre_CYP_full_of_oil"
+		texturefile = "gfx/interface/goals/GRE/gre_CYP_full_of_oil.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GRE_oil"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_oil.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GRE_drachma"
+		texturefile = "gfx/interface/goals/GRE/GRE_drachma.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GRE_drachma_in_bag"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_drachma_in_bag.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GRE_economic_crisis"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_economic_crisis.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_gre_class_in_bosporus"
+		texturefile = "gfx/interface/goals/GRE/gre_class_in_bosporus.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GRE_battle_for_the_bosporous"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_battle_for_the_bosporous.dds"
+	}
+	spriteType = {
+		name = "GFX_GRE_The_Thracian_Liberation_Army"
+		texturefile = "gfx/interface/goals/GRE/GRE_The_Thracian_Liberation_Army.dds"
+	}
+	spriteType = {
+		name = "GFX_gre_other_side_of_megali"
+		texturefile = "gfx/interface/goals/GRE/gre_other_side_of_megali.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GRE_greater_italy_crush"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_greater_italy_crush.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GREECE_VS_ITALY_1V1"
+		texturefile = "gfx/interface/goals/GRE/focus_GREECE_VS_ITALY_1V1.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_third_generation_fighter"
+		texturefile = "gfx/interface/goals/GRE/focus_third_generation_fighter.dds"
+	}
+	spriteType = {
+		name = "GFX_GRE_naval_power"
+		texturefile = "gfx/interface/goals/GRE/GRE_naval_power.dds"
+	}
+spriteType = {
+		name = "GFX_GRE_hellenic_army_of_revenge"
+		texturefile = "gfx/interface/goals/GRE/GRE_hellenic_army_of_revenge.dds"
+	}	
 	SpriteType = {
 		name = "GFX_focus_GRE_industrialize_athens"
 		texturefile = "gfx/interface/goals/GRE/focus_GRE_industrialize_athens.dds"
