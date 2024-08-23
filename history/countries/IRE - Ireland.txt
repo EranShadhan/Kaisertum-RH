@@ -119,6 +119,7 @@ recruit_character = IRE_john_byrne
 recruit_character = IRE_sean_lemass
 recruit_character = IRE_douglas_hyde
 recruit_character = IRE_sean_ceallaigh
+recruit_character = IRE_Brody_O_Doral
 
 1939.1.1 = {
 
