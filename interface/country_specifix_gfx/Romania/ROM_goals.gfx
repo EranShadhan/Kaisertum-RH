@@ -2,7 +2,17 @@ spriteTypes = {
 
 	SpriteType = {
 	name = "GFX_ROM_pol_1"
-	texturefile = "gfx/interface/goals/goal_ROM_pol_1.dds"			
+	texturefile = "gfx/interface/goals/ROM/goal_ROM_pol_1.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_ROM_pol_2"
+	texturefile = "gfx/interface/goals/ROM/goal_ROM_pol_2.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_ROM_pol_3"
+	texturefile = "gfx/interface/goals/ROM/goal_ROM_pol_3.dds"			
 	}
 	
 }
