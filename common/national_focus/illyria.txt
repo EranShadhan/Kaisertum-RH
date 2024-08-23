@@ -702,7 +702,7 @@ focus_tree = {
 				
 			}
 			
-		x = 8
+		x = 7
 		y = 1
 
 		cost = 4
@@ -882,7 +882,7 @@ focus_tree = {
 				
 			}
 			
-		x = 15
+		x = 11
 		y = 1
 
 		cost = 4
