@@ -19,6 +19,21 @@ country_event = {
 					target = HUN
 				}
 				release = HUN
+				remove_ideas = {
+					against_hungary
+				}
+			}
+
+			BUL = {
+				remove_ideas = {
+					against_hungary
+				}
+			}
+
+			GRE = {
+				remove_ideas = {
+					against_hungary
+				}
 			}
 
 			ROM = {
@@ -67,6 +82,9 @@ country_event = {
 					ruling_party = democratic
 				}
 				release = SLO
+				remove_ideas = {
+					HUN_debuff
+				}
 			}
 
 			CZE = {

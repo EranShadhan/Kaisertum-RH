@@ -937,6 +937,9 @@ focus = {
 	
 		prerequisite = { focus = ROM_pol_5 }
 
+		allow_branch = {
+			NOT = { has_completed_focus = { focus = ROM_pol_d_1 }
+		}
 	
 		ai_will_do = {
 				factor = 1
@@ -957,7 +960,6 @@ focus = {
 			
 	
 			completion_reward = {
-				
 			}
 	}
 
@@ -2006,7 +2008,7 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				mark_focus_tree_layout_dirty = yes
 			}
 	}
 
@@ -2640,6 +2642,275 @@ focus = {
 		prerequisite = { focus = ROM_pol_d_18 }
 		prerequisite = { focus = ROM_pol_d_14 focus = ROM_pol_d_15}
 
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_21
+		icon = GFX_ROM_pol_d_21
+		x = 1
+		y = 10
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_19 }
+		prerequisite = { focus = ROM_pol_d_20}
+		
+
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_22
+		icon = GFX_ROM_pol_d_22
+		x = 0
+		y = 11
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_21 }
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_23
+		icon = GFX_ROM_pol_d_23
+		x = 3
+		y = 11
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_21 }
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_24
+		icon = GFX_ROM_pol_d_24
+		x = -1
+		y = 12
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_22 }
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_25
+		icon = GFX_ROM_pol_d_25
+		x = 2
+		y = 12
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_23}
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_26
+		icon = GFX_ROM_pol_d_26
+		x = 4
+		y = 12
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_23}
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_27
+		icon = GFX_ROM_pol_d_27
+		x = 1
+		y = 13
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_25}
+		prerequisite = { focus = ROM_pol_d_24}
+		prerequisite = { focus = ROM_pol_d_26}
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_28
+		icon = GFX_ROM_pol_d_28
+		x = 0
+		y = 14
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_27}
 
 		ai_will_do = {
 				factor = 1
