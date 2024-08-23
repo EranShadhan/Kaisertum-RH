@@ -1,31 +1,28 @@
 
 state={
 	id=240
-	name="STATE_240" # Belgorod
-	manpower = 1364537
-	
-	state_category = town
+	name="STATE_240"
 
 	history={
 		victory_points = {
-			9449 1
+			9449 5 
 		}
 		owner = SOV
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 3
+			industrial_complex = 1
+
 		}
 		add_core_of = SOV
 		add_core_of = UKR
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 1
-			}
-		}
+
 	}
 
 	provinces={
-		473 534 3492 6432 6481 6517 6577 9424 9449 9489 9518 11439 11500 
+		534 558 3492 6481 6517 6577 6603 9449 9518 11439 11500 
 	}
-
-	local_supplies=0.0 
+	manpower=1364537
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

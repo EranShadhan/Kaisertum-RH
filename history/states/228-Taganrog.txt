@@ -1,26 +1,27 @@
 
 state={
 	id=228
-	name="STATE_228" # Voroshilovgrad
-	manpower = 2167411
-	
-	state_category = town
+	name="STATE_228"
 
 	history={
 		owner = SOV
 		victory_points = {
-			9461 1
+			9461 10 
 		}
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 3
+
 		}
 		add_core_of = SOV
 		add_core_of = UKR
+
 	}
 
 	provinces={
-		523 547 570 6505 6519 9446 9461 9476 11487 11513 
+		6505 9446 9461 
 	}
-
-	local_supplies=0.0 
+	manpower=1592165
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
 }

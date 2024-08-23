@@ -2,9 +2,9 @@
 state={
 	id=226
 	name="STATE_226" # Dnipropertovsk
-	manpower = 2391047
+	manpower = 2080211
 	
-	state_category = town
+	state_category = large_town
 	
 	resources={
 		oil=12
@@ -17,7 +17,7 @@ state={
 			11437 10 
 		}
 		victory_points = {
-			11561 1
+			11561 5
 		}
 		buildings = {
 			infrastructure = 3 #was: 5
@@ -28,7 +28,7 @@ state={
 	}
 
 	provinces={
-		 6423 9419 9433 11422 11437 11561 
+		6423 9419 9433 11422 11437 11561 
 	}
 
 	local_supplies=0.0 
