@@ -26,6 +26,8 @@ country_event = {
 				transfer_state = 84
 				transfer_state = 76
 				transfer_state = 83
+				transfer_state = 998
+				transfer_state = 997
 			}
 			82 = {
 				add_core_of = ROM
@@ -34,6 +36,15 @@ country_event = {
 				add_core_of = ROM
 			}
 			84 = {
+				add_core_of = ROM
+			}
+			76 = {
+				add_core_of = ROM
+			}
+			997 = {
+				add_core_of = ROM
+			}
+			998 = {
 				add_core_of = ROM
 			}
 

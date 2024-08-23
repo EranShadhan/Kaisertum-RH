@@ -4,14 +4,15 @@ state=
 	name="STATE_79"
 	manpower = 2502990
 	
-	state_category = town
+	state_category = city
 	
 	history=
 	{
 		owner = ROM
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
+			industrial_complex = 3
+			arms_factory = 2
 			air_base = 2
 		}
 		victory_points = {
