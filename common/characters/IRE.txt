@@ -5,13 +5,27 @@ characters={
 			civilian={
 				large=GFX_portrait_IRE_Micheal_Collins
 			}
+			army={
+				large=GFX_portrait_IRE_Micheal_Collins
+				
+			}
 		}
 		country_leader={
 			ideology=liberalism
-			traits = { head_of_intelligence }
+			traits = { revolutionary_general }
 			expire="1965.1.1.1"
 			id=-1
 		}
+		field_marshal={
+			traits={ media_personality war_hero commando }
+			skill=4
+			attack_skill=3
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+
 	}
 	IRE_Éamon_de_valera={
 		name="Éamon de Valera"
@@ -34,7 +48,8 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=fascism_ideology
+			ideology=Nazism
+			traits = { retired_officer }
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -82,6 +97,40 @@ characters={
 			legacy_id=-1
 		}
 	}
+	IRE_frank_aiken={
+		name="Frank Aiken"
+		portraits={
+			army={
+				large=GFX_portrait_Michael_Costello
+				small=GFX_portrait_Michael_Costello_small
+			}
+		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	IRE_Brody_O_Doral={
+		name="Brody O'Doral"
+		portraits={
+			army={
+				large=GFX_portrait_Michael_Costello
+				small=GFX_portrait_Michael_Costello_small
+			}
+		}
+		navy_leader={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=4
+			coordination_skill=1
+			legacy_id=989
+
 	IRE_p_a_mulcahy={
 		advisor={
 			
