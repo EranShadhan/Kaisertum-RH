@@ -99,6 +99,10 @@ spriteType = {
 		name = "GFX_goal_GRE_secure_smyrni"
 		texturefile = "gfx/interface/goals/GRE/GRE_secure_smyrni.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_GRE_fate_of_eee"
+		texturefile = "gfx/interface/goals/GRE/GRE_fate_of_eee.dds"
+	}
 	SpriteType = {
 		name = "GFX_focus_GRE_industrialize_athens"
 		texturefile = "gfx/interface/goals/GRE/focus_GRE_industrialize_athens.dds"

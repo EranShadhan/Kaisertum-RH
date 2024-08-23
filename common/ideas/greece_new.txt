@@ -538,9 +538,30 @@ ideas = {
             modifier = {
 			consumer_goods_factor = 0.1
 			political_power_gain = -0.05
+			democratic_drift = 0.01
+			neutrality_drift = 0.02
+			stability_factor = -0.05
+			}
+			
+		}
+		GRE_memories_of_the_great_nationa_schism_fixing = {
+			
+
+			picture = GRE_first_schism
+
+			allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+            modifier = {
+			consumer_goods_factor = 0.05
+			political_power_gain = -0.1
 			democratic_drift = 0.02
 			neutrality_drift = 0.01
-			stability_factor = -0.05
 			}
 			
 		}
