@@ -6,7 +6,7 @@ state={
 	state_category = enclave
 
 	history={
-		owner = FIN
+		owner = SOV
 
 		victory_points = { #Petsamo
 			9140 1
@@ -18,7 +18,7 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = FIN
+		add_core_of = SOV
 		if = {
 			limit = {
 				has_dlc = "Arms Against Tyranny"

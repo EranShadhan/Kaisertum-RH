@@ -1,3 +1,4 @@
+
 state={
 	id=94
 	name="STATE_94"
@@ -9,18 +10,18 @@ state={
 
 		}
 		victory_points = {
-			560 1
+			560 1 
 		}
 		add_core_of = SOV
 		add_core_of = BLR
+
 	}
 
 	provinces={
-		560 3256 3281 3309 3556 6280 6306 6415 11285 11528 
+		560 3256 3556 6280 6306 6415 11285 11528 
 	}
-	manpower=1232200
+	manpower=1110571
 	buildings_max_level_factor=1.000
 	state_category=rural
-
-	local_supplies=0.0 
+	local_supplies=0.000
 }
