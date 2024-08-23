@@ -1,3 +1,7 @@
+
+###COUNTRY LEADERS###
+
+
 characters = {
 	UKR_Wilhelm_Franz_von_Habsburg_Lorithgen = {
 		name = "Vasyl Vyshivanyi"
@@ -9,6 +13,555 @@ characters = {
 				country_leader={
 			expire = "1965.1.1.1"
 			ideology = despotism
+		}
+	}
+
+
+
+###UNIT LEADERS###
+
+     UKR_semen_goruk={
+		name=UKR_semen_goruk
+		portraits={
+			civilian={
+				large="gfx/leaders/UKR/Portrait_UKR_Semen_Goruk.dds"
+			}
+		}
+
+		field_marshal={
+			traits={ old_guard }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 5
+		}
+	}
+	UKR_yevhen_konovalets={
+		name=UKR_yevhen_konovalets
+		portraits={
+			army={
+				large="gfx/leaders/UKR/Portrait_UKR_Yevhen_Konovalets.dds"
+			}
+		}
+
+		corps_commander={
+			traits={ trickster politically_connected }
+			skill = 2
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+			legacy_id=658
+		}
+	}
+	
+	UKR_pavlo_skoropadskyi={
+		name=UKR_pavlo_skoropadskyi
+		portraits={
+			army={
+				large="gfx/leaders/UKR/Portrait_UKR_Pavlo_Skoropadskyi.dds"
+			}
+	
+		}
+
+		field_marshal={
+			traits={ defensive_doctrine old_guard }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id=655
+		}
+
+	UKR_oleksandr_osetsky={
+		name=UKR_oleksandr_osetsky
+		portraits={
+			army={
+				large="gfx/leaders/UKR/Portrait_UKR_Oleksandr_Osetsky.dds"
+			}
+		}
+
+		field_marshal={
+			traits={ old_guard organizer thorough_planner }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id=661
+		}
+	}
+
+	UKR_roman_shukhevych={
+		name=UKR_roman_shukhevych
+		portraits={
+			army={
+				large="gfx/leaders/UKR/Portrait_UKR_Roman_Shukhevych.dds"
+			}
+		}
+
+		corps_commander={
+			traits = { ranger }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 4
+			legacy_id=657
+		}
+	}
+
+	UKR_mykhailo_omelianovych_pavlenko={
+		name=UKR_mykhailo_omelianovych
+		portraits={
+			army={
+				large="gfx/leaders/UKR/Portrait_UKR_Mykhailo_Omelianovych_Pavlenko.dds"
+			}
+		}
+
+		corps_commander={
+			traits = { old_guard winter_specialist infantry_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+			legacy_id=6543
+		}
+	}
+
+
+UKR_andriy_melnyk={
+
+		name=UKR_andriy_melnyk
+		portraits={
+
+			army={
+				large="gfx/leaders/UKR/Portrait_UKR_Andriy_Melnyk.dds"
+			}
+		}
+		corps_commander={
+			traits={ Career_Officer Organizer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 4
+			legacy_id=6732
+		}
+	}
+
+UKR_vsevolod_petriv = {
+		advisor = {
+			slot = theorist
+			idea_token = UKR_vsevolod_petriv
+			ledger = army
+			cost = 100
+			allowed = {
+				original_tag = UKR
+			}
+		
+			traits = {
+				military_theorist
+			}
+		}
+		corps_commander = {
+			traits = { politically_connected skilled_staffer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 2
+			legacy_id=673
+		}
+		name = UKR_vsevolod_petriv
+		portraits = {
+			army = {
+				large = "gfx/leaders/UKR/Portrait_UKR_Vsevolod_Petriv.dds"
+				small = "gfx/interface/ideas/UKR/GFX_idea_UKR_vsevolod_petriv.dds"
+			}
+		}
+		
+	}
+
+	UKR_vsevolod_zmienko={
+		name=UKR_vsevolod_zmienko
+		portraits={
+			army={
+				large="gfx/leaders/UKR/Portrait_UKR_Vsevolod_Zmienko.dds"
+			}
+		}
+
+		corps_commander={
+			traits = { Cautious infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id=6546
+		}
+	}
+
+	UKR_oleksandr_zagrodski={
+		name=UKR_oleksandr_zagrodski
+		portraits={
+			army={
+				large="gfx/leaders/UKR/Portrait_UKR_Oleksandr_Zagrodskiy.dds"
+			}
+		}
+
+		corps_commander={
+			traits = { Harsh_Leader Engineer_Officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id=6547
+		}
+	}
+
+	UKR_mykola_yunakiv={
+		name=UKR_mykola_yunakiv
+		portraits={
+			army={
+				large="gfx/leaders/UKR/Portrait_UKR_Mykola_Yunakiv.dds"
+			}
+		}
+
+		corps_commander={
+			traits = { Career_Officer trait_reckless }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id=6548
+		}
+	}
+
+	UKR_gavrylo_bazylsky={
+		name=UKR_gavrylo_bazylsky
+		portraits={
+			army={
+				large="gfx/leaders/UKR/Portrait_UKR_gavrylo_bazylsky.dds"
+			}
+		}
+
+		corps_commander={
+			traits = { career_officer infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id=6722
+		}
+	}
+
+	UKR_ivan_pavlenko={
+		name=UKR_ivan_pavlenko
+		portraits={
+			army={
+				large="gfx/leaders/UKR/Portrait_UKR_Ivan_Pavlenko.dds"
+			}
+		}
+
+		corps_commander={
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id=6723
+		}
+	}
+
+
+	UKR_volodymyr_salsky={
+		name=UKR_volodymyr_salsky
+		portraits={
+			army={
+				large="gfx/leaders/UKR/Portrait_UKR_Volodymyr_Salsky.dds"
+			}
+		}
+
+		field_marshal={
+			traits = { career_officer }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id=662
+		}
+	}
+
+	UKR_oleksandr_udovychenko={
+		name=UKR_oleksandr_udovychenko
+		portraits={
+			army={
+				large="gfx/leaders/UKR/Portrait_UKR_Oleksandr_Udovychenko.dds"
+			}
+		}
+
+		corps_commander={
+			traits = { infantry_officer career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	UKR_pavlo_shandruk={
+		name=UKR_pavlo_shandruk
+		portraits={
+			army={
+				large="gfx/leaders/UKR/Portrait_UKR_Pavlo_Shandruk.dds"
+			}
+		}
+
+		corps_commander={
+			traits = { armor_officer career_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	UKR_borys_paliy_neyilo={
+		name=UKR_borys_paliy_neyilo
+		portraits={
+			army={
+				large="gfx/leaders/UKR/Portrait_UKR_Borys_Paliy_Neyilo.dds"
+			}
+		}
+
+		corps_commander={
+			traits = { bearer_of_artillery }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+	UKR_oleksyi_almazov={
+		name=UKR_oleksyi_almazov
+		portraits={
+			army={
+				large="gfx/leaders/UKR/Portrait_UKR_Oleksyi_Almazov.dds"
+			}
+		}
+
+		corps_commander={
+			traits = { trait_mountaineer career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	UKR_petro_dyachenko={
+		name=UKR_petro_dyachenko
+		portraits={
+			army={
+				large="gfx/leaders/UKR/Portrait_UKR_Petro_Dyachenko.dds"
+			}
+		}
+
+		corps_commander={
+			traits = { cavalry_leader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	UKR_vasyl_tiutiunnyk={
+		name=UKR_vasyl_tiutiunnyk
+		portraits={
+			army={
+				large="gfx/leaders/UKR/Portrait_UKR_Vasil_Tiutiunnyk.dds"
+			}
+		}
+
+		corps_commander={
+			traits = { trait_reckless harsh_leader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+	UKR_mykola_shapoval={
+		name=UKR_mykola_shapoval
+		portraits={
+			army={
+				large="gfx/leaders/UKR/Portrait_UKR_Mykola_Shapoval.dds"
+			}
+		}
+
+		corps_commander={
+			traits = { infantry_officer trait_reckless }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=672
+		}
+	}
+
+	UKR_marko_bezruchko={
+		name=UKR_marko_bezruchko
+		portraits={
+			army={
+				large="gfx/leaders/UKR/Portrait_UKR_Marko_Bezruchko.dds"
+			}
+		}
+
+		corps_commander={
+			traits = { winter_specialist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+
+	UKR_kristina_sushko={
+		name=UKR_kristina_sushko
+		portraits={
+			army={
+				large="gfx/leaders/UKR/Portrait_UKR_Kristina_Sushko.dds"
+			}
+		}
+		gender = female
+
+		corps_commander={
+			traits = { UKR_military_medicine_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				
+			}
+		}
+	}
+
+	   UKR_roman_dashkevych={
+        name=UKR_roman_dashkevych
+        portraits={
+            army={
+                large="gfx/leaders/UKR/Portrait_UKR_Roman_Dashkevych.dds"
+            }
+        }
+
+        corps_commander={
+            traits = { bearer_of_artillery }
+            skill = 3
+            attack_skill = 3
+            defense_skill = 2
+            planning_skill = 4
+            logistics_skill = 3
+            visible = {
+              
+            }
+        }
+    }
+
+	UKR_dmytro_bilinchuck={
+		name=UKR_dmytro_bilinchuck
+		portraits={
+			army={
+				large="gfx/leaders/UKR/Portrait_UKR_Dmytro_Bilinchuck.dds"
+			}
+		}
+
+		corps_commander={
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+			visible = {
+			
+			}
+		}
+	}
+
+	UKR_oleksandr_gadd={
+		name=UKR_oleksandr_gadd
+		portraits={
+			army={
+				large="gfx/leaders/UKR/Portrait_UKR_Oleksandr_Gadd.dds"
+			}
+		}
+
+		navy_leader={
+			traits = { old_guard_navy }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 1
+			coordination_skill = 3
+			legacy_id=669
+		}
+	}
+
+	UKR_vasyl_pylypenko={
+        name=UKR_vasyl_pylypenko
+        portraits={
+            army={
+                large="gfx/leaders/UKR/Portrait_UKR_Vasyl_Pylypenko.dds"
+            }
+        }
+
+        navy_leader={
+            traits = { Gentlemanly }
+            skill = 2
+            attack_skill = 2
+            defense_skill = 1
+            maneuvering_skill = 2
+            coordination_skill = 3
+            }
+        }
+
+	UKR_mykhailo_bilinskiy={
+		name=UKR_mykhailo_bilinskiy
+		portraits={
+			army={
+				large="gfx/leaders/UKR/Portrait_UKR_Mykhailo_Bilinskiy.dds"
+			}
+		}
+
+		navy_leader={
+			traits = { blockade_runner }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 1
 		}
 	}
 }
