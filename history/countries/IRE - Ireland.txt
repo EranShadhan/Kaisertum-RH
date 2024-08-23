@@ -1,4 +1,4 @@
-capital = 113
+capital = 119
 
 oob = "IRE_1936"
 set_cosmetic_tag = IRE_UK
