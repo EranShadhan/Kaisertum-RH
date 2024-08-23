@@ -191,12 +191,6 @@ characters = {
 		advisor={
 			slot = political_advisor
 			idea_token = POL_ignacy_moscicki
-			available = {
-				OR = {
-					# = POL_ozon 
-					# = POL_dissolve_the_bbwr 
-				}
-			}
 			allowed = {
 				original_tag = POL
 				OR = {
@@ -230,14 +224,10 @@ characters = {
 			cost = 100
 			slot = political_advisor
 			idea_token = POL_walery_slawek
-			available = {
-				# = POL_the_sanation_left 
+			visible = {
 				NOT = {
 					has_country_flag = walery_slawek_is_dead 
 				}
-			}
-			visible = {
-			
 			}
 			allowed = {
 				original_tag = POL
@@ -366,31 +356,6 @@ characters = {
 			allowed = {
 				original_tag = POL
 			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
-				if = {
-					limit = {
-						has_dlc = "Poland: United and Ready"
-						NOT = {
-							has_dlc = "No Step Back"
-						}
-					}
-					# = POL_restore_the_sejm 
-				}
-				if = {
-					limit = {
-						has_dlc = "No Step Back"
-					}
-					# = POL_nationalist_constitution 
-				}
-			}
 			traits = {
 				fascist_demagogue 
 			}
@@ -450,9 +415,6 @@ characters = {
 			ledger = army
 			allowed = {
 				original_tag = POL
-			}
-			available = {
-				# = POL_the_sanation_right
 			}
 			traits = {
 				sanation_militarist
@@ -1064,16 +1026,6 @@ characters = {
 			idea_token = POL_wanda_wasilewska
 			ledger = army
 			available = {
-				OR = {
-					AND = {
-						OR = {
-							# = POL_modus_vivendi
-							# = POL_a_leftist_sejm
-						}
-					}
-					SWE_refuge_for_revolutionaries_trigger = yes
-					CHL_hub_of_the_revolution_trigger = yes
-				}
 			}
 			allowed = {
 				OR = {
@@ -1099,10 +1051,6 @@ characters = {
 			slot = political_advisor
 			idea_token = POL_jan_mosdorf
 			available = {
-				OR = {
-					# = POL_modus_vivendi
-					# = POL_integrate_the_falanga 
-				}
 			}
 			allowed = {
 				original_tag = POL
@@ -1158,8 +1106,7 @@ characters = {
 					original_tag = POL
 					has_dlc = "No Step Back"
 				}
-				available = {
-					# = POL_reassemble_the_sejm 
+				available = { 
 				}
 				traits = {
 					socdem_reformist 
@@ -1191,23 +1138,6 @@ characters = {
 					}
 				}
 				available = {
-					if = {
-						limit = {
-							has_dlc = "Man the Guns"
-						}
-						NOT = {
-							has_autonomy_state = autonomy_supervised_state
-						}
-					}
-					if = {
-						limit = {
-							has_dlc = "Poland: United and Ready"
-							NOT = {
-								has_dlc = "No Step Back"
-							}
-						}
-						# = POL_restore_the_sejm 
-					}
 				}
 				traits = {
 					democratic_reformer 
@@ -1230,10 +1160,6 @@ characters = {
 			slot = political_advisor
 			idea_token = POL_henryk_floyar_rajchman
 			available = {
-				OR = {
-					# = POL_the_sanation_right 
-					SWE_refuge_for_revolutionaries_trigger = yes
-				}
 			}
 			allowed = {
 				OR = {
@@ -1265,19 +1191,6 @@ characters = {
 				}
 			}
 			available = {
-				OR = {
-					AND = {
-						if = {
-							limit = { has_DLC = "No Step Back" }
-							# = POL_a_leftist_sejm 
-						}
-						if = {
-							limit = { NOT = { has_DLC = "No Step Back" } }
-							has_government = communism 
-						}
-					}
-					SWE_refuge_for_revolutionaries_trigger = yes
-				}
 			}
 			traits = {
 				socialist_autocrat 
@@ -1311,19 +1224,6 @@ characters = {
 				}
 			}
 			available = {
-				OR = {
-					AND = {
-						if = {
-							limit = { has_DLC = "No Step Back" }
-							# = POL_a_leftist_sejm 
-						}
-						if = {
-							limit = { NOT = { has_DLC = "No Step Back" } }
-							has_government = communism 
-						}
-					}
-					SWE_refuge_for_revolutionaries_trigger = yes
-				}
 			}
 			traits = {
 				patriotic_socialist 
@@ -1351,7 +1251,6 @@ characters = {
 			slot = political_advisor
 			idea_token = POL_kazimierz_switalski
 			available = {
-				# = POL_the_sanation_left
 			}
 			allowed = {
 				original_tag = POL
@@ -1395,14 +1294,8 @@ characters = {
 					original_tag = POL
 				}
 			available = {
-				# = POL_assemble_the_regency_council
-				OR = {
-					has_government = neutrality
-					has_government = fascism
-				}
 			}
 			visible = {
-				# = POL_assemble_the_regency_council
 			}
 			traits = {
 				staunch_aristocrat 
@@ -1433,8 +1326,7 @@ characters = {
 		advisor={
 			slot = political_advisor
 			idea_token = POL_tadeusz_bielecki
-			available = {
-				# = POL_integrate_the_endecja 
+			available = { 
 			}
 			allowed = {
 				original_tag = POL
@@ -1457,11 +1349,6 @@ characters = {
 			slot = political_advisor
 			idea_token = POL_joachim_stefan_bartoszewicz
 			available = {
-				OR = {
-					# = POL_modus_vivendi 
-					# = POL_reassemble_the_sejm 
-					# = POL_integrate_the_endecja 
-				}
 			}
 			allowed = {
 				original_tag = POL
@@ -1490,11 +1377,6 @@ characters = {
 				original_tag = POL
 			}
 			available = {
-				# = POL_assemble_the_regency_council
-				OR = {
-					has_government = neutrality
-					has_government = fascism
-				}
 			}
 			traits = {
 				autocratic_archbishop 
@@ -1525,29 +1407,6 @@ characters = {
 				original_tag = POL
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
-				if = {
-					limit = {
-						has_dlc = "Poland: United and Ready"
-						NOT = {
-							has_dlc = "No Step Back"
-						}
-					}
-					# = POL_restore_the_sejm 
-				}
-				if = {
-					limit = {
-						has_dlc = "No Step Back"
-					}
-					# = POL_a_leftist_sejm 
-				}
 			}
 			traits = {
 				communist_revolutionary 
@@ -1588,11 +1447,6 @@ characters = {
 			slot = political_advisor
 			idea_token = POL_stanislaw_wojciechowski
 			available = {
-				OR = {
-					# = POL_modus_vivendi 
-					# = POL_reassemble_the_sejm 
-					# = POL_assemble_the_regency_council 
-				}
 			}
 			allowed = {
 				original_tag = POL
@@ -1621,10 +1475,6 @@ characters = {
 				original_tag = POL
 			}
 			available = {
-				OR = {
-					# = POL_support_right_paramilitaries 
-					# = POL_integrate_the_falanga 
-				}
 			}
 			traits = {
 				falangist_militarist 
@@ -1652,15 +1502,6 @@ characters = {
 			slot = political_advisor
 			idea_token = POL_marian_rejewski
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					# = POL_expand_polish_intelligence
-				}
-				else = {
-					# = POL_expand_polish_intelligence_no_mtg
-				}
 			}
 			allowed = {
 				original_tag = POL
