@@ -1,6 +1,7 @@
 ideas = {
 
 	country = { 
+
       GRE_army_reforms = {
 
 		allowed = {
@@ -521,7 +522,7 @@ ideas = {
 			}
 		}
 		
-		GRE_schism = {
+		GRE_memories_of_the_great_nationa_schism = {
 			
 
 			picture = GRE_first_schism
@@ -535,13 +536,118 @@ ideas = {
 			}
 			removal_cost = -1
             modifier = {
-			stability_factor = -0.15
-			drift_defence_factor = -0.2
-			political_power_gain = -0.1
-			fascism_drift = 0.05
+			consumer_goods_factor = 0.1
+			political_power_gain = -0.05
+			democratic_drift = 0.02
+			neutrality_drift = 0.01
+			stability_factor = -0.05
 			}
 			
 		}
+		GRE_get_rails = {
+
+			
+			picture = generic_train_tracks
+  			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_rail_way_factor = 0.5
+				production_speed_supply_node_factor = 1.5
+				}
+		}
+			GRE_strong_trains = {
+
+			picture = generic_railroads
+  			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				train_equipment = {
+				reliability = 0.1
+					build_cost_ic = -0.3 instant = yes
+					armor_value = 150
+		            air_attack = 12
+				}
+				
+			}	
+		}
+		GRE_roads = {
+
+			picture = ARG_invest_in_roads
+  			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			equipment_bonus = {
+				motorized_equipment = {
+				reliability = 0.05
+					build_cost_ic = -0.15 instant = yes
+				
+				}
+				mechanized_equipment = {
+				reliability = 0.05
+					build_cost_ic = -0.15 instant = yes
+				
+				}
+				
+			}
+			modifier = {
+
+             production_speed_infrastructure_factor = 0.2
+            }			
+		}
+		GRE_stockpiling_fuel = {
+			removal_cost = -1
+
+			picture = ARG_resource_extration_focus
+				
+			modifier = {
+				army_fuel_consumption_factor = -0.3
+				air_fuel_consumption_factor = -0.3
+				navy_fuel_consumption_factor = -0.3
+				production_speed_fuel_silo_factor = 0.5
+				consumer_goods_factor = 0.1
+			}
+		}
+		GRE_trade_fleet = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = escort_effort_focus
+
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.25 instant = yes
+				}
+			}
+        }
 		GRE_no_left = {
 			
 
@@ -746,6 +852,51 @@ allowed = {
 			
 			
 		}
+		GRE_drachma_1 = {
+            name = GRE_drachma_1
+        	picture = GRE_drachma_id
+
+        	allowed = {
+        	    always = no
+        	}
+
+        	modifier = {
+                industrial_capacity_factory = 0.05
+				consumer_goods_expected_value = -0.02
+                production_speed_buildings_factor = 0.05	
+       		}
+  		}
+    	GRE_drachma_2 = {
+        	picture = GRE_drachma_id
+
+        	allowed = {
+        	    always = no
+        	}
+
+        	modifier = {
+                industrial_capacity_factory = 0.05
+        		global_building_slots_factor = 0.05
+				consumer_goods_expected_value = -0.05
+                production_speed_buildings_factor = 0.05
+                political_power_gain = -0.05			
+       		}
+  		}	
+		GRE_drachma_3 = {
+        	picture = GRE_drachma_id
+
+        	allowed = {
+        	    always = no
+        	}
+
+        	modifier = {
+                industrial_capacity_factory = 0.075
+        		global_building_slots_factor = 0.075
+				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.05
+                production_speed_buildings_factor = 0.075
+                political_power_gain = 0.1		
+       		}
+  		}
 		GRE_five_year_plan_idea = {
 			
  

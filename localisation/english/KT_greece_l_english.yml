@@ -4,6 +4,7 @@
  GRE_pay_back_debt_to_the_ifc_category2:0 "Managing the Debt to the I.F.C."
  GRE_pay_back_debt_to_the_ifc_category2_desc:1 "Greece has been plagued with financial debts since our War of Independence in 1829, and the Second Great Turkish war did not exactly help alleviate our fiscal woes. If we can pay off our debts, it will surely go a long way in securing some semblance of economic stability in Greece. Alternatively, certain radical movements have been known to buck both political and economic conventions. Should we fold to one of these movements, or simply allow the world to unravel as time progresses, more drastic courses of action may very well present themselves...\n\n§YDebt§! to the §YBritish§!: [ROOT.GetDebtPercentageBritain]\n\n§YDebt§! to the §YFrench§!: [ROOT.GetDebtPercentageFrance] \n\n§YDebt§! to the §YItalians§!: [ROOT.GetDebtPercentageItaly] \n\n§YDebt§! to the §YRussians§!: [ROOT.GetDebtPercentageRussia]\n\n§YDebt§! to the §YGermans§!: [ROOT.GetDebtPercentagGermany]\n\n§YDebt§! to the §YAustro-Hungarians§!: [ROOT.GetDebtPercentageAustriaHungary] \n\nTotal §YDebt§! Paid: [ROOT.GetDebtPercentagePaidTotal]"
  for_hellas:0 "All Must Serve"
+ for_hellas2:0 "For Fatherland and Motherland"
  GRE_no_debt_paid:0 "§YNo debt has been paid§!."
  GRE_debt_paid_total_tt:0 "§YCan Be Removed Once Debt Has Been Fully Repaid§!"
  GRE_small_payment_to_russia_debt_effect_tt:0 "This decision will clear one quarter of our current §Ydebt§! with §Y[SOV.GetNameDef]§! each time it is completed.\n"
@@ -88,3 +89,4 @@
  trigger_civil_war_now_royalist:0 "Metaxas Uprising"
  GRE_local_constantine_support:0 "Local George Support"
  automatic_add_royalists:0 "George II Rally in [FROM.getName]
+ GRE_open_foreign_subsidized_factories_eur_tt:0 "One §YMilitary Factory§! will be added for each of the following countries that has an §Yopinion§! of §YGreece§! greater than §G75§!: \n§Y[ENG.GetNameDef]§!, §Y[FRA.GetNameDef]§!, §Y[ITA.GetNameDef]§!, §Y[HUN.GetNameDef]§!, §Y[AUS.GetNameDef]§!, §Y[GER.GetNameDef]§!, §Y[SOV.GetNameDef]§!, §Y[USA.GetNameDef]§! and §Y[JAP.GetNameDef]§!."

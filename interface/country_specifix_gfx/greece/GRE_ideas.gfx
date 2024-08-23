@@ -10,6 +10,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/GRE/gre_heavy_communst_ban.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_GRE_drachma_id"
+		texturefile = "gfx/interface/ideas/GRE/GRE_drachma_id.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_gre_eee_opposition"
 		texturefile = "gfx/interface/ideas/GRE/gre_byzantium.dds"
 	}

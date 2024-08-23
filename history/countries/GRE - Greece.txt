@@ -38,6 +38,7 @@ add_ideas = {
 	export_focus
 	for_hellas
 	ifc_economy
+	GRE_memories_of_the_great_nationa_schism
 	GRE_megali_idea_partial_restoration
 	GRE_eee_enemy
 	german_customs_union_member
