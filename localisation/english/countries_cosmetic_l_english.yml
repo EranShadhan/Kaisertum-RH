@@ -1,6 +1,9 @@
 ﻿l_english:
  HUN_AS:0 "Hungary"
  IRE_UK:0 "Dominion Of Ireland"
+ ROM_HUN:0 "Wallachia"
+ MOL_HUN:0 "Moldovia"
+ SER_HUN:0 "Serbia"
  INS_HOL_democratic:0 "Dutch East Indies"
  INS_HOL_democratic_DEF:0 "the Dutch East Indies"
  INS_subject:0 "$OVERLORDADJ$ East Indies"

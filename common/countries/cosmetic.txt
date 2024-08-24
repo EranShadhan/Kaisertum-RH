@@ -8,6 +8,21 @@ HUN_AS = {
     color_ui = rgb { 255 255 255 }
 }
 
+ROM_HUN = {
+	color = rgb { 249 126 98 }
+	color_ui = rgb { 255 164 127 }
+}
+
+SER_HUN = {
+	color = rgb { 249 126 98 }
+	color_ui = rgb { 255 164 127 }
+}
+
+MOL_HUN = {
+	color = rgb { 249 126 98 }
+	color_ui = rgb { 255 164 127 }
+}
+
 YUG_AS = {
     color = rgb { 202 207 229 }
     color_ui = rgb { 255 255 255 }

@@ -28,12 +28,9 @@ news_event = {
 	major = yes
 
 	trigger = {
-		OR = {
-			4 = { is_controlled_by = HUN is_owned_by = AUS }
-			9 = { is_controlled_by = GER is_owned_by = AUS }
-			surrender_progress > 0.25
-		}
-		
+		surrender_progress > 0.25
+		76 = { is_owned_by = HUN }
+		76 = { is_fully_controlled_by = ROM }
 		HUN = { has_war_with = ROM }
 		NOT = { has_global_flag = fall_of_buda }
 	}
@@ -55,7 +52,7 @@ news_event = {
 }
 
 news_event = {
-	id = kaisertum_news.3
+	id = kaisertum_news.4
 	title = news.410.t
 	desc = news.410.desc
 	picture = GFX_news_event_074
@@ -100,6 +97,39 @@ news_event = {
 		trigger = {
 				TAG = AUS
 		}
+	}
+
+}
+
+news_event = {
+	id = kaisertum_news.3
+	title = news.411.t
+	desc = news.411.desc
+	picture = GFX_news_event_074
+	
+	major = yes
+
+	trigger = {
+		ROM = {
+			has_capitulated = yes
+		}
+		HUN = { has_war_with = ROM }
+		NOT = { has_global_flag = fall_of_rom}
+	}
+
+	immediate = { 
+					set_global_flag = fall_of_rom
+					HUN = {
+						country_event = hungary.3
+					}
+				}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = news.410a
 	}
 
 }

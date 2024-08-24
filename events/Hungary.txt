@@ -151,3 +151,74 @@ country_event = {
 	}
 	
 }
+
+country_event = {
+	id = hungary.3
+	title = hungary.3.t
+	desc = hungary.3.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary.3.a
+		hidden_effect = {
+
+			MOL = {
+				transfer_state = 78
+				transfer_state = 766
+				transfer_state = 79
+				transfer_state = 995
+				transfer_state = 80
+	
+				80 = {
+					add_core_of = MOl
+				}
+	
+				995 = {
+					add_core_of = MOl
+				}
+	
+				79 = {
+					add_core_of = MOl
+				}
+				set_cosmetic_tag = MOL_HUN
+			}
+
+			ROM = {
+				set_cosmetic_tag = ROM_HUN
+			}
+
+			SER = {
+				set_cosmetic_tag = SER_HUN
+			}
+
+		HUN = {
+			diplomatic_relation = {
+				country = MOL
+				relation = puppet
+				active = yes
+			}
+			diplomatic_relation = {
+				country = ROM
+				relation = puppet
+				active = yes
+			}
+			diplomatic_relation = {
+				country = SER
+				relation = puppet
+				active = yes
+			}
+
+			white_peace = GRE
+			white_peace = BUL
+			
+		}
+
+
+		
+
+		}	
+	}
+	
+}
