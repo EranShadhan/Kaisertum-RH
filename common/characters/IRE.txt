@@ -27,6 +27,21 @@ characters={
 		}
 
 	}
+	IRE_James_McNeil={
+		name="James McNeil"
+		portraits={
+			civilian={
+				large=GFX_portrait_IRE_James_Mc_Neil
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			traits = { defeatist conservative_grandee }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
 	IRE_Éamon_de_valera={
 		name="Éamon de Valera"
 		portraits={
@@ -119,7 +134,7 @@ characters={
 		name="Brody O'Doral"
 		portraits={
 			army={
-				large=GFX_portrait_Michael_Costello
+				large=GFX_portrait_Brody_O_Doral
 				small=GFX_portrait_Michael_Costello_small
 			}
 		}

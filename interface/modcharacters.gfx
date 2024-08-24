@@ -54,5 +54,14 @@ spriteTypes = {
 		name = "GFX_portrait_James_Larkin"
 		texturefile = "gfx/leaders/IRE/Portrait_Ireland_James_Larkin.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_Brody_O_Doral"
+		texturefile = "gfx/leaders/IRE/Portrait_Ireland_Brody_O_Doral.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IRE_James_Mc_Neil"
+		texturefile = "gfx/leaders/IRE/Portrait_Ireland_James_Mc_Neil.dds"
+	}
+
 	
 }

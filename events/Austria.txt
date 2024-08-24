@@ -396,6 +396,22 @@ country_event = {
 					add_ideas = against_hungary
 				}
 				add_to_faction = ROM
+				
+			}
+			hidden_effect = {
+			ROM = {
+				add_ai_strategy = {
+					type = alliance
+					id = GRE
+					value = 200
+				}}
+				GRE = {
+				add_ai_strategy = {
+					type = alliance
+					id = ROM
+					value = 200
+				}	}
+              				
 			}
 		}
 	}

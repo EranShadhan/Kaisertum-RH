@@ -99,6 +99,22 @@ spriteType = {
 		name = "GFX_goal_GRE_secure_smyrni"
 		texturefile = "gfx/interface/goals/GRE/GRE_secure_smyrni.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_GRE_fate_of_eee"
+		texturefile = "gfx/interface/goals/GRE/GRE_fate_of_eee.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_GRE_KING"
+		texturefile = "gfx/interface/goals/GRE/GRE_KING.dds"
+	}
+	spriteType = {
+		name = "GFX_GRE_the_theory"
+		texturefile = "gfx/interface/goals/GRE/GRE_the_theory.dds"
+	}
+	spriteType = {
+		name = "GFX_GRE_we_have_to_follow_the_king"
+		texturefile = "gfx/interface/goals/GRE/GRE_we_have_to_follow_the_king.dds"
+	}
 	SpriteType = {
 		name = "GFX_focus_GRE_industrialize_athens"
 		texturefile = "gfx/interface/goals/GRE/focus_GRE_industrialize_athens.dds"

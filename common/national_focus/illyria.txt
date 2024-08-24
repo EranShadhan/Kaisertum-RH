@@ -169,7 +169,7 @@ focus_tree = {
 			}
 			
 		x = 10
-		y = 3
+		y = 1
 
 		cost = 4
 		
@@ -204,7 +204,7 @@ focus_tree = {
 				
 			}
 			
-		x = -1
+		x = 0
 		y = 1
 
 		cost = 4
@@ -240,7 +240,7 @@ focus_tree = {
 				
 			}
 			
-		x = -2
+		x = -4
 		y = 1
 
 		cost = 4
@@ -266,7 +266,7 @@ focus_tree = {
 		    }
 	}
 	focus = {
-		id = XAD_collect_the_railroads
+		id = YUG_connect_the_railroads
 		icon = a
 		relative_position_id = YUG_improve_infrastructure
 		prerequisite = { focus = YUG_improve_infrastructure }
@@ -300,10 +300,726 @@ focus_tree = {
 		    }
 	}
 	focus = {
-		id = YUG_industry_mils1
+		id = YUG_mine_for_minerals
 		icon = a
-		relative_position_id = YUG_industry1
-		prerequisite = { focus = YUG_industry1 }
+		relative_position_id = YUG_connect_the_railroads
+		prerequisite = { focus = YUG_connect_the_railroads }
+		available = {
+			
+		}
+			
+		x = 1
+		y = 1
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				add_political_power = 199
+				
+		    }
+	}
+	focus = {
+		id = YUG_oil_in_vjvodina
+		icon = a
+		relative_position_id = YUG_connect_the_railroads
+		prerequisite = { focus = YUG_connect_the_railroads }
+		available = {
+			
+		}
+			
+		x = -1
+		y = 1
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				add_political_power = 199
+				
+		    }
+	}
+	focus = {
+		id = YUG_zagreb_university
+		icon = a
+		relative_position_id = YUG_industry2
+		prerequisite = { focus = YUG_industry2 }
+		available = {
+				
+				
+				
+			}
+			
+		x = 1
+		y = 1
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+	focus = {
+		id = YUG_mechanical_bonuses
+		icon = a
+		relative_position_id = YUG_zagreb_university
+		prerequisite = { focus = YUG_zagreb_university }
+		available = {
+				
+				
+				
+			}
+			
+		x = -2
+		y = 1
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+	focus = {
+		id = YUG_industrial_studies
+		icon = a
+		relative_position_id = YUG_mechanical_bonuses
+		prerequisite = { focus = YUG_mechanical_bonuses }
+		available = {
+				
+				
+				
+			}
+			
+		x = 0
+		y = 1
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+	focus = {
+		id = YUG_improve_public_schools
+		icon = a
+		relative_position_id = YUG_zagreb_university
+		prerequisite = { focus = YUG_zagreb_university }
+		available = {
+				
+				
+				
+			}
+			
+		x = 1
+		y = 1
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+	focus = {
+		id = YUG_slavic_masterminds
+		icon = a
+		relative_position_id = YUG_improve_public_schools
+		prerequisite = { focus = YUG_improve_public_schools }
+		available = {
+				
+				
+				
+			}
+			
+		x = 0
+		y = 1
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+	focus = {
+		id = YUG_a_new_illyria
+		icon = a
+		relative_position_id = YUG_slavic_masterminds
+		prerequisite = { focus = YUG_slavic_masterminds }
+		available = {
+				
+				
+				
+			}
+			
+		x = -2
+		y = 1
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+	focus = {
+		id = YUG_ljbujana_schools
+		icon = a
+		relative_position_id = YUG_slavic_masterminds
+		prerequisite = { focus = YUG_slavic_masterminds }
+		available = {
+				
+				
+				
+			}
+			
+		x = 0
+		y = 1
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+	focus = {
+		id = YUG_slovene_scientist
+		icon = a
+		relative_position_id = YUG_ljbujana_schools
+		prerequisite = { focus = YUG_ljbujana_schools }
+		available = {
+				
+				
+				
+			}
+			
+		x = 1
+		y = 1
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+	focus = {
+		id = YUG_germans_slovenia
+		icon = a
+		relative_position_id = YUG_ljbujana_schools
+		prerequisite = { focus = YUG_ljbujana_schools }
+		available = {
+				
+				
+				
+			}
+			
+		x = -1
+		y = 1
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+	focus = {
+		id = YUG_invest_in_the_coastline
+		icon = a
+		relative_position_id = YUG_industry2
+		prerequisite = { focus = YUG_industry2 }
+		available = {
+				
+				
+				
+			}
+			
+		x = 7
+		y = 1
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+	focus = {
+		id = YUG_develop_the_costal_ports
+		icon = a
+		relative_position_id = YUG_invest_in_the_coastline
+		prerequisite = { focus = YUG_invest_in_the_coastline }
+		available = {
+				
+				
+				
+			}
+			
+		x = -2
+		y = 1
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+	focus = {
+		id = YUG_open_markets
+		icon = a
+		relative_position_id = YUG_develop_the_costal_ports
+		prerequisite = { focus = YUG_develop_the_costal_ports }
+		available = {
+				
+				
+				
+			}
+			
+		x = -1
+		y = 1
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+	focus = {
+		id = YUG_new_costal_cities
+		icon = a
+		relative_position_id = YUG_develop_the_costal_ports
+		prerequisite = { focus = YUG_develop_the_costal_ports }
+		available = {
+				
+				
+				
+			}
+			
+		x = 2
+		y = 1
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+	focus = {
+		id = YUG_develop_the_costal_arms
+		icon = a
+		relative_position_id = YUG_invest_in_the_coastline
+		prerequisite = { focus = YUG_invest_in_the_coastline }
+		available = {
+				
+				
+				
+			}
+			
+		x = 1
+		y = 1
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+	focus = {
+		id = YUG_invest_in_the_mainland
+		icon = a
+		relative_position_id = YUG_industry2
+		prerequisite = { focus = YUG_industry2 }
+		available = {
+				
+				
+				
+			}
+			
+		x = 11
+		y = 1
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+	focus = {
+		id = YUG_heavy_industry_in_north_bosnia
+		icon = a
+		relative_position_id = YUG_invest_in_the_mainland
+		prerequisite = { focus = YUG_invest_in_the_mainland }
+		available = {
+				
+				
+				
+			}
+			
+		x = -1
+		y = 1
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+	focus = {
+		id = YUG_bosnia_bahn
+		icon = a
+		relative_position_id = YUG_heavy_industry_in_north_bosnia
+		prerequisite = { focus = YUG_heavy_industry_in_north_bosnia }
+		available = {
+				
+				
+				
+			}
+			
+		x = 0
+		y = 1
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+	focus = {
+		id = YUG_heavy_industry_in_south_bosnia
+		icon = a
+		relative_position_id = YUG_invest_in_the_mainland
+		prerequisite = { focus = YUG_invest_in_the_mainland }
+		available = {
+				
+				
+				
+			}
+			
+		x = 2
+		y = 1
+
+		cost = 4
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+				
+				
+				
+		    }
+	}
+	focus = {
+		id = YUG_invest_in_the_heart_land
+		icon = a
+		relative_position_id = YUG_invest_in_the_mainland
+		prerequisite = { focus = YUG_invest_in_the_mainland }
 		available = {
 				
 				
@@ -336,17 +1052,18 @@ focus_tree = {
 		    }
 	}
 	focus = {
-		id = YUG_industry_mils2
+		id = YUG_heavy_industry_in_east_bosnia
 		icon = a
-		relative_position_id = YUG_industry_mils1
-		prerequisite = { focus = YUG_industry_mils1 }
+		relative_position_id = YUG_invest_in_the_heart_land
+		prerequisite = { focus = YUG_invest_in_the_heart_land }
+		prerequisite = { focus = YUG_heavy_industry_in_south_bosnia }
 		available = {
 				
 				
 				
 			}
 			
-		x = 0
+		x = -1
 		y = 1
 
 		cost = 4
@@ -372,53 +1089,17 @@ focus_tree = {
 		    }
 	}
 	focus = {
-		id = YUG_illiryan_work
+		id = YUG_zagreb_industry
 		icon = a
-		relative_position_id = YUG_industry_mils2
-		prerequisite = { focus = YUG_industry_mils2 }
+		relative_position_id = YUG_invest_in_the_heart_land
+		prerequisite = { focus = YUG_invest_in_the_heart_land }
 		available = {
 				
 				
 				
 			}
 			
-		x = 0
-		y = 1
-
-		cost = 4
-		
-			ai_will_do = {
-			
-				base = 0
-			
-			}
-			
-		available_if_capitulated = yes
-		
-		search_filters = {  
-				
-				
-				
-			}
-			
-		completion_reward = {
-				
-				
-				
-		    }
-	}
-	focus = {
-		id = YUG_illiryan_work
-		icon = a
-		relative_position_id = YUG_industry_mils2
-		prerequisite = { focus = YUG_industry_mils2 }
-		available = {
-				
-				
-				
-			}
-			
-		x = 0
+		x = 1
 		y = 1
 
 		cost = 4

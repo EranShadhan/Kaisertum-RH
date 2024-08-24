@@ -137,24 +137,13 @@ create_country_leader = {
 create_country_leader = {
 	name = "Stepan Bandera"
 	desc = ""
-	picture = GFX_portrait_Stepan_Bandera
+	picture = gfx/leaders/UKR/Portrait_UKR_Stepan_Bandera.dds
 	expire = "1953.3.1"
 	ideology = fascism_ideology
 	traits = {
 		
 	}
 }
-
-#create_country_leader = {
-#	name = "Zelensksk"
-#	desc = ""
-#	picture = ""
-#	expire = "1953.3.1"
-#	ideology = oligarchism
-#	traits = {
-#		
-#	}
-#}
 
 create_country_leader = {
 	name = "Vasyl Vyshivanyi"
@@ -167,5 +156,32 @@ create_country_leader = {
 	}
 }
 
-
-
+recruit_character = UKR_pavlo_skoropadskyi
+recruit_character = UKR_volodymyr_salsky
+recruit_character = UKR_oleksandr_osetsky
+recruit_character = UKR_semen_goruk
+recruit_character = UKR_vsevolod_petriv
+recruit_character = UKR_andriy_melnyk
+recruit_character = UKR_roman_shukhevych
+recruit_character = UKR_mykhailo_omelianovych_pavlenko
+recruit_character = UKR_oleksandr_udovychenko
+recruit_character = UKR_pavlo_shandruk
+recruit_character = UKR_oleksandr_hrekiv
+recruit_character = UKR_yevhen_konovalets
+recruit_character = UKR_vsevolod_zmienko
+recruit_character = UKR_gavrylo_bazylsky
+recruit_character = UKR_ivan_pavlenko
+recruit_character = UKR_borys_paliy_neyilo
+recruit_character = UKR_oleksyi_almazov
+recruit_character = UKR_vasyl_tiutiunnyk
+recruit_character = UKR_marko_bezruchko
+recruit_character = UKR_mykola_shapoval
+recruit_character = UKR_oleksandr_zagrodski
+recruit_character = UKR_mykola_yunakiv
+recruit_character = UKR_petro_dyachenko
+recruit_character = UKR_kristina_sushko
+recruit_character = UKR_roman_dashkevych
+recruit_character = UKR_dmytro_bilinchuck
+recruit_character = UKR_oleksandr_gadd
+recruit_character = UKR_vasyl_pylypenko
+recruit_character = UKR_mykhailo_bilinskiy

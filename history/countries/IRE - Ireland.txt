@@ -97,6 +97,7 @@ if = {
 
 set_convoys = 120
 
+recruit_character = IRE_James_McNeil
 recruit_character = IRE_micheal_collins
 recruit_character = IRE_Éamon_de_valera
 recruit_character = IRE_eoin_oduffy
@@ -119,6 +120,7 @@ recruit_character = IRE_john_byrne
 recruit_character = IRE_sean_lemass
 recruit_character = IRE_douglas_hyde
 recruit_character = IRE_sean_ceallaigh
+recruit_character = IRE_Brody_O_Doral
 
 1939.1.1 = {
 
@@ -171,8 +173,8 @@ recruit_character = IRE_sean_ceallaigh
 
 set_politics = {
 	ruling_party = democratic
-	last_election = "1933.1.24"
-	election_frequency = 48
+	last_election = "1926.1.24"
+	election_frequency = 60
 	elections_allowed = yes
 }
 set_popularities = {

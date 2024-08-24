@@ -138,7 +138,7 @@
  STATE_134:0 "Connaught"
  STATE_135:0 "Munster"
  STATE_136:0 "Aberdeenshire"
- STATE_137:0 "Crimea"
+ STATE_137:0 "North Crimea"
  STATE_138:1 "Skåne"
  STATE_138_DEN:0 "Skaanelandene"
  STATE_139:0 "Småland"
@@ -1038,3 +1038,4 @@
  STATE_1020:1 "Buturlinovka"
  STATE_1021:1 "Malazhyn"
  STATE_1022:0 "Krichev"
+ STATE_1023:0 "South Crimea"
