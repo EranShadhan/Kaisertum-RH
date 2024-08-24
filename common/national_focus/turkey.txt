@@ -23,17 +23,15 @@ focus = {
     icon = GFX_goal_generic_construct_infrastructure
     x = 10
     y = 0
-    cost = 2
+    cost = 5
 
     available = {
 
     }
 
-    completion_reward = {
-        remove_ideas = TUR_reconstruction
-        # Removes minor economic national spirit debuff
-    }
-
+    completion_reward = { # Removes a starting economic idea
+        remove_ideas = TUR_reconstruction 
+	}
     ai_will_do = {
         factor = 5
     }
@@ -46,12 +44,12 @@ focus = {
 
 focus = {
     id = TUR_industrialization_at_last
-    icon = thisgfxiswrong
+    icon = GFX_focus_generic_industrialists
     prerequisite = { focus = TUR_finish_reconstruction }
     x = -3
     y = 1
     relative_position_id = TUR_finish_reconstruction
-    cost = 2
+    cost = 5
 
     available = {
 
@@ -73,19 +71,32 @@ focus = {
 
 focus = { # CAPITAL
     id = TUR_greater_engürü_plan
-    icon = thisgfxiswrong
+    icon = GFX_focus_develop_engürü
     prerequisite = { focus = TUR_industrialization_at_last }
     x = -3
     y = 1
     relative_position_id = TUR_industrialization_at_last
-    cost = 5
+    cost = 4
 
     available = {
 
     }
 
-    completion_reward = {
-        # Gives +1 infrastructure in engürü/ankara
+    completion_reward = { # +1 infrastructure
+		IF = {
+			limit = {
+				49 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+			49 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
     }
 
     ai_will_do = {
@@ -96,7 +107,7 @@ focus = { # CAPITAL
 
 focus = { # CAPITAL
     id = TUR_urbanization_of_the_capital
-    icon = thisgfxiswrong
+    icon = GFX_focus_generic_low_cost_housing
     prerequisite = { focus = TUR_greater_engürü_plan }
     x = -2
     y = 1
@@ -107,9 +118,20 @@ focus = { # CAPITAL
 
     }
 
-    completion_reward = {
-        # Upgrades engürü/ankara state cathegory
-        # Gives 70k population in state
+    completion_reward = { # increases state cathegory, adds some population
+		IF = {
+			limit = {
+				49 = {
+						is_owned_and_controlled_by = ROOT
+				}
+			}
+			49 = {
+				increase_state_category = yes
+			}
+			49 = {
+				add_manpower = 76230
+			}
+		}
     }
 
     ai_will_do = {
@@ -125,18 +147,34 @@ focus = { # CAPITAL
     x = 1
     y = 1
     relative_position_id = TUR_greater_engürü_plan
-    cost = 4
+    cost = 6
 
     available = {
 
     }
 
-    completion_reward = {
-        # Gives +1 industrial_complex in state
-        # Gives engürü/ankara state +1 building slot
-        # Adds minor national spirit buff to construction for 120 days
-    }
-
+    completion_reward = { # +1 CIV +1 Build Slot +180 day construction bonus
+		IF = {
+			limit = {
+				49 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+			49 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	
+		add_timed_idea = {
+    		idea = TUR_temp_construction
+    		days = 180
+		}
+	}
     ai_will_do = {
         factor = 5
     }
@@ -145,21 +183,35 @@ focus = { # CAPITAL
 
 focus = { # CAPITAL
     id = TUR_Yenişehir_housing_projects         # Yenişehir was the name of the new part of ankara during the interwar period.
-    icon = GFX_focus_generic_low_cost_housing   # Ankara's population 10x-d in 20 years.
+    icon = GFX_focus_SWE_hygienic_housing       # Ankara's population 10x-d in 20 years.
     prerequisite = { focus = TUR_urbanization_of_the_capital }
     x = -1
     y = 1
     relative_position_id = TUR_urbanization_of_the_capital
-    cost = 4
+    cost = 6
 
     available = {
 
     }
 
-    completion_reward = {
-        # Upgrades engürü/ankara state cathegory
-        # Gives 50k population in state
-        # Gives engürü/ankara +5 victory points
+    completion_reward = { # increases state cathegory, adds some population, adds VPs
+		IF = {
+			limit = {
+				49 = {
+						is_owned_and_controlled_by = ROOT
+				}
+			}
+			49 = {
+				increase_state_category = yes
+			}
+			49 = {
+				add_manpower = 31950
+			}
+			add_victory_points = {
+			province = 11747
+			value = 10
+			}
+		}
     }
 
     ai_will_do = {
@@ -170,20 +222,40 @@ focus = { # CAPITAL
 
 focus = { # CAPITAL
     id = TUR_electrification_of_Ulus # Ulus was the name of the of the old city in Ankara.
-    icon = thisgfxiswrong
+    icon = GFX_focus_generic_energy
     prerequisite = { focus = TUR_urbanization_of_the_capital }
     x = 1
     y = 1
     relative_position_id = TUR_urbanization_of_the_capital
-    cost = 4
+    cost = 6
 
     available = {
 
     }
 
-    completion_reward = {
-        # Gives one time buff to electric research
-        # Gives engürü/ankara state +1 building slot
+    completion_reward = { # Gives one time buff to electric research, 1 gives infrastructure, gives 1 building slot
+        IF = {
+			limit = {
+				49 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+			49 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = electronics
+		}
+
     }
 
     ai_will_do = {
@@ -194,19 +266,38 @@ focus = { # CAPITAL
 
 focus = { # CAPITAL
     id = TUR_expand_the_engürü_railway_station
-    icon = thisgfxiswrong
+    icon = GFX_focus_POL_warsaw_main_station
     prerequisite = { focus = TUR_reopen_cement_factories }
     x = 0
     y = 1
     relative_position_id = TUR_reopen_cement_factories
-    cost = 4
+    cost = 8
 
     available = {
 
     }
 
-    completion_reward = {
-        # Upgrades railways between kayseri and engürü/ankaea
+    completion_reward = { # Builds some railways
+        IF = {
+			limit = {
+				49 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				347 = {
+					is_owned_and_controlled_by = ROOT
+				}
+				978 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+			
+		build_railway = {
+        level = 3
+        build_only_on_allied = yes
+        path = { 11829 11811 904 11866 3919 6908 11747 }
+        }
+
+		}
     }
 
     ai_will_do = {
@@ -216,20 +307,99 @@ focus = { # CAPITAL
 }
 
 focus = { # CAPITAL
-    id = TUR_connect_the_neighborhoods
-    icon = thisgfxiswrong
+    id = TUR_connect_the_eastern_regions
+    icon = GFX_focus_generic_public_works
     prerequisite = { focus = TUR_Yenişehir_housing_projects }
-    x = 0
+    x = 1
     y = 1
     relative_position_id = TUR_Yenişehir_housing_projects
-    cost = 4
+    cost = 6
 
     available = {
 
     }
 
-    completion_reward = {
-         # Gives engürü/ankara state +1 building slot
+    completion_reward = { # Further upgrade engürü state
+         IF = {
+			limit = {
+				49 = {
+						is_owned_and_controlled_by = ROOT
+				}
+				356 = {
+						is_owned_and_controlled_by = ROOT
+				}
+				798 = {
+						is_owned_and_controlled_by = ROOT
+				}
+			}
+			356 = {
+				increase_state_category = yes
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			798 = {
+				increase_state_category = yes
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}			
+		}
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = { # CAPITAL
+    id = TUR_connect_the_western_regions
+    icon = GFX_focus_generic_public_works
+    prerequisite = { focus = TUR_Yenişehir_housing_projects }
+    x = -1
+    y = 1
+    relative_position_id = TUR_Yenişehir_housing_projects
+    cost = 6
+
+    available = {
+
+    }
+
+    completion_reward = { # Further upgrade engürü state
+         IF = {
+			limit = {
+				49 = {
+						is_owned_and_controlled_by = ROOT
+				}
+				343 = {
+						is_owned_and_controlled_by = ROOT
+				}
+				347 = {
+						is_owned_and_controlled_by = ROOT
+				}
+			}
+			343 = {
+				increase_state_category = yes
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			347 = {
+				increase_state_category = yes
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}			
+		}
     }
 
     ai_will_do = {
@@ -237,28 +407,11 @@ focus = { # CAPITAL
     }
 
 } 
-    x = -1
-    y = 1
-    relative_position_id = TUR_urbanization_of_the_capital
-    cost = 4
 
-    available = {
-
-    }
-
-    completion_reward = {
-        # Upgrades engürü/ankara state cathegory
-        # Gives 50k population in state
-        # Gives engürü/ankara +5 victory points
-    }
-
-    ai_will_do = {
-        factor = 5
-    }
 
     focus = { # CAPITAL
     id = TUR_open_the_OSTIM_industrial_park
-    icon = thisgfxiswrong
+    icon = GFX_focus_SWE_landsverk
     prerequisite = { focus = TUR_electrification_of_Ulus }
     prerequisite = { focus = TUR_expand_the_engürü_railway_station }
     x = 1
@@ -270,9 +423,27 @@ focus = { # CAPITAL
 
     }
 
-    completion_reward = {
-        # Gives +3 industrial_complex in state
-        # Gives engürü/ankara state +3 building slots
+    completion_reward = { # +2 CIVs, +1 MIL +5 building slots
+		IF = {
+			limit = {
+				49 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+			49 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
     }
 
     ai_will_do = {
@@ -283,23 +454,39 @@ focus = { # CAPITAL
 
 focus = { # CAPITAL
     id = TUR_the_jewel_of_turkey
-    icon = thisgfxiswrong
-    prerequisite = { focus = TUR_connect_the_neighborhoods }
+    icon = GFX_TUR_the_jewel_of_turkey
+    prerequisite = { focus = TUR_connect_the_eastern_regions }
+	prerequisite = { focus = TUR_connect_the_western_regions }
     prerequisite = { focus = TUR_open_the_OSTIM_industrial_park }
-    x = 1
+    x = 0
     y = 1
-    relative_position_id = TUR_connect_the_neighborhoods
-    cost = 4
+    relative_position_id = TUR_connect_the_eastern_regions
+    cost = 10
 
     available = {
 
     }
 
-    completion_reward = {
-         # Gives engürü/ankara +1 infrastructure
-         # Gives +5% base stability
-         # Upgrades industrial related national spirit
-         # Builds +3 airbase levels in state
+    completion_reward = { # Gives engürü/ankara +1 infrastructure
+		IF = {
+			limit = {
+				49 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+			49 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			49 = {
+				increase_state_category = yes
+			}
+		}
+
+        # TODO: Upgrades industrial related national spirit
     }
 
     ai_will_do = {
@@ -609,7 +796,7 @@ focus = {
 
 focus = {
     id = TUR_commericalize_agriculture
-    icon = thisgfxiswrong
+    icon = GFX_focus_generic_agricultural_subsidies
     prerequisite = { focus = TUR_great_leap_forwards }
     x = -2
     y = 1
@@ -706,7 +893,7 @@ focus = {
 
 focus = {
     id = TUR_fund_new_textile_manufactories
-    icon = thisgfxiswrong
+    icon = GFX_focus_CHL_enlarge_the_textile_industries
     prerequisite = { focus = TUR_invest_in_the_tobacco_industry }
     x = 0
     y = 1
@@ -775,7 +962,7 @@ focus = {
 
 focus = {
     id = TUR_establish_the_model_farms_program
-    icon = thisgfxiswrong
+    icon = GFX_focus_generic_farmland
     prerequisite = { focus = TUR_provide_loans_to_farmers }
     x = 1
     y = 1
@@ -871,7 +1058,7 @@ focus = {
 
 focus = {
     id = TUR_fund_the_Çubuk_dam
-    icon = thisgfxiswrong
+    icon = GFX_focus_generic_hydroelectric_energy
     prerequisite = { focus = TUR_tame_the_land }
     x = 1
     y = 1
