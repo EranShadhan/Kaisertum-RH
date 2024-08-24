@@ -30,4 +30,24 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/ROM/goal_ROM_pol_k_1.dds"			
 	}
 	
+	SpriteType = {
+	name = "GFX_ROM_pol_k_2"
+	texturefile = "gfx/interface/goals/ROM/goal_ROM_pol_k_2.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_ROM_pol_k_3"
+	texturefile = "gfx/interface/goals/ROM/goal_ROM_pol_k_3.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_ROM_pol_k_4"
+	texturefile = "gfx/interface/goals/ROM/goal_ROM_pol_k_4.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_ROM_pol_k_5"
+	texturefile = "gfx/interface/goals/ROM/goal_ROM_pol_k_5.dds"			
+	}
+	
 }

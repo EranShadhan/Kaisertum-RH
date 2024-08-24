@@ -215,6 +215,10 @@ country_event = {
 			
 		}
 
+		GRE = {
+			dismantle_faction = yes
+		}
+
 
 		
 
