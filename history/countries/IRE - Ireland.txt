@@ -175,6 +175,7 @@ add_ideas = {
 	IRE_king_George_V
 	IRE_British_Investment
 	IRE_IRA_Presence
+	IRE_Lore
 }
 
 

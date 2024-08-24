@@ -104,6 +104,26 @@ ideas = {
 			
 
 		}
+		
+		IRE_Lore = {
+			
+			allowed = {
+				original_tag = IRE
+			}
+
+			
+			picture = 
+			
+			removal_cost = -1
+			
+			modifier = {
+					
+							
+			}
+			
+
+		}
+
 
 	}
 }
