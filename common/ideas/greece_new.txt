@@ -906,6 +906,27 @@ ideas = {
 			}
 			
 		}
+		GRE_no_left2 = {
+			
+
+			picture = gre_heavy_communst_ban
+          allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+            modifier = {
+			stability_factor = 0.05
+			communism_drift = -0.5
+			communism_acceptance = -200
+			non_core_manpower = -0.025
+			}
+			
+		}
 		GRE_eee_enemy = {
 			
 

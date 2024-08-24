@@ -5,7 +5,7 @@ ideas = {
 	
 
         TUR_reconstruction = {
-            picture = GFX_thisgfxiswrong
+            picture = thisgfxiswrong
             removal_cost = -1
 
             allowed = {
@@ -20,6 +20,23 @@ ideas = {
                 production_speed_buildings_factor = -0.08
                 industrial_capacity_factory = -0.05
                 consumer_goods_factor = 0.2
+            }
+        }
+
+		TUR_temp_construction = {
+            picture = thisgfxiswrong
+            removal_cost = -1
+
+            allowed = {
+                always = no
+            }
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+            modifier = {
+                production_speed_buildings_factor = 0.3
             }
         }
 
