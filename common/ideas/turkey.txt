@@ -3,6 +3,29 @@ ideas = {
 	country = {
 	
 	
+
+        TUR_reconstruction = {
+            picture = GFX_thisgfxiswrong
+            removal_cost = -1
+
+            allowed = {
+                always = no
+            }
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+            modifier = {
+                production_speed_buildings_factor = -0.08
+                industrial_capacity_factory = -0.05
+                consumer_goods_factor = 0.2
+            }
+        }
+
+    
+
+	
 		TUR_german_influence_in_government = {
             picture = german_influence_in_government
 			allowed = {

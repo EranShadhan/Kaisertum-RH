@@ -14,15 +14,945 @@ focus_tree = {
 
 	continuous_focus_position = { x = 20 y = 1600 }
 
-	# ARMY BRANCH
+#############################################
+##### START OF THE ECONOMIC FOCUS TREE ######
+#############################################
+
+focus = {
+    id = TUR_finish_reconstruction
+    icon = GFX_goal_generic_construct_infrastructure
+    x = 10
+    y = 0
+    cost = 2
+
+    available = {
+
+    }
+
+    completion_reward = {
+        remove_ideas = TUR_reconstruction
+        # Removes minor economic national spirit debuff
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+#############################################
+########## INDUSTRIAL TREE SECTION ##########
+#############################################
+
+focus = {
+    id = TUR_industrialization_at_last
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_finish_reconstruction }
+    x = -3
+    y = 1
+    relative_position_id = TUR_finish_reconstruction
+    cost = 2
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # Gives one time buff to construction research
+        # Opens industrialization decisions tab
+        # Gives upgradeable national spirit (both by decisions and focuses)
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+########## CAPITAL ##########
+
+focus = { # CAPITAL
+    id = TUR_greater_engürü_plan
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_industrialization_at_last }
+    x = -3
+    y = 1
+    relative_position_id = TUR_industrialization_at_last
+    cost = 5
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # Gives +1 infrastructure in engürü/ankara
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = { # CAPITAL
+    id = TUR_urbanization_of_the_capital
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_greater_engürü_plan }
+    x = -2
+    y = 1
+    relative_position_id = TUR_greater_engürü_plan
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # Upgrades engürü/ankara state cathegory
+        # Gives 70k population in state
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = { # CAPITAL
+    id = TUR_reopen_cement_factories
+    icon = GFX_goal_generic_construction
+    prerequisite = { focus = TUR_greater_engürü_plan }
+    x = 1
+    y = 1
+    relative_position_id = TUR_greater_engürü_plan
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # Gives +1 industrial_complex in state
+        # Gives engürü/ankara state +1 building slot
+        # Adds minor national spirit buff to construction for 120 days
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = { # CAPITAL
+    id = TUR_Yenişehir_housing_projects         # Yenişehir was the name of the new part of ankara during the interwar period.
+    icon = GFX_focus_generic_low_cost_housing   # Ankara's population 10x-d in 20 years.
+    prerequisite = { focus = TUR_urbanization_of_the_capital }
+    x = -1
+    y = 1
+    relative_position_id = TUR_urbanization_of_the_capital
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # Upgrades engürü/ankara state cathegory
+        # Gives 50k population in state
+        # Gives engürü/ankara +5 victory points
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = { # CAPITAL
+    id = TUR_electrification_of_Ulus # Ulus was the name of the of the old city in Ankara.
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_urbanization_of_the_capital }
+    x = 1
+    y = 1
+    relative_position_id = TUR_urbanization_of_the_capital
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # Gives one time buff to electric research
+        # Gives engürü/ankara state +1 building slot
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = { # CAPITAL
+    id = TUR_expand_the_engürü_railway_station
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_reopen_cement_factories }
+    x = 0
+    y = 1
+    relative_position_id = TUR_reopen_cement_factories
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # Upgrades railways between kayseri and engürü/ankaea
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = { # CAPITAL
+    id = TUR_connect_the_neighborhoods
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_Yenişehir_housing_projects }
+    x = 0
+    y = 1
+    relative_position_id = TUR_Yenişehir_housing_projects
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = {
+         # Gives engürü/ankara state +1 building slot
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+} 
+    x = -1
+    y = 1
+    relative_position_id = TUR_urbanization_of_the_capital
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # Upgrades engürü/ankara state cathegory
+        # Gives 50k population in state
+        # Gives engürü/ankara +5 victory points
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+    focus = { # CAPITAL
+    id = TUR_open_the_OSTIM_industrial_park
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_electrification_of_Ulus }
+    prerequisite = { focus = TUR_expand_the_engürü_railway_station }
+    x = 1
+    y = 1
+    relative_position_id = TUR_electrification_of_Ulus
+    cost = 8
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # Gives +3 industrial_complex in state
+        # Gives engürü/ankara state +3 building slots
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = { # CAPITAL
+    id = TUR_the_jewel_of_turkey
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_connect_the_neighborhoods }
+    prerequisite = { focus = TUR_open_the_OSTIM_industrial_park }
+    x = 1
+    y = 1
+    relative_position_id = TUR_connect_the_neighborhoods
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = {
+         # Gives engürü/ankara +1 infrastructure
+         # Gives +5% base stability
+         # Upgrades industrial related national spirit
+         # Builds +3 airbase levels in state
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+} 
+
+########## CAPITAL ##########
+
+########## INDUSTRIALIZATION ##########
+
+focus = { # INDUSTRIALIZATION
+    id = TUR_fruits_of_competition
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_industrialization_at_last }
+    x = 3
+    y = 1
+    relative_position_id = TUR_industrialization_at_last
+    cost = 5
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # Upgrades industrial related national spirit
+        # Unlocks options related to german and russian investment
+        # Both germany and russia will be able to invest points into turkey
+        # Turkey can spend these points of infrastructure, civs, mils, temporary national spirits.
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = { # INDUSTRIALIZATION
+    id = TUR_german_expertise
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_fruits_of_competition }
+    x = -2
+    y = 1
+    relative_position_id = TUR_fruits_of_competition
+    cost = 6
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # Upgrades national spirit, giving turkey production efficency growth and cap
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = { # INDUSTRIALIZATION
+    id = TUR_invite_MAN_company
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_german_expertise }
+    x = -1
+    y = 1
+    relative_position_id = TUR_german_expertise
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # Unlocks new national spirit, related to german companies.
+        # first stage gives -10% cost reduction to trucks.
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = { # INDUSTRIALIZATION
+    id = TUR_worker_exchange_programs
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_german_expertise }
+    x = 1
+    y = 1
+    relative_position_id = TUR_german_expertise
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # Unlocks decision in industrialization decisions tab to send
+        # 100k manpower in exchange for 2 offmap civs. The decision can be withdrawn,
+        # removing the offmap civilian factories.
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = { # INDUSTRIALIZATION
+    id = TUR_invite_the_Kaiserbahn_to_turkey
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_invite_MAN_company }
+    prerequisite = { focus = TUR_expand_the_engürü_railway_station }
+    x = -1
+    y = 1
+    relative_position_id = TUR_invite_MAN_company
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # Upgrades german company national spirit, giving -15% cost to trains.
+        # Unlocks decisions to build new railways in industrialization tab.
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = { # INDUSTRIALIZATION
+    id = TUR_german_efficency
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_worker_exchange_programs }
+    x = 0
+    y = 1
+    relative_position_id = TUR_worker_exchange_programs
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # !needs to have done the decision to send foreign workers to germany
+        # Gives upgrades to industrial national spirit, increasing factory production.
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = { # INDUSTRIALIZATION
+    id = TUR_western_standards
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_german_efficency }
+    x = 0
+    y = 1
+    relative_position_id = TUR_german_efficency
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # upgrades industrial related national spirit
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = { # INDUSTRIALIZATION
+    id = TUR_russian_industrial_base
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_fruits_of_competition }
+    x = 2
+    y = 1
+    relative_position_id = TUR_fruits_of_competition
+    cost = 6
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # Upgrades national spirit, giving turkey buffs to civilian factory construction
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = { # INDUSTRIALIZATION
+    id = TUR_expand_chromium_mining
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_russian_industrial_base }
+    x = -1
+    y = 1
+    relative_position_id = TUR_russian_industrial_base
+    cost = 6
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # Gives chromium in some states
+    }
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = { # INDUSTRIALIZATION
+    id = TUR_open_the_eti_mine
+    icon = GFX_focus_generic_steel
+    prerequisite = { focus = TUR_expand_chromium_mining }
+    x = 0
+    y = 1
+    relative_position_id = TUR_expand_chromium_mining
+    cost = 6
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # Gives steel in the northest state of turkey
+        # Unlocks decision to further expand the mine
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = { # INDUSTRIALIZATION
+    id = TUR_leave_no_rocks_untouched
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_open_the_eti_mine }
+    x = 0
+    y = 1
+    relative_position_id = TUR_open_the_eti_mine
+    cost = 6
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # !needs to have done a decision to expand the Eti mine
+        # Gives new decisions for resource extraction
+        # Gives new national spirit increasing resource gain efficency
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+########## INDUSTRIALIZATION ##########
+
+#############################################
+######### AGRICULTURAL TREE SECTION #########
+#############################################
+
+focus = {
+    id = TUR_great_leap_forwards
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_finish_reconstruction }
+    x = 7
+    y = 1
+    relative_position_id = TUR_finish_reconstruction
+    cost = 2
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # Opens agricultural decisions tab
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+########## AGRICULTURE ##########
+
+focus = {
+    id = TUR_commericalize_agriculture
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_great_leap_forwards }
+    x = -2
+    y = 1
+    relative_position_id = TUR_great_leap_forwards
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # Enables ministry related decisions
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = {
+    id = TUR_mechanize_the_farms
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_commericalize_agriculture }
+    x = -1
+    y = 1
+    relative_position_id = TUR_commericalize_agriculture
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # gives buffs to population growth
+        # very small decrease to consumer goods factor
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = {
+    id = TUR_provide_loans_to_farmers
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_commericalize_agriculture }
+    prerequisite = { focus = TUR_central_bank_of_the_sultanate }
+    x = 1
+    y = 1
+    relative_position_id = TUR_commericalize_agriculture
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # unlocks decisions to upgrade state infrastructure and category
+        # gives temporary national spirit giving consumer goods factor debuff
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = {
+    id = TUR_invest_in_the_tobacco_industry
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_mechanize_the_farms }
+    prerequisite = { focus = TUR_russian_industrial_base }
+    x = -1
+    y = 1
+    relative_position_id = TUR_mechanize_the_farms
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # gives +1 industrial park
+        # gives another small to consumer goods factor decrease
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = {
+    id = TUR_fund_new_textile_manufactories
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_invest_in_the_tobacco_industry }
+    x = 0
+    y = 1
+    relative_position_id = TUR_invest_in_the_tobacco_industry
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # gives +1 industrial park
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = {
+    id = TUR_trademark_of_the_turkish_people
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_fund_new_textile_manufactories }
+    x = 0
+    y = 1
+    relative_position_id = TUR_fund_new_textile_manufactories
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # gives buffs to national spirit
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = {
+    id = TUR_redistribute_unused_land
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_provide_loans_to_farmers }
+    x = -1
+    y = 1
+    relative_position_id = TUR_provide_loans_to_farmers
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # unlocks decisions to redistribute land in core states, giving these states permanent minor buffs
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = {
+    id = TUR_establish_the_model_farms_program
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_provide_loans_to_farmers }
+    x = 1
+    y = 1
+    relative_position_id = TUR_provide_loans_to_farmers
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # increases population growth
+        # gives a total of 2 infrastructure in random states
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = {
+    id = TUR_never_going_hungry_again
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_establish_the_model_farms_program }
+    prerequisite = { focus = TUR_redistribute_unused_land }
+    prerequisite = { focus = TUR_irrigate_the_land }
+    x = 0
+    y = 1
+    relative_position_id = TUR_establish_the_model_farms_program
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # increases population growth
+        # gives a total of 2 infrastructure in random states
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = {
+    id = TUR_central_bank_of_the_sultanate
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_great_leap_forwards }
+    x = 0
+    y = 1
+    relative_position_id = TUR_great_leap_forwards
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # Enables ministry related decisions
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = {
+    id = TUR_tame_the_land
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_great_leap_forwards }
+    x = 2
+    y = 1
+    relative_position_id = TUR_great_leap_forwards
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # Enables ministry related decisions
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = {
+    id = TUR_fund_the_Çubuk_dam
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_tame_the_land }
+    x = 1
+    y = 1
+    relative_position_id = TUR_tame_the_land
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # +1 civilian factory
+        # gives buff to industral related national spirit
+        # +1 infrastructure
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = {
+    id = TUR_irrigate_the_land
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_fund_the_Çubuk_dam }
+    x = -1
+    y = 1
+    relative_position_id = TUR_fund_the_Çubuk_dam
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # Buffs agriculture related national spirit
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = {
+    id = TUR_cross_the_mountains
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_fund_the_Çubuk_dam }
+    x = 0
+    y = 2
+    relative_position_id = TUR_fund_the_Çubuk_dam
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # gives bonuses to movement speed in mountains and hills
+        # gives +2 random infrastructure
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+########## AGRICULTURE ##########
+
+#############################################
+####### START OF THE ARMY FOCUS TREE ########
+#############################################
 
 	focus = {
 		id = TUR_start_military_reforms
 		icon = GFX_TUR_start_military_reforms
-		x = 20
-
-	
+		x = 24
 		y = 0
+		relative_position_id = TUR_finish_reconstruction
 
 		cost = 6
 
