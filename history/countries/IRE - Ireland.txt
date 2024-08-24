@@ -171,6 +171,13 @@ recruit_character = IRE_Brody_O_Doral
 	}
 }
 
+add_ideas = {
+	IRE_king_George_V
+	IRE_British_Investment
+	IRE_IRA_Presence
+}
+
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "1926.1.24"
