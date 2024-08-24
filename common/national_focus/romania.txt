@@ -797,15 +797,20 @@ focus = {
 
     id = ROM_pol_2
     icon = GFX_ROM_pol_2
-    x = -2
+    x = 0
     y = 1
     relative_position_id = ROM_pol_1
+
+	mutually_exclusive = { focus = ROM_pol_3 }
+	mutually_exclusive = { focus = ROM_pol_4 }
 
 	prerequisite = { focus = ROM_pol_1 }
 
     ai_will_do = {
 			factor = 1
 		}
+
+	cost = 5
 
 		available = {
 
@@ -830,18 +835,21 @@ focus = {
 
     id = ROM_pol_3
     icon = GFX_ROM_pol_3
-    x = 0
+    x = -2
     y = 1
     relative_position_id = ROM_pol_1
 
 	prerequisite = { focus = ROM_pol_1 }
+
+	mutually_exclusive = { focus = ROM_pol_2 }
+	mutually_exclusive = { focus = ROM_pol_4 }
 
     ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-
+			always = no
 		}
 
 		bypass = {
@@ -869,12 +877,15 @@ focus = {
 
 	prerequisite = { focus = ROM_pol_1 }
 
+	mutually_exclusive = { focus = ROM_pol_2 }
+	mutually_exclusive = { focus = ROM_pol_3 }
+
     ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-
+			always = no
 		}
 
 		bypass = {
@@ -900,13 +911,13 @@ focus = {
     y = 2
     relative_position_id = ROM_pol_1
 
-	prerequisite = { focus = ROM_pol_3 }
-	prerequisite = { focus = ROM_pol_2 }
-	prerequisite = { focus = ROM_pol_4 }
+	prerequisite = { focus = ROM_pol_3 focus = ROM_pol_2 focus = ROM_pol_4}
 
     ai_will_do = {
 			factor = 1
 		}
+
+		cost = 2
 
 		available = {
 
@@ -940,13 +951,15 @@ focus = {
 		allow_branch = {
 			NOT = { has_completed_focus = { focus = ROM_pol_d_1 }
 		}
+
+		cost = 6
 	
 		ai_will_do = {
 				factor = 1
 			}
 	
 			available = {
-	
+				
 			}
 	
 			bypass = {
@@ -2936,5 +2949,5 @@ focus = {
 	}
 
 
-
+	}
 }

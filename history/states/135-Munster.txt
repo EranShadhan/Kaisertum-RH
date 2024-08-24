@@ -2,14 +2,14 @@
 state={
 	id=135
 	name="STATE_135"
-	manpower = 941400
+	manpower = 1241400
 
 	state_category = town
 
 	history={
 		owner = IRE
 		buildings = {
-			infrastructure = 3 #was: 6
+			infrastructure = 4 #was: 6
 			industrial_complex = 3
 		}
 		victory_points = {
