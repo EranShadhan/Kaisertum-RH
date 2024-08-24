@@ -102,6 +102,44 @@ ideas = {
                 resistance_growth_on_our_occupied_states = 0.05
 			}
 		}
+		TUR_traditional_society_2 = {
+            picture = traditional_society
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+
+			modifier = {
+                research_speed_factor = -0.15
+                neutrality_acceptance = 30
+                resistance_growth_on_our_occupied_states = 0.05
+			}
+		}
+		TUR_traditional_society_3 = {
+            picture = traditional_society
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+
+			modifier = {
+                research_speed_factor = -0.1
+                neutrality_acceptance = 30
+                resistance_growth_on_our_occupied_states = 0.05
+			}
+		}
         TUR_humiliation_of_25 = {
             picture = humiliation_of_25
 			allowed = {
@@ -188,7 +226,7 @@ ideas = {
 		}
 		TUR_german_military_mission = {
 			allowed = {
-				original_tag = TUR
+				always = no
 			}
 			available = {
 				NOT = {
@@ -196,7 +234,7 @@ ideas = {
 				}
 			}
 			allowed_civil_war = {
-				original_tag = TUR
+				always = yes
 			}
 			removal_cost = -1
 			modifier = {
@@ -208,7 +246,7 @@ ideas = {
 		}
 		TUR_russian_military_mission = {
 			allowed = {
-				original_tag = TUR
+				always = no
 			}
 			available = {
 				NOT = {
@@ -216,7 +254,7 @@ ideas = {
 				}
 			}
 			allowed_civil_war = {
-				original_tag = TUR
+				always = no
 			}
 			removal_cost = -1
 			modifier = {
@@ -228,13 +266,10 @@ ideas = {
 		}
 		TUR_motorized_focus_idea = {
 			allowed = {
-				original_tag = TUR
-			}
-			available = {
 				always = no
 			}
 			allowed_civil_war = {
-				original_tag = TUR
+				always = yes
 			}
 			removal_cost = -1
 			modifier = {
@@ -245,13 +280,10 @@ ideas = {
 		}
 		TUR_special_forces_improvements = {
 			allowed = {
-				original_tag = TUR
-			}
-			available = {
 				always = no
 			}
 			allowed_civil_war = {
-				original_tag = TUR
+				always = yes
 			}
 			removal_cost = -1
 			modifier = {
@@ -262,13 +294,10 @@ ideas = {
 		}
 		TUR_tank_program_idea = {
 			allowed = {
-				original_tag = TUR
-			}
-			available = {
 				always = no
 			}
 			allowed_civil_war = {
-				original_tag = TUR
+				always = yes
 			}
 			removal_cost = -1
 			research_bonus = {
@@ -277,7 +306,7 @@ ideas = {
 		}
 		TUR_german_naval_mission = {
 			allowed = {
-				original_tag = TUR
+				always = no
 			}
 			available = {
 				NOT = {
@@ -285,7 +314,7 @@ ideas = {
 				}
 			}
 			allowed_civil_war = {
-				original_tag = TUR
+				always = yes
 			}
 			removal_cost = -1
 			modifier = {
@@ -297,13 +326,10 @@ ideas = {
 		}
 		TUR_navy_modernization_idea = {
 			allowed = {
-				original_tag = TUR
-			}
-			available = {
 				always = no
 			}
 			allowed_civil_war = {
-				original_tag = TUR
+				always = yes
 			}
 			removal_cost = -1
 			modifier = {
@@ -314,7 +340,168 @@ ideas = {
 				naval_morale_factor = 0.2
 			}
 		}
+		TUR_constitution_of_1930_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				democratic_drift = 0.03
+			}
+		}
+		TUR_educated_society = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				command_power_gain_mult = 0.2
+				civilian_intel_to_others = -0.15
+				intel_network_gain_factor = 0.2
+				political_power_factor = 0.1
+			}
+		}
+		TUR_reformed_penal_code = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.01
+			}
+		}
+		TUR_civil_code_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.3
+				opinion_gain_monthly_factor = 0.3
+			}
+		}
+		TUR_ahmed_IV_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.3
+				opinion_gain_monthly_factor = 0.3
+				stability_factor = 0.1
+				war_support_factor = 0.1
+			}
+
+		}
+		TUR_shining_light_of_democracy = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			on_add = {
+                every_other_country = {
+                    limit = {
+                        capital_scope = {
+							is_on_continent = middle_east
+						}
+                    }
+                    add_opinion_modifier = {
+                        target = ROOT
+                        modifier = TUR_shining_light_of_democracy_modifier
+                    }
+                    reverse_add_opinion_modifier = {
+                        target = ROOT
+                        modifier = TUR_shining_light_of_democracy_modifier
+                    }
+                }
+            }
+            on_remove = {
+                every_other_country = {
+                    limit = {
+                        capital_scope = {
+							is_on_continent = middle_east
+                    }
+                    remove_opinion_modifier = {
+                        target = ROOT
+                        modifier = TUR_shining_light_of_democracy_modifier
+                    }
+                    ROOT = {
+                        remove_opinion_modifier = {
+                            target = PREV
+                            modifier = TUR_shining_light_of_democracy_modifier
+                        }
+                    }
+                }
+            }
+            modifier = {
+                custom_modifier_tooltip = TUR_shining_light_of_democracy_modifierr_tt # Since on_add/on_remove aren't shown to the player
+            }
+
+		}
 
     }
-
+	TUR_incompetent_ultranationalist_opposition = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				communism_drift = 0.03
+				communism_acceptance = 30
+			}
+		}
+	TUR_collectivized_agriculture = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = -0.1
+				supply_combat_penalties_on_core_factor = -0.1
+			}
+		}
+	
+	TUR_islamic_bastion_of_socialism_idea = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				communism_acceptance = 40
+				political_power_factor = 0.5
+				stability_factor = 0.3
+				
+			}
+		}
+	}
 }

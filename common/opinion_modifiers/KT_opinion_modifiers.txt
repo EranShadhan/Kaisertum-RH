@@ -1,0 +1,7 @@
+opinion_modifiers = {
+	
+	TUR_shining_light_of_democracy_modifier = {
+        value = 30     
+        decay = 0.5
+    }
+}

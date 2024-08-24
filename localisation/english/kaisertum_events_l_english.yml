@@ -13,3 +13,16 @@
  UBD_events.3.d: "Russia has accepted our proposal"
  UBD_events.3.a: "Yay"
  russian_support_independance_war_tt: "Upon our rebellion, we will get "
+
+ KT_turkey_events.1.t: "The Engürü Parliament is Reconvened"
+ KT_turkey_events.1.d: "For centuries, the Turkish Civilization has lived and prospered under absolutism. But the recent years have highlighted all of the key wrongdoings with the system. Just as the Ottoman Empire was on the brink of slow democratization under the Young Turks, the Sultan has reclaimed his absolute power and returned the nation to traditionalism. This action led our once great nation to become a mere shell of what it once was. And as the nation was at the lowest of its lows, the Sultan took the first step to making Turkey great under a free liberal system. The Engürü Parliament has been reconvened, and the public is sure that more reforms are already on the way"
+ KT_turkey_events.1.a: "Turkish Democracy? You're kidding mes"
+
+ KT_turkey_events.2.t: "debug"
+ KT_turkey_events.2.d: "turkish debug"
+ KT_turkey_events.2.a: "rip ataturk"
+
+ KT_turkey_events.3.t: "election?"
+ KT_turkey_events.3.d: "turkish debug"
+ KT_turkey_events.3.a: "commies"
+ KT_turkey_events.3.b: "cebesoy"
