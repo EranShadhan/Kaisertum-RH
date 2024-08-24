@@ -70,9 +70,6 @@ country_event = {
 				add_core_of = SER
 			}
 			
-			YUG = {
-				transfer_state = 45
-			}
 			45 = {
 				add_core_of = YUG
 			}
