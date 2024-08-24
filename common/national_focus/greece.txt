@@ -288,7 +288,163 @@ has_country_flag = nationa_schism_part2
 		completion_reward = {
 		GRE_bop_low_decrease_effect = yes
 		    }
-		}		
+		}
+	
+	focus = {
+		id = GRE_deport_the_communists
+		icon = GFX_focus_SWE_attack_landsorganisationen
+
+		
+		available = {
+		}
+		x = -1
+		y = 1
+        prerequisite = { focus = GRE_the_enemies_within_the_party }
+		relative_position_id = GRE_the_enemies_within_the_party
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	swap_ideas = {
+	  remove_idea = GRE_no_left
+	  add_idea = GRE_no_left2
+	}
+		    }
+		}
+			focus = {
+		id = GRE_send_the_king_to_denmark
+		icon = GFX_focus_NOR_send_the_king_back_to_denmark
+
+		
+		available = {
+		}
+		x = 1
+		y = 1
+        prerequisite = { focus = GRE_the_enemies_within_the_party }
+		relative_position_id = GRE_the_enemies_within_the_party
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+
+		    }
+		}
+		
+	focus = {
+		id = GRE_women_voting_rights
+		icon = GFX_focus_BRA_good_neighbor_policy
+
+		
+		available = {
+		}
+		x = 1
+		y = 1
+        prerequisite = { focus = GRE_deport_the_communists focus = GRE_send_the_king_to_denmark }
+		relative_position_id = GRE_deport_the_communists
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+
+		    }
+		}	
+	focus = {
+		id = GRE_reform_education
+		icon = GFX_focus_generic_university_1
+
+		
+		available = {
+		}
+		x = 1
+		y = 1
+        prerequisite = { focus = GRE_women_voting_rights }
+		mutually_exclusive = { focus = GRE_national_education }
+		relative_position_id = GRE_women_voting_rights
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	add_research_slot = 1
+		    }
+		}
+	focus = {
+		id = GRE_national_education
+		icon = GFX_focus_BRA_anaue
+
+		
+		available = {
+		}
+		x = -1
+		y = 1
+		mutually_exclusive = { focus = GRE_reform_education }
+        prerequisite = { focus = GRE_women_voting_rights }
+		relative_position_id = GRE_women_voting_rights
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+		}	
+	focus = {
+		id = GRE_appease_the_people
+		icon = GFX_focus_NOR_broken_gun_policies
+
+		
+		available = {
+		}
+		x = 3
+		y = 1
+        prerequisite = { focus = GRE_national_education focus = GRE_reform_education}
+		relative_position_id = GRE_national_education
+		mutually_exclusive = { focus = GRE_recruit_the_fascists }
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+		}	
+	focus = {
+		id = GRE_recruit_the_fascists
+		icon = GFX_goal_GRE_fate_of_eee
+
+		
+		available = {
+		}
+		x = -1
+		y = 1
+		mutually_exclusive = { focus = GRE_appease_the_people }
+        prerequisite = { focus = GRE_national_education focus = GRE_reform_education}
+		relative_position_id = GRE_national_education
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+		}			
 	focus = {
 		id = GRE_king_allegiance
 		icon = GFX_goal_GRE_KING
