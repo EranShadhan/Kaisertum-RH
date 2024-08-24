@@ -50,4 +50,69 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/ROM/goal_ROM_pol_k_5.dds"			
 	}
 	
+	SpriteType = {
+	name = "GFX_ROM_pol_kw_1"
+	texturefile = "gfx/interface/goals/ROM/goal_ROM_pol_kw_1.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_ROM_pol_kw_2"
+	texturefile = "gfx/interface/goals/ROM/goal_ROM_pol_kw_2.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_ROM_pol_kw_3"
+	texturefile = "gfx/interface/goals/ROM/goal_ROM_pol_kw_3.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_ROM_pol_kw_4"
+	texturefile = "gfx/interface/goals/ROM/goal_ROM_pol_kw_4.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_ROM_pol_kw_5"
+	texturefile = "gfx/interface/goals/ROM/goal_ROM_pol_kw_5.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_ROM_pol_kw_6"
+	texturefile = "gfx/interface/goals/ROM/goal_ROM_pol_kw_6.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_ROM_pol_kw_7"
+	texturefile = "gfx/interface/goals/ROM/goal_ROM_pol_kw_7.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_ROM_pol_kw_8"
+	texturefile = "gfx/interface/goals/ROM/goal_ROM_pol_kw_8.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_ROM_pol_kw_9"
+	texturefile = "gfx/interface/goals/ROM/goal_ROM_pol_kw_9.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_ROM_pol_kw_10"
+	texturefile = "gfx/interface/goals/ROM/goal_ROM_pol_kw_10.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_ROM_pol_kw_11"
+	texturefile = "gfx/interface/goals/ROM/goal_ROM_pol_kw_11.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_ROM_pol_kw_12"
+	texturefile = "gfx/interface/goals/ROM/goal_ROM_pol_kw_12.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_ROM_pol_kw_13"
+	texturefile = "gfx/interface/goals/ROM/goal_ROM_pol_kw_13.dds"			
+	}
+	
 }
