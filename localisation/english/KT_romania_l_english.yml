@@ -1,6 +1,8 @@
 ﻿l_english:
 
 ROM_pol_1:0 "Current Status of Romania"
-ROM_pol_2:0 "The King"
-ROM_pol_3: "§RWIP§!"
-ROM_pol_4:0 "§RWIP§!"
+ROM_pol_2:0 "§YThe King§!"
+ROM_pol_3:0 "§CThe People§!"
+ROM_pol_4:0 "§RThe Nation§!"
+ROM_pol_5:0 "Election Time"
+ROM_pol_k_1:0 "The King's Coup"

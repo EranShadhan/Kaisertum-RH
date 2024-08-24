@@ -94,9 +94,6 @@ country_event = {
 			SLO = {
 				transfer_state = 664
 			}
-			76 = {
-				set_demilitarized_zone = yes
-			}
 			997 = {
 				set_demilitarized_zone = yes
 			}
@@ -138,6 +135,14 @@ country_event = {
 			73 = {
 				set_demilitarized_zone = yes
 			}
+			CZE = {
+				annex_country = {
+					target = SLO
+					transfer_troops = no
+				}
+				set_cosmetic_tag = CZE_SLO_reich
+			}
+			
 
 
 		}

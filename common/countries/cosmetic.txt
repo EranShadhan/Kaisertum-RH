@@ -188,6 +188,11 @@ CZE_reichskommissariat = {
 	color_ui = rgb { 122 145 93 }
 }
 
+CZE_SLO_reich = {
+	color = rgb { 115 115 115 }
+	color_ui = rgb { 122 145 93 }
+}
+
 HOL_reichskommissariat = {
 	color = rgb { 115 115 115 }
 	color_ui = rgb { 122 145 93 }
