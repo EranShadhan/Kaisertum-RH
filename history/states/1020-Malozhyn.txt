@@ -3,23 +3,24 @@ state={
 	name="STATE_1020"
 
 	history={
+		victory_points = {
+			9249 1 
+		}
 		owner = SOV
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 
 		}
-		victory_points = {
-			6494 1 
-		}
 		add_core_of = SOV
+		add_core_of = BLR
 
 	}
 
 	provinces={
-		437 510 3504 6494 
+		215 3203 3507 6319 9249 
 	}
-	manpower=186918
-	state_category=pastoral
+	manpower=10410
+	state_category=wasteland
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }
