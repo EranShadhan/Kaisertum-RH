@@ -37,6 +37,25 @@ characters = {
 			logistics_skill = 5
 		}
 	}
+	
+	UKR_oleksandr_hrekiv = {
+	     name=UKR_oleksandr_hrekiv
+	     portraits = {
+			army = {
+				large = "gfx/leaders/UKR/Portrait_UKR_Oleksandr_Hrekiv.dds"
+			}
+		}
+		corps_commander={
+			traits={ career_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	
+	}
+	
 	UKR_yevhen_konovalets={
 		name=UKR_yevhen_konovalets
 		portraits={
@@ -75,16 +94,17 @@ characters = {
 			legacy_id=655
 		}
 
-	UKR_oleksandr_osetsky={
+UKR_oleksandr_osetsky={
 		name=UKR_oleksandr_osetsky
 		portraits={
-			army={
+			civilian={
 				large="gfx/leaders/UKR/Portrait_UKR_Oleksandr_Osetsky.dds"
 			}
+	
 		}
 
 		field_marshal={
-			traits={ old_guard organizer thorough_planner }
+			traits={ organizer old_guard thorough_planner }
 			skill = 3
 			attack_skill = 3
 			defense_skill = 2
@@ -92,7 +112,8 @@ characters = {
 			logistics_skill = 2
 			legacy_id=661
 		}
-	}
+	 
+	 }
 
 	UKR_roman_shukhevych={
 		name=UKR_roman_shukhevych

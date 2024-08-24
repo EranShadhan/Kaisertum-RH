@@ -157,9 +157,10 @@ create_country_leader = {
 }
 
 recruit_character = UKR_pavlo_skoropadskyi
+recruit_character = UKR_yevhen_konovalets
+recruit_character = UKR_semen_goruk
 recruit_character = UKR_volodymyr_salsky
 recruit_character = UKR_oleksandr_osetsky
-recruit_character = UKR_semen_goruk
 recruit_character = UKR_vsevolod_petriv
 recruit_character = UKR_andriy_melnyk
 recruit_character = UKR_roman_shukhevych
@@ -167,7 +168,6 @@ recruit_character = UKR_mykhailo_omelianovych_pavlenko
 recruit_character = UKR_oleksandr_udovychenko
 recruit_character = UKR_pavlo_shandruk
 recruit_character = UKR_oleksandr_hrekiv
-recruit_character = UKR_yevhen_konovalets
 recruit_character = UKR_vsevolod_zmienko
 recruit_character = UKR_gavrylo_bazylsky
 recruit_character = UKR_ivan_pavlenko
