@@ -20,6 +20,10 @@ if = {
 	}
 }
 
+add_ideas = {
+	council_of_siam
+}
+
 recruit_character = SIA_rama_VII
 recruit_character = SIA_phraya_phahon
 recruit_character = SIA_nangklao_chichalerm
