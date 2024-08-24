@@ -381,7 +381,7 @@ has_country_flag = nationa_schism_part2
 		}
 	focus = {
 		id = GRE_national_education
-		icon = GFX_focus_BRA_anaue
+		icon = GFX_focus_ARG_fascist_researchers
 
 		
 		available = {
@@ -424,7 +424,7 @@ has_country_flag = nationa_schism_part2
 		    }
 		}	
 	focus = {
-		id = GRE_recruit_the_fascists
+		id = GRE_recruit_the_fascists_eee
 		icon = GFX_goal_GRE_fate_of_eee
 
 		
@@ -435,6 +435,28 @@ has_country_flag = nationa_schism_part2
 		mutually_exclusive = { focus = GRE_appease_the_people }
         prerequisite = { focus = GRE_national_education focus = GRE_reform_education}
 		relative_position_id = GRE_national_education
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+		}	
+	focus = {
+		id = GRE_host_a_parade
+		icon = GFX_focus_BRA_anaue
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+		mutually_exclusive = { focus = GRE_recruit_the_fascists_eee }
+        prerequisite = { focus = GRE_recruit_the_fascists_eee}
+		relative_position_id = GRE_recruit_the_fascists_eee
 		cost = 3.5
 		ai_will_do = {
 			base = 0
