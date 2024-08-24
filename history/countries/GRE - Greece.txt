@@ -199,9 +199,10 @@ set_convoys = 80
 
 
 	recruit_character = GRE_george_of_greece
+	recruit_character = GRE_victoria
 	recruit_character = GRE_nikos_zachariadis
 	recruit_character = GRE_georgios_kosmidis
-		recruit_character = GRE_ioannis_metaxas
+	recruit_character = GRE_ioannis_metaxas
 	recruit_character = GRE_george_mercouris
 	recruit_character = GRE_alexandros_papagos
 	recruit_character = GRE_charalambos_katsimitros
@@ -222,7 +223,6 @@ set_convoys = 80
 	recruit_character = GRE_marinos_mitralexis
 	recruit_character = GRE_georgios_kosmas
 	recruit_character = GRE_konstantinos_tsaldaris
-
 	recruit_character = GRE_markos_vafiadis
 	recruit_character = GRE_aristeidis_dimitratos
 	recruit_character = GRE_xenophon_giosmas
@@ -237,7 +237,7 @@ set_convoys = 80
 	recruit_character = GRE_theodoros_pangalos # Empty character -> Can become unit leader later
 	recruit_character = GRE_dimitrios_psarros # Empty character -> Can become unit leader later
 	recruit_character = GRE_panagiotis_demestichas # Empty character -> Can become unit leader later
-}
+
 
 
 

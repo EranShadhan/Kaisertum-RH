@@ -46,6 +46,8 @@
  GRE_debt_paid_402:0 "§G4.2%§!" 
  GRE_debt_0:0 "§Y0%§!"
  
+ king_of_the_hellinas:0 "King Of The Hellenes"
+ 
  GRE_foreign_designs_tt:0 "We will gain §Y1x§! §G45%§! Research Bonus for §YAircrafts§! for each major country that has more than 70 opinion of us, that we are not at war with"
  GRE_golden_tt:0 "§RThis focus cannot be cancelled. Once The Focus Has Been Selected, we will lose the following national spirits§!: §YPrepare for War§!, §YBoost Greek Productivity§!, §YExpand into Diverse Markets§!, §YThe University Of Athens§!, §YModernize the Construction Techniques§!, §YTax Incentives§! and §YNaval Capital of the Balkans§!. §GOnce the focus has been completed, the ideas will be combined and further boosted into a new one.§! Add" 
  GRE_pay_big_tt:0 "§YUnlocks Decisions for larger debt payments. In case a country we owe debt to is close to capitulation, we will be given the option to illegally write off our debts§!"
@@ -90,3 +92,8 @@
  GRE_local_constantine_support:0 "Local George Support"
  automatic_add_royalists:0 "George II Rally in [FROM.getName]
  GRE_open_foreign_subsidized_factories_eur_tt:0 "One §YMilitary Factory§! will be added for each of the following countries that has an §Yopinion§! of §YGreece§! greater than §G75§!: \n§Y[ENG.GetNameDef]§!, §Y[FRA.GetNameDef]§!, §Y[ITA.GetNameDef]§!, §Y[HUN.GetNameDef]§!, §Y[AUS.GetNameDef]§!, §Y[GER.GetNameDef]§!, §Y[SOV.GetNameDef]§!, §Y[USA.GetNameDef]§! and §Y[JAP.GetNameDef]§!."
+ 
+ GRE_mod_metaxism:0 "Modifies idea §YMetaxism§! by:"
+ nationa_schism_part2:0 "The class between the democratic opposition and the monarchist government has started"
+ VICTORIA_SUPER:0 "Duchess consort of Brunswick"
+ production_speed_bunker_factor_gre_tt: " $modifier_production_speed_bunker_factor$: $RIGHT|+=%1$"

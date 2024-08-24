@@ -2,9 +2,13 @@
 
 spriteTypes = {	
 
-   #GREECE
+   #GREECE 
    spriteType = {
 		name = "GFX_portrait_Greece_George_II_temp"
 		texturefile = "gfx/leaders/GRE/Portrait_Greece_George_II_temp.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_Greece_george_the_second"
+		texturefile = "gfx/leaders/GRE/portrait_Greece_george_the_second.dds"
 	}
 }

@@ -112,6 +112,38 @@ spriteType = {
 		texturefile = "gfx/interface/goals/GRE/GRE_the_theory.dds"
 	}
 	spriteType = {
+		name = "GFX_focus_GRE_enemies_party"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_enemies_party.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GRE_economic_crisis"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_economic_crisis.dds"
+	}
+	spriteType = {
+		name = "GFX_GRE_sons_and_daugthers_of_greece"
+		texturefile = "gfx/interface/goals/GRE/GRE_sons_and_daugthers_of_greece.dds"
+	}
+	spriteType = {
+		name = "GFX_GRE_useless_drachma"
+		texturefile = "gfx/interface/goals/GRE/GRE_useless_drachma.dds"
+	}
+	spriteType = {
+		name = "GFX_GGRE_big_guns"
+		texturefile = "gfx/interface/goals/GRE/GRE_big_guns.dds"
+	}
+	spriteType = {
+		name = "GFX_GRE_missing_to_ger"
+		texturefile = "gfx/interface/goals/GRE/focus_gre_mission_to_germany.dds"
+	}
+	spriteType = {
+		name = "GFX_GRE_censhorship"
+		texturefile = "gfx/interface/goals/GRE/GRE_censhorship.dds"
+	}
+	spriteType = {
+		name = "GFX_GRE_crush_strikes"
+		texturefile = "gfx/interface/goals/GRE/GRE_crush_strikes.dds"
+	}
+	spriteType = {
 		name = "GFX_GRE_we_have_to_follow_the_king"
 		texturefile = "gfx/interface/goals/GRE/GRE_we_have_to_follow_the_king.dds"
 	}

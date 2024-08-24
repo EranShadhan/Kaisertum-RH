@@ -95,8 +95,200 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_dynamic_modifier = { modifier = GRE_metaxism_dyn_spirit }
+		add_to_variable = { GRE_var_met_dedr = 0.05 tooltip = democratic_drift_factor_tt }
+		    }
+		}	
+	
+	focus = {
+		id = GRE_byzantine_nationalism
+		icon = GFX_focus_GRE_byzantine_themata
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+
+		
+		x = -2
+		y = 1
+        prerequisite = { focus = GRE_theory_of_civs }
+		relative_position_id = GRE_theory_of_civs
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		custom_effect_tooltip = GRE_mod_metaxism
+		add_to_variable = { GRE_var_met_bnk = 0.25 tooltip = production_speed_bunker_factor_gre_tt }
+		add_to_variable = { GRE_var_met_cbnk = 0.25 tooltip = production_speed_coastal_bunker_factor_tt }
+		    }
+		}
+	focus = {
+		id = GRE_roman_roots
+		icon = GFX_focus_ITA_mare_nostrum
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_byzantine_nationalism }
+		relative_position_id = GRE_byzantine_nationalism
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		custom_effect_tooltip = GRE_mod_metaxism
+		add_to_variable = { GRE_var_met_cscr = 0.01 tooltip = conscription_tt }
+		add_to_variable = { GRE_var_met_spebu = 0.1 tooltip = production_speed_buildings_factor_tt }
 		    }
 		}			
+	focus = {
+		id = GRE_athenian_demo
+		icon = GFX_goal_support_democracy
+
+		
+		available = {
+		}
+		x = -4
+		y = 1
+        prerequisite = { focus = GRE_theory_of_civs }
+		relative_position_id = GRE_theory_of_civs
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	custom_effect_tooltip = GRE_mod_metaxism
+		add_to_variable = { GRE_var_met_dedr = 0.05 tooltip = democratic_drift_factor_tt }
+		add_to_variable = { GRE_var_met_efeg = 0.1 tooltip = production_factory_efficiency_gain_factor_tt }
+		add_to_variable = { GRE_var_met_rspf = 0.05 tooltip = research_speed_factor_tt }
+		    }
+		}	
+	focus = {
+		id = GRE_spartans
+		icon = GFX_focus_GRE_reviving_the_spartan_warrior_spirit
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_athenian_demo }
+		relative_position_id = GRE_athenian_demo
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	custom_effect_tooltip = GRE_mod_metaxism
+		add_to_variable = { GRE_var_met_ws = 0.05 tooltip = war_support_factor_tt }
+		add_to_variable = { GRE_var_met_acd = 0.1 tooltip = army_core_defence_factor_tt }
+		    }
+		}
+	focus = {
+		id = GRE_moddest_greece
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_theory_of_civs }
+		relative_position_id = GRE_theory_of_civs
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		custom_effect_tooltip = GRE_mod_metaxism
+		add_to_variable = { GRE_var_met_cg = -0.05 tooltip = consumer_goods_factor_tt }
+		add_to_variable = { GRE_var_met_spebu = 0.1 tooltip = production_speed_buildings_factor_tt }
+		    }
+		}	
+	focus = {
+		id = GRE_orthodox_nation
+		icon = GFX_focus_GRE_an_orthodox_state
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_moddest_greece focus = GRE_byzantine_nationalism}
+		relative_position_id = GRE_moddest_greece
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		custom_effect_tooltip = GRE_mod_metaxism
+		add_to_variable = { GRE_var_met_st = 0.05 tooltip = stability_factor_tt }
+		add_to_variable = { GRE_var_met_spebu = 0.1 tooltip = production_speed_buildings_factor_tt }
+		
+		add_to_variable = { GRE_var_met_wm = 100 tooltip = weekly_manpower_tt }
+		    }
+		}	
+	focus = {
+		id = GRE_epistratoi_FORWARDS_MARCH
+		icon = GFX_focus_NORDIC_com_selector_army
+
+		
+		available = {
+
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_orthodox_nation focus = GRE_roman_roots focus = GRE_spartans}
+		relative_position_id = GRE_roman_roots
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		add_ideas = GRE_epistratoi
+		    }
+		}	
+	focus = {
+		id = GRE_the_enemies_within_the_party
+		icon = GFX_focus_GRE_enemies_party
+
+		
+		available = {
+has_country_flag = nationa_schism_part2 
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_epistratoi_FORWARDS_MARCH}
+		relative_position_id = GRE_epistratoi_FORWARDS_MARCH
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		GRE_bop_low_decrease_effect = yes
+		    }
+		}		
 	focus = {
 		id = GRE_king_allegiance
 		icon = GFX_goal_GRE_KING
@@ -139,9 +331,316 @@ focus_tree = {
 		    }
 		}		
 		
-	
-	
-	
+	focus = {
+		id = GRE_strike_a_better_deal
+		icon = GFX_GRE_missing_to_ger
+
+		
+		available = {
+		}
+		x = 2
+		y = 1
+        prerequisite = { focus = GRE_house_of_Glucksburg }
+		relative_position_id = GRE_house_of_Glucksburg
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		  swap_ideas = {
+		  remove_idea = german_customs_union_member
+		  add_idea = german_customs_union_member2
+		  }
+		    }
+		}	
+	focus = {
+		id = GRE_ger_cooperation
+		icon = GFX_focus_ger_revive_kaiserreich
+
+		
+		available = {
+		}
+		x = 4
+		y = 1
+        prerequisite = { focus = GRE_house_of_Glucksburg }
+		relative_position_id = GRE_house_of_Glucksburg
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		add_ideas = GRE_the_reich_of_kaiser
+		    }
+		}		
+	focus = {
+		id = GRE_invite_a_german_woman
+		icon = GFX_focus_ger_return_of_the_kaiser
+
+		
+		available = {
+		}
+		x = 1
+		y = 1
+        prerequisite = { focus = GRE_strike_a_better_deal focus = GRE_ger_cooperation }
+		relative_position_id = GRE_strike_a_better_deal
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		
+		    }
+		}				
+	focus = {
+		id = GRE_mission_in_eng
+		icon = GFX_focus_chi_british_cooperation
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_house_of_Glucksburg }
+		relative_position_id = GRE_house_of_Glucksburg
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		 
+		    }
+		}	
+
+	focus = {
+		id = GRE_cooperate_with_the_raf
+		icon = GFX_focus_eng_chiefs_of_staff_committee
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_mission_in_eng }
+		relative_position_id = GRE_mission_in_eng
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		 add_ideas = GRE_raf_cooperation_idea
+		    }
+		}
+
+
+
+
+
+	focus = {
+		id = GRE_the_economic_crush
+		icon = GFX_focus_GRE_economic_crisis
+
+		
+		available = {
+            has_country_flag = nationa_schism_part2 
+		}
+		x = 1
+		y = 1
+        prerequisite = { focus = GRE_metaxas_allegiance focus = GRE_king_allegiance}
+		relative_position_id = GRE_metaxas_allegiance
+		cost = 10
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = GRE_HERE_WE_GO_AGAIN 
+		add_idea = GRE_HERE_WE_GO_AGAIN2
+		}
+		  	
+		}
+	}
+	focus = {
+		id = GRE_conscription_crisis
+		icon = GFX_GRE_sons_and_daugthers_of_greece
+
+		
+		available = {
+            has_country_flag = nationa_schism_part2 
+		}
+		x = 1
+		y = 1
+        prerequisite = { focus = GRE_the_economic_crush }
+		relative_position_id = GRE_the_economic_crush
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = GRE_HERE_WE_GO_AGAIN2
+		add_idea = GRE_HERE_WE_GO_AGAIN3
+		}
+		  	
+		}
+	}	
+	focus = {
+		id = GRE_the_fight_for_dominance
+		icon = GFX_focus_generic_total_war
+
+		
+		available = {
+            has_country_flag = nationa_schism_part2 
+		}
+		x = -1
+		y = 1
+        prerequisite = { focus = GRE_the_economic_crush }
+		relative_position_id = GRE_the_economic_crush
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		
+		  	
+		}
+	}	
+	focus = {
+		id = GRE_deal_with_inflation
+		icon = GFX_GRE_useless_drachma
+
+		
+		available = {
+            has_country_flag = nationa_schism_part2 
+		}
+		x = 1
+		y = 1
+        prerequisite = { focus = GRE_the_fight_for_dominance focus = GRE_conscription_crisis}
+		relative_position_id = GRE_the_fight_for_dominance
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		   swap_ideas = {
+		remove_idea = GRE_HERE_WE_GO_AGAIN_CRUSH
+		add_idea = GRE_HERE_WE_GO_AGAIN_CRUSH2
+		}
+		  	
+		}
+	}	
+	focus = {
+		id = GRE_the_averof_mutiny
+		icon = GFX_GGRE_big_guns
+
+		
+		available = {
+            has_country_flag = nationa_schism_part2 
+		}
+		x = -2
+		y = 1
+        prerequisite = { focus = GRE_deal_with_inflation }
+		relative_position_id = GRE_deal_with_inflation
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		 
+		  	
+		}
+	}	
+	focus = {
+		id = GRE_super_heavy_censhorship
+		icon = GFX_GRE_censhorship
+
+		
+		available = {
+            has_country_flag = nationa_schism_part2 
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_deal_with_inflation }
+		relative_position_id = GRE_deal_with_inflation
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		 
+		  	
+		}
+	}
+	focus = {
+		id = GRE_crush_the_workers
+		icon = GFX_GRE_crush_strikes
+
+		
+		available = {
+            has_country_flag = nationa_schism_part2 
+		}
+		x = 2
+		y = 1
+        prerequisite = { focus = GRE_deal_with_inflation }
+		relative_position_id = GRE_deal_with_inflation
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		     swap_ideas = {
+		remove_idea = GRE_HERE_WE_GO_AGAIN_CRUSH2
+		add_idea = GRE_HERE_WE_GO_AGAIN_CRUSH3
+		}
+		  	
+		}
+	}
+	focus = {
+		id = GRE_crush_EEE
+		icon = GFX_focus_SWE_undermine_fascism
+
+		
+		available = {
+            has_country_flag = nationa_schism_part2 
+		}
+		x =-2
+		y = 1
+        prerequisite = { focus = GRE_crush_the_workers focus = GRE_super_heavy_censhorship focus = GRE_the_averof_mutiny}
+		relative_position_id = GRE_crush_the_workers
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		 
+		  	
+		}
+	}	
 	focus = {
 		id = GRE_royal_hellenic_airforce
 		icon = GFX_focus_GRE_air

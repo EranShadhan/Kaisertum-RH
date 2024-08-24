@@ -2,7 +2,7 @@ ideas = {
 
 	country = {
 
-		victory_in_the_sgtw = {
+		victory_in_the_sgtw = { #replaced by different spirits for each nation. can be found in the greek file
 
 			picture = ENG_the_war_to_end_all_wars
 

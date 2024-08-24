@@ -1,14 +1,18 @@
 characters={
 	GRE_george_of_greece={
-		name="King George II"
+		name="Autokrator George II"
 		portraits={
 			civilian={
-				large="GFX_portrait_Greece_George_II_temp"
+				#large="GFX_portrait_Greece_George_II_temp"
+				large="GFX_portrait_Greece_george_the_second"
 			}
 		}
 		country_leader={
 			ideology=oligarchism
-			traits={ divisive_absolute_monarch Terminator }
+			traits={ divisive_absolute_monarch 
+			king_of_the_hellinas
+			#Terminator 
+			}
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -147,7 +151,6 @@ characters={
 		}
 	}
 	GRE_markos_vafiadis={
-		instance={
 			allowed={ 	original_tag = GRE }
 			name=GRE_markos_vafiadis
 			portraits={
@@ -180,12 +183,11 @@ characters={
 					guerilla_warfare_expert 
 				}
 			}
-		}
+		
 	
 	}
 
 	GRE_konstantinos_tsaldaris={
-		instance={
 			name=GRE_konstantinos_tsaldaris
 			portraits={
 				army={
@@ -202,7 +204,7 @@ characters={
 				traits = {
 					sharp_tongued_lawyer 
 				}
-			}
+			
 		}
 		
 	}
@@ -228,7 +230,6 @@ characters={
 	}
 
 	GRE_markos_drakos={
-		instance = {
 			allowed = {
 				original_tag = GRE
 			}
@@ -247,7 +248,7 @@ characters={
 				planning_skill=3
 				logistics_skill=3
 				legacy_id=306
-			}
+			
 		}
 	
 	}
@@ -285,7 +286,6 @@ characters={
 	}
 
 	GRE_nikolaos_plastiras={
-		instance = {
 			allowed = {
 			}
 			name=GRE_nikolaos_plastiras
@@ -313,13 +313,12 @@ characters={
 				ai_will_do = {
 					factor = 1.000
 				}
-			}
+		
 		}
 	
 	}
 
 	GRE_napoleon_zervas={
-		instance = {
 			allowed = {
 				
 			}   original_tag = GRE
@@ -349,7 +348,7 @@ characters={
 					factor = 1.000
 				}
 			}
-		}
+		
 		
 	}
 
@@ -381,7 +380,6 @@ characters={
 	}
 
 	GRE_konstantinos_ventiris={
-		instance = {
 			allowed = {
 				original_tag = GRE
 			}   
@@ -404,13 +402,12 @@ characters={
 				traits = {
 					grand_battle_plan_expert
 				}
-			}			
+					
 		}
 	
 	}
 
 	GRE_nikos_beloyannis={
-		instance = {
 			allowed = {
 				original_tag = GRE
 			}
@@ -437,12 +434,12 @@ characters={
 					factor = 1.000
 				}
 			}
-		}
+		
 	
 	}
 
 	GRE_alexandros_sakellariou={
-		instance = {
+	
 			allowed = {
 				original_tag = GRE
 			}
@@ -481,7 +478,7 @@ characters={
 				coordination_skill=2
 				legacy_id=-1
 			}
-		}
+		
 		
 	}
 
@@ -507,7 +504,6 @@ characters={
 	}
 
 	GRE_panagiotis_gazis={
-		instance = {
 			allowed = {
 				original_tag = GRE
 			}
@@ -532,7 +528,7 @@ characters={
 					factor = 1.000
 				}
 			}
-		}
+		
 	
 	}
 
@@ -591,7 +587,6 @@ characters={
 	}
 
 	GRE_petros_voulgaris={
-		instance = {
 			allowed = {
 				original_tag = GRE
 			}
@@ -619,7 +614,7 @@ characters={
 					factor = 1.000
 				}
 			}
-		}
+		
 	
 	}
 
@@ -652,7 +647,6 @@ characters={
 	}
 
 	GRE_vasilios_tsarpalis={
-		instance = {
 			allowed = {
 					original_tag = GRE
 			}
@@ -677,9 +671,32 @@ characters={
 				ai_will_do = {
 					factor = 1.000
 				}
-			}
+			
 		}
 		
+	}
+	GRE_victoria={
+		name="Princess Victoria Louise of Prussia"
+		portraits={
+			army={
+				small="GFX_idea_GER_victoria_louise"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = GRE_victoria_louise
+			ledger = air
+			allowed = {
+				original_tag = GRE
+			}
+			traits = {
+				VICTORIA_SUPER
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 	}
 	GRE_epameinondas_kavvadias={
 		name=GRE_epameinondas_kavvadias
@@ -775,7 +792,6 @@ characters={
 	}
 
 	GRE_aris_velouchiotis={
-		instance = {
 			allowed = {
 			}
 			name=GRE_aris_velouchiotis
@@ -803,7 +819,7 @@ characters={
 					factor = 1.000
 				}
 			}		
-		}
+		
 	
 	}
 
@@ -853,7 +869,6 @@ characters={
 	}
 
 	GRE_georgios_papandreou={
-		instance = {
 			allowed = {
 					original_tag = GRE
 			}
@@ -876,7 +891,7 @@ characters={
 					resolute_social_democrat 
 				}
 			}
-		}
+		
 		
 	}
 
