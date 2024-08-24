@@ -68,6 +68,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GRE/focus_third_generation_fighter.dds"
 	}
 	spriteType = {
+		name = "GFX_focus_GRE_encourage_tourism"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_encourage_tourism.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GRE_hellas_herself"
+		texturefile = "gfx/interface/goals/GRE/GRE_hellas_herself.dds"
+	}
+	spriteType = {
 		name = "GFX_GRE_naval_power"
 		texturefile = "gfx/interface/goals/GRE/GRE_naval_power.dds"
 	}
