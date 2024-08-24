@@ -1,0 +1,16 @@
+TUR_sponsor_syrian_revolution_socialist_category = {
+
+	priority = 9
+
+	icon = GFX_category_icon
+	highlight_states = {
+        highlight_states_trigger = {
+			check_variable = { var = TUR_is_syrian_state_secured value = 1 compare = equals}
+        }
+    }
+	
+	allowed = {
+		always = yes
+	}
+}
+

@@ -1980,8 +1980,27 @@ SWE_greater_nordic_reich_ADJ: "Swedish"
 
  LGF_UNIFIED_fascist: "Confederate League"
  LGF_UNIFIED_fascist_DEF: "the Confederate League"
- LGF_UNIFIE_fascist_ADJ: "Confederate League"
+ LGF_UNIFIED_fascist_ADJ: "Confederate League"
 
  LGF_UNIFIED_communsim: "Socialist League"
  LGF_UNIFIED_communsim_DEF: "the Socialist League"
  LGF_UNIFIED_communism_ADJ: "Socialist League"
+
+
+ 
+ 
+ ANEG_ENG_neutrality: "Angevin Empire"
+ ANEG_ENG_neutrality_DEF: "the Angevin Empire"
+ ANEG_ENG_neutrality_ADJ: "Angevin"
+
+ ANEG_ENG_democratic: "Angevin Federation"
+ ANEG_ENG_democratic_DEF: "the Angevin Federation"
+ ANEG_ENG_democratic_ADJ: "Angevin"
+
+ ANEG_ENG_fascist: "Angevian State"
+ ANEG_ENG_fascist_DEF: "the Angevian State"
+ ANEG_ENG_fascist_ADJ: "Angevin"
+
+ ANEG_ENG_communsim: "Angevian Commune"
+ ANEG_ENG_communsim_DEF: "the Angevian Commune"
+ ANEG_ENG_communism_ADJ: "Angevin"

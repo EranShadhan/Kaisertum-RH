@@ -4,5 +4,9 @@ spriteTypes = {
 		name = "GFX_portrait_TUR_Ahmed_IV"
 		texturefile = "gfx/leaders/TUR/Portrait_Ahmed_IV.png"
 	}
+	spriteType = {
+		name = "GFX_portrait_TUR_Yakup_Kadri"
+		texturefile = "gfx/leaders/TUR/Portrait_Yakup_Kadri.png"
+	}
 
 }

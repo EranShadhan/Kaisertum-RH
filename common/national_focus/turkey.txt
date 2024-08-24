@@ -12,7 +12,7 @@ focus_tree = {
 
 	default = no
 
-	continuous_focus_position = { x = 20 y = 1600 }
+	continuous_focus_position = { x = 20 y = 3600 }
 
 #############################################
 ##### START OF THE ECONOMIC FOCUS TREE ######
@@ -21,7 +21,7 @@ focus_tree = {
 focus = {
     id = TUR_finish_reconstruction
     icon = GFX_goal_generic_construct_infrastructure
-    x = 10
+    x = 50
     y = 0
     cost = 5
 
@@ -1843,5 +1843,723 @@ focus = {
 			add_ideas = TUR_navy_modernization_idea
 		}
 	}
+	# POLITICAL
+	focus = {
+		id = TUR_start_of_a_new_decade
+		cost = 5
+		x = 20
+		y = 0
+s
+		prerequisite = {
+
+		}
+		available = {
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	# REFORMIST BRANCH
+	focus = {
+		id = TUR_constitution_of_1930
+		cost = 6
+		x = 8
+		y = 1
+
+		prerequisite = {
+			focus = TUR_start_of_a_new_decade
+		}
+		available = {
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_ideas = TUR_constitution_of_1930_idea
+		}
+	}
+	focus = {
+		id = TUR_reconvene_the_enguru_parliament
+		cost = 6
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = TUR_constitution_of_1930
+		}
+		available = {
+		}
+		relative_position_id = TUR_constitution_of_1930
+		completion_reward = {
+			country_event = {
+				id = KT_turkey_events.1
+				hours = 12
+				random_hours = 6
+			}
+			add_stability = 0.1
+		}
+	} 
+	focus = {
+		id = TUR_the_triumph_of_the_peoples_party
+		cost = 5
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = TUR_reconvene_the_enguru_parliament
+		}
+		available = {
+		}
+		relative_position_id = TUR_reconvene_the_enguru_parliament
+		completion_reward = {
+			set_politics = {
+    			ruling_party = democratic
+    			elections_allowed = yes
+    			election_frequency = 48
+
+			}
+			promote_character = {
+    			character = TUR_mustafa_kemal_ataturk
+    			ideology = socialism
+			}
+			set_party_name = {
+    			ideology = democratic
+    			long_name = TUR_CHP_party_long
+    			name = TUR_CHP_party
+			}
+			set_cosmetic_tag = TUR_neutrality
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = TUR_education_modernization
+		cost = 5
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = TUR_the_triumph_of_the_peoples_party
+		}
+		available = {
+		}
+		relative_position_id = TUR_the_triumph_of_the_peoples_party
+		completion_reward = {
+			add_ideas = TUR_educated_society
+		}
+	}
+	focus = {
+		id = TUR_close_sufi_orders
+		cost = 5
+		x = -2
+		y = 2
+
+		prerequisite = {
+			focus = TUR_education_modernization
+		}
+		available = {
+		}
+		relative_position_id = TUR_education_modernization
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = TUR_reform_the_penal_code
+		cost = 5
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = TUR_close_sufi_orders
+		}
+		available = {
+		}
+		relative_position_id = TUR_close_sufi_orders
+		completion_reward = {
+			add_stability = 0.05
+			add_ideas = TUR_reformed_penal_code
+		}
+	}
+	focus = {
+		id = TUR_abolish_traditional_headgear
+		cost = 5
+		x = 2
+		y = 2
+
+		prerequisite = {
+			focus = TUR_education_modernization
+		}
+		available = {
+		}
+		relative_position_id = TUR_education_modernization
+		completion_reward = {
+			add_political_power = 5
+			swap_ideas = {
+				remove_idea = TUR_traditional_society
+				add_idea = TUR_traditional_society_2
+			}
+		}
+	}
+	focus = {
+		id = TUR_promote_turkish_women
+		cost = 5
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = TUR_abolish_traditional_headgear
+		}
+		available = {
+		}
+		relative_position_id = TUR_abolish_traditional_headgear
+		completion_reward = {
+			add_political_power = 5
+			swap_ideas = {
+				remove_idea = TUR_traditional_society_2
+				add_idea = TUR_traditional_society_3
+			}
+		}
+	}
+	focus = {
+		id = TUR_new_civil_code
+		cost = 5
+		x = -2
+		y = 1
+
+		prerequisite = {
+			focus = TUR_promote_turkish_women
+		}
+		prerequisite = {
+			focus = TUR_reform_the_penal_code
+		}
+		available = {
+		}
+		relative_position_id = TUR_promote_turkish_women
+		completion_reward = {
+			add_political_power = 20
+			add_war_support = 0.1
+			swap_ideas = {
+				remove_idea = TUR_reformed_penal_code
+				add_idea = TUR_civil_code_idea
+			}
+		}
+	}
+	focus = {
+		id = TUR_latinization_of_the_turkish_alphabet
+		cost = 5
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = TUR_new_civil_code
+		}
+		available = {
+		}
+		relative_position_id = TUR_new_civil_code
+		completion_reward = {
+			set_province_name = {
+    			id = 11747
+    			name = "Angora"
+			}
+			add_war_support = 0.1
+
+		}
+	}
+	focus = {
+		id = TUR_abolish_traditionalism
+		cost = 5
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = TUR_latinization_of_the_turkish_alphabet
+		}
+		available = {
+		}
+		relative_position_id = TUR_latinization_of_the_turkish_alphabet
+		completion_reward = {
+			remove_ideas = TUR_traditional_society_3
+
+		}
+	}
+	focus = {
+		id = TUR_monarchy_compromise
+		cost = 5
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_abolish_traditionalism
+		}
+		available = {
+		}
+		relative_position_id = TUR_abolish_traditionalism
+		completion_reward = {
+			add_ideas = TUR_ahmed_IV_idea
+
+		}
+	}
+	focus = {
+		id = TUR_the_sultans_abdication
+		cost = 5
+		x = 1
+		y = 1
+		mutually_exclusive = { focus = TUR_monarchy_compromise }
+		prerequisite = {
+			focus = TUR_abolish_traditionalism
+		}
+		available = {
+		}
+		relative_position_id = TUR_abolish_traditionalism
+		completion_reward = {
+			set_cosmetic_tag = TUR_democratic
+			hidden_effect = {
+				news_event = {
+					id = kaisertum_news.4
+					hours = 12
+					random_hours = 6
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = TUR_a_true_democracy
+		cost = 5
+		x = 0
+		y = 2
+
+		prerequisite = {
+			focus = TUR_the_sultans_abdication 
+			focus = TUR_monarchy_compromise
+		}
+		available = {
+		}
+		relative_position_id = TUR_abolish_traditionalism
+		completion_reward = {
+			add_ideas = TUR_shining_light_of_democracy
+			hidden_effect = {
+				country_event = {
+					id = KT_turkey_events.2
+					days = 30
+					random_days = 20
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_ataturk_dies
+		cost = 1
+		x = 0
+		y = 2
+
+		prerequisite = {
+			focus = TUR_a_true_democracy
+		}
+		available = {
+			has_country_flag = TUR_ataturk_is_dead
+		}
+		relative_position_id = TUR_a_true_democracy
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUR_snap_election
+		cost = 1
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = TUR_ataturk_dies
+		}
+		available = {
+		}
+		relative_position_id = TUR_ataturk_dies
+		completion_reward = {
+			country_event = {
+				id = KT_turkey_events.3
+				hours = 12
+				random_hours = 6
+			}
+		}
+	}
+	focus = {
+		id = TUR_commies_elected
+		cost = 1
+		x = -4
+		y = 1
+
+		prerequisite = {
+			focus = TUR_snap_election
+		}
+		available = {
+			has_country_flag = TUR_kadrist_government
+		}
+		relative_position_id = TUR_snap_election
+		completion_reward = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			promote_character = {
+				character = TUR_yakup_kadri
+				ideology = marxism
+			}
+			remove_ideas = TUR_ahmed_IV_idea
+		}
+	}
+	focus = {
+		id = TUR_federalists_elected
+		cost = 1
+		x = 4
+		y = 1
+
+		prerequisite = {
+			focus = TUR_snap_election
+		}
+		available = {
+			has_country_flag = TUR_federalist_government
+		}
+		relative_position_id = TUR_snap_election
+		completion_reward = {
+
+		}
+	}
+
+	# COMMUNIST BRANCH
+
+	focus = {
+		id = TUR_promote_trade_unions
+		cost = 5
+		x = -2
+		y = 1
+
+		prerequisite = {
+			focus = TUR_commies_elected
+		}
+		available = {
+		}
+		relative_position_id = TUR_commies_elected
+		completion_reward = {
+			add_political_power = 100
+			add_popularity = {
+    			ideology = communism
+    			popularity = 0.2
+			}
+		}
+	}
+	focus = {
+		id = TUR_deal_with_the_ultranationalists
+		cost = 5
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_promote_trade_unions
+		}
+		available = {
+		}
+		relative_position_id = TUR_promote_trade_unions
+		completion_reward = {
+			add_political_power = 30
+			add_ideas = TUR_incompetent_ultranationalist_opposition
+		}
+	}
+	focus = {
+		id = TUR_deal_with_german_influence
+		cost = 5
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = TUR_deal_with_the_ultranationalists
+		}
+		available = {
+		}
+		relative_position_id = TUR_deal_with_the_ultranationalists
+		completion_reward = {
+			remove_ideas = TUR_german_influence_in_government
+		}
+	}
+	focus = {
+		id = TUR_collectivization_of_agriculture
+		cost = 5
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_promote_trade_unions
+		}
+		available = {
+		}
+		relative_position_id = TUR_promote_trade_unions
+		completion_reward = {
+			add_ideas = TUR_collectivized_agriculture
+		}
+	}
+	focus = {
+		id = TUR_the_spirit_of_the_workers
+		cost = 5
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = TUR_collectivization_of_agriculture
+		}
+		available = {
+		}
+		relative_position_id = TUR_collectivization_of_agriculture
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = TUR_the_islamic_bastion_of_socialism
+		cost = 5
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_deal_with_german_influence
+		}
+		prerequisite = {
+			focus = TUR_the_spirit_of_the_workers
+		}
+		available = {
+		}
+		relative_position_id = TUR_deal_with_german_influence
+		completion_reward = {
+			add_ideas = TUR_islamic_bastion_of_socialism_idea
+		}
+	}
+	focus = {
+		id = TUR_spreading_the_revolution
+		cost = 5
+		x = 2
+		y = 1
+
+		prerequisite = {
+			focus = TUR_commies_elected
+		}
+		available = {
+		}
+		relative_position_id = TUR_commies_elected
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = TUR_closer_ties_with_japan
+		cost = 5
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_spreading_the_revolution
+		}
+		available = {
+		}
+		relative_position_id = TUR_spreading_the_revolution
+		completion_reward = {
+			JAP = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_buy_japanese_guns
+		cost = 5
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = TUR_closer_ties_with_japan
+		}
+		available = {
+		}
+		relative_position_id = TUR_closer_ties_with_japan
+		completion_reward = {
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = 2000
+    			producer = JAP
+			}
+		}
+	}
+	focus = {
+		id = TUR_sponsor_syrian_rebellion
+		cost = 6
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_spreading_the_revolution
+		}
+		available = {
+		}
+		relative_position_id = TUR_spreading_the_revolution
+		completion_reward = {
+			unlock_decision_category_tooltip = TUR_sponsor_syrian_revolution_socialist_category_tt
+			677 = {
+				add_core_of = SYR
+			}
+			975 = {
+				add_core_of = SYR
+			}
+			554 = {
+				add_core_of = SYR
+			}
+			680 = {
+				add_core_of = SYR
+			}
+		}
+	}
+	focus = {
+		id = TUR_alienate_enemies
+		cost = 5
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = TUR_sponsor_syrian_rebellion
+		}
+		available = {
+			has_global_flag = syria_wins
+		}
+		relative_position_id = TUR_sponsor_syrian_rebellion
+		completion_reward = {
+			PER = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_decrease
+				}
+			}
+			EGY = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_decrease
+				}
+			}
+			SAU = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_decrease
+				}
+			}
+			JAP = {
+
+				add_opinion_modifier = {
+					target = PER
+					modifier = large_decrease
+				}
+				add_opinion_modifier = {
+					target = EGY
+					modifier = large_decrease
+				}
+				add_opinion_modifier = {
+					target = SAU
+					modifier = large_decrease
+				}
+			}
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = TUR_arabic_revolution
+		cost = 5
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_alienate_enemies
+		}
+		prerequisite = {
+			focus = TUR_buy_japanese_guns
+		}
+		available = {
+		}
+		relative_position_id = TUR_buy_japanese_guns
+		completion_reward = {
+			SAU = {
+				start_civil_war = {
+					ideology = communism
+
+					size = 0.4
+					capital = 282
+					states = {
+						659 658 765 859 855 455 854
+					}
+					keep_unit_leaders = {
+						750 751 752
+					}
+					keep_political_leader = yes
+					keep_political_party_members = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_red_crescent_coalition
+		cost = 5
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = TUR_arabic_revolution
+		}
+		available = {
+		}
+		relative_position_id = TUR_arabic_revolution
+		completion_reward = {
+			create_faction = RED_CRESCENT_COALITION
+			TUR = {
+				if = {
+					limit = { SAU = { has_government = communism } }
+				add_to_faction = SAU
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_free_the_caucasian_workers
+		cost = 5
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_red_crescent_coalition
+		}
+		available = {
+		}
+		relative_position_id = TUR_red_crescent_coalition
+		completion_reward = {
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = SOV
+			}
+		}
+	}
+	focus = {
+		id = TUR_support_persian_communism
+		cost = 5
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_red_crescent_coalition
+		}
+		available = {
+		}
+		relative_position_id = TUR_red_crescent_coalition
+		completion_reward = {
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = PER
+			}
+		}
+	}
 }
+
 	

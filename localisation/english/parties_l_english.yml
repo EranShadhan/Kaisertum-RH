@@ -311,8 +311,8 @@
  TUR_democratic_party_proto_islamist_long:0 "Geleneksel Grup"
  TUR_democratic_party_islamist:0 "DP"
  TUR_democratic_party_islamist_long:0 "Demokrat Parti"
- TUR_neutrality_party:0 "CHP"
- TUR_neutrality_party_long:0 "Cumhuriyet Halk Partisi"
+ TUR_neutrality_party:0 "The Sultanate"
+ TUR_neutrality_party_long:0 "The Turkish Sultanate"
  TUR_sultanate_precursor_party_long:0 "Geçici Hükümet"
  TUR_sultanate_party_long:0 "Devlet-i Ebed-müddet"
  HUN_fascism_party:1 "Horthy Government"
@@ -1140,3 +1140,6 @@
  BRA_imperial_house_long: "The Imperial Restoration Movement"
  BRA_cangaco_party_long: "Movimento Cangaço"
  BRA_cangaco_party: "Cangaço"
+
+ TUR_CHP_party:0 "CHP"
+ TUR_CHP_party_long:0 "Cumhuriyet Halk Partisi"

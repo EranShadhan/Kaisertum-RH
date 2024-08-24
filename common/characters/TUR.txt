@@ -1,5 +1,5 @@
 characters={
-	TUR_ahmed_IV{
+	TUR_ahmed_IV = {
 		name = TUR_ahmed_IV
 		portraits = {
 			civilian = {
@@ -13,11 +13,21 @@ characters={
 			id = -1
 		}
 	}
-	TUR_mustafa_kemal_ataturk={
-		instance = {
-			allowed = {
-				has_dlc = "Battle for the Bosporus"
+	TUR_yakup_kadri = {
+		name = TUR_yakup_kadri
+		portraits = {
+			civilian = {
+				large = GFX_portrait_TUR_Yakup_Kadri
 			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1953.3.1.1"
+			traits={ militant_socialist }
+			id = -1
+		}
+	}
+	TUR_mustafa_kemal_ataturk={
 			name=TUR_mustafa_kemal_ataturk
 			portraits={
 				civilian={
@@ -28,7 +38,7 @@ characters={
 				}
 			}
 			country_leader={
-				ideology=despotism
+				ideology=socialism
 				traits={ father_of_the_turks }
 				expire="1965.1.1.1"
 				id=-1

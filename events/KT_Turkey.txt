@@ -1,0 +1,71 @@
+﻿###########################
+# Turkish Kaisertum Events
+###########################
+
+add_namespace = KT_turkey_events
+
+# Enguru Parliament Reconvened
+country_event = {
+	id = KT_turkey_events.1
+	title = KT_turkey_events.1.t
+	desc = KT_turkey_events.1.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			}
+		}
+	
+	
+	option = {
+		name = KT_turkey_events.1.a
+	}
+}
+
+country_event = {
+	id = KT_turkey_events.2
+	title = KT_turkey_events.2.t
+	desc = KT_turkey_events.2.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			}
+		}
+	
+	
+	option = {
+		name = KT_turkey_events.2.a
+		complete_national_focus = TUR_ataturk_dies
+		set_country_flag = TUR_ataturk_is_dead
+	}
+}
+country_event = {
+	id = KT_turkey_events.3
+	title = KT_turkey_events.3.t
+	desc = KT_turkey_events.3.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			}
+		}
+	
+	
+	option = {
+		name = KT_turkey_events.3.a
+		complete_national_focus = TUR_commies_elected
+		set_country_flag = TUR_kadrist_government
+	}
+	option = {
+		name = KT_turkey_events.3.b
+		complete_national_focus = TUR_federalists_elected
+		set_country_flag = TUR_federalist_government
+	}
+}

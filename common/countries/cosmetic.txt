@@ -38,6 +38,20 @@ SER_BG= {
 	color_ui = rgb { 51 155 0 }
 }
 
+ANEG_ENG = {
+	color = rgb { 136 0 29 }
+	color_ui = rgb { 136 0 29 }
+}
+
+
+
+
+
+
+
+
+
+#VANILLA
 MAL_UK = {
     color = rgb { 201 56 93 }
     color_ui = rgb { 255 73 121 }
