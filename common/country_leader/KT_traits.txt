@@ -13,5 +13,10 @@ ROM_playboy_king = {
 	political_power_gain = 0.5
 }
 
+ROM_witness_to_ferdinand = {
+	random = no
+	communism_drift = -0.02
+}
+
 }
 

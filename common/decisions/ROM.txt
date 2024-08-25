@@ -19,6 +19,7 @@ Elections = {
 			if = {
 				limit = { has_completed_focus = ROM_pol_2 }
 				country_event = romania.1
+				set_country_flag = ROM_had_elections
 			}
 		}
 	}
