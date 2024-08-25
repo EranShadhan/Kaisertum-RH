@@ -123,6 +123,30 @@ spriteType = {
 		name = "GFX_focus_house_of_glucksburg"
 		texturefile = "gfx/interface/goals/GRE/house_of_glucksburg.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_GRE_british_guns"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_british_guns.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GRE_rockets_from_subs"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_rockets_from_subs.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GRE_rocket_tech"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_rocket_tech.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_hellenic_dome"
+		texturefile = "gfx/interface/goals/GRE/focus_hellenic_dome.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GRE_hellenic_nukes"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_hellenic_nukes.dds"
+	}
+spriteType = {
+		name = "GFX_GRE_mac_empire"
+		texturefile = "gfx/interface/goals/GRE/GRE_mac_empire.dds"
+	}	
 		spriteType = {
 		name = "GFX_focus_GRE_after_thrace"
 		texturefile = "gfx/interface/goals/GRE/focus_GRE_after_thrace.dds"

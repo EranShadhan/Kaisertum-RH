@@ -1590,7 +1590,7 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = -4
+		x = -5
 		y = 1
         prerequisite = { focus = GRE_the_house_always_wins }
 		relative_position_id = GRE_the_house_always_wins
@@ -1626,7 +1626,7 @@ has_country_flag = nationa_schism_part2
 		}
 			focus = {
 		id = GRE_restore_british_titles
-		icon = GFX_focus_SWE_let_fly_all_guns
+		icon = GFX_focus_eng_imperial_federation
 
 		
 		available = {
@@ -1643,7 +1643,80 @@ has_country_flag = nationa_schism_part2
 		search_filters = {  }
 		completion_reward = {
 		    }
+		}
+			focus = {
+		id = GRE_ask_for_british_ship
+		icon = GFX_focus_generic_naval_discipline
+
+		
+		available = {
+		}
+		x = 1
+		y = 1
+        prerequisite = { focus = GRE_restore_british_titles }
+		relative_position_id = GRE_restore_british_titles
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		custom_effect_tooltip = NZL_transfer_ships_tt
+			ENG = {
+			    transfer_ship = {
+			        type = light_cruiser
+			        target = ROOT
+			    }
+			    transfer_ship = {
+			        type = light_cruiser
+			        target = ROOT
+			    }
+			}
+		    }
+		}		
+			focus = {
+		id = GRE_ask_for_british_guns
+		icon = GFX_focus_GRE_british_guns
+
+		
+		available = {
+		}
+		x = -1
+		y = 1
+        prerequisite = { focus = GRE_restore_british_titles }
+		relative_position_id = GRE_restore_british_titles
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		
+		    }
 		}	
+			focus = {
+		id = GRE_launch_rockets_from_our_subs
+		icon = GFX_focus_GRE_rockets_from_subs
+
+		
+		available = {
+		}
+		x = 1
+		y = 1
+        prerequisite = { focus = GRE_ask_for_british_guns focus = GRE_ask_for_british_ship }
+		relative_position_id = GRE_ask_for_british_guns
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		
+		    }
+		}			
 	focus = {
 		id = GRE_honor_the_men
 		icon = GFX_focus_NORDIC_mon_institution_1
@@ -1651,7 +1724,7 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = 0
+		x = 1
 		y = 1
         prerequisite = { focus = GRE_the_house_always_wins }
 		relative_position_id = GRE_the_house_always_wins
@@ -1664,6 +1737,107 @@ has_country_flag = nationa_schism_part2
 		completion_reward = {
 		    }
 		}	
+	focus = {
+		id = GRE_god_save_the_king
+		icon = GFX_focus_eng_god_save_the_king
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_honor_the_men }
+		relative_position_id = GRE_honor_the_men
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}	
+		
+	focus = {
+		id = GRE_advanced_german_tech
+		icon = GFX_focus_GRE_rocket_tech
+
+		
+		available = {
+		}
+		x = 1
+		y = 1
+        prerequisite = { focus = GRE_god_save_the_king }
+		relative_position_id = GRE_god_save_the_king
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}		
+	focus = {
+		id = GRE_advanced_hellenic_anti_air
+		icon = GFX_focus_hellenic_dome
+
+		
+		available = {
+		}
+		x = -1
+		y = 1
+        prerequisite = { focus = GRE_god_save_the_king }
+		relative_position_id = GRE_god_save_the_king
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}		
+		focus = {
+		id = GRE_ask_ger_for_nukes
+		icon = GFX_focus_GRE_hellenic_nukes
+
+		
+		available = {
+		}
+		x = 1
+		y = 1
+        prerequisite = { focus = GRE_advanced_hellenic_anti_air focus = GRE_advanced_german_tech}
+		relative_position_id = GRE_advanced_hellenic_anti_air
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}
+	focus = {
+		id = GRE_the_will_to_empire
+		icon = GFX_GRE_mac_empire
+
+		
+		available = {
+		}
+		x = -2
+		y = 1
+        prerequisite = { focus = GRE_the_house_always_wins }
+		relative_position_id = GRE_the_house_always_wins
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}		
 	focus = {
 		id = GRE_the_economic_crush
 		icon = GFX_focus_GRE_economic_crisis
