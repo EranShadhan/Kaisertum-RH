@@ -48,7 +48,8 @@ characters={
 			}
 		country_leader={
 			ideology=marxism
-			traits={ reluctant_stalinist 
+			traits={ stalin_great_commander
+                     stalin_architect_of_communism			
 			guerilla_warfare_expert}
 			expire="1965.1.1.1"
 			id=-1
