@@ -69,3 +69,76 @@ country_event = {
 		set_country_flag = TUR_federalist_government
 	}
 }
+country_event = {
+	id = KT_turkey_events.4
+	title = KT_turkey_events.4.t
+	desc = KT_turkey_events.4.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			}
+		}
+	
+	
+	option = {
+		name = KT_turkey_events.4.a
+		ai_chance ={
+			base = 9
+		}
+		TUR = {
+			add_to_faction = PREV
+		}
+	}
+	option = {
+		name = KT_turkey_events.4.b
+		ai_chance ={
+			base = 1
+		}
+		TUR = {
+			add_opinion_modifier = {
+				target = PREV
+				modifier = medium_decrease
+			}
+		}
+	}
+}
+country_event = {
+	id = KT_turkey_events.5
+	title = KT_turkey_events.5.t
+	desc = KT_turkey_events.5.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			}
+		}
+	
+	
+	option = {
+		name = KT_turkey_events.5.a
+		ai_chance ={
+			base = 3
+		}
+		TUR = {
+			transfer_state = 339
+			transfer_state = 987
+		}
+	}
+	option = {
+		name = KT_turkey_events.5.b
+		ai_chance ={
+			base = 7
+		}
+		TUR = {
+			add_opinion_modifier = {
+				target = PREV
+				modifier = small_decrease
+			}
+		}
+	}
+}

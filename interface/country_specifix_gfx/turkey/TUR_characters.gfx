@@ -8,5 +8,9 @@ spriteTypes = {
 		name = "GFX_portrait_TUR_Yakup_Kadri"
 		texturefile = "gfx/leaders/TUR/Portrait_Yakup_Kadri.png"
 	}
+	spriteType = {
+		name = "GFX_portrait_TUR_Ali_Fuat_Cebesoy"
+		texturefile = "gfx/leaders/TUR/Portrait_Ali_Fuat_Cebesoy.png"
+	}
 
 }

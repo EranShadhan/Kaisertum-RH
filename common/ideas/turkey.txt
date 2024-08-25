@@ -350,6 +350,8 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				democratic_drift = 0.03
+				communism_drift = 0.03
+				political_power_factor = 0.1
 			}
 		}
 		TUR_educated_society = {
@@ -503,5 +505,51 @@ ideas = {
 				
 			}
 		}
+	TUR_minority_representation = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				resistance_damage_to_garrison_on_our_occupied_states = 0.5
+				resistance_activity = -0.2
+				compliance_growth_on_our_occupied_states = 0.3
+			}
+		}
+		TUR_federation = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				democratic_acceptance = 40
+				political_power_factor = 0.6
+				stability_factor = 0.3
+				army_morale_factor = 0.3
+			}
+		}
+		TUR_federalist_constitution = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				democratic_drift = 0.06
+				political_power_factor = 0.15
+			}
+		}
+		
 	}
 }

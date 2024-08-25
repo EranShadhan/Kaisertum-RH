@@ -2341,7 +2341,10 @@ s
 		}
 		relative_position_id = TUR_snap_election
 		completion_reward = {
-
+			promote_character = {
+				character = TUR_ali_fuat_cebesoy
+				ideology = liberalism
+			}
 		}
 	}
 
@@ -2363,7 +2366,7 @@ s
 			add_political_power = 100
 			add_popularity = {
     			ideology = communism
-    			popularity = 0.2
+    			popularity = 0.3
 			}
 		}
 	}
@@ -2678,6 +2681,431 @@ s
     			type = puppet_wargoal_focus
     			target = PER
 			}
+		}
+	}
+
+	# FEDERALIST BRANCH
+	focus = {
+		id = TUR_promote_the_turkish_nation
+		cost = 5
+		x = -2
+		y = 1
+
+		prerequisite = {
+			focus = TUR_federalists_elected
+		}
+		available = {
+		}
+		relative_position_id = TUR_federalists_elected
+		completion_reward = {
+			add_political_power = 20
+			TUR = {
+				every_neighbor_country = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = small_increase
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_improve_relations_with_persia
+		cost = 5
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_promote_the_turkish_nation
+		}
+		available = {
+		}
+		relative_position_id = TUR_promote_the_turkish_nation
+		completion_reward = {
+			PER = {
+
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+				
+			}
+		}
+	}
+	focus = {
+		id = TUR_appeal_to_the_arabians
+		cost = 5
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_promote_the_turkish_nation
+		}
+		available = {
+		}
+		relative_position_id = TUR_promote_the_turkish_nation
+		completion_reward = {
+			SAU = {
+
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+				
+			}
+		}
+	}
+	focus = {
+		id = TUR_create_konya_accords
+		cost = 5
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_appeal_to_the_arabians
+		}
+		prerequisite = {
+			focus = TUR_improve_relations_with_persia
+		}
+		available = {
+		}
+		relative_position_id = TUR_improve_relations_with_persia
+		completion_reward = {
+			create_faction = TUR_konya_accords
+			PER = {
+				country_event = {
+					id = KT_turkey_events.4
+					hours = 12
+					random_hours = 6
+				}
+			}
+			SAU = {
+				country_event = {
+					id = KT_turkey_events.4
+					hours = 12
+					random_hours = 6
+				}
+			}
+		}
+		
+	}
+	focus = {
+		id = TUR_invite_egypt
+		cost = 5
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_create_konya_accords
+		}
+
+		available = {
+		}
+		relative_position_id = TUR_create_konya_accords
+		completion_reward = {
+			EGY = {
+				country_event = {
+					id = KT_turkey_events.4
+					hours = 12
+					random_hours = 6
+				}
+			}
+		}
+		
+	}
+	focus = {
+		id = TUR_invite_egypt
+		cost = 5
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_create_konya_accords
+		}
+
+		available = {
+		}
+		relative_position_id = TUR_create_konya_accords
+		completion_reward = {
+			
+			EGY = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = medium_increase
+				}
+				country_event = {
+					id = KT_turkey_events.4
+					hours = 12
+					random_hours = 6
+				}
+			}
+		}
+		
+	}
+	focus = {
+		id = TUR_cooperate_with_germany
+		cost = 5
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_create_konya_accords
+		}
+
+		available = {
+		}
+		relative_position_id = TUR_create_konya_accords
+		completion_reward = {
+			diplomatic_relation = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = medium_increase
+				}
+    			country = GER
+    			relation = non_aggression_pact
+    			active = yes
+			}
+		}
+		
+	}
+	focus = {
+		id = TUR_free_caucasians_from_kerensky
+		cost = 5
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_invite_egypt
+		}
+		prerequisite = {
+			focus = TUR_cooperate_with_germany
+		}
+		available = {
+		}
+		relative_position_id = TUR_cooperate_with_germany
+		completion_reward = {
+			create_wargoal = {
+    			type = take_state_focus
+    			target = SOV
+    			generator = { 980 230 231 826 }
+			}
+		}
+		
+	}
+	focus = {
+		id = TUR_representation_of_the_minorities
+		cost = 5
+		x = 2
+		y = 1
+
+		prerequisite = {
+			focus = TUR_federalists_elected
+		}
+		available = {
+		}
+		relative_position_id = TUR_federalists_elected
+		completion_reward = {
+			add_ideas = TUR_minority_representation
+		}
+	}
+	focus = {
+		id = TUR_recognize_kurdish_citizenship
+		cost = 6
+		x = -1
+		y = 2
+
+		prerequisite = {
+			focus = TUR_representation_of_the_minorities
+		}
+		available = {
+		}
+		relative_position_id = TUR_representation_of_the_minorities
+		completion_reward = {
+			350 = {
+				add_core_of = TUR
+			}
+			353 = {
+				add_core_of = TUR
+			}
+		}
+	}
+	focus = {
+		id = TUR_the_islam_compromise
+		cost = 5
+		x = 2
+		y = 1
+
+		prerequisite = {
+			focus = TUR_representation_of_the_minorities
+		}
+		available = {
+		}
+		relative_position_id = TUR_representation_of_the_minorities
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.2
+		}
+	}
+	focus = {
+		id = TUR_recognize_armenian_citizenship
+		cost = 5
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_the_islam_compromise
+		}
+		available = {
+		}
+		relative_position_id = TUR_the_islam_compromise
+		completion_reward = {
+			354 = {
+				add_core_of = TUR
+			}
+			980 = {
+				add_core_of = TUR
+			}
+			230 = {
+				add_core_of = TUR
+			}
+		}
+	}
+	focus = {
+		id = TUR_recognize_pontic_and_greek_citizenship
+		cost = 5
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_the_islam_compromise
+		}
+		available = {
+		}
+		relative_position_id = TUR_the_islam_compromise
+		completion_reward = {
+			355 = {
+				add_core_of = TUR
+			}
+			339 = {
+				add_core_of = TUR
+			}
+			987 = {
+				add_core_of = TUR
+			}
+		}
+	}
+	focus = {
+		id = TUR_proclaim_the_turkish_federation
+		cost = 5
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_recognize_armenian_citizenship
+		}
+		prerequisite = {
+			focus = TUR_recognize_pontic_and_greek_citizenship
+		}
+		prerequisite = {
+			focus = TUR_recognize_kurdish_citizenship
+		}
+		available = {
+		}
+		relative_position_id = TUR_recognize_armenian_citizenship
+		completion_reward = {
+			set_cosmetic_tag = TUR_turkish_federation
+			add_ideas = TUR_federation
+		}
+	}
+	focus = {
+		id = TUR_new_constitution
+		cost = 5
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = TUR_proclaim_the_turkish_federation
+		}
+
+		available = {
+		}
+		relative_position_id = TUR_proclaim_the_turkish_federation
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_constitution_of_1930_idea
+				add_idea = TUR_federalist_constitution
+			}
+		}
+	}
+	focus = {
+		id = TUR_new_kurdish_home
+		cost = 5
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_new_constitution
+		}
+		available = {
+		}
+		relative_position_id = TUR_new_constitution
+		completion_reward = {
+			352 = {
+				add_core_of = TUR
+			}
+			676 = {
+				add_core_of = TUR
+			}
+			421 = {
+				add_core_of = TUR
+			}
+		}
+	}
+	focus = {
+		id = TUR_request_return_of_izmir
+		cost = 5
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_new_constitution
+		}
+		available = {
+		}
+		relative_position_id = TUR_new_constitution
+		completion_reward = {
+			GRE = {
+				country_event = {
+					id = KT_turkey_events.5
+					hours = 12
+					random_hours = 6
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_integrate_the_caucasian_states
+		cost = 5
+		x = -4
+		y = 1
+
+		prerequisite = {
+			focus = TUR_new_constitution
+		}
+		prerequisite = {
+			focus = TUR_free_caucasians_from_kerensky
+		}
+		available = {
+		}
+		relative_position_id = TUR_new_constitution
+		completion_reward = {
+			231 = {
+				add_core_of = TUR
+			}
+			826 = {
+				add_core_of = TUR
+			}
+
 		}
 	}
 }

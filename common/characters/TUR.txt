@@ -44,27 +44,25 @@ characters={
 				id=-1
 			}
 		}
-		instance = {
-			allowed = {
-				NOT = { has_dlc = "Battle for the Bosporus" }
-			}
-			name=TUR_mustafa_kemal_ataturk
+		
+	TUR_ali_fuat_cebesoy={
+			name=TUR_ali_fuat_cebesoy
 			portraits={
-				civilian={
-					large=GFX_portrait_TUR_mustafa_kemal_ataturk
+				civilian = {
+					large = GFX_portrait_TUR_Ali_Fuat_Cebesoy
 				}
-				army = {
-					large = GFX_portrait_TUR_mustafa_kemal_ataturk_military
+				army={
+					small="GFX_idea_tur_ali_fuat_cebesoy"
 				}
 			}
-			country_leader={
-				ideology=despotism
-				expire="1965.1.1.1"
-				id=-1
-			}
+			country_leader = {
+			ideology = liberalism
+			expire = "1953.3.1.1"
+			traits={ liberal_democratic_paragon }
+			id = -1
 		}
-	}
 
+	}
 	TUR_sefik_husnu={
 		instance = {
 			allowed = {
@@ -1266,63 +1264,7 @@ characters={
 		}
 	}
 
-	TUR_ali_fuat_cebesoy={
-		instance = {
-			allowed = {
-				has_dlc = "Battle for the Bosporus"
-			}
-			name=TUR_ali_fuat_cebesoy
-			portraits={
-				army={
-					small="GFX_idea_tur_ali_fuat_cebesoy"
-				}
-			}
-			advisor={
-				cost = 100
-				slot = theorist
-				idea_token = TUR_ali_fuat_cebesoy
-				ledger = army
-				name = TUR_ali_fuat_cebesoy
-				allowed = {
-					original_tag = TUR
-					has_dlc = "Battle for the Bosporus"
-				}
-				
-				traits = {
-					military_theorist
-				}
-			}
-		}
-		instance = {
-			allowed = {
-				NOT = { has_dlc = "Battle for the Bosporus" }
-			}
-			name=TUR_ali_fuat_cebesoy
-			portraits={
-				army={
-					small="GFX_idea_generic_navy_europe_1"
-				}
-			}
-			advisor={
-				slot = high_command
-				idea_token = TUR_ali_fuat_cebesoy
-				ledger = navy
-				allowed = {
-					original_tag = TUR
-					NOT = {
-						has_dlc = "Battle for the Bosporus"
-					}
-				}
-				traits = {
-					navy_screen_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-			}
-		}
-	}
+	
 
 	TUR_refik_saydam={
 		name=TUR_refik_saydam
