@@ -1603,7 +1603,47 @@ has_country_flag = nationa_schism_part2
 		completion_reward = {
 		    }
 		}
+		focus = {
+		id = GRE_increase_trade_with_eng
+		icon = GFX_focus_generic_british_trade
 
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_the_right_to_rule_them }
+		relative_position_id = GRE_the_right_to_rule_them
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		  
+		  }
+		}
+			focus = {
+		id = GRE_restore_british_titles
+		icon = GFX_focus_SWE_let_fly_all_guns
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_increase_trade_with_eng }
+		relative_position_id = GRE_increase_trade_with_eng
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}	
 	focus = {
 		id = GRE_honor_the_men
 		icon = GFX_focus_NORDIC_mon_institution_1
