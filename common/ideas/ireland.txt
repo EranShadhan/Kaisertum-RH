@@ -1,0 +1,129 @@
+ideas = {
+	country = {
+		IRE_king_George_V = {
+			
+			allowed = {
+				original_tag = IRE
+			}
+
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = IRE
+						has_government = democratic 
+						NOT = {
+							tag = ROOT
+						}
+					}
+				}
+			}
+
+			picture = george_v
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1				
+			}
+			
+
+		}
+		
+			IRE_British_Investment = {
+			
+			allowed = {
+				original_tag = IRE
+			}
+
+			allowed_civil_war = {
+				NOT ={
+					has_overlord = ENG
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = IRE
+						has_government = democratic 
+						NOT = {
+							tag = ROOT
+						}
+					}
+				}
+			}
+
+			picture = 
+			
+			removal_cost = -1
+			
+			modifier = {
+				autonomy_gain = -0.1
+				production_factory_efficiency_gain_factor = 0.25 
+				production_factory_max_efficiency_factor = 0.25 
+				production_factory_start_efficiency_factor = 0.25 
+				industrial_capacity_factory = 0.1
+				cic_construction_boost_factor = 0.1	
+							
+			}
+			
+
+		}
+
+		IRE_IRA_Presence = {
+			
+			allowed = {
+				original_tag = IRE
+			}
+
+			allowed_civil_war = {
+				NOT ={
+					has_overlord = ENG
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = IRE
+						has_government = democratic 
+						NOT = {
+							tag = ROOT
+						}
+					}
+				}
+			}
+
+			picture = 
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.1
+				stability_weekly = -0.01
+				war_support_weekly = 0.01	
+							
+			}
+			
+
+		}
+		
+		IRE_Lore = {
+			
+			allowed = {
+				original_tag = IRE
+			}
+
+			
+			picture = 
+			
+			removal_cost = -1
+			
+			modifier = {
+					
+							
+			}
+			
+
+		}
+
+
+	}
+}

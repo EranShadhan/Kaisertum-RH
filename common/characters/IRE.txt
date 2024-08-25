@@ -6,7 +6,7 @@ characters={
 				large=GFX_portrait_IRE_Micheal_Collins
 			}
 			army={
-				large=GFX_portrait_IRE_Micheal_Collins
+				large=GFX_portrait_IRE_Micheal_Collins_Army
 				
 			}
 		}

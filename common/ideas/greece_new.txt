@@ -906,6 +906,46 @@ ideas = {
 			}
 			
 		}
+		
+		GRE_central_balkan_bank_wealthy_greece = { 
+
+			allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = tur_balkan_central_bank_wealthy_greece
+				
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_expected_value = -0.075
+			}
+		}
+		GRE_booming_tourism2 = {
+				
+			 allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			
+
+			picture = generic_air_bonus
+				
+			removal_cost = -1
+				
+			modifier = {
+				stability_factor = 0.1	
+				political_power_factor	= 0.15
+			}
+		}
 		GRE_no_left2 = {
 			
 

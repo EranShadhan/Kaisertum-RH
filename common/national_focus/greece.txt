@@ -408,7 +408,7 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = 3
+		x = 5
 		y = 1
         prerequisite = { focus = GRE_national_education focus = GRE_reform_education}
 		relative_position_id = GRE_national_education
@@ -422,7 +422,337 @@ has_country_flag = nationa_schism_part2
 		completion_reward = {
 	
 		    }
+		}
+	focus = {
+		id = GRE_the_metaxist_parliament
+		icon = GFX_focus_ETH_re-convene_the_parliament
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_appease_the_people }
+		relative_position_id = GRE_appease_the_people
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+		}
+	focus = {
+		id = GRE_watch_our_enemies
+		icon = GFX_focus_SWI_embrace_rote_drei
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_the_metaxist_parliament }
+		relative_position_id = GRE_the_metaxist_parliament
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+		}		
+	focus = {
+		id = GRE_democracy_prevails	
+		icon = GFX_focus_NOR_restore_public_trust_in_the_storting
+
+		
+		available = {
+		}
+		x = -2
+		y = 1
+        prerequisite = { focus = GRE_appease_the_people }
+		relative_position_id = GRE_appease_the_people
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+			
+		}
+	focus = {
+		id = GRE_all_parties_end
+		icon = GFX_focus_rom_parties_end
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_democracy_prevails }
+		relative_position_id = GRE_democracy_prevails
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+			
+		}			
+	focus = {
+		id = GRE_balkan_stab
+		icon = GFX_focus_BUL_free_balkan_states
+
+		
+		available = {
+		}
+		x = 2
+		y = 1
+        prerequisite = { focus = GRE_appease_the_people }
+		relative_position_id = GRE_appease_the_people
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+			
 		}	
+	focus = {
+		id = GRE_balkan_haven
+		icon = GFX_focus_ARG_crackdown_on_corruption
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_balkan_stab }
+		relative_position_id = GRE_balkan_stab
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+			
+		}	
+	focus = {
+		id = GRE_true_intensions_of_metaxas
+		icon = GFX_focus_generic_military_dictatorship
+
+		
+		available = {
+		}
+		x = -2
+		y = 1
+        prerequisite = { focus = GRE_balkan_haven }
+		prerequisite = { focus = GRE_all_parties_end }
+		prerequisite = { focus = GRE_watch_our_enemies }
+		relative_position_id = GRE_balkan_haven
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+			
+		}	
+	focus = {
+		id = GRE_operation_greco
+		icon = GFX_
+
+		
+		available = {
+		}
+		x = -1
+		y = 1
+        prerequisite = { focus = GRE_true_intensions_of_metaxas }
+		relative_position_id = GRE_true_intensions_of_metaxas
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+			
+		}	
+	focus = {
+		id = GRE_second_macedonia_race
+		icon = GFX_
+
+		
+		available = {
+		}
+		x = -2
+		y = 1
+        prerequisite = { focus = GRE_operation_greco }
+		relative_position_id = GRE_operation_greco
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+			
+		}
+	focus = {
+		id = GRE_thracian_unification
+		icon = GFX_
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_second_macedonia_race }
+		relative_position_id = GRE_second_macedonia_race
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+			
+		}	
+	focus = {
+		id = GRE_king_zog_great_scam
+		icon = GFX_
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_operation_greco }
+		relative_position_id = GRE_operation_greco
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+			
+		}	
+	focus = {
+		id = GRE_reclaim_the_mithriatic
+		icon = GFX_
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_king_zog_great_scam }
+		relative_position_id = GRE_king_zog_great_scam
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+			
+		}			
+	focus = {
+		id = GRE_ratify_serves_front
+		icon = GFX_
+
+		
+		available = {
+		}
+		x = 1
+		y = 1
+        prerequisite = { focus = GRE_true_intensions_of_metaxas }
+		relative_position_id = GRE_true_intensions_of_metaxas
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+			
+		}		
+	focus = {
+		id = GRE_magna_graecia
+		icon = GFX_
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_ratify_serves_front }
+		relative_position_id = GRE_ratify_serves_front
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+			
+		}
+	focus = {
+		id = GRE_city_of_respect
+		icon = GFX_
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_magna_graecia }
+		relative_position_id = GRE_magna_graecia
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+			
+		}			
 	focus = {
 		id = GRE_recruit_the_fascists_eee
 		icon = GFX_goal_GRE_fate_of_eee
@@ -2241,46 +2571,16 @@ focus = {
 		}
 		
 		
-		focus = {
-		id = GRE_prepare_for_the_future
-		icon = GFX_focus_GRE_bedrock_of_balkan_stability
-       
-		available = {
-		}
-		x = 35
-		y = 0
-		cost = 6
-		ai_will_do = {
-			base = 0
-		}
-		available_if_capitulated = yes
-		search_filters = {  }
-		completion_reward = {
-	         47 = {
-			 add_extra_state_shared_building_slots = 2
-                add_building_construction = {
-                    type = arms_factory
-                    level = 1
-                    instant_build = yes
-                }
-            add_building_construction = {
-			type = 	dockyard
-			level = 1
-			instant_build = yes
-					}
-				}
-			}
-		}
-	
+
 		focus = { 
 		id = GRE_oilive_oil_export
 		icon = GFX_GRE_Greek_Enonis_Under_The_Olive_Branch
-		prerequisite = { focus = GRE_prepare_for_the_future}
+		prerequisite = { focus = GRE_first_five_year_plan}
 		available = {
 		}
-		x = 3
+		x = -5
 		y = 1
-		relative_position_id = GRE_prepare_for_the_future
+		relative_position_id = GRE_first_five_year_plan
 		cost = 5
 			ai_will_do = {
 			base = 0
@@ -2299,12 +2599,12 @@ focus = {
 		focus = { 
 		id = GRE_land_reform
 		icon = GFX_focus_generic_farmland
-        prerequisite = { focus = GRE_prepare_for_the_future}
+        prerequisite = { focus = GRE_first_five_year_plan}
 		available = {
 		}
-		x = 1
+		x = 3
 		y = 1
-		relative_position_id = GRE_prepare_for_the_future
+		relative_position_id = GRE_first_five_year_plan
 		cost = 5
 			ai_will_do = {
 			base = 0
@@ -2341,12 +2641,12 @@ focus = {
 		focus = { 
 		id = GRE_remilitarize_the_economy
 		icon = GFX_focus_GRE_industrialize_athens
-        prerequisite = { focus = GRE_prepare_for_the_future}
+        prerequisite = { focus = GRE_first_five_year_plan}
 		available = {
 		}
-		x = -1
+		x = 5
 		y = 1
-		relative_position_id = GRE_prepare_for_the_future
+		relative_position_id = GRE_first_five_year_plan
 		cost = 4
 			ai_will_do = {
 			base = 0
@@ -2360,12 +2660,12 @@ focus = {
 		focus = { 
 		id = GRE_industrial_improvements
 		icon =	GFX_focus_CHL_domestic_production_of_the_willys_mb
-        prerequisite = { focus = GRE_prepare_for_the_future}
+        prerequisite = { focus = GRE_first_five_year_plan}
 		available = {
 		}
 		x = -3
 		y = 1
-		relative_position_id = GRE_prepare_for_the_future
+		relative_position_id = GRE_first_five_year_plan
 		cost = 5
 			ai_will_do = {
 			base = 0
@@ -2392,13 +2692,32 @@ focus = {
 		    }
 		}
 		focus = { 
+		id = GRE_increase_greek_productivity
+		icon = GFX_focus_generic_public_works
+        prerequisite = { focus =GRE_industrial_improvements }
+		available = {
+		}
+		x = 0
+		y = 1
+		relative_position_id =GRE_industrial_improvements
+		cost = 5
+			ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	         add_ideas = GRE_increase_greek_productivity_idea
+		    }
+		}
+		focus = { 
 		id = GRE_develop_epirus
 		icon = GFX_focus_GRE_support_farmersn
-        prerequisite = { focus = GRE_industrial_improvements }
+        prerequisite = { focus = GRE_increase_greek_productivity }
 		
 		x = 0
 		y = 1
-		relative_position_id = GRE_industrial_improvements
+		relative_position_id = GRE_increase_greek_productivity
 		cost = 5
 			ai_will_do = {
 			base = 0
@@ -2421,35 +2740,17 @@ focus = {
 			 }
 		    }
 		}
-		focus = { 
-		id = GRE_increase_greek_productivity
-		icon = GFX_focus_generic_public_works
-        prerequisite = { focus =GRE_develop_epirus }
-		available = {
-		}
-		x = 0
-		y = 1
-		relative_position_id =GRE_develop_epirus
-		cost = 5
-			ai_will_do = {
-			base = 0
-		}
-		available_if_capitulated = yes
-		search_filters = {  }
-		completion_reward = {
-	         add_ideas = GRE_increase_greek_productivity_idea
-		    }
-		}
+
 		
 		focus = { 
 		id = GRE_develop_our_islands
 		icon = GFX_focus_GRE_islanddev
-        prerequisite = { focus = GRE_increase_greek_productivity }
+        prerequisite = { focus = GRE_develop_epirus }
 		available = {
 		}
 		x = 0
 		y = 1
-		relative_position_id = GRE_increase_greek_productivity
+		relative_position_id = GRE_develop_epirus
 		cost = 10
 			ai_will_do = {
 			base = 0
@@ -2532,7 +2833,27 @@ focus = {
 			}
 		    }
 		}
-		
+		focus = { 
+		id = GRE_tourist_industry
+		icon = GFX_focus_GRE_encourage_tourism
+        prerequisite = { focus = GRE_develop_our_islands }
+		prerequisite = { focus = Piraeus_city_of_wealth }
+		available = {
+		}
+		x = -1
+		y = 1
+		relative_position_id = GRE_develop_our_islands
+		cost = 5
+			ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	        add_ideas = GRE_booming_tourism2
+		    }
+		}
+				
 		focus = { 
 		id = GRE_Militarize_consantinople
 		icon = GFX_focus_TUR_the_montreux_convention
@@ -2873,20 +3194,37 @@ focus = {
 	     add_ideas = GRE_naval_capital_of_the_balkans_idea
 			}
 		}
-		focus = { 
-		id = the_greek_golden_age
-		icon = GFX_focus_GRE_following_in_the_footsteps_of_giants
-		prerequisite = {focus = Piraeus_city_of_wealth}
-		prerequisite = {focus = GRE_build_university_of_athens}
-		prerequisite = {focus = GRE_Wartime_industries }
-		prerequisite = {focus = GRE_develop_our_islands }
+	focus = { 
+		id = GRE_balkan_central_bank
+		icon =GFX_focus_BUL_the_unification_of_the_balkans
+		prerequisite = { focus = GRE_build_university_of_athens }
+		prerequisite = { focus = GRE_Wartime_industries }
 		available = {
 		}
-		x = -3
+		x = 1
+		y = 1
+		relative_position_id = GRE_build_university_of_athens
+		cost = 5
+			ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		add_ideas = GRE_central_balkan_bank_wealthy_greece
+			}
+		}
+		focus = { 
+		id = GRE_the_greek_golden_age
+		icon = GFX_focus_GRE_hellas_herself
+		
+		available = {
+		}
+		x = 0
 		y = 1
 		cancelable = no
-       
-		relative_position_id = Piraeus_city_of_wealth
+        prerequisite = { focus = GRE_stabilization_of_drachma }
+		relative_position_id = GRE_stabilization_of_drachma
 		select_effect = {
 			remove_ideas = GRE_naval_capital_of_the_balkans_idea
 		    remove_ideas = GRE_tax_incentives_idea
@@ -2924,6 +3262,19 @@ focus = {
 		search_filters = {  }
 		completion_reward = {
 	         add_timed_idea = { idea = GRE_five_year_plan_idea days = 1825}
+			   47 = {
+			 add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            add_building_construction = {
+			type = 	dockyard
+			level = 1
+			instant_build = yes
+					}
+				}
 		    }
 		}
 			focus = {
@@ -2977,12 +3328,12 @@ add_ideas = GRE_strong_trains
 		id = GRE_roads
 		icon = GFX_focus_generic_road_investment
 
-		prerequisite = { focus = GRE_first_five_year_plan} 
+		prerequisite = { focus = GRE_increase_greek_productivity} 
 
   		available = { }
-		x = -2
+		x = 2
 		y = 1
-		relative_position_id = GRE_first_five_year_plan
+		relative_position_id = GRE_increase_greek_productivity
 		cost = 5
 		ai_will_do = {
 			base = 1
@@ -3033,13 +3384,13 @@ add_ideas = GRE_trade_fleet
 		id = GRE_aegean_oil	
 		icon = GFX_focus_GRE_oil
 
-		prerequisite = { focus = GRE_first_five_year_plan} 
+		prerequisite = { focus = GRE_diverse_markets} 
 
   		available = { }
-		x = 2
+		x = -2
 		y = 1
-		relative_position_id = GRE_first_five_year_plan
-		cost = 10
+		relative_position_id = GRE_diverse_markets
+		cost = 5
 		ai_will_do = {
 			base = 1
 		}
@@ -3065,7 +3416,7 @@ add_ideas = GRE_trade_fleet
 		x = 0
 		y = 1
 		relative_position_id = GRE_aegean_oil
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			base = 1
 		}
@@ -3089,15 +3440,14 @@ add_ideas = GRE_trade_fleet
 	
 	focus = {
 		id = GRE_fake_reports
-		icon = GFX_focus_GRE_economic_crisis
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
 
 		prerequisite = { focus = GRE_cyprus_oil} 
-prerequisite = { focus = GRE_merchant_fleet}
-prerequisite = { focus = GRE_pan_hellenic_rail_way}  
+
   		available = { }
-		x = -2
+		x = 0
 		y = 1
-		relative_position_id = GRE_cyprus_oil
+		relative_position_id = GRE_pan_hellenic_rail_way
 		cost = 5
 		ai_will_do = {
 			base = 1
@@ -3112,11 +3462,12 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 	focus = {
 		id = GRE_drachma_reevaluation
 		icon = GFX_focus_GRE_drachma
-
+prerequisite = { focus = GRE_merchant_fleet}
+prerequisite = { focus = GRE_pan_hellenic_rail_way}  
 		prerequisite = { focus = GRE_fake_reports} 
   		available = { }
 		x = 0
-		y = 1
+		y = 3
 		relative_position_id = GRE_fake_reports
 		cost = 5
 		ai_will_do = {
@@ -3132,7 +3483,8 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 	focus = {
 		id = GRE_stabilization_of_drachma
 		icon = GFX_focus_GRE_drachma_in_bag
-
+        prerequisite = { focus = GRE_tourist_industry} 
+		prerequisite = { focus = GRE_balkan_central_bank} 
 		prerequisite = { focus = GRE_drachma_reevaluation} 
   		available = { }
 		x = 0

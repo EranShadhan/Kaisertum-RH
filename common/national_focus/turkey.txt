@@ -21,8 +21,9 @@ focus_tree = {
 focus = {
     id = TUR_finish_reconstruction
     icon = GFX_goal_generic_construct_infrastructure
-    x = 50
+    x = 25
     y = 0
+	relative_position_id = TUR_start_of_a_new_decade
     cost = 5
 
     available = {
@@ -44,7 +45,7 @@ focus = {
 
 focus = {
     id = TUR_industrialization_at_last
-    icon = GFX_focus_generic_industrialists
+    icon = GFX_focus_generic_full_employment
     prerequisite = { focus = TUR_finish_reconstruction }
     x = -3
     y = 1
@@ -71,7 +72,7 @@ focus = {
 
 focus = { # CAPITAL
     id = TUR_greater_engürü_plan
-    icon = GFX_focus_develop_engürü
+    icon = GFX_focus_spa_the_spanish_miracle
     prerequisite = { focus = TUR_industrialization_at_last }
     x = -3
     y = 1
@@ -173,6 +174,12 @@ focus = { # CAPITAL
 		add_timed_idea = {
     		idea = TUR_temp_construction
     		days = 180
+		}
+
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 1
+			category = construction_tech
 		}
 	}
     ai_will_do = {
@@ -455,10 +462,9 @@ focus = { # CAPITAL
 focus = { # CAPITAL
     id = TUR_the_jewel_of_turkey
     icon = GFX_TUR_the_jewel_of_turkey
-    prerequisite = { focus = TUR_connect_the_eastern_regions }
-	prerequisite = { focus = TUR_connect_the_western_regions }
+    prerequisite = { focus = TUR_connect_the_eastern_regions focus = TUR_connect_the_western_regions }
     prerequisite = { focus = TUR_open_the_OSTIM_industrial_park }
-    x = 0
+    x = 1
     y = 1
     relative_position_id = TUR_connect_the_eastern_regions
     cost = 10
@@ -484,9 +490,36 @@ focus = { # CAPITAL
 			49 = {
 				increase_state_category = yes
 			}
+
+			add_stability = 0.05
 		}
 
         # TODO: Upgrades industrial related national spirit
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+} 
+
+focus = { # CAPITAL
+    id = TUR_open_the_university_of_engürü
+    icon = GFX_focus_generic_university_2
+    prerequisite = { focus = TUR_connect_the_eastern_regions }
+    prerequisite = { focus = TUR_connect_the_western_regions }
+	prerequisite = { focus = TUR_the_jewel_of_turkey }
+    x = -1
+    y = 2
+    relative_position_id = TUR_connect_the_eastern_regions
+    cost = 10
+
+    available = {
+
+    }
+
+    completion_reward = { # Gives +1 research slot
+		add_research_slot = 1
     }
 
     ai_will_do = {
@@ -623,6 +656,30 @@ focus = { # INDUSTRIALIZATION
 }
 
 focus = { # INDUSTRIALIZATION
+    id = TUR_modernized_railways
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_invite_the_Kaiserbahn_to_turkey }
+    x = 1
+    y = 1
+    relative_position_id = TUR_invite_the_Kaiserbahn_to_turkey
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # Upgrades german company national spirit, giving -15% cost to trains.
+        # Unlocks decisions to build new railways in industrialization tab.
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = { # INDUSTRIALIZATION
     id = TUR_german_efficency
     icon = thisgfxiswrong
     prerequisite = { focus = TUR_worker_exchange_programs }
@@ -670,6 +727,30 @@ focus = { # INDUSTRIALIZATION
 }
 
 focus = { # INDUSTRIALIZATION
+    id = TUR_prussian_education
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_western_standards }
+	prerequisite = { focus = TUR_modernized_railways }
+    x = -1
+    y = 2
+    relative_position_id = TUR_western_standards
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = {
+        # +1 research slot, gives research bonuses
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = { # INDUSTRIALIZATION
     id = TUR_russian_industrial_base
     icon = thisgfxiswrong
     prerequisite = { focus = TUR_fruits_of_competition }
@@ -694,7 +775,7 @@ focus = { # INDUSTRIALIZATION
 
 focus = { # INDUSTRIALIZATION
     id = TUR_expand_chromium_mining
-    icon = thisgfxiswrong
+    icon = GFX_TUR_focus_generic_chromium
     prerequisite = { focus = TUR_russian_industrial_base }
     x = -1
     y = 1
@@ -705,8 +786,22 @@ focus = { # INDUSTRIALIZATION
 
     }
 
-    completion_reward = {
-        # Gives chromium in some states
+    completion_reward = { # Gives chromium in some states
+		add_resource = {
+			type = chromium
+			amount = 16
+			state = 340
+		}
+		add_resource = {
+			type = chromium
+			amount = 12
+			state = 343
+		}
+		add_resource = {
+			type = chromium
+			amount = 6
+			state = 348
+		}
     }
     ai_will_do = {
         factor = 5
@@ -727,9 +822,13 @@ focus = { # INDUSTRIALIZATION
 
     }
 
-    completion_reward = {
-        # Gives steel in the northest state of turkey
-        # Unlocks decision to further expand the mine
+    completion_reward = { # Gives steel in the northest state of turkey       
+		add_resource = {
+			type = steel
+			amount = 24
+			state = 356
+		}
+		#TODO: Unlocks decision to further expand the mine
     }
 
     ai_will_do = {
@@ -739,8 +838,8 @@ focus = { # INDUSTRIALIZATION
 }
 
 focus = { # INDUSTRIALIZATION
-    id = TUR_leave_no_rocks_untouched
-    icon = thisgfxiswrong
+    id = TUR_leave_no_rocks_unturned
+    icon = GFX_goal_generic_construction2
     prerequisite = { focus = TUR_open_the_eti_mine }
     x = 0
     y = 1
@@ -819,7 +918,7 @@ focus = {
 
 focus = {
     id = TUR_mechanize_the_farms
-    icon = thisgfxiswrong
+    icon = GFX_focus_SWE_per_albin_bus
     prerequisite = { focus = TUR_commericalize_agriculture }
     x = -1
     y = 1
@@ -843,7 +942,7 @@ focus = {
 
 focus = {
     id = TUR_provide_loans_to_farmers
-    icon = thisgfxiswrong
+    icon = GFX_focus_mex_privatisation
     prerequisite = { focus = TUR_commericalize_agriculture }
     prerequisite = { focus = TUR_central_bank_of_the_sultanate }
     x = 1
@@ -880,9 +979,20 @@ focus = {
 
     }
 
-    completion_reward = {
-        # gives +1 industrial park
-        # gives another small to consumer goods factor decrease
+    completion_reward = {  # gives +1 industrial park
+		random_core_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+       
+        #TODO: gives another small to consumer goods factor decrease
     }
 
     ai_will_do = {
@@ -904,8 +1014,18 @@ focus = {
 
     }
 
-    completion_reward = {
-        # gives +1 industrial park
+    completion_reward = { # gives +1 industrial park
+		random_core_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
     }
 
     ai_will_do = {
@@ -1012,7 +1132,7 @@ focus = {
 
 focus = {
     id = TUR_central_bank_of_the_sultanate
-    icon = thisgfxiswrong
+    icon = GFX_focus_generic_improve_the_administration
     prerequisite = { focus = TUR_great_leap_forwards }
     x = 0
     y = 1
@@ -1035,7 +1155,7 @@ focus = {
 
 focus = {
     id = TUR_tame_the_land
-    icon = thisgfxiswrong
+    icon = GFX_focus_CHL_expand_the_forestry
     prerequisite = { focus = TUR_great_leap_forwards }
     x = 2
     y = 1
