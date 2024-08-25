@@ -93,8 +93,12 @@ news_event = {
 
     trigger = {
         OR = {
-            4 = { is_controlled_by = HUN is_owned_by = AUS }
-            9 = { is_controlled_by = Ger is_owned_by = AUS }
+            4 = { is_controlled_by = HUN 
+				is_owned_by = AUS 
+			}
+            9 = { is_controlled_by = GER 
+				is_owned_by = AUS
+		 	}
             surrender_progress > 0.25
         }
 

@@ -8,7 +8,7 @@ UKR_red_prince = {
 
 ROM_playboy_king = {
 	random = no
-	stability_weekly = -0.001
+	stability_weekly = -0.01
 	consumer_goods_factor = 0.15
 	political_power_gain = 0.5
 }

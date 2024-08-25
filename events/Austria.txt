@@ -95,6 +95,8 @@ country_event = {
 					}
 				}
 				set_cosmetic_tag = 0
+				white_peace = POL
+				white_peace = UKR
 				white_peace = GER
 			}
 			76 = {
@@ -261,6 +263,10 @@ country_event = {
 			transfer_state = 74
 			transfer_state = 69
 			transfer_state = 102
+			annex_country = {
+				country = AUS
+				transfer_troops = no
+			}
 		}
 
 		POL = {
@@ -345,7 +351,15 @@ country_event = {
 
 		hidden_effect = {
 			HUN = {
-					add_ideas = HUN_debuff
+					
+					if = {
+						limit = { HUN = { is_ai = yes } }
+						add_ideas = HUN_debuff
+					}
+					if = {
+						limit = { HUN = { is_ai = no } }
+						add_ideas = HUN_buff
+					}
 				transfer_state = 982
 				white_peace = GER
 				982 = {
@@ -413,59 +427,6 @@ country_event = {
 					value = 200
 				}	}
               				
-			}
-		}
-	}
-}
-country_event = {
-	id = austria.7
-	title = austria.7.t
-	desc = austria.7.d
-	picture = GFX_report_event_second_vienna_award_pact
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = austria.7.a
-		hidden_effect = {
-			ENG {
-					remove_from_faction = IRE
-			}
-			NIR {
-				country_event = { days = 2 id = austria.9 }
-			}
-			IRE {
-				country_event = { days = 1 id = austria.8 }
-			}
-			NIR = {
-				transfer_state = 134
-				transfer_state = 135
-				load_oob = NIR_1932
-				set_politics = {
-					ruling_party = communism
-					elections_allowed = no
-					election_frequency = 48
-				}
-				add_popularity = {
-					ideology = communism
-					popularity = 1
-				}
-				declare_war_on = {
-					target = IRE
-					type = annex_everything
-				}
-			}
-			113 = {
-				add_core_of = NIR
-			}
-			119 = {
-			add_core_of = NIR
-			}
-			134 = {
-				add_core_of = NIR
-			}
-			135 = {
-				add_core_of = NIR
 			}
 		}
 	}

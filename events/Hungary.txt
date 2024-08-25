@@ -81,6 +81,7 @@ country_event = {
 				release = SLO
 				remove_ideas = {
 					HUN_debuff
+					HUN_buff
 				}
 			}
 
@@ -209,6 +210,11 @@ country_event = {
 
 			white_peace = GRE
 			white_peace = BUL
+
+			remove_ideas = {
+				HUN_debuff
+				HUN_buff
+			}
 			
 		}
 
@@ -216,6 +222,23 @@ country_event = {
 			dismantle_faction = yes
 		}
 
+		BUL = {
+			remove_ideas = {
+				against_hungary
+			}
+		}
+
+		GRE = {
+			remove_ideas = {
+				against_hungary
+			}
+		}
+
+		ROM = {
+			remove_ideas = {
+				against_hungary
+			}
+		}
 
 		
 

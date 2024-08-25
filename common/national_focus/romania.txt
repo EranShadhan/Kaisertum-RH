@@ -789,7 +789,8 @@ focus = {
 		
 
 		completion_reward = {
-			
+			add_political_power = 75
+			add_stability = 0.05
 		}
 }
 
@@ -827,7 +828,11 @@ focus = {
 		
 
 		completion_reward = {
-			
+			add_political_power = 75
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
 		}
 }
 
@@ -863,7 +868,11 @@ focus = {
 		
 
 		completion_reward = {
-			
+			add_political_power = 75
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
 		}
 }
 
@@ -899,7 +908,11 @@ focus = {
 		
 
 		completion_reward = {
-			
+			add_political_power = 75
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
 		}
 }
 
