@@ -176,7 +176,7 @@ focus_tree = {
 		}	
 	focus = {
 		id = GRE_spartans
-		icon = GFX_focus_GRE_reviving_the_spartan_warrior_spirit
+		icon = GFX_GRE_Spartans_march
 
 		
 		available = {
@@ -408,7 +408,7 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = 5
+		x = 6
 		y = 1
         prerequisite = { focus = GRE_national_education focus = GRE_reform_education}
 		relative_position_id = GRE_national_education
@@ -579,7 +579,7 @@ has_country_flag = nationa_schism_part2
 		}	
 	focus = {
 		id = GRE_operation_greco
-		icon = GFX_
+		icon = GFX_GRE_operation_greco_shine
 
 		
 		available = {
@@ -601,7 +601,7 @@ has_country_flag = nationa_schism_part2
 		}	
 	focus = {
 		id = GRE_second_macedonia_race
-		icon = GFX_
+		icon = GFX_focus_GRE_unify_maced
 
 		
 		available = {
@@ -623,7 +623,7 @@ has_country_flag = nationa_schism_part2
 		}
 	focus = {
 		id = GRE_thracian_unification
-		icon = GFX_
+		icon = GFX_focus_GRE_after_thrace
 
 		
 		available = {
@@ -645,7 +645,7 @@ has_country_flag = nationa_schism_part2
 		}	
 	focus = {
 		id = GRE_king_zog_great_scam
-		icon = GFX_
+		icon = GFX_GRE_annex_northern_epirus
 
 		
 		available = {
@@ -667,7 +667,7 @@ has_country_flag = nationa_schism_part2
 		}	
 	focus = {
 		id = GRE_reclaim_the_mithriatic
-		icon = GFX_
+		icon = GFX_GRE_pontus
 
 		
 		available = {
@@ -689,7 +689,7 @@ has_country_flag = nationa_schism_part2
 		}			
 	focus = {
 		id = GRE_ratify_serves_front
-		icon = GFX_
+		icon = GFX_focus_focus_fra_ratify_stresa
 
 		
 		available = {
@@ -711,7 +711,7 @@ has_country_flag = nationa_schism_part2
 		}		
 	focus = {
 		id = GRE_magna_graecia
-		icon = GFX_
+		icon = GFX_focus_ITA_southern_industry
 
 		
 		available = {
@@ -733,7 +733,7 @@ has_country_flag = nationa_schism_part2
 		}
 	focus = {
 		id = GRE_city_of_respect
-		icon = GFX_
+		icon = GFX_focus_SOV_reinforce_southern_naval_bases
 
 		
 		available = {
@@ -752,6 +752,31 @@ has_country_flag = nationa_schism_part2
 	
 		    }
 			
+		}	
+	focus = {
+		id = GRE_metaxas_project_megisti_idea
+		icon = GFX_GRE_megali
+
+		
+		available = {
+		}
+		x = -2
+		
+		y = 1
+		 prerequisite = { focus = GRE_reclaim_the_mithriatic }
+        prerequisite = { focus = GRE_city_of_respect }
+		prerequisite = { focus = GRE_thracian_unification }
+		relative_position_id = GRE_city_of_respect
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+			
 		}			
 	focus = {
 		id = GRE_recruit_the_fascists_eee
@@ -760,7 +785,7 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = -1
+		x = -4
 		y = 1
 		mutually_exclusive = { focus = GRE_appease_the_people }
         prerequisite = { focus = GRE_national_education focus = GRE_reform_education}
@@ -775,18 +800,464 @@ has_country_flag = nationa_schism_part2
 	
 		    }
 		}	
+
 	focus = {
-		id = GRE_host_a_parade
-		icon = GFX_focus_BRA_anaue
+		id = GRE_merge_the_parties
+		icon = GFX_GRE_merge_the_parties
+
+		
+		available = {
+		}
+		x = -1
+		y = 1
+        prerequisite = { focus = GRE_recruit_the_fascists_eee }
+		relative_position_id = GRE_recruit_the_fascists_eee
+		mutually_exclusive = { focus = GRE_crush_the_other }
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+		}	
+	focus = {
+		id = GRE_tame_the_beast
+		icon = GFX_focus_TUR_loosen_the_laws_on_secularism
+
+		
+		available = {
+		}
+		x = 1
+		y = 1
+        prerequisite = { focus = GRE_merge_the_parties focus = GRE_crush_the_other}
+		relative_position_id = GRE_merge_the_parties
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+		}
+	
+	focus = {
+		id = GRE_deimos_and_fobos
+		icon = GFX
 
 		
 		available = {
 		}
 		x = 0
 		y = 1
-		mutually_exclusive = { focus = GRE_recruit_the_fascists_eee }
-        prerequisite = { focus = GRE_recruit_the_fascists_eee}
+        prerequisite = { focus = GRE_tame_the_beast }
+		relative_position_id = GRE_tame_the_beast
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+		}			
+		focus = {
+		id = GRE_loyalty_to_moscow	
+		icon = GFX_focus_SOV_third_rome
+
+		
+		available = {
+		}
+		x = -1
+		y = 1
+        prerequisite = { focus = GRE_merge_the_parties}
+		relative_position_id = GRE_merge_the_parties
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+		}	
+			focus = {
+		id = GRE_the_eagle_over_europe
+		icon = GFX_focus_generic_spread_fascism
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_loyalty_to_moscow focus = GRE_tame_the_beast}
+		relative_position_id = GRE_loyalty_to_moscow
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+		}	
+
+		focus = {
+		id = GRE_my_brother_keeper
+		icon = GFX_focus_SOV_my_brothers_keeper
+
+		
+		available = {
+		}
+		x = -2
+		y = 1
+        prerequisite = { focus = GRE_loyalty_to_moscow}
+		relative_position_id = GRE_loyalty_to_moscow
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+		}	
+		focus = {
+		id = GRE_allies_in_the_americas
+		icon = GFX_focus_SOV_ivan_plays_baseball
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_my_brother_keeper}
+		relative_position_id = GRE_my_brother_keeper
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+		}		
+		focus = {
+		id = GRE_support_the_alaska_claim
+		icon = GFX_focus_SOV_old_eastern_empire
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_allies_in_the_americas}
+		relative_position_id = GRE_allies_in_the_americas
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+		}
+		focus = {
+		id = GRE_split_ruthenia
+		icon = GFX_focus_SOV_free_Rutenia
+
+		
+		available = {
+		}
+		x = 1
+		y = 1
+        prerequisite = { focus = GRE_support_the_alaska_claim focus = GRE_protect_the_pacific_from_japanese_communism}
+		relative_position_id = GRE_support_the_alaska_claim
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+		}		
+				focus = {
+		id = GRE_march_into_central_asia
+		icon = GFX_
+
+		
+		available = {
+		}
+		x = 2
+		y = 1
+        prerequisite = { focus = GRE_my_brother_keeper}
+		relative_position_id = GRE_my_brother_keeper
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+		}		
+		focus = {
+		id = GRE_protect_the_pacific_from_japanese_communism
+		icon = GFX_focus_SOV_pacific_empire
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_march_into_central_asia}
+		relative_position_id = GRE_march_into_central_asia
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+		}		
+	
+	focus = {
+		id = GRE_crush_the_other
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+
+		
+		available = {
+		}
+		x = 1
+		y = 1
+        prerequisite = { focus = GRE_recruit_the_fascists_eee }
 		relative_position_id = GRE_recruit_the_fascists_eee
+		mutually_exclusive = { focus = GRE_merge_the_parties }
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+		}	
+	focus = {
+		id = GRE_the_global_falangism_movement
+		icon = GFX_focus_POL_support_global_falangism
+
+		
+		available = {
+		}
+		x = 1
+		y = 1
+        prerequisite = { focus = GRE_crush_the_other}
+		relative_position_id = GRE_crush_the_other
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+     }
+	focus = {
+		id = GRE_prioritize_mils
+		icon = GFX_focus_SWE_defense_act
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_the_global_falangism_movement  focus = GRE_tame_the_beast}
+		relative_position_id = GRE_the_global_falangism_movement
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+		}		
+		focus = {
+		id = GRE_true_heirs_of_the_empire
+		icon = GFX_focus_SOV_the_true_tsars
+
+		
+		available = {
+		}
+		x = 2
+		y = 1
+        prerequisite = { focus = GRE_the_global_falangism_movement}
+		relative_position_id = GRE_the_global_falangism_movement
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+		}		
+			focus = {
+		id = GRE_pan_romanism
+		icon = GFX_focus_SOV_panslavic_nationalism
+
+		
+		available = {
+		}
+		x = 1
+		y = 1
+        prerequisite = { focus = GRE_true_heirs_of_the_empire}
+		relative_position_id = GRE_true_heirs_of_the_empire
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+		}
+			focus = {
+		id = GRE_lock_the_door_pwease
+		icon = GFX_
+
+		
+		available = {
+		}
+		x = -2
+		y = 1
+        prerequisite = { focus = GRE_true_heirs_of_the_empire}
+		relative_position_id = GRE_true_heirs_of_the_empire
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+		}
+			focus = {
+		id = GRE_the_glory_of_byzantium
+		icon = GFX_focus_GRE_reviving_the_double_headed_eagle
+
+		
+		available = {
+		}
+		x = -1
+		y = 1
+        prerequisite = { focus = GRE_lock_the_door_pwease}
+		relative_position_id = GRE_lock_the_door_pwease
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+		}
+			focus = {
+		id = GRE_reunite_the_themata
+		icon = GFX_
+
+		
+		available = {
+		}
+		x = 1
+		y = 1
+        prerequisite = { focus = GRE_lock_the_door_pwease}
+		relative_position_id = GRE_lock_the_door_pwease
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+		}	
+	focus = {
+		id = GRE_attack_arabia_and_egypt
+		icon = GFX_
+
+		
+		available = {
+		}
+		x = 1
+		y = 1
+        prerequisite = { focus = GRE_the_glory_of_byzantium focus = GRE_reunite_the_themata}
+		relative_position_id = GRE_the_glory_of_byzantium
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+		}			
+			focus = {
+		id = GRE_ask_for_caucasus
+		icon = GFX_focus_SOV_transcaucasian_republic
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_pan_romanism}
+		relative_position_id = GRE_pan_romanism
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+		}	
+			focus = {
+		id = GRE_roman_gloty
+		icon = GFX
+
+		
+		available = {
+		}
+		x = 3
+		y = 1
+        prerequisite = { focus = GRE_split_ruthenia focus = GRE_attack_arabia_and_egypt}
+		relative_position_id = GRE_split_ruthenia
 		cost = 3.5
 		ai_will_do = {
 			base = 0
@@ -1150,8 +1621,8 @@ has_country_flag = nationa_schism_part2
 		}
 	}	
 	focus = {
-		id = GRE_royal_hellenic_airforce
-		icon = GFX_focus_GRE_air
+		id = GRE_hellenic_armed_forces
+		icon = GFX_focus_GRE_hellenic_armed_forces
 
 		
 		available = {
@@ -1159,6 +1630,28 @@ has_country_flag = nationa_schism_part2
 		x = 25
 		y = 0
 
+		cost = 10
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	         air_experience = 125
+		    }
+		}	
+	
+	focus = {
+		id = GRE_royal_hellenic_airforce
+		icon = GFX_focus_GRE_air
+
+		
+		available = {
+		}
+		x = 8
+		y = 1
+        relative_position_id = GRE_hellenic_armed_forces
+		prerequisite = { focus = GRE_hellenic_armed_forces }
 		cost = 10
 		ai_will_do = {
 			base = 0
@@ -1717,9 +2210,10 @@ focus = {
 		
 		available = {
 		}
-		x = 15
-		y = 0
-
+		x = -8
+		y = 1
+  relative_position_id = GRE_hellenic_armed_forces
+	prerequisite = { focus = GRE_hellenic_armed_forces }
 		cost = 10
 		ai_will_do = {
 			base = 0
@@ -2146,9 +2640,10 @@ focus = {
 		
 		available = {
 		}
-		x = 5
-		y = 0
-
+		x = 0
+		y = 1
+  relative_position_id = GRE_hellenic_armed_forces
+	prerequisite = { focus = GRE_hellenic_armed_forces }
 		cost = 10
 		ai_will_do = {
 			base = 0
@@ -2883,7 +3378,7 @@ focus = {
 
 		focus = { 
 		id = paying_off_our_debts
-		icon = GFX_focus_GRE_reevaluating_the_drachma
+		icon = GFX_focus_ETH_adopt_the_lira
        Prerequisite = { focus = GRE_Militarize_consantinople }
 		available = {
 		}
@@ -3490,7 +3985,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		x = 0
 		y = 1
 		relative_position_id = GRE_drachma_reevaluation
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			base = 1
 		}
@@ -3938,8 +4433,8 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
     }		
 	
 		focus = {
-		id = GRE_secure_access_to_blacksea
-		icon = GFX_focus_SOV_reinforce_southern_naval_bases
+		id = GRE_secure_access_to_redsea
+		icon = GFX_focus_generic_the_suez
         prerequisite = { focus = GRE_mine }
 		relative_position_id = GRE_mine
   		available = { }

@@ -75,6 +75,38 @@ spriteTypes = {
 		name = "GFX_focus_GRE_hellas_herself"
 		texturefile = "gfx/interface/goals/GRE/GRE_hellas_herself.dds"
 	}
+		spriteType = {
+		name = "GFX_GRE_operation_greco"
+		texturefile = "gfx/interface/goals/GRE/GRE_operation_greco.dds"
+	}
+	spriteType = {
+		name = "GFX_GRE_Spartans_march"
+		texturefile = "gfx/interface/goals/GRE/GRE_Spartans_march.dds"
+	}
+	spriteType = {
+		name = "GFX_GRE_megali"
+		texturefile = "gfx/interface/goals/GRE/GRE_megali.dds"
+	}
+	spriteType = {
+		name = "GFX_GRE_merge_the_parties"
+		texturefile = "gfx/interface/goals/GRE/GRE_merge_the_parties.dds"
+	}
+		spriteType = {
+		name = "GFX_focus_GRE_after_thrace"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_after_thrace.dds"
+	}
+		spriteType = {
+		name = "GFX_focus_GRE_unify_maced"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_unify_maced.dds"
+	}
+		spriteType = {
+		name = "GFX_GRE_annex_northern_epirus"
+		texturefile = "gfx/interface/goals/GRE/GRE_annex_northern_epirus.dds"
+	}
+		spriteType = {
+		name = "GFX_GRE_pontus"
+		texturefile = "gfx/interface/goals/GRE/GRE_pontus.dds"
+	}
 	spriteType = {
 		name = "GFX_GRE_naval_power"
 		texturefile = "gfx/interface/goals/GRE/GRE_naval_power.dds"

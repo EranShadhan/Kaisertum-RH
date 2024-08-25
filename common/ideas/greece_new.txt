@@ -922,7 +922,8 @@ ideas = {
 			removal_cost = -1
 				
 			modifier = {
-				consumer_goods_expected_value = -0.075
+				consumer_goods_expected_value = -0.05
+				political_power_factor =0.1
 			}
 		}
 		GRE_booming_tourism2 = {
@@ -1175,7 +1176,7 @@ allowed = {
         	modifier = {
                 industrial_capacity_factory = 0.05
         		global_building_slots_factor = 0.05
-				consumer_goods_expected_value = -0.05
+				consumer_goods_expected_value = -0.02
                 production_speed_buildings_factor = 0.05
                 political_power_gain = -0.05			
        		}
@@ -1190,8 +1191,8 @@ allowed = {
         	modifier = {
                 industrial_capacity_factory = 0.075
         		global_building_slots_factor = 0.075
-				consumer_goods_expected_value = -0.05
 				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.02
                 production_speed_buildings_factor = 0.075
                 political_power_gain = 0.1		
        		}
