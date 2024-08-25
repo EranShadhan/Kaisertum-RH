@@ -17,7 +17,44 @@ characters={
 			id=-1
 		}
 	}
-
+ GRE_markos_vafiadis={
+			allowed={ 	original_tag = GRE }
+			name=GRE_markos_vafiadis
+			portraits={
+				army={
+					large="GFX_portrait_GRE_markos_vafiadis"
+					small=GFX_portrait_GRE_markos_vafiadis_small
+				}
+				civilian={
+					large=GFX_portrait_GRE_markos_vafiadis
+				}
+			}
+			advisor={
+				slot = political_advisor
+				idea_token = GRE_markos_vafiadis
+				allowed = {
+					
+						original_tag = GRE
+				
+				}
+				available = {
+						original_tag = GRE
+					
+				}
+				traits = {
+					guerilla_warfare_expert 
+					
+				}
+			}
+		country_leader={
+			ideology=marxism
+			traits={ reluctant_stalinist 
+			guerilla_warfare_expert}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	
+	}
 	GRE_nikos_zachariadis={
 		name=GRE_nikos_zachariadis
 		portraits={
@@ -25,12 +62,7 @@ characters={
 				large="GFX_portrait_gre_nikos_zachariadis"
 			}
 		}
-		country_leader={
-			ideology=stalinism
-			traits={ reluctant_stalinist }
-			expire="1965.1.1.1"
-			id=-1
-		}
+		
 	}
 	GRE_georgios_kosmidis={
 		name=GRE_georgios_kosmidis

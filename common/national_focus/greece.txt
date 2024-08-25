@@ -1420,8 +1420,67 @@ has_country_flag = nationa_schism_part2
 		    }
 		}
 
+	focus = {
+		id = GRE_manipulate_the_political_theater
+		icon = GFX_focus_ARG_keep_it_in_the_party
 
+		
+		available = {
+		}
+		x = 2
+		y = 1
+        prerequisite = { focus = GRE_cooperate_with_the_raf }
+		prerequisite = { focus = GRE_invite_a_german_woman  }
+		relative_position_id = GRE_cooperate_with_the_raf
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}
+	focus = {
+		id = GRE_drink_an_espresso_with_eng_and_ger
+		icon = GFX_focus_BRA_cafe_com_leite_politics
 
+		
+		available = {
+		}
+		x = 1
+		y = 1
+        prerequisite = { focus = GRE_manipulate_the_political_theater }
+		relative_position_id = GRE_manipulate_the_political_theater
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}
+	focus = {
+		id = GRE_fascistize_metaxas
+		icon = GFX_focus_POL_ban_nazi_party
+
+		
+		available = {
+		}
+		x = -1
+		y = 1
+        prerequisite = { focus = GRE_manipulate_the_political_theater }
+		relative_position_id = GRE_manipulate_the_political_theater
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}
 
 
 	focus = {
