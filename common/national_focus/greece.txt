@@ -408,11 +408,11 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = 6
+		x = 2
 		y = 1
         prerequisite = { focus = GRE_national_education focus = GRE_reform_education}
 		relative_position_id = GRE_national_education
-		mutually_exclusive = { focus = GRE_recruit_the_fascists }
+		mutually_exclusive = { focus = GRE_recruit_the_fascists_eee }
 		cost = 3.5
 		ai_will_do = {
 			base = 0
@@ -785,7 +785,7 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = -4
+		x = -7
 		y = 1
 		mutually_exclusive = { focus = GRE_appease_the_people }
         prerequisite = { focus = GRE_national_education focus = GRE_reform_education}
@@ -808,7 +808,7 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = -1
+		x = 1
 		y = 1
         prerequisite = { focus = GRE_recruit_the_fascists_eee }
 		relative_position_id = GRE_recruit_the_fascists_eee
@@ -830,7 +830,7 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = 1
+		x = -1
 		y = 1
         prerequisite = { focus = GRE_merge_the_parties focus = GRE_crush_the_other}
 		relative_position_id = GRE_merge_the_parties
@@ -873,7 +873,7 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = -1
+		x = 1
 		y = 1
         prerequisite = { focus = GRE_merge_the_parties}
 		relative_position_id = GRE_merge_the_parties
@@ -916,7 +916,7 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = -2
+		x = 2
 		y = 1
         prerequisite = { focus = GRE_loyalty_to_moscow}
 		relative_position_id = GRE_loyalty_to_moscow
@@ -979,7 +979,7 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = 1
+		x = -1
 		y = 1
         prerequisite = { focus = GRE_support_the_alaska_claim focus = GRE_protect_the_pacific_from_japanese_communism}
 		relative_position_id = GRE_support_the_alaska_claim
@@ -1000,7 +1000,7 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = 2
+		x = -2
 		y = 1
         prerequisite = { focus = GRE_my_brother_keeper}
 		relative_position_id = GRE_my_brother_keeper
@@ -1043,7 +1043,7 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = 1
+		x = -1
 		y = 1
         prerequisite = { focus = GRE_recruit_the_fascists_eee }
 		relative_position_id = GRE_recruit_the_fascists_eee
@@ -1065,7 +1065,7 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = 1
+		x = -1
 		y = 1
         prerequisite = { focus = GRE_crush_the_other}
 		relative_position_id = GRE_crush_the_other
@@ -1107,7 +1107,7 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = 2
+		x = -2
 		y = 1
         prerequisite = { focus = GRE_the_global_falangism_movement}
 		relative_position_id = GRE_the_global_falangism_movement
@@ -1128,7 +1128,7 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = 1
+		x = -1
 		y = 1
         prerequisite = { focus = GRE_true_heirs_of_the_empire}
 		relative_position_id = GRE_true_heirs_of_the_empire
@@ -1149,7 +1149,7 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = -2
+		x = 2
 		y = 1
         prerequisite = { focus = GRE_true_heirs_of_the_empire}
 		relative_position_id = GRE_true_heirs_of_the_empire
@@ -1170,7 +1170,7 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = -1
+		x = 1
 		y = 1
         prerequisite = { focus = GRE_lock_the_door_pwease}
 		relative_position_id = GRE_lock_the_door_pwease
@@ -1191,7 +1191,7 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = 1
+		x = -1
 		y = 1
         prerequisite = { focus = GRE_lock_the_door_pwease}
 		relative_position_id = GRE_lock_the_door_pwease
@@ -1212,7 +1212,7 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = 1
+		x = -1
 		y = 1
         prerequisite = { focus = GRE_the_glory_of_byzantium focus = GRE_reunite_the_themata}
 		relative_position_id = GRE_the_glory_of_byzantium
@@ -1254,7 +1254,7 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = 3
+		x = -3
 		y = 1
         prerequisite = { focus = GRE_split_ruthenia focus = GRE_attack_arabia_and_egypt}
 		relative_position_id = GRE_split_ruthenia
@@ -1462,6 +1462,27 @@ has_country_flag = nationa_schism_part2
 		    }
 		}
 	focus = {
+		id = GRE_buy_merchants_for_the_king
+		icon = GFX_focus_BRA_ethical_internationalism
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_drink_an_espresso_with_eng_and_ger }
+		relative_position_id = GRE_drink_an_espresso_with_eng_and_ger
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}
+	
+	focus = {
 		id = GRE_fascistize_metaxas
 		icon = GFX_focus_POL_ban_nazi_party
 
@@ -1481,8 +1502,128 @@ has_country_flag = nationa_schism_part2
 		completion_reward = {
 		    }
 		}
+	focus = {
+		id = GRE_as_the_barometer_falls
+		icon = GFX_focus_SWE_as_the_barometer_falls
 
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_fascistize_metaxas }
+		relative_position_id = GRE_fascistize_metaxas
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}
+	focus = {
+		id = GRE_disband_the_parliament
+		icon = GFX_focus_SWE_organize_a_putsch
 
+		
+		available = {
+		}
+		x = 1
+		y = 1
+        prerequisite = { focus = GRE_as_the_barometer_falls }
+		prerequisite = { focus = GRE_buy_merchants_for_the_king }
+		relative_position_id = GRE_as_the_barometer_falls
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}
+	focus = {
+		id = GRE_ally_the_mafia_to_assasinate_metaxas
+		icon = GFX_focus_GRE_by_any_means_mafia
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_disband_the_parliament }
+		relative_position_id = GRE_disband_the_parliament
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}
+	focus = {
+		id = GRE_the_house_always_wins
+		icon = GFX_focus_house_of_glucksburg
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_ally_the_mafia_to_assasinate_metaxas }
+		relative_position_id = GRE_ally_the_mafia_to_assasinate_metaxas
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}
+		focus = {
+		id = GRE_the_right_to_rule_them
+		icon = GFX_focus_generic_monarchy_1
+
+		
+		available = {
+		}
+		x = -4
+		y = 1
+        prerequisite = { focus = GRE_the_house_always_wins }
+		relative_position_id = GRE_the_house_always_wins
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}
+
+	focus = {
+		id = GRE_honor_the_men
+		icon = GFX_focus_NORDIC_mon_institution_1
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_the_house_always_wins }
+		relative_position_id = GRE_the_house_always_wins
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}	
 	focus = {
 		id = GRE_the_economic_crush
 		icon = GFX_focus_GRE_economic_crisis

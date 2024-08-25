@@ -115,6 +115,14 @@ spriteType = {
 		name = "GFX_focus_GRE_restore_the_glory_of_the_motherland"
 		texturefile = "gfx/interface/goals/GRE/focus_GRE_restore_the_glory_of_the_motherland.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_GRE_by_any_means_mafia"
+		texturefile = "gfx/interface/goals/GRE/GRE_by_any_means_mafia.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_house_of_glucksburg"
+		texturefile = "gfx/interface/goals/GRE/house_of_glucksburg.dds"
+	}
 		spriteType = {
 		name = "GFX_focus_GRE_after_thrace"
 		texturefile = "gfx/interface/goals/GRE/focus_GRE_after_thrace.dds"
