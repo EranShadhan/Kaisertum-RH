@@ -1,0 +1,15 @@
+Elections = {
+	
+	priority = 9
+	icon = GFX_category_icon
+	
+	allowed = {
+		original_tag = ROM
+	}
+	visible = {
+		NOT = {
+			has_country_flag = ROM_had_elections
+		}
+	}
+}
+

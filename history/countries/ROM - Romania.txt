@@ -33,6 +33,8 @@ set_stability = 0.6
 set_war_support = 0.6
 
 recruit_character = ROM_corneliu_zelea_codreanu
+recruit_character = ROM_iuliu_maniu
+recruit_character = ROM_king_carol
 
 # Starting tech
 set_technology = {

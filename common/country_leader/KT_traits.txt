@@ -5,4 +5,13 @@ UKR_red_prince = {
 		stability_factor = 0.1
 		monthly_population = 0.05
 	}
+
+ROM_playboy_king = {
+	random = no
+	stability_weekly = -0.001
+	consumer_goods_factor = 0.15
+	political_power_gain = 0.5
 }
+
+}
+

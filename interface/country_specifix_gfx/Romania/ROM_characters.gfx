@@ -4,5 +4,15 @@ spriteTypes = {
 		name = "GFX_portrait_ROM_Corneliu_Zelea_Codreanu"
 		texturefile = "gfx/leaders/ROM/Portrait_ROM_Corneliu_Zelea_Codreanu.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_portrait_ROM_iuliu_maniu"
+		texturefile = "gfx/leaders/ROM/Portrait_ROM_iuliu_maniu.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_ROM_king_carol"
+		texturefile = "gfx/leaders/ROM/Portrait_ROM_king_carol.dds"
+	}
 
 }

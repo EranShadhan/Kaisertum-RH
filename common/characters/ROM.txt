@@ -8,7 +8,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=conservatism
+			ideology= nazism
 			traits={ economic_reformer }
 			expire="1965.1.1.1"
 			id=-1
@@ -25,6 +25,38 @@ characters={
 					fasicm_drift = 0.01
 				}
 		}
+	}
+
+	ROM_iuliu_maniu={
+		name = ROM_iuliu_maniu
+		portraits = {
+			civilian={
+				large = GFX_portrait_ROM_iuliu_maniu
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ economic_reformer }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
+	}
+
+	ROM_king_carol={
+		name = ROM_king_carol
+		portraits = {
+			civilian={
+				large = GFX_portrait_ROM_king_carol
+			}
+		}
+		country_leader={
+			ideology=oligarchism
+			traits={ ROM_playboy_king }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
 	}
 
 }

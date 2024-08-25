@@ -1,0 +1,25 @@
+Elections = {
+	elections = {
+		activation = {
+			 
+		}
+		available = {
+			
+				has_country_flag = ROM_had_elections
+			
+		}
+		cancel_trigger = {
+			has_country_flag = ROM_had_elections
+		}
+		icon = mission_icon     # For GFX_decision_mission_icon
+		is_good = yes
+		days_mission_timeout = 155
+		selectable_mission = no
+		timeout_effect = {
+			if = {
+				limit = { has_completed_focus = ROM_pol_2 }
+				country_event = romania.1
+			}
+		}
+	}
+}
