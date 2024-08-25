@@ -66,7 +66,13 @@ spriteTypes = {
 		name = "GFX_portrait_IRE_Micheal_Collins_Army"
 		texturefile = "gfx/leaders/IRE/Portrait_Ireland_Micheal_Collins_Army.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_Antun_Saadeh"
+		texturefile = "gfx/leaders/SYR/Portrait_SYR_antoun_saadeh.dds"
+	}
+
 
 
 	
 }
+GFX_portrait_Antun_Saadeh
