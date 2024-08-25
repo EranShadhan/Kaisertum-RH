@@ -1,0 +1,30 @@
+
+state={
+	id=1023
+	name="STATE_1023"
+	manpower = 415628
+	
+	state_category = town
+	
+	resources = {
+		rubber = 76
+		tungsten = 12
+	}
+
+	history={
+		owner = MAL
+		add_core_of = MAL
+		victory_points = {
+			7329 1 
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		12144 1291
+	}
+
+	local_supplies=0.55 
+}
