@@ -3,7 +3,7 @@ ideas = {
 	country = {
 	
 	
-		HUN_debuff = {
+		HUN_buff = {
             picture = german_influence_in_government
 			allowed = {
 				always = no
@@ -21,6 +21,27 @@ ideas = {
                 army_attack_factor = 0.1
 				army_defence_factor = 0.1
 				army_speed_factor = 0.1
+			}
+        }
+
+		HUN_debuff = {
+            picture = german_influence_in_government
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+
+			modifier = {
+				
+                army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				army_speed_factor = -0.1
 			}
         }
        

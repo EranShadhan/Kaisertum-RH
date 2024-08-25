@@ -1,27 +1,28 @@
 #Romgay
 
-add_namespace = romania
+add_namespace = kt_romania
 
 country_event = {
-	id = romania.1
-	title = romania.1.t
-	desc = romania.1.d
+	id = kt_romania.1
+	title = kt_romania.1.t
+	desc = kt_romania.1.d
 	picture = GFX_report_event_second_vienna_award_pact
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = romania.1.a
+		name = kt_romania.1.a
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+			last_election = "1930.07.01"
+			election_frequency = 48
+			long_name = ROM_frn_long
+			name = ROM_frn
+		}
 		hidden_effect = {
 			complete_national_focus = ROM_pol_5
-			set_politics = {
-				ruling_party = neutrality
-				elections_allowed = no
-				last_election = "1930.07.01"
-				election_frequency = 48
-				long_name = ROM_frn_long
-				name = ROM_frn
-			}
+			complete_national_focus = ROM_pol_k_1
 			add_popularity = {
 				ideology = neutrality
 				popularity = 0.3

@@ -920,7 +920,7 @@ focus = {
 		cost = 2
 
 		available = {
-
+			always = no
 		}
 
 		bypass = {
@@ -959,7 +959,7 @@ focus = {
 			}
 	
 			available = {
-				
+				always = no
 			}
 	
 			bypass = {

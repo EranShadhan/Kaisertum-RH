@@ -95,6 +95,7 @@ country_event = {
 					}
 				}
 				set_cosmetic_tag = 0
+				white_peace = GER
 			}
 			76 = {
 				add_core_of = ROM

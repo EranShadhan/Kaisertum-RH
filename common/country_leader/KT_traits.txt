@@ -16,6 +16,8 @@ ROM_playboy_king = {
 ROM_witness_to_ferdinand = {
 	random = no
 	communism_drift = -0.02
+	political_power_gain = 0.15
+	stability_factor = 0.05
 }
 
 }
