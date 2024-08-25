@@ -69,8 +69,11 @@ characters={
 				expire="1965.1.1.1"
 				traits = { 
 					ethnarch
+					president_of_democracy
+					devoted_corporatist
 				}
 			}
+          
 
 			name=GRE_ioannis_metaxas
 			portraits={
@@ -88,6 +91,7 @@ characters={
 					original_tag = GRE
 				
 				}
+				can_be_fired = no
 				available = {
 					
 						NOT = {
@@ -95,12 +99,12 @@ characters={
 								character = GRE_ioannis_metaxas
 								ruling_only = yes 
 							}
-							has_country_flag = GRE_metaxas_is_dead_crab_rave_flag 
 						}
 					
 				}
 				traits = {
-					devoted_corporatist 
+				    president_of_democracy
+					#devoted_corporatist 
 				}
 			}
 			country_leader = {

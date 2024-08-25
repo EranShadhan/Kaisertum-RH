@@ -287,6 +287,7 @@ on_actions = {
 					set_variable = { var  = GRE_republican_loyalty value = -2 }
 					set_variable = { var  = GRE_fascist_loyalty value = -1 }
 					GRE_political_instability_update_effect = yes
+					add_ideas = GRE_ioannis_metaxas
 				}
 			}
 		}

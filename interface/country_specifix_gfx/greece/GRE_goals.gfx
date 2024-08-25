@@ -91,6 +91,30 @@ spriteTypes = {
 		name = "GFX_GRE_merge_the_parties"
 		texturefile = "gfx/interface/goals/GRE/GRE_merge_the_parties.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_GRE_fascist_youth_union"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_fascist_youth_union.dds"
+	}
+spriteType = {
+		name = "GFX_focus_GRE_the_last_break_southward"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_the_last_break_southward.dds"
+	}	
+	spriteType = {
+		name = "GFX_focus_GRE_into_central_asia"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_into_central_asia.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GRE_our_slavic_commitments"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_our_slavic_commitments.dds"
+	}
+		spriteType = {
+		name = "GFX_focus_GRE_the_rightful_heir_to_the_empire"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_the_rightful_heir_to_the_empire.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GRE_restore_the_glory_of_the_motherland"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_restore_the_glory_of_the_motherland.dds"
+	}
 		spriteType = {
 		name = "GFX_focus_GRE_after_thrace"
 		texturefile = "gfx/interface/goals/GRE/focus_GRE_after_thrace.dds"

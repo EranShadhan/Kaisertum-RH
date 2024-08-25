@@ -1129,6 +1129,7 @@ GRE_expand_influence_in_FROM = {
 		not = { has_idea = GRE_hostile_fascists }
 		
 		}
+		priority = 99999
 
 		days_mission_timeout = 165
       
@@ -1171,7 +1172,7 @@ GRE_expand_influence_in_FROM = {
 		not = { has_idea = GRE_hostile_fascists }
 		
 		}
-
+	priority = 99999
 		days_mission_timeout = 250
       
 		fire_only_once = yes
@@ -1213,7 +1214,7 @@ GRE_expand_influence_in_FROM = {
 		not = { has_idea = GRE_hostile_fascists }
 		
 		}
-
+	priority = 99999
 		days_mission_timeout = 170
       
 		fire_only_once = yes
@@ -1255,7 +1256,7 @@ GRE_expand_influence_in_FROM = {
 		not = { has_idea = GRE_hostile_fascists }
 		
 		}
-
+	priority = 99999
 		days_mission_timeout = 210
       
 		fire_only_once = yes
@@ -1294,7 +1295,7 @@ GRE_expand_influence_in_FROM = {
 		allowed = { 
 			original_tag = GRE
 		}
-
+	priority = 99999
 		available = {
 		not = { has_idea = GRE_hostile_fascists }
 		

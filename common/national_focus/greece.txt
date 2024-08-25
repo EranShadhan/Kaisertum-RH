@@ -847,7 +847,7 @@ has_country_flag = nationa_schism_part2
 	
 	focus = {
 		id = GRE_deimos_and_fobos
-		icon = GFX
+		icon = GFX_focus_GRE_fascist_youth_union
 
 		
 		available = {
@@ -995,7 +995,7 @@ has_country_flag = nationa_schism_part2
 		}		
 				focus = {
 		id = GRE_march_into_central_asia
-		icon = GFX_
+		icon = GFX_focus_GRE_the_last_break_southward
 
 		
 		available = {
@@ -1144,7 +1144,7 @@ has_country_flag = nationa_schism_part2
 		}
 			focus = {
 		id = GRE_lock_the_door_pwease
-		icon = GFX_
+		icon = GFX_focus_GRE_our_slavic_commitments
 
 		
 		available = {
@@ -1186,7 +1186,7 @@ has_country_flag = nationa_schism_part2
 		}
 			focus = {
 		id = GRE_reunite_the_themata
-		icon = GFX_
+		icon = GFX_focus_GRE_the_rightful_heir_to_the_empire
 
 		
 		available = {
@@ -1207,7 +1207,7 @@ has_country_flag = nationa_schism_part2
 		}	
 	focus = {
 		id = GRE_attack_arabia_and_egypt
-		icon = GFX_
+		icon = GFX_focus_GRE_into_central_asia
 
 		
 		available = {
@@ -1249,7 +1249,7 @@ has_country_flag = nationa_schism_part2
 		}	
 			focus = {
 		id = GRE_roman_gloty
-		icon = GFX
+		icon = GFX_focus_GRE_restore_the_glory_of_the_motherland
 
 		
 		available = {
