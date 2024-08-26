@@ -57,20 +57,7 @@ ideas = {
 			}				
 		
 		}
-		GRE_ace_women = { 
-
-			allowed = {
-				original_tag = GRE
-			}
-            picture = air_war_plans_division_focus
-
-
-			modifier = {
-				air_training_xp_gain_factor = 0.15
-				air_ace_bonuses_factor = 0.3
-				air_ace_generation_chance_factor = 0.2
-			}
-		}
+		
 		GRE_prepare_to_strike_tur4 = { 
 
             name = GRE_prepare_to_strike_tur
@@ -86,6 +73,103 @@ ideas = {
 			}				
 		    modifier = { 
 			conscription_factor = 0.1 
+			}
+		}
+		GRE_the_coordinated_armed_forces_of_the_balkan_pact = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = tur_coordinated_balkan_armed_forces
+			
+			removal_cost = -1
+	
+			modifier = {
+				army_core_defence_factor = 0.1
+				army_morale_factor = 0.1
+				conscription_factor = 0.25
+				max_command_power = 25
+				experience_gain_army_factor = 0.1
+				army_leader_start_level = 2
+				planning_speed = 0.15
+			}
+		}
+		GRE_balkan_pact_innovative_transport_techniques = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_build_infrastructure
+			
+			removal_cost = -1
+	
+			modifier = {
+				army_speed_factor_for_controller = 0.25
+			}
+		}
+		GRE_joint_fortification_budget = { 
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = ast_naval_auxiliary_patrol
+				
+			removal_cost = -1
+				
+			modifier = {
+				production_speed_bunker_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.15
+				production_speed_anti_air_building_factor = 0.05
+			}
+		}
+		GRE_three_year_plan_balkans = { 
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_local_self_management
+				
+			removal_cost = -1
+				
+			modifier = {
+				conversion_cost_civ_to_mil_factor = -0.5
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+
+		GRE_ace_women = { 
+
+			allowed = {
+				original_tag = GRE
+			}
+            picture = air_war_plans_division_focus
+
+
+			modifier = {
+				air_training_xp_gain_factor = 0.15
+				air_ace_bonuses_factor = 0.3
+				air_ace_generation_chance_factor = 0.2
 			}
 		}
 		GRE_trusted_us_ger = {

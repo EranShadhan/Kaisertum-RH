@@ -553,14 +553,170 @@ has_country_flag = nationa_schism_part2
 		    }
 			
 		}	
-	focus = {
-		id = GRE_true_intensions_of_metaxas
-		icon = GFX_focus_generic_military_dictatorship
+		focus = {
+		id = GRE_honor_the_salonika
+		icon = GFX_goal_generic_alliance
+       mutually_exclusive = { focus = GRE_true_intensions_of_metaxas }
+		
+		available = {
+		}
+		x = -4
+		y = 1
+        prerequisite = { focus = GRE_balkan_haven }
+		prerequisite = { focus = GRE_all_parties_end }
+		prerequisite = { focus = GRE_watch_our_enemies }
+		relative_position_id = GRE_balkan_haven
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+			
+		}
+		focus = {
+		id = GRE_the_industrial_bastion_of_the_alliance
+		icon = GFX_focus_CHL_enlarge_the_textile_industries
 
 		
 		available = {
 		}
-		x = -2
+		x = 1
+		y = 1
+        prerequisite = { focus = GRE_honor_the_salonika }
+		relative_position_id = GRE_honor_the_salonika
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	         every_country = {
+			 limit = { is_in_faction_with = GRE 
+			 OR = { original_tag = BUL original_tag = ROM original_tag = GRE original_tag = ALB original_tag = SER }}
+			 add_ideas = GRE_three_year_plan_balkans 
+			 }
+		    }
+			
+		}	
+		focus = {
+		id = GRE_germans_of_the_balkans
+		icon = GFX_focus_BUL_prussia_of_the_balkans
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_the_industrial_bastion_of_the_alliance }
+		relative_position_id = GRE_the_industrial_bastion_of_the_alliance
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	         every_country = {
+			 limit = { is_in_faction_with = GRE 
+			 OR = { original_tag = BUL original_tag = ROM original_tag = GRE original_tag = ALB original_tag = SER }}
+			 add_ideas = GRE_three_year_plan_balkans 
+			 }
+		    }
+			
+		}
+		
+		focus = {
+		id = GRE_the_defence_of_balkans
+		icon = GFX_goal_generic_fortify_city
+
+		
+		available = {
+		}
+		x = -1
+		y = 1
+        prerequisite = { focus = GRE_honor_the_salonika }
+		relative_position_id = GRE_honor_the_salonika
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	         every_country = {
+			 limit = { is_in_faction_with = GRE 
+			 OR = { original_tag = BUL original_tag = ROM original_tag = GRE original_tag = ALB original_tag = SER }}
+			 add_ideas = GRE_joint_fortification_budget 
+			 }
+		    }
+			
+		}	
+		focus = {
+		id = GRE_balkan_forces
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_the_defence_of_balkans }
+		relative_position_id = GRE_the_defence_of_balkans
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	         every_country = {
+			 limit = { is_in_faction_with = GRE 
+			 OR = { original_tag = BUL original_tag = ROM original_tag = GRE original_tag = ALB original_tag = SER }}
+			 add_ideas = GRE_the_coordinated_armed_forces_of_the_balkan_pact 
+			 }
+		    }
+			
+		}	
+		focus = {
+		id = GRE_rush_to_the_front
+		icon = GFX_focus_SWE_lynx_armored_car
+
+		
+		available = {
+		has_war = yes
+		}
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_balkan_forces }
+		relative_position_id = GRE_balkan_forces
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	         every_country = {
+			 limit = { is_in_faction_with = GRE 
+			 OR = { original_tag = BUL original_tag = ROM original_tag = GRE original_tag = ALB original_tag = SER }}
+			 add_ideas = GRE_balkan_pact_innovative_transport_techniques 
+			 }
+		    }
+			
+		}			
+	focus = {
+		id = GRE_true_intensions_of_metaxas
+		icon = GFX_focus_generic_military_dictatorship
+ mutually_exclusive = { focus = GRE_honor_the_salonika }
+		
+		available = {
+		}
+		x = 0
 		y = 1
         prerequisite = { focus = GRE_balkan_haven }
 		prerequisite = { focus = GRE_all_parties_end }
@@ -577,6 +733,7 @@ has_country_flag = nationa_schism_part2
 		    }
 			
 		}	
+		
 	focus = {
 		id = GRE_operation_greco
 		icon = GFX_GRE_operation_greco_shine
@@ -584,7 +741,7 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = -1
+		x = 1
 		y = 1
         prerequisite = { focus = GRE_true_intensions_of_metaxas }
 		relative_position_id = GRE_true_intensions_of_metaxas
@@ -606,7 +763,7 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = -2
+		x = 2
 		y = 1
         prerequisite = { focus = GRE_operation_greco }
 		relative_position_id = GRE_operation_greco
@@ -694,7 +851,7 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = 1
+		x = -1
 		y = 1
         prerequisite = { focus = GRE_true_intensions_of_metaxas }
 		relative_position_id = GRE_true_intensions_of_metaxas
@@ -760,7 +917,7 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = -2
+		x = 2
 		
 		y = 1
 		 prerequisite = { focus = GRE_reclaim_the_mithriatic }

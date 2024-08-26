@@ -1901,7 +1901,9 @@ political_actions = {
 			}
 		}
 		days_remove = 365
-
+       allowed = {
+	   original_tag = GRE
+	   }
 		cost = 100
 		fire_only_once = yes
 		ai_will_do = {
@@ -1935,6 +1937,9 @@ add_timed_idea = {
 			
 
 		}
+		allowed = {
+	   original_tag = GRE
+	   }
 		visible = {
 				
 		}
