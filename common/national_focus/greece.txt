@@ -688,8 +688,8 @@ has_country_flag = nationa_schism_part2
 			
 		}			
 	focus = {
-		id = GRE_ratify_serves_front
-		icon = GFX_focus_focus_fra_ratify_stresa
+		id = GRE_common_ground
+		icon = GFX_focus_generic_befriend_kurdistan
 
 		
 		available = {
@@ -718,8 +718,8 @@ has_country_flag = nationa_schism_part2
 		}
 		x = 0
 		y = 1
-        prerequisite = { focus = GRE_ratify_serves_front }
-		relative_position_id = GRE_ratify_serves_front
+        prerequisite = { focus = GRE_common_ground }
+		relative_position_id = GRE_common_ground
 		cost = 3.5
 		ai_will_do = {
 			base = 0
@@ -1570,10 +1570,375 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = 7
+		x = 9
 		y = 1
         prerequisite = { focus = GRE_ally_the_mafia_to_assasinate_metaxas }
 		relative_position_id = GRE_ally_the_mafia_to_assasinate_metaxas
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}	
+	focus = {
+		id = GRE_reform_the_government
+		icon = GFX_focus_SWE_socialist_reforms
+
+		
+		available = {
+		}
+		relative_position_id = GRE_honor_the_communists_efforts
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_honor_the_communists_efforts }
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}
+		focus = {
+		id = GRE_invite_japanese_communists
+		icon = GFX_focus_ETH_support_from_the_japanese_communists
+
+		
+		available = {
+		}
+		relative_position_id = GRE_reform_the_government
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_reform_the_government }
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}
+		focus = {
+		id = GRE_refugre_volunteers
+		icon = GFX_focus_SWE_refuge_for_revolutionaries
+
+		
+		available = {
+		}
+		relative_position_id = GRE_invite_japanese_communists
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_invite_japanese_communists }
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}
+		focus = {
+		id = GRE_give_george_power
+		icon = GFX_goal_tfv_burn_the_royal_portraits
+
+		mutually_exclusive = { focus = GRE_break_with_the_crown }
+		available = {
+		}
+		relative_position_id = GRE_refugre_volunteers
+		x = 1
+		y = 1
+        prerequisite = { focus = GRE_refugre_volunteers }
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}
+		focus = {
+		id = GRE_break_with_the_crown
+		icon = GFX_goal_tfv_sever_ties_with_uk
+       mutually_exclusive = { focus = GRE_give_george_power }
+		
+		available = {
+		}
+		relative_position_id = GRE_refugre_volunteers
+		x = -1
+		y = 1
+        prerequisite = { focus = GRE_refugre_volunteers }
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}		
+	focus = {
+		id = GRE_a_red_army
+		icon = GFX_focus_SOV_builder_of_the_red_army
+
+		
+		available = {
+		}
+		relative_position_id = GRE_reform_the_government
+		x =-3
+		y = 1
+        prerequisite = { focus = GRE_reform_the_government }
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}	
+	focus = {
+		id = GRE_form_peoples_militia
+		icon = GFX_focus_generic_workers_and_farmers_rise
+
+		
+		available = {
+		}
+		relative_position_id = GRE_a_red_army
+		x =1
+		y = 1
+        prerequisite = { focus = GRE_a_red_army }
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}
+	focus = {
+		id = GRE_workers_revolution
+		icon = GFX_focus_ICE_embrace_the_workers_revolution
+
+		
+		available = {
+		}
+		relative_position_id = GRE_a_red_army
+		x = -1
+		y = 1
+        prerequisite = { focus = GRE_a_red_army }
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}		
+		focus = {
+		id = GRE_red_ships
+		icon = GFX_focus_hol_legacy_of_the_de_zeven_provincien_mutiny
+
+		
+		available = {
+		}
+		relative_position_id = GRE_workers_revolution
+		x = 1
+		y = 1
+        prerequisite = { focus = GRE_workers_revolution  }
+		prerequisite = { focus = GRE_form_peoples_militia }
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}	
+		focus = {
+		id = GRE_guide_our_balkan_allies
+		icon = GFX_focus_BUL_balkan_federation_of_socialist_republics
+
+		
+		available = {
+		}
+		relative_position_id = GRE_red_ships
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_red_ships  }
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}		
+	focus = {
+		id = GRE_women_in_production
+		icon = GFX_focus_ARG_women_in_industry
+
+		
+		available = {
+		}
+		relative_position_id = GRE_reform_the_government
+		x = 3
+		y = 1
+        prerequisite = { focus = GRE_reform_the_government }
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}
+	focus = {
+		id = GRE_socialist_christian_education
+		icon = GFX_focus_ARG_liberation_theology
+
+		
+		available = {
+		}
+		relative_position_id = GRE_women_in_production
+		x = 1
+		y = 1
+        prerequisite = { focus = GRE_women_in_production }
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}		
+	focus = {
+		id = GRE_no_leaders_no_fears
+		icon = GFX_focus_ARG_no_gods_no_masters
+
+		
+		available = {
+		}
+		relative_position_id = GRE_women_in_production
+		x = -1
+		y = 1
+        prerequisite = { focus = GRE_women_in_production }
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}		
+	focus = {
+		id = GRE_socialist_theology
+		icon = GFX_focus_GRE_socialist_theologians
+
+		
+		available = {
+		}
+		relative_position_id = GRE_no_leaders_no_fears
+		x = 1
+		y = 1
+        prerequisite = { focus = GRE_no_leaders_no_fears }
+		 prerequisite = { focus = GRE_socialist_christian_education }
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}	
+	focus = {
+		id = GRE_international_union_of_communists
+		icon = GFX_focus_CHL_union_of_hispanic_republics
+		
+		available = {
+		}
+		relative_position_id = GRE_socialist_theology
+		x = 0
+		y = 1
+		 prerequisite = { focus = GRE_socialist_theology }
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}	
+		focus = {
+		id = GRE_make_the_med_red
+		icon = GFX_focus_ITA_il_sol_dell_avvenire
+
+		
+		available = {
+		}
+		relative_position_id = GRE_guide_our_balkan_allies
+		x = 3
+		y = 1
+        prerequisite = { focus = GRE_guide_our_balkan_allies  }
+		prerequisite = { focus = GRE_international_union_of_communists  }
+		prerequisite = { focus = GRE_break_with_the_crown focus = GRE_give_george_power }
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}
+				focus = {
+		id = GRE_the_global_movement
+		icon = GFX_focus_ETH_callout_to_the_world
+
+		
+		available = {
+		}
+		relative_position_id = GRE_guide_our_balkan_allies
+		x = 3
+		y = 1
+        prerequisite = { focus = GRE_guide_our_balkan_allies  }
+		prerequisite = { focus = GRE_international_union_of_communists  }
+		prerequisite = { focus = GRE_break_with_the_crown focus = GRE_give_george_power }
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}	
+		focus = {
+		id = GRE_make_the_med_red
+		icon = GFX_focus_ITA_il_sol_dell_avvenire
+
+		
+		available = {
+		}
+		relative_position_id = GRE_the_global_movement
+		x = 0
+		y = 1
+        prerequisite = { focus = GRE_the_global_movement  }
 		cost = 3.5
 		ai_will_do = {
 			base = 0

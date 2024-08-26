@@ -8,7 +8,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=oligarchism
+			ideology=absolute_monarchy
 			traits={ divisive_absolute_monarch 
 			king_of_the_hellinas
 			#Terminator 

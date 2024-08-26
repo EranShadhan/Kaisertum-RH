@@ -968,6 +968,25 @@ ideas = {
 			}
 			
 		}
+		 victory_in_the_sgtw_gr= {
+            name = victory_in_the_sgtwgre
+			picture = GRE_Memories_of_1925
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_army_factor = -0.35
+				experience_gain_navy_factor = -0.35
+				experience_gain_air_factor = -0.35
+			}
+		}
 		GRE_eee_enemy = {
 			
 

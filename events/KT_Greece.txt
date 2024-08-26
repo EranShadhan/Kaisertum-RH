@@ -1,0 +1,38 @@
+add_namespace = KT_greece_events
+
+#Drunk fight
+country_event = {
+	id = KT_greece_events.1
+	title = KT_greece_events.1.t
+	desc = KT_greece_events.1.d
+	trigger = {
+		original_tag = GRE
+		has_start_date < 1930.01.02
+		date > 1930.4.4
+	}
+
+	mean_time_to_happen = {
+		days = 365
+	}
+	fire_only_once = yes
+	
+	
+	option = {
+		name = KT_greece_events.1.a
+	}
+	option = {
+		name = KT_greece_events.1.b
+		
+		random_list = {
+		50 = {add_political_power = -25 }
+		50 = { add_political_power = 50 }
+		}
+	}
+	option = {
+		name = KT_greece_events.1.c
+		random_list = {
+		50 = {add_political_power = -25 }
+		50 = { add_political_power = 50 }
+		}
+	}
+}

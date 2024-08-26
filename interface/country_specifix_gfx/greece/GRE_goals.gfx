@@ -160,6 +160,10 @@ spriteType = {
 		texturefile = "gfx/interface/goals/GRE/focus_GRE_macedon_culutre.dds"
 	}
 	spriteType = {
+		name = "GFX_focus_GRE_socialist_theologians"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_socialist_theologians.dds"
+	}
+	spriteType = {
 		name = "GFX_focus_the_KKE"
 		texturefile = "gfx/interface/goals/GRE/focus_the_KKE.dds"
 	}
