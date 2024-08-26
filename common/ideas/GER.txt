@@ -1,7 +1,7 @@
 ideas = {
 
 	country = {
-		a_conservative_germany = {
+		GER_conservatism_focus = {
 			
 			allowed = {
 			}
@@ -12,16 +12,37 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				conscription = 0.01
-				political_power_gain = 0.50
-				consumer_goods_factor = -0.15
+				conscription = 0.005
+				political_power_factor = 0.25
+				consumer_goods_factor = -0.1
 				global_building_slots_factor = 0.15
 				stability_factor = 0.10
 			}
-			rule = {
+		}
+		GER_conservatism_focus_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.01
+				political_power_factor = 0.5
+				consumer_goods_factor = -0.15
+				global_building_slots_factor = 0.2
+				stability_factor = 0.10
+				war_support_factor = 0.05
 			}
 		}
-		spd = {
+		GER_powerful_unions = {
+
+			picture = NORDIC_northern_union
 			
 			allowed = {
 			}
@@ -32,8 +53,82 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				communism_drift = 0.01
+				consumer_goods_factor = 0.1
+				political_power_factor = -0.15
 			}
-			rule = {
+		}
+		GER_less_powerful_unions = {
+
+			picture = NORDIC_northern_union
+			
+			allowed = {
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_factor = -0.15
+			}
+		}
+		GER_victory_tgw = {
+
+			picture = generic_victors_of_ww1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_army_factor = -0.5
+				experience_gain_navy_factor = -0.5
+				experience_gain_air_factor = -0.5
+			}
+		}
+		GER_gott_mitt_uns_focus = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				justify_war_goal_time = -0.25
+			}
+		}
+		GER_high_minimal_wage = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.05
 			}
 		}
 		GER_wilhelm_ii = {
@@ -47,11 +142,25 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = GFX_idea_ger_wilhelm_ii
+			traits = { popular_figurehead2 imperial_connections }
+		}
+		GER_wilhelm_ii_2 = {
 
-			modifier = {
-				stability_factor = -0.05
+			name = GER_wilhelm_ii
+
+			picture = GER_wilhelm_ii
+
+			allowed = {
+				always = no
 			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			traits = { popular_figurehead3 imperial_connections }
 		}
 	}
 }

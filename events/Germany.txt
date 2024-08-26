@@ -3,7 +3,139 @@
 ###########################
 
 add_namespace = germany
-add_namespace = AAT_germany
+
+country_event = {
+	id = germany.1
+	title = germany.1.t
+	desc = germany.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.1.a
+		add_war_support = 0.1
+		declare_war_on = {
+			target = AUS
+			type = annex_everything
+		}
+		set_global_flag = ger_intervention_side_hun
+		ai_will_do = {
+			factor = 50
+		}
+	}
+
+	option = {
+		name = germany.1.b
+		add_stability = 0.1
+		add_war_support = 0.05
+		if = {
+			limit = {
+				AUS = {
+					has_war_with = HUN
+				}
+			}
+			add_to_war = {
+				targeted_alliance = AUS
+				enemy = HUN
+			}
+		}
+		if = {
+			limit = {
+				AUS = {
+					has_war_with = ITA
+				}
+			}
+			add_to_war = {
+				targeted_alliance = AUS
+				enemy = ITA
+			}
+		}
+		if = {
+			limit = {
+				AUS = {
+					has_war_with = POL
+				}
+			}
+			POL = {
+				white_peace = AUS
+			}
+		}
+		if = {
+			limit = {
+				AUS = {
+					has_war_with = UKR
+				}
+				UKR = {
+					is_in_faction_with = GER
+				}
+			}
+			UKR = {
+				leave_faction = GER
+			}
+			declare_war_on = {
+				target = UKR
+				type = puppet_wargoal_focus
+			}
+		}
+		if = {
+			limit = {
+				AUS = {
+					has_war_with = YUG
+				}
+			}
+			add_to_war = {
+				targeted_alliance = AUS
+				enemy = YUG
+			}
+		}
+		if = {
+			limit = {
+				AUS = {
+					has_war_with = SER
+				}
+			}
+			add_to_war = {
+				targeted_alliance = AUS
+				enemy = SER
+			}
+		}
+		if = {
+			limit = {
+				AUS = {
+					has_war_with = ROM
+				}
+			}
+			add_to_war = {
+				targeted_alliance = BUL
+				enemy = ROM
+			}
+		}
+		if = {
+			limit = {
+				AUS = {
+					has_war_with = GRE
+				}
+			}
+			add_to_war = {
+				targeted_alliance = AUS
+				enemy = GRE
+			}
+		}
+		if = {
+			limit = {
+				AUS = {
+					has_war_with = ALB
+				}
+			}
+			add_to_war = {
+				targeted_alliance = AUS
+				enemy = ALB
+			}
+		}
+		set_global_flag = ger_intervention_side_aus
+	}
+}
 
 country_event = {
 	id = germany.4
