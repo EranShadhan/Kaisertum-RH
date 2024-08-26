@@ -1,0 +1,13 @@
+kaisertum_debug_decisions = {
+	
+	priority = 9
+	icon = GFX_category_icon
+	
+	allowed = {
+		always = yes
+	}
+	visible = {
+		is_ai = no
+	}
+}
+
