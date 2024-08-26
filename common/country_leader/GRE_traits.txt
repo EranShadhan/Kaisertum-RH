@@ -25,7 +25,7 @@ Terminator = {
 	president_of_democracy = {
 	  random = no 
 	  sprite = 13
-	  democratic_drift = 0.02
+	  democratic_drift = 0.05
 	  political_power_gain =0.05
 	  stability_weekly = 0.002
 	}	

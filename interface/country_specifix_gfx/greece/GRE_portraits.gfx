@@ -11,4 +11,8 @@ spriteTypes = {
 		name = "GFX_portrait_Greece_george_the_second"
 		texturefile = "gfx/leaders/GRE/portrait_Greece_george_the_second.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_Greece_ioannis_metaxas"
+		texturefile = "gfx/leaders/GRE/portrait_Greece_ioannis_metaxas.dds"
+	}
 }

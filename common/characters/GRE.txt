@@ -114,7 +114,7 @@ characters={
 					small="GFX_idea_gre_ioannis_metaxas"
 				}
 				civilian={
-					large=GFX_portrait_GRE_ioannis_metaxas
+					large=GFX_portrait_Greece_ioannis_metaxas
 				}
 			}
 			advisor={
