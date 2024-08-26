@@ -103,6 +103,7 @@ recruit_character = IRE_micheal_collins
 recruit_character = IRE_Éamon_de_valera
 recruit_character = IRE_eoin_oduffy
 recruit_character = IRE_Winston_Churchil
+recruit_character = IRE_micheal_collins_militarist
 recruit_character = IRE_james_larkin
 recruit_character = IRE_william_norton
 recruit_character = IRE_michael_costello

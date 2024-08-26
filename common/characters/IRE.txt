@@ -25,8 +25,24 @@ characters={
 			logistics_skill=3
 			legacy_id=-1
 		}
-
 	}
+
+	IRE_micheal_collins_militarist={
+		name="IRE_micheal_collins_militarist"
+		portraits={
+			civilian={
+				large=GFX_portrait_IRE_Micheal_Collins_Army
+			}
+			}
+		country_leader={
+			ideology=centrism
+			traits = { revolutionary_general }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+
 	IRE_James_McNeil={
 		name="James McNeil"
 		portraits={
