@@ -26,6 +26,41 @@ characters = {
 		}
 	}
 
+	SOV_nikolay_ustryalov = {
+		name = SOV_nikolay_ustryalov
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Portrait_Russia_Nikolay_Ustryalov.dds"
+				small = "GFX_idea_SOV_nikolay_ustryalov"
+			}
+		}
+		allowed_civil_war = {
+			OR = {
+				has_government = neutrality 
+				has_government = fascism
+			}
+		}
+		country_leader = {
+			ideology = gen_nazism
+			expire = "1953.3.1.1"
+			id = -1
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_nikolay_ustryalov_advisor
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+				has_completed_focus = RUS_authoritarian_path
+			}
+			traits = {
+				political_chameleon
+			}
+		}		
+	}
+
 	#TODO: This should be a country leader token added to Stalin in the appropriate event/focus/whatever
 	SOV_tsar_iosif_stalin = {
 		name = "Tsar Joseph I"
@@ -3522,35 +3557,6 @@ characters = {
 			}
 			traits = {
 				ataman_transbaikal_host
-			}
-		}		
-	}
-
-	SOV_nikolay_ustryalov = {
-		name = SOV_nikolay_ustryalov
-		portraits = {
-			army = {
-				small = "GFX_idea_SOV_nikolay_ustryalov"
-			}
-		}
-		allowed_civil_war = {
-			OR = {
-				has_government = neutrality 
-				has_government = fascism
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = SOV_nikolay_ustryalov
-			allowed = {
-				original_tag = SOV
-			}
-			available = {
-				has_completed_focus = SOV_consolidate_power
-			}
-			traits = {
-				political_chameleon
 			}
 		}		
 	}

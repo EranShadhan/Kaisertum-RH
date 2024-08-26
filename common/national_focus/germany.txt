@@ -2911,10 +2911,6 @@ focus = {
 		cost = 7.2
 
 		allow_branch = {
-			has_game_rule = {
-				rule = meme_path
-				option = yes
-			}
 		}
 
 		ai_will_do = {
@@ -2942,6 +2938,73 @@ focus = {
 					traits = { priestly_prime_minister }
 				}
 			}
+		}
+	}
+
+	focus = {
+		id = GER_catholicism
+		icon = GFX_goal_unknown
+		prerequisite = { focus = GER_bavarian_domination }
+		x = 0
+		y = 1
+		relative_position_id = GER_bavarian_domination
+
+		cost = 7.2
+
+		allow_branch = {
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = catholicism_focus
+		}
+	}
+
+	focus = {
+		id = GER_king_honor_religion
+		icon = GFX_goal_unknown
+		prerequisite = { focus = GER_catholicism }
+		x = 0
+		y = 1
+		relative_position_id = GER_catholicism
+
+		cost = 7.2
+
+		allow_branch = {
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		available = {
+			has_completed_focus = GER_south_tyrol_is_german
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#TODO
 		}
 	}
 
@@ -3147,7 +3210,7 @@ focus = {
 	}
 
 	focus = {
-		id = GER_deutchland_fur_allen
+		id = GER_deutschland_fur_allen
 		icon = GFX_goal_unknown
 		prerequisite = { focus = GER_rise_min_wage focus = GER_collectivize_the_farms }
 		x = 1
@@ -3305,7 +3368,7 @@ focus = {
 				limit = {
 					has_global_flag = ger_intervention_side_aus
 				}
-				# ukraine stuff TODO ukraine dev
+				# ukraine stuff TODO ukraine dev - Hetamate
 				else = {
 					every_state = {
 						limit = {
@@ -3389,6 +3452,68 @@ focus = {
 			add_state_core = 39
 			add_state_core = 850
 			add_state_core = 736
+		}
+	}
+
+	focus = {
+		id = GER_conquer_italy
+		icon = GFX_goal_unknown
+		prerequisite = { focus = GER_south_tyrol_is_german }
+		x = 1
+		y = 1
+		relative_position_id = GER_south_tyrol_is_german
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 16
+
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#TODO
+		}
+	}
+
+	focus = {
+		id = GER_hre
+		icon = GFX_goal_unknown
+		prerequisite = { focus = GER_conquer_italy }
+		x = 0
+		y = 1
+		relative_position_id = GER_conquer_italy
+
+		cost = 14.4
+
+		ai_will_do = {
+			factor = 16
+
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_cosmetic_tag = HRE_UNIFIED
 		}
 	}
 

@@ -10,9 +10,6 @@
 ### search_filters = {FOCUS_FILTER_ARMY_XP}
 ### search_filters = {FOCUS_FILTER_NAVY_XP}
 ### search_filters = {FOCUS_FILTER_AIR_XP}
-# Reminder that focus filters prio has to be handled in the generic focus file :)
-
-
 
 focus_tree = {
 	id = russian_tree
@@ -30,8 +27,8 @@ focus_tree = {
 	# Central Linear Tree
 	focus = {
 		id = RUS_initial_reforms
-		icon = GFX_goal_generic_political_effort
-		x = 0
+		icon = GFX_focus_generic_self_management
+		x = 5
 		y = 0
 		cost = 10
 		available_if_capitulated = false
@@ -46,9 +43,10 @@ focus_tree = {
 	focus = {
 		id = RUS_economic_stabilization
 		prerequisite = { focus = RUS_initial_reforms }
-		icon = GFX_goal_generic_economic_effort
+		icon = GFX_focus_ARG_crackdown_on_corruption
 		x = 0
 		y = 1
+		relative_position_id = RUS_initial_reforms
 		cost = 10
 		available_if_capitulated = false
 		completion_reward = {
@@ -62,9 +60,10 @@ focus_tree = {
 	focus = {
 		id = RUS_social_reforms
 		prerequisite = { focus = RUS_economic_stabilization }
-		icon = GFX_goal_generic_social_reforms
+		icon = GFX_goal_demand_sudetenland
 		x = 0
-		y = 2
+		y = 1
+		relative_position_id = RUS_economic_stabilization
 		cost = 10
 		available_if_capitulated = false
 		completion_reward = {
@@ -78,9 +77,10 @@ focus_tree = {
 	focus = {
 		id = RUS_diplomatic_dialogue
 		prerequisite = { focus = RUS_social_reforms }
-		icon = GFX_goal_generic_political_influence
+		icon = GFX_focus_chi_reach_out_to_france
 		x = 0
-		y = 3
+		y = 1
+		relative_position_id = RUS_social_reforms
 		cost = 10
 		available_if_capitulated = false
 		completion_reward = {
@@ -96,9 +96,10 @@ focus_tree = {
 		id = RUS_begin_democratization
 		prerequisite = { focus = RUS_diplomatic_dialogue }
 		mutually_exclusive = { focus = RUS_authoritarian_path }
-		icon = GFX_goal_generic_democracy
-		x = -2
-		y = 5
+		icon = GFX_goal_support_democracy
+		x = -5
+		y = 1
+		relative_position_id = RUS_diplomatic_dialogue
 		cost = 10
 		available_if_capitulated = false
 		completion_reward = {
@@ -118,9 +119,10 @@ focus_tree = {
 	focus = {
 		id = RUS_prepare_for_democracy
 		prerequisite = { focus = RUS_begin_democratization }
-		icon = GFX_goal_generic_political_effort
-		x = -2
-		y = 6
+		icon = GFX_goal_generic_demand_territory
+		x = 0
+		y = 1
+		relative_position_id = RUS_begin_democratization
 		cost = 10
 		available_if_capitulated = false
 		completion_reward = {
@@ -136,9 +138,10 @@ focus_tree = {
 	focus = {
 		id = RUS_civic_education
 		prerequisite = { focus = RUS_prepare_for_democracy }
-		icon = GFX_goal_generic_education
-		x = -3
-		y = 7
+		icon = GFX_goal_GEN_education
+		x = -1
+		y = 1
+		relative_position_id = RUS_prepare_for_democracy
 		cost = 10
 		available_if_capitulated = false
 		completion_reward = {
@@ -157,9 +160,10 @@ focus_tree = {
 	focus = {
 		id = RUS_free_press_initiative
 		prerequisite = { focus = RUS_prepare_for_democracy }
-		icon = GFX_goal_generic_free_press
-		x = -1
-		y = 7
+		icon = GFX_goal_generic_propaganda
+		x = 1
+		y = 1
+		relative_position_id = RUS_prepare_for_democracy
 		cost = 10
 		available_if_capitulated = false
 		completion_reward = {
@@ -178,9 +182,10 @@ focus_tree = {
 	focus = {
 		id = RUS_strengthen_civil_society
 		prerequisite = { focus = RUS_civic_education }
-		icon = GFX_goal_generic_civil_society
-		x = -3
-		y = 8
+		icon = GFX_focus_generic_secret_service_agency
+		x = 0
+		y = 1
+		relative_position_id = RUS_civic_education
 		cost = 10
 		available_if_capitulated = false
 		completion_reward = {
@@ -200,9 +205,10 @@ focus_tree = {
 	focus = {
 		id = RUS_inclusive_governance
 		prerequisite = { focus = RUS_free_press_initiative }
-		icon = GFX_goal_generic_governance
-		x = 1
-		y = 8
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 0
+		y = 1
+		relative_position_id = RUS_free_press_initiative
 		cost = 10
 		available_if_capitulated = false
 		completion_reward = {
@@ -217,9 +223,10 @@ focus_tree = {
 	focus = {
 		id = RUS_judicial_reforms
 		prerequisite = { focus = RUS_strengthen_civil_society }
-		icon = GFX_goal_generic_judicial_reforms
-		x = -2
-		y = 9
+		icon = GFX_focus_ARG_defense_and_democracy
+		x = 0
+		y = 1
+		relative_position_id = RUS_strengthen_civil_society
 		cost = 10
 		available_if_capitulated = false
 		completion_reward = {
@@ -239,9 +246,10 @@ focus_tree = {
 	focus = {
 		id = RUS_constitutional_reforms
 		prerequisite = { focus = RUS_inclusive_governance }
-		icon = GFX_goal_generic_constitution
+		icon = GFX_focus_renounce_the_treaty_of_trianon
 		x = 0
-		y = 10
+		y = 1
+		relative_position_id = RUS_inclusive_governance
 		cost = 10
 		available_if_capitulated = false
 		completion_reward = {
@@ -255,16 +263,17 @@ focus_tree = {
 	# Final Focus - Elections
 	focus = {
 		id = RUS_holding_elections
+		dynamic=yes
 		prerequisite = { 
 			focus = RUS_judicial_reforms
 		}
 		prerequisite = { 
-		focus = RUS_constitutional_reforms
+			focus = RUS_constitutional_reforms
 		}
-		
-		icon = GFX_goal_generic_elections
-		x = -2
-		y = 12
+		icon = GFX_focus_generic_treaty
+		x = 1
+		y = 1
+		relative_position_id = RUS_judicial_reforms
 		cost = 10
 		available_if_capitulated = false
 		completion_reward = {
@@ -281,149 +290,110 @@ focus_tree = {
 
 # Potential Candidates
 
-# 1. Kerensky
+# Kerensky
 focus = {
-    id = RUS_kerensky
-    prerequisite = { 
-        focus = RUS_holding_elections
-    }
-    icon = GFX_goal_generic_kerensky
-    x = -2
-    y = 14
-    cost = 10
-    available_if_capitulated = false
-    ai_will_do = {
-        factor = 1
-    }
-    completion_reward = {
-        change_political_leader = {
-            id = RUS_kerensky_leader
-        }
-        add_stability = 0.10
-        add_political_power = 100
-        add_democracy = 10
-        add_popularity = {
-    	ideology = neutrality
-    	popularity = 0.1
-			}
-    	}
-    available_if_capitulated = false
+	id = RUS_kerensky
+	prerequisite = { 
+		focus = RUS_holding_elections
+	}
+	mutually_exclusive = { 
+		focus = RUS_socialist_candidate
+	}
+	icon = GFX_goal_RUS_kerensky
+	x = -3
+	y = 1
+	relative_position_id = RUS_holding_elections
+	cost = 10
+	available_if_capitulated = false
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		change_political_leader = {
+			id = RUS_kerensky_leader
+		}
+		add_stability = 0.10
+		add_political_power = 100
+		add_democracy = 10
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+		}
+	}
+	available_if_capitulated = false
 }
 
 focus = {
-    id = RUS_kerensky_modifier
-    prerequisite = {
-        focus = RUS_kerensky
-    }
-    icon = GFX_goal_generic_stability
-    x = -2
-    y = 16
-    cost = 10
-    available_if_capitulated = false
-    completion_reward = {
-        add_stability = 0.05
-        add_democracy_growth = 0.01
-    }
-    ai_will_do = {
-        factor = 1
-    }
-}
-
-
-# 3. Conservative Candidate
-focus = {
-    id = RUS_conservative_candidate
-    prerequisite = { 
-        focus = RUS_holding_elections
-    }
-    icon = GFX_goal_generic_conservative
-    x = 2
-    y = 14
-    cost = 10
-    available_if_capitulated = false
-    ai_will_do = {
-        factor = 1
-    }
-    completion_reward = {
-        change_political_leader = {
-            id = RUS_conservative_leader
-        }
-        add_stability = 0.10
-        add_political_power = 100
-        add_democracy = 20
-        add_political_power = 100
-    }
-}
-
-focus = {
-    id = RUS_conservative_candidate_modifier
-    prerequisite = {
-        focus = RUS_conservative_candidate
-    }
-    icon = GFX_goal_generic_war_support
-    x = 2
-    y = 16
-    cost = 10
-    available_if_capitulated = false
-    completion_reward = {
-        add_war_support = 0.10
-        add_democracy_growth = 0.01
-        add_popularity = {
-    		ideology = neutrality
-    		popularity = 0.1
-				}
-    }
-    ai_will_do = {
-        factor = 1
-    }
+	id = RUS_kerensky_modifier
+	prerequisite = {
+		focus = RUS_kerensky
+	}
+	icon = GFX_goal_generic_stability
+	x = 0
+	y = 1
+	relative_position_id = RUS_kerensky
+	cost = 10
+	available_if_capitulated = false
+	completion_reward = {
+		add_stability = 0.05
+		add_democracy_growth = 0.01
+	}
+	ai_will_do = {
+		factor = 1
+	}
 }
 
 # 4. Socialist Candidate
 focus = {
-    id = RUS_socialist_candidate
-    prerequisite = { 
-        focus = RUS_holding_elections
-    }
-    icon = GFX_goal_generic_socialist
-    x = 4
-    y = 14
-    cost = 10
-    available_if_capitulated = false
-    ai_will_do = {
-        factor = 1
-    }
-    completion_reward = {
-        change_political_leader = {
-            id = RUS_socialist_leader
-        }
-        add_stability = 0.10
-        add_political_power = 100
-        add_democracy = 10
-        add_communism = 10
-        add_political_power = 100
-    }
+	id = RUS_socialist_candidate
+	prerequisite = { 
+		focus = RUS_holding_elections
+	}
+	mutually_exclusive = { 
+		focus = RUS_kerensky
+	}
+	icon = GFX_goal_generic_socialist
+	x = 3
+	y = 1
+	relative_position_id = RUS_holding_elections
+	cost = 10
+	available_if_capitulated = false
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		change_political_leader = {
+			id = RUS_socialist_leader
+		}
+		add_stability = 0.10
+		add_political_power = 100
+		add_democracy = 10
+		add_communism = 10
+		add_political_power = 100
+	}
 }
 
 focus = {
-    id = RUS_socialist_candidate_modifier
-    prerequisite = {
-        focus = RUS_socialist_candidate
-    }
-    icon = GFX_goal_generic_socialist_modifier
-    x = 4
-    y = 16
-    cost = 10
-    available_if_capitulated = false
-    completion_reward = {
-        add_communism_growth = 0.01
-        add_factory_output = 0.05
-        create_event = {
-            id = RUS_socialist_pact_event
-        }
-    }
-    ai_will_do = {
-        factor = 1
-    }
+	id = RUS_socialist_candidate_modifier
+	prerequisite = {
+		focus = RUS_socialist_candidate
+	}
+	icon = GFX_goal_generic_socialist_modifier
+	x = 0
+	y = 1
+	relative_position_id = RUS_socialist_candidate
+	cost = 10
+	available_if_capitulated = false
+	completion_reward = {
+		add_communism_growth = 0.01
+		add_factory_output = 0.05
+		create_event = {
+			id = RUS_socialist_pact_event
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
 }
 
 
@@ -435,184 +405,506 @@ continuous_focus_position = {
 # Branching Path - Authoritarian Status Quo
 
 focus = {
-    id = RUS_authoritarian_path
-    prerequisite = { 
-        focus = RUS_diplomatic_dialogue 
-    }
-    mutually_exclusive = { 
-        focus = RUS_democratization_path 
-    }
-    icon = GFX_goal_generic_totalitarian
-    x = 7
-    y = 5
-    cost = 10
-    available_if_capitulated = false
-    completion_reward = {
-        # Add authoritarian rewards here
-    }
-    ai_will_do = {
-        factor = 1
-    }
+	id = RUS_authoritarian_path
+	prerequisite = { 
+		focus = RUS_diplomatic_dialogue 
+	}
+	mutually_exclusive = { 
+		focus = RUS_democratization_path 
+	}
+	icon = GFX_goal_RUS_natbol
+	x = 5
+	y = 1
+	relative_position_id = RUS_diplomatic_dialogue
+	cost = 10
+	available_if_capitulated = false
+	completion_reward = {
+		add_ideas = nationalism
+		set_politics = {
+			ruling_party = fascism
+		}
+		add_popularity = {
+  		ideology = fascism
+			popularity = 0.45
+		}
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = SOV_nikolay_ustryalov_advisor
+	}
+	ai_will_do = {
+		factor = 1
+	}
 }
 
 # 1. Ally with Aristocrats
 focus = {
-    id = RUS_ally_aristocrats
-    prerequisite = { 
-        focus = RUS_authoritarian_path 
-    }
-    mutually_exclusive = { 
-        focus = RUS_ally_capitalists 
-    }
-    icon = GFX_goal_generic_aristocrats
-    x = 5
-    y = 7
-    cost = 10
-    available_if_capitulated = false
-    completion_reward = {
-        add_political_power = 100
-    }
-    ai_will_do = {
-        factor = 1
-    }
+	id = RUS_ally_aristocrats
+	prerequisite = { 
+		focus = RUS_authoritarian_path 
+	}
+	mutually_exclusive = { 
+		focus = RUS_ally_capitalists 
+	}
+	icon = GFX_focus_SOV_zemsky_sobor
+	x = -2
+	y = 2
+	relative_position_id = RUS_authoritarian_path
+	cost = 10
+	available_if_capitulated = false
+	completion_reward = {
+		add_ideas = RUS_nb_nobles_1
+	}
+	ai_will_do = {
+		factor = 1
+	}
 }
 
 focus = {
-    id = RUS_ally_aristocrats_bribe
-    prerequisite = { 
-        focus = RUS_ally_aristocrats 
-    }
-    icon = GFX_goal_generic_bribe
-    x = 5
-    y = 9
-    cost = 10
-    available_if_capitulated = false
-    completion_reward = {
-        add_political_power = 100
-        create_event = {
-            id = RUS_aristocratic_alliance_event
-        }
-    }
-    ai_will_do = {
-        factor = 1
-    }
+	id = RUS_ally_aristocrats_bribe
+	prerequisite = { 
+		focus = RUS_ally_aristocrats 
+	}
+	icon = GFX_focus_SOV_zemsky_sobor
+	x = 0
+	y = 1
+	relative_position_id = RUS_ally_aristocrats
+	cost = 10
+	available_if_capitulated = false
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = RUS_nb_nobles_1
+			add_idea = RUS_nb_nobles_2
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
 }
 
 # 2. Ally with Capitalists
 focus = {
-    id = RUS_ally_capitalists
-    prerequisite = { 
-        focus = RUS_authoritarian_path 
-    }
-    mutually_exclusive = { 
-        focus = RUS_ally_aristocrats 
-    }
-    icon = GFX_goal_generic_capitalists
-    x = 9
-    y = 7
-    cost = 10
-    available_if_capitulated = false
-    completion_reward = {
-        add_political_power = 100
-    }
-    ai_will_do = {
-        factor = 1
-    }
+	id = RUS_ally_capitalists
+	prerequisite = { 
+		focus = RUS_authoritarian_path 
+	}
+	mutually_exclusive = { 
+		focus = RUS_ally_aristocrats 
+	}
+	icon = GFX_focus_usa_reestablish_the_gold_standard
+	x = 2
+	y = 2
+	relative_position_id = RUS_authoritarian_path
+	cost = 10
+	available_if_capitulated = false
+	completion_reward = {
+		add_ideas = RUS_nb_capitalist_1
+	}
+	ai_will_do = {
+		factor = 1
+	}
 }
 
 focus = {
-    id = RUS_ally_capitalists_bribe
-    prerequisite = { 
-        focus = RUS_ally_capitalists 
-    }
-    icon = GFX_goal_generic_bribe
-    x = 9
-    y = 9
-    cost = 10
-    available_if_capitulated = false
-    completion_reward = {
-        add_political_power = 100
-        create_event = {
-            id = RUS_capitalist_alliance_event
-        }
-    }
-    ai_will_do = {
-        factor = 1
-    }
+	id = RUS_ally_capitalists_bribe
+	prerequisite = { 
+		focus = RUS_ally_capitalists 
+	}
+	icon = GFX_focus_usa_reestablish_the_gold_standard
+	x = 0
+	y = 1
+	relative_position_id = RUS_ally_capitalists
+	cost = 10
+	available_if_capitulated = false
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = RUS_nb_capitalist_1
+			add_idea = RUS_nb_capitalist_2
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
 }
 
 # 3. Ally and Bribe the Army
 focus = {
-    id = RUS_ally_army
-    prerequisite = { 
-        focus = RUS_authoritarian_path 
-    }
-    icon = GFX_goal_generic_army
-    x = 7
-    y = 6
-    cost = 10
-    available_if_capitulated = false
-    completion_reward = {
-        add_political_power = 100
-    }
-    ai_will_do = {
-        factor = 1
-    }
+	id = RUS_ally_army
+	prerequisite = { 
+		focus = RUS_authoritarian_path 
+	}
+	icon = GFX_goal_generic_military_deal
+	x = 0
+	y = 1
+	relative_position_id = RUS_authoritarian_path
+	cost = 10
+	available_if_capitulated = false
+	completion_reward = {
+		add_ideas = RUS_nb_army_1
+	}
+	ai_will_do = {
+		factor = 1
+	}
 }
 
 focus = {
-    id = RUS_ally_army_bribe
-    prerequisite = { 
-        focus = RUS_ally_army 
-    }
-    icon = GFX_goal_generic_bribe
-    x = 7
-    y = 9
-    cost = 10
-    available_if_capitulated = false
-    completion_reward = {
-        add_political_power = 100
-        create_event = {
-            id = RUS_army_alliance_event
-        }
-    }
-    ai_will_do = {
-        factor = 1
-    }
+	id = RUS_ally_army_bribe
+	prerequisite = { 
+		focus = RUS_ally_army 
+	}
+	icon = GFX_goal_generic_military_deal
+	x = 0
+	y = 2
+	relative_position_id = RUS_ally_army
+	cost = 10
+	available_if_capitulated = false
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = RUS_nb_army_1
+			add_idea = RUS_nb_army_2
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
 }
 
 # 4. Cement the Dictatorship
 focus = {
-    id = RUS_cement_dictatorship
-    prerequisite = { 
-        focus = RUS_ally_aristocrats_bribe 
-        focus = RUS_ally_capitalists_bribe 
-    }
-    prerequisite = { 
-        focus = RUS_ally_army_bribe 
-    }
-    icon = GFX_goal_generic_dictatorship
-    x = 7
-    y = 11
-    cost = 10
-    available_if_capitulated = false
-    completion_reward = {
-        change_political_leader = {
-            id = RUS_dictator_leader
-        }
-        add_stability = 0.20
-        add_political_power = 150
-        add_popularity = {
-   			ideology = neutrality
-    		popularity = 0.1
-			}
-        create_event = {
-            id = RUS_dictatorship_cemented_event
-        }
-    }
-    ai_will_do = {
-        factor = 1
-    }
+	id = RUS_cement_dictatorship
+	prerequisite = { 
+		focus = RUS_ally_aristocrats_bribe 
+		focus = RUS_ally_capitalists_bribe 
+	}
+	prerequisite = { 
+		focus = RUS_ally_army_bribe 
+	}
+	icon = GFX_goal_generic_political_pressure
+	x = 0
+	y = 1
+	relative_position_id = RUS_ally_army_bribe
+	cost = 10
+	available_if_capitulated = false
+	completion_reward = {
+		add_country_leader_trait = {
+			ideology = gen_nazism
+			trait = dictator
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
 }
 
+#Foreign Policy Branch
+	focus = {
+		id = RUS_our_place_in_the_world
+		icon = GFX_goal_generic_political_pressure
+		x = 7
+		y = 15
+		cost = 10
+		available_if_capitulated = false
+		available = {
+			OR = {
+				has_completed_focus = RUS_cement_dictatorship
+				has_completed_focus = RUS_kerensky_modifier
+				has_completed_focus = RUS_socialist_candidate_modifier
+			}
+		}
+		completion_reward = {
+			add_ideas = RUS_imperialism
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = RUS_european_expansion
+		prerequisite = { 
+			focus = RUS_our_place_in_the_world 
+		}
+		icon = GFX_goal_generic_political_pressure
+		x = -4
+		y = 1
+		relative_position_id = RUS_our_place_in_the_world
+		cost = 1.5
+		available_if_capitulated = false
+		completion_reward = {
+			add_war_support = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = RUS_winter_war
+		prerequisite = { 
+			focus = RUS_european_expansion 
+		}
+		will_lead_to_war_with = FIN
+		icon = GFX_goal_generic_political_pressure
+		x = -2
+		y = 1
+		relative_position_id = RUS_european_expansion
+		cost = 10
+		available_if_capitulated = false
+		completion_reward = {
+			create_wargoal = {
+   				type = take_state_focus
+				target = FIN
+				generator = { 146 147 722 }
+			}
+			add_state_claim = 146
+			add_state_claim = 147
+			add_state_claim = 722
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = RUS_demand_latalge
+		prerequisite = { 
+			focus = RUS_european_expansion 
+		}
+		prerequisite = { 
+			focus = RUS_winter_war 
+		}
+		bypass = {
+			has_global_flag = UBD_russian_help
+		}
+		will_lead_to_war_with = UBD
+		icon = GFX_goal_generic_political_pressure
+		x = -1
+		y = 2
+		relative_position_id = RUS_european_expansion
+		cost = 10
+		available_if_capitulated = false
+		completion_reward = {
+			country_event = RUS_events.6
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = RUS_reinforce_the_belarussian_breachhead
+		prerequisite = { 
+			focus = RUS_european_expansion 
+		}
+		available = {
+			controls_state = 94
+			controls_state = 95
+			controls_state = 96
+		}
+		icon = GFX_goal_generic_political_pressure
+		x = 0
+		y = 1
+		relative_position_id = RUS_european_expansion
+		cost = 28.6
+		available_if_capitulated = false
+		completion_reward = {
+			94 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 3256
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 11528
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6415
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 560
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 3556
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 11285
+				}
+			}
+			95 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6413
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 3366
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					instant_build = yes
+					province = 3393
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 318
+				}
+			}
+			96 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 233
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 11391
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6340
+				}
+			}
+			206 = {
+				add_building_construction = {
+					type = bunker
+					level = 5
+					instant_build = yes
+					province = 11370
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = RUS_strike_germany
+		prerequisite = { 
+			focus = RUS_reinforce_the_belarussian_breachhead 
+		}
+		prerequisite = { 
+			focus = RUS_demand_latalge 
+		}
+		bypass = {
+			has_war_with = GER
+		}
+		will_lead_to_war_with = GER
+		icon = GFX_goal_generic_political_pressure
+		x = 1
+		y = 1
+		relative_position_id = RUS_demand_latalge
+		cost = 5
+		available_if_capitulated = false
+		completion_reward = {
+			create_wargoal = {
+				target = GER
+				type = annex_everything
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = RUS_dominate_romania
+		prerequisite = { 
+			focus = RUS_european_expansion 
+		}
+		will_lead_to_war_with = ROM
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = RUS_european_expansion
+		cost = 10
+		available_if_capitulated = false
+		completion_reward = {
+			#TODO create demand event for puppetation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = RUS_dominate_bulgaria
+		prerequisite = { 
+			focus = RUS_dominate_romania
+		}
+		mutually_exclusive = { 
+			focus = RUS_ally_bulgaria
+		}
+		will_lead_to_war_with = BUL
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = RUS_dominate_romania
+		cost = 10
+		available_if_capitulated = false
+		completion_reward = {
+			#TODO create demand event for puppetation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = RUS_ally_bulgaria
+		prerequisite = { 
+			focus = RUS_dominate_romania
+		}
+		mutually_exclusive = { 
+			focus = RUS_dominate_bulgaria
+		}
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = RUS_dominate_romania
+		cost = 10
+		available_if_capitulated = false
+		completion_reward = {
+			#TODO
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = RUS_liberate_the_southern_slavs
+		prerequisite = { 
+			focus = RUS_dominate_bulgaria focus = RUS_ally_bulgaria
+		}
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = RUS_dominate_bulgaria
+		cost = 10
+		available_if_capitulated = false
+		completion_reward = {
+			#TODO create demand event for liberation and unification of serbia and illyria
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

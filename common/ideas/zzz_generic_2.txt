@@ -43,6 +43,26 @@ ideas = {
 			}
 		}
 
+		catholicism_focus = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.25
+				communism_drift = -0.03
+			}
+		}
+
 		discrimination_focus = {
 
 			allowed = {

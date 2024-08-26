@@ -47,11 +47,14 @@ spriteTypes = {
 		name = "GFX_focus_fra_expand_public_services"
 		texturefile = "gfx/interface/goals/FRA/focus_fra_expand_public_services.dds"
 	}
-	
-	#Goal_Money
+
+	SpriteType = {
+		name = "GFX_goal_GEN_education"
+		texturefile = "gfx/interface/goals/GEN_education.dds"
+	}
 	
 	SpriteType = {
-		name = "GFX_Goal_Money"
+		name = "GFX_goal_money"
 		texturefile = "gfx/interface/goals/Goal_Money.dds"
 	}
 }

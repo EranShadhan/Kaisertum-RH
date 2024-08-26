@@ -1,22 +1,4 @@
-﻿
-####
-#### NO STEP BACK
-####
-
-
-#You don't want Russian party names? Just remove these lines
-set_party_name = {
-	ideology = communism
-	long_name = SOV_communism_party_russian_long
-	name = SOV_communism_party_russian
-}
-set_party_name = {
-	ideology = fascism
-	long_name = SOV_fascism_party_russian_long
-	name = SOV_fascism_party_russian
-}
-
-#COUNTRY LEADERS
+﻿#COUNTRY LEADERS
 recruit_character = SOV_alexander_kelensky
 recruit_character = SOV_iosif_stalin
 recruit_character = SOV_supreme_soviet #This is a fake character! Proper country leader role is added via focus
@@ -122,23 +104,6 @@ recruit_character = SOV_sidor_kovpak
 recruit_character = SOV_lev_dovator
 recruit_character = SOV_pavel_rybalko
 
-
-while_loop_effect = {
-	limit = {
-		check_variable = { i = 12 compare = less_than }
-	}
-	add_to_array = { SOV_paranoia_generic_portraits_array = 1 } # 1 = NO PORTRAIT
-	add_to_temp_variable = { i = 1 }
-}
-
-
-
-#Add synthetic refineries tech
-set_technology = {
-	synth_oil_experiments = 1
-}
-
-
 ####
 #### VANILLA ####
 ####
@@ -147,13 +112,62 @@ capital = 219
 
 starting_train_buffer = 3.0
 
-set_oob = "SOV_1936"
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_oob = "SOV_1936"
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_oob = "SOV_1936_nsb"
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "SOV_1936_naval_mtg"
+	else = {
+		set_naval_oob = "SOV_1936_naval_legacy"
+	}
+}
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "SOV_1936_air_bba"
+		set_technology = {
+			iw_small_airframe = 1
+			aa_lmg = 1
+			aa_cannon_1 = 1
+			early_bombs = 1
+			engines_1 = 1
+			engines_2 = 1
+			iw_medium_airframe = 1
+			iw_large_airframe = 1
+			basic_small_airframe = 1
+			basic_medium_airframe = 1
+			aircraft_construction = 1
+			air_torpedoe_1 = 1
+		}
+	else = {
+		set_air_oob = "SOV_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			fighter1 = 1
+			early_bomber = 1
+			strategic_bomber1 = 1
+			naval_bomber1 = 1
+		}
+	}
+}
 
 set_research_slots = 3
 set_stability = 0.5
 set_war_support = 0.3
 # Starting tech
-set_technology = { #WARNING: Do not just remove techs from here -> It can impact a lot of stuff. Before removing, double check that content does not count on these techs being researched
+set_technology = {
+	synth_oil_experiments = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
@@ -241,11 +255,10 @@ set_country_flag = SOV_TEST_REMOVE_VANILLA_ADVISORS_flag
 
 
 add_ideas = {	
-	victory_in_the_sgtwrus
-	Transitional_Period
-	Stagnated_Russification
-	Systemic_Corruption
-	Revanchism_For_WW1
+	RUS_transistion
+	RUS_stagnant_russification
+	RUS_rampant_corruption
+	RUS_revanchism
 }
 
 

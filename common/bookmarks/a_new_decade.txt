@@ -61,9 +61,11 @@ bookmarks = {
 		}
 		"SOV"={
 			history = "SOV_NEW_DECADE_DESC"
-			ideology = communism
+			ideology = neutrality
 			ideas = {
-				victory_in_the_sgtwrus
+				RUS_transistion
+				RUS_rampant_corruption
+				RUS_revanchism
 			}
 			focuses = {
 			}
