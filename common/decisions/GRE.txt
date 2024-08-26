@@ -1882,4 +1882,94 @@ GRE_NUKES_FROM_SUBS = {
 	
 	
 }
+political_actions = {
+  GRE_trust_eng = {
+		icon = generic_naval
+
+		available = {
+		
+				
+			
+
+		}
+		visible = {
+		
+		}
+ target_trigger = {
+			FROM = {
+				tag = ENG
+			}
+		}
+		days_remove = 365
+
+		cost = 100
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+       complete_effect = {
+			add_timed_idea = { 
+			idea = GRE_trusted_our_ships_to_eng
+			days = 365
+			}
+			ENG	 = { 
+add_timed_idea = { 
+			idea = GRE_trusted_us_eng
+			days = 365
+			}			}
+		}
+		remove_effect = {
+		custom_effect_tooltip = GRE_ships_eng_tt
+		hidden_effect = {
+				load_oob = "UMC_ATNR_GRE"				
+				}
+		}   
+   }
+
+   GRE_trust_ger = {
+		icon = generic_naval
+
+		available = {
+		
+				
+			
+
+		}
+		visible = {
+				
+		}
+		days_remove = 730
+target_trigger = {
+			FROM = {
+				tag = GER
+			}
+		}
+		cost = 100
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			add_timed_idea = { 
+			idea = GRE_trusted_our_ships_to_ger
+			days = 730
+			}
+			GER	 = { 
+add_timed_idea = { 
+			idea = GRE_trusted_us_ger
+			days = 730
+			}			}
+			
+		}
+		remove_effect = {
+				custom_effect_tooltip = GRE_ships_ger_tt
+		hidden_effect = {
+				load_oob = "UMC_ATNR_GRE2"				
+				}
+     
+		
+						
+		}   
+   }
+ }
 

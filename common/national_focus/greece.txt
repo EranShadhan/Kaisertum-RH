@@ -2584,7 +2584,7 @@ has_country_flag = nationa_schism_part2
 		}
 	}	
 	focus = {
-		id = GRE_hellenic_armed_forces
+		id = GRE_hellenic_armed_forces_new
 		icon = GFX_focus_GRE_hellenic_armed_forces
 
 		
@@ -2593,14 +2593,14 @@ has_country_flag = nationa_schism_part2
 		x = 25
 		y = 0
 
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	         air_experience = 125
+	        
 		    }
 		}	
 	
@@ -2613,16 +2613,16 @@ has_country_flag = nationa_schism_part2
 		}
 		x = 8
 		y = 1
-        relative_position_id = GRE_hellenic_armed_forces
-		prerequisite = { focus = GRE_hellenic_armed_forces }
-		cost = 10
+        relative_position_id = GRE_hellenic_armed_forces_new
+		prerequisite = { focus = GRE_hellenic_armed_forces_new }
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	         air_experience = 125
+	         air_experience = 75
 		    }
 		}
 		
@@ -2724,7 +2724,7 @@ has_country_flag = nationa_schism_part2
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	        
+	        add_ideas = GRE_flying_eagles
 		    }
 		}
 		focus = {
@@ -2831,7 +2831,7 @@ has_country_flag = nationa_schism_part2
 		}
 		x = 0
 		y = 1
-        mutually_exclusive = { focus = GRE_support_air_from_land }
+        mutually_exclusive = { focus = GRE_royal_airforce }
 		cost = 6
 		ai_will_do = {
 			base = 0
@@ -2839,7 +2839,20 @@ has_country_flag = nationa_schism_part2
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	        
+	      
+			add_doctrine_cost_reduction = {
+				name = GRE_destroying_our_foes
+				cost_reduction = 0.25
+				uses = 1
+				category = strategic_destruction_tree
+			}
+			add_tech_bonus = {
+				name = GRE_destroying_our_foes
+				bonus = 1.0
+				uses = 2
+				category = cat_strategic_bomber
+				category = tactical_bomber
+			}
 		    }
 		}
 	focus = {
@@ -2950,12 +2963,45 @@ focus = {
 			add_ideas = GRE_nuclear_use
 		    }
 		}		
+	focus = {
+		id = GRE_royal_airforce
+		icon = GFX_focus_NORDIC_mon_selector_airforce
+        prerequisite = { focus = GRE_copy_designs }
+		relative_position_id = GRE_copy_designs
+		
+		mutually_exclusive = { focus = GRE_assemble_a_new_greek_air_force }
+		available = {
+		}
+		x = 0
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	      
+			add_doctrine_cost_reduction = {
+				name = GRE_protecting_our_skies
+				cost_reduction = 0.25
+				uses = 1
+				category = battlefield_support_tree
+			}
+			add_tech_bonus = {
+				name = GRE_protecting_our_skies
+				bonus = 0.75
+				uses = 3
+				category = light_fighter
+			}
+		   }
+		}	
 		focus = {
 		id = GRE_support_air_from_land
 		icon = GFX_focus_generic_air_defense
-        prerequisite = { focus = GRE_copy_designs }
-		relative_position_id = GRE_copy_designs
-		mutually_exclusive = { focus = GRE_assemble_a_new_greek_air_force }
+        prerequisite = { focus = GRE_royal_airforce }
+		relative_position_id = GRE_royal_airforce
 		available = {
 		}
 		x = 0
@@ -3009,31 +3055,12 @@ focus = {
 			}
 		   }
 		}
-		focus = {
-		id = GRE_royal_airforce
-		icon = GFX_focus_NORDIC_mon_selector_airforce
-        prerequisite = { focus = GRE_support_air_from_land }
-		relative_position_id = GRE_support_air_from_land
-		available = {
-		}
-		x = 0
-		y = 1
-
-		cost = 5
-		ai_will_do = {
-			base = 0
-		}
-		available_if_capitulated = yes
-		search_filters = {  }
-		completion_reward = {
-	        
-		   }
-		}		
+	
 		focus = {
 		id = GRE_the_academy
 		icon = GFX_focus_GRE_air_academy
-        prerequisite = { focus = GRE_royal_airforce }
-		relative_position_id = GRE_royal_airforce
+        prerequisite = { focus = GRE_support_air_from_land }
+		relative_position_id = GRE_support_air_from_land
 		available = {
 		}
 		x = 0
@@ -3085,8 +3112,8 @@ focus = {
 		focus = {
 		id = GRE_army_air_cooperation
 		icon = GFX_focus_generic_tank_air_support
-        prerequisite = { focus = GRE_support_air_from_land focus = GRE_assemble_a_new_greek_air_force }
-		relative_position_id = GRE_support_air_from_land
+        prerequisite = { focus = GRE_royal_airforce focus = GRE_assemble_a_new_greek_air_force }
+		relative_position_id = GRE_royal_airforce
 		available = {
 		}
 		x = -2
@@ -3155,7 +3182,7 @@ focus = {
 		completion_reward = {
 		add_tech_bonus = {
 	 		name = NORDIC_carrier_effort
-	 		bonus = 1
+	 		bonus = 1.5
 	 		uses = 2
 	 		category = cv_tech
 	 	}
@@ -3175,21 +3202,21 @@ focus = {
 		}
 		x = -8
 		y = 1
-  relative_position_id = GRE_hellenic_armed_forces
-	prerequisite = { focus = GRE_hellenic_armed_forces }
-		cost = 10
+  relative_position_id = GRE_hellenic_armed_forces_new
+	prerequisite = { focus = GRE_hellenic_armed_forces_new }
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	         navy_experience = 125
+	         navy_experience = 75
 		    }
 		}
 	focus = {
-		id = GRE_honor_our_old_ships
-		icon = GFX_focus_GRE_a_long_and_proud_tradition
+		id = GRE_hellenic_royal_navy
+		icon = GFX_focus_NORDIC_mon_navy
 
 		mutually_exclusive = { focus = GRE_new_and_strong }
 		prerequisite = { focus = GRE_royal_hellenic_navy  }
@@ -3198,6 +3225,28 @@ focus = {
 		x = 2
 		y = 1
 		relative_position_id = GRE_royal_hellenic_navy
+          
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	         add_ideas = GRE_fund_ship_research
+		    }
+		}
+	focus = {
+		id = GRE_honor_our_old_ships
+		icon = GFX_focus_GRE_a_long_and_proud_tradition
+
+
+		prerequisite = { focus = GRE_hellenic_royal_navy  }
+		available = {
+		}
+		x = 0
+		y = 1
+		relative_position_id = GRE_hellenic_royal_navy
 
 		cost = 6
 		ai_will_do = {
@@ -3210,10 +3259,10 @@ focus = {
 		    }
 		}	
 	
-		focus = {
-		id = GRE_hellenic_royal_navy
-		icon = GFX_focus_NORDIC_mon_navy
-
+	
+	focus = {
+		id = GRE_proffesional_sailors
+		icon = GFX_focus_generic_naval_discipline
 
 		prerequisite = { focus = GRE_honor_our_old_ships  }
 		available = {
@@ -3221,27 +3270,6 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = GRE_honor_our_old_ships
-          
-		cost = 5
-		ai_will_do = {
-			base = 0
-		}
-		available_if_capitulated = yes
-		search_filters = {  }
-		completion_reward = {
-	         add_ideas = GRE_fund_ship_research
-		    }
-		}	
-	focus = {
-		id = GRE_proffesional_sailors
-		icon = GFX_focus_generic_naval_discipline
-
-		prerequisite = { focus = GRE_hellenic_royal_navy  }
-		available = {
-		}
-		x = 0
-		y = 1
-		relative_position_id = GRE_hellenic_royal_navy
 
 		cost = 5
 		ai_will_do = {
@@ -3321,7 +3349,7 @@ focus = {
 		icon = GFX_focus_GRE_navy2
 
 
-		mutually_exclusive = { focus = GRE_honor_our_old_ships }
+		mutually_exclusive = { focus = GRE_hellenic_royal_navy }
 		prerequisite = { focus = GRE_royal_hellenic_navy  }
 		available = {
 		}
@@ -3463,12 +3491,12 @@ focus = {
     focus = {
 		id = GRE_sea_support
 		icon = GFX_focus_SWE_coastal_support
-		prerequisite = { focus = GRE_honor_our_old_ships focus = GRE_new_and_strong  }
+		prerequisite = { focus = GRE_hellenic_royal_navy focus = GRE_new_and_strong  }
 		available = {
 		}
 		x = -2
 		y = 1
-		relative_position_id = GRE_honor_our_old_ships
+		relative_position_id = GRE_hellenic_royal_navy
 
 		cost = 5
 		ai_will_do = {
@@ -3490,14 +3518,14 @@ focus = {
 		y = 1
 		relative_position_id = GRE_sea_support
 
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	      
+	      custom_effect_tooltip = GRE_trust_germany_or_eng_tt
 		    }
 		}
 focus = {
@@ -3591,6 +3619,8 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		custom_effect_tooltip = GRE_invite_onassis_tt
+		unlock_decision_category_tooltip = GRE_onassis_dec_category
 		    }
 		}
 		
@@ -3605,16 +3635,16 @@ focus = {
 		}
 		x = 0
 		y = 1
-  relative_position_id = GRE_hellenic_armed_forces
-	prerequisite = { focus = GRE_hellenic_armed_forces }
-		cost = 10
+  relative_position_id = GRE_hellenic_armed_forces_new
+	prerequisite = { focus = GRE_hellenic_armed_forces_new }
+		cost = 4
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	         army_experience = 125
+	         army_experience = 75
 		    }
 		}
 	
@@ -3628,14 +3658,14 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = GRE_royal_hellenic_army
-		cost = 6
+		cost = 3
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	         
+	         country_event = {  id = KT_greece_events.2 days = 5 }
 		    }
 		}
 	focus = {
@@ -3769,7 +3799,23 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	        
+	        if = {
+					limit = {
+						has_dlc = "No Step Back"
+					}
+					add_equipment_to_stockpile = { 
+						type = light_tank_chassis
+						amount = 550
+						producer = GRE
+					}
+				}
+				else = {
+					add_equipment_to_stockpile = { 
+						type = light_tank_equipment
+						amount = 550
+						producer = GRE
+					}
+				}
 		    }
 		}
 		focus = {
@@ -3882,7 +3928,7 @@ focus = {
 		completion_reward = {
 	         add_equipment_to_stockpile = { 
 				type = infantry_equipment
-				amount = 300
+				amount = 3000
 				producer = GER
 			}
 			add_equipment_to_stockpile = { 
@@ -4642,7 +4688,7 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = GRE_tax_incentives
-		cost = 5
+		cost = 10
 			ai_will_do = {
 			base = 0
 		}
@@ -4976,7 +5022,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        		add_war_support =0.1
 		}
     }
 		focus = {
@@ -4994,7 +5040,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        		add_ideas = GRE_prepare_to_strike_tur
 		}
     }
 		focus = {
@@ -5012,7 +5058,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        		swap_ideas = { remove_idea = GRE_prepare_to_strike_tur add_idea = GRE_prepare_to_strike_tur2 }
 		}
     }					
 		focus = {
@@ -5030,7 +5076,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        		swap_ideas = { remove_idea = GRE_prepare_to_strike_tur2 add_idea = GRE_prepare_to_strike_tur3 }
 		}
     }		
 		focus = {
@@ -5264,7 +5310,50 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        		 hidden_effect = {
+				division_template = {
+					name = "Volunteer Force"
+					priority = 2
+					division_names_group = GRE_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+			
+	    	   		 	infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+			
+	    	   		 	infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }						
+					}
+				}			
+			}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 341 }
+					create_unit = {
+						division = "name = \"1. Volunteer Force\" division_template = \"Volunteer Force\" start_experience_factor = 1.0" 
+						owner = GRE
+					}
+					create_unit = {
+						division = "name = \"2. Volunteer Force\" division_template = \"Volunteer Force\" start_experience_factor = 1.0" 
+						owner = GRE
+					}
+					create_unit = {
+						division = "name = \"3. Volunteer Force\" division_template = \"Volunteer Force\" start_experience_factor = 1.0" 
+						owner = GRE
+					}
+					create_unit = {
+						division = "name = \"4. Volunteer Force\" division_template = \"Volunteer Force\" start_experience_factor = 1.0" 
+						owner = GRE
+					}
+				}
 		}
     }
 		focus = {
@@ -5272,7 +5361,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		icon = GFX_focus_GRE_following_in_the_footsteps_of_giants
         prerequisite = { focus = GRE_have_faith_in_the_army }
 		relative_position_id = GRE_have_faith_in_the_army
-  		available = { }
+  		available = { has_war = yes}
 		x = 0
 		y = 1
 		cost = 5
@@ -5282,7 +5371,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        		swap_ideas = { remove_idea = for_hellas add_idea = for_hellas2 }
 		}
     }
 		focus = {
@@ -5290,7 +5379,8 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		icon = GFX_focus_GRE_resurrecting_the_megali_idea
         prerequisite = { focus = GRE_the_fatherland_calls }
 		relative_position_id = GRE_the_fatherland_calls
-  		available = { }
+  		available = { has_war_with_major = yes
+		surrender_progress > 0.5}
 		x = 0
 		y = 1
 		cost = 5
@@ -5300,7 +5390,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        		swap_ideas = { remove_idea = for_hellas2 add_idea = for_hellas3 }
 		}
     }	
 		focus = {
@@ -5318,7 +5408,18 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        		add_equipment_to_stockpile = {
+					type = large_plane_airframe
+					amount = 125
+					producer = GER
+				}
+				
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe
+					amount = 250
+					producer = ENG
+				}
+				
 		}
     }	
 		focus = {
@@ -5336,7 +5437,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        		add_ideas = GRE_ace_women
 		}
     }	
 			focus = {
@@ -5372,7 +5473,27 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        		if = { limit = { has_dlc = "Man the Guns" } 
+				create_ship = {
+					type = ship_hull_cruiser_coastal_defense_ship
+					equipment_variant = "Averof Class"
+					creator = GRE
+					name = "RHS Georgios II"
+				}
+		create_ship = {
+					type = ship_hull_cruiser_coastal_defense_ship
+					equipment_variant = "Averof Class"
+					creator = GRE
+					name = "RHS Constantine I"
+				}		
+		create_ship = {
+					type = ship_hull_cruiser_coastal_defense_ship
+					equipment_variant = "Averof Class"
+					creator = GRE
+					name = "RHS Sophia"
+				}
+				}
+				else = { navy_experience = 100 }
 		}
     }			
 	
@@ -5391,7 +5512,11 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        	add_mines = { region = 202 amount = 750 }
+			add_mines = { region = 69 amount = 500 }	
+			add_mines = { region = 29 amount = 500 }
+			add_mines = { region = 168 amount = 250 }
+add_mines = { region = 30 amount = 250 }				
 		}
     }		
 	
@@ -5410,7 +5535,20 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        		GRE = {
+				diplomatic_relation = {
+					country = ENG
+					relation = docking_rights
+					active = yes
+				}
+			}
+				ENG = {
+				diplomatic_relation = {
+					country = GRE
+					relation = docking_rights
+					active = yes
+				}
+			}
 		}
     }
 		focus = {
@@ -5428,7 +5566,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        		swap_ideas = { remove_idea = GRE_prepare_to_strike_tur3 add_idea = GRE_prepare_to_strike_tur4 }
 		}
     }	
 			focus = {
@@ -5446,7 +5584,14 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        		987 = {
+				  add_building_construction = {
+                    type = industrial_complex
+                    level = -3
+                    instant_build = yes
+                }
+				}
+				add_offsite_building = { type = industrial_complex level = 3 }
 		}
 		
     }
@@ -5465,7 +5610,34 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        		339 = {
+				add_building_construction = {
+						type = naval_base
+						level = 3
+						instant_build = yes
+						province = 9799					
+					}
+				add_building_construction = {
+						type = naval_base
+						level = 3
+						instant_build = yes
+						province = 7130					
+					}
+					add_building_construction = {
+						type = naval_base
+						level = 3
+						instant_build = yes
+						province = 11848					
+					}
+				}
+				941 = {
+					add_building_construction = {
+						type = naval_base
+						level = 5
+						instant_build = yes
+						province = 9941					
+					}
+				}
 		}	
 		}
 		focus = {
@@ -5483,7 +5655,10 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        		add_equipment_to_stockpile = { 
+				type = convoy
+				amount = 75	
+			}
 		}	
 		}	
 			focus = {
@@ -5501,7 +5676,27 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        		341 = {
+					add_building_construction = {
+						type = bunker
+						level = 7
+						instant_build = yes
+						province = 849					
+					}
+					add_building_construction = {
+						type = naval_base
+						level = 4
+						instant_build = yes
+						province = 849					
+					}
+					add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = 13363					
+					}
+				
+				}
 		}
 		
     }
@@ -5520,7 +5715,16 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        		797 = {
+					add_building_construction = {
+						type = bunker
+						level = 8
+						instant_build = yes
+						province = 9833					
+					}
+					
+				
+				}
 		}	
 		}
 		focus = {
@@ -5538,32 +5742,65 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
-		}	
-		}	
-				focus = {
-		id = GRE_secure_dardanelles
-		icon = GFX_focus_TUR_the_montreux_convention
-        prerequisite = { focus = GRE_fortify_constantinople }
-		relative_position_id = GRE_fortify_constantinople
-  		available = { }
-		x = 0
-		y = 1
-		cost = 5
-		ai_will_do = {
-			base = 1
-		}
-		available_if_capitulated = yes
-		search_filters = { }
-		completion_reward = {
-        		
+        			339 = {
+					add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = 9799					
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						instant_build = yes
+						province = 9921					
+					}
+					
+					add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = 928					
+					}
+					
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 6992					
+					}
+					
+				
+						
+				
+				}
+					987 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 9929					
+					}
+					add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = 9941					
+					}
+					
+				
+					
+				
+						
+				
+				}
 		}	
 		}	
 		focus = {
 		id = GRE_end_what_they_started
 		icon = GFX_focus_TUR_purge_the_kemalists
         prerequisite = { focus = GRE_secure_access_to_cyprus}
-        prerequisite = { focus = GRE_secure_dardanelles }
+        prerequisite = { focus = GRE_secure_smyrna }
 		relative_position_id = GRE_secure_access_to_cyprus
   		available = { }
 		x = 1
@@ -5575,7 +5812,11 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        		create_wargoal = {
+				type = annex_everything
+				target = TUR
+				expire = 0
+			}
 		}	
 		}		
 	

@@ -1,7 +1,137 @@
 ideas = {
 
 	country = { 
+       GRE_flying_eagles = {
+		     picture = ast_abandon_the_westminster_system_fascism
+			 removal_cost = -1
+			 
+			 modifier = {
+				air_defence_factor = 0.05
+				air_attack_factor = 0.05
+				air_superiority_efficiency =0.1
+			 }
+		
+		
+		}
+		GRE_prepare_to_strike_tur = { 
 
+            name = GRE_prepare_to_strike_tur
+
+			picture = hun_treaty_of_trianon
+				
+			removal_cost = -1
+			targeted_modifier = {
+				tag = TUR
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}				
+		
+		}
+		GRE_prepare_to_strike_tur2 = { 
+
+            name = GRE_prepare_to_strike_tur
+
+			picture = hun_treaty_of_trianon
+				
+			removal_cost = -1
+			targeted_modifier = {
+				tag = TUR
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.05
+				breakthrough_bonus_against = 0.05
+			}				
+		
+		}
+		GRE_prepare_to_strike_tur3 = { 
+
+            name = GRE_prepare_to_strike_tur
+
+			picture = hun_treaty_of_trianon
+				
+			removal_cost = -1
+			targeted_modifier = {
+				tag = TUR
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+				breakthrough_bonus_against = 0.1
+			}				
+		
+		}
+		GRE_ace_women = { 
+
+			allowed = {
+				original_tag = GRE
+			}
+            picture = air_war_plans_division_focus
+
+
+			modifier = {
+				air_training_xp_gain_factor = 0.15
+				air_ace_bonuses_factor = 0.3
+				air_ace_generation_chance_factor = 0.2
+			}
+		}
+		GRE_prepare_to_strike_tur4 = { 
+
+            name = GRE_prepare_to_strike_tur
+
+			picture = hun_treaty_of_trianon
+				
+			removal_cost = -1
+			targeted_modifier = {
+				tag = TUR
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+				breakthrough_bonus_against = 0.1
+			}				
+		    modifier = { 
+			conscription_factor = 0.1 
+			}
+		}
+		GRE_trusted_us_ger = {
+		     picture = generic_naval_manufacturer_1
+			 removal_cost = -1
+			 
+			 modifier = {
+			    political_power_gain = 0.5
+				consumer_goods_factor = -0.2
+			 }
+		
+		
+		}
+	 GRE_trusted_our_ships_to_ger = {
+		     picture = generic_naval_manufacturer_1
+			 removal_cost = -1
+			 
+			 modifier = {
+			    political_power_cost = 0.5
+				consumer_goods_factor = 0.2
+			 }
+		
+		
+		}
+	GRE_trusted_us_eng = {
+		     picture = generic_naval_manufacturer_1
+			 removal_cost = -1
+			 
+			 modifier = {
+			    political_power_gain = 1
+				consumer_goods_factor = -0.4
+			 }
+		
+		
+		}
+	 GRE_trusted_our_ships_to_eng = {
+		     picture = generic_naval_manufacturer_1
+			 removal_cost = -1
+			 
+			 modifier = {
+			    political_power_cost = 1
+				consumer_goods_factor = 0.4
+			 }
+		
+		
+		}
        GRE_epistratoi = {
 
 		allowed = {

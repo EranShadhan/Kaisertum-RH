@@ -5,6 +5,7 @@
  GRE_pay_back_debt_to_the_ifc_category2_desc:1 "Greece has been plagued with financial debts since our War of Independence in 1829, and the Second Great Turkish war did not exactly help alleviate our fiscal woes. If we can pay off our debts, it will surely go a long way in securing some semblance of economic stability in Greece. Alternatively, certain radical movements have been known to buck both political and economic conventions. Should we fold to one of these movements, or simply allow the world to unravel as time progresses, more drastic courses of action may very well present themselves...\n\n§YDebt§! to the §YBritish§!: [ROOT.GetDebtPercentageBritain]\n\n§YDebt§! to the §YFrench§!: [ROOT.GetDebtPercentageFrance] \n\n§YDebt§! to the §YItalians§!: [ROOT.GetDebtPercentageItaly] \n\n§YDebt§! to the §YRussians§!: [ROOT.GetDebtPercentageRussia]\n\n§YDebt§! to the §YGermans§!: [ROOT.GetDebtPercentagGermany]\n\n§YDebt§! to the §YAustro-Hungarians§!: [ROOT.GetDebtPercentageAustriaHungary] \n\nTotal §YDebt§! Paid: [ROOT.GetDebtPercentagePaidTotal]"
  for_hellas:0 "All Must Serve"
  for_hellas2:0 "All Must Serve - Total War"
+ for_hellas3:0 "All Must Serve - Desperate Measures"
  GRE_no_debt_paid:0 "§YNo debt has been paid§!."
  GRE_debt_paid_total_tt:0 "§YCan Be Removed Once Debt Has Been Fully Repaid§!"
  GRE_small_payment_to_russia_debt_effect_tt:0 "This decision will clear one quarter of our current §Ydebt§! with §Y[SOV.GetNameDef]§! each time it is completed.\n"
@@ -124,8 +125,16 @@
  GRE_on_going_population_exchange:0 "Ongoing Cypriot Population Exchange"
  GRE_on_going_population_exchange_desc:0 "Even though the agreement of the population exchange was signed half a decade ago, Cyprus is still trying to keep up with it. Many Turks from lower classes find it hard to afford a ticket to go back in their homeland. Since Cyprus is an island, the local population cannot return to Turkey as easy as the locals in the Greek mainland did. We must speed up this proccess by covering costs of the tickets for this journey so we can finally get down with it and move on"
  
+ GRE_trust_germany_or_eng_tt:0 "We will unlock decisions to align ourselves with §YBritain§! or with §YGermany§! which will allow us to rebuild our old §Ynavy§!. Alligning ourselves with §YBritain§! will be §Rmore expensive§!, but will §Gtake less time§!. Alligning ourselves with Germany will be §Gless expensive§!, but will §Rtake more time§!."
+ GRE_ships_eng_tt:0 "We will receive §Y2 Battleships, 4 Heavy Cruisers, 6 Light Cruisers and 10 Destroyers§!"
+ GRE_ships_ger_tt:0 "We will receive §Y2 Aircraft Carriers, 1 Super Heavy Battleship, 7 Battleships and 5 Submarines§!"
+ GRE_invite_onassis_tt:0 "We will invite Aristotle Onassis back to Greece and ask him to help us rebuild our nation"
+ 
  KT_greece_events.1.t:0 "The Bosporus Gamble"
  KT_greece_events.1.d:0 "Local authorities in Constantinople reported that a drunk turkish man had crossed the border by swimming in between the straights and came in our aside of the straits. They found the drunk man having a fight with another drunk Greek man who happened to meet him. They reported that they agreed the winner of the fight will get the enemy's side of Constantinople, but we are not that crazy to give them the other side. Maybe bet a few of our budget?"
  KT_greece_events.1.a:0 "Childish Behavior..."
  KT_greece_events.1.b:0 "Bet on the Greek!"
  KT_greece_events.1.c:0 "Bet on the Turk!"
+ 
+ GRE_metaxas_army_tt:0 "We will give Ioannis Metaxas leadership of the army and he will be unlocked as a Chief Of Army. If we ever plan to assasinate him, his new political connections might help him to escape"
+ GRE_metaxas_army2_tt:0 "This will limit Metaxas influence over our high command and if we ever try to assasinate him, he will be less likely to escape"

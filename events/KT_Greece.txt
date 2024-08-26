@@ -36,3 +36,25 @@ country_event = {
 		}
 	}
 }
+
+country_event = { #Metaxas army
+	id = KT_greece_events.2
+	title = KT_greece_events.2.t
+	desc = KT_greece_events.2.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	option = {
+		name = KT_greece_events.2.a
+		set_country_flag = GRE_metaxas_army
+		custom_effect_tooltip = GRE_metaxas_army_tt
+	}
+	option = {
+		name = KT_greece_events.2.b
+		
+		set_country_flag = GRE_metaxas_army_no
+		custom_effect_tooltip = GRE_metaxas_army2_tt
+	}
+
+}
