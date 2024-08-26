@@ -2656,6 +2656,7 @@ focus = {
 		}
 
 		available = {
+			has_completed_focus = GER_to_kill_an_empire
 		}
 		
 		bypass = {
