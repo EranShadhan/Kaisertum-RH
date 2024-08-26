@@ -143,6 +143,30 @@ spriteType = {
 		name = "GFX_focus_GRE_hellenic_nukes"
 		texturefile = "gfx/interface/goals/GRE/focus_GRE_hellenic_nukes.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_GRE_mission_to_ger"
+		texturefile = "gfx/interface/goals/GRE/focus_mission_to_ger.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GRE_macedonianism"
+		texturefile = "gfx/interface/goals/GRE/GRE_macedonianism.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GRE_macedonia_after_persia"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_macedonia_after_persia.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GRE_macedon_culutre"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_macedon_culutre.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_the_KKE"
+		texturefile = "gfx/interface/goals/GRE/focus_the_KKE.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GRE_reach_india"
+		texturefile = "gfx/interface/goals/GRE/GRE_reach_india.dds"
+	}
 spriteType = {
 		name = "GFX_GRE_mac_empire"
 		texturefile = "gfx/interface/goals/GRE/GRE_mac_empire.dds"

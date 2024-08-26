@@ -1564,6 +1564,26 @@ has_country_flag = nationa_schism_part2
 		    }
 		}
 	focus = {
+		id = GRE_honor_the_communists_efforts
+		icon = GFX_focus_the_KKE
+
+		
+		available = {
+		}
+		x = 7
+		y = 1
+        prerequisite = { focus = GRE_ally_the_mafia_to_assasinate_metaxas }
+		relative_position_id = GRE_ally_the_mafia_to_assasinate_metaxas
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}		
+	focus = {
 		id = GRE_the_house_always_wins
 		icon = GFX_focus_house_of_glucksburg
 
@@ -1590,7 +1610,7 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = -5
+		x = -4
 		y = 1
         prerequisite = { focus = GRE_the_house_always_wins }
 		relative_position_id = GRE_the_house_always_wins
@@ -1674,7 +1694,51 @@ has_country_flag = nationa_schism_part2
 			    }
 			}
 		    }
-		}		
+		}	
+			focus = {
+		id = GRE_reach_the_indo
+		icon = GFX_focus_GRE_reach_india
+
+		
+		available = {
+		}
+		x = 0
+		y = 2
+        prerequisite = { focus = GRE_ask_for_british_ship focus = GRE_end_the_persians}
+		relative_position_id = GRE_ask_for_british_ship
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+		}	
+			focus = {
+		id = GRE_kordian_knot
+		icon = GFX_focus_GRE_macedon_culutre
+
+		
+		available = {
+		}
+		x = -1
+		y = 1
+        prerequisite = { focus = GRE_end_the_persians }
+		prerequisite = { focus = GRE_securing_our_homeland }
+		prerequisite = { focus = GRE_reach_the_indo }
+		relative_position_id = GRE_securing_our_homeland
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+			
+		    }
+		}			
 			focus = {
 		id = GRE_ask_for_british_guns
 		icon = GFX_focus_GRE_british_guns
@@ -1697,8 +1761,8 @@ has_country_flag = nationa_schism_part2
 		    }
 		}	
 			focus = {
-		id = GRE_launch_rockets_from_our_subs
-		icon = GFX_focus_GRE_rockets_from_subs
+		id = GRE_large_scale_exercise
+		icon = GFX_focus_GRE_mission_to_ger
 
 		
 		available = {
@@ -1724,7 +1788,7 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = 1
+		x = 2
 		y = 1
         prerequisite = { focus = GRE_the_house_always_wins }
 		relative_position_id = GRE_the_house_always_wins
@@ -1825,7 +1889,7 @@ has_country_flag = nationa_schism_part2
 		
 		available = {
 		}
-		x = -2
+		x = -1
 		y = 1
         prerequisite = { focus = GRE_the_house_always_wins }
 		relative_position_id = GRE_the_house_always_wins
@@ -1837,7 +1901,127 @@ has_country_flag = nationa_schism_part2
 		search_filters = {  }
 		completion_reward = {
 		    }
+		}
+	focus = {
+		id = GRE_macedonianism
+		icon = GFX_focus_GRE_macedonianism
+
+		
+		available = {
+		}
+		x = 0
+		y = 2
+        prerequisite = { focus = GRE_the_will_to_empire }
+		relative_position_id = GRE_the_will_to_empire
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
 		}		
+	focus = {
+		id = GRE_end_the_persians
+		icon = GFX_focus_GRE_macedonia_after_persia
+
+		
+		available = {
+		}
+		x = 0
+		y = 2
+        prerequisite = { focus = GRE_macedonianism }
+		relative_position_id = GRE_macedonianism
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}		
+	focus = {
+		id = GRE_death_or_dishonor
+		icon = GFX_focus_SWE_neither_death_nor_dishonor
+
+		
+		available = {
+		}
+		x = 1
+		y = 1
+        prerequisite = { focus = GRE_the_will_to_empire }
+		relative_position_id = GRE_the_will_to_empire
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}	
+	focus = {
+		id = GRE_molotov_tactics
+		icon = GFX_focus_FIN_oy_alkoholiliike
+
+		
+		available = {
+		}
+		x = 0
+		y = 2
+        prerequisite = { focus = GRE_death_or_dishonor }
+		relative_position_id = GRE_death_or_dishonor
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}	
+	focus = {
+		id = GRE_securing_our_homeland
+		icon = GFX_focus_FIN_coastal_defense
+
+		
+		available = {
+		}
+		x = 0
+		y = 2
+        prerequisite = { focus = GRE_molotov_tactics }
+		relative_position_id = GRE_molotov_tactics
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}		
+	focus = {
+		id = GRE_fight_like_1821
+		icon = GFX_focus_FIN_a_cry_for_help_2
+
+		
+		available = {
+		}
+		x = -1
+		y = 1
+        prerequisite = { focus = GRE_the_will_to_empire }
+		relative_position_id = GRE_the_will_to_empire
+		cost = 3.5
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}				
 	focus = {
 		id = GRE_the_economic_crush
 		icon = GFX_focus_GRE_economic_crisis
