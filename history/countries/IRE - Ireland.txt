@@ -102,6 +102,7 @@ recruit_character = IRE_Parliment_in_Chaos
 recruit_character = IRE_micheal_collins
 recruit_character = IRE_Éamon_de_valera
 recruit_character = IRE_eoin_oduffy
+recruit_character = IRE_Winston_Churchil
 recruit_character = IRE_james_larkin
 recruit_character = IRE_william_norton
 recruit_character = IRE_michael_costello
@@ -177,6 +178,7 @@ add_ideas = {
 	IRE_king_George_V
 	IRE_British_Investment
 	IRE_IRA_Presence
+	IRE_Govenor_Churchil
 
 }
 

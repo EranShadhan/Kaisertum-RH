@@ -124,6 +124,39 @@ ideas = {
 
 		}
 
+		IRE_Govenor_Churchil = {
+			
+			allowed = {
+				original_tag = IRE
+			}
+
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = IRE
+						has_government = democratic 
+						NOT = {
+							tag = ROOT
+						}
+					}
+				}
+			}
+
+			picture = 
+			
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = -0.1				
+			}
+			
+
+		}
+
+
 
 	}
 }

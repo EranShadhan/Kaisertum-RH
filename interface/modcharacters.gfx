@@ -74,6 +74,11 @@ spriteTypes = {
 		name = "GFX_portrait_IRE_Parliment_in_Chaos"
 		texturefile = "gfx/leaders/IRE/Portrait_Parliment_in_Chaos.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_IRE_Winston_Churchil"
+		texturefile = "gfx/leaders/IRE/Portrait_Ireland_Winston_Churchil.dds"
+	}
+
 
 
 

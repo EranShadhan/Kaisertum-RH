@@ -66,7 +66,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=conservatism
+			ideology=conservatism 
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -85,6 +85,22 @@ characters={
 			id=-1
 		}
 	}
+
+	IRE_Winston_Churchil={
+		name="IRE_Winston_Churchil"
+		portraits={
+			civilian={
+				large=GFX_portrait_IRE_Winston_Churchil
+			}
+		}
+		country_leader={
+			ideology=centrism
+			traits = { british_bulldog }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
 	IRE_james_larkin={
 		name="James Larkin"
 		portraits={
