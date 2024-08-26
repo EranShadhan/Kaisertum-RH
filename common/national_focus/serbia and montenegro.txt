@@ -1,0 +1,101 @@
+## SERBIA AND MONTENEGRO ##
+## HABSBURG OVERLORDSHIP ##
+
+focus_tree = {
+	id = serbia_and_montenegro_tree_AUS
+	default = no
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SER
+		}
+	}
+	
+	continuous_focus_position = { x = 20 y = 1000 }
+	
+	focus = {
+		id = SER_AUS_arise_serbia
+		icon = GFX_focus_generic_diplomatic_treaty
+		
+		x = 5
+		y = 0
+		cost = 5
+		
+		available = {}
+		bypass = {}
+		prerequisite = {}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = SER_AUS_rouse_the_serbs
+		icon = GFX_goal_support_democracy
+		
+		relative_position_id = SER_AUS_arise_serbia
+		x = -2
+		y = 1
+		cost = 5
+		
+		available = {}
+		bypass = {}
+		prerequisite = {focus = SER_AUS_arise_serbia}
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.1
+			}
+			add_political_power = 50
+		}
+		
+	}
+	
+}
+
+
+## SERBIA AND MONTENEGRO ##
+## BULGARIAN PUPPETERING ##
+
+focus_tree = {
+	default = no
+	id = serbia_and_montenegro_tree_BUL
+	
+	focus = {
+		id = SER_BUL_who_king
+		icon = GFX_focus_generic_monarchy_2
+		
+		x = 5
+		y = 0
+		cost = 2
+		
+		available = {}
+		bypass = {}
+		completion_reward = {} # TODO: event to choose a monarch, also add a spirit to penalize for not choosing
+		mutually_exclusive = { focus = SER_BUL_king_is_useless }
+	}
+	
+	focus = {
+		id = SER_BUL_king_is_useless
+		icon = GFX_focus_rom_handle_king
+		
+		relative_position_id = SER_BUL_who_king
+		x = 8
+		y = 0
+		cost = 5
+		mutually_exclusive = { focus = SER_BUL_who_king }
+		available = {}
+		bypass = {}
+		completion_reward = {} # TODO: this is a shit focus. it should be intentionally shit. to all ye who wish to tone this down, stop bein a pussy ass bitch
+	}
+}
