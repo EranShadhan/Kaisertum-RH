@@ -125,11 +125,7 @@ country_event = {
 			}
 			transfer_state = 664
 			transfer_state = 73
-			transfer_state = 996
 
-			996 = {
-				set_demilitarized_zone = yes
-			}
 			73 = {
 				set_demilitarized_zone = yes
 			}

@@ -60,7 +60,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_weekly = -0.05
+				stability_weekly = -0.01
 				political_power_gain = -0.15
 				industrial_capacity_dockyard = -0.10
 				industrial_capacity_factory = -0.10

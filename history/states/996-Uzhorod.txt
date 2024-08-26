@@ -4,7 +4,7 @@ state={
 
 	history={
 		victory_points = {
-			11691 1 
+			
 		}
 		owner = HUN
 		buildings = {
@@ -14,12 +14,12 @@ state={
 		}
 		add_core_of = SLO
 		add_core_of = HUN
-		add_claim_by = UKR
+
 
 	}
 
 	provinces={
-		11691 
+		11536 6604
 	}
 	manpower=26675
 	state_category=rural
