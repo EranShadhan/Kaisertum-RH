@@ -1,0 +1,116 @@
+ideas = {
+
+	country = {
+
+        	Inefective_constitution
+		 = {
+
+			picture = GFX_goal_generic_social_reforms
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+                political_power_gain = -0.15
+                conscription_factor = -0.2
+				drift_defence_factor = -0.1
+			}
+		}
+
+		Carol_reforms = {
+
+			picture = GFX_goal_generic_social_reforms
+
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_weekly = 0.3
+				neutrality_drift = 0.1
+			}
+		}
+
+		suspend_constitution = {
+			picture = GFX_goal_generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.05
+				political_power_gain = -0.15
+				industrial_capacity_dockyard = -0.10
+				industrial_capacity_factory = -0.10
+				drift_defence_factor = -0.1
+			}
+		}
+
+		increase_taxes = {
+			picture = GFX_goal_generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.10
+				political_power_gain = 0.15
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		revised_constitution = {
+			picture = GFX_goal_generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.15
+				industrial_capacity_dockyard = 0.10
+				industrial_capacity_factory = 0.10
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+	}
+
+}

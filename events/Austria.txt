@@ -11,6 +11,10 @@ country_event = {
 	desc = austria.1.d
 	picture = GFX_report_event_second_vienna_award_pact
 	
+	mean_time_to_happen = {
+		days = 70
+	}
+
 	is_triggered_only = yes
 	
 	option = {
@@ -69,6 +73,8 @@ country_event = {
 				}
 			}
 			country_event = { days = 1 id = austria.2 }
+
+			
 		}
 	}
 }
@@ -114,9 +120,11 @@ country_event = {
 			764 = {
 				add_core_of = ROM
 			}
-			BUL = { country_event = { days = 28 id = austria.4 } }
 			ITA = { country_event = { days = 10 id = austria.3 } }
 		}
+	}
+	mean_time_to_happen = {
+		days = 71
 	}
 }
 

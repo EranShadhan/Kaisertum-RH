@@ -999,7 +999,8 @@ focus = {
 	
 		prerequisite = { focus = ROM_pol_k_1 }
 
-	
+		cost = 5
+
 		ai_will_do = {
 				factor = 1
 			}
@@ -1019,20 +1020,23 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				ROM = {
+					add_ideas = Carol_reforms
+				}
 			}
 	}
 
 	focus = {
 
 		id = ROM_pol_k_3
-		icon = GFX_ROM_pol_k_2
+		icon = GFX_ROM_pol_k_3
 		x = 2
 		y = 1
 		relative_position_id = ROM_pol_k_1
 	
 		prerequisite = { focus = ROM_pol_k_1 }
 
+		cost = 5
 	
 		ai_will_do = {
 				factor = 1
@@ -1053,7 +1057,7 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				add_ideas = increase_taxes
 			}
 	}
 
@@ -1067,6 +1071,7 @@ focus = {
 	
 		prerequisite = { focus = ROM_pol_k_1 }
 
+		cost = 5
 	
 		ai_will_do = {
 				factor = 1
@@ -1087,7 +1092,8 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				add_ideas = suspend_constitution
+				remove_ideas = Inefective_constitution 
 			}
 	}
 
@@ -1099,6 +1105,8 @@ focus = {
 		y = 2
 		relative_position_id = ROM_pol_k_1
 	
+		cost = 2
+
 		prerequisite = { focus = ROM_pol_k_2 }
 		prerequisite = { focus = ROM_pol_k_4 }
 		prerequisite = { focus = ROM_pol_k_3 }
@@ -1109,7 +1117,12 @@ focus = {
 			}
 	
 			available = {
-	
+				84 = { is_owned_by = ROM }
+				998 = { is_owned_by = ROM }
+				76 = { is_owned_by = ROM }
+				997 = { is_owned_by = ROM }
+				83 = { is_owned_by = ROM }
+				82 = { is_owned_by = ROM }
 			}
 	
 			bypass = {
@@ -1123,7 +1136,7 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				country_event = kt_romania.2
 			}
 	}
 

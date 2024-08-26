@@ -33,3 +33,49 @@ country_event = {
 	
 }
 
+country_event = {
+	id = kt_romania.2
+	title = kt_romania.2.t
+	desc = kt_romania.2.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kt_romania.2.a
+		add_stability = 0.05
+		hidden_effect = {
+			country_event = kt_romania.3
+		}	
+	}
+	
+}
+
+country_event = {
+	id = kt_romania.3
+	title = kt_romania.3.t
+	desc = kt_romania.3.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kt_romania.3.a
+		add_stability = -0.1
+		add_war_support = 0.2
+		hidden_effect = {
+			complete_national_focus = ROM_pol_kw_1
+		}	
+	}
+
+	option = {
+		name = kt_romania.3.b
+		add_stability = -0.2
+		add_war_support = -0.2
+		hidden_effect = {
+			complete_national_focus = ROM_pol_rc_1
+		}	
+	}
+	
+}
+

@@ -3321,6 +3321,11 @@ focus = {
 
 		completion_reward = {
 			country_event = germany.1
+			hidden_effect = {
+				AUS = {
+					country_event = austria.1
+				}
+			}
 		}
 	}
 	focus = {
