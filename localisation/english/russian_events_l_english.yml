@@ -1,0 +1,25 @@
+﻿l_english:
+ RUS_events.1.t:0 "The Years Go By"
+ RUS_events.1.d:0 "Our country is at a point where it needs to decide it's future otherwise the country will not succeed in this new world. The head of the Provisional Government Kerensky supports an idea of a conservative democratic Russian Republic while Ustryalov supports an authoritarian natonal bolshevik state ruled by an iron fist."
+ RUS_events.1.a:0 "Ustryalov is right..."
+ RUS_events.1.b:0 "Kerensky is right..."
+
+ RUS_events.2.t:0 "Anti-Corruption Purges"
+ RUS_events.2.d:0 "Russia has awlays been rooted with corruption in every way since the Rus'. Provisional Government has to get rid of corruption to have a bright future."
+ RUS_events.2.a:0 "Purge the Military"
+ RUS_events.2.b:0 "Purge the Monopolists"
+
+ RUS_events.3.t:0 "Russification"
+ RUS_events.3.d:0 "We have been Russifying the people of our state for almost a century with a goal of having a common East Slavic identity."
+ RUS_events.3.a:0 "Stop Russification"
+ RUS_events.3.b:0 "Continue Russification"
+
+ RUS_events.4.t:0 "Stance on the French"
+ RUS_events.4.d:0 "France and Russia being part of the Entente have been going further away. Reinstating this friendship will help to take down the Germans."
+ RUS_events.4.a:0 "Strengthen Relations"
+ RUS_events.4.b:0 "Leave the Fench alone..."
+
+ RUS_events.5.t:0 "State Council"
+ RUS_events.5.d:0 "State Council in tsarist Russia was an advisory body to the Duma. The status of it in the Russian Republic is still unknown."
+ RUS_events.5.a:0 "Keep it as an advisory body"
+ RUS_events.5.b:0 "Make it confirm laws"
