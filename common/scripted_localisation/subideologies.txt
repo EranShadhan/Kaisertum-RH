@@ -90,6 +90,20 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			has_country_leader_ideology = absolute_monarchy
+		}
+		localization_key = absolute_monarchy
+		
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = junta
+		}
+		localization_key = junta
+		
+	}
+	text = {
+		trigger = {
 			has_country_leader_ideology = centrism
 		}
 		localization_key = centrism
@@ -102,6 +116,13 @@ defined_text = {
 			has_country_leader_ideology = nazism
 		}
 		localization_key = nazism
+		
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = absolute_monarchy_fas
+		}
+		localization_key = absolute_monarchy_fas
 		
 	}
 	text = {
@@ -173,6 +194,12 @@ defined_text = {
 			has_country_leader_ideology = neosocialism
 		}
 		localization_key = neosocialism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = junta_com
+		}
+		localization_key = junta_com
 	}
 	
 }

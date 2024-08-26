@@ -85,6 +85,9 @@ ideologies = {
 			stalinism = {
 			}
 			
+			junta_com = {
+			}
+			
 			japsoccom = {
 				color = { 205 20 60 }
 				can_be_randomly_selected = no
@@ -152,6 +155,9 @@ ideologies = {
 
 			fascism_ideology = {
 			}
+			
+			absolute_monarchy_fas = {
+			}
 
 			falangism = {
 			}
@@ -202,7 +208,13 @@ ideologies = {
 
 			despotism  = {
 			}
-
+			
+			absolute_monarchy = {
+			}
+			
+			junta = {
+			}
+			
 			oligarchism  = {
 			}
 
