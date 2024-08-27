@@ -41,7 +41,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = -0.05
-				stability_weekly = 0.3
+				stability_weekly = 0.001
 				neutrality_drift = 0.1
 			}
 		}

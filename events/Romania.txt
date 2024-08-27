@@ -79,3 +79,97 @@ country_event = {
 	
 }
 
+country_event = {
+	id = kt_romania.4
+	title = kt_romania.4.t
+	desc = kt_romania.4.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+
+	option = {
+		name = kt_romania.4.a
+		ROM = {
+			country_event = kt_romania.5
+		}
+	}
+
+	option = {
+		name = kt_romania.4.b
+		ROM = {
+			transfer_state = 73
+			transfer_state = 154
+		}
+	}
+	
+}
+
+country_event = {
+	id = kt_romania.5
+	title = kt_romania.5.t
+	desc = kt_romania.5.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kt_romania.5.a
+		ROM = {
+			create_wargoal = {
+				type = take_state_focus
+				target = HUN
+				generator = { 154 73 }
+			}
+		}
+	}
+
+}
+
+country_event = {
+	id = kt_romania.6
+	title = kt_romania.6.t
+	desc = kt_romania.6.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+
+	option = {
+		name = kt_romania.6.a
+		ROM = {
+			annex_country = {
+				country = BUL
+				transfer_troops = yes
+			}
+		}
+	}
+
+	option = {
+		name = kt_romania.6.b
+		ROM = {
+			country_event = kt_romania.7
+		}
+	}
+	
+}
+
+country_event = {
+	id = kt_romania.7
+	title = kt_romania.7.t
+	desc = kt_romania.7.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kt_romania.5.a
+		ROM = {
+			create_wargoal = {
+				type = annex_everything
+				target = BUL
+			}
+		}
+	}
+
+}
+
+
