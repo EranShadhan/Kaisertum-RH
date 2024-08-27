@@ -2,7 +2,7 @@ focus_tree = {
 	id = ukrainian_focus
 	
 	country = {
-		factor = 0
+		factor = 15
 		modifier = {
 			add = 10
 			tag = UKR
