@@ -7,7 +7,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=absolute_monarchy
 			traits={ patriot_king }
 			expire="1941.1.1.1"
 			id=-1
