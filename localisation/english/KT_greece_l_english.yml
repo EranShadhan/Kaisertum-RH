@@ -135,6 +135,7 @@
  KT_greece_events.1.a:0 "Childish Behavior..."
  KT_greece_events.1.b:0 "Bet on the Greek!"
  KT_greece_events.1.c:0 "Bet on the Turk!"
+ gre_george_ii_com:0 "Comrade George II"
  
  GRE_metaxas_army_tt:0 "We will give Ioannis Metaxas leadership of the army and he will be unlocked as a Chief Of Army. If we ever plan to assasinate him, his new political connections might help him to escape"
  GRE_metaxas_army2_tt:0 "This will limit Metaxas influence over our high command and if we ever try to assasinate him, he will be less likely to escape"
@@ -162,3 +163,4 @@
  KT_greece_events.9.a:0 "The enemy of my enemy is my friend!"
  KT_greece_events.9.b:0 "We cannot be bothered, send him to Russia"
  KT_greece_events.9.c:0 "He has caused a lot of damage to Turkey, he must suffer for his crimes"
+ greworker_revolt:0 "Workers' Revolution"

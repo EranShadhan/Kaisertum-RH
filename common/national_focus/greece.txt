@@ -1141,7 +1141,10 @@ add_ideas = GRE_like_the_beasts
 				popularity = 0.1
              }	
 			 add_political_power = 100
+			 
+			 
 			 add_stability = 0.05
+			 remove_ideas = GRE_george_ii
 		    }
 		}	
 
@@ -1941,8 +1944,11 @@ add_ideas = GRE_like_the_beasts
 		add_popularity = {
     			ideology = communism
     			popularity = 0.2
+				
 			}
+			set_politics = { ruling_party = communism elections_allowed = no }
 			remove_ideas = GRE_no_left
+			add_ideas = GRE_george_ii
 		    }
 		}	
 	focus = {
@@ -1998,7 +2004,7 @@ add_ideas = GRE_like_the_beasts
 		x = 0
 		y = 1
         prerequisite = { focus = GRE_invite_japanese_communists }
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
@@ -2019,13 +2025,14 @@ add_ideas = GRE_like_the_beasts
 		x = 1
 		y = 1
         prerequisite = { focus = GRE_refugre_volunteers }
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		remove_ideas = GRE_george_ii
 		add_ideas = GRE_george_ii_restrained
 		    }
 		}
@@ -2040,13 +2047,15 @@ add_ideas = GRE_like_the_beasts
 		x = -1
 		y = 1
         prerequisite = { focus = GRE_refugre_volunteers }
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+			remove_ideas = GRE_george_ii
+			add_political_power = 100
 		    }
 		}		
 	focus = {
@@ -2060,13 +2069,14 @@ add_ideas = GRE_like_the_beasts
 		x =-3
 		y = 1
         prerequisite = { focus = GRE_reform_the_government }
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_ideas = GRE_red_militias_2
 		    }
 		}	
 	focus = {
@@ -2087,6 +2097,7 @@ add_ideas = GRE_like_the_beasts
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_ideas = GRE_red_militias_spirit
 		    }
 		}
 	focus = {
@@ -2107,6 +2118,7 @@ add_ideas = GRE_like_the_beasts
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_ideas = GRE_cooperative_trade_unions
 		    }
 		}		
 		focus = {
@@ -2121,13 +2133,14 @@ add_ideas = GRE_like_the_beasts
 		y = 1
         prerequisite = { focus = GRE_workers_revolution  }
 		prerequisite = { focus = GRE_form_peoples_militia }
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_ideas = GRE_red_ships
 		    }
 		}	
 		focus = {
@@ -2148,6 +2161,13 @@ add_ideas = GRE_like_the_beasts
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		every_country = {
+		limit = { is_in_faction_with = GRE 
+		OR = { original_tag = ROM original_tag = BUL original_tag = SER original_tag = ALB}
+		
+		}
+		add_ideas = communist_influence	
+		}
 		    }
 		}		
 	focus = {
