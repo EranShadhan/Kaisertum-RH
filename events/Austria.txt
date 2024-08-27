@@ -179,6 +179,7 @@ country_event = {
 			YUG = {
 				remove_ideas = YUG_payment_to_hungary
 				remove_ideas = YUG_underground_italian_connections
+				set_cosmetic_tag = YUG_ITA
 			}
 		}
 	}
@@ -318,6 +319,7 @@ country_event = {
 			set_variable = {
 				YUG_fiume_crisis_var = 5
 			}
+			complete_national_focus = YUG_death_of_an_empire
 		}
 
 		FCF = {
@@ -394,6 +396,29 @@ country_event = {
 				add_core_of = HUN
 			}
 
+			JAP = {
+				diplomatic_relation = {
+					country = AUS
+					relation = puppet
+					active = yes
+				}
+			}
+
+			AUS =  {
+				set_cosmetic_tag = AUS_JAP
+				transfer_state = 524
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				set_political_party = {
+					ideology = neutrality
+					popularity = 100
+				}
+			}
+
+			524 = { add_core_of = AUS }
+
 			BUL = {
 				if = {
 					limit = { HUN = { is_ai = yes } }
@@ -442,3 +467,5 @@ country_event = {
 		}
 	}
 }
+
+

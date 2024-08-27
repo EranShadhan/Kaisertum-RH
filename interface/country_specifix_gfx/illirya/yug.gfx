@@ -28,4 +28,24 @@ spriteTypes = {
 		name = "GFX_idea_illiryan_army"
 		texturefile = "gfx/interface/ideas/YUG/The_illiryan_army.png"
 	}
+	spriteType = {
+		name = "GFX_idea_anti_austrian_preparements"
+		texturefile = "gfx/interface/ideas/YUG/anti_austrian_preparements.png"
+	}
+	spriteType = {
+		name = "GFX_idea_bonus_research"
+		texturefile = "gfx/interface/ideas/YUG/research_bonus.png"
+	}
+	spriteType = {
+		name = "GFX_idea_great_illirya"
+		texturefile = "gfx/interface/ideas/YUG/anewillirya.png"
+	}
+	spriteType = {
+		name = "GFX_idea_germans_slovenia" 
+		texturefile = "gfx/interface/ideas/YUG/german_in_slovenia.png"
+	}
+	spriteType = {
+		name = "GFX_idea_costal_cities" 
+		texturefile = "gfx/interface/ideas/YUG/costal_cities.png"
+	}
 }

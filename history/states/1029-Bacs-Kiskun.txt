@@ -1,0 +1,26 @@
+
+state={
+	id=1029
+	name="STATE_1029"
+	manpower = 142000
+	
+	state_category = rural
+	
+	resources={
+		
+	}
+
+	history={
+		owner = HUN
+		add_core_of = HUN
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		11625 6700 6670
+	}
+
+	local_supplies=0.3  
+}

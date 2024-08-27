@@ -8,6 +8,11 @@ HUN_AS = {
     color_ui = rgb { 255 255 255 }
 }
 
+AUS_JAP = {
+	color = rgb {120 0 150}
+	color_ui = rgb {120 0 150}
+}
+
 ROM_HUN = {
 	color = rgb { 249 126 98 }
 	color_ui = rgb { 255 164 127 }

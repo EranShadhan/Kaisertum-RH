@@ -4,6 +4,8 @@
  ROM_HUN:0 "Wallachia"
  MOL_HUN:0 "Moldovia"
  SER_HUN:0 "Serbia"
+ AUS_JAP:0 "Formösterreich"
+ AUS_JAP_DEF:0 "The Formösterreich"
  INS_HOL_democratic:0 "Dutch East Indies"
  INS_HOL_democratic_DEF:0 "the Dutch East Indies"
  INS_subject:0 "$OVERLORDADJ$ East Indies"

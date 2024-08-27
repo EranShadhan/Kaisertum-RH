@@ -44,9 +44,9 @@ focus_tree = {
 			
 		completion_reward = {
 				
+			add_ideas = YUG_anti_austrian_measures		
 				
-				
-		    }
+		}
 	}
 	focus = {
 		id = YUG_sponsor_slovenian_revolts
@@ -72,17 +72,19 @@ focus_tree = {
 			
 		available_if_capitulated = yes
 		
-		search_filters = {  
-				
-				
-				
-			}
+		search_filters = {  	
+			
+		}
 			
 		completion_reward = {
-				
-				
-				
-		    }
+			transfer_units_fraction= {
+				target = AUS
+				size = 0.1 
+				stockpile_ratio = 0.1
+				navy_ratio = 0
+				air_ratio = 0
+			}
+		}
 	}
 	focus = {
 		id = YUG_raid_austrian_armories
@@ -115,10 +117,17 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-				
-				
-				
-		    }
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = AUS
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 150
+				producer = AUS
+			}
+		}
 	}
 	focus = {
 		id = YUG_death_of_an_empire
@@ -135,7 +144,7 @@ focus_tree = {
 		x = 0
 		y = 2
 
-		cost = 4
+		cost = 100
 		
 			ai_will_do = {
 			
@@ -147,15 +156,11 @@ focus_tree = {
 		
 		search_filters = {  
 				
-				
-				
-			}
+		}
 			
 		completion_reward = {
-				
-				
-				
-		    }
+			
+		}
 	}
 	focus = {
 		id = YUG_industry1
@@ -171,7 +176,7 @@ focus_tree = {
 		x = 10
 		y = 1
 
-		cost = 4
+		cost = 5
 		
 			ai_will_do = {
 			
@@ -188,10 +193,23 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-				
-				
-				
-		    }
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
 	}
 	focus = {
 		id = YUG_industry2
@@ -207,7 +225,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 4
+		cost = 5
 		
 			ai_will_do = {
 			
@@ -224,10 +242,23 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-				
-				
-				
-		    }
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
 	}
 	focus = {
 		id = YUG_improve_infrastructure
@@ -243,7 +274,7 @@ focus_tree = {
 		x = -4
 		y = 1
 
-		cost = 4
+		cost = 5
 		
 			ai_will_do = {
 			
@@ -260,10 +291,14 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-				
-				
-				
-		    }
+			every_owned_state = { 
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = YUG_connect_the_railroads
@@ -277,7 +312,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 4
+		cost = 5
 		
 			ai_will_do = {
 			
@@ -294,10 +329,37 @@ focus_tree = {
 			}
 			
 		completion_reward = {
+			build_railway = {
+				level = 1
+				fallback = yes
+				instant_build = yes
 				
-				add_political_power = 199
+				path = { 3924 11816 3868 6889 9821 9809 }
+				start_province = 3924
+				target_province = 9809
+			}
+			build_railway = {
+				level = 1
+				fallback = yes
+				instant_build = yes
 				
-		    }
+				path = { 11816 6942 11872 11572 9591 6647 }
+				start_province = 11816
+				target_province = 6647
+			}
+			109 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+					province = 6647
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 50
+			}
+		}
 	}
 	focus = {
 		id = YUG_mine_for_minerals
@@ -311,7 +373,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 4
+		cost = 5
 		
 			ai_will_do = {
 			
@@ -328,10 +390,17 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-				
-				add_political_power = 199
-				
-		    }
+			add_resource = {
+				type = tungsten
+				amount = 25
+				state = 105
+			}
+			add_resource = {
+				type = chromium
+				amount = 40
+				state = 109
+			}
+		}
 	}
 	focus = {
 		id = YUG_oil_in_vjvodina
@@ -345,7 +414,7 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		cost = 4
+		cost = 5
 		
 			ai_will_do = {
 			
@@ -362,10 +431,12 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-				
-				add_political_power = 199
-				
-		    }
+			add_resource = {
+				type = oil
+				amount = 35
+				state = 45
+			}
+		}
 	}
 	focus = {
 		id = YUG_zagreb_university
@@ -381,7 +452,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 4
+		cost = 5
 		
 			ai_will_do = {
 			
@@ -392,16 +463,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		search_filters = {  
-				
-				
-				
+			
 			}
 			
 		completion_reward = {
-				
-				
-				
-		    }
+			add_research_slot = 1
+		}
 	}
 	focus = {
 		id = YUG_mechanical_bonuses
@@ -417,7 +484,7 @@ focus_tree = {
 		x = -2
 		y = 1
 
-		cost = 4
+		cost = 5
 		
 			ai_will_do = {
 			
@@ -434,10 +501,8 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-				
-				
-				
-		    }
+			
+		}
 	}
 	focus = {
 		id = YUG_industrial_studies
@@ -453,7 +518,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 4
+		cost = 5
 		
 			ai_will_do = {
 			
@@ -470,10 +535,8 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-				
-				
-				
-		    }
+			
+		}
 	}
 	focus = {
 		id = YUG_improve_public_schools
@@ -489,7 +552,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 4
+		cost = 5
 		
 			ai_will_do = {
 			
@@ -506,10 +569,8 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-				
-				
-				
-		    }
+			add_ideas = YUG_public_schools
+		}
 	}
 	focus = {
 		id = YUG_slavic_masterminds
@@ -525,7 +586,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 4
+		cost = 5
 		
 			ai_will_do = {
 			
@@ -542,10 +603,11 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-				
-				
-				
-		    }
+			swap_ideas = {
+				remove_idea = YUG_public_schools
+				add_idea = YUG_slavic_masterminds
+			}
+		}
 	}
 	focus = {
 		id = YUG_a_new_illyria
@@ -561,7 +623,7 @@ focus_tree = {
 		x = -2
 		y = 1
 
-		cost = 4
+		cost = 5
 		
 			ai_will_do = {
 			
@@ -578,10 +640,8 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-				
-				
-				
-		    }
+			add_ideas = YUG_a_new_illyria
+		}
 	}
 	focus = {
 		id = YUG_ljbujana_schools
@@ -597,7 +657,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 4
+		cost = 5
 		
 			ai_will_do = {
 			
@@ -614,10 +674,11 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-				
-				
-				
-		    }
+			swap_ideas = {
+				remove_idea = YUG_slavic_masterminds
+				add_idea = YUG_slovenian_schools
+			}
+		}
 	}
 	focus = {
 		id = YUG_slovene_scientist
@@ -633,7 +694,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 4
+		cost = 5
 		
 			ai_will_do = {
 			
@@ -650,10 +711,12 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-				
-				
-				
-		    }
+			add_research_slot = 1
+			swap_ideas = {
+				remove_idea = YUG_slovenian_schools
+				add_idea = YUG_slovenian_scientists
+			}
+		}
 	}
 	focus = {
 		id = YUG_germans_slovenia
@@ -669,7 +732,7 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		cost = 4
+		cost = 5
 		
 			ai_will_do = {
 			
@@ -686,10 +749,8 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-				
-				
-				
-		    }
+			add_ideas = YUG_german_slovenians
+		}
 	}
 	focus = {
 		id = YUG_invest_in_the_coastline
@@ -705,7 +766,7 @@ focus_tree = {
 		x = 7
 		y = 1
 
-		cost = 4
+		cost = 5
 		
 			ai_will_do = {
 			
@@ -722,10 +783,46 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-				
-				
-				
-		    }
+			163 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+			103 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+			977 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
 	}
 	focus = {
 		id = YUG_develop_the_costal_ports
@@ -741,7 +838,7 @@ focus_tree = {
 		x = -2
 		y = 1
 
-		cost = 4
+		cost = 5
 		
 			ai_will_do = {
 			
@@ -758,10 +855,31 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-				
-				
-				
-		    }
+			163 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			103 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			977 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
 	}
 	focus = {
 		id = YUG_open_markets
@@ -777,7 +895,7 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		cost = 4
+		cost = 5
 		
 			ai_will_do = {
 			
@@ -794,10 +912,8 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-				
-				
-				
-		    }
+			add_ideas = YUG_open_markets
+		}
 	}
 	focus = {
 		id = YUG_new_costal_cities
@@ -813,7 +929,7 @@ focus_tree = {
 		x = 2
 		y = 1
 
-		cost = 4
+		cost = 5
 		
 			ai_will_do = {
 			
@@ -830,10 +946,17 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-				
-				
-				
-		    }
+			add_ideas = YUG_new_costal_city
+			163 = {
+				add_manpower = 120000
+			}
+			103 = {
+				add_manpower = 120000
+			}
+			977 = {
+				add_manpower = 60000
+			}
+		}
 	}
 	focus = {
 		id = YUG_develop_the_costal_arms 
@@ -849,7 +972,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 4
+		cost = 5
 		
 			ai_will_do = {
 			
@@ -866,10 +989,23 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-				
-				
-				
-		    }
+			163 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			103 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
 	}
 	focus = {
 		id = YUG_invest_in_the_mainland
@@ -885,7 +1021,7 @@ focus_tree = {
 		x = 11
 		y = 1
 
-		cost = 4
+		cost = 5
 		
 			ai_will_do = {
 			
@@ -902,10 +1038,51 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-				
-				
-				
-		    }
+			109 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			
+			988 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			
+			104 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			
+			804 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			
+			989 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
 	}
 	focus = {
 		id = YUG_heavy_industry_in_north_bosnia
@@ -921,7 +1098,7 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		cost = 4
+		cost = 5
 		
 			ai_will_do = {
 			
@@ -938,10 +1115,20 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-				
-				
-				
-		    }
+			989 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
 	}
 	focus = {
 		id = YUG_bosnia_bahn
@@ -957,7 +1144,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 4
+		cost = 5
 		
 			ai_will_do = {
 			
@@ -974,10 +1161,42 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-				
-				
-				
-		    }
+			109 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			
+			988 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			
+			104 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			
+			804 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
 	}
 	focus = {
 		id = YUG_heavy_industry_in_south_bosnia
@@ -993,7 +1212,7 @@ focus_tree = {
 		x = 2
 		y = 1
 
-		cost = 4
+		cost = 5
 		
 			ai_will_do = {
 			
@@ -1010,10 +1229,20 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-				
-				
-				
-		    }
+			804 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
 	}
 	focus = {
 		id = YUG_invest_in_the_heart_land
@@ -1029,7 +1258,7 @@ focus_tree = {
 		x = 4
 		y = 1
 
-		cost = 4
+		cost = 5
 		
 			ai_will_do = {
 			
@@ -1046,10 +1275,20 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-				
-				
-				
-		    }
+			109 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
 	}
 	focus = {
 		id = YUG_heavy_industry_in_east_bosnia
@@ -1066,7 +1305,7 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		cost = 4
+		cost = 5
 		
 			ai_will_do = {
 			
@@ -1083,10 +1322,20 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-				
-				
-				
-		    }
+			104 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
 	}
 	focus = {
 		id = YUG_zagreb_industry
@@ -1102,7 +1351,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 4
+		cost = 5
 		
 			ai_will_do = {
 			
@@ -1119,10 +1368,15 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-				
-				
-				
-		    }
+			989 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
 	}
 }
 

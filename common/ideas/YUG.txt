@@ -84,6 +84,194 @@ ideas = {
 				weekly_manpower = 250
 			}
 		}
-		
+		YUG_anti_austrian_measures = {
+
+			picture = anti_austrian_preparements
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = AUS
+				attack_bonus_against = 0.1
+			}
+		}
+		YUG_public_schools = {
+
+			picture = bonus_research
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		YUG_public_schools = {
+
+			picture = bonus_research
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+		YUG_slavic_masterminds = {
+
+			picture = bonus_research
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.2
+			}
+		}
+		YUG_slovenian_schools = {
+
+			picture = bonus_research
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.25
+			}
+		}
+		YUG_slovenian_scientists = {
+
+			picture = bonus_research
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.3
+			}
+		}
+		YUG_a_new_illyria = {
+
+			picture = great_illirya
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.1
+				global_building_slots = 1
+				industrial_capacity_factory = 0.15
+			}
+		}
+		YUG_german_slovenians = {
+
+			picture = germans_slovenia
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.05
+				political_power_factor = 0.15
+			}
+		}
+		YUG_new_costal_city = {
+
+			picture = costal_cities
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = 0.15
+				political_power_gain = 0.10
+				conscription_factor = 0.10
+			}
+		}
+		YUG_open_markets = {
+
+			picture = generic_foreign_capital
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.10
+				industrial_capacity_dockyard = 0.15
+				consumer_goods_factor = -0.1
+			}
+		}
 	}
 }

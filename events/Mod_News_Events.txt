@@ -28,9 +28,12 @@ news_event = {
 	major = yes
 
 	trigger = {
-		surrender_progress > 0.25
-		76 = { is_owned_by = HUN }
-		76 = { is_fully_controlled_by = ROM }
+		OR = {
+			surrender_progress > 0.25
+			76 = { is_owned_by = HUN is_controlled_by = ROM }
+		}
+		
+		
 		HUN = { has_war_with = ROM }
 		NOT = { has_global_flag = fall_of_buda }
 	}
