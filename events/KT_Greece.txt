@@ -106,7 +106,7 @@ country_event = { #Schism collapse again
 
 }
 
-country_event = { #Schism collapse again
+country_event = { #dodecanese plssss
 	id = KT_greece_events.5
 	title = KT_greece_events.5.t
 	desc = KT_greece_events.5.d
@@ -127,4 +127,59 @@ option = {
 		ai_chance = { factor = 0 }
 		
 		}
+}
+
+
+country_event = { #georgia and armenia plssss
+	id = KT_greece_events.6
+	title = KT_greece_events.6.t
+	desc = KT_greece_events.6.d
+	fire_only_once = yes
+	picture = GFX_report_event_gre_fascism
+	is_triggered_only = yes
+	
+	option = {
+		name = KT_greece_events.6.a
+		980 = { set_owner = GRE }
+		826 = { set_owner = GRE }
+		231 = { set_owner = GRE }
+		230 = { set_owner = GRE }
+		ai_chance = { factor = 100 }
+		}
+  
+option = {
+		name = KT_greece_events.6.a
+		
+		ai_chance = { factor = 0 }
+		GRE = {
+		
+		create_wargoal = {
+				type = annex_everything
+				target = SOV
+				expire = 0
+			}
+		}
+		}
+}		
+country_event = { #russia alliance plssssssssssssssssssssssssssssssss
+	id = KT_greece_events.7
+	title = KT_greece_events.7.t
+	desc = KT_greece_events.7.d
+	fire_only_once = yes
+	picture = GFX_report_event_gre_megali_conference_signing
+	is_triggered_only = yes
+	
+	option = {
+		name = KT_greece_events.7.a
+		create_faction = GRE_roman_faction
+		add_to_faction = GRE 
+		ai_chance = { factor = 100 }
+		}
+  
+option = {
+		name = KT_greece_events.7.a
+		
+		ai_chance = { factor = 0 }
+	
+		}		
 }

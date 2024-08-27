@@ -212,3 +212,557 @@ form_byzantine_empire_category = {
 	
 	
 }
+
+
+form_roman_empire_category = { 
+GRE_form_rome = {
+		icon = GFX_decision_eng_trade_unions_support
+		allowed = {
+			original_tag = GRE
+		}
+		visible = {
+		}
+		available = {
+			FROM = { compliance > 55}
+		}
+		on_map_mode = map_and_decisions_view
+		state_target = yes
+		target_trigger = {
+		    FROM = { 
+			not = { is_core_of = GRE }
+			is_controlled_by = GRE
+			
+			OR = {
+		    # Navarra
+STATE = 172
+
+# Pais Vasco
+STATE = 792
+
+# Asturias
+STATE = 790
+
+# Galicia
+STATE = 171
+
+# Leon
+STATE = 174
+
+# Valladolid
+STATE = 791
+
+# Burgos
+STATE = 176
+
+# Guadalajara
+STATE = 793
+
+# Salamanca
+STATE = 788
+
+# Madrid
+STATE = 41
+
+# Ciudad Real
+STATE = 175
+
+# Extramadura
+STATE = 170
+
+# Cordoba
+STATE = 789
+
+# Sevilla
+STATE = 169
+
+# Beja
+STATE = 179
+
+# Santarem
+STATE = 795
+
+# Lisbon
+STATE = 112
+
+# Guarda
+STATE = 181
+
+# Porto
+STATE = 180
+STATE = 76
+
+# Transylvania
+STATE = 84
+
+# Crisana
+STATE = 83
+
+# Oltenia
+STATE = 81
+
+# Banat
+STATE = 82
+
+# West Banat
+STATE = 764
+
+# Southern Bessarabia
+STATE = 766
+
+# Muntenia
+STATE = 46
+
+# Dobrudja
+STATE = 77
+
+# Burgas
+STATE = 211
+
+# Moesia
+STATE = 801
+
+# Plovdiv
+STATE = 212
+
+# Sofia
+STATE = 48
+
+# Southern Serbia
+STATE = 803
+
+# Macedonia
+STATE = 106
+
+# Kosovo
+STATE = 802
+
+# Morava
+STATE = 108
+
+# Serbia
+STATE = 107
+
+# Western Desert
+STATE = 552
+
+# Aswan
+STATE = 456
+
+# Eastern Desert
+STATE = 457
+
+# Kuwait
+STATE = 656
+
+# Baghdad
+STATE = 291
+
+# Al Hajara
+STATE = 675
+
+# Mosul
+STATE = 676
+
+# Deir-az-Zur
+STATE = 680
+
+# Diyarbakir
+STATE = 350
+
+# Izmit
+STATE = 347
+
+# Ankara
+STATE = 49
+
+# Afyon
+STATE = 343
+
+# Konya
+STATE = 346
+
+# Kastamonu
+STATE = 356
+
+# Amasya
+STATE = 798
+
+# Kayseri
+STATE = 348
+
+# Sivas
+STATE = 349
+
+# Samsun
+STATE = 355
+
+# Trabzon
+STATE = 354
+
+# Armenia
+STATE = 230
+
+# Van
+STATE = 800
+
+# Tunceli
+STATE = 353
+
+# Hakkari
+STATE = 352
+
+# Damascus
+STATE = 554
+
+# Jordan
+STATE = 455
+
+# Jawf
+STATE = 854
+
+# Tabuk
+STATE = 855
+
+# Tlemcen
+STATE = 513
+
+# Algerian Desert
+STATE = 514
+
+# Marrakech
+STATE = 462
+
+# Sidi Ifni
+STATE = 783
+
+# Northern Hungary
+STATE = 43
+
+# Alföld
+STATE = 154
+
+# Transdanubia
+STATE = 155
+
+# Vojvodina
+STATE = 45
+
+# Croatia
+STATE = 109
+
+# North Slovenia
+STATE = 102
+
+# Lower Austria
+STATE = 4
+
+# Upper Austria
+STATE = 152
+
+# Tyrol
+STATE = 153
+
+# Vorarlberg
+STATE = 848
+
+# Eastern Swiss Alps
+STATE = 151
+
+# Ticino
+STATE = 846
+
+# Western Swiss Alps
+STATE = 847
+
+# Swiss Plateu
+STATE = 3
+
+# Jura Mountains
+STATE = 845
+
+# Pyrenees-Atlantiques
+STATE = 806
+
+# Aquitaine
+STATE = 19
+
+# Limousin
+STATE = 25
+
+# Auveragne
+STATE = 26
+
+# Rhone
+STATE = 20
+
+# Alpes
+STATE = 32
+
+# Centre-Sud
+STATE = 33
+
+# Poitou
+STATE = 23
+
+# Loire
+STATE = 30
+
+# Brittany
+STATE = 14
+
+# Bourgogne
+STATE = 27
+
+# Franche-Comte
+STATE = 17
+
+# Alsace-Lorraine
+STATE = 28
+
+# Ile De France
+STATE = 16
+
+# Centre
+STATE = 24
+
+# Normandy
+STATE = 15
+
+# Picardy
+STATE = 785
+
+# Champagne
+STATE = 18
+
+# Brabant
+STATE = 35
+
+# Vlaanderen
+STATE = 6
+
+# Wallonia
+STATE = 34
+
+# Luxembourg
+STATE = 8
+
+# Nord-Pas-De-Calais
+STATE = 29
+
+# Azerbaijan
+STATE = 229
+
+# Georgia
+STATE = 231
+
+# Abkhazia
+STATE = 826
+
+# Sussex
+STATE = 127
+
+# South-West England
+STATE = 123
+
+# Gloucestershire
+STATE = 338
+
+# Greater London Area
+STATE = 126
+
+# East Anglia
+STATE = 125
+
+# West Midlands
+STATE = 128
+
+# Wales
+STATE = 122
+
+# East Midlands
+STATE = 129
+
+# Lancashire
+STATE = 132
+
+# Yorkshire
+STATE = 130
+
+# Nothern England
+STATE = 131
+
+# Cumbria
+STATE = 931
+
+# Mann
+STATE = 932
+
+# Holland
+STATE = 7
+
+# Friesland
+STATE = 36
+
+# Weser-Ems
+STATE = 56
+
+# Westfalen
+STATE = 57
+
+# Rhineland
+STATE = 51
+
+# Moselland
+STATE = 42
+
+# Hessen
+STATE = 55
+
+# Franken
+STATE = 54
+
+# Wurtemberg
+STATE = 50
+
+# Oberbayern
+STATE = 52
+
+# Niederbayern
+STATE = 53
+
+STATE = 1
+STATE = 735
+STATE = 851
+STATE = 21
+STATE = 22
+STATE = 31
+STATE = 165
+STATE = 177
+STATE = 167
+STATE = 168
+STATE = 173
+STATE = 118
+STATE = 290
+STATE = 461
+STATE = 459
+STATE = 460
+STATE = 116
+STATE = 458
+STATE = 665
+STATE = 448
+STATE = 661
+STATE = 273
+STATE = 662
+STATE = 449
+STATE = 450
+STATE = 663
+STATE = 451
+STATE = 452
+STATE = 447
+STATE = 907
+STATE = 446
+STATE = 453
+STATE = 454
+STATE = 553
+STATE = 183
+STATE = 677
+STATE = 799
+STATE = 344
+STATE = 345
+STATE = 342
+STATE = 164
+STATE = 182
+STATE = 339
+STATE = 187
+STATE = 340
+STATE = 797
+STATE = 341
+STATE = 184
+STATE = 731
+STATE = 47
+STATE = 186
+STATE = 185
+STATE = 805
+STATE = 44
+STATE = 934
+STATE = 105
+STATE = 103
+STATE = 163
+STATE = 804
+STATE = 104
+STATE = 853
+STATE = 975
+STATE = 973
+
+STATE = 980
+STATE = 978
+
+STATE = 981
+STATE = 979
+
+STATE = 970
+STATE = 971
+
+STATE = 988
+STATE = 977
+
+STATE = 852
+STATE = 736
+
+STATE = 989
+STATE = 39
+
+STATE = 998
+STATE = 764
+
+STATE = 982
+STATE = 850
+
+STATE = 997
+STATE = 1029
+
+STATE = 114
+STATE = 972
+
+STATE = 158
+STATE = 159
+
+STATE = 160
+STATE = 162
+
+STATE = 161
+STATE = 2
+
+STATE = 157
+STATE = 117
+
+STATE = 849
+STATE = 156
+
+STATE = 115
+STATE = 1022
+
+		    }
+			}
+		}
+		cost = 20
+		ai_will_do = {
+			base = 35
+			modifier = {
+				factor = 0
+				is_in_faction = yes
+			}
+		}
+		fire_only_once = no
+		days_remove = 10
+		complete_effect = {
+
+		}
+		remove_effect = {
+			FROM = {
+				add_core_of = GRE
+			}
+		}
+	}	
+
+}

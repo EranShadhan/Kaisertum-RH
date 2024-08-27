@@ -157,6 +157,7 @@ ideas = {
 		
 		}
 		
+		
 		GRE_prepare_to_strike_tur4 = { 
 
             name = GRE_prepare_to_strike_tur
@@ -172,6 +173,23 @@ ideas = {
 			}				
 		    modifier = { 
 			conscription_factor = 0.1 
+			}
+		}
+		GRE_russian_commitment = {
+			picture = SOV_our_slavic_commitments_ccp_sov_compatibility
+			removal_cost = -1
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_defence_factor = 0.1
+				army_morale_factor = 0.1
 			}
 		}
 		GRE_the_coordinated_armed_forces_of_the_balkan_pact = {
@@ -1645,6 +1663,45 @@ allowed = {
 			}
 			
 		}
+		GRE_like_the_beasts = { 
+
+
+
+			picture = tur_sectarian_woes
+				
+			removal_cost = -1
+			targeted_modifier = {
+				tag = TUR
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.05
+			}				
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+
+			}
+		}
+		GRE_roman_army = {
+		
+        	picture = ITA_new_roman_empire_ns
+
+        	allowed = {
+        	    always = no
+        	}
+
+        	modifier = {
+                army_speed_factor = 0.1
+                special_forces_cap = 0.1
+				army_core_defence_factor = 0.15
+				naval_invasion_penalty = -0.2
+				naval_invasion_capacity = 15
+				amphibious_invasion = 0.15
+				invasion_preparation = -0.15
+       		}
+  		}	
+        	
 		GRE_gods_walls = {
 			allowed = {
 				always = no

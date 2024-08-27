@@ -1068,7 +1068,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-
+add_ideas = GRE_like_the_beasts
 		    }
 		}
 	
@@ -1108,14 +1108,14 @@ focus_tree = {
 		y = 1
         prerequisite = { focus = GRE_merge_the_parties}
 		relative_position_id = GRE_merge_the_parties
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	SOV = { country_event = { id = KT_greece_events.7 days =5 }}
 		    }
 		}	
 			focus = {
@@ -1136,7 +1136,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	add_popularity = { 
+				ideology = fascism 
+				popularity = 0.1
+             }	
+			 add_political_power = 100
+			 add_stability = 0.05
 		    }
 		}	
 
@@ -1151,14 +1156,14 @@ focus_tree = {
 		y = 1
         prerequisite = { focus = GRE_loyalty_to_moscow}
 		relative_position_id = GRE_loyalty_to_moscow
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	add_ideas = GRE_russian_commitment
 		    }
 		}	
 		focus = {
@@ -1172,14 +1177,17 @@ focus_tree = {
 		y = 1
         prerequisite = { focus = GRE_my_brother_keeper}
 		relative_position_id = GRE_my_brother_keeper
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	   every_country = {
+	   limit = { capital_scope = { is_on_continent = south_america }} add_ideas = strong_fascist_influence
+	   
+	   }
 		    }
 		}		
 		focus = {
@@ -1193,14 +1201,20 @@ focus_tree = {
 		y = 1
         prerequisite = { focus = GRE_allies_in_the_americas}
 		relative_position_id = GRE_allies_in_the_americas
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	463 = { add_claim_by = SOV }
+	SOV = {    create_wargoal = {
+				type = take_state_focus
+				target = USA
+				expire = 0
+				generator = { 463 }
+			}	}
 		    }
 		}
 		focus = {
@@ -1214,14 +1228,23 @@ focus_tree = {
 		y = 1
         prerequisite = { focus = GRE_support_the_alaska_claim focus = GRE_protect_the_pacific_from_japanese_communism}
 		relative_position_id = GRE_support_the_alaska_claim
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	create_wargoal = {
+				type = puppet_wargoal_focus
+				target = UKR
+				expire = 0
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = BLR
+				expire = 0
+			}
 		    }
 		}		
 				focus = {
@@ -1235,14 +1258,23 @@ focus_tree = {
 		y = 1
         prerequisite = { focus = GRE_my_brother_keeper}
 		relative_position_id = GRE_my_brother_keeper
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	create_wargoal = {
+				type = puppet_wargoal_focus
+				target = PER
+				expire = 0
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = AFG
+				expire = 0
+			}
 		    }
 		}		
 		focus = {
@@ -1256,14 +1288,18 @@ focus_tree = {
 		y = 1
         prerequisite = { focus = GRE_march_into_central_asia}
 		relative_position_id = GRE_march_into_central_asia
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	create_wargoal = {
+				type = puppet_wargoal_focus
+				target = JAP
+				expire = 0
+			}
 		    }
 		}		
 	
@@ -1356,7 +1392,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	add_ideas = GRE_eaglebyz
+		 add_ideas = GRE_byzantine_army
+
 		    }
 		}		
 			focus = {
@@ -1377,7 +1414,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	add_ideas = GRE_roman_army
 		    }
 		}
 			focus = {
@@ -1419,7 +1456,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	         	add_ideas = GRE_eaglebyz
 		    }
 		}
 			focus = {
@@ -1463,7 +1500,7 @@ focus_tree = {
 		y = 1
         prerequisite = { focus = GRE_the_glory_of_byzantium focus = GRE_reunite_the_themata}
 		relative_position_id = GRE_the_glory_of_byzantium
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
@@ -1500,8 +1537,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
-		    }
+	SOV = { country_event = { id = KT_greece_events.6 days =5 }
+		    }}
 		}	
 			focus = {
 		id = GRE_roman_gloty
@@ -1521,7 +1558,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	set_cosmetic_tag = SPQR_UNIFIED
+	custom_effect_tooltip = GRE_rome_induvidually_tt
 		    }
 		}			
 	focus = {
@@ -5591,7 +5629,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		swap_ideas = {remove_idea = GRE_hellenic_army_3 add_idea = GRE_byzantine_army }
+        		swap_ideas = {remove_idea = GRE_hellenic_army_3 add_idea = GRE_hellenic_army_4 }
 		}
     }	
 		focus = {
