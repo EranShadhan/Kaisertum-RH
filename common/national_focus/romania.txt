@@ -29,6 +29,80 @@ focus = {
 			factor = 1
 		}
 
+	cost = 6
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = ROM_army2
+    icon = GFX_ROM_army2
+    x = -1
+    y = 1
+
+	prerequisite = { focus = ROM_army1 }
+
+	relative_position_id = ROM_army1
+
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 6
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			
+		}
+}
+
+focus = {
+
+    id = ROM_army3
+    icon = GFX_ROM_army3
+    x = 1
+    y = 1
+
+	prerequisite = { focus = ROM_army1 }
+
+	relative_position_id = ROM_army1
+
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 10
+
 		available = {
 
 		}
@@ -1206,7 +1280,10 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				add_timed_idea = {
+					idea= rom_political_violence
+					days = 70 
+				}
 			}
 	}
 
@@ -1241,7 +1318,15 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				add_political_power = 100
+				add_stability = 0.05
+				46 ={
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
 			}
 	}
 
@@ -1276,7 +1361,9 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				HUN = {
+					country_event = kt_romania.8
+				}
 			}
 	}
 
@@ -1313,6 +1400,42 @@ focus = {
 	
 			completion_reward = {
 				
+				79 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				}
+				78 = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				997 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				998 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
 			}
 	}
 
@@ -1348,7 +1471,17 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				add_ideas = hungarian_workforce
+
+				998 = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+					add_core_of = ROM
+				}
 			}
 	}
 
@@ -1383,7 +1516,7 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				add_ideas = { caramaila_sentinels }
 			}
 	}
 
@@ -1419,7 +1552,7 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				add_ideas = total_equality
 			}
 	}
 
@@ -1455,7 +1588,7 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				set_cosmetic_tag = ROM_GRT
 			}
 	}
 

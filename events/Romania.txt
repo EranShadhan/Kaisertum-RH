@@ -161,12 +161,30 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = kt_romania.5.a
+		name = kt_romania.7.a
 		ROM = {
 			create_wargoal = {
 				type = annex_everything
 				target = BUL
 			}
+		}
+	}
+
+}
+
+country_event = {
+	id = kt_romania.8
+	title = kt_romania.8.t
+	desc = kt_romania.8.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kt_romania.8.a
+		ROM = {
+			transfer_state = 77
+			77 = { add_core_of = ROOT }
 		}
 	}
 

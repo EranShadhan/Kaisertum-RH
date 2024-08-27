@@ -111,6 +111,85 @@ ideas = {
 			}
 		}
 
+		rom_political_violence = {
+			picture = GFX_goal_generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.003
+				neutrality_drift = 0.02
+			}
+		}
+
+		caramaila_sentinels = {
+			picture = GFX_goal_generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = 0.05
+				equipment_capture_factor_for_controller = 0.20
+				recruitable_population = 0.20
+			}
+		}
+
+		hungarian_workforce = {
+			picture = GFX_goal_generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.10
+				production_speed_bunker_factor = 0.10
+			}
+		}
+
+		total_equality = {
+			picture = GFX_goal_generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				recruitable_population = 0.1
+				army_org_factor = 0.5
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
 	}
 
 }

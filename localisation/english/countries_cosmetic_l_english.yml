@@ -2,6 +2,8 @@
  HUN_AS:0 "Hungary"
  IRE_UK:0 "Irish Free State"
  ROM_HUN:0 "Wallachia"
+ ROM_GRT:0 "Greater Romania"
+ ROM_GRT_DEF:0 "Greater Romania"
  MOL_HUN:0 "Moldovia"
  SER_HUN:0 "Serbia"
  AUS_JAP:0 "Formösterreich"

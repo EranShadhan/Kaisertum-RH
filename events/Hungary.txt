@@ -59,9 +59,6 @@ country_event = {
 			997 = {
 				add_core_of = ROM
 			}
-			998 = {
-				add_core_of = ROM
-			}
 
 			SER = {
 				transfer_state = 764
