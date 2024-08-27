@@ -484,11 +484,11 @@
  PER_UNIFIED_communism_DEF:0 "the Middle Eastern Socialist Republic"
  
  BYZ_UNIFIED_neutrality:0 "Kingdom Of Byzantium"
- BYZ_UNIFIED_fascism:0 "Byzantine Empire"
+ BYZ_UNIFIED_fascism:0 "Roman Government Of Constantinople"
  BYZ_UNIFIED_democratic:0 "First Byzantine Republic"
  BYZ_UNIFIED_communism:0 "Byzantine People's Commune"
  BYZ_UNIFIED_neutrality_DEF:0 "Kingdom Of Byzantium"
- BYZ_UNIFIED_fascism_DEF:0 "the Byzantine Empire"
+ BYZ_UNIFIED_fascism_DEF:0 "the Roman Government Of Constantinople"
  BYZ_UNIFIED_democratic_DEF:0 "the First Byzantine Republic"
  BYZ_UNIFIED_communism_DEF:0 "the Byzantine People's Commune"
  
