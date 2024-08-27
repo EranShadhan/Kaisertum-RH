@@ -99,9 +99,6 @@ country_event = {
 			SLO = {
 				transfer_state = 664
 			}
-			997 = {
-				set_demilitarized_zone = yes
-			}
 			998 = {
 				set_demilitarized_zone = yes
 			}
