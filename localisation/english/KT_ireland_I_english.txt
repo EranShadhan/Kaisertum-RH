@@ -1,0 +1,3 @@
+l_english:
+IRE_king_George_V:0 "King George V"
+IRE_king_George_V_desc:0 "King George V is incredibly unpopular in Ireland due to him being seen as a simple of British oppression and dictatorship."
