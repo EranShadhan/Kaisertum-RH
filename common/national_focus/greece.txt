@@ -1896,6 +1896,7 @@ add_ideas = GRE_like_the_beasts
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_country_leader_trait = absolute_monarch_george
 		    }
 		}
 	focus = {
@@ -1916,7 +1917,7 @@ add_ideas = GRE_like_the_beasts
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-		add_country_leader_trait = absolute_monarch
+		country_event = { id = KT_greece_events.8 days = 5}
 		    }
 		}
 	focus = {
@@ -1937,6 +1938,11 @@ add_ideas = GRE_like_the_beasts
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_popularity = {
+    			ideology = communism
+    			popularity = 0.2
+			}
+			remove_ideas = GRE_no_left
 		    }
 		}	
 	focus = {
@@ -1957,6 +1963,7 @@ add_ideas = GRE_like_the_beasts
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_ideas = GRE_socialist_economy_2
 		    }
 		}
 		focus = {
@@ -1977,6 +1984,7 @@ add_ideas = GRE_like_the_beasts
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		swap_ideas = { remove_idea = GRE_socialist_economy_2 add_idea = GRE_socialist_economy_4}
 		    }
 		}
 		focus = {
@@ -1997,6 +2005,7 @@ add_ideas = GRE_like_the_beasts
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_ideas = GRE_rural_exodus
 		    }
 		}
 		focus = {
@@ -2017,6 +2026,7 @@ add_ideas = GRE_like_the_beasts
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_ideas = GRE_george_ii_restrained
 		    }
 		}
 		focus = {

@@ -109,9 +109,9 @@ characters={
           
           advisor={
 				slot = army_chief
-				idea_token = GRE_nikolaos_plastiras
+				idea_token = GRE_ioannis_metaxas
 				ledger = army
-				name = GRE_nikolaos_plastiras
+				name = GRE_ioannis_metaxas
 				allowed = {
 					original_tag = GRE
 				}

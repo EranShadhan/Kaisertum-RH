@@ -122,7 +122,7 @@ country_event = { #dodecanese plssss
 		}
   
 option = {
-		name = KT_greece_events.5.a
+		name = KT_greece_events.5.b
 		
 		ai_chance = { factor = 0 }
 		
@@ -148,7 +148,7 @@ country_event = { #georgia and armenia plssss
 		}
   
 option = {
-		name = KT_greece_events.6.a
+		name = KT_greece_events.6.b
 		
 		ai_chance = { factor = 0 }
 		GRE = {
@@ -177,7 +177,7 @@ country_event = { #russia alliance plssssssssssssssssssssssssssssssss
 		}
   
 option = {
-		name = KT_greece_events.7.a
+		name = KT_greece_events.7.b
 		
 		ai_chance = { factor = 0 }
 	
@@ -199,9 +199,35 @@ country_event = { #metaxas assasination attemp
 		}
   
 option = { #died
-		name = KT_greece_events.8.a
+		name = KT_greece_events.8.b
 		trigger = { has_counry_flag = GRE_metaxas_army_no }
 		
 	
 		}		
+}
+
+
+country_event = { #metaxas assasination attemp
+	id = KT_greece_events.9
+	title = KT_greece_events.9.t
+	desc = KT_greece_events.9.d
+	fire_only_once = yes
+	picture = GFX_report_event_gre_political_march
+	is_triggered_only = yes
+	
+	option = {#yes
+		name = KT_greece_events.9.a
+		set_country_flag = TUR_hired_metaxas
+		}
+  
+option = { #kill
+		name = KT_greece_events.9.b
+		
+	
+		}	
+option = { #we cannot be bothered
+		name = KT_greece_events.9.c
+		
+	
+		}			
 }

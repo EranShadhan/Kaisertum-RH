@@ -156,5 +156,9 @@
  GRE_roman_faction:0 "Constantinople Accord"
  GRE_form_rome:0 "Unification Of Rome"
  GRE_rome_induvidually_tt:0 "Unlocks decisions to core individual states formerly owned by the Roman Empire"
- absolute_monarch:0 "Absolute Monarch"
- 
+ absolute_monarch_george:0 "Absolute Monarch"
+ KT_greece_events.9.t:0 "Metaxas arrives in Turkey"
+ KT_greece_events.9.d:0 "With the situation in Greece becoming worse, and the king's power growing constantly, an attemp to assasinate Metaxas took place. Metaxas, having gained many ties across the government, was informed of the assasination attemp and managed to escape. He arrived in Turkey hoping to gain support"
+ KT_greece_events.9.a:0 "The enemy of my enemy is my friend!"
+ KT_greece_events.9.b:0 "We cannot be bothered, send him to Russia"
+ KT_greece_events.9.c:0 "He has caused a lot of damage to Turkey, he must suffer for his crimes"
