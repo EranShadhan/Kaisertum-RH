@@ -820,6 +820,12 @@ guiTypes = {
 			position = { x = 780 y = 340 }
 			Orientation = "UPPER_LEFT"
 		}
+        iconType = {
+			name = "country_gold_2"
+			spriteType ="GFX_gold_icon"
+			position = { x = 870 y = 338 }
+			Orientation = "UPPER_LEFT"
+		}
 
 		iconType = {
 			name = "country_difficult_minor_7"

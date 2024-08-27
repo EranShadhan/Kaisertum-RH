@@ -2331,7 +2331,7 @@ add_ideas = GRE_like_the_beasts
 		mutually_exclusive = { focus = GRE_honor_the_communists_efforts }
         prerequisite = { focus = GRE_ally_the_mafia_to_assasinate_metaxas }
 		relative_position_id = GRE_ally_the_mafia_to_assasinate_metaxas
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
@@ -2352,7 +2352,7 @@ add_ideas = GRE_like_the_beasts
 		y = 1
         prerequisite = { focus = GRE_the_house_always_wins }
 		relative_position_id = GRE_the_house_always_wins
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
@@ -2373,13 +2373,14 @@ add_ideas = GRE_like_the_beasts
 		y = 1
         prerequisite = { focus = GRE_the_right_to_rule_them }
 		relative_position_id = GRE_the_right_to_rule_them
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_ideas= GRE_trade_eng
 		  
 		  }
 		}
@@ -2394,13 +2395,14 @@ add_ideas = GRE_like_the_beasts
 		y = 1
         prerequisite = { focus = GRE_increase_trade_with_eng }
 		relative_position_id = GRE_increase_trade_with_eng
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_country_leader_trait = duke_of_greece
 		    }
 		}
 			focus = {
@@ -2414,7 +2416,7 @@ add_ideas = GRE_like_the_beasts
 		y = 1
         prerequisite = { focus = GRE_restore_british_titles }
 		relative_position_id = GRE_restore_british_titles
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
@@ -2443,16 +2445,21 @@ add_ideas = GRE_like_the_beasts
 		}
 		x = 0
 		y = 2
-        prerequisite = { focus = GRE_ask_for_british_ship focus = GRE_end_the_persians}
+        prerequisite = { focus = GRE_ask_for_british_ship }
+		prerequisite = { focus = GRE_end_the_persians }
 		relative_position_id = GRE_ask_for_british_ship
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+		create_wargoal = {
+				type = annex_everything
+				target = AFG
+				expire = 0
+			}
 		    }
 		}	
 			focus = {
@@ -2468,14 +2475,18 @@ add_ideas = GRE_like_the_beasts
 		prerequisite = { focus = GRE_securing_our_homeland }
 		prerequisite = { focus = GRE_reach_the_indo }
 		relative_position_id = GRE_securing_our_homeland
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-			
+				create_wargoal = {
+				type = annex_everything
+				target = EGY
+				expire = 0
+			}
 		    }
 		}			
 			focus = {
@@ -2489,14 +2500,23 @@ add_ideas = GRE_like_the_beasts
 		y = 1
         prerequisite = { focus = GRE_restore_british_titles }
 		relative_position_id = GRE_restore_british_titles
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-		
+		add_equipment_to_stockpile = { 
+				type = infantry_equipment
+				amount = 4500
+				producer = ENG
+			}
+			add_equipment_to_stockpile = { 
+				type = support_equipment
+				amount = 1250
+				producer = ENG
+			}
 		    }
 		}	
 			focus = {
@@ -2510,7 +2530,7 @@ add_ideas = GRE_like_the_beasts
 		y = 1
         prerequisite = { focus = GRE_ask_for_british_guns focus = GRE_ask_for_british_ship }
 		relative_position_id = GRE_ask_for_british_guns
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
@@ -2531,7 +2551,7 @@ add_ideas = GRE_like_the_beasts
 		y = 1
         prerequisite = { focus = GRE_the_house_always_wins }
 		relative_position_id = GRE_the_house_always_wins
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
@@ -2551,7 +2571,7 @@ add_ideas = GRE_like_the_beasts
 		y = 1
         prerequisite = { focus = GRE_honor_the_men }
 		relative_position_id = GRE_honor_the_men
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
@@ -2572,7 +2592,7 @@ add_ideas = GRE_like_the_beasts
 		y = 1
         prerequisite = { focus = GRE_god_save_the_king }
 		relative_position_id = GRE_god_save_the_king
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
@@ -2592,7 +2612,7 @@ add_ideas = GRE_like_the_beasts
 		y = 1
         prerequisite = { focus = GRE_god_save_the_king }
 		relative_position_id = GRE_god_save_the_king
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
@@ -2612,7 +2632,7 @@ add_ideas = GRE_like_the_beasts
 		y = 1
         prerequisite = { focus = GRE_advanced_hellenic_anti_air focus = GRE_advanced_german_tech}
 		relative_position_id = GRE_advanced_hellenic_anti_air
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
@@ -2632,7 +2652,7 @@ add_ideas = GRE_like_the_beasts
 		y = 1
         prerequisite = { focus = GRE_the_house_always_wins }
 		relative_position_id = GRE_the_house_always_wins
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
@@ -2653,13 +2673,14 @@ add_ideas = GRE_like_the_beasts
 		y = 2
         prerequisite = { focus = GRE_the_will_to_empire }
 		relative_position_id = GRE_the_will_to_empire
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_ideas= GRE_macedonean_spirit
 		    }
 		}		
 	focus = {
@@ -2679,7 +2700,13 @@ add_ideas = GRE_like_the_beasts
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
+		
 		completion_reward = {
+		create_wargoal = {
+				type = annex_everything
+				target = PER
+				expire = 0
+			}
 		    }
 		}		
 	focus = {

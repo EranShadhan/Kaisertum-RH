@@ -27,6 +27,16 @@ Terminator = {
 		land_doctrine_cost_factor = -0.05
 	   
 	}
+	duke_of_greece = {
+	  random = no 
+	  political_power_gain =0.1
+	  stability_weekly = 0.005
+	  political_advisor_cost_factor = -0.15
+		high_command_cost_factor = -0.15
+		air_chief_cost_factor = -0.15
+		army_chief_cost_factor = -0.15
+		navy_chief_cost_factor = -0.15
+	}	
 	president_of_democracy = {
 	  random = no 
 	  sprite = 13

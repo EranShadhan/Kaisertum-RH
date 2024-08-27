@@ -300,6 +300,98 @@ ideas = {
 				trade_opinion_factor = 0.5
 			}
 		}
+		SWE_ball_bearing_idea_food_partner = {
+			picture = can_wartime_prices_and_trade_board
+			allowed = {
+				always = yes
+			}
+
+			cancel = {
+				has_war_with = SWE
+			}
+
+			equipment_bonus = { #To future confused Viktor when he inevitably checks this for the 10th time, yes this works without DLCs I just checked again, best regards, past Viktor
+				small_plane_airframe = {
+					build_cost_ic = -0.08 instant = yes
+				}
+				medium_plane_airframe = {
+					build_cost_ic = -0.06 instant = yes
+				}
+				large_plane_airframe = {
+					build_cost_ic = -0.05 instant = yes
+				}
+
+				light_tank_chassis = {
+					build_cost_ic = -0.08  instant = yes
+				}
+
+				medium_tank_chassis = {
+					build_cost_ic = -0.06 instant = yes
+				}
+
+				heavy_tank_chassis = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+GRE_macedonean_spirit = {
+		
+        	picture = all_adults_serve
+
+        	allowed = {
+        	    always = no
+        	}
+
+        	modifier = {
+			   stability_factor = 0.1
+			   war_support_factor = 0.1
+			   compliance_growth = 0.08
+				org_loss_when_moving = -0.05
+       		}
+  		}
+		GRE_trade_eng = {
+			picture = can_wartime_prices_and_trade_board
+			allowed = {
+				always = yes
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -0.08 instant = yes
+				}
+				medium_plane_airframe = {
+					build_cost_ic = -0.06 instant = yes
+				}
+				large_plane_airframe = {
+					build_cost_ic = -0.05 instant = yes
+				}
+
+				light_tank_chassis = {
+					build_cost_ic = -0.08  instant = yes
+				}
+
+				medium_tank_chassis = {
+					build_cost_ic = -0.06 instant = yes
+				}
+
+				heavy_tank_chassis = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+
+			modifier = {
+				research_speed_factor = -0.02
+			}
+		}
 		GRE_mission_to_eng = {
 			picture = eng_guided_by_britain
 			removal_cost = -1
