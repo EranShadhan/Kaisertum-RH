@@ -91,9 +91,9 @@ bookmarks = {
 
 
 		###  MINORS ###
-		FIN={
+		YUG={
 			minor = yes
-			history = "FIN_NEW_DECADE_DESC"
+			history = "CRO_NEW_DECADE_DESC"
 			ideology = neutrality
 			ideas = {
 				german_customs_union_member
