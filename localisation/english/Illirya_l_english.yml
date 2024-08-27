@@ -39,3 +39,21 @@
  YUG_army_desc:0 "Our army is not very professional, as it was under austrian controll for a lot of years, an only recently has it gained the ability to fight, yet the ethnic conflicts and the ideological difference between bosniacs and croatians causes problems."
  YUG_AS_neutrality:0 "Kingdom Of Illyria"
  YUG_ITA_neutrality:0 "Regno Degli Slavi"
+ YUG_ITA_neutrality_ADJ:0 "Slava"
+ YUG_ITA_neutrality_DEF:0 "Il Regno Degli Slavi"
+ 
+ YUG_ITA_democratic:0 "Repubblica Degli Slavi"
+ YUG_ITA_democratic_ADJ:0 "Slava"
+ YUG_ITA_democratic_DEF:0 "La Repubblica Degli Slavi"
+ 
+ YUG_ITA_democratic:0 "Repubblica Degli Slavi"
+ YUG_ITA_democratic_ADJ:0 "Slava"
+ YUG_ITA_democratic_DEF:0 "La Repubblica Degli Slavi"
+ 
+ YUG_ITA_communism:0 "Comune Slavo"
+ YUG_ITA_communism_ADJ:0 "Slava"
+ YUG_ITA_communism_DEF:0 "Il Comune Slavo"
+ 
+ YUG_ITA_fascism:0 "Repubblica Degli Slavi"
+ YUG_ITA_fascism_ADJ:0 "Slava"
+ YUG_ITA_fascism_DEF:0 "La Repubblica Degli Slavi"

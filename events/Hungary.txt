@@ -73,7 +73,14 @@ country_event = {
 			45 = {
 				add_core_of = YUG
 			}
-
+			YUG = {
+				transfer_state = 45
+			}
+			GER = {
+				transfer_state = 982
+			}
+			
+			
 			HUN = {
 				set_politics = {
 					ruling_party = democratic

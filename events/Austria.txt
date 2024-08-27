@@ -179,6 +179,7 @@ country_event = {
 			YUG = {
 				remove_ideas = YUG_payment_to_hungary
 				remove_ideas = YUG_underground_italian_connections
+				set_cosmetic_tag = YUG_ITA
 			}
 		}
 	}
@@ -318,6 +319,7 @@ country_event = {
 			set_variable = {
 				YUG_fiume_crisis_var = 5
 			}
+			complete_national_focus = YUG_death_of_an_empire
 		}
 
 		FCF = {
