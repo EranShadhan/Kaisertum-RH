@@ -183,3 +183,25 @@ option = {
 	
 		}		
 }
+
+
+country_event = { #metaxas assasination attemp
+	id = KT_greece_events.8
+	title = KT_greece_events.8.t
+	desc = KT_greece_events.8.d
+	fire_only_once = yes
+	picture = GFX_report_event_gre_city_siege
+	is_triggered_only = yes
+	
+	option = {#escaped
+		name = KT_greece_events.8.a
+		trigger = { has_counry_flag = GRE_metaxas_army }
+		}
+  
+option = { #died
+		name = KT_greece_events.8.a
+		trigger = { has_counry_flag = GRE_metaxas_army_no }
+		
+	
+		}		
+}

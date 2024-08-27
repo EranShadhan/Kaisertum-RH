@@ -1594,13 +1594,14 @@ add_ideas = GRE_like_the_beasts
 		y = 2
         prerequisite = { focus = GRE_king_allegiance }
 		relative_position_id = GRE_king_allegiance
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_ideas = GRE_the_slogan
 		    }
 		}		
 		
@@ -1615,7 +1616,7 @@ add_ideas = GRE_like_the_beasts
 		y = 1
         prerequisite = { focus = GRE_house_of_Glucksburg }
 		relative_position_id = GRE_house_of_Glucksburg
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
@@ -1639,7 +1640,7 @@ add_ideas = GRE_like_the_beasts
 		y = 1
         prerequisite = { focus = GRE_house_of_Glucksburg }
 		relative_position_id = GRE_house_of_Glucksburg
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
@@ -1660,14 +1661,14 @@ add_ideas = GRE_like_the_beasts
 		y = 1
         prerequisite = { focus = GRE_strike_a_better_deal focus = GRE_ger_cooperation }
 		relative_position_id = GRE_strike_a_better_deal
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-		
+		add_ideas = GRE_german_council
 		    }
 		}				
 	focus = {
@@ -1681,14 +1682,14 @@ add_ideas = GRE_like_the_beasts
 		y = 1
         prerequisite = { focus = GRE_house_of_Glucksburg }
 		relative_position_id = GRE_house_of_Glucksburg
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-		 
+		 add_ideas = GRE_mission_to_eng
 		    }
 		}	
 
@@ -1703,7 +1704,7 @@ add_ideas = GRE_like_the_beasts
 		y = 1
         prerequisite = { focus = GRE_mission_in_eng }
 		relative_position_id = GRE_mission_in_eng
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
@@ -1726,13 +1727,18 @@ add_ideas = GRE_like_the_beasts
         prerequisite = { focus = GRE_cooperate_with_the_raf }
 		prerequisite = { focus = GRE_invite_a_german_woman  }
 		relative_position_id = GRE_cooperate_with_the_raf
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_popularity = { 
+				ideology = neutrality 
+				popularity = 0.05
+             }		
+			 add_political_power = 50
 		    }
 		}
 	focus = {
@@ -1746,13 +1752,14 @@ add_ideas = GRE_like_the_beasts
 		y = 1
         prerequisite = { focus = GRE_manipulate_the_political_theater }
 		relative_position_id = GRE_manipulate_the_political_theater
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		       add_ideas = GRE_trade_With_ger_eng
 		    }
 		}
 	focus = {
@@ -1766,13 +1773,61 @@ add_ideas = GRE_like_the_beasts
 		y = 1
         prerequisite = { focus = GRE_drink_an_espresso_with_eng_and_ger }
 		relative_position_id = GRE_drink_an_espresso_with_eng_and_ger
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		 hidden_effect = {
+				division_template = {
+					name = "Royal Guard"
+					priority = 2
+					division_names_group = GRE_INF_01
+					regiments = {
+						cavalry = { x = 0 y = 0 }
+						cavalry = { x = 0 y = 1 }
+						cavalry = { x = 0 y = 2 }
+			
+	    	   		 	cavalry = { x = 1 y = 0 }
+						cavalry = { x = 1 y = 1 }
+						cavalry = { x = 1 y = 2 }
+			
+	    	   		 	cavalry = { x = 2 y = 0 }
+						cavalry = { x = 2 y = 1 }
+						cavalry = { x = 2 y = 2 }
+						
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }					
+					}
+				}			
+			}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 186 }
+					create_unit = {
+						division = "name = \"1. Royal Guard\" division_template = \"Royal Guard\" start_experience_factor = 1.0" 
+						owner = GRE
+					}
+					create_unit = {
+						division = "name = \"2. Royal Guard\" division_template = \"Royal Guard\" start_experience_factor = 1.0"  
+						owner = GRE
+					}
+					create_unit = {
+						division = "name = \"3. Royal Guard\" division_template = \"Royal Guard\" start_experience_factor = 1.0" 
+						owner = GRE
+					}
+					create_unit = {
+						division = "name = \"4. Royal Guard\" division_template = \"Royal Guard\" start_experience_factor = 1.0" 
+						owner = GRE
+					}
+					create_unit = {
+						division = "name = \"5. Royal Guard\" division_template = \"Royal Guard\" start_experience_factor = 1.0" 
+						owner = GRE
+					}					
+				}													
 		    }
 		}
 	
@@ -1787,13 +1842,18 @@ add_ideas = GRE_like_the_beasts
 		y = 1
         prerequisite = { focus = GRE_manipulate_the_political_theater }
 		relative_position_id = GRE_manipulate_the_political_theater
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_popularity = {
+    			ideology = democratic
+    			popularity = -0.1
+			}
+			add_stability = 0.05
 		    }
 		}
 	focus = {
@@ -1807,13 +1867,14 @@ add_ideas = GRE_like_the_beasts
 		y = 1
         prerequisite = { focus = GRE_fascistize_metaxas }
 		relative_position_id = GRE_fascistize_metaxas
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_ideas = GRE_paul
 		    }
 		}
 	focus = {
@@ -1828,7 +1889,7 @@ add_ideas = GRE_like_the_beasts
         prerequisite = { focus = GRE_as_the_barometer_falls }
 		prerequisite = { focus = GRE_buy_merchants_for_the_king }
 		relative_position_id = GRE_as_the_barometer_falls
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
@@ -1848,13 +1909,14 @@ add_ideas = GRE_like_the_beasts
 		y = 1
         prerequisite = { focus = GRE_disband_the_parliament }
 		relative_position_id = GRE_disband_the_parliament
-		cost = 3.5
+		cost =  5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_country_leader_trait = absolute_monarch
 		    }
 		}
 	focus = {

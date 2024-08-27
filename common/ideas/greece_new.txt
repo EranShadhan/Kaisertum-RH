@@ -192,6 +192,91 @@ ideas = {
 				army_morale_factor = 0.1
 			}
 		}
+		GRE_the_slogan = {
+			picture = generic_monarchist_uprising
+			removal_cost = -1
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.1
+			}
+		}
+		GRE_paul = { 
+			removal_cost = -1
+
+			picture = generic_free_trade
+
+			modifier = {
+				stability_factor = 0.05
+				conscription_factor = 0.05
+			
+			}
+		}
+		GRE_trade_With_ger_eng = { 
+			removal_cost = -1
+
+			picture = generic_free_trade
+
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+			targeted_modifier = {
+				tag = GER
+				trade_cost_for_target_factor = -0.1
+				extra_trade_to_target_factor = 0.2
+				trade_opinion_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = ENG
+				trade_cost_for_target_factor = -0.1
+				extra_trade_to_target_factor = 0.2
+				trade_opinion_factor = 0.5
+			}
+		}
+		GRE_mission_to_eng = {
+			picture = eng_guided_by_britain
+			removal_cost = -1
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_advisor_cost_factor = -0.2
+				trade_laws_cost_factor = -0.2
+				mobilization_laws_cost_factor = -0.2
+				economy_cost_factor = -0.2
+			}
+		}
+		GRE_german_council = {
+			picture = soviet_german_friendship
+			removal_cost = -1
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				war_support_factor = 0.05
+				drift_defence_factor = 0.1
+			}
+		}
 		GRE_the_coordinated_armed_forces_of_the_balkan_pact = {
 
 			allowed = {
