@@ -1185,6 +1185,8 @@ focus = {
 	
 		prerequisite = { focus = ROM_pol_kw_1 }
 
+		cost = 5
+
 		ai_will_do = {
 				factor = 1
 			}
@@ -1218,6 +1220,8 @@ focus = {
 	
 		prerequisite = { focus = ROM_pol_kw_1 }
 
+		cost = 5
+
 		ai_will_do = {
 				factor = 1
 			}
@@ -1250,6 +1254,8 @@ focus = {
 		relative_position_id = ROM_pol_kw_1
 	
 		prerequisite = { focus = ROM_pol_kw_2 }
+
+		cost = 10
 
 		ai_will_do = {
 				factor = 1
@@ -1285,6 +1291,8 @@ focus = {
 		prerequisite = { focus = ROM_pol_kw_2 }
 		prerequisite = { focus = ROM_pol_kw_3 }
 
+		cost = 10
+
 		ai_will_do = {
 				factor = 1
 			}
@@ -1319,6 +1327,8 @@ focus = {
 		prerequisite = { focus = ROM_pol_kw_4 }
 		prerequisite = { focus = ROM_pol_kw_5 }
 
+		cost = 10
+
 		ai_will_do = {
 				factor = 1
 			}
@@ -1351,6 +1361,8 @@ focus = {
 		relative_position_id = ROM_pol_kw_1
 	
 		prerequisite = { focus = ROM_pol_kw_3 }
+
+		cost = 10
 
 		ai_will_do = {
 				factor = 1
@@ -1386,6 +1398,8 @@ focus = {
 		prerequisite = { focus = ROM_pol_kw_5 }
 		prerequisite = { focus = ROM_pol_kw_6}
 
+		cost = 10
+
 		ai_will_do = {
 				factor = 1
 			}
@@ -1417,6 +1431,8 @@ focus = {
 		y = 4
 		relative_position_id = ROM_pol_kw_1
 	
+		cost = 20
+
 		prerequisite = { focus = ROM_pol_kw_8 }
 		prerequisite = { focus = ROM_pol_kw_7}
 
@@ -1455,6 +1471,8 @@ focus = {
 
 		prerequisite = { focus = ROM_pol_kw_9 }
 
+		cost = 10
+
 		ai_will_do = {
 				factor = 1
 			}
@@ -1474,7 +1492,9 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				HUN = {
+					country_event = kt_romania.4
+				}
 			}
 	}
 
@@ -1490,6 +1510,8 @@ focus = {
 
 		prerequisite = { focus = ROM_pol_kw_9 }
 
+		cost = 10
+
 		ai_will_do = {
 				factor = 1
 			}
@@ -1509,7 +1531,9 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				BUL = {
+					country_event = kt_romania.6
+				}
 			}
 	}
 
@@ -1523,6 +1547,8 @@ focus = {
 	
 		prerequisite = { focus = ROM_pol_kw_10 }
 
+		cost = 10
+
 		ai_will_do = {
 				factor = 1
 			}
@@ -1542,7 +1568,12 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				ROM = {
+					764 = { add_core_of = ROOT }
+					154 = { add_core_of = ROOT }
+					73 = { add_core_of = ROOT }
+				}
+				set_cosmetic_tag = ROM_DAC
 			}
 	}
 
@@ -1556,6 +1587,8 @@ focus = {
 	
 		prerequisite = { focus = ROM_pol_kw_11 }
 
+		cost = 10
+
 		ai_will_do = {
 				factor = 1
 			}
@@ -1575,7 +1608,14 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				ROM = {
+					108 = { add_core_of = ROOT }
+					48 = { add_core_of = ROOT }
+					212 = { add_core_of = ROOT }
+					211 = { add_core_of = ROOT }
+					801 = { add_core_of = ROOT }
+				}
+				set_cosmetic_tag = ROM_BUL
 			}
 	}
 
