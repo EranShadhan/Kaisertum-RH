@@ -1932,6 +1932,7 @@ add_ideas = GRE_like_the_beasts
 		}
 		x = 9
 		y = 1
+		mutually_exclusive = { focus = GRE_the_house_always_wins }
         prerequisite = { focus = GRE_ally_the_mafia_to_assasinate_metaxas }
 		relative_position_id = GRE_ally_the_mafia_to_assasinate_metaxas
 		cost = 3.5
@@ -2181,13 +2182,14 @@ add_ideas = GRE_like_the_beasts
 		x = 3
 		y = 1
         prerequisite = { focus = GRE_reform_the_government }
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_ideas = GRE_Women_can
 		    }
 		}
 	focus = {
@@ -2201,13 +2203,14 @@ add_ideas = GRE_like_the_beasts
 		x = 1
 		y = 1
         prerequisite = { focus = GRE_women_in_production }
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_research_slot = 1 
 		    }
 		}		
 	focus = {
@@ -2221,7 +2224,7 @@ add_ideas = GRE_like_the_beasts
 		x = -1
 		y = 1
         prerequisite = { focus = GRE_women_in_production }
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
@@ -2242,13 +2245,14 @@ add_ideas = GRE_like_the_beasts
 		y = 1
         prerequisite = { focus = GRE_no_leaders_no_fears }
 		 prerequisite = { focus = GRE_socialist_christian_education }
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_ideas = GRE_collab_with_church
 		    }
 		}	
 	focus = {
@@ -2261,38 +2265,18 @@ add_ideas = GRE_like_the_beasts
 		x = 0
 		y = 1
 		 prerequisite = { focus = GRE_socialist_theology }
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_ideas = GRE_communism_uni
 		    }
 		}	
-		focus = {
-		id = GRE_make_the_med_red
-		icon = GFX_focus_ITA_il_sol_dell_avvenire
-
 		
-		available = {
-		}
-		relative_position_id = GRE_guide_our_balkan_allies
-		x = 3
-		y = 1
-        prerequisite = { focus = GRE_guide_our_balkan_allies  }
-		prerequisite = { focus = GRE_international_union_of_communists  }
-		prerequisite = { focus = GRE_break_with_the_crown focus = GRE_give_george_power }
-		cost = 3.5
-		ai_will_do = {
-			base = 0
-		}
-		available_if_capitulated = yes
-		search_filters = {  }
-		completion_reward = {
-		    }
-		}
-				focus = {
+	focus = {
 		id = GRE_the_global_movement
 		icon = GFX_focus_ETH_callout_to_the_world
 
@@ -2305,13 +2289,14 @@ add_ideas = GRE_like_the_beasts
         prerequisite = { focus = GRE_guide_our_balkan_allies  }
 		prerequisite = { focus = GRE_international_union_of_communists  }
 		prerequisite = { focus = GRE_break_with_the_crown focus = GRE_give_george_power }
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		swap_ideas = { remove_idea = GRE_communism_uni add_idea = GRE_communism_uni2 }
 		    }
 		}	
 		focus = {
@@ -2325,7 +2310,7 @@ add_ideas = GRE_like_the_beasts
 		x = 0
 		y = 1
         prerequisite = { focus = GRE_the_global_movement  }
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
@@ -2343,6 +2328,7 @@ add_ideas = GRE_like_the_beasts
 		}
 		x = 0
 		y = 1
+		mutually_exclusive = { focus = GRE_honor_the_communists_efforts }
         prerequisite = { focus = GRE_ally_the_mafia_to_assasinate_metaxas }
 		relative_position_id = GRE_ally_the_mafia_to_assasinate_metaxas
 		cost = 3.5
@@ -2352,6 +2338,7 @@ add_ideas = GRE_like_the_beasts
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_ideas = GRE_king_of_kings
 		    }
 		}
 		focus = {
@@ -2372,6 +2359,7 @@ add_ideas = GRE_like_the_beasts
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_country_leader_trait = arkhigos
 		    }
 		}
 		focus = {
@@ -2651,6 +2639,7 @@ add_ideas = GRE_like_the_beasts
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_country_leader_trait = empire_builder
 		    }
 		}
 	focus = {
@@ -4754,7 +4743,7 @@ focus = {
 		id = GRE_tourist_industry
 		icon = GFX_focus_GRE_encourage_tourism
         prerequisite = { focus = GRE_develop_our_islands }
-		prerequisite = { focus = Piraeus_city_of_wealth }
+		prerequisite = { focus = GRE_Piraeus_city_of_wealth }
 		available = {
 		}
 		x = -1
@@ -4799,7 +4788,7 @@ focus = {
 		}
 
 		focus = { 
-		id = paying_off_our_debts
+		id = GRE_paying_off_our_debts
 		icon = GFX_focus_ETH_adopt_the_lira
        Prerequisite = { focus = GRE_Militarize_consantinople }
 		available = {
@@ -4820,12 +4809,12 @@ focus = {
 		focus = { 
 		id = GRE_Wartime_industries
 		Icon = GFX_focus_SWI_issue_war_bonds
-		Prerequisite = { focus = paying_off_our_debts }
+		Prerequisite = { focus = GRE_paying_off_our_debts }
 		available = {
 		}
 		x = 0
 		y = 1
-		relative_position_id = paying_off_our_debts
+		relative_position_id = GRE_paying_off_our_debts
 		cost = 10
 					ai_will_do = {
 			base = 0
@@ -5093,7 +5082,7 @@ focus = {
 			}
 		}
 		focus = { 
-		id = Piraeus_city_of_wealth
+		id = GRE_Piraeus_city_of_wealth
 		icon = GFX_focus_spa_the_spanish_miracle
 		prerequisite = { focus = GRE_tax_incentives}
 		available = {
