@@ -125,11 +125,7 @@ country_event = {
 			}
 			transfer_state = 664
 			transfer_state = 73
-			transfer_state = 996
 
-			996 = {
-				set_demilitarized_zone = yes
-			}
 			73 = {
 				set_demilitarized_zone = yes
 			}
@@ -189,6 +185,9 @@ country_event = {
 
 			SER = {
 				set_cosmetic_tag = SER_HUN
+				transfer_state = 108
+				transfer_state = 802
+				transfer_state = 803
 			}
 
 		HUN = {
