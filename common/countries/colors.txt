@@ -97,6 +97,10 @@ TUR = {
 	color = rgb { 255 51 51 }
 	color_ui = rgb { 255 51 51 }
 }
+PON = {
+	color = rgb { 93 181 227 }
+	color_ui = rgb { 121 235 255 }
+}
 GRE = {
 	color = rgb { 93 181 227 }
 	color_ui = rgb { 121 235 255 }

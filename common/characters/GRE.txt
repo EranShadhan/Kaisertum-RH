@@ -107,7 +107,26 @@ characters={
 				}
 			}
           
-
+          advisor={
+				slot = army_chief
+				idea_token = GRE_nikolaos_plastiras
+				ledger = army
+				name = GRE_nikolaos_plastiras
+				allowed = {
+					original_tag = GRE
+				}
+				available = {
+					
+				}
+				traits = {
+					charismatic_battleplaner
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		
+		}
 			name=GRE_ioannis_metaxas
 			portraits={
 				army={
@@ -166,20 +185,23 @@ characters={
 				large="GFX_portrait_gre_eleftherios_venizelos"
 			}
 		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = GRE_eleftherios_venizelos
-			ledger = air
-			allowed = {
-				original_tag = GRE
+		
+        advisor={
+				slot = political_advisor
+				idea_token = GRE_eleftherios_venizelos
+				allowed = {
+					original_tag = GRE
 				
+				}
+				available = {
+					
+						
+					
+				}
+				traits = {
+				  gre_minister_of_education
+				}
 			}
-			traits = {
-				air_warfare_theorist
-			}
-		}
-
 		country_leader={
 			ideology=liberalism
 			traits={ ethnarch }
@@ -970,16 +992,14 @@ characters={
 			allowed = {
 				OR = {
 					original_tag = GRE
-					original_tag = CHL
 				}
 			
 			}
 			available = {
 				OR = {
 						original_tag = GRE
-					CHL_hub_of_the_revolution_trigger = yes
 				}
-				
+				not = { has_country_flag = GRE_venizelos_died }
 			}
 			traits = {
 				backroom_backstabber 

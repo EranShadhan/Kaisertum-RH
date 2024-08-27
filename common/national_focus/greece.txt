@@ -50,11 +50,13 @@ focus_tree = {
 		ai_will_do = {
 			base = 0
 		}
+		bypass = { has_country_flag = nationa_schism_part2 }
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
 	        remove_ideas = GRE_memories_of_the_great_nationa_schism 
 			add_timed_idea = { days = 720 idea = GRE_memories_of_the_great_nationa_schism_fixing }
+		
 		    }
 		}	
 	focus = {
@@ -75,6 +77,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_popularity = {
+    			ideology = democratic
+    			popularity = 0.05
+			}
+			set_politics = { ruling_party = democratic elections_allowed = no }
 		    }
 		}	
 	focus = {
@@ -88,7 +95,7 @@ focus_tree = {
 		y = 2
         prerequisite = { focus = GRE_metaxas_allegiance }
 		relative_position_id = GRE_metaxas_allegiance
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
@@ -115,7 +122,7 @@ focus_tree = {
 		y = 1
         prerequisite = { focus = GRE_theory_of_civs }
 		relative_position_id = GRE_theory_of_civs
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
@@ -138,7 +145,7 @@ focus_tree = {
 		y = 1
         prerequisite = { focus = GRE_byzantine_nationalism }
 		relative_position_id = GRE_byzantine_nationalism
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
@@ -146,7 +153,7 @@ focus_tree = {
 		search_filters = {  }
 		completion_reward = {
 		custom_effect_tooltip = GRE_mod_metaxism
-		add_to_variable = { GRE_var_met_cscr = 0.01 tooltip = conscription_tt }
+		add_to_variable = { GRE_var_met_cscr = 0.005 tooltip = conscription_tt }
 		add_to_variable = { GRE_var_met_spebu = 0.1 tooltip = production_speed_buildings_factor_tt }
 		    }
 		}			
@@ -161,7 +168,7 @@ focus_tree = {
 		y = 1
         prerequisite = { focus = GRE_theory_of_civs }
 		relative_position_id = GRE_theory_of_civs
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
@@ -185,7 +192,7 @@ focus_tree = {
 		y = 1
         prerequisite = { focus = GRE_athenian_demo }
 		relative_position_id = GRE_athenian_demo
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
@@ -208,7 +215,7 @@ focus_tree = {
 		y = 1
         prerequisite = { focus = GRE_theory_of_civs }
 		relative_position_id = GRE_theory_of_civs
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
@@ -231,7 +238,7 @@ focus_tree = {
 		y = 1
         prerequisite = { focus = GRE_moddest_greece focus = GRE_byzantine_nationalism}
 		relative_position_id = GRE_moddest_greece
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
@@ -257,7 +264,7 @@ focus_tree = {
 		y = 1
         prerequisite = { focus = GRE_orthodox_nation focus = GRE_roman_roots focus = GRE_spartans}
 		relative_position_id = GRE_roman_roots
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
@@ -272,21 +279,22 @@ focus_tree = {
 		icon = GFX_focus_GRE_enemies_party
 
 		
-		available = {
-has_country_flag = nationa_schism_part2 
-		}
+		
 		x = 0
 		y = 1
         prerequisite = { focus = GRE_epistratoi_FORWARDS_MARCH}
 		relative_position_id = GRE_epistratoi_FORWARDS_MARCH
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-		GRE_bop_low_decrease_effect = yes
+		custom_effect_tooltip = GRE_assasinate_ven
+		add_stability = 0.05
+		add_political_power = 50
+		set_country_flag = GRE_venizelos_died
 		    }
 		}
 	
@@ -320,6 +328,10 @@ has_country_flag = nationa_schism_part2
 
 		
 		available = {
+		power_balance_value = {
+				id = GRE_power_balance
+				value < -0.6
+			}	
 		}
 		x = 1
 		y = 1
@@ -332,7 +344,21 @@ has_country_flag = nationa_schism_part2
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-
+               custom_effect_tooltip = GRE_end_the_schism_tt
+				set_country_flag = GRE_end_the_schism
+				remove_power_balance = { id = GRE_power_balance }
+				add_ideas = GRE_george_ii
+				hidden_effect = {
+				set_country_flag = GRE_the_class_ended
+				remove_ideas = GRE_HERE_WE_GO_AGAIN_CRUSH2
+				remove_ideas = GRE_HERE_WE_GO_AGAIN_CRUSH
+				remove_ideas = GRE_HERE_WE_GO_AGAIN3
+				remove_ideas = GRE_HERE_WE_GO_AGAIN
+				remove_ideas = GRE_HERE_WE_GO_AGAIN2
+				remove_ideas  = GRE_memories_of_the_great_nationa_schism_fixing
+				remove_ideas = GRE_memories_of_the_great_nationa_schism
+				remove_ideas = GRE_HERE_WE_GO_AGAIN_CRUSH3
+				}
 		    }
 		}
 		
@@ -345,7 +371,8 @@ has_country_flag = nationa_schism_part2
 		}
 		x = 1
 		y = 1
-        prerequisite = { focus = GRE_deport_the_communists focus = GRE_send_the_king_to_denmark }
+        prerequisite = { focus = GRE_deport_the_communists  }
+		prerequisite = { focus = GRE_send_the_king_to_denmark }
 		relative_position_id = GRE_deport_the_communists
 		cost = 3.5
 		ai_will_do = {
@@ -354,7 +381,7 @@ has_country_flag = nationa_schism_part2
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-
+          add_ideas = GRE_limited_woman_rights
 		    }
 		}	
 	focus = {
@@ -398,7 +425,8 @@ has_country_flag = nationa_schism_part2
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	add_war_support = 0.1
+	add_manpower = 15000
 		    }
 		}	
 	focus = {
@@ -413,14 +441,17 @@ has_country_flag = nationa_schism_part2
         prerequisite = { focus = GRE_national_education focus = GRE_reform_education}
 		relative_position_id = GRE_national_education
 		mutually_exclusive = { focus = GRE_recruit_the_fascists_eee }
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	custom_effect_tooltip = GRE_mod_metaxism
+		add_to_variable = { GRE_var_met_st = 0.05 tooltip = stability_factor_tt }
+		add_to_variable = { GRE_var_met_efeg = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
+		add_to_variable = { GRE_var_met_rspf = 0.02 tooltip = research_speed_factor_tt }
 		    }
 		}
 	focus = {
@@ -434,14 +465,16 @@ has_country_flag = nationa_schism_part2
 		y = 1
         prerequisite = { focus = GRE_appease_the_people }
 		relative_position_id = GRE_appease_the_people
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	          custom_effect_tooltip = GRE_mod_metaxism
+		add_to_variable = { GRE_var_met_ws = 0.05 tooltip = war_support_factor_tt }
+		add_to_variable = { GRE_var_met_acd = 0.05 tooltip = army_core_defence_factor_tt }
 		    }
 		}
 	focus = {
@@ -455,14 +488,15 @@ has_country_flag = nationa_schism_part2
 		y = 1
         prerequisite = { focus = GRE_the_metaxist_parliament }
 		relative_position_id = GRE_the_metaxist_parliament
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	            if = { limit = { has_dlc = "La Resistance"} add_ideas = GRE_expand_intelligence_idea } 
+				else = { add_ideas = GRE_expand_intelligence_idea_no_lar }
 		    }
 		}		
 	focus = {
@@ -476,14 +510,15 @@ has_country_flag = nationa_schism_part2
 		y = 1
         prerequisite = { focus = GRE_appease_the_people }
 		relative_position_id = GRE_appease_the_people
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+		 custom_effect_tooltip = GRE_mod_metaxism
+	          add_to_variable = { GRE_var_met_drd = 0.15 tooltip = drift_defence_factor_tt }
 		    }
 			
 		}
@@ -505,7 +540,7 @@ has_country_flag = nationa_schism_part2
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	remove_ideas = GRE_george_ii
 		    }
 			
 		}			
@@ -527,7 +562,7 @@ has_country_flag = nationa_schism_part2
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	           add_ideas = GRE_balkan_allies
 		    }
 			
 		}	
@@ -549,7 +584,7 @@ has_country_flag = nationa_schism_part2
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	    swap_ideas = { remove_idea = GRE_balkan_allies add_idea = GRE_balkan_allies2 }
 		    }
 			
 		}	
@@ -573,7 +608,13 @@ has_country_flag = nationa_schism_part2
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	every_country = {
+			 limit = { is_in_faction_with = GRE 
+			 OR = { original_tag = BUL original_tag = ROM original_tag = GRE original_tag = ALB original_tag = SER }}
+			 add_stability = 0.05
+			 add_war_support =0.05
+			 add_political_power = 50
+			 }
 		    }
 			
 		}
@@ -624,7 +665,7 @@ has_country_flag = nationa_schism_part2
 	         every_country = {
 			 limit = { is_in_faction_with = GRE 
 			 OR = { original_tag = BUL original_tag = ROM original_tag = GRE original_tag = ALB original_tag = SER }}
-			 add_ideas = x 
+			 add_ideas =GRE_germans_of_the_balkans 
 			 }
 		    }
 			
@@ -729,7 +770,8 @@ has_country_flag = nationa_schism_part2
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	add_ideas = GRE_attack_metaxism
+	leave_faction = yes
 		    }
 			
 		}	
@@ -752,7 +794,7 @@ has_country_flag = nationa_schism_part2
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	           ITA = { country_event = KT_greece_events.5 }
 		    }
 			
 		}	
@@ -774,7 +816,7 @@ has_country_flag = nationa_schism_part2
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	            add_ideas = GRE_macedonian_race
 		    }
 			
 		}
@@ -796,7 +838,12 @@ has_country_flag = nationa_schism_part2
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	           create_wargoal = {
+				type = take_state_focus
+				target = BUL
+				expire = 0
+				generator = { 184 981 106 }
+			}	
 		    }
 			
 		}	
@@ -815,10 +862,16 @@ has_country_flag = nationa_schism_part2
 		ai_will_do = {
 			base = 0
 		}
+		bypass = { ALB = { exists = no } }
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	    create_wargoal = {
+				type = take_state_focus
+				target = ALB
+				expire = 0
+				generator = { 805 44}
+			}
 		    }
 			
 		}	
@@ -840,7 +893,7 @@ has_country_flag = nationa_schism_part2
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	   unlock_decision_tooltip = pontiac_revolt
 		    }
 			
 		}			
@@ -862,7 +915,7 @@ has_country_flag = nationa_schism_part2
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	      add_ideas = GRE_kurdish_volunteers
 		    }
 			
 		}		
@@ -884,7 +937,12 @@ has_country_flag = nationa_schism_part2
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	 create_wargoal = {
+				type = take_state_focus
+				target = ITA
+				expire = 0
+				generator = { 115 156 117 849 }
+			}
 		    }
 			
 		}
@@ -906,7 +964,12 @@ has_country_flag = nationa_schism_part2
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	 create_wargoal = {
+				type = take_state_focus
+				target = SOV
+				expire = 0
+				generator = { 1022 }
+			}
 		    }
 			
 		}	
@@ -931,7 +994,7 @@ has_country_flag = nationa_schism_part2
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	unlock_decision_tooltip = form_greatest_greece
 		    }
 			
 		}			
@@ -947,14 +1010,18 @@ has_country_flag = nationa_schism_part2
 		mutually_exclusive = { focus = GRE_appease_the_people }
         prerequisite = { focus = GRE_national_education focus = GRE_reform_education}
 		relative_position_id = GRE_national_education
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	         set_politics = { ruling_party = fascism elections_allowed = no }	
+			add_popularity = { 
+				ideology = fascism 
+				popularity = 0.15
+             }		
 		    }
 		}	
 
@@ -970,14 +1037,17 @@ has_country_flag = nationa_schism_part2
         prerequisite = { focus = GRE_recruit_the_fascists_eee }
 		relative_position_id = GRE_recruit_the_fascists_eee
 		mutually_exclusive = { focus = GRE_crush_the_other }
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	add_popularity = { 
+				ideology = fascism 
+				popularity = 0.05
+             }	
 		    }
 		}	
 	focus = {
@@ -998,7 +1068,7 @@ has_country_flag = nationa_schism_part2
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+
 		    }
 		}
 	
@@ -1020,7 +1090,11 @@ has_country_flag = nationa_schism_part2
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	create_wargoal = {
+				type = annex_everything
+				target = TUR
+				expire = 0
+			}
 		    }
 		}			
 		focus = {
@@ -1205,14 +1279,16 @@ has_country_flag = nationa_schism_part2
         prerequisite = { focus = GRE_recruit_the_fascists_eee }
 		relative_position_id = GRE_recruit_the_fascists_eee
 		mutually_exclusive = { focus = GRE_merge_the_parties }
-		cost = 3.5
+		
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+		add_war_support = 0.1
+	add_political_power = 50
 		    }
 		}	
 	focus = {
@@ -1226,14 +1302,14 @@ has_country_flag = nationa_schism_part2
 		y = 1
         prerequisite = { focus = GRE_crush_the_other}
 		relative_position_id = GRE_crush_the_other
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	add_ideas = GRE_global_fascism_movement
 		    }
      }
 	focus = {
@@ -1254,7 +1330,12 @@ has_country_flag = nationa_schism_part2
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+		random_owned_controlled_state = {
+	add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+						}}
 		    }
 		}		
 		focus = {
@@ -1268,14 +1349,14 @@ has_country_flag = nationa_schism_part2
 		y = 1
         prerequisite = { focus = GRE_the_global_falangism_movement}
 		relative_position_id = GRE_the_global_falangism_movement
-		cost = 3.5
+		cost = 10
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	add_ideas = GRE_eaglebyz
 		    }
 		}		
 			focus = {
@@ -1317,7 +1398,7 @@ has_country_flag = nationa_schism_part2
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	add_ideas = GRE_gods_walls
 		    }
 		}
 			focus = {
@@ -1331,7 +1412,7 @@ has_country_flag = nationa_schism_part2
 		y = 1
         prerequisite = { focus = GRE_lock_the_door_pwease}
 		relative_position_id = GRE_lock_the_door_pwease
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
@@ -1352,14 +1433,23 @@ has_country_flag = nationa_schism_part2
 		y = 1
         prerequisite = { focus = GRE_lock_the_door_pwease}
 		relative_position_id = GRE_lock_the_door_pwease
-		cost = 3.5
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+		create_wargoal = {
+				type = annex_everything
+				target = ITA
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SPR
+				expire = 0
+			}
 		    }
 		}	
 	focus = {
@@ -1380,7 +1470,16 @@ has_country_flag = nationa_schism_part2
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	create_wargoal = {
+				type = annex_everything
+				target = EGY
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SAU
+				expire = 0
+			}
 		    }
 		}			
 			focus = {
@@ -2554,9 +2653,10 @@ has_country_flag = nationa_schism_part2
 		}
 		x = 1
 		y = 1
+		 bypass = { has_country_flag = GRE_the_class_ended }
         prerequisite = { focus = GRE_metaxas_allegiance focus = GRE_king_allegiance}
 		relative_position_id = GRE_metaxas_allegiance
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			base = 0
 		}
@@ -2580,6 +2680,7 @@ has_country_flag = nationa_schism_part2
 		}
 		x = 1
 		y = 1
+		 bypass = { has_country_flag = GRE_the_class_ended }
         prerequisite = { focus = GRE_the_economic_crush }
 		relative_position_id = GRE_the_economic_crush
 		cost = 5
@@ -2609,6 +2710,7 @@ has_country_flag = nationa_schism_part2
         prerequisite = { focus = GRE_the_economic_crush }
 		relative_position_id = GRE_the_economic_crush
 		cost = 5
+		 bypass = { has_country_flag = GRE_the_class_ended }
 		ai_will_do = {
 			base = 0
 		}
@@ -2616,7 +2718,16 @@ has_country_flag = nationa_schism_part2
 		search_filters = {  }
 		completion_reward = {
 		
-		  	
+		  	custom_effect_tooltip = GRE_fight_for_influce_tt
+			
+			hidden_effect = {
+			
+			set_country_flag = nationa_schism_part2
+			
+			if = { limit = { has_completed_focus = GRE_king_allegiance }
+			set_country_flag = national_schism_royalist_side }
+			
+			}
 		}
 	}	
 	focus = {
@@ -2629,6 +2740,10 @@ has_country_flag = nationa_schism_part2
 		}
 		x = 1
 		y = 1
+		 bypass = { has_country_flag = GRE_the_class_ended }
+		on_select = {
+		country_event = { id = KT_greece_events.4 days = 5 }
+		}
         prerequisite = { focus = GRE_the_fight_for_dominance focus = GRE_conscription_crisis}
 		relative_position_id = GRE_the_fight_for_dominance
 		cost = 5
@@ -2665,7 +2780,7 @@ has_country_flag = nationa_schism_part2
 		search_filters = {  }
 		completion_reward = {
 		 
-		  	
+		  	remove_ideas = victory_in_the_sgtwgre
 		}
 	}	
 	focus = {
@@ -2688,7 +2803,9 @@ has_country_flag = nationa_schism_part2
 		search_filters = {  }
 		completion_reward = {
 		 
-		  	
+		  	add_political_power = 50
+			add_stability = 0.1
+			add_war_support = 0.1
 		}
 	}
 	focus = {
@@ -2707,6 +2824,7 @@ has_country_flag = nationa_schism_part2
 		ai_will_do = {
 			base = 0
 		}
+		 bypass = { has_country_flag = GRE_the_class_ended }
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
@@ -2736,8 +2854,16 @@ has_country_flag = nationa_schism_part2
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-		 
-		  	
+		 custom_effect_tooltip = GRE_crush_the_eee_tt
+		  	hidden_effect = {
+			remove_ideas = GRE_eee_enemy
+				remove_ideas = GRE_eee_enemy2
+				remove_ideas = GRE_eee_enemy3
+					remove_ideas = GRE_eee_enemy4
+						remove_ideas = GRE_eee_enemy5
+							remove_ideas = GRE_eee_enemy6
+			
+			}
 		}
 	}	
 	focus = {

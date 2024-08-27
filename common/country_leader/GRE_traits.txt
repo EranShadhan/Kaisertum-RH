@@ -29,4 +29,18 @@ Terminator = {
 	  political_power_gain =0.05
 	  stability_weekly = 0.002
 	}	
+	gre_minister_of_education = {
+		random = no
+		sprite = 13
+		research_speed_factor = 0.05
+		stability_factor = 0.02
+	}
+	charismatic_battleplaner = {
+		random = no
+		sprite = 14
+		experience_gain_army = 0.35
+		max_command_power = 60
+		land_doctrine_cost_factor = -0.05
+		terrain_penalty_reduction = 0.1
+	}
 }

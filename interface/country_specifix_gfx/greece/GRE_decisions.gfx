@@ -24,6 +24,10 @@ spriteTypes = {
 		name = "GFX_decision_GRE_claim_state_2_alt"
 		texturefile = "gfx/interface/decisions/GRE/greo1.dds"
 	}
+	spriteType = {
+		name = "GFX_decision_GRE_claim_state_neutral"
+		texturefile = "gfx/interface/decisions/GRE/gren.dds"
+	}
 					
 	spriteType = {
 		name = "GFX_decision_GRE_claim_state_3_alt"

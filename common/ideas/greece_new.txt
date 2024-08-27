@@ -198,6 +198,50 @@ ideas = {
 				planning_speed = 0.15
 			}
 		}
+			GRE_kurdish_volunteers = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = tur_ottoman_spirit
+			
+			removal_cost = -1
+	targeted_modifier = {
+				tag = TUR
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.05
+			}
+			modifier = {
+				weekly_manpower = 100
+			}
+		}
+		GRE_macedonian_race = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_build_infrastructure
+			
+			removal_cost = -1
+	targeted_modifier = {
+				tag = BUL
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.05
+			}
+			modifier = {
+				army_speed_factor = 0.25
+			}
+		}
 		GRE_balkan_pact_innovative_transport_techniques = {
 
 			allowed = {
@@ -891,7 +935,7 @@ ideas = {
 		}
 		GRE_memories_of_the_great_nationa_schism_fixing = {
 			
-
+              
 			picture = GRE_first_schism
 
 			allowed = {
@@ -922,7 +966,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-
+               name = GRE_HERE_WE_GO_AGAIN
 				modifier = {
 				stability_factor = -0.2
 				war_support_factor = -0.1
@@ -945,7 +989,7 @@ ideas = {
 		}	
 		GRE_HERE_WE_GO_AGAIN2 = {
 			
-
+    name = GRE_HERE_WE_GO_AGAIN
 			picture = GRE_first_schism
 
 			allowed = {
@@ -977,7 +1021,7 @@ ideas = {
 			
 		}
 		GRE_HERE_WE_GO_AGAIN3 = {
-			
+			    name = GRE_HERE_WE_GO_AGAIN
 
 			picture = GRE_first_schism
 
@@ -1010,7 +1054,7 @@ ideas = {
 			
 		}	
         GRE_HERE_WE_GO_AGAIN_CRUSH = {
-			
+			name = GRE_HERE_WE_GO_AGAIN
 
 			picture = GRE_first_schism
 
@@ -1044,7 +1088,7 @@ ideas = {
 		}	
         GRE_HERE_WE_GO_AGAIN_CRUSH2 = {
 			
-
+           	name = GRE_HERE_WE_GO_AGAIN
 			picture = GRE_first_schism
 
 			allowed = {
@@ -1077,7 +1121,7 @@ ideas = {
 		}	
         GRE_HERE_WE_GO_AGAIN_CRUSH3 = {
 			
-
+           	name = GRE_HERE_WE_GO_AGAIN
 			picture = GRE_first_schism
 
 			allowed = {
@@ -1273,6 +1317,149 @@ ideas = {
 				political_power_factor	= 0.15
 			}
 		}
+		GRE_expand_intelligence_idea = {
+		allowed = {
+			original_tag = GRE
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = generic_spy_intel
+
+		modifier = {
+			operative_slot = 1
+		}
+	}	
+	GRE_balkan_allies = {
+			
+			picture = bul_the_fate_of_the_balkans
+
+			allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				tag = GRE
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+			}
+		}
+GRE_balkan_allies2 = {
+			name = GRE_balkan_allies
+			picture = bul_the_fate_of_the_balkans
+
+			allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				tag = GRE
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				surrender_limit = 0.2
+				weekly_manpower = 250
+			}
+		}
+		GRE_attack_metaxism = {
+				
+			allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			
+
+			picture = gre_metaxism_empowered
+				
+			removal_cost = -1
+				
+			modifier = {
+				war_support_factor = 0.15				
+				stability_factor = 0.15	
+				consumer_goods_factor = -0.05
+				army_core_defence_factor = 0.05
+				conscription_factor = 0.15	
+				drift_defence_factor = 1.00			
+			}
+		}
+		GRE_germans_of_the_balkans = {
+			picture = bul_prussia_of_the_balkans
+
+			allowed = {
+			always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = 0.05
+				non_core_manpower = 0.01
+				experience_gain_navy_factor = 0.1
+				experience_gain_army_factor = 0.1
+				army_leader_start_attack_level = 1
+				army_leader_start_defense_level	= 1
+				navy_leader_start_attack_level = 1
+				navy_leader_start_defense_level = 1
+				army_morale_factor = 0.1
+				max_command_power = 25
+				justify_war_goal_time = -0.5
+			}
+		}
+	GRE_expand_intelligence_idea_no_lar = {
+		allowed = {
+			original_tag = GRE
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+name = GRE_expand_intelligence_idea
+		removal_cost = -1
+
+		picture = generic_spy_intel
+
+		modifier = {
+			resistance_damage_to_garrison_on_our_occupied_states = 0.2
+			resistance_target_on_our_occupied_states = 0.1
+			resistance_decay_on_our_occupied_states = -0.1
+			
+		}
+	}	
+		GRE_limited_woman_rights = {
+
+picture = generic_army_war_college
+removal_cost = -1
+
+            modifier = {
+			POLITICAL_POWER_GAIN = 0.1
+			STABILITY_FACTOR = 0.05
+			CONSCRIPTION_FACTOR = 0.05
+			INDUSTRIAL_CAPACITY_FACTOR = -0.05
+			PRODUCTION_SPEED_BUILDINGS_FACTOR = 0.08
+            }
+			}
 		GRE_no_left2 = {
 			
 
@@ -1291,6 +1478,7 @@ ideas = {
 			communism_drift = -0.5
 			communism_acceptance = -200
 			non_core_manpower = -0.025
+			war_support_factor = 0.1
 			}
 			
 		}
@@ -1376,7 +1564,7 @@ allowed = {
 			political_power_gain = -0.15
 			consumer_goods_factor = 0.1
 			production_speed_arms_factory_factor = -0.05
-			fascism_drift = 0.1
+			fascism_drift = 0.07
 			}
 			
 		}
@@ -1400,7 +1588,7 @@ allowed = {
 			consumer_goods_factor = 0.1
 			production_speed_arms_factory_factor = -0.05
 			conscription_factor = -0.05
-			fascism_drift = 0.15
+			fascism_drift = 0.07
 			}
 			
 			
@@ -1427,7 +1615,7 @@ allowed = {
 			production_factory_efficiency_gain_factor = -0.1
 			industrial_capacity_factory  = -0.05
 			conscription_factor = -0.05
-			fascism_drift = 0.17
+			fascism_drift = 0.09
 			}
 			
 		}
@@ -1453,7 +1641,69 @@ allowed = {
 			production_factory_efficiency_gain_factor = -0.15
 			industrial_capacity_factory  = -0.1
 			conscription_factor = -0.1
-			fascism_drift = 0.2
+			fascism_drift = 0.1
+			}
+			
+		}
+		GRE_gods_walls = {
+			allowed = {
+				always = no
+			}
+
+			
+
+			removal_cost = -1
+
+			picture = byz_theos_walls
+
+			modifier = {
+               	production_speed_bunker_factor = 1.5
+				production_speed_coastal_bunker_factor = 1.5
+			}
+		}	
+		GRE_eaglebyz = {
+			allowed = {
+				always = no
+			}
+
+			
+
+			removal_cost = -1
+
+			picture = SOV_third_five_year_plan_civilian
+
+			modifier = {
+               	industrial_capacity_factory = 0.10				
+				conscription = 0.015
+				weekly_manpower = 500 
+				training_time_factor = -0.05
+				max_dig_in_factor = 0.1
+				required_garrison_factor = -0.1
+				army_morale_factor = 0.05
+				experience_gain_army_factor = 0.15
+				army_attack_factor = 0.1
+				land_reinforce_rate = 0.1
+				army_org_factor = 0.05
+				army_defence_factor = 0.1
+				land_doctrine_cost_factor = -0.1
+			}
+		}	
+		GRE_global_fascism_movement = {
+
+			picture = generic_fascism_rising
+
+			allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+            modifier = {
+		    weekly_manpower = 100
+			army_attack_against_major_factor = 0.1
+			fascism_drift = 0.05
 			}
 			
 		}

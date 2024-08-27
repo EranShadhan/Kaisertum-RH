@@ -16,7 +16,8 @@ state={
 				naval_base = 3
 			}
 		}
-		add_core_of = GRE # Placeholder until Pontus arrives
+		#add_core_of = GRE # Placeholder until Pontus arrives
+		add_core_of = PON #Le Ponte has arrived
 	}
 
 	provinces={

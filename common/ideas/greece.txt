@@ -675,7 +675,7 @@ ideas = {
 			allowed = {
 				original_tag = GRE
 			}
-
+             name = GRE_george_ii_met
 			allowed_civil_war = { has_government = neutrality }	
 
 			picture = gre_george_ii
@@ -683,7 +683,7 @@ ideas = {
 			removal_cost = -1
 				
 			modifier = {
-				stability_factor = -0.05
+				stability_factor = -0.15
 				neutrality_drift = 0.01	
 			}
 		}

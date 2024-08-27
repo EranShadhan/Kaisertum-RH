@@ -911,36 +911,42 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 
 GRE_faction_management_category = {
 GRE_expand_influence_in_FROM = {
-		allowed = { original_tag = GRE }
+		allowed = { original_tag = GRE 
+			}
 		cost = 10
 		icon = {
 			key = GFX_decision_GRE_claim_state_4_alt
 			trigger = {
-				FROM = { check_variable = { var = GRE_garrison_control value = -3 compare = less_than_or_equals } }
+				FROM = { check_variable = { var = GRE_garrison_control value = -4 compare = less_than_or_equals } }
 			}
 		}
 
 		icon = {
 			key = GFX_decision_GRE_claim_state_3_alt
 			trigger = {
-				FROM = { check_variable = { var = GRE_garrison_control value = -2 compare = equals } }
+				FROM = { check_variable = { var = GRE_garrison_control value = -3 compare = equals } }
 			}
 		}
 
 		icon = {
 			key = GFX_decision_GRE_claim_state_2_alt
 			trigger = {
-				FROM = { check_variable = { var = GRE_garrison_control value = -1 compare = equals } }
+				FROM = { check_variable = { var = GRE_garrison_control value = -2 compare = equals } }
 			}
 		}
 
 		icon = {
 			key = GFX_decision_GRE_claim_state_1_alt
 			trigger = {
+				FROM = { check_variable = { var = GRE_garrison_control value = -1 compare = equals } }
+			}
+		}
+        icon = {
+			key = GFX_decision_GRE_claim_state_neutral
+			trigger = {
 				FROM = { check_variable = { var = GRE_garrison_control value = 0 compare = equals } }
 			}
 		}
-
 		icon = {
 			key = GFX_decision_GRE_claim_state_1
 			trigger = {
@@ -967,6 +973,8 @@ GRE_expand_influence_in_FROM = {
 		}
 		visible = {
 			original_tag = GRE
+			has_completed_focus = GRE_the_fight_for_dominance
+			NOT = { has_country_flag = GRE_end_the_schism}
 		}
 		state_target = yes
 		target_trigger = {
@@ -974,13 +982,12 @@ GRE_expand_influence_in_FROM = {
 			FROM = {
 					is_core_of = ROOT
 					is_owned_by = ROOT
-					
+			      
 				}
 				
 			}
 		
 		
-
 		fire_only_once = no
 
 		on_map_mode = map_and_decisions_view
@@ -1005,30 +1012,39 @@ GRE_expand_influence_in_FROM = {
 						add_to_variable = { var = GRE_garrison_control value = 1 }
 					}
 				}
+			
 			}
 			
+			
 			custom_effect_tooltip = from_variable
+			
 		}
 		available = {
 			has_civil_war = no
 			NOT = {
 				has_country_flag = is_expanding_influence
 			}
-			if = {
-				limit = {
-					has_country_flag = national_schism_royalist_side
-				}
-				custom_trigger_tooltip = {
-					FROM = { check_variable = { var = GRE_garrison_control value = -3 compare = greater_than } }
-					tooltip = GRE_not_total_control
-				}
-				else = {
-					custom_trigger_tooltip = {
-						FROM = { check_variable = { var = GRE_garrison_control value = 4 compare = less_than } }
-						tooltip = GRE_not_total_control
-					}
-				}
+			custom_trigger_tooltip = {
+                   tooltip = GRE_total_control		
+                       FROM = {
+			 check_variable = {
+                    var = GRE_garrison_control
+                value = 4
+                   compare = less_than_or_equals
+               } 
+			   custom_effect_tooltip = GRE_total_control
+			
+			
+			 check_variable = {
+                    var = GRE_garrison_control
+                value = -4
+                   compare = greater_than_or_equals
+               } 
+			   custom_effect_tooltip = GRE_total_control
 			}
+			
+			
+          }
 			
 		}
 
@@ -1044,77 +1060,84 @@ GRE_expand_influence_in_FROM = {
 				has_country_flag = national_schism_royalist_side
 			}
 			has_country_flag = nationa_schism_part2 
+			has_completed_focus = GRE_the_fight_for_dominance
 		}
+		
 		is_good = no
 		days_re_enable = 1
 		days_mission_timeout = 14
 		available = {
-			OR = {
-				NOT = {
-					has_country_flag = nationa_schism_part2 
-				}
-				has_country_flag = national_schism_royalist_side
-			}
+		has_country_flag = GRE_end_the_schism
+			
 		}
+
 		timeout_effect = {
 			
-			if = {
-				limit = { 
-					any_state = {
-					check_variable = { var = GRE_garrison_control value = 1 compare = greater_than_or_equals }
-					}
+				GRE_bop_very_low_increase_effect = yes
+				
+				random_owned_state = {
+				limit = {
+				check_variable = { 
+				  var = GRE_garrison_control
+                value = 4
+                   compare = less_than
 				}
-				random_owned_controlled_state = {
-					limit = {
-						has_variable = GRE_garrison_control
-						check_variable = { var = GRE_garrison_control value = -2 compare = greater_than_or_equals }
-						
-					}
-					subtract_from_variable = { var = GRE_garrison_control value = 1 }
+				check_variable = { 
+				  var = GRE_garrison_control
+                value = -4
+                   compare = greater_than
+				}
+				}
+					add_to_variable = { var = GRE_garrison_control value = -1 }
 					custom_effect_tooltip = GRE_will_lose_1
 				}
 				
+			
 			}
+			
 		
 		}
-	}
+	
 	automatic_add_metaxas = {
 		icon = GFX_decision_faction_gre_venezelist
 		allowed = { original_tag = GRE }
 		activation = { 
 			has_country_flag = national_schism_royalist_side
 			has_country_flag = nationa_schism_part2 
+			has_completed_focus = GRE_the_fight_for_dominance
 		}
 		is_good = no
 		days_re_enable = 1
 		days_mission_timeout = 14
 		available = {
-			OR = {
-				NOT = {
-					has_country_flag = nationa_schism_part2 
-					
-				}
-			}
+			has_country_flag = GRE_end_the_schism
+			
 		}
 		timeout_effect = {
-	          if = {
-				limit = { 
-					any_state = {
-					check_variable = { var = GRE_garrison_control value = 0 compare = less_than_or_equals }
-					}
+	        GRE_bop_very_low_decrease_effect = yes
+			timeout_effect = {
+			
+				GRE_bop_very_low_increase_effect = yes
+				
+				random_owned_state = {
+				limit = {
+				check_variable = { 
+				  var = GRE_garrison_control
+                value = 4
+                   compare = less_than
 				}
-				random_owned_controlled_state = {
-					limit = {
-						has_variable = GRE_garrison_control
-						check_variable = { var = GRE_garrison_control value = 1 compare = less_than_or_equals }
-						
-					}
-					subtract_from_variable = { var = GRE_garrison_control value = -1 }
+				check_variable = { 
+				  var = GRE_garrison_control
+                value = -4
+                   compare = greater_than
+				}
+				}
+					add_to_variable = { var = GRE_garrison_control value = 1 }
 					custom_effect_tooltip = GRE_will_gain_1
 				}
 				
-			}
 			
+			}
 		}
 	}
 	GRE_eee_raids_factories  = { 
@@ -1126,7 +1149,9 @@ GRE_expand_influence_in_FROM = {
 		}
 
 		available = {
-		not = { has_idea = GRE_hostile_fascists }
+		or = {
+		has_completed_focus = GRE_recruit_the_fascists_eee 
+		has_completed_focus = GRE_crush_EEE }
 		
 		}
 		priority = 99999
@@ -1168,8 +1193,11 @@ GRE_expand_influence_in_FROM = {
 			original_tag = GRE
 		}
 
+		
 		available = {
-		not = { has_idea = GRE_hostile_fascists }
+		or = {
+		has_completed_focus = GRE_recruit_the_fascists_eee 
+		has_completed_focus = GRE_crush_EEE }
 		
 		}
 	priority = 99999
@@ -1210,8 +1238,11 @@ GRE_expand_influence_in_FROM = {
 			original_tag = GRE
 		}
 
+		
 		available = {
-		not = { has_idea = GRE_hostile_fascists }
+		or = {
+		has_completed_focus = GRE_recruit_the_fascists_eee 
+		has_completed_focus = GRE_crush_EEE }
 		
 		}
 	priority = 99999
@@ -1252,8 +1283,11 @@ GRE_expand_influence_in_FROM = {
 			original_tag = GRE
 		}
 
+		
 		available = {
-		not = { has_idea = GRE_hostile_fascists }
+		or = {
+		has_completed_focus = GRE_recruit_the_fascists_eee 
+		has_completed_focus = GRE_crush_EEE }
 		
 		}
 	priority = 99999
@@ -1296,8 +1330,11 @@ GRE_expand_influence_in_FROM = {
 			original_tag = GRE
 		}
 	priority = 99999
+		
 		available = {
-		not = { has_idea = GRE_hostile_fascists }
+		or = {
+		has_completed_focus = GRE_recruit_the_fascists_eee 
+		has_completed_focus = GRE_crush_EEE }
 		
 		}
 

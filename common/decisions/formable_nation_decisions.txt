@@ -1,0 +1,214 @@
+
+form_greater_greece_category = {
+pontiac_revolt = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = GRE
+		}
+
+		available = {
+			is_subject = no
+			
+		}
+        fire_only_once = yes
+		visible = {
+			}
+
+		complete_effect = {
+			
+			add_equipment_to_stockpile = { 
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = { 
+				type = support_equipment
+				amount = -300
+			}
+			add_manpower = -25000
+		}
+		days_remove = 60
+        remove_effect = {
+		custom_effect_tooltip = GRE_pontus_revolt_tt
+		hidden_effect = {
+            PON = { transfer_state = 355
+			transfer_state = 354 }
+			GRE = { puppet = PON }
+			TUR = { declare_war_on = {
+							target = PON
+							type = annex_everything
+						}
+						}}
+		}
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	form_greatest_greece = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = GRE
+		}
+
+		available = {
+			is_subject = no
+			
+				controls_state = 342
+				controls_state = 973
+				controls_state = 340
+				controls_state = 347
+				controls_state = 978
+				controls_state = 805
+				controls_state = 184
+		       controls_state = 981
+			   
+			   controls_state = 164
+				controls_state = 115
+				controls_state = 156
+				controls_state = 117
+				controls_state = 849
+		}
+
+		visible = {
+			}
+
+		complete_effect = {
+			set_country_flag = GRE_GREATER_GREECE_flag
+			GRE_set_appropriate_cosmetic_tag = yes
+			# Greece
+				342 = { add_core_of = ROOT }
+				973 = { add_core_of = ROOT }
+				340 = { add_core_of = ROOT }
+				347 = { add_core_of = ROOT }
+				978 = { add_core_of = ROOT }
+				44 = { add_core_of = ROOT }
+				805 = { add_core_of = ROOT }
+				184 = { add_core_of = ROOT }
+				981 = { add_core_of = ROOT }
+		
+			106 = { add_core_of = ROOT }
+				979 = { add_core_of = ROOT }
+				212 = { add_core_of = ROOT }
+				211 = { add_core_of = ROOT }
+				115 = { add_core_of = ROOT }
+				156 = { add_core_of = ROOT }
+				117 = { add_core_of = ROOT }
+				849 = { add_core_of = ROOT }
+				1022 = { add_core_of = ROOT }
+				
+				447 = { add_core_of = ROOT }
+				663 = { add_core_of = ROOT }
+				451 = { add_core_of = ROOT }
+				450 = { add_core_of = ROOT }
+			
+			hidden_effect = {
+				
+				set_global_flag = form_greater_greece_flag
+			}
+		}
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+form_byzantine_empire_category = {
+
+	byz_restore_byzantium = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = GRE
+		}
+
+		available = {
+			is_subject = no
+		
+			# Turkey
+			custom_trigger_tooltip = {
+				tooltip = form_country_turkey_required_states_tt
+			controls_state= 340  
+			controls_state= 347  
+			controls_state= 978  
+			controls_state= 356  	
+		controls_state= 349  
+			controls_state= 355  
+			controls_state= 354  
+			controls_state= 353  
+			controls_state= 350  
+			controls_state= 344  	
+			controls_state= 348  
+			controls_state= 799  
+			controls_state= 342  
+			controls_state= 345  
+			controls_state= 973  
+			controls_state= 343  
+			controls_state= 49  
+			controls_state= 798  
+			controls_state = 346
+			}
+		}
+
+		visible = {
+		}
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = GRE_byz_unified_flag
+			GRE_set_appropriate_cosmetic_tag = yes
+			340 = {add_core_of = GRE }
+			347 = {add_core_of = GRE }
+			978 = {add_core_of = GRE }
+			356 = {add_core_of = GRE }	
+			349 = {add_core_of = GRE }
+			355 = {add_core_of = GRE }
+				346 = { add_core_of = ROOT }
+			354 = {add_core_of = GRE }
+			980 = {add_core_of = GRE }
+			353 = {add_core_of = GRE }
+			800 = {add_core_of = GRE }
+			352 = {add_core_of = GRE }
+			350 = {add_core_of = GRE }
+			344 = {add_core_of = GRE }	
+			348 = {add_core_of = GRE }
+			799 = {add_core_of = GRE }
+			342 = {add_core_of = GRE }
+			345 = {add_core_of = GRE }
+			973 = {add_core_of = GRE }
+			343 = {add_core_of = GRE }
+			49 = {add_core_of = GRE }
+			798 = {add_core_of = GRE }
+			
+			184 = {add_core_of = GRE }	
+			981 = {add_core_of = GRE }
+			hidden_effect = {
+				news_event = { id = wtt_news.66 hours = 6 }
+				set_global_flag = form_byzantine_empire_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	
+	
+}

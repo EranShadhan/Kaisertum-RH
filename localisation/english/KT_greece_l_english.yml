@@ -16,7 +16,8 @@
  GRE_large_payment_to_germany_debt_effect_tt:0 "This decision will clear half of our current §Ydebt§! with §Y[GER.GetNameDef]§! each time it is completed.\n"
  GRE_large_payment_to_auh_debt_effect_tt:0 "This decision will clear half of our current §Ydebt§! with §Ythe Austro-Hungarian Empire§! each time it is completed.\n"
  
- 
+ gre_minister_of_education:0 "Minister Of Education"
+ charismatic_battleplaner:0 "Charismatic Battleplanner"
  GRE_debt_100:0 "§Y100%§!"
  GRE_debt_paid_100:0 "§G100%§!"
  GRE_debt_paid_9509:0 "§G95.9%§!"
@@ -79,7 +80,6 @@
  GRE_faction_indifferent2:1 "Indifferent"
  GRE_faction_hostile2:1 "§RThreat\n\n-15%\n\n\n-5%\n\n\n-10%\n\n\n-10%§!"
  GRE_faction_inconsequential2:1 "§gNeutral \n\n- 0%\n\n\n- 0%\n\n\n- 0%\n\n\n- 0%§!"
- 
  GRE_expand_influence_in_FROM:0 "Influence [FROM.getName]"
  GRE_not_total_control:0 "Already under total Control"
  from_variable:0 "[FROM.getName] currently has §Y[?FROM.GRE_garrison_control] Metaxas Allegiance Points§!"
@@ -88,10 +88,10 @@
  trigger_civil_war_now:0 "National Schism Escalation"
  battle_of_influence:0 "§C[GRE.getDemocraticLeader]§! and §g[GRE.GetNeutralLeader]§! are politicaly fighting each other"
  battle_of_influence_royalist_side:0 "§C[GRE.getDemocraticLeader]§! and §g[GRE.GetNeutralLeader]§! are politicaly fighting each other"
- automatic_add_venizelists:0 "Metaxas Meeting"
+ automatic_add_metaxas:0 "Metaxas Meeting"
  trigger_civil_war_now_royalist:0 "Metaxas Uprising"
  GRE_local_constantine_support:0 "Local George Support"
- automatic_add_royalists:0 "George II Rally in [FROM.getName]
+ automatic_add_royalists:0 "George II Rally"
  GRE_open_foreign_subsidized_factories_eur_tt:0 "One §YMilitary Factory§! will be added for each of the following countries that has an §Yopinion§! of §YGreece§! greater than §G75§!: \n§Y[ENG.GetNameDef]§!, §Y[FRA.GetNameDef]§!, §Y[ITA.GetNameDef]§!, §Y[HUN.GetNameDef]§!, §Y[AUS.GetNameDef]§!, §Y[GER.GetNameDef]§!, §Y[SOV.GetNameDef]§!, §Y[USA.GetNameDef]§! and §Y[JAP.GetNameDef]§!."
  
  GRE_mod_metaxism:0 "Modifies idea §YMetaxism§! by:"
@@ -138,3 +138,19 @@
  
  GRE_metaxas_army_tt:0 "We will give Ioannis Metaxas leadership of the army and he will be unlocked as a Chief Of Army. If we ever plan to assasinate him, his new political connections might help him to escape"
  GRE_metaxas_army2_tt:0 "This will limit Metaxas influence over our high command and if we ever try to assasinate him, he will be less likely to escape"
+ GRE_memories_of_the_great_nationa_schism_fixing:0 "Mending the Schism"
+ GRE_HERE_WE_GO_AGAIN:0 "The Second Great National Schism!"
+ GRE_total_control:0 "Not State is under total control"
+ GRE_fight_for_influce_tt:0 "§YUnlocks decisions to fight for influence in states cored by Greece and help us move the Balance Of Power towards our side§!"
+ GRE_crush_the_eee_tt:0 "§GAll hostile activity by the EEE will stop§!"
+ GRE_assasinate_ven:0 "§YVenizelos will be assasinated§!"
+ GRE_venizelos_died:0 "Venizelos has been assasinated"
+ GRE_end_the_schism_tt:0 "§GThe national schism will end! Long live Greece!§!"
+ GRE_no_left2:0 "Torture and Imprisonment of Communists"
+ GRE_expand_intelligence_idea:0 "Expand The Agency"
+ GRE_george_ii_met:0 "Memory Of King George"
+ GRE_pontus_revolt_tt:0 "§YPontus will declare independence and find itself in a war against Turkey. We will declare war on Turkey as well to show support to our brothers§!"
+ pontiac_revolt:0 "Stage an uprising in the Pontus"
+ form_greatest_greece:0 "Form The Megisti Idea"
+ GRE_the_class_ended:0 "Either Metaxas or George II has managed to secure his power"
+ 
