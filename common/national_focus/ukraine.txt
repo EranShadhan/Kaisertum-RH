@@ -1259,10 +1259,6 @@ focus_tree = {
 					has_government = communism
 					num_of_factories > 30
 				}
-				add_opinion_modifier = { 
-					target = ROOT 
-					modifier = UKR_leftist_rhetoric_communism
-				}
 			}
 			every_other_country = {
 				limit = { 
@@ -1271,17 +1267,11 @@ focus_tree = {
 				}
 				add_opinion_modifier = { 
 					target = ROOT
-					modifier = UKR_leftist_rhetoric_democratic
-				}
 			}
 			every_other_country = {
 				limit = { 
 					has_government = fascism
 					num_of_factories > 30
-				}
-				add_opinion_modifier = { 
-					target = ROOT 
-					modifier = UKR_leftist_rhetoric_fascism
 				}
 			}
 		}
@@ -3872,6 +3862,8 @@ focus_tree = {
 			}
 		}
 	}
+
+}
 
 }
 
