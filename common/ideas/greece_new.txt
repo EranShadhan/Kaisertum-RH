@@ -13,11 +13,110 @@ ideas = {
 		
 		
 		}
+		GRE_prepare_to_strike_ITA = { 
+
+            name = GRE_prepare_to_strike_ITA
+
+			picture = ITA_bandits_war
+				
+			removal_cost = -1
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}				
+		targeted_modifier = {
+				tag = YUG
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
+		GRE_prepare_to_strike_ITA2 = { 
+
+            name = GRE_prepare_to_strike_ITA
+
+			picture = ITA_bandits_war
+				
+			removal_cost = -1
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.05
+				breakthrough_bonus_against = 0.05
+			}				
+		targeted_modifier = {
+				tag = YUG
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
+		GRE_prepare_to_strike_ITA3 = { 
+
+            name = GRE_prepare_to_strike_ITA
+
+			picture = ITA_bandits_war
+				
+			removal_cost = -1
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+				breakthrough_bonus_against = 0.1
+			}				
+		targeted_modifier = {
+				tag = YUG
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
+		GRE_prepare_to_strike_ITA4 = { 
+
+            name = GRE_prepare_to_strike_ITA
+
+			picture = ITA_bandits_war
+				
+			removal_cost = -1
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+				breakthrough_bonus_against = 0.1
+			}		
+            modifier = { weekly_manpower = 750 }			
+		targeted_modifier = {
+				tag = YUG
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
+		GRE_prepare_to_strike_ITA5 = { 
+
+            name = GRE_prepare_to_strike_ITA
+
+			picture = ITA_bandits_war
+				
+			removal_cost = -1
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+				breakthrough_bonus_against = 0.1
+			}		
+            modifier = { weekly_manpower = 750
+            naval_invasion_capacity = 25		
+            naval_invasion_penalty = -0.2		
+			}			
+		targeted_modifier = {
+				tag = YUG
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
 		GRE_prepare_to_strike_tur = { 
 
             name = GRE_prepare_to_strike_tur
 
-			picture = hun_treaty_of_trianon
+			picture = tur_kemalist_officers_disloyalty_effect
 				
 			removal_cost = -1
 			targeted_modifier = {
@@ -31,7 +130,7 @@ ideas = {
 
             name = GRE_prepare_to_strike_tur
 
-			picture = hun_treaty_of_trianon
+			picture = tur_kemalist_officers_disloyalty_effect
 				
 			removal_cost = -1
 			targeted_modifier = {
@@ -46,7 +145,7 @@ ideas = {
 
             name = GRE_prepare_to_strike_tur
 
-			picture = hun_treaty_of_trianon
+			picture = tur_kemalist_officers_disloyalty_effect
 				
 			removal_cost = -1
 			targeted_modifier = {
@@ -159,6 +258,19 @@ ideas = {
 		}
 
 		GRE_ace_women = { 
+
+			allowed = {
+				original_tag = GRE
+			}
+            picture = air_war_plans_division_focus
+
+
+			modifier = {
+				air_training_xp_gain_factor = 0.15
+				air_ace_bonuses_factor = 0.2
+			}
+		}
+		GRE_ace_women2 = { 
 
 			allowed = {
 				original_tag = GRE

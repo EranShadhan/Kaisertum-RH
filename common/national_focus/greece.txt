@@ -624,7 +624,7 @@ has_country_flag = nationa_schism_part2
 	         every_country = {
 			 limit = { is_in_faction_with = GRE 
 			 OR = { original_tag = BUL original_tag = ROM original_tag = GRE original_tag = ALB original_tag = SER }}
-			 add_ideas = GRE_three_year_plan_balkans 
+			 add_ideas = x 
 			 }
 		    }
 			
@@ -5250,7 +5250,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        		add_stability = 0.1
 		}
     }
 		focus = {
@@ -5268,7 +5268,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        		add_ideas = GRE_prepare_to_strike_ITA
 		}
     }
 		focus = {
@@ -5286,7 +5286,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        		swap_ideas = { remove_idea = GRE_prepare_to_strike_ITA add_idea = GRE_prepare_to_strike_ITA2 }
 		}
     }					
 		focus = {
@@ -5304,7 +5304,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        			swap_ideas = { remove_idea = GRE_prepare_to_strike_ITA2 add_idea = GRE_prepare_to_strike_ITA3 }
 		}
     }		
 		focus = {
@@ -5322,7 +5322,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        		swap_ideas = { remove_idea = GRE_prepare_to_strike_ITA3 add_idea = GRE_prepare_to_strike_ITA4 }
 		}
     }	
 			focus = {
@@ -5340,7 +5340,40 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        		186 = {
+				add_building_construction = {
+						type = naval_base
+						level = 3
+						instant_build = yes
+						province = 11965
+					}
+				add_building_construction = {
+						type = naval_base
+						level = 3
+						instant_build = yes
+						province = 7211					
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						instant_build = yes
+						province = 11965					
+					}
+				}
+				941 = {
+					add_building_construction = {
+						type = naval_base
+						level = 5
+						instant_build = yes
+						province = 10203					
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						instant_build = yes
+						province = 10203					
+					}
+				}
 		}
     }	
 	focus = {
@@ -5358,7 +5391,9 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        		add_mines = { region = 169 amount = 500 }
+				add_mines = { region = 168 amount = 500 }
+				add_mines = { region = 29 amount = 500 }
 		}
     }
 	focus = {
@@ -5376,7 +5411,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        			swap_ideas = { remove_idea = GRE_prepare_to_strike_ITA4 add_idea = GRE_prepare_to_strike_ITA5 }
 		}
     }
 	focus = {
@@ -5394,7 +5429,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        		add_ideas = GRE_hellenic_army
 		}
     }	
 	focus = {
@@ -5412,7 +5447,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        		swap_ideas = {remove_idea = GRE_hellenic_army add_idea = GRE_hellenic_army_3 }
 		}
     }
 	focus = {
@@ -5430,7 +5465,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        		swap_ideas = {remove_idea = GRE_hellenic_army_3 add_idea = GRE_byzantine_army }
 		}
     }	
 		focus = {
@@ -5449,7 +5484,11 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        		create_wargoal = {
+				type = annex_everything
+				target = ITA
+				expire = 0
+			}
 		}
     }	
 		focus = {
@@ -5598,7 +5637,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		}
     }	
 			focus = {
-		id = GRE_give_venizelos_command_of_aviation
+		id = GRE_give_more_aces
 		icon = GFX_focus_SOV_flying_clubs
         prerequisite = { focus = GRE_women_in_aviation  }
 		relative_position_id = GRE_women_in_aviation
@@ -5612,7 +5651,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		available_if_capitulated = yes
 		search_filters = { }
 		completion_reward = {
-        		
+        		swap_ideas = { remove_idea = GRE_ace_women add_idea = GRE_ace_women2 }
 		}
     }	
 		focus = {
