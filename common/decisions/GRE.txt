@@ -1065,7 +1065,7 @@ GRE_expand_influence_in_FROM = {
 		
 		is_good = no
 		days_re_enable = 1
-		days_mission_timeout = 14
+		days_mission_timeout = 20
 		available = {
 		has_country_flag = GRE_end_the_schism
 			
@@ -1108,7 +1108,7 @@ GRE_expand_influence_in_FROM = {
 		}
 		is_good = no
 		days_re_enable = 1
-		days_mission_timeout = 14
+		days_mission_timeout = 20
 		available = {
 			has_country_flag = GRE_end_the_schism
 			
@@ -1374,6 +1374,7 @@ GRE_plan_omega = {
 
 		allowed = { 
 			original_tag = GRE
+			always = no
 		}
 
 		available = {
@@ -1413,6 +1414,7 @@ GRE_expand_onassis = {
 
 		allowed = { 
 			original_tag = GRE
+			always = no
 		}
 
 		available = {
@@ -1452,6 +1454,7 @@ GRE_expand_onassis = {
 
 		allowed = { 
 			original_tag = GRE
+			always = no
 		}
 
 		available = {
@@ -1491,6 +1494,7 @@ GRE_expand_onassis = {
 
 		allowed = { 
 			original_tag = GRE
+			always = no
 		}
 
 		available = {
@@ -1530,6 +1534,7 @@ GRE_NUKES_FROM_SUBS = {
 
 		allowed = { 
 			original_tag = GRE
+			always = no
 		}
 
 		available = {
