@@ -2018,3 +2018,7 @@ SWE_greater_nordic_reich_ADJ: "Swedish"
  ANEG_ENG_communsim: "Angevian Commune"
  ANEG_ENG_communsim_DEF: "the Angevian Commune"
  ANEG_ENG_communism_ADJ: "Angevin"
+ 
+ MED_UN:0 "Mediterranean Union"
+ MED_UN_DEF:0 "the Mediterranean Union"
+ MED_UN_ADJ:0 "Mediterranean"

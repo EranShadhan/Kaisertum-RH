@@ -1095,6 +1095,7 @@ add_ideas = GRE_like_the_beasts
 				target = TUR
 				expire = 0
 			}
+			unlock_decision_tooltip = byz_restore_byzantium
 		    }
 		}			
 		focus = {
@@ -1908,6 +1909,10 @@ add_ideas = GRE_like_the_beasts
 
 		
 		available = {
+		power_balance_value = {
+				id = GRE_power_balance
+				value > 0.6
+			}	
 		}
 		x = 0
 		y = 1
@@ -1921,6 +1926,20 @@ add_ideas = GRE_like_the_beasts
 		search_filters = {  }
 		completion_reward = {
 		country_event = { id = KT_greece_events.8 days = 5}
+		custom_effect_tooltip = GRE_end_the_schism_tt
+				set_country_flag = GRE_end_the_schism
+				remove_power_balance = { id = GRE_power_balance }
+				hidden_effect = {
+				set_country_flag = GRE_the_class_ended
+				remove_ideas = GRE_HERE_WE_GO_AGAIN_CRUSH2
+				remove_ideas = GRE_HERE_WE_GO_AGAIN_CRUSH
+				remove_ideas = GRE_HERE_WE_GO_AGAIN3
+				remove_ideas = GRE_HERE_WE_GO_AGAIN
+				remove_ideas = GRE_HERE_WE_GO_AGAIN2
+				remove_ideas  = GRE_memories_of_the_great_nationa_schism_fixing
+				remove_ideas = GRE_memories_of_the_great_nationa_schism
+				remove_ideas = GRE_HERE_WE_GO_AGAIN_CRUSH3
+				}
 		    }
 		}
 	focus = {
@@ -2317,6 +2336,73 @@ add_ideas = GRE_like_the_beasts
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		set_cosmetic_tag = MED_UN
+		hidden_effect = {
+		168 = {add_core_of = GRE }
+		167 = {add_core_of = GRE }
+		165 = {add_core_of = GRE }
+		31 = {add_core_of = GRE }
+		173 = {add_core_of = GRE }	
+		22 = {add_core_of = GRE }
+		21 = {add_core_of = GRE }
+		851 = {add_core_of = GRE }
+		735 = {add_core_of = GRE }	
+        158 = {add_core_of = GRE }
+		1 = {add_core_of = GRE }
+		114 = {add_core_of = GRE }
+		162 = {add_core_of = GRE }
+		2 = {add_core_of = GRE }	
+		117 = {add_core_of = GRE }
+		156 = {add_core_of = GRE }
+		115 = {add_core_of = GRE }
+		849 = {add_core_of = GRE }	
+157	 = {add_core_of = GRE }
+		161 = {add_core_of = GRE }
+		160 = {add_core_of = GRE }
+		736 = {add_core_of = GRE }
+		852 = {add_core_of = GRE }	
+		163 = {add_core_of = GRE }
+		103 = {add_core_of = GRE }
+		977 = {add_core_of = GRE }
+		934 = {add_core_of = GRE }	
+        44 = {add_core_of = GRE }
+		805 = {add_core_of = GRE }
+		184 = {add_core_of = GRE }
+		340 = {add_core_of = GRE }
+		342 = {add_core_of = GRE }	
+		978 = {add_core_of = GRE }
+		973 = {add_core_of = GRE }
+		345 = {add_core_of = GRE }
+		344 = {add_core_of = GRE }		
+
+
+		799 = {add_core_of = GRE }
+		975 = {add_core_of = GRE }
+		553 = {add_core_of = GRE }
+		454 = {add_core_of = GRE }
+		453 = {add_core_of = GRE }	
+		446 = {add_core_of = GRE }
+		447 = {add_core_of = GRE }
+		907 = {add_core_of = GRE }
+		452 = {add_core_of = GRE }	
+        451 = {add_core_of = GRE }
+		450 = {add_core_of = GRE }
+		449 = {add_core_of = GRE }
+		448 = {add_core_of = GRE }
+		458 = {add_core_of = GRE }	
+		665 = {add_core_of = GRE }
+		290 = {add_core_of = GRE }
+		461 = {add_core_of = GRE }
+		459 = {add_core_of = GRE }	
+460	 = {add_core_of = GRE }
+		177 = {add_core_of = GRE }
+		116 = {add_core_of = GRE }
+		661 = {add_core_of = GRE }
+		662 = {add_core_of = GRE }	
+		663 = {add_core_of = GRE }
+					
+		
+		}
 		    }
 		}		
 	focus = {
@@ -2487,6 +2573,7 @@ add_ideas = GRE_like_the_beasts
 				target = EGY
 				expire = 0
 			}
+			unlock_decision_tooltip = form_macedonian_empire
 		    }
 		}			
 			focus = {
@@ -2558,6 +2645,7 @@ add_ideas = GRE_like_the_beasts
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_ideas = GRE_trainng
 		    }
 		}	
 	focus = {
@@ -2578,6 +2666,7 @@ add_ideas = GRE_like_the_beasts
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_ideas = GRE_triumphant_will
 		    }
 		}	
 		
@@ -2599,6 +2688,7 @@ add_ideas = GRE_like_the_beasts
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_ideas = GRE_pool_technical_know_how
 		    }
 		}		
 	focus = {
@@ -2618,7 +2708,19 @@ add_ideas = GRE_like_the_beasts
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
+		
 		completion_reward = {
+		 add_equipment_to_stockpile = { 
+				type = anti_air_equipment
+				amount = 500
+			}
+			
+			add_tech_bonus = {
+				name = POL_invest_anti_air
+				bonus = 1.5
+				uses = 2
+				category = cat_anti_air
+			}
 		    }
 		}		
 		focus = {
@@ -2639,6 +2741,13 @@ add_ideas = GRE_like_the_beasts
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_tech_bonus = {
+				name = POL_atomic_physics_institute
+				bonus = 1.0
+				uses = 1
+				ahead_reduction = 1
+				category = nuclear
+			}
 		    }
 		}
 	focus = {
@@ -2727,6 +2836,7 @@ add_ideas = GRE_like_the_beasts
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_ideas = GRE_death_before_dishonor
 		    }
 		}	
 	focus = {
@@ -2747,6 +2857,13 @@ add_ideas = GRE_like_the_beasts
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		custom_effect_tooltip = GRE_oy_alkoholiliike_ns_tt
+			hidden_effect = {
+				set_technology = {
+					molotov_cocktails_tech = 1
+					popup = no
+				}
+			}
 		    }
 		}	
 	focus = {
@@ -2767,6 +2884,7 @@ add_ideas = GRE_like_the_beasts
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_ideas = GRE_securing_our_lands
 		    }
 		}		
 	focus = {
@@ -2787,6 +2905,7 @@ add_ideas = GRE_like_the_beasts
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_ideas = GRE_patriotic_peoples_movement_ns
 		    }
 		}				
 	focus = {
@@ -3385,7 +3504,7 @@ focus = {
 	     add_tech_bonus = {
 				name = POL_atomic_physics_institute
 				bonus = 1.5
-				uses = 2
+				uses = 1
 				ahead_reduction = 1
 				category = nuclear
 			}
@@ -5740,29 +5859,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
         		swap_ideas = {remove_idea = GRE_hellenic_army_3 add_idea = GRE_hellenic_army_4 }
 		}
     }	
-		focus = {
-		id = GRE_raid_the_shores
-		icon = GFX_focus_ARG_study_the_battle_of_the_river_plate
-        prerequisite = { focus = GRE_like_1821 }
-		 prerequisite = { focus = GRE_take_the_fight_on_italy }
-		relative_position_id = GRE_like_1821
-  		available = { }
-		x = 1
-		y = 1
-		cost = 5
-		ai_will_do = {
-			base = 1
-		}
-		available_if_capitulated = yes
-		search_filters = { }
-		completion_reward = {
-        		create_wargoal = {
-				type = annex_everything
-				target = ITA
-				expire = 0
-			}
-		}
-    }	
+		
 		focus = {
 		id = GRE_have_faith_in_the_army
 		icon = GFX_GRE_hellenic_army_of_revenge
@@ -6263,29 +6360,7 @@ add_mines = { region = 30 amount = 250 }
 				
 				}
 		}	
+		
 		}	
-		focus = {
-		id = GRE_end_what_they_started
-		icon = GFX_focus_TUR_purge_the_kemalists
-        prerequisite = { focus = GRE_secure_access_to_cyprus}
-        prerequisite = { focus = GRE_secure_smyrna }
-		relative_position_id = GRE_secure_access_to_cyprus
-  		available = { }
-		x = 1
-		y = 1
-		cost = 5
-		ai_will_do = {
-			base = 1
-		}
-		available_if_capitulated = yes
-		search_filters = { }
-		completion_reward = {
-        		create_wargoal = {
-				type = annex_everything
-				target = TUR
-				expire = 0
-			}
-		}	
-		}		
 	
 }
