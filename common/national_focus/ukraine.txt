@@ -23,7 +23,7 @@ focus_tree = {
 		x = 3
 		y = 0
 
-		cost = 10
+		cost = 5 
 
 		ai_will_do = {
 			factor = 200			
@@ -44,7 +44,7 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 10
-			add_ideas = UKR_fortification_focus
+			add_ideas = CZE_fortification_focus
 		}
 	}
 
@@ -56,7 +56,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = UKR_fortification_studies
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 60
@@ -67,7 +67,8 @@ focus_tree = {
 		}
 
 		available = {
-			UKR = { controls_state = 9 }
+			UKR = { controls_state = 202 }
+			UKR = { controls_state = 198 }
 		}
 
 		bypass = {
@@ -80,25 +81,29 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 20
-			9 = {
-				add_building_construction = { type = bunker province = 6440 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 6418 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 6592 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 9414 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 3462 level = 3 instant_build = yes }
+			202 = {
+				add_building_construction = { type = bunker province = 9465 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 504 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 6497 level = 3 instant_build = yes }
+			}
+			198 = {
+				add_building_construction = { type = bunker province = 6480 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 9435 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 9423 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 476 level = 3 instant_build = yes }
 			}
 		}
 	}
 
 	focus = {
-		id = UKR_sudeten_1
+		id = UKR_ostwall_1
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = UKR_fortification_studies }
 		x = 0
 		y = 1
 		relative_position_id = UKR_fortification_studies
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 90
@@ -113,50 +118,90 @@ focus_tree = {
 		}
 
 		available = {
-			UKR = { controls_state = 69 }
+			UKR = { controls_state = 202 }
 		}
 
 		bypass = {
 			NOT = {			
-				69 = {
+				202 = {
 					any_province_building_level = {
 						province = {
-							all_provinces = yes
+                                      id = 9568
+							id = 3543
+							id = 525
+							id = 3494
 							limit_to_border = yes
 						}
 						building = bunker
 						level < 3
 					}
 				}
-				9 = {
+				203 = {
 					any_province_building_level = {
 						province = {
-							id = 445
-							id = 494
+							id = 11454
+							id = 488
 							limit_to_border = yes
 						}
 						building = bunker
 						level < 3
 					}
 				}
-				74 = {
+				1011 = {
 					any_province_building_level = {
 						province = {
-							id = 421
-							id = 6485
-							id = 3414
-							id = 3583
+							id = 3468
+							id = 6478
 							limit_to_border = yes
 						}
 						building = bunker
 						level < 3
 					}
 				}
-				70 = {
+				197 = {
 					any_province_building_level = {
 						province = {
-							id = 9539
-							id = 9692
+							id = 11683
+							id = 3755
+							id = 11715
+							limit_to_border = yes
+						}
+						building = bunker
+						level < 3
+					}
+				}
+				93 = {
+					any_province_building_level = {
+						province = {
+							id = 6579
+							id = 11503
+							id = 3496
+							id = 9520
+							limit_to_border = yes
+						}
+						building = bunker
+						level < 3
+					}
+				}
+				194 = {
+					any_province_building_level = {
+						province = {
+							id = 11453
+							id = 6232
+							id = 9554
+							limit_to_border = yes
+						}
+						building = bunker
+						level < 3
+					}
+				}
+				226 = {
+					any_province_building_level = {
+						province = {
+							id = 9419
+							id = 11422
+							id = 11437
+							id = 9433
 							limit_to_border = yes
 						}
 						building = bunker
@@ -174,13 +219,16 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 20
 			if = {
-				limit = { controls_state = 69 }
-				69 = {
+				limit = { controls_state = 202 }
+				202 = {
 					set_building_level = {
 						type = bunker
 						level = 3
 						province = {
-							all_provinces = yes
+                                      id = 9568
+							id = 3543
+							id = 525
+							id = 3494
 							limit_to_border = yes
 							level < 3
 						}
@@ -189,14 +237,14 @@ focus_tree = {
 			}
 
 			if = {
-				limit = { controls_state = 9 }
-				9 = {
+				limit = { controls_state = 203 }
+				203 = {
 					set_building_level = {
 						type = bunker
 						level = 3
 						province = {
-							id = 445
-							id = 494
+							id = 11454
+							id = 488
 							limit_to_border = yes
 							level < 3
 						}
@@ -205,16 +253,14 @@ focus_tree = {
 			}
 
 			if = {
-				limit = { controls_state = 74 }
-				74 = {
+				limit = { controls_state = 1011 }
+				1011 = {
 					set_building_level = {
 						type = bunker
 						level = 3
 						province = {
-							id = 421
-							id = 6485
-							id = 3414
-							id = 3583
+							id = 3468
+							id = 6478
 							limit_to_border = yes
 							level < 3
 						}
@@ -223,14 +269,64 @@ focus_tree = {
 			}
 
 			if = {
-				limit = { controls_state = 70 }
-				70 = {
+				limit = { controls_state = 197 }
+				197 = {
 					set_building_level = {
 						type = bunker
 						level = 3
 						province = {
-							id = 9539
-							id = 9692
+							id = 3755
+							id = 11715
+							limit_to_border = yes
+							level < 3
+						}
+					}
+				}
+			}
+			if = {
+				limit = { controls_state = 93 }
+				93 = {
+					set_building_level = {
+						type = bunker
+						level = 3
+						province = {
+							id = 6579
+							id = 11503
+							id = 3496
+							id = 9520
+							limit_to_border = yes
+							level < 3
+						}
+					}
+				}
+			}
+			if = {
+				limit = { controls_state = 194 }
+				194 = {
+					set_building_level = {
+						type = bunker
+						level = 3
+						province = {
+							id = 11453
+							id = 6232
+							id = 9554
+							limit_to_border = yes
+							level < 3
+						}
+					}
+				}
+			}
+			if = {
+				limit = { controls_state = 226 }
+				226 = {
+					set_building_level = {
+						type = bunker
+						level = 3
+						province = {
+							id = 9419
+							id = 11422
+							id = 11437
+							id = 9433
 							limit_to_border = yes
 							level < 3
 						}
@@ -238,21 +334,21 @@ focus_tree = {
 				}
 			}
 			swap_ideas = {
-				add_idea = UKR_fortification_focus2
-				remove_idea = UKR_fortification_focus
+				add_idea = CZE_fortification_focus2
+				remove_idea = CZE_fortification_focus
 			}	
 		}
 	}
 
 	focus = {
-		id = UKR_sudeten_2
+		id = UKR_ostwall_2
 		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = UKR_sudeten_1 }
+		prerequisite = { focus = UKR_ostwall_1 }
 		x = 0
 		y = 1
-		relative_position_id = UKR_sudeten_1
+		relative_position_id = UKR_ostwall_1
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 90
@@ -267,54 +363,94 @@ focus_tree = {
 		}
 
 		available = {
-			UKR = { controls_state = 69 }
+			UKR = { controls_state = 202 }
 		}
 
 		bypass = {
 			NOT = {			
-				69 = {
+				202 = {
 					any_province_building_level = {
 						province = {
-							all_provinces = yes
+                                      id = 9568
+							id = 3543
+							id = 525
+							id = 3494
 							limit_to_border = yes
 						}
 						building = bunker
-						level < 5
+						level < 6
 					}
 				}
-				9 = {
+				203 = {
 					any_province_building_level = {
 						province = {
-							id = 445
-							id = 494
+							id = 11454
+							id = 488
 							limit_to_border = yes
 						}
 						building = bunker
-						level < 5
+						level < 6
 					}
 				}
-				74 = {
+				1011 = {
 					any_province_building_level = {
 						province = {
-							id = 421
-							id = 6485
-							id = 3414
-							id = 3583
+							id = 3468
+							id = 6478
 							limit_to_border = yes
 						}
 						building = bunker
-						level < 5
+						level < 6
 					}
 				}
-				70 = {
+				197 = {
 					any_province_building_level = {
 						province = {
-							id = 9539
-							id = 9692
+							id = 11683
+							id = 3755
+							id = 11715
 							limit_to_border = yes
 						}
 						building = bunker
-						level < 5
+						level < 6
+					}
+				}
+				93 = {
+					any_province_building_level = {
+						province = {
+							id = 6579
+							id = 11503
+							id = 3496
+							id = 9520
+							limit_to_border = yes
+						}
+						building = bunker
+						level < 6
+					}
+				}
+				194 = {
+					any_province_building_level = {
+						province = {
+							id = 11453
+							id = 6232
+							id = 9554
+							limit_to_border = yes
+						}
+						building = bunker
+						level < 6
+					}
+				}
+				226 = {
+					any_province_building_level = {
+						province = {
+							id = 9419
+							id = 11422
+							id = 11437
+							id = 9433
+							limit_to_border = yes
+						}
+						building = bunker
+						level < 6
 					}
 				}
 			}
@@ -328,85 +464,136 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 20
 			if = {
-				limit = { controls_state = 69 }
-				69 = {
+				limit = { controls_state = 202 }
+				202 = {
 					set_building_level = {
 						type = bunker
-						level = 5
+						level = 6
 						province = {
-							all_provinces = yes
+                                      id = 9568
+							id = 3543
+							id = 525
+							id = 3494
 							limit_to_border = yes
-							level < 5
+							level < 6
 						}
 					}
 				}
 			}
 
 			if = {
-				limit = { controls_state = 9 }
-				9 = {
+				limit = { controls_state = 203 }
+				203 = {
 					set_building_level = {
 						type = bunker
-						level = 5
+						level = 6
 						province = {
-							id = 445
-							id = 494
+							id = 11454
+							id = 488
 							limit_to_border = yes
-							level < 5
+							level < 6
 						}
 					}
 				}
 			}
 
 			if = {
-				limit = { controls_state = 74 }
-				74 = {
+				limit = { controls_state = 1011 }
+				1011 = {
 					set_building_level = {
 						type = bunker
-						level = 5
+						level = 6
 						province = {
-							id = 421
-							id = 6485
-							id = 3414
-							id = 3583
+							id = 3468
+							id = 6478
 							limit_to_border = yes
-							level < 5
+							level < 6
 						}
 					}
 				}
 			}
 
 			if = {
-				limit = { controls_state = 70 }
-				70 = {
+				limit = { controls_state = 197 }
+				197 = {
 					set_building_level = {
 						type = bunker
-						level = 5
+						level = 6
 						province = {
-							id = 9539
-							id = 9692
+							id = 3755
+							id = 11715
 							limit_to_border = yes
-							level < 5
+							level < 6
+						}
+					}
+				}
+			}
+			if = {
+				limit = { controls_state = 93 }
+				93 = {
+					set_building_level = {
+						type = bunker
+						level = 6
+						province = {
+							id = 6579
+							id = 11503
+							id = 3496
+							id = 9520
+							limit_to_border = yes
+							level < 6
+						}
+					}
+				}
+			}
+			if = {
+				limit = { controls_state = 194 }
+				194 = {
+					set_building_level = {
+						type = bunker
+						level = 6
+						province = {
+							id = 11453
+							id = 6232
+							id = 9554
+							limit_to_border = yes
+							level < 6
+						}
+					}
+				}
+			}
+			if = {
+				limit = { controls_state = 226 }
+				226 = {
+					set_building_level = {
+						type = bunker
+						level = 6
+						province = {
+							id = 9419
+							id = 11422
+							id = 11437
+							id = 9433
+							limit_to_border = yes
+							level < 6
 						}
 					}
 				}
 			}
 			swap_ideas = {
-				add_idea = UKR_fortification_focus3
-				remove_idea = UKR_fortification_focus2
+				add_idea = CZE_fortification_focus3
+				remove_idea = CZE_fortification_focus2
 			}	
 		}
 	}
 
 	focus = {
-		id = UKR_sudeten_3
+		id = UKR_ostwall_3
 		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = UKR_sudeten_2 }
+		prerequisite = { focus = UKR_ostwall_2 }
 		x = 0
 		y = 2
-		relative_position_id = UKR_sudeten_1
+		relative_position_id = UKR_ostwall_1
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 80
@@ -421,54 +608,94 @@ focus_tree = {
 		}
 
 		available = {
-			UKR = { controls_state = 69 }
+			UKR = { controls_state = 202 }
 		}
 
 		bypass = {
 			NOT = {			
-				69 = {
+				202 = {
 					any_province_building_level = {
 						province = {
-							all_provinces = yes
+                                      id = 9568
+							id = 3543
+							id = 525
+							id = 3494
 							limit_to_border = yes
 						}
 						building = bunker
-						level < 7
+						level < 9
 					}
 				}
-				9 = {
+				203 = {
 					any_province_building_level = {
 						province = {
-							id = 445
-							id = 494
+							id = 11454
+							id = 488
 							limit_to_border = yes
 						}
 						building = bunker
-						level < 7
+						level < 9
 					}
 				}
-				74 = {
+				1011 = {
 					any_province_building_level = {
 						province = {
-							id = 421
-							id = 6485
-							id = 3414
-							id = 3583
+							id = 3468
+							id = 6478
 							limit_to_border = yes
 						}
 						building = bunker
-						level < 7
+						level < 9
 					}
 				}
-				70 = {
+				197 = {
 					any_province_building_level = {
 						province = {
-							id = 9539
-							id = 9692
+							id = 11683
+							id = 3755
+							id = 11715
 							limit_to_border = yes
 						}
 						building = bunker
-						level < 7
+						level < 9
+					}
+				}
+				93 = {
+					any_province_building_level = {
+						province = {
+							id = 6579
+							id = 11503
+							id = 3496
+							id = 9520
+							limit_to_border = yes
+						}
+						building = bunker
+						level < 9
+					}
+				}
+				194 = {
+					any_province_building_level = {
+						province = {
+							id = 11453
+							id = 6232
+							id = 9554
+							limit_to_border = yes
+						}
+						building = bunker
+						level < 9
+					}
+				}
+				226 = {
+					any_province_building_level = {
+						province = {
+							id = 9419
+							id = 11422
+							id = 11437
+							id = 9433
+							limit_to_border = yes
+						}
+						building = bunker
+						level < 9
 					}
 				}
 			}
@@ -480,85 +707,136 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
-			army_experience = 30
+			army_experience = 20
 			if = {
-				limit = { controls_state = 69 }
-				69 = {
+				limit = { controls_state = 202 }
+				202 = {
 					set_building_level = {
 						type = bunker
-						level = 7
+						level = 9
 						province = {
-							all_provinces = yes
+                                      id = 9568
+							id = 3543
+							id = 525
+							id = 3494
 							limit_to_border = yes
-							level < 7
+							level < 9
 						}
 					}
 				}
 			}
 
 			if = {
-				limit = { controls_state = 9 }
-				9 = {
+				limit = { controls_state = 203 }
+				203 = {
 					set_building_level = {
 						type = bunker
-						level = 7
+						level = 9
 						province = {
-							id = 445
-							id = 494
+							id = 11454
+							id = 488
 							limit_to_border = yes
-							level < 7
+							level < 9
 						}
 					}
 				}
 			}
 
 			if = {
-				limit = { controls_state = 74 }
-				74 = {
+				limit = { controls_state = 1011 }
+				1011 = {
 					set_building_level = {
 						type = bunker
-						level = 7
+						level = 9
 						province = {
-							id = 421
-							id = 6485
-							id = 3414
-							id = 3583
+							id = 3468
+							id = 6478
 							limit_to_border = yes
-							level < 7
+							level < 9
 						}
 					}
 				}
 			}
 
 			if = {
-				limit = { controls_state = 70 }
-				70 = {
+				limit = { controls_state = 197 }
+				197 = {
 					set_building_level = {
 						type = bunker
-						level = 7
+						level = 9
 						province = {
-							id = 9539
-							id = 9692
+							id = 3755
+							id = 11715
 							limit_to_border = yes
-							level < 7
+							level < 9
+						}
+					}
+				}
+			}
+			if = {
+				limit = { controls_state = 93 }
+				93 = {
+					set_building_level = {
+						type = bunker
+						level = 9
+						province = {
+							id = 6579
+							id = 11503
+							id = 3496
+							id = 9520
+							limit_to_border = yes
+							level < 9
+						}
+					}
+				}
+			}
+			if = {
+				limit = { controls_state = 194 }
+				194 = {
+					set_building_level = {
+						type = bunker
+						level = 9
+						province = {
+							id = 11453
+							id = 6232
+							id = 9554
+							limit_to_border = yes
+							level < 9
+						}
+					}
+				}
+			}
+			if = {
+				limit = { controls_state = 226 }
+				226 = {
+					set_building_level = {
+						type = bunker
+						level = 9
+						province = {
+							id = 9419
+							id = 11422
+							id = 11437
+							id = 9433
+							limit_to_border = yes
+							level < 9
 						}
 					}
 				}
 			}
 			swap_ideas = {
-				add_idea = UKR_fortification_focus4
-				remove_idea = UKR_fortification_focus3
+				add_idea = CZE_fortification_focus4
+				remove_idea = CZE_fortification_focus3
 			}	
 		}
 	}
 
 	focus = {
-		id = UKR_hungarian_line
+		id = UKR_romanian_line
 		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = UKR_sudeten_2 }
+		prerequisite = { focus = UKR_ostwall_2 }
 		x = -2
 		y = 2
-		relative_position_id = UKR_sudeten_1
+		relative_position_id = UKR_ostwall_1
 
 		cost = 5
 
@@ -579,8 +857,10 @@ focus_tree = {
 		}
 
 		available = {
-			UKR = { controls_state = 664 }
-			UKR = { controls_state = 73 }
+			UKR = { controls_state = 192 }
+			UKR = { controls_state = 834 }
+			UKR = { controls_state = 198 }
+			UKR = { controls_state = 199 }
 		}
 
 		bypass = {
@@ -593,18 +873,21 @@ focus_tree = {
 
 		completion_reward = {       
 			army_experience = 30
-			664 = {
-				add_building_construction = { type = bunker province = 3565 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 3716 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 6561 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 6573 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 9537 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 11679 level = 3 instant_build = yes }
+			834 = {
+				add_building_construction = { type = bunker province = 741 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 9576 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 754 level = 3 instant_build = yes }
 			}
 			
-			73 = {
-				add_building_construction = { type = bunker province = 11691 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 3548 level = 3 instant_build = yes }
+			199 = {
+				add_building_construction = { type = bunker province = 3430 level = 3 instant_build = yes }
+			}
+			198 = {
+				add_building_construction = { type = bunker province = 6455 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 9423 level = 3 instant_build = yes }
+			}
+			192 = {
+				add_building_construction = { type = bunker province = 11670 level = 3 instant_build = yes }
 			}
 		}
 	}
@@ -612,10 +895,10 @@ focus_tree = {
 	focus = {
 		id = UKR_polish_line
 		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = UKR_sudeten_2 }
+		prerequisite = { focus = UKR_ostwall_2 }
 		x = 2
 		y = 2
-		relative_position_id = UKR_sudeten_1
+		relative_position_id = UKR_ostwall_1
 
 		cost = 5
 
@@ -628,8 +911,7 @@ focus_tree = {
 		}
 
 		available = {
-			UKR = { controls_state = 71 }
-			UKR = { controls_state = 72 }
+			UKR = { controls_state = 93 }
 		}
 
 		bypass = {
@@ -642,22 +924,60 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 30
-			72 = {
-				add_building_construction = { type = bunker province = 9567 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 9551 level = 2 instant_build = yes }
+			93 = {
+				add_building_construction = { type = bunker province = 422 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 11441 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 3412 level = 3 instant_build = yes }
 			}
-			71 = {      
-				add_building_construction = { type = bunker province = 581 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 3550 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 3581 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 6604 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 11554 level = 2 instant_build = yes }
+		}
+	}
+
+focus = {
+		id = UKR_polish_line2
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = UKR_polish_line }
+		x = 2
+		y = 3
+		relative_position_id = UKR_ostwall_1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				is_in_faction_with = POL
+			}
+		}
+
+		available = {
+			UKR = { controls_state = 990 }
+			UKR = { controls_state = 89 }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+			990 = {
+				add_building_construction = { type = bunker province = 9558 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 491 level = 3 instant_build = yes }
+			}
+			89 = {      
+				add_building_construction = { type = bunker province = 11411 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 9425 level = 3 instant_build = yes }
 			}
 		}
 	}
 
 	focus = {
-		id = UKR_internal_redoubts
+		id = UKR_Odessa_line
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = UKR_fortification_studies }
 		x = 2
@@ -671,10 +991,8 @@ focus_tree = {
 		}
 
 		available = {
-			UKR = { controls_state = 9 }
-			UKR = { controls_state = 70 }
-			UKR = { controls_state = 75 }
-			UKR = { controls_state = 664 }
+			UKR = { controls_state = 834 }
+			UKR = { controls_state = 192 }
 		}
 
 		bypass = {
@@ -687,18 +1005,16 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 20
-			664 = {
-				add_building_construction = { type = bunker province = 6573 level = 2 instant_build = yes }
+			834 = {
+				add_building_construction = { type = bunker province = 3757 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 9576 level = 3 instant_build = yes }
 			}
-			70 = {
-				add_building_construction = { type = bunker province = 9692 level = 2 instant_build = yes }
-			}
-			75 = {
-				add_building_construction = { type = bunker province = 3569 level = 2 instant_build = yes }
-			}
-			9 = {
-				add_building_construction = { type = bunker province = 6418 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 11542 level = 3 instant_build = yes }
+			192 = {
+				add_building_construction = { type = bunker province = 11703 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 3575 level = 3 instant_build = yes }
+				add_building_construction = { type = coastal_bunker province = 11703 level = 3 instant_build = yes }
+				add_building_construction = { type = coastal_bunker province = 3738 level = 3 instant_build = yes }
+				add_building_construction = { type = coastal_bunker province = 11670 level = 5 instant_build = yes }
 			}
 		}
 	}
@@ -714,7 +1030,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = UKR_fortification_studies
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 90
@@ -734,20 +1050,19 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_ideas = UKR_industrial_legacy_idea
+			add_ideas = CZE_industrial_legacy_idea
 		}
 	}
 
 	focus = {
-		id = UKR_favor_UKRchs_1
+		id = UKR_mils1
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = UKR_industrial_legacy }
-		mutually_exclusive = { focus = UKR_balanced_1 }
 		x = -2
 		y = 1
 		relative_position_id = UKR_industrial_legacy
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 40
@@ -762,8 +1077,8 @@ focus_tree = {
 		}
 
 		available = {
-			UKR = { controls_state = 9 }
-			UKR = { controls_state = 75 }
+			UKR = { controls_state = 93 }
+			UKR = { controls_state = 199 }
 		}
 
 		bypass = {
@@ -776,18 +1091,18 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			9 = {
-				add_extra_state_shared_building_slots = 2
+			93 = {
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
-					type = industrial_complex
+					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
 			}
-			75 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
+			199 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { 
+					type = arms_factory  
 					level = 1
 					instant_build = yes
 				}
@@ -796,22 +1111,22 @@ focus_tree = {
 	}
 
 	focus = {
-		id = UKR_favor_UKRchs_2
+		id = UKR_mils2
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = UKR_favor_UKRchs_1 }
+		prerequisite = { focus = UKR_mils1 }
 		x = 0
 		y = 1
-		relative_position_id = UKR_favor_UKRchs_1
+		relative_position_id = UKR_mils1 
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 80
 		}
 
 		available = {
-			UKR = { controls_state = 9 }
-			UKR = { controls_state = 75 }
+			UKR = { controls_state = 201 }
+			UKR = { controls_state = 198 }
 		}
 
 		bypass = {
@@ -824,18 +1139,18 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			9 = {
-				add_extra_state_shared_building_slots = 2
+			201 = {
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
-					type = industrial_complex
+					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
 			}
-			75 = {
-				add_extra_state_shared_building_slots = 1
+			198 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
+					type = arms_factory
 					level = 1
 					instant_build = yes
 				}
@@ -844,22 +1159,22 @@ focus_tree = {
 	}
 
 	focus = {
-		id = UKR_favor_UKRchs_3
+		id = UKR_mils3 
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = UKR_favor_UKRchs_2 }
+		prerequisite = { focus = UKR_mils2 }
 		x = 0
 		y = 2
-		relative_position_id = UKR_favor_UKRchs_1
+		relative_position_id = UKR_mils1
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 80
 		}
 
 		available = {
-			UKR = { controls_state = 9 }
-			UKR = { controls_state = 75 }
+			UKR = { controls_state = 202 }
+			UKR = { controls_state = 201 }
 		}
 
 		bypass = {
@@ -872,18 +1187,18 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			9 = {
-				add_extra_state_shared_building_slots = 2
+			202 = {
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
-					type = industrial_complex
+					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
 			}
-			75 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
+			201 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { 
+					type = arms_factory
 					level = 1
 					instant_build = yes
 				}
@@ -895,7 +1210,6 @@ focus_tree = {
 		id = UKR_balanced_1
 		icon = GFX_goal_generic_construction
 		prerequisite = { focus = UKR_industrial_legacy }
-		mutually_exclusive = { focus = UKR_favor_UKRchs_1 }
 		x = 0
 		y = 1
 		relative_position_id = UKR_industrial_legacy
@@ -1218,7 +1532,6 @@ focus_tree = {
 		id = UKR_go_left
 		icon = GFX_focus_generic_soviet_politics
 		prerequisite = { focus = UKR_political_direction }
-		mutually_exclusive = { focus = UKR_democratic_bastion focus = UKR_go_right }
 		x = -2
 		y = 1
 		relative_position_id = UKR_political_direction
@@ -1259,6 +1572,10 @@ focus_tree = {
 					has_government = communism
 					num_of_factories > 30
 				}
+				add_opinion_modifier = { 
+					target = ROOT 
+					modifier = UKR_leftist_rhetoric_communism
+				}
 			}
 			every_other_country = {
 				limit = { 
@@ -1267,11 +1584,17 @@ focus_tree = {
 				}
 				add_opinion_modifier = { 
 					target = ROOT
+					modifier = UKR_leftist_rhetoric_democratic
+				}
 			}
 			every_other_country = {
 				limit = { 
 					has_government = fascism
 					num_of_factories > 30
+				}
+				add_opinion_modifier = { 
+					target = ROOT 
+					modifier = UKR_leftist_rhetoric_fascism
 				}
 			}
 		}
@@ -1483,7 +1806,6 @@ focus_tree = {
 		id = UKR_democratic_bastion
 		icon = GFX_focus_generic_the_giant_wakes
 		prerequisite = { focus = UKR_political_direction }
-		mutually_exclusive = { focus = UKR_go_right focus = UKR_go_left }
 		x = 0
 		y = 1
 		relative_position_id = UKR_political_direction
@@ -1622,7 +1944,6 @@ focus_tree = {
 		id = UKR_go_right
 		icon = GFX_focus_generic_strike_at_democracy1
 		prerequisite = { focus = UKR_political_direction }
-		mutually_exclusive = { focus = UKR_democratic_bastion focus = UKR_go_left }
 		x = 2
 		y = 1
 		relative_position_id = UKR_political_direction
@@ -2724,7 +3045,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = UKR_UKRchoslovak_legion
+		id = UKR_volunteer_corps
 		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = UKR_strategy_decisions }
 		x = 5
@@ -3862,8 +4183,6 @@ focus_tree = {
 			}
 		}
 	}
-
-}
 
 }
 

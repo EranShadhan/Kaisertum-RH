@@ -2,7 +2,9 @@
 state={
 	id=227
 	name="STATE_227"
-
+      resources={
+		steel=40
+	}
 	history={
 		owner = SOV
 		buildings = {
