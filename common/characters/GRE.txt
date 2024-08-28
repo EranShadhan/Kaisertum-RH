@@ -143,7 +143,7 @@ characters={
 				idea_token = GRE_ioannis_metaxas
 				allowed = {
 					original_tag = GRE
-				
+			NOT = { has_completed_focus = GRE_ally_the_mafia_to_assasinate_metaxas }
 				}
 				can_be_fired = no
 				available = {
@@ -193,10 +193,10 @@ characters={
 				idea_token = GRE_eleftherios_venizelos
 				allowed = {
 					original_tag = GRE
-				
+				not = { has_country_flag = GRE_venizelos_died }
 				}
 				available = {
-					
+					not = { has_country_flag = GRE_venizelos_died }
 						
 					
 				}
@@ -1004,7 +1004,7 @@ characters={
 				OR = {
 						original_tag = GRE
 				}
-				not = { has_country_flag = GRE_venizelos_died }
+				
 			}
 			traits = {
 				backroom_backstabber 

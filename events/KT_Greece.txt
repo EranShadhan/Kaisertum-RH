@@ -12,7 +12,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 365
+		days = 200
 	}
 	fire_only_once = yes
 	
@@ -98,9 +98,9 @@ country_event = { #Schism collapse again
 		name = KT_greece_events.4.a
 		set_country_flag = nationa_schism_part2
 		swap_ideas = {
-		remove_idea = GRE_HERE_WE_GO_AGAIN3
+		remove_ideas = GRE_HERE_WE_GO_AGAIN3
 
-		add_idea = GRE_HERE_WE_GO_AGAIN_CRUSH
+		add_ideas = GRE_HERE_WE_GO_AGAIN_CRUSH
 	}}
   
 
