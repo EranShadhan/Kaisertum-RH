@@ -514,7 +514,7 @@ focus = {
 		factor = 1
 		}
 			
-		cost = 10
+		cost = 5
 			
 		available = {
 			
@@ -531,7 +531,14 @@ focus = {
 					
 			
 		completion_reward = {
-						
+			add_timed_idea = {
+				idea = arm_ref_3
+				days = 120
+			}	
+			add_timed_idea = {
+				idea = arm_ref_4
+				days = 90
+			}	
 		}
 			
 }
@@ -568,7 +575,7 @@ focus = {
 				
 		
 	completion_reward = {
-					
+		add_bo	
 	}
 		
 }

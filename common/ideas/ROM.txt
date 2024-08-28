@@ -292,6 +292,42 @@ ideas = {
 			}
 		}
 
+		arm_ref_3 = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+
+		arm_ref_4 = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.2 
+			}
+		}
+
 	}
 
 }
