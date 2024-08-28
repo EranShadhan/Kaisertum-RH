@@ -966,3 +966,7 @@ CPE = {
 	color = rgb { 194 66 18 }
 	color_ui = rgb { 194 66 18 }
 }
+NCY = {
+	color = rgb { 255 242 240 }
+	color_ui = rgb { 255 242 240 }
+}

@@ -119,3 +119,445 @@ TUR_syrian_rebellion_starts = {
 }
 
 }
+
+TUR_sponsor_syrian_revolution_nonaligned_category = {
+TUR_secure_support_in_FROM_nonaligned = {
+		allowed = { original_tag = TUR }
+		cost = 10
+		visible = {
+			original_tag = TUR
+            TUR = {
+                has_completed_focus = TUR_kickstart_the_syrian_revolution
+            }
+		}
+		state_target = yes
+		target_trigger = {
+			
+			FROM = {
+					is_core_of = SYR
+					is_controlled_by = SAU
+					
+				}
+				
+			}
+		
+		
+
+		fire_only_once = yes
+
+		on_map_mode = map_and_decisions_view
+
+		days_remove = 14
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+					FROM = {
+						set_variable = { var = TUR_is_syrian_state_secured value = 1 }
+					}
+				}
+			
+			custom_effect_tooltip = from_variable
+		available = {
+			has_civil_war = no
+			
+		}
+
+		ai_will_do = {
+			base = 110
+		}
+}
+	
+TUR_syrian_rebellion_starts_nonaligned = {
+    icon = GFX_decision_icon_default
+    activation = {
+			original_tag = TUR
+            TUR = {
+                has_completed_focus = TUR_kickstart_the_syrian_revolution
+            }
+		}
+    available = {
+        always = no
+    }
+    is_good = yes
+    days_mission_timeout = 100
+    fire_only_once = yes
+    selectable_mission = yes
+    complete_effect = {
+
+    }
+    timeout_effect = {
+        SYR = {
+            if = {
+				limit = {
+					NOT = { has_template = "Almilishia Alsuwria" }
+				}
+				division_template = {
+					name = "Almilishia Alsuwria"
+					regiments = {
+					    infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+					}
+				}
+			}		
+            every_core_state = {
+                if = {
+                limit = {
+                    AND = {
+                    check_variable = { var = TUR_is_syrian_state_secured value = 1 compare = equals}
+                    NOT = { has_global_flag = syrian_rebellion }
+                    NOT = { has_global_flag = syria_wins }
+                    NOT = { has_global_flag = syria_loses }
+                    }
+                }
+                transfer_state_to = SYR
+                create_unit = {
+                    division = "name = \"Almilishia Alsuwria\" division_template = \"Almilishia Alsuwria\" start_experience_factor = 0.5"
+                    owner = SYR
+                }
+                }
+            }
+        set_politics = {
+            ruling_party = neutrality
+            elections_allowed = no
+        }
+        set_global_flag = syrian_rebellion
+        declare_war_on = {
+            target = SAU
+            type = annex_everything
+        }
+        }
+    }
+}
+
+}
+
+TUR_foreign_influence_in_gov_category = {
+	TUR_expand_influence = {
+		cost = 50
+		days_remove = 90
+		visible = {
+			OR = {	
+				tag = FRA
+				tag = GER
+				tag = SOV
+				tag = ITA
+			}
+			TUR = {
+                has_completed_focus = TUR_promote_a_europeanized_government
+            }
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+            TUR = { exists = yes }
+            hidden_trigger = { NOT = { has_idea = TUR_influence_over_turkey_6 } }
+        }
+		modifier = {
+			political_power_cost = 0.10
+		}
+		fixed_random_seed = no
+		remove_effect = {
+			random_list = {
+				5 = {
+					TUR_decrease_foreign_influence = yes
+				}
+				45 = {
+					TUR_increase_foreign_influence = yes
+				}
+				50 = {
+					TUR_increase_foreign_influence = yes
+				}
+			}
+		}
+	}
+	TUR_repress_foreign_influence = {
+		cost = 40
+		days_remove = 40
+		visible = {
+			tag = TUR
+			TUR = {
+                has_completed_focus = TUR_promote_a_europeanized_government
+            }
+		}
+		available = {
+            tag = TUR
+        }
+        ai_will_do = {
+			factor = 100
+		}
+		modifier = {
+			political_power_cost = 0.05
+		}
+		remove_effect = {
+			if = {
+				limit = { 
+					SOV = {
+						OR = {
+							has_idea = TUR_influence_over_turkey_1 
+							has_idea = TUR_influence_over_turkey_2 
+							has_idea = TUR_influence_over_turkey_3 
+							has_idea = TUR_influence_over_turkey_4 
+							has_idea = TUR_influence_over_turkey_5 
+							has_idea = TUR_influence_over_turkey_6 
+						}
+					}
+				}
+				random_list = {
+					50 = {
+						SOV = { TUR_decrease_foreign_influence = yes }
+					}
+					50 = {
+					}
+				}
+			}
+			if = {
+				limit = { 
+					FRA = {
+						OR = {
+							has_idea = TUR_influence_over_turkey_1 
+							has_idea = TUR_influence_over_turkey_2 
+							has_idea = TUR_influence_over_turkey_3 
+							has_idea = TUR_influence_over_turkey_4 
+							has_idea = TUR_influence_over_turkey_5 
+							has_idea = TUR_influence_over_turkey_6 
+						}
+					}
+				}
+				random_list = {
+					50 = {
+						FRA = { TUR_decrease_foreign_influence = yes }
+					}
+					50 = {
+					}
+				}
+			}
+			if = {
+				limit = { 
+					GER = {
+						OR = {
+							has_idea = TUR_influence_over_turkey_1 
+							has_idea = TUR_influence_over_turkey_2 
+							has_idea = TUR_influence_over_turkey_3 
+							has_idea = TUR_influence_over_turkey_4 
+							has_idea = TUR_influence_over_turkey_5 
+							has_idea = TUR_influence_over_turkey_6 
+						}
+					}
+				}
+				random_list = {
+					50 = {
+						GER = { TUR_decrease_foreign_influence = yes }
+					}
+					50 = {
+					}
+				}
+			}
+			if = {
+				limit = { 
+					ITA = {
+						OR = {
+							has_idea = TUR_influence_over_turkey_1 
+							has_idea = TUR_influence_over_turkey_2 
+							has_idea = TUR_influence_over_turkey_3 
+							has_idea = TUR_influence_over_turkey_4 
+							has_idea = TUR_influence_over_turkey_5 
+							has_idea = TUR_influence_over_turkey_6 
+						}
+					}
+				}
+				random_list = {
+					50 = {
+						ITA = { TUR_decrease_foreign_influence = yes }
+					}
+					50 = {
+					}
+				}
+			}
+		}
+	}
+}
+
+TUR_northern_cyprus_category = {
+	TUR_bribe_cypriot_diplomats = {
+		cost = 40
+		days_remove = 20
+		visible = {
+			tag = TUR
+			TUR = {
+                has_completed_focus = TUR_promote_a_turkish_northern_cyprus
+            }
+		}
+		available = {
+            tag = TUR
+        }
+        ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = no
+		remove_effect = {
+			if = {
+				limit = { NOT = { check_variable = TUR_cypriot_support value = 1 compare = greater_than_or_equals} }
+				set_variable = { var = TUR_cypriot_support value = 15 }
+			}
+			else = {
+				add_to_variable = {
+    				var = TUR_cypriot_support
+    				value = 15
+				}
+			}
+
+		}
+	}
+	TUR_rally_turkish_nationalists = {
+		cost = 60
+		days_remove = 25
+		visible = {
+			tag = TUR
+			TUR = {
+                has_completed_focus = TUR_promote_a_turkish_northern_cyprus
+            }
+		}
+		available = {
+            tag = TUR
+        }
+        ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = no
+		remove_effect = {
+			if = {
+				limit = { NOT = { check_variable = TUR_cypriot_support value = 1 compare = greater_than_or_equals} }
+				set_variable = { var = TUR_cypriot_support value = 20 }
+			}
+			else = {
+				add_to_variable = {
+    				var = TUR_cypriot_support
+    				value = 20
+				}
+			}
+
+		}
+	}
+	TUR_sponsor_factory_construction = {
+		cost = 150
+		days_remove = 40
+		visible = {
+			tag = TUR
+			TUR = {
+                has_completed_focus = TUR_promote_a_turkish_northern_cyprus
+            }
+		}
+		available = {
+            tag = TUR
+        }
+        ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = no
+		remove_effect = {
+			if = {
+				limit = { NOT = { check_variable = TUR_cypriot_support value = 1 compare = greater_than_or_equals } }
+				set_variable = { var = TUR_cypriot_support value = 35 }
+				986 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			else = {
+				add_to_variable = {
+    				var = TUR_cypriot_support
+    				value = 35
+				}
+			}
+
+		}
+	}
+	TUR_start_the_cypriot_civil_war = {
+		cost = 100
+		days_remove = 30
+		visible = {
+			tag = TUR
+			TUR = {
+                has_completed_focus = TUR_promote_a_turkish_northern_cyprus
+            }
+		}
+		available = {
+            tag = TUR
+			check_variable = { var = TUR_cypriot_support value = 100 compare = greater_than_or_equals }
+			TUR = {
+				has_completed_focus = TUR_start_cypriot_civil_war
+			}
+        }
+        ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = no
+		remove_effect = {
+			NCY = {
+				if = {
+						limit = { 986 = { is_owned_by = GRE } }
+					declare_war_on = {
+						target = GRE
+						type = annex_everything
+					}
+					transfer_state = 986
+					if = {
+						limit = {
+							NOT = { has_template = "Kuzey Kibris Milisleri" }
+						}
+						division_template = {
+							name = "Kuzey Kibris Milisleri"
+							regiments = {
+								infantry = { x = 0 y = 0 }
+								infantry = { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }
+								infantry = { x = 0 y = 3 }
+								infantry = { x = 1 y = 0 }
+								infantry = { x = 1 y = 1 }
+								infantry = { x = 1 y = 2 }
+								infantry = { x = 1 y = 3 }
+							}
+							support = {
+								artillery = { x = 0 y = 0 }
+							}
+						}
+					}
+					986 = {
+						create_unit = {
+							division = "name = \"Kuzey Kibris Milisleri\" division_template = \"Kuzey Kibris Milisleri\" start_experience_factor = 0.5"
+							owner = NCY
+                		}
+						create_unit = {
+							division = "name = \"Kuzey Kibris Milisleri\" division_template = \"Kuzey Kibris Milisleri\" start_experience_factor = 0.5"
+							owner = NCY
+                		}
+						create_unit = {
+							division = "name = \"Kuzey Kibris Milisleri\" division_template = \"Kuzey Kibris Milisleri\" start_experience_factor = 0.5"
+							owner = NCY
+                		}
+						set_state_flag = ncy_holds_ncy
+					}
+					set_global_flag = cypriot_civil_war
+				}		
+			}
+
+
+		}
+	}
+}

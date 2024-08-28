@@ -550,6 +550,184 @@ ideas = {
 				political_power_factor = 0.15
 			}
 		}
+		TUR_the_sultans_cabinet = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				neutrality_drift = 0.03
+				political_power_factor = 0.05
+			}
+		}
+		TUR_western_government = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.05
+			}
+		}
+		TUR_limited_isolationism_idea = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				communism_acceptance = -20
+				fascism_acceptance = -20
+				democratic_acceptance = -20
+			}
+		}
+		TUR_italian_industrial_access = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.2
+			}
+		}
+		TUR_influence_over_turkey_6 = {
+			allowed = {
+				always = no
+			}
+
+			name = TUR_influence_over_turkey
+
+			removal_cost = -1
+			picture = chi_wargaming_division
+
+			modifier = {
+				political_power_gain = 0.30
+			}
+			targeted_modifier = { 
+				tag = TUR 
+				attack_bonus_against = 0.6 
+			}
+		}
+		TUR_influence_over_turkey_5 = {
+			allowed = {
+				always = no
+			}
+
+			name = TUR_influence_over_turkey
+
+			removal_cost = -1
+			picture = chi_wargaming_division
+
+			modifier = {
+				political_power_gain = 0.25
+			}
+			targeted_modifier = { 
+				tag = TUR 
+				attack_bonus_against = 0.5 
+			}
+		}
+		TUR_influence_over_turkey_4 = {
+			allowed = {
+				always = no
+			}
+
+			name = TUR_influence_over_turkey
+
+			removal_cost = -1
+			picture = chi_wargaming_division
+
+			modifier = {
+				political_power_gain = 0.20
+			}
+			targeted_modifier = { 
+				tag = TUR 
+				attack_bonus_against = 0.4 
+			}
+		}
+		TUR_influence_over_turkey_3 = {
+			allowed = {
+				always = no
+			}
+
+			name = TUR_influence_over_turkey
+
+			removal_cost = -1
+			picture = chi_wargaming_division
+
+			modifier = {
+				political_power_gain = 0.15
+			}
+			targeted_modifier = { 
+				tag = TUR 
+				attack_bonus_against = 0.3 
+			}
+		}
+		TUR_influence_over_turkey_2 = {
+			allowed = {
+				always = no
+			}
+
+			name = TUR_influence_over_turkey
+
+			removal_cost = -1
+			picture = chi_wargaming_division
+
+			modifier = {
+				political_power_gain = 0.10
+			}
+			targeted_modifier = { 
+				tag = TUR 
+				attack_bonus_against = 0.2 
+			}
+		}
+		TUR_influence_over_turkey_1 = {
+			allowed = {
+				always = no
+			}
+
+			name = TUR_influence_over_turkey
+
+			removal_cost = -1
+			picture = chi_wargaming_division
+
+			modifier = {
+				political_power_gain = 0.05
+			}
+			targeted_modifier = { 
+				tag = TUR 
+				attack_bonus_against = 0.1 
+			}
+		}
+		TUR_anti_russian_propaganda_idea = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.05
+			}
+			targeted_modifier = { 
+				tag = SOV
+				attack_bonus_against = 0.4
+			}
+		}
 		
 	}
 }

@@ -21,7 +21,7 @@ focus_tree = {
 focus = {
     id = TUR_finish_reconstruction
     icon = GFX_goal_generic_construct_infrastructure
-    x = 25
+    x = 35
     y = 0
 	relative_position_id = TUR_start_of_a_new_decade
     cost = 5
@@ -3108,6 +3108,504 @@ s
 
 		}
 	}
+	# HISTORICAL BRANCH
+	focus = {
+		id = TUR_focus_on_internal_matters
+		cost = 5
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = TUR_start_of_a_new_decade
+		}
+		available = {
+		}
+		mutually_exclusive = {
+			focus = TUR_constitution_of_1930
+		}
+		relative_position_id = TUR_start_of_a_new_decade
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = TUR_create_the_sultans_cabinet
+		cost = 5
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_focus_on_internal_matters
+		}
+		available = {
+		}
+		relative_position_id = TUR_focus_on_internal_matters
+		completion_reward = {
+			add_ideas = TUR_the_sultans_cabinet
+		}
+	}
+	focus = {
+		id = TUR_exploit_the_bidding_war
+		cost = 5
+		x = -1
+		y = 2
+
+		prerequisite = {
+			focus = TUR_create_the_sultans_cabinet
+		}
+		available = {
+		}
+		relative_position_id = TUR_create_the_sultans_cabinet
+		completion_reward = {
+			add_political_power = 20
+			add_command_power = 20
+		}
+	}
+	focus = {
+		id = TUR_denounce_ottomanism
+		cost = 5
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_focus_on_internal_matters
+		}
+		available = {
+		}
+		relative_position_id = TUR_focus_on_internal_matters
+		completion_reward = {
+			TUR = {
+				every_neighbor_country = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = small_increase
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_our_place_in_the_new_world
+		cost = 5
+		x = 1
+		y = 2
+
+		prerequisite = {
+			focus = TUR_denounce_ottomanism
+		}
+		available = {
+		}
+		relative_position_id = TUR_denounce_ottomanism
+		completion_reward = {
+			navy_experience = 25
+			air_experience = 25
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = TUR_limited_isolationism
+		cost = 5
+		x = 0
+		y = 2
+
+		prerequisite = {
+			focus = TUR_focus_on_internal_matters
+		}
+		available = {
+		}
+		relative_position_id = TUR_focus_on_internal_matters
+		completion_reward = {
+			add_ideas = TUR_limited_isolationism_idea
+		}
+	}
+	focus = {
+		id = TUR_promote_a_europeanized_government
+		cost = 5
+		x = 0
+		y = 2
+
+		prerequisite = {
+			focus = TUR_limited_isolationism
+		}
+		prerequisite = {
+			focus = TUR_exploit_the_bidding_war
+		}
+		prerequisite = {
+			focus = TUR_our_place_in_the_new_world
+		}
+		available = {
+		}
+		relative_position_id = TUR_limited_isolationism
+		completion_reward = {
+			add_ideas = TUR_western_government
+			GER = {
+				add_ideas = TUR_influence_over_turkey_4
+			}
+			SOV = {
+				add_ideas = TUR_influence_over_turkey_3
+			}
+			ITA = {
+				add_ideas = TUR_influence_over_turkey_2
+			}
+		}
+	}
+	focus = {
+		id = TUR_appeal_to_italy
+		cost = 5
+		x = 0
+		y = 2
+
+		prerequisite = {
+			focus = TUR_promote_a_europeanized_government
+		}
+		available = {
+		}
+		relative_position_id = TUR_promote_a_europeanized_government
+		completion_reward = {
+			ITA = {
+
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+				TUR_increase_foreign_influence = yes
+				
+			}
+			# ADD ITALIAN INFLUENCE OVER TURKEY
+		}
+	}
+	focus = {
+		id = TUR_dodecanese_for_industry
+		cost = 5
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = TUR_appeal_to_italy
+		}
+		available = {
+		}
+		relative_position_id = TUR_appeal_to_italy
+		completion_reward = {
+			ITA = {
+				country_event = {
+					id = KT_turkey_events.6
+					hours = 12
+					random_hours = 6
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_middle_east_situation
+		cost = 5
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = TUR_dodecanese_for_industry
+		}
+		available = {
+		}
+		relative_position_id = TUR_dodecanese_for_industry
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = TUR_take_advantage_of_arabian_minorities
+		cost = 5
+		x = -2
+		y = 1
+
+		prerequisite = {
+			focus = TUR_middle_east_situation
+		}
+		available = {
+		}
+		relative_position_id = TUR_middle_east_situation
+		completion_reward = {
+			add_political_power = 20
+			SAU = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = medium_decrease
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_encourage_syrian_nationalism
+		cost = 5
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_take_advantage_of_arabian_minorities
+		}
+		available = {
+		}
+		relative_position_id = TUR_take_advantage_of_arabian_minorities
+		completion_reward = {
+			677 = {
+				add_core_of = SYR
+			}
+			975 = {
+				add_core_of = SYR
+			}
+			554 = {
+				add_core_of = SYR
+			}
+			680 = {
+				add_core_of = SYR
+			}
+		}
+	}
+	focus = {
+		id = TUR_anti_arabian_propaganda
+		cost = 5
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_take_advantage_of_arabian_minorities
+		}
+		available = {
+		}
+		relative_position_id = TUR_take_advantage_of_arabian_minorities
+		completion_reward = {
+			SAU = {
+				every_neighbor_country = {
+					add_opinion_modifier = {
+						target = SAU
+						modifier = medium_decrease
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_kickstart_the_syrian_revolution
+		cost = 5
+		x = 0
+		y = 2
+
+		prerequisite = {
+			focus = TUR_anti_arabian_propaganda
+		}
+		prerequisite = {
+			focus = TUR_encourage_syrian_nationalism
+		}
+		available = {
+		}
+		relative_position_id = TUR_take_advantage_of_arabian_minorities
+		completion_reward = {
+			unlock_decision_category_tooltip = TUR_sponsor_syrian_revolution_nonaligned_category_tt
+		}
+	}
+	focus = {
+		id = TUR_place_a_puppet_sultan
+		cost = 5
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = TUR_kickstart_the_syrian_revolution
+		}
+
+		available = {
+			has_global_flag = syria_wins
+		}
+		relative_position_id = TUR_kickstart_the_syrian_revolution
+		completion_reward = {
+			# SYRIAN LEADER IS NOW AHMED IV's SON
+			SYR = {
+				set_cosmetic_tag = SYR_vilayet
+			}
+		}
+	}
+	focus = {
+		id = TUR_monopolize_syrian_oil
+		cost = 5
+		x = -2
+		y = 1
+
+		prerequisite = {
+			focus = TUR_kickstart_the_syrian_revolution
+		}
+
+		available = {
+			has_global_flag = syria_wins
+		}
+		relative_position_id = TUR_kickstart_the_syrian_revolution
+		completion_reward = {
+			add_offsite_building = { type = synthetic_refinery level = 2 }
+		}
+	}
+	focus = {
+		id = TUR_promote_a_turkish_northern_cyprus
+		cost = 5
+		x = 2
+		y = 1
+
+		prerequisite = {
+			focus = TUR_middle_east_situation
+		}
+		available = {
+		}
+		relative_position_id = TUR_middle_east_situation
+		completion_reward = {
+			986 = {
+				add_core_of = NCY
+			}
+		}
+	}
+	focus = {
+		id = TUR_arm_our_cooperators
+		cost = 5
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_promote_a_turkish_northern_cyprus
+		}
+		available = {
+		}
+		relative_position_id = TUR_promote_a_turkish_northern_cyprus
+		completion_reward = {
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = TUR_erase_involvement_marks
+		cost = 5
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_promote_a_turkish_northern_cyprus
+		}
+		available = {
+		}
+		relative_position_id = TUR_promote_a_turkish_northern_cyprus
+		completion_reward = {
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = TUR_start_cypriot_civil_war
+		cost = 5
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_arm_our_cooperators
+		}
+		prerequisite = {
+			focus = TUR_erase_involvement_marks
+		}
+		available = {
+		}
+		relative_position_id = TUR_erase_involvement_marks
+		completion_reward = {
+			add_political_power = 10
+		}
+	}
+	focus = {
+		id = TUR_turkish_cyprus
+		cost = 1
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = TUR_start_cypriot_civil_war
+		}
+
+		available = {
+			has_global_flag = ncy_wins
+		}
+		relative_position_id = TUR_start_cypriot_civil_war
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUR_status_quo
+		cost = 1
+		x = 2
+		y = 1
+
+		prerequisite = {
+			focus = TUR_start_cypriot_civil_war
+		}
+
+		available = {
+			has_global_flag = cyprus_conflict_frozen
+		}
+		relative_position_id = TUR_start_cypriot_civil_war
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUR_the_looming_war
+		cost = 5
+		x = 0
+		y = 3
+
+		prerequisite = {
+			focus = TUR_middle_east_situation
+		}
+		available = {
+		}
+		relative_position_id = TUR_middle_east_situation
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = TUR_anti_russian_propaganda
+		cost = 5
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = TUR_the_looming_war
+		}
+		available = {
+		}
+		relative_position_id = TUR_the_looming_war
+		completion_reward = {
+			add_ideas = TUR_anti_russian_propaganda_idea
+			SAU = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = medium_decrease
+					}
+			}
+
+		}
+	}
+	focus = {
+		id = TUR_prepare_for_sgw
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = TUR_anti_russian_propaganda
+		}
+		available = {
+		}
+		relative_position_id = TUR_anti_russian_propaganda
+		completion_reward = {
+			add_political_power = 50
+			# SGW PREPARATION DECISIONS E AM LAZY
+
+		}
+	}
 }
 
+			
+	
+			
 	

@@ -1,0 +1,22 @@
+﻿l_english:
+ TUR_foreign_influence_in_gov_category:0 "Foreign Influence in the Turkish Government"
+ TUR_foreign_influence_in_gov_category_desc:0 "Foreign powers came to fill the power vacuum in the Turkish State ever since the Second Great Turkish War, and now as the Turkish State itself promotes a europeanized government, the influence of the Europeans is at an all-time high. The Turkish State has to keep the influence balanced, as if one power gains too much influence, the Turkish State may be at grave danger. \n\n§YInfluence§! of the [SOV.GetFlag]§YRussians§! is [ROOT.GetInfluenceSOV]\n\n§YInfluence§! of the [GER.GetFlag]§RGermans§! is [ROOT.GetInfluenceGER] \n\n§YInfluence§! of the [FRA.GetFlag]§BFrench§! is [ROOT.GetInfluenceFRA] \n\n§YInfluence§! of the [ITA.GetFlag]§GItalians§! is [ROOT.GetInfluenceITA]\n"
+ TUR_repress_foreign_influence:0 "Repress the Foreign Influence"
+ TUR_expand_influence:0 "Expand our influence in [TUR.GetName]"
+
+ TUR_influence_miniscule:0 "miniscule"
+ TUR_influence_tiny:0 "§6tiny§!"
+ TUR_influence_low:0 "§Glow§!"
+ TUR_influence_moderate:0 "§Ymoderate§!"
+ TUR_influence_high:0 "§Ohigh§!"
+ TUR_influence_very_high:0 "§tvery high§!"
+ TUR_influence_extreme:0 "§Rextreme§!"
+
+ TUR_sponsor_syrian_revolution_socialist_category:0 "The Syrian Rebellion"
+ TUR_sponsor_syrian_revolution_socialist_category_desc:0 "The people of §YSyria§! are currently living in an oppressive Arab State where they, living in the border regions, are considered inferior to the wealthier Arabs of the Red Sea Coast. It is our duty to free the §YSyrians§! from this tyrannical regime."
+
+ TUR_sponsor_syrian_revolution_nonaligned_category:0 "The Syrian Rebellion"
+ TUR_sponsor_syrian_revolution_nonaligned_category_desc:0 "The people of §YSyria§! are currently living in an oppressive Arab State where they, living in the border regions, are considered inferior to the wealthier Arabs of the Red Sea Coast. It is our duty to free the §YSyrians§! from this tyrannical regime."
+
+ TUR_northern_cyprus_category:0 "Influence in Northern Cyprus"
+ TUR_northern_cyprus_category_desc:0 "Even though Cyprus is majority Greek, there is still a large Turkish minority who moved to the island during the Ottoman days. To expand our sphere of influence, as well as gain access to the oil fields around the island we shall support the Turks in Cyprus to flock to the Northern part and organise a rebellion against our mortal enemies - The Hellenes. \n\nOur §YInfluence§ in [NCY.GetFlag]§RNorthern Cyprus§!: [?TUR.TUR_cypriot_support]"
