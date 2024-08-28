@@ -81,6 +81,7 @@ country_event = { #Schism collapse
 		remove_ideas = GRE_memories_of_the_great_nationa_schism
 		}
 		add_ideas = GRE_HERE_WE_GO_AGAIN
+		set_country_flag = nationa_schism_part2
 	}
   
 
@@ -96,7 +97,7 @@ country_event = { #Schism collapse again
 	
 	option = {
 		name = KT_greece_events.4.a
-		set_country_flag = nationa_schism_part2
+		
 		swap_ideas = {
 		remove_ideas = GRE_HERE_WE_GO_AGAIN3
 
@@ -222,7 +223,7 @@ country_event = { #metaxas assasination attemp
   
 option = { #kill
 		name = KT_greece_events.9.b
-		
+		add_stability = 0.1
 	
 		}	
 option = { #we cannot be bothered

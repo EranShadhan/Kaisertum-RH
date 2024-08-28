@@ -1006,11 +1006,14 @@ GRE_expand_influence_in_FROM = {
 				}
 				FROM = {
 					add_to_variable = { var = GRE_garrison_control value = -1 }
+					
 				}
+				GRE_bop_very_low_increase_effect
 				else = {
 					FROM = {
 						add_to_variable = { var = GRE_garrison_control value = 1 }
 					}
+					GRE_bop_very_low_decrease_effect
 				}
 			
 			}

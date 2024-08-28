@@ -349,8 +349,86 @@
  GRE_women_voting_rights:0 "Women Rights"
  GRE_reform_education:0 "Reform the Education System" #with venizelos (minister of education) dead-assasinated, we can reform the system to our liking
  GRE_national_education:0 "Nationalist Education"
+ 
  GRE_appease_the_people:0 "Appease the People"
+ GRE_appease_the_people_desc:0 "The Ethniki Enosis Ellados are not to be trusted, and Metaxas wants them out of the picture. To crush opposition to Metaxas' leadership, we must gain the people's support. In doing so, we need to appease the masses and tear them away from these scum."
+ GRE_the_metaxist_parliament:0 "The Metaxist Parliament"
+ GRE_the_metaxist_parliament_desc:0 "As part of Metaxas' plan, we are to form a loyal government. A new parliament will be formed to empower this new government and strengthen Democracy!"
+ GRE_watch_our_enemies:0 "Keep an Eye on our Enemies"
+ GRE_watch_our_enemies_desc:0 "With enemies at every corner and the integralists repeatedly attempting to strain the government, we must keep our eyes locked on them. Our enemies must be watched with caution; and our government must be protected."
+ GRE_democracy_prevails:0 "Democracy Prevails"
+ GRE_democracy_prevails_desc:0 "With the Metaxists in power, we can now see how democracy - a Greek by nature thought shall prevail. Born in Greece and thriving in Greece, Metaxas will pave the way for a truly Greek democracy."
+ GRE_all_parties_end:0 "The King's Party Must End"
+ GRE_all_parties_end_desc:0 "The last King of Greece, George the Second, still has is autocrats running around the nation throwing parties and disrupting the peace of citizens who benefit from his downfall. This must end, and all of the parties attributed to George II will stop."
+ GRE_balkan_stab:0 "Bastion of Balkan Stability"
+ GRE_balkan_stab_desc:0 "We, as the heart of the Salonika Pact, are truly the bastion of balkan stability in the region. We show the rest of the world what it is like to be Balkan, and what it is like to live in a functioning democracy amongst other things."
+ GRE_balkan_haven:0 "No More a Haven of Corruption"
+ GRE_balkan_haven_desc:0 "Under George II, Greece was highly corrupt. This shall be no longer! Metaxas and his dreams of a Greek democracy shall eradicate the crippling corruption and spread the word of a grand Greek democracy to our allies and abroad!"
 
+#Path 1 
+
+ GRE_honor_the_salonika:0 "Honor The Salonika Pact"
+ GRE_honor_the_salonika_desc:0 "Although against Metaxas' plans for Greece, the Salonika Pact is still a grand initiative to be upheld as a beacon of hope for the Balkans. As such, we shall continue this for the betterment of our societies."
+ GRE_the_industrial_bastion_of_the_alliance:0 "The Industrial Heart of the Alliance"
+ GRE_the_industrial_bastion_of_the_alliance_desc:0 "Greece's position, population and fervour all bring about a strong ability for it to be the industrial bastion of the Salonika Pact, and by extension the entire Balkan region. We shall share our prowess with our allies."
+ GRE_germans_of_the_balkans:0 "Following Germany's Footsteps"
+ GRE_germans_of_the_balkans_desc:0 "As the Bulgarians are known as the Prussia of the Balkans, the Salonika Pact as a whole shall be known as the Germany of the Balkans! We shall follow in Germany's footsteps to bring prosperity to all our citizens and show our might to the world."
+ GRE_the_defence_of_balkans:0 "The Defence of the Balkans"
+ GRE_the_defence_of_balkans_desc:0 "The Salonika Pact may be safe on the inside, but with the Italians and Hungarians eying up much of our Pact's territory, we must seek to defend our corner of Europe - together."
+ GRE_balkan_forces:0 "United Balkan Army"
+ GRE_balkan_forces_desc:0 "We might have differences in language, culture and religion, but even with these differences we are a united force against tyrannical nations that seek to destroy our unity. A grand initiative to form translation companies and allow our troops to coordinate further shall be achieved."
+ GRE_rush_to_the_front:0 "Rush to the Front"
+ GRE_rush_to_the_front_desc:0 "The Salonika Pact's people are the pride of our united forces. And with the encroaching menace of those who seek to harm said people, we must rush to the front; defend our homes, our families and our nations!"
+
+
+#Path 2 
+
+ GRE_true_intensions_of_metaxas:0 "True Intentions Of Metaxas"
+ GRE_true_intensions_of_metaxas_desc:0 "While Metaxas wishes for the continuation of a prosperous Balkan, he also has ambition for the revival of the Great Idea; the Megáli Idéa. For this to be achieved, it is an unfortunate fact that it is no longer in our best interests to keep our current allies."
+ GRE_operation_greco:0 "Operation Greco" #annex the dodecanese
+ GRE_operation_greco_desc:0 "With the Italian occupation of the Dodecanese, we have formed a plan in retaking the rightfully Greek islands. Called Operation Greco, it is a play on words - being the Italian word for Greek. We shall swiftly take our land from these who claim to be decended from our gods."
+ GRE_second_macedonia_race:0 "Second Macedonia Race"
+ GRE_second_macedonia_race_desc:0 "In 1912 we, alongside Serbia and Bulgaria raced to take parts of Macedonia from the Ottomans. Now, as Serbia and the Turks lie in the dust, just us and Bulgaria stand with Macedon lands. If we are to claim Greater Greece, we need to regain complete control of this region as it was in ancient times."
+ GRE_thracian_unification:0 "Thracian Unification"
+ GRE_thracian_unification_desc:0 "We shall reunite with our old province of Thrace. In doing so the Bulgarians are now on the chopping block, in what is to be known as the Grand Unification. Although, perhaps as just another Balkan War to those spectating."
+ GRE_king_zog_great_scam:0 "King Zog's Great Scam" #king zog lied about the greek minority in north epirus to keep the land
+ GRE_king_zog_great_scam_desc:0 "Northern Epirus has always been Greek; there is no doubt about it, however, King Zog of Albania has lied and scammed us by denying this fact. All he wishes to do is keep the land to himself and his people, when ours clearly reside within. It is now our duty to reclaim this lost piece of land."
+ GRE_reclaim_the_mithriatic:0 "Reclaim the Mithriatic" #uprising in pontus
+ GRE_reclaim_the_mithriatic_desc:0 "Greece had many colonies around the Mediterranean and Black Sea historically, and thus ethnic Greeks are dotted around the region. In northeast Anatolia, there is a region known as Pontus, and it is one of these old colonies. Ethnic Greeks who see our government's plan seek to join us in our fight."
+ GRE_common_ground:0 "Common Ground" #kurdish volunteers
+ GRE_common_ground_desc:0 "With the Kurds also laying claim to Turkish land, we may be able to partner up as we share some common ground in that we have our wants from the Turkish rump state that controls land we both rightfully claim."
+ GRE_magna_graecia:0 "Magna Graecia"
+ GRE_magna_graecia_desc:0 "Italy, at least the south of which, was once a Greek colony. We have all the right to - under Metaxas' vision of a Greater Greece - take this land back in order to see to it our dream is achieved. Greece shall be great, and Italy is but a stepping stone to this goal!"
+ GRE_city_of_respect:0 "City of Respect" #Sevastopole
+ GRE_city_of_respect_desc:0 "Sevastopol is a great city to be respected, especially in the Black Sea. However, it is currently under the control of the Russians at the behest of our government and claim to it; being another Greek colony in the Black Sea."
+ GRE_metaxas_project_megisti_idea:0 "Metaxas Vision for Greece"
+ GRE_metaxas_project_megisti_idea_desc:0 "With all of the pieces in place, we can finally move to Metaxas' vision for Greece, the Mégisti Idéa. A modification of the Mégali Idéa, which includes many old Greek colonies across the Mediterranean and Black Sea. Praise be Hellenia!"
+ KT_greece_events.2.t:0 "Metaxas' Position in the Army"
+ KT_greece_events.2.d:0 "With Metaxas' power growing and his military past, it is unclear what his position in the army should be. On the first hand giving him power will only make him more powerful, he is a great commander"
+ KT_greece_events.2.a:0 "Give him control of the army"
+ KT_greece_events.2.b:0 "He already has enough power, he does not need more"
+ KT_greece_events.3.t:0 "Catastrophe!"
+ KT_greece_events.3.d:0 "The constantly growing power of Metaxas has finally been noticed by the King. He has declared a state of national emergency, knowing his government could be couped. Such action has deeply devided the people and has clear effects on our nation"
+ KT_greece_events.3.a:0 "May god help us!"
+ KT_greece_events.4.t:0 "The Second Economic Crush!"
+ KT_greece_events.4.d:0 "Following the events of the second national schism a few months ago, and the economic collapse, greece has been trying to reform and rebuild itself. One of those reforms though quickly went south, and has crushed our economy"
+ KT_greece_events.4.a:0 "Oh Greece is crumbling!"
+ KT_greece_events.5.t:0 "Greece demands the Dodecanese"
+ KT_greece_events.5.d:0 "The minister of defence of Greece has send a message to our leader, demanding he gives up the Dodecanese territories next to the aegean sea. What should we do?"
+ KT_greece_events.5.a:0 "They can have those pieces of rocks!"
+ KT_greece_events.5.b:0 "There is nothing they can do"
+ KT_greece_events.6.t:0 "Greece requests Caucasus territories"
+ KT_greece_events.6.d:0 "The Byzantine or formely known as the Greek government has send a letter requestion we hand them ownership of the Caucasus territories"
+ KT_greece_events.6.a:0 "They can have them I guess"
+ KT_greece_events.6.b:0 "We will not give our land!"
+ KT_greece_events.7.t:0 "Foundation of the Constantinople Accord"
+ KT_greece_events.7.d:0 "Greece has send a letter, proposing an alliance with them. This vision is clearly influenced by our older plan to reform the Byzantine empire. Is this even an offer worth cosidering?"
+ KT_greece_events.7.a:0 "Russia stands with Byzantium!"
+ KT_greece_events.7.b:0 "It is a waste of time"
+ KT_greece_events.8.t:0 "Metaxas assasination"
+ KT_greece_events.8.d:0 "It has been reported that the Mafia made an attemp to assasinate Greek democratic politician Ioannis Metaxas. There were many shots fired them at the leader but his fate is unknown"
+ KT_greece_events.8.a:0 "He escaped! A traitor must have notified him"
+ KT_greece_events.8.b:0 "He died. May he die in hell"
 #Shared by both/national schism
  GRE_deal_with_inflation:0 "Deal With Inflation"
  GRE_the_averof_mutiny:0 "The Averof Mutiny"#removes the debuff from the turkish war
@@ -503,36 +581,6 @@
  GRE_the_academy:0 "Found the Hellenic Airforce Academy"
  GRE_aircraft_advancements:0 "The New Plane Era" #jets
 
- GRE_appease_the_people:0 "Appease the People"
- GRE_the_metaxist_parliament:0 "The Metaxist Parliament"
- GRE_watch_our_enemies:0 "Keep an Eye on our Enemies"
- GRE_democracy_prevails:0 "Democracy Prevails"
- GRE_all_parties_end:0 "The King's Party Must End"
- GRE_balkan_stab:0 "Bastion of Balkan Stability"
- GRE_balkan_haven:0 "No More a Haven of Corruption"
-
-#Path 1 
-
- GRE_honor_the_salonika:0 "Honor The Salonika Pact"
- GRE_the_industrial_bastion_of_the_alliance:0 "The Industrial Heart of the Alliance"
- GRE_germans_of_the_balkans:0 "Following Germany's Footsteps"
- GRE_the_defence_of_balkans:0 "The Defence of the Balkans"
- GRE_balkan_forces:0 "United Balkan Army"
- GRE_rush_to_the_front:0 "Rush to the Front"
-
-
-#Path 2 
-
- GRE_true_intensions_of_metaxas:0 "True Intensions Of Metaxas"
- GRE_operation_greco:0 "Operation Greco" #annex the dodecanese"
- GRE_second_macedonia_race:0 "Second Macedonia Race"
- GRE_thracian_unification:0 "Thracian Unification"
- GRE_king_zog_great_scam:0 "King Zog's Great Scam" #king zog lied about the greek minority in north epirus to keep the land
- GRE_reclaim_the_mithriatic:0 "Reclaim the Mithriatic" #uprising in pontus
- GRE_common_ground:0 "Common Ground" #kurdish volunteers
- GRE_magna_graecia:0 "Magna Graecia"
- GRE_city_of_respect:0 "City of Respect" #Sevastopole
- GRE_metaxas_project_megisti_idea:0 "Metaxas Vision for Greece"
  GRE_recruit_the_fascists_eee:0 "Recruit the EEE"
  GRE_merge_the_parties:0 "Merge the Fascist Parties"
  GRE_tame_the_beast:0 "Tame the Turkish Beast"
@@ -580,4 +628,8 @@
  GRE_fight_like_1821:0 "Fight Like 1821"
  KT_greece_events.8.a:0 "The Mafia did their job"
  KT_greece_events.8.b:0 "How did he escape!"
- 
+  
+  
+ GRE_metaxism_dyn_spirit:0 "Metaxism"
+
+
