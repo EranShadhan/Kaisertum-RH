@@ -324,6 +324,15 @@ characters={
 				small=GFX_portrait_GRE_theodoros_pangalos_small #Can become a unit leader later
 			}
 		}
+		corps_commander = {
+					traits = { trait_GRE_venezelist_loyalist trait_GRE_fascist_sympathizer media_personality harsh_leader commando } #F+V
+					skill = 3 #10 
+					legacy_id = 302
+					attack_skill = 4
+					defense_skill = 2
+					planning_skill = 1
+					logistics_skill = 3
+				} 
 	}
 
 	GRE_dimitrios_psarros = {
@@ -334,6 +343,15 @@ characters={
 				small=GFX_portrait_GRE_dimitrios_psarros_small #Can become a unit leader later
 			}
 		}
+		add_corps_commander_role = {
+					traits = { trait_GRE_venezelist_loyalist war_hero trait_reckless trickster commando } #V
+					skill = 2 #7
+					legacy_id = 307
+					attack_skill = 2
+					defense_skill = 1
+					planning_skill = 2
+					logistics_skill = 2
+				}
 	}
 
 	GRE_panagiotis_demestichas = {
@@ -344,6 +362,15 @@ characters={
 				small=GFX_portrait_GRE_panagiotis_demestichas_small #Can become a unit leader later
 			}
 		}
+		add_corps_commander_role = {
+					traits = { trait_GRE_venezelist_loyalist trait_GRE_fascist_sympathizer harsh_leader trait_reckless commando }
+					skill = 3 #10
+					legacy_id = 309
+					attack_skill = 3
+					defense_skill = 3
+					planning_skill = 2
+					logistics_skill = 2
+				}
 	}
 
 	GRE_nikolaos_plastiras={
@@ -356,6 +383,16 @@ characters={
 					large="GFX_portrait_gre_nikolaos_plastiras" #Can become unit leader later
 				}
 			}
+			corps_commander={
+			traits={trait_GRE_venezelist_loyalist war_hero brilliant_strategist cavalry_officer cavalry_leader trickster  }
+			skill = 4 #13
+					legacy_id = 301
+					attack_skill = 4
+					defense_skill = 4
+					planning_skill = 2
+					logistics_skill = 3
+		}
+			
 			advisor={
 				slot = army_chief
 				idea_token = GRE_nikolaos_plastiras
@@ -390,6 +427,15 @@ characters={
 					large="GFX_portrait_GRE_napoleon_zervas" #Can become unit leader later
 				}
 			}
+			corps_commander = {
+					traits = { trait_GRE_venezelist_loyalist trait_GRE_fascist_sympathizer harsh_leader trait_reckless commando }
+					skill = 3 #10
+					legacy_id = 309
+					attack_skill = 3
+					defense_skill = 3
+					planning_skill = 2
+					logistics_skill = 2
+				}
 			advisor={
 				slot = high_command
 				idea_token = GRE_napoleon_zervas
@@ -1137,7 +1183,6 @@ characters={
 				original_tag = GRE
 			}
 			available = {
-				has_completed_focus = GRE_fiscal_responsibility 
 			
 			}
 			traits = {
