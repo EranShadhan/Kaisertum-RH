@@ -534,7 +534,7 @@ focus = { # CAPITAL
 
 focus = { # INDUSTRIALIZATION
     id = TUR_fruits_of_competition
-    icon = thisgfxiswrong
+    icon = GFX_TUR_fruits_of_competition
     prerequisite = { focus = TUR_industrialization_at_last }
     x = 3
     y = 1
@@ -560,7 +560,7 @@ focus = { # INDUSTRIALIZATION
 
 focus = { # INDUSTRIALIZATION
     id = TUR_german_expertise
-    icon = thisgfxiswrong
+    icon = GFX_focus_generic_modernize_industry
     prerequisite = { focus = TUR_fruits_of_competition }
     x = -2
     y = 1
@@ -752,7 +752,7 @@ focus = { # INDUSTRIALIZATION
 
 focus = { # INDUSTRIALIZATION
     id = TUR_russian_industrial_base
-    icon = thisgfxiswrong
+    icon = GFX_focus_generic_industry_2
     prerequisite = { focus = TUR_fruits_of_competition }
     x = 2
     y = 1
@@ -775,7 +775,7 @@ focus = { # INDUSTRIALIZATION
 
 focus = { # INDUSTRIALIZATION
     id = TUR_expand_chromium_mining
-    icon = GFX_TUR_focus_generic_chromium
+    icon = GFX_focus_generic_mining_industry
     prerequisite = { focus = TUR_russian_industrial_base }
     x = -1
     y = 1
