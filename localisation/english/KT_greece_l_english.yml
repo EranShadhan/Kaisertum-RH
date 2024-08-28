@@ -77,7 +77,7 @@
 
  GRE_faction_loyal2:1 "§GLoyal \n\n+10%\n\n\n+20%\n\n\n+15%\n\n\n+15%"
  GRE_faction_friendly2:1 "§GFriendly \n\n+5%\n\n\n+2%§!\n\n\n+0%\n\n\n+0%"
- GRE_faction_indifferent2:1 "Indifferent"
+ GRE_faction_indifferent2:1 "§gIndifferent \n\n- 0%\n\n\n- 0%\n\n\n- 0%\n\n\n- 0%§!"
  GRE_faction_hostile2:1 "§RThreat\n\n-15%\n\n\n-5%\n\n\n-10%\n\n\n-10%§!"
  GRE_faction_inconsequential2:1 "§gNeutral \n\n- 0%\n\n\n- 0%\n\n\n- 0%\n\n\n- 0%§!"
  GRE_expand_influence_in_FROM:0 "Influence [FROM.getName]"
@@ -143,7 +143,7 @@
  GRE_HERE_WE_GO_AGAIN:0 "The Second Great National Schism!"
  GRE_total_control:0 "Not State is under total control"
  GRE_fight_for_influce_tt:0 "§YUnlocks decisions to fight for influence in states cored by Greece and help us move the Balance Of Power towards our side§!"
- GRE_crush_the_eee_tt:0 "§GAll hostile activity by the EEE will stop§!"
+ GRE_crush_the_eee_tt:0 "§GAll hostile activity by the EEE will stop§! The fascists will become Indifferent"
  GRE_assasinate_ven:0 "§YVenizelos will be assasinated§!"
  GRE_venizelos_died:0 "Venizelos has been assasinated"
  GRE_end_the_schism_tt:0 "§GThe national schism will end! Long live Greece!§!"
@@ -249,5 +249,65 @@
  GRE_fortify_constantinople_desc:0 "Constantinople is a critical and symbolic stronghold that must be fortified against any Turkish advances. Enhance the city's defenses with advanced fortifications, increased garrisons, and comprehensive surveillance. Ensure that this strategic asset remains impregnable and secure Greek dominance in the region."
  GRE_secure_smyrna:0 "Secure Smyrni"
  GRE_secure_smyrna_desc:0 "Smyrna is a vital port city and key to controlling the western Anatolian coast. Launch a strategic operation to secure and fortify Smyrna against Turkish threats. Establish strong defenses and integrate the city into our logistical network to enhance Greek influence and stability in the region."
+ GRE_neutral_monarchy_tt:0 "§YThe monarchist will become neutral§!"
+ GRE_loyal_fascists_tt:0 "§YThe fascists will become loyal§!"
+ GRE_loyal_republicans_tt:0 "§YThe republicans will become loyal§!"
+ GRE_loyal_monarchist_tt:0 "§YThe monarchists will become loyal§!"
+ GRE_neutral_republicans_tt:0 "§YThe republicans will become neutral§!"
+ GRE_metaxas_army:0 "Metaxas has been invited to the high command"
  
+ GRE_royal_hellenic_navy:0 "Royal Hellenic Navy"
+ GRE_royal_hellenic_navy_desc:0 "Even tho the Turks have been defeated, we need a strong navy to stop other countries from invading our holdings in Anatolia, Constantinople, or Cyprus"
+
+ GRE_sea_support:0 "Naval Bombardment"
+ GRE_sea_support_desc:0 "Our navy needs to be prepared because if we ever have to do a naval invasion their support will be needed to win the battle"
+
+ GRE_rebuild_our_old_navy:0 "Rebuild our old Navy" 
+ GRE_rebuild_our_old_navy_desc:0 "While we believe in the superiority of Greek ships, buying some from other countries will allow our dockyards to focus on more important battleships"
+
+ GRE_a_fleet_fit_for_the_med:0 "A Fleet for the Mediterranean"
+ GRE_a_fleet_fit_for_the_med_desc:0 "We need a fleet that can go anywhere in the Mediterranean, to catch our enemy ships surprised and destroy them"
+
+ GRE_disrupting_the_major_powers:0 "Disturbing The Great Powers"#sub buffs
+ GRE_disrupting_the_major_powers_desc:0 "Submarines are vital in combat, as they allow us to attack the enemy without being seen"#sub buffs
+
+ GRE_cheap_subs:0 "Cutting Corners"
+ GRE_cheap_subs_desc:0 "We have realized that if we produce more ships than our enemies we will destroy them, this will sadly require us to invest less time on the production of each ship"
+
+ GRE_invite_onassis:0 "Invite Aristotle Onassis"
+ GRE_invite_onassis_desc:0 "The help of Aristotle Onassis is necessary for our navy, his help will allow us to become the new masters of the Mediterranean, even better than Italy. Having his support would greatly increase our navy’s prestige and strength. His flexible diplomacy will open great paths for us, allowing us to build a trade empire and become an oil-rich nation."
+
+#PATH 1
+ GRE_hellenic_royal_navy:0 "Expand the Royal Hellenic Navy"
+ GRE_hellenic_royal_navy_desc:0 "Our king will lead the great Greek navy to greatness"
+
+ GRE_honor_our_old_ships:0 "Honor Our Ancient Talents"
+ GRE_honor_our_old_ships_desc:0 "Just like the ancient Greeks, our navy shall be the strongest."
+
+ GRE_proffesional_sailors:0 "Professional Sailors"
+ GRE_proffesional_sailors_desc:0 "A strong navy is nothing if its sailors aren't skilled."
+
+ GRE_all_cards_on_table:0 "All Cards On The Table"
+ GRE_all_cards_on_table_desc:0 "Our navy shall fight with everything they have."
+
+ GRE_steady_as_she_goes:0 "Steady As She Goes" #small ship buffs
+ GRE_steady_as_she_goes_desc:0 "Our ships must be up to date" #small ship buffs
+
+
+
+#PATH 2
+ GRE_new_and_strong:0 "A New and Strong Navy"
+ GRE_new_and_strong_desc:0 "We need to reform the navy, as our tactics are of a bygone era"
+
+ GRE_staying_together:0 "Fighting Together" #ships won't split, they will stay united in battle to avoid deadly damage
+ GRE_staying_together_desc:0 "Our ships shall stay united, as union is strength." #ships won't split, they will stay united in battle to avoid deadly damage
+
+ GRE_expand_athenian_ship_building:0 "Expand Athenian Shipbuilding"
+ GRE_expand_athenian_ship_building_desc:0 "We need more dockyards to be able to outproduce our enemies"
+
+ GRE_viable_navy:0 "Viable Navy"
+ GRE_viable_navy_desc:0 "We need to be able to trust our navy, no matter which situation we find ourselves in"
+
+ GRE_hellenic_shipyard:0 "Hellenic Shipyard Company"
+ GRE_hellenic_shipyard_desc:0 "We shall create new dockyards all around Greece"
  

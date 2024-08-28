@@ -346,6 +346,10 @@ focus_tree = {
 		completion_reward = {
                custom_effect_tooltip = GRE_end_the_schism_tt
 				set_country_flag = GRE_end_the_schism
+				set_variable = { var = GRE_monarchist_loyalty value = 0}
+				
+				custom_effect_tooltip = GRE_neutral_monarchy_tt
+		GRE_political_instability_update_effect = yes
 				remove_power_balance = { id = GRE_power_balance }
 				add_ideas = GRE_george_ii
 				hidden_effect = {
@@ -452,6 +456,9 @@ focus_tree = {
 		add_to_variable = { GRE_var_met_st = 0.05 tooltip = stability_factor_tt }
 		add_to_variable = { GRE_var_met_efeg = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
 		add_to_variable = { GRE_var_met_rspf = 0.02 tooltip = research_speed_factor_tt }
+		 set_variable = { var = GRE_republican_loyalty value = 2}
+		 GRE_political_instability_update_effect = yes
+				custom_effect_tooltip = GRE_loyal_republicans_tt
 		    }
 		}
 	focus = {
@@ -1022,6 +1029,9 @@ focus_tree = {
 				ideology = fascism 
 				popularity = 0.15
              }		
+			 set_variable = { var = GRE_fascist_loyalty value = 2}
+			 GRE_political_instability_update_effect = yes
+				custom_effect_tooltip = GRE_loyal_fascists_tt
 		    }
 		}	
 
@@ -1940,6 +1950,9 @@ add_ideas = GRE_like_the_beasts
 				remove_ideas = GRE_memories_of_the_great_nationa_schism
 				remove_ideas = GRE_HERE_WE_GO_AGAIN_CRUSH3
 				}
+				custom_effect_tooltip = GRE_neutral_republicans_tt
+				set_variable = { var = GRE_republican_loyalty value = 0}
+		GRE_political_instability_update_effect = yes
 		    }
 		}
 	focus = {
@@ -2425,6 +2438,9 @@ add_ideas = GRE_like_the_beasts
 		search_filters = {  }
 		completion_reward = {
 		add_ideas = GRE_king_of_kings
+		 set_variable = { var = GRE_monarchist_loyalty value = 2}
+		 GRE_political_instability_update_effect = yes
+				custom_effect_tooltip = GRE_loyal_monarchist_tt
 		    }
 		}
 		focus = {
@@ -2624,7 +2640,12 @@ add_ideas = GRE_like_the_beasts
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-		
+		 add_doctrine_cost_reduction = {
+				name = GRE_the_hellenic_army
+				cost_reduction = 0.5
+				uses = 3
+				category = land_doctrine
+			}
 		    }
 		}			
 	focus = {
@@ -3129,6 +3150,9 @@ add_ideas = GRE_like_the_beasts
 							remove_ideas = GRE_eee_enemy6
 			
 			}
+			
+			set_variable = { var = GRE_fascist_loyalty value = 0}
+		GRE_political_instability_update_effect = yes
 		}
 	}	
 	focus = {
@@ -4074,6 +4098,74 @@ focus = {
 		search_filters = {  }
 		completion_reward = {
 	      custom_effect_tooltip = GRE_trust_germany_or_eng_tt
+		  hidden_effect = {
+		  	hidden_effect = {	
+create_equipment_variant = {
+					name = "Hellas Class"
+					type = ship_hull_heavy_1
+					name_group = GRE_BB_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_heavy_battery_4
+						fixed_ship_anti_air_slot = ship_anti_air_4
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+						fixed_ship_radar_slot = ship_radar_4
+						fixed_ship_engine_slot = heavy_ship_engine_4
+						fixed_ship_secondaries_slot = ship_secondaries_2
+						fixed_ship_armor_slot = ship_armor_bb_3
+						front_1_custom_slot = ship_anti_air_4
+						mid_1_custom_slot = ship_airplane_launcher_2
+						mid_2_custom_slot = dp_ship_secondaries_2
+						rear_1_custom_slot = ship_heavy_battery_4
+					}
+					obsolete = no
+				}
+	create_equipment_variant = {
+					name = "Thessalia Class"
+					type = ship_hull_heavy_1
+					name_group = GRE_BB_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_heavy_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = heavy_ship_engine_1
+						fixed_ship_secondaries_slot = ship_secondaries_1
+						fixed_ship_armor_slot = ship_armor_bb_1
+						front_1_custom_slot = ship_anti_air_1
+						mid_1_custom_slot = ship_airplane_launcher_1
+						rear_1_custom_slot = ship_heavy_battery_1
+					}
+					obsolete = no
+				}	
+create_equipment_variant = {	
+			name = "Macedonia Class" 		
+			type = ship_hull_super_heavy_1
+			name_group = GRE_BB_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_super_heavy_battery_1
+					fixed_ship_anti_air_slot = ship_anti_air_2
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = heavy_ship_engine_2
+					fixed_ship_secondaries_slot = ship_secondaries_2
+					fixed_ship_armor_slot = ship_armor_shbb
+					front_1_custom_slot = ship_anti_air_1
+					front_2_custom_slot = empty
+					mid_1_custom_slot = empty
+					mid_2_custom_slot = ship_secondaries_2
+					mid_3_custom_slot = dp_ship_secondaries_2
+					rear_1_custom_slot = ship_super_heavy_battery_1
+					rear_2_custom_slot = ship_airplane_launcher_1
+			}
+			obsolete = no
+		}				
+				
+				}
+		  
+		  }
 		    }
 		}
 focus = {

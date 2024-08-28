@@ -109,15 +109,17 @@ characters={
           
           advisor={
 				slot = army_chief
-				idea_token = GRE_ioannis_metaxas
+				idea_token = GRE_ioannis_metaxas_army
 				ledger = army
 				name = GRE_ioannis_metaxas
 				allowed = {
 					original_tag = GRE
+					has_country_flag = GRE_metaxas_army
 				}
 				available = {
-					
+					has_country_flag = GRE_metaxas_army
 				}
+				visible = { has_country_flag = GRE_metaxas_army }
 				traits = {
 					charismatic_battleplaner
 				}
@@ -747,7 +749,10 @@ characters={
 			ledger = air
 			allowed = {
 				original_tag = GRE
+				has_completed_focus = GRE_invite_a_german_woman
 			}
+			visible = { has_completed_focus = GRE_invite_a_german_woman}
+			available = { has_completed_focus = GRE_invite_a_german_woman }
 			traits = {
 				VICTORIA_SUPER
 			}
