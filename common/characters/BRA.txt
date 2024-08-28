@@ -1,4 +1,20 @@
 characters={
+	
+	BRA_washington_luis={
+		name=BRA_washington_luis
+		portraits={
+			civilian={
+				large=GFX_portrait_BRA_washington_luis
+			}
+		}
+		country_leader = {
+			expire = "1954.8.24"
+			ideology = oligarchism
+			id=-1
+			traits = {
+			}
+		}
+	}
 	BRA_getulio_vargas={
 		name=BRA_getulio_vargas
 		portraits={
@@ -654,64 +670,6 @@ characters={
 
 
 	### POLITICAL ADVISORS ###
-
-	BRA_washington_luis_pereira={
-		instance = {
-			allowed = {
-				NOT = {
-					has_dlc = "Trial of Allegiance"
-				}
-			}
-			portraits={
-				army={
-					small="GFX_idea_generic_political_advisor_south_america_2"
-				}
-			}
-			advisor={
-				slot = political_advisor
-				idea_token = BRA_washington_luis_pereira
-				allowed  = {
-					original_tag  = BRA
-				}
-				traits  = {
-					backroom_backstabber 
-				}
-			}
-			name=BRA_washington_luis_pereira	
-		}	
-		instance = {
-			allowed = {
-				has_dlc = "Trial of Allegiance"
-			}
-			portraits={
-				civilian={
-					small="GFX_portrait_BRA_washington_luis_small"
-					large="GFX_portrait_BRA_washington_luis"
-				}
-			}
-			advisor={
-				slot = political_advisor
-				idea_token = BRA_washington_luis_pereira
-				allowed  = {
-					original_tag  = BRA
-				}
-				available = {
-					has_completed_focus = BRA_end_the_state_of_emergency
-					NOT = {
-						OR = { 
-							has_government = fascism
-							has_government = communism
-						}
-					}
-					is_country_leader = no
-				}
-				traits  = {
-					BRA_deposed_former_president
-				}
-			}	
-			name=BRA_washington_luis_pereira
-		}
-	}
 
 	BRA_osvaldo_aranha={
 		instance = {
