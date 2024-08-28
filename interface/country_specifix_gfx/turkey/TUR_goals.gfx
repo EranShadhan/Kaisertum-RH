@@ -32,4 +32,8 @@ spriteTypes = {
 	name = "GFX_TUR_invite_german_naval_mission"
 	texturefile = "gfx/interface/goals/TUR/invite_german_naval_mission.png"			
 	}
+	SpriteType = {
+		name = "GFX_TUR_fruits_of_competition"
+		texturefile = "gfx/interface/goals/TUR/fruits_of_competition.png"			
+		}
 }
