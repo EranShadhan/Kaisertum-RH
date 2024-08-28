@@ -230,6 +230,68 @@ ideas = {
 			}
 		}
 
+		ROM_national_plan = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				global_building_slots_factor = 0.1
+			}
+		}
+
+		
+
+	}
+
+	hidden_ideas = {
+
+		arm_ref_1 = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		arm_ref_2 = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+
 	}
 
 }

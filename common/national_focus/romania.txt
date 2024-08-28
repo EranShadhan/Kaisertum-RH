@@ -14,6 +14,1451 @@ focus_tree = {
     continuous_focus_position = { x = 20 y = 1600 }
 
     
+############
+####ARMY####
+############
+
+focus = {
+
+    id = ROM_army1
+    icon = GFX_ROM_army1
+    x = 6
+    y = 1
+
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 6
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			army_experience = 25
+			navy_experience = 25
+			air_experience = 25
+			add_ideas = arm_ref_1
+		}
+}
+
+focus = {
+
+    id = ROM_army2
+    icon = GFX_ROM_army2
+    x = -1
+    y = 1
+
+	prerequisite = { focus = ROM_army1 }
+
+	relative_position_id = ROM_army1
+
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 6
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+}
+
+focus = {
+
+    id = ROM_army3
+    icon = GFX_ROM_army3
+    x = 1
+    y = 1
+
+	prerequisite = { focus = ROM_army1 }
+
+	relative_position_id = ROM_army1
+
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 10
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			add_ideas = arm_ref_2
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+
+
+}
+
+focus = {
+
+    id = ROM_army_m_1
+    icon = GFX_ROM_army_m_1
+    x = 3
+    y = 2	
+
+	prerequisite = { focus = ROM_army2 }
+	prerequisite = { focus = ROM_army3}
+
+	relative_position_id = ROM_army1
+
+    ai_will_do = {
+			factor = 1
+		}
+
+	cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				category = industry
+			}
+		}
+
+	}
+
+	focus = {
+
+		id = ROM_army_m_2
+		icon = GFX_ROM_army_m_2
+		x = 0
+		y = 1
+	
+		prerequisite = { focus = ROM_army_m_1 }
+		
+		relative_position_id = ROM_army_m_1
+	
+		ai_will_do = {
+				factor = 1
+			}
+	
+		cost = 10
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+
+				46 = {
+					add_building_construction = {
+						type = air_base
+						level = 4
+						instant_build = yes
+					}
+				}
+
+			}
+	
+		}
+	
+	focus = {
+
+		id = ROM_army_m_3
+		icon = GFX_ROM_army_m_3
+		x = 0
+		y = 2
+	
+		prerequisite = { focus = ROM_army_m_2 }
+		
+		relative_position_id = ROM_army_m_1
+	
+		ai_will_do = {
+				factor = 1
+			}
+	
+		cost = 5
+	
+			available = {
+				82 = {is_owned_by = ROM}
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 2
+					category = 	artillery
+
+				}
+			}
+	
+		}
+	
+		focus = {
+
+			id = ROM_army_m_4
+			icon = GFX_ROM_army_m_4
+			x = 0
+			y = 3
+		
+			prerequisite = { focus = ROM_army_m_3 }
+			
+			relative_position_id = ROM_army_m_1
+		
+			ai_will_do = {
+					factor = 1
+				}
+		
+			cost = 10
+		
+				available = {
+		
+				}
+		
+				bypass = {
+		
+				}
+		
+				cancel_if_invalid = yes
+				continue_if_invalid = no
+				available_if_capitulated = no
+		
+				
+		
+				completion_reward = {
+					add_ideas = ROM_national_plan
+				}
+		
+			}
+
+			focus = {
+
+				id = ROM_army_m_5
+				icon = GFX_ROM_army_m_5
+				x = -1
+				y = 4
+			
+				prerequisite = { focus = ROM_army_m_4 }
+				
+				relative_position_id = ROM_army_m_1
+			
+				ai_will_do = {
+						factor = 1
+					}
+			
+				cost = 10
+			
+					available = {
+			
+					}
+			
+					bypass = {
+			
+					}
+			
+					cancel_if_invalid = yes
+					continue_if_invalid = no
+					available_if_capitulated = no
+			
+					
+			
+					completion_reward = {
+						random_owned_controlled_state = {
+							add_building_construction = {
+								type = arms_factory
+								level = 1
+								instant_build = yes
+							}
+							add_extra_state_shared_building_slots = 1
+						}
+
+						random_owned_controlled_state = {
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+							add_extra_state_shared_building_slots = 1
+						}
+					}
+			
+				}
+	
+focus = {
+
+		id = ROM_army_m_6
+		icon = GFX_ROM_army_m_6
+		x = 1
+		y = 4
+	
+		prerequisite = { focus = ROM_army_m_4 }
+		
+		relative_position_id = ROM_army_m_1
+	
+		ai_will_do = {
+				factor = 1
+			}
+	
+		cost = 10
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+	
+		}
+		
+		focus = {
+
+			id = ROM_army_m_7
+			icon = GFX_ROM_army_m_7
+			x = 0
+			y = 5
+		
+			prerequisite = { focus = ROM_army_m_5 }
+			prerequisite = { focus = ROM_army_m_6 }
+			
+			relative_position_id = ROM_army_m_1
+		
+			ai_will_do = {
+					factor = 1
+				}
+		
+			cost = 10
+		
+				available = {
+					82 = { is_owned_by = ROM }
+				}
+		
+				bypass = {
+		
+				}
+		
+				cancel_if_invalid = yes
+				continue_if_invalid = no
+				available_if_capitulated = no
+		
+				
+		
+				completion_reward = {
+					82 = {
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+
+						add_extra_state_shared_building_slots = 2
+					}
+				}
+		
+			}	
+			
+	focus = {
+
+		id = ROM_army_p_1
+		icon = GFX_ROM_army_p_1
+		x = -3
+		y = 2
+			
+		prerequisite = { focus = ROM_army2 }
+		prerequisite = { focus = ROM_army3 }
+				
+		relative_position_id = ROM_army1
+			
+		ai_will_do = {
+		factor = 1
+		}
+			
+		cost = 10
+			
+		available = {
+			
+		}
+			
+		bypass = {
+			
+		}
+			
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+			
+					
+			
+		completion_reward = {
+						
+		}
+			
+}
+
+focus = {
+
+	id = ROM_army_p_2
+	icon = GFX_ROM_army_p_2
+	x = -2
+	y = 1
+		
+	prerequisite = { focus = ROM_army_p_1 }
+			
+	relative_position_id = ROM_army_p_1
+		
+	ai_will_do = {
+	factor = 1
+	}
+		
+	cost = 10
+		
+	available = {
+		
+	}
+		
+	bypass = {
+		
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+				
+		
+	completion_reward = {
+					
+	}
+		
+}
+
+focus = {
+
+	id = ROM_army_p_3
+	icon = GFX_ROM_army_p_3
+	x = 0
+	y = 1
+		
+	prerequisite = { focus = ROM_army_p_1 }
+			
+	relative_position_id = ROM_army_p_1
+		
+	ai_will_do = {
+	factor = 1
+	}
+		
+	cost = 10
+		
+	available = {
+		
+	}
+		
+	bypass = {
+		
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+				
+		
+	completion_reward = {
+					
+	}
+		
+}
+
+focus = {
+
+	id = ROM_army_p_4
+	icon = GFX_ROM_army_p_4
+	x = 2
+	y = 1
+		
+	prerequisite = { focus = ROM_army_p_1 }
+			
+	relative_position_id = ROM_army_p_1
+		
+	ai_will_do = {
+	factor = 1
+	}
+		
+	cost = 10
+		
+	available = {
+		
+	}
+		
+	bypass = {
+		
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+				
+		
+	completion_reward = {
+					
+	}
+		
+}
+
+focus = {
+
+	id = ROM_army_p_5
+	icon = GFX_ROM_army_p_5
+	x = -2
+	y = 2
+		
+	prerequisite = { focus = ROM_army_p_3 }
+			
+	relative_position_id = ROM_army_p_1
+		
+	ai_will_do = {
+	factor = 1
+	}
+		
+	cost = 10
+		
+	available = {
+		
+	}
+		
+	bypass = {
+		
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+				
+		
+	completion_reward = {
+					
+	}
+		
+}
+
+focus = {
+
+	id = ROM_army_p_6
+	icon = GFX_ROM_army_p_6
+	x = 0
+	y = 2
+		
+	prerequisite = { focus = ROM_army_p_3 }
+			
+	relative_position_id = ROM_army_p_1
+		
+	ai_will_do = {
+	factor = 1
+	}
+		
+	cost = 10
+		
+	available = {
+		
+	}
+		
+	bypass = {
+		
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+				
+		
+	completion_reward = {
+					
+	}
+		
+}
+
+focus = {
+
+	id = ROM_army_p_7
+	icon = GFX_ROM_army_p_7
+	x = 2
+	y = 2
+		
+	prerequisite = { focus = ROM_army_p_4 }
+			
+	relative_position_id = ROM_army_p_1
+		
+	ai_will_do = {
+	factor = 1
+	}
+		
+	cost = 10
+		
+	available = {
+		
+	}
+		
+	bypass = {
+		
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+				
+		
+	completion_reward = {
+					
+	}
+		
+}
+
+focus = {
+
+	id = ROM_army_p_8
+	icon = GFX_ROM_army_p_8
+	x = -2
+	y = 3
+		
+	prerequisite = { focus = ROM_army_p_5 }
+			
+	relative_position_id = ROM_army_p_1
+		
+	ai_will_do = {
+	factor = 1
+	}
+		
+	cost = 10
+		
+	available = {
+		
+	}
+		
+	bypass = {
+		
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+				
+		
+	completion_reward = {
+					
+	}
+		
+}
+
+focus = {
+
+	id = ROM_army_p_9
+	icon = GFX_ROM_army_p_2
+	x = 2
+	y = 3
+		
+	prerequisite = { focus = ROM_army_p_7 }
+			
+	relative_position_id = ROM_army_p_1
+		
+	ai_will_do = {
+	factor = 1
+	}
+		
+	cost = 10
+		
+	available = {
+		
+	}
+		
+	bypass = {
+		
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+				
+		
+	completion_reward = {
+					
+	}
+		
+}
+
+focus = {
+
+	id = ROM_army_p_10
+	icon = GFX_ROM_army_p_2
+	x = 0
+	y = 4
+		
+	prerequisite = { focus = ROM_army_p_6 }
+	prerequisite = { focus = ROM_army_p_8 }
+			
+	relative_position_id = ROM_army_p_1
+		
+	ai_will_do = {
+	factor = 1
+	}
+		
+	cost = 10
+		
+	available = {
+		
+	}
+		
+	bypass = {
+		
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+				
+		
+	completion_reward = {
+					
+	}
+		
+}
+
+########################
+########Industry########
+########################
+
+focus = {
+
+    id = ROM_ind_1
+    icon = GFX_ROM_ind_1
+    x = 20
+    y = 1
+
+	cost = 3
+
+    ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+
+		}
+}
+
+focus = {
+
+    id = ROM_ind_2
+    icon = GFX_ROM_ind_2
+    x = 0
+    y = 1
+
+	cost = 3
+
+	relative_position_id = ROM_ind_1
+
+	prerequisite = { focus = ROM_ind_1 }
+
+    ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+
+		}
+}
+
+focus = {
+
+    id = ROM_ind_3
+    icon = GFX_ROM_ind_3
+    x = -2
+    y = 2
+
+	cost = 3
+
+	relative_position_id = ROM_ind_1
+
+	prerequisite = { focus = ROM_ind_2 }
+
+    ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+
+		}
+}
+
+focus = {
+
+    id = ROM_ind_4
+    icon = GFX_ROM_ind_4
+    x = 0
+    y = 2
+
+	cost = 3
+
+	relative_position_id = ROM_ind_1
+
+	prerequisite = { focus = ROM_ind_2 }
+
+    ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+
+		}
+}
+
+focus = {
+
+    id = ROM_ind_5
+    icon = GFX_ROM_ind_5
+    x = 2
+    y = 2
+
+	cost = 3
+
+	relative_position_id = ROM_ind_1
+
+	prerequisite = { focus = ROM_ind_2 }
+
+    ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+
+		}
+}
+
+focus = {
+
+    id = ROM_ind_6
+    icon = GFX_ROM_ind_6
+    x = -2
+    y = 3
+
+	cost = 3
+
+	relative_position_id = ROM_ind_1
+
+	prerequisite = { focus = ROM_ind_3 }
+
+    ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+
+		}
+}
+
+focus = {
+
+    id = ROM_ind_7
+    icon = GFX_ROM_ind_7
+    x = 0
+    y = 3
+
+	cost = 3
+
+	relative_position_id = ROM_ind_1
+
+	prerequisite = { focus = ROM_ind_4 }
+
+    ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+
+		}
+}
+
+focus = {
+
+    id = ROM_ind_8
+    icon = GFX_ROM_ind_8
+    x = 2
+    y = 3
+
+	cost = 3
+
+	relative_position_id = ROM_ind_1
+
+	prerequisite = { focus = ROM_ind_5 }
+
+    ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+
+		}
+}
+
+focus = {
+
+    id = ROM_ind_9
+    icon = GFX_ROM_ind_9
+    x = -2
+    y = 4
+
+	cost = 3
+
+	relative_position_id = ROM_ind_1
+
+	prerequisite = { focus = ROM_ind_6 }
+
+    ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+
+		}
+}
+
+focus = {
+
+    id = ROM_ind_10
+    icon = GFX_ROM_ind_10
+    x = 0
+    y = 4
+
+	cost = 3
+
+	relative_position_id = ROM_ind_1
+
+	prerequisite = { focus = ROM_ind_7 }
+
+    ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+
+		}
+}
+
+focus = {
+
+    id = ROM_ind_11
+    icon = GFX_ROM_ind_11
+    x = 2
+    y = 4
+
+	cost = 3
+
+	relative_position_id = ROM_ind_1
+
+	mutually_exclusive = { focus = ROM_ind_12 }
+
+	prerequisite = { focus = ROM_ind_8 }
+
+    ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+
+		}
+}
+
+focus = {
+
+    id = ROM_ind_12
+    icon = GFX_ROM_ind_12
+    x = 4
+    y = 4
+
+	cost = 3
+
+	relative_position_id = ROM_ind_1
+
+	mutually_exclusive =  { focus = ROM_ind_11 }
+
+	prerequisite = { focus = ROM_ind_8 }
+
+    ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+
+		}
+}
+
+focus = {
+
+    id = ROM_ind_13
+    icon = GFX_ROM_ind_13
+    x = -2
+    y = 5
+
+	cost = 3
+
+	relative_position_id = ROM_ind_1
+
+	
+
+	prerequisite = { focus = ROM_ind_9 }
+
+    ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+
+		}
+}
+
+focus = {
+
+    id = ROM_ind_14
+    icon = GFX_ROM_ind_14
+    x = 0
+    y = 5
+
+	cost = 3
+
+	relative_position_id = ROM_ind_1
+
+	
+
+	prerequisite = { focus = ROM_ind_10 }
+
+    ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+
+		}
+}
+
+focus = {
+
+    id = ROM_ind_15
+    icon = GFX_ROM_ind_15
+    x = 2
+    y = 5
+
+	cost = 3
+
+	relative_position_id = ROM_ind_1
+
+	
+
+	prerequisite = { focus = ROM_ind_11 focus = ROM_ind_12 }
+
+    ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+
+		}
+}
+
+focus = {
+
+    id = ROM_ind_16
+    icon = GFX_ROM_ind_16
+    x = 0
+    y = 6
+
+	cost = 3
+
+	relative_position_id = ROM_ind_1
+
+	
+
+	prerequisite = { focus = ROM_ind_14 }
+	prerequisite = { focus = ROM_ind_13}
+	prerequisite = { focus = ROM_ind_15 }
+
+    ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		
+
+		completion_reward = {
+
+		}
+}
 
 
 ###########################
