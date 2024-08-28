@@ -73,9 +73,6 @@
  GRE_far_right_side_range:0 "Discredit The Democratic Party"
  GRE_farr_right_side_range:0 "The King Stands Strong"
  GRE_coup_right_side_range:0 "The Right To Rule"
- 
- #GRE_NEW_DECADE_DESC:0 "After The Weltkrieg, Greece was gifted for its neutrality by being given Cyprus. Venizelos left in self-exile out of embarrasment, leaving the King's regency to continue unintercepted. When the Second Great Turkish War started, Venizelos returned hoping to gain support. But Ioannis Metaxas, a young officer and politician, managed to outvote Venizelos within the party. Both the King's and Metaxas' power has been growing and a class between them seems unavoidable. The EEE, seeing Greece's success, believes the restoration of Byzantium is possible and have gained a lot of popularity within the nation."
- GRE_NEW_DECADE_DESC:0 "The Kingdom of Greece remained neutral in the Great war due to the split between the Prime Minister and the King. A decision was never made because the Germans already won. The Germans granted Greece all of Cyprus as a reward for their neutrality, which made the King more popular in Greece. \n\nGreece and Bulgaria were surrounded by Great Powers and to streangthen themselfs they created the Salonika Pact with Albania. In the Second Great Turkish War fought alongside the Salonika Pact Greece gained Constantinople and Smyrna and allowed population exchanges with the Turks."
 
  GRE_faction_loyal2:1 "§GLoyal \n\n+10%\n\n\n+20%\n\n\n+15%\n\n\n+15%"
  GRE_faction_friendly2:1 "§GFriendly \n\n+5%\n\n\n+2%§!\n\n\n+0%\n\n\n+0%"

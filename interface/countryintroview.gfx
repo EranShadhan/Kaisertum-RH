@@ -1,0 +1,23 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_logo_kt_intro"
+		texturefile = "gfx/interface/logo_kt.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_button_intro"
+		texturefile = "gfx/interface/button_intro.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_button_intro_shine"
+		texturefile = "gfx/interface/button_intro_shine.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_intro_bg"
+		texturefile = "gfx/interface/intro_bg.dds"
+	}
+
+}

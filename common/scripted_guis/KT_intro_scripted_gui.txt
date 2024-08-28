@@ -11,7 +11,15 @@ scripted_gui = {
 
 		effects = {
 			intro_gui_button_enable_click = {
-				set_variable = { show_intro = 1.0 }
+				if = {
+					limit = {
+						check_variable = { show_intro > 0.0 }
+					}
+					set_variable = { show_intro = 0.0 }
+					else = {
+						set_variable = { show_intro = 1.0 }
+					}
+				}
 			}
 		}
 	}
@@ -27,19 +35,22 @@ scripted_gui = {
 		}
 
 		effects = {
-			intro_gui_button_click = {
+			intro_gui_button_exit_click = {
 				set_variable = { show_intro = 0.0 }
+				set_variable = { show_lore = 0.0 }
+				set_variable = { show_paths = 0.0 }
+			}
+			intro_gui_button_one_click = {
+				set_variable = { show_lore = 0.0 }
+				set_variable = { show_paths = 0.0 }
 			}
 			intro_gui_button_two_click = {
-				if = {
-					limit = {
-						check_variable = { show_credits > 0.0 }
-					}
-					set_variable = { show_credits = 0.0 }
-					else = {
-						set_variable = { show_credits = 1.0 }
-					}
-				}
+				set_variable = { show_lore = 1.0 }
+				set_variable = { show_paths = 0.0 }
+			}
+			intro_gui_button_three_click = {
+				set_variable = { show_lore = 0.0 }
+				set_variable = { show_paths = 1.0 }
 			}
 		}
 	}
