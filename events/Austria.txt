@@ -378,8 +378,22 @@ country_event = {
 				982 = {
 					add_core_of = HUN
 				}
-				white_peace = YUG
 			}
+
+			YUG = {
+				declare_war_on = {
+					 target = HUN
+                	type = annex_everything
+				}
+			}
+
+			ITA  = {
+				declare_war_on = {
+					target = HUN
+					type = annex_everything
+				}
+			}
+
 			HUN = {
 				transfer_state = 982
 			}

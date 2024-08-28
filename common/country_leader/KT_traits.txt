@@ -20,5 +20,20 @@ ROM_witness_to_ferdinand = {
 	stability_factor = 0.05
 }
 
+ROM_bright_eyed_monarch = {
+	random = no
+	stability_factor = 0.1
+	mobilization_speed = 0.1
+	production_speed_industrial_complex_factor = 0.2 
+	production_speed_infrastructure_factor = 0.2 
+}
+
+ROM_ineffective_regency = {
+	random = no
+	consumer_goods_factor = 0.2
+	stability_factor = -0.2
+	political_power_gain = -0.1
+}
+
 }
 

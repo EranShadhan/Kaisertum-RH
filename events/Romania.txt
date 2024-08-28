@@ -60,20 +60,29 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
+		name = kt_romania.3.b
+		add_stability = -0.2
+		add_war_support = -0.2
+		kill_country_leader = yes
+		hidden_effect = {
+			complete_national_focus = ROM_pol_rc_1
+			create_country_leader = {
+				name = ROM_reg
+				picture  = GFX_portrait_ROM_reg
+				expire = "1965.1.1"
+				ideology = oligarchism
+				traits = { ROM_ineffective_regency }
+			}
+
+		}	
+	}
+
+	option = {
 		name = kt_romania.3.a
 		add_stability = -0.1
 		add_war_support = 0.2
 		hidden_effect = {
 			complete_national_focus = ROM_pol_kw_1
-		}	
-	}
-
-	option = {
-		name = kt_romania.3.b
-		add_stability = -0.2
-		add_war_support = -0.2
-		hidden_effect = {
-			complete_national_focus = ROM_pol_rc_1
 		}	
 	}
 	

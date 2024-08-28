@@ -1361,7 +1361,7 @@ focus = {
 			
 	
 			completion_reward = {
-				HUN = {
+				BUL = {
 					country_event = kt_romania.8
 				}
 			}
@@ -1785,6 +1785,7 @@ focus = {
 	
 			completion_reward = {
 				add_ideas = ineffective_regency
+				remove_ideas = Carol_reforms
 			}
 	}
 
@@ -1797,6 +1798,8 @@ focus = {
 		relative_position_id = ROM_pol_rc_1
 	
 		prerequisite = { focus = ROM_pol_rc_1}
+
+		cost = 5 
 
 		ai_will_do = {
 				factor = 1
@@ -1817,6 +1820,8 @@ focus = {
 			
 	
 			completion_reward = {
+			
+				add_ideas = bribing_holdouts
 				
 			}
 		}
@@ -1831,6 +1836,8 @@ focus = {
 	
 		prerequisite = { focus = ROM_pol_rc_1}
 
+		cost = 5 
+
 		ai_will_do = {
 				factor = 1
 			}
@@ -1850,7 +1857,11 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.10
+				}
+				add_stability = -0.05
 			}
 	}
 
@@ -1869,6 +1880,8 @@ focus = {
 				factor = 1
 			}
 	
+		cost = 5 
+
 			available = {
 	
 			}
@@ -1884,7 +1897,8 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				add_ideas = Inefective_constitution
+				remove_ideas = suspend_constitution
 			}
 	}
 
@@ -1901,7 +1915,9 @@ focus = {
 		ai_will_do = {
 				factor = 1
 			}
-	
+		
+			cost = 7
+
 			available = {
 	
 			}
@@ -1918,6 +1934,9 @@ focus = {
 	
 			completion_reward = {
 				
+					remove_ideas = Inefective_constitution
+				add_ideas = revised_constitution
+				
 			}
 	}
 
@@ -1930,6 +1949,8 @@ focus = {
 		relative_position_id = ROM_pol_rc_1
 	
 		prerequisite = { focus = ROM_pol_rc_4}
+
+		cost = 7
 
 		ai_will_do = {
 				factor = 1
@@ -1950,7 +1971,12 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.15
+				}
+				add_stability = 0.1
+				add_political_power = 50
 			}
 	}
 
@@ -1969,6 +1995,8 @@ focus = {
 				factor = 1
 			}
 	
+			cost = 10
+
 			available = {
 	
 			}
@@ -1984,7 +2012,12 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+				}
 			}
 	}
 
@@ -2002,6 +2035,8 @@ focus = {
 				factor = 1
 			}
 	
+			cost = 10
+
 			available = {
 	
 			}
@@ -2017,7 +2052,47 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				add_stability = 0.1
+				add_war_support = 0.1
+
+				random_owned_controlled_state = 
+				{
+					 add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                	}
+					
+				}
+
+				random_owned_controlled_state = 
+				{
+					 add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                	}
+					
+				}
+
+				random_owned_controlled_state = 
+				{
+					 add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                	}
+					
+				}
+
+				46 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+						}
+						
+				}
 			}
 	}
 
@@ -2030,6 +2105,8 @@ focus = {
 		relative_position_id = ROM_pol_rc_1
 	
 		prerequisite = { focus = ROM_pol_rc_7}
+
+		cost = 10
 
 		ai_will_do = {
 				factor = 1
@@ -2050,7 +2127,17 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				add_ideas = hungarian_workforce
+
+				998 = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+					add_core_of = ROM
+				}
 			}
 	}
 
@@ -2065,6 +2152,8 @@ focus = {
 		prerequisite = { focus = ROM_pol_rc_9}
 		prerequisite = { focus = ROM_pol_rc_8}
 
+		cost = 10
+
 		ai_will_do = {
 				factor = 1
 			}
@@ -2084,7 +2173,13 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				create_country_leader = {
+					name = ROM_mihai
+					picture  = GFX_portrait_ROM_mihai
+					expire = "1965.1.1"
+					ideology = liberalism
+					traits = { ROM_bright_eyed_monarch }
+				}
 			}
 	}
 
@@ -2096,6 +2191,8 @@ focus = {
 		y = 7
 		relative_position_id = ROM_pol_rc_1
 	
+		cost = 10
+
 		prerequisite = { focus = ROM_pol_rc_10}
 
 
@@ -2118,7 +2215,55 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				random_owned_controlled_state = 
+				{
+					 add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                	}
+					add_extra_state_shared_building_slots = 1
+				}
+
+				random_owned_controlled_state = 
+				{
+					 add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                	}
+					add_extra_state_shared_building_slots = 1
+				}
+
+				random_owned_controlled_state = 
+				{
+					 add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                	}
+					add_extra_state_shared_building_slots = 1
+				}
+
+				random_owned_controlled_state = 
+				{
+					 add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                	}
+					add_extra_state_shared_building_slots = 1
+				}
+
+				random_owned_controlled_state = 
+				{
+					 add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                	}
+					add_extra_state_shared_building_slots = 1
+				}
 			}
 	}
 
@@ -2132,6 +2277,45 @@ focus = {
 	
 		prerequisite = { focus = ROM_pol_rc_10}
 
+		cost = 10
+
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				BUL = {
+					country_event = kt_romania.8
+				}
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_rc_13
+		icon = GFX_ROM_pol_rc_13
+		x = 2
+		y = 7
+		relative_position_id = ROM_pol_rc_1
+	
+		prerequisite = { focus = ROM_pol_rc_10}
+
+		cost = 10
 
 		ai_will_do = {
 				factor = 1
@@ -2153,39 +2337,11 @@ focus = {
 	
 			completion_reward = {
 				
-			}
-	}
-
-	focus = {
-
-		id = ROM_pol_rc_13
-		icon = GFX_ROM_pol_rc_13
-		x = 2
-		y = 7
-		relative_position_id = ROM_pol_rc_1
-	
-		prerequisite = { focus = ROM_pol_rc_10}
-
-
-		ai_will_do = {
-				factor = 1
-			}
-	
-			available = {
-	
-			}
-	
-			bypass = {
-	
-			}
-	
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
-	
-			
-	
-			completion_reward = {
+					add_resource = {
+						type = oil
+						amount = 25
+						state = 766
+					}
 				
 			}
 	}

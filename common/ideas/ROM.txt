@@ -108,6 +108,8 @@ ideas = {
 				industrial_capacity_dockyard = 0.10
 				industrial_capacity_factory = 0.10
 				production_speed_buildings_factor = 0.05
+				recruitable_population = 0.4
+				democratic_drift = 0.05
 			}
 		}
 
@@ -204,9 +206,28 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 20
+				consumer_goods_factor = 0.20
 				stability_factor = -0.2
 				political_power_gain = -0.1
+			}
+		}
+
+		bribing_holdouts = {
+			picture = GFX_goal_generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.10
+				political_power_gain = -0.25
 			}
 		}
 
