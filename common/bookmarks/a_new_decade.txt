@@ -165,6 +165,9 @@ bookmarks = {
 				GRE_on_going_population_exchange
 			}
 			focuses = {
+			GRE_metaxas_project_megisti_idea
+			GRE_the_house_always_wins
+			GRE_deimos_and_fobos
 			}
 		}
 		"TUR"={

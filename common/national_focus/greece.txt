@@ -2342,7 +2342,7 @@ add_ideas = GRE_like_the_beasts
 		x = 0
 		y = 1
         prerequisite = { focus = GRE_the_global_movement  }
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			base = 0
 		}
@@ -2350,6 +2350,7 @@ add_ideas = GRE_like_the_beasts
 		search_filters = {  }
 		completion_reward = {
 		set_cosmetic_tag = MED_UN
+		custom_effect_tooltip = GRE_red_med_tt
 		hidden_effect = {
 		168 = {add_core_of = GRE }
 		167 = {add_core_of = GRE }
