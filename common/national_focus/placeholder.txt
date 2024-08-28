@@ -15,6 +15,14 @@ focus_tree = {
 			add = 15
 			tag = YUG
 		}
+		modifier = {
+			add = 15
+			tag = TUR
+		}
+		modifier = {
+			add = 15
+			tag = AUS
+		}
 	}
 
 	#Generic tree
