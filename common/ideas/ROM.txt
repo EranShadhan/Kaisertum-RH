@@ -2,10 +2,9 @@ ideas = {
 
 	country = {
 
-        	Inefective_constitution
-		 = {
+        Inefective_constitution = {
 
-			picture = GFX_goal_generic_social_reforms
+			picture = generic_constitutional_guarantees
 			
 			allowed = {
 				always = no
@@ -27,7 +26,7 @@ ideas = {
 
 		Carol_reforms = {
 
-			picture = GFX_goal_generic_social_reforms
+			picture = generic_social_reforms
 
 			allowed = { 
 				always = no
@@ -47,7 +46,7 @@ ideas = {
 		}
 
 		suspend_constitution = {
-			picture = GFX_goal_generic_social_reforms
+			picture = generic_social_reforms
 			
 			allowed = { 
 				always = no
@@ -69,7 +68,7 @@ ideas = {
 		}
 
 		increase_taxes = {
-			picture = GFX_goal_generic_social_reforms
+			picture = generic_social_reforms
 			
 			allowed = { 
 				always = no
@@ -90,7 +89,7 @@ ideas = {
 		}
 
 		revised_constitution = {
-			picture = GFX_goal_generic_social_reforms
+			picture = generic_social_reforms
 			
 			allowed = { 
 				always = no
@@ -114,7 +113,7 @@ ideas = {
 		}
 
 		rom_political_violence = {
-			picture = GFX_goal_generic_social_reforms
+			picture = generic_social_reforms
 			
 			allowed = { 
 				always = no
@@ -133,7 +132,7 @@ ideas = {
 		}
 
 		caramaila_sentinels = {
-			picture = GFX_goal_generic_social_reforms
+			picture = generic_social_reforms
 			
 			allowed = { 
 				always = no
@@ -153,7 +152,7 @@ ideas = {
 		}
 
 		hungarian_workforce = {
-			picture = GFX_goal_generic_social_reforms
+			picture = generic_social_reforms
 			
 			allowed = { 
 				always = no
@@ -172,7 +171,7 @@ ideas = {
 		}
 
 		total_equality = {
-			picture = GFX_goal_generic_social_reforms
+			picture = generic_social_reforms
 			
 			allowed = { 
 				always = no
@@ -193,7 +192,7 @@ ideas = {
 		}
 
 		ineffective_regency = {
-			picture = GFX_goal_generic_social_reforms
+			picture = generic_social_reforms
 			
 			allowed = { 
 				always = no
@@ -213,7 +212,7 @@ ideas = {
 		}
 
 		bribing_holdouts = {
-			picture = GFX_goal_generic_social_reforms
+			picture = generic_social_reforms
 			
 			allowed = { 
 				always = no
