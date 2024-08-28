@@ -5,7 +5,16 @@
 			creator = "UKR"
 		}
 		requested_factories = 2
-		progress = 0.68
+		progress = 0.69
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "UKR"
+		}
+		requested_factories = 2
+		progress = 0.60
 		efficiency = 100
 	}
 	add_equipment_production = {
@@ -13,8 +22,8 @@
 			type = artillery_equipment_1
 			creator = "UKR"
 		}
-		requested_factories = 2
-		progress = 0.44
+		requested_factories = 1
+		progress = 0.68
 		efficiency = 100
 	}
 	add_equipment_production = {
@@ -26,6 +35,7 @@
 		progress = 0.76
 		efficiency = 100
 	}
+	
 }
 
 division_template = {
@@ -79,7 +89,39 @@ division_template = {
 }
 
 units = {
-	### Infantry Units
+     ######################
+     ### Infantry Units ###
+     ######################
+     division = {
+		location = 6593
+		division_template = "Motostrilets'ka Dyviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 476
+		division_template = "Motostrilets'ka Dyviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 6557
+		division_template = "Pikhotna Dyviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 3468
+		division_template = "Pikhotna Dyviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 422
+		division_template = "Pikhotna Dyviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
 	division = {
 		location = 525
 		division_template = "Pikhotna Dyviziya"
@@ -166,6 +208,12 @@ units = {
 	}
 	division = {
 		location = 6232
+		division_template = "Kavaleriya Dyviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 3494
 		division_template = "Kavaleriya Dyviziya"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0

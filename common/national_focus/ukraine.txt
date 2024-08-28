@@ -1207,7 +1207,7 @@ focus = {
 	}
 
 	focus = {
-		id = UKR_balanced_1
+		id = UKR_civs_1
 		icon = GFX_goal_generic_construction
 		prerequisite = { focus = UKR_industrial_legacy }
 		x = 0
@@ -1229,8 +1229,8 @@ focus = {
 		}
 
 		available = {
-			UKR = { controls_state = 9 }
-			UKR = { controls_state = 70 }
+			UKR = { controls_state = 93 }
+			UKR = { controls_state = 199 }
 		}
 
 		bypass = {
@@ -1243,19 +1243,19 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			9 = {
-				add_extra_state_shared_building_slots = 1
+			93 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
 			}
-			70 = {
-				add_extra_state_shared_building_slots = 2
+			199 = {
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -1268,12 +1268,12 @@ focus = {
 	}
 
 	focus = {
-		id = UKR_balanced_2
+		id = UKR_civs_2
 		icon = GFX_goal_generic_construction
-		prerequisite = { focus = UKR_balanced_1 }
+		prerequisite = { focus = UKR_civs_1 }
 		x = 0
 		y = 1
-		relative_position_id = UKR_balanced_1
+		relative_position_id = UKR_civs_1
 
 		cost = 10
 
@@ -1282,8 +1282,8 @@ focus = {
 		}
 
 		available = {
-			UKR = { controls_state = 9 }
-			UKR = { controls_state = 71 }
+			UKR = { controls_state = 201 }
+			UKR = { controls_state = 198 }
 		}
 
 		bypass = {
@@ -1296,19 +1296,19 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			9 = {
-				add_extra_state_shared_building_slots = 1
+			201 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
 			}
-			71 = {
-				add_extra_state_shared_building_slots = 2
+			198 = {
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -1321,12 +1321,12 @@ focus = {
 	}
 
 	focus = {
-		id = UKR_balanced_3
+		id = UKR_civs_3
 		icon = GFX_goal_generic_construction
-		prerequisite = { focus = UKR_balanced_2 }
+		prerequisite = { focus = UKR_civs_2 }
 		x = 0
 		y = 2
-		relative_position_id = UKR_balanced_1
+		relative_position_id = UKR_civs_1
 
 		cost = 10
 
@@ -1335,8 +1335,8 @@ focus = {
 		}
 
 		available = {
-			UKR = { controls_state = 9 }
-			UKR = { controls_state = 73 }
+			UKR = { controls_state = 192 }
+			UKR = { controls_state = 834 }
 		}
 
 		bypass = {
@@ -1349,19 +1349,19 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			9 = {
-				add_extra_state_shared_building_slots = 1
+			192 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
 			}
-			73 = {
-				add_extra_state_shared_building_slots = 2
+			834 = {
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -1409,7 +1409,7 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_ideas = UKR_export_focus1
+			add_ideas = CZE_export_focus1
 		}
 	}
 
@@ -1449,7 +1449,7 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			swap_ideas = { remove_idea = UKR_export_focus1 add_idea = UKR_export_focus2  }
+			swap_ideas = { remove_idea = CZE_export_focus1 add_idea = CZE_export_focus2  }
 		}
 	}
 
@@ -1489,7 +1489,7 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			swap_ideas = { remove_idea = UKR_export_focus2 add_idea = UKR_export_focus3 }
+			swap_ideas = { remove_idea = CZE_export_focus2 add_idea = CZE_export_focus3 }
 		}
 	}
 
