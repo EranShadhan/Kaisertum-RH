@@ -13,7 +13,7 @@ Official Github page for the HOI4 mod Kaisertum based of Rewriting History's "Pr
 - Beta 0.6 - TBA - TBA - September 25 2024 ×
 - Beta 0.7 - TBA - TBA - October 2 2024 ×
 - Beta 0.8 - TBA - TBA - October 3 2024 ×
-- Beta 0.9 - TBA - TBA - October 9 2024 ×
+- Beta 0.9 - The Emerald Isle - Ireland - October 9 2024 ×
 - Beta 1.0 - TBA - Germany - October 16 2024 ×
 - Beta 1.1 - TBA - TBA - October 23 2024 ×
 - Beta 1.2 - TBA - TBA - October 30 2024 ×
