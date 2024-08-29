@@ -640,7 +640,7 @@ focus = {
 	factor = 1
 	}
 		
-	cost = 10
+	cost = 7
 		
 	available = {
 		
@@ -657,7 +657,11 @@ focus = {
 				
 		
 	completion_reward = {
-					
+		add_tech_bonus = {
+			bonus = 0.5
+			use = 1
+			category = mio_cat_tech_light_armor_and_modules
+		}	
 	}
 		
 }
@@ -2253,7 +2257,7 @@ focus = {
 					73 = { add_core_of = ROOT }
 				}
 				set_cosmetic_tag = ROM_DAC
-				transfer_state = 
+				transfer_state = 764
 			}
 	}
 
