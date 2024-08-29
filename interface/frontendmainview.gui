@@ -26,17 +26,17 @@ guiTypes = {
 	### MAIN MENU PANEL (upperleft)
 	containerWindowType = {
 		name  ="mainmenu_panel_upperleft"
-		position = { x=0 y =-200 }
+		position = { x=0 y=0 }
 		show_position = { x=0 y =-1 }
 		animation_type = decelerated
 		animation_time = 1000
-		size = { width = 256 height = 768}
+		size = { width = 687 height = 472}
 		
 		iconType =
 		{
 			name ="frontend_game_logo"
 			spriteType = "GFX_frontend_game_logo"
-			position = { x= 20 y = 20 }
+			position = { x= 300 y = -220 }
 		}
 		
 	}
@@ -185,8 +185,8 @@ guiTypes = {
 	### MAIN MENU PANEL (bottom)
 	containerWindowType = {
 		name ="mainmenu_panel_bottom"
-		position = { x=0 y =0}
-		size = { width = 320 height = 250 }
+		position = { x=0 y =200}
+		size = { width = 960 height = 500 }
 		Orientation = CENTER
 		Origo = center		
 
@@ -194,27 +194,53 @@ guiTypes = {
 				
 		background = {
 			name = "Background"		
-			quadTextureSprite ="GFX_tiled_window"
+			quadTextureSprite ="GFX_background_for_menu_screen"
 		}
 			
 		ButtonType = {
 			name = "single_player_button"
-			position = { x = 16 y = 18 }
-			quadTextureSprite ="GFX_main_lobby_button"
+			position = { x = 12 y = 18 }
+			quadTextureSprite ="GFX_button_for_menu_screen_single"
 			font = "hoi_24header"			
-			text = "FE_SINGLE_PLAYER"				
 			clicksound = click_default			
 			oversound = ui_menu_over
 		}
+		
+		instantTextBoxType = {
+
+			name ="singleplayer_text"
+			position = { x = 30 y = 28 }
+			textureFile = ""
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "FE_SINGLE_PLAYER"
+			format = centre
+			maxWidth = 250
+			maxHeight = 20	
+		}
+		
 
 		ButtonType = {
 			name = "multi_player_button"
-			position = { x = 16 y = 58}
-			quadTextureSprite ="GFX_main_lobby_button"
-			font = "hoi_24header"			
-			text = "FE_MULTI_PLAYER"			
+			position = { x=337 y = 18}
+			size = { width = 320 height = 395}
+			quadTextureSprite ="GFX_button_for_menu_screen_multiple"
+			font = "hoi_24header"		
 			clicksound = click_default
 			oversound = ui_menu_over
+		}
+		
+		instantTextBoxType = {
+
+			name ="multiplayer_text"
+			position = { x = 356 y = 28 }
+			textureFile = ""
+			font = "garamond_24"
+			borderSize = {x = 0 y = 0}
+			text = "FE_MULTI_PLAYER"
+			format = centre
+			maxWidth = 250
+			maxHeight = 20	
 		}
 
 		@warn_icon_x = 280
@@ -226,22 +252,33 @@ guiTypes = {
 
 		instantTextBoxType = {
 
-			name ="version_label"
-			position = { x = 35 y = 220 }
+			name ="mod_version"
+			position = { x = 367 y = 0 }
 			textureFile = ""
-			font = "hoi_18b"
+			font = "garamond_24"
 			borderSize = {x = 0 y = 0}
-			text = "ALPHA"	
+			text = "kaisertumversion"
 			format = centre
 			maxWidth = 250
 			maxHeight = 20	
 		}
 
+		instantTextBoxType = {
 
+			name ="recent_updates"
+			position = { x = 660 y = 25 }
+			textureFile = ""
+			font = "garamond_24"
+			borderSize = {x = 0 y = 0}
+			text = "kaisertumrecent_updates"
+			format = centre
+			maxWidth = 250
+			maxHeight = 20	
+		}
 		
 		ButtonType = {
 			name = "settings_button"
-			position = { x = 16 y = 98 }
+			position = { x = 12 y = 300 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "OPTIONS"
 			buttonFont = "hoi_24header"
@@ -249,13 +286,9 @@ guiTypes = {
 			oversound = ui_menu_over
 		}
 		
-	
-	
-		
-		
 		ButtonType = {
 			name = "nudge_button"
-			position = { x = 16 y = 140 }
+			position = { x = 337 y = 300 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "Nudge!"
 			buttonFont = "hoi_24header"
@@ -263,7 +296,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "exit_button"
-			position = { x = 16 y = 180 }
+			position = { x = 660 y = 300 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "hoi_24header"			
 			text = "FE_EXIT"			
@@ -274,10 +307,22 @@ guiTypes = {
 
 		iconType = {
 			name = "subscription_divider"
-			position = { x = 4 y = 336 }
+			position = { x = -22.5 y = 336 }
 			spriteType = "GFX_main_lobby_divider"
 		}
+		
+		instantTextBoxType = {
 
+            name ="version_label"
+            position = { x = 715 y = 475 }
+            textureFile = ""
+            font = "hoi_18b"
+            borderSize = {x = 0 y = 0}
+            text = "ALPHA"
+            format = centre
+            maxWidth = 250
+            maxHeight = 20
+        }
 	
 
 		

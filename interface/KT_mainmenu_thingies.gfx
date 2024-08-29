@@ -1,0 +1,64 @@
+spriteTypes = {
+	corneredTileSpriteType = {
+		name = "GFX_background_for_menu_screen"
+		size= { x=192 y=192 }
+		textureFile = "gfx/interface/tiles/mainmenubackground_thing.dds"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	
+	textSpriteType = {
+		name = "GFX_button_for_menu_screen_single"
+		textureFile = "gfx/interface/main_lobby_button_sin.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	SpriteType = {
+		name = "GFX_button_for_menu_screen_single_highlight"
+		textureFile = "gfx/interface/main_lobby_button_sin.dds"
+
+		animation = {
+			animationmaskfile = "gfx/interface/main_lobby_button_white.dds"
+			animationtexturefile = "gfx/interface/main_lobby_button_highlight.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 1				# in seconds
+			animationdelay = 0.5			# in seconds
+			animationblendmode = "normal"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		legacy_lazy_load = no
+	}
+	
+	textSpriteType = {
+		name = "GFX_button_for_menu_screen_multiple"
+		textureFile = "gfx/interface/main_lobby_button_mult.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	SpriteType = {
+		name = "GFX_button_for_menu_screen_multiple_highlight"
+		textureFile = "gfx/interface/main_lobby_button_mult.dds"
+
+		animation = {
+			animationmaskfile = "gfx/interface/main_lobby_button_white.dds"
+			animationtexturefile = "gfx/interface/main_lobby_button_highlight.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 1				# in seconds
+			animationdelay = 0.5			# in seconds
+			animationblendmode = "normal"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		legacy_lazy_load = no
+	}
+}
