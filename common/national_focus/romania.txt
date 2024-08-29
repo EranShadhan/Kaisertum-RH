@@ -573,7 +573,15 @@ focus = {
 				
 		
 	completion_reward = {
+<<<<<<< Updated upstream
 		#add_bo	
+=======
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = artillery
+		}
+>>>>>>> Stashed changes
 	}
 		
 }
@@ -610,7 +618,11 @@ focus = {
 				
 		
 	completion_reward = {
-					
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 2
+			category = support_tech
+		}		
 	}
 		
 }
@@ -652,42 +664,6 @@ focus = {
 		
 }
 
-focus = {
-
-	id = ROM_army_p_5
-	icon = GFX_ROM_army_p_5
-	x = -2
-	y = 2
-		
-	prerequisite = { focus = ROM_army_p_3 }
-			
-	relative_position_id = ROM_army_p_1
-		
-	ai_will_do = {
-	factor = 1
-	}
-		
-	cost = 10
-		
-	available = {
-		
-	}
-		
-	bypass = {
-		
-	}
-		
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-		
-				
-		
-	completion_reward = {
-					
-	}
-		
-}
 
 focus = {
 
@@ -704,7 +680,7 @@ focus = {
 	factor = 1
 	}
 		
-	cost = 10
+	cost = 70
 		
 	available = {
 		
@@ -721,7 +697,11 @@ focus = {
 				
 		
 	completion_reward = {
-					
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 2
+			category = infantry_weapons
+		}			
 	}
 		
 }
@@ -763,47 +743,12 @@ focus = {
 		
 }
 
-focus = {
 
-	id = ROM_army_p_8
-	icon = GFX_ROM_army_p_8
-	x = -2
-	y = 3
-		
-	prerequisite = { focus = ROM_army_p_5 }
-			
-	relative_position_id = ROM_army_p_1
-		
-	ai_will_do = {
-	factor = 1
-	}
-		
-	cost = 10
-		
-	available = {
-		
-	}
-		
-	bypass = {
-		
-	}
-		
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-		
-				
-		
-	completion_reward = {
-					
-	}
-		
-}
 
 focus = {
 
 	id = ROM_army_p_9
-	icon = GFX_ROM_army_p_2
+	icon = GFX_ROM_army_p_9
 	x = 2
 	y = 3
 		
@@ -837,43 +782,7 @@ focus = {
 		
 }
 
-focus = {
 
-	id = ROM_army_p_10
-	icon = GFX_ROM_army_p_2
-	x = 0
-	y = 4
-		
-	prerequisite = { focus = ROM_army_p_6 }
-	prerequisite = { focus = ROM_army_p_8 }
-			
-	relative_position_id = ROM_army_p_1
-		
-	ai_will_do = {
-	factor = 1
-	}
-		
-	cost = 10
-		
-	available = {
-		
-	}
-		
-	bypass = {
-		
-	}
-		
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-		
-				
-		
-	completion_reward = {
-					
-	}
-		
-}
 
 ########################
 ########Industry########
@@ -2303,6 +2212,8 @@ focus = {
 			completion_reward = {
 				BUL = {
 					country_event = kt_romania.6
+
+					leave_faction = yes
 				}
 			}
 	}
