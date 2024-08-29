@@ -453,6 +453,7 @@ focus = {
 		}
 		
 		focus = {
+
 			id = ROM_army_m_7
 			icon = GFX_ROM_army_m_7
 			x = 0
@@ -498,6 +499,7 @@ focus = {
 			}	
 			
 	focus = {
+
 		id = ROM_army_p_1
 		icon = GFX_ROM_army_p_1
 		x = -3
@@ -573,15 +575,11 @@ focus = {
 				
 		
 	completion_reward = {
-<<<<<<< Updated upstream
-		#add_bo	
-=======
 		add_tech_bonus = {
 			bonus = 1
 			uses = 1
 			category = artillery
 		}
->>>>>>> Stashed changes
 	}
 		
 }
@@ -2255,6 +2253,7 @@ focus = {
 					73 = { add_core_of = ROOT }
 				}
 				set_cosmetic_tag = ROM_DAC
+				transfer_state = 
 			}
 	}
 
