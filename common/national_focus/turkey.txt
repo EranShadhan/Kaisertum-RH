@@ -571,8 +571,9 @@ focus = { # INDUSTRIALIZATION
 
     }
 
-    completion_reward = {
-        # Upgrades national spirit, giving turkey production efficency growth and cap
+    completion_reward = { # Adds german eco national spirit
+        add_ideas = TUR_german_eco_1
+		# TODO: decisions
     }
 
     ai_will_do = {
@@ -594,9 +595,8 @@ focus = { # INDUSTRIALIZATION
 
     }
 
-    completion_reward = {
-        # Unlocks new national spirit, related to german companies.
-        # first stage gives -10% cost reduction to trucks.
+    completion_reward = { # Unlocks new national spirit, related to german companies.
+        add_ideas = TUR_german_companies_1
     }
 
     ai_will_do = {
@@ -618,10 +618,8 @@ focus = { # INDUSTRIALIZATION
 
     }
 
-    completion_reward = {
-        # Unlocks decision in industrialization decisions tab to send
-        # 100k manpower in exchange for 2 offmap civs. The decision can be withdrawn,
-        # removing the offmap civilian factories.
+    completion_reward = { # Worker exchange program decision stuff
+
     }
 
     ai_will_do = {
@@ -644,9 +642,14 @@ focus = { # INDUSTRIALIZATION
 
     }
 
-    completion_reward = {
-        # Upgrades german company national spirit, giving -15% cost to trains.
-        # Unlocks decisions to build new railways in industrialization tab.
+    completion_reward = { # Upgrades german company national spirit, giving -15% cost to trains.
+        
+		swap_ideas = {
+   			remove_idea = TUR_german_companies_1
+    		add_idea = TUR_german_companies_2
+		}
+
+        # TODO: Unlocks decisions to build new railways in industrialization tab.
     }
 
     ai_will_do = {
@@ -668,9 +671,14 @@ focus = { # INDUSTRIALIZATION
 
     }
 
-    completion_reward = {
-        # Upgrades german company national spirit, giving -15% cost to trains.
-        # Unlocks decisions to build new railways in industrialization tab.
+    completion_reward = { # upgrades national spirit to give bonuses to constructing stuff
+
+		swap_ideas = {
+   			remove_idea = TUR_german_companies_2
+    		add_idea = TUR_german_companies_3
+		}
+
+        #TODO: Unlocks decisions to build new railways in industrialization tab.
     }
 
     ai_will_do = {
@@ -692,9 +700,14 @@ focus = { # INDUSTRIALIZATION
 
     }
 
-    completion_reward = {
-        # !needs to have done the decision to send foreign workers to germany
-        # Gives upgrades to industrial national spirit, increasing factory production.
+    completion_reward = { # upgrades national spirit
+
+		swap_ideas = {
+   			remove_idea = TUR_german_eco_1
+    		add_idea = TUR_german_eco_2
+		}
+
+        #TODO: !needs to have done the decision to send foreign workers to germany
     }
 
     ai_will_do = {
@@ -716,8 +729,13 @@ focus = { # INDUSTRIALIZATION
 
     }
 
-    completion_reward = {
-        # upgrades industrial related national spirit
+    completion_reward = { # upgrades industrial related national spirit
+        
+		swap_ideas = {
+   			remove_idea = TUR_german_eco_2
+    		add_idea = TUR_german_eco_3
+		}
+
     }
 
     ai_will_do = {
@@ -740,8 +758,13 @@ focus = { # INDUSTRIALIZATION
 
     }
 
-    completion_reward = {
-        # +1 research slot, gives research bonuses
+    completion_reward = { # gives some research bonuses
+
+        swap_ideas = {
+   			remove_idea = TUR_german_eco_3
+    		add_idea = TUR_german_eco_4
+		}
+
     }
 
     ai_will_do = {
@@ -764,7 +787,8 @@ focus = { # INDUSTRIALIZATION
     }
 
     completion_reward = {
-        # Upgrades national spirit, giving turkey buffs to civilian factory construction
+		add_ideas = TUR_russian_eco_1
+        #TODO: decisions
     }
 
     ai_will_do = {
@@ -881,8 +905,8 @@ focus = {
 
     }
 
-    completion_reward = {
-        # Opens agricultural decisions tab
+    completion_reward = { 
+        #TODO: Opens agricultural decisions tab
     }
 
     ai_will_do = {
@@ -907,7 +931,7 @@ focus = {
     }
 
     completion_reward = {
-        # Enables ministry related decisions
+        #TODO: adds more decisions
     }
 
     ai_will_do = {
@@ -918,7 +942,7 @@ focus = {
 
 focus = {
     id = TUR_mechanize_the_farms
-    icon = GFX_focus_SWE_per_albin_bus
+    icon = GFX_focus_CHL_domestic_production_of_the_willys_mb
     prerequisite = { focus = TUR_commericalize_agriculture }
     x = -1
     y = 1
@@ -929,9 +953,15 @@ focus = {
 
     }
 
-    completion_reward = {
-        # gives buffs to population growth
-        # very small decrease to consumer goods factor
+    completion_reward = { # Adds motorized to stockpile
+
+		add_equipment_to_stockpile = {
+    		type = motorized_equipment
+    		amount = 800
+    		producer = GER
+		}
+
+		#TODO: Decisions
     }
 
     ai_will_do = {
@@ -954,9 +984,16 @@ focus = {
 
     }
 
-    completion_reward = {
-        # unlocks decisions to upgrade state infrastructure and category
-        # gives temporary national spirit giving consumer goods factor debuff
+	select_effect = {
+			add_ideas = TUR_temp_farmer_loans
+	}
+
+    completion_reward = { # gives temporary national spirit giving civ debuff
+
+		add_timed_idea = {
+    		idea = TUR_temp_farmer_loans
+    		days = 120
+		}   
     }
 
     ai_will_do = {
@@ -979,7 +1016,7 @@ focus = {
 
     }
 
-    completion_reward = {  # gives +1 industrial park
+    completion_reward = {  # gives +1 industrial park, upgrades national spirit
 		random_core_state = {
 			limit = {
 				is_fully_controlled_by = ROOT
@@ -991,8 +1028,12 @@ focus = {
 				instant_build = yes
 			}
 		}
-       
-        #TODO: gives another small to consumer goods factor decrease
+
+		swap_ideas = {
+   			remove_idea = TUR_russian_eco_1
+    		add_idea = TUR_russian_eco_2
+		}
+
     }
 
     ai_will_do = {
@@ -1014,7 +1055,7 @@ focus = {
 
     }
 
-    completion_reward = { # gives +1 industrial park
+    completion_reward = { # gives +1 industrial park, upgrades national spirit
 		random_core_state = {
 			limit = {
 				is_fully_controlled_by = ROOT
@@ -1025,6 +1066,11 @@ focus = {
 				level = 1
 				instant_build = yes
 			}
+		}
+
+		swap_ideas = {
+   			remove_idea = TUR_russian_eco_2
+    		add_idea = TUR_russian_eco_3
 		}
     }
 
@@ -1047,8 +1093,13 @@ focus = {
 
     }
 
-    completion_reward = {
-        # gives buffs to national spirit
+    completion_reward = { # gives buffs to national spirit
+
+		swap_ideas = {
+   			remove_idea = TUR_russian_eco_3
+    		add_idea = TUR_russian_eco_4
+		}
+        
     }
 
     ai_will_do = {
@@ -1071,7 +1122,7 @@ focus = {
     }
 
     completion_reward = {
-        # unlocks decisions to redistribute land in core states, giving these states permanent minor buffs
+        #TODO: unlocks decisions to redistribute land in core states, giving these states building slots
     }
 
     ai_will_do = {
@@ -1094,8 +1145,8 @@ focus = {
     }
 
     completion_reward = {
-        # increases population growth
-        # gives a total of 2 infrastructure in random states
+
+		#TODO: unlocks decisions to redistribute land in core states, giving these states infrastructure and civs
     }
 
     ai_will_do = {
@@ -1166,8 +1217,18 @@ focus = {
 
     }
 
-    completion_reward = {
-        # Enables ministry related decisions
+    completion_reward = { 
+		random_core_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
     }
 
     ai_will_do = {
@@ -1189,10 +1250,31 @@ focus = {
 
     }
 
+	select_effect = {
+			add_ideas = TUR_fund_the_dam
+	}
+
     completion_reward = {
-        # +1 civilian factory
-        # gives buff to industral related national spirit
-        # +1 infrastructure
+		IF = {
+			limit = {
+				356 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+			356 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
     }
 
     ai_will_do = {
@@ -1226,7 +1308,7 @@ focus = {
 
 focus = {
     id = TUR_cross_the_mountains
-    icon = thisgfxiswrong
+    icon = GFX_focus_generic_road_investment
     prerequisite = { focus = TUR_fund_the_Çubuk_dam }
     x = 0
     y = 2
@@ -1238,8 +1320,50 @@ focus = {
     }
 
     completion_reward = {
-        # gives bonuses to movement speed in mountains and hills
-        # gives +2 random infrastructure
+		IF = {
+			limit = {
+				354 = {
+						is_owned_and_controlled_by = ROOT
+				}
+			}
+			354 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}	
+		}
+
+		IF = {
+			limit = {
+				355 = {
+						is_owned_and_controlled_by = ROOT
+				}
+			}
+			355 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		IF = {
+			limit = {
+				340 = {
+						is_owned_and_controlled_by = ROOT
+				}
+			}
+			340 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}		
+		}
     }
 
     ai_will_do = {
