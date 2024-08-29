@@ -78,10 +78,21 @@ spriteTypes = {
 		name = "GFX_portrait_IRE_Winston_Churchil"
 		texturefile = "gfx/leaders/IRE/Portrait_Ireland_Winston_Churchil.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_ENG_ramsay_macdonald"
+		texturefile = "gfx/leaders/ENG/portrait_ENG_ramsay_mcdonald.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_JAP_ikuo_oyama"
+		texturefile = "gfx/leaders/JAP/Portrait_Japan_ikuo_oyama.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_BRA_washington_luis"
+		texturefile = "gfx/leaders/BRA/Portrait_Brazil_Luis_washington.dds"
+	}
 
 
 
 
 	
 }
-GFX_portrait_Antun_Saadeh

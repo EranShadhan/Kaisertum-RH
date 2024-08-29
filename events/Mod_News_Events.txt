@@ -250,3 +250,130 @@ news_event = {
 		name = syria_loses_news.a
 	}
 }
+news_event = {
+	id = kaisertum_news.8
+	title = ncy_wins_news.t   
+	desc = ncy_wins_news.d
+	picture = GFX_news_event_074
+
+	major = yes
+
+	trigger = {
+		AND = {
+
+		183 = { is_controlled_by = NCY is_owned_by = GRE }
+
+
+	
+		NCY = { has_war_with = GRE }
+		NOT = { has_global_flag = ncy_wins }
+		}
+	}
+
+	immediate = { 
+			set_global_flag = ncy_wins
+			NCY = {
+				white_peace = GRE
+				transfer_state = 986
+				transfer_state = 183
+			}
+			TUR = {
+				diplomatic_relation = {
+					country = NCY
+					relation = puppet
+					active = yes
+				}
+				complete_national_focus = TUR_turkish_cyprus
+			}
+			183 = {
+				add_core_of = NCY
+			}
+	}
+
+	
+	option = {
+		name = ncy_wins_news.a
+	}
+}
+
+news_event = {
+	id = kaisertum_news.9
+	title = ncy_wins_news.t   
+	desc = ncy_wins_news.d
+	picture = GFX_news_event_074
+
+	major = yes
+
+	trigger = {
+		AND = {
+
+		986 = { is_controlled_by = GRE is_owned_by = NCY }
+
+
+	
+		NCY = { has_war_with = GRE }
+		NOT = { has_global_flag = ncy_wins }
+		}
+	}
+
+	immediate = { 
+			set_global_flag = ncy_loses
+			GRE = {
+				white_peace = NCY
+				transfer_state = 183
+				transfer_state = 986
+			}
+
+	}
+
+	
+	option = {
+		name = ncy_loses_news.a
+	}
+}
+news_event = {
+	id = kaisertum_news.10
+	title = cyprus_conflict_frozen_news.t   
+	desc = cyprus_conflict_frozen_news.d
+	picture = GFX_news_event_074
+
+	major = yes
+
+	trigger = {
+		AND = {
+
+		986 = { 
+			AND = {
+				has_state_flag = ncy_holds_ncy 
+				is_controlled_by = NCY
+			}
+		}
+
+	
+		NCY = { has_war_with = GRE }
+		NOT = { has_global_flag = cyprus_conflict_frozen }
+		}
+	}
+
+	immediate = { 
+			set_global_flag = cyprus_conflict_frozen
+			GRE = {
+				white_peace = NCY
+
+			}
+			TUR = {
+				diplomatic_relation = {
+					country = NCY
+					relation = puppet
+					active = yes
+				}
+				complete_national_focus = TUR_status_quo
+			}
+
+	}
+
+	
+	option = {
+		name = cyprus_conflict_frozen_news.a
+	}
+}

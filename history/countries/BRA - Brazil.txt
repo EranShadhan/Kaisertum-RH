@@ -18,6 +18,7 @@ IF = {
 		}
 	}
 }
+recruit_character = BRA_washington_luis
 recruit_character = BRA_getulio_vargas
 
 	set_country_flag = BRA_toa_DLC
@@ -140,15 +141,15 @@ recruit_character = BRA_getulio_vargas
 	give_guarantee = POR
 	
 	set_politics = {
-		ruling_party = democratic
+		ruling_party = neutrality
 		last_election = "1934.7.17"
 		election_frequency = 48
 		elections_allowed = yes
 	}
 
 	set_popularities = {
-		democratic = 50
-		neutrality = 25
+		democratic = 25
+		neutrality = 50
 		fascism = 15
 		communism = 10
 	}
@@ -302,7 +303,6 @@ recruit_character = BRA_ismael_motta_paes
 recruit_character = BRA_jorge_martins
 recruit_character = BRA_newton_cavalcanti
 recruit_character = BRA_afranio_de_mello_franco
-recruit_character = BRA_washington_luis_pereira
 recruit_character = BRA_osvaldo_aranha
 recruit_character = BRA_arlindo_veiga_dos_santos
 recruit_character = BRA_random_army_chief

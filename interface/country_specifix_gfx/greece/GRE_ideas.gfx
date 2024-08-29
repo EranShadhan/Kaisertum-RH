@@ -50,6 +50,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/GRE/idea_byz_theos_walls.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_GRE_prince_paul"
+		texturefile = "gfx/interface/ideas/GRE/GRE_prince_paul.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_GRE_first_schism"
 		texturefile = "gfx/interface/ideas/GRE/idea_GRE_first_schism.dds"
 	}

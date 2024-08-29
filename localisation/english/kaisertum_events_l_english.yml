@@ -27,12 +27,25 @@
  KT_turkey_events.3.a: "commies"
  KT_turkey_events.3.b: "cebesoy"
 
- KT_turkey_events.4.t: "Turkey invites to the Konya Accords"
+ KT_turkey_events.4.t: "Turkey invites us to the Konya Accords"
  KT_turkey_events.4.d: "Turkey seeks to secure and preserve the nations of the Middle East from outside invasions, thus inviting us to their co-operation alliance"
  KT_turkey_events.4.a: "We will happily join!"
  KT_turkey_events.4.b: "Screw the Turkish scum!"
 
- KT_turkey_events.4.t: "Turkey requests the return of Smyrna"
- KT_turkey_events.4.d: "Recently, the Turkish nation started federalizing, liberalizing and modernizing. As the rights of ethnic Greeks in their country increase, they request to regain control over Smyrna to restore Anatolian territorial integrity."
- KT_turkey_events.4.a: "We have bigger problems to think about"
- KT_turkey_events.4.b: "Smyrna is rightful Greek territory!"
+ KT_turkey_events.5.t: "Turkey requests the return of Smyrna"
+ KT_turkey_events.5.d: "Recently, the Turkish nation started federalizing, liberalizing and modernizing. As the rights of ethnic Greeks in their country increase, they request to regain control over Smyrna to restore Anatolian territorial integrity."
+ KT_turkey_events.5.a: "We have bigger problems to think about"
+ KT_turkey_events.5.b: "Smyrna is rightful Greek territory!"
+
+ KT_turkey_events.7.t: "German influence in Turkey reaches the extreme"
+ KT_turkey_events.7.d: "Our government has always been influenced by foreign powers, but now is the moment when this influence harms us. Almost all of our government officials are influenced by Germany to such an extent that we have basically become a German Puppet."
+ KT_turkey_events.7.a: "There is nothing we can do."
+
+ KT_turkey_events.8.t: "Russian influence in Turkey reaches the extreme"
+ KT_turkey_events.8.d: "Our government has always been influenced by foreign powers, but now is the moment when this influence harms us. Almost all of our government officials are influenced by Russia to such an extent that we have basically become a Russian Puppet."
+
+ KT_turkey_events.9.t: "French influence in Turkey reaches the extreme"
+ KT_turkey_events.9.d: "Our government has always been influenced by foreign powers, but now is the moment when this influence harms us. Almost all of our government officials are influenced by France to such an extent that we have basically become a French Puppet."
+
+ KT_turkey_events.10.t: "Italian influence in Turkey reaches the extreme"
+ KT_turkey_events.10.d: "Our government has always been influenced by foreign powers, but now is the moment when this influence harms us. Almost all of our government officials are influenced by Italy to such an extent that we have basically become an Italian Puppet."

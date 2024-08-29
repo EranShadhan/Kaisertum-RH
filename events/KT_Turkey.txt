@@ -142,3 +142,137 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = KT_turkey_events.6
+	title = KT_turkey_events.6.t
+	desc = KT_turkey_events.6.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			}
+		}
+	
+	
+	option = {
+		name = KT_turkey_events.6.a
+		ai_chance ={
+			base = 7
+		}
+		TUR = {
+			transfer_state = 164
+			add_ideas = TUR_italian_industrial_access
+		}
+		ITA = {
+			add_offsite_building = { type = industrial_complex level = 2 }
+		}
+	}
+	option = {
+		name = KT_turkey_events.6.b
+		ai_chance ={
+			base = 3
+		}
+	}
+}
+country_event = {
+	id = KT_turkey_events.7
+	title = KT_turkey_events.7.t
+	desc = KT_turkey_events.7.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			}
+		}
+	
+	
+	option = {
+		name = KT_turkey_events.7.a
+		GER = {
+			diplomatic_relation = {
+				country = TUR
+				relation = puppet
+				active = yes
+			}
+		}
+	}
+}
+country_event = {
+	id = KT_turkey_events.8
+	title = KT_turkey_events.8.t
+	desc = KT_turkey_events.8.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			}
+		}
+	
+	
+	option = {
+		name = KT_turkey_events.7.a
+		SOV = {
+			diplomatic_relation = {
+				country = TUR
+				relation = puppet
+				active = yes
+			}
+		}
+	}
+}
+country_event = {
+	id = KT_turkey_events.9
+	title = KT_turkey_events.9.t
+	desc = KT_turkey_events.9.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			}
+		}
+	
+	
+	option = {
+		name = KT_turkey_events.7.a
+		FRA = {
+			diplomatic_relation = {
+				country = TUR
+				relation = puppet
+				active = yes
+			}
+		}
+	}
+}
+country_event = {
+	id = KT_turkey_events.10
+	title = KT_turkey_events.10.t
+	desc = KT_turkey_events.10.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			}
+		}
+	
+	
+	option = {
+		name = KT_turkey_events.7.a
+		ITA = {
+			diplomatic_relation = {
+				country = TUR
+				relation = puppet
+				active = yes
+			}
+		}
+	}
+}

@@ -37,6 +37,7 @@ bookmarks = {
 			ideology = democratic
 			ideas = {
 				GER_wilhelm_ii
+				GER_victory_tgw
 				german_customs_union_member
 			}
 			focuses = {
@@ -91,12 +92,14 @@ bookmarks = {
 
 
 		###  MINORS ###
-		FIN={
+		YUG={
 			minor = yes
-			history = "FIN_NEW_DECADE_DESC"
+			history = "CRO_NEW_DECADE_DESC"
 			ideology = neutrality
 			ideas = {
-				german_customs_union_member
+				YUG_devided_brothers
+				YUG_payment_to_hungary
+				YUG_muslim_christian_tensions
 			}
 			focuses = {
 			}
@@ -118,7 +121,6 @@ bookmarks = {
 			history = "UKR_NEW_DECADE_DESC"
 			ideology = neutrality
 			ideas = {
-				UKR_
 				german_customs_union_member
 				UKR_sugar_businesses
 			}
@@ -135,24 +137,18 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		"AFG"={
-			minor = yes
-			history = "AUS_NEW_DECADE_DESC"
-			ideology = neutrality
-			ideas = {
-				german_customs_union_member
-			}
-			focuses = {
-			}
-		}
 		"ROM"={
 			minor = yes
 			history = "ROM_NEW_DECADE_DESC"
 			ideology = neutrality
 			ideas = {
 				german_customs_union_member
+				Inefectve_constitution
 			}
 			focuses = {
+				ROM_pol_3
+				ROM_pol_2
+				ROM_pol_4
 			}
 		}
 		"GRE"={
@@ -165,6 +161,9 @@ bookmarks = {
 				GRE_on_going_population_exchange
 			}
 			focuses = {
+				GRE_metaxas_project_megisti_idea
+				GRE_the_house_always_wins
+				GRE_deimos_and_fobos
 			}
 		}
 		"TUR"={

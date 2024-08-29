@@ -12,7 +12,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 365
+		days = 200
 	}
 	fire_only_once = yes
 	
@@ -81,6 +81,7 @@ country_event = { #Schism collapse
 		remove_ideas = GRE_memories_of_the_great_nationa_schism
 		}
 		add_ideas = GRE_HERE_WE_GO_AGAIN
+		set_country_flag = nationa_schism_part2
 	}
   
 
@@ -96,17 +97,17 @@ country_event = { #Schism collapse again
 	
 	option = {
 		name = KT_greece_events.4.a
-		set_country_flag = nationa_schism_part2
+		
 		swap_ideas = {
-		remove_idea = GRE_HERE_WE_GO_AGAIN3
+		remove_ideas = GRE_HERE_WE_GO_AGAIN3
 
-		add_idea = GRE_HERE_WE_GO_AGAIN_CRUSH
+		add_ideas = GRE_HERE_WE_GO_AGAIN_CRUSH
 	}}
   
 
 }
 
-country_event = { #Schism collapse again
+country_event = { #dodecanese plssss
 	id = KT_greece_events.5
 	title = KT_greece_events.5.t
 	desc = KT_greece_events.5.d
@@ -122,9 +123,112 @@ country_event = { #Schism collapse again
 		}
   
 option = {
-		name = KT_greece_events.5.a
+		name = KT_greece_events.5.b
 		
 		ai_chance = { factor = 0 }
 		
 		}
+}
+
+
+country_event = { #georgia and armenia plssss
+	id = KT_greece_events.6
+	title = KT_greece_events.6.t
+	desc = KT_greece_events.6.d
+	fire_only_once = yes
+	picture = GFX_report_event_gre_fascism
+	is_triggered_only = yes
+	
+	option = {
+		name = KT_greece_events.6.a
+		980 = { set_owner = GRE }
+		826 = { set_owner = GRE }
+		231 = { set_owner = GRE }
+		230 = { set_owner = GRE }
+		ai_chance = { factor = 100 }
+		}
+  
+option = {
+		name = KT_greece_events.6.b
+		
+		ai_chance = { factor = 0 }
+		GRE = {
+		
+		create_wargoal = {
+				type = annex_everything
+				target = SOV
+				expire = 0
+			}
+		}
+		}
+}		
+country_event = { #russia alliance plssssssssssssssssssssssssssssssss
+	id = KT_greece_events.7
+	title = KT_greece_events.7.t
+	desc = KT_greece_events.7.d
+	fire_only_once = yes
+	picture = GFX_report_event_gre_megali_conference_signing
+	is_triggered_only = yes
+	
+	option = {
+		name = KT_greece_events.7.a
+		create_faction = GRE_roman_faction
+		add_to_faction = GRE 
+		ai_chance = { factor = 100 }
+		}
+  
+option = {
+		name = KT_greece_events.7.b
+		
+		ai_chance = { factor = 0 }
+	
+		}		
+}
+
+
+country_event = { #metaxas assasination attemp
+	id = KT_greece_events.8
+	title = KT_greece_events.8.t
+	desc = KT_greece_events.8.d
+	fire_only_once = yes
+	picture = GFX_report_event_gre_city_siege
+	is_triggered_only = yes
+	
+	option = {#escaped
+		name = KT_greece_events.8.a
+		trigger = { has_counry_flag = GRE_metaxas_army }
+		}
+  
+option = { #died
+		name = KT_greece_events.8.b
+		trigger = { has_counry_flag = GRE_metaxas_army_no }
+		
+	
+		}		
+}
+
+
+country_event = { #metaxas assasination attemp
+	id = KT_greece_events.9
+	title = KT_greece_events.9.t
+	desc = KT_greece_events.9.d
+	fire_only_once = yes
+	picture = GFX_report_event_gre_political_march
+	is_triggered_only = yes
+	
+	option = {#yes
+		name = KT_greece_events.9.a
+		set_country_flag = TUR_hired_metaxas
+		}
+  
+option = { #kill
+		name = KT_greece_events.9.b
+		add_stability = 0.1
+	
+		}	
+option = { #we cannot be bothered
+		name = KT_greece_events.9.c
+		
+	
+		}			
 }

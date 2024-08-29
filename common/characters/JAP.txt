@@ -14,6 +14,22 @@ characters={
 		}
 	}
 
+	JAP_ikuo_oyama={
+		name=JAP_ikuo_oyama
+		portraits={
+			civilian={
+				large="GFX_Portrait_JAP_ikuo_oyama"
+			}
+		}
+		traits = {
+			japanese_socialist
+		}
+		country_leader={
+			ideology=japsoccom
+			expire="1989.1.1.1"
+			id=-1
+		}
+	}
 	JAP_kyuichi_tokuda={
 		name=JAP_kyuichi_tokuda
 		portraits={
@@ -22,7 +38,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=japsoccom
+			ideology=marxism
 			expire="1989.1.1.1"
 			id=-1
 		}

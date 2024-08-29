@@ -2,6 +2,10 @@ state={
 	id=996
 	name="STATE_996"
 
+resources={
+oil=16
+	}
+
 	history={
 		victory_points = {
 			
@@ -14,6 +18,7 @@ state={
 		}
 		add_core_of = SLO
 		add_core_of = HUN
+		add_claim_by = UKR
 
 
 	}

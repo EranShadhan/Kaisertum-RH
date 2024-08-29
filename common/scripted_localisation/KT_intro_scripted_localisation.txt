@@ -3,116 +3,152 @@ defined_text = {
 
 	text = {
 		trigger = {
-			check_variable = { show_credits > 0.0 }
+			check_variable = { show_paths < 0.1 }
+			check_variable = { show_lore < 0.1 }
 		}
-		localization_key = introduction_lore_desc
+		localization_key = INTRO_CREDITS
 	}
 	text = {
 		trigger = {
-			original_tag = GER
-		}
-		localization_key = GER_country_lore_desc
-	}
-	text = {
-		trigger = {
-			original_tag = FRA
-		}
-		localization_key = FRA_lore_desc
-	}
-	text = {
-		trigger = {
-			original_tag = ITA
-		}
-		localization_key = ITA_country_lore_desc
-	}
-	text = {
-		trigger = {
-			original_tag = BUL
-		}
-		localization_key = BUL_country_lore_desc
-	}
-	text = {
-		trigger = {
-			original_tag = TUR
-		}
-		localization_key = TUR_country_lore_desc
-	}
-	text = {
-		trigger = {
-			original_tag = ENG
-		}
-		localization_key = ENG_country_lore_desc
-	}
-	text = {
-		trigger = {
+			check_variable = { show_paths > 0.0 }
 			original_tag = GRE
 		}
-		localization_key = GRE_country_lore_desc
+		localization_key = GRE_PATH_GUIDES
 	}
 	text = {
 		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = GER
+		}
+		localization_key = GER_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = FRA
+		}
+		localization_key = FRA_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = ITA
+		}
+		localization_key = ITA_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = BUL
+		}
+		localization_key = BUL_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = TUR
+		}
+		localization_key = TUR_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = ENG
+		}
+		localization_key = ENG_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = GRE
+		}
+		localization_key = GRE_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
 			original_tag = SOV
 		}
-		localization_key = SOV_country_lore_desc
+		localization_key = SOV_NEW_DECADE_DESC
 	}
 	text = {
 		trigger = {
+			check_variable = { show_lore > 0.0 }
 			original_tag = UBD
 		}
-		localization_key = UBD_country_lore_desc
+		localization_key = UBD_NEW_DECADE_DESC
 	}
 	text = {
 		trigger = {
+			check_variable = { show_lore > 0.0 }
 			original_tag = POL
 		}
-		localization_key = POL_country_lore_desc
+		localization_key = POL_NEW_DECADE_DESC
 	}
 	text = {
 		trigger = {
+			check_variable = { show_lore > 0.0 }
 			original_tag = EGY
 		}
-		localization_key = EGY_country_lore_desc
+		localization_key = EGY_NEW_DECADE_DESC
 	}
 	text = {
 		trigger = {
+			check_variable = { show_lore > 0.0 }
 			original_tag = AUS
 		}
-		localization_key = AUS_country_lore_desc
+		localization_key = AUS_NEW_DECADE_DESC
 	}
 	text = {
 		trigger = {
+			check_variable = { show_lore > 0.0 }
 			original_tag = HUN
 		}
-		localization_key = HUN_country_lore_desc
+		localization_key = HUN_NEW_DECADE_DESC
 	}
 	text = {
 		trigger = {
+			check_variable = { show_lore > 0.0 }
 			original_tag = YUG
 		}
-		localization_key = YUG_country_lore_desc
+		localization_key = YUG_NEW_DECADE_DESC
 	}
 	text = {
 		trigger = {
+			check_variable = { show_lore > 0.0 }
 			original_tag = SER
 		}
-		localization_key = SER_country_lore_desc
+		localization_key = SER_NEW_DECADE_DESC
 	}
 	text = {
 		trigger = {
+			check_variable = { show_lore > 0.0 }
 			original_tag = POR
 		}
-		localization_key = POR_country_lore_desc
+		localization_key = POR_NEW_DECADE_DESC
 	}
 	text = {
 		trigger = {
+			check_variable = { show_lore > 0.0 }
 			original_tag = UKR
 		}
-		localization_key = UKR_country_lore_desc
+		localization_key = UKR_NEW_DECADE_DESC
 	}
 	text = {
 		trigger = {
-			original_tag = PER
+			check_variable = { show_lore > 0.0 }
+			OR = {
+				original_tag = PER
+				original_tag = CPE
+			}
 		}
 		localization_key = PER_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = IRE
+		}
+		localization_key = IRE_NEW_DECADE_DESC
 	}
 }

@@ -157,6 +157,7 @@ ideas = {
 		
 		}
 		
+		
 		GRE_prepare_to_strike_tur4 = { 
 
             name = GRE_prepare_to_strike_tur
@@ -172,6 +173,391 @@ ideas = {
 			}				
 		    modifier = { 
 			conscription_factor = 0.1 
+			}
+		}
+		GRE_russian_commitment = {
+			picture = SOV_our_slavic_commitments_ccp_sov_compatibility
+			removal_cost = -1
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_defence_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		GRE_the_slogan = {
+			picture = generic_monarchist_uprising
+			removal_cost = -1
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.1
+			}
+		}
+		GRE_collab_with_church = {
+			picture = SOV_crowning_jewel_of_russia
+
+			allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				research_speed_factor = -0.05
+				stability_factor = 0.1
+				political_power_factor = 0.2
+			}
+		}
+		GRE_communism_uni = { 
+			removal_cost = -1
+
+			picture = ITA_il_sol_dell_avvenire_ns
+
+			modifier = {
+				war_support_factor = 0.05
+				political_power_gain = 0.1
+				industry_repair_factor = 0.15
+				army_attack_speed_factor = 0.05
+			}
+		}
+		GRE_king_of_kings = { 
+
+
+
+			picture = SOV_purged_junior_army_officers
+				
+			removal_cost = -1
+				
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.1
+				research_speed_factor = 0.05
+				surrender_limit = 0.1
+                conscription_factor = 0.1
+			}
+		}
+		GRE_communism_uni2 = { 
+			removal_cost = -1
+
+			picture = ITA_il_sol_dell_avvenire_ns
+
+			modifier = {
+				war_support_factor = 0.05
+				political_power_gain = 0.15
+				industry_repair_factor = 0.2
+				army_attack_speed_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				non_core_manpower = 0.05
+			}
+		}
+		GRE_paul = { 
+			removal_cost = -1
+
+			picture = GRE_prince_paul
+
+			modifier = {
+				stability_factor = 0.05
+				conscription_factor = 0.05
+			
+			}
+		}
+		GRE_trade_With_ger_eng = { 
+			removal_cost = -1
+
+			picture = generic_free_trade
+
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+			targeted_modifier = {
+				tag = GER
+				trade_cost_for_target_factor = -0.1
+				extra_trade_to_target_factor = 0.2
+				trade_opinion_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = ENG
+				trade_cost_for_target_factor = -0.1
+				extra_trade_to_target_factor = 0.2
+				trade_opinion_factor = 0.5
+			}
+		}
+		SWE_ball_bearing_idea_food_partner = {
+			picture = can_wartime_prices_and_trade_board
+			allowed = {
+				always = yes
+			}
+
+			cancel = {
+				has_war_with = SWE
+			}
+
+			equipment_bonus = { #To future confused Viktor when he inevitably checks this for the 10th time, yes this works without DLCs I just checked again, best regards, past Viktor
+				small_plane_airframe = {
+					build_cost_ic = -0.08 instant = yes
+				}
+				medium_plane_airframe = {
+					build_cost_ic = -0.06 instant = yes
+				}
+				large_plane_airframe = {
+					build_cost_ic = -0.05 instant = yes
+				}
+
+				light_tank_chassis = {
+					build_cost_ic = -0.08  instant = yes
+				}
+
+				medium_tank_chassis = {
+					build_cost_ic = -0.06 instant = yes
+				}
+
+				heavy_tank_chassis = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+		GRE_integrade_muslims_majorities = {
+
+			allowed = {
+				always = no
+			}
+
+			
+			removal_cost = -1
+
+			modifier = {
+				political_power_cost = 0.65
+				consumer_goods_expected_value = 0.2
+			}
+		}
+		GRE_securing_our_lands = {
+
+picture = NORDIC_navy_democratic
+removal_cost = -1
+
+           modifier = { 
+		   STABILITY_FACTOR = 0.05
+		   war_support_factor = 0.05
+		   POLITICAL_POWER_GAIN = 0.08
+		   PRODUCTION_SPEED_BUILDINGS_FACTOR = 0.05
+		   industrial_capacity_dockyard = 0.2
+		   }
+		   equipment_bonus = {
+                convoy = {
+                    build_cost_ic = -0.2 instant = yes
+                }
+            }
+}
+		GRE_patriotic_peoples_movement_ns = {
+
+			picture = FIN_finnish_march_of_conquest
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+	
+				war_support_factor = 0.05
+				conscription_factor = 0.05
+				training_time_army_factor = -0.07
+				army_morale_factor = 0.05
+				army_org_regain = 0.05
+			}
+		}	
+		GRE_death_before_dishonor = {
+
+			
+
+			picture = generic_victors_of_ww1
+
+			
+
+			modifier = {
+				surrender_limit = 05
+				max_surrender_limit_offset = 0.15
+				mobilization_speed = 0.2
+			}
+		}
+		GRE_pool_technical_know_how = {
+			allowed = {
+				always = yes
+			}
+
+			
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				light_tank_chassis = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				medium_tank_chassis = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				heavy_tank_chassis = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+		GRE_triumphant_will = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = por_monarchist_uprising
+			
+			modifier = {
+				political_power_gain = 1
+				drift_defence_factor = 0.5
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		GRE_trainng = {
+ 			removal_cost = -1
+
+ 			picture = SWE_ga_pa_tactics
+
+ 			allowed = {
+ 				always = no
+ 			}
+
+ 			modifier = {
+			    winter_attrition_factor = -0.2
+ 				acclimatization_cold_climate_gain_factor = 0.15
+				heat_attrition_factor = -0.2
+			    acclimatization_hot_climate_gain_factor = 0.15
+ 			}
+ 		}
+		
+GRE_macedonean_spirit = {
+		
+        	picture = all_adults_serve
+
+        	allowed = {
+        	    always = no
+        	}
+
+        	modifier = {
+			   stability_factor = 0.1
+			   war_support_factor = 0.1
+			   compliance_growth = 0.08
+				org_loss_when_moving = -0.05
+       		}
+  		}
+		GRE_trade_eng = {
+			picture = can_wartime_prices_and_trade_board
+			allowed = {
+				always = yes
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -0.08 instant = yes
+				}
+				medium_plane_airframe = {
+					build_cost_ic = -0.06 instant = yes
+				}
+				large_plane_airframe = {
+					build_cost_ic = -0.05 instant = yes
+				}
+
+				light_tank_chassis = {
+					build_cost_ic = -0.08  instant = yes
+				}
+
+				medium_tank_chassis = {
+					build_cost_ic = -0.06 instant = yes
+				}
+
+				heavy_tank_chassis = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+
+			modifier = {
+				research_speed_factor = -0.02
+			}
+		}
+		GRE_mission_to_eng = {
+			picture = eng_guided_by_britain
+			removal_cost = -1
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_advisor_cost_factor = -0.2
+				trade_laws_cost_factor = -0.2
+				mobilization_laws_cost_factor = -0.2
+				economy_cost_factor = -0.2
+			}
+		}
+		GRE_german_council = {
+			picture = soviet_german_friendship
+			removal_cost = -1
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				war_support_factor = 0.05
+				drift_defence_factor = 0.1
 			}
 		}
 		GRE_the_coordinated_armed_forces_of_the_balkan_pact = {
@@ -1456,7 +1842,7 @@ removal_cost = -1
 			POLITICAL_POWER_GAIN = 0.1
 			STABILITY_FACTOR = 0.05
 			CONSCRIPTION_FACTOR = 0.05
-			INDUSTRIAL_CAPACITY_FACTOR = -0.05
+			INDUSTRIAL_CAPACITY_FACTORY = -0.05
 			PRODUCTION_SPEED_BUILDINGS_FACTOR = 0.08
             }
 			}
@@ -1645,6 +2031,45 @@ allowed = {
 			}
 			
 		}
+		GRE_like_the_beasts = { 
+
+
+
+			picture = tur_sectarian_woes
+				
+			removal_cost = -1
+			targeted_modifier = {
+				tag = TUR
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.05
+			}				
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+
+			}
+		}
+		GRE_roman_army = {
+		
+        	picture = ITA_new_roman_empire_ns
+
+        	allowed = {
+        	    always = no
+        	}
+
+        	modifier = {
+                army_speed_factor = 0.1
+                special_forces_cap = 0.1
+				army_core_defence_factor = 0.15
+				naval_invasion_penalty = -0.2
+				naval_invasion_capacity = 15
+				amphibious_invasion = 0.15
+				invasion_preparation = -0.15
+       		}
+  		}	
+        	
 		GRE_gods_walls = {
 			allowed = {
 				always = no

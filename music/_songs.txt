@@ -1,8 +1,15 @@
 
 music_station = "base_music"
-
 music = {
 	song = "maintheme"
+	chance = {
+		modifier = {
+			factor = 0
+		}		
+	}
+}
+music = {
+	song = "maintheme_other"
 	chance = {
 		modifier = {
 			factor = 0

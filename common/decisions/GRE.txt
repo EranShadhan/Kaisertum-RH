@@ -1006,11 +1006,14 @@ GRE_expand_influence_in_FROM = {
 				}
 				FROM = {
 					add_to_variable = { var = GRE_garrison_control value = -1 }
+					
 				}
+				GRE_bop_very_low_increase_effect
 				else = {
 					FROM = {
 						add_to_variable = { var = GRE_garrison_control value = 1 }
 					}
+					GRE_bop_very_low_decrease_effect
 				}
 			
 			}
@@ -1065,7 +1068,7 @@ GRE_expand_influence_in_FROM = {
 		
 		is_good = no
 		days_re_enable = 1
-		days_mission_timeout = 14
+		days_mission_timeout = 20
 		available = {
 		has_country_flag = GRE_end_the_schism
 			
@@ -1108,7 +1111,7 @@ GRE_expand_influence_in_FROM = {
 		}
 		is_good = no
 		days_re_enable = 1
-		days_mission_timeout = 14
+		days_mission_timeout = 20
 		available = {
 			has_country_flag = GRE_end_the_schism
 			
@@ -1368,246 +1371,13 @@ GRE_expand_influence_in_FROM = {
 	}
 }
 GRE_onassis_dec_category = {
-GRE_trust_onassis_to_build_our_ships = {
-
-		icon = hol_attract_foreign_investors 
-
-		allowed = { 
-			original_tag = GRE
-		}
-
-		available = {
-			}
-
-	
-		days_remove = 30
-
-		cost = 25
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 10
-				is_historical_focus_on = no
-			}
-			
-		}
-
-		visible = {
-			
-		
-		}
-
-		complete_effect = {
-			
-		}
-
-		remove_effect = {
-		}
-	}	
-	GRE_trust_niarchos_to_build_our_ships = {
-
-		icon = hol_attract_foreign_investors 
-
-		allowed = { 
-			original_tag = GRE
-		}
-
-		available = {
-			}
-
-	
-		days_remove = 30
-
-		cost = 25
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 10
-				is_historical_focus_on = no
-			}
-			
-		}
-
-		visible = {
-			
-		
-		}
-
-		complete_effect = {
-			
-		}
-
-		remove_effect = {
-		}
-	}
-	GRE_trust_ger_to_build_our_ships = {
-
-		icon = hol_attract_foreign_investors 
-
-		allowed = { 
-			original_tag = GRE
-		}
-
-		available = {
-			}
-
-	
-		days_remove = 30
-
-		cost = 25
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 10
-				is_historical_focus_on = no
-			}
-			
-		}
-
-		visible = {
-			
-		
-		}
-
-		complete_effect = {
-			
-		}
-
-		remove_effect = {
-		}
-	}
-GRE_trust_eng_to_build_our_ships = {
-
-		icon = hol_attract_foreign_investors 
-
-		allowed = { 
-			original_tag = GRE
-		}
-
-		available = {
-			}
-
-	
-		days_remove = 30
-
-		cost = 25
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 10
-				is_historical_focus_on = no
-			}
-			
-		}
-
-		visible = {
-			
-		
-		}
-
-		complete_effect = {
-			
-		}
-
-		remove_effect = {
-		}
-	}	
-	GRE_buy_ships_fra = {
-
-		icon = hol_attract_foreign_investors 
-
-		allowed = { 
-			original_tag = GRE
-		}
-
-		available = {
-			}
-
-	
-		days_remove = 30
-
-		cost = 25
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 10
-				is_historical_focus_on = no
-			}
-			
-		}
-
-		visible = {
-			
-		
-		}
-
-		complete_effect = {
-			
-		}
-
-		remove_effect = {
-		}
-	}
-	GRE_buy_subs_ita = {
-
-		icon = hol_attract_foreign_investors 
-
-		allowed = { 
-			original_tag = GRE
-		}
-
-		available = {
-			}
-
-	
-		days_remove = 30
-
-		cost = 25
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 10
-				is_historical_focus_on = no
-			}
-			
-		}
-
-		visible = {
-			
-		
-		}
-
-		complete_effect = {
-			
-		}
-
-		remove_effect = {
-		}
-	}
 GRE_plan_omega = {
 
 		icon = hol_attract_foreign_investors 
 
 		allowed = { 
 			original_tag = GRE
+			always = no
 		}
 
 		available = {
@@ -1647,123 +1417,7 @@ GRE_expand_onassis = {
 
 		allowed = { 
 			original_tag = GRE
-		}
-
-		available = {
-			}
-
-	
-		days_remove = 30
-
-		cost = 25
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 10
-				is_historical_focus_on = no
-			}
-			
-		}
-
-		visible = {
-			
-		
-		}
-
-		complete_effect = {
-			
-		}
-
-		remove_effect = {
-		}
-	}
-	GRE_purchase_suez = {
-
-		icon = hol_attract_foreign_investors 
-
-		allowed = { 
-			original_tag = GRE
-		}
-
-		available = {
-			}
-
-	
-		days_remove = 30
-
-		cost = 25
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 10
-				is_historical_focus_on = no
-			}
-			
-		}
-
-		visible = {
-			
-		
-		}
-
-		complete_effect = {
-			
-		}
-
-		remove_effect = {
-		}
-	}
-		GRE_purchase_panama = {
-
-		icon = hol_attract_foreign_investors 
-
-		allowed = { 
-			original_tag = GRE
-		}
-
-		available = {
-			}
-
-	
-		days_remove = 30
-
-		cost = 25
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 10
-				is_historical_focus_on = no
-			}
-			
-		}
-
-		visible = {
-			
-		
-		}
-
-		complete_effect = {
-			
-		}
-
-		remove_effect = {
-		}
-	}
-		GRE_purchase_giblartar = {
-
-		icon = hol_attract_foreign_investors 
-
-		allowed = { 
-			original_tag = GRE
+			always = no
 		}
 
 		available = {
@@ -1803,6 +1457,7 @@ GRE_expand_onassis = {
 
 		allowed = { 
 			original_tag = GRE
+			always = no
 		}
 
 		available = {
@@ -1842,6 +1497,7 @@ GRE_expand_onassis = {
 
 		allowed = { 
 			original_tag = GRE
+			always = no
 		}
 
 		available = {
@@ -1881,6 +1537,7 @@ GRE_NUKES_FROM_SUBS = {
 
 		allowed = { 
 			original_tag = GRE
+			always = no
 		}
 
 		available = {
@@ -1929,9 +1586,11 @@ political_actions = {
 			
 
 		}
-		visible = {
+		 visible = {
+		has_completed_focus = GRE_rebuild_our_old_navy
 		
 		}
+		
  target_trigger = {
 			FROM = {
 				tag = ENG
@@ -1977,8 +1636,9 @@ add_timed_idea = {
 		allowed = {
 	   original_tag = GRE
 	   }
-		visible = {
-				
+		 visible = {
+		has_completed_focus = GRE_rebuild_our_old_navy
+		
 		}
 		days_remove = 730
 target_trigger = {

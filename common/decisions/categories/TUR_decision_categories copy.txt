@@ -14,3 +14,42 @@ TUR_sponsor_syrian_revolution_socialist_category = {
 	}
 }
 
+TUR_sponsor_syrian_revolution_nonaligned_category = {
+
+	priority = 9
+
+	icon = GFX_category_icon
+	highlight_states = {
+        highlight_states_trigger = {
+			check_variable = { var = TUR_is_syrian_state_secured value = 1 compare = equals}
+        }
+    }
+	
+	allowed = {
+		always = yes
+	}
+}
+
+TUR_foreign_influence_in_gov_category = {
+	allowed = {
+		OR = {
+			original_tag = TUR
+			original_tag = SOV
+			original_tag = FRA
+			original_tag = ITA
+			original_tag = GER
+		}
+	}
+}
+
+TUR_northern_cyprus_category = {
+	allowed = {
+		original_tag = TUR
+
+	}
+	highlight_states = {
+    highlight_state_targets = {
+        state = 986
+    }
+	}
+}

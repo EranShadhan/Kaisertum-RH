@@ -4,7 +4,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 100
 			tag = YUG
 		}
 	}
@@ -1376,6 +1376,657 @@ focus_tree = {
 				}
 				add_extra_state_shared_building_slots = 1
 			}
+		}
+	}
+	focus = {
+		id = YUG_the_fiume_crisis
+		icon = GFX_
+		relative_position_id = YUG_death_of_an_empire
+		prerequisite = { focus = YUG_death_of_an_empire }
+		available = {
+				
+				
+				
+			}
+			
+		x = -10
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_the_king_governament
+		icon = GFX_
+		relative_position_id = YUG_the_fiume_crisis
+		prerequisite = { focus = YUG_the_fiume_crisis }
+		available = {
+				
+				
+				
+			}
+			
+		x = -6
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_tito
+		icon = GFX_
+		relative_position_id = YUG_the_fiume_crisis
+		prerequisite = { focus = YUG_the_fiume_crisis }
+		available = {
+				
+				
+				
+			}
+			
+		x = 6
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_preapare_the_coup
+		icon = GFX_
+		relative_position_id = YUG_tito
+		prerequisite = { focus = YUG_tito }
+		available = {
+				
+				
+				
+			}
+			
+		x = 0
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_zagreb_uprising
+		icon = GFX_
+		relative_position_id = YUG_preapare_the_coup
+		prerequisite = { focus = YUG_preapare_the_coup }
+		available = {
+				
+				
+				
+			}
+			
+		x = 0
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_destribute_the_land
+		icon = GFX_
+		relative_position_id = YUG_zagreb_uprising
+		prerequisite = { focus = YUG_zagreb_uprising }
+		available = {
+				
+				
+				
+			}
+			
+		x = -3
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_form_local_militias
+		icon = GFX_
+		relative_position_id = YUG_destribute_the_land
+		prerequisite = { focus = YUG_destribute_the_land }
+		available = {
+				
+				
+				
+			}
+			
+		x = -1
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_5year_plan
+		icon = GFX_
+		relative_position_id = YUG_destribute_the_land
+		prerequisite = { focus = YUG_destribute_the_land }
+		available = {
+				
+				
+				
+			}
+			
+		x = -3
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_guerilla_warfare
+		icon = GFX_
+		relative_position_id = YUG_destribute_the_land
+		prerequisite = { focus = YUG_destribute_the_land }
+		available = {
+				
+				
+				
+			}
+			
+		x = 1
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_prepare_for_slavic_liberation
+		icon = GFX_
+		relative_position_id = YUG_guerilla_warfare
+		prerequisite = { focus = YUG_form_local_militias }
+		prerequisite = { focus = YUG_guerilla_warfare }
+		available = {
+				
+				
+				
+			}
+			
+		x = -1
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_communist_bulgarian_militias
+		icon = GFX_
+		relative_position_id = YUG_prepare_for_slavic_liberation
+		prerequisite = { focus = YUG_prepare_for_slavic_liberation }
+		available = {
+				
+				
+				
+			}
+			
+		x = 0
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_claim_litorale
+		icon = GFX_
+		relative_position_id = YUG_zagreb_uprising
+		prerequisite = { focus = YUG_zagreb_uprising }
+		available = {
+				
+				
+				
+			}
+			
+		x = 0
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_the_great_mareshal
+		icon = GFX_
+		relative_position_id = YUG_zagreb_uprising
+		prerequisite = { focus = YUG_zagreb_uprising }
+		available = {
+				
+				
+				
+			}
+			
+		x = 3
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_archittetor_of_communism
+		icon = GFX_
+		relative_position_id = YUG_the_great_mareshal
+		prerequisite = { focus = YUG_the_great_mareshal }
+		available = {
+				
+				
+				
+			}
+			
+		x = 0
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_karl_marxs_successor
+		icon = GFX_
+		relative_position_id = YUG_archittetor_of_communism
+		prerequisite = { focus = YUG_archittetor_of_communism }
+		available = {
+				
+				
+				
+			}
+			
+		x = -1
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_the_brilliant_man
+		icon = GFX_
+		relative_position_id = YUG_archittetor_of_communism
+		prerequisite = { focus = YUG_archittetor_of_communism }
+		available = {
+				
+				
+				
+			}
+			
+		x = 1
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_the_freedom_bringer
+		icon = GFX_
+		relative_position_id = YUG_archittetor_of_communism
+		prerequisite = { focus = YUG_archittetor_of_communism }
+		available = {
+				
+				
+				
+			}
+			
+		x = 3
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_ban_other_parties
+		icon = GFX_
+		relative_position_id = YUG_the_freedom_bringer
+		prerequisite = { focus = YUG_karl_marxs_successor }
+		prerequisite = { focus = YUG_the_brilliant_man }
+		prerequisite = { focus = YUG_the_freedom_bringer }
+		available = {
+				
+				
+				
+			}
+			
+		x = -1
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_defence_against_capitalism
+		icon = GFX_
+		relative_position_id = YUG_the_freedom_bringer
+		prerequisite = { focus = YUG_karl_marxs_successor }
+		prerequisite = { focus = YUG_the_brilliant_man }
+		prerequisite = { focus = YUG_the_freedom_bringer }
+		available = {
+				
+				
+				
+			}
+			
+		x = -3
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
 		}
 	}
 }

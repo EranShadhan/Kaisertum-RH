@@ -59,4 +59,20 @@ characters={
 		
 	}
 
+	ROM_mihai={
+		name = ROM_mihai
+		portraits = {
+			civilian={
+				large = GFX_portrait_ROM_mihai
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ ROM_bright_eyed_monarch }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
+	}
+
 }

@@ -1026,12 +1026,12 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "history"
-			verticalScrollbar = "right_vertical_slider"
-			position = { x = 810 y = 485 }
+			scrollbarType = standardtext_slider
+			position = { x = 805 y = 475 }
 			font = "hoi4_typewriter16"
 			borderSize = { x = 0 y = 0 }
-			maxWidth = 380
-			maxHeight = 30
+			maxWidth = 392
+			maxHeight = 217
 			format = left
 		}
 	}

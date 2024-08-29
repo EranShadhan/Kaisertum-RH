@@ -2,10 +2,9 @@ ideas = {
 
 	country = {
 
-        	Inefective_constitution
-		 = {
+        Inefective_constitution = {
 
-			picture = GFX_goal_generic_social_reforms
+			picture = generic_constitutional_guarantees
 			
 			allowed = {
 				always = no
@@ -27,7 +26,7 @@ ideas = {
 
 		Carol_reforms = {
 
-			picture = GFX_goal_generic_social_reforms
+			picture = generic_social_reforms
 
 			allowed = { 
 				always = no
@@ -41,13 +40,13 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = -0.05
-				stability_weekly = 0.3
+				stability_weekly = 0.001
 				neutrality_drift = 0.1
 			}
 		}
 
 		suspend_constitution = {
-			picture = GFX_goal_generic_social_reforms
+			picture = generic_social_reforms
 			
 			allowed = { 
 				always = no
@@ -69,7 +68,7 @@ ideas = {
 		}
 
 		increase_taxes = {
-			picture = GFX_goal_generic_social_reforms
+			picture = generic_social_reforms
 			
 			allowed = { 
 				always = no
@@ -90,7 +89,7 @@ ideas = {
 		}
 
 		revised_constitution = {
-			picture = GFX_goal_generic_social_reforms
+			picture = generic_social_reforms
 			
 			allowed = { 
 				always = no
@@ -108,6 +107,224 @@ ideas = {
 				industrial_capacity_dockyard = 0.10
 				industrial_capacity_factory = 0.10
 				production_speed_buildings_factor = 0.05
+				recruitable_population = 0.4
+				democratic_drift = 0.05
+			}
+		}
+
+		rom_political_violence = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.003
+				neutrality_drift = 0.02
+			}
+		}
+
+		caramaila_sentinels = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = 0.05
+				equipment_capture_factor_for_controller = 0.20
+				recruitable_population = 0.20
+			}
+		}
+
+		hungarian_workforce = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.10
+				production_speed_bunker_factor = 0.10
+			}
+		}
+
+		total_equality = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				recruitable_population = 0.1
+				army_org_factor = 0.5
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		ineffective_regency = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.20
+				stability_factor = -0.2
+				political_power_gain = -0.1
+			}
+		}
+
+		bribing_holdouts = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.10
+				political_power_gain = -0.25
+			}
+		}
+
+		ROM_national_plan = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				global_building_slots_factor = 0.1
+			}
+		}
+
+		
+
+	}
+
+	hidden_ideas = {
+
+		arm_ref_1 = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		arm_ref_2 = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+
+		arm_ref_3 = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+
+		arm_ref_4 = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.2 
 			}
 		}
 
