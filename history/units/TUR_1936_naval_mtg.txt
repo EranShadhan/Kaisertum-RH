@@ -5,10 +5,10 @@ units= {
 	### Türk Donanmasi ###
 	fleet = {
 		name = "Türk Donanmasi"			
-		naval_base = 4112 # Izmir
+		naval_base = 11746 # Adana
 		task_force = {				
 			name = "Türk Donanmasi"			
-			location = 4112 # Izmir
+			location = 11746 # Adana
 			ship = { name = "TCG Yavuz" pride_of_the_fleet = yes definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = TUR version_name = "Yavuz Class" } } }			
 			ship = { name = "TCG Mecidiye" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = TUR version_name = "Mecidiye Class" } } }
 			ship = { name = "TCG Hamidiye" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = TUR version_name = "Mecidiye Class" } } }
