@@ -1,0 +1,735 @@
+focus_tree = {
+	id = ireland_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = IRE
+		}
+
+		#modifier = {
+		#	add = 10
+		#	original_tag = IRE	
+		#}
+	}
+	
+	default = no
+
+
+
+
+
+
+
+	############################
+	##### INDUSTRY SECTION #####
+	############################
+
+	focus = {
+		id = IRE_state_of_irish_economy
+		icon = GFX_goal_generic_consumer_goods
+		x = 8
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 24
+			modifier = {
+				factor = 3
+			}
+		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = IRE_disperse_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = IRE_state_of_irish_economy }
+		mutually_exclusive = { focus = IRE_concentrate_industry }
+		x = -1
+		y = 1
+		relative_position_id = IRE_state_of_irish_economy
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				119 = {
+
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+				134 = {
+
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+				135 = {
+
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+				113 = {
+
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+
+			
+		}
+	}
+
+	focus = {
+		id = IRE_concentrate_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = IRE_state_of_irish_economy }
+		mutually_exclusive = { focus = IRE_disperse_industry }
+		x = 1
+		y = 1
+		relative_position_id = IRE_state_of_irish_economy
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+					113 = {
+
+                        add_extra_state_shared_building_slots = 2
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 2
+                            instant_build = yes
+                        }
+                    }
+					119 = {
+
+                        add_extra_state_shared_building_slots = 2
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 2
+                            instant_build = yes
+                        }
+                    }
+
+					
+		}
+	}
+
+	focus = {
+		id = IRE_urbanize_ireland
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = IRE_concentrate_industry focus = IRE_disperse_industry }
+		mutually_exclusive = { focus = IRE_build_east_coast }
+		x = 0
+		y = 1
+		relative_position_id = IRE_disperse_industry
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				113 = {
+
+                        add_building_construction = {
+                            type = infrastructure
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+				135 = {
+
+                        add_building_construction = {
+                            type = infrastructure
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+				134 = {
+
+                        add_building_construction = {
+                            type = infrastructure
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+				119 = {
+
+                        add_building_construction = {
+                            type = infrastructure
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+
+		}
+	}
+
+	focus = {
+		id = IRE_build_east_coast
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = IRE_concentrate_industry focus = IRE_disperse_industry }
+		mutually_exclusive = { focus = IRE_urbanize_ireland }
+		x = 0
+		y = 1
+		relative_position_id = IRE_concentrate_industry
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				113 = {
+
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+				135 = {
+
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+
+			
+		}
+	}
+
+	focus = {
+		id = IRE_british_engineers
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = IRE_urbanize_ireland focus = IRE_build_east_coast }
+		mutually_exclusive = { focus = IRE_irish_computer_schools }
+		x = 0
+		y = 1
+		relative_position_id = IRE_urbanize_ireland
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+   				bonus = 0.5
+    				uses = 1
+    				category = engineers_tech
+			}
+			add_tech_bonus = {
+   				bonus = 1
+    				uses = 1
+    				category = construction_tech
+			}
+			add_tech_bonus = {
+   				bonus = 1
+    				uses = 1
+    				category = excavation_tech
+			}
+
+
+			
+		}
+	}
+
+	focus = {
+		id = IRE_irish_computer_schools
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = IRE_urbanize_ireland focus = IRE_build_east_coast }
+		mutually_exclusive = { focus = IRE_british_engineers }
+		x = 0
+		y = 1
+		relative_position_id = IRE_build_east_coast
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				add_tech_bonus = {
+   				bonus = 1
+    				uses = 1
+    				category = computing_tech
+			}
+				add_research_slot = 1
+
+		}
+	}
+
+	focus = {
+		id = IRE_invest_new_industries
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = IRE_british_engineers focus = IRE_irish_computer_schools }
+		mutually_exclusive = { focus = IRE_traditional_manafacturing }
+		x = 0
+		y = 1
+		relative_position_id = IRE_british_engineers
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				135 = {
+
+                        add_extra_state_shared_building_slots = 2
+                        add_building_construction = {
+                            type = arms_factory
+                            level = 2
+                            instant_build = yes
+                        }
+                    }
+				add_tech_bonus = {
+   					 bonus = 2
+   					 uses = 2
+    					category = synth_resources
+				}
+
+		}
+	}
+
+	focus = {
+		id = IRE_traditional_manafacturing
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = IRE_british_engineers focus = IRE_irish_computer_schools }
+		mutually_exclusive = { focus = IRE_invest_new_industries }
+		x = 0
+		y = 1
+		relative_position_id = IRE_irish_computer_schools
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+					113 = {
+
+                        add_extra_state_shared_building_slots = 2
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 2
+                            instant_build = yes
+                        }
+                    }
+					119 = {
+
+                        add_extra_state_shared_building_slots = 2
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 2
+                            instant_build = yes
+                        }
+                    }
+
+		}
+	}
+
+	focus = {
+		id = IRE_invest_civil_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = IRE_invest_new_industries focus = IRE_traditional_manafacturing }
+		mutually_exclusive = { focus = IRE_invest_mil_industries }
+		x = 0
+		y = 1
+		relative_position_id = IRE_invest_new_industries
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				random_owned_controlled_state = {
+
+                        add_extra_state_shared_building_slots = 3
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 3
+                            instant_build = yes
+                        }
+                    }
+			
+		}
+	}
+
+	focus = {
+		id = IRE_invest_mil_industries
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = IRE_invest_new_industries focus = IRE_traditional_manafacturing }
+		mutually_exclusive = { focus = IRE_invest_civil_industry }
+		x = 0
+		y = 1
+		relative_position_id = IRE_traditional_manafacturing
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				random_owned_controlled_state = {
+
+                        		add_extra_state_shared_building_slots = 3
+                        		add_building_construction = {
+                           		 type = arms_factory
+                           		 level = 3
+                           		 instant_build = yes
+                        }
+                    }
+
+		}
+	}
+
+	focus = {
+		id = IRE_call_immigrants_home
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = IRE_invest_mil_industries focus = IRE_invest_civil_industry }
+		mutually_exclusive = { focus = IRE_english_settlement }
+		x = 0
+		y = 1
+		relative_position_id = IRE_invest_civil_industry
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				add_timed_idea = {
+    					idea = IRE_Great_Homecoming
+    					days = 720
+					}
+
+		}
+	}
+
+	focus = {
+		id = IRE_english_settlement
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = IRE_invest_mil_industries focus = IRE_invest_civil_industry }
+		mutually_exclusive = { focus = IRE_call_immigrants_home }
+		x = 0
+		y = 1
+		relative_position_id = IRE_invest_mil_industries
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			
+		}
+	}
+
+	focus = {
+		id = IRE_economic_boom
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = IRE_english_settlement focus = IRE_call_immigrants_home }
+		x = -1
+		y = 1
+		relative_position_id = IRE_english_settlement
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				add_ideas = IRE_Economic_Boom_focus
+			
+		}
+	}
+
+
+
+
+
+	############################
+	####     Air Force    ######
+	############################
+
+
+	############################
+	####     Military     ######
+	############################
+
+
+	############################
+	####       Navy       ######
+	############################
+
+	
+}

@@ -8,6 +8,9 @@ ideas = {
 
 			allowed_civil_war = {
 				NOT ={
+					has_overlord = ENG
+				}
+				NOT ={
 					has_government = communism
 				}
 				NOT = {
@@ -132,6 +135,9 @@ ideas = {
 
 			allowed_civil_war = {
 				NOT ={
+					has_overlord = ENG
+				}
+				NOT ={
 					has_government = communism
 				}
 				NOT = {
@@ -155,6 +161,53 @@ ideas = {
 			
 
 		}
+	
+		IRE_Great_Homecoming = {
+			
+			allowed = {
+				original_tag = IRE
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = 
+			
+			removal_cost = -1
+			
+			modifier = { monthly_population = 5 } 				
+			
+		
+
+		}
+
+		IRE_Economic_Boom_focus = {
+			
+			allowed = {
+				original_tag = IRE
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = 
+			
+			removal_cost = -1
+			
+			modifier = { production_speed_buildings_factor = 0.5  } 
+			modifier = { consumer_goods_factor = -0.1 }
+			modifier = { production_factory_efficiency_gain_factor = 0.5  }
+			modifier = { production_lack_of_resource_penalty_factor = -0.5  }
+			modifier = { industrial_capacity_factory = 0.3 }
+			modifier = { autonomy_gain = 20 }				
+			}
+			
+
+		}
+
+	
+				
+
 
 
 
