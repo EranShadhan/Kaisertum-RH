@@ -235,7 +235,7 @@ guiTypes = {
 			name ="multiplayer_text"
 			position = { x = 356 y = 28 }
 			textureFile = ""
-			font = "garamond_24"
+			font = "hoi_24header"
 			borderSize = {x = 0 y = 0}
 			text = "FE_MULTI_PLAYER"
 			format = centre
