@@ -377,3 +377,294 @@ news_event = {
 		name = cyprus_conflict_frozen_news.a
 	}
 }
+
+news_event = {
+	id = kaisertum_news.11
+	title = turkey_wins_constantinople_war.t   
+	desc = turkey_wins_constantinople_war.d
+	picture = GFX_news_event_074
+
+	major = yes
+
+	trigger = {
+		AND = {
+			797 = { is_controlled_by = TUR is_owned_by = GRE }
+			341 = { is_controlled_by = TUR is_owned_by = GRE }
+			339 = { is_controlled_by = TUR is_owned_by = GRE }
+			NOT = { 978 = { is_controlled_by = GRE is_owned_by = TUR } }
+		}
+
+	
+		TUR = { has_war_with = GRE }
+		NOT = { has_global_flag = turkey_wins_constantinople }
+		
+	}
+
+	immediate = { 
+			set_global_flag = turkey_wins_constantinople
+			GRE = {
+				every_owned_state = {
+					transfer_state_to = GRE
+				}
+
+			}
+			TUR = {
+				every_owned_state = {
+					transfer_state_to = TUR
+				}
+				transfer_state = 797
+				transfer_state = 341
+			}
+
+	}
+
+	
+	option = {
+		name = turkey_wins_constantinople.a
+	}
+}
+
+news_event = {
+	id = kaisertum_news.12
+	title = greece_wins_constantinople_war.t   
+	desc = greece_wins_constantinople_war.d
+	picture = GFX_news_event_074
+
+	major = yes
+
+	trigger = {
+		AND = {
+			978 = { is_controlled_by = GRE is_owned_by = TUR }
+			NOT = { 47 = { is_controlled_by = TUR is_owned_by = GRE } }
+			NOT = { 797 = { is_controlled_by = TUR is_owned_by = GRE } }
+			NOT = { 339 = { is_controlled_by = TUR is_owned_by = GRE } }
+		}
+
+	
+		TUR = { has_war_with = GRE }
+		NOT = { has_global_flag = greece_wins_constantinople }
+		
+	}
+
+	immediate = { 
+			set_global_flag = greece_wins_constantinople
+			GRE = {
+				every_owned_state = {
+					transfer_state_to = GRE
+				}
+
+			}
+			TUR = {
+				every_owned_state = {
+					transfer_state_to = TUR
+				}
+			}
+			978 = {
+				set_demilitarized_zone = yes
+			}
+
+	}
+
+	
+	option = {
+		name = greece_wins_constantinople.a
+	}
+}
+
+news_event = {
+	id = kaisertum_news.13
+	title = tur_and_rus_win_tgtw.t   
+	desc = tur_and_rus_win_tgtw.d
+	picture = GFX_news_event_074
+
+	major = yes
+
+	trigger = {
+		AND = {
+			OR = { 
+				352 = { is_controlled_by = TUR is_owned_by = PER }
+				352 = { is_controlled_by = SOV is_owned_by = PER }
+			}
+			OR = { 
+				419 = { is_controlled_by = TUR is_owned_by = PER }
+				419 = { is_controlled_by = SOV is_owned_by = PER }
+			}
+			OR = { 
+				420 = { is_controlled_by = TUR is_owned_by = PER }
+				420 = { is_controlled_by = SOV is_owned_by = PER }
+			}
+			OR = { 
+				229 = { is_controlled_by = TUR is_owned_by = PER }
+				229 = { is_controlled_by = SOV is_owned_by = PER }
+			}
+			OR = { 
+				800 = { is_controlled_by = TUR is_owned_by = PER }
+				800 = { is_controlled_by = SOV is_owned_by = PER }
+			}
+			OR = { 
+				676 = { is_controlled_by = TUR is_owned_by = PER }
+				676 = { is_controlled_by = SOV is_owned_by = PER }
+			}
+			231 = {
+				is_owned_and_controlled_by = SOV
+			}
+			230 = {
+				is_owned_and_controlled_by = SOV
+			}
+			232 = {
+				is_owned_and_controlled_by = SOV
+			}
+			821 = {
+				is_owned_and_controlled_by = SOV
+			}
+			826 = {
+				is_owned_and_controlled_by = SOV
+			}
+			980 = {
+				is_owned_and_controlled_by = SOV
+			}
+		}
+
+	
+		TUR = { 
+			AND = {
+			has_war_with = PER 
+			has_completed_focus = TUR_rostov_agreement
+			}
+		}
+		NOT = { has_global_flag = tur_and_rus_win_tgtw }
+		
+	}
+
+	immediate = { 
+			set_global_flag = greece_wins_constantinople
+			PER = {
+				every_owned_state = {
+					transfer_state_to = PER
+				}
+			}
+			TUR = {
+				every_owned_state = {
+					transfer_state_to = TUR
+				}
+				transfer_state = 352
+				transfer_state = 676
+				transfer_state = 419
+				transfer_state = 420
+			}
+			SOV = {
+				transfer_state = 229
+				transfer_state = 800
+			}
+
+			
+
+	
+	option = {
+		name = tur_and_rus_win_tgtw.a
+	}
+}
+}
+news_event = {
+	id = kaisertum_news.14
+	title = tur_wins_tgtw.t   
+	desc = tur_wins_tgtw.d
+	picture = GFX_news_event_074
+
+	major = yes
+
+	trigger = {
+		AND = {
+			229 = { is_controlled_by = TUR is_owned_by = PER }
+			352 = { is_controlled_by = TUR is_owned_by = PER }
+			OR = {
+				420 = { is_controlled_by = TUR is_owned_by = PER }
+				421 = { is_controlled_by = TUR is_owned_by = PER }
+				291 = { is_controlled_by = TUR is_owned_by = PER }
+			}
+		}
+
+	
+		TUR = { 
+			AND = {
+			has_war_with = PER 
+			has_completed_focus = TUR_the_lone_wolf
+			}
+		}
+		NOT = { has_global_flag = tur_wins_tgtw }
+		
+	}
+
+	immediate = { 
+			set_global_flag = tur_wins_tgtw
+			PER = {
+				every_owned_state = {
+					transfer_state_to = PER
+				}
+			}
+			TUR = {
+				every_owned_state = {
+					transfer_state_to = TUR
+				}
+				transfer_state = 352
+				transfer_state = 419
+				transfer_state = 420
+				transfer_state = 229
+				transfer_state = 800
+			}
+
+			
+
+	
+	option = {
+		name = tur_wins_tgtw.a
+	}
+}
+}
+news_event = {
+	id = kaisertum_news.15
+	title = per_wins_tgtw.t   
+	desc = per_wins_tgtw.d
+	picture = GFX_news_event_074
+
+	major = yes
+
+	trigger = {
+		AND = {
+			353 = { is_controlled_by = PER is_owned_by = TUR }
+			350 = { is_controlled_by = PER is_owned_by = PER }
+			229 = { is_owned_and_controlled_by = PER }
+			800 = { is_owned_and_controlled_by = PER }
+		    419 = { is_owned_and_controlled_by = PER }
+		}
+
+	
+		TUR = { 
+			has_war_with = PER 
+		}
+		NOT = { has_global_flag = per_wins_tgtw }
+		
+	}
+
+	immediate = { 
+			set_global_flag = per_wins_tgtw
+			TUR = {
+				every_owned_state = {
+					transfer_state_to = TUR
+				}
+			}
+			PER = {
+				every_owned_state = {
+					transfer_state_to = PER
+				}
+				transfer_state = 350
+			}
+
+			
+
+	
+	option = {
+		name = per_wins_tgtw.a
+	}
+}
+}

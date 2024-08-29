@@ -276,3 +276,68 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = KT_turkey_events.11
+	title = KT_turkey_events.11.t
+	desc = KT_turkey_events.11.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			}
+		}
+	
+	
+	option = {
+		name = KT_turkey_events.11.a
+		ai_chance ={
+			base = 8
+		}
+
+	}
+	option = {
+		name = KT_turkey_events.11.b
+		ai_chance ={
+			base = 2
+		}
+		set_global_flag = constantinople_war
+		GRE = {
+			declare_war_on = {
+				target = TUR
+				type = annex_everything
+			}
+		}
+	}
+}
+country_event = {
+	id = KT_turkey_events.12
+	title = KT_turkey_events.12.t
+	desc = KT_turkey_events.12.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			}
+		}
+	
+	
+	option = {
+		name = KT_turkey_events.12.a
+
+	}
+	option = {
+		name = KT_turkey_events.12.b
+		set_global_flag = constantinople_war
+		GRE = {
+			declare_war_on = {
+				target = TUR
+				type = annex_everything
+			}
+		}
+	}
+}

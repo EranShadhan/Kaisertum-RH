@@ -1967,7 +1967,7 @@ focus = {
 	focus = {
 		id = TUR_start_of_a_new_decade
 		cost = 5
-		x = 20
+		x = 24
 		y = 0
 s
 		prerequisite = {
@@ -1988,6 +1988,12 @@ s
 
 		prerequisite = {
 			focus = TUR_start_of_a_new_decade
+		}
+		mutually_exclusive = {
+			focus = TUR_focus_on_internal_matters
+		}
+		mutually_exclusive = {
+			focus = TUR_the_sultans_grip_remains_firm
 		}
 		available = {
 		}
@@ -3123,6 +3129,9 @@ s
 		mutually_exclusive = {
 			focus = TUR_constitution_of_1930
 		}
+		mutually_exclusive = {
+			focus = TUR_the_sultans_grip_remains_firm
+		}
 		relative_position_id = TUR_start_of_a_new_decade
 		completion_reward = {
 			add_political_power = 50
@@ -3600,6 +3609,819 @@ s
 		completion_reward = {
 			add_political_power = 50
 			# SGW PREPARATION DECISIONS E AM LAZY
+
+		}
+	}
+
+	# EMPIRE PATH
+	focus = {
+		id = TUR_the_sultans_grip_remains_firm
+		cost = 5
+		x = 16
+		y = 1
+
+		prerequisite = {
+			focus = TUR_start_of_a_new_decade
+		}
+		available = {
+		}
+		mutually_exclusive = {
+			focus = TUR_constitution_of_1930
+		}
+		mutually_exclusive = {
+			focus = TUR_focus_on_internal_matters
+		}
+		relative_position_id = TUR_start_of_a_new_decade
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = TUR_intervene_in_the_economy
+		cost = 5
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_the_sultans_grip_remains_firm
+		}
+		available = {
+		}
+		relative_position_id = TUR_the_sultans_grip_remains_firm
+		completion_reward = {
+			add_ideas = TUR_interventionism
+		}
+	}
+	focus = {
+		id = TUR_remilitarization_of_kostantiniyye
+		cost = 5
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_the_sultans_grip_remains_firm
+		}
+		available = {
+		}
+		relative_position_id = TUR_the_sultans_grip_remains_firm
+		completion_reward = {
+			978 = {
+				set_demilitarized_zone = no
+			}
+			GRE = {
+				country_event = {
+					id = KT_turkey_events.11
+					hours = 12
+					random_hours = 6
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_pan_turkic_sentiment
+		cost = 5
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_remilitarization_of_kostantiniyye
+		}
+		prerequisite = {
+			focus = TUR_intervene_in_the_economy
+		}
+		available = {
+		}
+		relative_position_id = TUR_remilitarization_of_kostantiniyye
+		completion_reward = {
+			add_political_power = 20
+			add_ideas = TUR_pan_turkism
+		}
+	}
+	focus = {
+		id = TUR_sultan_kultu
+		cost = 5
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = TUR_pan_turkic_sentiment
+		}
+
+		available = {
+		}
+		relative_position_id = TUR_pan_turkic_sentiment
+		completion_reward = {
+			add_country_leader_trait = lion_tamer
+		}
+	}
+	focus = {
+		id = TUR_ministry_of_propaganda
+		cost = 5
+		x = 2
+		y = 1
+
+		prerequisite = {
+			focus = TUR_sultan_kultu
+		}
+
+		available = {
+		}
+		relative_position_id = TUR_sultan_kultu
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_war_support = 0.03
+			add_political_power = 25
+
+		}
+	}
+	focus = {
+		id = TUR_convince_the_peeps
+		cost = 5
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = TUR_ministry_of_propaganda
+		}
+
+		available = {
+		}
+		relative_position_id = TUR_ministry_of_propaganda
+		completion_reward = {
+			add_political_power = 75
+			add_war_support = 0.02
+			add_stability = 0.02
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+
+		}
+	}
+	focus = {
+		id = TUR_purge_germans_in_gov
+		cost = 5
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = TUR_sultan_kultu
+		}
+
+		available = {
+		}
+		relative_position_id = TUR_sultan_kultu
+		completion_reward = {
+			remove_ideas = TUR_german_influence_in_government
+			add_war_support = 0.01
+			add_political_power = 10
+
+		}
+	}
+	focus = {
+		id = TUR_discredit_the_opposition
+		cost = 5
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = TUR_purge_germans_in_gov
+		}
+
+		available = {
+		}
+		relative_position_id = TUR_purge_germans_in_gov
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.1
+			}
+			add_political_power = 10
+
+		}
+	}
+	focus = {
+		id = TUR_sultan_and_islamists
+		cost = 5
+		x = -3
+		y = 1
+
+		prerequisite = {
+			focus = TUR_sultan_kultu
+		}
+
+		available = {
+		}
+		relative_position_id = TUR_sultan_kultu
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.03
+			}
+			add_war_support = 0.03
+			add_political_power = 15
+
+		}
+	}
+	focus = {
+		id = TUR_the_wolf_of_islam
+		cost = 5
+		x = -1
+		y = 2
+
+		prerequisite = {
+			focus = TUR_sultan_and_islamists
+		}
+
+		available = {
+		}
+		relative_position_id = TUR_sultan_and_islamists
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_pan_turkism
+				add_idea = TUR_wolf_of_islam
+			}
+
+		}
+	}
+	focus = {
+		id = TUR_islamist_paramilitaries
+		cost = 5
+		x = 1
+		y = 2
+
+		prerequisite = {
+			focus = TUR_sultan_and_islamists
+		}
+
+		available = {
+		}
+		relative_position_id = TUR_sultan_and_islamists
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = { has_template = "Islamci Paramiliter Bölük" }
+				}
+				division_template = {
+					name = "Islamci Paramiliter Bölük"
+					regiments = {
+					    infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+					}
+				}
+			}
+			49 = {
+				create_unit = {
+                    division = "name = \"Islamci Paramiliter Bölük\" division_template = \"Islamci Paramiliter Bölük\" start_experience_factor = 0.5"
+                    owner = TUR
+                }
+				create_unit = {
+                    division = "name = \"Islamci Paramiliter Bölük\" division_template = \"Islamci Paramiliter Bölük\" start_experience_factor = 0.5"
+                    owner = TUR
+                }
+			}
+
+
+		}
+	}
+	focus = {
+		id = TUR_commit_to_pan_turkism
+		cost = 5
+		x = 0
+		y = 2
+
+		prerequisite = {
+			focus = TUR_discredit_the_opposition
+		}
+		prerequisite = {
+			focus = TUR_the_wolf_of_islam
+		}
+		prerequisite = {
+			focus = TUR_islamist_paramilitaries
+		}
+		prerequisite = {
+			focus = TUR_convince_the_peeps
+		}
+
+		available = {
+		}
+		relative_position_id = TUR_discredit_the_opposition
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			promote_character = {
+				character = TUR_ahmed_IV
+				ideology = rexism
+			}
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = TUR_neutrality
+
+		}
+	}
+	focus = {
+		id = TUR_turkification_of_the_minorities
+		cost = 5
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_commit_to_pan_turkism
+		}
+
+		available = {
+		}
+		relative_position_id = TUR_commit_to_pan_turkism
+		completion_reward = {
+			add_ideas = TUR_turkification
+
+		}
+	}
+	focus = {
+		id = TUR_pan_turkists_of_the_new_generation
+		cost = 5
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_commit_to_pan_turkism
+		}
+
+		available = {
+		}
+		relative_position_id = TUR_commit_to_pan_turkism
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.2
+			}
+
+		}
+	}
+	focus = {
+		id = TUR_send_diplomats_to_russia
+		cost = 5
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_turkification_of_the_minorities
+		}
+		prerequisite = {
+			focus = TUR_pan_turkists_of_the_new_generation
+		}
+
+		available = {
+		}
+		relative_position_id = TUR_pan_turkists_of_the_new_generation
+		completion_reward = {
+			SOV = {
+				country_event = {
+					id = KT_turkey_events.12
+					hours = 12
+					random_hours = 6
+				}
+
+			}
+
+		}
+	}
+	focus = {
+		id = TUR_rostov_agreement
+		cost = 1
+		x = -2
+		y = 1
+
+		prerequisite = {
+			focus = TUR_send_diplomats_to_russia
+		}
+
+
+		available = {
+			has_country_flag = TUR_rostov_agreement_passes
+		}
+
+		relative_position_id = TUR_send_diplomats_to_russia
+		completion_reward = {
+
+
+		}
+	}
+	focus = {
+		id = TUR_the_lone_wolf
+		cost = 1
+		x = 2
+		y = 1
+
+		prerequisite = {
+			focus = TUR_send_diplomats_to_russia
+		}
+
+
+		available = {
+			has_country_flag = TUR_rostov_agreement_fails
+		}
+		relative_position_id = TUR_send_diplomats_to_russia
+		completion_reward = {
+
+
+		}
+	}
+	focus = {
+		id = TUR_war_with_persia
+		cost = 5
+		x = 0
+		y = 2
+
+		prerequisite = {
+			focus = TUR_rostov_agreement
+			focus = TUR_the_lone_wolf
+		}
+
+
+		available = {
+			has_country_flag = TUR_send_diplomats_to_russia
+		}
+		
+		relative_position_id = TUR_send_diplomats_to_russia
+		completion_reward = {
+			TUR = {
+				declare_war_on = {
+					target = PER
+					type = annex_everything
+				}
+				if = {
+					limit = { has_completed_focus = { TUR_rostov_agreement } }
+					SOV = {
+						add_to_war = {
+							targeted_alliance = TUR
+							enemy = PER
+							hostility_reason = asked_to_join
+						}
+					}
+				}
+				set_global_flag = tgtw_started
+
+			}
+		}
+	}
+	focus = {
+		id = TUR_pursue_an_alliance_with_russia
+		cost = 5
+		x = 0
+		y = 2
+
+		prerequisite = {
+			focus = TUR_rostov_agreement
+		}
+
+
+		available = {
+		}
+
+		relative_position_id = TUR_rostov_agreement
+		completion_reward = {
+			create_faction = ROSTOV_PACT
+			add_to_faction = SOV
+
+
+		}
+	}
+	focus = {
+		id = TUR_promote_the_turks_of_syria
+		cost = 5
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_pursue_an_alliance_with_russia
+		}
+
+
+		available = {
+		}
+
+		relative_position_id = TUR_pursue_an_alliance_with_russia
+		completion_reward = {
+			975 = {
+				add_claim_by = TUR
+			}
+
+		}
+	}
+	focus = {
+		id = TUR_latakia_or_war
+		cost = 5
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = TUR_promote_the_turks_of_syria
+		}
+
+
+		available = {
+		}
+
+		relative_position_id = TUR_promote_the_turks_of_syria
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = SAU
+				generator = { 975 }
+			}
+
+		}
+	}
+	focus = {
+		id = TUR_claim_izmir
+		cost = 5
+		x = -2
+		y = 1
+
+		prerequisite = {
+			focus = TUR_pursue_an_alliance_with_russia
+		}
+
+
+		available = {
+		}
+
+		relative_position_id = TUR_pursue_an_alliance_with_russia
+		completion_reward = {
+			339 = {
+				add_claim_by = TUR
+			}
+			987 = {
+				add_claim_by = TUR
+			}
+
+		}
+	}
+	focus = {
+		id = TUR_liberate_eastern_thrace
+		cost = 5
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_claim_izmir
+		}
+
+
+		available = {
+		}
+
+		relative_position_id = TUR_claim_izmir
+		completion_reward = {
+			797 = {
+				add_claim_by = TUR
+			}
+			341 = {
+				add_claim_by = TUR
+			}
+			184 = {
+				add_claim_by = TUR
+			}
+
+		}
+	}
+	focus = {
+		id = TUR_push_for_kibris_and_the_aegean
+		cost = 5
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_claim_izmir
+		}
+
+
+		available = {
+		}
+
+		relative_position_id = TUR_claim_izmir
+		completion_reward = {
+			986 = {
+				add_claim_by = TUR
+			}
+			183 = {
+				add_claim_by = TUR
+			}
+			187 = {
+				add_claim_by = TUR
+			}
+
+		}
+	}
+	focus = {
+		id = TUR_revenge_for_the_first_balkan_war
+		cost = 5
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_push_for_kibris_and_the_aegean
+		}
+		prerequisite = {
+			focus = TUR_liberate_eastern_thrace
+		}
+
+
+		available = {
+		}
+
+		relative_position_id = TUR_liberate_eastern_thrace
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = GRE
+				generator = { 986 183 797 341 339 987 187 }
+			}
+
+
+		}
+	}
+	focus = {
+		id = TUR_the_lands_which_were_stolen
+		cost = 5
+		x = 0
+		y = 2
+
+		prerequisite = {
+			focus = TUR_the_lone_wolf
+		}
+
+
+		available = {
+		}
+
+		relative_position_id = TUR_the_lone_wolf
+		completion_reward = {
+			339 = {
+				add_claim_by = TUR
+			}
+			987 = {
+				add_claim_by = TUR
+			}
+			797 = {
+				add_claim_by = TUR
+			}
+			341 = {
+				add_claim_by = TUR
+			}
+			986 = {
+				add_claim_by = TUR
+			}
+			183 = {
+				add_claim_by = TUR
+			}
+
+		}
+	}
+	focus = {
+		id = TUR_destruction_of_hellas
+		cost = 5
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = TUR_the_lands_which_were_stolen
+		}
+
+
+		available = {
+		}
+
+		relative_position_id = TUR_the_lands_which_were_stolen
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = GRE
+			}
+
+
+		}
+	}
+	focus = {
+		id = TUR_oppressed_caucasians
+		cost = 5
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_destruction_of_hellas
+		}
+
+
+		available = {
+		}
+
+		relative_position_id = TUR_destruction_of_hellas
+		completion_reward = {
+			980 = {
+				add_claim_by = TUR
+			}
+			230 = {
+				add_claim_by = TUR
+			}
+
+
+		}
+	}
+	focus = {
+		id = TUR_no_mercy_for_the_enemies_of_islam
+		cost = 5
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_destruction_of_hellas
+		}
+
+
+		available = {
+		}
+
+		relative_position_id = TUR_destruction_of_hellas
+		completion_reward = {
+			231 = {
+				add_claim_by = TUR
+			}
+			826 = {
+				add_claim_by = TUR
+			}
+
+
+		}
+	}
+	focus = {
+		id = TUR_strike_the_bear
+		cost = 5
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = TUR_oppressed_caucasians
+		}
+		prerequisite = {
+			focus = TUR_no_mercy_for_the_enemies_of_islam
+		}
+
+
+		available = {
+		}
+
+		relative_position_id = TUR_oppressed_caucasians
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SOV
+			}
+
+
+		}
+	}
+	focus = {
+		id = TUR_proclaim_the_turkish_empire
+		cost = 5
+		x = -2
+		y = 1
+
+		prerequisite = {
+			focus = TUR_strike_the_bear
+			focus = TUR_revenge_for_the_first_balkan_war
+		}
+		prerequisite = {
+			focus = TUR_war_with_persia
+		}
+
+
+		available = {
+		}
+
+		relative_position_id = TUR_strike_the_bear
+		completion_reward = {
+			drop_cosmetic_tag = yes
+			add_ideas = TUR_turkish_empire
+
 
 		}
 	}
