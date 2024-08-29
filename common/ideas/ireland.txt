@@ -175,7 +175,7 @@ ideas = {
 			
 			removal_cost = -1
 			
-			modifier = { monthly_population = 5 } 				
+			modifier = { monthly_population = 0.5 } 				
 			
 		
 
