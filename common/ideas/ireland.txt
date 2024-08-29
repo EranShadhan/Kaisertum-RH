@@ -194,11 +194,11 @@ ideas = {
 			
 			removal_cost = -1
 			
-			modifier = { production_speed_buildings_factor = 0.5  } 
+			modifier = { production_speed_buildings_factor = 0.25  } 
 			modifier = { consumer_goods_factor = -0.1 }
-			modifier = { production_factory_efficiency_gain_factor = 0.5  }
-			modifier = { production_lack_of_resource_penalty_factor = -0.5  }
-			modifier = { industrial_capacity_factory = 0.3 }
+			modifier = { production_factory_efficiency_gain_factor = 0.25  }
+			modifier = { production_lack_of_resource_penalty_factor = -0.25  }
+			modifier = { industrial_capacity_factory = 0.15 }
 			modifier = { autonomy_gain = 20 }				
 			}
 			
