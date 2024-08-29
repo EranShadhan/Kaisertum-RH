@@ -904,7 +904,16 @@ focus = {
 		
 
 		completion_reward = {
-
+			add_ideas = ind_8
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			add_stability = 3
 		}
 }
 
@@ -912,42 +921,6 @@ focus = {
 
     id = ROM_ind_4
     icon = GFX_ROM_ind_4
-    x = 0
-    y = 2
-
-	cost = 3
-
-	relative_position_id = ROM_ind_1
-
-	prerequisite = { focus = ROM_ind_2 }
-
-    ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		
-
-		completion_reward = {
-
-		}
-}
-
-focus = {
-
-    id = ROM_ind_5
-    icon = GFX_ROM_ind_5
     x = 2
     y = 2
 
@@ -976,11 +949,28 @@ focus = {
 		
 
 		completion_reward = {
-			add_ideas = {
-				ind_2
+			add_ideas = ind_3
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				
 			}
 		}
 }
+
+
 
 focus = {
 
@@ -1014,7 +1004,11 @@ focus = {
 		
 
 		completion_reward = {
-
+			add_manpower = -10000
+			add_timed_idea ={
+				idea = ind_10
+				days = 730
+			}
 		}
 }
 
@@ -1022,7 +1016,7 @@ focus = {
 
     id = ROM_ind_7
     icon = GFX_ROM_ind_7
-    x = 0
+    x = 2
     y = 3
 
 	cost = 3
@@ -1050,45 +1044,21 @@ focus = {
 		
 
 		completion_reward = {
-
+			add_stability = 0.05
+			add_ideas = ind_4
+			add_research_slot = 1
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 }
 
-focus = {
 
-    id = ROM_ind_8
-    icon = GFX_ROM_ind_8
-    x = 2
-    y = 3
-
-	cost = 3
-
-	relative_position_id = ROM_ind_1
-
-	prerequisite = { focus = ROM_ind_5 }
-
-    ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		
-
-		completion_reward = {
-
-		}
-}
 
 focus = {
 
@@ -1122,7 +1092,7 @@ focus = {
 		
 
 		completion_reward = {
-
+			add_ideas = ind_9
 		}
 }
 
@@ -1130,7 +1100,7 @@ focus = {
 
     id = ROM_ind_10
     icon = GFX_ROM_ind_10
-    x = 0
+    x = 2
     y = 4
 
 	cost = 3
@@ -1158,85 +1128,22 @@ focus = {
 		
 
 		completion_reward = {
+			add_stability = 0.03
 
+			add_timed_idea = {
+				idea = ind_5
+				days = 120
+			}
+			add_timed_idea = {
+				idea = ind_6
+				days = 120
+			}
 		}
 }
 
-focus = {
 
-    id = ROM_ind_11
-    icon = GFX_ROM_ind_11
-    x = 2
-    y = 4
 
-	cost = 3
 
-	relative_position_id = ROM_ind_1
-
-	mutually_exclusive = { focus = ROM_ind_12 }
-
-	prerequisite = { focus = ROM_ind_8 }
-
-    ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		
-
-		completion_reward = {
-
-		}
-}
-
-focus = {
-
-    id = ROM_ind_12
-    icon = GFX_ROM_ind_12
-    x = 4
-    y = 4
-
-	cost = 3
-
-	relative_position_id = ROM_ind_1
-
-	mutually_exclusive =  { focus = ROM_ind_11 }
-
-	prerequisite = { focus = ROM_ind_8 }
-
-    ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		
-
-		completion_reward = {
-
-		}
-}
 
 focus = {
 
@@ -1272,7 +1179,9 @@ focus = {
 		
 
 		completion_reward = {
-
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_ideas = ind_11
 		}
 }
 
@@ -1280,10 +1189,10 @@ focus = {
 
     id = ROM_ind_14
     icon = GFX_ROM_ind_14
-    x = 0
+    x = 2
     y = 5
 
-	cost = 3
+	cost = 10
 
 	relative_position_id = ROM_ind_1
 
@@ -1310,47 +1219,29 @@ focus = {
 		
 
 		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+
+			add_ideas = ind_7
 
 		}
 }
 
-focus = {
 
-    id = ROM_ind_15
-    icon = GFX_ROM_ind_15
-    x = 2
-    y = 5
-
-	cost = 3
-
-	relative_position_id = ROM_ind_1
-
-	
-
-	prerequisite = { focus = ROM_ind_11 focus = ROM_ind_12 }
-
-    ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		
-
-		completion_reward = {
-
-		}
-}
 
 focus = {
 
@@ -1367,7 +1258,6 @@ focus = {
 
 	prerequisite = { focus = ROM_ind_14 }
 	prerequisite = { focus = ROM_ind_13}
-	prerequisite = { focus = ROM_ind_15 }
 
     ai_will_do = {
 			factor = 1
@@ -1388,7 +1278,7 @@ focus = {
 		
 
 		completion_reward = {
-
+			add_ideas = ROM_peak_industry
 		}
 }
 
