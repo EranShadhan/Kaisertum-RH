@@ -36,7 +36,7 @@ guiTypes = {
 		{
 			name ="frontend_game_logo"
 			spriteType = "GFX_frontend_game_logo"
-			position = { x= 300 y = -220 }
+			position = { x= 300 y = -190 }
 		}
 		
 	}
@@ -82,7 +82,7 @@ guiTypes = {
 			spriteType = "GFX_pdx_int_logo"
 			position = { x= 135 y = 15 }
 		}		
-		
+				
 	}		
 
 	### SINGLE PLAYER MENU
@@ -186,7 +186,7 @@ guiTypes = {
 	containerWindowType = {
 		name ="mainmenu_panel_bottom"
 		position = { x=0 y =200}
-		size = { width = 960 height = 500 }
+		size = { width = 960 height = 455 }
 		Orientation = CENTER
 		Origo = center		
 
@@ -196,53 +196,73 @@ guiTypes = {
 			name = "Background"		
 			quadTextureSprite ="GFX_background_for_menu_screen"
 		}
-			
 		ButtonType = {
 			name = "single_player_button"
-			position = { x = 12 y = 18 }
-			quadTextureSprite ="GFX_button_for_menu_screen_single"
+			position = { x = 35 y = 25 }
+			quadTextureSprite ="GFX_main_lobby_button"
 			font = "hoi_24header"			
 			clicksound = click_default			
 			oversound = ui_menu_over
-		}
-		
-		instantTextBoxType = {
-
-			name ="singleplayer_text"
-			position = { x = 30 y = 28 }
-			textureFile = ""
-			font = "hoi_24header"
-			borderSize = {x = 0 y = 0}
 			text = "FE_SINGLE_PLAYER"
-			format = centre
-			maxWidth = 250
-			maxHeight = 20	
 		}
 		
-
 		ButtonType = {
 			name = "multi_player_button"
-			position = { x=337 y = 18}
-			size = { width = 320 height = 395}
-			quadTextureSprite ="GFX_button_for_menu_screen_multiple"
-			font = "hoi_24header"		
+			position = { x=35 y = 106.6}
+			quadTextureSprite ="GFX_main_lobby_button"
+			font = "hoi_24header"
+			text = "FE_MULTI_PLAYER"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
 		
-		instantTextBoxType = {
-
-			name ="multiplayer_text"
-			position = { x = 356 y = 28 }
-			textureFile = ""
-			font = "hoi_24header"
-			borderSize = {x = 0 y = 0}
-			text = "FE_MULTI_PLAYER"
-			format = centre
-			maxWidth = 250
-			maxHeight = 20	
+		ButtonType = {
+			name = "settings_button"
+			position = { x = 35 y = 188.2 }
+			quadTextureSprite ="GFX_main_lobby_button"	
+			buttonText = "OPTIONS"
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		
+		ButtonType = {
+			name = "nudge_button"
+			position = { x = 35 y = 269.8 }
+			quadTextureSprite ="GFX_main_lobby_button"	
+			buttonText = "Nudge!"
+			buttonFont = "hoi_24header"
 		}
 
+		ButtonType = {
+			name = "exit_button"
+			position = { x = 35 y = 351.4 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			font = "hoi_24header"			
+			text = "FE_EXIT"			
+			clicksound = click_default
+			oversound = ui_menu_over
+			
+		}
+		instantTextBoxType = {
+
+            name ="version_label"
+            position = { x = 367 y = 421 }
+            textureFile = ""
+            font = "hoi_18b"
+            borderSize = {x = 0 y = 0}
+            text = "ALPHA"
+            format = centre
+            maxWidth = 250
+            maxHeight = 20
+        }
+		iconType =
+		{
+			name ="image_in_the_center"
+			spriteType = "GFX_explodepfp"
+			position = { x= 335 y = 25 }
+		}	
+		
 		@warn_icon_x = 280
 		iconType = {
 			name = "single_player_button_warn"
@@ -266,7 +286,7 @@ guiTypes = {
 		instantTextBoxType = {
 
 			name ="recent_updates"
-			position = { x = 660 y = 25 }
+			position = { x = 680 y = 205 }
 			textureFile = ""
 			font = "garamond_24"
 			borderSize = {x = 0 y = 0}
@@ -275,55 +295,6 @@ guiTypes = {
 			maxWidth = 250
 			maxHeight = 20	
 		}
-		
-		ButtonType = {
-			name = "settings_button"
-			position = { x = 12 y = 300 }
-			quadTextureSprite ="GFX_main_lobby_button"	
-			buttonText = "OPTIONS"
-			buttonFont = "hoi_24header"
-			clicksound = click_default
-			oversound = ui_menu_over
-		}
-		
-		ButtonType = {
-			name = "nudge_button"
-			position = { x = 337 y = 300 }
-			quadTextureSprite ="GFX_main_lobby_button"	
-			buttonText = "Nudge!"
-			buttonFont = "hoi_24header"
-		}
-
-		ButtonType = {
-			name = "exit_button"
-			position = { x = 660 y = 300 }
-			quadTextureSprite ="GFX_main_lobby_button"
-			font = "hoi_24header"			
-			text = "FE_EXIT"			
-			clicksound = click_default
-			oversound = ui_menu_over
-			
-		}
-
-		iconType = {
-			name = "subscription_divider"
-			position = { x = -22.5 y = 336 }
-			spriteType = "GFX_main_lobby_divider"
-		}
-		
-		instantTextBoxType = {
-
-            name ="version_label"
-            position = { x = 715 y = 475 }
-            textureFile = ""
-            font = "hoi_18b"
-            borderSize = {x = 0 y = 0}
-            text = "ALPHA"
-            format = centre
-            maxWidth = 250
-            maxHeight = 20
-        }
-	
 
 		
 	}
