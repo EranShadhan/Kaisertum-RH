@@ -3,49 +3,58 @@ spriteTypes = {
 	
 	#OTHER
 	SpriteType = {
-		name = "GFX_focus_fra_promises_war_victory_greatness"
-		texturefile = "gfx/interface/goals/FRA/focus_fra_promises_war_victory_greatness.dds"
-	}
-	SpriteType = {
-		name = "GFX_focus_fra_solidify_neosocialism"
-		texturefile = "gfx/interface/goals/FRA/focus_fra_solidify_neosocialism.dds"
-	}
-	SpriteType = {
-		name = "GFX_focus_fra_communist_coup"
-		texturefile = "gfx/interface/goals/FRA/focus_fra_socialist_coup.dds"
-	}
-	SpriteType = {
-		name = "GFX_focus_fra_resist_fascism"
-		texturefile = "gfx/interface/goals/FRA/focus_fra_resist_fascist_opression.dds"
-	}
-	SpriteType = {
-		name = "GFX_focus_fra_strike_germany"
-		texturefile = "gfx/interface/goals/FRA/focus_attack_germany.dds"
+		name = "GFX_goal_FRA_solidify_neosocialism"
+		texturefile = "gfx/interface/goals/FRA/FRA_solidify_neosocialism.dds"
 	}
 	
 	SpriteType = {
-		name = "GFX_focus_fra_improve_our_economy"
-		texturefile = "gfx/interface/goals/FRA/focus_fra_improve_our_economy.dds"
+		name = "GFX_goal_FRA_invest_in_colonies"
+		texturefile = "gfx/interface/goals/FRA/FRA_invest_in_colonies.dds"
 	}
 	
 	SpriteType = {
-		name = "GFX_focus_fra_support_textile_industry"
-		texturefile = "gfx/interface/goals/FRA/focus_fra_support_textile_industry.dds"
-	}	
-	
+		name = "GFX_goal_FRA_invest_in_mainland"
+		texturefile = "gfx/interface/goals/FRA/FRA_invest_in_mainland.dds"
+	}
+
 	SpriteType = {
-		name = "GFX_focus_fra_invest_in_colonies"
-		texturefile = "gfx/interface/goals/FRA/focus_fra_invest_in_colonies.dds"
+		name = "GFX_goal_GEN_peace"
+		texturefile = "gfx/interface/goals/GEN_peace.dds"
 	}
 	
 	SpriteType = {
-		name = "GFX_focus_fra_invest_in_mainland"
-		texturefile = "gfx/interface/goals/FRA/focus_fra_invest_in_mainland.dds"
+		name = "GFX_goal_GEN_public_services"
+		texturefile = "gfx/interface/goals/GEN_public_services.dds"
 	}
-	
+
 	SpriteType = {
-		name = "GFX_focus_fra_expand_public_services"
-		texturefile = "gfx/interface/goals/FRA/focus_fra_expand_public_services.dds"
+		name = "GFX_goal_GEN_attack_russia"
+		texturefile = "gfx/interface/goals/GEN_attack_russia.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_GEN_attack_afghanistan"
+		texturefile = "gfx/interface/goals/GEN_attack_afghanistan.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_GEN_attack_kaiserreich"
+		texturefile = "gfx/interface/goals/GEN_attack_kaiserreich.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_GEN_textile_industry"
+		texturefile = "gfx/interface/goals/GEN_textile_industry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_GEN_workers_army"
+		texturefile = "gfx/interface/goals/GEN_workers_army.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_GEN_economy_improvements"
+		texturefile = "gfx/interface/goals/GEN_economy_improvements.dds"
 	}
 
 	SpriteType = {
@@ -54,7 +63,7 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_goal_money"
-		texturefile = "gfx/interface/goals/Goal_Money.dds"
+		name = "GFX_goal_GEN_money"
+		texturefile = "gfx/interface/goals/GEN_money.dds"
 	}
 }

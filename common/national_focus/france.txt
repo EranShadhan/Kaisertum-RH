@@ -20,7 +20,7 @@
 
 	focus = {
 		id = FRA_resist_fascist_opression
-		icon = GFX_focus_fra_resist_fascism
+		icon = GFX_goal_GEN_workers_army
 		x = 2
 		y = 0
 		
@@ -45,7 +45,7 @@
 	}
 	focus = {
 		id = FRA_preperations_for_worst
-		icon = GFX_focus_fra_communist_coup
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
 		x = 0
 		y = 1
 		
@@ -71,7 +71,7 @@
 	}
 	focus = {
 		id = FRA_communist_coup
-		icon = GFX_focus_fra_communist_coup
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
 		x = 0
 		y = 1
 		
@@ -161,7 +161,7 @@
 	}
 	focus = {
 		id = FRA_solidify_neosocialism
-		icon = GFX_focus_fra_solidify_neosocialism
+		icon = GFX_goal_FRA_solidify_neosocialism
 		x = 0
 		y = 1
 		
@@ -395,7 +395,7 @@
 	}
 	focus = {
 		id = FRA_strike_at_evil
-		icon = GFX_focus_fra_strike_germany
+		icon = GFX_goal_GEN_attack_kaiserreich
 		x = 1
 		y = 1
 		
@@ -476,7 +476,7 @@
 
 	focus = {
 		id = FRA_promises_war_victory_greatness
-		icon = GFX_focus_fra_promises_war_victory_greatness
+		icon = GFX_goal_GEN_peace
 		x = -2
 		y = 1
 		relative_position_id = FRA_eliminate_communist_opposition
@@ -846,7 +846,7 @@
 	}
 	focus = {
 		id = FRA_strike_germany
-		icon = GFX_focus_fra_strike_germany
+		icon = GFX_goal_GEN_attack_kaiserreich
 		x = 0
 		y = 1
 		relative_position_id = FRA_axis_of_revenge
@@ -901,7 +901,7 @@
 
 	focus = {
 		id = FRA_improve_our_economy
-		icon = GFX_focus_fra_improve_our_economy
+		icon = GFX_goal_GEN_economy_improvements
 		x = 4
 		y = 0
 		
@@ -945,7 +945,7 @@
 
 	focus = {
 		id = FRA_support_textile_industry
-		icon = GFX_focus_fra_support_textile_industry
+		icon = GFX_goal_GEN_textile_industry
 		x = 2
 		y = 1
 		relative_position_id = FRA_trade_with_italian_mafia
@@ -1156,7 +1156,7 @@
 
 	focus = {
 		id = FRA_invest_in_colonies
-		icon = GFX_focus_fra_invest_in_colonies
+		icon = GFX_goal_FRA_invest_in_colonies
 		x = -1
 		y = 1
 		relative_position_id = FRA_prioritize_civilian_industry
@@ -1183,7 +1183,7 @@
 
 	focus = {
 		id = FRA_invest_in_mainland
-		icon = GFX_focus_fra_invest_in_mainland
+		icon = GFX_goal_FRA_invest_in_mainland
 		x = 3
 		y = 1
 		relative_position_id = FRA_prioritize_civilian_industry
@@ -1336,7 +1336,7 @@
 
 	focus = {
 		id = FRA_expand_public_services
-		icon = GFX_focus_fra_expand_public_services
+		icon = GFX_goal_GEN_public_services
 		x = 0
 		y = 1
 		relative_position_id = FRA_improve_infrastructure

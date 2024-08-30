@@ -756,7 +756,7 @@ focus_tree = {
 
 	focus = {
 		id = PER_invade_afg
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_goal_GEN_attack_afghanistan
 		prerequisite = { focus = PER_our_place_in_the_world }
 		will_lead_to_war_with = AFG
 		x = -2
@@ -873,7 +873,7 @@ focus_tree = {
 
 	focus = {
 		id = PER_conquer_rus
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_goal_GEN_attack_russia
 		prerequisite = { focus = PER_invade_afg }
 		prerequisite = { focus = PER_conquer_sau }
 		prerequisite = { focus = PER_conquer_tur_kur }
