@@ -89,7 +89,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "mainmenu_single_player"
 		position = { x=0 y =0}
-		size = { width = 320 height = 395}
+		size = { width = 640 height = 395}
 		Orientation = CENTER
 		Origo = center	
 				
@@ -111,7 +111,7 @@ guiTypes = {
 		iconType = {
 			name = "sp_continue_flag_left"
 			quadTextureSprite ="GFX_flag_small2_not_masked"
-			position = { x= 35 y = 22 }
+			position = { x= 35 y = 30 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
@@ -119,7 +119,7 @@ guiTypes = {
 		iconType = {
 			name = "sp_continue_flag_left_overlay"
 			quadTextureSprite ="GFX_flag_small2_not_masked"
-			position = { x= 35 y = 22 }
+			position = { x= 35 y = 30 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
@@ -127,7 +127,7 @@ guiTypes = {
 		iconType = {
 			name = "sp_continue_flag_right"
 			quadTextureSprite ="GFX_flag_small2_not_masked"
-			position = { x= 245 y = 22 }
+			position = { x= 245 y = 30 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
@@ -135,14 +135,14 @@ guiTypes = {
 		iconType = {
 			name = "sp_continue_flag_right_overlay"
 			quadTextureSprite ="GFX_flag_small2_not_masked"
-			position = { x= 245 y = 22 }
+			position = { x= 245 y = 30 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
 		
 		ButtonType = {
 			name = "sp_new_button"
-			position = { x = 16 y = 58 }
+			position = { x = 16 y = 100 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "FE_NEW"
 			buttonFont = "hoi_24header"
@@ -152,7 +152,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "sp_load_button"
-			position = {  x = 16 y = 98 }
+			position = {  x = 16 y = 178 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "MENU_BAR_LOAD"
 			buttonFont = "hoi_24header"
@@ -161,18 +161,8 @@ guiTypes = {
 		}
 		
 		ButtonType = {
-			name = "sp_tutorial_button"
-			position = { x = 16 y = 138}
-			quadTextureSprite ="GFX_main_lobby_button"	
-			buttonText = "FE_TUTORIAL"
-			buttonFont = "hoi_24header"
-			clicksound = click_default
-			oversound = ui_menu_over
-		}
-		
-		ButtonType = {
 			name = "sp_back_button"
-			position = { x = 16 y = 218 }
+			position = { x = 320 y = 325 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "BACK"
 			buttonFont = "hoi_24header"
@@ -180,6 +170,12 @@ guiTypes = {
 			oversound = ui_menu_over
 			shortcut = "ESCAPE"
 		}
+		iconType =
+		{
+			name ="countries_in_the_thingies"
+			spriteType = "GFX_flag_thingies_idfk"
+			position = { x= 335 y = 25 }
+		}	
 	}
 
 	### MAIN MENU PANEL (bottom)
@@ -283,6 +279,16 @@ guiTypes = {
 			maxHeight = 20	
 		}
 
+		
+
+		ButtonType = {
+            name = "Join the discord"
+            position = { x=680 y=25 }
+			quadTextureSprite ="GFX_denispfp"
+            clicksound = click_default
+            scale = 1
+            web_link = "https://discord.gg/gpYkFcNG7U"
+        }
 		instantTextBoxType = {
 
 			name ="recent_updates"
@@ -295,8 +301,6 @@ guiTypes = {
 			maxWidth = 250
 			maxHeight = 20	
 		}
-
-		
 	}
 	
 	containerWindowType = {
@@ -350,7 +354,7 @@ guiTypes = {
 				alwaysTransparent = yes
 				format = center
 			}
-				
+			
 			iconType = {
 				name = "new_message"
 				position = { x=42 y =5 }

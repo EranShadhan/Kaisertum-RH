@@ -1,6 +1,7 @@
 state={
 	id=858
 	name="STATE_858"
+	impassable = yes
 	provinces={
 		5006 8030 10870 12768 
 	}
@@ -9,7 +10,7 @@ state={
 		add_core_of = SAU
 	}
 	manpower=69
-	state_category=pastoral
+	state_category=wasteland
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }
