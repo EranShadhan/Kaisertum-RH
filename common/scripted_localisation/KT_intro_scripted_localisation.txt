@@ -32,9 +32,30 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = { show_lore > 0.0 }
+			original_tag = USA
+		}
+		localization_key = USA_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
 			original_tag = ITA
 		}
 		localization_key = ITA_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = JAP
+		}
+		localization_key = JAP_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = ROM
+		}
+		localization_key = ROM_NEW_DECADE_DESC
 	}
 	text = {
 		trigger = {
@@ -150,12 +171,5 @@ defined_text = {
 			original_tag = IRE
 		}
 		localization_key = IRE_NEW_DECADE_DESC
-	}
-	text = {
-		trigger = {
-			check_variable = { show_lore > 0.0 }
-			original_tag = JAP
-		}
-		localization_key = JAP_NEW_DECADE_DESC
 	}
 }

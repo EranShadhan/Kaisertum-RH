@@ -412,6 +412,7 @@ news_event = {
 				every_owned_state = {
 					transfer_state_to = TUR
 				}
+				white_peace = GRE
 				transfer_state = 797
 				transfer_state = 341
 			}
@@ -458,6 +459,7 @@ news_event = {
 				every_owned_state = {
 					transfer_state_to = TUR
 				}
+				white_peace = GRE
 			}
 			978 = {
 				set_demilitarized_zone = yes
@@ -551,7 +553,9 @@ news_event = {
 				transfer_state = 676
 				transfer_state = 419
 				transfer_state = 420
+				white_peace = PER
 			}
+
 			SOV = {
 				transfer_state = 229
 				transfer_state = 800
@@ -606,6 +610,7 @@ news_event = {
 				every_owned_state = {
 					transfer_state_to = TUR
 				}
+				white_peace = PER
 				transfer_state = 352
 				transfer_state = 419
 				transfer_state = 420
@@ -657,6 +662,7 @@ news_event = {
 				every_owned_state = {
 					transfer_state_to = PER
 				}
+				white_peace = TUR
 				transfer_state = 350
 			}
 
