@@ -4,8 +4,12 @@ TUR_secure_support_in_FROM = {
 		cost = 10
 		visible = {
 			original_tag = TUR
+			NOT = { has_global_flag = syrian_rebellion }
+			NOT = { has_global_flag = syria_wins }
+			NOT = { has_global_flag = syria_loses }
             TUR = {
                 has_completed_focus = TUR_sponsor_syrian_rebellion
+				
             }
 		}
 		state_target = yes
@@ -51,6 +55,9 @@ TUR_syrian_rebellion_starts = {
     icon = GFX_decision_icon_default
     activation = {
 			original_tag = TUR
+			NOT = { has_global_flag = syrian_rebellion }
+			NOT = { has_global_flag = syria_wins }
+			NOT = { has_global_flag = syria_loses }
             TUR = {
                 has_completed_focus = TUR_sponsor_syrian_rebellion
             }
@@ -66,6 +73,9 @@ TUR_syrian_rebellion_starts = {
 
     }
     timeout_effect = {
+		TUR = {
+			add_ideas = TUR_syrian_rebellion_idea
+		}
         SYR = {
             if = {
 				limit = {
@@ -126,8 +136,12 @@ TUR_secure_support_in_FROM_nonaligned = {
 		cost = 10
 		visible = {
 			original_tag = TUR
+			NOT = { has_global_flag = syrian_rebellion }
+			NOT = { has_global_flag = syria_wins }
+			NOT = { has_global_flag = syria_loses }
             TUR = {
                 has_completed_focus = TUR_kickstart_the_syrian_revolution
+				has_active_mission = TUR_syrian_rebellion_starts_nonaligned
             }
 		}
 		state_target = yes
@@ -175,6 +189,7 @@ TUR_syrian_rebellion_starts_nonaligned = {
 			original_tag = TUR
             TUR = {
                 has_completed_focus = TUR_kickstart_the_syrian_revolution
+				has_active_mission = TUR_syrian_rebellion_starts_nonaligned
             }
 		}
     available = {
@@ -188,6 +203,9 @@ TUR_syrian_rebellion_starts_nonaligned = {
 
     }
     timeout_effect = {
+		TUR = {
+			add_ideas = TUR_syrian_rebellion_idea
+		}
         SYR = {
             if = {
 				limit = {
@@ -255,6 +273,7 @@ TUR_foreign_influence_in_gov_category = {
 			}
 			TUR = {
                 has_completed_focus = TUR_promote_a_europeanized_government
+				
             }
 		}
 		ai_will_do = {
@@ -395,6 +414,10 @@ TUR_northern_cyprus_category = {
 		days_remove = 20
 		visible = {
 			tag = TUR
+			NOT = { has_global_flag = cypriot_civil_war }
+			NOT = { has_global_flag = cyprus_conflict_frozen }
+			NOT = { has_global_flag = ncy_wins }
+			NOT = { has_global_flag = ncy_loses }
 			TUR = {
                 has_completed_focus = TUR_promote_a_turkish_northern_cyprus
             }
@@ -425,6 +448,10 @@ TUR_northern_cyprus_category = {
 		days_remove = 25
 		visible = {
 			tag = TUR
+			NOT = { has_global_flag = cypriot_civil_war }
+			NOT = { has_global_flag = cyprus_conflict_frozen }
+			NOT = { has_global_flag = ncy_wins }
+			NOT = { has_global_flag = ncy_loses }
 			TUR = {
                 has_completed_focus = TUR_promote_a_turkish_northern_cyprus
             }
@@ -455,6 +482,10 @@ TUR_northern_cyprus_category = {
 		days_remove = 40
 		visible = {
 			tag = TUR
+			NOT = { has_global_flag = cypriot_civil_war }
+			NOT = { has_global_flag = cyprus_conflict_frozen }
+			NOT = { has_global_flag = ncy_wins }
+			NOT = { has_global_flag = ncy_loses }
 			TUR = {
                 has_completed_focus = TUR_promote_a_turkish_northern_cyprus
             }
@@ -492,6 +523,10 @@ TUR_northern_cyprus_category = {
 		cost = 100
 		days_remove = 30
 		visible = {
+			NOT = { has_global_flag = cypriot_civil_war }
+			NOT = { has_global_flag = cyprus_conflict_frozen }
+			NOT = { has_global_flag = ncy_wins }
+			NOT = { has_global_flag = ncy_loses }
 			tag = TUR
 			TUR = {
                 has_completed_focus = TUR_promote_a_turkish_northern_cyprus
@@ -512,10 +547,6 @@ TUR_northern_cyprus_category = {
 			NCY = {
 				if = {
 						limit = { 986 = { is_owned_by = GRE } }
-					declare_war_on = {
-						target = GRE
-						type = annex_everything
-					}
 					transfer_state = 986
 					if = {
 						limit = {
@@ -552,6 +583,10 @@ TUR_northern_cyprus_category = {
 							owner = NCY
                 		}
 						set_state_flag = ncy_holds_ncy
+					}
+					declare_war_on = {
+						target = GRE
+						type = annex_everything
 					}
 					set_global_flag = cypriot_civil_war
 				}		

@@ -415,6 +415,10 @@ news_event = {
 				white_peace = GRE
 				transfer_state = 797
 				transfer_state = 341
+				transfer_state = 339
+				transfer_state = 987
+				transfer_state = 797
+				transfer_state = 187
 			}
 
 	}

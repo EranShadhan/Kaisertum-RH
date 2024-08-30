@@ -328,16 +328,47 @@ country_event = {
 	
 	option = {
 		name = KT_turkey_events.12.a
+		ai_chance ={
+			base = 0
+		}
 
 	}
 	option = {
 		name = KT_turkey_events.12.b
-		set_global_flag = constantinople_war
-		GRE = {
-			declare_war_on = {
-				target = TUR
-				type = annex_everything
+		ai_chance ={
+			base = 10
+		}
+		TUR = {
+			country_event = {
+				id = KT_turkey_events.13
+				hours = 12
+				random_hours = 6
 			}
 		}
+	}
+}
+country_event = {
+	id = KT_turkey_events.13
+	title = KT_turkey_events.13.t
+	desc = KT_turkey_events.13.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			}
+		}
+	
+	
+	option = {
+		name = KT_turkey_events.13.a
+		complete_national_focus = TUR_rostov_agreement
+		set_country_flag = TUR_rostov_agreement_passes
+	}
+	option = {
+		name = KT_turkey_events.13.b
+		complete_national_focus = TUR_the_lone_wolf
+		set_country_flag = TUR_rostov_agreement_fails
 	}
 }
