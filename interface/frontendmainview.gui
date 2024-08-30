@@ -89,7 +89,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "mainmenu_single_player"
 		position = { x=0 y =0}
-		size = { width = 640 height = 395}
+		size = { width = 640 height = 328}
 		Orientation = CENTER
 		Origo = center	
 				
@@ -162,7 +162,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "sp_back_button"
-			position = { x = 320 y = 325 }
+			position = { x = 16 y = 256 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "BACK"
 			buttonFont = "hoi_24header"
@@ -174,7 +174,7 @@ guiTypes = {
 		{
 			name ="countries_in_the_thingies"
 			spriteType = "GFX_flag_thingies_idfk"
-			position = { x= 335 y = 25 }
+			position = { x= 335 y = 59.5 }
 		}	
 	}
 
