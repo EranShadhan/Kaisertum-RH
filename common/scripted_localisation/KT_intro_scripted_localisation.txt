@@ -151,4 +151,11 @@ defined_text = {
 		}
 		localization_key = IRE_NEW_DECADE_DESC
 	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = JAP
+		}
+		localization_key = JAP_NEW_DECADE_DESC
+	}
 }

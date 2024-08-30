@@ -13,10 +13,12 @@ bookmarks = {
 			ideas = {
 				FRA_republican_front_collapse
 				FRA_communist_opposition
+				FRA_secret_rearmament
 				FRA_super_heavy_tank_programme
 			}
 			focuses = {
 				FRA_eliminate_communist_opposition
+				FRA_communist_coup
 				FRA_strike_germany
 				FRA_double_down_on_tanks
 			}
@@ -39,8 +41,13 @@ bookmarks = {
 				GER_wilhelm_ii
 				GER_victory_tgw
 				german_customs_union_member
+				GER_powerful_unions
 			}
 			focuses = {
+				GER_restore_kaiser_power
+				GER_bismarck_legacy
+				GER_sparkatist_revolution
+				GER_hre
 			}
 		}
 		"ITA"={
@@ -53,7 +60,7 @@ bookmarks = {
 			}		
 		}
 		"CHI"={
-			history = "AUS_NEW_DECADE_DESC"
+			history = "CHI_NEW_DECADE_DESC"
 			ideology = neutrality
 			ideas = {
 			}	
@@ -65,10 +72,15 @@ bookmarks = {
 			ideology = neutrality
 			ideas = {
 				RUS_transistion
+				RUS_stagnant_russification
 				RUS_rampant_corruption
 				RUS_revanchism
 			}
 			focuses = {
+				RUS_initial_reforms
+				RUS_authoritarian_path
+				RUS_kerensky
+				RUS_socialist_candidate
 			}
 		}
 		"JAP"={
@@ -92,18 +104,6 @@ bookmarks = {
 
 
 		###  MINORS ###
-		YUG={
-			minor = yes
-			history = "CRO_NEW_DECADE_DESC"
-			ideology = neutrality
-			ideas = {
-				YUG_devided_brothers
-				YUG_payment_to_hungary
-				YUG_muslim_christian_tensions
-			}
-			focuses = {
-			}
-		}
 		"UBD"={
 			minor = yes
 			history = "UBD_NEW_DECADE_DESC"
@@ -143,12 +143,26 @@ bookmarks = {
 			ideology = neutrality
 			ideas = {
 				german_customs_union_member
-				Inefectve_constitution
+				Inefective_constitution
 			}
 			focuses = {
 				ROM_pol_3
 				ROM_pol_2
 				ROM_pol_4
+				ROM_pol_5
+			}
+		}
+		YUG={
+			minor = yes
+			history = "CRO_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+				YUG_devided_brothers
+				YUG_payment_to_hungary
+				YUG_muslim_cristian_tensions
+				YUG_underground_italian_connections
+			}
+			focuses = {
 			}
 		}
 		"GRE"={
@@ -156,14 +170,16 @@ bookmarks = {
 			history = "GRE_NEW_DECADE_DESC"
 			ideology = neutrality
 			ideas = {
-				GRE_eee_enemy
 				GRE_megali_idea_partial_restoration
+				GRE_eee_enemy
+				victory_in_the_sgtwgre
 				GRE_on_going_population_exchange
 			}
 			focuses = {
 				GRE_metaxas_project_megisti_idea
 				GRE_the_house_always_wins
 				GRE_deimos_and_fobos
+				GRE_the_economic_crush
 			}
 		}
 		"TUR"={
@@ -171,11 +187,16 @@ bookmarks = {
 			history = "TUR_NEW_DECADE_DESC"
 			ideology = neutrality
 			ideas = {
+				TUR_german_influence_in_government
 				TUR_humiliation_of_25
 				TUR_international_bidding_war
 				TUR_traditional_society
 			}
 			focuses = {
+				TUR_constitution_of_1930
+				TUR_focus_on_internal_matters
+				TUR_the_sultans_grip_remains_firm
+				TUR_greater_engürü_plan
 			}
 		}
 		"PER"={
@@ -186,11 +207,13 @@ bookmarks = {
 				PER_german_persian_oil_company
 				PER_army_1_focus
 				PER_traditional_islam_gov
+				PER_dream
 			}
 			focuses = {
 				PER_go_german
 				PER_our_place_in_the_world
 				PER_persian_carpets
+				PER_army_xp_2
 			}
 		}
 		

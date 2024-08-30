@@ -509,8 +509,8 @@ shared_focus = {
 shared_focus = {
 	id = national_identity
 	icon = GFX_goal_anschluss
-	prerequisite = { focus = centralization }
-	x = 0
+	prerequisite = { focus = centralization focus = foreign_expeditions }
+	x = 2
 	y = 1
 	relative_position_id = centralization
 	cost = 10
@@ -606,7 +606,7 @@ shared_focus = {
 
 	continue_if_invalid = yes
 	
-	x = 2
+	x = 0
 	y = 1
 	relative_position_id = national_identity
 	cost = 10
