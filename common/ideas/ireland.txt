@@ -202,8 +202,68 @@ ideas = {
 			modifier = { autonomy_gain = 20 }				
 			}
 			
+		IRE_better_farming = {
+			
+			allowed = {
+				original_tag = IRE
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = 
+			
+			removal_cost = -1
+			
+			modifier = { monthly_population = 0.1  } 
+			modifier = { consumer_goods_factor = 0.05 }
+			modifier = { stability_factor = 0.1 }
+							
+			}
+			
+		
 
 		}
+	
+		IRE_tourism = {
+			
+			allowed = {
+				original_tag = IRE
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = 
+			
+			removal_cost = -1
+			
+			 
+			modifier = { consumer_goods_factor = 0.05 }
+			
+							
+			}
+		}
+
+		IRE_tax_breaks = {
+			
+			allowed = {
+				original_tag = IRE
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = 
+			
+			removal_cost = -1
+			
+			 
+			modifier = { consumer_goods_factor = 0.2 }
+			
+							
+			}
+
 
 	
 				
