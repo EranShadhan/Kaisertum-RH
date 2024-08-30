@@ -154,7 +154,7 @@ bookmarks = {
 		}
 		YUG={
 			minor = yes
-			history = "CRO_NEW_DECADE_DESC"
+			history = "YUG_NEW_DECADE_DESC"
 			ideology = neutrality
 			ideas = {
 				YUG_devided_brothers
