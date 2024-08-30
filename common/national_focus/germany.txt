@@ -2673,7 +2673,7 @@ focus = {
 	}
 	focus = {
 		id = GER_kaiserreich_remains
-		icon = GFX_focus_ger_revive_kaiserreich
+		icon = GFX_focus_ARG_defense_and_democracy
 		prerequisite = { focus = GER_realpolitik }
 		mutually_exclusive = { focus = GER_socialist }
 		x = -2
@@ -3494,7 +3494,7 @@ focus = {
 
 	focus = {
 		id = GER_hre
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ger_revive_kaiserreich
 		prerequisite = { focus = GER_conquer_italy }
 		x = 0
 		y = 1

@@ -808,11 +808,25 @@ guiTypes = {
 		}
 
 		iconType = {
-			name = "country_difficult_minor_4"
+			name = "country_difficult_minor_3"
 			spriteType ="GFX_missing_dlc_warning_sign"
-			position = { x = 480 y = 340 }
+			position = { x = 330 y = 340 }
 			Orientation = "UPPER_LEFT"
 		}
+
+#		iconType = {
+#			name = "country_difficult_minor_4"
+#			spriteType ="GFX_missing_dlc_warning_sign"
+#			position = { x = 480 y = 340 }
+#			Orientation = "UPPER_LEFT"
+#		}
+
+#		iconType = {
+#			name = "country_difficult_minor_5"
+#			spriteType ="GFX_missing_dlc_warning_sign"
+#			position = { x = 630 y = 340 }
+#			Orientation = "UPPER_LEFT"
+#		}
 
 		iconType = {
 			name = "country_difficult_minor_6"
