@@ -1041,6 +1041,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+				add_ideas = IRE_irish_dream
 				
 
 			
@@ -1195,7 +1196,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
+				add_ideas = IRE_state_run_industry
+				add_popularity = {
+    				ideology = communism
+    				popularity = 0.1}
 
 			
 		}
@@ -1233,8 +1237,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
-
+				add_ideas = IRE_large_irish_businesses
+				add_popularity = {
+    				ideology = democratic
+    				popularity = 0.05}
+				add_popularity = {
+    				ideology = neutrality 
+    				popularity = 0.05}
 			
 		}
 	}
@@ -1270,7 +1279,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
+				add_ideas = IRE_british_investment
 
 			
 		}
@@ -1307,7 +1316,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
+				add_ideas = IRE_german_investment
 
 			
 		}
@@ -1344,6 +1353,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+				add_ideas = IRE_french_investment
 				
 
 			
@@ -1418,7 +1428,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
+				add_ideas = IRE_multiple_investors
 
 			
 		}
@@ -1455,7 +1465,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
+				add_ideas = IRE_business_hub
 
 			
 		}

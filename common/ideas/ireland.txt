@@ -223,7 +223,7 @@ ideas = {
 			
 		
 
-		}
+		
 	
 		IRE_tourism = {
 			
@@ -243,7 +243,30 @@ ideas = {
 			
 							
 			}
-		}
+		
+		IRE_irish_dream = {
+			
+			allowed = {
+				original_tag = IRE
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = 
+			
+			removal_cost = -1
+			
+			 
+			modifier = { consumer_goods_factor = 0.05 }
+			modifier = { stability_factor = 0.1 }
+			modifier = { war_support_factor = 0.1 }
+			modifier = { monthly_population = 0.05 }
+			
+							
+			}
+
+
 
 		IRE_tax_breaks = {
 			
@@ -259,10 +282,150 @@ ideas = {
 			removal_cost = -1
 			
 			 
-			modifier = { consumer_goods_factor = 0.2 }
+			modifier = { consumer_goods_factor = -0.2 }
 			
 							
 			}
+
+		IRE_state_run_industry = {
+			
+			allowed = {
+				original_tag = IRE
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = 
+			
+			removal_cost = -1
+			
+			 
+			modifier = { production_speed_buildings_factor = 0.15 }
+			modifier = { global_building_slots_factor = 0.3 }
+			modifier = { conversion_cost_civ_to_mil_factor = -0.2 }
+			modifier = { industry_repair_factor = 0.3 }
+			
+							
+			}
+
+		IRE_large_irish_businesses = {
+			
+			allowed = {
+				original_tag = IRE
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = 
+			
+			removal_cost = -1
+			
+			 
+			modifier = { production_speed_buildings_factor = 0.5  }
+			modifier = { conversion_cost_mil_to_civ_factor = -0.3 }
+			modifier = { industrial_capacity_dockyard = 0.2 }
+			modifier = { industrial_capacity_factory = 0.2 }
+			
+							
+			}
+
+		IRE_british_investment = {
+			
+			allowed = {
+				original_tag = IRE
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = 
+			
+			removal_cost = -1
+			
+			 
+			modifier = { production_speed_buildings_factor = 0.15   }
+							
+			}
+
+		IRE_german_investment = {
+			
+			allowed = {
+				original_tag = IRE
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = 
+			
+			removal_cost = -1
+			
+			 
+			modifier = { production_speed_buildings_factor = 0.15   }
+							
+			}
+
+		IRE_french_investment = {
+			
+			allowed = {
+				original_tag = IRE
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = 
+			
+			removal_cost = -1
+			
+			 
+			modifier = { production_speed_buildings_factor = 0.15   }
+							
+			}
+
+		IRE_multiple_investors = {
+			
+			allowed = {
+				original_tag = IRE
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = 
+			
+			removal_cost = -1
+			
+			 
+			modifier = { production_speed_buildings_factor = 0.15   }
+							
+			}
+
+		IRE_business_hub = {
+			
+			allowed = {
+				original_tag = IRE
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = 
+			
+			removal_cost = -1
+			
+			 
+			modifier = { production_speed_buildings_factor = 0.1 }
+			modifier = { autonomy_gain = -0.5 }
+			modifier = { consumer_goods_factor = -0.1 }
+							
+			}
+
+
+
+
 
 
 	
