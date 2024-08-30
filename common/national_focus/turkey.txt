@@ -785,11 +785,8 @@ focus = { # INDUSTRIALIZATION
 
 		remove_ideas = TUR_german_eco_4
 		remove_ideas = TUR_russian_eco_4
-
-        swap_ideas = {
-			remove_idea = TUR_resources
-    		add_idea = TUR_final_economic_idea
-		}
+		remove_ideas = TUR_resources
+    	add_ideas = TUR_final_economic_idea
 
     }
 
