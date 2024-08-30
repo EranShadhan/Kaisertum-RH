@@ -583,7 +583,7 @@ focus = { # INDUSTRIALIZATION
 
 focus = { # INDUSTRIALIZATION
     id = TUR_invite_MAN_company
-    icon = thisgfxiswrong
+    icon = GFX_focus_generic_truck
     prerequisite = { focus = TUR_german_expertise }
     x = -1
     y = 1
@@ -606,7 +606,7 @@ focus = { # INDUSTRIALIZATION
 
 focus = { # INDUSTRIALIZATION
     id = TUR_worker_exchange_programs
-    icon = thisgfxiswrong
+    icon = GFX_focus_generic_full_employment
     prerequisite = { focus = TUR_german_expertise }
     x = 1
     y = 1
@@ -657,7 +657,7 @@ focus = { # INDUSTRIALIZATION
 
 focus = { # INDUSTRIALIZATION
     id = TUR_modernized_railways
-    icon = thisgfxiswrong
+    icon = GFX_focus_generic_railroad
     prerequisite = { focus = TUR_invite_the_Kaiserbahn_to_turkey }
     x = 1
     y = 1
@@ -684,7 +684,7 @@ focus = { # INDUSTRIALIZATION
 
 focus = { # INDUSTRIALIZATION
     id = TUR_german_efficency
-    icon = thisgfxiswrong
+    icon = GFX_focus_generic_modernize_industry
     prerequisite = { focus = TUR_worker_exchange_programs }
     x = 0
     y = 1
@@ -711,7 +711,7 @@ focus = { # INDUSTRIALIZATION
 
 focus = { # INDUSTRIALIZATION
     id = TUR_western_standards
-    icon = thisgfxiswrong
+    icon = GFX_focus_NORDIC_com_civilian
     prerequisite = { focus = TUR_german_efficency }
     x = 0
     y = 1
@@ -739,7 +739,7 @@ focus = { # INDUSTRIALIZATION
 
 focus = { # INDUSTRIALIZATION
     id = TUR_prussian_education
-    icon = thisgfxiswrong
+    icon = GFX_focus_generic_military_academy
     prerequisite = { focus = TUR_western_standards }
 	prerequisite = { focus = TUR_modernized_railways }
     x = -1
@@ -768,7 +768,7 @@ focus = { # INDUSTRIALIZATION
 
 focus = { # INDUSTRIALIZATION
     id = TUR_fully_modernized_economy
-    icon = thisgfxiswrong
+    icon = GFX_goal_generic_consumer_goods
     prerequisite = { focus = TUR_prussian_education }
 	prerequisite = { focus = TUR_leave_no_rocks_unturned }
 	prerequisite = { focus = TUR_trademark_of_the_turkish_people }
@@ -913,7 +913,7 @@ focus = { # INDUSTRIALIZATION
 
 focus = {
     id = TUR_great_leap_forwards
-    icon = thisgfxiswrong
+    icon = GFX_focus_CHL_focus_on_cattle_and_wool
     prerequisite = { focus = TUR_finish_reconstruction }
     x = 7
     y = 1
@@ -1123,7 +1123,7 @@ focus = {
 
 focus = {
     id = TUR_redistribute_unused_land
-    icon = thisgfxiswrong
+    icon = GFX_focus_SOV_breadbasket_of_the_union
     prerequisite = { focus = TUR_provide_loans_to_farmers }
     x = -1
     y = 1
