@@ -684,8 +684,11 @@ TUR_industrialization_decision_category = {
             }
 		}
 
+		modifier = {
+			civilian_factory_use = 1
+		}
+
 		complete_effect = {
-    		civilian_factory_use = 1
 		}
 		remove_effect = {
 			build_railway = {
@@ -694,13 +697,11 @@ TUR_industrialization_decision_category = {
        			path = { 11811 3851 947 11867 6912 }
         	}
 			add_building_construction = {
-    			type = supply_hub
+    			type = supply_node
     			level = 1
     			instant_build = yes
     			province = 947
 			}
-
-			civilian_factory_use = -1
 		}
 	}
 
@@ -726,8 +727,12 @@ TUR_industrialization_decision_category = {
             }
 		}
 
+		modifier = {
+			civilian_factory_use = 2
+		}
+
 		complete_effect = {
-    		civilian_factory_use = 2
+
 		}
 		remove_effect = {
 			build_railway = {
@@ -736,13 +741,12 @@ TUR_industrialization_decision_category = {
        			path = { 11811 904 11866 11883 979 3982 3967 6995 11881 }
         	}
 			add_building_construction = {
-    			type = supply_hub
+    			type = supply_node
     			level = 1
     			instant_build = yes
     			province = 6938
 			}
 
-			civilian_factory_use = -2
 		}
 	}
 
@@ -768,8 +772,12 @@ TUR_industrialization_decision_category = {
             }
 		}
 
+		modifier = {
+			civilian_factory_use = 2
+		}
+
 		complete_effect = {
-    		civilian_factory_use = 2
+
 		}
 		remove_effect = {
 			build_railway = {
@@ -778,13 +786,12 @@ TUR_industrialization_decision_category = {
        			path = { 9777 3950 6919 9868 3979 9932 }
         	}
 			add_building_construction = {
-    			type = supply_hub
+    			type = supply_node
     			level = 1
     			instant_build = yes
     			province = 9868
 			}
 
-			civilian_factory_use = -2
 		}
 	}
 
@@ -810,8 +817,12 @@ TUR_industrialization_decision_category = {
             }
 		}
 
+		modifier = {
+			civilian_factory_use = 2
+		}
+
 		complete_effect = {
-    		civilian_factory_use = 2
+
 		}
 		remove_effect = {
 			build_railway = {
@@ -820,7 +831,6 @@ TUR_industrialization_decision_category = {
        			path = { 11747 804 11844 3807 3870 921 6977 9777 }
         	}
 
-			civilian_factory_use = -2
 		}
 	}
 
@@ -846,8 +856,12 @@ TUR_industrialization_decision_category = {
             }
 		}
 
+		modifier = {
+			civilian_factory_use = 2
+		}
+
 		complete_effect = {
-    		civilian_factory_use = 2
+
 		}
 		remove_effect = {
 			build_railway = {
@@ -861,7 +875,6 @@ TUR_industrialization_decision_category = {
        			path = { 9763 10056 11810 11746 }
         	}
 
-			civilian_factory_use = -2
 		}
 	}
 
@@ -887,8 +900,12 @@ TUR_industrialization_decision_category = {
             }
 		}
 
+		modifier = {
+			civilian_factory_use = 1
+		}
+
 		complete_effect = {
-    		civilian_factory_use = 1
+
 		}
 		remove_effect = {
 			build_railway = {
@@ -897,7 +914,6 @@ TUR_industrialization_decision_category = {
        			path = { 3876 784 1005 }
         	}
 
-			civilian_factory_use = -1
 		}
 	}
 
@@ -905,7 +921,7 @@ TUR_industrialization_decision_category = {
 
 		cost = 30
 		fire_only_once = yes
-		days_remove = 180
+		days_remove = 60
 
 		visible = {
 			tag = TUR
@@ -921,6 +937,10 @@ TUR_industrialization_decision_category = {
     				has_opinion = { target = TUR value > -1 }
 				}
             }
+		}
+
+		modifier = {
+			civilian_factory_use = 3
 		}
 
 		complete_effect = {
@@ -959,11 +979,14 @@ TUR_industrialization_decision_category = {
             }
 		}
 
+		modifier = {
+			civilian_factory_use = 6
+		}
+
 		complete_effect = {
-			civilian_factory_use = 7
+
 		}
 		remove_effect = {
-			civilian_factory_use = -7
 			49 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -997,12 +1020,14 @@ TUR_industrialization_decision_category = {
 				}
 		}
 
-		complete_effect = {
-			SOV = { TUR_increase_foreign_influence = yes }
+		modifier = {
 			civilian_factory_use = 2
 		}
+
+		complete_effect = {
+			SOV = { TUR_increase_foreign_influence = yes }
+		}
 		remove_effect = {
-			civilian_factory_use = -2
 
 			random_core_state = {
 			limit = {
@@ -1037,12 +1062,14 @@ TUR_industrialization_decision_category = {
             }
 		}
 
-		complete_effect = {
-			SOV = { TUR_increase_foreign_influence = yes }
+		modifier = {
 			civilian_factory_use = 2
 		}
+
+		complete_effect = {
+			SOV = { TUR_increase_foreign_influence = yes }
+		}
 		remove_effect = {
-			civilian_factory_use = -2
 
 			random_core_state = {
 			limit = {
@@ -1062,7 +1089,7 @@ TUR_industrialization_decision_category = {
 
 		cost = 60
 		fire_only_once = yes
-		days_remove = 200
+		days_remove = 100
 
 		visible = {
 			tag = TUR
@@ -1077,11 +1104,13 @@ TUR_industrialization_decision_category = {
             }
 		}
 
-		complete_effect = {
+		modifier = {
 			civilian_factory_use = 4
 		}
+
+		complete_effect = {
+		}
 		remove_effect = {
-			civilian_factory_use = -4
 			add_resource = {
 			type = steel
 			amount = 16
@@ -1095,7 +1124,7 @@ TUR_industrialization_decision_category = {
 
 		cost = 60
 		fire_only_once = yes
-		days_remove = 200
+		days_remove = 100
 
 		visible = {
 			tag = TUR
@@ -1112,11 +1141,14 @@ TUR_industrialization_decision_category = {
 			has_country_flag = eti_mine_expanded
 		}
 
-		complete_effect = {
+		modifier = {
 			civilian_factory_use = 6
 		}
+
+		complete_effect = {
+
+		}
 		remove_effect = {
-			civilian_factory_use = -6
 			add_resource = {
 			type = steel
 			amount = 24
@@ -1154,6 +1186,7 @@ TUR_agriculture_decision_category = {
 			swap_ideas = {
    			remove_idea = TUR_commericalized_agriculture
     		add_idea = TUR_commericalized_agriculture_2
+			set_country_flag = fully_commercial_agriculture
 		}
 		}
 	}
@@ -1236,6 +1269,12 @@ TUR_agriculture_decision_category = {
             }
 		}
 
+		highlight_states = {
+    		highlight_state_targets = {
+       			state = 340
+   			}
+		}
+
 		complete_effect = {
 
 		}
@@ -1263,6 +1302,12 @@ TUR_agriculture_decision_category = {
 			TUR = {
                 has_completed_focus = TUR_redistribute_unused_land
             }
+		}
+
+		highlight_states = {
+    		highlight_state_targets = {
+       			state = 355
+   			}
 		}
 
 		complete_effect = {
@@ -1294,6 +1339,12 @@ TUR_agriculture_decision_category = {
             }
 		}
 
+		highlight_states = {
+    		highlight_state_targets = {
+       			state = 349
+   			}
+		}
+
 		complete_effect = {
 
 		}
@@ -1321,6 +1372,12 @@ TUR_agriculture_decision_category = {
 			TUR = {
                 has_completed_focus = TUR_redistribute_unused_land
             }
+		}
+
+		highlight_states = {
+    		highlight_state_targets = {
+       			state = 353
+   			}
 		}
 
 		complete_effect = {
@@ -1352,6 +1409,12 @@ TUR_agriculture_decision_category = {
             }
 		}
 
+		highlight_states = {
+    		highlight_state_targets = {
+       			state = 350
+   			}
+		}
+
 		complete_effect = {
 
 		}
@@ -1379,6 +1442,12 @@ TUR_agriculture_decision_category = {
 			TUR = {
                 has_completed_focus = TUR_redistribute_unused_land
             }
+		}
+
+		highlight_states = {
+    		highlight_state_targets = {
+       			state = 344
+   			}
 		}
 
 		complete_effect = {
@@ -1410,6 +1479,12 @@ TUR_agriculture_decision_category = {
             }
 		}
 
+		highlight_states = {
+    		highlight_state_targets = {
+       			state = 348
+   			}
+		}
+
 		complete_effect = {
 
 		}
@@ -1437,6 +1512,12 @@ TUR_agriculture_decision_category = {
 			TUR = {
                 has_completed_focus = TUR_redistribute_unused_land
             }
+		}
+
+		highlight_states = {
+    		highlight_state_targets = {
+       			state = 346
+   			}
 		}
 
 		complete_effect = {
@@ -1468,6 +1549,12 @@ TUR_agriculture_decision_category = {
             }
 		}
 
+		highlight_states = {
+    		highlight_state_targets = {
+       			state = 345
+   			}
+		}
+
 		complete_effect = {
 
 		}
@@ -1495,6 +1582,12 @@ TUR_agriculture_decision_category = {
 			TUR = {
                 has_completed_focus = TUR_redistribute_unused_land
             }
+		}
+
+		highlight_states = {
+    		highlight_state_targets = {
+       			state = 973
+   			}
 		}
 
 		complete_effect = {
@@ -1526,6 +1619,12 @@ TUR_agriculture_decision_category = {
             }
 		}
 
+		highlight_states = {
+    		highlight_state_targets = {
+       			state = 342
+   			}
+		}
+
 		complete_effect = {
 
 		}
@@ -1540,7 +1639,7 @@ TUR_agriculture_decision_category = {
 
 		cost = 200
 		fire_only_once = yes
-		days_remove = 100
+		days_remove = 60
 
 		visible = {
 			tag = TUR
@@ -1553,6 +1652,10 @@ TUR_agriculture_decision_category = {
 			TUR = {
                 has_completed_focus = TUR_establish_the_model_farms_program
             }
+		}
+
+		modifier = {
+			civilian_factory_use = 3
 		}
 
 		complete_effect = {
@@ -1588,6 +1691,56 @@ TUR_agriculture_decision_category = {
 			add_building_construction = {
 				type = infrastructure
 				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+
+	TUR_land_irrigation = {
+
+		cost = 50
+		fire_only_once = yes
+		days_remove = 60
+
+		visible = {
+			tag = TUR
+			TUR = {
+                has_completed_focus = TUR_irrigate_the_land
+            }
+		}
+		available = {
+			tag = TUR
+			TUR = {
+                has_completed_focus = TUR_irrigate_the_land
+            }
+		}
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		complete_effect = {
+
+		}
+		remove_effect = {
+			random_core_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_core_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 2
 				instant_build = yes
 			}
 		}

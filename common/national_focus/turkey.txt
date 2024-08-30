@@ -743,7 +743,7 @@ focus = { # INDUSTRIALIZATION
     prerequisite = { focus = TUR_western_standards }
 	prerequisite = { focus = TUR_modernized_railways }
     x = -1
-    y = 2
+    y = 1
     relative_position_id = TUR_western_standards
     cost = 4
 
@@ -756,6 +756,39 @@ focus = { # INDUSTRIALIZATION
         swap_ideas = {
    			remove_idea = TUR_german_eco_3
     		add_idea = TUR_german_eco_4
+		}
+
+    }
+
+    ai_will_do = {
+        factor = 5
+    }
+
+}
+
+focus = { # INDUSTRIALIZATION
+    id = TUR_fully_modernized_economy
+    icon = thisgfxiswrong
+    prerequisite = { focus = TUR_prussian_education }
+	prerequisite = { focus = TUR_leave_no_rocks_unturned }
+	prerequisite = { focus = TUR_trademark_of_the_turkish_people }
+    x = 4
+    y = 1
+    relative_position_id = TUR_prussian_education
+    cost = 4
+
+    available = {
+
+    }
+
+    completion_reward = { # Merges national spirits
+
+		remove_ideas = TUR_german_eco_4
+		remove_ideas = TUR_russian_eco_4
+
+        swap_ideas = {
+			remove_idea = TUR_resources
+    		add_idea = TUR_final_economic_idea
 		}
 
     }
@@ -949,8 +982,6 @@ focus = {
     		amount = 800
     		producer = RUS
 		}
-
-		#TODO: Decisions
     }
 
     ai_will_do = {
@@ -967,7 +998,7 @@ focus = {
     x = 1
     y = 1
     relative_position_id = TUR_commericalize_agriculture
-    cost = 4
+    cost = 10
 
     available = {
 		has_country_flag = has_national_bank
@@ -979,10 +1010,6 @@ focus = {
 
     completion_reward = { # gives temporary national spirit giving civ debuff
 
-		add_timed_idea = {
-    		idea = TUR_temp_farmer_loans_same
-    		days = 120
-		}   
     }
 
     ai_will_do = {
@@ -1155,12 +1182,14 @@ focus = {
     cost = 4
 
     available = {
-
+		has_country_flag = fully_commercial_agriculture
     }
 
-    completion_reward = {
-        # increases population growth
-        # gives a total of 2 infrastructure in random states
+    completion_reward = { # Buffs national spirit for last time
+		swap_ideas = {
+			remove_idea = TUR_commericalized_agriculture_2
+			add_idea = TUR_commericalized_agriculture_3
+		}
     }
 
     ai_will_do = {
