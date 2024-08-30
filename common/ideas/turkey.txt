@@ -301,6 +301,23 @@ ideas = {
             }
         }
 
+		TUR_temp_farmer_loans_same = {
+            picture = thisgfxiswrong
+            removal_cost = -1
+
+            allowed = {
+                always = no
+            }
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+            modifier = {
+				civilian_factory_use = 5
+            }
+        }
+
 		TUR_fund_the_dam = {
             picture = thisgfxiswrong
             removal_cost = -1
@@ -315,6 +332,94 @@ ideas = {
 			
             modifier = {
 				civilian_factory_use = 4
+            }
+        }
+
+		
+		TUR_ger_decision_expertise = {
+            picture = thisgfxiswrong
+            removal_cost = -1
+
+            allowed = {
+                always = no
+            }
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+            modifier = {
+				production_factory_efficiency_gain_factor = 0.50
+            }
+        }
+
+		TUR_resources = {
+            picture = thisgfxiswrong
+            removal_cost = -1
+
+            allowed = {
+                always = no
+            }
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+            modifier = {
+				local_resources_factor = 0.25
+            }
+        }
+
+		TUR_commericalized_agriculture = {
+            picture = thisgfxiswrong
+            removal_cost = -1
+
+            allowed = {
+                always = no
+            }
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+            modifier = {
+				monthly_population = -0.1
+				consumer_goods_factor = 0.05
+            }
+        }
+
+		TUR_commericalized_agriculture_2 = {
+            picture = thisgfxiswrong
+            removal_cost = -1
+
+            allowed = {
+                always = no
+            }
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+            modifier = {
+				monthly_population = -0.1
+				consumer_goods_factor = 0.1
+            }
+        }
+
+		TUR_encouraged_investment = {
+            picture = thisgfxiswrong
+            removal_cost = -1
+
+            allowed = {
+                always = no
+            }
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+            modifier = {
+				consumer_goods_factor = 0.2
             }
         }
 
