@@ -409,28 +409,28 @@ country_event = {
 			982 = {
 				add_core_of = HUN
 			}
-			#random = {
-			#	chance = 1000 #Who is the black person that is removing this is gay, this is just an easter egg with 1/1000 chances to work.
-			#	JAP = {
-			#		diplomatic_relation = {
-			#			country = AUS
-			#			relation = puppet
-			#			active = yes
-			#		}
-			#	}
-			#
-			#	AUS =  {
-			#		set_cosmetic_tag = AUS_JAP
-			#		transfer_state = 524
-			#		set_politics = {
-			#		ruling_party = neutrality
-			#		elections_allowed = no
-			#		}
-			#	set_political_party = {
-			#		ideology = neutrality
-			#		popularity = 100
-			#	}
-			#	}
+			random = {
+				chance = 0.1 #Who is the black person that is removing this is gay, this is just an easter egg with 1/1000 chances to work.
+				JAP = {
+					diplomatic_relation = {
+						country = AUS
+						relation = puppet
+						active = yes
+					}
+				}
+			
+				AUS =  {
+					set_cosmetic_tag = AUS_JAP
+					transfer_state = 524
+					set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+					}
+				set_political_party = {
+					ideology = neutrality
+					popularity = 100
+				}
+				}
 
 			}
 

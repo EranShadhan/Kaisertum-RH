@@ -682,7 +682,7 @@ focus = {
 	factor = 1
 	}
 		
-	cost = 70
+	cost = 10
 		
 	available = {
 		
@@ -740,51 +740,14 @@ focus = {
 				
 		
 	completion_reward = {
-					
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 2
+			category = mio_cat_tech_light_armor_and_modules
+		}				
 	}
 		
 }
-
-
-
-focus = {
-
-	id = ROM_army_p_9
-	icon = GFX_ROM_army_p_9
-	x = 2
-	y = 3
-		
-	prerequisite = { focus = ROM_army_p_7 }
-			
-	relative_position_id = ROM_army_p_1
-		
-	ai_will_do = {
-	factor = 1
-	}
-		
-	cost = 10
-		
-	available = {
-		
-	}
-		
-	bypass = {
-		
-	}
-		
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-		
-				
-		
-	completion_reward = {
-					
-	}
-		
-}
-
-
 
 ########################
 ########Industry########
