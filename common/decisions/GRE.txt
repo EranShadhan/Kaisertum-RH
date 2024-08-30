@@ -1052,7 +1052,7 @@ GRE_expand_influence_in_FROM = {
 		}
 
 		ai_will_do = {
-			base = 110
+			base = 200
 		}
 	}
 	automatic_add_royalists = {
