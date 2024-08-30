@@ -1943,11 +1943,9 @@ GRE_red_ships = {
 
 			allowed = {
 				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
 			}
 
 			available = {
-				has_completed_focus = GRE_crack_down_on_foreign_monopolies
 			}
 			
 			research_bonus = {
@@ -1972,7 +1970,6 @@ GRE_red_ships = {
 
 			allowed = {
 				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
 			}
 
 			available = {
@@ -1998,11 +1995,9 @@ GRE_red_ships = {
 
 			allowed = {
 				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
 			}
 
 			available = {
-				has_completed_focus = GRE_rapprochement_with_the_italians
 				NOT = { has_war_with = ITA }
 			}
 
@@ -2025,7 +2020,6 @@ GRE_red_ships = {
 
 			allowed = {
 				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
 			}
 
 			available = {
@@ -2078,7 +2072,6 @@ GRE_red_ships = {
 
 			allowed = {
 				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
 			}
 			
 			research_bonus = {
@@ -2098,7 +2091,6 @@ GRE_red_ships = {
 			
 			allowed = {
 				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
 			}
 			
 			research_bonus = {
@@ -2123,7 +2115,6 @@ GRE_red_ships = {
 			
 			allowed = {
 				original_tag = GRE
-				NOT = { has_dlc = "Battle for the Bosporus" }
 			}
 			
 			research_bonus = {
@@ -2139,25 +2130,10 @@ GRE_red_ships = {
 			
 			allowed = {
 				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
 			}
 
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = GRE_nation_is_monarchy_tt
-					OR = {
-						has_idea = GRE_george_ii
-						has_idea = GRE_george_ii_restrained
-						has_country_leader = { 
-							name = "George II"
-							ruling_only = yes
-						}
-						custom_trigger_tooltip = {
-							tooltip = GRE_monarchists_friendly_or_loyal
-							check_variable = { var = GRE_monarchist_loyalty value = 1 compare = greater_than_or_equals }
-						}
-					}
-				}
+				
 			}
 			
 			research_bonus = {
@@ -2173,7 +2149,6 @@ GRE_red_ships = {
 			
 			allowed = {
 				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
 			}
 			
 			research_bonus = {
@@ -2189,17 +2164,10 @@ GRE_red_ships = {
 			
 			allowed = {
 				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
 			}
 
 			available = {
-				OR = {
-					has_country_leader = {
-						character = GRE_aristotle_onassis
-						ruling_only = yes
-					}
-					has_idea = GRE_aristotle_onassis
-				}
+			
 			}
 
 			cost = 75
@@ -2220,11 +2188,9 @@ GRE_red_ships = {
 		
 			allowed = {
 				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
 			}
 
 			available = { 
-				has_completed_focus = GRE_lignite_liquefaction
 			}			
 			
 			research_bonus = {
@@ -2244,11 +2210,9 @@ GRE_red_ships = {
 
 			allowed = {
 				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
 			}			
 
 			available = { 
-				has_completed_focus = GRE_cooperate_with_foreign_monopolies
 				NOT = { has_war_with = ENG }
 			}
 
@@ -2268,11 +2232,9 @@ GRE_red_ships = {
 
 			allowed = {
 				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
 			}
 
 			available = { 
-				has_completed_focus = GRE_cooperate_with_foreign_monopolies
 				NOT = { has_war_with = GER }
 			}
 
@@ -2295,11 +2257,9 @@ GRE_red_ships = {
 		
 			allowed = {
 				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
 			}
 
 			available = { 
-				has_completed_focus = GRE_crack_down_on_foreign_monopolies
 			}	
 			
 			research_bonus = {
@@ -2319,11 +2279,9 @@ GRE_red_ships = {
 
 			allowed = {
 				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
 			}
 
 			available = { 
-				has_completed_focus = GRE_crack_down_on_foreign_monopolies
 			}
 			
 			research_bonus = {
@@ -2343,11 +2301,9 @@ GRE_red_ships = {
 		
 			allowed = {
 				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
 			}
 
 			available = { 
-				has_completed_focus = GRE_crack_down_on_foreign_monopolies
 			}		
 			
 			research_bonus = {
@@ -2372,11 +2328,9 @@ GRE_red_ships = {
 			
 			allowed = {
 				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
 			}
 
 			available = {
-				has_completed_focus = GRE_crack_down_on_foreign_monopolies
 			}
 			
 			research_bonus = {
@@ -2396,11 +2350,9 @@ GRE_red_ships = {
 			
 			allowed = {
 				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
 			}
 
 			available = {
-				has_completed_focus = GRE_crack_down_on_foreign_monopolies
 			}
 			
 			research_bonus = {
@@ -2420,7 +2372,6 @@ GRE_red_ships = {
 			
 			allowed = {
 				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
 			}
 
 			available = {
@@ -2442,7 +2393,6 @@ GRE_red_ships = {
 			
 			allowed = {
 				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
 			}
 
 			available = {
@@ -2464,7 +2414,6 @@ GRE_red_ships = {
 			
 			allowed = {
 				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
 			}
 
 			available = {
@@ -2486,12 +2435,10 @@ GRE_red_ships = {
 			
 			allowed = {
 				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
 			}
 
 			available = {
-				NOT = { has_war_with = SOV }
-				has_completed_focus = GRE_appeal_to_the_soviet_union
+				NOT = { has_war_with = SOV }	
 			}
 
 			cost = 120
