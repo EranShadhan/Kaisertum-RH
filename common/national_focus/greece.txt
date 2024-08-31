@@ -26,7 +26,7 @@ focus_tree = {
 
 		cost = 3.5
 		ai_will_do = {
-			base = 0
+			base = 100
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
@@ -48,7 +48,7 @@ focus_tree = {
 		relative_position_id = GRE_what_is_our_future
 		cost = 3.5
 		ai_will_do = {
-			base = 0
+			base = 100
 		}
 		bypass = { has_country_flag = nationa_schism_part2 }
 		available_if_capitulated = yes
@@ -72,7 +72,7 @@ focus_tree = {
 		relative_position_id = GRE_slowly_mend_the_schism
 		cost = 3.5
 		ai_will_do = {
-			base = 0
+			base = 100
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
@@ -447,7 +447,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GRE_recruit_the_fascists_eee }
 		cost = 5
 		ai_will_do = {
-			base = 0
+			base = 100
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
@@ -2949,7 +2949,7 @@ add_ideas = GRE_like_the_beasts
 		relative_position_id = GRE_metaxas_allegiance
 		cost = 5
 		ai_will_do = {
-			base = 0
+			base = 100
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
@@ -2974,7 +2974,7 @@ add_ideas = GRE_like_the_beasts
 		 bypass = { has_country_flag = GRE_the_class_ended }
         prerequisite = { focus = GRE_the_economic_crush }
 		relative_position_id = GRE_the_economic_crush
-		cost = 5
+		cost = 100
 		ai_will_do = {
 			base = 0
 		}
@@ -3003,7 +3003,7 @@ add_ideas = GRE_like_the_beasts
 		cost = 5
 		 bypass = { has_country_flag = GRE_the_class_ended }
 		ai_will_do = {
-			base = 0
+			base = 100
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
@@ -3039,7 +3039,7 @@ add_ideas = GRE_like_the_beasts
 		relative_position_id = GRE_the_fight_for_dominance
 		cost = 5
 		ai_will_do = {
-			base = 0
+			base = 100
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
@@ -3065,7 +3065,7 @@ add_ideas = GRE_like_the_beasts
 		relative_position_id = GRE_deal_with_inflation
 		cost = 5
 		ai_will_do = {
-			base = 0
+			base = 100
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
@@ -3088,7 +3088,7 @@ add_ideas = GRE_like_the_beasts
 		relative_position_id = GRE_deal_with_inflation
 		cost = 5
 		ai_will_do = {
-			base = 0
+			base = 100
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
@@ -3113,7 +3113,7 @@ add_ideas = GRE_like_the_beasts
 		relative_position_id = GRE_deal_with_inflation
 		cost = 5
 		ai_will_do = {
-			base = 0
+			base = 100
 		}
 		 bypass = { has_country_flag = GRE_the_class_ended }
 		available_if_capitulated = yes
@@ -3140,7 +3140,7 @@ add_ideas = GRE_like_the_beasts
 		relative_position_id = GRE_crush_the_workers
 		cost = 5
 		ai_will_do = {
-			base = 0
+			base = 100
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
@@ -3172,7 +3172,7 @@ add_ideas = GRE_like_the_beasts
 
 		cost = 5
 		ai_will_do = {
-			base = 0
+			base = 100
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
@@ -4285,7 +4285,7 @@ focus = {
 	prerequisite = { focus = GRE_hellenic_armed_forces_new }
 		cost = 4
 		ai_will_do = {
-			base = 0
+			base = 100
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
@@ -4306,7 +4306,7 @@ focus = {
 		relative_position_id = GRE_royal_hellenic_army
 		cost = 3
 		ai_will_do = {
-			base = 0
+			base = 100
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
@@ -4327,7 +4327,7 @@ focus = {
 		relative_position_id = GRE_ioannis_metaxas_general
 		cost = 6
 		ai_will_do = {
-			base = 0
+			base = 100
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
@@ -4352,7 +4352,7 @@ focus = {
 		relative_position_id = GRE_form_a_new_army
 		cost = 6
 		ai_will_do = {
-			base = 0
+			base = 100
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
@@ -5406,7 +5406,7 @@ focus = {
 		y = 0
 		cost = 5
 			ai_will_do = {
-			base = 0
+			base = 100
 		}
 		available_if_capitulated = yes
 		search_filters = {  }
@@ -5439,7 +5439,7 @@ focus = {
 		relative_position_id = GRE_first_five_year_plan
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -5486,7 +5486,7 @@ add_ideas = GRE_strong_trains
 		relative_position_id = GRE_increase_greek_productivity
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -5515,7 +5515,7 @@ add_ideas = GRE_roads
 		relative_position_id = GRE_roads
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -5542,7 +5542,7 @@ add_ideas = GRE_trade_fleet
 		relative_position_id = GRE_diverse_markets
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -5568,7 +5568,7 @@ add_ideas = GRE_trade_fleet
 		relative_position_id = GRE_aegean_oil
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -5600,7 +5600,7 @@ add_ideas = GRE_trade_fleet
 		relative_position_id = GRE_pan_hellenic_rail_way
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -5621,7 +5621,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		relative_position_id = GRE_fake_reports
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -5642,7 +5642,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		relative_position_id = GRE_drachma_reevaluation
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -5663,7 +5663,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		y = 0
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -5681,7 +5681,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		y = 1
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -5699,7 +5699,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		y = 1
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -5717,7 +5717,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		y = 1
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -5734,7 +5734,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		y = 0
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -5752,7 +5752,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		y = 1
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -5770,7 +5770,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		y = 1
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -5788,7 +5788,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		y = 1
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -5806,7 +5806,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		y = 1
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -5824,7 +5824,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		y = 1
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -5875,7 +5875,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		y = 1
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -5895,7 +5895,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		y = 1
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -5913,7 +5913,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		y = 1
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -5931,7 +5931,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		y = 1
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -5949,7 +5949,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		y = 1
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -5968,7 +5968,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		y = 1
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -6029,7 +6029,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		y = 1
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -6048,7 +6048,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		y = 1
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -6066,7 +6066,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		y = 1
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -6095,7 +6095,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		y = 1
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -6113,7 +6113,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		y = 1
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -6131,7 +6131,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		y = 1
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -6170,7 +6170,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		y = 1
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -6193,7 +6193,7 @@ add_mines = { region = 30 amount = 250 }
 		y = 1
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -6224,7 +6224,7 @@ add_mines = { region = 30 amount = 250 }
 		y = 1
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -6242,7 +6242,7 @@ add_mines = { region = 30 amount = 250 }
 		y = 1
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -6268,7 +6268,7 @@ add_mines = { region = 30 amount = 250 }
 		y = 1
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -6313,7 +6313,7 @@ add_mines = { region = 30 amount = 250 }
 		y = 1
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -6334,7 +6334,7 @@ add_mines = { region = 30 amount = 250 }
 		y = 1
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -6373,7 +6373,7 @@ add_mines = { region = 30 amount = 250 }
 		y = 1
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
@@ -6400,7 +6400,7 @@ add_mines = { region = 30 amount = 250 }
 		y = 1
 		cost = 5
 		ai_will_do = {
-			base = 1
+			base = 0
 		}
 		available_if_capitulated = yes
 		search_filters = { }
