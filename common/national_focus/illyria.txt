@@ -4,7 +4,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 100
+			add = 1000
 			tag = YUG
 		}
 	}
@@ -1559,7 +1559,7 @@ focus_tree = {
 				
 			}
 			
-		x = -3
+		x = -6
 		y = 1
 
 		cost = 5
@@ -1628,6 +1628,40 @@ focus_tree = {
 			}
 			
 		x = -3
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_seize_italian_assets
+		icon = GFX_
+		relative_position_id = YUG_5year_plan
+		prerequisite = { focus = YUG_5year_plan }
+		available = {
+				
+				
+				
+			}
+			
+		x = 0
 		y = 1
 
 		cost = 5
@@ -1766,6 +1800,244 @@ focus_tree = {
 			
 		x = 0
 		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_claim_north_slovenia
+		icon = GFX_
+		relative_position_id = YUG_claim_litorale
+		prerequisite = { focus = YUG_claim_litorale }
+		available = {
+				
+				
+				
+			}
+			
+		x = 0
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_war_in_slovenia
+		icon = GFX_
+		relative_position_id = YUG_claim_north_slovenia
+		prerequisite = { focus = YUG_claim_north_slovenia }
+		available = {
+				
+				
+				
+			}
+			
+		x = 0
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_invade_salonica_pact
+		icon = GFX_
+		relative_position_id = YUG_war_in_slovenia
+		prerequisite = { focus = YUG_war_in_slovenia }
+		available = {
+				
+				
+				
+			}
+			
+		x = 0
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_sabotage_italy
+		icon = GFX_
+		relative_position_id = YUG_claim_litorale
+		prerequisite = { focus = YUG_claim_litorale }
+		available = {
+				
+				
+				
+			}
+			
+		x = -3
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_infiltrate_the_military
+		icon = GFX_
+		relative_position_id = YUG_sabotage_italy
+		prerequisite = { focus = YUG_sabotage_italy }
+		available = {
+				
+				
+				
+			}
+			
+		x = 1
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_infiltrate_the_airforce
+		icon = GFX_
+		relative_position_id = YUG_sabotage_italy
+		prerequisite = { focus = YUG_sabotage_italy }
+		available = {
+				
+				
+				
+			}
+			
+		x = -1
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_infiltrate_governament
+		icon = GFX_
+		relative_position_id = YUG_sabotage_italy
+		prerequisite = { focus = YUG_sabotage_italy }
+		available = {
+				
+				
+				
+			}
+			
+		x = 0
+		y = 2
 
 		cost = 5
 		
@@ -2007,6 +2279,76 @@ focus_tree = {
 			}
 			
 		x = -3
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_the_mareshall_of_the_people
+		icon = GFX_
+		relative_position_id = YUG_defence_against_capitalism
+		prerequisite = { focus = YUG_defence_against_capitalism }
+		available = {
+				
+				
+				
+			}
+			
+		x = 0
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_unite_muslim_christians
+		icon = GFX_
+		relative_position_id = YUG_the_freedom_bringer
+		prerequisite = { focus = YUG_karl_marxs_successor }
+		prerequisite = { focus = YUG_the_brilliant_man }
+		prerequisite = { focus = YUG_the_freedom_bringer }
+		available = {
+				
+				
+				
+			}
+			
+		x = 1
 		y = 1
 
 		cost = 5

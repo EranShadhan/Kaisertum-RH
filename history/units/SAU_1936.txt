@@ -34,7 +34,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 7934
+		location = 4981
 		division_template = "Alfurqat Alfursan"		
 		start_equipment_factor = 0.95
 
@@ -67,7 +67,7 @@ units = {
             is_name_ordered = yes
             name_order = 2
         }
-        location = 12758
+        location = 10835
         division_template = "Alfurqat Almasha"
         start_equipment_factor = 0.95
 
@@ -100,7 +100,7 @@ units = {
             is_name_ordered = yes
             name_order = 2
         }
-        location = 2057
+        location = 4603
         division_template = "Alfurqat Almasha"
         start_equipment_factor = 0.95
 
@@ -122,7 +122,7 @@ units = {
             is_name_ordered = yes
             name_order = 2
         }
-        location = 1631
+        location = 12473
         division_template = "Alfurqat Alfursan"
         start_equipment_factor = 0.95
 
