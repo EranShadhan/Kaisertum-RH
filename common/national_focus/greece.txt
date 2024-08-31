@@ -2974,7 +2974,7 @@ add_ideas = GRE_like_the_beasts
 		 bypass = { has_country_flag = GRE_the_class_ended }
         prerequisite = { focus = GRE_the_economic_crush }
 		relative_position_id = GRE_the_economic_crush
-		cost = 100
+		cost = 10
 		ai_will_do = {
 			base = 0
 		}
@@ -3035,7 +3035,8 @@ add_ideas = GRE_like_the_beasts
 		on_select = {
 		country_event = { id = KT_greece_events.4 days = 5 }
 		}
-        prerequisite = { focus = GRE_the_fight_for_dominance focus = GRE_conscription_crisis}
+        prerequisite = { focus = GRE_the_fight_for_dominance }
+		prerequisite = { focus = GRE_conscription_crisis }
 		relative_position_id = GRE_the_fight_for_dominance
 		cost = 5
 		ai_will_do = {
