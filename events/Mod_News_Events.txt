@@ -396,6 +396,8 @@ news_event = {
 
 	
 		TUR = { has_war_with = GRE }
+		has_global_flag = constantinople_war
+		NOT = { has_global_flag = turkey_wins_constantinople }
 		NOT = { has_global_flag = turkey_wins_constantinople }
 		
 	}
@@ -447,6 +449,8 @@ news_event = {
 
 	
 		TUR = { has_war_with = GRE }
+		has_global_flag = constantinople_war
+		NOT = { has_global_flag = turkey_wins_constantinople }
 		NOT = { has_global_flag = greece_wins_constantinople }
 		
 	}
