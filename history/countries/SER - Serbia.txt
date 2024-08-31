@@ -72,6 +72,7 @@ if = {
 
 set_cosmetic_tag = SER_MNT
 
+recruit_character = SER_filip_filipovic
 recruit_character = SER_elisabeth_marie
 recruit_character = SER_acd2
 recruit_character = SER_communist_guy
@@ -202,17 +203,6 @@ create_country_leader = {
 	picture = GFX_portrait_Milan_Nedic
 	expire = "1965.1.1"
 	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Zivorad Jovanovic"
-	desc = ""
-	picture = GFX_portrait_Zivorad_Jovanovic
-	expire = "1965.1.1"
-	ideology = leninism
 	traits = {
 		#
 	}
