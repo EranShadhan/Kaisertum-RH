@@ -1,8 +1,11 @@
 spriteTypes = {
-
 	spriteType = {
 		name = "GFX_portrait_SER_Elisabeth_Marie"
 		texturefile = "gfx/leaders/SER/Portrait_SER_elisabeth_austria.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SER_filip_filipovic"
+		texturefile = "gfx/leaders/SER/Portrait_SER_filip_filipovic.dds"
 	}
 	spriteType = {
 		name = "GFX_portrait_GER_otto_wels"
@@ -90,9 +93,4 @@ spriteTypes = {
 		name = "GFX_portrait_BRA_washington_luis"
 		texturefile = "gfx/leaders/BRA/Portrait_Brazil_Luis_washington.dds"
 	}
-
-
-
-
-	
 }
