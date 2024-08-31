@@ -24,6 +24,66 @@ ideas = {
 			}
 		}
 
+		ROM_playboy = {
+
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.005
+                consumer_goods_factor = 0.2
+				political_power_gain = 0.05
+			}
+		}
+
+		ROM_total_equality = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				recruitable_population = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		ROM_resistant_culture_hun = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.25
+				stability_factor = -0.15
+			}
+		}
+
 		Carol_reforms = {
 
 			picture = generic_social_reforms

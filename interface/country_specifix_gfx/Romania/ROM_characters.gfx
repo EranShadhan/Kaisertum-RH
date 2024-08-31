@@ -24,5 +24,10 @@ spriteTypes = {
 		name = "GFX_portrait_ROM_reg"
 		texturefile = "gfx/leaders/ROM/Portrait_ROM_reg.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_Portrait_romania_gheorghe_tatarescu"
+		texturefile = "gfx/leaders/ROM/Portrait_Romania_Gheorghe_Tatarescu.dds."
+	}
 
 }

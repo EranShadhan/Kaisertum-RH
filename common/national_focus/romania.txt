@@ -1471,6 +1471,7 @@ focus = {
 			
 	
 			completion_reward = {
+				remove_ideas = ROM_playboy
 			}
 	}
 
@@ -2766,6 +2767,868 @@ focus = {
 				
 			}
 	}
+
+	focus = {
+
+		id = ROM_pol_d_1
+		icon = GFX_ROM_pol_d_1
+		x = 0
+		y = 1
+		relative_position_id = ROM_pol_5
+	
+		prerequisite = { focus = ROM_pol_5 }
+
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				always = no
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.3
+				}
+				remove_ideas = {
+					ROM_playboy
+				}
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_2
+		icon = GFX_ROM_pol_d_2
+		x = -1
+		y = 1
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_1 }
+
+		cost = 5
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				add_popularity = {
+					ideology = neutrality
+					popularity = -0.1
+				}
+				add_stability = -0.05
+				add_war_support = 0.1
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_3
+		icon = GFX_ROM_pol_d_3
+		x = 1
+		y = 1
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_1 }
+
+		cost = 5
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				add_popularity ={
+					ideology = democratic
+					popularity = 0.1
+				}
+				add_stability = 0.05
+				add_war_support = 0.07
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_4
+		icon = GFX_ROM_pol_d_4
+		x = -2
+		y = 2
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_2 }
+		prerequisite = { focus = ROM_pol_d_3}
+
+		cost = 5
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+				has_completed_focus = ROM_pol_d_6
+				NOT ={
+					has_idea = ROM_resistant_culture_hun
+				}
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				add_ideas = {
+					ROM_total_equality
+				}
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_5
+		icon = GFX_ROM_pol_d_5
+		x = 0
+		y = 2
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_3 }
+
+		cost = 5
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				create_country_leader = {
+					name = ROM_gheorghe_tatarescu
+					picture  = GFX_Portrait_romania_gheorghe_tatarescu
+					expire = "1965.1.1"
+					ideology = connservatism
+					
+				}
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_6
+		icon = GFX_ROM_pol_d_6
+		x = 2
+		y = 2
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_3 }
+
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+		cost = 5
+
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				add_timed_idea = {
+					idea = ROM_resistant_culture_hun
+					days = 90
+				}
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_7
+		icon = GFX_ROM_pol_d_7
+		x = -1
+		y = 3
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_4 }
+		prerequisite = { focus = ROM_pol_d_5 }
+
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_8
+		icon = GFX_ROM_pol_d_8
+		x = -2
+		y = 4
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_7 }
+
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_9
+		icon = GFX_ROM_pol_d_9
+		x = 0
+		y = 4
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_7 }
+
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_10
+		icon = GFX_ROM_pol_d_10
+		x = -1
+		y = 5
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_9 }
+
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_11
+		icon = GFX_ROM_pol_d_11
+		x = 1
+		y = 5
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_9 }
+
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_12
+		icon = GFX_ROM_pol_d_12
+		x = -2
+		y = 6
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_10 }
+
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_13
+		icon = GFX_ROM_pol_d_13
+		x = 0
+		y = 6
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_10 }
+
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_14
+		icon = GFX_ROM_pol_d_14
+		x = 2
+		y = 6
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_11 }
+
+		mutually_exclusive = { focus = ROM_pol_d_15 }
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_15
+		icon = GFX_ROM_pol_d_15
+		x = 4
+		y = 6
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_11 }
+
+		mutually_exclusive = { focus = ROM_pol_d_14 }
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_16
+		icon = GFX_ROM_pol_d_2
+		x = -1
+		y = 7
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_13 }
+		prerequisite = { focus = ROM_pol_d_12 }
+
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_17
+		icon = GFX_ROM_pol_d_17
+		x = -3
+		y = 8
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_16 }
+
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_18
+		icon = GFX_ROM_pol_d_18
+		x = 1
+		y = 8
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_16 }
+		prerequisite = { focus = ROM_pol_d_11 }
+
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_19
+		icon = GFX_ROM_pol_d_19
+		x = -1
+		y = 9
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_17 }
+		prerequisite = { focus = ROM_pol_d_18 }
+
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_20
+		icon = GFX_ROM_pol_d_20
+		x = 3
+		y = 9
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_18 }
+		prerequisite = { focus = ROM_pol_d_14 focus = ROM_pol_d_15}
+
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_21
+		icon = GFX_ROM_pol_d_21
+		x = 1
+		y = 10
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_19 }
+		prerequisite = { focus = ROM_pol_d_20}
+		
+
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_22
+		icon = GFX_ROM_pol_d_22
+		x = 0
+		y = 11
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_21 }
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_23
+		icon = GFX_ROM_pol_d_23
+		x = 2
+		y = 11
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_21 }
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				
+			}
+	}
+
+	focus = {
+
+		id = ROM_pol_d_24
+		icon = GFX_ROM_pol_d_24
+		x = 1
+		y = 12
+		relative_position_id = ROM_pol_d_1
+	
+		prerequisite = { focus = ROM_pol_d_22 }
+		prerequisite = { focus = ROM_pol_d_23 }
+
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				
+			}
+	}
+
+	
 
 
 

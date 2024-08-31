@@ -94,6 +94,7 @@ if = {
 add_ideas = {
 	german_customs_union_member
 	Inefective_constitution
+	ROM_playboy
 }
 
 set_convoys = 10
