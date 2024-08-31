@@ -1,5 +1,5 @@
 characters={
-	SER_elisabeth_marie{
+	SER_elisabeth_marie = {
 		name = SER_elisabeth_marie 
 		portraits = {
 			civilian = {
@@ -8,6 +8,19 @@ characters={
 		}
 		country_leader = {
 			ideology = oligarchism
+			expire = "1953.3.1.1"
+			id = -1
+		}
+	}
+	SER_filip_filipovic = {
+		name = SER_filip_filipovic
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SER_filip_filipovic
+			}
+		}
+		country_leader = {
+			ideology = leninism
 			expire = "1953.3.1.1"
 			id = -1
 		}
