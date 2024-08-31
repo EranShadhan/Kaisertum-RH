@@ -8,7 +8,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 100
+			add = 10
 			tag = SER
 		}
 	}
@@ -64,18 +64,28 @@ focus_tree = {
 }
 
 
+
 ## SERBIA AND MONTENEGRO ##
 ## BULGARIAN PUPPETERING ##
 
 focus_tree = {
 	default = no
 	id = serbia_and_montenegro_tree_BUL
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = SER
+			is_debug = yes
+		}
+	}
 	
 	focus = {
 		id = SER_BUL_who_king
 		icon = GFX_focus_generic_monarchy_2
 		
-		x = 5
+		x = 4
 		y = 0
 		cost = 2
 		
@@ -86,16 +96,54 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = SER_BUL_bulgarian_queen
+		icon = GFX_goal_generic_major_alliance
+		
+		relative_position_id = SER_BUL_who_king
+		x = -3
+		y = 1
+		cost = 5
+		
+		prerequisite = {focus = SER_BUL_who_king}
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		completion_reward = {}
+	}
+	
+	focus = {
 		id = SER_BUL_king_is_useless
 		icon = GFX_focus_rom_handle_king
 		
 		relative_position_id = SER_BUL_who_king
-		x = 8
+		x = 9
 		y = 0
 		cost = 5
+		
 		mutually_exclusive = { focus = SER_BUL_who_king }
 		available = {}
 		bypass = {}
 		completion_reward = {} # TODO: this is a shit focus. it should be intentionally shit. to all ye who wish to tone this down, stop bein a pussy ass bitch
+	}
+	
+	focus = {
+		id = SER_BUL_go_communist			# this is where it gets... spicy
+		icon = GFX_goal_support_communism
+		
+		relative_position_id = SER_BUL_king_is_useless
+		x = 4
+		y = 1
+		cost = 10
+		
+		prerequisite = {focus = SER_BUL_king_is_useless}
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		completion_reward = {
+			add_populatiry = {
+				ideology = communism
+				popularity = 0.12
+			}
+		}
 	}
 }
