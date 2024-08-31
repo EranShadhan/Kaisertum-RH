@@ -117,7 +117,7 @@ country_event = { #dodecanese plssss
 	
 	option = {
 		name = KT_greece_events.5.a
-		164 = { set_owner = GRE }
+		164 = { transfer_state_to = GRE }
 		
 		ai_chance = { factor = 100 }
 		}
@@ -141,10 +141,10 @@ country_event = { #georgia and armenia plssss
 	
 	option = {
 		name = KT_greece_events.6.a
-		980 = { set_owner = GRE }
-		826 = { set_owner = GRE }
-		231 = { set_owner = GRE }
-		230 = { set_owner = GRE }
+		980 = { transfer_state_to = GRE }
+		826 = { transfer_state_to = GRE }
+		231 = { transfer_state_to = GRE }
+		230 = { transfer_state_to = GRE }
 		ai_chance = { factor = 100 }
 		}
   
