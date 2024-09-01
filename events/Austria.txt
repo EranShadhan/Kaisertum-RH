@@ -303,6 +303,7 @@ country_event = {
 			set_variable = {
 				ITA_fiume_crisis_var = 5
 			}
+			leave_faction = yes
 		}
 
 		YUG ={

@@ -77,12 +77,14 @@ focus_tree = {
 		}
 			
 		completion_reward = {
-			transfer_units_fraction= {
-				target = AUS
-				size = 0.1 
-				stockpile_ratio = 0.1
-				navy_ratio = 0
-				air_ratio = 0
+			AUS = {
+				transfer_units_fraction= {
+					target = YUG
+					size = 0.1 
+					stockpile_ratio = 0.1
+					navy_ratio = 0
+					air_ratio = 0
+				}
 			}
 		}
 	}
@@ -136,15 +138,13 @@ focus_tree = {
 		prerequisite = { focus = YUG_raid_austrian_armories }
 		prerequisite = { focus = YUG_sponsor_slovenian_revolts }
 		available = {
-				
-				
-				
-			}
+			always = no
+		}
 			
 		x = 0
 		y = 2
 
-		cost = 100
+		cost = 0
 		
 			ai_will_do = {
 			
@@ -1447,6 +1447,40 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = YUG_thatsit_you_cant_do_shit
+		icon = GFX_
+		relative_position_id = YUG_the_king_governament
+		prerequisite = { focus = YUG_the_king_governament }
+		available = {
+				
+				
+				
+			}
+			
+		x = 0
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
 		id = YUG_tito
 		icon = GFX_
 		relative_position_id = YUG_the_fiume_crisis
@@ -1477,7 +1511,18 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-
+			add_popularity = {
+				ideology = communism 
+				popularity = 0.15
+			}
+			804 = { set_demilitarized_zone = yes }
+			103 = { set_demilitarized_zone = yes }
+			104 = { set_demilitarized_zone = yes }
+			977 = { set_demilitarized_zone = yes }
+			853 = { set_demilitarized_zone = yes }
+			45 = { set_demilitarized_zone = yes }
+			105 = { set_demilitarized_zone = yes }
+			add_ideas = YUG_tito_partisans
 		}
 	}
 	focus = {
@@ -1511,7 +1556,13 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-
+			163 = { set_demilitarized_zone = yes }
+			109 = { set_demilitarized_zone = yes }
+			988 = { set_demilitarized_zone = yes }
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -250
+			}
 		}
 	}
 	focus = {
@@ -1545,6 +1596,26 @@ focus_tree = {
 			}
 			
 		completion_reward = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			remove_ideas = YUG_tito_partisans
+			set_cosmetic_tag = YUG_TITO
+			163 = { set_demilitarized_zone = no  }
+			109 = { set_demilitarized_zone = no  }
+			988 = { set_demilitarized_zone = no  }
+			804 = { set_demilitarized_zone = no  }
+			103 = { set_demilitarized_zone = no  }
+			104 = { set_demilitarized_zone = no  }
+			977 = { set_demilitarized_zone = no  }
+			853 = { set_demilitarized_zone = no  }
+			45  = { set_demilitarized_zone = no  }
+			105 = { set_demilitarized_zone = no  }
+			ITA = {
+				end_puppet = YUG
+			}
+			leave_faction = yes
 
 		}
 	}
@@ -1818,7 +1889,12 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-
+			852 = {
+				add_core_of = YUG
+			}
+			736 = {
+				add_core_of = YUG
+			}
 		}
 	}
 	focus = {
@@ -1901,6 +1977,108 @@ focus_tree = {
 			}
 			
 		x = 0
+		y = 2
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_serbian_rebels
+		icon = GFX_
+		relative_position_id = YUG_invade_salonica_pact
+		prerequisite = { focus = YUG_invade_salonica_pact }
+		available = {
+				
+				
+				
+			}
+			
+		x = 0
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_bulgarian_socialist
+		icon = GFX_
+		relative_position_id = YUG_invade_salonica_pact
+		prerequisite = { focus = YUG_invade_salonica_pact }
+		available = {
+				
+				
+				
+			}
+			
+		x = 2
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = YUG_turkish_volunteers
+		icon = GFX_
+		relative_position_id = YUG_invade_salonica_pact
+		prerequisite = { focus = YUG_invade_salonica_pact }
+		available = {
+				
+				
+				
+			}
+			
+		x = -2
 		y = 1
 
 		cost = 5

@@ -121,7 +121,7 @@ ideas = {
 				research_speed_factor = 0.05
 			}
 		}
-		YUG_public_schools = {
+		YUG_slavic_masterminds = {
 
 			picture = bonus_research
 			
@@ -139,24 +139,6 @@ ideas = {
 				research_speed_factor = 0.1
 			}
 		}
-		YUG_slavic_masterminds = {
-
-			picture = bonus_research
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				research_speed_factor = 0.2
-			}
-		}
 		YUG_slovenian_schools = {
 
 			picture = bonus_research
@@ -172,7 +154,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				research_speed_factor = 0.25
+				research_speed_factor = 0.15
 			}
 		}
 		YUG_slovenian_scientists = {
@@ -190,7 +172,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				research_speed_factor = 0.3
+				research_speed_factor = 0.2
 			}
 		}
 		YUG_a_new_illyria = {
@@ -271,6 +253,27 @@ ideas = {
 				political_power_gain = 0.10
 				industrial_capacity_dockyard = 0.15
 				consumer_goods_factor = -0.1
+			}
+		}
+		
+		YUG_tito_partisans = {
+
+			picture = saf_soviet_advisers
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.20
+				stability_weekly = -0.01
+				political_power_gain = -0.25
 			}
 		}
 	}
