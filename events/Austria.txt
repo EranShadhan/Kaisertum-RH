@@ -180,6 +180,8 @@ country_event = {
 				remove_ideas = YUG_payment_to_hungary
 				remove_ideas = YUG_underground_italian_connections
 				set_cosmetic_tag = YUG_ITA
+				retire_country_leader = yes
+				promote_character = YUG_King_Amedeo
 			}
 		}
 	}
@@ -238,6 +240,7 @@ country_event = {
 				transfer_state = 74
 				transfer_state = 69
 				transfer_state = 102
+				transfer_state = 1035
 			}
 		}
 	}
@@ -272,6 +275,7 @@ country_event = {
 			transfer_state = 74
 			transfer_state = 69
 			transfer_state = 102
+			transfer_state = 1035
 			annex_country = {
 				country = AUS
 				transfer_troops = no

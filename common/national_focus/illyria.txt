@@ -1630,7 +1630,7 @@ focus_tree = {
 				
 			}
 			
-		x = -6
+		x = -7
 		y = 1
 
 		cost = 5
@@ -1928,11 +1928,16 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-
+			1034 = {
+				add_core_of = YUG
+			}
+			1035 = {
+				add_core_of = YUG
+			}
 		}
 	}
 	focus = {
-		id = YUG_war_in_slovenia
+		id = YUG_invade_salonica_pact
 		icon = GFX_
 		relative_position_id = YUG_claim_cornitha
 		prerequisite = { focus = YUG_claim_cornitha }
@@ -1944,40 +1949,6 @@ focus_tree = {
 			
 		x = 0
 		y = 1
-
-		cost = 5
-		
-			ai_will_do = {
-			
-				base = 0
-			
-			}
-			
-		available_if_capitulated = yes
-		
-		search_filters = {  
-				
-				
-				
-			}
-			
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = YUG_invade_salonica_pact
-		icon = GFX_
-		relative_position_id = YUG_war_in_slovenia
-		prerequisite = { focus = YUG_war_in_slovenia }
-		available = {
-				
-				
-				
-			}
-			
-		x = 0
-		y = 2
 
 		cost = 5
 		
@@ -2112,7 +2083,7 @@ focus_tree = {
 				
 			}
 			
-		x = -3
+		x = -4
 		y = 1
 
 		cost = 5
@@ -2248,7 +2219,7 @@ focus_tree = {
 				
 			}
 			
-		x = 3
+		x = 4
 		y = 1
 
 		cost = 5

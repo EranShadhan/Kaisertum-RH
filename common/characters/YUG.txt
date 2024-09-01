@@ -1,19 +1,40 @@
 characters = {
 
-	YUG_Ivan_Subasic = {
-		name = YUG_Ivan_Subasic
+	YUG_StjepanRadic_neu = {
+		name = YUG_StjepanRadic
 		portraits = {
 			civilian = {
-				large = GFX_YUG_Ivan_Subasic
+				large = GFX_YUG_StjepanRadic
 			}
 		}
 		country_leader = {
-			ideology = oligarchism
+			ideology = centrism
 			expire = "1953.3.1.1"
 			id = -1
 		}
+	}
+	YUG_StjepanRadic_dem = {
+		name = YUG_StjepanRadic
+		portraits = {
+			civilian = {
+				large = GFX_YUG_StjepanRadic
+			}
+		}
 		country_leader = {
 			ideology = liberalism
+			expire = "1953.3.1.1"
+			id = -1
+		}
+	}
+	YUG_King_Amedeo = {
+		name = YUG_King_Amedeo
+		portraits = {
+			civilian = {
+				large = GFX_YUG_kingamedeo
+			}
+		}
+		country_leader = {
+			ideology = despotism
 			expire = "1953.3.1.1"
 			id = -1
 		}

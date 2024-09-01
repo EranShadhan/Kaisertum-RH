@@ -6,7 +6,10 @@ set_cosmetic_tag = YUG_AS
 
 oob = "YUG_1936"
 
-recruit_character = YUG_Ivan_Subasic
+recruit_character = YUG_StjepanRadic_dem
+recruit_character = YUG_StjepanRadic_neu
+recruit_character = YUG_King_Amedeo
+
 
 add_ideas = {
 	german_customs_union_member
