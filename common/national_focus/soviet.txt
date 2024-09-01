@@ -5,7 +5,7 @@
 		
 		modifier = {
 			add = 10
-			tag = RUS
+			tag = SOV
 		}
 	}
 	default = no
@@ -16,7 +16,7 @@
 	focus = {
 		id = SOV_duma_council_split
 		icon = GFX_
-		x = 10
+		x = 5
 		y = 0
 		
 		available = {
