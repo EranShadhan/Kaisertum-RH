@@ -2811,7 +2811,7 @@ focus = {
 		id = GER_retain_status_quo
 		icon = GFX_goal_unknown
 		prerequisite = { focus = GER_kaiserreich_remains }
-		mutually_exclusive = { focus = GER_kaiserreich_remains }
+		mutually_exclusive = { focus = GER_restore_kaiser_power }
 		x = 1
 		y = 1
 		relative_position_id = GER_kaiserreich_remains
@@ -3406,8 +3406,7 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 16
-
+			factor = 15
 		}
 
 		available = {
@@ -3440,7 +3439,6 @@ focus = {
 
 		ai_will_do = {
 			factor = 16
-
 		}
 
 		available = {
@@ -3463,7 +3461,7 @@ focus = {
 
 	focus = {
 		id = GER_conquer_italy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_attack_italy
 		prerequisite = { focus = GER_south_tyrol_is_german }
 		x = 1
 		y = 1
@@ -3488,7 +3486,11 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#TODO
+			create_wargoal = {
+				type = take_state_focus
+				target = ITA
+				generator = { 39 850 736 }
+			}
 		}
 	}
 

@@ -855,8 +855,12 @@
 		mutually_exclusive = { }
 
 		cost = 5
-			ai_will_do = {
+		ai_will_do = {
 			factor = 1
+			modifier = { # prevents the AI doin stoopid shit
+				has_war_with = SPR
+				factor = 0
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -865,8 +869,8 @@
 
 		completion_reward = {
 			declare_war_on = {
-    				target = GER
-    				type = annex_everything
+    			target = GER
+    			type = annex_everything
 			}
 		}
 	}
