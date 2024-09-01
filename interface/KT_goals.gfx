@@ -66,4 +66,9 @@ spriteTypes = {
 		name = "GFX_goal_GEN_money"
 		texturefile = "gfx/interface/goals/GEN_money.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_goal_zzz_WIP"
+		texturefile = "gfx/interface/goals/zzz_WIP.dds"
+	}
 }

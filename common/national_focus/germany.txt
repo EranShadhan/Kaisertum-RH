@@ -2645,7 +2645,7 @@ focus = {
 
 	focus = {
 		id = GER_realpolitik
-		icon = GFX_goal_unknown
+		icon = GFX_goal_zzz_WIP
 		x = 30
 		y = 0
 
@@ -2779,7 +2779,7 @@ focus = {
 
 	focus = {
 		id = GER_ban_unions
-		icon = GFX_goal_unknown
+		icon = GFX_goal_zzz_WIP
 		prerequisite = { focus = GER_crack_down_fascism }
 		x = 0
 		y = 1
@@ -2809,7 +2809,7 @@ focus = {
 
 	focus = {
 		id = GER_retain_status_quo
-		icon = GFX_goal_unknown
+		icon = GFX_goal_zzz_WIP
 		prerequisite = { focus = GER_kaiserreich_remains }
 		mutually_exclusive = { focus = GER_restore_kaiser_power }
 		x = 1
@@ -2944,7 +2944,7 @@ focus = {
 
 	focus = {
 		id = GER_catholicism
-		icon = GFX_goal_unknown
+		icon = GFX_goal_zzz_WIP
 		prerequisite = { focus = GER_bavarian_domination }
 		x = 0
 		y = 1
@@ -2977,7 +2977,7 @@ focus = {
 
 	focus = {
 		id = GER_king_honor_religion
-		icon = GFX_goal_unknown
+		icon = GFX_goal_zzz_WIP
 		prerequisite = { focus = GER_catholicism }
 		x = 0
 		y = 1
@@ -3011,7 +3011,7 @@ focus = {
 
 	focus = {
 		id = GER_limit_unions
-		icon = GFX_goal_unknown
+		icon = GFX_goal_zzz_WIP
 		prerequisite = { focus = GER_gott_mitt_uns }
 		x = 1
 		y = 1
@@ -3047,7 +3047,7 @@ focus = {
 
 	focus = {
 		id = GER_socialist
-		icon = GFX_goal_unknown
+		icon = GFX_goal_zzz_WIP
 		prerequisite = { focus = GER_realpolitik }
 		mutually_exclusive = { focus = GER_kaiserreich_remains }
 		x = 2
@@ -3077,7 +3077,7 @@ focus = {
 
 	focus = {
 		id = GER_otto_wels_rc
-		icon = GFX_goal_unknown
+		icon = GFX_goal_zzz_WIP
 		prerequisite = { focus = GER_socialist }
 		mutually_exclusive = { focus = GER_sparkatist_revolution }
 		x = -1
@@ -3116,7 +3116,7 @@ focus = {
 
 	focus = {
 		id = GER_rise_min_wage
-		icon = GFX_goal_unknown
+		icon = GFX_goal_zzz_WIP
 		prerequisite = { focus = GER_otto_wels_rc }
 		x = 0
 		y = 1
@@ -3183,7 +3183,7 @@ focus = {
 
 	focus = {
 		id = GER_collectivize_the_farms
-		icon = GFX_goal_unknown
+		icon = GFX_goal_zzz_WIP
 		prerequisite = { focus = GER_sparkatist_revolution }
 		x = 0
 		y = 1
@@ -3212,7 +3212,7 @@ focus = {
 
 	focus = {
 		id = GER_deutschland_fur_allen
-		icon = GFX_goal_unknown
+		icon = GFX_goal_zzz_WIP
 		prerequisite = { focus = GER_rise_min_wage focus = GER_collectivize_the_farms }
 		x = 1
 		y = 1
@@ -3241,7 +3241,7 @@ focus = {
 
 	focus = {
 		id = GER_weltpolitik
-		icon = GFX_goal_unknown
+		icon = GFX_goal_zzz_WIP
 		x = 45
 		y = 0
 
@@ -3268,7 +3268,7 @@ focus = {
 	}
 	focus = {
 		id = GER_sudeuropa_politik
-		icon = GFX_goal_unknown
+		icon = GFX_goal_zzz_WIP
 		prerequisite = { focus = GER_weltpolitik }
 		x = -6
 		y = 1
@@ -3297,7 +3297,7 @@ focus = {
 	}
 	focus = {
 		id = GER_to_kill_an_empire
-		icon = GFX_goal_unknown
+		icon = GFX_goal_zzz_WIP
 		prerequisite = { focus = GER_sudeuropa_politik }
 		x = 0
 		y = 1
@@ -3336,7 +3336,7 @@ focus = {
 			trigger = {
 				has_global_flag = ger_intervention_side_aus
 			}
-			value = GFX_goal_unknown
+			value = GFX_goal_zzz_WIP
 		}
 		icon = {
 			trigger = {
@@ -3344,7 +3344,7 @@ focus = {
 					has_global_flag = ger_intervention_side_aus
 				}
 			}
-			value = GFX_goal_unknown
+			value = GFX_goal_zzz_WIP
 		}
 		prerequisite = { focus = GER_to_kill_an_empire }
 		x = 0
@@ -3428,7 +3428,7 @@ focus = {
 	}
 	focus = {
 		id = GER_south_tyrol_is_german
-		icon = GFX_goal_unknown
+		icon = GFX_goal_zzz_WIP
 		prerequisite = { focus = GER_intergreate_new_territories }
 		mutually_exclusive = { focus = GER_ally_italy }
 		x = 1
@@ -3510,6 +3510,7 @@ focus = {
 		}
 
 		available = {
+			has_completed_focus = GER_catholicism
 		}
 		
 		bypass = {

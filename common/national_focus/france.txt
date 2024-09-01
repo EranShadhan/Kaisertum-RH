@@ -1867,4 +1867,68 @@
 			
 		}
 	}
+
+	################
+	### COLD WAR ###
+	################
+
+	focus = {
+		id = FRA_our_new_monarch
+		icon = GFX_goal_zzz_WIP
+		x = 14
+		y = 11
+		#relative_position_id = FRA_axis_of_revenge
+		
+		prerequisite = {  }
+		mutually_exclusive = { }
+
+		allow_branch = {
+			is_puppet_of = GER
+			has_government = neutrality
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = not_implemented_focus_tt
+			#custom_effect_tooltip = FRA_our_new_monarch_tt
+		}
+	}
+
+	focus = {
+		id = FRA_our_new_monarch
+		icon = GFX_goal_zzz_WIP
+		x = -2
+		y = 1
+		relative_position_id = FRA_our_new_monarch
+		
+		prerequisite = { focus = FRA_our_new_monarch }
+		mutually_exclusive = { }
+
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = not_implemented_focus_tt
+		}
+	}
 }
