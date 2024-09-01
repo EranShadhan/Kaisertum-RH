@@ -347,6 +347,7 @@ country_event = {
 
 		SER = {
 			set_cosmetic_tag = SER_BG
+			load_focus_tree = serbia_and_montenegro_tree_BUL
 		}
 
 		ALB = {

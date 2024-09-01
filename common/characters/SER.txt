@@ -25,6 +25,14 @@ characters={
 			id = -1
 		}
 	}
+	SER_sima_markovic = {
+		name = SER_sima_markovic
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SER_sima_markovic
+			}
+		}
+	}
 	SER_acd2={
 		advisor={
 			slot = army_chief
