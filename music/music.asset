@@ -2,7 +2,7 @@
 # MAIN THEME
 music = {
 	name = "maintheme"
-	file = "GreekIntro.ogg"
+	file = "GermanIntro.ogg"
 	volume = 0.75
 }
 music = {
