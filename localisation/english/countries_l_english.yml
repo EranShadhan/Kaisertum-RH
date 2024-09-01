@@ -4504,4 +4504,8 @@
  
  PON:0 "Free State Of Pontus"
  PON_ADJ:0 "Pontiac"
- PON_DEF:0 "the Free State Of Pontus"   
+ PON_DEF:0 "the Free State Of Pontus"  
+
+ CRE:0 "Cretan State"
+ CRE_ADJ:0 "Cretan"
+ CRE_DEF:0 "the Cretan State"    
