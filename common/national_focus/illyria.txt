@@ -1898,7 +1898,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = YUG_claim_north_slovenia
+		id = YUG_claim_cornitha
 		icon = GFX_
 		relative_position_id = YUG_claim_litorale
 		prerequisite = { focus = YUG_claim_litorale }
@@ -1934,8 +1934,8 @@ focus_tree = {
 	focus = {
 		id = YUG_war_in_slovenia
 		icon = GFX_
-		relative_position_id = YUG_claim_north_slovenia
-		prerequisite = { focus = YUG_claim_north_slovenia }
+		relative_position_id = YUG_claim_cornitha
+		prerequisite = { focus = YUG_claim_cornitha }
 		available = {
 				
 				

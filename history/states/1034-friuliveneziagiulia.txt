@@ -1,0 +1,23 @@
+state={
+	id=1034
+	name="STATE_1034"
+
+	history={
+		owner = ITA
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		add_core_of = ITA
+
+	}
+
+	provinces={
+		3657 9613 6656 628 
+	}
+	manpower=1108288
+	state_category=large_city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
