@@ -2223,7 +2223,7 @@ allowed = {
 			picture = generic_production_bonus
 
 			allowed = {
-				original_tag = GRE
+				always = yes
 			}
 
 			allowed_civil_war = {
