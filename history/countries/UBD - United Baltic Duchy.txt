@@ -1,18 +1,17 @@
 ﻿capital = 808
 
-oob = "LAT_1936"
+set_oob = "UBD_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "LAT_1936_naval_mtg"
+		set_naval_oob = "UBD_1930_naval_mtg"
 	else = {
-		set_naval_oob = "LAT_1936_naval_legacy"
+		set_naval_oob = "UBD_1930_naval_legacy"
 	}
 }
 if = {
 	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "LAT_1936_air_bba"
-	else = {
-		set_air_oob = "LAT_1936_air_legacy"
+		set_air_oob = "UBD_1930_air_bba"
+	else = {		set_air_oob = "UBD_193	_air_legacy"
 		set_technology = {
 			early_fighter = 1
 		}
@@ -76,28 +75,3 @@ set_popularities = {
 }
 
 # probably needs some adjustment before nazi occupation in 1940
-1939.1.1 = {
-	#
-}
-
-### VARIANTS ###
-# 1936 Start #
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	### Ship Variants ###
-}
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	# Submarines #
-	create_equipment_variant = {
-		name = "Ronis Class"								
-		type = ship_hull_submarine_1
-		name_group = LAT_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = empty
-		}
-	}
-}

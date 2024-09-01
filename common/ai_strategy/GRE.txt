@@ -1,0 +1,136 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# send_volunteers_desire
+
+GRE_befriend_major_investors = {
+	allowed = {
+		original_tag = GRE
+	}
+	enable = {
+		focus_progress = {
+			focus = GRE_Wartime_industries
+			progress > 0.01
+		}
+		ENG = {
+			has_opinion	= {
+				target = ROOT
+				value < 50
+			}
+			has_capitulated = no
+			is_subject = no
+		}
+		FRA = {
+			has_opinion	= {
+				target = ROOT
+				value < 50
+			}
+			has_capitulated = no
+			is_subject = no
+		}
+		JAP = {
+			has_opinion	= {
+				target = ROOT
+				value < 50
+			}
+			has_capitulated = no
+			is_subject = no
+		}
+		GER = {
+			has_opinion	= {
+				target = ROOT
+				value < 50
+			}
+			has_capitulated = no
+			is_subject = no
+		}
+		SOV = {
+			has_opinion	= {
+				target = ROOT
+				value < 50
+			}
+			has_capitulated = no
+			is_subject = no
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { country_exists = ENG }
+			has_war_with = ENG
+			ENG = {
+				OR = {
+					has_opinion	= {
+						target = ROOT
+						value > 80
+					}
+					has_capitulated = yes
+					is_subject = yes
+				}
+			}
+			NOT = { country_exists = GER }
+			has_war_with = GER
+			GER = {
+				OR = {
+					has_opinion	= {
+						target = ROOT
+						value > 80
+					}
+					has_capitulated = yes
+					is_subject = yes
+				}
+			}
+			NOT = { country_exists = SOV }
+			has_war_with = SOV
+			SOV = {
+				OR = {
+					has_opinion	= {
+						target = ROOT
+						value > 80
+					}
+					has_capitulated = yes
+					is_subject = yes
+				}
+			}
+			has_completed_focus = GRE_Wartime_industries
+		}
+	}
+
+	ai_strategy = {
+		type = diplo_action_desire
+		id = ENG
+		target = improve_relation
+		value = 200
+	}
+	ai_strategy = {
+		type = diplo_action_desire
+		id = GER
+		target = improve_relation
+		value = 200
+	}
+	ai_strategy = {
+		type = diplo_action_desire
+		id = SOV
+		target = improve_relation
+		value = 200
+	}
+	ai_strategy = {
+		type = diplo_action_desire
+		id = JAP
+		target = improve_relation
+		value = 200
+	}
+	ai_strategy = {
+		type = diplo_action_desire
+		id = FRA
+		target = improve_relation
+		value = 200
+	}
+}

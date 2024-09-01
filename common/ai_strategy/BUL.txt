@@ -1,0 +1,29 @@
+
+BUL_befriend_GRE = {
+	allowed = {
+		original_tag = GRE
+	}
+	enable = {
+		
+		country_exists = GRE
+		
+	}
+	abort = {
+		OR = {
+			NOT = { country_exists = GRE }
+			has_war_with = GRE
+			
+		}
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = "GRE"
+		value = 100
+	}
+	ai_strategy = {
+		type = alliance
+		id = "GRE"
+		value = 100
+	}
+}

@@ -1,0 +1,17 @@
+
+ROM_HATE_HUN = {
+	allowed = {
+		original_tag = ROM
+	}
+	enable = {
+	}
+	abort={
+		is_in_faction = yes
+	}
+
+	ai_strategy = {
+		type = antagonize
+		id = HUN
+		value = 200
+	}
+}
