@@ -75,9 +75,8 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 100
+			add = 9
 			tag = SER
-			is_debug = yes
 		}
 	}
 	
@@ -131,18 +130,151 @@ focus_tree = {
 		icon = GFX_goal_support_communism
 		
 		relative_position_id = SER_BUL_king_is_useless
-		x = 4
+		x = 6
 		y = 1
-		cost = 10
+		cost = 5
 		
 		prerequisite = {focus = SER_BUL_king_is_useless}
 		mutually_exclusive = {}
 		available = {}
 		bypass = {}
 		completion_reward = {
-			add_populatiry = {
+			add_popularity = {
 				ideology = communism
 				popularity = 0.12
+			}
+		}
+	}
+	
+	focus = {
+		id = SER_BUL_recruit_the_workers
+		icon = GFX_focus_generic_communist_industry
+		
+		relative_position_id = SER_BUL_go_communist
+		x = -2
+		y = 1
+		cost = 10
+		
+		prerequisite = {focus = SER_BUL_go_communist}
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+	}
+	
+	focus = {
+		id = SER_BUL_road_workers
+		icon = GFX_focus_SOV_the_road_of_life
+		
+		relative_position_id = SER_BUL_recruit_the_workers
+		x = -2
+		y = 1
+		cost = 5
+		
+		prerequisite = {focus = SER_BUL_recruit_the_workers}
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		completion_reward = {}
+	}
+	
+	focus = {
+		id = SER_BUL_communist_left
+		icon = GFX_focus_NOR_a_new_norway_Trotsky_communism
+		
+		relative_position_id = SER_BUL_road_workers
+		x = 0
+		y = 1
+		cost = 10
+		
+		prerequisite = {focus = SER_BUL_road_workers}
+		mutually_exclusive = {focus = SER_BUL_communist_right}
+		available = {}
+		bypass = {}
+		completion_reward = {}
+	}
+	
+	focus = {
+		id = SER_BUL_recruit_the_peasants
+		icon = GFX_focus_generic_workers_and_farmers_rise
+		
+		relative_position_id = SER_BUL_recruit_the_workers
+		x = 4
+		y = 0
+		cost = 10
+		
+		prerequisite = {focus = SER_BUL_go_communist}
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+	}
+	
+	focus = {
+		id = SER_BUL_church_collab
+		icon = GFX_focus_BRA_socialist_theologians
+		
+		relative_position_id = SER_BUL_recruit_the_peasants
+		x = 2
+		y = 1
+		cost = 5
+		
+		prerequisite = {focus = SER_BUL_recruit_the_peasants}
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+	}
+	
+	focus = {
+		id = SER_BUL_communist_right
+		icon = GFX_focus_prc_agrarian_socialism
+		
+		relative_position_id = SER_BUL_church_collab
+		x = 0
+		y = 1
+		cost = 10
+		
+		prerequisite = {focus = SER_BUL_church_collab}
+		mutually_exclusive = {focus = SER_BUL_communist_left}
+		available = {}
+		bypass = {}
+		completion_reward = {}
+	}
+	
+	focus = {
+		id = SER_BUL_peasant_militias
+		icon = GFX_focus_ITA_peasants_rise
+		
+		relative_position_id = SER_BUL_recruit_the_workers
+		x = 2
+		y = 1
+		cost = 5
+		
+		prerequisite = {focus = SER_BUL_recruit_the_peasants}
+		prerequisite = {focus = SER_BUL_recruit_the_workers}
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
 			}
 		}
 	}
