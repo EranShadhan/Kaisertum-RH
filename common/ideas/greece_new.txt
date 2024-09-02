@@ -279,6 +279,7 @@ ideas = {
 			
 			}
 		}
+		
 		GRE_trade_With_ger_eng = { 
 			removal_cost = -1
 
