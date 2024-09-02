@@ -254,7 +254,21 @@ focus_tree = {
 		mutually_exclusive = {focus = SER_BUL_communist_left}
 		available = {}
 		bypass = {}
-		completion_reward = {}
+		completion_reward = {
+			remove_country_leader_role = {
+				character = SER_filip_filipovic
+				ideology = leninism
+			}
+			add_country_leader_role = {
+				character = SER_sima_markovic
+				promote_leader = yes
+				country_leader = {
+					ideology = leninism
+					expire = "1953.3.1.1"
+					traits = {}
+				}
+			}
+		}
 	}
 	
 	focus = {
