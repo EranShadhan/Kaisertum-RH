@@ -5,22 +5,6 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 15
-			tag = UKR
-		}
-		modifier = {
-			add = 15
-			tag = FIN
-		}
-		modifier = {
-			add = 15
-			tag = YUG
-		}
-		modifier = {
-			add = 15
-			tag = TUR
-		}
-		modifier = {
-			add = 15
 			tag = AUS
 		}
 	}

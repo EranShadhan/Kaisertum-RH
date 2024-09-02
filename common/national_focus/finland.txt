@@ -16,25 +16,9 @@ focus_tree = {
 	focus = {
 		id = FIN_changing_politics
 		icon = GFX_goal_generic_major_war
-		#prerequisite = { focus = FIN_find_a_better_leader }
 		x = 6
 		y = 0
-		#relative_position_id = Find a better leader
-        #mutually_exclusive = { focus = FIN_appoint_urho_kekkonen }
 		cost = 10
-
-		#ai_will_do = {
-		#	factor = 1
-		#	modifier = {
-		#		JAP = { has_government = communism }
-		#		factor = 0
-		#	}
-		#}
-
-		#available = {
-		#	NOT = { is_in_faction_with = JAP }
-		#	NOT = { has_country_flag = britain_enforced_our_loyalty }
-		#}
 		
 		bypass = {
 
@@ -45,30 +29,17 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 200
 		}
 	}
 	focus = {
 		id = FIN_persue_greatness
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = FIN_changing_politics }
-		x = 6
+		x = 0
 		y = 1
-		#relative_position_id = Find a better leader
+		relative_position_id = FIN_changing_politics
 		cost = 10
-
-		#ai_will_do = {
-		#	factor = 1
-		#	modifier = {
-		#		JAP = { has_government = communism }
-		#		factor = 0
-		#	}
-		#}
-
-		#available = {
-		#	NOT = { is_in_faction_with = JAP }
-		#	NOT = { has_country_flag = britain_enforced_our_loyalty }
-		#}
 		
 		bypass = {
 
@@ -86,25 +57,12 @@ focus_tree = {
 		id = FIN_find_a_better_leader
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = FIN_persue_greatness }
-		x = 6
-		y = 2
-		#relative_position_id = Find a better leader
+		x = 0
+		y = 1
+		relative_position_id = FIN_persue_greatness
         mutually_exclusive = { focus = FIN_appoint_urho_kekkonen }
 		mutually_exclusive = { focus = FIN_appoint_lauri_torni }
 		cost = 5
-
-		#ai_will_do = {
-		#	factor = 1
-		#	modifier = {
-		#		JAP = { has_government = communism }
-		#		factor = 0
-		#	}
-		#}
-
-		#available = {
-		#	NOT = { is_in_faction_with = JAP }
-		#	NOT = { has_country_flag = britain_enforced_our_loyalty }
-		#}
 		
 		bypass = {
 
@@ -115,10 +73,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-		    add_popularity = {
-				ideology = fascism
-				popularity = 0.1
-			}
 			add_political_power = 100
 		}
 	}
@@ -132,19 +86,6 @@ focus_tree = {
 		#relative_position_id = FIN_appoint_lauri_torni
         mutually_exclusive = { focus = FIN_appoint_lauri_torni }
 		cost = 5
-
-		#ai_will_do = {
-		#	factor = 1
-		#	modifier = {
-		#		JAP = { has_government = communism }
-		#		factor = 0
-		#	}
-		#}
-
-		#available = {
-		#	NOT = { is_in_faction_with = JAP }
-		#	NOT = { has_country_flag = britain_enforced_our_loyalty }
-		#}
 		
 		bypass = {
 
@@ -155,17 +96,17 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-		    promote_character = FIN_Urho_Kekkonen
+			add_ideas = FIN_urho_kekkonen
 			add_political_power = 150
 		}
 	}
-focus = {
+	focus = {
 		id = FIN_appoint_lauri_torni
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = FIN_find_a_better_leader }
 		x = 4
 		y = 3
-		#relative_position_id = Find a better leader
+		#relative_position_id = 
         mutually_exclusive = { focus = FIN_appoint_urho_kekkonen }
 		cost = 5
 
@@ -210,22 +151,9 @@ focus = {
 		prerequisite = { focus = FIN_appoint_lauri_torni focus = FIN_appoint_urho_kekkonen  }
 		x = 6
 		y = 4
-		#relative_position_id = Find a better leader
+		#relative_position_id = 
         #mutually_exclusive = { focus = FIN_appoint_urho_kekkonen }
 		cost = 5
-
-		#ai_will_do = {
-		#	factor = 1
-		#	modifier = {
-		#		JAP = { has_government = communism }
-		#		factor = 0
-		#	}
-		#}
-
-		#available = {
-		#	NOT = { is_in_faction_with = JAP }
-		#	NOT = { has_country_flag = britain_enforced_our_loyalty }
-		#}
 		
 		bypass = {
 
@@ -245,22 +173,9 @@ focus = {
 		prerequisite = { focus = FIN_trust_the_academics }
 		x = 6
 		y = 5
-		#relative_position_id = Find a better leader
+		#relative_position_id = 
         #mutually_exclusive = { focus = FIN_appoint_urho_kekkonen }
 		cost = 5
-
-		#ai_will_do = {
-		#	factor = 1
-		#	modifier = {
-		#		JAP = { has_government = communism }
-		#		factor = 0
-		#	}
-		#}
-
-		#available = {
-		#	NOT = { is_in_faction_with = JAP }
-		#	NOT = { has_country_flag = britain_enforced_our_loyalty }
-		#}
 		
 		bypass = {
 
@@ -282,22 +197,9 @@ focus = {
 		prerequisite = { focus = FIN_claiming_our_land }
 		x = 4
 		y = 6
-		#relative_position_id = Find a better leader
+		#relative_position_id = 
         #mutually_exclusive = { focus = FIN_appoint_urho_kekkonen }
 		cost = 10
-
-		#ai_will_do = {
-		#	factor = 1
-		#	modifier = {
-		#		JAP = { has_government = communism }
-		#		factor = 0
-		#	}
-		#}
-
-		#available = {
-		#	NOT = { is_in_faction_with = JAP }
-		#	NOT = { has_country_flag = britain_enforced_our_loyalty }
-		#}
 		
 		bypass = {
 
@@ -317,22 +219,9 @@ focus = {
 		prerequisite = { focus = FIN_claiming_our_land }
 		x = 8
 		y = 6
-		#relative_position_id = Find a better leader
+		#relative_position_id = 
         #mutually_exclusive = { focus = FIN_appoint_urho_kekkonen }
 		cost = 10
-
-		#ai_will_do = {
-		#	factor = 1
-		#	modifier = {
-		#		JAP = { has_government = communism }
-		#		factor = 0
-		#	}
-		#}
-
-		#available = {
-		#	NOT = { is_in_faction_with = JAP }
-		#	NOT = { has_country_flag = britain_enforced_our_loyalty }
-		#}
 		
 		bypass = {
 
@@ -353,22 +242,9 @@ focus = {
 		prerequisite = { focus = FIN_mobilize_our_economy }
 		x = 6
 		y = 7
-		#relative_position_id = Find a better leader
+		#relative_position_id = 
         #mutually_exclusive = { focus = FIN_appoint_urho_kekkonen }
 		cost = 10
-
-		#ai_will_do = {
-		#	factor = 1
-		#	modifier = {
-		#		JAP = { has_government = communism }
-		#		factor = 0
-		#	}
-		#}
-
-		#available = {
-		#	NOT = { is_in_faction_with = JAP }
-		#	NOT = { has_country_flag = britain_enforced_our_loyalty }
-		#}
 		
 		bypass = {
 
@@ -388,22 +264,9 @@ focus = {
 		prerequisite = { focus = FIN_talks_with_cp }
 		x = 8
 		y = 8
-		#relative_position_id = Find a better leader
+		#relative_position_id = 
         #mutually_exclusive = { focus = FIN_appoint_urho_kekkonen }
 		cost = 5
-
-		#ai_will_do = {
-		#	factor = 1
-		#	modifier = {
-		#		JAP = { has_government = communism }
-		#		factor = 0
-		#	}
-		#}
-
-		#available = {
-		#	NOT = { is_in_faction_with = JAP }
-		#	NOT = { has_country_flag = britain_enforced_our_loyalty }
-		#}
 		
 		bypass = {
 
@@ -427,22 +290,9 @@ focus = {
 		prerequisite = { focus = FIN_talks_with_cp }
 		x = 4
 		y = 8
-		#relative_position_id = Find a better leader
+		#relative_position_id = 
         #mutually_exclusive = { focus = FIN_appoint_urho_kekkonen }
 		cost = 5
-
-		#ai_will_do = {
-		#	factor = 1
-		#	modifier = {
-		#		JAP = { has_government = communism }
-		#		factor = 0
-		#	}
-		#}
-
-		#available = {
-		#	NOT = { is_in_faction_with = JAP }
-		#	NOT = { has_country_flag = britain_enforced_our_loyalty }
-		#}
 		
 		bypass = {
 
@@ -463,22 +313,9 @@ focus = {
 		prerequisite = { focus = FIN_prepare_tactics }
 		x = 4
 		y = 9
-		#relative_position_id = Find a better leader
+		#relative_position_id = 
         #mutually_exclusive = { focus = FIN_appoint_urho_kekkonen }
 		cost = 5
-
-		#ai_will_do = {
-		#	factor = 1
-		#	modifier = {
-		#		JAP = { has_government = communism }
-		#		factor = 0
-		#	}
-		#}
-
-		#available = {
-		#	NOT = { is_in_faction_with = JAP }
-		#	NOT = { has_country_flag = britain_enforced_our_loyalty }
-		#}
 		
 		bypass = {
 
@@ -498,22 +335,9 @@ focus = {
 		prerequisite = { focus = FIN_radicalize_Sami }
 		x = 4
 		y = 10
-		#relative_position_id = Find a better leader
+		#relative_position_id = 
         #mutually_exclusive = { focus = FIN_appoint_urho_kekkonen }
 		cost = 5
-
-		#ai_will_do = {
-		#	factor = 1
-		#	modifier = {
-		#		JAP = { has_government = communism }
-		#		factor = 0
-		#	}
-		#}
-
-		#available = {
-		#	NOT = { is_in_faction_with = JAP }
-		#	NOT = { has_country_flag = britain_enforced_our_loyalty }
-		#}
 		
 		bypass = {
 
@@ -542,22 +366,9 @@ focus = {
 		prerequisite = { focus = FIN_unite_Sami }
 		x = 4
 		y = 11
-		#relative_position_id = Find a better leader
+		#relative_position_id = 
         #mutually_exclusive = { focus = FIN_appoint_urho_kekkonen }
 		cost = 5
-
-		#ai_will_do = {
-		#	factor = 1
-		#	modifier = {
-		#		JAP = { has_government = communism }
-		#		factor = 0
-		#	}
-		#}
-
-		#available = {
-		#	NOT = { is_in_faction_with = JAP }
-		#	NOT = { has_country_flag = britain_enforced_our_loyalty }
-		#}
 		
 		bypass = {
 
@@ -577,7 +388,7 @@ focus = {
 		prerequisite = { focus = FIN_prepare_for_strike }
 		x = 4
 		y = 12
-		#relative_position_id = Find a better leader
+		#relative_position_id = 
         #mutually_exclusive = { focus = FIN_appoint_urho_kekkonen }
 		cost = 5
 
@@ -618,22 +429,9 @@ focus = {
 		prerequisite = { focus = FIN_strike_the_bear }
 		x = 4
 		y = 13
-		#relative_position_id = Find a better leader
+		#relative_position_id = 
         #mutually_exclusive = { focus = FIN_appoint_urho_kekkonen }
 		cost = 5
-
-		#ai_will_do = {
-		#	factor = 1
-		#	modifier = {
-		#		JAP = { has_government = communism }
-		#		factor = 0
-		#	}
-		#}
-
-		#available = {
-		#	NOT = { is_in_faction_with = JAP }
-		#	NOT = { has_country_flag = britain_enforced_our_loyalty }
-		#}
 		
 		bypass = {
 
@@ -654,7 +452,7 @@ focus = {
 		prerequisite = { focus = FIN_victory_is_ours }
 		x = 4
 		y = 14
-		#relative_position_id = Find a better leader
+		#relative_position_id = 
         #mutually_exclusive = { focus = FIN_appoint_urho_kekkonen }
 		cost = 5
 
