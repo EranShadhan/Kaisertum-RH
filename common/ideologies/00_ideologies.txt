@@ -99,7 +99,15 @@ ideologies = {
 			anarchist_communism = {
 			}
 			
-			neosocialism = { color = { 178 10 10 } } # it has diffrenct color wow
+			titoism_subtype = {
+				can_be_randomly_selected = no
+				color = { 158 35 35 }
+			}
+			
+			neosocialism = { 
+				color = { 178 10 10 } 
+				can_be_randomly_selected = no
+			}
 		}
 
 		dynamic_faction_names = {

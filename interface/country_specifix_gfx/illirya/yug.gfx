@@ -9,6 +9,15 @@ spriteTypes = {
 		texturefile = "gfx/leaders/YUG/YUG_portrait_amedeo_savoia.png"
 	}
 	spriteType = {
+		name = "GFX_YUG_brozif_tito"
+		texturefile = "gfx/leaders/YUG/YUG_my_boy_tito.png"
+	}
+	spriteType = {
+        name = "GFX_ideology_titoism_subtype"
+        texturefile = "gfx/interface/ideologies/subideologies/titoism.png"
+    }
+	
+	spriteType = {
 		name = "GFX_FCF_gabriele_dannunzio"
 		texturefile = "gfx/leaders/YUG/FCF_portrait_gabriele_dannunzio.png"
 	}

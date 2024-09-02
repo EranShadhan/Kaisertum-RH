@@ -72,3 +72,7 @@
  
  YUG_StjepanRadic:0 "Stjepan Radić"
  YUG_King_Amedeo:0 "Re Amedeo di Savoia"
+ YUG_brozif_tito:0 "Josip Broz Tito"
+ 
+ titoism_subtype:0 "titoism"
+ titoism_subtype_desc:0 "Titoism is a socialist political philosophy most closely associated with Josip Broz Tito. It is characterized by a broad Yugoslav identity, socialist workers' self-management"

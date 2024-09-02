@@ -9,7 +9,7 @@ oob = "YUG_1936"
 recruit_character = YUG_StjepanRadic_dem
 recruit_character = YUG_StjepanRadic_neu
 recruit_character = YUG_King_Amedeo
-
+recruit_character = YUG_brozif_tito
 
 add_ideas = {
 	german_customs_union_member
