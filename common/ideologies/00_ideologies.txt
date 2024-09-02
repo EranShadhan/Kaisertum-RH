@@ -99,7 +99,7 @@ ideologies = {
 			anarchist_communism = {
 			}
 			
-			titoism_subtype = {
+			titoism = {
 				can_be_randomly_selected = no
 				color = { 158 35 35 }
 			}

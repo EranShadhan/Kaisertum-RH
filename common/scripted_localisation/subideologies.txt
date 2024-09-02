@@ -167,6 +167,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			has_country_leader_ideology = titoism
+		}
+		localization_key = titoism
+	}
+	text = {
+		trigger = {
 			has_country_leader_ideology = stalinism
 		}
 		localization_key = stalinism
