@@ -118,6 +118,8 @@ initial_show_position = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		add_war_support = 0.1
+		add_political_power = 100
 		    }
 		}
 	focus = {
@@ -140,6 +142,13 @@ initial_show_position = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+					OVERLORD = {
+						set_autonomy = {
+							target = CRE
+							autonomy_state = autonomy_free
+						}
+					}
+				
 		    }
 		}
 		focus = {
@@ -161,6 +170,54 @@ initial_show_position = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		
+         hidden_effect = {
+				division_template = {
+					name = "Cretan Guard"
+					priority = 2
+					division_names_group = GRE_INF_01
+					regiments = {
+						cavalry = { x = 0 y = 0 }
+						cavalry = { x = 0 y = 1 }
+						cavalry = { x = 0 y = 2 }
+			
+	    	   		 	cavalry = { x = 1 y = 0 }
+						cavalry = { x = 1 y = 1 }
+						cavalry = { x = 1 y = 2 }
+			
+	    	   		 	cavalry = { x = 2 y = 0 }
+						cavalry = { x = 2 y = 1 }
+						cavalry = { x = 2 y = 2 }
+						
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }					
+					}
+				}			
+			}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					create_unit = {
+						division = "name = \"1. Cretan Guard\" division_template = \"Cretan Guard\" start_experience_factor = 1.0" 
+						owner = CRE
+					}
+					create_unit = {
+						division = "name = \"1. Cretan Guard\" division_template = \"Cretan Guard\" start_experience_factor = 1.0"  
+						owner = CRE
+					}
+					create_unit = {
+						division = "name = \"1. Cretan Guard\" division_template = \"Cretan Guard\" start_experience_factor = 1.0" 
+						owner = CRE
+					}
+					create_unit = {
+						division = "name = \"1. Cretan Guard\" division_template = \"Cretan Guard\" start_experience_factor = 1.0" 
+						owner = CRE
+					}
+					create_unit = {
+						division = "name = \"1. Cretan Guard\" division_template = \"Cretan Guard\" start_experience_factor = 1.0" 
+						owner = CRE
+					}					
+				}	
 		    }
 		}	
 	focus = {
@@ -183,7 +240,7 @@ initial_show_position = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	
+	add_ideas = CRE_paul
 		    }
 		}		
 	focus = {
@@ -213,7 +270,6 @@ initial_show_position = {
 		id = CRE_minoans
 		icon = GFX_GRE_minoan_civ
 
-		
 		available = {
 		}
 		x = 1
@@ -228,13 +284,33 @@ initial_show_position = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+				custom_effect_tooltip = CRE_minoan_civ
+				show_ideas_tooltip = CRE_first_hellenic_civilisation_idea4
+				custom_effect_tooltip = CRE_minoan_civ2
+				
+				effect_tooltip = {
+				set_cosmetic_tag = CRE_minoan
+	 985 = { add_core_of = CRE }
+	  187 = { add_core_of = CRE }
+	   164 = { add_core_of = CRE }
+	    186 = { add_core_of = CRE }
+		 987 = { add_core_of = CRE }
+				
+				}
+			hidden_effect = {
+		if = { limit = { has_completed_focus = CRE_power_to_the_militart }
 	set_cosmetic_tag = CRE_minoan
 	 985 = { add_core_of = CRE }
 	  187 = { add_core_of = CRE }
 	   164 = { add_core_of = CRE }
 	    186 = { add_core_of = CRE }
 		 987 = { add_core_of = CRE }
-		    }
+		 }
+		 
+		 if = { limit = { has_completed_focus = CRE_request_cyprus }
+	                add_ideas = CRE_first_hellenic_civilisation_idea4
+               	}
+		    }}
 			
 		}	
 		
@@ -366,7 +442,7 @@ initial_show_position = {
 		    }
 		}	
 	focus = {
-		id = CRE_the_dark_87
+		id = CRE_the_dark_97
 		icon = GFX_focus_GRE_expand_mercury
 
 		
@@ -400,8 +476,8 @@ initial_show_position = {
 		ai_will_do = {
 			base = 0
 		}
-		relative_position_id = CRE_the_dark_87
-		prerequisite = { focus = CRE_the_dark_87 }
+		relative_position_id = CRE_the_dark_97
+		prerequisite = { focus = CRE_the_dark_97 }
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
