@@ -1478,6 +1478,564 @@ focus_tree = {
 	####     Air Force    ######
 	############################
 
+	focus = {
+		id = IRE_royal_irish_airforce
+		icon = GFX_goal_generic_build_airforce
+		x = 21
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 24
+			modifier = {
+				factor = 3
+			}
+		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+				army_experience = 25
+		}
+	}
+
+	focus = {
+		id = IRE_air_schools
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = IRE_royal_irish_airforce }
+		x = 0
+		y = 3
+		relative_position_id = IRE_royal_irish_airforce
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				army_experience = 150
+				add_tech_bonus = {
+   					bonus = 0.2
+    					uses = 5
+    					category = air_equipment
+				}	
+		}
+	}
+
+	focus = {
+		id = IRE_plane_factories
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = IRE_air_schools }
+		x = 0
+		y = 1
+		relative_position_id = IRE_air_schools
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				add_offsite_building = { type = arms_factory level = 4 }
+		}
+	}
+
+
+	focus = {
+		id = IRE_protecting_the_ground
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = IRE_royal_irish_airforce }
+		mutually_exclusive = { focus = IRE_protecting_the_skies }
+		x = -1
+		y = 1
+		relative_position_id = IRE_royal_irish_airforce
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				add_tech_bonus = {
+   					bonus = 1
+    					uses = 1
+    					category = cas_bomber
+				}	
+		}
+	}
+	
+	focus = {
+		id = IRE_protecting_the_seas
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus =  IRE_protecting_the_ground }
+		x = 0
+		y = 1
+		relative_position_id =  IRE_protecting_the_ground
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				add_tech_bonus = {
+   					bonus = 0.5
+    					uses = 1
+    					category = naval_bomber
+				}	
+		}
+	}
+
+	focus = {
+		id = IRE_independant_air_command
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus =  IRE_protecting_the_seas }
+		mutually_exclusive = { focus = IRE_air_with_navy }
+		x = -1
+		y = 1
+		relative_position_id =  IRE_protecting_the_seas
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				add_tech_bonus = {
+   					bonus = 0.5
+    					uses = 1
+    					category = cat_strategic_bomber
+				}
+				add_tech_bonus = {
+   					bonus = 0.5
+    					uses = 1
+    					category = tactical_bomber
+				}	
+		}
+	}
+
+	focus = {
+		id = IRE_bomb_them_all
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus =  IRE_independant_air_command }
+		x = 0
+		y = 1
+		relative_position_id =  IRE_independant_air_command
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				add_ideas = IRE_irish_ground_support	
+		}
+	}
+
+	focus = {
+		id = IRE_air_with_navy
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus =  IRE_protecting_the_seas }
+		mutually_exclusive = { focus = IRE_independant_air_command }
+		x = -3
+		y = 1
+		relative_position_id =  IRE_protecting_the_seas
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				add_tech_bonus = {
+   					bonus = 0.5
+    					uses = 1
+    					category = naval_bomber
+				}
+				add_tech_bonus = {
+   					bonus = 0.2
+    					uses = 1
+    					category = cv_tech
+				}	
+		}
+	}
+
+	focus = {
+		id = IRE_patrol_the_seas
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus =  IRE_air_with_navy }
+		x = 0
+		y = 1
+		relative_position_id =  IRE_air_with_navy
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				add_ideas = IRE_irish_naval_patrols
+		}
+	}																		
+
+	focus = {
+		id = IRE_protecting_the_skies
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = IRE_royal_irish_airforce }
+		mutually_exclusive = { focus = IRE_protecting_the_ground }
+		x = 1
+		y = 1
+		relative_position_id = IRE_royal_irish_airforce
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				add_tech_bonus = {
+   					bonus = 1
+    					uses = 1
+    					category = light_fighter
+				}	
+		}
+	}
+
+	focus = {
+		id = IRE_develop_heavy_fighters
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = IRE_protecting_the_skies }
+		x = 0
+		y = 1
+		relative_position_id = IRE_protecting_the_skies
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				add_tech_bonus = {
+   					bonus = 1
+    					uses = 1
+    					category = cat_heavy_fighter
+				}	
+		}
+	}
+
+	focus = {
+		id = IRE_buy_foreign_planes
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = IRE_develop_heavy_fighters }
+		mutually_exclusive = { focus = IRE_our_own_planes }
+		x = 1
+		y = 1
+		relative_position_id = IRE_develop_heavy_fighters
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				add_equipment_to_stockpile = {
+                    			type = small_plane_naval_bomber_airframe
+                    			amount = 200
+                		}
+				add_equipment_to_stockpile = {
+                    			type = medium_plane_airframe
+                   			amount = 100
+               			}
+				add_equipment_to_stockpile = {
+                    			type = large_plane_airframe
+                    			amount = 100
+                		}
+				add_equipment_to_stockpile = {
+                    			type = small_plane_cas_airframe
+                    			amount = 200
+               			}
+				add_equipment_to_stockpile = {
+                    			type = small_plane_airframe
+                   			amount = 500
+               	 		}
+	
+		}
+	}
+
+	focus = {
+		id = IRE_our_own_planes
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = IRE_develop_heavy_fighters }
+		mutually_exclusive = { focus = IRE_buy_foreign_planes }
+		x = 3
+		y = 1
+		relative_position_id = IRE_develop_heavy_fighters
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				add_tech_bonus = {
+   					bonus = 0.9
+    					uses = 1
+    					category = cat_strategic_bomber
+				}
+	
+		}
+	}
+
+	focus = {
+		id = IRE_modern_airforce
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = IRE_buy_foreign_planes focus = IRE_our_own_planes }
+		x = -1
+		y = 1
+		relative_position_id = IRE_our_own_planes
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				add_ideas = IRE_modern_irish_airforce	
+		}
+	}
 
 	############################
 	####     Military     ######
