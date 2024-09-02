@@ -6,16 +6,16 @@ scripted_map_modes = {
 				FROM = {
 					set_temp_variable = { alpha = 0.5 }
 					if = {
-						limit = { is_core_of = ROOT }
+						limit = { is_core_of = ROOT 
+						is_owned_by = ROOT}
 						set_temp_variable = { green = 1 }
-						set_temp_variable = { blue = 0 }
+						set_temp_variable = { alpha = 0.5 }
 					}
 					else_if = {
-						limit = {
-							any_country_with_core = { ROOT = { has_country_flag = can_integrate_@PREV } }
-						}
+						limit = { is_core_of = ROOT 
+						not = { is_owned_by = ROOT }}
 						set_temp_variable = { green = 1 }
-						set_temp_variable = { blue = 0 }
+						set_temp_variable = { blue = 0.5 }
 					}
 					else_if = {
 						limit = { is_claimed_by = ROOT }
@@ -24,7 +24,7 @@ scripted_map_modes = {
 					}
 					else_if = {
 						limit = { is_owned_by = ROOT }
-						set_temp_variable = { red = 0 }
+						set_temp_variable = { red = 0}
 					}
 					else = {
 						set_temp_variable = { red = 1 }
