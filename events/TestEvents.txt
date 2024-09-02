@@ -27,6 +27,7 @@ country_event = {
 		add_manpower = var:testio1
 		add_manpower = var:testio2
 		add_manpower = var:testio3
+		set_cosmetic_tag = ITA_socialist_republic
 	}
 }
 

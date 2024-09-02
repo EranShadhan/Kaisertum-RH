@@ -1,0 +1,24 @@
+﻿UBD_Inf_01 = 
+{
+	name = "German Infantry Divisions"
+
+	for_countries = { UBD }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { UBD_Gar_01 }
+
+	fallback_name = "%d. Infanterie-Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+	
+}
+
+
+}
