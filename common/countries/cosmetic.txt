@@ -6,6 +6,19 @@ MED_UN = {
 	color = rgb { 155 13 24 }
 	color_ui = rgb { 173 17 31 }
 }
+CRE_minoan = {
+    color = rgb { 54 54 54 }
+	color_ui = rgb { 115 115 115 }
+}
+CRE_VENIZE = {
+   color = rgb { 179 11 0 }
+	color_ui = rgb { 102 0 0 }
+}
+CRE_ottoman = { 
+	color = rgb { 26 138 4 }
+	color_ui = rgb { 26 138 4 }
+}
+
 HUN_AS = {
     color = rgb { 181 186 209 }
     color_ui = rgb { 255 255 255 }

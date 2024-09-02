@@ -8,8 +8,28 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GRE/goal_hellenic_tanks.dds"
 	} 
 	SpriteType = {
+		name = "GFX_GRE_cretan_state"
+		texturefile = "gfx/interface/goals/GRE/GRE_cretan_state.dds"
+	} 
+	SpriteType = {
+		name = "GFX_GRE_keep_crete"
+		texturefile = "gfx/interface/goals/GRE/GRE_keep_crete.dds"
+	} 
+	SpriteType = {
 		name = "GFX_focus_GRE_islanddev"
 		texturefile = "gfx/interface/goals/GRE/focus_GRE_islanddev.dds"
+	}
+	SpriteType = {
+		name = "GFX_GRE_minoan_civ"
+		texturefile = "gfx/interface/goals/GRE/GRE_minoan_civ.dds"
+	}
+	SpriteType = {
+		name = "GFX_GRE_cretan_venice"
+		texturefile = "gfx/interface/goals/GRE/GRE_cretan_venice.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GRE_expand_mercury"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_expand_mercury.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_secure_crete2"

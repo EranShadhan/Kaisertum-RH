@@ -2026,3 +2026,15 @@ SWE_greater_nordic_reich_ADJ: "Swedish"
  MED_UN:0 "Mediterranean Union"
  MED_UN_DEF:0 "the Mediterranean Union"
  MED_UN_ADJ:0 "Mediterranean"
+ 
+ CRE_minoan:0 "Minoan Civilization"
+ CRE_minoan_DEF:0 "the Minoan Civilization"
+ CRE_minoan_ADJ:0 "Minoan"
+ 
+ CRE_VENIZE:0 "Cretan-Venetian Thalassocracy"
+ CRE_VENIZE_DEF:0 "the Cretan-Venetian Thalassocracy"
+ CRE_VENIZE_ADJ:0 "Cretan-Venetian"
+
+ CRE_ottoman:0 "Eyalet of Crete"
+ CRE_ottoman_DEF:0 "the Eyalet of Crete"
+ CRE_ottoman_ADJ:0 "Cretan"
