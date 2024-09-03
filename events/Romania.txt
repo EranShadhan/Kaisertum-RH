@@ -221,7 +221,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = kt_romania.9.a
+		name = kt_romania.9.b
 		ROM = {
 			random_owned_controlled_state = {
 				add_building_construction = {
