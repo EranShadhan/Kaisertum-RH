@@ -17,6 +17,13 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			check_variable = { show_paths > 0.0 }
+			original_tag = FRA
+		}
+		localization_key = FRA_PATH_GUIDES
+	}
+	text = {
+		trigger = {
 			check_variable = { show_lore > 0.0 }
 			original_tag = GER
 		}

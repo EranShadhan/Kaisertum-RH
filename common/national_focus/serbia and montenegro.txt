@@ -2,7 +2,7 @@
 ## HABSBURG OVERLORDSHIP ##
 
 focus_tree = {
-	id = serbia_and_montenegro_tree_AUS
+	id = serbia_montenegro_tree
 	default = no
 	
 	country = {
@@ -22,7 +22,11 @@ focus_tree = {
 		x = 5
 		y = 0
 		cost = 5
-		
+
+		allow_branch = {
+			is_puppet_of = AUS
+		}
+
 		available = {}
 		bypass = {}
 		prerequisite = {}
@@ -61,25 +65,6 @@ focus_tree = {
 		
 	}
 	
-}
-
-
-
-## SERBIA AND MONTENEGRO ##
-## BULGARIAN PUPPETERING ##
-
-focus_tree = {
-	default = no
-	id = serbia_and_montenegro_tree_BUL
-
-	country = {
-		factor = 0
-		modifier = {
-			add = 9
-			tag = SER
-		}
-	}
-	
 	focus = {
 		id = SER_BUL_who_king
 		icon = GFX_focus_generic_monarchy_2
@@ -87,6 +72,10 @@ focus_tree = {
 		x = 4
 		y = 0
 		cost = 2
+
+		allow_branch = {
+			is_puppet_of = BUL
+		}
 		
 		available = {}
 		bypass = {}
@@ -290,6 +279,94 @@ focus_tree = {
 				ideology = communism
 				popularity = 0.05
 			}
+		}
+	}
+
+	focus = {
+		id = SER_imro_1
+		icon = GFX_goal_zzz_WIP
+
+		x = 5
+		y = 11
+		cost = 5
+
+		allow_branch = {
+			has_country_flag = imro_active
+		}
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		completion_reward = {
+			SER_crush_imro = yes
+		}
+	}
+	focus = {
+		id = SER_imro_2
+		icon = GFX_goal_zzz_WIP
+
+		x = -1
+		y = 1
+		relative_position_id = SER_imro_1
+		cost = 5
+
+		prerequisite = { focus = SER_imro_1 }
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		completion_reward = {
+			SER_crush_imro = yes
+		}
+	}
+	focus = {
+		id = SER_imro_3
+		icon = GFX_goal_zzz_WIP
+
+		x = 0
+		y = 1
+		relative_position_id = SER_imro_2
+		cost = 5
+
+		prerequisite = { focus = SER_imro_2 }
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		completion_reward = {
+			SER_crush_imro = yes
+		}
+	}
+	focus = {
+		id = SER_imro_4
+		icon = GFX_goal_zzz_WIP
+
+		x = 1
+		y = 1
+		relative_position_id = SER_imro_1
+		cost = 5
+
+		prerequisite = { focus = SER_imro_1 }
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		completion_reward = {
+			SER_crush_imro = yes
+		}
+	}
+	focus = {
+		id = SER_imro_5
+		icon = GFX_goal_zzz_WIP
+
+		x = -1
+		y = 2
+		relative_position_id = SER_imro_4
+		cost = 5
+
+		prerequisite = { focus = SER_imro_4 }
+		prerequisite = { focus = SER_imro_3 }
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		completion_reward = {
+			SER_crush_imro = yes
 		}
 	}
 }

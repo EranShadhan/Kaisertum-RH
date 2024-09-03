@@ -2106,7 +2106,7 @@ focus = {
 		cost = 5
 		x = 24
 		y = 0
-s
+
 		prerequisite = {
 
 		}

@@ -1,0 +1,28 @@
+state={
+	id=1037
+	name="STATE_1037"
+
+	history={
+		owner = ITA
+		victory_points = {
+			13374 1
+		}
+		buildings = {
+			infrastructure = 3
+			13374 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = ITA
+	}
+
+	provinces={
+		13374 
+	}
+	manpower=25000 # estimate
+	state_category = small_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

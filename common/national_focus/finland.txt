@@ -109,18 +109,6 @@ focus_tree = {
 		#relative_position_id = 
         mutually_exclusive = { focus = FIN_appoint_urho_kekkonen }
 		cost = 5
-
-		#ai_will_do = {
-		#	factor = 1
-		#	modifier = {
-		#		JAP = { has_government = communism }
-		#		factor = 0
-		#	}
-		#}
-
-		#available = {
-		#fascism > 0.40
-		#}
 		
 		bypass = {
 
@@ -131,7 +119,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-		    promote_character = FIN_Lauri_Torni
+		    add_ideas = FIN_lauri_torni
 			effect_tooltip = {
 				set_politics = {
 				ruling_party = fascism
@@ -145,7 +133,7 @@ focus_tree = {
 			add_political_power = 150
 		}
 	}
-focus = {
+	focus = {
 		id = FIN_trust_the_academics
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = FIN_appoint_lauri_torni focus = FIN_appoint_urho_kekkonen  }
@@ -167,7 +155,7 @@ focus = {
 			add_political_power = 150
 		}
 	}
-focus = {
+	focus = {
 		id = FIN_claiming_our_land
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = FIN_trust_the_academics }
@@ -191,7 +179,7 @@ focus = {
 			add_state_claim = 213
 		}
 	}
-focus = {
+	focus = {
 		id = FIN_concript_the_army
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = FIN_claiming_our_land }
@@ -281,7 +269,7 @@ focus = {
 	                cost_reduction = 0.75
 	                uses = 2
 	                category = land_doctrine
-}
+			}
 		}
 	}
 	focus = {
@@ -392,14 +380,6 @@ focus = {
         #mutually_exclusive = { focus = FIN_appoint_urho_kekkonen }
 		cost = 5
 
-		#ai_will_do = {
-		#	factor = 1
-		#	modifier = {
-		#		JAP = { has_government = communism }
-		#		factor = 0
-		#	}
-		#}
-
 		available = {
 			NOT = { is_in_faction_with = SOV }
 			#NOT = { has_country_flag = britain_enforced_our_loyalty }
@@ -455,14 +435,6 @@ focus = {
 		#relative_position_id = 
         #mutually_exclusive = { focus = FIN_appoint_urho_kekkonen }
 		cost = 5
-
-		#ai_will_do = {
-		#	factor = 1
-		#	modifier = {
-		#		JAP = { has_government = communism }
-		#		factor = 0
-		#	}
-		#}
 
 		available = {
 		    count_triggers = {

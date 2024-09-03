@@ -429,7 +429,7 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor #AGRARIAN LEAGUE
-			idea_token = FIN_urho_kekkonen
+			idea_token = FIN_lauri_torni
 			can_be_fired = no
 			allowed = {
 				original_tag = FIN
