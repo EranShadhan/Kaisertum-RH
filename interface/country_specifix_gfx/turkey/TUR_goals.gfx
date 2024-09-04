@@ -35,5 +35,105 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_TUR_fruits_of_competition"
 		texturefile = "gfx/interface/goals/TUR/fruits_of_competition.png"			
-		}
+	}
+	SpriteType = {
+		name = "GFX_TUR_focus_on_internal_matters"
+		texturefile = "gfx/interface/goals/TUR/2_focus_on_internal_matters.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_sultans_cabinet"
+		texturefile = "gfx/interface/goals/TUR/2_sultans_cabinet.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_exploit_the_bidding_war"
+		texturefile = "gfx/interface/goals/TUR/2_exploit_the_bidding_war.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_limited_isolationism"
+		texturefile = "gfx/interface/goals/TUR/2_limited_isolation.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_denounce_ottomanism"
+		texturefile = "gfx/interface/goals/TUR/2_denounce_ottomanism.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_our_place_in_the_new_world"
+		texturefile = "gfx/interface/goals/TUR/2_our_place.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_promote_a_europeanized_parliament"
+		texturefile = "gfx/interface/goals/TUR/2_europeanized_parliament.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_appeal_to_italy"
+		texturefile = "gfx/interface/goals/TUR/2_appeal_to_italy.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_dodecanese_for_industry"
+		texturefile = "gfx/interface/goals/TUR/2_dodecanese_for_industry.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_middle_east_situation"
+		texturefile = "gfx/interface/goals/TUR/2_middle_east_situation.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_arabian_minorities"
+		texturefile = "gfx/interface/goals/TUR/2_arabian_minorities.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_anti_arabian_propaganda"
+		texturefile = "gfx/interface/goals/TUR/2_anti_arabian_propaganda.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_sponsor_syrian_nationalism"
+		texturefile = "gfx/interface/goals/TUR/2_sponsor_syrian_nationalism.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_syrian_revolution"
+		texturefile = "gfx/interface/goals/TUR/2_syrian_revolution.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_puppet_sultan"
+		texturefile = "gfx/interface/goals/TUR/2_puppet_sultan.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_monopolize_syrian_oil"
+		texturefile = "gfx/interface/goals/TUR/2_monopolize_syrian_oil.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_promote_a_turkish_cyprus"
+		texturefile = "gfx/interface/goals/TUR/2_promote_a_turkish_cyprus.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_arm_our_cooperators"
+		texturefile = "gfx/interface/goals/TUR/2_arm_our_cooperators.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_erase_marks_of_involvement"
+		texturefile = "gfx/interface/goals/TUR/2_erase_marks_of_involvement.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_start_cypriot_civil_war"
+		texturefile = "gfx/interface/goals/TUR/2_start_cypriot_civil_war.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_status_quo"
+		texturefile = "gfx/interface/goals/TUR/2_status_quo.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_turkish_cyprus"
+		texturefile = "gfx/interface/goals/TUR/2_turkish_cyprus.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_prepare_for_sgw"
+		texturefile = "gfx/interface/goals/TUR/2_prepare_for_sgw.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_the_looming_war"
+		texturefile = "gfx/interface/goals/TUR/2_the_looming_war.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_anti_russian_propaganda"
+		texturefile = "gfx/interface/goals/TUR/2_anti_russian_propaganda.dds"			
+	}
 }

@@ -19,6 +19,16 @@ CRE_ottoman = {
 	color_ui = rgb { 26 138 4 }
 }
 
+TUR_empire = { 
+	color = rgb { 9 117 15 }
+	color_ui = rgb { 9 117 15 }
+}
+
+TUR_the_horde = { 
+	color = rgb { 12 135 125 }
+	color_ui = rgb { 12 135 125 }
+}
+
 HUN_AS = {
     color = rgb { 181 186 209 }
     color_ui = rgb { 255 255 255 }

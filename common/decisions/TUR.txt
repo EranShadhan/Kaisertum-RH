@@ -141,7 +141,6 @@ TUR_secure_support_in_FROM_nonaligned = {
 			NOT = { has_global_flag = syria_loses }
             TUR = {
                 has_completed_focus = TUR_kickstart_the_syrian_revolution
-				has_active_mission = TUR_syrian_rebellion_starts_nonaligned
             }
 		}
 		state_target = yes
@@ -189,7 +188,6 @@ TUR_syrian_rebellion_starts_nonaligned = {
 			original_tag = TUR
             TUR = {
                 has_completed_focus = TUR_kickstart_the_syrian_revolution
-				has_active_mission = TUR_syrian_rebellion_starts_nonaligned
             }
 		}
     available = {

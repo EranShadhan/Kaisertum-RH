@@ -1533,6 +1533,12 @@
  TUR_turkish_federation_DEF:0 "the Turkish Federation"
  TUR_turkish_federation_ADJ:0 "Turkish"
 
+ TUR_the_horde:0 "The Great Horde of the Turkic Peoples"
+ TUR_the_horde_DEF:0 "the Great Horde of the Turkic Peoples"
+
+ TUR_empire:0 "Islamic Empire of All Turks"
+ TUR_empire_DEF:0 "Islamic Empire of All Turks"
+
  SYR_vilayet:0 "Vilayet of Syria"
  SYR_vilayet_DEF:0 "the Vilayet of Syria"
  SYR_vilayet_ADJ:0 "Syrian"

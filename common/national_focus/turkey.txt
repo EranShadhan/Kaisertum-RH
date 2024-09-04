@@ -3257,6 +3257,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
+		icon = GFX_TUR_focus_on_internal_matters
 
 		prerequisite = {
 			focus = TUR_start_of_a_new_decade
@@ -3279,6 +3280,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
+		icon = GFX_TUR_sultans_cabinet
 
 		prerequisite = {
 			focus = TUR_focus_on_internal_matters
@@ -3295,6 +3297,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 2
+		icon = GFX_TUR_exploit_the_bidding_war
 
 		prerequisite = {
 			focus = TUR_create_the_sultans_cabinet
@@ -3312,6 +3315,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
+		icon = GFX_TUR_denounce_ottomanism
 
 		prerequisite = {
 			focus = TUR_focus_on_internal_matters
@@ -3335,6 +3339,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 2
+		icon = GFX_TUR_our_place_in_the_new_world
 
 		prerequisite = {
 			focus = TUR_denounce_ottomanism
@@ -3353,6 +3358,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 2
+		icon = GFX_TUR_limited_isolationism
 
 		prerequisite = {
 			focus = TUR_focus_on_internal_matters
@@ -3369,6 +3375,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 2
+		icon = GFX_TUR_promote_a_europeanized_parliament
 
 		prerequisite = {
 			focus = TUR_limited_isolationism
@@ -3399,7 +3406,8 @@ focus = {
 		id = TUR_appeal_to_italy
 		cost = 5
 		x = 0
-		y = 2
+		y = 1
+		icon = GFX_TUR_appeal_to_italy
 
 		prerequisite = {
 			focus = TUR_promote_a_europeanized_government
@@ -3425,6 +3433,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
+		icon = GFX_TUR_dodecanese_for_industry
 
 		prerequisite = {
 			focus = TUR_appeal_to_italy
@@ -3447,6 +3456,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
+		icon = GFX_TUR_middle_east_situation
 
 		prerequisite = {
 			focus = TUR_dodecanese_for_industry
@@ -3463,6 +3473,7 @@ focus = {
 		cost = 5
 		x = -2
 		y = 1
+		icon = GFX_TUR_arabian_minorities
 
 		prerequisite = {
 			focus = TUR_middle_east_situation
@@ -3485,6 +3496,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
+		icon = GFX_TUR_sponsor_syrian_nationalism
 
 		prerequisite = {
 			focus = TUR_take_advantage_of_arabian_minorities
@@ -3512,6 +3524,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
+		icon = GFX_TUR_anti_arabian_propaganda
 
 		prerequisite = {
 			focus = TUR_take_advantage_of_arabian_minorities
@@ -3535,6 +3548,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 2
+		icon = GFX_TUR_syrian_revolution
 
 		prerequisite = {
 			focus = TUR_anti_arabian_propaganda
@@ -3554,6 +3568,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
+		icon = GFX_TUR_puppet_sultan
 
 		prerequisite = {
 			focus = TUR_kickstart_the_syrian_revolution
@@ -3575,6 +3590,7 @@ focus = {
 		cost = 5
 		x = -2
 		y = 1
+		icon = GFX_TUR_monopolize_syrian_oil
 
 		prerequisite = {
 			focus = TUR_kickstart_the_syrian_revolution
@@ -3593,6 +3609,7 @@ focus = {
 		cost = 5
 		x = 2
 		y = 1
+		icon = GFX_TUR_promote_a_turkish_cyprus
 
 		prerequisite = {
 			focus = TUR_middle_east_situation
@@ -3611,6 +3628,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
+		icon = GFX_TUR_arm_our_cooperators
 
 		prerequisite = {
 			focus = TUR_promote_a_turkish_northern_cyprus
@@ -3627,6 +3645,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
+		icon = GFX_TUR_erase_marks_of_involvement
 
 		prerequisite = {
 			focus = TUR_promote_a_turkish_northern_cyprus
@@ -3643,6 +3662,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
+		icon = GFX_TUR_start_cypriot_civil_war
 
 		prerequisite = {
 			focus = TUR_arm_our_cooperators
@@ -3662,6 +3682,7 @@ focus = {
 		cost = 1
 		x = 0
 		y = 1
+		icon = GFX_TUR_turkish_cyprus
 
 		prerequisite = {
 			focus = TUR_start_cypriot_civil_war
@@ -3680,6 +3701,7 @@ focus = {
 		cost = 1
 		x = 2
 		y = 1
+		icon = GFX_status_quo
 
 		prerequisite = {
 			focus = TUR_start_cypriot_civil_war
@@ -3698,6 +3720,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 3
+		icon = GFX_TUR_the_looming_war
 
 		prerequisite = {
 			focus = TUR_middle_east_situation
@@ -3714,6 +3737,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
+		icon = GFX_TUR_anti_russian_propaganda
 
 		prerequisite = {
 			focus = TUR_the_looming_war
@@ -3737,6 +3761,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 2
+		icon = GFX_prepare_for_sgw
 		prerequisite = {
 			focus = TUR_anti_russian_propaganda
 		}
