@@ -22,6 +22,25 @@ ideas = {
 			}
 		}
 
+		Democracy_increase = {
+
+			picture = tradeuniongermany
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = 0.1
+			}
+		}
+
 		employed_public = {
 
 			picture = employed_public

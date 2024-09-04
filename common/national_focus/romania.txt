@@ -2926,6 +2926,7 @@ focus = {
 				add_ideas = {
 					ROM_total_equality
 				}
+				998 = { add_core_of = ROM }
 			}
 	}
 
@@ -2960,12 +2961,12 @@ focus = {
 			
 	
 			completion_reward = {
+				kill_country_leader = yes 
 				create_country_leader = {
 					name = ROM_gheorghe_tatarescu
 					picture  = GFX_Portrait_romania_gheorghe_tatarescu
 					expire = "1965.1.1"
-					ideology = connservatism
-					
+					ideology = liberalism
 				}
 			}
 	}
@@ -3111,7 +3112,13 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				BUL = {
+					add_timed_idea = {
+						idea = Democracy_increase
+						days = 365
+					}
+					set_vaiable = { var = ROM_influence_balkans_var }
+				}
 			}
 	}
 

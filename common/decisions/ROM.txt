@@ -6,6 +6,7 @@ Elections = {
 		available = {
 			
 				has_country_flag = ROM_had_elections
+				original_tag = ROM
 			
 		}
 		cancel_trigger = {
@@ -21,6 +22,92 @@ Elections = {
 				country_event = kt_romania.1
 				set_country_flag = ROM_had_elections
 			}
+			if = {
+				limit = { has_completed_focus = ROM_pol_3 }
+				country_event = kt_romania.1
+				set_country_flag = ROM_had_elections
+			}
+		}
+	}
+}
+
+Balkan_project = {
+	influnce_bul = {
+		available = {
+			has_completed_focus = ROM_pol_d_9
+			original_tag = ROM
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = ROM_influence_balkans_var
+				value = 5
+				tooltip = add_5
+			}
+		}
+	}
+
+	propaganda_bul = {
+		available = {
+			has_completed_focus = ROM_pol_d_9
+			original_tag = ROM
+			check_variable = {
+				var = ROM_influence_balkans_var
+				value = 15
+				compare = greater_than_or_equals
+				tooltip = more15
+			}
+		}
+		visible = {
+			has_completed_focus = ROM_pol_d_9
+			original_tag = ROM
+		}
+	}
+
+	invest_bul = {
+		available = {
+			has_completed_focus = ROM_pol_d_9
+			original_tag = ROM
+			check_variable = {
+				var = ROM_influence_balkans_var
+				value = 15
+				compare = greater_than_or_equals
+				tooltip = more15
+			}
+		}
+
+		visible = {
+			has_completed_focus = ROM_pol_d_9
+			original_tag = ROM
+		}
+	}
+
+	arm_bul = {
+		available = {
+			has_completed_focus = ROM_pol_d_9
+			original_tag = ROM
+		}
+
+		visible = {
+			has_completed_focus = ROM_pol_d_9
+			original_tag = ROM
+		}
+	}
+
+	dbj_bul = {
+		available = {
+			has_completed_focus = ROM_pol_d_9
+			original_tag = ROM
+			check_variable = {
+				var = ROM_influence_balkans_var
+				value = 30
+				compare = greater_than_or_equals
+				tooltip = more30
+			}
+		}
+
+		visible = {
+			has_completed_focus = ROM_pol_d_9
+			original_tag = ROM
 		}
 	}
 }
