@@ -1507,7 +1507,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-				army_experience = 25
+				air_experience = 25
 		}
 	}
 
@@ -1542,7 +1542,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-				army_experience = 150
+				air_experience = 150
 				add_tech_bonus = {
    					bonus = 0.2
     					uses = 5
@@ -2038,13 +2038,516 @@ focus_tree = {
 	}
 
 	############################
+	####       Navy       ######
+	############################
+
+	focus = {
+		id = IRE_royal_irish_navy
+		icon = GFX_goal_generic_navy_cruiser
+		x = 29
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 24
+			modifier = {
+				factor = 3
+			}
+		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+				navy_experience = 25
+		}
+	}
+
+	focus = {
+		id = IRE_attack_navy 
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = IRE_royal_irish_navy }
+		mutually_exclusive = { focus = IRE_defense_navy }
+		x = -1
+		y = 1
+		relative_position_id = IRE_royal_irish_navy
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	focus = {
+		id = IRE_frigate_navy 
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = IRE_attack_navy }
+		x = 0
+		y = 1
+		relative_position_id = IRE_attack_navy
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+	
+	focus = {
+		id = IRE_defense_navy 
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = IRE_royal_irish_navy }
+		mutually_exclusive = { focus = IRE_attack_navy }
+		x = 1
+		y = 1
+		relative_position_id = IRE_royal_irish_navy
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	focus = {
+		id = IRE_destroyer_navy 
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = IRE_defense_navy }
+		x = 0
+		y = 1
+		relative_position_id = IRE_defense_navy
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+
+	focus = {
+		id = IRE_submarine_fotilla
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = IRE_royal_irish_navy }
+		x = 0
+		y = 3
+		relative_position_id = IRE_royal_irish_navy
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	focus = {
+		id = IRE_buying_ships
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = IRE_submarine_fotilla }
+		mutually_exclusive = { focus = IRE_produce_ships }
+		x = -1
+		y = 1
+		relative_position_id = IRE_submarine_fotilla
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	focus = {
+		id = IRE_modern_navy
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = IRE_buying_ships }
+		x = 0
+		y = 1
+		relative_position_id = IRE_buying_ships
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	focus = {
+		id = IRE_aircraft_question
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = IRE_modern_navy }
+		x = 0
+		y = 1
+		relative_position_id = IRE_modern_navy
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	focus = {
+		id = IRE_landing_exercises
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = IRE_aircraft_question }
+		x = 0
+		y = 1
+		relative_position_id = IRE_aircraft_question
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	focus = {
+		id = IRE_produce_ships
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = IRE_submarine_fotilla }
+		mutually_exclusive = { focus = IRE_buying_ships }
+		x = 1
+		y = 1
+		relative_position_id = IRE_submarine_fotilla
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	focus = {
+		id = IRE_research_ships
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = IRE_produce_ships }
+		x = 0
+		y = 1
+		relative_position_id = IRE_produce_ships
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	focus = {
+		id = IRE_doublin_naval_research_school
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = IRE_research_ships }
+		x = 0
+		y = 1
+		relative_position_id = IRE_research_ships
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	focus = {
+		id = IRE_exporting_ships
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = IRE_doublin_naval_research_school }
+		x = 0
+		y = 1
+		relative_position_id = IRE_doublin_naval_research_school
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	############################
 	####     Military     ######
 	############################
 
 
 	############################
-	####       Navy       ######
+	####Irish Independence######
 	############################
+
+
+	############################
+	####      Politics    ######
+	############################
+
 
 	
 }
