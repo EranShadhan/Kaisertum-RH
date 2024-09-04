@@ -1563,6 +1563,7 @@ focus_tree = {
 				type = infantry_equipment
 				amount = -250
 			}
+			add_ideas = YUG_tragedy_of_fiume
 		}
 	}
 	focus = {
@@ -1616,7 +1617,7 @@ focus_tree = {
 				end_puppet = YUG
 			}
 			leave_faction = yes
-
+			remove_ideas = german_customs_union_member
 		}
 	}
 	focus = {
@@ -2234,12 +2235,14 @@ focus_tree = {
 		
 		search_filters = {  
 				
-				
-				
-			}
+		}
 			
 		completion_reward = {
-
+			add_trait = {
+				character = YUG_brozif_tito
+				ideology = titoism
+				trait = YUG_great_mareshall
+			}
 		}
 	}
 	focus = {
@@ -2273,7 +2276,11 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-
+			add_trait = {
+				character = YUG_brozif_tito
+				ideology = titoism
+				trait = YUG_architettor_of_communism
+			}
 		}
 	}
 	focus = {
@@ -2307,7 +2314,7 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-
+			add_ideas = YUG_defenders_of_marxs_ideas
 		}
 	}
 	focus = {
@@ -2341,7 +2348,11 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-
+			add_trait = {
+				character = YUG_brozif_tito
+				ideology = titoism
+				trait = YUG_the_brilliant_men
+			}
 		}
 	}
 	focus = {
@@ -2375,11 +2386,11 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-
+			add_ideas = YUG_achived_utopia
 		}
 	}
 	focus = {
-		id = YUG_ban_other_parties
+		id = YUG_denounce_balkan_kingdoms
 		icon = GFX_
 		relative_position_id = YUG_the_freedom_bringer
 		prerequisite = { focus = YUG_karl_marxs_successor }
@@ -2411,7 +2422,49 @@ focus_tree = {
 			}
 			
 		completion_reward = {
+			add_ideas = YUG_destruction_of_balkan_monarchies
+			
+			add_opinion_modifier = {
+				target = ALB
+				modifier = armed_against_thier_governament
+			}
+			add_opinion_modifier = {
+				target = BUL
+				modifier = armed_against_thier_governament
+			}
+			add_opinion_modifier = {
+				target = ROM
+				modifier = armed_against_thier_governament
+			}
+			add_opinion_modifier = {
+				target = GRE
+				modifier = armed_against_thier_governament
+			}
 
+			GRE = {
+				add_opinion_modifier = {
+					target = YUG
+					modifier = armed_against_our_governament
+				}
+			}
+			BUL = {
+				add_opinion_modifier = {
+					target = YUG
+					modifier = armed_against_our_governament
+				}
+			}
+			ROM = {
+				add_opinion_modifier = {
+					target = YUG
+					modifier = armed_against_our_governament
+				}
+			}
+			ALB = {
+				add_opinion_modifier = {
+					target = YUG
+					modifier = armed_against_our_governament
+				}
+			}
 		}
 	}
 	focus = {
@@ -2447,7 +2500,41 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-
+			853 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			989 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			105 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			every_owned_state = {
+				add_building_construction = {
+					type = bunker
+					level = 5
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_victory_point > 2
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -2481,7 +2568,14 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-
+			custom_effect_tooltip = yug_mareshall_people
+			hidden_effect = {
+				add_trait = {
+					character = YUG_brozif_tito
+					ideology = titoism
+					trait = YUG_the_unifier_of_southern_slavs
+				}
+			}
 		}
 	}
 	focus = {
@@ -2517,7 +2611,7 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-
+			remove_ideas = YUG_muslim_cristian_tensions
 		}
 	}
 }

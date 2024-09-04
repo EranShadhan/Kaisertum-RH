@@ -163,6 +163,7 @@ bookmarks = {
 				YUG_underground_italian_connections
 			}
 			focuses = {
+				YUG_the_mareshall_of_the_people
 			}
 		}
 		"GRE"={
