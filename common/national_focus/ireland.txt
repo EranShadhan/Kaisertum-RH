@@ -2070,7 +2070,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-				navy_experience = 25
+				navy_experience = 50
 		}
 	}
 
@@ -2106,7 +2106,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
+				add_tech_bonus = {
+   					bonus = 0.7
+    					uses = 1
+    					category = trade_interdiction_tree
+				}
+
 		}
 	}
 
@@ -2141,7 +2146,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
+				add_tech_bonus = {
+   					bonus = 0.5
+    					uses = 1
+    					category = ca_tech
+				}
+				add_tech_bonus = {
+   					bonus = 0.5
+    					uses = 1
+    					category = cl_tech
+				}
+
 		}
 	}
 	
@@ -2177,7 +2192,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
+				add_tech_bonus = {
+   					bonus = 0.7
+    					uses = 1
+    					category = convoy_defense_tree
+				}
+
 		}
 	}
 
@@ -2212,7 +2232,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
+				add_tech_bonus = {
+   					bonus = 0.5
+    					uses = 2
+    					category = dd_tech
+				}
 		}
 	}
 
@@ -2248,7 +2272,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
+				add_tech_bonus = {
+   					bonus = 0.5
+    					uses = 2
+    					category = ss_tech
+				}
 		}
 	}
 
@@ -2284,6 +2312,230 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+				IRE = {
+    					create_ship = {
+        					type = ship_hull_cruiser_II
+        					equipment_variant = "Destroyers"
+        					creator = ENG
+        					name = "HMIS D1"
+    					}
+				}
+				IRE = {
+    					create_ship = {
+        					type = ship_hull_cruiser_II
+        					equipment_variant = "Destroyers"
+        					creator = ENG
+        					name = "HMIS D2"
+    					}
+				}
+				IRE = {
+    					create_ship = {
+        					type = ship_hull_cruiser_II
+        					equipment_variant = "Destroyers"
+        					creator = ENG
+        					name = "HMIS D3"
+    					}
+				}
+				IRE = {
+    					create_ship = {
+        					type = ship_hull_cruiser_II
+        					equipment_variant = "Destroyers"
+        					creator = ENG
+        					name = "HMIS D4"
+    					}
+				}
+				IRE = {
+    					create_ship = {
+        					type = ship_hull_cruiser_II
+        					equipment_variant = "Destroyers"
+        					creator = ENG
+        					name = "HMIS D5"
+    					}
+				}
+				IRE = {
+    					create_ship = {
+        					type = ship_hull_cruiser_II
+        					equipment_variant = "Destroyers"
+        					creator = ENG
+        					name = "HMIS D6"
+    					}
+				}
+				IRE = {
+    					create_ship = {
+        					type = ship_hull_cruiser_II
+        					equipment_variant = "Destroyers"
+        					creator = ENG
+        					name = "HMIS D7"
+    					}
+				}
+				IRE = {
+    					create_ship = {
+        					type = ship_hull_cruiser_II
+        					equipment_variant = "Destroyers"
+        					creator = ENG
+        					name = "HMIS D8"
+    					}
+				}
+				IRE = {
+    					create_ship = {
+        					type = ship_hull_cruiser_II
+        					equipment_variant = "Destroyers"
+        					creator = ENG
+        					name = "HMIS D9"
+    					}
+				}
+				IRE = {
+    					create_ship = {
+        					type = ship_hull_cruiser_II
+        					equipment_variant = "Destroyers"
+        					creator = ENG
+        					name = "HMIS D10"
+    					}
+				}
+				IRE = {
+    					create_ship = {
+        					type = ship_hull_cruiser_II
+        					equipment_variant = "Destroyers"
+        					creator = ENG
+        					name = "HMIS D11"
+    					}
+				}
+				IRE = {
+    					create_ship = {
+        					type = ship_hull_cruiser_II
+        					equipment_variant = "Destroyers"
+        					creator = ENG
+        					name = "HMIS D12"
+    					}
+				}
+				IRE = {
+    					create_ship = {
+        					type = ship_hull_cruiser_II
+        					equipment_variant = "Destroyers"
+        					creator = ENG
+        					name = "HMIS D13"
+    					}
+				}
+				IRE = {
+    					create_ship = {
+        					type = ship_hull_cruiser_II
+        					equipment_variant = "Destroyers"
+        					creator = ENG
+        					name = "HMIS D14"
+    					}
+				}
+				IRE = {
+    					create_ship = {
+        					type = ship_hull_cruiser_II
+        					equipment_variant = "Destroyers"
+        					creator = ENG
+        					name = "HMIS D15"
+    					}
+				}
+				IRE = {
+    					create_ship = {
+        					type = ship_hull_cruiser_II
+        					equipment_variant = "Destroyers"
+        					creator = ENG
+        					name = "HMIS D16"
+    					}
+				}
+				IRE = {
+    					create_ship = {
+        					type = ship_hull_cruiser_II
+        					equipment_variant = "Destroyers"
+        					creator = ENG
+        					name = "HMIS D17"
+    					}
+				}
+				IRE = {
+    					create_ship = {
+        					type = ship_hull_submarine_II
+        					equipment_variant = "S Class"
+        					creator = ENG
+        					name = "HMIS S1"
+    					}
+				}
+				IRE = {
+    					create_ship = {
+        					type = ship_hull_submarine_II
+        					equipment_variant = "S Class"
+        					creator = ENG
+        					name = "HMIS S2"
+    					}
+				}
+				IRE = {
+    					create_ship = {
+        					type = ship_hull_submarine_II
+        					equipment_variant = "S Class"
+        					creator = ENG
+        					name = "HMIS S3"
+    					}
+				}
+				IRE = {
+    					create_ship = {
+        					type = ship_hull_submarine_II
+        					equipment_variant = "S Class"
+        					creator = ENG
+        					name = "HMIS S4"
+    					}
+				}
+				IRE = {
+    					create_ship = {
+        					type = ship_hull_submarine_II
+        					equipment_variant = "S Class"
+        					creator = ENG
+        					name = "HMIS S5"
+    					}
+				}
+				IRE = {
+    					create_ship = {
+        					type = ship_hull_submarine_II
+        					equipment_variant = "S Class"
+        					creator = ENG
+        					name = "HMIS S6"
+    					}
+				}
+				IRE = {
+    					create_ship = {
+        					type = ship_hull_cruiser_II
+        					equipment_variant = "Coastal Defense"
+        					creator = ENG
+        					name = "HMIS Dublin"
+    					}
+				}
+				IRE = {
+    					create_ship = {
+        					type = ship_hull_cruiser_II
+        					equipment_variant = "Coastal Defense"
+        					creator = ENG
+        					name = "HMIS Belfast"
+    					}
+				}
+				IRE = {
+    					create_ship = {
+        					type = ship_hull_cruiser_II
+        					equipment_variant = "Coastal Defense"
+        					creator = ENG
+        					name = "HMIS Cork"
+    					}
+				}
+				IRE = {
+    					create_ship = {
+        					type = ship_hull_cruiser_II
+        					equipment_variant = "Coastal Defense"
+        					creator = ENG
+        					name = "HMIS Derry"
+    					}
+				}
+				IRE = {
+    					create_ship = {
+        					type = ship_hull_heavy_II
+        					equipment_variant = "battleship"
+        					creator = ENG
+        					name = "HMIS Macasamhail"
+    					}
+				}
 				
 		}
 	}
@@ -2319,7 +2571,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
+				add_ideas = IRE_modern_navy
 		}
 	}
 
@@ -2389,7 +2641,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
+				add_tech_bonus = {
+   					bonus = 0.7
+    					uses = 1
+    					category = marine_tech
+				}
 		}
 	}
 

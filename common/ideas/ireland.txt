@@ -493,7 +493,24 @@ ideas = {
 							
 			}
 
+		IRE_modern_navy = {
+			
+			allowed = {
+				original_tag = IRE
+			}
 
+			allowed_civil_war = {
+			}
+
+			picture = 
+			
+			removal_cost = -1
+			
+			 
+		
+			modifier = { naval_coordination = 0.3 }
+							
+			}
 	
 				
 
