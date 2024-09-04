@@ -2044,7 +2044,7 @@ focus_tree = {
 	focus = {
 		id = IRE_royal_irish_navy
 		icon = GFX_goal_generic_navy_cruiser
-		x = 29
+		x = 28
 		y = 0
 
 		cost = 10
@@ -2538,6 +2538,814 @@ focus_tree = {
 	####     Military     ######
 	############################
 
+	focus = {
+		id = IRE_royal_irish_army
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		x = 38
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 24
+			modifier = {
+				factor = 3
+			}
+		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+				navy_experience = 25
+		}
+	}
+
+	focus = {
+		id = IRE_increase_budget 
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = IRE_royal_irish_army }
+		x = 0
+		y = 1
+		relative_position_id = IRE_royal_irish_army
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	focus = {
+		id = IRE_dream_of_elite_armed_forces 
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = IRE_increase_budget }
+		x = 0
+		y = 1
+		relative_position_id = IRE_increase_budget
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	focus = {
+		id = IRE_irish_defense_industry 
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = IRE_dream_of_elite_armed_forces }
+		x = -4
+		y = 1
+		relative_position_id = IRE_dream_of_elite_armed_forces
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	focus = {
+		id = IRE_ira_production_methods 
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = IRE_irish_defense_industry }
+		x = 0
+		y = 1
+		relative_position_id = IRE_irish_defense_industry
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	focus = {
+		id = IRE_more_arms_factories 
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = IRE_ira_production_methods }
+		x = 0
+		y = 1
+		relative_position_id = IRE_ira_production_methods
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	focus = {
+		id = IRE_request_isles_of_man 
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = IRE_dream_of_elite_armed_forces }
+		x = -2
+		y = 1
+		relative_position_id = IRE_dream_of_elite_armed_forces
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	focus = {
+		id = IRE_speed_up_training 
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = IRE_dream_of_elite_armed_forces }
+		x = 0
+		y = 1
+		relative_position_id = IRE_dream_of_elite_armed_forces
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+
+
+	focus = {
+		id = IRE_always_ready 
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = IRE_speed_up_training }
+		x = 0
+		y = 1
+		relative_position_id = IRE_speed_up_training
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	focus = {
+		id = IRE_capture_equipment_ready 
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = IRE_always_ready }
+		prerequisite = { focus = IRE_intergate_the_ira }
+		x = 4
+		y = 1
+		relative_position_id = IRE_always_ready
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	focus = {
+		id = IRE_buy_tanks 
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = IRE_capture_equipment_ready }
+		x = 1
+		y = 1
+		relative_position_id = IRE_capture_equipment_ready
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	focus = {
+		id = IRE_irish_tank_core 
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = IRE_capture_equipment_ready }
+		mutually_exclusive = { focus = IRE_elite_infantry }
+		x = 0
+		y = 3
+		relative_position_id = IRE_capture_equipment_ready
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	focus = {
+		id = IRE_train_special_forces 
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = IRE_always_ready }
+		x = 0
+		y = 1
+		relative_position_id = IRE_always_ready
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	focus = {
+		id = IRE_marines 
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = IRE_train_special_forces }
+		x = -1
+		y = 1
+		relative_position_id = IRE_train_special_forces
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	focus = {
+		id = IRE_mountaineers  
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = IRE_train_special_forces }
+		x = 1
+		y = 1
+		relative_position_id = IRE_train_special_forces
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	focus = {
+		id = IRE_guerilla_tactics  
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = IRE_train_special_forces focus = IRE_capture_equipment_ready }
+		x = 3
+		y = 1
+		relative_position_id = IRE_train_special_forces
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	focus = {
+		id = IRE_miniature_radios  
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = IRE_guerilla_tactics focus = IRE_mountaineers focus = IRE_marines }
+		x = 0
+		y = 1
+		relative_position_id = IRE_guerilla_tactics
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	focus = {
+		id = IRE_irish_shooting_clubs  
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = IRE_guerilla_tactics focus = IRE_mountaineers focus = IRE_marines }
+		x = -2
+		y = 1
+		relative_position_id = IRE_guerilla_tactics
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	focus = {
+		id = IRE_civilian_scouts  
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = IRE_guerilla_tactics focus = IRE_mountaineers focus = IRE_marines }
+		x = -4
+		y = 1
+		relative_position_id = IRE_guerilla_tactics
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	focus = {
+		id = IRE_elite_infantry  
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = IRE_civilian_scouts focus = IRE_irish_shooting_clubs focus = IRE_miniature_radios }
+		mutually_exclusive = { focus = IRE_irish_tank_core }
+		x = -1
+		y = 1
+		relative_position_id = IRE_miniature_radios
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+
+	focus = {
+		id = IRE_intergate_the_ira 
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = IRE_dream_of_elite_armed_forces }
+		x = 5
+		y = 1
+		relative_position_id = IRE_dream_of_elite_armed_forces
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	focus = {
+		id = IRE_fortess_island 
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = IRE_intergate_the_ira }
+		x = 1
+		y = 1
+		relative_position_id = IRE_intergate_the_ira
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
+
+	focus = {
+		id = IRE_tunnels_bellow_ireland 
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = IRE_fortess_island }
+		x = 0
+		y = 1
+		relative_position_id = IRE_fortess_island
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_completed_focus = IRE_state_of_irish_economy
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+		}
+	}
 
 	############################
 	####Irish Independence######
