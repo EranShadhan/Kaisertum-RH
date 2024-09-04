@@ -7,68 +7,66 @@ focus_tree = {
 			add = 10
 			tag = UKR
 		}
-	}
+	} 
 	
 	default = no
 
-	continuous_focus_position = { x = 50 y = 1100 }
+	continuous_focus_position = { x = 150 y = 2000 }
 
-	############################
-	##### Fortification focuses#
-	############################
+#	focus = {
+#		id = UKR_
+#		icon = GFX_
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+#		x = -3
+#		y = 0
+#		relative_position_id =
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+
+     ##################################
+     ######## POLITICAL DIRECTION #####
+     ##################################
 
 	focus = {
-		id = UKR_fortification_studies
-		icon = GFX_goal_generic_construct_military
-		x = 3
+		id = UKR_our_kingdom
+		icon = GFX_
+		x = 9
 		y = 0
 
-		cost = 5 
-
-		ai_will_do = {
-			factor = 200			
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_MANPOWER }
-
-		completion_reward = {
-			army_experience = 10
-			add_ideas = CZE_fortification_focus
-		}
-	}
-
-	focus = {
-		id = UKR_fallback_line
-		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = UKR_fortification_studies }
-		x = -2
-		y = 1
-		relative_position_id = UKR_fortification_studies
-
 		cost = 5
 
 		ai_will_do = {
-			factor = 60
-			modifier = {
-				factor = 0.5
-				is_in_faction_with = GER
-			}
+			factor = 90
 		}
 
 		available = {
-			UKR = { controls_state = 202 }
-			UKR = { controls_state = 198 }
+
 		}
 
 		bypass = {
@@ -77,790 +75,215 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			army_experience = 20
-			202 = {
-				add_building_construction = { type = bunker province = 9465 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 504 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 6497 level = 3 instant_build = yes }
-			}
-			198 = {
-				add_building_construction = { type = bunker province = 6480 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 9435 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 9423 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 476 level = 3 instant_build = yes }
-			}
+			add_political_power = 120
 		}
 	}
-
+	
 	focus = {
-		id = UKR_ostwall_1
-		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = UKR_fortification_studies }
-		x = 0
+		id = UKR_expand_varta
+		icon = GFX_
+		prerequisite = { focus = UKR_our_kingdom}
+		x = 16
 		y = 1
-		relative_position_id = UKR_fortification_studies
 
 		cost = 5
 
 		ai_will_do = {
 			factor = 90
-			modifier = {
-				factor = 0.5
-				is_in_faction_with = GER
-			}
-			modifier = {
-				factor = 1.5
-				is_in_faction = no
-			}
 		}
 
 		available = {
-			UKR = { controls_state = 202 }
+
 		}
 
 		bypass = {
-			NOT = {			
-				202 = {
-					any_province_building_level = {
-						province = {
-                                      id = 9568
-							id = 3543
-							id = 525
-							id = 3494
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 3
-					}
-				}
-				203 = {
-					any_province_building_level = {
-						province = {
-							id = 11454
-							id = 488
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 3
-					}
-				}
-				1011 = {
-					any_province_building_level = {
-						province = {
-							id = 3468
-							id = 6478
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 3
-					}
-				}
-				197 = {
-					any_province_building_level = {
-						province = {
-							id = 11683
-							id = 3755
-							id = 11715
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 3
-					}
-				}
-				93 = {
-					any_province_building_level = {
-						province = {
-							id = 6579
-							id = 11503
-							id = 3496
-							id = 9520
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 3
-					}
-				}
-				194 = {
-					any_province_building_level = {
-						province = {
-							id = 11453
-							id = 6232
-							id = 9554
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 3
-					}
-				}
-				226 = {
-					any_province_building_level = {
-						province = {
-							id = 9419
-							id = 11422
-							id = 11437
-							id = 9433
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 3
-					}
-				}
-			}
+
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_MANPOWER }
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			army_experience = 20
-			if = {
-				limit = { controls_state = 202 }
-				202 = {
-					set_building_level = {
-						type = bunker
-						level = 3
-						province = {
-                                      id = 9568
-							id = 3543
-							id = 525
-							id = 3494
-							limit_to_border = yes
-							level < 3
-						}
-					}
-				}
-			}
-
-			if = {
-				limit = { controls_state = 203 }
-				203 = {
-					set_building_level = {
-						type = bunker
-						level = 3
-						province = {
-							id = 11454
-							id = 488
-							limit_to_border = yes
-							level < 3
-						}
-					}
-				}
-			}
-
-			if = {
-				limit = { controls_state = 1011 }
-				1011 = {
-					set_building_level = {
-						type = bunker
-						level = 3
-						province = {
-							id = 3468
-							id = 6478
-							limit_to_border = yes
-							level < 3
-						}
-					}
-				}
-			}
-
-			if = {
-				limit = { controls_state = 197 }
-				197 = {
-					set_building_level = {
-						type = bunker
-						level = 3
-						province = {
-							id = 3755
-							id = 11715
-							limit_to_border = yes
-							level < 3
-						}
-					}
-				}
-			}
-			if = {
-				limit = { controls_state = 93 }
-				93 = {
-					set_building_level = {
-						type = bunker
-						level = 3
-						province = {
-							id = 6579
-							id = 11503
-							id = 3496
-							id = 9520
-							limit_to_border = yes
-							level < 3
-						}
-					}
-				}
-			}
-			if = {
-				limit = { controls_state = 194 }
-				194 = {
-					set_building_level = {
-						type = bunker
-						level = 3
-						province = {
-							id = 11453
-							id = 6232
-							id = 9554
-							limit_to_border = yes
-							level < 3
-						}
-					}
-				}
-			}
-			if = {
-				limit = { controls_state = 226 }
-				226 = {
-					set_building_level = {
-						type = bunker
-						level = 3
-						province = {
-							id = 9419
-							id = 11422
-							id = 11437
-							id = 9433
-							limit_to_border = yes
-							level < 3
-						}
-					}
-				}
-			}
-			swap_ideas = {
-				add_idea = CZE_fortification_focus2
-				remove_idea = CZE_fortification_focus
-			}	
+			add_political_power = 120
 		}
 	}
 
 	focus = {
-		id = UKR_ostwall_2
-		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = UKR_ostwall_1 }
-		x = 0
-		y = 1
-		relative_position_id = UKR_ostwall_1
+		id = UKR_state_stability
+		icon = GFX_
+		prerequisite = { focus = UKR_expand_varta}
+		x = 16
+		y = 2
 
 		cost = 5
 
 		ai_will_do = {
 			factor = 90
-			modifier = {
-				factor = 0.5
-				is_in_faction_with = GER
-			}
-			modifier = {
-				factor = 1.5
-				is_in_faction = no
-			}
 		}
 
 		available = {
-			UKR = { controls_state = 202 }
+
 		}
 
 		bypass = {
-			NOT = {			
-				202 = {
-					any_province_building_level = {
-						province = {
-                                      id = 9568
-							id = 3543
-							id = 525
-							id = 3494
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 6
-					}
-				}
-				203 = {
-					any_province_building_level = {
-						province = {
-							id = 11454
-							id = 488
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 6
-					}
-				}
-				1011 = {
-					any_province_building_level = {
-						province = {
-							id = 3468
-							id = 6478
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 6
-					}
-				}
-				197 = {
-					any_province_building_level = {
-						province = {
-							id = 11683
-							id = 3755
-							id = 11715
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 6
-					}
-				}
-				93 = {
-					any_province_building_level = {
-						province = {
-							id = 6579
-							id = 11503
-							id = 3496
-							id = 9520
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 6
-					}
-				}
-				194 = {
-					any_province_building_level = {
-						province = {
-							id = 11453
-							id = 6232
-							id = 9554
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 6
-					}
-				}
-				226 = {
-					any_province_building_level = {
-						province = {
-							id = 9419
-							id = 11422
-							id = 11437
-							id = 9433
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 6
-					}
-				}
-			}
+
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_MANPOWER }
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			army_experience = 20
-			if = {
-				limit = { controls_state = 202 }
-				202 = {
-					set_building_level = {
-						type = bunker
-						level = 6
-						province = {
-                                      id = 9568
-							id = 3543
-							id = 525
-							id = 3494
-							limit_to_border = yes
-							level < 6
-						}
-					}
-				}
-			}
-
-			if = {
-				limit = { controls_state = 203 }
-				203 = {
-					set_building_level = {
-						type = bunker
-						level = 6
-						province = {
-							id = 11454
-							id = 488
-							limit_to_border = yes
-							level < 6
-						}
-					}
-				}
-			}
-
-			if = {
-				limit = { controls_state = 1011 }
-				1011 = {
-					set_building_level = {
-						type = bunker
-						level = 6
-						province = {
-							id = 3468
-							id = 6478
-							limit_to_border = yes
-							level < 6
-						}
-					}
-				}
-			}
-
-			if = {
-				limit = { controls_state = 197 }
-				197 = {
-					set_building_level = {
-						type = bunker
-						level = 6
-						province = {
-							id = 3755
-							id = 11715
-							limit_to_border = yes
-							level < 6
-						}
-					}
-				}
-			}
-			if = {
-				limit = { controls_state = 93 }
-				93 = {
-					set_building_level = {
-						type = bunker
-						level = 6
-						province = {
-							id = 6579
-							id = 11503
-							id = 3496
-							id = 9520
-							limit_to_border = yes
-							level < 6
-						}
-					}
-				}
-			}
-			if = {
-				limit = { controls_state = 194 }
-				194 = {
-					set_building_level = {
-						type = bunker
-						level = 6
-						province = {
-							id = 11453
-							id = 6232
-							id = 9554
-							limit_to_border = yes
-							level < 6
-						}
-					}
-				}
-			}
-			if = {
-				limit = { controls_state = 226 }
-				226 = {
-					set_building_level = {
-						type = bunker
-						level = 6
-						province = {
-							id = 9419
-							id = 11422
-							id = 11437
-							id = 9433
-							limit_to_border = yes
-							level < 6
-						}
-					}
-				}
-			}
-			swap_ideas = {
-				add_idea = CZE_fortification_focus3
-				remove_idea = CZE_fortification_focus2
-			}	
+			add_political_power = 120
 		}
 	}
 
 	focus = {
-		id = UKR_ostwall_3
-		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = UKR_ostwall_2 }
-		x = 0
+		id = UKR_suppress_socialists
+		icon = GFX_
+		prerequisite = { focus = UKR_expand_varta}
+		x = 18
 		y = 2
-		relative_position_id = UKR_ostwall_1
 
 		cost = 5
 
 		ai_will_do = {
-			factor = 80
-			modifier = {
-				factor = 0.5
-				is_in_faction_with = GER
-			}
-			modifier = {
-				factor = 1.5
-				is_in_faction = no
-			}
+			factor = 90
 		}
 
 		available = {
-			UKR = { controls_state = 202 }
+
 		}
 
 		bypass = {
-			NOT = {			
-				202 = {
-					any_province_building_level = {
-						province = {
-                                      id = 9568
-							id = 3543
-							id = 525
-							id = 3494
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 9
-					}
-				}
-				203 = {
-					any_province_building_level = {
-						province = {
-							id = 11454
-							id = 488
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 9
-					}
-				}
-				1011 = {
-					any_province_building_level = {
-						province = {
-							id = 3468
-							id = 6478
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 9
-					}
-				}
-				197 = {
-					any_province_building_level = {
-						province = {
-							id = 11683
-							id = 3755
-							id = 11715
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 9
-					}
-				}
-				93 = {
-					any_province_building_level = {
-						province = {
-							id = 6579
-							id = 11503
-							id = 3496
-							id = 9520
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 9
-					}
-				}
-				194 = {
-					any_province_building_level = {
-						province = {
-							id = 11453
-							id = 6232
-							id = 9554
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 9
-					}
-				}
-				226 = {
-					any_province_building_level = {
-						province = {
-							id = 9419
-							id = 11422
-							id = 11437
-							id = 9433
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 9
-					}
-				}
-			}
+
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_MANPOWER }
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			army_experience = 20
-			if = {
-				limit = { controls_state = 202 }
-				202 = {
-					set_building_level = {
-						type = bunker
-						level = 9
-						province = {
-                                      id = 9568
-							id = 3543
-							id = 525
-							id = 3494
-							limit_to_border = yes
-							level < 9
-						}
-					}
-				}
-			}
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = UKR_king_power
+		icon = GFX_
+		prerequisite = { focus = UKR_our_kingdom}
+		x = 11
+		y = 1
 
-			if = {
-				limit = { controls_state = 203 }
-				203 = {
-					set_building_level = {
-						type = bunker
-						level = 9
-						province = {
-							id = 11454
-							id = 488
-							limit_to_border = yes
-							level < 9
-						}
-					}
-				}
-			}
+		cost = 5
 
-			if = {
-				limit = { controls_state = 1011 }
-				1011 = {
-					set_building_level = {
-						type = bunker
-						level = 9
-						province = {
-							id = 3468
-							id = 6478
-							limit_to_border = yes
-							level < 9
-						}
-					}
-				}
-			}
+		ai_will_do = {
+			factor = 90
+		}
 
-			if = {
-				limit = { controls_state = 197 }
-				197 = {
-					set_building_level = {
-						type = bunker
-						level = 9
-						province = {
-							id = 3755
-							id = 11715
-							limit_to_border = yes
-							level < 9
-						}
-					}
-				}
-			}
-			if = {
-				limit = { controls_state = 93 }
-				93 = {
-					set_building_level = {
-						type = bunker
-						level = 9
-						province = {
-							id = 6579
-							id = 11503
-							id = 3496
-							id = 9520
-							limit_to_border = yes
-							level < 9
-						}
-					}
-				}
-			}
-			if = {
-				limit = { controls_state = 194 }
-				194 = {
-					set_building_level = {
-						type = bunker
-						level = 9
-						province = {
-							id = 11453
-							id = 6232
-							id = 9554
-							limit_to_border = yes
-							level < 9
-						}
-					}
-				}
-			}
-			if = {
-				limit = { controls_state = 226 }
-				226 = {
-					set_building_level = {
-						type = bunker
-						level = 9
-						province = {
-							id = 9419
-							id = 11422
-							id = 11437
-							id = 9433
-							limit_to_border = yes
-							level < 9
-						}
-					}
-				}
-			}
-			swap_ideas = {
-				add_idea = CZE_fortification_focus4
-				remove_idea = CZE_fortification_focus3
-			}	
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = UKR_crown_glory
+		icon = GFX_
+		prerequisite = { focus = UKR_our_kingdom}
+		x = 13
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+		focus = {
+		id = UKR_educational_programs
+		icon = GFX_
+		prerequisite = { focus = UKR_crown_glory}
+		x = 14
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 120
 		}
 	}
 
-	focus = {
-		id = UKR_romanian_line
-		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = UKR_ostwall_2 }
-		x = -2
-		y = 2
-		relative_position_id = UKR_ostwall_1
+		focus = {
+		id = UKR_forced_ukrainization
+		icon = GFX_
+		prerequisite = { focus = UKR_educational_programs}
+		x = 15
+		y = 3
 
 		cost = 5
 
 		ai_will_do = {
-			factor = 60
-			modifier = {
-				factor = 0.5
-				is_in_faction_with = GER
-			}
-			modifier = {
-				factor = 0.5
-				is_in_faction_with = HUN
-			}
-			modifier = {
-				factor = 0.5
-				HUN = { exists = no }
-			}
+			factor = 90
 		}
 
 		available = {
-			UKR = { controls_state = 192 }
-			UKR = { controls_state = 834 }
-			UKR = { controls_state = 198 }
-			UKR = { controls_state = 199 }
+
 		}
 
 		bypass = {
@@ -869,49 +292,93 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		completion_reward = {       
-			army_experience = 30
-			834 = {
-				add_building_construction = { type = bunker province = 741 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 9576 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 754 level = 3 instant_build = yes }
-			}
-			
-			199 = {
-				add_building_construction = { type = bunker province = 3430 level = 3 instant_build = yes }
-			}
-			198 = {
-				add_building_construction = { type = bunker province = 6455 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 9423 level = 3 instant_build = yes }
-			}
-			192 = {
-				add_building_construction = { type = bunker province = 11670 level = 3 instant_build = yes }
-			}
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+		focus = {
+		id = UKR_national_revival
+		icon = GFX_
+		prerequisite = { focus = UKR_forced_ukrainization}
+		x = 15
+		y = 4
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+		focus = {
+		id = UKR_national_unity
+		icon = GFX_
+		prerequisite = { focus = UKR_national_revival}
+		x = 15
+		y = 5
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 120
 		}
 	}
 
-	focus = {
-		id = UKR_polish_line
-		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = UKR_ostwall_2 }
-		x = 2
-		y = 2
-		relative_position_id = UKR_ostwall_1
+		focus = {
+		id = UKR_kyivan_rus_legacy
+		icon = GFX_
+		prerequisite = { focus = UKR_european_breadbasket}
+		prerequisite = { focus = UKR_flexible_working_laws}
+		prerequisite = { focus = UKR_national_unity}
+		x = 13
+		y = 6
 
 		cost = 5
 
 		ai_will_do = {
-			factor = 50
-			modifier = {
-				factor = 0.25
-				is_in_faction_with = POL
-			}
+			factor = 90
 		}
 
 		available = {
-			UKR = { controls_state = 93 }
+
 		}
 
 		bypass = {
@@ -920,591 +387,118 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			army_experience = 30
-			93 = {
-				add_building_construction = { type = bunker province = 422 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 11441 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 3412 level = 3 instant_build = yes }
-			}
+			add_political_power = 120
+		}
+	}
+
+		focus = {
+		id = UKR_ukraine_above_all
+		icon = GFX_
+		prerequisite = { focus = UKR_kyivan_rus_legacy}
+		x = 13
+		y = 7
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+
+		focus = {
+		id = UKR_private_property
+		icon = GFX_
+		prerequisite = { focus = UKR_educational_programs}
+		prerequisite = { focus = UKR_land_reform}
+		x = 13
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+		focus = {
+		id = UKR_flexible_working_laws
+		icon = GFX_
+		prerequisite = { focus = UKR_private_property}
+		x = 13
+		y = 5
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 120
 		}
 	}
 
 focus = {
-		id = UKR_polish_line2
-		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = UKR_polish_line }
-		x = 2
-		y = 3
-		relative_position_id = UKR_ostwall_1
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 50
-			modifier = {
-				factor = 0.25
-				is_in_faction_with = POL
-			}
-		}
-
-		available = {
-			UKR = { controls_state = 990 }
-			UKR = { controls_state = 89 }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			army_experience = 30
-			990 = {
-				add_building_construction = { type = bunker province = 9558 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 491 level = 3 instant_build = yes }
-			}
-			89 = {      
-				add_building_construction = { type = bunker province = 11411 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 9425 level = 3 instant_build = yes }
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_Odessa_line
-		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = UKR_fortification_studies }
-		x = 2
-		y = 1
-		relative_position_id = UKR_fortification_studies
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 60
-		}
-
-		available = {
-			UKR = { controls_state = 834 }
-			UKR = { controls_state = 192 }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			army_experience = 20
-			834 = {
-				add_building_construction = { type = bunker province = 3757 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 9576 level = 3 instant_build = yes }
-			}
-			192 = {
-				add_building_construction = { type = bunker province = 11703 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 3575 level = 3 instant_build = yes }
-				add_building_construction = { type = coastal_bunker province = 11703 level = 3 instant_build = yes }
-				add_building_construction = { type = coastal_bunker province = 3738 level = 3 instant_build = yes }
-				add_building_construction = { type = coastal_bunker province = 11670 level = 5 instant_build = yes }
-			}
-		}
-	}
-
-	###################################
-	######## INDUSTRIAL LEGACY ########
-	###################################
-
-	focus = {
-		id = UKR_industrial_legacy
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 6
-		y = 0
-		relative_position_id = UKR_fortification_studies
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 90
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			add_ideas = CZE_industrial_legacy_idea
-		}
-	}
-
-	focus = {
-		id = UKR_mils1
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = UKR_industrial_legacy }
-		x = -2
-		y = 1
-		relative_position_id = UKR_industrial_legacy
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 40
-			modifier = {
-				factor = 2
-				has_completed_focus = UKR_go_right
-			}
-			modifier = {
-				factor = 2
-				has_completed_focus = UKR_german_leanings
-			}
-		}
-
-		available = {
-			UKR = { controls_state = 93 }
-			UKR = { controls_state = 199 }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			93 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			199 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = { 
-					type = arms_factory  
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_mils2
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = UKR_mils1 }
-		x = 0
-		y = 1
-		relative_position_id = UKR_mils1 
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 80
-		}
-
-		available = {
-			UKR = { controls_state = 201 }
-			UKR = { controls_state = 198 }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			201 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			198 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_mils3 
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = UKR_mils2 }
-		x = 0
+		id = UKR_land_reform
+		icon = GFX_
+		prerequisite = { focus = UKR_crown_glory}
+		prerequisite = { focus = UKR_king_power}
+		x = 12
 		y = 2
-		relative_position_id = UKR_mils1
 
 		cost = 5
-
-		ai_will_do = {
-			factor = 80
-		}
-
-		available = {
-			UKR = { controls_state = 202 }
-			UKR = { controls_state = 201 }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			202 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			201 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = { 
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_civs_1
-		icon = GFX_goal_generic_construction
-		prerequisite = { focus = UKR_industrial_legacy }
-		x = 0
-		y = 1
-		relative_position_id = UKR_industrial_legacy
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 70
-			modifier = {
-				factor = 0.5
-				has_completed_focus = UKR_go_right
-			}
-			modifier = {
-				factor = 0.5
-				has_completed_focus = UKR_german_leanings
-			}
-		}
-
-		available = {
-			UKR = { controls_state = 93 }
-			UKR = { controls_state = 199 }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			93 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			199 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_civs_2
-		icon = GFX_goal_generic_construction
-		prerequisite = { focus = UKR_civs_1 }
-		x = 0
-		y = 1
-		relative_position_id = UKR_civs_1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 80
-		}
-
-		available = {
-			UKR = { controls_state = 201 }
-			UKR = { controls_state = 198 }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			201 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			198 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_civs_3
-		icon = GFX_goal_generic_construction
-		prerequisite = { focus = UKR_civs_2 }
-		x = 0
-		y = 2
-		relative_position_id = UKR_civs_1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 80
-		}
-
-		available = {
-			UKR = { controls_state = 192 }
-			UKR = { controls_state = 834 }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			192 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			834 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_arms_exports_1
-		icon = GFX_goal_generic_production
-		prerequisite = { focus = UKR_industrial_legacy }
-		x = 2
-		y = 1
-		relative_position_id = UKR_industrial_legacy
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 80
-			modifier = {
-				factor = 2
-				has_completed_focus = UKR_go_right
-			}
-			modifier = {
-				factor = 2
-				has_completed_focus = UKR_german_leanings
-			}
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			add_ideas = CZE_export_focus1
-		}
-	}
-
-	focus = {
-		id = UKR_arms_exports_2
-		icon = GFX_goal_generic_production
-		prerequisite = { focus = UKR_arms_exports_1 }
-		x = 0
-		y = 1
-		relative_position_id = UKR_arms_exports_1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 70
-			modifier = {
-				factor = 2
-				has_completed_focus = UKR_go_right
-			}
-			modifier = {
-				factor = 2
-				has_completed_focus = UKR_german_leanings
-			}
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			swap_ideas = { remove_idea = CZE_export_focus1 add_idea = CZE_export_focus2  }
-		}
-	}
-
-	focus = {
-		id = UKR_arms_exports_3
-		icon = GFX_goal_generic_production
-		prerequisite = { focus = UKR_arms_exports_2 }
-		x = 0
-		y = 2
-		relative_position_id = UKR_arms_exports_1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 70
-			modifier = {
-				factor = 2
-				has_completed_focus = UKR_go_right
-			}
-			modifier = {
-				factor = 2
-				has_completed_focus = UKR_german_leanings
-			}
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			swap_ideas = { remove_idea = CZE_export_focus2 add_idea = CZE_export_focus3 }
-		}
-	}
-
-	##################################
-	######## POLITICAL DIRECTION #####
-	##################################
-
-	focus = {
-		id = UKR_our_future
-		icon = GFX_goal_generic_intelligence_exchange
-		x = 8
-		y = 0
-		relative_position_id = UKR_industrial_legacy
-
-		cost = 10
 
 		ai_will_do = {
 			factor = 90
@@ -1529,18 +523,14 @@ focus = {
 	}
 
 	
-	#######################################
-	######### STRATEGY DECISIONS ##########
-	#######################################
-	
 	focus = {
-		id = UKR_strategy_decisions
-		icon = GFX_goal_generic_position_armies
-		x = 12
-		y = 0
-		relative_position_id = UKR_our_future
+		id = UKR_peoples_reforms
+		icon = GFX_
+		prerequisite = { focus = UKR_our_kingdom}
+		x = 9
+		y = 1
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 90
@@ -1560,206 +550,112 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 150
+			add_political_power = 120
+		}
+	}
+	focus = {
+		id = UKR_communities
+		icon = GFX_
+		prerequisite = { focus = UKR_peoples_reforms}
+		x = 10
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 120
 		}
 	}
 
+focus = {
+		id = UKR_farms_grants
+		icon = GFX_
+		prerequisite = { focus = UKR_communities}
+		prerequisite = { focus = UKR_land_reform}
+		x = 11
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+focus = {
+		id = UKR_develop_agricultural_regions
+		icon = GFX_
+		prerequisite = { focus = UKR_peoples_reforms}
+		x = 9
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
 	
 	focus = {
-		id = UKR_doctrinal_innovation
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = UKR_strategy_decisions }
-		x = 0
-		y = 2
-		relative_position_id = UKR_strategy_decisions
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.75
-				uses = 1
-				category = land_doctrine
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_bonus_research_slot_2
-		icon = GFX_focus_research
-		prerequisite = { focus = UKR_doctrinal_innovation }
-		x = 0
-		y = 1
-		relative_position_id = UKR_doctrinal_innovation
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-			num_of_factories > 34
-		}
-
-		bypass = {
-			NOT = { amount_research_slots < 5 }
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_research_slot = 1
-			custom_effect_tooltip = UKR_war_college_effect_tt	
-		}
-	}
-
-	focus = {
-		id = UKR_secret_weapons
-		icon = GFX_goal_generic_radar
-		prerequisite = { focus = UKR_bonus_research_slot_2 }
-		mutually_exclusive = { focus = UKR_nukes }
-		x = -1
-		y = 2
-		relative_position_id = UKR_doctrinal_innovation
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 60
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = secret_bonus
-				bonus = 1.0
-				uses = 3
-				category = electronics
-				category = jet_technology
-				category = rocketry
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_nukes
-		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = UKR_bonus_research_slot_2 }
-		mutually_exclusive = { focus = UKR_secret_weapons }
-		x = 1
-		y = 2
-		relative_position_id = UKR_doctrinal_innovation
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 40
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = nuclear_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = nuclear
-			}
-		}
-	}
-
-
-	focus = {
-		id = UKR_volunteer_corps
-		icon = GFX_goal_generic_axis_build_infantry
-		prerequisite = { focus = UKR_strategy_decisions }
-		x = 5
-		y = 1
-		relative_position_id = UKR_strategy_decisions
-
-		cost = 1
-
-		ai_will_do = {
-			factor = 60
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			set_rule = {
-				can_send_volunteers = yes
-			}
-			add_ideas = foreign_expeditions_focus
-		}
-	}
-	#######################################
-	##### MILITARY RESEARCH INSTITUTE #####	
-	#######################################
-
-	focus = {
-		id = UKR_military_research_institute
-		icon = GFX_focus_UKR_military_research_institute
+		id = UKR_european_breadbasket
+		icon = GFX_
+		prerequisite = { focus = UKR_develop_agricultural_regions}
+		prerequisite = { focus = UKR_farms_grants}
 		x = 11
-		y = 0
-		relative_position_id = UKR_strategy_decisions
+		y = 5
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 90
@@ -1775,263 +671,34 @@ focus = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			army_experience = 50
-		}
-	}
-
-	focus = {
-		id = UKR_mountain_bonus
-		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = UKR_military_research_institute }
-		x = -3
-		y = 1
-		relative_position_id = UKR_military_research_institute
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = UKR_mountain_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = mountaineers_tech
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_inf_and_artillery_advancement
-		icon = GFX_goal_rhineland
-		prerequisite = { focus = UKR_military_research_institute }
-		x = -1
-		y = 1
-		relative_position_id = UKR_military_research_institute
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 80
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = UKR_inf_and_artillery_advancement
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = infantry_weapons
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_support_bonus
-		icon = GFX_goal_generic_army_artillery
-		prerequisite = { focus = UKR_mountain_bonus }
-		x = -3
-		y = 2
-		relative_position_id = UKR_military_research_institute
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 60
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = UKR_support_bonus #@#
-				bonus = 1.0
-				uses = 2
-				category = support_tech	
-			}
-			add_tech_bonus = {
-				name = UKR_support_bonus #@#
-				bonus = 1.0
-				uses = 1
-				technology = support_weapons2
-				technology = support_weapons3
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_inf_and_artillery_advancement_2
-		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = UKR_inf_and_artillery_advancement }
-		x = -1
-		y = 2
-		relative_position_id = UKR_military_research_institute
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 80
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = UKR_inf_and_artillery_advancement_2 #@#
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = artillery
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_doctrine_bonus
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = UKR_support_bonus }
-		prerequisite = { focus = UKR_inf_and_artillery_advancement_2 }
-		x = -2
-		y = 3
-		relative_position_id = UKR_military_research_institute
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 1
-				uses = 1
-				category = land_doctrine
-			}
+			add_political_power = 120
 		}
 	}
 
+
 	focus = {
-		id = UKR_motorization_scheme
-		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = UKR_military_research_institute }
-		x = 1
+		id = UKR_red_prince
+		icon = GFX_
+		prerequisite = { focus = UKR_our_kingdom}
+		mutually_exclusive = { focus =  }
+		x = -4
 		y = 1
-		relative_position_id = UKR_military_research_institute
+		relative_position_id = UKR_our_kingdom
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
-			factor = 60
+			factor = 1
 		}
 
 		available = {
 
 		}
-
-		bypass = {
-			has_tech = motorised_infantry
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = motorized_bonus
-				bonus = 3.0
-				technology = motorised_infantry
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_armour_bonus_1
-		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = UKR_military_research_institute }
-		x = 3
-		y = 1
-		relative_position_id = UKR_military_research_institute
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 70
-		}
-
-		available = {
-
-		}
-
+		
 		bypass = {
 
 		}
@@ -2039,36 +706,35 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		complete_tooltip = {
+
+		}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.0
-				uses = 1
-				category = armor
-			}
+
 		}
 	}
-
+	
 	focus = {
-		id = UKR_mechanization
-		icon = GFX_goal_generic_production2
-		prerequisite = { focus = UKR_motorization_scheme }
-		x = 1
+		id = UKR_sich_riflemen_legacy
+		icon = GFX_
+		prerequisite = { focus = UKR_red_prince}
+		mutually_exclusive = { focus =  }
+		x = -5
 		y = 2
-		relative_position_id = UKR_military_research_institute
+		relative_position_id = UKR_our_kingdom
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
-			factor = 50
+			factor = 1
 		}
 
 		available = {
 
 		}
-
+		
 		bypass = {
 
 		}
@@ -2076,154 +742,71 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		complete_tooltip = {
+
+		}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = UKR_mechanization #@#
-				bonus = 1.0
-				uses = 1
-				category = cat_mechanized_equipment
-			}
+
 		}
 	}
-
+	
 	focus = {
-		id = UKR_armour_bonus_ii
-		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = UKR_armour_bonus_1 }
-		x = 3
-		y = 2
-		relative_position_id = UKR_military_research_institute
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 60
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.0
-				uses = 1
-				category = armor
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_doctrine_bonus_2
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = UKR_mechanization }
-		prerequisite = { focus = UKR_armour_bonus_ii }
-		x = 2
+		id = UKR_royal_guard
+		icon = GFX_
+		prerequisite = { focus = UKR_sich_riflemen_legacy}
+		mutually_exclusive = { focus =  }
+		x = -4
 		y = 3
-		relative_position_id = UKR_military_research_institute
+		relative_position_id = UKR_our_kingdom
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
-			factor = 100
+			factor = 1
 		}
 
 		available = {
 
 		}
-
+		
 		bypass = {
 
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
 
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.5
-				uses = 2
-				category = land_doctrine
-			}
+
 		}
 	}
 
 	focus = {
-		id = UKR_war_college
-		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = UKR_doctrine_bonus }
-		prerequisite = { focus = UKR_doctrine_bonus_2 }
-		x = 0
+		id = UKR_royal_officer_corps
+		icon = GFX_
+		prerequisite = { focus = UKR_royal_guard}
+		mutually_exclusive = { focus =  }
+		x = -4
 		y = 4
-		relative_position_id = UKR_military_research_institute
+		relative_position_id = UKR_our_kingdom
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
-			factor = 90
+			factor = 1
 		}
 
 		available = {
 
 		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_ideas = UKR_war_college_idea
-			if = {
-				limit = {
-					NOT = { amount_research_slots > 4 }
-				}
-				add_research_slot = 1
-				custom_effect_tooltip = UKR_war_college_effect_tt
-			}
-		}
-	}
-
-	#######################################
-	####### AERONAUTICAL INSTITUTE ########	
-	#######################################
-
-	focus = {
-		id = UKR_military_aeronautical_institute
-		icon = GFX_focus_UKR_military_aeronautical_institute
-		x = 8
-		y = 0
-		relative_position_id = UKR_military_research_institute
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 90
-		}
-
-		available = {
-
-		}
-
+		
 		bypass = {
 
 		}
@@ -2232,332 +815,34 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		completion_reward = {
-			air_experience = 100
-		}
-	}
-
-	focus = {
-		id = UKR_import_foreign_fighters
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = UKR_military_aeronautical_institute }
-		x = -2
-		y = 1
-		relative_position_id = UKR_military_aeronautical_institute
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 70
-		}
-
-		available = {
+		complete_tooltip = {
 
 		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = UKR_import_foreign_fighters #@#
-				bonus = 1.0
-				uses = 1
-				category = light_fighter
-				category = cat_heavy_fighter
-			}
+
 		}
 	}
-
+	
 	focus = {
-		id = UKR_light_fighter_focus
-		icon = GFX_goal_generic_air_fighter2
-		prerequisite = { focus = UKR_import_foreign_fighters }
-		mutually_exclusive = { focus = UKR_heavy_fighter_focus }
-		x = -1
-		y = 1
-		relative_position_id = UKR_import_foreign_fighters
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 70
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = UKR_light_fighter_focus #@#
-				bonus = 1.0
-				uses = 1
-				category = light_fighter
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_heavy_fighter_focus
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = UKR_import_foreign_fighters }
-		mutually_exclusive = { focus = UKR_light_fighter_focus }
-		x = 1
-		y = 1
-		relative_position_id = UKR_import_foreign_fighters
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = UKR_heavy_fighter_focus #@#
-				bonus = 1.0
-				uses = 1
-				category = cat_heavy_fighter
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_air_is_our_sea
-		icon = GFX_goal_generic_build_airforce
-		prerequisite = { focus = UKR_military_aeronautical_institute }
-		x = 0
-		y = 1
-		relative_position_id = UKR_military_aeronautical_institute
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 80
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_ideas = UKR_air_focus
-		}
-	}
-
-	focus = {
-		id = UKR_rule_the_air
-		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus = UKR_air_is_our_sea }
-		prerequisite = { focus = UKR_light_fighter_focus focus = UKR_heavy_fighter_focus }
-		prerequisite = { focus = UKR_tac_focus focus = UKR_cas_focus }
-		x = 0
+		id = UKR_royal_standart
+		icon = GFX_
+		prerequisite = { focus = UKR_sich_riflemen_legacy}
+		mutually_exclusive = { focus =  }
+		x = -6
 		y = 3
-		relative_position_id = UKR_military_aeronautical_institute
+		relative_position_id = UKR_our_kingdom
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
-			factor = 80
+			factor = 1
 		}
 
 		available = {
 
 		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
-				cost_reduction = 0.5
-				uses = 3
-				category = air_doctrine
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_import_foreign_bombers
-		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = UKR_military_aeronautical_institute }
-		x = 2
-		y = 1
-		relative_position_id = UKR_military_aeronautical_institute
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 70
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = UKR_import_foreign_bombers #@#
-				bonus = 1.0
-				uses = 1
-				category = cas_bomber
-				category = tactical_bomber
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_cas_focus
-		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = UKR_import_foreign_bombers }
-		mutually_exclusive = { focus = UKR_tac_focus }
-		x = -1
-		y = 1
-		relative_position_id = UKR_import_foreign_bombers
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 70
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = UKR_cas_focus #@#
-				bonus = 1.0
-				uses = 1
-				category = cas_bomber
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_tac_focus
-		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = UKR_import_foreign_bombers }
-		mutually_exclusive = { focus = UKR_cas_focus }
-		x = 1
-		y = 1
-		relative_position_id = UKR_import_foreign_bombers
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 30
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = UKR_tac_focus #@#
-				bonus = 1.0
-				uses = 1
-				category = tactical_bomber
-			}
-		}
-	}
-
-	#######################################
-	######### ACCESS TO THE SEA ###########	
-	#######################################
-
-	focus = {
-		id = UKR_access_to_the_sea
-		icon = GFX_goal_generic_occupy_states_coastal
-		x = 7
-		y = 0
-		relative_position_id = UKR_military_aeronautical_institute
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 30
-		}
-
-		available = {
-			any_owned_state = {
-				is_coastal = yes
-			}
-		}
-
+		
 		bypass = {
 
 		}
@@ -2566,95 +851,34 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		complete_tooltip = {
+
+		}
+
 		completion_reward = {
-			navy_experience = 100
+
 		}
 	}
 
-	focus = {
-		id = UKR_sudden_shipyard
-		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = UKR_access_to_the_sea }
-		x = -2
-		y = 1
-		relative_position_id = UKR_access_to_the_sea
+focus = {
+		id = UKR_military_academy
+		icon = GFX_
+		prerequisite = { focus = UKR_royal_standart}
+		mutually_exclusive = { focus =  }
+		x = -6
+		y = 4
+		relative_position_id = UKR_our_kingdom
 
-		cost = 10
-
-		ai_will_do = {
-			factor = 70
-		}
-
-		available = {
-			any_state = {
-				is_controlled_by = ROOT
-				is_coastal = yes
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			navy_experience = 10
-			random_owned_controlled_state = {
-				limit = {
-					is_coastal = yes
-					free_building_slots = {
-						building = dockyard
-						size > 2
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = dockyard
-										size > 2
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = dockyard
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_shipbuilding_legacy
-		icon = GFX_goal_generic_amphibious_assault
-		prerequisite = { focus = UKR_access_to_the_sea }
-		x = 0
-		y = 1
-		relative_position_id = UKR_access_to_the_sea
-
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
-			factor = 40
+			factor = 1
 		}
 
 		available = {
 
 		}
-
+		
 		bypass = {
 
 		}
@@ -2663,29 +887,35 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		complete_tooltip = {
+
+		}
+
 		completion_reward = {
-			add_ideas = UKR_naval_focus
+
 		}
 	}
 
-	focus = {
-		id = UKR_battleship_catchup_1
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = UKR_shipbuilding_legacy }
-		x = 2
-		y = 2
-		relative_position_id = UKR_access_to_the_sea
+focus = {
+		id = UKR_expand_royal_guard
+		icon = GFX_
+		prerequisite = { focus = UKR_military_academy }
+		prerequisite = {focus = UKR_royal_officer_corps }
+		mutually_exclusive = { focus =  }
+		x = -5
+		y = 5
+		relative_position_id = UKR_our_kingdom
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
-			factor = 10
+			factor = 1
 		}
 
 		available = {
 
 		}
-
+		
 		bypass = {
 
 		}
@@ -2693,35 +923,36 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		complete_tooltip = {
+
+		}
 
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1.0
-				uses = 2
-				category = bb_tech
-			}
+
 		}
 	}
 
-	focus = {
-		id = UKR_destroyer_catchup_1
-		icon = GFX_goal_generic_navy_anti_submarine
-		prerequisite = { focus = UKR_shipbuilding_legacy }
+
+focus = {
+		id = UKR_habsburg_legacy
+		icon = GFX_
+		prerequisite = { focus = UKR_red_prince}
+		mutually_exclusive = { focus =  }
 		x = -2
 		y = 2
-		relative_position_id = UKR_access_to_the_sea
+		relative_position_id = UKR_our_kingdom
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
-			factor = 20
+			factor = 1
 		}
 
 		available = {
 
 		}
-
+		
 		bypass = {
 
 		}
@@ -2729,74 +960,35 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		complete_tooltip = {
+
+		}
 
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1.0
-				uses = 2
-				category = dd_tech
-			}
+
 		}
 	}
 
-	focus = {
-		id = UKR_cruiser__catchup_1
-		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = UKR_shipbuilding_legacy }
-		x = 0
-		y = 2
-		relative_position_id = UKR_access_to_the_sea
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1.0
-				uses = 2
-				category = cl_tech
-				category = ca_tech
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_raiding_focus
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = UKR_destroyer_catchup_1 }
-		prerequisite = { focus = UKR_cruiser__catchup_1 }
-		mutually_exclusive = { focus = UKR_capital_focus }
-		x = -1
+focus = {
+		id = UKR_austrian_military_experience
+		icon = GFX_
+		prerequisite = { focus = UKR_habsburg_legacy}
+		mutually_exclusive = { focus =  }
+		x = -2
 		y = 3
-		relative_position_id = UKR_access_to_the_sea
+		relative_position_id = UKR_our_kingdom
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
-			factor = 20
+			factor = 1
 		}
 
 		available = {
 
 		}
-
+		
 		bypass = {
 
 		}
@@ -2804,38 +996,35 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		complete_tooltip = {
+
+		}
 
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = naval_doc_bonus
-				cost_reduction = 0.25
-				uses = 2
-				category = cat_trade_interdiction
-			}
+
 		}
 	}
-
 	focus = {
-		id = UKR_capital_focus
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = UKR_cruiser__catchup_1 }
-		prerequisite = { focus = UKR_battleship_catchup_1 }
-		mutually_exclusive = { focus = UKR_raiding_focus }
-		x = 1
-		y = 3
-		relative_position_id = UKR_access_to_the_sea
+		id = UKR_royal_vpk
+		icon = GFX_
+		prerequisite = { focus = UKR_austrian_military_experience}
+		prerequisite = { focus = UKR_royal_guard}
+		mutually_exclusive = { focus =  }
+		x = -2
+		y = 4
+		relative_position_id = UKR_our_kingdom
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 
 		available = {
 
 		}
-
+		
 		bypass = {
 
 		}
@@ -2843,17 +1032,14 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		complete_tooltip = {
+
+		}
 
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = naval_doc_bonus
-				cost_reduction = 0.25
-				uses = 2
-				category = cat_fleet_in_being
-			}
+
 		}
 	}
 
 }
-
