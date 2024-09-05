@@ -236,4 +236,27 @@ country_event = {
 
 }
 
+country_event = {
+	id = kt_romania.10
+	title = kt_romania.10.t
+	desc = kt_romania.1.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kt_romania.10.a
+		hidden_effect = {
+			complete_national_focus = ROM_pol_5
+			complete_national_focus = ROM_pol_d_1
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.3
+			}
+		}
+			
+	}
+	
+}
+
 

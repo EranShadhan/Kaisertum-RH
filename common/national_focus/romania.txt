@@ -1343,7 +1343,7 @@ focus = {
 		}
 
 		available = {
-			always = no
+
 		}
 
 		bypass = {
@@ -1354,7 +1354,7 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		
+	cost = 5		
 
 		completion_reward = {
 			add_political_power = 75
@@ -2927,6 +2927,7 @@ focus = {
 					ROM_total_equality
 				}
 				998 = { add_core_of = ROM }
+				998 = {set_demilitarized_zone = no }
 			}
 	}
 
@@ -3476,10 +3477,19 @@ focus = {
 			
 	
 			completion_reward = {
-				
-			}
-	}
 
+				BUL = {
+				start_civil_war = {
+					ideology = democratic
+					size = 0.75
+					capital = 48
+					states = { 48 108 803 801 }
+				}
+
+				}
+			}
+
+		}
 	focus = {
 
 		id = ROM_pol_d_20
@@ -3548,7 +3558,9 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				BUL = {
+					set_cosmetic_tag = ROM_SIMP
+				}
 			}
 	}
 
