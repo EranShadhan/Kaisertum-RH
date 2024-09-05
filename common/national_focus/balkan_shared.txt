@@ -10,7 +10,7 @@ joint_focus = {
 	#prerequisite = { focus = NORDIC_strengthen_ties }
 	#prerequisite = { focus = NORDIC_mutual_guarantees }
 
-	x = 90
+	x = 95
 	y = 1
 	#relative_position_id = NORDIC_mutual_guarantees
 	cost = 10
@@ -28,21 +28,20 @@ joint_focus = {
 
 
 	completion_reward = {
-		
+		add_political_power = 100
 	}
 }
 
 joint_focus = {
-	id = BALKAN_joint_united_front2
+	id = BALKAN_tech_exchange
 	
 	
-	icon = GFX_focus_BUL_the_unification_of_the_balkans
-		text_icon = joint_focus_style
-
+	icon = GFX_byzantine_eagle
+	text_icon = joint_focus_style
 
 	prerequisite = { focus = BALKAN_joint_united_front }
 
-	x = 1
+	x = 0
 	y = 1
 	relative_position_id = BALKAN_joint_united_front
 	cost = 10
@@ -60,6 +59,6 @@ joint_focus = {
 
 
 	completion_reward = {
-		
+add_to_tech_sharing_group = balkan_united_research
 	}
 }
