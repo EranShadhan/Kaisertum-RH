@@ -109,6 +109,8 @@ recruit_character = SOV_pavel_rybalko
 ####
 
 capital = 219
+puppet = SIK
+puppet = MON
 
 starting_train_buffer = 3.0
 
