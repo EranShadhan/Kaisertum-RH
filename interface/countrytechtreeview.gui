@@ -3284,7 +3284,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1934"
+					text = "1918"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -3297,7 +3297,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1937"
+					text = "1930"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -3310,7 +3310,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1938"
+					text = "1931"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -3323,7 +3323,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1939"
+					text = "1932"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -3336,7 +3336,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1940"
+					text = "1935"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
