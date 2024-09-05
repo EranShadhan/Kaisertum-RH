@@ -152,7 +152,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
-	 UKR_red_prince
+	 UKR_king_of_ukraine
 	}
 }
 

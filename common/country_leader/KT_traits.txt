@@ -3,8 +3,15 @@ leader_traits = {
 UKR_red_prince = {
 		random = no
 		stability_factor = 0.1
-		monthly_population = 0.05
+		political_power_gain = 0.15
+		monthly_population = 0.15
 	}
+UKR_king_of_ukraine = {
+    random = no
+    stability_factor = 0.1
+    war_support_factor = 0.1
+    conscription_factor = 0.15
+}
 
 ROM_playboy_king = {
 	random = no

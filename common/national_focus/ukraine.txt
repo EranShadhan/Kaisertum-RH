@@ -110,7 +110,15 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 120
+			if = {
+                limit = {
+                has_dlc = "La Resistance"
+                has_intelligence_agency = no
+            }
+            hidden_effect = { create_intelligence_agency = yes }
+            }
+            custom_effect_tooltip = "You will receive an intelligence agency."
+            add_stability = 0.05
 		}
 	}
 
@@ -146,7 +154,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = UKR_suppress_socialists
+		id = UKR_suppress_communist
 		icon = GFX_
 		prerequisite = { focus = UKR_expand_varta}
 		x = 18
@@ -172,8 +180,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 120
-		}
+			add_popularity = { ideology = communism popularity = -0.05}	
+			add_stability = 0.05	
+        }
 	}
 	
 	focus = {
@@ -696,7 +705,7 @@ focus = {
 		}
 
 		available = {
-
+           has_government = neutrality
 		}
 		
 		bypass = {
@@ -712,7 +721,8 @@ focus = {
 		}
 
 		completion_reward = {
-
+           add_country_leader_trait = UKR_red_prince 
+           add_political_power = 100
 		}
 	}
 	

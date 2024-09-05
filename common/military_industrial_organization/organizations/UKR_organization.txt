@@ -1,0 +1,209 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+#####################
+
+UKR_zhbtz_organization = {
+	include = generic_tank_organization  
+	icon = GFX_idea_zhbtz
+	
+	allowed = {	
+		tag = UKR 
+	}
+	
+	available = {
+	FROM = {
+	has_full_control_of_state = 201
+	}
+   }	
+}
+
+UKR_kbtz_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_kbtz
+	
+	allowed = {	
+		tag = UKR 
+	}
+	
+	available = {
+     FROM = {
+	has_full_control_of_state = 202
+	}
+	}
+}
+
+
+UKR_hkbm_organization = {
+	include = generic_heavy_tank_organization
+	icon = GFX_idea_hkbm
+	
+	allowed = {	
+		tag = UKR 
+	}
+
+	available = {
+	FROM = {
+	has_full_control_of_state = 221
+	}	
+	}
+}
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+UKR_chsz_organization = {
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_chsz
+	
+	allowed = {	
+		tag = UKR 
+	}
+}
+
+UKR_srdsc_organization = {
+	include = generic_black_sea_fleet_organization
+	icon = GFX_idea_UKR_srdsc
+	
+	allowed = {	
+		tag = UKR 
+	}
+
+}
+
+UKR_thunderbird_organization = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_UKR_thunderbird
+	
+	allowed = {	
+		tag = UKR 
+	}
+
+	available = {
+		FROM = {
+			has_tech = radio_detection
+		}
+	}
+}
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+UKR_haz_organization = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_HAZ
+	
+	allowed = {	
+		tag = UKR
+	}
+
+}
+
+UKR_motorsich_organization = {
+	include = generic_multi_role_aircraft_organization
+	icon = GFX_idea_MotorSich
+	
+	allowed = {	
+		tag = UKR 
+	}
+	available = {
+	FROM = {
+	has_full_control_of_state = 202
+	}
+   }
+}
+
+UKR_aviant_organization = {
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_Aviant
+	
+	allowed = {	
+		tag = UKR 
+	}
+
+	available = {
+		FROM = {
+		has_full_control_of_state = 202
+		}
+	}
+	
+}
+
+UKR_anatra_organization = {
+	include = generic_naval_aircraft_organization
+	icon = GFX_idea_Anatra
+	
+	allowed = {	
+		tag = UKR 
+	}
+}
+
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+UKR_sgc_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_UKR_artillery_focus
+	
+	allowed = {	
+		tag = UKR 
+	}
+
+	available = {
+		FROM = {
+			
+		}
+	}
+}
+
+UKR_dob_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+	
+	allowed = {	
+		tag = UKR 
+	}
+}
+
+UKR_zaz_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_zaz
+	
+	allowed = {	
+		tag = UKR 
+	}
+	
+	available = {
+		FROM = {
+			
+		}
+	}
+}
