@@ -1631,7 +1631,7 @@ focus_tree = {
 				
 			}
 			
-		x = -8
+		x = -5
 		y = 1
 
 		cost = 5
@@ -1806,7 +1806,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = YUG_rural_investements
-				years = 3
+				years = 1
 			}
 		}
 	}
@@ -2216,18 +2216,23 @@ focus_tree = {
 			736 = {
 				add_core_of = YUG
 			}
+			declare_war_on = {
+				target = ITA
+				type = annex_everything
+			}
 		}
 	}
+	
 	focus = {
-		id = YUG_claim_cornitha
+		id = YUG_core_balkans
 		icon = GFX_
 		relative_position_id = YUG_claim_litorale
 		prerequisite = { focus = YUG_claim_litorale }
 		available = {
-				
-				
-				
+			YUG = {
+				controls_state = 159
 			}
+		}
 			
 		x = 0
 		y = 1
@@ -2249,286 +2254,76 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-			1034 = {
+			white_peace = {
+				tag = ITA
+				message = yug_italian_tito_war
+			}
+			declare_war_on = {
+				target = BUL
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SER
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = ALB
+				type = annex_everything
+			}
+			934 = {
 				add_core_of = YUG
 			}
-			1035 = {
+			979 = {
+				add_core_of = YUG
+			}
+			44 = {
+				add_core_of = YUG
+			}
+			805 = {
+				add_core_of = YUG
+			}
+			731 = {
+				add_core_of = YUG
+			}
+			106 = {
+				add_core_of = YUG
+			}
+			108 = {
+				add_core_of = YUG
+			}
+			803 = {
+				add_core_of = YUG
+			}
+			48 = {
+				add_core_of = YUG
+			}
+			212 = {
+				add_core_of = YUG
+			}
+			801 = {
+				add_core_of = YUG
+			}
+			211 = {
+				add_core_of = YUG
+			}
+			77 = {
+				add_core_of = YUG
+			}
+			981 = {
+				add_core_of = YUG
+			}
+			184 = {
+				add_core_of = YUG
+			}
+			341 = {
+				add_core_of = YUG
+			}
+			797 = {
 				add_core_of = YUG
 			}
 		}
 	}
-	focus = {
-		id = YUG_invade_salonica_pact
-		icon = GFX_
-		relative_position_id = YUG_claim_cornitha
-		prerequisite = { focus = YUG_claim_cornitha }
-		available = {
-				
-				
-				
-			}
-			
-		x = 0
-		y = 1
-
-		cost = 5
-		
-			ai_will_do = {
-			
-				base = 0
-			
-			}
-			
-		available_if_capitulated = yes
-		
-		search_filters = {  
-				
-				
-				
-			}
-			
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = YUG_serbian_rebels
-		icon = GFX_
-		relative_position_id = YUG_invade_salonica_pact
-		prerequisite = { focus = YUG_invade_salonica_pact }
-		available = {
-				
-				
-				
-			}
-			
-		x = 0
-		y = 1
-
-		cost = 5
-		
-			ai_will_do = {
-			
-				base = 0
-			
-			}
-			
-		available_if_capitulated = yes
-		
-		search_filters = {  
-				
-				
-				
-			}
-			
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = YUG_bulgarian_socialist
-		icon = GFX_
-		relative_position_id = YUG_invade_salonica_pact
-		prerequisite = { focus = YUG_invade_salonica_pact }
-		available = {
-				
-				
-				
-			}
-			
-		x = 2
-		y = 1
-
-		cost = 5
-		
-			ai_will_do = {
-			
-				base = 0
-			
-			}
-			
-		available_if_capitulated = yes
-		
-		search_filters = {  
-				
-				
-				
-			}
-			
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = YUG_turkish_volunteers
-		icon = GFX_
-		relative_position_id = YUG_invade_salonica_pact
-		prerequisite = { focus = YUG_invade_salonica_pact }
-		available = {
-				
-				
-				
-			}
-			
-		x = -2
-		y = 1
-
-		cost = 5
-		
-			ai_will_do = {
-			
-				base = 0
-			
-			}
-			
-		available_if_capitulated = yes
-		
-		search_filters = {  
-				
-				
-				
-			}
-			
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = YUG_sabotage_italy
-		icon = GFX_
-		relative_position_id = YUG_claim_litorale
-		prerequisite = { focus = YUG_claim_litorale }
-		available = {
-				
-				
-				
-			}
-			
-		x = -4
-		y = 1
-
-		cost = 5
-		
-			ai_will_do = {
-			
-				base = 0
-			
-			}
-			
-		available_if_capitulated = yes
-		
-		search_filters = {  
-				
-				
-				
-			}
-			
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = YUG_infiltrate_the_military
-		icon = GFX_
-		relative_position_id = YUG_sabotage_italy
-		prerequisite = { focus = YUG_sabotage_italy }
-		available = {
-				
-				
-				
-			}
-			
-		x = 1
-		y = 1
-
-		cost = 5
-		
-			ai_will_do = {
-			
-				base = 0
-			
-			}
-			
-		available_if_capitulated = yes
-		
-		search_filters = {  
-				
-				
-				
-			}
-			
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = YUG_infiltrate_the_airforce
-		icon = GFX_
-		relative_position_id = YUG_sabotage_italy
-		prerequisite = { focus = YUG_sabotage_italy }
-		available = {
-				
-				
-				
-			}
-			
-		x = -1
-		y = 1
-
-		cost = 5
-		
-			ai_will_do = {
-			
-				base = 0
-			
-			}
-			
-		available_if_capitulated = yes
-		
-		search_filters = {  
-				
-				
-				
-			}
-			
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = YUG_infiltrate_governament
-		icon = GFX_
-		relative_position_id = YUG_sabotage_italy
-		prerequisite = { focus = YUG_sabotage_italy }
-		available = {
-				
-				
-				
-			}
-			
-		x = 0
-		y = 2
-
-		cost = 5
-		
-			ai_will_do = {
-			
-				base = 0
-			
-			}
-			
-		available_if_capitulated = yes
-		
-		search_filters = {  
-				
-				
-				
-			}
-			
-		completion_reward = {
-
-		}
-	}
+	
 	focus = {
 		id = YUG_the_great_mareshal
 		icon = GFX_
@@ -2540,7 +2335,7 @@ focus_tree = {
 				
 			}
 			
-		x = 4
+		x = 5
 		y = 1
 
 		cost = 5

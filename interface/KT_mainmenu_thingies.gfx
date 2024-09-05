@@ -16,7 +16,6 @@ spriteTypes = {
         animation_rate_fps = 1
         looping = yes
         play_on_show = yes
-        pause_on_loop = no
         
         allwaystransparent = yes
     }
