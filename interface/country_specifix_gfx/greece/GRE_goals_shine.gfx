@@ -2036,7 +2036,7 @@ SpriteType = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GRE/focus_thefocus_GRE_socialist_theologians_KKE.dds"
+			animationmaskfile = "gfx/interface/goals/GRE/focus_GRE_socialist_theologians_KKE.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)

@@ -1363,9 +1363,6 @@ GRE_macedonean_spirit = {
 				production_speed_buildings_factor = -0.3
 				conscription_factor = -0.5
 				monthly_population = -0.75
-				ai_get_ally_desire_factor = -1000
-				ai_call_ally_desire_factor = -1000
-				ai_join_ally_desire_factor = -1000
 				join_faction_tension = 10
 				justify_war_goal_time = 1
 			}
@@ -1396,9 +1393,6 @@ GRE_macedonean_spirit = {
 				production_speed_buildings_factor = -0.2
 				conscription_factor = -0.5
 				monthly_population = -0.75
-				ai_get_ally_desire_factor = -1000
-				ai_call_ally_desire_factor = -1000
-				ai_join_ally_desire_factor = -1000
 				join_faction_tension = 10
 				justify_war_goal_time = 1
 			}
@@ -1429,9 +1423,6 @@ GRE_macedonean_spirit = {
 				production_speed_buildings_factor = -0.2
 				conscription_factor = -0.25
 				monthly_population = -0.5
-				ai_get_ally_desire_factor = -1000
-				ai_call_ally_desire_factor = -1000
-				ai_join_ally_desire_factor = -1000
 				join_faction_tension = 10
 				justify_war_goal_time = 1
 			}
@@ -1462,9 +1453,6 @@ GRE_macedonean_spirit = {
 				production_speed_buildings_factor = -0.5
 				conscription_factor = -0.25
 				monthly_population = -0.5
-				ai_get_ally_desire_factor = -1000
-				ai_call_ally_desire_factor = -1000
-				ai_join_ally_desire_factor = -1000
 				join_faction_tension = 10
 				justify_war_goal_time = 1
 			}
@@ -1495,9 +1483,6 @@ GRE_macedonean_spirit = {
 				production_speed_buildings_factor = -0.2
 				conscription_factor = -0.25
 				monthly_population = -0.5
-				ai_get_ally_desire_factor = -1000
-				ai_call_ally_desire_factor = -1000
-				ai_join_ally_desire_factor = -1000
 				join_faction_tension = 10
 				justify_war_goal_time = 1
 			}
@@ -1528,9 +1513,6 @@ GRE_macedonean_spirit = {
 				production_speed_buildings_factor = -0.1
 				conscription_factor = -0.15
 				monthly_population = -0.25
-				ai_get_ally_desire_factor = -1000
-				ai_call_ally_desire_factor = -1000
-				ai_join_ally_desire_factor = -1000
 				join_faction_tension = 10
 				justify_war_goal_time = 1
 			}

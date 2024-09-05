@@ -1,0 +1,8 @@
+
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_report_event_GRE_smrna_fire"
+		texturefile = "gfx/event_pictures/news_event_GRE_smrna_fire.dds"
+	}
+}

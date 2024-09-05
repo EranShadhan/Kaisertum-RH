@@ -14,6 +14,7 @@ joint_focus = {
 	y = 1
 	#relative_position_id = NORDIC_mutual_guarantees
 	cost = 10
+  joint_trigger = { BALKAN_is_balkan = yes }
 
 	available = {
 		
@@ -30,21 +31,23 @@ joint_focus = {
 	completion_reward = {
 		add_political_power = 100
 	}
+	
 }
 
 joint_focus = {
 	id = BALKAN_tech_exchange
 	
-	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
 	icon = GFX_byzantine_eagle
 	text_icon = joint_focus_style
 
 	prerequisite = { focus = BALKAN_joint_united_front }
 
-	x = 0
+	x = 1
 	y = 1
 	relative_position_id = BALKAN_joint_united_front
-	cost = 10
+	cost = 5
 
 	available = {
 		
@@ -59,6 +62,52 @@ joint_focus = {
 
 
 	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
 add_to_tech_sharing_group = balkan_united_research
+	}
+
+	completion_reward_joint_member = {
+		add_to_tech_sharing_group = balkan_united_research
+	}
+}
+
+joint_focus = {
+	id = BALKAN_war_with_hungary
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_GRE_The_Thracian_Liberation_Army
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_joint_united_front }
+
+	x = -1
+	y = 1
+	relative_position_id = BALKAN_joint_united_front
+	cost = 5
+
+	available = {
+		has_war_with = HUN
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+add_to_tech_sharing_group = balkan_united_research
+	}
+
+	completion_reward_joint_member = {
+		add_to_tech_sharing_group = balkan_united_research
 	}
 }
