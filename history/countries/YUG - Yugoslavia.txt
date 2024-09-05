@@ -32,10 +32,10 @@ YUG = {
 		YUG_var_speed = -0.05
 	}
 	set_variable = {
-		YUG_var_cd = 0.1
+		YUG_var_cd = 0.0
 	}
 	set_variable = {
-		YUG_var_ca = 0.1
+		YUG_var_ca = 0.0
 	}
 	set_variable = {
 		YUG_var_dig = -0.10

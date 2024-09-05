@@ -31,6 +31,36 @@ YUG_INF_01 =
 	}
 }
 
+YUG_PEN_01 = 
+{
+	name = "Kaznena bojna"
+
+	for_countries = { YUG }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Kaznena bojna"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Kaznena bojna" }
+		2 = { "%d. Kaznena bojna" }
+		3 = { "%d. Kaznena bojna" }
+		4 = { "%d. Kaznena bojna" }
+		5 = { "%d. Kaznena bojna" }
+		6 = { "%d. Kaznena bojna" }
+		7 = { "%d. Kaznena bojna" }
+		8 = { "%d. Kaznena bojna" }
+		9 = { "%d. Kaznena bojna" }
+		10 = { "%d. Kaznena bojna" }
+
+	}
+}
+
 YUG_CAV_01 = 
 {
 	name = "Konjičke divizije"

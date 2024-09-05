@@ -23,7 +23,6 @@ leader_traits = {
 		random = no
 		war_support_factor = 0.10
 		war_support_weekly = 0.0025
-		conscription = 0.1
 		cas_damage_reduction = 0.10
 		max_planning_factor = 0.15
 		army_core_attack_factor = 0.1

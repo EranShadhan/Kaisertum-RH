@@ -378,5 +378,88 @@ ideas = {
 				defense_bonus_against = 0.1
 			}
 		}
+		
+		YUG_focred_distribution_of_land= {
+
+			picture = generic_local_self_management
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.005
+				political_power_factor = -0.15
+				consumer_goods_factor = 0.15
+			}
+		}
+		
+		YUG_5yearplan= {
+
+			picture = generic_local_self_management
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				monthly_population = -0.20
+				global_building_slots = 1
+				industrial_capacity_factory = 0.15
+			}
+		}
+		
+		YUG_rural_investements= {
+
+			picture = generic_local_self_management
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				monthly_population = 0.1
+				industrial_capacity_factory = -0.25
+			}
+		}
+		YUG_seized_italian_business= {
+
+			picture = generic_local_self_management
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.35
+				monthly_population = -0.33
+			}
+		}
 	}
 }

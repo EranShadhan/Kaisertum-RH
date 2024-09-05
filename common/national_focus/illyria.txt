@@ -12,7 +12,7 @@ focus_tree = {
 
 	default = no
 
-	continuous_focus_position = { x = 20 y = 1600 }
+	continuous_focus_position = { x = 20 y = 3000 }
 	focus = {
 		id = YUG_anti_austrian_preparements
 		icon = GFX_YUG_yug_anti_austrian_mob
@@ -1631,7 +1631,7 @@ focus_tree = {
 				
 			}
 			
-		x = -7
+		x = -8
 		y = 1
 
 		cost = 5
@@ -1651,7 +1651,10 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-
+			add_timed_idea = {
+				idea = YUG_focred_distribution_of_land
+				days = 365
+			}
 		}
 	}
 	focus = {
@@ -1685,11 +1688,19 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-
+			add_to_variable = {
+				var = YUG_var_plan_speed
+				value = 0.05
+			}
+			add_to_variable = {
+				var = YUG_var_cd
+				value = 0.05
+				tooltip = YUG_form_local_militiasdefence
+			}
 		}
 	}
 	focus = {
-		id = YUG_5year_plan
+		id = YUG_3year_plan
 		icon = GFX_
 		relative_position_id = YUG_destribute_the_land
 		prerequisite = { focus = YUG_destribute_the_land }
@@ -1719,21 +1730,24 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-
+			add_timed_idea = {
+				idea = YUG_5yearplan
+				years = 3
+			}
 		}
 	}
 	focus = {
 		id = YUG_seize_italian_assets
 		icon = GFX_
-		relative_position_id = YUG_5year_plan
-		prerequisite = { focus = YUG_5year_plan }
+		relative_position_id = YUG_3year_plan
+		prerequisite = { focus = YUG_3year_plan }
 		available = {
 				
 				
 				
 			}
 			
-		x = 0
+		x = 1
 		y = 1
 
 		cost = 5
@@ -1753,7 +1767,47 @@ focus_tree = {
 			}
 			
 		completion_reward = {
+			add_timed_idea = {
+				idea = YUG_seized_italian_business
+				years = 1
+			}
+		}
+	}
+	focus = {
+		id = YUG_invest_in_the_countryside
+		icon = GFX_
+		relative_position_id = YUG_3year_plan
+		prerequisite = { focus = YUG_3year_plan }
+		available = {
+				
+				
+				
+			}
+			
+		x = -1
+		y = 1
 
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+			add_timed_idea = {
+				idea = YUG_rural_investements
+				years = 3
+			}
 		}
 	}
 	focus = {
@@ -1786,50 +1840,23 @@ focus_tree = {
 				
 			}
 			
-		completion_reward = {
-
+	completion_reward = {
+		add_to_variable = {
+			var = YUG_var_orgloss
+			value = -0.05
+				}
+		add_to_variable = {
+				var = YUG_var_org
+				value = 0.1
+				tooltip = YUG_form_local_guerilla_warfare
+			}
 		}
 	}
 	focus = {
-		id = YUG_prepare_for_slavic_liberation
+		id = YUG_recruit_partisans
 		icon = GFX_
 		relative_position_id = YUG_guerilla_warfare
-		prerequisite = { focus = YUG_form_local_militias }
 		prerequisite = { focus = YUG_guerilla_warfare }
-		available = {
-				
-				
-				
-			}
-			
-		x = -1
-		y = 1
-
-		cost = 5
-		
-			ai_will_do = {
-			
-				base = 0
-			
-			}
-			
-		available_if_capitulated = yes
-		
-		search_filters = {  
-				
-				
-				
-			}
-			
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = YUG_communist_bulgarian_militias
-		icon = GFX_
-		relative_position_id = YUG_prepare_for_slavic_liberation
-		prerequisite = { focus = YUG_prepare_for_slavic_liberation }
 		available = {
 				
 				
@@ -1856,7 +1883,300 @@ focus_tree = {
 			}
 			
 		completion_reward = {
+			division_template = {
+				name = "Partizani"
+				division_names_group = YUG_GAR_01
+				priority = 0
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+				}
+				support = {
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "division_template = \"Partizani\" start_experience_factor = 0.5"
+					owner = YUG
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "division_template = \"Partizani\" start_experience_factor = 0.5"
+					owner = YUG
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "division_template = \"Partizani\" start_experience_factor = 0.5"
+					owner = YUG
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "division_template = \"Partizani\" start_experience_factor = 0.5"
+					owner = YUG
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "division_template = \"Partizani\" start_experience_factor = 0.5"
+					owner = YUG
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "division_template = \"Partizani\" start_experience_factor = 0.5"
+					owner = YUG
+				}
+			}
+		}
+	}
+	focus = {
+		id = YUG_penal_battalions
+		icon = GFX_
+		relative_position_id = YUG_recruit_partisans
+		prerequisite = { focus = YUG_recruit_partisans }
+		available = {
+				
+				
+				
+			}
+			
+		x = 0
+		y = 1
 
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+			completion_reward = {
+				division_template = {
+					name = "Kaznena bojna"
+					division_names_group = YUG_PEN_01
+					priority = 1
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+					}
+					support = {
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "division_template = \"Kaznena bojna\" start_experience_factor = 0"
+						owner = YUG
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "division_template = \"Kaznena bojna\" start_experience_factor = 0"
+						owner = YUG
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "division_template = \"Kaznena bojna\" start_experience_factor = 0"
+						owner = YUG
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "division_template = \"Kaznena bojna\" start_experience_factor = 0"
+						owner = YUG
+					}
+				}
+			}
+	}
+	focus = {
+		id = YUG_the_red_army
+		icon = GFX_
+		relative_position_id = YUG_guerilla_warfare
+		prerequisite = { focus = YUG_guerilla_warfare }
+		prerequisite = { focus = YUG_form_local_militias }
+		prerequisite = { focus = YUG_invest_in_the_countryside }
+		prerequisite = { focus = YUG_seize_italian_assets }
+		available = {
+				
+				
+				
+			}
+			
+		x = -2
+		y = 2
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+			add_to_variable = {
+				var = YUG_army_leader_start_attack_level
+				value = 1
+				}
+			add_to_variable = {
+				var = YUG_experience_loss_factor
+				value = -0.15
+				tooltip = YUG_YUG_the_red_army
+			}
+		}
+	}
+	focus = {
+		id = YUG_workers_of_the_red_army
+		icon = GFX_
+		relative_position_id = YUG_the_red_army
+		prerequisite = { focus = YUG_the_red_army }
+		available = {
+				
+				
+				
+			}
+			
+		x = 0
+		y = 2
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+			add_to_variable = {
+				var = YUG_industrial_capacity_dockyard
+				value = 0.25
+				}
+			add_to_variable = {
+				var = YUG_industrial_capacity_factory
+				value = 0.10
+				tooltip = YUG_YUG_workers_of_the_red_army
+			}
+		}
+	}
+	focus = {
+		id = YUG_fix_logistical_army
+		icon = GFX_
+		relative_position_id = YUG_the_red_army
+		prerequisite = { focus = YUG_the_red_army }
+		available = {
+				
+				
+				
+			}
+			
+		x = 1
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+			add_to_variable = {
+				var = YUG_var_dig
+				value = 0.1
+				}
+			add_to_variable = {
+					var = YUG_var_speed
+					value = 0.1
+					tooltip = YUG_YUG_fix_logistical_army
+				}
+		}
+	}
+	focus = {
+		id = YUG_teach_planning
+		icon = GFX_
+		relative_position_id = YUG_the_red_army
+		prerequisite = { focus = YUG_the_red_army }
+		available = {
+				
+				
+				
+			}
+			
+		x = -1
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+			add_to_variable = {
+				var = YUG_var_plan_speed
+				value = 0.15
+			}
+			add_to_variable = {
+				var = YUG_var_breaktrough
+				value = 0.1
+				tooltip = YUG_YUG_teach_planning
+			}
 		}
 	}
 	focus = {
