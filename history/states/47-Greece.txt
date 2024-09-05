@@ -3,10 +3,10 @@ state={
 	id=47
 	name="STATE_47"
 	resources={
-		steel=3.000
-		chromium=12.000
-		aluminium=30.000
-		tungsten=10.000
+		steel=4.000
+		chromium=17.000
+		aluminium=38.000
+		tungsten=11.000
 	}
 
 	history={
@@ -14,15 +14,14 @@ state={
 		victory_points = {
 			4109 20 
 		}
-		
-		victory_points = {
-			7127 3 
-		}
 		victory_points = {
 			3988 1 
 		}
+		victory_points = {
+			976 1 
+		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			industrial_complex = 3
 			dockyard = 1
 			air_base = 4
@@ -37,10 +36,10 @@ state={
 	}
 
 	provinces={
-		976 1109 1205 3988 4109 7127 11895 12001 
+		976 1109 1205 3988 4109 11895 12001 
 	}
-	manpower=2690500
+	manpower=2555975
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=large_city
 	local_supplies=0.000
 }

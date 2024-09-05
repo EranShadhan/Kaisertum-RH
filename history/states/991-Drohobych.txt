@@ -2,13 +2,13 @@ state={
 	id=991
 	name="STATE_991"
 
-resources={
-oil=17
+	resources={
+		oil=17
 	}
 
 	history={
 		victory_points = {
-			11411 1 
+			6483 1 
 		}
 		owner = AUS
 		buildings = {

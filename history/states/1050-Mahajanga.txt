@@ -1,0 +1,29 @@
+state={
+	id=1050
+	name="STATE_1050"
+
+	history={
+		add_core_of = MAD
+		owner = FRA
+		victory_points = {
+			13543 1 
+		}
+		buildings = {
+			infrastructure = 1
+			13543 = {
+				naval_base = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		5185 8188 11015 13500 13514 13517 13520 13522 13523 13524 13525 13527 13530 13531 13534 13535 13536 13537 13538 13539 13540 13541 13542 13543 13545 
+	}
+	manpower=596000
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

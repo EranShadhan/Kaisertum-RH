@@ -1,26 +1,27 @@
 
-state = {
-	id = 516
-	name = "STATE_516" # Taymyria / Dudinka
-	manpower = 6004
-	
-	state_category = pastoral
+state={
+	id=516
+	name="STATE_516"
 
-	history = {
+	history={
 		victory_points = {
-			4859 1
+			4859 1 
 		}
 		owner = SOV
 		buildings = {
 			infrastructure = 1
+
 		}
 		add_core_of = SOV
 		add_core_of = TAY
+
 	}
 
-	provinces = {
-		  2923 2972 3336 4692 4733  4859  10607 10635  11261 11328 12643  13064  
+	provinces={
+		2923 2972 3336 4692 4733 4859 10607 10635 11261 11328 12643 12687 13064 
 	}
-
-	local_supplies = 0.0 
+	manpower=16004
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
 }

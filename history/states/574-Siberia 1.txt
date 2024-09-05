@@ -4,16 +4,17 @@ state = {
 	name = "STATE_574" # Yakutsk
 	manpower = 407866
 	
-	state_category = pastoral
+	state_category = town
 
 	history={
 		owner = SOV
 		victory_points = {
-			10641 1
+			10641 5
 		}
 		buildings = {
 			infrastructure = 1
-			air_base = 1
+			arms_factory = 1
+			air_base = 2
 		}
 		add_core_of = SOV
 		add_core_of = YAK

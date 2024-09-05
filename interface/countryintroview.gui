@@ -63,7 +63,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "intro_gui_button_one"
-			position = { x = 25 y = -18 }
+			position = { x = 35 y = -18 }
 			quadTextureSprite ="GFX_button_intro"
 			buttonText = "Credits"
 			buttonFont = "Main_22"
@@ -72,7 +72,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "intro_gui_button_two"
-			position = { x = 189 y = -18 }
+			position = { x = 145 y = -18 }
 			quadTextureSprite ="GFX_button_intro"
 			buttonText = "Lore"
 			buttonFont = "Main_22"
@@ -81,12 +81,60 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "intro_gui_button_three"
-			position = { x = 352 y = -18 }
+			position = { x = 255 y = -18 }
 			quadTextureSprite ="GFX_button_intro"
 			buttonText = "Path Guides"
 			buttonFont = "Main_22"
 			clicksound = click_ok
 			oversound = ui_menu_over
+		}
+		buttonType = {
+			name = "intro_gui_button_four"
+			position = { x = 365 y = -18 }
+			quadTextureSprite ="GFX_button_intro"
+			buttonText = "Mod Options"
+			buttonFont = "Main_22"
+			clicksound = click_ok
+			oversound = ui_menu_over
+		}
+	}
+
+	containerWindowType = {
+		name = "intro_gui_settings_container"
+		position = { x = 360 y = -100 }
+		size = { width = 220 height = 300 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		moveable = yes
+		orientation = CENTER
+		origo = center
+		clipping = no
+
+		background = {
+			name="bg_intro"
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+
+		buttonType = {
+			name = "intro_gui_button_settigns_exit"
+			position = { x = 50 y = 260 }
+			quadTextureSprite ="GFX_button_123x34"
+			buttonText = "Exit"
+			buttonFont = "Main_22"
+			clicksound = click_ok
+			oversound = ui_menu_over
+			shortcut = "ESCAPE"
+		}
+
+		buttonType = {
+			name = "intro_gui_button_settigns_one"
+			position = { x = 15 y = 15 }
+			quadTextureSprite = "GFX_button_intro"
+			buttonText = "State Names"
+			buttonFont = "Main_22"
+			clicksound = decisions_ui_button
+			oversound = ui_menu_over
+			pdx_tooltip = intro_gui_button_one_tt
 		}
 	}
 }

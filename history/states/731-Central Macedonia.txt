@@ -6,16 +6,24 @@ state={
 	history={
 		owner = GRE
 		victory_points = {
-			11818 5 
+			11818 10 
+		}
+		victory_points = {
+			3844 3 
 		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 3
 			air_base = 2
 			11818 = {
-				naval_base = 3
+				naval_base = 6
 
 			}
+			3844 = {
+				naval_base = 1
+
+			}
+
 
 		}
 		add_core_of = GRE
@@ -28,6 +36,6 @@ state={
 	}
 	manpower=1891700
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=large_town
 	local_supplies=0.000
 }

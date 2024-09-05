@@ -2,9 +2,10 @@
 state={
 	id=227
 	name="STATE_227"
-      resources={
-		steel=40
+	resources={
+		steel=40.000
 	}
+
 	history={
 		owner = SOV
 		buildings = {
@@ -20,7 +21,7 @@ state={
 	}
 
 	provinces={
-		3421 6474 6493 
+		3421 6474 6493 13395 
 	}
 	manpower=3767336
 	buildings_max_level_factor=1.000

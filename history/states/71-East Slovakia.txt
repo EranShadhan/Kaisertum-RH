@@ -1,26 +1,28 @@
+
 state={
 	id=71
 	name="STATE_71"
-	manpower = 1197800
-	
-	state_category = rural
-	
+
 	history={
 		victory_points = {
-			3581 3
+			3581 3 
 		}
 		owner = HUN
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
+
 		}
 		add_core_of = HUN
 		add_core_of = SLO
+
 	}
 
 	provinces={
-		555 581 3550 3581 6586 11554 6604
+		555 581 3550 3581 6586 11554 13448 
 	}
-
-	local_supplies=0.0 
+	manpower=1197800
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

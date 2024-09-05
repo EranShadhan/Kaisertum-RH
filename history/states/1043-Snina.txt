@@ -1,0 +1,23 @@
+state={
+	id=1043
+	name="STATE_1043"
+
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = HUN
+		add_core_of = SLO
+
+	}
+
+	provinces={
+		6604 11536  
+	}
+	manpower=25000
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,14 +1,13 @@
 state={
 	id=996
 	name="STATE_996"
-
-resources={
-oil=16
+	resources={
+		oil=16.000
 	}
 
 	history={
 		victory_points = {
-			
+			11691 2
 		}
 		owner = HUN
 		buildings = {
@@ -20,14 +19,13 @@ oil=16
 		add_core_of = HUN
 		add_claim_by = UKR
 
-
 	}
 
 	provinces={
-		11536 6604
+		11691 
 	}
 	manpower=26675
-	state_category=rural
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
 }

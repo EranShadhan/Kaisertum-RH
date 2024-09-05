@@ -1,0 +1,27 @@
+state={
+	id=1042
+	name="STATE_1042"
+
+	history={
+		owner = HUN
+		victory_points = {
+			13449 2 
+		}
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+
+		}
+		add_core_of = HUN
+		add_core_of = SLO
+
+	}
+
+	provinces={
+		9539 13446 13449 
+	}
+	manpower=100012
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

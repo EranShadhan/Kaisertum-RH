@@ -1,38 +1,36 @@
-
 state={
 	id=1022
 	name="STATE_1022"
-	manpower = 661607
-	
-	resources = {
-		steel = 18
+	resources={
+		steel=18.000
 	}
-	
-	state_category = city
 
 	history={
 		owner = SOV
 		victory_points = {
-			3686 20
+			3686 20 
 		}
 		victory_points = {
-			9680 1
+			9680 1 
 		}
 		victory_points = {
-			6704 1
+			6704 1 
 		}
 		buildings = {
 			infrastructure = 3
 			dockyard = 1
 			air_base = 3
-			3686 ={
+			3686 = {
 				naval_base = 10
 				coastal_bunker = 3
+
 			}
-			9680 ={
+			9680 = {
 				naval_base = 1
 				coastal_bunker = 1
+
 			}
+
 		}
 		add_core_of = SOV
 		add_core_of = CRI
@@ -40,13 +38,18 @@ state={
 		1939.1.1 = {
 			buildings = {
 				dockyard = 2
+
 			}
+
 		}
+
 	}
 
 	provinces={
-		3686 6704 9677 9680
+		705 3686 9677 9680 13376 13377 13378 13381 13383 
 	}
-
-	local_supplies=10.0 
+	manpower=661607
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=10.000
 }

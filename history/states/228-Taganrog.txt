@@ -2,9 +2,10 @@
 state={
 	id=228
 	name="STATE_228"
-      resources={
-		steel=16
+	resources={
+		steel=16.000
 	}
+
 	history={
 		owner = SOV
 		victory_points = {
@@ -20,7 +21,7 @@ state={
 	}
 
 	provinces={
-		6505 9446 9461 
+		6505 9446 9461 13397 
 	}
 	manpower=1592165
 	buildings_max_level_factor=1.000

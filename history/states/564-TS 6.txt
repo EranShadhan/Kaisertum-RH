@@ -1,14 +1,12 @@
 
 state={
 	id=564
-	name="STATE_564" # Ulan Ude
-	manpower = 370893
-	state_category = rural
+	name="STATE_564"
 	resources={
-		steel=10 # was: 20
-		chromium=12 # was: 34
-		tungsten=10 # was: 28
-		aluminium=4 # was: 8
+		steel=19.000
+		chromium=16.000
+		tungsten=13.000
+		aluminium=8.000
 	}
 
 	history={
@@ -25,11 +23,14 @@ state={
 		}
 		add_core_of = SOV
 		add_core_of = BYA
+
 	}
 
 	provinces={
-		1696 1762 1810 4716 4766 4835 4837 7736 7816 7835 10524 10528 10543 10658 12506 12575 12644 13152
+		1696 1762 4716 4766 4835 4837 7736 7816 7835 10524 10528 10658 12506 12575 12644 13152 13398 13399 13409 13411 13433 13434 
 	}
-
-	local_supplies=0.0 
+	manpower=390893
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }
