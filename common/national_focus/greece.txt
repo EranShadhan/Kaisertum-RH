@@ -11,14 +11,12 @@ focus_tree = {
 	
 
 	default = no
-
-	continuous_focus_position = { x = 20 y = 1600 }
-	
+shared_focus = BALKAN_joint_united_front
 	focus = {
 		id = GRE_what_is_our_future
 		icon = GFX_focus_SWE_refuge_from_war
 
-		
+		text_icon = joint_focus_style
 		available = {
 		}
 		x = 80
