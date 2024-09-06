@@ -111,3 +111,208 @@ joint_focus = {
 	
 	}
 }
+joint_focus = {
+	id = BALKAN_protecting_our_coast
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_GRE_balkan_subs
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_joint_united_front }
+
+	x = -3
+	y = 1
+	relative_position_id = BALKAN_joint_united_front
+	cost = 10
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	add_offsite_building = { type = dockyard level = 2 }
+	navy_experience = 25
+	}
+	completion_reward_joint_originator = {
+		add_offsite_building = { type = dockyard level = 1 }
+		navy_experience = 50
+	}
+
+	completion_reward_joint_member = {
+	}
+}
+joint_focus = {
+	id = BALKAN_balkan_march
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_generic_balkans_focus
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_joint_united_front }
+
+	x = 3
+	y = 1
+	relative_position_id = BALKAN_joint_united_front
+	cost = 10
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+
+	}
+	completion_reward_joint_originator = {
+		add_doctrine_cost_reduction = {
+	name = land_doc_bonus
+	cost_reduction = 0.5
+	uses = 3
+	category = land_doctrine
+						}
+		
+	}
+
+	completion_reward_joint_member = {
+			add_doctrine_cost_reduction = {
+	name = land_doc_bonus
+	cost_reduction = 0.25
+	uses = 2
+	category = land_doctrine
+						}
+	}
+}
+joint_focus = {
+	id = BALKAN_connect_our_capitals
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_generic_railroad
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_war_with_hungary focus = BALKAN_tech_exchange }
+
+	x = 0
+	y = 1
+	relative_position_id = BALKAN_war_with_hungary
+	cost = 5
+ mutually_exclusive = { focus = BALKAN_improve_tech}
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	custom_effect_tooltip = GRE_the_construction_of_railways_tt
+	hidden_effect = {
+	every_country = {
+					limit = {
+						capital_scope = {
+							OR = {
+								is_on_continent = europe
+								is_on_continent = asia
+								is_on_continent = middle_east
+							}
+						}
+						is_in_faction_with = GRE
+					}
+
+					if = {
+						limit = {
+							can_build_railway = {
+								start_state = ROOT.capital
+								target_state = THIS.capital
+								build_only_on_allied = yes
+							}
+						}
+						build_railway = {				
+							start_state = ROOT.capital
+							target_state = THIS.capital
+							build_only_on_allied = yes
+						}
+					}		
+				}
+				}
+	}	
+}
+
+joint_focus = {
+	id = BALKAN_improve_tech
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_generic_university_1
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_war_with_hungary focus = BALKAN_tech_exchange }
+    mutually_exclusive = { focus = BALKAN_connect_our_capitals}
+	x = 0
+	y = 1
+	relative_position_id = BALKAN_tech_exchange
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	custom_effect_tooltip = GRE_improved_tech_tt
+	hidden_effect = {
+	modify_tech_sharing_bonus = {
+         		id = balkan_united_research
+         		bonus = 0.05
+			}
+			}
+	}
+	completion_reward_joint_originator = {
+		
+	custom_effect_tooltip = GRE_improved_tech2_tt
+	hidden_effect = {
+	modify_tech_sharing_bonus = {
+         		id = balkan_united_research
+         		bonus = 0.05
+			}
+			}
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+
