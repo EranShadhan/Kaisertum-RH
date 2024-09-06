@@ -10,7 +10,7 @@
 
 UKR_zhbtz_organization = {
 	include = generic_tank_organization  
-	icon = gfx/interface/ideas/UKR/idea_UKR_zhbtz.dds 
+	icon = GFX_UKR_zhbt
 	
 	allowed = {	
 		tag = UKR 
@@ -51,7 +51,7 @@ UKR_zhbtz_organization = {
 
 UKR_kbtz_organization = {
 	include = generic_medium_tank_organization
-	icon = gfx/interface/ideas/UKR/idea_UKR_kbtz.dds
+	icon = GFX_UKR_kbtz
 	
 	allowed = {	
 		tag = UKR 
@@ -67,7 +67,7 @@ UKR_kbtz_organization = {
 
 UKR_hkbm_organization = {
 	include = generic_heavy_tank_organization
-	icon = gfx/interface/ideas/UKR/idea_UKR_hkbm.dds
+	icon = GFX_UKR_hkbm
 	
 	allowed = {	
 		tag = UKR 
@@ -92,7 +92,7 @@ UKR_hkbm_organization = {
 
 UKR_chsz_organization = {
 	include = generic_battle_line_ship_organization
-	icon = gfx/interface/ideas/UKR/idea_UKR_chsz.dds
+	icon = GFX_UKR_chsz
 	
 	allowed = {	
 		tag = UKR 
@@ -107,8 +107,8 @@ UKR_chsz_organization = {
 
 UKR_srdsc_organization = {
 	include = generic_black_sea_fleet_organization
-	icon = gfx/interface/ideas/UKR/idea_UKR_srdsc.dds
-	
+	icon = GFX_UKR_srdsc
+		
 	allowed = {	
 		tag = UKR 
 	}
@@ -121,7 +121,7 @@ UKR_srdsc_organization = {
 
 UKR_thunderbird_organization = {
 	include = generic_escort_ship_organization
-	icon = gfx/interface/ideas/UKR/idea_UKR_thunderbird.dds
+	icon = GFX_UKR_thunderbird
 	
 	allowed = {	
 		tag = UKR 
@@ -146,7 +146,7 @@ UKR_thunderbird_organization = {
 
 UKR_aviant_organization = {
 	include = generic_medium_aircraft_organization
-	icon = gfx/interface/ideas/UKR/idea_UKR_Aviant.dds
+	icon = GFX_UKR_aviant
 	
 	allowed = {	
 		tag = UKR 
@@ -162,7 +162,7 @@ UKR_aviant_organization = {
 
 UKR_anatra_organization = {
 	include = generic_naval_aircraft_organization
-	icon = gfx/interface/ideas/UKR/idea_UKR_Anatra.dds
+	icon = GFX_UKR_anatra
 	
 	allowed = {	
 		tag = UKR 
@@ -171,7 +171,7 @@ UKR_anatra_organization = {
 
 UKR_motorsich_organization = {
 	include = generic_multi_role_aircraft_organization
-	icon = gfx/interface/ideas/UKR/idea_UKR_MotorSich.dds
+	icon = GFX_UKR_motorsich
 	
 	allowed = {	
 		tag = UKR 
@@ -185,7 +185,7 @@ UKR_motorsich_organization = {
 
 UKR_haz_organization = {
 	include = generic_light_aircraft_organization
-	icon = gfx/interface/ideas/UKR/idea_UKR_HAZ.dds
+	icon = GFX_UKR_haz
 	
 	allowed = {	
 		tag = UKR
@@ -211,7 +211,7 @@ UKR_haz_organization = {
 
 UKR_sgc_organization = {
 	include = generic_artillery_organization
-	icon = gfx/interface/ideas/UKR/idea_UKR_artillery_focus.dds
+	icon = GFX_UKR_sgc
 	
 	allowed = {	
 		tag = UKR 
@@ -226,7 +226,7 @@ UKR_sgc_organization = {
 
 UKR_dob_organization = {
 	include = generic_infantry_equipment_organization
-	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+	icon = GFX_UKR_dob
 	
 	allowed = {	
 		tag = UKR 
@@ -240,7 +240,7 @@ UKR_dob_organization = {
 
 UKR_zaz_organization = {
 	include = generic_motorized_mechanized_organization
-	icon = gfx/interface/ideas/UKR/idea_UKR_zaz.dds
+	icon = GFX_UKR_zaz
 	
 	allowed = {	
 		tag = UKR 

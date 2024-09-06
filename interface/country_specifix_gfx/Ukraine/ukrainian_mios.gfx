@@ -1,0 +1,113 @@
+spriteTypes = {
+
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+#####################
+
+	spriteType = {
+		name = "GFX_UKR_zhbt"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_zhbtz.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_UKR_kbtz"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_kbtz.dds"
+		noOfFrames = 2
+	}
+		spriteType = {
+		name = "GFX_UKR_hkbm"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_hkbm.dds"
+		noOfFrames = 2
+	}
+	
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+	
+			spriteType = {
+		name = "GFX_UKR_chsz"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_chsz.dds"
+		noOfFrames = 2
+	}
+		spriteType = {
+		name = "GFX_UKR_srdsc"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_srdsc.dds"
+		noOfFrames = 2
+	}
+		spriteType = {
+		name = "GFX_UKR_thunderbird"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_thunderbird.dds"
+		noOfFrames = 2
+	}
+	
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+	
+		spriteType = {
+		name = "GFX_UKR_aviant"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_Aviant.dds"
+		noOfFrames = 2
+	}
+		spriteType = {
+		name = "GFX_UKR_anatra"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_Anatra.dds"
+		noOfFrames = 2
+	}
+		spriteType = {
+		name = "GFX_UKR_motorsich"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_MotorSich.dds"
+		noOfFrames = 2
+	}
+		spriteType = {
+		name = "GFX_UKR_haz"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_HAZ.dds"
+		noOfFrames = 2
+	}
+	
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+	
+		spriteType = {
+		name = "GFX_UKR_sgc"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_sgc.dds"
+		noOfFrames = 2
+	}
+		spriteType = {
+		name = "GFX_UKR_dob"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_dob.dds"
+		noOfFrames = 2
+	}
+		spriteType = {
+		name = "GFX_UKR_zaz"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_zaz.dds"
+		noOfFrames = 2
+	}
+
+}
