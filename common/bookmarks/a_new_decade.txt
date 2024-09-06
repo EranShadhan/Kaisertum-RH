@@ -104,25 +104,12 @@ bookmarks = {
 
 
 		###  MINORS ###
-		"UBD"={
+		"FIN"={
 			minor = yes
-			history = "UBD_NEW_DECADE_DESC"
-			ideology = neutrality
-			ideas = {
-				UBD_germanisation_programme_idea
-				UBD_overworked_administration_idea
-				UBD_lack_of_workers_idea
-			}
-			focuses = {
-			}
-		}
-		"UKR"={
-			minor = yes
-			history = "UKR_NEW_DECADE_DESC"
+			history = "FIN_NEW_DECADE_DESC"
 			ideology = neutrality
 			ideas = {
 				german_customs_union_member
-				UKR_sugar_businesses
 			}
 			focuses = {
 			}
@@ -144,6 +131,7 @@ bookmarks = {
 			ideas = {
 				german_customs_union_member
 				Inefective_constitution
+				ROM_playboy
 			}
 			focuses = {
 				ROM_pol_3
@@ -183,23 +171,6 @@ bookmarks = {
 				GRE_the_economic_crush
 			}
 		}
-		"TUR"={
-			minor = yes
-			history = "TUR_NEW_DECADE_DESC"
-			ideology = neutrality
-			ideas = {
-				TUR_german_influence_in_government
-				TUR_humiliation_of_25
-				TUR_international_bidding_war
-				TUR_traditional_society
-			}
-			focuses = {
-				TUR_constitution_of_1930
-				TUR_focus_on_internal_matters
-				TUR_the_sultans_grip_remains_firm
-				TUR_greater_engürü_plan
-			}
-		}
 		"PER"={
 			minor = yes
 			history = "PER_NEW_DECADE_DESC"
@@ -217,7 +188,119 @@ bookmarks = {
 				PER_army_xp_2
 			}
 		}
-		
+		"RAJ"={
+			minor = yes
+			history = "RAJ_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"BRA"={
+			minor = yes
+			history = "BRA_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"UBD"={
+			minor = yes
+			history = "UBD_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+				german_customs_union_member
+				UBD_germanisation_programme_idea
+				UBD_overworked_administration_idea
+				UBD_lack_of_workers_idea
+			}
+			focuses = {
+			}
+		}
+		"UKR"={
+			minor = yes
+			history = "UKR_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+				german_customs_union_member
+				UKR_sugar_businesses
+				UKR_german_breadbasket
+			}
+			focuses = {
+			}
+		}
+		"BUL"={
+			minor = yes
+			history = "BUL_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+				german_customs_union_member
+				victory_in_the_sgtwbul
+			}
+			focuses = {
+			}
+		}
+		"SER"={
+			minor = yes
+			history = "SER_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+				german_customs_union_member
+			}
+			focuses = {
+			}
+		}
+		"TUR"={
+			minor = yes
+			history = "TUR_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+				TUR_german_influence_in_government
+				TUR_humiliation_of_25
+				TUR_international_bidding_war
+				TUR_traditional_society
+			}
+			focuses = {
+				TUR_constitution_of_1930
+				TUR_focus_on_internal_matters
+				TUR_the_sultans_grip_remains_firm
+				TUR_greater_engürü_plan
+			}
+		}
+		"SAU"={
+			minor = yes
+			history = "SAU_NEW_DECADE_DESC"
+			ideology = fascism
+			ideas = {
+				victory_in_the_sgtwsau
+				SAU_pre_modern_economy
+				SAU_traditional_society
+				islam_religion
+			}
+			focuses = {
+			}
+		}
+		"AFG"={
+			minor = yes
+			history = "AFG_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+				islam_religion
+			}
+			focuses = {
+			}
+		}
+		"ARG"={
+			minor = yes
+			history = "ARG_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
 		effect = {
 			randomize_weather = 22345
 		}

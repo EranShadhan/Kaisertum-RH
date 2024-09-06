@@ -5,3 +5,10 @@ zion_malagasy_path = {
 		option = yes
 	}
 }
+
+hre_path = {
+	has_game_rule = {
+		rule = hre
+		option = yes
+	}
+}

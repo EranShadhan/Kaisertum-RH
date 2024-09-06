@@ -1,11 +1,11 @@
-focus_tree = {
-	id = placeholder_focus # PLACEHOLDER TO FIX BOOKMARK FOR NOW
+﻿focus_tree = {
+	id = argentinian_focus
 	
 	country = {
 		factor = 0
 		modifier = {
-			add = 15
-			tag = AUS
+			add = 10
+			tag = ARG
 		}
 	}
 
@@ -16,9 +16,6 @@ focus_tree = {
 	shared_focus = industrial_effort
 	shared_focus = political_effort
 	
-
 	default = no
 
-	continuous_focus_position = { x = 20 y = 1600 }
-	
 }

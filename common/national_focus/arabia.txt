@@ -1,11 +1,11 @@
 ﻿focus_tree = {
-	id = austrian_focus
+	id = arabian_focus
 	
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = AUS
+			tag = SAU
 		}
 	}
 

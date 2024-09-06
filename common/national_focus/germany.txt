@@ -2912,6 +2912,7 @@ focus = {
 		cost = 7.2
 
 		allow_branch = {
+			hre_path = yes
 		}
 
 		ai_will_do = {
@@ -3505,6 +3506,10 @@ focus = {
 		relative_position_id = GER_conquer_italy
 
 		cost = 14.4
+
+		allow_branch = {
+			hre_path = yes
+		}
 
 		ai_will_do = {
 			factor = 16

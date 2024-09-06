@@ -515,17 +515,33 @@ allow_scorched_earth = {
 
 zion_malagasy = {
 	name = "RULE_ZION_MALAGASY"
-	group = "RULE_GROUP_GAMEPLAY"
+	group = "RULE_GROUP_COUNTRY_SPECIFIC"
 	icon = "GFX_david_star"
 	option = {
 		name = yes
 		text = "RULE_OPTION_ALLOWED"
-		desc = "RULE_RULE_ZION_MALAGASY_YES_DESC"
+		desc = "RULE_ZION_MALAGASY_YES_DESC"
 	}
 	default = {
 		name = no
 		text = "RULE_OPTION_BLOCKED"
-		desc = "RULE_RULE_ZION_MALAGASY_NO_DESC"
+		desc = "RULE_ZION_MALAGASY_NO_DESC"
+	}
+}
+
+hre = {
+	name = "RULE_HRE"
+	group = "RULE_GROUP_COUNTRY_SPECIFIC"
+	icon = "GFX_hre"
+	option = {
+		name = yes
+		text = "RULE_OPTION_ALLOWED"
+		desc = "RULE_HRE_YES_DESC"
+	}
+	default = {
+		name = no
+		text = "RULE_OPTION_BLOCKED"
+		desc = "RULE_HRE_NO_DESC"
 	}
 }
 

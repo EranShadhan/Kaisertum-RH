@@ -1,0 +1,123 @@
+﻿focus_tree = {
+	id = afghan_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AFG
+		}
+	}
+
+	#Generic tree
+	shared_focus = army_effort
+	shared_focus = aviation_effort
+	shared_focus = naval_effort
+	shared_focus = industrial_effort
+	shared_focus = political_effort
+	
+	default = no
+
+	focus = {
+		id = AFG_graveyard
+		icon = GFX_focus_generic_support_the_left_right
+		x = 16
+		y = 7
+	
+		cost = 5
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		allow_branch = {
+			tag = AFG
+		}
+	
+		available = {
+	
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+			add_ideas = AFG_graveyard_of_empires
+		}
+	}
+	
+	focus = {
+		id = AFG_strike_shah
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = AFG_graveyard }
+		x = -1
+		y = 1
+		relative_position_id = AFG_graveyard
+	
+		cost = 10
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+	
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+			create_wargoal = {
+				target = PER
+				type = annex_everything
+			}
+		}
+	}
+	
+	focus = {
+		id = AFG_strike_tealand
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = AFG_graveyard }
+		x = 1
+		y = 1
+		relative_position_id = AFG_graveyard
+	
+		cost = 10
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+	
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+			create_wargoal = {
+				target = RAJ
+				type = annex_everything
+			}
+		}
+	}
+	
+
+}

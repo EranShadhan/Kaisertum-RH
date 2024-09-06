@@ -1,14 +1,15 @@
 ﻿focus_tree = {
-	id = austrian_focus
+	id = albanian_focus
 	
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = AUS
+			tag = ALB
 		}
 	}
 
+	shared_focus = BALKAN_joint_united_front
 	#Generic tree
 	shared_focus = army_effort
 	shared_focus = aviation_effort

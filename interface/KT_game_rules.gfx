@@ -1,6 +1,10 @@
 spriteTypes = {
 	SpriteType = {
 		name = "GFX_david_star"
-		texturefile = "gfx/game_rules/david_star.dds"
+		texturefile = "gfx/game_rules/david_star.png"
+	}
+	SpriteType = {
+		name = "GFX_hre"
+		texturefile = "gfx/game_rules/hre.png"
 	}
 }
