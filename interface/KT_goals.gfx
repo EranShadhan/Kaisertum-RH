@@ -4,71 +4,76 @@ spriteTypes = {
 	#OTHER
 	SpriteType = {
 		name = "GFX_goal_FRA_solidify_neosocialism"
-		texturefile = "gfx/interface/goals/FRA/FRA_solidify_neosocialism.dds"
+		texturefile = "gfx/interface/goals/FRA/FRA_solidify_neosocialism.png"
 	}
 	
 	SpriteType = {
 		name = "GFX_goal_FRA_invest_in_colonies"
-		texturefile = "gfx/interface/goals/FRA/FRA_invest_in_colonies.dds"
+		texturefile = "gfx/interface/goals/FRA/FRA_invest_in_colonies.png"
 	}
 	
 	SpriteType = {
 		name = "GFX_goal_FRA_invest_in_mainland"
-		texturefile = "gfx/interface/goals/FRA/FRA_invest_in_mainland.dds"
+		texturefile = "gfx/interface/goals/FRA/FRA_invest_in_mainland.png"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_FRA_flag_nationalist"
+		texturefile = "gfx/interface/goals/FRA/FRA_flag_nationalist.png"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_FRA_nationalist_industry"
+		texturefile = "gfx/interface/goals/FRA/FRA_nationalist_industry.png"
 	}
 
 	SpriteType = {
 		name = "GFX_goal_GEN_peace"
-		texturefile = "gfx/interface/goals/GEN_peace.dds"
+		texturefile = "gfx/interface/goals/GEN_peace.png"
 	}
 	
 	SpriteType = {
 		name = "GFX_goal_GEN_public_services"
-		texturefile = "gfx/interface/goals/GEN_public_services.dds"
+		texturefile = "gfx/interface/goals/GEN_public_services.png"
 	}
 
 	SpriteType = {
 		name = "GFX_goal_GEN_attack_russia"
-		texturefile = "gfx/interface/goals/GEN_attack_russia.dds"
+		texturefile = "gfx/interface/goals/GEN_attack_russia.png"
 	}
 
 	SpriteType = {
 		name = "GFX_goal_GEN_attack_afghanistan"
-		texturefile = "gfx/interface/goals/GEN_attack_afghanistan.dds"
+		texturefile = "gfx/interface/goals/GEN_attack_afghanistan.png"
 	}
 
 	SpriteType = {
 		name = "GFX_goal_GEN_attack_kaiserreich"
-		texturefile = "gfx/interface/goals/GEN_attack_kaiserreich.dds"
+		texturefile = "gfx/interface/goals/GEN_attack_kaiserreich.png"
 	}
 
 	SpriteType = {
 		name = "GFX_goal_GEN_textile_industry"
-		texturefile = "gfx/interface/goals/GEN_textile_industry.dds"
+		texturefile = "gfx/interface/goals/GEN_textile_industry.png"
 	}
 
 	SpriteType = {
 		name = "GFX_goal_GEN_workers_army"
-		texturefile = "gfx/interface/goals/GEN_workers_army.dds"
+		texturefile = "gfx/interface/goals/GEN_workers_army.png"
 	}
 
 	SpriteType = {
 		name = "GFX_goal_GEN_economy_improvements"
-		texturefile = "gfx/interface/goals/GEN_economy_improvements.dds"
+		texturefile = "gfx/interface/goals/GEN_economy_improvements.png"
 	}
 
 	SpriteType = {
 		name = "GFX_goal_GEN_education"
-		texturefile = "gfx/interface/goals/GEN_education.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_goal_GEN_money"
-		texturefile = "gfx/interface/goals/GEN_money.dds"
+		texturefile = "gfx/interface/goals/GEN_education.png"
 	}
 
 	SpriteType = {
 		name = "GFX_goal_zzz_WIP"
-		texturefile = "gfx/interface/goals/zzz_WIP.dds"
+		texturefile = "gfx/interface/goals/zzz_WIP.png"
 	}
 }

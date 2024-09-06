@@ -1,0 +1,7 @@
+
+zion_malagasy_path = {
+	has_game_rule = {
+		rule = zion_malagasy
+		option = yes
+	}
+}

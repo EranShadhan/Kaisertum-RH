@@ -2,10 +2,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_goal_GER_bismarck_red_shine"
-		texturefile = "gfx/interface/goals/GER/GER_bismarck_red.dds"
+		texturefile = "gfx/interface/goals/GER/GER_bismarck_red.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER/GER_bismarck_red.dds"
+			animationmaskfile = "gfx/interface/goals/GER/GER_bismarck_red.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -18,7 +18,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER/GER_bismarck_red.dds"
+			animationmaskfile = "gfx/interface/goals/GER/GER_bismarck_red.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -34,10 +34,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_goal_GER_bismarck_blue_shine"
-		texturefile = "gfx/interface/goals/GER/GER_bismarck_blue.dds"
+		texturefile = "gfx/interface/goals/GER/GER_bismarck_blue.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER/GER_bismarck_blue.dds"
+			animationmaskfile = "gfx/interface/goals/GER/GER_bismarck_blue.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -50,7 +50,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER/GER_bismarck_blue.dds"
+			animationmaskfile = "gfx/interface/goals/GER/GER_bismarck_blue.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -66,10 +66,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_goal_GER_bavaria_shine"
-		texturefile = "gfx/interface/goals/GER/GER_bavaria.dds"
+		texturefile = "gfx/interface/goals/GER/GER_bavaria.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER/GER_bavaria.dds"
+			animationmaskfile = "gfx/interface/goals/GER/GER_bavaria.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -82,7 +82,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER/GER_bavaria.dds"
+			animationmaskfile = "gfx/interface/goals/GER/GER_bavaria.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)

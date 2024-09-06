@@ -17,40 +17,41 @@ characters={
 			id=-1
 		}
 	}
- GRE_markos_vafiadis={
-			allowed={ 	original_tag = GRE }
-			name=GRE_markos_vafiadis
-			portraits={
-				army={
-					large="GFX_portrait_GRE_markos_vafiadis"
-					small=GFX_portrait_GRE_markos_vafiadis_small
-				}
-				civilian={
-					large=GFX_portrait_GRE_markos_vafiadis
+	GRE_markos_vafiadis={
+		name=GRE_markos_vafiadis
+		portraits={
+			army={
+				large="GFX_portrait_GRE_markos_vafiadis"
+				small=GFX_portrait_GRE_markos_vafiadis_small
+			}
+			civilian={
+				large=GFX_portrait_GRE_markos_vafiadis
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = GRE_markos_vafiadis
+			allowed = {
+				OR = {
+					original_tag = GRE
+					original_tag = SWE
+					original_tag = CHL
 				}
 			}
-			advisor={
-				slot = political_advisor
-				idea_token = GRE_markos_vafiadis
-				allowed = {
-					
-						original_tag = GRE
-				
-				}
-				available = {
-						original_tag = GRE
-					
-				}
-				traits = {
-					guerilla_warfare_expert 
-					
-				}
+			available = {
+				OR = {
+					original_tag = GRE
+					SWE_refuge_for_revolutionaries_trigger = yes
+					CHL_hub_of_the_revolution_trigger = yes
+					}
 			}
+			traits = {
+				guerilla_warfare_expert 
+			}
+		}
 		country_leader={
 			ideology=marxism
-			traits={ stalin_great_commander
-                     stalin_architect_of_communism			
-			guerilla_warfare_expert}
+			traits={ stalin_great_commander stalin_architect_of_communism guerilla_warfare_expert }
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -210,42 +211,6 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}
-	GRE_markos_vafiadis={
-			allowed={ 	original_tag = GRE }
-			name=GRE_markos_vafiadis
-			portraits={
-				army={
-					large="GFX_portrait_GRE_markos_vafiadis"
-					small=GFX_portrait_GRE_markos_vafiadis_small
-				}
-				civilian={
-					large=GFX_portrait_GRE_markos_vafiadis
-				}
-			}
-			advisor={
-				slot = political_advisor
-				idea_token = GRE_markos_vafiadis
-				allowed = {
-					OR = {
-						original_tag = GRE
-						original_tag = SWE
-						original_tag = CHL
-					}
-				}
-				available = {
-					OR = {
-						original_tag = GRE
-						SWE_refuge_for_revolutionaries_trigger = yes
-						CHL_hub_of_the_revolution_trigger = yes
-					}
-				}
-				traits = {
-					guerilla_warfare_expert 
-				}
-			}
-		
-	
 	}
 
 	GRE_konstantinos_tsaldaris={

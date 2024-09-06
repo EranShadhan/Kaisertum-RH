@@ -1,46 +1,53 @@
 leader_traits = {
 
-UKR_red_prince = {
+	UKR_red_prince = {
 		random = no
 		stability_factor = 0.1
 		political_power_gain = 0.15
 		monthly_population = 0.15
 	}
-UKR_king_of_ukraine = {
-    random = no
-    stability_factor = 0.1
-    war_support_factor = 0.1
-    conscription_factor = 0.15
-}
+	UKR_king_of_ukraine = {
+	    random = no
+	    stability_factor = 0.1
+	    war_support_factor = 0.1
+	    conscription_factor = 0.15
+	}
 
-ROM_playboy_king = {
-	random = no
-	stability_weekly = -0.01
-	consumer_goods_factor = 0.15
-	political_power_gain = 0.5
-}
+	ROM_playboy_king = {
+		random = no
+		stability_weekly = -0.01
+		consumer_goods_factor = 0.15
+		political_power_gain = 0.5
+	}
 
-ROM_witness_to_ferdinand = {
-	random = no
-	communism_drift = -0.02
-	political_power_gain = 0.15
-	stability_factor = 0.05
-}
+	ROM_witness_to_ferdinand = {
+		random = no
+		communism_drift = -0.02
+		political_power_gain = 0.15
+		stability_factor = 0.05
+	}
 
-ROM_bright_eyed_monarch = {
-	random = no
-	stability_factor = 0.1
-	mobilization_speed = 0.1
-	production_speed_industrial_complex_factor = 0.2 
-	production_speed_infrastructure_factor = 0.2 
-}
+	ROM_bright_eyed_monarch = {
+		random = no
+		stability_factor = 0.1
+		mobilization_speed = 0.1
+		production_speed_industrial_complex_factor = 0.2 
+		production_speed_infrastructure_factor = 0.2 
+	}
 
-ROM_ineffective_regency = {
-	random = no
-	consumer_goods_factor = 0.2
-	stability_factor = -0.2
-	political_power_gain = -0.1
-}
+	ROM_ineffective_regency = {
+		random = no
+		consumer_goods_factor = 0.2
+		stability_factor = -0.2
+		political_power_gain = -0.1
+	}
+
+	FMG_colonial_governor = {
+		random = no
+		stability_factor = -0.1
+		political_power_gain = -0.1
+		neutrality_drift = 0.05
+	}
 
 }
 

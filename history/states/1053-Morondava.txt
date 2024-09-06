@@ -1,0 +1,26 @@
+
+state={
+	id=1053
+	name="STATE_1053"
+
+	history={
+		add_core_of = MAD
+		owner = FMG
+		victory_points = {
+			13491 1 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		8180 12956 13470 13475 13477 13478 13479 13480 13486 13491 13494 13499 13500 13552 
+	}
+	manpower=101043
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

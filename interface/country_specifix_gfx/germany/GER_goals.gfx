@@ -2,17 +2,17 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_goal_GER_bismarck_red"
-		texturefile = "gfx/interface/goals/GER/GER_bismarck_red.dds"
+		texturefile = "gfx/interface/goals/GER/GER_bismarck_red.png"
 	}
 
 	SpriteType = {
 		name = "GFX_goal_GER_bismarck_blue"
-		texturefile = "gfx/interface/goals/GER/GER_bismarck_blue.dds"
+		texturefile = "gfx/interface/goals/GER/GER_bismarck_blue.png"
 	}
 
 	SpriteType = {
 		name = "GFX_goal_GER_bavaria"
-		texturefile = "gfx/interface/goals/GER/GER_bavaria.dds"
+		texturefile = "gfx/interface/goals/GER/GER_bavaria.png"
 	}
 
 }

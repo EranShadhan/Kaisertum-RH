@@ -1,0 +1,33 @@
+#Hon Hon Ooga - Booga
+add_namespace = kt_madagascar
+
+country_event = { # Madagascar Revolution Event
+	id = kt_madagascar.1
+	title = kt_madagascar.1.t
+	desc = kt_madagascar.1.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = FMG
+		date>1932.9.4
+		date<1932.9.6
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = malagasy_revolution_flag
+		}
+	}
+	
+	option = {
+		name = kt_madagascar.1.a
+	}
+
+	option = {
+		name = kt_madagascar.1.b
+	}
+	
+}

@@ -16,6 +16,7 @@ spriteTypes = {
         animation_rate_fps = 1
         looping = yes
         play_on_show = yes
+        pause_on_loop = no
         
         allwaystransparent = yes
     }
@@ -49,25 +50,11 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_explodepfp"
-		textureFile = "gfx/interface/explodepfp.png"
+		name = "GFX_kt_ds"
+		textureFile = "gfx/interface/kt_ds.png"
 	}
 	SpriteType = {
-		name = "GFX_reipfp"
-		textureFile = "gfx/interface/reipfp.png"
-	}SpriteType = {
-		name = "GFX_denispfp"
-		textureFile = "gfx/interface/metapfp.png"
-	}SpriteType = {
-		name = "GFX_girrrambepfp"
-		textureFile = "gfx/interface/girrambepfp.png"
-	}
-	SpriteType = {
-		name = "GFX_glitchpfp"
-		textureFile = "gfx/interface/isglitchpfp.png"
-	}
-	SpriteType = {
-		name = "GFX_xaelpfp"
-		textureFile = "gfx/interface/xaelorpfp.png"
+		name = "GFX_update_02"
+		textureFile = "gfx/interface/update_02.png"
 	}
 }

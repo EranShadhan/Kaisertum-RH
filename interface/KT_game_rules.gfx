@@ -1,0 +1,6 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_david_star"
+		texturefile = "gfx/game_rules/david_star.dds"
+	}
+}

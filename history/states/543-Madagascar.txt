@@ -5,9 +5,9 @@ state={
 
 	history={
 		add_core_of = MAD
-		owner = FRA
+		owner = FMG
 		victory_points = {
-			13497 3
+			13497 3 
 		}
 		buildings = {
 			infrastructure = 1
@@ -18,7 +18,7 @@ state={
 	}
 
 	provinces={
-		13487 13492 13493 13495 13496 13497 13501 13502 13504 13508 13511 
+		13487 13492 13493 13495 13496 13497 13501 13502 13504 13508 13511 13520 13553 13554 
 	}
 	manpower=694611
 	buildings_max_level_factor=1.000

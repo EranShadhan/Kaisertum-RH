@@ -107,6 +107,36 @@ characters = {
 		portraits = {
 			civilian = {
 				large = GFX_portrait_italy_amadeo_bordiga
+				small = GFX_idea_amadeo_bordiga
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = amadeo_bordiga
+			allowed = {
+				ITA_is_italian_tag = yes
+			}
+			available = {
+				ITA_is_going_antifascist_in_bba = yes
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = {
+						has_autonomy_state = autonomy_supervised_state
+					}
+				}
+			}
+			traits = {
+				communist_revolutionary 
+			}
+			do_effect = {
+				NOT = {
+					has_government = communism 
+				}
+			}
+			ai_will_do = {
+				base = 0.000
 			}
 		}
 		country_leader = {
@@ -3128,45 +3158,6 @@ characters = {
 					has_government = communism
 					has_government = democratic
 				}
-			}
-		}
-	}
-
-	ITA_amadeo_bordiga = {
-		name = ITA_amadeo_bordiga
-		portraits = {
-			army = {
-				small = GFX_idea_amadeo_bordiga
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = amadeo_bordiga
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			available = {
-				ITA_is_going_antifascist_in_bba = yes
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
-			}
-			traits = {
-				communist_revolutionary 
-			}
-			do_effect = {
-				NOT = {
-					has_government = communism 
-				}
-			}
-			ai_will_do = {
-				base = 0.000
 			}
 		}
 	}

@@ -334,7 +334,7 @@ allow_party_boosting = {
 
 allow_paratroopers = {
 	name = "RULE_ALLOW_PARATROOPERS"
-	group = "RULE_GROUP_GAMEPLAY"
+	group = "RULE_GROUP_DIVISION_TEMPLATES"
 	icon = "GFX_paradrops"
 	option = {
 		name = yes
@@ -401,7 +401,7 @@ allow_paratroopers = {
 
 maximum_fort_level = {
 	name = "RULE_MAXIMUM_FORT_LEVEL"
-	group = "RULE_GROUP_GAMEPLAY"
+	group = "RULE_GROUP_CONSTRUCTION"
 	icon = "GFX_maximum_fort_level"
 	option = {
 		name = normal
@@ -457,7 +457,7 @@ maximum_fort_level = {
 
 allow_scorched_earth = {
 	name = "RULE_ALLOW_SCORCHED_EARTH"
-	group = "RULE_GROUP_GAMEPLAY"
+	group = "RULE_GROUP_CONSTRUCTION"
 	icon = "GFX_scorched_earth"
 	option = {
 		name = yes
@@ -513,19 +513,19 @@ allow_scorched_earth = {
 #  # #  # #  # #  #  #  #  #   #         # #    #   #  #  #  #    #  #  #     #  # #  # #   #     # 
  ##   ##   ##  #  #  #  #  #   #       ##  #    ###  ##  ### #   ###  ##      #  #  ##  ### ### ##  
 
-meme_paths = {
-	name = "RULE_ALLOW_MEME_PATHS"
+zion_malagasy = {
+	name = "RULE_ZION_MALAGASY"
 	group = "RULE_GROUP_GAMEPLAY"
-	icon = "GFX_scorched_earth"
+	icon = "GFX_david_star"
 	option = {
 		name = yes
 		text = "RULE_OPTION_ALLOWED"
-		#desc = "RULE_ALLOW_SCORCHED_EARTH_ALLOWED_DESC"
+		desc = "RULE_RULE_ZION_MALAGASY_YES_DESC"
 	}
 	default = {
 		name = no
 		text = "RULE_OPTION_BLOCKED"
-		#desc = "RULE_ALLOW_SCORCHED_EARTH_BLOCKED_DESC"
+		desc = "RULE_RULE_ZION_MALAGASY_NO_DESC"
 	}
 }
 

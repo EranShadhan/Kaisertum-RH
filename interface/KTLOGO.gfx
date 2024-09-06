@@ -1,8 +1,0 @@
-spriteTypes = {	
-
-	SpriteType = {
-		name = "GFX_logo_kt"
-		texturefile = "gfx/interface/logo_kt.dds"			
-	}	
-
-}

@@ -1,0 +1,43 @@
+ideas = {
+	country = {
+		FMG_jewish_project = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = 2.5
+			}
+		}
+		FMG_jew_oppression = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.05
+			}
+		}
+		FMG_jew_oppression_2 = {
+
+			name = FMG_jew_oppression
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.1
+				monthly_population = -0.2
+			}
+		}
+	}
+}

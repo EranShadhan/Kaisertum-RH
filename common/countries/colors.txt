@@ -20,6 +20,10 @@ FCF = {
 	color = rgb { 186 151 85 }
 	color_ui = rgb { 186 151 85 }
 }
+FMG = {
+	color = rgb { 16 16 175 }
+	color_ui = rgb { 16 16 175 }
+}
 GER = {
 	color = rgb { 82 94 68 }
 	color_ui = rgb { 82 94 68 }

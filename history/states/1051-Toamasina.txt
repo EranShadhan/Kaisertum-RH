@@ -4,7 +4,7 @@ state={
 
 	history={
 		add_core_of = MAD
-		owner = FRA
+		owner = FMG
 		victory_points = {
 			13521 1 
 		}

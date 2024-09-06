@@ -1,0 +1,373 @@
+﻿focus_tree = {
+	id = french_madagascar_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = FMG
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 2000 }
+
+	focus = {
+		id = FMG_governor_cayla
+		icon = GFX_goal_zzz_WIP
+		x = 5
+		y = 0
+		
+		prerequisite = {}
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_trait = {
+				character = FMG_leon_cayla
+				ideology = junta
+				trait = FMG_colonial_governor
+			}
+		}
+	}
+	focus = {
+		id = FMG_cancel_zionist_project
+		icon = GFX_goal_zzz_WIP
+		x = -3
+		y = 1
+		relative_position_id = FMG_governor_cayla
+
+		offset = {
+			x = 3
+			y = 0
+			trigger = { zion_malagasy_path = no }
+		}
+		
+		prerequisite = { focus = FMG_governor_cayla }
+		mutually_exclusive = { focus = FMG_continue_zionist_project }
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_global_flag = malagasy_revolution_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = FMG_jewish_project
+		}
+	}
+	focus = {
+		id = FMG_jewish_question
+		icon = GFX_goal_FMG_jewish_question
+		x = 0
+		y = 1
+		relative_position_id = FMG_cancel_zionist_project
+		
+		prerequisite = { focus = FMG_cancel_zionist_project }
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = FMG_jew_oppression
+		}
+	}
+	focus = {
+		id = FMG_cc_toliara
+		icon = GFX_goal_FMG_chains_jews
+		x = 0
+		y = 1
+		relative_position_id = FMG_jewish_question
+		
+		prerequisite = { focus = FMG_jewish_question }
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = FMG_jew_oppression_2
+				remove_idea = FMG_jew_oppression
+			}
+		}
+	}
+	focus = {
+		id = FMG_help_frogaeters
+		icon = GFX_goal_FRA_flag_nationalist
+		x = 3
+		y = 1
+		relative_position_id = FMG_cc_toliara
+		
+		prerequisite = { focus = FMG_cc_toliara focus = FMG_hon_hon_jude }
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			has_war_with = GER
+		}
+
+		completion_reward = {
+			add_ideas = FMG_fighting_for_honhons
+		}
+	}
+	focus = {
+		id = FMG_war_industry_543
+		icon = GFX_goal_FRA_nationalist_industry
+		x = 0
+		y = 1
+		relative_position_id = FMG_help_frogaeters
+		
+		prerequisite = { focus = FMG_help_frogaeters }
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		available = {
+			has_war_with = GER
+		}
+
+		completion_reward = {
+			543 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = FMG_continue_zionist_project
+		icon = GFX_goal_zzz_WIP
+		x = 3
+		y = 1
+		relative_position_id = FMG_governor_cayla
+
+		allow_branch = {
+			zion_malagasy_path = yes
+		}
+		
+		prerequisite = { focus = FMG_governor_cayla }
+		mutually_exclusive = { focus = FMG_cancel_zionist_project }
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = { has_global_flag = malagasy_revolution_flag }
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = FMG_jewish_project_2
+				remove_idea = FMG_jewish_project
+			}
+		}
+	}
+	focus = {
+		id = FMG_move_jews_here
+		icon = GFX_goal_zzz_WIP
+		x = 0
+		y = 1
+		relative_position_id = FMG_continue_zionist_project
+		
+		prerequisite = { focus = FMG_continue_zionist_project }
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			1048 = { add_manpower = 295621 }
+			1050 = { add_manpower = 31566 }
+			1051 = { add_manpower = 7339 }
+		}
+	}
+	focus = {
+		id = FMG_hon_hon_jude
+		icon = GFX_goal_zzz_WIP
+		x = 0
+		y = 1
+		relative_position_id = FMG_move_jews_here
+		
+		prerequisite = { focus = FMG_move_jews_here }
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_state_core = 1048
+		}
+	}
+	focus = {
+		id = FMG_zionism
+		icon = GFX_goal_zzz_WIP
+		x = -1
+		y = 1
+		relative_position_id = FMG_hon_hon_jude
+		
+		prerequisite = { focus = FMG_hon_hon_jude }
+		mutually_exclusive = { focus = FMG_jew_socialism }
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = not_implemented_focus_tt
+		}
+	}
+	focus = {
+		id = FMG_new_judea
+		icon = GFX_goal_zzz_WIP
+		x = 0
+		y = 1
+		relative_position_id = FMG_zionism
+		
+		prerequisite = { focus = FMG_zionism }
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = not_implemented_focus_tt
+		}
+	}
+	focus = {
+		id = FMG_jew_socialism
+		icon = GFX_focus_BRA_socialist_theologians
+		x = 1
+		y = 1
+		relative_position_id = FMG_hon_hon_jude
+		
+		prerequisite = { focus = FMG_hon_hon_jude }
+		mutually_exclusive = { focus = FMG_zionism }
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = not_implemented_focus_tt
+		}
+	}
+	focus = {
+		id = FMG_proud_jew
+		icon = GFX_goal_zzz_WIP
+		x = 0
+		y = 1
+		relative_position_id = FMG_jew_socialism
+		
+		prerequisite = { focus = FMG_jew_socialism }
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = not_implemented_focus_tt
+		}
+	}
+	focus = {
+		id = FMG_reclaim_homeland
+		icon = GFX_goal_zzz_WIP
+		x = 1
+		y = 1
+		relative_position_id = FMG_new_judea
+		
+		prerequisite = { focus = FMG_new_judea focus = FMG_proud_jew }
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = not_implemented_focus_tt
+		}
+	}
+}

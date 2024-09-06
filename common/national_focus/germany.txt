@@ -3410,6 +3410,7 @@ focus = {
 		}
 
 		available = {
+			is_ai = no
 		}
 		
 		bypass = {
@@ -3486,11 +3487,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = ITA
-				generator = { 39 850 736 }
-			}
+			custom_effect_tooltip = not_implemented_focus_tt
+			#create_wargoal = {
+			#	type = take_state_focus
+			#	target = ITA
+			#	generator = { 39 850 736 }
+			#}
 		}
 	}
 
