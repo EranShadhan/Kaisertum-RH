@@ -2450,6 +2450,7 @@ focus = {
 		cost = 1
 		x = -4
 		y = 1
+		icon = GFX_TUR_commies_elected
 
 		prerequisite = {
 			focus = TUR_snap_election
@@ -2498,6 +2499,7 @@ focus = {
 		cost = 5
 		x = -2
 		y = 1
+		icon = GFX_TUR_promote_trade_unions
 
 		prerequisite = {
 			focus = TUR_commies_elected
@@ -2518,6 +2520,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
+		icon = GFX_TUR_deal_with_the_ultranationalists
 
 		prerequisite = {
 			focus = TUR_promote_trade_unions
@@ -2535,6 +2538,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
+		icon = GFX_TUR_deal_with_german_influence
 
 		prerequisite = {
 			focus = TUR_deal_with_the_ultranationalists
@@ -2551,6 +2555,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
+		icon = GFX_TUR_collectivize_agriculture
 
 		prerequisite = {
 			focus = TUR_promote_trade_unions
@@ -2567,6 +2572,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
+		icon = GFX_TUR_spirit_of_the_workers
 
 		prerequisite = {
 			focus = TUR_collectivization_of_agriculture
@@ -2583,6 +2589,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
+		icon = GFX_TUR_islamic_bastion_of_socialism
 
 		prerequisite = {
 			focus = TUR_deal_with_german_influence
@@ -2602,6 +2609,7 @@ focus = {
 		cost = 5
 		x = 2
 		y = 1
+		icon = GFX_TUR_spreading_the_revolution
 
 		prerequisite = {
 			focus = TUR_commies_elected
@@ -2618,6 +2626,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
+		icon = GFX_TUR_closer_ties_with_japan
 
 		prerequisite = {
 			focus = TUR_spreading_the_revolution
@@ -2639,6 +2648,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
+		icon = GFX_TUR_buy_japanese_guns
 
 		prerequisite = {
 			focus = TUR_closer_ties_with_japan
@@ -2659,6 +2669,7 @@ focus = {
 		cost = 6
 		x = -1
 		y = 1
+		icon = GFX_TUR_socialist_syrian_revolution
 
 		prerequisite = {
 			focus = TUR_spreading_the_revolution
@@ -2687,6 +2698,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
+		icon = GFX_TUR_alienate_enemies
 
 		prerequisite = {
 			focus = TUR_sponsor_syrian_rebellion
@@ -2737,6 +2749,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
+		icon = GFX_TUR_arabic_revolution
 
 		prerequisite = {
 			focus = TUR_alienate_enemies
@@ -2771,6 +2784,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
+		icon = GFX_TUR_red_crescent_coalition
 
 		prerequisite = {
 			focus = TUR_arabic_revolution
@@ -2793,6 +2807,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
+		icon = GFX_TUR_free_the_caucasian_workers
 
 		prerequisite = {
 			focus = TUR_red_crescent_coalition
@@ -2812,6 +2827,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
+		icon = GFX_TUR_support_persian_commies
 
 		prerequisite = {
 			focus = TUR_red_crescent_coalition

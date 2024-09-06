@@ -136,4 +136,68 @@ spriteTypes = {
 		name = "GFX_TUR_anti_russian_propaganda"
 		texturefile = "gfx/interface/goals/TUR/2_anti_russian_propaganda.dds"			
 	}
+	SpriteType = {
+		name = "GFX_TUR_promote_trade_unions"
+		texturefile = "gfx/interface/goals/TUR/11_trade_unions.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_collectivize_agriculture"
+		texturefile = "gfx/interface/goals/TUR/11_collectivized_agriculture.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_spirit_of_the_workers"
+		texturefile = "gfx/interface/goals/TUR/11_workers_spirit.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_deal_with_the_ultranationalists"
+		texturefile = "gfx/interface/goals/TUR/11_crush_fascism.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_deal_with_german_influence"
+		texturefile = "gfx/interface/goals/TUR/11_crush_german_influence.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_spreading_the_revolution"
+		texturefile = "gfx/interface/goals/TUR/11_spreading_the_revolution.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_socialist_syrian_revolution"
+		texturefile = "gfx/interface/goals/TUR/11_syrian_revolution.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_alienate_enemies"
+		texturefile = "gfx/interface/goals/TUR/11_alien_capitalist.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_closer_ties_with_japan"
+		texturefile = "gfx/interface/goals/TUR/11_ally_japan.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_buy_japanese_guns"
+		texturefile = "gfx/interface/goals/TUR/11_buy_japanese_guns.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_arabic_revolution"
+		texturefile = "gfx/interface/goals/TUR/11_arabic_revolution.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_free_the_caucasian_workers"
+		texturefile = "gfx/interface/goals/TUR/11_free_the_caucasian_workers.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_support_persian_commies"
+		texturefile = "gfx/interface/goals/TUR/11_persian_communism.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_red_crescent_coalition"
+		texturefile = "gfx/interface/goals/TUR/11_red_crescent_coalition.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_commies_elected"
+		texturefile = "gfx/interface/goals/TUR/11_commie_elections.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_islamic_bastion_of_socialism"
+		texturefile = "gfx/interface/goals/TUR/11_the_man_the_myth_the_legend_kadri.dds"			
+	}
 }
