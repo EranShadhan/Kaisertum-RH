@@ -316,3 +316,74 @@ joint_focus = {
 	}	
 }
 
+joint_focus = {
+	id = BALKAN_united_against_ottoman
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_SPIRIT_OF_REVOLUTIONS
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_improve_tech focus = BALKAN_connect_our_capitals }
+	x = -1
+	y = 1
+	relative_position_id = BALKAN_improve_tech
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+	
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
+	id = BALKAN_shared_language
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_SPIRIT_OF_REVOLUTIONS
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_united_against_ottoman }
+	x = 0
+	y = 1
+	relative_position_id = BALKAN_united_against_ottoman
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}

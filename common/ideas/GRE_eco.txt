@@ -53,7 +53,7 @@
 			
 			visible = { original_tag = GRE }
  			modifier = {
- 				conscription = 0.035
+ 				conscription = 0.045
  				army_defence_factor = 0.05
  				army_org_factor = -0.05
  			}
@@ -86,7 +86,7 @@
 			}
 			visible = { original_tag = GRE }
  			modifier = {
- 				conscription = 0.085
+ 				conscription = 0.09
  				army_defence_factor = 0.15
 				army_core_attack_factor = 0.05
 			

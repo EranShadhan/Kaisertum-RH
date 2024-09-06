@@ -20,6 +20,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GRE/GRE_keep_crete.dds"
 	} 
 	SpriteType = {
+		name = "GFX_focus_SPIRIT_OF_REVOLUTIONS"
+		texturefile = "gfx/interface/goals/GRE/focus_SPIRIT_OF_REVOLUTIONS.dds"
+	} 
+	SpriteType = {
 		name = "GFX_focus_GRE_islanddev"
 		texturefile = "gfx/interface/goals/GRE/focus_GRE_islanddev.dds"
 	}
