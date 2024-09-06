@@ -17,5 +17,97 @@ ideas = {
                 production_factory_max_efficiency_factor = 0.15            
              }
          }
+         
+         UKR_educational_programs = {
+         
+            removal_cost = -1
+             
+            allowed = {
+            
+            }
+            
+            
+            picture = GFX_idea_UKR_educational_programs
+            
+            modifier = {
+           research_speed_factor = 0.15
+             }
+         }
+
+UKR_german_breadbasket = {
+         
+            removal_cost = -1
+             
+            allowed = {
+            
+            }
+            
+            
+            picture = GFX_idea_UKR_german_breadbasket
+            
+            modifier = {
+            stability_factor = -0.15
+            political_power_gain = -0.15
+            war_support_factor = -0.15
+            recruitable_population = -0.1
+            consumer_goods_factor = -0.05
+            
+             }
+         }
+
+UKR_european_breadbasket = {
+         
+            removal_cost = -1
+             
+            allowed = {
+            
+            }
+            
+            
+            picture = GFX_idea_UKR_european_breadbasket
+            
+            modifier = {
+            stability_factor = 0.1
+            political_power_gain = 0.1
+            consumer_goods_factor = -0.15
+            trade_opinion_factor = 0.25
+            
+             }
+         }
+
+UKR_royal_vpk = {
+         
+            removal_cost = -1
+             
+            allowed = {
+            
+            }
+            
+            
+            picture = GFX_idea_UKR_european_breadbasket
+            
+            modifier = {
+            industrial_capacity_factory = 0.15
+                       
+             }
+         }
+
+UKR_state_stability = {
+         
+            removal_cost = -1
+             
+            allowed = {
+            
+            }
+            
+            
+            picture = GFX_idea_UKR_european_breadbasket
+            
+            modifier = {
+            stability_factor = 0.15
+                       
+             }
+         }
+
      }
 }

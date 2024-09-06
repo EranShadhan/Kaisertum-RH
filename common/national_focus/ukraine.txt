@@ -80,6 +80,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 120
+			add_stability = 0.05
 		}
 	}
 	
@@ -149,7 +150,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 120
+			add_ideas = UKR_state_stability
 		}
 	}
 
@@ -274,7 +275,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 120
+			add_ideas = UKR_educational_programs
 		}
 	}
 
@@ -684,7 +685,8 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 120
+			remove_ideas = UKR_german_breadbasket
+			add_ideas = UKR_european_breadbasket
 		}
 	}
 
@@ -794,9 +796,54 @@ focus = {
 		}
 
 		completion_reward = {
-
-		}
-	}
+		add_war_support = 0.05
+      division_template = {
+        name = "Korolivska Hvardiya"
+        priority = 2
+        is_locked = no
+        regiments = {
+          infantry = { x = 0 y = 0 }
+          infantry = { x = 0 y = 1 }
+          infantry = { x = 0 y = 2 }
+    
+          infantry = { x = 1 y = 0 }
+          infantry = { x = 1 y = 1 }
+          infantry = { x = 1 y = 2 }
+    
+          infantry = { x = 2 y = 0 }
+          infantry = { x = 2 y = 1 }
+          infantry = { x = 2 y = 2 }
+          
+          artillery_brigade = { x = 3 y = 0 }
+          artillery_brigade = { x = 3 y = 1 }
+        }
+        support = {
+          recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 } 
+        }
+    }
+  hidden_effect = {
+        random_owned_controlled_state = {
+          limit = { ROOT = { has_full_control_of_state = 202 } }
+          prioritize = { 202 } # Kyiv
+          create_unit = {
+            division = "name = \"Korolivska Hvardiya im. Vyshyvanoho\" division_template = \"Korolivska Hvardiya\" start_experience_factor = 1.0" 
+            owner = UKR
+          }
+          create_unit = {
+            division = "name = \"Korolivska Hvardiya im. Vyshyvanoho\" division_template = \"Korolivska Hvardiya\" start_experience_factor = 1.0" 
+            owner = UKR  
+          }
+          create_unit = {
+            division = "name = \"Korolivska Hvardiya im. Vyshyvanoho\" division_template = \"Korolivska Hvardiya\" start_experience_factor = 1.0" 
+            owner = UKR  
+          }
+        } 
+      } 
+      custom_effect_tooltip = "3 Royal Guard divisions will be formed."      
+   }
+}
 
 	focus = {
 		id = UKR_royal_officer_corps
@@ -902,7 +949,7 @@ focus = {
 		}
 
 		completion_reward = {
-
+           add_research_slot = 1
 		}
 	}
 
@@ -939,9 +986,54 @@ focus = {
 		}
 
 		completion_reward = {
-
-		}
-	}
+		add_war_support = 0.05
+      division_template = {
+        name = "Korolivska Hvardiya"
+        priority = 2
+        is_locked = no
+        regiments = {
+          infantry = { x = 0 y = 0 }
+          infantry = { x = 0 y = 1 }
+          infantry = { x = 0 y = 2 }
+    
+          infantry = { x = 1 y = 0 }
+          infantry = { x = 1 y = 1 }
+          infantry = { x = 1 y = 2 }
+    
+          infantry = { x = 2 y = 0 }
+          infantry = { x = 2 y = 1 }
+          infantry = { x = 2 y = 2 }
+          
+          artillery_brigade = { x = 3 y = 0 }
+          artillery_brigade = { x = 3 y = 1 }
+        }
+        support = {
+          recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 } 
+        }
+    }
+  hidden_effect = {
+        random_owned_controlled_state = {
+          limit = { ROOT = { has_full_control_of_state = 202 } }
+          prioritize = { 202 } # Kyiv
+          create_unit = {
+            division = "name = \"Korolivska Hvardiya im. Vyshyvanoho\" division_template = \"Korolivska Hvardiya\" start_experience_factor = 1.0" 
+            owner = UKR
+          }
+          create_unit = {
+            division = "name = \"Korolivska Hvardiya im. Vyshyvanoho\" division_template = \"Korolivska Hvardiya\" start_experience_factor = 1.0" 
+            owner = UKR  
+          }
+          create_unit = {
+            division = "name = \"Korolivska Hvardiya im. Vyshyvanoho\" division_template = \"Korolivska Hvardiya\" start_experience_factor = 1.0" 
+            owner = UKR  
+          }
+        } 
+      } 
+      custom_effect_tooltip = "Royal Guard will increase by 3 divisions."      
+   }
+}
 
 
 focus = {
@@ -1048,7 +1140,8 @@ focus = {
 		}
 
 		completion_reward = {
-
+           add_ideas = UKR_royal_vpk
+           add_war_support = 0.05
 		}
 	}
 
