@@ -177,13 +177,13 @@ units = {
 		start_equipment_factor = 1.0
 	}
 	division = {
-		location = 3755
+		location = 13443
 		division_template = "Pikhotna Dyviziya"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		location = 754
+		location = 834
 		division_template = "Pikhotna Dyviziya"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0

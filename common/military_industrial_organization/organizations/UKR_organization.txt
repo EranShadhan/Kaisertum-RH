@@ -10,7 +10,7 @@
 
 UKR_zhbtz_organization = {
 	include = generic_tank_organization  
-	icon = GFX_idea_zhbtz
+	icon = gfx/interface/ideas/UKR/idea_UKR_zhbtz.dds 
 	
 	allowed = {	
 		tag = UKR 
@@ -20,12 +20,38 @@ UKR_zhbtz_organization = {
 	FROM = {
 	has_full_control_of_state = 201
 	}
-   }	
+   }
+   
+   	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+	}
+
+	add_trait = { 
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		name = UKR_cossack_tanks 
+		special_trait_background = yes
+		
+		position = { x=9 y=0 }  
+					 	 
+		equipment_bonus = {
+			maximum_speed = 0.15
+			reliability = 0.15
+			build_cost_ic = -0.05
+		} 
+
+	}
+	
 }
+
+#		available = {
+#		FROM = { has_completed_focus = UKR_modern_warfare_tanks}
+#	}
 
 UKR_kbtz_organization = {
 	include = generic_medium_tank_organization
-	icon = GFX_idea_kbtz
+	icon = gfx/interface/ideas/UKR/idea_UKR_kbtz.dds
 	
 	allowed = {	
 		tag = UKR 
@@ -41,7 +67,7 @@ UKR_kbtz_organization = {
 
 UKR_hkbm_organization = {
 	include = generic_heavy_tank_organization
-	icon = GFX_idea_hkbm
+	icon = gfx/interface/ideas/UKR/idea_UKR_hkbm.dds
 	
 	allowed = {	
 		tag = UKR 
@@ -66,26 +92,36 @@ UKR_hkbm_organization = {
 
 UKR_chsz_organization = {
 	include = generic_battle_line_ship_organization
-	icon = GFX_idea_chsz
+	icon = gfx/interface/ideas/UKR/idea_UKR_chsz.dds
 	
 	allowed = {	
 		tag = UKR 
 	}
+	
+	available = {
+		FROM = {
+		has_full_control_of_state = 197 
+	}
+   } 
 }
 
 UKR_srdsc_organization = {
 	include = generic_black_sea_fleet_organization
-	icon = GFX_idea_UKR_srdsc
+	icon = gfx/interface/ideas/UKR/idea_UKR_srdsc.dds
 	
 	allowed = {	
 		tag = UKR 
 	}
-
+     available = {
+		FROM = { 
+		has_full_control_of_state = 197 
+	}
+   }
 }
 
 UKR_thunderbird_organization = {
 	include = generic_escort_ship_organization
-	icon = GFX_idea_UKR_thunderbird
+	icon = gfx/interface/ideas/UKR/idea_UKR_thunderbird.dds
 	
 	allowed = {	
 		tag = UKR 
@@ -108,33 +144,9 @@ UKR_thunderbird_organization = {
 
 ###########################
 
-UKR_haz_organization = {
-	include = generic_light_aircraft_organization
-	icon = GFX_idea_HAZ
-	
-	allowed = {	
-		tag = UKR
-	}
-
-}
-
-UKR_motorsich_organization = {
-	include = generic_multi_role_aircraft_organization
-	icon = GFX_idea_MotorSich
-	
-	allowed = {	
-		tag = UKR 
-	}
-	available = {
-	FROM = {
-	has_full_control_of_state = 202
-	}
-   }
-}
-
 UKR_aviant_organization = {
 	include = generic_medium_aircraft_organization
-	icon = GFX_idea_Aviant
+	icon = gfx/interface/ideas/UKR/idea_UKR_Aviant.dds
 	
 	allowed = {	
 		tag = UKR 
@@ -150,13 +162,41 @@ UKR_aviant_organization = {
 
 UKR_anatra_organization = {
 	include = generic_naval_aircraft_organization
-	icon = GFX_idea_Anatra
+	icon = gfx/interface/ideas/UKR/idea_UKR_Anatra.dds
 	
 	allowed = {	
 		tag = UKR 
 	}
 }
 
+UKR_motorsich_organization = {
+	include = generic_multi_role_aircraft_organization
+	icon = gfx/interface/ideas/UKR/idea_UKR_MotorSich.dds
+	
+	allowed = {	
+		tag = UKR 
+	}
+	available = {
+	FROM = {
+	has_full_control_of_state = 1046
+	}
+   }
+}
+
+UKR_haz_organization = {
+	include = generic_light_aircraft_organization
+	icon = gfx/interface/ideas/UKR/idea_UKR_HAZ.dds
+	
+	allowed = {	
+		tag = UKR
+	}
+	available = {
+	FROM = {
+	has_full_control_of_state = 221 
+	}
+   }
+
+}
 
 ################################### 
 
@@ -171,7 +211,7 @@ UKR_anatra_organization = {
 
 UKR_sgc_organization = {
 	include = generic_artillery_organization
-	icon = GFX_idea_UKR_artillery_focus
+	icon = gfx/interface/ideas/UKR/idea_UKR_artillery_focus.dds
 	
 	allowed = {	
 		tag = UKR 
@@ -191,11 +231,16 @@ UKR_dob_organization = {
 	allowed = {	
 		tag = UKR 
 	}
+	available = {
+	FROM = {
+	has_full_control_of_state = 226 
+	}
+   }
 }
 
 UKR_zaz_organization = {
 	include = generic_motorized_mechanized_organization
-	icon = GFX_idea_zaz
+	icon = gfx/interface/ideas/UKR/idea_UKR_zaz.dds
 	
 	allowed = {	
 		tag = UKR 
@@ -203,7 +248,7 @@ UKR_zaz_organization = {
 	
 	available = {
 		FROM = {
-			
+		has_full_control_of_state = 1046	
 		}
 	}
 }
