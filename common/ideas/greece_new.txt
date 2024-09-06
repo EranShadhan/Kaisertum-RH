@@ -13,6 +13,19 @@ ideas = {
 		
 		
 		}
+		GRE_attack_hungary = { 
+
+
+			picture = hun_hungarian_monarchy_habsburg
+				
+			removal_cost = -1
+			targeted_modifier = {
+				tag = HUN
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.1
+				breakthrough_bonus_against = 0.1
+			}
+		}
 		GRE_prepare_to_strike_ITA = { 
 
             name = GRE_prepare_to_strike_ITA

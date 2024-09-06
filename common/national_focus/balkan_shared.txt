@@ -101,13 +101,13 @@ joint_focus = {
 
 
 	completion_reward = {
+	add_ideas = GRE_attack_hungary
 	}
 	completion_reward_joint_originator = {
 		
-add_to_tech_sharing_group = balkan_united_research
 	}
 
 	completion_reward_joint_member = {
-		add_to_tech_sharing_group = balkan_united_research
+	
 	}
 }
