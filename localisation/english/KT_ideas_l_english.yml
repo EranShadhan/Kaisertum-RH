@@ -32,10 +32,7 @@
 
  islam_religion:0 "Muslim Faith"
  islam_religion_desc:0 "[ROOT.GetName] is overwhelmingly a muslim majority country."
- 
- UKR_sugar_businesses:0 "Sugar Businesses"
- UKR_sugar_businesses_desc:0 "Before the Great War, the right bank of Ukraine produced almost 90% of the sugar in the Russian Empire, today Ukraine actively uses this opportunity to improve the economic capabilities of the state."
- 
+  
  discrimination_focus:0 "National Superiority"
  discrimination_focus_desc:0 "[ROOT.GetAdjective] people are biologically the strongest. To remain in that opsition we have to unite and work together."
 

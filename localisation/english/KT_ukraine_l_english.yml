@@ -1,2 +1,49 @@
 ﻿l_english:
-UKR_cossack_tanks: "Cossack Tanks"
+ # Traits
+ UKR_red_prince: "Red Prince"
+ UKR_king_of_ukraine:0 "King of All Ukraine"
+ 
+ # MIOS
+ # Tanks #
+ UKR_zhbtz_organization:0 "Zhytomyr Armored Plant"
+ UKR_kbtz_organization:0 "Kyiv Armoured Plant"
+ UKR_hkbm_organization:0 "Kharkiv Machine-Building Design Bureau"
+ UKR_cossack_tanks: "Cossack Tanks"
+ # Navy #
+ UKR_chsz_organization:0 "Black Sea Shipyard"
+ UKR_srdsc_organization:0 "Research and Design Center of Shipbuilding"
+ UKR_thunderbird_organization:0 "CGZ "Burevisnyk""
+ # Aviation #
+ UKR_haz_organization:0 "Kharkiv Aircraft Plant"
+ UKR_motorsich_organization:0 "Motor Sich"
+ UKR_aviant_organization:0 "Aviant"
+ UKR_anatra_organization:0 "Anatra"
+ # Infantry # Artillery # Automotive #
+ UKR_sgc_organization:0 "State Armoured Cannon Enterprise"
+ UKR_dob_organization:0 "Dnipro Arms Bureau"
+ UKR_zaz_organization:0 "ZAZ"
+ # MIOS
+ 
+ # Countries
+ UKR_fascism:0 "Ukraine"
+ UKR_fascism_DEF:0 "Ukraine"
+ UKR_democratic:0 "Ukrainian People's Republic"
+ UKR_democratic_DEF:0 "the Ukrainian People's Republic"
+ UKR_neutrality:0 "Kingdom of Ukraine"
+ UKR_neutrality_DEF:0 "the Kingdom of Ukraine"
+ UKR_communism:1 "Ukrainian Socialist Republic"
+ UKR_communism_DEF:1 "the Ukrainian Socialist Republic"
+ UKR_fascism_ADJ:0 "Ukrainian"
+ UKR_democratic_ADJ:0 "Ukrainian"
+ UKR_neutrality_ADJ:0 "Ukrainian"
+ UKR_communism_ADJ:0 "Ukrainian"
+ UKR:0 "Ukraine"
+ UKR_DEF:0 "Ukraine"
+ UKR_ADJ:0 "Ukrainian"
+ 
+ # Ideas
+ UKR_sugar_businesses:0 "Sugar Businesses"
+ UKR_sugar_businesses_desc:0 "Before the Great War, the right bank of Ukraine produced almost 80% of the sugar in the Russian Empire, today Ukraine actively uses this opportunity to improve the economic capabilities of the state."
+ UKR_german_breadbasket:0 "German Breadbasket"
+ UKR_educational_programs:0 "Educational Programs"
+ 
