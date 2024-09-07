@@ -127,11 +127,20 @@ Balkan_project = {
 				value = 20
 				tooltip = add_20
 			}
-			108 = { set_demilitarized_zone = yes}
-			803 = { set_demilitarized_zone = yes}
-			48 = { set_demilitarized_zone = yes}
-			801 = { set_demilitarized_zone = yes}
-			77 = {set_demilitarized_zone = yes}
+			ROM = {
+				transfer_state = 77
+			}
+			BUL = {
+			set_politics = {
+				ruling_party = democratic
+			}
+			start_civil_war = {
+				ideology = neutrality
+				size = 0.10
+				capital = 48
+				states = { 184 981 211 212 106}
+			}
+			}
 		}
 		days_remove = 45
 	}

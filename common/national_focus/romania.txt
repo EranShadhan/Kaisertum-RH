@@ -3479,13 +3479,11 @@ focus = {
 			completion_reward = {
 
 				BUL = {
-				start_civil_war = {
-					ideology = democratic
-					size = 0.75
-					capital = 48
-					states = { 48 108 803 801 }
-				}
-
+					108 = { set_demilitarized_zone = yes}
+			803 = { set_demilitarized_zone = yes}
+			48 = { set_demilitarized_zone = yes}
+			801 = { set_demilitarized_zone = yes}
+			77 = {set_demilitarized_zone = yes}
 				}
 			}
 
@@ -3559,7 +3557,11 @@ focus = {
 	
 			completion_reward = {
 				BUL = {
-					set_cosmetic_tag = ROM_SIMP
+					set_cosmetic_tag = ROM_SIM
+				}
+				ROM = {
+					puppet = BUL
+					create_faction = "Balkan Pact"
 				}
 			}
 	}

@@ -6,6 +6,11 @@ ROM_playboy:0 "Carol II"
 Balkan_project:0 "The Balkan Project"
 Balkan_project_desc:0 "The Balkan Project should be achieve, the people must be united. \n \n §YInfluence over Bulgaria = [?ROM.ROM_influence_balkans_var]/100 "
 
+ROM_SIMP:0 "Republic of Bulgaria"
+ROM_SIMP_DEF:0 "Republic of Bulgaria"
+
+BALKAN_ALLIANCE:0 "Balkan Alliance"
+
 ROM_pol_1:0 "Current Status of Romania"
 ROM_pol_2:0 "§YThe King§!"
 ROM_pol_3:0 "§CThe People§!"

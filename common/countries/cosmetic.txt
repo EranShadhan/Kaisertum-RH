@@ -10,7 +10,7 @@ CRE_minoan = {
     color = rgb { 54 54 54 }
 	color_ui = rgb { 115 115 115 }
 }
-ROM_SIMP = {
+ROM_SIM = {
 	color = rgb { 215 196 72 }
 	color_ui = rgb { 255 255 120 }
 }
