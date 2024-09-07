@@ -4,7 +4,7 @@
 
 characters = {
 	UKR_Wilhelm_Franz_von_Habsburg_Lorithgen = {
-		name = "Vasyl Vyshivanyi"
+		name = "Vasyl Vyshyvanyi"
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/UKR/Portrait_UKR_Vasyl_Habsburg.dds"
