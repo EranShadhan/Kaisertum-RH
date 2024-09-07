@@ -433,7 +433,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 120
+		custom_effect_tooltip = "Unlock decision: Move capital to Kyiv."   
 		}
 	}
 
@@ -725,7 +725,7 @@ focus = {
 
 		completion_reward = {
            add_country_leader_trait = UKR_red_prince 
-           add_political_power = 100
+           add_political_power = 50
 		}
 	}
 	
@@ -748,7 +748,7 @@ focus = {
 
 		}
 		
-		bypass = {
+		bypass = { 
 
 		}
 
@@ -761,7 +761,8 @@ focus = {
 		}
 
 		completion_reward = {
-
+		country_event = { id = KT_ukraine.2 days = 10 }
+           add_ideas = UKR_sich_riflemen
 		}
 	}
 	
@@ -878,7 +879,7 @@ focus = {
 		}
 
 		completion_reward = {
-
+           add_ideas = UKR_royal_officer_corps 
 		}
 	}
 	
@@ -914,7 +915,19 @@ focus = {
 		}
 
 		completion_reward = {
+           add_doctrine_cost_reduction = {
+				cost_reduction = 1
+				uses = 1
+				category = land_doctrine
+			}
+           add_tech_bonus = {
+                ahead_reduction = 2
+			bonus = 1
+			uses = 1
+			category = artillery 
+			}
 
+           
 		}
 	}
 
@@ -1069,7 +1082,8 @@ focus = {
 		}
 
 		completion_reward = {
-
+		country_event = { id = KT_ukraine.1 days = 10 }
+           army_experience = 50
 		}
 	}
 
@@ -1105,6 +1119,11 @@ focus = {
 		}
 
 		completion_reward = {
+           add_doctrine_cost_reduction = {
+				cost_reduction = 0.75
+				uses = 2
+				category = land_doctrine
+			}
 
 		}
 	}
