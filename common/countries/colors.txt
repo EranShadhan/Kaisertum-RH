@@ -4,16 +4,16 @@ SIC = {
 	color_ui = rgb { 28 62 186 }
 }
 NMB = {
-	color = rgb { 64 64 64 }
-	color_ui = rgb { 64 64 64 }
+	color = rgb { 115 115 115 }
+	color_ui = rgb { 100 100 100 }
 }
 NFL = {
 	color = rgb { 225 47 47 }
 	color_ui = rgb { 225 47 47 }
 }
 NAT = {
-	color = rgb { 235 90 174 }
-	color_ui = rgb { 235 90 174 }
+	color = rgb { 195 107 160 }
+	color_ui = rgb { 198 169 248 }
 }
 GPI = {
 	color = rgb { 96  96  96 }
@@ -28,8 +28,8 @@ FMG = {
 	color_ui = rgb { 16 16 175 }
 }
 GER = {
-	color = rgb { 82 94 68 }
-	color_ui = rgb { 82 94 68 }
+	color = rgb { 128 128 128 }
+	color_ui = rgb { 115 115 115 }
 }
 ENG = {
 	color = rgb { 196 75 74 }
@@ -257,8 +257,8 @@ PRU = {
 	color_ui = rgb { 255 246 255 }
 }
 SAF = {
-	color = rgb { 213 206 155 }
-	color_ui = rgb { 213 206 155 }
+	color = rgb { 252 160 0 }
+	color_ui = rgb { 198 169 248 }
 }
 SAU = {
 	color = rgb { 38 128 0 }
