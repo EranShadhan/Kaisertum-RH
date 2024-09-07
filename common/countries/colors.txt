@@ -3,6 +3,14 @@ SIC = {
 	color = rgb { 28 62 186 }
 	color_ui = rgb { 28 62 186 }
 }
+ZHE = {
+	color = rgb { 4 89 47 }
+	color_ui = rgb { 4 89 47 }
+}
+PRM = {
+	color = rgb { 171 46 69 }
+	color_ui = rgb { 171 46 69 }
+}
 NMB = {
 	color = rgb { 115 115 115 }
 	color_ui = rgb { 100 100 100 }

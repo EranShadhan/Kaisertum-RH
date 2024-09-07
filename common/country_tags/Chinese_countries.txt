@@ -1,1 +1,3 @@
 SIC	= "countries/Sichuan.txt"
+ZHE	= "countries/Zheltorussia.txt"
+PRM	= "countries/CommunistManchuria.txt"

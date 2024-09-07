@@ -1,0 +1,47 @@
+﻿capital = 328
+
+oob = "MAN_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	tech_trucks = 1
+}
+
+recruit_character = MAN_aisin_gioro_puyi
+recruit_character = MAN_zhang_haipeng
+recruit_character = MAN_zhang_jinghui
+recruit_character = MAN_aisin_gioro_xiqia
+recruit_character = MAN_yoshiko_kawashima
+recruit_character = MAN_zhao_shangzhi
+recruit_character = MAN_changlin_linge
+recruit_character = MAN_kyoiji_tomonaga
+recruit_character = MAN_yonimitsu_kasahara
+recruit_character = MAN_deng_linge
+recruit_character = MAN_hung_zhehuang
+recruit_character = MAN_nakajima_kesago
+recruit_character = MAN_yin_zuoqian
+recruit_character = MAN_hesehn_tiemei
+recruit_character = MAN_xian_yuan
+recruit_character = MAN_guan_xingde
+recruit_character = MAN_megata_toshiro
+
+
+set_convoys = 5
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 10
+	fascism = 10
+	communism = 10
+	neutrality = 70
+}
+
+1939.1.1 = {
+}
