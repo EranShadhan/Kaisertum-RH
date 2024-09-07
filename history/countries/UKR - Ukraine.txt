@@ -15,14 +15,16 @@ set_technology = {
 	tech_trucks = 1
 	motorised_infantry = 1
 	gw_artillery = 1
-	interwar_antiair = 1
+	interwar_artillery = 1
 	basic_train = 1
-	mobile_warfare = 1
+	superior_firepower = 1
 	trade_interdiction = 1
-	formation_flying = 1
+	force_rotation = 1
 	synth_oil_experiments = 1
 	fuel_silos = 1
 	fuel_refining = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
 }
 
 add_ideas = {
@@ -32,20 +34,20 @@ add_ideas = {
 	UKR_german_breadbasket
 	}
 if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
-		     iw_small_airframe = 1
-			basic_small_airframe = 1
-			iw_medium_airframe = 1
-			basic_medium_airframe = 1
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			aa_lmg = 1
+			aa_hmg = 1
 			engines_1 = 1
 			engines_2 = 1
-			aa_lmg = 1
 			early_bombs = 1
-			aircraft_construction = 1
-			air_torpedoe_1 = 1
+			iw_small_airframe = 1
+			basic_small_airframe = 1
+		}
+	else = {
+		set_technology = {
+		
+		}
 	}
 }
 
@@ -56,8 +58,6 @@ if = {
 	set_technology = {
 		gwtank = 1
 		basic_light_tank = 1
-		improved_light_tank = 1
-		basic_heavy_tank = 1
 	}
 }
 if = {

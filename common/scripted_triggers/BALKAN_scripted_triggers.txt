@@ -7,4 +7,5 @@ BALKAN_is_balkan = {
 		original_tag = ROM
 		original_tag = CRE
 	}
+	exists = yes
 }

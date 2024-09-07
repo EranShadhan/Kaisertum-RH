@@ -62,3 +62,132 @@
  SIK_communism:0 "Sinkiang Socialist Republic"
  SIK_communism_DEF:0 "the Sinkiang Socialist Republic"
  SIK_communism_ADJ:0 "Sinkiang"
+ 
+ XSM_fascism:0 "Ma Clique"
+ XSM_fascism_DEF:0 "Ma Clique"
+ XSM_fascism_ADJ:0 "Ma Clique"
+ 
+ XSM_democratic:0 "Ma Clique"
+ XSM_democratic_DEF:0 "Ma Clique"
+ XSM_democratic_ADJ:0 "Ma Clique"
+ 
+ XSM_neutrality:0 "Ma Clique"
+ XSM_neutrality_DEF:0 "Ma Clique"
+ XSM_neutrality_ADJ:0 "Ma Clique"
+ 
+ XSM_communism:0 "Ma Clique"
+ XSM_communism_DEF:0 "Ma Clique"
+ XSM_communism_ADJ:0 "Ma Clique"
+ 
+ SHX_fascism:0 "Shaanxi Clique"
+ SHX_fascism_DEF:0 "Shaanxi Clique"
+ SHX_fascism_ADJ:0 "Shaanxi Clique"
+ 
+ SHX_democratic:0 "Shaanxi Clique"
+ SHX_democratic_DEF:0 "Shaanxi Clique"
+ SHX_democratic_ADJ:0 "Shaanxi Clique"
+ 
+ SHX_neutrality:0 "Shaanxi Clique"
+ SHX_neutrality_DEF:0 "Shaanxi Clique"
+ SHX_neutrality_ADJ:0 "Shaanxi Clique"
+ 
+ SHX_communism:0 "Shaanxi Clique"
+ SHX_communism_DEF:0 "Shaanxi Clique"
+ SHX_communism_ADJ:0 "Shaanxi Clique"
+ 
+ ZHE_fascism:0 "Zheltorossiya"
+ ZHE_fascism_DEF:0 "Zheltorossiya"
+ ZHE_fascism_ADJ:0 "Zheltorossiya"
+ 
+ ZHE_democratic:0 "Zheltorossiya"
+ ZHE_democratic_DEF:0 "Zheltorossiya"
+ ZHE_democratic_ADJ:0 "Zheltorossiya"
+ 
+ ZHE_neutrality:0 "Zheltorossiya"
+ ZHE_neutrality_DEF:0 "Zheltorossiya"
+ ZHE_neutrality_ADJ:0 "Zheltorossiya"
+ 
+ ZHE_communism:0 "Zheltorossiya"
+ ZHE_communism_DEF:0 "Zheltorossiya"
+ ZHE_communism_ADJ:0 "Zheltorossiya"
+ 
+ CHI_fascism:0 "Right Wing Kuomintang Governament"
+ CHI_fascism_DEF:0 "Kuomintang"
+ CHI_fascism_ADJ:0 "Kuomintang Governament"
+ 
+ CHI_democratic:0 "Kuomintang Governament"
+ CHI_democratic_DEF:0 "Kuomintang"
+ CHI_democratic_ADJ:0 "Kuomintang Governament"
+ 
+ CHI_neutrality:0 "Wuhan Governament"
+ CHI_neutrality_DEF:0 "Wuhan Governament"
+ CHI_neutrality_ADJ:0 "Kuomintang Governament"
+ 
+ CHI_communism:0 "Left Wing Kuomintang Governament"
+ CHI_communism_DEF:0 "Kuomintang"
+ CHI_communism_ADJ:0 "Kuomintang Governament"
+ 
+ PRC_fascism:0 "Nanjing Clique"
+ PRC_fascism_DEF:0 "Nanjing Clique"
+ PRC_fascism_ADJ:0 "the Nanjing Clique"
+ 
+ PRC_democratic:0 "Nanjing Clique"
+ PRC_democratic_DEF:0 "Nanjing Clique"
+ PRC_democratic_ADJ:0 "the Nanjing Clique"
+ 
+ PRC_neutrality:0 "Nanjing Clique"
+ PRC_neutrality_DEF:0 "Nanjing Clique"
+ PRC_neutrality_ADJ:0 "the Nanjing Clique"
+ 
+ PRC_communism:0 "Nanjing Soviet"
+ PRC_communism_DEF:0 "Nanjing Soviet"
+ PRC_communism_ADJ:0 "the Nanjing Soviet Republic"
+ 
+ PRM_fascism:0 "Manchuria"
+ PRM_fascism_DEF:0 "Manchurian"
+ PRM_fascism_ADJ:0 "Manchuria"
+ 
+ PRM_democratic:0 "Nanjing Clique"
+ PRM_democratic_DEF:0 "Manchurian"
+ PRM_democratic_ADJ:0 "Manchuria"
+ 
+ PRM_neutrality:0 "Manchuria"
+ PRM_neutrality_DEF:0 "Manchurian"
+ PRM_neutrality_ADJ:0 "Manchuria"
+ 
+ PRM_communism:0 "Manchurian People's Republic"
+ PRM_communism_DEF:0 "Manchurian"
+ PRM_communism_ADJ:0 "the Manchurian People's Republic"
+ 
+ YUN_fascism:0 "Yunnan Clique"
+ YUN_fascism_DEF:0 "Yunnanese"
+ YUN_fascism_ADJ:0 "Yunnan Clique"
+ 
+ YUN_democratic:0 "Yunnan Clique"
+ YUN_democratic_DEF:0 "Yunnanese"
+ YUN_democratic_ADJ:0 "Yunnan Clique"
+ 
+ YUN_neutrality:0 "Yunnan Clique"
+ YUN_neutrality_DEF:0 "Yunnanese"
+ YUN_neutrality_ADJ:0 "Yunnan Clique"
+ 
+ YUN_communism:0 "Yunnan People's Republic"
+ YUN_communism_DEF:0 "Yunnanese"
+ YUN_communism_ADJ:0 "the Yunnan People's Republic"
+ 
+ GXC_fascism:0 "Guangxi Clique"
+ GXC_fascism_DEF:0 "Guangxi"
+ GXC_fascism_ADJ:0 "Guangxi Clique"
+ 
+ GXC_democratic:0 "Guangxi Clique"
+ GXC_democratic_DEF:0 "Guangxi"
+ GXC_democratic_ADJ:0 "Guangxi Clique"
+ 
+ GXC_neutrality:0 "Guangxi Clique"
+ GXC_neutrality_DEF:0 "Guangxi"
+ GXC_neutrality_ADJ:0 "Guangxi Clique"
+ 
+ GXC_communism:0 "Nanning Soviet"
+ GXC_communism_DEF:0 "Nanning Soviet"
+ GXC_communism_ADJ:0 "the Nanning Soviet Socialist Republic"
+ 

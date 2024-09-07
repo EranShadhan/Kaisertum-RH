@@ -11,8 +11,8 @@ joint_focus = {
 	x = 29
 	y = 0
 	offset = {
-		x = 10
-		y = 8
+		x = 65
+		y = 0
 		trigger = {
 			tag = GRE
 		}
@@ -362,7 +362,7 @@ joint_focus = {
 	
 	  joint_trigger = { BALKAN_is_balkan = yes }
 
-	icon = GFX_focus_SPIRIT_OF_REVOLUTIONS
+	icon = GFX_goal_GEN_education
 	text_icon = joint_focus_style
 
 	prerequisite = { focus = BALKAN_united_against_ottoman }
@@ -383,6 +383,46 @@ joint_focus = {
 
 
 	completion_reward = {
+	add_stability = 0.1
+ add_political_power = 150
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+
+joint_focus = {
+	id = BALKAN_religion_question
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_GRE_focus_Islam_and_Orthodox
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_shared_language }
+	x = 1
+	y = 1
+	relative_position_id = BALKAN_shared_language
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	add_stability = 0.1
+ add_political_power = 150
 	}
 	completion_reward_joint_originator = {
 		

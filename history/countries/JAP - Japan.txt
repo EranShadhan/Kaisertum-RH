@@ -22,6 +22,8 @@ set_autonomy = {
 
 		freedom_level = 0.1
 	}
+
+	
 609 = {
 	start_resistance = yes
 	set_compliance = 5

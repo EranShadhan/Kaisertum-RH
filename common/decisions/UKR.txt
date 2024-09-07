@@ -1,0 +1,35 @@
+political_actions = {
+
+	UKR_move_capital_to_kyiv = {
+
+		allowed = {
+			original_tag = UKR
+		}
+
+		available = {
+			owns_state = 202
+			has_full_control_of_state = 202
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			has_full_control_of_state = 202
+			has_completed_focus = UKR_ukraine_above_all
+		}
+		fire_only_once = yes
+		complete_effect = {
+			add_stability = 0.1
+			add_war_support = 0.1
+			set_capital = { state = 202 }
+			set_province_name = { id = 525 name = "Kyiv" }
+			hidden_effect = { 
+				202 = { set_state_name = "Kyiv" }
+			}
+		}
+	}
+
+
+}

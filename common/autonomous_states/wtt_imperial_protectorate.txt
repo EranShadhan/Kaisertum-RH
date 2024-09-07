@@ -41,15 +41,14 @@ autonomy_state = {
 	}
 
 	allowed = {
-		
-		OVERLORD = { original_tag = JAP 
-			has_government = communism}
-				
-					
-	
-	
-					
-	}
+        OVERLORD = { 
+				or = {
+					original_tag = JAP 
+					original_tag = PRC 
+				}
+			has_government = communism
+		}
+    }
 	
 	can_take_level = {
 		

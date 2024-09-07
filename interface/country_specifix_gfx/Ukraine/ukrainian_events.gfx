@@ -1,0 +1,15 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_habsburg_legacy"
+		texturefile = "gfx/event_pictures/UKR/UKR_habsburg_legacy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_uss"
+		texturefile = "gfx/event_pictures/UKR/UKR_uss_legacy.dds"
+	}
+
+	
+}
+

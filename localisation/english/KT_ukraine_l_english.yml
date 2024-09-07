@@ -47,5 +47,32 @@
  UKR_german_breadbasket:0 "German Breadbasket"
  UKR_educational_programs:0 "Educational Programs"
  UKR_state_stability:0 "State Stability"
+ UKR_royal_officer_corps:0 "Royal Officer Corps"
+ UKR_sich_riflemen:0 "Sich Riflemen Spirit"
+ # Focuses
+ UKR_royal_standart:0 "Royal Standart"
+ UKR_royal_standart_desc:0 "The Royal Standard is not just a symbol of our monarchy but also the foundation of our military's doctrine and technological advancements. By standardizing equipment and strategies across the army, we ensure a unified, disciplined, and modern fighting force. This initiative will bolster our defensive capabilities and improve our ability to respond quickly and efficiently to any threat."
+ UKR_royal_officer_corps_desc:0 "The Royal Officer Corps embodies elite leadership in our military, chosen for their loyalty, discipline, and strategic skill. Trained under monarchy and tradition, these officers ensure our forces operate with precision, boosting morale and battlefield efficiency."
+ UKR_sich_riflemen_legacy:0 "Sichovi Striltsi"
+ UKR_royal_guard:0 "Establish a Royal Guard"
+ UKR_expand_royal_guard:0 "Expand a Royal Guard"
+ #Events
+ KT_ukraine.1.t:0 "Habsburg Legacy"
+ KT_ukraine.1.d:0 "The heritage of the Habsburgs is especially embodied by Vasyl Vyshivanyi. His dedication to Ukraine's independence and leadership in turbulent times symbolize the fusion of the Habsburg tradition and Ukrainian nationalism. By accepting this heritage, Ukraine confirms its place among European historical monarchies. The wisdom of Habsburg rule, strengthened by the vision of the Embroidered One, strengthens the stability of our state, strengthens our political power, and infuses our army with the discipline and resilience of a glorious past."
+ KT_ukraine.1.a:0 "Our great future awaits!"
+ 
+ KT_ukraine.2.t:0 "Legacy of Sichovi Striltsi"
+ KT_ukraine.2.d:0 "The Ukrainian Sich Riflemen is a national military formation within the Austro-Hungarian army, formed from volunteers who responded to the call of the Main Ukrainian Council on August 6, 1914. The USS were the first Ukrainian units of Austria-Hungary, selected on national grounds, and influenced the creation of military vocabulary and terminology , folklore, song and music, to stabilize the form of Ukrainian unity."
+ KT_ukraine.2.a:0 "for Ukraine!"
+ 
+ 
+ #Decisions
+ UKR_move_capital_to_kyiv:0 "Return capital to Kyiv"
+ 
+ 
+ 
+ 
+ 
+ 
  
  
