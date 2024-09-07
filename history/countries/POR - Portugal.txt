@@ -2,6 +2,8 @@
 
 oob = "POR_1936"
 
+set_cosmetic_tag = KOP_kingdom_portugal
+
 add_ideas = {
 	german_customs_union_member
 }
