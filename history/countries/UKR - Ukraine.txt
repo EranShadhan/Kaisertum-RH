@@ -147,8 +147,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Vasyl Vyshivanyi"
-	desc = "Vasyl Vyshivanyi"
+	name = "Vasyl Vyshyvanyi"
+	desc = "Vasyl Vyshyvanyi"
 	picture = gfx/leaders/UKR/Portrait_UKR_Vasyl_Habsburg.dds
 	expire = "1965.1.1"
 	ideology = despotism

@@ -84,7 +84,7 @@ UKR_royal_vpk = {
             }
             
             
-            picture = GFX_idea_UKR_european_breadbasket
+            picture = GFX_idea_UKR_royal_vpk
             
             modifier = {
             industrial_capacity_factory = 0.15
@@ -101,10 +101,12 @@ UKR_state_stability = {
             }
             
             
-            picture = GFX_idea_UKR_european_breadbasket
+            picture = GFX_idea_UKR_state_stability
             
             modifier = {
-            stability_factor = 0.15
+            operative_slot = 1
+            intel_network_gain_factor = 0.15
+            agency_upgrade_time = -0.15
                        
              }
          }

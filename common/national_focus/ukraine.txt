@@ -135,7 +135,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 90
 		}
-
+  
 		available = {
 
 		}
@@ -151,6 +151,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = UKR_state_stability
+			add_stability = 0.05
 		}
 	}
 
