@@ -12,6 +12,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GRE/GRE_cretan_state.dds"
 	} 
 	SpriteType = {
+		name = "GFX_GRE_focus_Islam_and_Orthodox"
+		texturefile = "gfx/interface/goals/GRE/focus_Islam_and_Orthodox.dds"
+	} 
+	SpriteType = {
 		name = "GFX_GRE_balkan_subs"
 		texturefile = "gfx/interface/goals/GRE/GRE_balkan_subs.dds"
 	} 

@@ -41,6 +41,7 @@ autonomy_state = {
 			OVERLORD = { NOT = { has_government = fascism } }
 		}
 		OVERLORD = { NOT = { original_tag = JAP }}
+		OVERLORD = { NOT = { original_tag = PRC }}
 	}
 	
 	can_take_level = {
