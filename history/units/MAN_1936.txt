@@ -36,36 +36,6 @@ division_template = {
 
 ##### OOB #####
 units = {
-	division = { # "1 Qu Jun"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 800
-		division_template = "Qu Jun"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.9
-	}
-	division = { # "2 Qu Jun"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 11771
-		division_template = "Qu Jun"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.9
-	}
-	division = { # "3 Qu Jun"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location = 3944
-		division_template = "Qu Jun"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.9
-	}
 	division = {
 		name = "4 Qu Jun"
 		division_name = {
@@ -84,36 +54,6 @@ units = {
 		}
 		location = 3877
 		division_template = "Qu Jun"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.9
-	}
-	division = { # "1 Qibing Shi"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 800
-		division_template = "Qibing Shi"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.9
-	}
-	division = { # "2 Qibing Shi"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 11771
-		division_template = "Qibing Shi"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.9
-	}
-	division = { # "3 Qibing Shi"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location = 3944
-		division_template = "Qibing Shi"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}

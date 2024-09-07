@@ -1,5 +1,8 @@
 #reload countrycolors
-
+SIC = {
+	color = rgb { 28 62 186 }
+	color_ui = rgb { 28 62 186 }
+}
 NMB = {
 	color = rgb { 64 64 64 }
 	color_ui = rgb { 64 64 64 }
@@ -266,8 +269,8 @@ SIA = {
 	color_ui = rgb { 222 247 198 }
 }
 SIK = {
-	color = rgb { 71 190 152 }
-	color_ui = rgb { 222 247 198 }
+	color = rgb { 104 163 134 }
+	color_ui = rgb { 104 163 134 }
 }
 TIB = {
 	color = rgb { 80 115 45}
@@ -455,8 +458,8 @@ BLR = {
 	color_ui = rgb { 180 220 190 }
 }
 MAN = {
-	color = rgb { 255 120 71 }
-	color_ui = rgb { 255 120 71 }
+	color = rgb { 54 117 86 }
+	color_ui = rgb { 54 117 86 }
 }
 ANG = {
 	color = rgb { 37 140 61 }

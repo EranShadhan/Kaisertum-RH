@@ -43,7 +43,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 81
 		}
-		location = 1647
+		location = 12732
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
@@ -54,7 +54,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 82
 		}
-		location = 1933
+		location = 12732
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
@@ -65,7 +65,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 7911
+		location = 12732
 		division_template = "Qibing Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
@@ -76,7 +76,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 531
+		location = 12732
 		division_template = "Qibing Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
