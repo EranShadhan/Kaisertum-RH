@@ -4,6 +4,8 @@ set_research_slots = 2
 
 oob = "PRM_1930"
 
+recruit_character = PRM_Zhao_Shangzhi
+
 set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
@@ -33,6 +35,8 @@ if = {
 		gwtank_chassis = 1
 	}
 }
+
+
 
 if = {
 	limit = {

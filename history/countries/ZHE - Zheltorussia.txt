@@ -57,4 +57,4 @@ set_popularities = {
 	neutrality = 70
 }
 
-
+recruit_character = ZHE_Mad_Baron

@@ -4,6 +4,8 @@ set_research_slots = 2
 
 oob = "SIC_1936"
 
+recruit_character = SIC_Liu_Xiang
+
 set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
