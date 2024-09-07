@@ -59,14 +59,6 @@ bookmarks = {
 			focuses = {
 			}		
 		}
-		"CHI"={
-			history = "CHI_NEW_DECADE_DESC"
-			ideology = neutrality
-			ideas = {
-			}	
-			focuses = {
-			}		
-		}
 		"SOV"={
 			history = "SOV_NEW_DECADE_DESC"
 			ideology = neutrality
@@ -102,7 +94,9 @@ bookmarks = {
 			}
 		}
 
-
+       "---"={
+			history = "OTHER_NEW_DECADE_DESC"
+		}
 		###  MINORS ###
 		"FIN"={
 			minor = yes
@@ -282,12 +276,11 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		"AFG"={
+		"CHI"={
 			minor = yes
-			history = "AFG_NEW_DECADE_DESC"
+			history = "CHI_NEW_DECADE_DESC"
 			ideology = neutrality
 			ideas = {
-				islam_religion
 			}
 			focuses = {
 			}
