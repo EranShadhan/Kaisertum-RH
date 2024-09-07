@@ -7,10 +7,11 @@ state=
 	state_category = town
 	history=
 	{
-		owner = JAP
+		owner = KOR
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
+			arms_factory = 2
+			industrial_complex = 1
 			dockyard = 1
 			4056 = {
 				naval_base = 3

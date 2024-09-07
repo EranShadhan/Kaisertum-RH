@@ -16,7 +16,12 @@ add_ideas = {
 	JAP_duplicate_research_efforts
 	JAP_militarism
 }
+set_autonomy = {
+		target = KOR
+		autonomous_state = autonomy_wtt_imperial_associate
 
+		freedom_level = 0.1
+	}
 609 = {
 	start_resistance = yes
 	set_compliance = 5
