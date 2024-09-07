@@ -11,14 +11,19 @@ country_event = { # Madagascar Revolution Event
 	fire_only_once = yes
 
 	trigger = {
-		tag = FMG
-		date>1932.9.4
-		date<1932.9.6
+		#tag = FMG
+		#date>1932.9.4
+		Odate<1932.9.6
 	}
 
 	immediate = {
 		hidden_effect = {
 			set_global_flag = malagasy_revolution_flag
+			MAD = {
+				transfer_state = 1053
+				transfer_state = 1052
+				transfer_state = 1049
+			}
 		}
 	}
 	

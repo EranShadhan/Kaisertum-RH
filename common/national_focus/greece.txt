@@ -11,7 +11,8 @@ focus_tree = {
 	
 
 	default = no
-shared_focus = BALKAN_joint_united_front
+	shared_focus = BALKAN_joint_united_front
+	continuous_focus_position = { x = 50 y = 1200 }
 	focus = {
 		id = GRE_what_is_our_future
 		icon = GFX_focus_SWE_refuge_from_war
@@ -19,7 +20,7 @@ shared_focus = BALKAN_joint_united_front
 		text_icon = joint_focus_style
 		available = {
 		}
-		x = 80
+		x = 55
 		y = 0
 
 		cost = 3.5
@@ -3160,13 +3161,13 @@ add_ideas = GRE_like_the_beasts
 		}
 	}	
 	focus = {
-		id = GRE_hellenic_armed_forces_new
+		id = GRE_hellenic_armed_forces
 		icon = GFX_focus_GRE_hellenic_armed_forces
 
 		
 		available = {
 		}
-		x = 25
+		x = 10
 		y = 0
 
 		cost = 5
@@ -3189,8 +3190,8 @@ add_ideas = GRE_like_the_beasts
 		}
 		x = 8
 		y = 1
-        relative_position_id = GRE_hellenic_armed_forces_new
-		prerequisite = { focus = GRE_hellenic_armed_forces_new }
+        relative_position_id = GRE_hellenic_armed_forces
+		prerequisite = { focus = GRE_hellenic_armed_forces }
 		cost = 5
 		ai_will_do = {
 			base = 0
@@ -3778,8 +3779,8 @@ focus = {
 		}
 		x = -8
 		y = 1
-  relative_position_id = GRE_hellenic_armed_forces_new
-	prerequisite = { focus = GRE_hellenic_armed_forces_new }
+  relative_position_id = GRE_hellenic_armed_forces
+	prerequisite = { focus = GRE_hellenic_armed_forces }
 		cost = 5
 		ai_will_do = {
 			base = 0
@@ -4280,8 +4281,8 @@ focus = {
 		}
 		x = 0
 		y = 1
-  relative_position_id = GRE_hellenic_armed_forces_new
-	prerequisite = { focus = GRE_hellenic_armed_forces_new }
+  relative_position_id = GRE_hellenic_armed_forces
+	prerequisite = { focus = GRE_hellenic_armed_forces }
 		cost = 4
 		ai_will_do = {
 			base = 100
@@ -5396,12 +5397,12 @@ focus = {
 			show_ideas_tooltip = GRE_the_greek_golden_age_idea
 		}
 	}
-		focus = { 
+	focus = { 
 		id = GRE_first_five_year_plan
 		icon = GFX_focus_GRE_5_year_plan_focus
 		available = {
 		}
-		x = 45
+		x = 27
 		y = 0
 		cost = 5
 			ai_will_do = {
@@ -5653,12 +5654,12 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 	
 	
 	
-		focus = {
+	focus = {
 		id = GRE_prepare_to_protect_our_borders
 		icon = GFX_focus_GRE_battle_for_the_bosporous
 
   		available = { }
-		x = 59
+		x = 36
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -5670,7 +5671,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
         		add_war_support =0.1
 		}
     }
-		focus = {
+	focus = {
 		id = GRE_class_in_the_straights
 		icon = GFX_focus_gre_class_in_bosporus
         prerequisite = { focus = GRE_prepare_to_protect_our_borders }
@@ -5724,12 +5725,12 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
         		swap_ideas = { remove_idea = GRE_prepare_to_strike_tur2 add_idea = GRE_prepare_to_strike_tur3 }
 		}
     }		
-		focus = {
+	focus = {
 		id = GRE_the_traitor
 		icon = GFX_focus_ITA_imperial_recognition
 
   		available = { }
-		x = 65
+		x = 42
 		y = 0
 		cost = 5
 		ai_will_do = {

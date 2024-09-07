@@ -179,6 +179,101 @@
 		}
 	}
 	focus = {
+		id = FMG_aks_honhons_for_islands
+		icon = GFX_goal_zzz_WIP
+		x = 0
+		y = 1
+		relative_position_id = FMG_cc_toliara
+		
+		prerequisite = { focus = FMG_cc_toliara }
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			# TODO: ADD EVENT
+			custom_effect_tooltip = not_implemented_focus_tt
+		}
+	}
+	focus = {
+		id = FMG_reclaim_homeland_ast
+		icon = GFX_goal_zzz_WIP
+		x = -1
+		y = 1
+		relative_position_id = FMG_aks_honhons_for_islands
+		
+		mutually_exclusive = { focus = FMG_nordic_of_africa }
+		prerequisite = { focus = FMG_aks_honhons_for_islands }
+
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			declare_war_on = {
+				target = AST
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = FMG_nordic_of_africa
+		icon = GFX_goal_zzz_WIP
+		x = 1
+		y = 1
+		relative_position_id = FMG_aks_honhons_for_islands
+		
+		mutually_exclusive = { focus = FMG_reclaim_homeland_ast }
+		prerequisite = { focus = FMG_aks_honhons_for_islands }
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
 		id = FMG_continue_zionist_project
 		icon = GFX_goal_zzz_WIP
 		x = 3
