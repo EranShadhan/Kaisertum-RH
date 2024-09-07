@@ -15,9 +15,9 @@ leader_traits = {
 
 	ROM_playboy_king = {
 		random = no
-		stability_weekly = -0.01
-		consumer_goods_factor = 0.15
-		political_power_gain = 0.5
+		stability_weekly = -0.005
+		consumer_goods_factor = 0.2
+		political_power_gain = 0.05
 	}
 
 	ROM_witness_to_ferdinand = {

@@ -26,7 +26,7 @@ ideas = {
 
 		ROM_playboy = {
 
-			picture = generic_constitutional_guarantees
+			picture = ROM_carol_ii_KT
 			
 			allowed = {
 				always = no
@@ -38,11 +38,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			modifier = {
-				stability_weekly = -0.005
-                consumer_goods_factor = 0.2
-				political_power_gain = 0.05
-			}
+			traits = { ROM_playboy_king }
 		}
 
 		ROM_total_equality = {

@@ -2654,7 +2654,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YUG_the_mareshall_of_the_people
-		icon = GFX_
+		icon = GFX_goal_YUG_marshal_tito
 		relative_position_id = YUG_defence_against_capitalism
 		prerequisite = { focus = YUG_defence_against_capitalism }
 		available = {
