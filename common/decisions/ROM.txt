@@ -165,6 +165,52 @@ Balkan_project = {
 			}
 		}
 	}
+
+	inf_gre = {
+		available = {
+			has_completed_focus = ROM_pol_d_16
+			original_tag = ROM
+		}
+
+		visible = {
+			has_completed_focus = ROM_pol_d_16
+			original_tag = ROM
+			NOT = {
+				has_decision = inf_gre
+
+			}
+		}
+	}
+	inf_yug = {
+		available = {
+			has_completed_focus = ROM_pol_d_16
+			original_tag = ROM
+		}
+
+		visible = {
+			has_completed_focus = ROM_pol_d_16
+			original_tag = ROM
+			NOT = {
+				has_decision = inf_yug
+
+			}
+		}
+	}
+	inf_alb = {
+		available = {
+			has_completed_focus = ROM_pol_d_16
+			original_tag = ROM
+		}
+
+		visible = {
+			has_completed_focus = ROM_pol_d_16
+			original_tag = ROM
+			NOT = {
+				has_decision = inf_alb
+
+			}
+		}
+	}
 }
 
 Balkan_integration = {

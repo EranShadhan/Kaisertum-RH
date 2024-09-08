@@ -3049,41 +3049,6 @@ focus = {
 
 	focus = {
 
-		id = ROM_pol_d_8
-		icon = GFX_ROM_pol_d_8
-		x = -2
-		y = 4
-		relative_position_id = ROM_pol_d_1
-	
-		prerequisite = { focus = ROM_pol_d_7 }
-
-		cost = 5
-
-		ai_will_do = {
-				factor = 1
-			}
-	
-			available = {
-	
-			}
-	
-			bypass = {
-	
-			}
-	
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
-	
-			
-	
-			completion_reward = {
-				
-			}
-	}
-
-	focus = {
-
 		id = ROM_pol_d_9
 		icon = GFX_ROM_pol_d_9
 		x = 0
@@ -3154,7 +3119,7 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				add_political_power = 100
 			}
 	}
 
@@ -3190,7 +3155,10 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				add_timed_idea = {
+					idea = ROM_sell_gold
+					years = 1
+				}
 			}
 	}
 
@@ -3225,7 +3193,22 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 2
+				}
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
 			}
 	}
 
@@ -3260,7 +3243,7 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				add_ideas = ROM_war_songs
 			}
 	}
 
@@ -3297,7 +3280,12 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				GER = {
+					add_timed_idea = {
+						idea = ROM_sell_gold_2
+						years = 1
+					}
+				}
 			}
 	}
 
@@ -3334,7 +3322,12 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				FRA = {
+					add_timed_idea = {
+						idea = ROM_sell_gold_2
+						years = 1
+					}
+				}
 			}
 	}
 
@@ -3405,7 +3398,7 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				add_research_slot = 1
 			}
 	}
 
@@ -3427,7 +3420,7 @@ focus = {
 			}
 	
 			available = {
-	
+				has_political_power > 100
 			}
 	
 			bypass = {
@@ -3441,7 +3434,11 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				add_offsite_building = {
+					type = arms_factory
+					level = 1
+				}
+				add_political_power = -100
 			}
 	}
 
@@ -3506,7 +3503,7 @@ focus = {
 			}
 	
 			available = {
-	
+				has_political_power > 150
 			}
 	
 			bypass = {
@@ -3520,7 +3517,11 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				add_offsite_building = {
+					type = arms_factory
+					level = 2
+				}
+				add_political_power = -150
 			}
 	}
 
@@ -3608,7 +3609,7 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				add_ideas = ROM_import_food
 			}
 	}
 
@@ -3643,7 +3644,10 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				add_timed_idea = {
+					idea = ROM_resistant_culture
+					months = 6
+				}
 			}
 	}
 

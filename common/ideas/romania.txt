@@ -41,6 +41,82 @@ ideas = {
 			traits = { ROM_playboy_king }
 		}
 
+		ROM_war_songs = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.1
+				equipment_capture_for_controller = 0.25
+				recruitable_population = 0.20
+			}
+		}
+
+		BALK_debuff = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = -0.2
+				army_core_defence_factor = -0.2
+			}
+		}
+
+		ROM_sell_gold = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.25
+			}
+		}
+
+		ROM_sell_gold_2 = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.25
+			}
+		}
+
 		ROM_total_equality = {
 			picture = generic_constitutional_guarantees
 			
@@ -77,6 +153,44 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.25
 				stability_factor = -0.15
+			}
+		}
+
+		ROM_resistant_culture = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.25
+				stability_factor = -0.15
+			}
+		}
+
+		ROM_import_food = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				recruitable_population = 0.1
+				weekly_manpower = 2500
 			}
 		}
 
