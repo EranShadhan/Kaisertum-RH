@@ -180,6 +180,14 @@ Balkan_project = {
 
 			}
 		}
+		complete_effect = {
+			GRE = {
+				add_timed_idea = {
+					idea = BALK_debuff
+					days = 90
+				}
+			}
+		}
 	}
 	inf_yug = {
 		available = {
@@ -195,6 +203,14 @@ Balkan_project = {
 
 			}
 		}
+		complete_effect = {
+			YUG = {
+				add_timed_idea = {
+					idea = BALK_debuff
+					days = 90
+				}
+			}
+		}
 	}
 	inf_alb = {
 		available = {
@@ -208,6 +224,14 @@ Balkan_project = {
 			NOT = {
 				has_decision = inf_alb
 
+			}
+		}
+		complete_effect = {
+			ALB = {
+				add_timed_idea = {
+					idea = BALK_debuff
+					days = 90
+				}
 			}
 		}
 	}
