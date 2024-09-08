@@ -191,14 +191,22 @@
 		ai_will_do = {
 			factor = 1
 		}
+		bypass = {
+			NOT = {
+				FRA = {
+					owns_state = 708
+				}
+			}
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			# TODO: ADD EVENT
-			custom_effect_tooltip = not_implemented_focus_tt
+			FRA = {
+				country_event = kt_madagascar.2
+			}
 		}
 	}
 	focus = {

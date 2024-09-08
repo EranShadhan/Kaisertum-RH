@@ -554,12 +554,12 @@ taiwan_austria_easteregg = {
 		text = "RULE_OPTION_ALLOWED"
 		desc = "RULE_TAIWAN_YES_DESC"
 	}
-	default = {
+	option = {
 		name = idk
 		text = "RULE_OPTION_IDK"
 		desc = "RULE_TAIWAN_IDK_DESC"
 	}
-	option = {
+	default = {
 		name = no
 		text = "RULE_OPTION_BLOCKED"
 		desc = "RULE_TAIWAN_NO_DESC"
