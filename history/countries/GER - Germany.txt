@@ -194,6 +194,7 @@ add_ideas = {
 	GER_victory_tgw
 	german_customs_union_member
 	GER_powerful_unions
+	GER_german_breadbasket_to_ukr
 }
 
 activate_mission = GER_mefo_bills_mission

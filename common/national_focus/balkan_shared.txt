@@ -17,6 +17,13 @@ joint_focus = {
 			tag = GRE
 		}
 	}
+	offset = {
+		x = 35
+		y = 0
+		trigger = {
+			tag = CRE
+		}
+	}
 	#relative_position_id = NORDIC_mutual_guarantees
 	cost = 10
 	joint_trigger = { BALKAN_is_balkan = yes }
@@ -396,11 +403,11 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = BALKAN_religion_question
+	id = BALKAN_to_the_mines
 	
 	  joint_trigger = { BALKAN_is_balkan = yes }
 
-	icon = GFX_GRE_focus_Islam_and_Orthodox
+	icon = GFX_focus_generic_mining_industry
 	text_icon = joint_focus_style
 
 	prerequisite = { focus = BALKAN_shared_language }
@@ -421,11 +428,355 @@ joint_focus = {
 
 
 	completion_reward = {
-	add_stability = 0.1
- add_political_power = 150
 	}
 	completion_reward_joint_originator = {
 		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
+	id = BALKAN_resource_extraction
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_generic_resource_extraction
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_shared_language }
+	x = -1
+	y = 1
+	relative_position_id = BALKAN_shared_language
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+
+
+joint_focus = {
+	id = BALKAN_religion_question
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_GRE_focus_Islam_and_Orthodox
+	text_icon = joint_focus_style
+	prerequisite = { focus = BALKAN_to_the_mines }
+	prerequisite = { focus = BALKAN_resource_extraction }
+	x = 1
+	y = 1
+	relative_position_id = BALKAN_resource_extraction
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
+	id = BALKAN_urbanization
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_SWE_urbanization
+	text_icon = joint_focus_style
+	prerequisite = { focus = BALKAN_religion_question }
+	x = 1
+	y = 1
+	relative_position_id = BALKAN_religion_question
+	cost = 5
+    mutually_exclusive = { focus = BALKAN_ruralization }
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
+	id = BALKAN_ruralization
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_generic_farmland
+	text_icon = joint_focus_style
+	prerequisite = { focus = BALKAN_religion_question }
+	mutually_exclusive = { focus = BALKAN_urbanization }
+	x = -1
+	y = 1
+	relative_position_id = BALKAN_religion_question
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
+	id = BALKAN_balkan_conference
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_generic_balkan_diplomacy
+	text_icon = joint_focus_style
+	prerequisite = { focus = BALKAN_ruralization focus = BALKAN_urbanization}
+	x = 1
+	y = 1
+	relative_position_id = BALKAN_ruralization
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
+	id = BALKAN_absolute_unification
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_BUL_bulgaria_on_the_three_seas
+	text_icon = joint_focus_style
+	prerequisite = { focus = BALKAN_balkan_conference }
+	x = 1
+	y = 1
+	relative_position_id = BALKAN_balkan_conference
+	cost = 5
+	mutually_exclusive = { focus = BALKAN_decentralized_empire }
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
+	id = BALKAN_decentralized_empire
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_BUL_free_balkan_states
+	text_icon = joint_focus_style
+	prerequisite = { focus = BALKAN_balkan_conference }
+	x = -1
+	y = 1
+	mutually_exclusive = { focus = BALKAN_absolute_unification }
+	relative_position_id = BALKAN_balkan_conference
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
+	id = BALKAN_1932_crisis
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_CHL_avenge_the_pacification_of_araucania
+	text_icon = joint_focus_style
+	prerequisite = { focus = BALKAN_resource_extraction }
+	x = 3
+	y = 1
+	relative_position_id = BALKAN_resource_extraction
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+
+joint_focus = {
+	id = BALKAN_seize_old_equipment
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_FIN_weapon_caches
+	text_icon = joint_focus_style
+	prerequisite = { focus = BALKAN_resource_extraction }
+	x = -1
+	y = 1
+	relative_position_id = BALKAN_resource_extraction
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	add_equipment_to_stockpile = { 
+				type = infantry_equipment
+				amount = 1000
+				producer = ROOT
+			}
+			add_equipment_to_stockpile = { 
+				type = support_equipment
+				amount = 500
+				producer = ROOT
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 250
+			}
+	}
+	completion_reward_joint_originator = {
+		if = {
+				limit = {
+					has_dlc = "No Step Back"
+				}
+				#Required techs for railway guns
+				if = {
+					limit = {
+						NOT = { has_tech = armored_train }
+					}
+					set_technology = { armored_train = 1 }
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = railway_gun }
+					}
+					set_technology = { railway_gun = 1 }
+				}
+
+				ITA_mobilize_railway_guns = yes
+			}
 						
 	}
 

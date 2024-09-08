@@ -1,6 +1,27 @@
 ideas = {
 
 	country = {
+	
+GER_german_breadbasket_to_ukr = {
+         
+            removal_cost = -1
+             
+            allowed = {
+            
+            }
+            
+            
+            picture = UKR_german_breadbasket
+            
+            modifier = {
+            stability_factor = 0.1
+            political_power_gain = 0.15
+            war_support_factor = 0.1
+            recruitable_population = 0.1
+            consumer_goods_factor = 0.05
+            
+             }
+         }
 		GER_conservatism_focus = {
 			
 			allowed = {
