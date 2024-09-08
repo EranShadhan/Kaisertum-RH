@@ -95,21 +95,21 @@
  SHX_communism_DEF:0 "Shaanxi Clique"
  SHX_communism_ADJ:0 "Shaanxi Clique"
  
- ZHE_fascism:0 "Zheltorossiya"
- ZHE_fascism_DEF:0 "Zheltorossiya"
- ZHE_fascism_ADJ:0 "Zheltorossiya"
+ ZHE_fascism:0 "Zheltogorsk"
+ ZHE_fascism_DEF:0 "Sino-Russian"
+ ZHE_fascism_ADJ:0 "Zheltogorsk"
  
- ZHE_democratic:0 "Zheltorossiya"
- ZHE_democratic_DEF:0 "Zheltorossiya"
- ZHE_democratic_ADJ:0 "Zheltorossiya"
+ ZHE_democratic:0 "Zheltogorsk"
+ ZHE_democratic_DEF:0 "Sino-Russian"
+ ZHE_democratic_ADJ:0 "Zheltogorsk"
  
- ZHE_neutrality:0 "Zheltorossiya"
- ZHE_neutrality_DEF:0 "Zheltorossiya"
- ZHE_neutrality_ADJ:0 "Zheltorossiya"
+ ZHE_neutrality:0 "Zheltogorsk"
+ ZHE_neutrality_DEF:0 "Sino-Russian"
+ ZHE_neutrality_ADJ:0 "Zheltogorsk"
  
- ZHE_communism:0 "Zheltorossiya"
- ZHE_communism_DEF:0 "Zheltorossiya"
- ZHE_communism_ADJ:0 "Zheltorossiya"
+ ZHE_communism:0 "Zheltogorsk"
+ ZHE_communism_DEF:0 "Sino-Russian"
+ ZHE_communism_ADJ:0 "Zheltogorsk"
  
  CHI_fascism:0 "Right Wing Kuomintang Governament"
  CHI_fascism_DEF:0 "Kuomintang"
