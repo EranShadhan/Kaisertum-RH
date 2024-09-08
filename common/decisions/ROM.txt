@@ -166,3 +166,100 @@ Balkan_project = {
 		}
 	}
 }
+
+Balkan_integration = {
+
+	int_bul = {
+		available = {
+			48 = { is_owned_by = ROM }	
+		}
+
+		visible = {
+			has_completed_focus = ROM_pol_d_24
+		}
+
+		complete_effect = {
+			77 = {add_core_of = ROM}
+			108 = {add_core_of = ROM}
+			48 = {add_core_of = ROM}
+			801 = {add_core_of = ROM}
+			211 = {add_core_of = ROM}
+			212 = {add_core_of = ROM}
+			803 = {add_core_of = ROM}
+			106 = {add_core_of = ROM}
+			184 = {add_core_of = ROM}
+			981 = {add_core_of = ROM}
+		}
+	}
+
+	int_gre = {
+		available = {
+			47 = { is_owned_by = ROM }	
+		}
+
+		visible = {
+			has_completed_focus = ROM_pol_d_24
+		}
+
+		complete_effect = {
+			731 = {add_core_of = ROM}
+			184 = {add_core_of = ROM}
+			186 = {add_core_of = ROM}
+			341 = {add_core_of = ROM}
+			797 = {add_core_of = ROM}
+			185 = {add_core_of = ROM}
+			983 = {add_core_of = ROM}
+			47 = {add_core_of = ROM}
+			182 = {add_core_of = ROM}
+			985 = {add_core_of = ROM}
+			187 = {add_core_of = ROM}
+			TUR = {
+				if = {
+					limit = { 339 = {is_owned_by = ROM } }
+					transfer_state = 339
+				}
+				if = {
+					limit = { 987= {is_owned_by = ROM } }
+					transfer_state = 987
+				}
+				if = {
+					limit = { 986 = {is_owned_by = ROM } }
+					transfer_state = 986
+				}
+				if = {
+					limit = { 183 = {is_owned_by = ROM } }
+					transfer_state = 183
+				}
+				
+			}
+		}
+	}
+
+	int_yug = {
+		available = {
+			989 = { is_owned_by = ROM }	
+		}
+
+		visible = {
+			has_completed_focus = ROM_pol_d_24
+		}
+
+		complete_effect = {
+			989 = {add_core_of = ROM}
+			853 = {add_core_of = ROM}
+			852 = {add_core_of = ROM}
+			736 = {add_core_of = ROM}
+			163 = {add_core_of = ROM}
+			103 = {add_core_of = ROM}
+			977 = {add_core_of = ROM}
+			105 = {add_core_of = ROM}
+			804 = {add_core_of = ROM}
+			104 = {add_core_of = ROM}
+			109 = {add_core_of = ROM}
+			45 = {add_core_of = ROM}
+			102 = {add_core_of = ROM}
+			988 = {add_core_of = ROM}
+		}
+	}
+
+}

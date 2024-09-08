@@ -3556,12 +3556,23 @@ focus = {
 			
 	
 			completion_reward = {
-				BUL = {
-					set_cosmetic_tag = ROM_SIM
-				}
 				ROM = {
 					puppet = BUL
 					create_faction = "Balkan Pact"
+					declare_war_on = {
+						target = SER
+						type = puppet_wargoal_focus
+					}
+
+					declare_war_on = {
+						target = GRE
+						type = puppet_wargoal_focus
+					}
+
+					declare_war_on = {
+						target = ALB
+						type = puppet_wargoal_focus
+					}
 				}
 			}
 	}
@@ -3668,7 +3679,64 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				if = {
+					limit = {
+						BUL = { is_puppet_of = ROM }
+					}
+					ROM = {
+						annex_country = {
+							target = BUL
+							transfer_troops = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						GRE = { is_puppet_of = ROM }
+					}
+					ROM = {
+						annex_country = {
+							target = GRE
+							transfer_troops = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						SER = { is_puppet_of = ROM }
+					}
+					ROM = {
+						annex_country = {
+							target = SER
+							transfer_troops = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						ALB = { is_puppet_of = ROM }
+					}
+					ROM = {
+						annex_country = {
+							target = ALB
+							transfer_troops = yes
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						YUG = { is_puppet_of = ROM }
+					}
+					ROM = {
+						annex_country = {
+							target = YUG
+							transfer_troops = yes
+						}
+					}
+				}
 			}
 	}
 
