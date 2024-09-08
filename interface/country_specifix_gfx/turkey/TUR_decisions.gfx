@@ -1,0 +1,20 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_TUR_GFT_category_header"
+		texturefile = "gfx/interface/decisions/TUR/gambleforturkey_header.png"
+	}
+	progressbartype = {
+		name = "GFX_decisions_TUR_GFT_progressbar"
+		textureFile1 = "gfx/interface/decisions/progressbarfrance.png"
+		textureFile2 = "gfx/interface/decisions/progressbargermany.png"
+		color = { 150 150 150 }
+		colortwo = { 143 19 19 }
+		size = {
+			x = 420
+			y = 50
+		}
+		effectFile = "gfx/FX/progress.lua"
+	}
+
+}

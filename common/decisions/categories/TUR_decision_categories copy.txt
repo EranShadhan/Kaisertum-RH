@@ -87,3 +87,15 @@ TUR_agriculture_decision_category = {
 
 	visible_when_empty = yes
 }
+
+TUR_GFT_category = {
+	priority = 150
+	icon = GFX_category_icon
+
+	scripted_gui = decisions_TUR_GFT_scriptedgui
+
+	allowed = {
+		original_tag = TUR
+	}
+	visible_when_empty = yes
+}

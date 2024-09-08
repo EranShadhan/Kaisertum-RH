@@ -1746,3 +1746,6 @@ TUR_agriculture_decision_category = {
 	}
 
 }
+TUR_GFT_category = {
+	
+}
