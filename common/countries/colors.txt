@@ -1,11 +1,27 @@
 #reload countrycolors
 SIC = {
-	color = rgb { 28 62 186 }
-	color_ui = rgb { 28 62 186 }
+	color = rgb { 222 41 16 }
+	color_ui = rgb { 222 41 16 }
 }
 ZHE = {
-	color = rgb { 4 89 47 }
-	color_ui = rgb { 4 89 47 }
+	color = rgb { 61 59 50 }
+	color_ui = rgb { 61 59 50 }
+}
+YUN = {
+	color = rgb { 219 132 39 }
+	color_ui = rgb { 219 132 39 }
+}
+CHI = {
+	color = rgb { 8 99 156 }
+	color_ui = rgb { 8 99 156 }
+}
+XSM = {
+	color = rgb { 229 95 95 }
+	color_ui = rgb { 229 95 95 }
+}
+SHX = {
+	color = rgb { 199 168 43 }
+	color_ui = rgb { 199 168 43 }
 }
 PRM = {
 	color = rgb { 171 46 69 }
@@ -184,10 +200,6 @@ CAN = {
 	color = rgb { 233  59  59 }
 	color_ui = rgb { 155 62 51 }
 }
-CHI = {
-	color = rgb { 227 186 88 }
-	color_ui = rgb { 227 186 88 }
-}
 CHL = {
 	color = rgb { 155 101 107 }
 	color_ui = rgb { 202 131 139 }
@@ -292,10 +304,6 @@ VEN = {
 	color = rgb { 171 190 152 }
 	color_ui = rgb { 222 247 198 }
 }
-YUN = {
-	color = rgb { 114 148 80 }
-	color_ui = rgb { 222 247 198 }
-}
 USA = {
 	color = rgb { 20 133 237 }
 	color_ui = rgb { 87 160 255 }
@@ -359,16 +367,6 @@ PRC = {
 GXC = {
 	color = rgb { 162 60 80 }
 	color_ui = rgb { 162 60 80 }
-}
-
-SHX = {
-	color = rgb { 82  2  15 }
-	color_ui = rgb { 101  30  41 }
-}
-
-XSM = {
-	color = rgb { 105 90 132 }
-	color_ui = rgb { 105 90 132 }
 }
 
 LBA = {
