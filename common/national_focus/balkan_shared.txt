@@ -365,6 +365,217 @@ joint_focus = {
 	}	
 }
 joint_focus = {
+	id = BALKAN_common_army
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_generic_combined_arms
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_united_against_ottoman }
+	x = -7
+	y = 1
+	relative_position_id = BALKAN_united_against_ottoman
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
+	id = BALKAN_womens_army
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_SOV_womens_fascist_movement
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_common_army }
+	x = -1
+	y = 1
+	relative_position_id = BALKAN_common_army
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
+	id = BALKAN_new_means
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_SWE_lynx_armored_car
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_womens_army }
+	x = 0
+	y = 1
+	relative_position_id = BALKAN_womens_army
+	mutually_exclusive = { focus = BALKAN_old_tricks }
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
+	id = BALKAN_parade
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_BRA_anaue
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_common_army }
+	x = 1
+	y = 1
+	relative_position_id = BALKAN_common_army
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+
+joint_focus = {
+	id = BALKAN_old_tricks
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+	mutually_exclusive = { focus = BALKAN_new_means }
+	icon = GFX_focus_FIN_strengthen_military_administration
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_parade }
+	x = 0
+	y = 1
+	relative_position_id = BALKAN_parade
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
+	id = BALKAN_high_command
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+	icon = GFX_focus_FIN_strengthen_military_administration
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_parade }
+	x = 2
+	y = 1
+	relative_position_id = BALKAN_parade
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
 	id = BALKAN_shared_language
 	
 	  joint_trigger = { BALKAN_is_balkan = yes }
