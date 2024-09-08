@@ -682,3 +682,35 @@ news_event = {
 	}
 }
 }
+
+news_event = {
+    id = kaisertum_news.16
+    title = news.411.t
+    desc = news.411.desc
+    picture = GFX_news_event_074
+
+    major = yes
+
+    trigger = {
+       OR = {
+			731 = {is_owned_by = GRE is_controlled_by = ROM }
+			797 = {is_owned_by = GRE is_controlled_by = ROM }
+	   }
+        NOT = { has_global_flag = fall_of_GRE_ROM}
+    }
+
+    immediate = { 
+                    set_global_flag = fall_of_rom
+                    ROM = {
+                        country_event = kt_romania.11
+                    }
+                }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = news.410a
+    }
+}

@@ -2081,10 +2081,19 @@ focus = {
 			
 	
 			completion_reward = {
+				ROM = {
+					leave_faction = yes
+					ROM = {
+						create_wargoal = {
+							type = annex_everything
+							target = BUL
+						}
+					}
+				}
 				BUL = {
 					country_event = kt_romania.6
 
-					leave_faction = yes
+					
 				}
 			}
 	}
@@ -2167,6 +2176,18 @@ focus = {
 					212 = { add_core_of = ROOT }
 					211 = { add_core_of = ROOT }
 					801 = { add_core_of = ROOT }
+					77 = { add_core_of = ROOT }
+					107 = { add_core_of = ROOT }
+					764 = { add_core_of = ROOT }
+					802 = { add_core_of = ROOT }
+					979 = { add_core_of = ROOT }
+					106 = { add_core_of = ROOT }
+					731 = { add_core_of = ROOT }
+					184 = { add_core_of = ROOT }
+					341 = { add_core_of = ROOT }
+					981 = { add_core_of = ROOT }
+					797 = { add_core_of = ROOT }
+					803 = { add_core_of = ROOT }
 				}
 				set_cosmetic_tag = ROM_BUL
 			}
