@@ -30,6 +30,8 @@ set_party_name = { # DLC
 	long_name = BUL_fascism_party_bulgarian_long
 }
 
+recruit_character = BUL_ferdinand_i
+
 if = { #DLC
 	limit = {
 		has_dlc = "Battle for the Bosporus"
@@ -182,6 +184,7 @@ if = { #DLC
 		communism = 5
 	}
 
+	recruit_character = BUL_ferdinand_i
 	recruit_character = BUL_boris_iii
 	recruit_character = BUL_georgi_dimitrov
 	recruit_character = BUL_nikola_mushanov
@@ -232,9 +235,7 @@ if = { #DLC
 	recruit_character = BUL_valko_chervenkov
 	recruit_character = BUL_vasil_kolarov
 	recruit_character = BUL_konstantin_muraviev
-	recruit_character = BUL_nikola_petkov
-
-	recruit_character = BUL_ferdinand_i #Starts as empty, can become country leader later
+	recruit_character = BUL_nikola_petkov #Starts as empty, can become country leader later
 	recruit_character = BUL_regency_council #Starts as empty, can become country leader later (tons of versions! :D)
 	recruit_character = BUL_nikola_nakov #Starts as empty, can become unit leader later
 
