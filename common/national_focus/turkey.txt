@@ -2106,6 +2106,7 @@ focus = {
 		cost = 5
 		x = 24
 		y = 0
+		icon = GFX_TUR_start_of_a_new_decade
 
 		prerequisite = {
 
@@ -2122,6 +2123,7 @@ focus = {
 		cost = 6
 		x = 8
 		y = 1
+		icon = GFX_TUR_constitution_of_1930
 
 		prerequisite = {
 			focus = TUR_start_of_a_new_decade
@@ -2144,6 +2146,7 @@ focus = {
 		cost = 6
 		x = 0
 		y = 1
+		icon = GFX_TUR_reconvene_the_enguru_parliament
 
 		prerequisite = {
 			focus = TUR_constitution_of_1930
@@ -2165,6 +2168,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
+		icon = GFX_TUR_triumph_of_prishtina
 
 		prerequisite = {
 			focus = TUR_reconvene_the_enguru_parliament
@@ -2197,6 +2201,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
+		icon = GFX_TUR_education_modernization
 
 		prerequisite = {
 			focus = TUR_the_triumph_of_the_peoples_party
@@ -2213,6 +2218,7 @@ focus = {
 		cost = 5
 		x = -2
 		y = 2
+		icon = GFX_TUR_crush_sufism
 
 		prerequisite = {
 			focus = TUR_education_modernization
@@ -2229,6 +2235,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
+		icon = GFX_TUR_reform_the_penal_code
 
 		prerequisite = {
 			focus = TUR_close_sufi_orders
@@ -2246,6 +2253,7 @@ focus = {
 		cost = 5
 		x = 2
 		y = 2
+		icon = GFX_TUR_hat_reform
 
 		prerequisite = {
 			focus = TUR_education_modernization
@@ -2266,6 +2274,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
+		icon = GFX_TUR_womens_rights
 
 		prerequisite = {
 			focus = TUR_abolish_traditional_headgear
@@ -2286,6 +2295,7 @@ focus = {
 		cost = 5
 		x = -2
 		y = 1
+		icon = GFX_TUR_new_civil_code
 
 		prerequisite = {
 			focus = TUR_promote_turkish_women
@@ -2310,6 +2320,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
+		icon = GFX_TUR_latinization
 
 		prerequisite = {
 			focus = TUR_new_civil_code
@@ -2331,6 +2342,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
+		icon = GFX_TUR_abolish_traditionalism
 
 		prerequisite = {
 			focus = TUR_latinization_of_the_turkish_alphabet
@@ -2348,6 +2360,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
+		icon = GFX_TUR_monarchy_compromise
 
 		prerequisite = {
 			focus = TUR_abolish_traditionalism
@@ -2365,6 +2378,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
+		icon = GFX_TUR_forced_abdication
 		mutually_exclusive = { focus = TUR_monarchy_compromise }
 		prerequisite = {
 			focus = TUR_abolish_traditionalism
@@ -2389,6 +2403,8 @@ focus = {
 		cost = 5
 		x = 0
 		y = 2
+		icon = GFX_TUR_a_true_democracy
+
 
 		prerequisite = {
 			focus = TUR_the_sultans_abdication 
@@ -2413,7 +2429,8 @@ focus = {
 		cost = 1
 		x = 0
 		y = 2
-
+		icon = GFX_TUR_death_of_prishtina
+		
 		prerequisite = {
 			focus = TUR_a_true_democracy
 		}
@@ -2430,6 +2447,7 @@ focus = {
 		cost = 1
 		x = 0
 		y = 1
+		icon = GFX_TUR_snap_election
 
 		prerequisite = {
 			focus = TUR_ataturk_dies
@@ -2476,6 +2494,7 @@ focus = {
 		cost = 1
 		x = 4
 		y = 1
+		icon = GFX_TUR_federalists_elected
 
 		prerequisite = {
 			focus = TUR_snap_election
@@ -2849,6 +2868,7 @@ focus = {
 		cost = 5
 		x = -2
 		y = 1
+		icon = GFX_TUR_promote_the_turkish_nation
 
 		prerequisite = {
 			focus = TUR_federalists_elected
@@ -2873,6 +2893,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
+		icon = GFX_TUR_befriend_persia
 
 		prerequisite = {
 			focus = TUR_promote_the_turkish_nation
@@ -2896,6 +2917,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
+		icon = GFX_TUR_befriend_arabia
 
 		prerequisite = {
 			focus = TUR_promote_the_turkish_nation
@@ -2919,6 +2941,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
+		icon = GFX_TUR_konya_accords
 
 		prerequisite = {
 			focus = TUR_appeal_to_the_arabians
@@ -2953,30 +2976,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
-
-		prerequisite = {
-			focus = TUR_create_konya_accords
-		}
-
-		available = {
-		}
-		relative_position_id = TUR_create_konya_accords
-		completion_reward = {
-			EGY = {
-				country_event = {
-					id = KT_turkey_events.4
-					hours = 12
-					random_hours = 6
-				}
-			}
-		}
-		
-	}
-	focus = {
-		id = TUR_invite_egypt
-		cost = 5
-		x = -1
-		y = 1
+		icon = GFX_TUR_invite_egypt
 
 		prerequisite = {
 			focus = TUR_create_konya_accords
@@ -3006,6 +3006,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
+		icon = GFX_TUR_cooperate_with_germany
 
 		prerequisite = {
 			focus = TUR_create_konya_accords
@@ -3032,6 +3033,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
+		icon = GFX_TUR_free_caucasians
 
 		prerequisite = {
 			focus = TUR_invite_egypt
@@ -3056,6 +3058,7 @@ focus = {
 		cost = 5
 		x = 2
 		y = 1
+		icon = GFX_TUR_minority_representation
 
 		prerequisite = {
 			focus = TUR_federalists_elected
@@ -3072,6 +3075,7 @@ focus = {
 		cost = 6
 		x = -1
 		y = 2
+		icon = GFX_TUR_kurdish_citizenship
 
 		prerequisite = {
 			focus = TUR_representation_of_the_minorities
@@ -3093,6 +3097,7 @@ focus = {
 		cost = 5
 		x = 2
 		y = 1
+		icon = GFX_TUR_islam_compromise
 
 		prerequisite = {
 			focus = TUR_representation_of_the_minorities
@@ -3110,6 +3115,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
+		icon = GFX_TUR_armenian_citizenship
 
 		prerequisite = {
 			focus = TUR_the_islam_compromise
@@ -3134,6 +3140,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
+		icon = GFX_TUR_greek_citizenship
 
 		prerequisite = {
 			focus = TUR_the_islam_compromise
@@ -3158,6 +3165,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
+		icon = GFX_TUR_form_the_turkish_federation
 
 		prerequisite = {
 			focus = TUR_recognize_armenian_citizenship
@@ -3181,6 +3189,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
+		icon = GFX_TUR_new_constitution
 
 		prerequisite = {
 			focus = TUR_proclaim_the_turkish_federation
@@ -3201,6 +3210,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
+		icon = GFX_TUR_new_kurdish_home
 
 		prerequisite = {
 			focus = TUR_new_constitution
@@ -3225,6 +3235,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
+		icon = GFX_TUR_request_return_of_smyrna
 
 		prerequisite = {
 			focus = TUR_new_constitution
@@ -3247,6 +3258,7 @@ focus = {
 		cost = 5
 		x = -4
 		y = 1
+		icon = GFX_TUR_integrate_caucasia
 
 		prerequisite = {
 			focus = TUR_new_constitution
