@@ -24,6 +24,13 @@ joint_focus = {
 			tag = CRE
 		}
 	}
+	offset = {
+		x = 35
+		y = 0
+		trigger = {
+			tag = BUL
+		}
+	}
 	#relative_position_id = NORDIC_mutual_guarantees
 	cost = 10
 	joint_trigger = { BALKAN_is_balkan = yes }
@@ -434,6 +441,42 @@ joint_focus = {
 	completion_reward_joint_member = {
 	}	
 }
+
+joint_focus = {
+	id = BALKAN_amphibious
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_goal_generic_amphibious_assault
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_womens_army }
+	x = -2
+	y = 1
+	relative_position_id = BALKAN_womens_army
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
 joint_focus = {
 	id = BALKAN_new_means
 	
@@ -545,7 +588,7 @@ joint_focus = {
 	id = BALKAN_high_command
 	
 	  joint_trigger = { BALKAN_is_balkan = yes }
-	icon = GFX_focus_FIN_strengthen_military_administration
+	icon = GFX_focus_CHL_departemento_de_las_tropas_nacistas_de_asalto
 	text_icon = joint_focus_style
 
 	prerequisite = { focus = BALKAN_parade }
@@ -934,7 +977,7 @@ joint_focus = {
 
 	icon = GFX_focus_FIN_weapon_caches
 	text_icon = joint_focus_style
-	prerequisite = { focus = BALKAN_resource_extraction }
+	prerequisite = { focus = BALKAN_resource_extraction focus = BALKAN_parade }
 	x = -1
 	y = 1
 	relative_position_id = BALKAN_resource_extraction
