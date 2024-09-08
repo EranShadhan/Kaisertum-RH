@@ -12,3 +12,17 @@ hre_path = {
 		option = yes
 	}
 }
+
+austria_taiwan_yes = {
+	has_game_rule = {
+		rule = taiwan_austria_easteregg
+		option = yes
+	}
+}
+
+austria_taiwan_dice = {
+	has_game_rule = {
+		rule = taiwan_austria_easteregg
+		option = idk
+	}
+}

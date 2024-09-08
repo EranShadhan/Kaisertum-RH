@@ -242,6 +242,12 @@ recruit_character = FRA_maurice_gauche
 recruit_character = FRA_jacques_duclos
 recruit_character = FRA_marcel_bucard
 
+set_autonomy = {
+	target = FMG
+	autonomous_state = autonomy_colony
+	freedom_level = 0.1
+}
+
 
 if = {
 	limit = { has_dlc = "La Resistance" }

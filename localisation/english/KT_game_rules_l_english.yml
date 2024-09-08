@@ -1,4 +1,6 @@
 ﻿l_english:
+ RULE_OPTION_IDK:0 "Give it a Chance"
+
  RULE_ZION_MALAGASY:0 "Zionist Magadascar"
  RULE_ZION_MALAGASY_YES_DESC:0 "Israel path for Madagascar is enabled.\n§RNot recommended to enable this for the AI!§!"
  RULE_ZION_MALAGASY_NO_DESC:0 "Israel path for Madagascar is disabled."
@@ -6,3 +8,8 @@
  RULE_HRE:0 "Holy Roman Empire"
  RULE_HRE_YES_DESC:0 "HRE path for Germany is enabled.\n§RNot recommended to enable this for the AI!§!"
  RULE_HRE_NO_DESC:0 "HRE path for Germany is disabled."
+
+ RULE_TAIWAN:0 "??????? ??????"
+ RULE_TAIWAN_YES_DESC:0 "Yes i want to enable ??????? ??????."
+ RULE_TAIWAN_IDK_DESC:0 "Let's role the dice on ??????? ??????."
+ RULE_TAIWAN_NO_DESC:0 "No i want to disable ??????? ??????."

@@ -545,6 +545,27 @@ hre = {
 	}
 }
 
+taiwan_austria_easteregg = {
+	name = "RULE_TAIWAN"
+	group = "RULE_GROUP_COUNTRY_SPECIFIC"
+	#icon = "GFX_hre"
+	option = {
+		name = yes
+		text = "RULE_OPTION_ALLOWED"
+		desc = "RULE_TAIWAN_YES_DESC"
+	}
+	default = {
+		name = idk
+		text = "RULE_OPTION_IDK"
+		desc = "RULE_TAIWAN_IDK_DESC"
+	}
+	option = {
+		name = no
+		text = "RULE_OPTION_BLOCKED"
+		desc = "RULE_TAIWAN_NO_DESC"
+	}
+}
+
  ##   ##  #   # ###      ## ### ### #  # ###  
 #    #  # ## ## #       #   #    #  #  # #  # 
 # ## #### # # # ##       #  ##   #  #  # ###  
