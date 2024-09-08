@@ -1,0 +1,13 @@
+scripted_gui = {
+	decisions_TUR_GFT_scriptedgui = {
+		window_name = gft_containter
+		context_type = decision_category
+		parent_window_token = decision_tab
+		
+		properties = {
+			progressbar_gft = {
+				frame = var_TUR_GFT_progressbar
+			}
+		}
+	}
+}
