@@ -372,6 +372,323 @@ joint_focus = {
 	}	
 }
 joint_focus = {
+	id = BALKAN_common_navy
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_GRE_trigger_race
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_united_against_ottoman }
+	x = -14
+	y = 1
+	relative_position_id = BALKAN_united_against_ottoman
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
+	id = BALKAN_ship_hunters
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_generic_cruiser_submarines
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_common_navy }
+	x = 3
+	y = 1
+	relative_position_id = BALKAN_common_navy
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
+	id = BALKAN_protectors_of_med
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_goal_generic_navy_cruiser
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_common_navy }
+	x = -4
+	y = 1
+	relative_position_id = BALKAN_common_navy
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
+	id = BALKAN_academy_of_smyrna
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_generic_military_academy
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_protectors_of_med }
+	x = 0
+	y = 1
+	relative_position_id = BALKAN_protectors_of_med
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+
+joint_focus = {
+	id = BALKAN_carrier
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_goal_generic_navy_carrier
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_protectors_of_med }
+	x = -2
+	y = 1
+	relative_position_id = BALKAN_protectors_of_med
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
+	id = BALKAN_shipyards
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_generic_refit_civilian_ships
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_common_navy }
+	x = 0
+	y = 1
+	relative_position_id = BALKAN_common_navy
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
+	id = BALKAN_adriatic
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_generic_adriatic_sea_focus
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_shipyards }
+	x = -2
+	y = 1
+	relative_position_id = BALKAN_shipyards
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+    mutually_exclusive = { focus =BALKAN_black_sea focus = BALKAN_aegean}
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+
+joint_focus = {
+	id = BALKAN_aegean
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_generic_aegean_sea_focus
+	text_icon = joint_focus_style
+    mutually_exclusive = { focus =BALKAN_black_sea focus = BALKAN_adriatic}
+	prerequisite = { focus = BALKAN_shipyards }
+	x = 0
+	y = 1
+	relative_position_id = BALKAN_shipyards
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
+	id = BALKAN_black_sea
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_generic_black_sea_focus
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_shipyards }
+	x = 2
+	y = 1
+	relative_position_id = BALKAN_shipyards
+	cost = 5
+    mutually_exclusive = { focus = BALKAN_aegean focus = BALKAN_adriatic}
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
 	id = BALKAN_common_army
 	
 	  joint_trigger = { BALKAN_is_balkan = yes }
@@ -449,7 +766,7 @@ joint_focus = {
 
 	icon = GFX_goal_generic_amphibious_assault
 	text_icon = joint_focus_style
-
+	prerequisite = { focus = BALKAN_ship_hunters }
 	prerequisite = { focus = BALKAN_womens_army }
 	x = -2
 	y = 1

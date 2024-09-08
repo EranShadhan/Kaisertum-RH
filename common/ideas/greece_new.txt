@@ -201,7 +201,7 @@ ideas = {
 			}
 
 			modifier = {
-				army_defence_factor = 0.1
+				army_defence_factor = 0.05
 				army_morale_factor = 0.1
 			}
 		}
@@ -926,7 +926,7 @@ GRE_macedonean_spirit = {
 			removal_cost = -1
             modifier = {
 			army_attack_factor = 0.1
-			army_defence_factor = 0.1
+			army_core_attack_factor = 0.05
 			army_strength_factor = 0.05
 			army_org_factor = 0.05
 			
@@ -1733,7 +1733,8 @@ GRE_macedonean_spirit = {
 			
 			modifier = {
 				army_attack_factor = 0.1
-				army_defence_factor = 0.1
+				army_defence_factor = 0.05
+				army_speed_factor = 0.1
 			}
 		}
 GRE_balkan_allies2 = {
@@ -1752,8 +1753,9 @@ GRE_balkan_allies2 = {
 			
 			modifier = {
 				army_attack_factor = 0.1
-				army_defence_factor = 0.1
+				army_defence_factor = 0.05
 				surrender_limit = 0.2
+				army_speed_factor = 0.1
 				weekly_manpower = 250
 			}
 		}
@@ -2040,8 +2042,6 @@ allowed = {
 				defense_bonus_against = 0.05
 			}				
 			modifier = {
-				army_attack_factor = 0.1
-				army_defence_factor = 0.1
 				army_core_attack_factor = 0.1
 				army_core_defence_factor = 0.1
 
@@ -2105,7 +2105,7 @@ allowed = {
 				army_attack_factor = 0.1
 				land_reinforce_rate = 0.1
 				army_org_factor = 0.05
-				army_defence_factor = 0.1
+				army_defence_factor = 0.05
 				land_doctrine_cost_factor = -0.1
 			}
 		}	

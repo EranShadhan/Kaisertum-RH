@@ -32,6 +32,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GRE/focus_GRE_islanddev.dds"
 	}
 	SpriteType = {
+		name = "GFX_focus_GRE_trigger_race"
+		texturefile = "gfx/interface/goals/GRE/focus_GRE_trigger_race.dds"
+	} 
+	SpriteType = {
 		name = "GFX_byzantine_eagle"
 		texturefile = "gfx/interface/goals/GRE/byzantine_eagle.dds"
 	}
