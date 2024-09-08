@@ -414,18 +414,10 @@ country_event = {
 			982 = {
 				add_core_of = HUN
 			}
-<<<<<<< Updated upstream
 			random = { 
 			chance = 0.01 #Who is the black person that is removing this is gay, this is just an easter egg with 1/1000 chances to work.
 			JAP = { #Denis_MD here, i removed it. But gonna leave the files for any future devs to say the stupidity of the mod when we started
 
-=======
-			if = {
-				limit = {
-					austria_taiwan_yes = yes
-				}
-				JAP = {
->>>>>>> Stashed changes
 					diplomatic_relation = {
 						country = AUS
 						relation = puppet
@@ -435,13 +427,8 @@ country_event = {
 			
 				AUS =  {
 					set_cosmetic_tag = AUS_JAP
-<<<<<<< Updated upstream
 				transfer_state = 524
 				set_politics = {
-=======
-					transfer_state = 524
-					set_politics = {
->>>>>>> Stashed changes
 					ruling_party = neutrality
 					elections_allowed = no
 					}
@@ -450,44 +437,10 @@ country_event = {
 					popularity = 100
 				}
 				}
-<<<<<<< Updated upstream
 			524 = { add_core_of = AUS }
 			}
 
 			
-=======
-				524 = { add_core_of = AUS }
-				else_if = {
-					limit = {
-						austria_taiwan_dice = yes
-					}
-					random = { 
-						chance = 0.1 #Who is the black person that is removing this is gay, this is just an easter egg with 1/1000 chances to work.
-						JAP = { #Denis_MD here, i removed it. But gonna leave the files for any future devs to say the stupidity of the mod when we started # Xaelor here it's back nigga
-							diplomatic_relation = {
-								country = AUS
-								relation = puppet
-								active = yes
-							}
-						}
-					
-						AUS =  {
-							set_cosmetic_tag = AUS_JAP
-							transfer_state = 524
-							set_politics = {
-							ruling_party = neutrality
-							elections_allowed = no
-							}
-						set_political_party = {
-							ideology = neutrality
-							popularity = 100
-						}
-						}
-						524 = { add_core_of = AUS }
-					}
-				}
-			}
->>>>>>> Stashed changes
 
 			BUL = {
 				if = {
