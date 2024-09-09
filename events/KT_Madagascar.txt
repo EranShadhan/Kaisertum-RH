@@ -11,9 +11,9 @@ country_event = { # Madagascar Revolution Event
 	fire_only_once = yes
 
 	trigger = {
-		#tag = FMG
-		#date>1932.9.4
-		#date<1932.9.6
+		tag = FMG
+		date>1932.9.4
+		date<1932.9.6
 	}
 
 	immediate = {
@@ -24,6 +24,10 @@ country_event = { # Madagascar Revolution Event
 				transfer_state = 1052
 				transfer_state = 1049
 			}
+			declare_war_on = {
+				target = MAD
+				type = civil_war
+			}
 		}
 	}
 	
@@ -33,6 +37,7 @@ country_event = { # Madagascar Revolution Event
 
 	option = {
 		name = kt_madagascar.1.b
+		MAD = { change_tag_from = FMG }
 	}
 	
 }
