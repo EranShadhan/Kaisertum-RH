@@ -372,6 +372,255 @@ joint_focus = {
 	}	
 }
 joint_focus = {
+	id = BALKAN_common_air
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_generic_cas_aircraft
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_united_against_ottoman }
+	x = -22
+	y = 1
+	relative_position_id = BALKAN_united_against_ottoman
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+
+joint_focus = {
+	id = BALKAN_foreign_air
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_SMB_purchase_aircraft
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_common_air }
+	x = -1
+	y = 1
+	relative_position_id = BALKAN_common_air
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+
+joint_focus = {
+	id = BALKAN_women_in_aviation
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_SOV_women_in_aviation
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_foreign_air }
+	x = 0
+	y = 1
+	relative_position_id = BALKAN_foreign_air
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+
+joint_focus = {
+	id = BALKAN_airports
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_generic_air_bases
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_women_in_aviation }
+	x = -1
+	y = 1
+	relative_position_id = BALKAN_women_in_aviation
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
+	id = BALKAN_anti_air
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_generic_air_defense
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_women_in_aviation }
+	x = 1
+	y = 1
+	relative_position_id = BALKAN_women_in_aviation
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+
+joint_focus = {
+	id = BALKAN_sabotage_through_bombers
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_SWE_marauder_bombers
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_anti_air focus = BALKAN_airports }
+	x = -1
+	y = 1
+	relative_position_id = BALKAN_anti_air
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
+	id = BALKAN_naval_bomber
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_goal_generic_air_naval_bomber
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_common_air }
+	x = 1
+	y = 1
+	relative_position_id = BALKAN_common_air
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
 	id = BALKAN_common_navy
 	
 	  joint_trigger = { BALKAN_is_balkan = yes }
@@ -521,6 +770,7 @@ joint_focus = {
 	text_icon = joint_focus_style
 
 	prerequisite = { focus = BALKAN_protectors_of_med }
+	prerequisite = { focus = BALKAN_naval_bomber }
 	x = -2
 	y = 1
 	relative_position_id = BALKAN_protectors_of_med
