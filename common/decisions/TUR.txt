@@ -1747,5 +1747,412 @@ TUR_agriculture_decision_category = {
 
 }
 TUR_GFT_category = {
-	
+	TUR_pursue_turkish_revanchism = {
+		cost = 25
+		days_remove = 40
+		visible = {
+			OR = {	
+				tag = FRA
+				tag = SOV
+			}
+			TUR = {
+                has_completed_focus = TUR_prepare_for_sgw
+            }
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		available = {
+            TUR = { exists = yes }
+			NOT = { TUR = { has_country_flag = TUR_gft_ends } }
+        }
+		modifier = {
+			political_power_cost = 0.10
+		}
+		fixed_random_seed = no
+		remove_effect = {
+			TUR_small_drift_to_aor = yes
+		}
+	}
+	TUR_spread_the_conservative_thought_in_turkey = {
+		cost = 25
+		days_remove = 40
+		visible = {
+			OR = {	
+				tag = GER
+				tag = PER
+			}
+			TUR = {
+                has_completed_focus = TUR_prepare_for_sgw
+            }
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		available = {
+            TUR = { exists = yes }
+        }
+		modifier = {
+			political_power_cost = 0.10
+		}
+		fixed_random_seed = no
+		remove_effect = {
+			TUR_small_drift_to_germany = yes
+		}
+	}
+	TUR_publicly_support_germany = {
+		cost = 30
+		days_remove = 30
+		visible = {
+			tag = TUR
+			TUR = {
+                has_completed_focus = TUR_prepare_for_sgw
+            }
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+            GER = { exists = yes }
+			NOT = { TUR = { has_country_flag = TUR_gft_ends } }
+        }
+		modifier = {
+			political_power_cost = 0.10
+		}
+		fixed_random_seed = no
+		remove_effect = {
+			TUR_medium_drift_to_germany = yes
+			
+		}
+	}
+	TUR_publicly_support_aor = {
+		cost = 30
+		days_remove = 30
+		visible = {
+			tag = TUR
+			TUR = {
+                has_completed_focus = TUR_prepare_for_sgw
+
+            }
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+            FRA = { exists = yes }
+			NOT = { TUR = { has_country_flag = TUR_gft_ends } }
+        }
+		modifier = {
+			political_power_cost = 0.10
+		}
+		fixed_random_seed = no
+		remove_effect = {
+			TUR_medium_drift_to_aor = yes
+		}
+	}
+	TUR_invite_turkey_to_a_tank_research_group = {
+		cost = 75
+		days_remove = 25
+		visible = {
+			tag = FRA
+			TUR = {
+                has_completed_focus = TUR_prepare_for_sgw
+            }
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		available = {
+            TUR = { exists = yes }
+			SOV = { exists = yes }
+			NOT = { TUR = { has_country_flag = TUR_gft_ends } }
+        }
+		modifier = {
+			political_power_cost = 0.10
+		}
+		fire_only_once = yes
+		fixed_random_seed = no
+		remove_effect = {
+			TUR_large_drift_to_aor = yes
+			FRA = {
+				add_to_tech_sharing_group = turkey_aor_joint_research
+			}
+			SOV = {
+				add_to_tech_sharing_group = turkey_aor_joint_research
+			}
+			TUR = {
+				add_to_tech_sharing_group = turkey_aor_joint_research
+			}
+		}
+	}
+	TUR_sponsor_industrialization = {
+		cost = 75
+		days_remove = 25
+		visible = {
+			tag = GER
+			TUR = {
+                has_completed_focus = TUR_prepare_for_sgw
+            }
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		available = {
+            TUR = { exists = yes }
+			NOT = { TUR = { has_country_flag = TUR_gft_ends } }
+        }
+		modifier = {
+			political_power_cost = 0.10
+		}
+		fire_only_once = yes
+		fixed_random_seed = no
+		remove_effect = {
+			TUR_large_drift_to_germany = yes
+			TUR = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+					}
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	TUR_appease_turkey_with_armenia = {
+		cost = 100
+		days_remove = 40
+		visible = {
+			tag = SOV
+			TUR = {
+                has_completed_focus = TUR_prepare_for_sgw
+            }
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+            TUR = { exists = yes }
+			980 = { is_owned_and_controlled_by = SOV }
+			230 = { is_owned_and_controlled_by = SOV }
+			NOT = { has_war_with = TUR }
+			NOT = { TUR = { has_country_flag = TUR_gft_ends } }
+        }
+		modifier = {
+			political_power_cost = 0.10
+		}
+		fire_only_once = yes
+		fixed_random_seed = no
+		remove_effect = {
+			TUR_large_drift_to_aor = yes
+			TUR = {
+				transfer_state = 980
+				transfer_state = 230
+			}
+			
+		}
+	}
+	TUR_appease_turkey_with_kurdistan = {
+		cost = 100
+		days_remove = 40
+		visible = {
+			tag = PER
+			TUR = {
+                has_completed_focus = TUR_prepare_for_sgw
+            }
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+            TUR = { exists = yes }
+			800 = { is_owned_and_controlled_by = PER }
+			352 = { is_owned_and_controlled_by = PER }
+			NOT = { has_war_with = TUR }
+			NOT = { TUR = { has_country_flag = TUR_gft_ends } }
+        }
+		modifier = {
+			political_power_cost = 0.10
+		}
+		fire_only_once = yes
+		fixed_random_seed = no
+		remove_effect = {
+			TUR_large_drift_to_germany = yes
+			TUR = {
+				transfer_state = 800
+				transfer_state = 352
+			}
+			
+		}
+	}
+	TUR_invite_german_industrialists = {
+		cost = 120
+		days_remove = 30
+		visible = {
+			tag = TUR
+			TUR = {
+                has_completed_focus = TUR_prepare_for_sgw
+            }
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		available = {
+            GER = { exists = yes }
+			NOT = { TUR = { has_country_flag = TUR_gft_ends } }
+			
+        }
+		modifier = {
+			political_power_cost = 0.10
+		}
+		fixed_random_seed = no
+		remove_effect = {
+			TUR_medium_drift_to_germany = yes
+			TUR = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+					}
+				}
+			}
+			GER = {
+				TUR_increase_foreign_influence = yes
+			}
+		}
+	}
+	TUR_invite_french_industrialists = {
+		cost = 120
+		days_remove = 30
+		visible = {
+			tag = TUR
+			TUR = {
+                has_completed_focus = TUR_prepare_for_sgw
+            }
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		available = {
+            GER = { exists = yes }
+			NOT = { TUR = { has_country_flag = TUR_gft_ends } }
+			
+        }
+		modifier = {
+			political_power_cost = 0.10
+		}
+		fixed_random_seed = no
+		remove_effect = {
+			TUR_medium_drift_to_germany = yes
+			TUR = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+					}
+				}
+			}
+			FRA = {
+				TUR_increase_foreign_influence = yes
+			}
+		}
+	}
+
+	TUR_join_berlin_accords = {
+		cost = 0
+		days_remove = 7
+		visible = {
+			tag = TUR
+			TUR = {
+                has_completed_focus = TUR_prepare_for_sgw
+            }
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+            GER = { exists = yes }
+			check_variable = { var = global.var_TUR_GFT_progressbar value = 100 compare = equals }
+			NOT = { TUR = { has_country_flag = TUR_gft_ends } }
+        }
+		modifier = {
+			political_power_cost = 0.10
+		}
+		fixed_random_seed = no
+		remove_effect = {
+			GER = {
+				add_to_faction = TUR
+			}
+			set_country_flag = TUR_gft_ends
+			custom_effect_tooltip = TUR_gft_ends_tt
+		}
+	}
+	TUR_join_aor = {
+		cost = 0
+		days_remove = 7
+		visible = {
+			tag = TUR
+			TUR = {
+                has_completed_focus = TUR_prepare_for_sgw
+            }
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+            FRA = { exists = yes }
+			check_variable = { var = global.var_TUR_GFT_progressbar value = 0 compare = equals }
+			NOT = { TUR = { has_country_flag = TUR_gft_ends } }
+        }
+		modifier = {
+			political_power_cost = 0.10
+		}
+		fixed_random_seed = no
+		remove_effect = {
+			FRA = {
+				add_to_faction = TUR
+			}
+			set_country_flag = TUR_gft_ends
+			custom_effect_tooltip = TUR_gft_ends_tt
+		}
+	}
+	TUR_commit_to_armed_neutrality = {
+		cost = 0
+		days_remove = 7
+		visible = {
+			tag = TUR
+			TUR = {
+                has_completed_focus = TUR_prepare_for_sgw
+            }
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			check_variable = { var = global.var_TUR_GFT_progressbar value = 40 compare = greater_than_or_equals }
+			check_variable = { var = global.var_TUR_GFT_progressbar value = 60 compare = less_than_or_equals }
+			NOT = { TUR = { has_country_flag = TUR_gft_ends } }
+        }
+		modifier = {
+			political_power_cost = 0.10
+		}
+		fixed_random_seed = no
+		remove_effect = {
+			set_country_flag = TUR_gft_ends
+			custom_effect_tooltip = TUR_gft_ends_tt
+		}
+	}
 }

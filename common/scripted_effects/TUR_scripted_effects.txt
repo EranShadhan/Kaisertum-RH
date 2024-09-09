@@ -2,6 +2,7 @@
 
 #Turkey influence
 TUR_increase_foreign_influence = {
+	custom_effect_tooltip = TUR_increase_foreign_influence_tt
 	if = {
 		limit = { 
 			NOT = {
@@ -98,6 +99,7 @@ TUR_increase_foreign_influence = {
 	}
 
 TUR_decrease_foreign_influence = {
+	custom_effect_tooltip = TUR_decrease_foreign_influence_tt
 	if = {
 		limit = { has_idea = TUR_influence_over_turkey_6 }
 		swap_ideas = {
@@ -136,5 +138,47 @@ TUR_decrease_foreign_influence = {
 	else_if = {
 		limit = { has_idea = TUR_influence_over_turkey_1 }
 		remove_ideas = TUR_influence_over_turkey_1
+	}
+}
+TUR_small_drift_to_aor = {
+	custom_effect_tooltip = TUR_small_drift_to_aor_tt 
+	add_to_variable = {
+				var = global.var_TUR_GFT_progressbar
+    			value = 10
+	}
+}
+TUR_medium_drift_to_aor = {
+	custom_effect_tooltip = TUR_medium_drift_to_aor_tt 
+	add_to_variable = {
+				var = global.var_TUR_GFT_progressbar
+    			value = 20
+	}
+}
+TUR_large_drift_to_aor = {
+	custom_effect_tooltip = TUR_large_drift_to_aor_tt 
+	add_to_variable = {
+				var = global.var_TUR_GFT_progressbar
+    			value = 30
+	}
+}
+TUR_small_drift_to_germany = {
+	custom_effect_tooltip = TUR_small_drift_to_germany_tt 
+	add_to_variable = {
+				var = global.var_TUR_GFT_progressbar
+    			value = -10
+	}
+}
+TUR_medium_drift_to_germany = {
+	custom_effect_tooltip = TUR_medium_drift_to_germany_tt 
+	add_to_variable = {
+				var = global.var_TUR_GFT_progressbar
+    			value = -20
+	}
+}
+TUR_large_drift_to_germany = {
+	custom_effect_tooltip = TUR_large_drift_to_germany_tt 
+	add_to_variable = {
+				var = global.var_TUR_GFT_progressbar
+    			value = -30
 	}
 }

@@ -110,3 +110,37 @@
  TUR_new_kurdish_home:0 "The New Home of the Kurds"
  TUR_request_return_of_izmir:0 "Request the Return of Izmir"
  TUR_integrate_the_caucasian_states:0 "Integrate the Caucasian States"
+
+ l_TUR_progressbar_gft_title:0 "Current Turkish Stance"
+
+ TUR_small_drift_to_aor_tt:0 "Turkey becomes £BoP_left_texticon §Ya little§! more sympathetic to the §BAxis of Revenge§!"
+ TUR_medium_drift_to_aor_tt:0 "Turkey becomes £BoP_left_texticon §Yconsiderably§! more sympathetic to the §BAxis of Revenge§!"
+ TUR_large_drift_to_aor_tt:0 "Turkey becomes £BoP_left_texticon §Ya lot§! more sympathetic to the §BAxis of Revenge§!"
+ TUR_small_drift_to_germany_tt:0 "Turkey becomes £BoP_right_texticon §Ya little§! more sympathetic to the §RBerlin Accords§!"
+ TUR_medium_drift_to_germany_tt:0 "Turkey becomes £BoP_right_texticon §Yconsiderably§! more sympathetic to the §RBerlin Accords§!"
+ TUR_large_drift_to_germany_tt:0 "Turkey becomes £BoP_right_texticon §Ya lot§! more sympathetic to the §RBerlin Accords§!"
+
+ TUR_increase_foreign_influence_tt:0 "The §Y[ROOT.getAdjectiveCap]§! influence in Turkey §Rincreases§!"
+ TUR_decrease_foreign_influence_tt:0 "The §Y[ROOT.getAdjectiveCap]§! influence in Turkey §Gdecreases§!"
+
+ TUR_GFT_category:0 "The Gamble for Turkey"
+ TUR_GFT_category_desc:0 "As another Great War looms over Europe, the major powers of Europe and the Middle East seek to gain Turkey as an ally due to its large potential and strategic location. Much like the Bidding War, the Turks can benefit from such a competition, but once one of the sides gains enough support amongst the Turks, the Turkish Nation will be a secured ally. Will revanchism and irredentism spread in Turkey, driving it to the newformed Axis, or will it stay moderate and promote progressive values, siding with the Accord? Or will it go its own path, staying out of the global conflict. The future is uncertain."
+
+ TUR_pursue_turkish_revanchism:0 "Pursue Turkish Revanchism"
+ TUR_spread_the_conservative_thought_in_turkey:0 "Reinforce Conservatism in Turkey"
+ TUR_publicly_support_germany:0 "Publicly Support the Berlin Accords"
+ TUR_publicly_support_aor:0 "Publicly Support the Axis of Revenge"
+ TUR_invite_turkey_to_a_tank_research_group:0 "Invite Turkey to a joint Tank Research Group"
+ TUR_sponsor_industrialization:0 "Sponsor Turkish Industrialization"
+ TUR_appease_turkey_with_armenia:0 "Appease Turkey with Armenia"
+ TUR_appease_turkey_with_kurdistan:0 "Appease Turkey with Kurdistan"
+ TUR_invite_german_industrialists:0 "Invite German Industrialists"
+ TUR_invite_french_industrialists:0 "Invite French Industrialists"
+ TUR_join_berlin_accords:0 "Join the Berlin Accords"
+ TUR_join_aor:0 "Join the Axis of Revenge"
+ TUR_commit_to_armed_neutrality:0 "Commit to Armed Neutrality"
+
+ TUR_gft_ends: "The Gamble for Turkey has ended"
+ TUR_gft_ends_tt:0 "The Gamble for Turkey ends"
+
+ 

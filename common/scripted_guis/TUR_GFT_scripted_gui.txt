@@ -5,7 +5,7 @@ scripted_gui = {
 		window_name = "gft_container"
 		properties = {
 			progressbar_gft = {
-				frame = var_TUR_GFT_progressbar
+				frame = global.var_TUR_GFT_progressbar
 			}
 		}
 	}

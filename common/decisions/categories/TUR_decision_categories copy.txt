@@ -95,7 +95,12 @@ TUR_GFT_category = {
 	scripted_gui = decisions_TUR_GFT_scriptedgui
 
 	allowed = {
-		original_tag = TUR
+		OR = {
+			original_tag = TUR
+			original_tag = GER
+			original_tag = FRA
+			original_tag = PER
+			original_tag = SOV
+		}
 	}
-	visible_when_empty = yes
 }

@@ -20,6 +20,10 @@ on_actions = {
 				}
 				set_global_flag = zionist_malagasy_toggle_flag
 			}
+			set_variable = { 
+				var_TUR_GFT_progressbar = 50
+				
+			}
 		}
 	}
 }
