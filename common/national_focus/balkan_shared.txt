@@ -1186,6 +1186,468 @@ joint_focus = {
 	}	
 }
 joint_focus = {
+	id = BALKAN_arms_productioon
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_generic_reorient_production
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_united_against_ottoman }
+	x = 16
+	y = 1
+	relative_position_id = BALKAN_united_against_ottoman
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
+	id = BALKAN_free_unis
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_generic_university_3
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_united_against_ottoman }
+	x = 11
+	y = 1
+	relative_position_id = BALKAN_united_against_ottoman
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
+	id = BALKAN_radio_usage
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_SWE_radiotjanst
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_free_unis }
+	x = -1
+	y = 1
+	relative_position_id = BALKAN_free_unis
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
+	id = BALKAN_utalize_hydroelecticity
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_generic_hydroelectric_energy
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_free_unis }
+	x = 1
+	y = 1
+	relative_position_id = BALKAN_free_unis
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
+	id = BALKAN_healthcare
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_generic_field_hostpital
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_utalize_hydroelecticity }
+	prerequisite = { focus = BALKAN_radio_usage }
+	x = 0
+	y = 1
+	relative_position_id = BALKAN_utalize_hydroelecticity
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+
+joint_focus = {
+	id = BALKAN_automate_production
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_generic_energy
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_utalize_hydroelecticity }
+	prerequisite = { focus = BALKAN_radio_usage }
+	x = 0
+	y = 1
+	relative_position_id = BALKAN_radio_usage
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+
+joint_focus = {
+	id = BALKAN_full_employment
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_generic_full_social_mobilization
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_automate_production }
+	prerequisite = { focus = BALKAN_balance_budget }
+	x = -1
+	y = 1
+	relative_position_id = BALKAN_automate_production
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
+	id = BALKAN_rapid_industrialization
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_CHL_enlarge_the_textile_industries
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_united_against_ottoman }
+	x = 6
+	y = 1
+	relative_position_id = BALKAN_united_against_ottoman
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+
+joint_focus = {
+	id = BALKAN_gold_reserves
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_usa_reestablish_the_gold_standard
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_rapid_industrialization }
+	x = 1
+	y = 1
+	relative_position_id = BALKAN_rapid_industrialization
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
+	id = BALKAN_invest_in_transport
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_SWE_per_albin_bus
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_gold_reserves focus = BALKAN_housing_act }
+	x = -1
+	y = 1
+	relative_position_id = BALKAN_gold_reserves
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+
+joint_focus = {
+	id = BALKAN_balance_budget
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_SWE_defense_act
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_gold_reserves }
+	x = 1
+	y = 1
+	relative_position_id = BALKAN_gold_reserves
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
+	id = BALKAN_housing_act
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_generic_low_cost_housing
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_rapid_industrialization }
+	x = -1
+	y = 1
+	relative_position_id = BALKAN_rapid_industrialization
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
+	id = BALKAN_hygienic_housing
+	
+	  joint_trigger = { BALKAN_is_balkan = yes }
+
+	icon = GFX_focus_SWE_hygienic_housing
+	text_icon = joint_focus_style
+
+	prerequisite = { focus = BALKAN_housing_act }
+	x = -1
+	y = 1
+	relative_position_id = BALKAN_housing_act
+	cost = 5
+
+	available = {
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			is_historical_focus_on = yes 
+		}
+	}
+
+
+	completion_reward = {
+	}
+	completion_reward_joint_originator = {
+		
+						
+	}
+
+	completion_reward_joint_member = {
+	}	
+}
+joint_focus = {
 	id = BALKAN_shared_language
 	
 	  joint_trigger = { BALKAN_is_balkan = yes }
@@ -1510,6 +1972,7 @@ joint_focus = {
 	icon = GFX_focus_CHL_avenge_the_pacification_of_araucania
 	text_icon = joint_focus_style
 	prerequisite = { focus = BALKAN_resource_extraction }
+	prerequisite = { focus = BALKAN_housing_act }
 	x = 3
 	y = 1
 	relative_position_id = BALKAN_resource_extraction
