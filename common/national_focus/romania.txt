@@ -3564,7 +3564,10 @@ focus = {
 			}
 	
 			available = {
-	
+				BUL = {
+					has_government = democratic
+					has_civil_war = no
+				}
 			}
 	
 			bypass = {

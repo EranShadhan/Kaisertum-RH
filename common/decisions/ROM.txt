@@ -283,6 +283,9 @@ Balkan_integration = {
 			182 = {add_core_of = ROM}
 			985 = {add_core_of = ROM}
 			187 = {add_core_of = ROM}
+			984 = {add_core_of = ROM}
+			1039 = {add_core_of = ROM}
+			985 = {add_core_of = ROM}
 			TUR = {
 				if = {
 					limit = { 339 = {is_owned_by = ROM } }
