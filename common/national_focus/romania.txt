@@ -3564,10 +3564,13 @@ focus = {
 			}
 	
 			available = {
-				BUL = {
-					has_government = democratic
-					has_civil_war = no
+				check_variable = {
+					var = ROM_influence_balkans_var
+					value = 90
+					compare = greater_than_or_equals
+					tooltip = more90
 				}
+
 			}
 	
 			bypass = {
@@ -3581,8 +3584,26 @@ focus = {
 			
 	
 			completion_reward = {
+				custom_effect_tooltip = buss
+				hidden_effect = {
+				BUL = {
+					set_politics = {
+						ruling_party = democratic
+					}
+					start_civil_war = {
+						ideology = neutrality
+						size = 0.35
+						capital = 212
+						states = { 184 981 211 212 106}
+					}
+					leave_faction = yes
+					
+					}
 				ROM = {
-					puppet = BUL
+					puppet = {
+						target = BUL
+						end_wars = no
+					}
 					create_faction = "Balkan Pact"
 					declare_war_on = {
 						target = SER
@@ -3599,6 +3620,28 @@ focus = {
 						type = puppet_wargoal_focus
 					}
 				}
+				ROM = {
+					transfer_state = 77	
+					add_to_war = {
+						targeted_alliance = BUL
+						enemy = ALL
+						
+					}
+					declare_war_on = {
+						target = D04
+						type = annex_everything
+					}
+				}
+				BUL = {
+					declare_war_on = {
+						target = D04
+						type = annex_everything
+					}
+				}
+				
+			}
+		
+				
 			}
 	}
 

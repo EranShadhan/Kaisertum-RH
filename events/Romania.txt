@@ -299,4 +299,111 @@ country_event = {
 	
 }
 
+country_event = {
+	id = kt_romania.12
+	title = kt_romania.12.t
+	desc = kt_romania.12.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kt_romania.12.a
+		ROM = {
+			annex_country = {
+				target = YUG
+				transfer_troops = no
+			}
+			white_peace = ITA
+		}
+		ITA = {
+			transfer_state = 852
+			transfer_state = 163
+			transfer_state = 103
+			transfer_state = 977
+		}			
+	}
+
+	option = {
+		name = kt_romania.12.b
+		ROM = {
+			add_war_support = 0.05
+		}			
+	}
+	
+}
+
+country_event = {
+	id = kt_romania.13
+	title = kt_romania.13.t
+	desc = kt_romania.13.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kt_romania.13.a
+		ROM = {
+			annex_country = {
+				target = YUG
+				transfer_troops = no
+			}
+			white_peace = ITA
+			
+			transfer_state = 736
+			transfer_state = 852
+			transfer_state = 163
+			transfer_state = 103
+			transfer_state = 977
+
+		}		
+	}
+
+	option = {
+		name = kt_romania.13.b
+		ROM = {
+			annex_country = {
+				target = YUG
+				transfer_troops = no
+			}
+			white_peace = ITA
+
+			transfer_state = 736
+			transfer_state = 852
+			transfer_state = 163
+			transfer_state = 103
+			transfer_state = 977
+			transfer_state = 102
+		}
+		
+		release = lbv
+
+		GER = {
+			puppet = lbv
+		}
+
+		hidden_effect = {
+			ITA = {
+				transfer_state = 159
+			}
+
+			159 = {
+				remove_core_of = LBV
+			}
+			LBV = {
+				transfer_state = 1034
+			}
+			1034 = {
+				add_core_of = LBV
+			}
+
+			39 = { add_core_of = ITA }
+			850 = { add_core_of = ITA }
+			1034 = { add_core_of = ITA }
+			160 = { add_core_of = ITA }
+		}
+	}
+	
+}
+
 

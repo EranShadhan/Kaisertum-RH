@@ -696,14 +696,128 @@ news_event = {
 			731 = {is_owned_by = GRE is_controlled_by = ROM }
 			797 = {is_owned_by = GRE is_controlled_by = ROM }
 	   }
+	   ROM = {
+		has_completed_focus = ROM_pol_kw_11
+	   }
         NOT = { has_global_flag = fall_of_GRE_ROM}
     }
 
     immediate = { 
-                    set_global_flag = fall_of_rom
+                    set_global_flag = fall_of_GRE_ROM
                     ROM = {
                         country_event = kt_romania.11
                     }
+                }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = news.410a
+    }
+}
+
+news_event = {
+    id = kaisertum_news.17
+    title = news.411.t
+    desc = news.411.desc
+    picture = GFX_news_event_074
+
+    major = yes
+
+    trigger = {
+		OR = {
+			47 = {is_owned_by = GRE is_controlled_by = ROM }
+			47 = {is_owned_by = GRE is_controlled_by = BUL }
+		}
+		
+	   ROM = {
+		has_completed_focus = ROM_pol_d_21
+	   }
+        NOT = { has_global_flag = fall_of_GRE_ROM_2}
+    }
+
+    immediate = { 
+                    set_global_flag = fall_of_GRE_ROM_2
+                    ROM = {
+                        puppet = GRE
+						puppet = ALB
+						puppet = SER
+                    }
+                }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = news.410a
+    }
+}
+
+news_event = {
+    id = kaisertum_news.18
+    title = news.411.t
+    desc = news.411.desc
+    picture = GFX_news_event_074
+
+    major = yes
+
+    trigger = {
+		YUG = {
+			has_capitulated = yes
+			is_puppet_of = ITA
+		}
+	   ROM = {
+		has_completed_focus = ROM_pol_d_21
+	   }
+        NOT = { has_global_flag = fall_of_YUG_ROM}
+    }
+
+    immediate = { 
+                    set_global_flag = fall_of_YUG_ROM
+                    ROM = {
+						country_event = kt_romania.12
+					}
+					
+                }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = news.410a
+    }
+}
+
+news_event = {
+    id = kaisertum_news.19
+    title = news.411.t
+    desc = news.411.desc
+    picture = GFX_news_event_074
+
+    major = yes
+
+    trigger = {
+		YUG = {
+			has_capitulated = yes
+			is_puppet_of = ITA
+		}
+		160 = { is_owned_by = ITA is_controlled_by = ROM }
+	   ROM = {
+		has_completed_focus = ROM_pol_d_21
+	   }
+        NOT = { has_global_flag = fall_of_VEN_ROM}
+    }
+
+    immediate = { 
+                    set_global_flag = fall_of_VEN_ROM
+                    ROM = {
+						country_event = kt_romania.13
+					}
+					
                 }
 
     mean_time_to_happen = {

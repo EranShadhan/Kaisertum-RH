@@ -127,20 +127,7 @@ Balkan_project = {
 				value = 20
 				tooltip = add_20
 			}
-			ROM = {
-				transfer_state = 77
-			}
-			BUL = {
-			set_politics = {
-				ruling_party = democratic
-			}
-			start_civil_war = {
-				ideology = neutrality
-				size = 0.10
-				capital = 48
-				states = { 184 981 211 212 106}
-			}
-			}
+			
 		}
 		days_remove = 45
 	}
@@ -332,6 +319,26 @@ Balkan_integration = {
 			45 = {add_core_of = ROM}
 			102 = {add_core_of = ROM}
 			988 = {add_core_of = ROM}
+		}
+	}
+
+	int_ser_alb = {
+		available = {
+			107 = { is_owned_by = ROM }	
+		}
+
+		visible = {
+			has_completed_focus = ROM_pol_d_24
+		}
+
+		complete_effect = {
+			764 = {add_core_of = ROM}
+			107 = {add_core_of = ROM}
+			802 = {add_core_of = ROM}
+			979 = {add_core_of = ROM}
+			934 = {add_core_of = ROM}
+			44 = {add_core_of = ROM}
+			805 = {add_core_of = ROM}
 		}
 	}
 
