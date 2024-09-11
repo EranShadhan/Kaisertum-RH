@@ -16,7 +16,7 @@
 
 	focus = {
 		id = FMG_governor_cayla
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_FMG_cayla
 		x = 5
 		y = 0
 		
@@ -37,6 +37,59 @@
 				ideology = junta
 				trait = FMG_colonial_governor
 			}
+		}
+	}
+	focus = {
+		id = FMG_public_force
+		icon = GFX_goal_zzz_WIP
+		x = 0
+		y = 2
+		relative_position_id = FMG_governor_cayla
+
+		offset = {
+			x = 2
+			y = 0
+			trigger = { zion_malagasy_path = no }
+		}
+		
+		prerequisite = { focus = FMG_governor_cayla }
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			load_oob="FMG_public_force"
+		}
+	}
+	focus = {
+		id = FMG_colonial_garrison
+		icon = GFX_goal_zzz_WIP
+		x = 0
+		y = 1
+		relative_position_id = FMG_public_force
+		
+		prerequisite = { focus = FMG_public_force }
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_global_flag = malagasy_revolution_flag}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = FMG_colonial_garrison_idea
 		}
 	}
 	focus = {
@@ -62,6 +115,7 @@
 
 		available = {
 			has_global_flag = malagasy_revolution_flag
+			has_civil_war = no
 		}
 
 		cancel_if_invalid = yes
@@ -70,6 +124,13 @@
 
 		completion_reward = {
 			remove_ideas = FMG_jewish_project
+			add_state_core = 543
+			add_state_core = 1048
+			add_state_core = 1049
+			add_state_core = 1050
+			add_state_core = 1051
+			add_state_core = 1052
+			add_state_core = 1053
 		}
 	}
 	focus = {
@@ -126,6 +187,7 @@
 		y = 1
 		relative_position_id = FMG_cc_toliara
 		
+		prerequisite = { focus = FMG_colonial_garrison }
 		prerequisite = { focus = FMG_cc_toliara focus = FMG_hon_hon_jude }
 
 		cost = 10
@@ -216,7 +278,7 @@
 		y = 1
 		relative_position_id = FMG_aks_honhons_for_islands
 		
-		mutually_exclusive = { focus = FMG_nordic_of_africa }
+		mutually_exclusive = { focus = FMG_made_in_madagascar }
 		prerequisite = { focus = FMG_aks_honhons_for_islands }
 
 		cost = 10
@@ -224,19 +286,76 @@
 			factor = 0
 		}
 
+		available = {
+			FRA = {
+				has_war_with = GER
+			}
+		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			declare_war_on = {
+			create_wargoal = {
 				target = AST
 				type = annex_everything
 			}
 		}
 	}
 	focus = {
-		id = FMG_nordic_of_africa
+		id = FMG_austrolasian_empire
+		icon = GFX_goal_zzz_WIP
+		x = 0
+		y = 1
+		relative_position_id = FMG_reclaim_homeland_ast
+
+		prerequisite = { focus = FMG_reclaim_homeland_ast }
+
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			NOT = {
+				country_exists = AST
+			}
+			controls_state = 285
+			controls_state = 517
+			controls_state = 518
+			controls_state = 519
+			controls_state = 871
+			controls_state = 522
+			controls_state = 674
+			controls_state = 870
+			controls_state = 520
+			controls_state = 872
+			controls_state = 521
+			controls_state = 873
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_state_core = 285
+			add_state_core = 517
+			add_state_core = 518
+			add_state_core = 519
+			add_state_core = 871
+			add_state_core = 522
+			add_state_core = 674
+			add_state_core = 870
+			add_state_core = 520
+			add_state_core = 872
+			add_state_core = 521
+			add_state_core = 873
+		}
+	}
+	focus = {
+		id = FMG_made_in_madagascar
 		icon = GFX_goal_zzz_WIP
 		x = 1
 		y = 1
@@ -273,11 +392,56 @@
 			}
 			random_owned_controlled_state = {
 				add_building_construction = {
-					type = industrial_complex
+					type = arms_factory
 					level = 1
 					instant_build = yes
 				}
 				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = FMG_nordic_of_africa
+		icon = GFX_goal_zzz_WIP
+		x = 0
+		y = 1
+		relative_position_id = FMG_made_in_madagascar
+
+		prerequisite = { focus = FMG_made_in_madagascar }
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 4
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
 			}
 		}
 	}
@@ -301,7 +465,8 @@
 		}
 
 		available = {
-			NOT = { has_global_flag = malagasy_revolution_flag }
+			has_global_flag = malagasy_revolution_flag
+			has_civil_war = no
 		}
 
 		cancel_if_invalid = yes
@@ -359,6 +524,7 @@
 
 		completion_reward = {
 			add_state_core = 1048
+			set_cosmetic_tag = FMG_ISR
 		}
 	}
 	focus = {
@@ -386,7 +552,7 @@
 	}
 	focus = {
 		id = FMG_new_judea
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_FMG_madagascar_home_jew
 		x = 0
 		y = 1
 		relative_position_id = FMG_zionism
@@ -403,7 +569,12 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = not_implemented_focus_tt
+			add_state_core = 543
+			add_state_core = 1049
+			add_state_core = 1050
+			add_state_core = 1051
+			add_state_core = 1052
+			add_state_core = 1053
 		}
 	}
 	focus = {
@@ -453,7 +624,7 @@
 	}
 	focus = {
 		id = FMG_reclaim_homeland
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_FMG_jew_world
 		x = 1
 		y = 1
 		relative_position_id = FMG_new_judea
@@ -470,7 +641,18 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = not_implemented_focus_tt
+			454 = {
+				controller = { 
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 454 }
+						}
+					}
+				}
+			}
+			add_state_core = 454
 		}
 	}
 }

@@ -12,6 +12,22 @@ ideas = {
 				monthly_population = 2.5
 			}
 		}
+		FMG_jewish_project_2 = {
+
+			name = FMG_jewish_project
+
+			picture = FMG_jewish_project
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = 5
+			}
+		}
 		FMG_jew_oppression = {
 			
 			allowed = {
@@ -37,6 +53,20 @@ ideas = {
 			modifier = {
 				war_support_factor = 0.1
 				monthly_population = -0.2
+			}
+		}
+		FMG_colonial_garrison_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.025
+				war_support_factor = 0.05
+				political_power_Factor = 0.15
 			}
 		}
 		FMG_fighting_for_honhons = {
