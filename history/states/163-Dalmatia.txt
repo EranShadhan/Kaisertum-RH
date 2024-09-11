@@ -1,28 +1,32 @@
-state = {
-	id = 163
-	name = "STATE_163"
-	manpower = 494666
-	
-	state_category = large_town
-	
-	history = {
+
+state={
+	id=163
+	name="STATE_163"
+
+	history={
 		owner = YUG
-		victory_points = { #Zara/Zadar
-			3943 5 
+		victory_points = {
+			11901 5 
 		}
 		buildings = {
 			infrastructure = 1
 			dockyard = 1
 			industrial_complex = 1
-			3943 = {
+			11901 = {
 				naval_base = 1
+
 			}
+
 		}
 		add_core_of = YUG
-	}
-	provinces = {	
-		3943 3974 984 11901 6611 591
+
 	}
 
-	local_supplies = 0.0 
+	provinces={
+		11901 
+	}
+	manpower=33464
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
 }

@@ -1,36 +1,38 @@
 
 state={
 	id=103
-	name="STATE_103" # Dalmatia
-	manpower = 953334 #TODO_Manu: Check if pop need to go down after Fiume split
-
-	state_category = large_town
-
+	name="STATE_103"
 
 	history={
 		owner = YUG
-		victory_points = { #Dubrovnik
+		victory_points = {
 			6889 3 
 		}
-		victory_points = { #Split
-			3924 3
+		victory_points = {
+			3924 3 
 		}
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			industrial_complex = 1
 			3924 = {
 				naval_base = 3
+
 			}
 			6889 = {
 				naval_base = 1
+
 			}
+
 		}
 		add_core_of = YUG
+
 	}
 
 	provinces={
-		3868 3924 6889 11816
+		3868 3924 3943 3974 6889 
 	}
-
-	local_supplies=4.0 
+	manpower=953334
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=4.000
 }

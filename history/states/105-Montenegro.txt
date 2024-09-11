@@ -9,7 +9,7 @@ state={
 
 	history={
 		victory_points = {
-			937 1 
+			6913 1 
 		}
 		owner = SER
 		add_core_of = MNT
@@ -24,10 +24,11 @@ state={
 		}
 		add_core_of = SER
 		add_core_of = YUG
+
 	}
 
 	provinces={
-		937 6913 11858 
+		937 6913 11858 13573 13577 13578 13583 
 	}
 	manpower=643422
 	buildings_max_level_factor=1.000

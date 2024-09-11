@@ -2,31 +2,30 @@
 state={
 	id=104
 	name="STATE_104"
-	manpower =955100
-	
-	
-	state_category = town
-	
 	resources={
-		aluminium=7 # was: 10
+		aluminium=7.000
 	}
 
 	history={
 		owner = YUG
 		victory_points = {
-			11899 10
+			11899 10 
 		}
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
 			air_base = 2
+
 		}
 		add_core_of = YUG
+
 	}
 
 	provinces={
-		606 982 6799 9591 11572 11574 11741 11899 
+		6799 6983 9922 11572 11574 11872 11899 13587 
 	}
-
-	local_supplies=7.0 
+	manpower=955100
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=7.000
 }

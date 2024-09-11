@@ -18,11 +18,10 @@ state={
 	}
 
 	provinces={
-		11832 11857 11868 
+		11832 11857 11868 13574 13575 13576 13582 
 	}
 	manpower=210000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
-
-	local_supplies=0.0 
+	local_supplies=0.000
 }
