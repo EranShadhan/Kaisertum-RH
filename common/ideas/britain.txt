@@ -1,0 +1,2013 @@
+ideas = {
+
+	country = {
+		george_v = {
+			
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = ENG
+						has_government = democratic 
+						NOT = {
+							tag = ROOT
+						}
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+			traits = { popular_figurehead }
+			
+
+		}
+
+		ENG_king_edward = {
+			
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = ENG
+						has_government = democratic 
+						NOT = {
+							tag = ROOT
+						}
+					}
+				}
+			}
+
+			picture = king_edward
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.001				
+			}
+			
+
+		}
+
+		ENG_king_edward_fascism = {
+			
+			allowed = {
+				original_tag = ENG
+			}
+
+			picture = king_edward
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+
+			modifier = {
+				stability_factor = 0.05
+				drift_defence_factor = 0.5
+			}
+		}
+
+		ENG_george_vi = {
+			
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = ENG
+						has_government = democratic 
+						NOT = {
+							tag = ROOT
+						}
+					}
+				}
+			}
+
+			picture = george_vi_ns
+			
+			removal_cost = -1
+			
+			traits = { popular_figurehead }
+			
+		}
+
+		ENG_the_war_to_end_all_wars = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			removal_cost = -1
+						
+			modifier = {
+				conscription_factor = -0.30
+				#conscription = -0.006
+			}
+		}
+		ENG_restless_public_1 = {
+			name = ENG_restless_public_
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = -0.15
+				production_speed_buildings_factor = -0.1
+				conscription_factor = -0.1
+			}
+
+			picture = eng_steady_as_she_goes
+		}	
+		ENG_restless_public_2 = {
+			name = ENG_restless_public_
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = -0.25
+				production_speed_buildings_factor = -0.15
+				conscription_factor = -0.1
+			}
+
+			picture = eng_steady_as_she_goes
+		}
+		ENG_royal_charities_1 = {
+			name = ENG_royal_charities
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+
+			picture = eng_steady_as_she_goes
+		}
+		ENG_royal_charities_2 = {
+			name = ENG_royal_charities
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = 0.1
+				consumer_goods_factor = -0.1
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+
+			picture = eng_steady_as_she_goes
+		}
+		ENG_naval_hegemon_1 = {
+			name = ENG_naval_hegemon
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_speed_dockyard_factor = 0.05
+				navy_max_range_factor = 0.1
+				industrial_capacity_dockyard = 0.05
+			}
+
+			picture = eng_steady_as_she_goes
+		}
+		ENG_naval_hegemon_2 = {
+			name = ENG_naval_hegemon
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_speed_dockyard_factor = 0.1
+				navy_max_range_factor = 0.2
+				industrial_capacity_dockyard = 0.1
+			}
+
+			picture = eng_steady_as_she_goes
+		}
+		ENG_naval_hegemon_3 = {
+			name = ENG_naval_hegemon
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_speed_dockyard_factor = 0.15
+				navy_max_range_factor = 0.3
+				industrial_capacity_dockyard = 0.15
+			}
+
+			picture = eng_steady_as_she_goes
+		}
+		ENG_diamond_sales = {
+			name = ENG_diamond_sales
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				political_power_factor = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+
+			picture = eng_steady_as_she_goes
+		}
+			removal_cost = -1	
+		ENG_liberal_resistance = {
+
+			name = ENG_liberal_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_gain = -0.15
+				stability_factor = -0.1
+				consumer_goods_factor = 0.15
+			}
+
+			picture = eng_steady_as_she_goes
+			
+			removal_cost = -1	
+
+		}
+		ENG_labour_resistance = {
+
+			name = ENG_labour_resistance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_gain = -0.15
+				stability_factor = -0.1
+				consumer_goods_factor = 0.15
+			}
+
+			picture = eng_steady_as_she_goes
+			
+			removal_cost = -1	
+
+		}
+		ENG_universal_health_care_act_idea = {
+
+			name = ENG_universal_health_care_act_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				monthly_population = 0.05
+				consumer_goods_factor = 0.05
+			}
+
+			picture = eng_steady_as_she_goes
+			
+			removal_cost = -1	
+
+		}
+		ENG_public_housing_act_idea = {
+
+			name = ENG_public_housing_act_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				 global_building_slots_factor = 0.15
+			}
+
+			picture = eng_steady_as_she_goes
+			
+			removal_cost = -1	
+
+		}
+		ENG_banking_reform_idea = {
+
+			name = ENG_banking_reform_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				 stability_factor = 0.10
+			}
+
+			picture = eng_steady_as_she_goes
+			
+			removal_cost = -1	
+
+		}
+		ENG_fair_trade_act_idea = {
+
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_exploit_mines
+
+            removal_cost = -1
+
+            modifier = {
+                trade_laws_cost_factor = -0.25
+                economy_cost_factor    = -0.25
+                consumer_goods_factor = -0.1
+                trade_opinion_factor = 0.25
+            }
+        }
+		ENG_free_education_idea = {
+
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_exploit_mines
+
+            removal_cost = -1
+
+            modifier = {
+                research_speed_factor = 0.15
+				consumer_goods_factor = 0.05
+            }
+        }
+		ENG_corporate_responsability_act_idea = {
+
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_exploit_mines
+
+            removal_cost = -1
+
+            modifier = {
+                political_power_gain = 0.15
+				consumer_goods_factor = 0.05
+            }
+        }
+		ENG_economic_regulation_idea = {
+
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_exploit_mines
+
+            removal_cost = -1
+
+            modifier = {
+                stability_factor = 0.05
+				consumer_goods_factor = -0.05
+            }
+        }
+		ENG_factory_modernization_idea = {
+
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_exploit_mines
+
+            removal_cost = -1
+
+            modifier = {
+                production_speed_industrial_complex_factor = 0.20 
+				production_factory_max_efficiency_factor = 0.15 
+            }
+        }
+		ENG_worker_safety_act_idea = {
+
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_exploit_mines
+
+            removal_cost = -1
+
+            modifier = {
+                stability_weekly = 0.002 
+				production_factory_efficiency_gain_factor = 0.15 
+            }
+        }
+		ENG_stable_economics_idea = {
+
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_exploit_mines
+
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_factor = -0.05	
+				stability_factor = 0.1
+				political_power_factor = 0.05
+				conscription_factor = 0.01	
+            }
+        }
+		ENG_employment_security_idea = {
+
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_exploit_mines
+
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_factor = 0.05	
+				stability_factor = 0.1
+            }
+        }
+		ENG_enviromental_impact_act_idea = {
+
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_exploit_mines
+
+            removal_cost = -1
+
+            modifier = {
+                research_speed_factor = 0.2	
+				local_resourses_factor = 0.2
+            }
+        }
+		ENG_arms_industry_regulation_idea = {
+
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_exploit_mines
+
+            removal_cost = -1
+
+            modifier = {
+                production_start_efficincy = 0.2	
+				line_change_production_factor = 0.2
+            }
+        }
+		ENG_arms_industry_workers'_rights_idea = {
+
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_exploit_mines
+
+            removal_cost = -1
+
+            modifier = {
+                production_factory_efficiency_gain = 0.1	
+				political_power_gain = 0.25
+				stability_weekly = 0.03
+            }
+        }
+		ENG_industrial_colaboration_idea = {
+
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_exploit_mines
+
+            removal_cost = -1
+
+            modifier = {
+                equipment_conversion_speed = 0.1	
+				conversion_cost_civ_to_mil_factor = -0.25
+				conversion_cost_mil_to_civ_factor = -0.25
+            }
+        }
+		ENG_peace_and_prosperity_idea = {
+
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_exploit_mines
+
+            removal_cost = -1
+
+            modifier = {
+                stability_weekly = 0.005	
+				political_power_gain = 0.5
+				consumer_goods_factor = -0.3
+				ideology_drift = 0.3
+				production_speed_buildings_factor = 0.20
+            }
+        }
+		ENG_dual_use_manufactoring_act_idea = {
+
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_exploit_mines
+
+            removal_cost = -1
+
+            modifier = {
+                production_factory_efficiency_gain = 0.1	
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+            }
+        }
+		ENG_rearmamant_act_idea = {
+
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_exploit_mines
+
+            removal_cost = -1
+
+            modifier = {
+                war_support_weekly = 0.1	
+				weekly_manpower = 600
+				defensive_war_stability_factor = 0.1
+				conscription_factor = 0.1
+            }
+        }
+		ENG_tackle_fascism_idea_2 = {
+
+			name = ENG_tackle_fascism
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				fascism_drift = -0.02
+			}
+
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+
+			picture = generic_fascism_banned
+			
+			removal_cost = -1	
+
+		}
+
+		ENG_tackle_fascism_idea_3 = {
+
+			name = ENG_tackle_fascism
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				fascism_drift = -0.02
+			}
+
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+
+			picture = generic_fascism_banned
+			
+			removal_cost = -1	
+
+		}
+
+		ENG_tackle_capitalism_idea = {
+
+			name = ENG_tackle_capitalism
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				democratic_drift = -0.02
+			}
+
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+
+			picture = eng_tackle_capitalism
+			
+			removal_cost = -1	
+
+		}
+
+		ENG_spirit_of_the_industrial_revolution_idea = {
+
+			name = ENG_spirit_of_the_industrial_revolution
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+
+			picture = eng_spirit_of_the_industrial_revolution
+			
+			removal_cost = -1	
+
+		}
+
+		ENG_factory_safety_regulations_1 = {
+
+			name = ENG_trade_union_factory_demands
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				industrial_capacity_factory = -0.07
+				industrial_capacity_dockyard = -0.07
+			}
+
+			picture = FRA_factory_strikes
+			
+			removal_cost = -1	
+
+		}
+
+		ENG_factory_safety_regulations_2 = {
+
+			name = ENG_trade_union_factory_demands
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				industrial_capacity_factory = -0.14
+				industrial_capacity_dockyard = -0.14
+			}
+
+			picture = FRA_factory_strikes
+			
+			removal_cost = -1	
+
+		}
+
+		ENG_factory_safety_regulations_3 = {
+
+			name = ENG_trade_union_factory_demands
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+			}
+
+			picture = FRA_factory_strikes
+			
+			removal_cost = -1	
+
+		}
+
+		ENG_construction_safety_regulations = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_speed_industrial_complex_factor = -0.15
+				production_speed_arms_factory_factor = -0.15
+				production_speed_dockyard_factor = -0.15
+				production_speed_naval_base_factor = -0.15
+				production_speed_coastal_bunker_factor = -0.15
+				production_speed_bunker_factor = -0.15
+				production_speed_air_base_factor = -0.15
+				production_speed_anti_air_building_factor = -0.15
+				production_speed_radar_station_factor = -0.15
+				production_speed_rocket_site_factor = -0.15
+				production_speed_nuclear_reactor_factor = -0.15
+				production_speed_synthetic_refinery_factor = -0.15
+				production_speed_infrastructure_factor = -0.15
+			}
+
+			picture = FRA_factory_strikes
+			
+			removal_cost = -1	
+
+		}
+
+		ENG_mandatory_union_days = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				communism_drift = 0.02
+				stability_weekly = -0.002
+				political_power_factor = -0.15
+			}
+
+			picture = FRA_factory_strikes
+			
+			removal_cost = -1
+
+		}
+
+		ENG_trade_union_factory_worker_support = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.10
+			}
+
+			picture = generic_production_bonus
+			
+			removal_cost = -1	
+
+		}
+
+		ENG_trade_union_dockyard_worker_support = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				industrial_capacity_dockyard = 0.10
+			}
+
+			picture = generic_production_bonus
+			
+			removal_cost = -1	
+
+		}
+
+		ENG_trade_union_construction_worker_support = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				production_speed_dockyard_factor = 0.15
+				production_speed_naval_base_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.15
+				production_speed_bunker_factor = 0.15
+				production_speed_air_base_factor = 0.15
+				production_speed_anti_air_building_factor = 0.15
+				production_speed_radar_station_factor = 0.15
+				production_speed_rocket_site_factor = 0.15
+				production_speed_nuclear_reactor_factor = 0.15
+				production_speed_synthetic_refinery_factor = 0.15
+				production_speed_infrastructure_factor = 0.15
+			}
+
+			picture = generic_production_bonus
+			
+			removal_cost = -1	
+
+		}
+
+		ENG_trade_union_war_propaganda_support = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				war_support_weekly = 0.005
+			}
+
+			picture = generic_political_support
+			
+			removal_cost = -1	
+
+		}
+
+		ENG_dominion_fascist_propaganda = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				fascism_drift = 0.3
+			}
+
+			picture = ast_abandon_the_westminster_system_fascism
+			
+			removal_cost = -1	
+
+		}
+
+		ENG_dominion_communist_propaganda = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				communism_drift = 0.3
+			}
+
+			picture = ast_abandon_the_westminster_system_communism
+			
+			removal_cost = -1	
+
+		}
+
+		ENG_restoring_public_order = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_weekly = 0.01
+			}
+
+			picture = generic_intel_bonus
+			
+			removal_cost = -1	
+
+		}
+
+		ENG_support_for_the_king_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_weekly = 0.01
+				neutrality_drift = 0.1
+			}
+
+			picture = ast_abandon_the_westminster_system
+			
+			removal_cost = -1
+		}
+
+		ENG_the_kings_party_idea = {
+
+			name = ENG_the_kings_party
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = neutrality
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				neutrality_drift = 0.1
+				political_power_factor = 0.15
+				generate_wargoal_tension = -0.5
+				lend_lease_tension = -0.4
+				send_volunteers_tension = -0.4
+				guarantee_tension = -0.4
+				drift_defence_factor = 0.3
+			}
+
+			picture = eng_the_kings_party
+			
+			removal_cost = -1
+		}
+
+		ENG_exiled_royal_family = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			modifier = {
+				army_morale_factor = 0.1
+				stability_factor = 0.1
+				war_support_factor = 0.05
+			}
+
+			picture = generic_king_handled
+
+			removal_cost = -1
+		}
+
+		ENG_confiscated_royal_wealth = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.20
+				production_speed_arms_factory_factor = 0.20
+				production_speed_dockyard_factor = 0.20
+			}
+
+			picture = generic_foreign_capital
+
+			removal_cost = -1
+		}
+
+		ENG_service_overseas_idea = {
+
+			name = uk_service_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			modifier = {
+				acclimatization_hot_climate_gain_factor = 0.1
+			}
+
+			picture = eng_service_overseas
+
+			removal_cost = -1
+		}
+
+		ENG_indian_autonomy_idea = {
+
+			name = ENG_indian_autonomy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_factor = -0.15
+			}
+
+			picture = generic_pp_unity_bonus
+
+			removal_cost = -1
+		}
+
+		ENG_indian_autonomy_RAJ_idea = {
+
+			name = ENG_indian_autonomy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				autonomy_gain = 0.5
+			}
+
+			picture = generic_pp_unity_bonus
+
+			removal_cost = -1
+		}
+
+		ENG_indian_autonomy_RAJ_idea_2 = {
+
+			name = ENG_indian_autonomy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			modifier = {
+				democratic_drift = 0.2
+			}
+
+			picture = generic_pp_unity_bonus
+
+			removal_cost = -1
+		}
+
+		ENG_imperial_conference_defense_dominion = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+
+			picture = generic_war_preparation
+
+			removal_cost = -1
+		}
+
+		ENG_imperial_conference_defense_1 = {
+
+			name = ENG_imperial_conference_defense_dominion
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = 0.03
+				industrial_capacity_dockyard = 0.03
+			}
+
+			picture = generic_war_preparation
+
+			removal_cost = -1
+		}
+
+		ENG_imperial_conference_defense_2 = {
+
+			name = ENG_imperial_conference_defense_dominion
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = 0.06
+				industrial_capacity_dockyard = 0.06
+			}
+
+			picture = generic_war_preparation
+
+			removal_cost = -1
+		}
+
+		ENG_imperial_conference_defense_3 = {
+
+			name = ENG_imperial_conference_defense_dominion
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = 0.09
+				industrial_capacity_dockyard = 0.09
+			}
+
+			picture = generic_war_preparation
+
+			removal_cost = -1
+		}
+
+		ENG_imperial_conference_defense_4 = {
+
+			name = ENG_imperial_conference_defense_dominion
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = 0.12
+				industrial_capacity_dockyard = 0.12
+			}
+
+			picture = generic_war_preparation
+
+			removal_cost = -1
+		}
+
+		ENG_imperial_conference_defense_5 = {
+
+			name = ENG_imperial_conference_defense_dominion
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+			}
+
+			picture = generic_war_preparation
+
+			removal_cost = -1
+		}
+
+		ENG_imperial_conference_economy_dominion = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+			}
+
+			picture = generic_exploit_mines
+
+			removal_cost = -1
+		}
+
+		ENG_imperial_conference_economy_1 = {
+
+			name = ENG_imperial_conference_economy_dominion
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.03
+				production_speed_arms_factory_factor = 0.03
+				production_speed_dockyard_factor = 0.03
+			}
+
+			picture = generic_exploit_mines
+
+			removal_cost = -1
+		}
+		ENG_imperial_conference_economy_2 = {
+
+			name = ENG_imperial_conference_economy_dominion
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.06
+				production_speed_arms_factory_factor = 0.06
+				production_speed_dockyard_factor = 0.06
+			}
+
+			picture = generic_exploit_mines
+
+			removal_cost = -1
+		}
+		ENG_imperial_conference_economy_3 = {
+
+			name = ENG_imperial_conference_economy_dominion
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.09
+				production_speed_arms_factory_factor = 0.09
+				production_speed_dockyard_factor = 0.09
+			}
+
+			picture = generic_exploit_mines
+
+			removal_cost = -1
+		}
+		ENG_imperial_conference_economy_4 = {
+
+			name = ENG_imperial_conference_economy_dominion
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.12
+				production_speed_arms_factory_factor = 0.12
+				production_speed_dockyard_factor = 0.12
+			}
+
+			picture = generic_exploit_mines
+
+			removal_cost = -1
+		}
+
+		ENG_imperial_conference_economy_5 = {
+
+			name = ENG_imperial_conference_economy_dominion
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				production_speed_dockyard_factor = 0.15
+			}
+
+			picture = generic_exploit_mines
+
+			removal_cost = -1
+		}
+
+		ENG_federal_integration = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				autonomy_gain = -3
+			}
+
+			picture = eng_guided_by_britain
+			
+			removal_cost = -1	
+
+		}
+
+		ENG_federal_integration_tfv = {
+
+			name = ENG_federal_integration
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				autonomy_gain = -1
+			}
+
+			picture = eng_guided_by_britain
+			
+			removal_cost = -1	
+
+		}
+
+		ENG_fortify_the_empire_1 = {
+
+			name = ENG_fortify_the_empire
+
+			picture = generic_fortify_the_borders
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				production_speed_bunker_factor = 0.05
+				production_speed_coastal_bunker_factor = 0.05
+			}
+		}
+
+		ENG_fortify_the_empire_2 = {
+
+			name = ENG_fortify_the_empire
+
+			picture = generic_fortify_the_borders
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				production_speed_bunker_factor = 0.1
+				production_speed_coastal_bunker_factor = 0.1
+			}
+		}
+
+		ENG_british_commonwealth_air_training_plan = {
+
+			picture = generic_air_bonus
+		
+			allowed = {
+				always = no
+			}
+
+			available = {
+				OR = {
+					tag = ENG
+					is_subject_of = ENG
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_air = 0.05
+				experience_gain_air_factor = 0.1
+				air_mission_xp_gain_factor = 0.05
+				air_training_xp_gain_factor = 0.2
+			}
+		}
+
+		ENG_joint_air_training_scheme = {
+
+			picture = generic_air_bonus
+		
+			allowed = {
+				always = no
+			}
+
+			available = {
+				OR = {
+					tag = ENG
+					is_subject_of = ENG
+				}
+			}
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_air = 0.05
+				experience_gain_air_factor = 0.1
+				air_mission_xp_gain_factor = 0.1
+				air_training_xp_gain_factor = 0.2
+			}
+		}
+
+		ENG_anti_submarine_training_school = {
+
+			picture = generic_coastal_defense_ships2
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_destroyer_combat_factor = 0.1
+				experience_gain_destroyer_training_factor = 0.1
+			}
+		}
+
+		ENG_secure_the_imperial_shipping_routes = {
+
+			picture = generic_coastal_defense_ships
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			
+			removal_cost = -1
+						
+			equipment_bonus = {
+				ship_hull_cruiser = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+
+		ENG_expand_the_repair_yards = {
+
+			picture = generic_coastal_defense_ships
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			
+			removal_cost = -1
+						
+			modifier = {
+				refit_ic_cost = -0.1
+				refit_speed = 0.1
+				repair_speed_factor = 0.1
+			}
+		}
+
+	}
+	
+	naval_manufacturer = {
+		
+		designer = yes
+		
+		yarrow_shipbuilders = {
+			
+			allowed = {
+				original_TAG = ENG
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { convoy_escort_naval_manufacturer }
+
+		}
+		
+		harland_wolff = {
+			
+			allowed = {
+				original_TAG = ENG
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { pacific_fleet_naval_manufacturer }
+		}
+		
+		cammell_laird = {
+			
+			allowed = {
+				original_TAG = ENG
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { atlantic_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		john_brown_company = {
+			
+			allowed = {
+				original_TAG = ENG
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { coastal_defence_naval_manufacturer }
+		}	
+	}
+	
+	aircraft_manufacturer = {
+			
+		designer = yes
+		
+		supermarine = {
+			
+			allowed = {
+				original_TAG = ENG
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		hawker = {
+			
+			allowed = {
+				original_TAG = ENG
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { CAS_manufacturer } 
+			
+			modifier = {
+			}
+		}	
+		de_havilland = {
+			
+			allowed = {
+				original_TAG = ENG
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		avro = {
+			
+			allowed = {
+				original_TAG = ENG
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		fairey_aviation = {
+			
+			allowed = {
+				original_TAG = ENG
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}			
+	}
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		rsaf_enfield = {
+			
+			allowed = {
+				original_TAG = ENG
+			}
+			
+
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		vauxhall = {
+			
+			allowed = {
+				original_TAG = ENG
+			}
+			
+
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		royal_arsenal = {
+			
+			allowed = {
+				original_TAG = ENG
+			}
+			
+
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	industrial_concern = {
+				
+		aioc = {
+			
+			allowed = {
+				original_TAG = ENG
+			}
+			
+
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }
+			
+			modifier = {
+			}
+
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_idea_with_trait = silent_workhorse
+					factor = 10
+				}
+			}
+		}
+		
+		english_electric = {
+			
+			allowed = {
+				original_TAG = ENG
+			}
+			
+
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+			}
+		}
+		
+	}	
+
+	
+	tank_manufacturer = {
+		vickers_armstrong_eng = {
+			
+			allowed = {
+				original_TAG = ENG
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { medium_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+}

@@ -1,0 +1,162 @@
+﻿###########################
+# Briish Events
+###########################
+
+add_namespace = britain
+
+#USA
+country_event = {
+	id = britain.1
+	title = britain.1.t
+	desc = britain.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = { #Accepted
+		name = britain.1.a
+		ENG = {
+			country_event = britain.2
+		}
+	}
+
+	option = {# Rejcted
+		name = britain.1.b
+		ENG = {
+			country_event = britain.3
+		}
+	}
+}
+
+#US accepted
+country_event = {
+	id = britain.2
+	title = britain.2.t
+	desc = britain.2.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = britain.2.a
+		transfer_state = 463
+		transfer_state = 650
+		transfer_state = 357
+	}
+}
+
+#US Refused
+country_event = {
+	id = britain.3
+	title = britain.3.t
+	desc = britain.3.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = britain.3.a
+	}
+
+	option = {
+		name = britain.3.b
+		add_state_claim = 463
+		add_state_claim = 650
+		add_state_claim = 357
+		create_wargoal = {
+			type = take_claim
+			generator = { 463 650 357 }
+			target = USA
+		}
+	}
+}
+
+#Canada
+country_event = {
+	id = britain.4
+	title = britain.4.t
+	desc = britain.4.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = { #Accepted
+		name = britain.4.a
+		ENG = {
+			country_event = britain.5
+		}
+	}
+
+	option = { # Rejcted
+		name = britain.4.b
+		ENG = {
+			country_event = britain.6
+		}
+		leave_faction = CAN
+	}
+}
+
+#Canada accepted
+country_event = {
+	id = britain.5
+	title = britain.5.t
+	desc = britain.5.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = britain.5.a
+		ENG = {
+			annex_country = {
+				target = CAN
+				transfer_troops = yes
+			}
+		}
+	}
+}
+
+#Canada Refused
+country_event = {
+	id = britain.6
+	title = britain.6.t
+	desc = britain.6.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = britain.6.a
+		if = {
+			limit = {
+				CAN = {
+					is_puppet = yes
+					is_in_faction_with = ENG
+				}
+			}
+			set_autonomy = {
+				target = CAN
+				autonomous_state = autonomy_free
+			}
+		}
+	}
+
+	option = {
+		name = britain.6.b
+		if = {
+			limit = {
+				CAN = {
+					is_puppet_of = ENG
+				}
+				set_autonomy = {
+					target = CAN
+					autonomous_state = autonomy_free
+				}
+			}
+		}
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = CAN
+		}
+	}
+}
