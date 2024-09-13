@@ -1,3 +1,4 @@
+
 state={
 	id=230
 	name="STATE_230"
@@ -5,10 +6,10 @@ state={
 	history={
 		owner = SOV
 		victory_points = {
-			12320 3
+			12320 3 
 		}
 		victory_points = {
-			12441 1
+			12441 1 
 		}
 		victory_points = {
 			11674 1 
@@ -22,14 +23,13 @@ state={
 		add_core_of = SOV
 		add_core_of = ARM
 
-		}
+	}
 
 	provinces={
-		1539 3564 6642 6997 11674 11708 12320 12380 12441 12450 13123 
+		1539 3564 6642 6997 11674 11708 12320 12380 12441 12450 13123 13608 13609 13611 13616 
 	}
 	manpower=1250082
 	buildings_max_level_factor=1.000
 	state_category=town
-
-	local_supplies=0.0 
+	local_supplies=0.000
 }

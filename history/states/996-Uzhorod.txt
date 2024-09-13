@@ -1,10 +1,11 @@
+
 state={
 	id=996
 	name="STATE_996"
 
 	history={
 		victory_points = {
-			11691 2
+			11691 2 
 		}
 		owner = HUN
 		buildings = {
@@ -19,7 +20,7 @@ state={
 	}
 
 	provinces={
-		11691 
+		11691 13599 
 	}
 	manpower=26675
 	buildings_max_level_factor=1.000

@@ -1,9 +1,11 @@
+
 state={
 	id=1043
 	name="STATE_1043"
-      resources={
+	resources={
 		oil=16.000
 	}
+
 	history={
 		owner = HUN
 		buildings = {
@@ -17,10 +19,10 @@ state={
 	}
 
 	provinces={
-		6604 11536  
+		6604 11536 13600 13622 
 	}
 	manpower=25000
-	state_category=pastoral
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 	local_supplies=0.000
 }

@@ -1,3 +1,4 @@
+
 state={
 	id=994
 	name="STATE_994"
@@ -5,7 +6,7 @@ state={
 	history={
 		owner = AUS
 		victory_points = {
-			442 5
+			442 5 
 		}
 		buildings = {
 			infrastructure = 3
@@ -18,12 +19,11 @@ state={
 
 	}
 
-
 	provinces={
-		442 6499 6522 9412 11398 11413 11507 
+		442 3410 6499 6522 9412 11398 11413 11507 13619 13623 13627 
 	}
 	manpower=2780488
-	state_category=city
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
 }
