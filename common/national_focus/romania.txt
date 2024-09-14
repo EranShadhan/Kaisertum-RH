@@ -3584,7 +3584,7 @@ focus = {
 			
 	
 			completion_reward = {
-				custom_effect_tooltip = buss
+				custom_effect_tooltip = attack_civil_war_bul
 				hidden_effect = {
 				BUL = {
 					set_politics = {
@@ -3750,7 +3750,11 @@ focus = {
 			
 	
 			completion_reward = {
-				set_cosmetic_tag = UBF_united_balkan_federation_democratic
+				hidden_effect = {
+					set_cosmetic_tag = UBF_united_balkan_federation_democratic
+				}
+				
+				custom_effect_tooltip = rom_unite_the_balkans
 				if = {
 					limit = {
 						BUL = { is_puppet_of = ROM }
