@@ -21,7 +21,7 @@ shared_focus = BALKAN_joint_united_front
 	shared_focus = naval_effort
 	shared_focus = industrial_effort
 	shared_focus = political_effort
-initial_show_position = {
+	initial_show_position = {
 		focus = industrial_effort
 	}	
 	
@@ -34,7 +34,7 @@ initial_show_position = {
 		
 		available = {
 		}
-		x = 35
+		x = 33
 		y = 0
 
 		cost = 3

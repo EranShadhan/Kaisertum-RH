@@ -515,7 +515,7 @@ allow_scorched_earth = {
 
 zion_malagasy = {
 	name = "RULE_ZION_MALAGASY"
-	group = "RULE_GROUP_COUNTRY_SPECIFIC"
+	group = "RULE_GROUP_CONTENT"
 	icon = "GFX_david_star"
 	option = {
 		name = yes
@@ -531,7 +531,7 @@ zion_malagasy = {
 
 hre = {
 	name = "RULE_HRE"
-	group = "RULE_GROUP_COUNTRY_SPECIFIC"
+	group = "RULE_GROUP_CONTENT"
 	icon = "GFX_hre"
 	option = {
 		name = yes
@@ -545,10 +545,26 @@ hre = {
 	}
 }
 
+kaltertum = {
+	name = "RULE_KAT"
+	group = "RULE_GROUP_CONTENT"
+	icon = "GFX_kaltertum"
+	option = {
+		name = yes
+		text = "RULE_OPTION_ALLOWED"
+		desc = "RULE_KAT_YES_DESC"
+	}
+	default = {
+		name = no
+		text = "RULE_OPTION_BLOCKED"
+		desc = "RULE_KAT_NO_DESC"
+	}
+}
+
 taiwan_austria_easteregg = {
 	name = "RULE_TAIWAN"
-	group = "RULE_GROUP_COUNTRY_SPECIFIC"
-	#icon = "GFX_hre"
+	group = "RULE_GROUP_CONTENT"
+	icon = "GFX_taiwan_qm"
 	option = {
 		name = yes
 		text = "RULE_OPTION_ALLOWED"

@@ -8,27 +8,20 @@ joint_focus = {
 	#prerequisite = { focus = NORDIC_strengthen_ties }
 	#prerequisite = { focus = NORDIC_mutual_guarantees }
 
-	x = 29
+	x = 50
 	y = 0
 	offset = {
-		x = 65
+		x = 38
 		y = 0
 		trigger = {
 			tag = GRE
 		}
 	}
 	offset = {
-		x = 35
+		x = 12
 		y = 0
 		trigger = {
 			tag = CRE
-		}
-	}
-	offset = {
-		x = 35
-		y = 0
-		trigger = {
-			tag = BUL
 		}
 	}
 	#relative_position_id = NORDIC_mutual_guarantees

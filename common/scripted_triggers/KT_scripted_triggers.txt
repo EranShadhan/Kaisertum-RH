@@ -13,6 +13,13 @@ hre_path = {
 	}
 }
 
+kaltertum = {
+	has_game_rule = {
+		rule = kaltertum
+		option = yes
+	}
+}
+
 austria_taiwan_yes = {
 	has_game_rule = {
 		rule = taiwan_austria_easteregg

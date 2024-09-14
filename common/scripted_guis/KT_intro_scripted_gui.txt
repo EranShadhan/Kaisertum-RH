@@ -89,6 +89,15 @@ scripted_gui = {
 					set_global_flag = endonyms
 				}
 			}
+			intro_gui_button_settigns_two_click = {
+				if = {
+					limit = { has_global_flag = scripted_deals }
+					clr_global_flag = scripted_deals
+				}
+				else = {
+					set_global_flag = scripted_deals
+				}
+			}
 		}
 	}
 }

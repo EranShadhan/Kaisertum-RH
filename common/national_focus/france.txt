@@ -1885,6 +1885,7 @@
 		allow_branch = {
 			is_puppet_of = GER
 			has_government = neutrality
+			kaltertum = yes
 		}
 
 		cost = 5

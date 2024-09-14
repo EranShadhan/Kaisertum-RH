@@ -188,7 +188,7 @@ defined_text = {
 		trigger = {
 			has_global_flag = endonyms
 		}
-		localization_key = state_rename_nein
+		localization_key = settings_nein
 	}
 
 	text = {
@@ -197,6 +197,26 @@ defined_text = {
 				has_global_flag = endonyms
 			}
 		}
-		localization_key = state_rename_ja
+		localization_key = settings_ja
+	}
+}
+
+defined_text = { 
+	name = GetScriptedDealsToggle
+
+	text = {
+		trigger = {
+			has_global_flag = scripted_deals
+		}
+		localization_key = settings_nein
+	}
+
+	text = {
+		trigger = {
+			NOT = {
+				has_global_flag = scripted_deals
+			}
+		}
+		localization_key = settings_ja
 	}
 }

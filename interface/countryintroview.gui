@@ -136,5 +136,16 @@ guiTypes = {
 			oversound = ui_menu_over
 			pdx_tooltip = intro_gui_button_one_nein_tt
 		}
+
+		buttonType = {
+			name = "intro_gui_button_settigns_two"
+			position = { x = 15 y = 50 }
+			quadTextureSprite = "GFX_button_intro"
+			buttonText = "Scripted Deals"
+			buttonFont = "Main_22"
+			clicksound = decisions_ui_button
+			oversound = ui_menu_over
+			pdx_tooltip = intro_gui_button_two_tt
+		}
 	}
 }
