@@ -8,6 +8,7 @@
 
  EMPTY:0 ""
  intro_gui_button_one_tt:0 "[GetStateRenamingToggle] §YState Renaming§!"
+ intro_gui_button_one_nein_tt:0 "[GetStateRenamingToggle] §YState Renaming§!\n§RThis feature has not been implemented yet. Now it does nothing.§!"
  state_rename_ja:0 "Enable"
  state_rename_nein:0 "Disable"
 

@@ -134,7 +134,7 @@ guiTypes = {
 			buttonFont = "Main_22"
 			clicksound = decisions_ui_button
 			oversound = ui_menu_over
-			pdx_tooltip = intro_gui_button_one_tt
+			pdx_tooltip = intro_gui_button_one_nein_tt
 		}
 	}
 }

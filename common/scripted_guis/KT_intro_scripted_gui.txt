@@ -52,6 +52,43 @@ scripted_gui = {
 				set_variable = { show_lore = 0.0 }
 				set_variable = { show_paths = 1.0 }
 			}
+			intro_gui_button_four_click = {
+				if = {
+					limit = {
+						check_variable = { show_settings > 0.0 }
+					}
+					set_variable = { show_settings = 0.0 }
+					else = {
+						set_variable = { show_settings = 1.0 }
+					}
+				}
+			}
+		}
+	}
+
+	intro_gui_settings = {
+		context_type = player_context
+		window_name = "intro_gui_settings_container"
+		parent_window_token = topbar
+
+		visible = {
+            is_ai = no
+			check_variable = { show_settings > 0.0 }
+		}
+
+		effects = {
+			intro_gui_button_settigns_exit_click = {
+				set_variable = { show_settings = 0.0 }
+			}
+			intro_gui_button_settigns_one_click = {
+				if = {
+					limit = { has_global_flag = endonyms }
+					clr_global_flag = endonyms
+				}
+				else = {
+					set_global_flag = endonyms
+				}
+			}
 		}
 	}
 }

@@ -180,3 +180,23 @@ defined_text = {
 		localization_key = IRE_NEW_DECADE_DESC
 	}
 }
+
+defined_text = { 
+	name = GetStateRenamingToggle
+
+	text = {
+		trigger = {
+			has_global_flag = endonyms
+		}
+		localization_key = state_rename_nein
+	}
+
+	text = {
+		trigger = {
+			NOT = {
+				has_global_flag = endonyms
+			}
+		}
+		localization_key = state_rename_ja
+	}
+}

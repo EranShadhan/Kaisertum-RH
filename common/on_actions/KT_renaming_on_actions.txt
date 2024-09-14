@@ -1,0 +1,6 @@
+on_actions = {
+	daily = {
+		effect = {
+		}
+	}
+}
