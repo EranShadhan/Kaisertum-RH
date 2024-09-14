@@ -1,11 +1,9 @@
 
 state={
 	id=549
-	name="STATE_549" #Kurdufan / was "Sudan"
-	
-	manpower = 1802132
+	name="STATE_549"
 
-	history = {
+	history={
 		victory_points = {
 			2096 1 
 		}
@@ -20,9 +18,9 @@ state={
 	}
 
 	provinces={
-		2016 4033 8052 8084 10739 10795 10827 10851 12744 
+		2016 7925 8084 10795 10827 10851 13674 13675 13677 13679 13682 13684 13726 13727 
 	}
-
+	manpower=1802132
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

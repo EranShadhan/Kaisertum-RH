@@ -2,13 +2,13 @@
 state = {
 	id = 581
 	name = "STATE_581"
-	manpower = 48831
+	manpower = 78831
 	
 	state_category = pastoral
 	
 	resources = {
-		chromium = 40 # was: 44
-		aluminium = 27 # was: 30
+		chromium = 44
+		aluminium = 31
 	}
 
 	history = {
@@ -16,6 +16,9 @@ state = {
 		buildings = {
 			infrastructure = 1
 
+		}
+		victory_points = {
+			11098 1
 		}
 		add_core_of = SOV
 		add_core_of = KOM

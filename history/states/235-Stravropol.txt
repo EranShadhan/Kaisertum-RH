@@ -2,11 +2,8 @@
 state={
 	id=235
 	name="STATE_235"
-	manpower = 1316516
-	
-	state_category = rural
 	resources={
-		chromium=14 # was: 20
+		chromium=14.000
 	}
 
 	history={
@@ -14,16 +11,20 @@ state={
 		buildings = {
 			infrastructure = 2
 			air_base = 2
+
 		}
 		add_core_of = SOV
 		victory_points = {
-			11696 3
+			11696 3 
 		}
+
 	}
 
 	provinces={
-		714 731 748 3748 6702 6718 6733 6750 6753 9688 9705 9707 9726 9742 11633 11661 11678 11690 11693 11694 11696 
+		714 731 748 3748 6702 6718 6733 6750 6753 9688 9707 9722 9726 9742 11633 11661 11678 11690 11693 11694 11696 11727 
 	}
-
-	local_supplies=0.0 
+	manpower=1316516
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }
