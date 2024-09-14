@@ -1,11 +1,10 @@
-
 state={
-	id=96
-	name="STATE_96"
+	id=1065
+	name="STATE_1065"
 
 	history={
 		victory_points = {
-			406 3
+			277 1 
 		}
 		owner = SOV
 		buildings = {
@@ -18,10 +17,10 @@ state={
 	}
 
 	provinces={
-		233 358 406 9341 11391 
+		277 6340 6413 9236 
 	}
-	manpower=526000
-	buildings_max_level_factor=1.000
+	manpower=365720
 	state_category=rural
+	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }
