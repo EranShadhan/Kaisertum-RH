@@ -1,0 +1,500 @@
+﻿add_namespace = kt_peacetreaties
+
+country_event = {
+	id = kt_peacetreaties.1
+	title = kt_peacetreaties.1.t
+	desc = kt_peacetreaties.1.desc
+
+	is_triggered_only = no
+	trigger = {
+		NOT = {
+			217 = {
+				is_controlled_by = SOV
+			}
+		}
+		NOT = {
+			242 = {
+				is_controlled_by = SOV
+			}
+		}
+		NOT = {
+			260 = {
+				is_controlled_by = SOV
+			}
+		}
+		NOT = {
+			217 = {
+				is_controlled_by = SOV
+			}
+		}
+		#has_country_flag = germanrussowar
+	}
+	
+	option = {
+		name = kt_peacetreaties.1.a
+		GER = { country_event = { id = kt_peacetreaties.2 days = 1 } }
+		ai_chance = {
+			base = 1000
+		}
+	}
+	option = {
+		name = kt_peacetreaties.1.b # fuck the germans
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {
+	id = kt_peacetreaties.2 #german peace treaty thing for russia
+	title = kt_peacetreaties.2.t
+	desc = kt_peacetreaties.2.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #accept
+		name = kt_peacetreaties.2.a #surrendering
+		GER = { country_event = { id = kt_peacetreaties.3 days = 1 } } 
+		GER = { country_event = { id = kt_peacetreaties.5 days = 2 } }
+		SOV = {
+			white_peace = {
+				tag = GER
+				message = KX_german_russo_peace
+			}
+		}
+		ai_chance = {
+			base = 1000
+		}
+	}
+	option = {
+		name = kt_peacetreaties.2.b #refuse
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+country_event = {
+	id = kt_peacetreaties.3 #germany choosing ukraine
+	title = kt_peacetreaties.3.t
+	desc = kt_peacetreaties.3.desc
+
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = kt_peacetreaties.3.a #mid ukraine, ai NO
+		UKR = {
+			transfer_state = 193
+			transfer_state = 1008
+			transfer_state = 225
+			
+			transfer_state = 221
+			transfer_state = 1007
+			transfer_state = 1013
+			transfer_state = 259
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {
+		name = kt_peacetreaties.3.b #big ukraine, ai 50%
+		UKR = {
+			transfer_state = 193
+			transfer_state = 1008
+			transfer_state = 225
+			
+			transfer_state = 221
+			transfer_state = 1007
+			transfer_state = 1013
+			transfer_state = 1014
+			transfer_state = 259
+			transfer_state = 1010
+			transfer_state = 240
+			transfer_state = 1018
+			transfer_state = 245
+			transfer_state = 218
+			transfer_state = 234
+			transfer_state = 1022
+			transfer_state = 137
+			transfer_state = 228
+			transfer_state = 227
+			transfer_state = 1012
+			transfer_state = 1047
+			transfer_state = 200
+			transfer_state = 1046
+			transfer_state = 1045
+			transfer_state = 1015
+			transfer_state = 241
+			transfer_state = 196
+		}
+		ai_chance = {
+			base = 20
+		}
+	}
+	option = {
+		name = kt_peacetreaties.3.c #big ukraine but crimea german puppet ai 50%
+		UKR = {
+			transfer_state = 193
+			transfer_state = 1008
+			transfer_state = 225
+			
+			transfer_state = 221
+			transfer_state = 1007
+			transfer_state = 1013
+			transfer_state = 1014
+			transfer_state = 259
+			transfer_state = 1010
+			transfer_state = 240
+			transfer_state = 1018
+			transfer_state = 245
+			transfer_state = 218
+			transfer_state = 228
+			transfer_state = 227
+			transfer_state = 1012
+			transfer_state = 1047
+			transfer_state = 200
+			transfer_state = 1046
+			transfer_state = 1045
+			
+			transfer_state = 1015
+			transfer_state = 241
+		}
+		CRI = {
+			transfer_state = 196
+			transfer_state = 137
+			transfer_state = 1022
+		}
+		196 = {
+			add_core_of = CRI
+		}
+		GER = {
+			puppet = CRI
+		}
+		ai_chance = {
+			base = 20
+		}
+	}
+	option = {
+		name = kt_peacetreaties.3.d #peace page 2
+		ROOT = { country_event = { id = kt_peacetreaties.4 } }
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+country_event = {
+	id = kt_peacetreaties.4 #germany choosing ukraine 2
+	title = kt_peacetreaties.4.t
+	desc = kt_peacetreaties.4.desc
+
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	
+	option = {
+		name = kt_peacetreaties.4.a #small ukraine but big crimea 
+		UKR = {
+			transfer_state = 193
+			transfer_state = 1008
+			transfer_state = 225
+			
+			transfer_state = 221
+			transfer_state = 1007
+			transfer_state = 1013
+			transfer_state = 259
+			
+		}
+		CRI = {
+			transfer_state = 196
+			transfer_state = 137
+			transfer_state = 1022
+			transfer_state = 1012
+			transfer_state = 1047
+			transfer_state = 200
+			transfer_state = 1046
+			transfer_state = 1045
+			transfer_state = 227
+		}
+		196 = {
+			add_core_of = CRI
+		}
+		1012 = {
+			add_core_of = CRI
+		}
+		1047 = {
+			add_core_of = CRI
+		}
+		200 = {
+			add_core_of = CRI
+		}
+		1046 = {
+			add_core_of = CRI
+		}
+		1045 = {
+			add_core_of = CRI
+		}
+		227 = {
+			add_core_of = CRI
+		}
+		GER = {
+			puppet = CRI
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {
+		name = kt_peacetreaties.4.b #big  ukraine but germany gets sevastopol
+		UKR = {
+		transfer_state = 193
+			transfer_state = 1008
+			transfer_state = 225
+			
+			transfer_state = 221
+			transfer_state = 1007
+			transfer_state = 1013
+			transfer_state = 1014
+			transfer_state = 259
+			transfer_state = 1010
+			transfer_state = 240
+			transfer_state = 1018
+			transfer_state = 245
+			transfer_state = 218
+			transfer_state = 234
+			transfer_state = 137
+			transfer_state = 228
+			transfer_state = 227
+			transfer_state = 1012
+			transfer_state = 1047
+			transfer_state = 200
+			transfer_state = 1046
+			transfer_state = 1045
+			transfer_state = 1015
+			transfer_state = 241
+			transfer_state = 196
+			
+		}
+		GER = {
+			transfer_state = 1022
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {
+		name = kt_peacetreaties.4.c #small ukraine but big crimea and germany keeps sevastopol
+		UKR = {
+			transfer_state = 193
+			transfer_state = 1008
+			transfer_state = 225
+			
+			transfer_state = 221
+			transfer_state = 1007
+			transfer_state = 1013
+			transfer_state = 259
+			
+		}
+		CRI = {
+			transfer_state = 196
+			transfer_state = 137
+			transfer_state = 1012
+			transfer_state = 1047
+			transfer_state = 200
+			transfer_state = 1046
+			transfer_state = 1045
+			transfer_state = 227
+			196 = {
+			add_core_of = CRI
+		}
+		1012 = {
+			add_core_of = CRI
+		}
+		1047 = {
+			add_core_of = CRI
+		}
+		200 = {
+			add_core_of = CRI
+		}
+		1046 = {
+			add_core_of = CRI
+		}
+		1045 = {
+			add_core_of = CRI
+		}
+		227 = {
+			add_core_of = CRI
+		}
+		}
+		GER = {
+			transfer_state = 1022
+		}
+		GER = {
+			puppet = CRI
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {
+		name = kt_peacetreaties.4.d #peace page 1
+		ROOT = { country_event = { id = kt_peacetreaties.3 } }
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {
+	id = kt_peacetreaties.5#germany choosing ukraine 2
+	title = kt_peacetreaties.5.t
+	desc = kt_peacetreaties.5.desc
+
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	
+	
+	
+	
+	option = {
+		name = kt_peacetreaties.5.a #belarus normal
+		BLR = {
+			transfer_state = 96
+			transfer_state = 95
+			transfer_state = 94
+			transfer_state = 206
+			transfer_state = 204
+			transfer_state = 1020
+			transfer_state = 241
+			transfer_state = 1005
+		}
+		GER = {
+			puppet = BLR
+		}
+		ai_chance = {
+			base = 20
+		}
+	}
+	option = {
+		trigger = {
+			UBD = {
+				owns_state = 11
+			}
+		}
+		name = kt_peacetreaties.5.b #parts to ubd
+		BLR = {
+			transfer_state = 95
+			transfer_state = 94
+			transfer_state = 206
+			transfer_state = 204
+			transfer_state = 1020
+			transfer_state = 241
+			transfer_state = 1005
+		}
+		UBD = {
+			transfer_state = 96
+		}
+		96 = {
+			add_core_of = UBD
+		}
+		GER = {
+			puppet = BLR
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {
+		trigger = {
+			784 = {
+				owner = {
+					is_ally_with = GER
+				}
+			}
+		}
+		name = kt_peacetreaties.5.c #parts to belarus
+		BLR = {
+			transfer_state = 96
+			transfer_state = 95
+			transfer_state = 94
+			transfer_state = 206
+			transfer_state = 204
+			transfer_state = 1020
+			transfer_state = 241
+			transfer_state = 1005
+			transfer_state = 784
+		}
+		784 = {
+			add_core_of = BLR
+		}
+		GER = {
+			puppet = BLR
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {
+		trigger = {
+			784 = {
+				owner = {
+					is_ally_with = GER
+				}
+			}
+		}
+		name = kt_peacetreaties.5.d #parts to belarus
+		UBD = {
+			transfer_state = 96
+			transfer_state = 95
+			transfer_state = 206
+			transfer_state = 204
+			transfer_state = 1005
+			transfer_state = 784
+		}
+		UKR = {
+			transfer_state = 1020
+			transfer_state = 241
+			transfer_state = 94
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {
+	id = kt_peacetreaties.6#don
+	title = kt_peacetreaties.6.t
+	desc = kt_peacetreaties.6.desc
+
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	
+	
+	
+	
+	option = {
+		name = kt_peacetreaties.6.a #belarus normal
+		BLR = {
+			transfer_state = 96
+			transfer_state = 95
+			transfer_state = 94
+			transfer_state = 206
+			transfer_state = 204
+			transfer_state = 1020
+			transfer_state = 241
+			transfer_state = 1005
+		}
+		GER = {
+			puppet = BLR
+		}
+		ai_chance = {
+			base = 20
+		}
+	}
+	option = {
+		
+	}
+}

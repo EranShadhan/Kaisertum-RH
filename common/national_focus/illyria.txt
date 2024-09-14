@@ -2216,23 +2216,18 @@ focus_tree = {
 			736 = {
 				add_core_of = YUG
 			}
-			declare_war_on = {
-				target = ITA
-				type = annex_everything
-			}
 		}
 	}
-	
 	focus = {
-		id = YUG_core_balkans
+		id = YUG_
 		icon = GFX_
 		relative_position_id = YUG_claim_litorale
 		prerequisite = { focus = YUG_claim_litorale }
 		available = {
-			YUG = {
-				controls_state = 159
+				
+				
+				
 			}
-		}
 			
 		x = 0
 		y = 1
@@ -2254,75 +2249,16 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-			white_peace = {
-				tag = ITA
-				message = yug_italian_tito_war
-			}
-			declare_war_on = {
-				target = BUL
-				type = annex_everything
-			}
-			declare_war_on = {
-				target = SER
-				type = annex_everything
-			}
-			declare_war_on = {
-				target = ALB
-				type = annex_everything
-			}
-			934 = {
+			852 = {
 				add_core_of = YUG
 			}
-			979 = {
-				add_core_of = YUG
-			}
-			44 = {
-				add_core_of = YUG
-			}
-			805 = {
-				add_core_of = YUG
-			}
-			731 = {
-				add_core_of = YUG
-			}
-			106 = {
-				add_core_of = YUG
-			}
-			108 = {
-				add_core_of = YUG
-			}
-			803 = {
-				add_core_of = YUG
-			}
-			48 = {
-				add_core_of = YUG
-			}
-			212 = {
-				add_core_of = YUG
-			}
-			801 = {
-				add_core_of = YUG
-			}
-			211 = {
-				add_core_of = YUG
-			}
-			77 = {
-				add_core_of = YUG
-			}
-			981 = {
-				add_core_of = YUG
-			}
-			184 = {
-				add_core_of = YUG
-			}
-			341 = {
-				add_core_of = YUG
-			}
-			797 = {
+			736 = {
 				add_core_of = YUG
 			}
 		}
 	}
+	
+	
 	
 	focus = {
 		id = YUG_the_great_mareshal
