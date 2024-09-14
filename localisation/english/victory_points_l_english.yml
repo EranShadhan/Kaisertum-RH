@@ -77,7 +77,7 @@
  VICTORY_POINTS_9559:0 "Metz"
  VICTORY_POINTS_9642:0 "Besancon"
  VICTORY_POINTS_9898:0 "Montpellier"
- VICTORY_POINTS_9909:0 "Nice"
+ VICTORY_POINTS_9909:0 "Nizza"
  VICTORY_POINTS_11465:0 "Nantes"
  VICTORY_POINTS_11483:0 "Lille"
  VICTORY_POINTS_11516:0 "Nancy"
@@ -546,7 +546,7 @@
  VICTORY_POINTS_495:0 "Dortmund"
  VICTORY_POINTS_540:0 "Plymouth"
  VICTORY_POINTS_657:0 "Custantsa"
- VICTORY_POINTS_778:0 "Annecy"
+ VICTORY_POINTS_778:0 "Annesì"
  VICTORY_POINTS_904:1 "Adapazarı"
  VICTORY_POINTS_911:0 "Toulon"
  VICTORY_POINTS_925:0 "Ancona"
@@ -562,7 +562,7 @@
  VICTORY_POINTS_2196:0 "Dar es Salaam"
  VICTORY_POINTS_3456:0 "Karachi"
  VICTORY_POINTS_3501:0 "Dover"
- VICTORY_POINTS_3838:0 "Ajáccio"
+ VICTORY_POINTS_3838:0 "Aiaccio"
  VICTORY_POINTS_4159:0 "Messina"
  VICTORY_POINTS_4189:0 "Macau"
  VICTORY_POINTS_4206:0 "Tel Aviv"
@@ -1331,7 +1331,8 @@
  VICTORY_POINTS_591:0 "Senj"
  VICTORY_POINTS_6913:0 "Podgorica"
  VICTORY_POINTS_13621:0 "Hachnovka"
- VICTORY_POINTS_9412:0 "Auschwitz" # here because of the duchy of auschwitz no other reasons Explode you dirty (idk what gender you are or what are your pronouns)
+ #VICTORY_POINTS_9412:0 "Auschwitz" # here because of the duchy of auschwitz no other reasons Explode you dirty (idk what gender you are or what are your pronouns
+ #dear xael, 1st i am a he, 2nd if i say i want auschwitz removed there is a reason.
  VICTORY_POINTS_13619:0 "Teschen"
  VICTORY_POINTS_9494:0 "Przemyśl"
  VICTORY_POINTS_9452:0 "Kholm"

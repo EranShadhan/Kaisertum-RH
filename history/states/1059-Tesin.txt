@@ -4,9 +4,6 @@ state={
 
 	history={
 		victory_points = {
-			9412 1 
-		}
-		victory_points = {
 			13619 2 
 		}
 		owner = AUS
