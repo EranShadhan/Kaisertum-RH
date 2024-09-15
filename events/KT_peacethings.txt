@@ -89,6 +89,41 @@ country_event = {
 				}
 			}
 		}
+		
+		if = {
+			limit = { 
+				821 = {
+					CONTROLLER = {
+						is_in_faction_with = GER
+					}
+				}
+			}
+			GER = {
+				country_event = { id = kt_peacetreaties.7 days = 4 } }
+			}
+		else = {
+			if = {
+			limit = {
+				821 = {
+					CONTROLLER = {
+						NOT = {
+							is_in_faction_with = GER
+							original_tag = SOV
+						}
+					}
+				}
+			}
+			821 = {
+				CONTROLLER = {
+						country_event = { id = kt_peacetreaties.7 days = 4 } 
+						white_peace = {
+							tag = SOV
+						}
+					}		
+				}
+			}
+		}
+		
 		SOV = {
 			white_peace = {
 				tag = GER
@@ -569,6 +604,7 @@ country_event = {
 			transfer_state = 233
 			transfer_state = 230
 			transfer_state = 980
+			set_cosmetic_tag = caucasian
 		}
 		hidden_effect = {
 			231 = {
@@ -594,7 +630,6 @@ country_event = {
 					state = 231
 					remember_old_capital = no
 				}
-				set_cosmetic_tag = caucasian
 			}
 		}
 		ROOT = {
@@ -615,6 +650,7 @@ country_event = {
 			transfer_state = 233
 			transfer_state = 230
 			transfer_state = 980
+			set_cosmetic_tag = caucasian
 		}
 		hidden_effect = {
 			231 = {
@@ -637,7 +673,7 @@ country_event = {
 					state = 231
 					remember_old_capital = no
 				}
-				set_cosmetic_tag = caucasian
+				
 			}
 		}
 		ROOT = {
@@ -657,7 +693,7 @@ country_event = {
 			transfer_state = 826
 			transfer_state = 233
 			transfer_state = 230
-			
+			set_cosmetic_tag = caucasian
 		}
 		TUR = {
 			transfer_state = 980
@@ -680,7 +716,6 @@ country_event = {
 					state = 231
 					remember_old_capital = no
 				}
-				set_cosmetic_tag = caucasian
 			}
 		}
 		ROOT = {
@@ -761,6 +796,79 @@ country_event = {
 		}
 		ROOT = {
 			puppet = GEO
+		}
+		ai_chance = {
+			base = 20
+		}
+	}
+}
+country_event = {
+	id = kt_peacetreaties.7#caucasous
+	title = kt_peacetreaties.7.t
+	desc = kt_peacetreaties.7.desc
+
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = kt_peacetreaties.7.a #DEVIDED
+		DAG = {
+			transfer_state = 232
+		}
+		CIN = {
+			transfer_state = 821
+		}
+		KBK = {
+			transfer_state = 828
+			transfer_state = 827
+		}
+		hidden_effect = {
+			828 = {
+				add_core_of = KBK
+			}
+		}
+		ROOT = {
+			puppet = KBK
+		}
+		ROOT = {
+			puppet = CIN
+		}
+		ROOT = {
+			puppet = DAG
+		}
+		ai_chance = {
+			base = 20
+		}
+	}
+	option = {
+		name = kt_peacetreaties.7.a #united
+		DAG = {
+			transfer_state = 232
+			transfer_state = 828
+			transfer_state = 827
+			transfer_state = 821
+			transfer_state = 1060
+			set_cosmetic_tag = Mountaineous
+		}
+		hidden_effect = {
+			827 = {
+				add_core_of = DAG
+			}
+			821 = {
+				add_core_of = DAG
+			}
+			828 = {
+				add_core_of = DAG
+			}
+			232 = {
+				add_core_of = DAG
+			}
+			1060 = {
+				add_core_of = DAG
+			}
+		}
+		ROOT = {
+			puppet = DAG
 		}
 		ai_chance = {
 			base = 20
