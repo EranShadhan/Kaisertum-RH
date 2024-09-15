@@ -55,6 +55,171 @@ UKR_german_breadbasket = {
              }
          }
 
+UKR_habsburg_crown = {
+         
+            removal_cost = -1
+             
+            allowed = {
+            
+            }
+            
+            
+            picture = GFX_
+            
+            modifier = {
+            neutrality_drift = 0.10
+            war_support_factor = 0.05
+            land_reinforce_rate = 0.05           
+             }
+         }
+
+UKR_worker_laws = {
+         
+            removal_cost = -1
+             
+            allowed = {
+            
+            }
+            
+            
+            picture = GFX_
+            
+            modifier = {
+            production_speed_buildings_factor = 0.1
+            production_factory_max_efficiency_factor = 0.1       
+             }
+         }
+
+
+UKR_peoples_reforms = {
+         
+            removal_cost = -1
+             
+            allowed = {
+            
+            }
+            
+            
+            picture = GFX_
+            
+            modifier = {
+            consumer_goods_factor = 0.15
+            stability_factor = -0.05        
+             }
+         }
+        
+         
+UKR_forced_ukrainization = {
+         
+            removal_cost = -1
+             
+            allowed = {
+            
+            }
+            
+            
+            picture = GFX_
+            
+            modifier = {
+            consumer_goods_factor = 0.05
+                   
+             }
+         }
+         
+ UKR_forced_ukrainization2 = {
+         
+            removal_cost = -1
+             
+            allowed = {
+            
+            }
+            
+            
+            picture = GFX_
+            
+            modifier = {
+            consumer_goods_factor = 0.10
+            monthly_population = 0.05
+            war_support_factor = 0.05
+            land_reinforce_rate = 0.05       
+             }
+         }
+
+UKR_forced_ukrainization3 = {
+         
+            removal_cost = -1
+             
+            allowed = {
+            
+            }
+            
+            
+            picture = GFX_
+            
+            modifier = {
+            consumer_goods_factor = 0.15
+            monthly_population = 0.1
+            war_support_factor = 0.10
+            land_reinforce_rate = 0.10        
+             }
+         }
+
+UKR_kyivan_rus_legacy = {
+         
+            removal_cost = -1
+             
+            allowed = {
+            
+            }
+            
+            
+            picture = GFX_
+            
+            modifier = {
+             conscription_factor = 0.15
+             conscription = 0.03       
+             }
+         }
+
+         
+UKR_ukraine_above_all = {
+         
+            removal_cost = -1
+             
+            allowed = {
+            
+            }
+            
+            
+            picture = GFX_
+            
+            modifier = {
+            war_support_factor = 0.15
+            land_reinforce_rate = 0.15
+            monthly_population = 0.15         
+             }
+         }
+
+
+
+
+UKR_support_communities = {
+         
+            removal_cost = -1
+             
+            allowed = {
+            
+            }
+            
+            
+            picture = GFX_
+            
+            modifier = {
+            consumer_goods_factor = -0.1        
+             }
+         }
+
+
 UKR_european_breadbasket = {
          
             removal_cost = -1
