@@ -1,12 +1,12 @@
-state = {
-	id = 742
-	name = "STATE_742"
 
-	history = {
+state={
+	id=742
+	name="STATE_742"
 
+	history={
 		owner = SOV
 		victory_points = {
-			1384 1
+			1919 3 
 		}
 		buildings = {
 			infrastructure = 1
@@ -18,13 +18,11 @@ state = {
 
 	}
 
-	provinces = {
-		1216 1384 1919 4542 7224 8027 10187 10417 12218 12250 12430 12805 
+	provinces={
+		1216 1919 2058 4467 4923 10187 12430 12581 12805 13745 
 	}
-	
-	manpower = 230000
-	buildings_max_level_factor = 1.000
-	state_category = wasteland
-
-	local_supplies = 0.0 
+	manpower=621201
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

@@ -1,11 +1,12 @@
-state = {
-	id = 404
-	name = "STATE_404" # Kyzyl Orda
 
-	history = {
+state={
+	id=404
+	name="STATE_404"
+
+	history={
 		owner = SOV
 		victory_points = {
-			7597 1
+			7597 1 
 		}
 		add_core_of = KAZ
 		buildings = {
@@ -16,12 +17,11 @@ state = {
 
 	}
 
-	provinces = {
-		        4578 4636 4686 7392 7556 7597 7600 7657 7777 10148 10353 10366 10452 10506 10601 12329 12340 12397  
+	provinces={
+		4636 4686 7556 7597 7706 7777 10148 10366 10506 10601 10660 12329 12340 12397 12640 
 	}
-	manpower = 447020
-	buildings_max_level_factor = 1.000
-	state_category = pastoral
-
-	local_supplies = 0.0 
+	manpower=407020
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }
