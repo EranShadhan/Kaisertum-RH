@@ -2697,7 +2697,7 @@ focus = {
 		}
 		relative_position_id = TUR_spreading_the_revolution
 		completion_reward = {
-			unlock_decision_category_tooltip = TUR_sponsor_syrian_revolution_socialist_category_tt
+			unlock_decision_category_tooltip = TUR_sponsor_syrian_revolution_socialist_category
 			677 = {
 				add_core_of = SYR
 			}
@@ -3418,6 +3418,7 @@ focus = {
 		}
 		relative_position_id = TUR_limited_isolationism
 		completion_reward = {
+			unlock_decision_category_tooltip = TUR_foreign_influence_in_gov_category
 			add_ideas = TUR_western_government
 			GER = {
 				add_ideas = TUR_influence_over_turkey_4
@@ -3588,7 +3589,7 @@ focus = {
 		}
 		relative_position_id = TUR_take_advantage_of_arabian_minorities
 		completion_reward = {
-			unlock_decision_category_tooltip = TUR_sponsor_syrian_revolution_nonaligned_category_tt
+			unlock_decision_category_tooltip = TUR_sponsor_syrian_revolution_nonaligned_category
 		}
 	}
 	focus = {
@@ -3649,6 +3650,7 @@ focus = {
 			986 = {
 				add_core_of = NCY
 			}
+			unlock_decision_category_tooltip = TUR_northern_cyprus_category
 		}
 	}
 	focus = {
@@ -3798,7 +3800,7 @@ focus = {
 		relative_position_id = TUR_anti_russian_propaganda
 		completion_reward = {
 			add_political_power = 50
-			# SGW PREPARATION DECISIONS E AM LAZY
+			custom_effect_tooltip = TUR_GFT_starts_tt
 
 		}
 	}
@@ -3809,6 +3811,7 @@ focus = {
 		cost = 5
 		x = 16
 		y = 1
+		icon = GFX_TUR_sultans_vision
 
 		prerequisite = {
 			focus = TUR_start_of_a_new_decade
@@ -3831,6 +3834,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
+		icon = GFX_TUR_economic_intervention
 
 		prerequisite = {
 			focus = TUR_the_sultans_grip_remains_firm
@@ -3847,6 +3851,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
+		icon = GFX_TUR_remilitarization_of_konstantiniyye
 
 		prerequisite = {
 			focus = TUR_the_sultans_grip_remains_firm
@@ -3872,6 +3877,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
+		icon = GFX_TUR_pan_turkism
 
 		prerequisite = {
 			focus = TUR_remilitarization_of_kostantiniyye
@@ -3892,6 +3898,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
+		icon = GFX_TUR_sultan_kultu
 
 		prerequisite = {
 			focus = TUR_pan_turkic_sentiment
@@ -3909,6 +3916,7 @@ focus = {
 		cost = 5
 		x = 2
 		y = 1
+		icon = GFX_TUR_ministry_of_propaganda
 
 		prerequisite = {
 			focus = TUR_sultan_kultu
@@ -3932,6 +3940,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
+		icon = GFX_TUR_convince_the_people
 
 		prerequisite = {
 			focus = TUR_ministry_of_propaganda
@@ -3956,6 +3965,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
+		icon = GFX_TUR_cleanse_germans
 
 		prerequisite = {
 			focus = TUR_sultan_kultu
@@ -3976,6 +3986,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
+		icon = GFX_TUR_cleanse_opposition
 
 		prerequisite = {
 			focus = TUR_purge_germans_in_gov
@@ -4002,6 +4013,7 @@ focus = {
 		cost = 5
 		x = -3
 		y = 1
+		icon = GFX_TUR_support_islamists
 
 		prerequisite = {
 			focus = TUR_sultan_kultu
@@ -4025,6 +4037,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 2
+		icon = GFX_TUR_wolf_of_islam
 
 		prerequisite = {
 			focus = TUR_sultan_and_islamists
@@ -4046,6 +4059,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 2
+		icon = GFX_TUR_islamist_paramilitaries
 
 		prerequisite = {
 			focus = TUR_sultan_and_islamists
@@ -4095,6 +4109,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 2
+		icon = GFX_TUR_commit_to_pan_turkism
 
 		prerequisite = {
 			focus = TUR_discredit_the_opposition
@@ -4131,6 +4146,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
+		icon = GFX_TUR_turkification
 
 		prerequisite = {
 			focus = TUR_commit_to_pan_turkism
@@ -4149,6 +4165,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
+		icon = GFX_TUR_panturkist_education
 
 		prerequisite = {
 			focus = TUR_commit_to_pan_turkism
@@ -4170,6 +4187,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
+		icon = GFX_TUR_send_diplomats_to_russia
 
 		prerequisite = {
 			focus = TUR_turkification_of_the_minorities
@@ -4198,6 +4216,7 @@ focus = {
 		cost = 1
 		x = -2
 		y = 1
+		icon = GFX_TUR_rostov_agreement
 
 		prerequisite = {
 			focus = TUR_send_diplomats_to_russia
@@ -4219,6 +4238,7 @@ focus = {
 		cost = 1
 		x = 2
 		y = 1
+		icon = GFX_TUR_lone_wolf
 
 		prerequisite = {
 			focus = TUR_send_diplomats_to_russia
@@ -4239,6 +4259,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 2
+		icon = GFX_TUR_war_with_iran
 
 		prerequisite = {
 			focus = TUR_rostov_agreement
@@ -4277,6 +4298,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 2
+		icon = GFX_TUR_ally_russia
 
 		prerequisite = {
 			focus = TUR_rostov_agreement
@@ -4299,6 +4321,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
+		icon = GFX_TUR_turks_of_syria
 
 		prerequisite = {
 			focus = TUR_pursue_an_alliance_with_russia
@@ -4321,6 +4344,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
+		icon = GFX_TUR_claim_latakia
 
 		prerequisite = {
 			focus = TUR_promote_the_turks_of_syria
@@ -4345,6 +4369,7 @@ focus = {
 		cost = 5
 		x = -2
 		y = 1
+		icon = GFX_TUR_claim_izmir
 
 		prerequisite = {
 			focus = TUR_pursue_an_alliance_with_russia
@@ -4370,6 +4395,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
+		icon = GFX_TUR_claim_east_thrace
 
 		prerequisite = {
 			focus = TUR_claim_izmir
@@ -4398,6 +4424,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
+		icon = GFX_TUR_claim_cyprus
 
 		prerequisite = {
 			focus = TUR_claim_izmir
@@ -4426,6 +4453,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
+		icon = GFX_TUR_revenge_for_balkan_war
 
 		prerequisite = {
 			focus = TUR_push_for_kibris_and_the_aegean
@@ -4454,6 +4482,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 2
+		icon = GFX_TUR_lands_which_were_stolen
 
 		prerequisite = {
 			focus = TUR_the_lone_wolf
@@ -4491,6 +4520,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
+		icon = GFX_TUR_destroy_greece
 
 		prerequisite = {
 			focus = TUR_the_lands_which_were_stolen
@@ -4515,6 +4545,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
+		icon = GFX_TUR_oppressed_caucasians
 
 		prerequisite = {
 			focus = TUR_destruction_of_hellas
@@ -4541,6 +4572,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
+		icon = GFX_TUR_purge_christians
 
 		prerequisite = {
 			focus = TUR_destruction_of_hellas
@@ -4567,6 +4599,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
+		icon = GFX_TUR_strike_the_bear
 
 		prerequisite = {
 			focus = TUR_oppressed_caucasians
@@ -4594,6 +4627,7 @@ focus = {
 		cost = 5
 		x = -2
 		y = 1
+		icon = GFX_TUR_proclaim_the_empire
 
 		prerequisite = {
 			focus = TUR_strike_the_bear
@@ -4616,8 +4650,3 @@ focus = {
 		}
 	}
 }
-
-			
-	
-			
-	

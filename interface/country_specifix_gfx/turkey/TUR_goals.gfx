@@ -340,4 +340,132 @@ spriteTypes = {
 		name = "GFX_TUR_minority_representation"
 		texturefile = "gfx/interface/goals/TUR/12_minority_representation.dds"			
 	}
+	SpriteType = {
+		name = "GFX_TUR_ally_russia"
+		texturefile = "gfx/interface/goals/TUR/3_ally_russia.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_claim_cyprus"
+		texturefile = "gfx/interface/goals/TUR/3_claim_cyprus.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_claim_east_thrace"
+		texturefile = "gfx/interface/goals/TUR/3_claim_east_thrace.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_claim_izmir"
+		texturefile = "gfx/interface/goals/TUR/3_claim_izmir.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_claim_latakia"
+		texturefile = "gfx/interface/goals/TUR/3_claim_latakia.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_cleanse_germans"
+		texturefile = "gfx/interface/goals/TUR/3_cleanse_germans.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_cleanse_opposition"
+		texturefile = "gfx/interface/goals/TUR/3_cleanse_opposition.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_commit_to_pan_turkism"
+		texturefile = "gfx/interface/goals/TUR/3_commit_to_pan_turkism.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_convince_the_people"
+		texturefile = "gfx/interface/goals/TUR/3_convince_the_peeps.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_destroy_greece"
+		texturefile = "gfx/interface/goals/TUR/3_destroy_greece.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_economic_intervention"
+		texturefile = "gfx/interface/goals/TUR/3_economic_intervention.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_islamist_paramilitaries"
+		texturefile = "gfx/interface/goals/TUR/3_islamist_paramilitaries.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_lands_which_were_stolen"
+		texturefile = "gfx/interface/goals/TUR/3_lands_which_were_stolen.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_lone_wolf"
+		texturefile = "gfx/interface/goals/TUR/3_lone_wolf.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_ministry_of_propaganda"
+		texturefile = "gfx/interface/goals/TUR/3_ministry_of_propaganda.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_oppressed_caucasians"
+		texturefile = "gfx/interface/goals/TUR/3_oppressed_caucasians.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_pan_turkism"
+		texturefile = "gfx/interface/goals/TUR/3_pan_turkism.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_panturkist_education"
+		texturefile = "gfx/interface/goals/TUR/3_panturkist_education.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_purge_christians"
+		texturefile = "gfx/interface/goals/TUR/3_purge_christians.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_remilitarization_of_konstantiniyye"
+		texturefile = "gfx/interface/goals/TUR/3_remilitarization_of_konstantiniyye.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_revenge_for_balkan_war"
+		texturefile = "gfx/interface/goals/TUR/3_revenge_for_balkan_war.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_rostov_agreement"
+		texturefile = "gfx/interface/goals/TUR/3_rostov_agreement.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_send_diplomats_to_russia"
+		texturefile = "gfx/interface/goals/TUR/3_send_diplomats_to_russia.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_strike_the_bear"
+		texturefile = "gfx/interface/goals/TUR/3_strike_the_bear.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_sultan_kultu"
+		texturefile = "gfx/interface/goals/TUR/3_sultan_kultu.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_sultans_vision"
+		texturefile = "gfx/interface/goals/TUR/3_sultans_vision.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_support_islamists"
+		texturefile = "gfx/interface/goals/TUR/3_support_islamists.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_turkification"
+		texturefile = "gfx/interface/goals/TUR/3_turkification.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_turks_of_syria"
+		texturefile = "gfx/interface/goals/TUR/3_turks_of_syria.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_war_with_iran"
+		texturefile = "gfx/interface/goals/TUR/3_war_with_iran.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_wolf_of_islam"
+		texturefile = "gfx/interface/goals/TUR/3_wolf_of_islam.dds"			
+	}
+	SpriteType = {
+		name = "GFX_TUR_proclaim_the_empire"
+		texturefile = "gfx/interface/goals/TUR/3_proclaim_the_empire.dds"			
+	}
 }

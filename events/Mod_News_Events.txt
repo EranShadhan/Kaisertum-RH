@@ -298,8 +298,8 @@ news_event = {
 
 news_event = {
 	id = kaisertum_news.9
-	title = ncy_wins_news.t   
-	desc = ncy_wins_news.d
+	title = ncy_loses_news.t   
+	desc = ncy_loses_news.d
 	picture = GFX_news_event_074
 
 	major = yes
