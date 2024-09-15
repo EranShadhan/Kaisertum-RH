@@ -631,7 +631,7 @@ focus = {
 		}
 
 		available = {
-           NOT = { has_idea = UKR_peoples }
+           NOT = { has_idea = UKR_peoples_reforms }
 		}
 
 		bypass = {
@@ -698,7 +698,7 @@ focus = {
 		}
 
 		available = {
-           NOT = { has_idea = UKR_peoples }
+           NOT = { has_idea = UKR_peoples_reforms }
 		}
 
 		bypass = {
