@@ -529,8 +529,50 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 120
+			custom_effect_tooltip = "More building slots will be unlocked." 
+			add_stability = 0.05
 		}
+		
+		hidden_effect = { 
+		
+		93 =  {
+		add_extra_state_shared_building_slots = 1
+		}
+		201 =  {
+		add_extra_state_shared_building_slots = 1
+		}
+
+           199 =  {
+		add_extra_state_shared_building_slots = 1
+		}
+
+           198 =  {
+		add_extra_state_shared_building_slots = 1
+		}
+           197 =  {
+		add_extra_state_shared_building_slots = 1
+		}
+           226 =  {
+		add_extra_state_shared_building_slots = 1
+		}
+           1011 =  {
+		add_extra_state_shared_building_slots = 1
+		}
+           203 =  {
+		add_extra_state_shared_building_slots = 1
+		}
+           202 =  {
+		add_extra_state_shared_building_slots = 1
+		}
+           194 =  {
+		add_extra_state_shared_building_slots = 1
+		}
+           834 =  {
+		add_extra_state_shared_building_slots = 1
+		}
+
+		
+		 }
 	}
 
 	
@@ -561,7 +603,7 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 120
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -654,8 +696,16 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 120
-		}
+			add_offsite_building = {
+                level = 2
+                type = industrial_complex
+            }
+            add_tech_bonus = {
+            bonus = 1.5
+            uses = 1
+            category = industry
+           }
+	    }
 	}
 	
 	focus = {

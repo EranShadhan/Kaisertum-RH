@@ -12,6 +12,8 @@ state={
 
 			}
 		}
+		add_core_of = KUB
+		add_core_of = GEO
 		add_core_of = SOV
 		victory_points = {
 			3698 5
