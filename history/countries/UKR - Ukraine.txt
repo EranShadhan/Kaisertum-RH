@@ -32,6 +32,7 @@ add_ideas = {
 	german_customs_union_member
 	UKR_sugar_businesses
 	UKR_german_breadbasket
+	UKR_land_problem
 	}
 if = {
 	limit = { has_dlc = "By Blood Alone" }

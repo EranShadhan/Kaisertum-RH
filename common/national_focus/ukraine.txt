@@ -541,7 +541,7 @@ focus = {
 		completion_reward = {
 			custom_effect_tooltip = "More building slots will be unlocked."
 			add_stability = 0.05
-		
+		     remove_ideas = UKR_land_problem
 		hidden_effect = { 
 		
 		93 =  {

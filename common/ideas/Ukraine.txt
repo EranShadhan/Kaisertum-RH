@@ -49,11 +49,31 @@ UKR_german_breadbasket = {
             stability_factor = -0.15
             political_power_gain = -0.15
             war_support_factor = -0.15
-            recruitable_population = -0.1
+            conscription_factor = -0.1
             consumer_goods_factor = -0.05
             
              }
          }
+
+UKR_land_problem = {
+         
+            removal_cost = -1
+             
+            allowed = {
+            
+            }
+            
+            
+            picture = GFX_idea_UKR_german_breadbasket
+            
+            modifier = {
+            stability_factor = -0.10
+            production_speed_buildings_factor = -0.1
+            war_support_factor = -0.10
+            production_factory_max_efficiency_factor = -0.10
+             }
+         }
+
 
 UKR_habsburg_crown = {
          
@@ -158,6 +178,8 @@ UKR_forced_ukrainization3 = {
             
             modifier = {
             consumer_goods_factor = 0.15
+            army_attack_factor = 0.05
+            army_defence_factor = 0.05
             monthly_population = 0.1
             war_support_factor = 0.10
             land_reinforce_rate = 0.10        
@@ -196,6 +218,8 @@ UKR_ukraine_above_all = {
             modifier = {
             war_support_factor = 0.15
             land_reinforce_rate = 0.15
+            army_attack_factor = 0.15
+            army_defence_factor = 0.15
             monthly_population = 0.15         
              }
          }
