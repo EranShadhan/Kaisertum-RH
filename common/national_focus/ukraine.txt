@@ -540,49 +540,46 @@ focus = {
 
 		completion_reward = {
 			custom_effect_tooltip = "More building slots will be unlocked."
-			add_stability = 0.05  
-		}
+			add_stability = 0.05
 		
 		hidden_effect = { 
 		
 		93 =  {
-		add_extra_state_shared_building_slots = 1
+		add_extra_state_shared_building_slots = 2
 		}
 		201 =  {
-		add_extra_state_shared_building_slots = 1
+		add_extra_state_shared_building_slots = 2
 		}
-
            199 =  {
-		add_extra_state_shared_building_slots = 1
+		add_extra_state_shared_building_slots = 2
 		}
-
            198 =  {
-		add_extra_state_shared_building_slots = 1
+		add_extra_state_shared_building_slots = 2
 		}
            197 =  {
-		add_extra_state_shared_building_slots = 1
+		add_extra_state_shared_building_slots = 2
 		}
            226 =  {
-		add_extra_state_shared_building_slots = 1
+		add_extra_state_shared_building_slots = 2
 		}
            1011 =  {
-		add_extra_state_shared_building_slots = 1
+		add_extra_state_shared_building_slots = 2
 		}
            203 =  {
-		add_extra_state_shared_building_slots = 1
+		add_extra_state_shared_building_slots = 2
 		}
            202 =  {
-		add_extra_state_shared_building_slots = 1
+		add_extra_state_shared_building_slots = 2
 		}
            194 =  {
-		add_extra_state_shared_building_slots = 1
+		add_extra_state_shared_building_slots = 2
 		}
            834 =  {
-		add_extra_state_shared_building_slots = 1
+		add_extra_state_shared_building_slots = 2
 		}
 
-		
-		 }
+	    }
+	  }
 	}
 
 	
