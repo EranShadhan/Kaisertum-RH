@@ -218,6 +218,7 @@ country_event = {
 			transfer_state = 196
 			transfer_state = 137
 			transfer_state = 1022
+			
 		}
 		196 = {
 			add_core_of = CRI
@@ -357,7 +358,7 @@ country_event = {
 			transfer_state = 1046
 			transfer_state = 1045
 			transfer_state = 227
-			196 = {
+		196 = {
 			add_core_of = CRI
 		}
 		1012 = {

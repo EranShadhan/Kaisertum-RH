@@ -22,7 +22,18 @@ on_actions = {
 			}
 			set_variable = { 
 				var_TUR_GFT_progressbar = 50
-				
+			}
+		}
+	}
+	on_daily_CRI = {
+		effect = {
+			CRI = {
+				if = {
+					limit = {
+						overlord = GER
+					}
+					set_cosmetic_tag = german_crimea
+				}
 			}
 		}
 	}
