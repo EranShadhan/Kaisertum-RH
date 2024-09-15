@@ -2232,7 +2232,7 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		cost = 5
+		cost = 3
 		
 			ai_will_do = {
 			
@@ -2266,7 +2266,7 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		cost = 5
+		cost = 3
 		
 			ai_will_do = {
 			
@@ -2302,7 +2302,7 @@ focus_tree = {
 		x = 0
 		y = 3
 
-		cost = 5
+		cost = 3
 		
 			ai_will_do = {
 			
@@ -2336,7 +2336,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 5
+		cost = 3
 		
 			ai_will_do = {
 			
@@ -2370,7 +2370,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 5
+		cost = 3
 		
 			ai_will_do = {
 			
@@ -2405,7 +2405,7 @@ focus_tree = {
 		x = 0
 		y = 2
 
-		cost = 5
+		cost = 3
 		
 			ai_will_do = {
 			
