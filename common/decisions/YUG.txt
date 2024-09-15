@@ -569,5 +569,31 @@ the_fiume_crisis = {
 				add = 3600
 			}
 		}
-	
+	}
+}
+
+titoist_italian_war = {
+	my_mission = {
+    activation = {
+        YUG = {
+			has_completed_focus = YUG_zagreb_uprising
+		}
+    }
+	available = {
+        always = no
+    }
+    icon = mission_icon     # For GFX_decision_mission_icon
+    is_good = no
+    war_with_on_timeout = YUG
+    days_mission_timeout = 245
+    timeout_effect = {
+        custom_effect_tooltip = yug_ita_war
+		hidden_effect = {
+			declare_war_on = {
+            target = YUG
+            type = annex_everything
+			}
+		}
+    }
+}
 }

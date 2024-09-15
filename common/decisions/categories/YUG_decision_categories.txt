@@ -12,4 +12,21 @@ the_fiume_crisis = {
 			}
 	}
 }
-
+titoist_italian_war = {
+	
+	priority = 10
+	icon = GFX_category_icon
+	
+	allowed = {
+		always = yes
+	}
+	visible = {
+		YUG = {
+			has_completed_focus = YUG_zagreb_uprising
+		}
+		or = {
+			original_tag = ITA
+			original_tag = YUG
+		}
+	}
+}

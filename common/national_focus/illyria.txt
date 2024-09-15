@@ -2219,7 +2219,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = YUG_
+		id = YUG_east_partisans
 		icon = GFX_
 		relative_position_id = YUG_claim_litorale
 		prerequisite = { focus = YUG_claim_litorale }
@@ -2229,7 +2229,7 @@ focus_tree = {
 				
 			}
 			
-		x = 0
+		x = -1
 		y = 1
 
 		cost = 5
@@ -2249,17 +2249,182 @@ focus_tree = {
 			}
 			
 		completion_reward = {
-			852 = {
-				add_core_of = YUG
-			}
-			736 = {
-				add_core_of = YUG
-			}
+			
 		}
 	}
-	
-	
-	
+	focus = {
+		id = YUG_sabotage_thier_supply_system
+		icon = GFX_
+		relative_position_id = YUG_east_partisans
+		prerequisite = { focus = YUG_east_partisans }
+		available = {
+				
+				
+				
+			}
+			
+		x = -1
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = YUG_the_tricolor_is_down
+		icon = GFX_
+		relative_position_id = YUG_claim_litorale
+		prerequisite = { focus = YUG_experimental_tank_division }
+		prerequisite = { focus = YUG_anti_air_measures }
+		prerequisite = { focus = YUG_sabotage_thier_supply_system }
+		available = {
+				
+				
+				
+			}
+			
+		x = 0
+		y = 3
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = YUG_raid_italian_armories
+		icon = GFX_
+		relative_position_id = YUG_claim_litorale
+		prerequisite = { focus = YUG_claim_litorale }
+		available = {
+				
+				
+				
+			}
+			
+		x = 1
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = YUG_anti_air_measures
+		icon = GFX_
+		relative_position_id = YUG_raid_italian_armories
+		prerequisite = { focus = YUG_raid_italian_armories }
+		available = {
+				
+				
+				
+			}
+			
+		x = 1
+		y = 1
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = YUG_experimental_tank_division
+		icon = GFX_
+		relative_position_id = YUG_claim_litorale
+		prerequisite = { focus = YUG_east_partisans }
+		prerequisite = { focus = YUG_raid_italian_armories }
+		available = {
+				
+				
+				
+			}
+			
+		x = 0
+		y = 2
+
+		cost = 5
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+			
+		}
+	}
 	focus = {
 		id = YUG_the_great_mareshal
 		icon = GFX_
