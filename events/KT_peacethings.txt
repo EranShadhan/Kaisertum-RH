@@ -56,55 +56,24 @@ country_event = {
 		name = kt_peacetreaties.2.a #surrendering
 		GER = { country_event = { id = kt_peacetreaties.3 days = 1 } } 
 		GER = { country_event = { id = kt_peacetreaties.5 days = 2 } }
-		if = {
-			limit = { 
-				231 = {
-					CONTROLLER = {
-						is_in_faction_with = GER
-					}
-				}
-			}
-			GER = {
-				country_event = { id = kt_peacetreaties.6 days = 3 } }
-			}
-		else = {
-			if = {
-			limit = {
-				231 = {
-					CONTROLLER = {
-						NOT = {
-							is_in_faction_with = GER
-							original_tag = SOV
-						}
-					}
-				}
-			}
-			231 = {
-				CONTROLLER = {
-						country_event = { id = kt_peacetreaties.6 days = 3 } 
-						white_peace = {
-							tag = SOV
-						}
-					}		
-				}
-			}
-		}
 		
 		if = {
 			limit = { 
-				821 = {
+				237 = {
 					CONTROLLER = {
 						is_in_faction_with = GER
 					}
 				}
 			}
 			GER = {
-				country_event = { id = kt_peacetreaties.7 days = 4 } }
+				country_event = { id = kt_peacetreaties.8 days = 4 } }
+				country_event = { id = kt_peacetreaties.6 days = 3 } 
+				country_event = { id = kt_peacetreaties.7 days = 5 } 
 			}
 		else = {
 			if = {
 			limit = {
-				821 = {
+				237 = {
 					CONTROLLER = {
 						NOT = {
 							is_in_faction_with = GER
@@ -113,9 +82,11 @@ country_event = {
 					}
 				}
 			}
-			821 = {
+			237 = {
 				CONTROLLER = {
-						country_event = { id = kt_peacetreaties.7 days = 4 } 
+						country_event = { id = kt_peacetreaties.8 days = 4 }
+						country_event = { id = kt_peacetreaties.6 days = 3 } 
+						country_event = { id = kt_peacetreaties.7 days = 5 }
 						white_peace = {
 							tag = SOV
 						}
@@ -128,6 +99,14 @@ country_event = {
 			white_peace = {
 				tag = GER
 				message = KX_german_russo_peace
+			}
+		}
+		hidden_effect = {
+			UBD = {
+				transfer_state = 1064
+			}
+			1064 = {
+				add_core_of = UBD
 			}
 		}
 		ai_chance = {
@@ -161,6 +140,15 @@ country_event = {
 			transfer_state = 1007
 			transfer_state = 1013
 			transfer_state = 259
+			transfer_state = 196
+			transfer_state = 1046
+			transfer_state = 1045
+			transfer_state = 200
+			transfer_state = 1047
+			transfer_state = 1012
+			transfer_state = 227
+			transfer_state = 137
+			transfer_state = 1022
 		}
 		ai_chance = {
 			base = 0
@@ -182,8 +170,6 @@ country_event = {
 			transfer_state = 240
 			transfer_state = 1018
 			transfer_state = 245
-			transfer_state = 218
-			transfer_state = 234
 			transfer_state = 1022
 			transfer_state = 137
 			transfer_state = 228
@@ -217,7 +203,6 @@ country_event = {
 			transfer_state = 240
 			transfer_state = 1018
 			transfer_state = 245
-			transfer_state = 218
 			transfer_state = 228
 			transfer_state = 227
 			transfer_state = 1012
@@ -330,8 +315,6 @@ country_event = {
 			transfer_state = 240
 			transfer_state = 1018
 			transfer_state = 245
-			transfer_state = 218
-			transfer_state = 234
 			transfer_state = 137
 			transfer_state = 228
 			transfer_state = 227
@@ -821,9 +804,13 @@ country_event = {
 		KBK = {
 			transfer_state = 828
 			transfer_state = 827
+			transfer_state = 1067
 		}
 		hidden_effect = {
 			828 = {
+				add_core_of = KBK
+			}
+			1067 = {
 				add_core_of = KBK
 			}
 		}
@@ -841,13 +828,13 @@ country_event = {
 		}
 	}
 	option = {
-		name = kt_peacetreaties.7.a #united
+		name = kt_peacetreaties.7.b #united
 		DAG = {
 			transfer_state = 232
 			transfer_state = 828
 			transfer_state = 827
 			transfer_state = 821
-			transfer_state = 1060
+			transfer_state = 1067
 			set_cosmetic_tag = Mountaineous
 		}
 		hidden_effect = {
@@ -863,12 +850,213 @@ country_event = {
 			232 = {
 				add_core_of = DAG
 			}
-			1060 = {
+			1067 = {
 				add_core_of = DAG
 			}
 		}
 		ROOT = {
 			puppet = DAG
+		}
+		ai_chance = {
+			base = 20
+		}
+	}
+}
+
+country_event = {
+	id = kt_peacetreaties.8#don and kuban
+	title = kt_peacetreaties.8.t
+	desc = kt_peacetreaties.8.desc
+
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = kt_peacetreaties.8.a #normal kuban and don and kalmikya
+		KUB = {
+			transfer_state = 234
+			transfer_state = 1062
+			transfer_state = 1061
+			transfer_state = 1060
+		}
+		DON = {
+			transfer_state = 218
+			transfer_state = 238
+			transfer_state = 235
+		}
+		KAL = {
+			transfer_state = 237
+			transfer_state = 236
+		}
+		hidden_effect = {
+			234 = {
+				add_core_of = KUB
+			}
+			1062 = {
+				add_core_of = KUB
+			}
+			1061 = {
+				add_core_of = KUB
+			}
+			1060 = {
+				add_core_of = KUB
+			}
+			218 = {
+				add_core_of = DON
+			}
+			238 = {
+				add_core_of = DON
+			}
+			235 = {
+				add_core_of = DON
+			}
+			236 = {
+				add_core_of = KAL
+			}
+			237 = {
+				add_core_of = KAL
+			}
+		}
+		ROOT = {
+			puppet = KUB
+		}
+		ROOT = {
+			puppet = KAL
+		}
+		ROOT = {
+			puppet = DON
+		}
+		ai_chance = {
+			base = 20
+		}
+	}
+	option = {
+		name = kt_peacetreaties.8.b #ukranian kuban and don, indpeendent kalmikya
+		trigger = {
+			NOT = {
+				country_exists = CRI
+			}
+		}
+		UKR = {
+			transfer_state = 218
+			transfer_state = 234
+			transfer_state = 1062
+			transfer_state = 1061
+			transfer_state = 1060
+			transfer_state = 228
+		}
+		KAL = {
+			transfer_state = 237
+			transfer_state = 236
+			transfer_state = 238
+			transfer_state = 235
+		}
+		hidden_effect = {
+			
+			238 = {
+				add_core_of = KAL
+			}
+			235 = {
+				add_core_of = KAL
+			}
+			236 = {
+				add_core_of = KAL
+			}
+			237 = {
+				add_core_of = KAL
+			}
+		}
+		ROOT = {
+			puppet = KAL
+		}
+		ai_chance = {
+			base = 20
+		}
+	}
+	option = {
+		name = kt_peacetreaties.8.c #crimean kuban, indpeendent kalmikya
+		trigger = {
+			country_exists = CRI
+		}
+		CRI = {
+			transfer_state = 234
+			transfer_state = 1062
+			transfer_state = 1061
+			transfer_state = 1060
+		}
+		KAL = {
+			transfer_state = 237
+			transfer_state = 236
+			transfer_state = 238
+			transfer_state = 235
+			transfer_state = 218
+		}
+		hidden_effect = {
+			
+			238 = {
+				add_core_of = KAL
+			}
+			235 = {
+				add_core_of = KAL
+			}
+			236 = {
+				add_core_of = KAL
+			}
+			237 = {
+				add_core_of = KAL
+			}
+		}
+		ROOT = {
+			puppet = KAL
+		}
+		ai_chance = {
+			base = 20
+		}
+	}
+	option = {
+		name = kt_peacetreaties.8.d #entirely don
+		DON = {
+			transfer_state = 234
+			transfer_state = 1062
+			transfer_state = 1061
+			transfer_state = 1060
+			transfer_state = 237
+			transfer_state = 236
+			transfer_state = 238
+			transfer_state = 235
+			transfer_state = 218
+		}
+		hidden_effect = {
+			234 = {
+				add_core_of = DON
+			}
+			1062 = {
+				add_core_of = DON
+			}
+			1061 = {
+				add_core_of = DON
+			}
+			1060 = {
+				add_core_of = DON
+			}
+			237 = {
+				add_core_of = DON
+			}
+			236 = {
+				add_core_of = DON
+			}
+			238 = {
+				add_core_of = DON
+			}
+			235 = {
+				add_core_of = DON
+			}
+			218 = {
+				add_core_of = DON
+			}
+		}
+		ROOT = {
+			puppet = DON
 		}
 		ai_chance = {
 			base = 20
