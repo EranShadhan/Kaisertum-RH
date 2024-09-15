@@ -1,6 +1,18 @@
 on_actions = {
 	daily = {
 		effect = {
+			if = {
+				limit = {
+					has_global_flag = endonyms
+					is_portuguese_tag = yes
+				}
+				1067 = { set_state_name = "Olivença" }
+				set_province_name = { id = 13740 name = "Olivença" }
+				else = {
+					1067 = { set_state_name = "Olivenza" }
+					set_province_name = { id = 13740 name = "Olivenza" }
+				}
+			}
 		}
 	}
 }

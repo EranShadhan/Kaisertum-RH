@@ -3,8 +3,11 @@ state={
 	name="STATE_1059"
 
 	history={
-		victory_points = {
+		victory_points = { # Teschen
 			13619 2 
+		}
+		victory_points = { # Birkanau
+			9412 1
 		}
 		owner = AUS
 		buildings = {

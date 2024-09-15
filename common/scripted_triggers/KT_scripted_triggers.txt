@@ -33,3 +33,40 @@ austria_taiwan_dice = {
 		option = idk
 	}
 }
+
+is_portuguese_tag = {
+	original_tag = POR
+	original_tag = BRA
+	original_tag = GNB
+	original_tag = MZB
+	original_tag = ANG
+}
+
+is_spanish_tag = {
+	original_tag = SPR
+	original_tag = MEX
+	is_central_american_tag = yes
+	is_south_american_hispanic_tag = yes
+	original_tag = PHI
+}
+
+is_central_american_tag = {
+	original_tag = GUA
+	original_tag = HON
+	original_tag = ELS
+	original_tag = NIC
+	original_tag = COS
+	original_tag = PAN
+}
+
+is_south_american_hispanic_tag = {
+	original_tag = COL
+	original_tag = VEN
+	original_tag = ECU
+	original_tag = PRU
+	original_tag = BOL
+	original_tag = PAR
+	original_tag = URG
+	original_tag = ARG
+	original_tag = CHL
+}

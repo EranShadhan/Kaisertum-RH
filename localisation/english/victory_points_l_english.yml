@@ -909,7 +909,7 @@
  VICTORY_POINTS_7822:0 "Novokuznetsk"
  VICTORY_POINTS_6124:0 "Vyatka"
  VICTORY_POINTS_9680:0 "Kerch"
- VICTORY_POINTS_6704:0 "Yalta"
+ VICTORY_POINTS_13376:0 "Yalta"
  VICTORY_POINTS_10056:1 "Mersin"
  VICTORY_POINTS_6977:0 "Kayseri"
  VICTORY_POINTS_3951:0 "Eskişehir"
@@ -1331,8 +1331,7 @@
  VICTORY_POINTS_591:0 "Senj"
  VICTORY_POINTS_6913:0 "Podgorica"
  VICTORY_POINTS_13621:0 "Hachnovka"
- #VICTORY_POINTS_9412:0 "Auschwitz" # here because of the duchy of auschwitz no other reasons Explode you dirty (idk what gender you are or what are your pronouns
- #dear xael, 1st i am a he, 2nd if i say i want auschwitz removed there is a reason.
+ VICTORY_POINTS_9412:0 "Birkanau"
  VICTORY_POINTS_13619:0 "Teschen"
  VICTORY_POINTS_9494:0 "Przemyśl"
  VICTORY_POINTS_9452:0 "Kholm"
@@ -1344,4 +1343,5 @@
  VICTORY_POINTS_13733:0 "Saint-Denis"
  VICTORY_POINTS_13732:0 "Fontainebleau"
  VICTORY_POINTS_406:0 "Vileyka"
- VICTORY_POINTS_6718:0 "Pyatigorsk "
+ VICTORY_POINTS_6718:0 "Pyatigorsk"
+ VICTORY_POINTS_13740:0 "Olivenza"
