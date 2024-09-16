@@ -21,7 +21,7 @@ focus_tree = {
 focus = {
     id = TUR_finish_reconstruction
     icon = GFX_goal_generic_construct_infrastructure
-    x = 35
+    x = 28
     y = 0
 	relative_position_id = TUR_start_of_a_new_decade
     cost = 5
@@ -2104,7 +2104,7 @@ focus = {
 	focus = {
 		id = TUR_start_of_a_new_decade
 		cost = 5
-		x = 24
+		x = 16
 		y = 0
 		icon = GFX_TUR_start_of_a_new_decade
 
@@ -2121,7 +2121,7 @@ focus = {
 	focus = {
 		id = TUR_constitution_of_1930
 		cost = 6
-		x = 8
+		x = 7
 		y = 1
 		icon = GFX_TUR_constitution_of_1930
 
@@ -3809,7 +3809,7 @@ focus = {
 	focus = {
 		id = TUR_the_sultans_grip_remains_firm
 		cost = 5
-		x = 16
+		x = 11
 		y = 1
 		icon = GFX_TUR_sultans_vision
 
