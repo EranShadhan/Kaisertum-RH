@@ -251,9 +251,9 @@ shared_focus = {
 	id = rocket_effort
 	icon = GFX_focus_rocketry
 	prerequisite = { focus = aviation_effort_2 }
-	prerequisite = { focus = infrastructure_effort }
+	prerequisite = { focus = extra_tech_slot }
 	x = 0
-	y = 2
+	y = 5
 	relative_position_id = aviation_effort_2
 	cost = 10
 

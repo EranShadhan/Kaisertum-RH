@@ -32,12 +32,12 @@
 
  islam_religion:0 "Muslim Faith"
  islam_religion_desc:0 "[ROOT.GetName] is overwhelmingly a muslim majority country."
-  
  discrimination_focus:0 "National Superiority"
  discrimination_focus_desc:0 "[ROOT.GetAdjective] people are biologically the strongest. To remain in that opsition we have to unite and work together."
-
  centralization_focus:0 "Centralization"
  centralization_focus_desc:0 "The authority of the state has been too split for too long. By reducing the powers of our substates compared to our central government, we will overcome regionalism and factionalism to make a stronger nation, which will inevitably open the door to enact further measures."
+ welfare_focus:0 "Welfare Program"
+ welfare_focus_desc:0 "We are ensuring that the poorest in our society receive the help they need to survive, so that they do not have to fend for themselves and may work for our economy one day."
 
  japanese_socialist:0 "Japanese Socialist"
  JAP_japanese_socialist_modf_tt:0 "Ikuo Oyama is a Japanese socialist, a new type of socialist based off Japanese values"

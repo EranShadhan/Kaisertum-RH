@@ -4,12 +4,107 @@ on_actions = {
 			if = {
 				limit = {
 					has_global_flag = endonyms
+					any_country = {
+						limit = {
+							is_polish_tag = yes
+						}
+						controls_state = 784
+					}
+				}
+				784 = { set_state_name = "Wilno" }
+				set_province_name = { id = 3320 name = "Wilno" }
+				else_if = {
+					limit = {
+						has_global_flag = endonyms
+						any_country = {
+							limit = {
+								OR = {
+									is_latin_tag = yes
+									is_anglophone_tag = yes
+								}
+							} 
+							controls_state = 784
+						}
+					}
+					784 = { set_state_name = "Vilna" }
+					set_province_name = { id = 3320 name = "Vilna" }
+				}
+				else_if = {
+					limit = {
+						has_global_flag = endonyms
+						any_country = {
+							limit = {
+								original_tag = BLR
+							} 
+							controls_state = 784
+						}
+					}
+					784 = { set_state_name = "Vilnia" }
+					set_province_name = { id = 3320 name = "Vilnia" }
+				}
+				else_if = {
+					limit = {
+						has_global_flag = endonyms
+						any_country = {
+							limit = {
+								is_german_tag = yes
+							}
+							controls_state = 784
+						}
+					}
+					784 = { set_state_name = "Wilna" }
+					set_province_name = { id = 3320 name = "Wilna" }
+				}
+				else_if = {
+					limit = {
+						has_global_flag = endonyms
+						original_tag = LAT
+					}
+					784 = { set_state_name = "Viļņa" }
+					set_province_name = { id = 3320 name = "Viļņa" }
+				}
+				else_if = {
+					limit = {
+						has_global_flag = endonyms
+						original_tag = UKR
+					}
+					784 = { set_state_name = "Vilno" }
+					set_province_name = { id = 3320 name = "Vilno" }
+				}
+				else = {
+					784 = { set_state_name = "Vilnius" }
+					set_province_name = { id = 3320 name = "Vilnius" }
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = endonyms
+					original_tag = POL
+				}
+				1063 = { set_state_name = "Suwałki" }
+				set_province_name = { id = 3254 name = "Suwałki" }
+				else_if = {
+					limit = {
+						has_global_flag = endonyms
+						original_tag = LIT
+					}
+					1063 = { set_state_name = "Suvalkai" }
+					set_province_name = { id = 3254 name = "Suvalkai" }
+				}
+				else = {
+					1063 = { set_state_name = "Suwalki" }
+					set_province_name = { id = 3254 name = "Suwalki" }
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = endonyms
 					is_portuguese_tag = yes
 				}
-				1067 = { set_state_name = "Olivença" }
+				1068 = { set_state_name = "Olivença" }
 				set_province_name = { id = 13740 name = "Olivença" }
 				else = {
-					1067 = { set_state_name = "Olivenza" }
+					1068 = { set_state_name = "Olivenza" }
 					set_province_name = { id = 13740 name = "Olivenza" }
 				}
 			}

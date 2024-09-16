@@ -97,6 +97,23 @@ ideas = {
 				political_power_factor = 0.25
 			}
 		}
+
+		welfare_focus = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
 	}
 
 }

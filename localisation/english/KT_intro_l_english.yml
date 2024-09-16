@@ -8,7 +8,8 @@
 
  EMPTY:0 ""
  intro_gui_button_one_tt:0 "[GetStateRenamingToggle] §YState Renaming§!"
- intro_gui_button_one_nein_tt:0 "[GetStateRenamingToggle] §YState Renaming§!\n§RThis feature has not been implemented yet. Now it does nothing.§!"
+ intro_gui_button_one_nein_tt:0 "[GetStateRenamingToggle] §YState Renaming§!\n§RThis feature is partialy implemented at this moment.§!"
+ intro_gui_button_one_nein_2_tt:0 "[GetStateRenamingToggle] §YState Renaming§!\n§RThis feature has not been implemented yet. Now it does nothing.§!"
  intro_gui_button_two_tt:0 "[GetScriptedDealsToggle] §YScripted Peacedeals§!"
  intro_gui_button_two_nein_tt:0 "[GetScriptedDealsToggle] §YState Renaming§!\n§RThis feature has not been implemented yet. Now it does nothing.§!"
 

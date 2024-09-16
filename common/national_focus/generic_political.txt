@@ -449,16 +449,6 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 1
-		modifier = {
-			factor = 0
-			tag = AUS
-		}
-		modifier = {
-			factor = 0
-			tag = SAU
-			is_in_faction_with = SOV
-			SOV = { has_government = communism }
-		}
 	}
 
 	completion_reward = {
@@ -489,6 +479,24 @@ shared_focus = {
 }
 
 shared_focus = {
+	id = welfare
+	icon = GFX_goal_generic_consumer_goods
+	prerequisite = { focus = deterrence }
+	x = 2
+	y = 1
+	relative_position_id = deterrence
+	cost = 10
+	
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_ideas = welfare_focus
+	}
+}
+
+shared_focus = {
 	id = centralization
 	icon = GFX_focus_generic_support_the_left_right
 	prerequisite = { focus = deterrence }
@@ -503,24 +511,6 @@ shared_focus = {
 
 	completion_reward = {
 		add_ideas = centralization_focus
-	}
-}
-
-shared_focus = {
-	id = national_identity
-	icon = GFX_goal_anschluss
-	prerequisite = { focus = centralization focus = foreign_expeditions }
-	x = 2
-	y = 1
-	relative_position_id = centralization
-	cost = 10
-	
-	search_filters = { FOCUS_FILTER_STABILITY }
-
-	available_if_capitulated = yes
-
-	completion_reward = {
-		add_stability = 0.075
 	}
 }
 
@@ -558,6 +548,24 @@ shared_focus = {
 }
 
 shared_focus = {
+	id = sovereignist_ethos
+	icon = GFX_goal_generic_demand_territory
+	prerequisite = { focus = interventionism_focus }
+	x = -2
+	y = 1
+	relative_position_id = interventionism_focus
+	cost = 10
+	
+	search_filters = { FOCUS_FILTER_POLITICAL }
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 150
+	}
+}
+
+shared_focus = {
 	id = volunteer_corps
 	icon = GFX_goal_generic_allies_build_infantry
 	prerequisite = { focus = interventionism_focus }
@@ -590,6 +598,24 @@ shared_focus = {
 
 	completion_reward = {
 		add_ideas = foreign_expeditions_focus
+	}
+}
+
+shared_focus = {
+	id = national_identity
+	icon = GFX_goal_anschluss
+	prerequisite = { focus = centralization focus = foreign_expeditions }
+	x = 2
+	y = 1
+	relative_position_id = centralization
+	cost = 10
+	
+	search_filters = { FOCUS_FILTER_STABILITY }
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_stability = 0.075
 	}
 }
 
