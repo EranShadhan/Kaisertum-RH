@@ -392,6 +392,7 @@ set_stability = 0.5
 set_war_support = 0.3
 
 recruit_character = TUR_ahmed_IV
+recruit_character = TUR_hasan_prishtina
 recruit_character = TUR_yakup_kadri
 recruit_character = TUR_ali_fuat_cebesoy
 

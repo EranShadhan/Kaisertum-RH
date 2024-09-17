@@ -177,6 +177,7 @@ news_event = {
 		}
 	
 		SAU = { has_war_with = SYR }
+		TUR = { has_government = communism }
 		NOT = { has_global_flag = syria_wins }
 	}
 
@@ -827,4 +828,56 @@ news_event = {
     option = {
         name = news.410a
     }
+}
+news_event = {
+
+	id = kaisertum_news.20
+	title = syria_wins_news.t   
+	desc = syria_wins_news.d
+	picture = GFX_news_event_074
+
+	major = yes
+
+	trigger = {
+		AND ={
+			AND = {
+				975 = { is_controlled_by = SYR }
+				677 = { is_controlled_by = SYR }
+				680 = { is_controlled_by = SYR }
+				554 = { is_controlled_by = SYR }
+			}
+			OR = {
+				553 = { is_controlled_by = SYR is_owned_by = SAU }
+				854 = { is_controlled_by = SYR is_owned_by = SAU }
+				455 = { is_controlled_by = SYR is_owned_by = SAU }
+			}
+		}
+	
+		SAU = { has_war_with = SYR }
+		TUR = { has_government = neutrality }
+		NOT = { has_global_flag = syria_wins }
+	}
+
+	immediate = { 
+			set_global_flag = syria_wins
+			SAU = {
+				white_peace = SYR
+				transfer_state = 455
+				transfer_state = 854
+			}
+			SYR = {
+				transfer_state = 553
+				transfer_state = 677
+				transfer_state = 554
+				transfer_state = 680
+			}
+			975 = {
+				add_core_of = TUR
+			}
+	}
+
+	
+	option = {
+		name = syria_wins_news.a
+	}
 }

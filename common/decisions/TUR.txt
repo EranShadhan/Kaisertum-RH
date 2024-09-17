@@ -116,7 +116,7 @@ TUR_syrian_rebellion_starts = {
                 }
             }
         set_politics = {
-            ruling_party = communism
+            ruling_party = fascism
             elections_allowed = no
         }
         set_global_flag = syrian_rebellion
@@ -244,7 +244,7 @@ TUR_syrian_rebellion_starts_nonaligned = {
                 }
             }
         set_politics = {
-            ruling_party = neutrality
+            ruling_party = fascism
             elections_allowed = no
         }
         set_global_flag = syrian_rebellion

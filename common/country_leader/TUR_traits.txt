@@ -1,0 +1,19 @@
+leader_traits = {
+	father_of_the_albanians = {
+		random = no
+		stability_factor = 0.3
+		political_advisor_cost_factor = -0.3
+		high_command_cost_factor = -0.3
+		air_chief_cost_factor = -0.3
+		army_chief_cost_factor = -0.3
+		navy_chief_cost_factor = -0.3
+		mobilization_laws_cost_factor = -0.25
+		economy_cost_factor = -0.25
+	}
+	emigree = {
+		random = no
+		stability_factor = -0.1
+		war_support_factor = -0.1
+	}
+	
+}

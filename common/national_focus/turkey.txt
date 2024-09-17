@@ -21,7 +21,7 @@ focus_tree = {
 focus = {
     id = TUR_finish_reconstruction
     icon = GFX_goal_generic_construct_infrastructure
-    x = 28
+    x = 30
     y = 0
 	relative_position_id = TUR_start_of_a_new_decade
     cost = 5
@@ -2104,7 +2104,7 @@ focus = {
 	focus = {
 		id = TUR_start_of_a_new_decade
 		cost = 5
-		x = 16
+		x = 20
 		y = 0
 		icon = GFX_TUR_start_of_a_new_decade
 
@@ -2184,8 +2184,7 @@ focus = {
 
 			}
 			promote_character = {
-    			character = TUR_mustafa_kemal_ataturk
-    			ideology = socialism
+    			character = TUR_hasan_prishtina
 			}
 			set_party_name = {
     			ideology = democratic
@@ -3609,8 +3608,20 @@ focus = {
 		relative_position_id = TUR_kickstart_the_syrian_revolution
 		completion_reward = {
 			# SYRIAN LEADER IS NOW AHMED IV's SON
+			TUR = {
+			diplomatic_relation = {
+					country = SYR
+					relation = puppet
+					active = yes
+				}
+				transfer_state = 975
+			}
 			SYR = {
 				set_cosmetic_tag = SYR_vilayet
+				promote_character = {
+					character = SYR_ismail_hakki_tevfik
+					ideology = absolute_monarchy
+				}
 			}
 		}
 	}
@@ -3809,7 +3820,7 @@ focus = {
 	focus = {
 		id = TUR_the_sultans_grip_remains_firm
 		cost = 5
-		x = 11
+		x = 13
 		y = 1
 		icon = GFX_TUR_sultans_vision
 
@@ -4645,7 +4656,64 @@ focus = {
 		completion_reward = {
 			drop_cosmetic_tag = yes
 			add_ideas = TUR_turkish_empire
-
+			set_cosmetic_tag = TUR_empire
+			354 = {
+				add_core_of = TUR
+			}
+			353 = {
+				add_core_of = TUR
+			}
+			350 = {
+				add_core_of = TUR
+			}
+			352 = {
+				add_core_of = TUR
+			}
+			638 = {
+				add_core_of = TUR
+			}
+			419 = {
+				add_core_of = TUR
+			}
+			420 = {
+				add_core_of = TUR
+			}
+			229 = {
+				add_core_of = TUR
+			}
+			230 = {
+				add_core_of = TUR
+			}
+			900 = {
+				add_core_of = TUR
+			}
+			800 = {
+				add_core_of = TUR
+			}
+			986 = {
+				add_core_of = TUR
+			}
+			183 = {
+				add_core_of = TUR
+			}
+			339 = {
+				add_core_of = TUR
+			}
+			987 = {
+				add_core_of = TUR
+			}
+			164 = {
+				add_core_of = TUR
+			}
+			187 = {
+				add_core_of = TUR
+			}
+			184 = {
+				add_core_of = TUR
+			}
+			975 = {
+				add_core_of = TUR
+			}
 
 		}
 	}

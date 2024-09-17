@@ -12,5 +12,9 @@ spriteTypes = {
 		name = "GFX_portrait_TUR_Ali_Fuat_Cebesoy"
 		texturefile = "gfx/leaders/TUR/Portrait_Ali_Fuat_Cebesoy.png"
 	}
+	spriteType = {
+		name = "GFX_portrait_TUR_Hasan_Prishtina"
+		texturefile = "gfx/leaders/TUR/prishtina.png"
+	}
 
 }

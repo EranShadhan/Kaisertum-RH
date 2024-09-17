@@ -28,7 +28,7 @@
 
  TUR_bribe_cypriot_diplomats:0 "Bribe Cypriot Diplomats"
  TUR_rally_turkish_nationalists:0 "Rally Turkish Nationalists"
- TUR_sponsor_factory_construction:0 "The Syrian Rebellion Starts"
+ TUR_sponsor_factory_construction:0 "Sponsor Factory Construction"
  TUR_start_the_cypriot_civil_war:0 "Start the Cypriot Civil War"
 
  TUR_focus_on_internal_matters:0 "Focus on Internal Matters"
@@ -181,3 +181,6 @@
  TUR_no_mercy_for_the_enemies_of_islam:0 "No Mercy for the Enemies of Islam"
  TUR_strike_the_bear:0 "Strike the Bear"
  TUR_proclaim_the_turkish_empire:0 "The Proclamation of the Turkish Empire"
+
+ father_of_the_albanians:0 "Father of the Albanians"
+ emigree:0 "Emigré"

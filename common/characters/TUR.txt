@@ -7,12 +7,13 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = despotism
+			ideology = absolute_monarchy
 			expire = "1953.3.1.1"
 			traits={ dictator }
 			id = -1
 		}
 	}
+	
 	TUR_yakup_kadri = {
 		name = TUR_yakup_kadri
 		portraits = {
@@ -24,6 +25,20 @@ characters={
 			ideology = marxism
 			expire = "1953.3.1.1"
 			traits={ militant_socialist }
+			id = -1
+		}
+	}
+	TUR_hasan_prishtina = {
+		name = TUR_hasan_prishtina
+		portraits = {
+			civilian = {
+				large = GFX_portrait_TUR_Hasan_Prishtina
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1953.3.1.1"
+			traits={ father_of_the_albanians emigree }
 			id = -1
 		}
 	}
