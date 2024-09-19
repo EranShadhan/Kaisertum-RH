@@ -2224,10 +2224,10 @@ focus_tree = {
 		relative_position_id = YUG_claim_litorale
 		prerequisite = { focus = YUG_claim_litorale }
 		available = {
-				
-				
-				
-			}
+			YUG = {
+				has_war_with = ITA
+			}	
+		}
 			
 		x = -1
 		y = 1
@@ -2258,10 +2258,10 @@ focus_tree = {
 		relative_position_id = YUG_east_partisans
 		prerequisite = { focus = YUG_east_partisans }
 		available = {
-				
-				
-				
-			}
+			YUG = {
+				has_war_with = ITA
+			}	
+		}
 			
 		x = -1
 		y = 1
@@ -2294,15 +2294,234 @@ focus_tree = {
 		prerequisite = { focus = YUG_anti_air_measures }
 		prerequisite = { focus = YUG_sabotage_thier_supply_system }
 		available = {
+			852 = {
+				owner  = {
+					original_tag = YUG
+				}
+			}	
+		}
+			
+		x = 0
+		y = 3
+
+		cost = 0
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
 				
 				
 				
 			}
 			
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = YUG_solidify_our_ownership
+		icon = GFX_
+		relative_position_id = YUG_the_tricolor_is_down
+		prerequisite = { focus = YUG_the_tricolor_is_down }
+		available = {
+			852 = {
+				owner  = {
+					original_tag = YUG
+				}
+			}	
+		}
+			
 		x = 0
-		y = 3
+		y = 1
 
-		cost = 3
+		cost = 0
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = YUG_strike_slovenia
+		icon = GFX_
+		relative_position_id = YUG_the_tricolor_is_down
+		prerequisite = { focus = YUG_the_tricolor_is_down }
+		available = {
+			852 = {
+				owner  = {
+					original_tag = YUG
+				}
+			}	
+		}
+			
+		x = 2
+		y = 2
+
+		cost = 0
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = YUG_border_clashes
+		icon = GFX_
+		relative_position_id = YUG_the_tricolor_is_down
+		prerequisite = { focus = YUG_the_tricolor_is_down }
+		available = {
+			852 = {
+				owner  = {
+					original_tag = YUG
+				}
+			}	
+		}
+			
+		x = -2
+		y = 2
+
+		cost = 0
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = YUG_raid_albanian_armories
+		icon = GFX_
+		relative_position_id = YUG_border_clashes
+		prerequisite = { focus = YUG_border_clashes }
+		available = {
+			852 = {
+				owner  = {
+					original_tag = YUG
+				}
+			}	
+		}
+			
+		x = -1
+		y = 1
+
+		cost = 0
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = YUG_raid_bulgarian_armories
+		icon = GFX_
+		relative_position_id = YUG_border_clashes
+		prerequisite = { focus = YUG_border_clashes }
+		available = {
+			852 = {
+				owner  = {
+					original_tag = YUG
+				}
+			}	
+		}
+			
+		x = 1
+		y = 1
+
+		cost = 0
+		
+			ai_will_do = {
+			
+				base = 0
+			
+			}
+			
+		available_if_capitulated = yes
+		
+		search_filters = {  
+				
+				
+				
+			}
+			
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = YUG_wall_enemy_greek
+		icon = GFX_
+		relative_position_id = YUG_raid_bulgarian_armories
+		prerequisite = { focus = YUG_raid_bulgarian_armories }
+		prerequisite = { focus = YUG_raid_albanian_armories }
+		available = {
+			852 = {
+				owner  = {
+					original_tag = YUG
+				}
+			}	
+		}
+			
+		x = -1
+		y = 1
+
+		cost = 0
 		
 			ai_will_do = {
 			
@@ -2328,10 +2547,11 @@ focus_tree = {
 		relative_position_id = YUG_claim_litorale
 		prerequisite = { focus = YUG_claim_litorale }
 		available = {
-				
-				
-				
+			YUG = {
+				has_war_with = ITA
+
 			}
+		}
 			
 		x = 1
 		y = 1
@@ -2362,10 +2582,10 @@ focus_tree = {
 		relative_position_id = YUG_raid_italian_armories
 		prerequisite = { focus = YUG_raid_italian_armories }
 		available = {
-				
-				
-				
-			}
+			YUG = {
+				has_war_with = ITA
+			}	
+		}
 			
 		x = 1
 		y = 1
@@ -2397,10 +2617,10 @@ focus_tree = {
 		prerequisite = { focus = YUG_east_partisans }
 		prerequisite = { focus = YUG_raid_italian_armories }
 		available = {
-				
-				
-				
-			}
+			YUG = {
+				has_war_with = ITA
+			}	
+		}
 			
 		x = 0
 		y = 2
