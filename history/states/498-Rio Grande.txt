@@ -22,14 +22,16 @@ state = {
 			#air_base = 1 Added through focus later
 
 		}
-
+		victory_points = {
+			13372 1 
+		}
 		victory_points = {
 			10933 3 
 		}
 	}
 
 	provinces = {
-		2175 10933 13273
+		2175 10933 13273 13372
 	}
 	
 
