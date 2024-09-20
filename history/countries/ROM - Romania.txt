@@ -55,6 +55,9 @@ recruit_character = ROM_iuliu_maniu
 recruit_character = ROM_petru_groza
 recruit_character = ROM_nicolae_malaxa
 recruit_character = ROM_gheorghe_argeseanu
+recruit_character = ROM_nicolae_iorga
+recruit_character = ROM_gheorghe_gheorghiu_dej
+recruit_character = ROM_constantin_prezan
 
 # Starting tech
 set_technology = {

@@ -103,24 +103,7 @@ characters={
 		}
 	}
 
-	ROM_king_michael={
-		name=ROM_king_michael
-		portraits={
-			civilian={
-				large="GFX_Portrait_romania_michael_i"
-			}
-		}
-		country_leader={
-			ideology=liberalism
-			expire="1965.1.1.1"
-			id=-1
-		}
-		country_leader={
-			ideology=despotism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
+
 
 	ROM_armand_calinescu={
 		name=ROM_armand_calinescu
@@ -287,42 +270,7 @@ characters={
 		
 	}
 
-	ROM_ion_antonescu={
-		name=ROM_ion_antonescu
-		portraits={
-			army={
-				small="GFX_idea_ROM_ion_antonescu"
-				large="GFX_Portrait_romania_ion_antonescu"
-			}
-			civilian={
-				large="GFX_Portrait_romania_ion_antonescu"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = ROM_ion_antonescu
-			allowed = {
-				original_tag = ROM
-			}
-			traits = {
-				army_chief_offensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-		
-		field_marshal={
-			traits={ offensive_doctrine }
-			skill=4
-			attack_skill=4
-			defense_skill=4
-			planning_skill=2
-			logistics_skill=3
-			legacy_id=-1
-		}
-	}
+	
 
 
 	### NAVY CHIEFS ###
@@ -547,16 +495,16 @@ characters={
 
 	# Calinescu up there
 
-	ROM_iuliu_maniu={
-		name=ROM_iuliu_maniu
+	ROM_nicolae_iorga={
+		name=ROM_nicolae_iorga
 		portraits={
 			army={
-				small="GFX_idea_ROM_iuliu_maniu"
+				small="GFX_idea_ROM_nicolae_iorga"
 			}
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = ROM_iuliu_maniu
+			idea_token = ROM_nicolae_iorga
 			allowed = {
 				original_tag = ROM
 			}
@@ -587,12 +535,7 @@ characters={
 			slot = political_advisor
 			idea_token = ROM_gheorghe_gheorghiu_dej
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Death or Dishonor"
-					}
-					has_completed_focus = ROM_appoint_soviet_friendly_government 
-				}
+				has_completed_focus = ROM_pol_4
 				if = {
 					limit = {
 						has_dlc = "Man the Guns"
@@ -607,6 +550,28 @@ characters={
 			}
 			traits = {
 				communist_revolutionary 
+			}
+		}
+	}
+
+	ROM_constantin_argetoianu={
+		name=ROM_constantin_argetoianu
+		portraits={
+			army={
+				small="GFX_idea_ROM_constantin_argetoianu"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ROM_constantin_argetoianu
+			available = {
+				has_intelligence_agency = yes
+			}
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				head_of_intelligence
 			}
 		}
 	}
@@ -707,6 +672,64 @@ characters={
 			ai_will_do = {
 				factor = 0.000
 			}
+		}
+	}
+
+	# Generals
+
+	ROM_ion_antonescu={
+		name=ROM_ion_antonescu
+		portraits={
+			army={
+				small="GFX_idea_ROM_ion_antonescu"
+				large="GFX_Portrait_romania_ion_antonescu"
+			}
+			civilian={
+				large="GFX_Portrait_romania_ion_antonescu"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = ROM_ion_antonescu
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			traits={ offensive_doctrine }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	ROM_constantin_prezan={
+		name=ROM_constantin_prezan
+		portraits={
+			army={
+				large="GFX_Portrait_romania_ion_antonescu"
+			}
+		}
+		
+		field_marshal={
+			traits = { defensive_doctrine }
+			skill=4
+			attack_skill=3
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
 		}
 	}
 

@@ -9,6 +9,17 @@ Balkan_project_desc:0 "The Balkan Project should be achieve, the people must be 
 ROM_SIMP:0 "Republic of Bulgaria"
 ROM_SIMP_DEF:0 "Republic of Bulgaria"
 
+add_5:0 "§Y+5%§W Influence over Bulgaria"
+add_10:0 "§Y+10%§W Influence over Bulgaria"
+add_20:0 "§Y+20%§W Influence over Bulgaria"
+
+more15:0 "Has over §Y15%§W Influence over Bulgaria"
+more30:0 "Has over §Y30%§W Influence over Bulgaria"
+more45:0 "Has over §Y45%§W Influence over Bulgaria"
+more90:0 "Has over §Y90%§W Influence over Bulgaria"
+
+attack_civil_war_bul:0 "§RCivil War§W in §GBulgaria§W will start. \n§CThe Salonica Pact§W will intervine against §Yyou§W"
+
 BALKAN_ALLIANCE:0 "Balkan Alliance"
 
 ROM_pol_1:0 "Current Status of Romania"

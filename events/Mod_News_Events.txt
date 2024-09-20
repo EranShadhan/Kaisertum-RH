@@ -741,10 +741,14 @@ news_event = {
 
     immediate = { 
                     set_global_flag = fall_of_GRE_ROM_2
+					ITA = {
+						leave_faction = yes
+					}
                     ROM = {
                         puppet = GRE
 						puppet = ALB
 						puppet = SER
+						white_peace = GRE
                     }
                 }
 
