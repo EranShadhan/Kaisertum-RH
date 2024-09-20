@@ -30,9 +30,6 @@ focus_tree = {
 	shared_focus = industrial_effort
 	shared_focus = political_effort
 
-	#Special branches
-	shared_focus = AFG_graveyard
-
 	initial_show_position = {
 		focus = industrial_effort
 	}

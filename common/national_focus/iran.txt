@@ -681,7 +681,7 @@ focus_tree = {
 
 	focus = {
 		id = PER_ally_with_ger
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_GRE_missing_to_ger
 		prerequisite = { focus = PER_purge_the_army }
 		prerequisite = { focus = PER_monarchist_propaganda focus = PER_secularization }
 		x = 0

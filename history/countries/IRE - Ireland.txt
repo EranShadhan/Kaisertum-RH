@@ -179,7 +179,6 @@ add_ideas = {
 	IRE_British_Investment
 	IRE_IRA_Presence
 	IRE_Govenor_Churchil
-
 }
 
 

@@ -29,13 +29,11 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_factor = -0.1				
+				stability_factor = -0.1
 			}
-			
-
 		}
 		
-			IRE_British_Investment = {
+		IRE_British_Investment = {
 			
 			allowed = {
 				original_tag = IRE
@@ -56,7 +54,7 @@ ideas = {
 				}
 			}
 
-			picture = 
+			#picture = 
 			
 			removal_cost = -1
 			
@@ -66,11 +64,8 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.25 
 				production_factory_start_efficiency_factor = 0.25 
 				industrial_capacity_factory = 0.1
-				cic_construction_boost_factor = 0.1	
-							
+				cic_construction_boost_factor = 0.1
 			}
-			
-
 		}
 
 		IRE_IRA_Presence = {
@@ -94,7 +89,7 @@ ideas = {
 				}
 			}
 
-			picture = 
+			#picture = 
 			
 			removal_cost = -1
 			
@@ -102,25 +97,6 @@ ideas = {
 				political_power_gain = -0.1
 				stability_weekly = -0.01
 				war_support_weekly = 0.01	
-							
-			}
-			
-
-		}
-		
-		IRE_Lore = {
-			
-			allowed = {
-				original_tag = IRE
-			}
-
-			
-			picture = 
-			
-			removal_cost = -1
-			
-			modifier = {
-					
 							
 			}
 			
@@ -151,14 +127,13 @@ ideas = {
 				}
 			}
 
-			picture = 
+			picture = ENG_winston_churchill
 			
 			removal_cost = -1
 			
 			modifier = {
 				war_support_factor = -0.1				
 			}
-			
 
 		}
 	
@@ -171,14 +146,11 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = 
+			#picture = 
 			
 			removal_cost = -1
 			
-			modifier = { monthly_population = 0.5 } 				
-			
-		
-
+			modifier = { monthly_population = 0.5 }
 		}
 
 		IRE_Economic_Boom_focus = {
@@ -190,17 +162,19 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = 
+			picture = generic_economic_increase
 			
 			removal_cost = -1
 			
-			modifier = { production_speed_buildings_factor = 0.25  } 
-			modifier = { consumer_goods_factor = -0.1 }
-			modifier = { production_factory_efficiency_gain_factor = 0.25  }
-			modifier = { production_lack_of_resource_penalty_factor = -0.25  }
-			modifier = { industrial_capacity_factory = 0.15 }
-			modifier = { autonomy_gain = 20 }				
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.1
+				industrial_capacity_factory = 0.15
+				autonomy_gain = 5
 			}
+		}
 			
 		IRE_better_farming = {
 			
@@ -211,20 +185,18 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = 
+			picture = LIT_invested_in_farms
 			
 			removal_cost = -1
 			
-			modifier = { monthly_population = 0.1  } 
-			modifier = { consumer_goods_factor = 0.05 }
-			modifier = { stability_factor = 0.1 }
-							
+			modifier = {
+				monthly_population = 0.1
+				consumer_goods_factor = 0.05
+				stability_factor = 0.1
 			}
-			
-		
+							
+		}
 
-		
-	
 		IRE_tourism = {
 			
 			allowed = {
@@ -234,15 +206,13 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = 
+			picture = generic_foreign_capital
 			
 			removal_cost = -1
 			
 			 
-			modifier = { consumer_goods_factor = 0.05 }
-			
-							
-			}
+			modifier = { consumer_goods_factor = 0.05 }			
+		}
 		
 		IRE_irish_dream = {
 			
@@ -253,18 +223,17 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = 
+			#picture = 
 			
 			removal_cost = -1
 			
 			 
 			modifier = { consumer_goods_factor = 0.05 }
 			modifier = { stability_factor = 0.1 }
-			modifier = { war_support_factor = 0.1 }
-			modifier = { monthly_population = 0.05 }
+			modifier = { war_support_factor = 0.05 }
+			modifier = { monthly_population = 0.15 }
 			
-							
-			}
+		}
 
 
 
@@ -277,7 +246,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = 
+			#picture = 
 			
 			removal_cost = -1
 			
@@ -285,7 +254,7 @@ ideas = {
 			modifier = { consumer_goods_factor = -0.2 }
 			
 							
-			}
+		}
 
 		IRE_state_run_industry = {
 			
@@ -296,7 +265,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = 
+			#picture = 
 			
 			removal_cost = -1
 			
@@ -307,7 +276,7 @@ ideas = {
 			modifier = { industry_repair_factor = 0.3 }
 			
 							
-			}
+		}
 
 		IRE_large_irish_businesses = {
 			
@@ -318,15 +287,15 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = 
+			#picture = 
 			
 			removal_cost = -1
 			
 			 
-			modifier = { production_speed_buildings_factor = 0.5  }
+			modifier = { production_speed_buildings_factor = 0.15  }
 			modifier = { conversion_cost_mil_to_civ_factor = -0.3 }
-			modifier = { industrial_capacity_dockyard = 0.2 }
-			modifier = { industrial_capacity_factory = 0.2 }
+			modifier = { industrial_capacity_dockyard = 0.15 }
+			modifier = { industrial_capacity_factory = 0.15 }
 			
 							
 			}
@@ -340,7 +309,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = 
+			#picture = 
 			
 			removal_cost = -1
 			
@@ -358,7 +327,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = 
+			#picture = 
 			
 			removal_cost = -1
 			
@@ -376,7 +345,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = 
+			#picture = 
 			
 			removal_cost = -1
 			
@@ -394,7 +363,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = 
+			#picture = 
 			
 			removal_cost = -1
 			
@@ -412,7 +381,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = 
+			#picture = 
 			
 			removal_cost = -1
 			
@@ -432,7 +401,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = 
+			#picture = 
 			
 			removal_cost = -1
 			
@@ -455,7 +424,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = 
+			#picture = 
 			
 			removal_cost = -1
 			
@@ -478,7 +447,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = 
+			#picture = 
 			
 			removal_cost = -1
 			
@@ -502,7 +471,7 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			picture = 
+			#picture = 
 			
 			removal_cost = -1
 			
