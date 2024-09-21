@@ -11,7 +11,7 @@ focus_tree = {
 
     default = no
 
-    continuous_focus_position = { x = 20 y = 1600 }
+    continuous_focus_position = { x = 2000 y = 2000 }
 
     
 ############
@@ -22,9 +22,11 @@ focus = {
 
     id = ROM_army1
     icon = GFX_ROM_army1
-    x = 6
+    x = 0
     y = 1
-
+	relative_position_id = ROM_pol_5
+	
+	prerequisite = { focus = ROM_pol_5 }
     ai_will_do = {
 			factor = 1
 		}
@@ -139,10 +141,10 @@ focus = {
 
 }
 
-focus = {
+focus = { 
 
     id = ROM_army_m_1
-    icon = GFX_ROM_army_m_1
+    icon = GFX_ROM_malaxa1
     x = 3
     y = 2	
 
@@ -200,11 +202,12 @@ focus = {
 	focus = {
 
 		id = ROM_army_m_2
-		icon = GFX_ROM_army_m_2
-		x = 0
-		y = 1
+		icon = GFX_iar1
+		x = 2
+		y = 0
 	
-		prerequisite = { focus = ROM_army_m_1 }
+		prerequisite = { focus = ROM_army2 }
+		prerequisite = { focus = ROM_army3}
 		
 		relative_position_id = ROM_army_m_1
 	
@@ -262,11 +265,12 @@ focus = {
 	focus = {
 
 		id = ROM_army_m_3
-		icon = GFX_ROM_army_m_3
-		x = 0
-		y = 2
+		icon = GFX_ROM_resita_works
+		x = -2
+		y = 0
 	
-		prerequisite = { focus = ROM_army_m_2 }
+		prerequisite = { focus = ROM_army2 }
+		prerequisite = { focus = ROM_army3}
 		
 		relative_position_id = ROM_army_m_1
 	
@@ -313,11 +317,13 @@ focus = {
 		focus = {
 
 			id = ROM_army_m_4
-			icon = GFX_ROM_army_m_4
+			icon = GFX_ROM_plan
 			x = 0
-			y = 3
+			y = 1
 		
 			prerequisite = { focus = ROM_army_m_3 }
+			prerequisite = { focus = ROM_army_m_1 }
+			prerequisite = { focus = ROM_army_m_2 }
 			
 			relative_position_id = ROM_army_m_1
 		
@@ -350,9 +356,9 @@ focus = {
 			focus = {
 
 				id = ROM_army_m_5
-				icon = GFX_ROM_army_m_5
-				x = -1
-				y = 4
+				icon = GFX_iar2
+				x = 2
+				y = 2
 			
 				prerequisite = { focus = ROM_army_m_4 }
 				
@@ -403,9 +409,9 @@ focus = {
 focus = {
 
 		id = ROM_army_m_6
-		icon = GFX_ROM_army_m_6
-		x = 1
-		y = 4
+		icon = GFX_malaxa2
+		x = 0
+		y = 2
 	
 		prerequisite = { focus = ROM_army_m_4 }
 		
@@ -455,12 +461,11 @@ focus = {
 		focus = {
 
 			id = ROM_army_m_7
-			icon = GFX_ROM_army_m_7
-			x = 0
-			y = 5
+			icon = GFX_resita2
+			x = -2
+			y = 2
 		
-			prerequisite = { focus = ROM_army_m_5 }
-			prerequisite = { focus = ROM_army_m_6 }
+			prerequisite = { focus = ROM_army_m_4 }
 			
 			relative_position_id = ROM_army_m_1
 		
@@ -501,7 +506,7 @@ focus = {
 	focus = {
 
 		id = ROM_army_p_1
-		icon = GFX_ROM_army_p_1
+		icon = GFX_ROM_army4
 		x = -3
 		y = 2
 			
@@ -546,7 +551,7 @@ focus = {
 focus = {
 
 	id = ROM_army_p_2
-	icon = GFX_ROM_army_p_2
+	icon = GFX_ROM_army5
 	x = -2
 	y = 1
 		
@@ -587,7 +592,7 @@ focus = {
 focus = {
 
 	id = ROM_army_p_3
-	icon = GFX_ROM_army_p_3
+	icon = GFX_ROM_army6
 	x = 0
 	y = 1
 		
@@ -628,7 +633,7 @@ focus = {
 focus = {
 
 	id = ROM_army_p_4
-	icon = GFX_ROM_army_p_4
+	icon = GFX_ROM_army8
 	x = 2
 	y = 1
 		
@@ -670,7 +675,7 @@ focus = {
 focus = {
 
 	id = ROM_army_p_6
-	icon = GFX_ROM_army_p_6
+	icon = GFX_ROM_army7
 	x = 0
 	y = 2
 		
@@ -711,7 +716,7 @@ focus = {
 focus = {
 
 	id = ROM_army_p_7
-	icon = GFX_ROM_army_p_7
+	icon = GFX_ROM_army9
 	x = 2
 	y = 2
 		
@@ -749,16 +754,14 @@ focus = {
 		
 }
 
-########################
-########Industry########
-########################
-
 focus = {
 
     id = ROM_ind_1
     icon = GFX_ROM_ind_1
-    x = 15
-    y = 1
+	relative_position_id = ROM_pol_k_1
+	prerequisite = { focus = ROM_pol_k_5 }
+    x = -9
+    y = 3
 
 	cost = 5
 
@@ -794,7 +797,7 @@ focus = {
 focus = {
 
     id = ROM_ind_2
-    icon = GFX_ROM_ind_2
+    icon = GFX_ROM_kingsplan
     x = 0
     y = 1
 
@@ -838,8 +841,8 @@ focus = {
 focus = {
 
     id = ROM_ind_3
-    icon = GFX_ROM_ind_3
-    x = -2
+    icon = GFX_romCountrysideinvestements
+    x = -4
     y = 2
 
 	cost = 3
@@ -884,7 +887,7 @@ focus = {
 
     id = ROM_ind_4
     icon = GFX_ROM_ind_4
-    x = 2
+    x = 0
     y = 2
 
 	cost = 3
@@ -940,13 +943,13 @@ focus = {
     id = ROM_ind_6
     icon = GFX_ROM_ind_6
     x = -2
-    y = 3
+    y = 2
 
 	cost = 3
 
 	relative_position_id = ROM_ind_1
 
-	prerequisite = { focus = ROM_ind_3 }
+	prerequisite = { focus = ROM_ind_2 }
 
     ai_will_do = {
 			factor = 1
@@ -980,13 +983,13 @@ focus = {
     id = ROM_ind_7
     icon = GFX_ROM_ind_7
     x = 2
-    y = 3
+    y = 2
 
 	cost = 3
 
 	relative_position_id = ROM_ind_1
 
-	prerequisite = { focus = ROM_ind_4 }
+	prerequisite = { focus = ROM_ind_2 }
 
     ai_will_do = {
 			factor = 1
@@ -1027,14 +1030,15 @@ focus = {
 
     id = ROM_ind_9
     icon = GFX_ROM_ind_9
-    x = -2
-    y = 4
+    x = -3
+    y = 3
 
 	cost = 3
 
 	relative_position_id = ROM_ind_1
 
 	prerequisite = { focus = ROM_ind_6 }
+	prerequisite = { focus = ROM_ind_3 }
 
     ai_will_do = {
 			factor = 1
@@ -1063,8 +1067,8 @@ focus = {
 
     id = ROM_ind_10
     icon = GFX_ROM_ind_10
-    x = 2
-    y = 4
+    x = 3
+    y = 3
 
 	cost = 3
 
@@ -1112,8 +1116,8 @@ focus = {
 
     id = ROM_ind_13
     icon = GFX_ROM_ind_13
-    x = -2
-    y = 5
+    x = -3
+    y = 4
 
 	cost = 3
 
@@ -1152,8 +1156,8 @@ focus = {
 
     id = ROM_ind_14
     icon = GFX_ROM_ind_14
-    x = 2
-    y = 5
+    x = 1
+    y = 3
 
 	cost = 10
 
@@ -1161,7 +1165,7 @@ focus = {
 
 	
 
-	prerequisite = { focus = ROM_ind_10 }
+	prerequisite = { focus = ROM_ind_7 }
 
     ai_will_do = {
 			factor = 1
@@ -1211,7 +1215,7 @@ focus = {
     id = ROM_ind_16
     icon = GFX_ROM_ind_16
     x = 0
-    y = 6
+    y = 5
 
 	cost = 3
 
@@ -1221,6 +1225,7 @@ focus = {
 
 	prerequisite = { focus = ROM_ind_14 }
 	prerequisite = { focus = ROM_ind_13}
+	prerequisite = { focus = ROM_ind_10}
 
     ai_will_do = {
 			factor = 1
@@ -1254,8 +1259,8 @@ focus = {
 
     id = ROM_pol_1
     icon = GFX_ROM_pol_1
-    x = 30
-    y = 1
+    x = 24
+    y = 0
 
 	cost = 3
 
@@ -1444,7 +1449,7 @@ focus = {
 
 		id = ROM_pol_k_1
 		icon = GFX_ROM_pol_k_1
-		x = -6
+		x = -11
 		y = 1
 		relative_position_id = ROM_pol_5
 	
@@ -2793,7 +2798,7 @@ focus = {
 
 		id = ROM_pol_d_1
 		icon = GFX_ROM_noking
-		x = 6
+		x = 9
 		y = 1
 		relative_position_id = ROM_pol_5
 	
@@ -3066,9 +3071,1196 @@ focus = {
 
 	focus = {
 
+		id = ROM_ind_democracy_1
+		icon = GFX_ROM_ind_1
+		relative_position_id = ROM_pol_d_7
+		prerequisite = { focus = ROM_pol_d_7 }
+		x = 11
+		y = 1
+	
+		cost = 5
+	
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 2
+					category = industry
+				}
+			}
+	}
+	focus = {
+
+		id = ROM_rural_plan
+		icon = GFX_ROM_ind_1
+		relative_position_id = ROM_ind_democracy_1
+		prerequisite = { focus = ROM_ind_democracy_1 }
+		x = 0
+		y = 1
+	
+		cost = 5
+	
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = { 
+				add_dynamic_modifier = {
+					modifier = ROM_agriculture
+					scope = ROM
+				} 
+				add_to_variable = {
+					var = ROM_civ_speed
+					value = -0.01
+					tooltip = rom_update_dynamic_agriculture
+				}
+				add_to_variable = {
+					var = ROM_conscription
+					value = 0.02
+				}
+				force_update_dynamic_modifier = yes
+				every_owned_state = { 
+				limit = {
+					is_core_of = ROM
+						NOT = { state = 46 } #BUCAREST
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+	}
+	focus = {
+
+		id = ROM_invest_in_agriculture
+		icon = GFX_ROM_ind_1
+		relative_position_id = ROM_rural_plan
+		prerequisite = { focus = ROM_rural_plan }
+		x = -1
+		y = 1
+	
+		cost = 5
+	
+		ai_will_do = {
+				factor = 1
+			}
+	
+			available = {
+	
+			}
+	
+			bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+			completion_reward = {
+				add_to_variable = {
+					var = ROM_civ_speed
+					value = -0.01
+					tooltip = rom_update_dynamic_agriculture
+				}
+				add_to_variable = {
+					var = ROM_conscription
+					value = 0.02
+				}
+				
+				add_political_power = 150
+				add_stability = 0.15
+				force_update_dynamic_modifier = yes
+			}
+	}
+	focus = {
+		id = ROM_promote_agricultural_life
+		icon = GFX_ROM_ind_1
+		relative_position_id = ROM_rural_plan
+		prerequisite = { focus = ROM_rural_plan }
+		x = 1
+		y = 1
+	
+		cost = 5
+	
+		ai_will_do = {
+				factor = 1
+			}
+	
+		available = {
+	
+			}
+	
+		bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+		completion_reward = {
+			add_to_variable = {
+				var = ROM_civ_speed
+				value = -0.01
+				tooltip = rom_update_dynamic_agriculture
+			}
+			add_to_variable = {
+				var = ROM_conscription
+				value = 0.02
+			}
+			force_update_dynamic_modifier = yes
+			add_ideas = ROM_farmers_utiopia
+			}
+	}
+	focus = {
+		id = ROM_mechanize_agricultural_equipment
+		icon = GFX_ROM_ind_1
+		relative_position_id = ROM_promote_agricultural_life
+		prerequisite = { focus = ROM_promote_agricultural_life }
+		prerequisite = { focus = ROM_invest_in_agriculture }
+		x = 0
+		y = 1
+	
+		cost = 5
+	
+		ai_will_do = {
+				factor = 1
+			}
+	
+		available = {
+	
+			}
+	
+		bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+		completion_reward = {
+			add_to_variable = {
+				var = ROM_civ_speed
+				value = -0.01
+				tooltip = rom_update_dynamic_agriculture
+			}
+			add_to_variable = {
+				var = ROM_conscription
+				value = 0.02
+			}
+			force_update_dynamic_modifier = yes
+			add_tech_bonus = {
+				bonus = 4
+				uses = 1
+				category = industry
+			}
+			}
+	}
+	focus = {
+		id = ROM_transilvanian_industry
+		icon = GFX_ROM_ind_1
+		relative_position_id = ROM_mechanize_agricultural_equipment
+		prerequisite = { focus = ROM_mechanize_agricultural_equipment }
+		x = 0
+		y = 1
+	
+		cost = 5
+	
+		ai_will_do = {
+				factor = 1
+			}
+	
+		available = {
+			76 = {
+				is_controlled_by = ROM
+			}
+			84 = {
+				is_controlled_by = ROM
+			}
+			83 = {
+				is_controlled_by = ROM
+			}
+			998 = {
+				is_controlled_by = ROM
+			}
+			997 = {
+				is_controlled_by = ROM
+			}
+			82 = {
+				is_controlled_by = ROM
+			}  
+			}
+	
+		bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+		completion_reward = {
+			add_to_variable = {
+				var = ROM_civ_speed
+				value = -0.01
+				tooltip = rom_update_dynamic_agriculture
+			}
+			add_to_variable = {
+				var = ROM_conscription
+				value = 0.02
+			}
+			force_update_dynamic_modifier = yes
+			76 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			83 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = ROM_develop_the_new_lands
+		icon = GFX_ROM_ind_1
+		relative_position_id = ROM_transilvanian_industry
+		prerequisite = { focus = ROM_transilvanian_industry }
+		x = -1
+		y = 1
+	
+		cost = 5
+	
+		ai_will_do = {
+				factor = 1
+			}
+	
+		available = {
+			76 = {
+				is_controlled_by = ROM
+			}
+			84 = {
+				is_controlled_by = ROM
+			}
+			83 = {
+				is_controlled_by = ROM
+			}
+			998 = {
+				is_controlled_by = ROM
+			}
+			997 = {
+				is_controlled_by = ROM
+			}
+			82 = {
+				is_controlled_by = ROM
+			}  
+			}
+	
+		bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+		completion_reward = {
+			add_to_variable = {
+				var = ROM_civ_speed
+				value = -0.01
+				tooltip = rom_update_dynamic_agriculture
+			}
+			add_to_variable = {
+				var = ROM_conscription
+				value = 0.02
+			}
+			force_update_dynamic_modifier = yes
+			76 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			84 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			83 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			82 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			997 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			998 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			
+			}
+	}
+	focus = {
+		id = ROM_moldovan_industry
+		icon = GFX_ROM_ind_1
+		relative_position_id = ROM_mechanize_agricultural_equipment
+		prerequisite = { focus = ROM_mechanize_agricultural_equipment }
+		x = -2
+		y = 1
+	
+		cost = 5
+	
+		ai_will_do = {
+				factor = 1
+			}
+	
+		available = {
+			766 = {
+				is_controlled_by = ROM
+			} 
+			78 = {
+				is_controlled_by = ROM
+			} 
+			79 = {
+				is_controlled_by = ROM
+			}
+			995 = {
+				is_controlled_by = ROM
+			} 
+			80 = {
+				is_controlled_by = ROM
+			} 
+			}
+	
+		bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+		completion_reward = {
+			add_to_variable = {
+				var = ROM_civ_speed
+				value = -0.01
+				tooltip = rom_update_dynamic_agriculture
+			}
+			add_to_variable = {
+				var = ROM_conscription
+				value = 0.02
+			}
+			force_update_dynamic_modifier = yes
+			78 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			79 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			}
+	}
+	focus = {
+		id = ROM_buy_tiraspol
+		icon = GFX_ROM_ind_1
+		relative_position_id = ROM_moldovan_industry
+		prerequisite = { focus = ROM_moldovan_industry }
+		x = -1
+		y = 1
+	
+		cost = 5
+	
+		ai_will_do = {
+				factor = 1
+			}
+	
+		available = {
+	
+			}
+	
+		bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+		completion_reward = {
+				
+			}
+	}
+	focus = {
+		id = ROM_mutenian_industry
+		icon = GFX_ROM_ind_1
+		relative_position_id = ROM_mechanize_agricultural_equipment
+		prerequisite = { focus = ROM_mechanize_agricultural_equipment }
+		x = 2
+		y = 1
+	
+		cost = 5
+	
+		ai_will_do = {
+				factor = 1
+			}
+	
+		available = {
+			1044 = {
+				is_controlled_by = ROM
+			}
+			46 = {
+				is_controlled_by = ROM
+			}
+			}
+	
+		bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+		completion_reward = {
+			add_to_variable = {
+				var = ROM_civ_speed
+				value = -0.01
+				tooltip = rom_update_dynamic_agriculture
+			}
+			add_to_variable = {
+				var = ROM_conscription
+				value = 0.02
+			}
+			force_update_dynamic_modifier = yes
+			1044 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			46 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = ROM_invest_in_oltenia
+		icon = GFX_ROM_ind_1
+		relative_position_id = ROM_mutenian_industry
+		prerequisite = { focus = ROM_mutenian_industry }
+		x = -1
+		y = 1
+	
+		cost = 5
+	
+		ai_will_do = {
+				factor = 1
+			}
+	
+		available = {
+			81 = {
+				is_controlled_by = ROM
+			} 
+			}
+	
+		bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+		completion_reward = {
+			add_to_variable = {
+				var = ROM_civ_speed
+				value = -0.01
+				tooltip = rom_update_dynamic_agriculture
+			}
+			add_to_variable = {
+				var = ROM_conscription
+				value = 0.02
+			}
+			force_update_dynamic_modifier = yes
+			add_resource = {
+				type = oil
+				amount = 15
+				state = 81
+			}
+			}
+	}
+	focus = {
+		id = ROM_help_the_poor
+		icon = GFX_ROM_ind_1
+		relative_position_id = ROM_promote_agricultural_life
+		prerequisite = { focus = ROM_invest_in_agriculture }
+		x = -4
+		y = 1
+	
+		cost = 5
+	
+		ai_will_do = {
+				factor = 1
+			}
+	
+		available = {
+	
+			}
+	
+		bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+		completion_reward = {
+			add_to_variable = {
+				var = ROM_civ_speed
+				value = -0.01
+				tooltip = rom_update_dynamic_agriculture
+			}
+			add_to_variable = {
+				var = ROM_conscription
+				value = 0.02
+			}
+			force_update_dynamic_modifier = yes
+			add_timed_idea ={
+				idea = ROM_helping_the_poor
+				years = 1
+				}
+			}
+	}
+	focus = {
+		id = ROM_promote_small_business
+		icon = GFX_ROM_ind_1
+		relative_position_id = ROM_help_the_poor
+		prerequisite = { focus = ROM_help_the_poor }
+		x = 0
+		y = 1
+	
+		cost = 5
+	
+		ai_will_do = {
+				factor = 1
+			}
+	
+		available = {
+			NOT = {
+				has_idea = ROM_helping_the_poor
+			}
+			}
+	
+		bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+		completion_reward = {
+			add_to_variable = {
+				var = ROM_civ_speed
+				value = -0.01
+				tooltip = rom_update_dynamic_agriculture
+			}
+			add_to_variable = {
+				var = ROM_conscription
+				value = 0.02
+			}
+			random_owned_controlled_state = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				
+			}
+			add_ideas = ROM_small_business_booming
+			force_update_dynamic_modifier = yes 
+			}
+	}
+	focus = {
+		id = ROM_better_schools
+		icon = GFX_ROM_ind_1
+		relative_position_id = ROM_help_the_poor
+		prerequisite = { focus = ROM_help_the_poor }
+		x = -2
+		y = 1
+	
+		cost = 5
+	
+		ai_will_do = {
+				factor = 1
+			}
+	
+		available = {
+			NOT = {
+				has_idea = ROM_helping_the_poor
+			}
+		}
+	
+		bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+		completion_reward = {
+			add_to_variable = {
+				var = ROM_civ_speed
+				value = -0.01
+				tooltip = rom_update_dynamic_agriculture
+			}
+			add_to_variable = {
+				var = ROM_conscription
+				value = 0.02
+			}
+			force_update_dynamic_modifier = yes
+			add_research_slot = 1
+			add_ideas = ROM_improved_school_system
+			}
+	}
+	focus = {
+		id = ROM_the_men_of_his_people
+		icon = GFX_ROM_ind_1
+		relative_position_id = ROM_promote_agricultural_life
+		prerequisite = { focus = ROM_promote_agricultural_life }
+		x = 7
+		y = 1
+	
+		cost = 5
+	
+		ai_will_do = {
+				factor = 1
+			}
+	
+		available = {
+	
+			}
+	
+		bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+		completion_reward = {
+			add_to_variable = {
+				var = ROM_civ_speed
+				value = -0.01
+				tooltip = rom_update_dynamic_agriculture
+			}
+			add_to_variable = {
+				var = ROM_conscription
+				value = 0.02 
+			}
+			force_update_dynamic_modifier = yes
+			add_timed_idea ={
+				idea = ROM_helping_the_farmers
+				years = 1
+				}
+			}
+	}
+	focus = {
+		id = ROM_food_surplus
+		icon = GFX_ROM_ind_1
+		relative_position_id = ROM_the_men_of_his_people
+		prerequisite = { focus = ROM_the_men_of_his_people }
+		x = 3
+		y = 1
+	
+		cost = 5
+	
+		ai_will_do = {
+				factor = 1
+			}
+	
+		available = {
+	
+			}
+	
+		bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+		completion_reward = {
+			custom_effect_tooltip = food_surplus_needed
+			}
+	}
+	focus = {
+		id = ROM_focus_on_cash_crops
+		icon = GFX_ROM_ind_1
+		relative_position_id = ROM_the_men_of_his_people
+		prerequisite = { focus = ROM_the_men_of_his_people }
+		mutually_exclusive = { focus = ROM_focus_on_food_crops }
+		x = 1
+		y = 1
+	
+		cost = 5
+	
+		ai_will_do = {
+				factor = 1
+			}
+	
+		available = {
+	
+			}
+	
+		bypass = { 
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+		completion_reward = { 
+				add_ideas = ROM_exporting_food
+			}
+	}
+	focus = {
+		id = ROM_focus_on_food_crops
+		icon = GFX_ROM_ind_1
+		relative_position_id = ROM_the_men_of_his_people
+		prerequisite = { focus = ROM_the_men_of_his_people }
+		mutually_exclusive = { focus = ROM_focus_on_cash_crops }
+		x = -1
+		y = 1
+	
+		cost = 5
+	
+		ai_will_do = {
+				factor = 1
+			}
+	
+		available = {
+	
+			}
+	
+		bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+		completion_reward = {
+				add_ideas = ROM_keeping_food
+			}
+	}
+	focus = {
+		id = ROM_promote_turism
+		icon = GFX_ROM_ind_1
+		relative_position_id = ROM_focus_on_food_crops
+		prerequisite = { focus = ROM_focus_on_food_crops focus = ROM_focus_on_cash_crops }
+		x = 1
+		y = 1
+	
+		cost = 5
+	
+		ai_will_do = {
+				factor = 1
+			}
+	
+		available = {
+	
+			}
+	
+		bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+		completion_reward = {
+				add_ideas = ROM_turism
+			}
+	}
+	focus = {
+		id = ROM_mobilze_the_econoomy 
+		icon = GFX_ROM_ind_1
+		relative_position_id = ROM_focus_on_food_crops
+		prerequisite = { focus = ROM_focus_on_food_crops focus = ROM_focus_on_cash_crops }
+		x = 3
+		y = 1
+	
+		cost = 5
+	
+		ai_will_do = {
+				factor = 1
+			}
+	
+		available = {
+	
+			}
+	
+		bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+		completion_reward = {
+				add_ideas = war_economy
+				add_war_support = 0.2
+			}
+	}
+	focus = {
+		id = ROM_invest_in_bucarest
+		icon = GFX_ROM_ind_1
+		relative_position_id = ROM_connect_the_roads
+		prerequisite = { focus = ROM_connect_the_roads }
+		prerequisite = { focus = ROM_invest_in_oltenia }
+		x = -2
+		y = 1
+	
+		cost = 5
+	
+		ai_will_do = {
+				factor = 1
+			}
+	
+		available = {
+	
+			}
+	
+		bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+		completion_reward = {
+				46 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 2
+				}
+			}
+	}
+	focus = {
+		id = ROM_paris_of_the_east
+		icon = GFX_ROM_ind_1
+		relative_position_id = ROM_invest_in_bucarest
+		prerequisite = { focus = ROM_invest_in_bucarest }
+		x = 0
+		y = 1
+	
+		cost = 5
+	
+		ai_will_do = {
+				factor = 1
+			}
+	
+		available = {
+	
+			}
+	
+		bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+		completion_reward = {
+			46 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			add_ideas = ROM_paris_of_the_east
+			add_stability = 0.15
+			add_war_support = 0.2
+		}
+	}
+	focus = {
+		id = ROM_develop_the_ports
+		icon = GFX_ROM_ind_1
+		relative_position_id = ROM_connect_the_roads
+		prerequisite = { focus = ROM_connect_the_roads }
+		x = 1
+		y = 1 
+	
+		cost = 5
+	
+		ai_will_do = {
+				factor = 1
+			}
+	
+		available = {
+			766 = {
+				is_controlled_by = ROM
+			}
+			1044 = {
+				is_controlled_by = ROM
+			} 
+			}
+	
+		bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+		completion_reward = {
+			766 = {
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			1044 = {
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			if = {
+				limit = {
+					77 = {
+						is_controlled_by = ROM
+					}
+					
+				}
+				77 = {
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = ROM_connect_the_roads
+		icon = GFX_ROM_ind_1
+		relative_position_id = ROM_focus_on_food_crops
+		prerequisite = { focus = ROM_focus_on_food_crops focus = ROM_focus_on_cash_crops }
+		x = -1
+		y = 1
+	
+		cost = 5
+	
+		ai_will_do = {
+				factor = 1
+			}
+	
+		available = {
+	
+			}
+	
+		bypass = {
+	
+			}
+	
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+	
+			
+	
+		completion_reward = {
+			add_to_variable = {
+				var = ROM_civ_speed
+				value = -0.01
+				tooltip = rom_update_dynamic_agriculture
+			}
+			add_to_variable = {
+				var = ROM_conscription
+				value = 0.02
+			}
+			every_owned_state = { 
+				limit = {
+					is_core_of = ROM
+						NOT = { state = 46 } #BUCAREST
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			force_update_dynamic_modifier = yes
+			}
+	}
+	focus = {
+
 		id = ROM_pol_d_9
 		icon = GFX_ROM_influence_bul
-		x = 0
+		x = -1
 		y = 4
 		relative_position_id = ROM_pol_d_1
 	
@@ -3318,7 +4510,6 @@ focus = {
 
 		cost = 5
 
-		mutually_exclusive = { focus = ROM_pol_d_14 }
 
 		ai_will_do = {
 				factor = 1
@@ -3566,7 +4757,7 @@ focus = {
 					compare = greater_than_or_equals
 					tooltip = more90
 				}
-
+				
 			}
 	
 			bypass = {
@@ -3581,11 +4772,22 @@ focus = {
 	
 			completion_reward = {
 				custom_effect_tooltip = attack_civil_war_bul
+				custom_effect_tooltip = food_surplus_needed
 				hidden_effect = {
 				BUL = {
 					leave_faction = yes
 					set_politics = {
 						ruling_party = democratic
+					}
+					if = {
+						limit = {
+							NOT = {
+								ROM = {
+									has_completed_focus = ROM_food_surplus
+								}
+							}
+						}
+						add_ideas = ROM_lack_of_food
 					}
 					start_civil_war = {
 						ideology = neutrality
@@ -3641,44 +4843,9 @@ focus = {
 
 	focus = {
 
-		id = ROM_pol_d_22
-		icon = GFX_ROM_food
-		x = 0
-		y = 11
-		relative_position_id = ROM_pol_d_1
-	
-		prerequisite = { focus = ROM_pol_d_21 }
-
-		cost = 5
-
-		ai_will_do = {
-				factor = 1
-			}
-	
-			available = {
-	
-			}
-	
-			bypass = {
-	
-			}
-	
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
-	
-			
-	
-			completion_reward = {
-				add_ideas = ROM_import_food
-			}
-	}
-
-	focus = {
-
 		id = ROM_pol_d_23
 		icon = GFX_ROM_romanian_culture
-		x = 2
+		x = 1
 		y = 11
 		relative_position_id = ROM_pol_d_1
 	
@@ -3720,7 +4887,6 @@ focus = {
 		y = 12
 		relative_position_id = ROM_pol_d_1
 	
-		prerequisite = { focus = ROM_pol_d_22 }
 		prerequisite = { focus = ROM_pol_d_23 }
 
 		cost = 10
