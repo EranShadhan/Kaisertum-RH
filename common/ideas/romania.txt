@@ -55,9 +55,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_attack_factor = 0.1
-				equipment_capture_for_controller = 0.25
-				recruitable_population = 0.20
+				army_org_factor = 0.05
+				army_org_regain = 0.05	
+				recruitable_population = 0.1
 			}
 		}
 
@@ -94,8 +94,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_buildings_factor = 0.15
-				consumer_goods_factor = -0.25
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = -0.05
 			}
 		}
 
@@ -113,7 +113,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.25
+				consumer_goods_factor = -0.10
 			}
 		}
 
