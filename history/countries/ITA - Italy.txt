@@ -12,6 +12,7 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
     german_customs_union_member
+	vittorio_emanuele
 }
 
 # RESISTANCE / COMPLIANCE
@@ -172,6 +173,8 @@ if = {
 	add_ideas = MTG_naval_treaty_cheating
 }
 
+give_guarantee = ALB
+
 set_convoys = 200
 
 set_politics = {
@@ -187,7 +190,8 @@ set_popularities = {
 	neutrality = 73
 }
 
-recruit_character = ITA_benito_mussolini
+recruit_character = ITA_lanza_scalea
+recruit_character = ITA_italo_balbo
 recruit_character = ITA_grand_council
 recruit_character = ITA_amadeo_bordiga
 recruit_character = ITA_vittorio_emanuele_iii
@@ -200,7 +204,7 @@ recruit_character = ITA_ugo_cavallero
 recruit_character = ITA_giovanni_messe
 recruit_character = ITA_sebastiano_visconti_prasca
 recruit_character = ITA_ubaldo_soddu
-recruit_character = ITA_italo_balbo
+recruit_character = ITA_benito_mussolini
 
 recruit_character = ITA_ettore_bastico
 recruit_character = ITA_italo_gariboldi

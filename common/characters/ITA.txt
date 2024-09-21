@@ -161,6 +161,22 @@ characters = {
 		}
 	}
 
+	ITA_lanza_scalea = {
+		name = ITA_lanza_scalea
+		portraits = {
+			civilian = {
+				large = GFX_portrait_italy_lanza_scalea
+				small = GFX_portrait_italy_lanza_scalea_small #just in case
+			}
+		}
+
+		country_leader = {
+			ideology = oligarchism
+			traits = { industrial_monopoly }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
 	ITA_vittorio_emanuele_iii = {
 		name = ITA_vittorio_emanuele_iii
 		portraits = {
