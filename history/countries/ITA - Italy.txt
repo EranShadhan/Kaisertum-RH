@@ -172,8 +172,6 @@ if = {
 	add_ideas = MTG_naval_treaty_cheating
 }
 
-give_guarantee = ALB
-
 set_convoys = 200
 
 set_politics = {
