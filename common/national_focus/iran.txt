@@ -796,7 +796,7 @@ focus_tree = {
 
 	focus = {
 		id = PER_conquer_tur_kur
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_focus_generic_befriend_kurdistan
 		prerequisite = { focus = PER_our_place_in_the_world }
 		will_lead_to_war_with = TUR
 		x = 0
@@ -837,7 +837,7 @@ focus_tree = {
 
 	focus = {
 		id = PER_conquer_sau
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_goal_GEN_attack_arabia
 		prerequisite = { focus = PER_our_place_in_the_world }
 		will_lead_to_war_with = SAU
 		x = 2
