@@ -1679,4 +1679,44 @@ spriteTypes = {
 			}
 			legacy_lazy_load = no
 	}
+	SpriteType = {
+		name = "GFX_idea_ROM_worker_utiopia"
+		texturefile = "gfx/interface/ideas/ROM/ROM_worker_utiopia.png"			
+	}
+	SpriteType = {
+		name = "GFX_idea_ROM_turism"
+		texturefile = "gfx/interface/ideas/ROM/ROM_turism.png"			
+	}
+	SpriteType = {
+		name = "GFX_idea_ROM_help_the_poor"
+		texturefile = "gfx/interface/ideas/ROM/ROM_help_the_poor.png"			
+	}
+	SpriteType = {
+		name = "GFX_idea_ROM_help_the_farmers"
+		texturefile = "gfx/interface/ideas/ROM/ROM_help_the_farmers.png"			
+	}
+	SpriteType = {
+		name = "GFX_idea_ROM_export_food"
+		texturefile = "gfx/interface/ideas/ROM/ROM_export_food.png"			
+	}
+	SpriteType = {
+		name = "GFX_idea_ROM_small_business_booming"
+		texturefile = "gfx/interface/ideas/ROM/ROM_small_business_booming.png"			
+	}
+	SpriteType = {
+		name = "GFX_idea_ROM_improved_school_system"
+		texturefile = "gfx/interface/ideas/ROM/ROM_improved_school_system.png"			
+	}
+	SpriteType = {
+		name = "GFX_idea_ROM_eastern_paris"
+		texturefile = "gfx/interface/ideas/ROM/ROM_eastern_paris.png"			
+	}
+	SpriteType = {
+		name = "GFX_idea_ROM_keeping_the_food"
+		texturefile = "gfx/interface/ideas/ROM/ROM_keeping_the_food.png"			
+	}		
+	SpriteType = {
+		name = "GFX_idea_ROM_agricultural_economy"
+		texturefile = "gfx/interface/ideas/ROM/ROM_agricultural_economy.png"			
+	}	
 }

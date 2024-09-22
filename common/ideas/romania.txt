@@ -440,7 +440,7 @@ ideas = {
 			}
 		}
 		ROM_helping_the_poor = {
-			picture = generic_social_reforms
+			picture = ROM_help_the_poor
 			
 			allowed = { 
 				always = no
@@ -459,7 +459,7 @@ ideas = {
 			}
 		}
 		ROM_helping_the_farmers = {
-			picture = generic_social_reforms
+			picture = ROM_help_the_farmers
 			
 			allowed = { 
 				always = no
@@ -480,7 +480,7 @@ ideas = {
 			}
 		}
 		ROM_improved_school_system = {
-			picture = generic_social_reforms
+			picture = ROM_improved_school_system
 			
 			allowed = { 
 				always = no
@@ -497,7 +497,7 @@ ideas = {
 			}
 		}
 		ROM_small_business_booming = {
-			picture = generic_social_reforms
+			picture = ROM_small_business_booming
 			
 			allowed = { 
 				always = no
@@ -518,7 +518,7 @@ ideas = {
 			}
 		}
 		ROM_farmers_utiopia = {
-			picture = generic_social_reforms
+			picture = ROM_worker_utiopia
 			
 			allowed = { 
 				always = no
@@ -537,7 +537,7 @@ ideas = {
 			}
 		}
 		ROM_exporting_food = {
-			picture = generic_social_reforms
+			picture = ROM_export_food
 			
 			allowed = { 
 				always = no
@@ -555,7 +555,7 @@ ideas = {
 			}
 		}
 		ROM_keeping_food = {
-			picture = generic_social_reforms
+			picture = ROM_keeping_the_food
 			
 			allowed = { 
 				always = no
@@ -575,7 +575,7 @@ ideas = {
 			}
 		}
 		ROM_paris_of_the_east = {
-			picture = generic_social_reforms
+			picture = ROM_eastern_paris
 			
 			allowed = { 
 				always = no
@@ -584,7 +584,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-
+ 
 			removal_cost = -1
 			
 			modifier = {
@@ -596,7 +596,7 @@ ideas = {
 			}
 		}
 		ROM_turism = {
-			picture = generic_social_reforms
+			picture = ROM_turism
 			
 			allowed = { 
 				always = no
@@ -613,7 +613,7 @@ ideas = {
 			}
 		}
 		ROM_lack_of_food = {
-			picture = generic_social_reforms
+			picture = ROM_keeping_the_food
 			
 			allowed = { 
 				always = no

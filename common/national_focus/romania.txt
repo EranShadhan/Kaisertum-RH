@@ -879,7 +879,7 @@ focus = {
 				}
 				add_extra_state_shared_building_slots = 1
 			}
-			add_stability = 3
+			add_stability = 0.3
 		}
 }
 
@@ -3943,6 +3943,16 @@ focus = {
 			
 	
 		completion_reward = { 
+			add_to_variable = {
+				var = ROM_civ_speed
+				value = -0.01
+				tooltip = rom_update_dynamic_agriculture
+			}
+			add_to_variable = {
+				var = ROM_conscription
+				value = 0.02
+			}
+			force_update_dynamic_modifier = yes
 				add_ideas = ROM_exporting_food
 			}
 	}
@@ -3976,6 +3986,16 @@ focus = {
 			
 	
 		completion_reward = {
+			add_to_variable = {
+				var = ROM_civ_speed
+				value = -0.01
+				tooltip = rom_update_dynamic_agriculture
+			}
+			add_to_variable = {
+				var = ROM_conscription
+				value = 0.02
+			}
+			force_update_dynamic_modifier = yes
 				add_ideas = ROM_keeping_food
 			}
 	}
