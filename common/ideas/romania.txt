@@ -42,7 +42,7 @@ ideas = {
 		}
 
 		ROM_war_songs = {
-			picture = generic_constitutional_guarantees
+			picture = ROM_war_songs
 			
 			allowed = {
 				always = no
@@ -81,7 +81,7 @@ ideas = {
 		}
 
 		ROM_sell_gold = {
-			picture = generic_constitutional_guarantees
+			picture = ROM_sell_gold
 			
 			allowed = {
 				always = no
@@ -100,7 +100,7 @@ ideas = {
 		}
 
 		ROM_sell_gold_2 = {
-			picture = generic_constitutional_guarantees
+			picture = ROM_incoming_gold
 			
 			allowed = {
 				always = no
@@ -118,7 +118,7 @@ ideas = {
 		}
 
 		ROM_total_equality = {
-			picture = generic_constitutional_guarantees
+			picture = ROM_rights_for_all
 			
 			allowed = {
 				always = no
@@ -138,7 +138,7 @@ ideas = {
 		}
 
 		ROM_resistant_culture_hun = {
-			picture = generic_constitutional_guarantees
+			picture = ROM_hungarian_culture_res
 			
 			allowed = {
 				always = no
@@ -157,7 +157,7 @@ ideas = {
 		}
 
 		ROM_resistant_culture = {
-			picture = generic_constitutional_guarantees
+			picture = ROM_people_angry
 			
 			allowed = {
 				always = no
@@ -341,7 +341,7 @@ ideas = {
 		}
 
 		total_equality = {
-			picture = generic_social_reforms
+			picture = idfk
 			
 			allowed = { 
 				always = no

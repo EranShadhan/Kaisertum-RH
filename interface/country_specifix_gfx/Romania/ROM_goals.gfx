@@ -1719,4 +1719,32 @@ spriteTypes = {
 		name = "GFX_idea_ROM_agricultural_economy"
 		texturefile = "gfx/interface/ideas/ROM/ROM_agricultural_economy.png"			
 	}	
+
+
+
+
+	SpriteType = {
+		name = "GFX_idea_ROM_rights_for_all"
+		texturefile = "gfx/interface/ideas/ROM/ROM_rights_for_all.png"			
+	}	
+	SpriteType = {
+		name = "GFX_idea_ROM_hungarian_culture_res"
+		texturefile = "gfx/interface/ideas/ROM/ROM_hungarian_culture_res.png"			
+	}	
+	SpriteType = {
+		name = "GFX_idea_ROM_sell_gold"
+		texturefile = "gfx/interface/ideas/ROM/ROM_sell_gold.png"			
+	}	
+	SpriteType = {
+		name = "GFX_idea_ROM_incoming_gold"
+		texturefile = "gfx/interface/ideas/ROM/ROM_incoming_gold.png"			
+	}	
+	SpriteType = {
+		name = "GFX_idea_ROM_war_songs"
+		texturefile = "gfx/interface/ideas/ROM/ROM_war_songs.png"			
+	}	
+	SpriteType = {
+		name = "GFX_idea_ROM_people_angry"
+		texturefile = "gfx/interface/ideas/ROM/ROM_people_angry.png"			
+	}	
 }
