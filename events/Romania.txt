@@ -406,4 +406,70 @@ country_event = {
 	
 }
 
+country_event = { #tiraspol_buying
+	id = kt_romania.14
+	title = kt_romania.14.t
+	desc = kt_romania.14.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kt_romania.14.a
+		ROM = {
+			transfer_state = 834
+			834 = { add_claim_by = ROM }
+			country_event = kt_romania.16
+		}
+		ai_will_do = {
+			base = 50
+		}
+	}
+	option = {
+		name = kt_romania.14.b
+		834 = { add_claim_by = ROM }
+		ROM = {
+			country_event = kt_romania.15
+		}
+		ai_will_do = {
+			base = 50
+		}
+	}
+}
 
+country_event = { #ukraine_refused
+	id = kt_romania.15
+	title = kt_romania.15.t
+	desc = kt_romania.15.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+
+	option = {
+		name = kt_romania.15.b
+		834 = { add_claim_by = ROM }
+		ai_will_do = {
+			base = 100
+		}
+	}
+}
+
+country_event = { #ukraine accepted
+	id = kt_romania.16
+	title = kt_romania.16.t
+	desc = kt_romania.16.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kt_romania.16.a
+		ROM = {
+			transfer_state = 834
+			834 = { add_claim_by = ROM }
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+}
