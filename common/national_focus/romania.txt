@@ -757,10 +757,10 @@ focus = {
 focus = {
 
     id = ROM_ind_1
-    icon = GFX_ROM_ind_1
+    icon = GFX_ROM_industrialplant
 	relative_position_id = ROM_pol_k_1
 	prerequisite = { focus = ROM_pol_k_5 }
-    x = -9
+    x = -10
     y = 3
 
 	cost = 5
@@ -870,7 +870,8 @@ focus = {
 		
 
 		completion_reward = {
-			add_ideas = ind_8
+			add_ideas = ind_3
+			
 			random_owned_controlled_state = {
 				add_building_construction = {
 					type = industrial_complex
@@ -879,14 +880,14 @@ focus = {
 				}
 				add_extra_state_shared_building_slots = 1
 			}
-			add_stability = 0.3
+			add_stability = 0.03
 		}
 }
 
 focus = {
 
     id = ROM_ind_4
-    icon = GFX_ROM_ind_4
+    icon = GFX_rom_urban
     x = 0
     y = 2
 
@@ -915,7 +916,8 @@ focus = {
 		
 
 		completion_reward = {
-			add_ideas = ind_3
+			
+			add_ideas = ind_4
 			random_owned_controlled_state = {
 				add_building_construction = {
 					type = industrial_complex
@@ -941,7 +943,7 @@ focus = {
 focus = {
 
     id = ROM_ind_6
-    icon = GFX_ROM_ind_6
+    icon = GFX_ROM_farmeremployment
     x = -2
     y = 2
 
@@ -971,17 +973,22 @@ focus = {
 
 		completion_reward = {
 			add_manpower = -10000
-			add_timed_idea ={
-				idea = ind_10
-				days = 730
+			add_timed_idea = {
+				idea = ind_5
+				days = 120
 			}
+			add_timed_idea = {
+				idea = ind_6
+				days = 120
+			}
+			
 		}
 }
 
 focus = {
 
     id = ROM_ind_7
-    icon = GFX_ROM_ind_7
+    icon = GFX_ROM_hardworker
     x = 2
     y = 2
 
@@ -1011,7 +1018,7 @@ focus = {
 
 		completion_reward = {
 			add_stability = 0.05
-			add_ideas = ind_4
+			
 			add_research_slot = 1
 			random_owned_controlled_state = {
 				add_building_construction = {
@@ -1021,6 +1028,7 @@ focus = {
 				}
 				add_extra_state_shared_building_slots = 1
 			}
+			add_ideas = ind_7
 		}
 }
 
@@ -1029,7 +1037,7 @@ focus = {
 focus = {
 
     id = ROM_ind_9
-    icon = GFX_ROM_ind_9
+    icon = GFX_ROM_goofarm
     x = -3
     y = 3
 
@@ -1066,7 +1074,7 @@ focus = {
 focus = {
 
     id = ROM_ind_10
-    icon = GFX_ROM_ind_10
+    icon = GFX_ROM_salarie
     x = 3
     y = 3
 
@@ -1096,15 +1104,11 @@ focus = {
 
 		completion_reward = {
 			add_stability = 0.03
-
-			add_timed_idea = {
-				idea = ind_5
-				days = 120
+			add_timed_idea ={
+				idea = ind_10
+				days = 730
 			}
-			add_timed_idea = {
-				idea = ind_6
-				days = 120
-			}
+			
 		}
 }
 
@@ -1115,7 +1119,7 @@ focus = {
 focus = {
 
     id = ROM_ind_13
-    icon = GFX_ROM_ind_13
+    icon = GFX_ROM_well-fed
     x = -3
     y = 4
 
@@ -1155,7 +1159,7 @@ focus = {
 focus = {
 
     id = ROM_ind_14
-    icon = GFX_ROM_ind_14
+    icon = GFX_ROM_rich_people
     x = 1
     y = 3
 
@@ -1202,8 +1206,8 @@ focus = {
 				}
 				add_extra_state_shared_building_slots = 1
 			}
-
-			add_ideas = ind_7
+			add_ideas = ind_8
+			
 
 		}
 }
@@ -1213,7 +1217,7 @@ focus = {
 focus = {
 
     id = ROM_ind_16
-    icon = GFX_ROM_ind_16
+    icon = GFX_ROM_prosperity
     x = 0
     y = 5
 
