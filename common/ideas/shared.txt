@@ -1,26 +1,5 @@
 ideas = {
 	country = {
-		german_customs_union_member = {
-
-			picture = tradeuniongermany
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				consumer_goods_factor = -0.05
-				production_factory_efficiency_gain_factor = 0.2
-				industrial_capacity_factory = 0.1
-				local_resources = 0.2
-			}
-		}
 
 		Democracy_increase = {
 
@@ -158,6 +137,29 @@ ideas = {
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.1
 				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+	}
+	hidden_ideas = {
+		german_customs_union_member = {
+
+			picture = tradeuniongermany
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.2
+				industrial_capacity_factory = 0.1
+				local_resources = 0.2
 			}
 		}
 	}

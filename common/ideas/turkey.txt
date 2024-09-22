@@ -1214,6 +1214,21 @@ ideas = {
 				send_volunteers_tension = -0.5
 			}
 		}
+		TUR_natsoc_societies = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				democratic_drift = -0.1
+				fascism_drift = 0.1
+				communism_drift = 0.1
+			}
+		}
 		
 	}
 }
