@@ -1,0 +1,10 @@
+spriteTypes = {
+
+	SpriteType = {
+	name = "GFX_our_kingdom"
+	texturefile = "gfx/interface/goals/UKR/GFX_our_kingdom.png"			
+	}
+
+
+
+}
