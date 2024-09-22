@@ -82,6 +82,14 @@ YUG_TITO = {
 	color = rgb { 128 0 0 }
 	color_ui = rgb { 128 0 0 }
 }
+TUR_natsoc = { 
+	color = rgb { 53 54 53 }
+	color_ui = rgb { 53 54 53 }
+}
+TUR_snfts = { 
+	color = rgb { 15 1 1 }
+	color_ui = rgb { 15 1 1 }
+}
 
 
 

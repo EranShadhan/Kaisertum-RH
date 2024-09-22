@@ -21,7 +21,7 @@ focus_tree = {
 focus = {
     id = TUR_finish_reconstruction
     icon = GFX_goal_generic_construct_infrastructure
-    x = 30
+    x = 40
     y = 0
 	relative_position_id = TUR_start_of_a_new_decade
     cost = 5
@@ -1394,10 +1394,10 @@ focus = {
 	focus = {
 		id = TUR_start_military_reforms
 		icon = GFX_TUR_start_military_reforms
-		x = 24
-		y = 0
-		relative_position_id = TUR_finish_reconstruction
+		x = 40
+		y = 10
 
+		relative_position_id = TUR_start_of_a_new_decade
 		cost = 6
 
 		ai_will_do = {
@@ -2104,7 +2104,7 @@ focus = {
 	focus = {
 		id = TUR_start_of_a_new_decade
 		cost = 5
-		x = 20
+		x = 27
 		y = 0
 		icon = GFX_TUR_start_of_a_new_decade
 
@@ -3433,7 +3433,7 @@ focus = {
 	focus = {
 		id = TUR_appeal_to_italy
 		cost = 5
-		x = 0
+		x = -1
 		y = 1
 		icon = GFX_TUR_appeal_to_italy
 
@@ -3459,12 +3459,12 @@ focus = {
 	focus = {
 		id = TUR_dodecanese_for_industry
 		cost = 5
-		x = 0
-		y = 1
+		x = 2
+		y = 0
 		icon = GFX_TUR_dodecanese_for_industry
 
 		prerequisite = {
-			focus = TUR_appeal_to_italy
+			focus = TUR_promote_a_europeanized_government
 		}
 		available = {
 		}
@@ -3482,12 +3482,15 @@ focus = {
 	focus = {
 		id = TUR_middle_east_situation
 		cost = 5
-		x = 0
+		x = -1
 		y = 1
 		icon = GFX_TUR_middle_east_situation
 
 		prerequisite = {
 			focus = TUR_dodecanese_for_industry
+		}
+		prerequisite = {
+			focus = TUR_appeal_to_italy
 		}
 		available = {
 		}
@@ -3499,7 +3502,7 @@ focus = {
 	focus = {
 		id = TUR_take_advantage_of_arabian_minorities
 		cost = 5
-		x = -2
+		x = 0
 		y = 1
 		icon = GFX_TUR_arabian_minorities
 
@@ -3592,6 +3595,49 @@ focus = {
 		}
 	}
 	focus = {
+		id = TUR_the_choice
+		cost = 5
+		x = 0
+		y = 1
+		icon = GFX_TUR_syrian_revolution
+
+		prerequisite = {
+			focus = TUR_kickstart_the_syrian_revolution
+		}
+		available = {
+			OR = {
+			has_global_flag = syria_wins
+			has_global_flag = syria_loses
+			}
+		}
+		relative_position_id = TUR_kickstart_the_syrian_revolution
+		completion_reward = {
+			country_event = {
+					id = KT_turkey_events.14
+					hours = 14
+					random_hours = 6
+				}
+		}
+	}
+	focus = {
+		id = TUR_moderatism
+		cost = 5
+		x = 4
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite = {
+			focus = TUR_the_choice
+		}
+		available = {
+			has_country_flag = TUR_moderatism_flag
+		}
+		relative_position_id = TUR_the_choice
+		completion_reward = {
+			
+		}
+	}
+	focus = {
 		id = TUR_place_a_puppet_sultan
 		cost = 5
 		x = 0
@@ -3599,13 +3645,13 @@ focus = {
 		icon = GFX_TUR_puppet_sultan
 
 		prerequisite = {
-			focus = TUR_kickstart_the_syrian_revolution
+			focus = TUR_moderatism
 		}
 
 		available = {
 			has_global_flag = syria_wins
 		}
-		relative_position_id = TUR_kickstart_the_syrian_revolution
+		relative_position_id = TUR_moderatism
 		completion_reward = {
 			# SYRIAN LEADER IS NOW AHMED IV's SON
 			TUR = {
@@ -3628,7 +3674,7 @@ focus = {
 	focus = {
 		id = TUR_monopolize_syrian_oil
 		cost = 5
-		x = -2
+		x = 2
 		y = 1
 		icon = GFX_TUR_monopolize_syrian_oil
 
@@ -3652,11 +3698,11 @@ focus = {
 		icon = GFX_TUR_promote_a_turkish_cyprus
 
 		prerequisite = {
-			focus = TUR_middle_east_situation
+			focus = TUR_moderatism
 		}
 		available = {
 		}
-		relative_position_id = TUR_middle_east_situation
+		relative_position_id = TUR_moderatism
 		completion_reward = {
 			986 = {
 				add_core_of = NCY
@@ -3759,16 +3805,16 @@ focus = {
 	focus = {
 		id = TUR_the_looming_war
 		cost = 5
-		x = 0
-		y = 3
+		x = -2
+		y = 1
 		icon = GFX_TUR_the_looming_war
 
 		prerequisite = {
-			focus = TUR_middle_east_situation
+			focus = TUR_moderatism
 		}
 		available = {
 		}
-		relative_position_id = TUR_middle_east_situation
+		relative_position_id = TUR_moderatism
 		completion_reward = {
 			add_political_power = 50
 		}
@@ -3820,7 +3866,7 @@ focus = {
 	focus = {
 		id = TUR_the_sultans_grip_remains_firm
 		cost = 5
-		x = 13
+		x = 20
 		y = 1
 		icon = GFX_TUR_sultans_vision
 
@@ -4715,6 +4761,128 @@ focus = {
 				add_core_of = TUR
 			}
 
+		}
+	}
+
+	# NATSOC PATH
+
+	focus = {
+		id = TUR_the_syrian_way
+		cost = 5
+		x = -4
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite = {
+			focus = TUR_the_choice
+		}
+		available = {
+			has_country_flag = TUR_syrian_way
+		}
+		relative_position_id = TUR_the_choice
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUR_national_socialist_societies
+		cost = 5
+		x = -1
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite = {
+			focus = TUR_the_syrian_way
+		}
+		available = {
+		}
+		relative_position_id = TUR_the_syrian_way
+		completion_reward = {
+			add_ideas = TUR_natsoc_societies
+		}
+	}
+	focus = {
+		id = TUR_national_evolution
+		cost = 5
+		x = 1
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite = {
+			focus = TUR_the_syrian_way
+		}
+		available = {
+		}
+		relative_position_id = TUR_the_syrian_way
+		completion_reward = {
+			add_political_power = 20
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.03
+			}
+		}
+	}
+	focus = {
+		id = TUR_invite_antoun
+		cost = 5
+		x = -1
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite = {
+			focus = TUR_national_socialist_societies
+		}
+		prerequisite = {
+			focus = TUR_national_evolution
+		}
+		available = {
+		}
+		relative_position_id = TUR_national_evolution
+		completion_reward = {
+			news_event = {
+				id = kaisertum_news.21
+				hours = 12
+				random_hours = 6
+			}
+		}
+	}
+	focus = {
+		id = TUR_oppressors_must_fall
+		cost = 5
+		x = 0
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite = {
+			focus = TUR_invite_antoun
+		}
+		available = {
+		}
+		relative_position_id = TUR_invite_antoun
+		completion_reward = {
+			news_event = {
+				# IMAGINE A CIVIL WAR TRIGGERING
+			}
+		}
+	}
+	focus = {
+		id = TUR_commitment_to_the_state
+		cost = 5
+		x = -2
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite = {
+			focus = TUR_oppressors_must_fall
+		}
+		available = {
+		}
+		relative_position_id = TUR_oppressors_must_fall
+		completion_reward = {
+			add_timed_idea = {
+				idea = TUR_commitment_idea
+				days = 60
+			}
 		}
 	}
 }

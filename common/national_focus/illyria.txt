@@ -2363,8 +2363,8 @@ focus_tree = {
 	focus = {
 		id = YUG_strike_slovenia
 		icon = GFX_
-		relative_position_id = YUG_border_clashes
-		prerequisite = { focus = YUG_border_clashes }
+		relative_position_id = YUG_the_tricolor_is_down
+		prerequisite = { focus = YUG_the_tricolor_is_down }
 		available = {
 			852 = {
 				owner  = {
@@ -2373,72 +2373,8 @@ focus_tree = {
 			}	
 		}
 			
-		x = 4
+		x = 2
 		y = 2
-
-		cost = 0
-		
-			ai_will_do = {
-			
-				base = 0
-			
-			}
-			
-		available_if_capitulated = yes
-		
-		search_filters = {  
-				
-				
-				
-			}
-			
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = YUG_claim_corinthia
-		icon = GFX_
-		relative_position_id = YUG_strike_slovenia
-		prerequisite = { focus = YUG_strike_slovenia }
-		available = {
-				
-		}
-			
-		x = 1
-		y = 1
-
-		cost = 0
-		
-			ai_will_do = {
-			
-				base = 0
-			
-			}
-			
-		available_if_capitulated = yes
-		
-		search_filters = {  
-				
-				
-				
-			}
-			
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = YUG_the_peoples_pact
-		icon = GFX_
-		relative_position_id = YUG_strike_slovenia
-		prerequisite = { focus = YUG_strike_slovenia }
-		available = {
-				
-		}
-			
-		x = -1
-		y = 1
 
 		cost = 0
 		
@@ -2463,8 +2399,8 @@ focus_tree = {
 	focus = {
 		id = YUG_border_clashes
 		icon = GFX_
-		relative_position_id = YUG_solidify_our_ownership
-		prerequisite = { focus = YUG_solidify_our_ownership }
+		relative_position_id = YUG_the_tricolor_is_down
+		prerequisite = { focus = YUG_the_tricolor_is_down }
 		available = {
 			852 = {
 				owner  = {
@@ -2474,7 +2410,7 @@ focus_tree = {
 		}
 			
 		x = -2
-		y = 1
+		y = 2
 
 		cost = 0
 		
@@ -2583,167 +2519,6 @@ focus_tree = {
 		}
 			
 		x = -1
-		y = 1
-
-		cost = 0
-		
-			ai_will_do = {
-			
-				base = 0
-			
-			}
-			
-		available_if_capitulated = yes
-		
-		search_filters = {  
-				
-				
-				
-			}
-			
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = YUG_claim_greater_yugoslavia
-		icon = GFX_
-		relative_position_id = YUG_wall_enemy_greek
-		prerequisite = { focus = YUG_wall_enemy_greek }
-		available = {
-				
-		}
-			
-		x = 0
-		y = 1
-
-		cost = 0
-		
-			ai_will_do = {
-			
-				base = 0
-			
-			}
-			
-		available_if_capitulated = yes
-		
-		search_filters = {  
-				
-				
-				
-			}
-			
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = YUG_war_greece
-		icon = GFX_
-		relative_position_id = YUG_claim_greater_yugoslavia
-		prerequisite = { focus = YUG_claim_greater_yugoslavia }
-		prerequisite = { focus = YUG_prepare_the_airforce }
-		available = {
-				
-		}
-			
-		x = 1
-		y = 1
-
-		cost = 0
-		
-			ai_will_do = {
-			
-				base = 0
-			
-			}
-			
-		available_if_capitulated = yes
-		
-		search_filters = {  
-				
-				
-				
-			}
-			
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = YUG_focus_on_production
-		icon = GFX_
-		relative_position_id = YUG_raid_bulgarian_armories
-		prerequisite = { focus = YUG_raid_bulgarian_armories }
-		available = {
-			
-		}
-			
-		x = -3
-		y = 1
-
-		cost = 0
-		
-			ai_will_do = {
-			
-				base = 0
-			
-			}
-			
-		available_if_capitulated = yes
-		
-		search_filters = {  
-				
-				
-				
-			}
-			
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = YUG_prepare_the_airforce
-		icon = GFX_
-		relative_position_id = YUG_raid_bulgarian_armories
-		prerequisite = { focus = YUG_raid_bulgarian_armories }
-		available = {
-			
-		}
-			
-		x = 1
-		y = 1
-
-		cost = 0
-		
-			ai_will_do = {
-			
-				base = 0
-			
-			}
-			
-		available_if_capitulated = yes
-		
-		search_filters = {  
-				
-				
-				
-			}
-			
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = YUG_promise_turkish_lands
-		icon = GFX_
-		relative_position_id = YUG_focus_on_production
-		prerequisite = { focus = YUG_focus_on_production }
-		available = {
-			
-		}
-			
-		x = 0
 		y = 1
 
 		cost = 0

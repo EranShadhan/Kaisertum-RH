@@ -372,3 +372,29 @@ country_event = {
 		set_country_flag = TUR_rostov_agreement_fails
 	}
 }
+
+country_event = { # THE CHOICE
+	id = KT_turkey_events.14
+	title = KT_turkey_events.14.t
+	desc = KT_turkey_events.14.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			}
+		}
+	
+	
+	option = {
+		name = KT_turkey_events.13.a
+		complete_national_focus = TUR_moderatism
+		set_country_flag = TUR_moderatism_flag
+	}
+	option = {
+		name = KT_turkey_events.13.b
+		complete_national_focus = TUR_the_syrian_way
+		set_country_flag = TUR_syrian_way
+	}
+}
