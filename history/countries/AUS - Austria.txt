@@ -32,6 +32,8 @@ set_technology = {
 }
 add_ideas = {
 	german_customs_union_member
+		GER_aid_to_austria 
+	
 }
 recruit_character = AUS_otto_von_habsburg
 recruit_character = AUS_kurt_schuschnigg

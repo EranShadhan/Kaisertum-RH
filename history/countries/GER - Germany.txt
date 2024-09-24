@@ -195,6 +195,8 @@ add_ideas = {
 	german_customs_union_member
 	GER_powerful_unions
 	GER_german_breadbasket_to_ukr
+	low_economic_mobilisation
+	limited_conscription
 }
 
 activate_mission = GER_mefo_bills_mission

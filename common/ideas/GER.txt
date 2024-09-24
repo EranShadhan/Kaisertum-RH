@@ -95,6 +95,66 @@ GER_german_breadbasket_to_ukr = {
 				political_power_factor = -0.15
 			}
 		}
+		GER_aid_to_austria = {
+
+			picture = german_advisors
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.15
+				max_planning = 0.05
+				planning_speed = 0.1
+			}
+		}
+		GER_race_for_galicia = {
+
+			picture = german_advisors
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.1
+				planning_speed = 0.15
+				army_speed_factor = 0.25
+			}
+		}
+		GER_bastion_of_security = {
+
+			picture = yug_federal_defense_council
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				army_core_defence_factor = 0.1
+				conscription_factor = 0.05
+			}
+		}
 		GER_victory_tgw = {
 
 			picture = generic_victors_of_ww1
@@ -113,6 +173,26 @@ GER_german_breadbasket_to_ukr = {
 				experience_gain_army_factor = -0.5
 				experience_gain_navy_factor = -0.5
 				experience_gain_air_factor = -0.5
+			}
+		}
+		GER_victory_tgw2 = {
+
+			picture = generic_victors_of_ww1
+
+			allowed = {
+				always = no
+			}
+            name = GER_victory_tgw
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_army_factor = -0.35
+				experience_gain_navy_factor = -0.35
+				experience_gain_air_factor = -0.35
 			}
 		}
 		GER_gott_mitt_uns_focus = {

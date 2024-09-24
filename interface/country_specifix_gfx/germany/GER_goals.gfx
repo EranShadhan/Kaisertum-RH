@@ -14,5 +14,32 @@ spriteTypes = {
 		name = "GFX_goal_GER_bavaria"
 		texturefile = "gfx/interface/goals/GER/GER_bavaria.png"
 	}
-
+	SpriteType = {
+		name = "GFX_GER_central_powers"
+		texturefile = "gfx/interface/goals/GER/GER_central_powers.png"
+	}
+SpriteType = {
+		name = "GFX_cancel_the_austrian_agreement"
+		texturefile = "gfx/interface/goals/GER/cancel_the_austrian_agreement.png"
+	}
+	SpriteType = {
+		name = "GFX_GER_lay_claims"
+		texturefile = "gfx/interface/goals/GER/GER_lay_claims.png"
+	}
+	SpriteType = {
+		name = "GFX_support_our_allied_claims"
+		texturefile = "gfx/interface/goals/GER/support_our_allied_claims.png"
+	}
+	SpriteType = {
+		name = "GFX_GER_befriend_czecia"
+		texturefile = "gfx/interface/goals/GER/GER_befriend_czecia.png"
+	}	
+	SpriteType = {
+		name = "GFX_focus_bastion_of_security"
+		texturefile = "gfx/interface/goals/GER/focus_bastion_of_security.png"
+	}
+	SpriteType = {
+		name = "GFX_our_shared_history"
+		texturefile = "gfx/interface/goals/GER/our_shared_history.png"
+	}
 }
