@@ -1,16 +1,20 @@
 
 state={
-	id=1042
-	name="STATE_1042"
+	id=1074
+	name="STATE_1074"
+	resources={
+		tungsten=2.000
+	}
 
 	history={
 		owner = HUN
 		victory_points = {
-			13449 2 
+			11539 5 
 		}
 		buildings = {
 			infrastructure = 2
-			air_base = 1
+			industrial_complex = 1
+			air_base = 5
 
 		}
 		add_core_of = HUN
@@ -19,9 +23,9 @@ state={
 	}
 
 	provinces={
-		541 3484 9539 13446 13748 
+		555 581 3537 11522 11539 11554 13449 13626 13749 
 	}
-	manpower=100012
+	manpower=936275
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000
