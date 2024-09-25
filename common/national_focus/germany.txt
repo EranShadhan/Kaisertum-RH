@@ -37,11 +37,41 @@
 		}
 		
 	}
-
-
+	focus = {
+		id = GER_renew_swedisn_trade
+		icon = GFX_focus_generic_develop_sweden_silhouette
+		prerequisite = { focus = GER_four_year_plan }
+		x = -4
+		y = 1
+		relative_position_id = GER_four_year_plan
+		cost = 10
+		
+		ai_will_do = {
+			factor = 9
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_gateway_to_europe
+		icon = GFX_focus_hol_gateway_to_europe 
+		prerequisite = { focus = GER_renew_swedisn_trade }
+		x = 0
+		y = 1
+		relative_position_id = GER_renew_swedisn_trade
+		cost = 10
+		
+		ai_will_do = {
+			factor = 9
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		}
+	}
 	focus = {
 		id = GER_autarky
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_focus_generic_mining_industry
 		prerequisite = { focus = GER_four_year_plan }
 		x = 4
 		y = 1
@@ -69,7 +99,7 @@
 
 	focus = {
 		id = GER_hermann_goring_werke
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_focus_mex_privatisation
 		dynamic = yes
 		prerequisite = { focus = GER_autarky }
 		x = 2
@@ -231,7 +261,7 @@
 
 	focus = {
 		id = GER_coal_liquidization
-		icon = GFX_goal_generic_oil_refinery
+		icon = GFX_focus_generic_resource_extraction
 		prerequisite = { focus = GER_autarky }
 		x = 0
 		y = 1
@@ -284,7 +314,7 @@
 
 	focus = {
 		id = GER_synthetic_rubber
-		icon = GFX_focus_generic_rubber
+		icon = GFX_focus_BRA_rubber_war
 		prerequisite = { focus = GER_coal_liquidization }
 		x = 0
 		y = 1
@@ -326,7 +356,7 @@
 
 	focus = {
 		id = GER_autobahn
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_focus_generic_road_investment
 		prerequisite = { focus = GER_autarky }
 		x = -2
 		y = 1
@@ -395,7 +425,7 @@
 
 	focus = {
 		id = GER_german_war_economy
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_focus_SWI_issue_war_bonds
 		prerequisite = { focus = GER_autobahn }
 		mutually_exclusive = { focus = GER_integrate_war_economies }
 		x = 0
@@ -492,7 +522,7 @@
 
 	focus = {
 		id = GER_grosraumwirtschaft
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_focus_generic_supply_line
 		prerequisite = { focus = GER_four_year_plan }
 		x = 0
 		y = 1
