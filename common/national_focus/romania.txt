@@ -3078,7 +3078,7 @@ focus = {
 	focus = {
 
 		id = ROM_ind_democracy_1
-		icon = GFX_ROM_ind_1
+		icon = GFX_ROM_industrialplant
 		relative_position_id = ROM_pol_d_7
 		prerequisite = { focus = ROM_pol_d_7 }
 		x = 11
@@ -4123,7 +4123,7 @@ focus = {
 	}
 	focus = {
 		id = ROM_paris_of_the_east
-		icon = GFX_ROM_ind_1
+		icon = GFX_ROM_parisofest
 		relative_position_id = ROM_invest_in_bucarest
 		prerequisite = { focus = ROM_invest_in_bucarest }
 		x = 0
@@ -4238,7 +4238,7 @@ focus = {
 	}
 	focus = {
 		id = ROM_connect_the_roads
-		icon = GFX_ROM_ind_1
+		icon = GFX_ROM_connect
 		relative_position_id = ROM_focus_on_food_crops
 		prerequisite = { focus = ROM_focus_on_food_crops focus = ROM_focus_on_cash_crops }
 		x = -1
@@ -4505,14 +4505,14 @@ focus = {
 		ai_will_do = {
 				factor = 1
 			}
-	
+	 
 			available = {
 	
 			}
 	
 			bypass = {
 	
-			}
+			} 
 	
 			cancel_if_invalid = yes
 			continue_if_invalid = no
@@ -4603,7 +4603,7 @@ focus = {
 			
 	
 			completion_reward = {
-				
+				custom_effect_tooltip = weaken_balkan_countries
 			}
 	}
 
@@ -4928,7 +4928,9 @@ focus = {
 			}
 	
 			available = {
-	
+				not = {
+					has_idea = ROM_resistant_culture
+				}
 			}
 	
 			bypass = {

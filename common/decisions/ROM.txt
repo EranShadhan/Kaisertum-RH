@@ -132,32 +132,13 @@ Balkan_project = {
 		days_remove = 45
 	}
 
-	dbj_bul = {
-		available = {
-			has_completed_focus = ROM_pol_d_9
-			original_tag = ROM
-			check_variable = {
-				var = ROM_influence_balkans_var
-				value = 30
-				compare = greater_than_or_equals
-				tooltip = more30
-			}
-		}
-
-		visible = {
-			has_completed_focus = ROM_pol_d_9
-			original_tag = ROM
-			NOT = {
-				has_decision = arm_bul
-			}
-		}
-	}
-
 	inf_gre = {
 		available = {
 			has_completed_focus = ROM_pol_d_16
 			original_tag = ROM
 		}
+
+		fire_only_once = yes
 
 		visible = {
 			has_completed_focus = ROM_pol_d_16
@@ -190,6 +171,7 @@ Balkan_project = {
 
 			}
 		}
+		fire_only_once = yes
 		complete_effect = {
 			YUG = {
 				add_timed_idea = {
@@ -213,6 +195,7 @@ Balkan_project = {
 
 			}
 		}
+		fire_only_once = yes
 		complete_effect = {
 			ALB = {
 				add_timed_idea = {

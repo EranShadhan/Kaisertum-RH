@@ -124,6 +124,7 @@ country_event = {
 	option = {
 		name = kt_romania.5.a
 		ROM = {
+			add_manpower = -1
 			create_wargoal = {
 				type = take_state_focus
 				target = HUN
@@ -146,7 +147,7 @@ country_event = {
 		name = kt_romania.6.a
 		ROM = {
 			annex_country = {
-				country = BUL
+				target = BUL
 				transfer_troops = yes
 			}
 		}
@@ -195,8 +196,16 @@ country_event = {
 			transfer_state = 77
 			77 = { add_core_of = ROOT }
 		}
+		ai_chance = {
+			base = 100
+		}
 	}
-
+	option = {
+		name = kt_romania.8.b
+		ai_chance = {
+			base = 0
+		}
+	}
 }
 
 country_event = {
@@ -249,10 +258,6 @@ country_event = {
 		hidden_effect = {
 			complete_national_focus = ROM_pol_5
 			complete_national_focus = ROM_pol_d_1
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.3
-			}
 		}
 			
 	}
@@ -294,9 +299,16 @@ country_event = {
 				transfer_state = 797
 			}
 		}
-			
+		ai_chance = {
+			base = 100
+		}	
 	}
-	
+	option = {
+		name = kt_romania.11.b
+		ai_chance = {
+			base = 0
+		}
+	}
 }
 
 country_event = {
@@ -321,14 +333,20 @@ country_event = {
 			transfer_state = 163
 			transfer_state = 103
 			transfer_state = 977
-		}			
+		}
+		ai_chance = {
+			base = 50
+		}		
 	}
 
 	option = {
 		name = kt_romania.12.b
 		ROM = {
-			add_war_support = 0.05
-		}			
+			add_war_support = -0.15
+		}
+		ai_chance = {
+			base = 50
+		}	
 	}
 	
 }
@@ -355,53 +373,10 @@ country_event = {
 			transfer_state = 163
 			transfer_state = 103
 			transfer_state = 977
-
+			ai_chance = {
+				base = 100
+			}
 		}		
-	}
-
-	option = {
-		name = kt_romania.13.b
-		ROM = {
-			annex_country = {
-				target = YUG
-				transfer_troops = no
-			}
-			white_peace = ITA
-
-			transfer_state = 736
-			transfer_state = 852
-			transfer_state = 163
-			transfer_state = 103
-			transfer_state = 977
-			transfer_state = 102
-		}
-		
-		release = lbv
-
-		GER = {
-			puppet = lbv
-		}
-
-		hidden_effect = {
-			ITA = {
-				transfer_state = 159
-			}
-
-			159 = {
-				remove_core_of = LBV
-			}
-			LBV = {
-				transfer_state = 1034
-			}
-			1034 = {
-				add_core_of = LBV
-			}
-
-			39 = { add_core_of = ITA }
-			850 = { add_core_of = ITA }
-			1034 = { add_core_of = ITA }
-			160 = { add_core_of = ITA }
-		}
 	}
 	
 }
@@ -420,6 +395,12 @@ country_event = { #tiraspol_buying
 			transfer_state = 834
 			834 = { add_claim_by = ROM }
 			country_event = kt_romania.16
+		}
+		UKR = {
+			add_timed_idea = {
+				idea = ROM_sell_gold_2
+				months = 3
+			}
 		}
 		ai_will_do = {
 			base = 50
