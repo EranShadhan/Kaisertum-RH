@@ -2206,4 +2206,56 @@ spriteTypes = {
 		name = "GFX_idea_ROM_people_angry"
 		texturefile = "gfx/interface/ideas/ROM/ROM_people_angry.png"			
 	}	
+
+
+
+	SpriteType = {
+		name = "GFX_idea_ROM_carlist_reforms"
+		texturefile = "gfx/interface/ideas/ROM/ROM_carlist_reforms.png"			
+	}	
+	SpriteType = {
+		name = "GFX_idea_ROM_suspended_constitution"
+		texturefile = "gfx/interface/ideas/ROM/ROM_suspended_constitution.png"			
+	}	
+	SpriteType = {
+		name = "GFX_idea_ROM_high_Taxes"
+		texturefile = "gfx/interface/ideas/ROM/ROM_high_Taxes.png"			
+	}	
+	SpriteType = {
+		name = "GFX_idea_ROM_peak_industry"
+		texturefile = "gfx/interface/ideas/ROM/ROM_peak_industry.png"			
+	}
+	
+	
+	SpriteType = {
+		name = "GFX_idea_ROM_sentinels"
+		texturefile = "gfx/interface/ideas/ROM/ROM_sentinels.png"			
+	}
+	SpriteType = {
+		name = "GFX_idea_ROM_political_instability"
+		texturefile = "gfx/interface/ideas/ROM/ROM_political_instability.png"			
+	}
+	SpriteType = {
+		name = "GFX_idea_ROM_hungarian_workforce"
+		texturefile = "gfx/interface/ideas/ROM/ROM_hungarian_workforce.png"			
+	}
+
+
+
+	SpriteType = {
+		name = "GFX_idea_ROM_inefective_regency"
+		texturefile = "gfx/interface/ideas/ROM/ROM_inefective_regency.png"			
+	}
+	SpriteType = {
+		name = "GFX_idea_ROM_bribing"
+		texturefile = "gfx/interface/ideas/ROM/ROM_bribing.png"			
+	}
+	SpriteType = {
+		name = "GFX_idea_ROM_revised_constitution"
+		texturefile = "gfx/interface/ideas/ROM/ROM_revised_constitution.png"			
+	}
+	SpriteType = {
+		name = "GFX_idea_ROM_national_plan"
+		texturefile = "gfx/interface/ideas/ROM/ROM_national_plan.png"			
+	}
 }

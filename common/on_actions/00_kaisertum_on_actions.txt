@@ -1,6 +1,13 @@
 on_actions = {
 	on_startup = {
 		effect = {
+			every_country = {
+				country_event = {
+					id = austria.1
+					days = 95
+					random_hours = 6
+				}
+			}
 			UBD = {
 				set_variable = {
 					baltic_manpower = -0.3

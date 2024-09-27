@@ -196,7 +196,7 @@ ideas = {
 
 		Carol_reforms = {
 
-			picture = generic_social_reforms
+			picture = ROM_carlist_reforms
 
 			allowed = { 
 				always = no
@@ -216,7 +216,7 @@ ideas = {
 		}
 
 		suspend_constitution = {
-			picture = generic_social_reforms
+			picture = ROM_suspended_constitution
 			
 			allowed = { 
 				always = no
@@ -238,7 +238,7 @@ ideas = {
 		}
 
 		increase_taxes = {
-			picture = generic_social_reforms
+			picture = ROM_high_Taxes
 			
 			allowed = { 
 				always = no
@@ -259,7 +259,7 @@ ideas = {
 		}
 
 		revised_constitution = {
-			picture = generic_social_reforms
+			picture = ROM_revised_constitution
 			
 			allowed = { 
 				always = no
@@ -283,7 +283,7 @@ ideas = {
 		}
 
 		rom_political_violence = {
-			picture = generic_social_reforms
+			picture = ROM_political_instability
 			
 			allowed = { 
 				always = no
@@ -302,7 +302,7 @@ ideas = {
 		}
 
 		caramaila_sentinels = {
-			picture = generic_social_reforms
+			picture = ROM_sentinels
 			
 			allowed = { 
 				always = no
@@ -316,13 +316,12 @@ ideas = {
 			
 			modifier = {
 				army_core_defence_factor = 0.05
-				equipment_capture_factor_for_controller = 0.20
-				recruitable_population = 0.20
+				recruitable_population = 0.10
 			}
 		}
 
 		hungarian_workforce = {
-			picture = generic_social_reforms
+			picture = ROM_hungarian_workforce
 			
 			allowed = { 
 				always = no
@@ -341,7 +340,7 @@ ideas = {
 		}
 
 		total_equality = {
-			picture = idfk
+			picture = ROM_rights_for_all
 			
 			allowed = { 
 				always = no
@@ -356,13 +355,13 @@ ideas = {
 			modifier = {
 				stability_factor = 0.1
 				recruitable_population = 0.1
-				army_org_factor = 0.5
+				army_org_factor = 0.15
 				production_speed_buildings_factor = 0.05
 			}
 		}
 
 		ineffective_regency = {
-			picture = generic_social_reforms
+			picture = ROM_inefective_regency
 			
 			allowed = { 
 				always = no
@@ -382,7 +381,7 @@ ideas = {
 		}
 
 		bribing_holdouts = {
-			picture = generic_social_reforms
+			picture = ROM_bribing
 			
 			allowed = { 
 				always = no
@@ -401,7 +400,7 @@ ideas = {
 		}
 
 		ROM_national_plan = {
-			picture = generic_social_reforms
+			picture = ROM_national_plan
 			
 			allowed = { 
 				always = no
@@ -420,7 +419,7 @@ ideas = {
 		}
 
 		ROM_peak_industry = {
-			picture = generic_social_reforms
+			picture = ROM_peak_industry
 			
 			allowed = { 
 				always = no
