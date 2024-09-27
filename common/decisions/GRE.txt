@@ -25,7 +25,7 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 
 		days_remove = 30
 
-		cost = 25
+		cost = 15
 
 		fire_only_once = no
 
@@ -90,7 +90,7 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 
 		days_remove = 30
 
-		cost = 25
+		cost = 15
 
 		fire_only_once = no
 
@@ -155,7 +155,7 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 
 		days_remove = 30
 
-		cost = 25
+		cost = 15
 
 		fire_only_once = no
 
@@ -219,7 +219,7 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 
 		days_remove = 30
 
-		cost = 25
+		cost = 15
 
 		fire_only_once = no
 
@@ -284,7 +284,7 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 
 		days_remove = 30
 
-		cost = 25
+		cost = 15
 
 		fire_only_once = no
 
@@ -349,7 +349,7 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 
 		days_remove = 30
 
-		cost = 25
+		cost = 15
 
 		fire_only_once = no
 
@@ -415,7 +415,7 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 
 		days_remove = 30
 
-		cost = 25
+		cost = 15
 
 		fire_only_once = no
 
@@ -466,6 +466,7 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 					has_country_flag = GRE_defaulted_on_debt_flag
 				}
 			}
+			has_completed_focus = GRE_paying_off_our_debts
 		}
 
 		target_trigger = {
@@ -476,7 +477,7 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 
 		days_remove = 30
 
-		cost = 50
+		cost = 30
 
 		fire_only_once = no
 
@@ -490,6 +491,7 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 		}
 
 		visible = {
+			has_completed_focus = GRE_paying_off_our_debts
 			has_idea = ifc_economy
 		check_variable = { var = GRE_debt_to_the_ifc_britain_var value = 2.5 compare = greater_than }
 		
@@ -531,6 +533,7 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 					has_country_flag = GRE_defaulted_on_debt_flag
 				}
 			}
+				has_completed_focus = GRE_paying_off_our_debts
 		}
 
 		target_trigger = {
@@ -541,7 +544,7 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 
 		days_remove = 30
 
-		cost = 50
+		cost = 30
 
 		fire_only_once = no
 
@@ -556,6 +559,7 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 
 		visible = {
 		has_idea = ifc_economy
+			has_completed_focus = GRE_paying_off_our_debts
 		check_variable = { var = GRE_debt_to_the_ifc_france_var value = 2.5 compare = greater_than }
 		
 			NOT = {
@@ -596,6 +600,7 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 					has_country_flag = GRE_defaulted_on_debt_flag
 				}
 			}
+				has_completed_focus = GRE_paying_off_our_debts
 		}
 
 		target_trigger = {
@@ -606,7 +611,7 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 
 		days_remove = 30
 
-		cost = 50
+		cost = 30
 
 		fire_only_once = no
 
@@ -620,6 +625,7 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 		}
 
 		visible = {
+			has_completed_focus = GRE_paying_off_our_debts
 			has_idea = ifc_economy
 		check_variable = { var = GRE_debt_to_the_ifc_italy_var value = 2.5 compare = greater_than }
 		
@@ -660,6 +666,7 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 					has_country_flag = GRE_defaulted_on_debt_flag
 				}
 			}
+				has_completed_focus = GRE_paying_off_our_debts
 		}
 
 		target_trigger = {
@@ -670,7 +677,7 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 
 		days_remove = 30
 
-		cost = 50
+		cost = 30
 
 		fire_only_once = no
 
@@ -684,6 +691,7 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 		}
 
 		visible = {
+			has_completed_focus = GRE_paying_off_our_debts
 			has_idea = ifc_economy
 		check_variable = { var = GRE_debt_to_the_ifc_russia_var value = 2.5 compare = greater_than }
 		
@@ -725,6 +733,7 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 					has_country_flag = GRE_defaulted_on_debt_flag
 				}
 			}
+				has_completed_focus = GRE_paying_off_our_debts
 		}
 
 		target_trigger = {
@@ -735,7 +744,7 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 
 		days_remove = 30
 
-		cost = 50
+		cost = 30
 
 		fire_only_once = no
 
@@ -760,6 +769,7 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 					
 				}
 			}
+				has_completed_focus = GRE_paying_off_our_debts
 		}
 
 		complete_effect = {
@@ -788,8 +798,10 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 				OR = {
 					has_country_flag = GRE_completely_debt_free
 					has_country_flag = GRE_defaulted_on_debt_flag
-				}
+			
 			}
+			}
+				has_completed_focus = GRE_paying_off_our_debts
 		}
 
 		target_trigger = {
@@ -800,7 +812,7 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 
 		days_remove = 30
 
-		cost = 50
+		cost = 30
 
 		fire_only_once = no
 
@@ -816,7 +828,7 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 		visible = {
 			has_idea = ifc_economy
 		check_variable = { var = GRE_debt_to_the_ifc_austriahungary_var value = 2.5 compare = greater_than }
-		
+			has_completed_focus = GRE_paying_off_our_debts
 			NOT = {
 				OR = {
 					has_country_flag = GRE_small_installment_payment_flag
@@ -855,6 +867,7 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 					has_country_flag = GRE_defaulted_on_debt_flag
 				}
 			}
+				has_completed_focus = GRE_paying_off_our_debts
 		}
 
 		target_trigger = {
@@ -865,7 +878,7 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 
 		days_remove = 30
 
-		cost = 50
+		cost = 30
 
 		fire_only_once = no
 
@@ -881,7 +894,7 @@ GRE_pay_back_debt_to_the_ifc_category2 = {
 		visible = {
 			has_idea = ifc_economy
 		check_variable = { var = GRE_debt_to_the_ifc_austriahungary_var value = 2.5 compare = greater_than }
-		
+			has_completed_focus = GRE_paying_off_our_debts
 			NOT = {
 				OR = {
 					has_country_flag = GRE_small_installment_payment_flag
@@ -1369,212 +1382,6 @@ GRE_expand_influence_in_FROM = {
 		}
 	    }
 	}
-}
-GRE_onassis_dec_category = {
-GRE_plan_omega = {
-
-		icon = hol_attract_foreign_investors 
-
-		allowed = { 
-			original_tag = GRE
-			always = no
-		}
-
-		available = {
-			}
-
-	
-		days_remove = 30
-
-		cost = 25
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 10
-				is_historical_focus_on = no
-			}
-			
-		}
-
-		visible = {
-			
-		
-		}
-
-		complete_effect = {
-			
-		}
-
-		remove_effect = {
-		}
-	}
-GRE_expand_onassis = {
-
-		icon = hol_attract_foreign_investors 
-
-		allowed = { 
-			original_tag = GRE
-			always = no
-		}
-
-		available = {
-			}
-
-	
-		days_remove = 30
-
-		cost = 25
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 10
-				is_historical_focus_on = no
-			}
-			
-		}
-
-		visible = {
-			
-		
-		}
-
-		complete_effect = {
-			
-		}
-
-		remove_effect = {
-		}
-	}
-		GRE_arabia_oil_deal = {
-
-		icon = hol_attract_foreign_investors 
-
-		allowed = { 
-			original_tag = GRE
-			always = no
-		}
-
-		available = {
-			}
-
-	
-		days_remove = 30
-
-		cost = 25
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 10
-				is_historical_focus_on = no
-			}
-			
-		}
-
-		visible = {
-			
-		
-		}
-
-		complete_effect = {
-			
-		}
-
-		remove_effect = {
-		}
-	}
-	GRE_persia_oil_deal = {
-
-		icon = hol_attract_foreign_investors 
-
-		allowed = { 
-			original_tag = GRE
-			always = no
-		}
-
-		available = {
-			}
-
-	
-		days_remove = 30
-
-		cost = 25
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 10
-				is_historical_focus_on = no
-			}
-			
-		}
-
-		visible = {
-			
-		
-		}
-
-		complete_effect = {
-			
-		}
-
-		remove_effect = {
-		}
-	}	
-GRE_NUKES_FROM_SUBS = {
-
-		icon = hol_attract_foreign_investors 
-
-		allowed = { 
-			original_tag = GRE
-			always = no
-		}
-
-		available = {
-			}
-
-	
-		days_remove = 30
-
-		cost = 25
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 10
-				is_historical_focus_on = no
-			}
-			
-		}
-
-		visible = {
-			
-		
-		}
-
-		complete_effect = {
-			
-		}
-
-		remove_effect = {
-		}
-	}
-	
-	
-	
-	
 }
 political_actions = {
   GRE_trust_eng = {

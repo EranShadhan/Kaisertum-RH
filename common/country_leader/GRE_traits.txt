@@ -58,4 +58,28 @@ Terminator = {
 		land_doctrine_cost_factor = -0.05
 		terrain_penalty_reduction = 0.1
 	}
+	
+	onassis_doctrine = {
+		random = no
+		equipment_bonus = {
+			screen_ship = {
+				naval_range = 0.3 sub_detection = 0.1 naval_speed = 0.1 build_cost_ic = -0.1
+			}
+			capital_ship = {
+				naval_range = 0.25 naval_speed = 0.1  build_cost_ic = -0.2
+			}
+			carrier = {
+				build_cost_ic = -0.1
+				armor_value = 0.5
+				max_strength = 0.1
+			}
+			submarine = {
+			 sub_visibility = -0.1 surface_visibility = -0.1 naval_speed = 0.15 naval_range = 0.1
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

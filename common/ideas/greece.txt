@@ -2167,13 +2167,13 @@ GRE_red_ships = {
 			}
 
 			available = {
-			
+			has_completed_focus = GRE_invite_onassis
 			}
 
 			cost = 75
 			
 			research_bonus = {
-				naval_equipment = 0.15
+				naval_equipment = 0.1
 			}
 			
 			traits = { convoy_escort_naval_manufacturer }
@@ -2181,7 +2181,26 @@ GRE_red_ships = {
 	}
 
 	industrial_concern = {
-		
+		GRE_astilleros_onassis_company = {
+			
+			picture = gre_astilleros_onassis
+			name =GRE_astilleros_onassis
+			allowed = {
+				original_tag = GRE
+			}
+
+			available = {
+			has_completed_focus = GRE_invite_onassis
+			}
+
+			cost = 200
+			
+			research_bonus = {
+				naval_equipment = 0.3
+			}
+			
+			traits = { onassis_doctrine }
+		}	
 		GRE_dep = {
 			
 			picture = gre_dep

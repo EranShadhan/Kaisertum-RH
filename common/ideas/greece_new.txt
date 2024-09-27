@@ -1902,7 +1902,7 @@ allowed = {
 			stability_factor = -0.1
 			drift_defence_factor = -0.05
 			political_power_gain = -0.1
-			fascism_drift = 0.05
+			fascism_drift = 0.02
 			}
 			
 		}
@@ -1924,7 +1924,7 @@ allowed = {
 			drift_defence_factor = -0.1
 			political_power_gain = -0.1
 			consumer_goods_factor = 0.05
-			fascism_drift = 0.07
+			fascism_drift = 0.04
 			}
 			
 			
@@ -1948,7 +1948,7 @@ allowed = {
 			political_power_gain = -0.15
 			consumer_goods_factor = 0.1
 			production_speed_arms_factory_factor = -0.05
-			fascism_drift = 0.07
+			fascism_drift = 0.05
 			}
 			
 		}
@@ -1972,7 +1972,7 @@ allowed = {
 			consumer_goods_factor = 0.1
 			production_speed_arms_factory_factor = -0.05
 			conscription_factor = -0.05
-			fascism_drift = 0.07
+			fascism_drift = 0.05
 			}
 			
 			
@@ -1999,7 +1999,7 @@ allowed = {
 			production_factory_efficiency_gain_factor = -0.1
 			industrial_capacity_factory  = -0.05
 			conscription_factor = -0.05
-			fascism_drift = 0.09
+			fascism_drift = 0.06
 			}
 			
 		}
@@ -2025,7 +2025,7 @@ allowed = {
 			production_factory_efficiency_gain_factor = -0.15
 			industrial_capacity_factory  = -0.1
 			conscription_factor = -0.1
-			fascism_drift = 0.1
+			fascism_drift = 0.075
 			}
 			
 		}
