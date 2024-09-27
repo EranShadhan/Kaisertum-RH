@@ -23,7 +23,7 @@ state = {
 			}
 		}
 		add_core_of = GRE
-		add_core_of = CRE
+		#add_core_of = CRE
 	}
 	provinces = {
 		1164 4170 9940 12058
