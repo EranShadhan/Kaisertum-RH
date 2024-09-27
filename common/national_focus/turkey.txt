@@ -73,7 +73,7 @@ focus = {
 ########## CAPITAL ##########
 
 focus = { # CAPITAL
-    id = TUR_greater_engürü_plan
+    id = TUR_greater_enguru_plan
     icon = GFX_focus_spa_the_spanish_miracle
     prerequisite = { focus = TUR_industrialization_at_last }
     x = -3
@@ -111,10 +111,10 @@ focus = { # CAPITAL
 focus = { # CAPITAL
     id = TUR_urbanization_of_the_capital
     icon = GFX_focus_generic_low_cost_housing
-    prerequisite = { focus = TUR_greater_engürü_plan }
+    prerequisite = { focus = TUR_greater_enguru_plan }
     x = -2
     y = 1
-    relative_position_id = TUR_greater_engürü_plan
+    relative_position_id = TUR_greater_enguru_plan
     cost = 4
 
     available = {
@@ -146,10 +146,10 @@ focus = { # CAPITAL
 focus = { # CAPITAL
     id = TUR_reopen_cement_factories
     icon = GFX_goal_generic_construction
-    prerequisite = { focus = TUR_greater_engürü_plan }
+    prerequisite = { focus = TUR_greater_enguru_plan }
     x = 1
     y = 1
-    relative_position_id = TUR_greater_engürü_plan
+    relative_position_id = TUR_greater_enguru_plan
     cost = 6
 
     available = {
@@ -191,7 +191,7 @@ focus = { # CAPITAL
 }
 
 focus = { # CAPITAL
-    id = TUR_Yenişehir_housing_projects         # Yenişehir was the name of the new part of ankara during the interwar period.
+    id = TUR_Yenisehir_housing_projects         # Yenişehir was the name of the new part of ankara during the interwar period.
     icon = GFX_focus_SWE_hygienic_housing       # Ankara's population 10x-d in 20 years.
     prerequisite = { focus = TUR_urbanization_of_the_capital }
     x = -1
@@ -318,10 +318,10 @@ focus = { # CAPITAL
 focus = { # CAPITAL
     id = TUR_connect_the_eastern_regions
     icon = GFX_focus_generic_public_works
-    prerequisite = { focus = TUR_Yenişehir_housing_projects }
+    prerequisite = { focus = TUR_Yenisehir_housing_projects }
     x = 1
     y = 1
-    relative_position_id = TUR_Yenişehir_housing_projects
+    relative_position_id = TUR_Yenisehir_housing_projects
     cost = 6
 
     available = {
@@ -369,10 +369,10 @@ focus = { # CAPITAL
 focus = { # CAPITAL
     id = TUR_connect_the_western_regions
     icon = GFX_focus_generic_public_works
-    prerequisite = { focus = TUR_Yenişehir_housing_projects }
+    prerequisite = { focus = TUR_Yenisehir_housing_projects }
     x = -1
     y = 1
-    relative_position_id = TUR_Yenişehir_housing_projects
+    relative_position_id = TUR_Yenisehir_housing_projects
     cost = 6
 
     available = {
