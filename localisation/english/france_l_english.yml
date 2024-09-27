@@ -191,13 +191,16 @@
  FRA_colonial_army_desc:0 "The colonies of France were not so enthusiastic about the fascist takeover, but they understand that this would bring prosperity and glory to France, unlike the Republican Front. It is because of this understanding that the colonies are willing to work with the new regime. \n\nAnother reason why the colonies are loyal is because they know that if they break free, they will become German puppets, or even worse!"
  
  FRA_republican_front_collapse:0 "Collapse of the Republican Front"
- FRA_republican_front_collapse_desc:0 "The Republican Front was the major democratic political party before and during the Great War. After the defeat of France, the party continued to rule, but it saw opposition from Independent Radicals, Communists, and Fascists. \n\nAfter the party failed to keep Morocco as a protectorate, all of the opposition started blaming the Republican Front for France's situation. When the Ottoman Empire was partitioned in 1925, France was politically stuck and could not take action. \n\nThe People of France have shifted away from any democratic ideas, as to them this lost them the Great War and caused trouble in the interwar period."
+ FRA_republican_front_collapse_desc:0 "The Republican Front was the major democratic political party before and during the Weltkrieg. After the defeat of France, the party continued to rule, but it saw opposition from Independent Radicals, Communists, and Fascists. \n\nAfter the party failed to keep Morocco as a protectorate, all of the opposition started blaming the Republican Front for France's situation. When the Ottoman Empire was partitioned in 1925, France was politically stuck and could not take action. \n\nThe People of France have shifted away from any democratic ideas, as to them this lost them the Weltkrieg and caused trouble in the interwar period."
  
  FRA_secret_police:0 "French Secret Police"
  FRA_secret_police_desc:0 "The Secret Police is the greatest asset of the Fascist French Revival. It allowes for propaganda to be distributed among the entire nation, but also to silence any opposition. \n\nThe role of the Secret Police is to make sure that the French Revival remains in charge by any means necessary, so assassinations and executions are common practice. Most importantly, the Secret Police is overseeing it's citizens, making sure there is no counter-revolution."
-  
- FRA_communist_opposition_2:0 "Communist Opposition"
- FRA_communist_opposition_2_desc:0 "While the Fascist French Revival won the elections of 1928, we can still overthrow this insane government and install a proper one. We shall prepare to launch a possible coup d'état against this government. We must get rid of the fascist regime in any way shape or form, in order to secure a prosperous France!"
+ 
+ FRA_super_heavy_tank_programme:0 "French Super Heavy Tank Programme"
+ FRA_super_heavy_tank_programme_desc:0 "Due to lack of coal and steel, the French Millitary cannot rely on conventional warfare. The cost of a single rifle is too much for France considering their chronic lack of resources. \n\nAn idea was born, where instead of using the steel for consumables like rifles and ammunition, there could be a weapon that is created once and never destroyed, so it can be used indefinetly - the super heavy tank. \n\nThis needs to be done in secret, because it's vital for the French Millitary that Germany does not see it in action until it's too late. This would give the French Army the advantage in the early war, up until Germany develops a counter. Only time will tell if this project will pay off."
+
+ FRA_eliminating_communist_opposition:0 "Eliminating the Communist Opposition"
+ FRA_eliminating_communist_opposition_desc:0 "The Communist Popular Front is the largest tread to the stability and longevity of the Fascist Republican Front. As the Republican Front controls the Secret Police, it's resources would be used to hunt down the communist and socialist supporters and eliminate them. This will take some time, but it will ensure that the French Revival will have no political rivals."
  
  # op modif
  against_monarchy_mod:0 "Against Monarchies"

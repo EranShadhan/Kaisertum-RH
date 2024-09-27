@@ -11,9 +11,9 @@ country_event = { # France surrender event
 	fire_only_once = yes
 
 	trigger = {
-		GER = {
-			controls_state = 16
-		}
+	#	GER = {
+	#		controls_state = 16
+	#	}
 	}
 	
 	option = {
@@ -89,6 +89,26 @@ country_event = { # Treaty of Lille
 		ENG = {
 			transfer_state = 15
 		}
+	}
+	
+}
+
+country_event = { # Split in Nats
+	id = kt_france.3
+	title = kt_france.3.t
+	desc = kt_france.3.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kt_france.3.a
+		complete_national_focus = FRA_support_ultra_fascists
+	}
+
+	option = {
+		name = kt_france.3.b
+		complete_national_focus = FRA_support_moderate_fascists
 	}
 	
 }
