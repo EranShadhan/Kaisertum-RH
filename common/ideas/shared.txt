@@ -157,8 +157,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = -0.05
-				production_factory_efficiency_gain_factor = 0.2
-				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.05
 				local_resources = 0.2
 			}
 		}

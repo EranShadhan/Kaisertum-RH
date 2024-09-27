@@ -1,7 +1,68 @@
 ideas = {
 
 	country = {
-	
+	GER_switching_to_oil = {
+
+			picture = changing_to_oil
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			refit_speed = -0.5
+			industrial_capacity_dockyard = -0.3
+			naval_retreat_speed = -0.15
+			ships_at_battle_start = -0.2
+			}
+		}	
+	german_customs_union_leader = {
+
+			picture = german_customs_union_member
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = TUR
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.15
+			}
+		}
+GER_too_big_to_fail = {
+         
+            removal_cost = -1
+             
+            allowed = {
+            
+            }
+            
+            
+            picture = too_big_to_fail
+            
+            modifier = {
+            stability_factor = 0.1
+            production_factory_efficiency_gain_factor = -0.15
+            consumer_goods_factor = 0.15
+            
+             }
+         }	
 GER_german_breadbasket_to_ukr = {
          
             removal_cost = -1
@@ -14,7 +75,7 @@ GER_german_breadbasket_to_ukr = {
             picture = UKR_german_breadbasket
             
             modifier = {
-            stability_factor = 0.1
+            stability_factor = 0.05
             political_power_gain = 0.15
             war_support_factor = 0.1
             consumer_goods_factor = 0.05
