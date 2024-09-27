@@ -15,5 +15,20 @@ leader_traits = {
 		stability_factor = -0.1
 		war_support_factor = -0.1
 	}
+	TUR_the_man_of_the_nation = {
+		random = no 
+	  	mobilization_speed = 0.2
+	  	surrender_limit = 0.1
+	  	max_planning_factor = 0.15
+	  	army_core_attack_factor = 0.1
+      	army_core_defence_factor = 0.1
+	}
+	TUR_architect_of_natsoc = {
+		random = no
+		political_power_factor = 0.2
+		production_speed_buildings_factor = 0.2
+		research_speed_factor = 0.10
+		stability_factor = 0.1
+	}
 	
 }

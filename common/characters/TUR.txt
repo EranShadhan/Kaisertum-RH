@@ -852,6 +852,21 @@ characters={
 		}
 	}
 
+	TUR_Antoun_Saadeh = {
+		name = TUR_antoun_saadeh
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SYR_Antoun_Saadeh
+			}
+		}
+		country_leader = {
+			ideology = gen_nazism
+			expire = "1953.3.1.1"
+			traits={ emigree }
+			id = -1
+		}
+	}
+
 	TUR_memduh_tagmac={
 		name=TUR_memduh_tagmac
 		portraits={
