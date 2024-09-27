@@ -398,3 +398,107 @@ country_event = { # THE CHOICE
 		set_country_flag = TUR_syrian_way
 	}
 }
+country_event = { # albania boogaloo
+	id = KT_turkey_events.15
+	title = KT_turkey_events.15.t
+	desc = KT_turkey_events.15.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			}
+		}
+	
+	
+	option = {
+		name = KT_turkey_events.15.a
+		TUR = {
+		create_wargoal = {
+    		type = puppet_wargoal_focus
+    		target = GRE
+		}
+		complete_national_focus = TUR_a_fourth_balkan_war
+		}
+		ai_chance = {
+			base = 10
+		}
+	
+	}
+	option = {
+		name = KT_turkey_events.15.b
+		TUR = {
+			transfer_state = 797
+			transfer_state = 341
+			transfer_state = 339
+			transfer_state = 987
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = { # albania boogaloo
+	id = KT_turkey_events.16
+	title = KT_turkey_events.16.t
+	desc = KT_turkey_events.16.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			}
+		}
+	
+	
+	option = {
+		name = KT_turkey_events.16.a
+		leave_faction = yes
+		declare_war_on = {
+			target = GRE
+			type = puppet_wargoal_focus
+		}
+		ai_chance = {
+			base = 10
+		}
+	
+	}
+	option = {
+		name = KT_turkey_events.16.b
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = { # suez_boogaloo
+	id = KT_turkey_events.17
+	title = KT_turkey_events.17.t
+	desc = KT_turkey_events.17.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			}
+		}
+	
+	
+	option = {
+		name = KT_turkey_events.17.a
+		transfer_state_to = TUR
+		ai_chance = {
+			base = 3
+		}
+
+	
+	}
+	option = {
+		name = KT_turkey_events.17.b
+		ai_chance = {
+			base = 7
+		}
+	}
+}
