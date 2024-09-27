@@ -1,18 +1,14 @@
-
 state={
-	id=18
-	name="STATE_18"
+	id=1077
+	name="STATE_1077"
 
 	history={
 		owner = FRA
 		victory_points = {
-			9490 5 
+			3560 3 
 		}
 		victory_points = {
-			13011 5 
-		}
-		victory_points = {
-			3560 1 
+			13495 1 
 		}
 		buildings = {
 			infrastructure = 4
@@ -25,10 +21,10 @@ state={
 	}
 
 	provinces={
-		551 3533 3546 6531 6545 9472 9490 9505 11732 13011 
+		3560 5291 
 	}
-	manpower=1370800
+	manpower=711632
+	state_category=town
 	buildings_max_level_factor=1.000
-	state_category=city
 	local_supplies=0.000
 }
