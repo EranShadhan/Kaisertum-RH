@@ -5,7 +5,7 @@ ideas = {
 	
 
         TUR_reconstruction = {
-            picture = thisgfxiswrong
+            picture = recontruction
             removal_cost = -1
 
             allowed = {
@@ -24,7 +24,7 @@ ideas = {
         }
 
 		TUR_temp_construction = {
-            picture = thisgfxiswrong
+            picture = quick_construction
             removal_cost = -1
 
             allowed = {
@@ -41,7 +41,7 @@ ideas = {
         }
 
     	TUR_german_eco_1 = {
-            picture = thisgfxiswrong
+            picture = germany_economy
             removal_cost = -1
 
             allowed = {
@@ -60,7 +60,7 @@ ideas = {
 		}
 
 		TUR_german_eco_2 = {
-            picture = thisgfxiswrong
+            picture = germany_economy
             removal_cost = -1
 
             allowed = {
@@ -80,7 +80,7 @@ ideas = {
 		}
 
 		TUR_german_eco_3 = {
-            picture = thisgfxiswrong
+            picture = germany_economy
             removal_cost = -1
 
             allowed = {
@@ -100,7 +100,7 @@ ideas = {
 		}
 
 		TUR_german_eco_4 = {
-            picture = thisgfxiswrong
+            picture = germany_economy
             removal_cost = -1
 
             allowed = {
@@ -121,7 +121,7 @@ ideas = {
 		}
 
 		TUR_german_companies_1 = {
-            picture = thisgfxiswrong
+            picture = german_companies
             removal_cost = -1
 
             allowed = {
@@ -145,7 +145,7 @@ ideas = {
 		}
 
 		TUR_german_companies_2 = {
-            picture = thisgfxiswrong
+            picture = german_companies
             removal_cost = -1
 
             allowed = {
@@ -175,7 +175,7 @@ ideas = {
 		}
 
 		TUR_german_companies_3 = {
-            picture = thisgfxiswrong
+            picture = german_companies
             removal_cost = -1
 
             allowed = {
@@ -208,7 +208,7 @@ ideas = {
 		}
 
 		TUR_russian_eco_1 = {
-            picture = thisgfxiswrong
+            picture = russian_companies
             removal_cost = -1
 
             allowed = {
@@ -226,7 +226,7 @@ ideas = {
 		}
 
 		TUR_russian_eco_2 = {
-            picture = thisgfxiswrong
+            picture = russian_companies
             removal_cost = -1
 
             allowed = {
@@ -245,7 +245,7 @@ ideas = {
 		}
 
 		TUR_russian_eco_3 = {
-            picture = thisgfxiswrong
+            picture = russian_companies
             removal_cost = -1
 
             allowed = {
@@ -264,7 +264,7 @@ ideas = {
 		}
 
 		TUR_russian_eco_4 = {
-            picture = thisgfxiswrong
+            picture = russian_companies
             removal_cost = -1
 
             allowed = {
@@ -285,7 +285,7 @@ ideas = {
 		}
 
 		TUR_temp_farmer_loans = {
-            picture = thisgfxiswrong
+            picture = farmer_loans
             removal_cost = -1
 
             allowed = {
@@ -302,7 +302,7 @@ ideas = {
         }
 
 		TUR_fund_the_dam = {
-            picture = thisgfxiswrong
+            picture = por_hydroelectric_power
             removal_cost = -1
 
             allowed = {
@@ -320,7 +320,7 @@ ideas = {
 
 		
 		TUR_ger_decision_expertise = {
-            picture = thisgfxiswrong
+            picture = german_experts
             removal_cost = -1
 
             allowed = {
@@ -337,7 +337,7 @@ ideas = {
         }
 
 		TUR_resources = {
-            picture = thisgfxiswrong
+            picture = ast_all_in
             removal_cost = -1
 
             allowed = {
@@ -354,7 +354,7 @@ ideas = {
         }
 
 		TUR_commericalized_agriculture = {
-            picture = thisgfxiswrong
+            picture = commercial_agriculture
             removal_cost = -1
 
             allowed = {
@@ -372,7 +372,7 @@ ideas = {
         }
 
 		TUR_commericalized_agriculture_2 = {
-            picture = thisgfxiswrong
+            picture = commercial_agriculture
             removal_cost = -1
 
             allowed = {
@@ -390,7 +390,7 @@ ideas = {
         }
 
 		TUR_commericalized_agriculture_3 = {
-            picture = thisgfxiswrong
+            picture = commercial_agriculture
             removal_cost = -1
 
             allowed = {
@@ -408,7 +408,7 @@ ideas = {
         }
 
 		TUR_encouraged_investment = {
-            picture = thisgfxiswrong
+            picture = recontruction
             removal_cost = -1
 
             allowed = {
@@ -425,7 +425,7 @@ ideas = {
         }
 
 		TUR_final_economic_idea = {
-            picture = thisgfxiswrong
+            picture = final_economic_idea
             removal_cost = -1
 
             allowed = {
@@ -634,6 +634,7 @@ ideas = {
 			}
 		}
 		TUR_german_military_mission = {
+			picture = german_mission
 			allowed = {
 				always = no
 			}
@@ -654,6 +655,7 @@ ideas = {
 			}
 		}
 		TUR_russian_military_mission = {
+			picture = russian_mission
 			allowed = {
 				always = no
 			}
@@ -674,6 +676,7 @@ ideas = {
 			}
 		}
 		TUR_motorized_focus_idea = {
+		picture = FRA_motorized_focus
 			allowed = {
 				always = no
 			}
@@ -688,6 +691,7 @@ ideas = {
 			}
 		}
 		TUR_special_forces_improvements = {
+		picture = tukiye_tspecial_forces
 			allowed = {
 				always = no
 			}
@@ -702,6 +706,7 @@ ideas = {
 			}
 		}
 		TUR_tank_program_idea = {
+		picture = ITA_bandits_war
 			allowed = {
 				always = no
 			}
@@ -714,6 +719,7 @@ ideas = {
 			}
 		}
 		TUR_german_naval_mission = {
+		picture = germannavalmission
 			allowed = {
 				always = no
 			}
@@ -734,6 +740,7 @@ ideas = {
 			}
 		}
 		TUR_navy_modernization_idea = {
+		picture = navy_modernization
 			allowed = {
 				always = no
 			}
@@ -750,7 +757,11 @@ ideas = {
 			}
 		}
 		TUR_constitution_of_1930_idea = {
+<<<<<<< Updated upstream
 			picture = generic_constitutional_guarantees
+=======
+		picture = HUN_treaty_of_triannon
+>>>>>>> Stashed changes
 			allowed = {
 				always = no
 			}
@@ -765,7 +776,11 @@ ideas = {
 			}
 		}
 		TUR_educated_society = {
+<<<<<<< Updated upstream
 			picture = educated_society
+=======
+		picture = generic_research_bonus
+>>>>>>> Stashed changes
 			allowed = {
 				always = no
 			}
@@ -781,7 +796,11 @@ ideas = {
 			}
 		}
 		TUR_reformed_penal_code = {
+<<<<<<< Updated upstream
 			picture = HUN_treaty_of_triannon
+=======
+		picture = generic_constitutional_guarantees
+>>>>>>> Stashed changes
 			allowed = {
 				always = no
 			}
@@ -794,7 +813,11 @@ ideas = {
 			}
 		}
 		TUR_civil_code_idea = {
+<<<<<<< Updated upstream
 			picture = generic_constitutional_guarantees
+=======
+		picture = generic_constitutional_guarantees
+>>>>>>> Stashed changes
 			allowed = {
 				always = no
 			}
@@ -808,7 +831,11 @@ ideas = {
 			}
 		}
 		TUR_ahmed_IV_idea = {
+<<<<<<< Updated upstream
 			picture = ahmed_IV_idea
+=======
+		picture = ahmed_idea
+>>>>>>> Stashed changes
 			allowed = {
 				always = no
 			}
@@ -825,7 +852,11 @@ ideas = {
 
 		}
 		TUR_shining_light_of_democracy = {
+<<<<<<< Updated upstream
 			picture = generic_democratic_drift_bonus
+=======
+		picture = generic_democratic_drift_bonus
+>>>>>>> Stashed changes
 			allowed = {
 				always = no
 			}
@@ -876,7 +907,11 @@ ideas = {
 
     }
 	TUR_incompetent_ultranationalist_opposition = {
+<<<<<<< Updated upstream
 			picture = generic_fascism_banned
+=======
+	picture = saf_ossewabrandwag_2
+>>>>>>> Stashed changes
 			allowed = {
 				always = no
 			}
@@ -891,7 +926,11 @@ ideas = {
 			}
 		}
 	TUR_collectivized_agriculture = {
+<<<<<<< Updated upstream
 			picture = collectivized_agriculture
+=======
+	picture = mewhennopicture
+>>>>>>> Stashed changes
 			allowed = {
 				always = no
 			}
@@ -907,7 +946,11 @@ ideas = {
 		}
 	
 	TUR_islamic_bastion_of_socialism_idea = {
+<<<<<<< Updated upstream
 			picture = islamic_bastion_of_socialism
+=======
+	picture = mewhennopicture
+>>>>>>> Stashed changes
 			allowed = {
 				always = no
 			}
@@ -924,7 +967,11 @@ ideas = {
 			}
 		}
 	TUR_minority_representation = {
+<<<<<<< Updated upstream
 			picture = minority_representation
+=======
+	picture = mewhennopicture
+>>>>>>> Stashed changes
 			allowed = {
 				always = no
 			}
@@ -940,7 +987,11 @@ ideas = {
 			}
 		}
 		TUR_federation = {
+<<<<<<< Updated upstream
 			picture = TUR_federation
+=======
+		picture = mewhennopicture
+>>>>>>> Stashed changes
 			allowed = {
 				always = no
 			}
@@ -957,7 +1008,11 @@ ideas = {
 			}
 		}
 		TUR_federalist_constitution = {
+<<<<<<< Updated upstream
 			picture = generic_constitutional_guarantees
+=======
+		picture = mewhennopicture
+>>>>>>> Stashed changes
 			allowed = {
 				always = no
 			}
@@ -972,6 +1027,7 @@ ideas = {
 			}
 		}
 		TUR_the_sultans_cabinet = {
+		picture = mewhennopicture
 			allowed = {
 				always = no
 			}
@@ -986,6 +1042,7 @@ ideas = {
 			}
 		}
 		TUR_western_government = {
+		picture = mewhennopicture
 			allowed = {
 				always = no
 			}
@@ -999,6 +1056,7 @@ ideas = {
 			}
 		}
 		TUR_limited_isolationism_idea = {
+		picture = mewhennopicture
 			allowed = {
 				always = no
 			}
@@ -1014,6 +1072,7 @@ ideas = {
 			}
 		}
 		TUR_italian_industrial_access = {
+		picture = mewhennopicture
 			allowed = {
 				always = no
 			}
@@ -1027,6 +1086,7 @@ ideas = {
 			}
 		}
 		TUR_influence_over_turkey_6 = {
+		picture = mewhennopicture
 			allowed = {
 				always = no
 			}
@@ -1045,6 +1105,7 @@ ideas = {
 			}
 		}
 		TUR_influence_over_turkey_5 = {
+		picture = mewhennopicture
 			allowed = {
 				always = no
 			}
@@ -1063,6 +1124,7 @@ ideas = {
 			}
 		}
 		TUR_influence_over_turkey_4 = {
+		picture = mewhennopicture
 			allowed = {
 				always = no
 			}
@@ -1081,6 +1143,7 @@ ideas = {
 			}
 		}
 		TUR_influence_over_turkey_3 = {
+		picture = mewhennopicture
 			allowed = {
 				always = no
 			}
@@ -1099,6 +1162,7 @@ ideas = {
 			}
 		}
 		TUR_influence_over_turkey_2 = {
+		picture = mewhennopicture
 			allowed = {
 				always = no
 			}
@@ -1117,6 +1181,7 @@ ideas = {
 			}
 		}
 		TUR_influence_over_turkey_1 = {
+		picture = mewhennopicture
 			allowed = {
 				always = no
 			}
@@ -1135,6 +1200,7 @@ ideas = {
 			}
 		}
 		TUR_anti_russian_propaganda_idea = {
+		picture = mewhennopicture
 			allowed = {
 				always = no
 			}
@@ -1150,6 +1216,7 @@ ideas = {
 			}
 		}
 		TUR_interventionism = {
+		picture = mewhennopicture
 			allowed = {
 				always = no
 			}
@@ -1162,6 +1229,7 @@ ideas = {
 			}
 		}
 		TUR_pan_turkism = {
+		picture = mewhennopicture
 			allowed = {
 				always = no
 			}
@@ -1174,6 +1242,7 @@ ideas = {
 			}
 		}
 		TUR_wolf_of_islam = {
+		picture = mewhennopicture
 			allowed = {
 				always = no
 			}
@@ -1186,6 +1255,7 @@ ideas = {
 			}
 		}
 		TUR_turkification = {
+		picture = mewhennopicture
 			allowed = {
 				always = no
 			}
@@ -1197,6 +1267,7 @@ ideas = {
 			}
 		}
 		TUR_turkish_empire = {
+		picture = mewhennopicture
 			allowed = {
 				always = no
 			}
@@ -1213,6 +1284,7 @@ ideas = {
 			}
 		}
 		TUR_syrian_rebellion_idea = {
+		picture = mewhennopicture
 			allowed = {
 				NOT = { has_global_flag = syria_wins }
 				NOT = { has_global_flag = syria_loses }
@@ -1227,6 +1299,7 @@ ideas = {
 			}
 		}
 		TUR_natsoc_societies = {
+		picture = mewhennopicture
 			allowed = {
 				always = no
 			}
@@ -1243,6 +1316,7 @@ ideas = {
 		}
 
 		TUR_commitment_idea = {
+		picture = mewhennopicture
 			allowed = {
 				always = no
 			}
@@ -1258,6 +1332,7 @@ ideas = {
 			}
 		}
 		TUR_state_of_equals_idea = {
+		picture = mewhennopicture
 			allowed = {
 				always = no
 			}
@@ -1272,6 +1347,7 @@ ideas = {
 			}
 		}
 		TUR_state_of_moderns_idea = {
+		picture = mewhennopicture
 			allowed = {
 				always = no
 			}
@@ -1285,6 +1361,7 @@ ideas = {
 			}
 		}
 		TUR_state_of_fighters_idea = {
+		picture = mewhennopicture
 			allowed = {
 				always = no
 			}
@@ -1300,6 +1377,7 @@ ideas = {
 			}
 		}
 		TUR_governmental_monopolies = {
+		picture = mewhennopicture
 			allowed = {
 				always = no
 			}
@@ -1315,6 +1393,7 @@ ideas = {
 			}
 		}
 		TUR_governmental_trade_unions = {
+		picture = mewhennopicture
 			allowed = {
 				always = no
 			}
