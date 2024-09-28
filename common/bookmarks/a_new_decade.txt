@@ -23,6 +23,39 @@ bookmarks = {
 				FRA_double_down_on_tanks
 			}
 		}
+		"JAP"={
+			history = "JAP_NEW_DECADE_DESC"
+			ideology = communism
+			ideas = {
+			}	
+			focuses = {
+			}
+		}
+		"SOV"={
+			history = "SOV_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+				RUS_transistion
+				RUS_stagnant_russification
+				RUS_rampant_corruption
+				RUS_revanchism
+			}
+			focuses = {
+				RUS_initial_reforms
+				RUS_authoritarian_path
+				RUS_kerensky
+				RUS_socialist_candidate
+			}
+		}
+		"ITA"={
+			history = "ITA_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+                german_customs_union_member
+			}	
+			focuses = {
+			}		
+		}
 		"ENG"={
 			history = "ENG_NEW_DECADE_DESC"
 			ideology = democratic
@@ -50,39 +83,7 @@ bookmarks = {
 				GER_hre
 			}
 		}
-		"ITA"={
-			history = "ITA_NEW_DECADE_DESC"
-			ideology = neutrality
-			ideas = {
-                german_customs_union_member
-			}	
-			focuses = {
-			}		
-		}
-		"SOV"={
-			history = "SOV_NEW_DECADE_DESC"
-			ideology = neutrality
-			ideas = {
-				RUS_transistion
-				RUS_stagnant_russification
-				RUS_rampant_corruption
-				RUS_revanchism
-			}
-			focuses = {
-				RUS_initial_reforms
-				RUS_authoritarian_path
-				RUS_kerensky
-				RUS_socialist_candidate
-			}
-		}
-		"JAP"={
-			history = "JAP_NEW_DECADE_DESC"
-			ideology = communism
-			ideas = {
-			}	
-			focuses = {
-			}
-		}
+		
 		"USA"={
 			history = "USA_NEW_DECADE_DESC"
 			ideology = democratic
@@ -94,7 +95,7 @@ bookmarks = {
 			}
 		}
 
-       "---"={
+		"---"={
 			history = "OTHER_NEW_DECADE_DESC"
 		}
 		###  MINORS ###
