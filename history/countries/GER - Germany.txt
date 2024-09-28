@@ -220,9 +220,9 @@ add_ideas = {
 	german_customs_union_member
 	GER_powerful_unions
 	GER_german_breadbasket_to_ukr
-	GER_too_big_to_fail
-	german_customs_union_leader
-	GER_switching_to_oil
+	#GER_too_big_to_fail
+	#german_customs_union_leader
+	#GER_switching_to_oil
 	
 	low_economic_mobilisation
 	limited_conscription

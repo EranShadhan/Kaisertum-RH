@@ -6,26 +6,7 @@ GRE_historical_plan = {
 		original_tag = GRE
 	}
 	enable = {
-		OR = {
-			AND = {
-				is_historical_focus_on = yes
-				has_game_rule = {
-					rule = GRE_ai_behavior
-					option = DEFAULT
-				}	
-			}
-			has_country_flag = GRE_AI_NEUTRALITY_HISTORICAL
-			has_game_rule = {
-				rule = GRE_ai_behavior
-				option = HISTORICAL
-			}
-		}
-	}
-	abort = {
-		OR = {
-			has_government = communism
-			has_government = fascism
-		}
+		is_historical_focus_on = yes
 	}
 
 	ai_national_focuses = {
@@ -110,9 +91,9 @@ GRE_historical_plan = {
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
 	weight = {
-		factor = 2.0
+		factor = 5.0
 		modifier = {
-			factor = 5.0
+			factor = 15.0
 		}
 	}
 
