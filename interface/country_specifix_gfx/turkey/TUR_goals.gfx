@@ -13,6 +13,10 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/TUR/invite_german_military_mission.png"			
 	}
 	SpriteType = {
+	name = "GFX_TUR_the_jewel_of_turkey"
+	texturefile = "gfx/interface/goals/TUR/the_jewel_of_turkey.dds"			
+	}
+	SpriteType = {
 	name = "GFX_TUR_invite_russian_military_mission"
 	texturefile = "gfx/interface/goals/TUR/invite_russian_military_mission.png"			
 	}

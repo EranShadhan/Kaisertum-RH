@@ -368,7 +368,7 @@ focus = { # CAPITAL
 
 focus = { # CAPITAL
     id = TUR_connect_the_western_regions
-    icon = GFX_focus_generic_public_works
+    icon = GFX_focus_SOV_the_road_of_life
     prerequisite = { focus = TUR_Yenisehir_housing_projects }
     x = -1
     y = 1
@@ -629,7 +629,7 @@ focus = { # INDUSTRIALIZATION
 
 focus = { # INDUSTRIALIZATION
     id = TUR_invite_the_Kaiserbahn_to_turkey
-    icon = thisgfxiswrong
+    icon = GFX_focus_ger_return_of_the_kaiser
     prerequisite = { focus = TUR_invite_MAN_company }
     prerequisite = { focus = TUR_expand_the_enguru_railway_station }
     x = -1
@@ -1017,7 +1017,7 @@ focus = {
 
 focus = {
     id = TUR_invest_in_the_tobacco_industry
-    icon = thisgfxiswrong
+    icon = GFX_goal_generic_construct_civ_factory
     prerequisite = { focus = TUR_mechanize_the_farms }
     prerequisite = { focus = TUR_russian_industrial_base }
     x = -1
@@ -1095,7 +1095,7 @@ focus = {
 
 focus = {
     id = TUR_trademark_of_the_turkish_people
-    icon = thisgfxiswrong
+    icon = GFX_goal_generic_positive_trade_relations
     prerequisite = { focus = TUR_fund_new_textile_manufactories }
     x = 0
     y = 1
@@ -1169,7 +1169,7 @@ focus = {
 
 focus = {
     id = TUR_never_going_hungry_again
-    icon = thisgfxiswrong
+    icon = GFX_ROM_food_crop
     prerequisite = { focus = TUR_establish_the_model_farms_program }
     prerequisite = { focus = TUR_redistribute_unused_land }
     prerequisite = { focus = TUR_irrigate_the_land }
@@ -1298,7 +1298,7 @@ focus = {
 
 focus = {
     id = TUR_irrigate_the_land
-    icon = thisgfxiswrong
+    icon = GFX_goal_generic_position_armies
     prerequisite = { focus = TUR_fund_the_cubuk_dam }
     x = -1
     y = 1
