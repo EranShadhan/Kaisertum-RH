@@ -2625,6 +2625,10 @@ focus = {
 			
 	
 			completion_reward = {
+				
+				custom_effect_tooltip = mihai_hiring
+				remove_ideas = ineffective_regency
+				hidden_effect = {
 				create_country_leader = {
 					name = ROM_mihai
 					picture  = GFX_portrait_ROM_mihai
@@ -2632,8 +2636,7 @@ focus = {
 					ideology = liberalism
 					traits = { ROM_bright_eyed_monarch }
 				}
-
-				remove_ideas = ineffective_regency
+			}
 			}
 	}
 
@@ -2990,13 +2993,16 @@ focus = {
 			
 	
 			completion_reward = {
-				kill_country_leader = yes 
+				kill_country_leader = yes
+				custom_effect_tooltip = gheorge_hiring
+				hidden_effect = {
 				create_country_leader = {
 					name = ROM_gheorghe_tatarescu
 					picture  = GFX_Portrait_romania_gheorghe_tatarescu
 					expire = "1965.1.1"
 					ideology = liberalism
 				}
+			}
 			}
 	}
 

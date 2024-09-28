@@ -72,10 +72,12 @@ ROM_pol_rc_13:0 "Mine for Oil"
 ROM_frn_long:0 "House of Hohenzollern-Sigmaringen"
 ROM_frn:0 "King's Party"
 
-
+gheorge_hiring:0 "§YGheorghe Tatarescu §!become leader for the §YDemocratic§! party."
+mihai_hiring:0 "§YMihai I §!become leader for the §YDemocratic§! party.\n     §YBright Eyed Monarch§!\n     - Mobilization speed: §G+10.00%§!\n     - Stability: §G+10.00%§!\n     - §YInfrastructure§! construction speed: §G+20.00%§!\n     - §YCivilian Factory§! construction speed: §G+20.00%§!"
 ROM_king_carol:0 "Carol II"
 ROM_mihai:0 "Mihai I"
 ROM_reg:0 "Regency Council"
+ROM_gheorghe_tatarescu:0 "Gheorghe Tatarescu"
 
 
 ROM_playboy_king:0 "Playboy King"
@@ -182,7 +184,7 @@ food_surplus_needed:0 "§RNOT TAKING THE EXPORT SURPLUS WILL LEAD TO OUR BULGARI
 rom_update_dynamic_agriculture:0 "This will decrease our Building speed by §R1%§!, but boost our recruitable population by §G2%§!"
 ROM_peak_industry:0 "The Beast of the East"
 ROM_national_plan:0 "National Plan"
-ROM_mihai:0 "King Michael"
+
 ROM_resistant_culture_hun:0 "Resisting Hungarians"
 ROM_resistant_culture:0 "Balkan Integration"
 ROM_total_equality:0 "Total Equality"
@@ -190,7 +192,7 @@ ROM_sell_gold_2:0 "Importing from Romania"
 ROM_sell_gold:0 "Exporting to The Major Powers"
 ROM_war_songs:0 "Propaganda Music"
 Democracy_increase:0 "Democratic Uprisings"
-ROM_gheorghe_tatarescu:0 "Gheorghe Tatarescu"
+
 BALK_debuff:0 "Romanian Spies"
 weaken_balkan_countries:0 "This will Allow us to Infiltrate Members of the §6Salonica Pact§! and Weaken their militaries"
 rom_unite_the_balkans:0 "Finally after so many years of instability in the Balkans we've been united, and we shall never be separated again"
