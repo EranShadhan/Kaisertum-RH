@@ -6,6 +6,79 @@ on_actions = {
 					has_global_flag = endonyms
 					any_country = {
 						limit = {
+							is_hungarian_tag = yes
+						}
+						controls_state = 70
+					}
+				}
+				70 = { set_state_name = "Pozsony" }
+				set_province_name = { id = 9692 name = "Pozsony" }
+				else_if = {
+					limit = {
+						has_global_flag = endonyms
+						any_country = {
+							limit = {
+								is_german_tag = yes
+							}
+							controls_state = 70
+						}
+					}
+					70 = { set_state_name = "Preßburg" }
+					set_province_name = { id = 9692 name = "Preßburg" }
+				}
+				else = {
+					70 = { set_state_name = "Bratislava" }
+					set_province_name = { id = 9692 name = "Bratislava" }
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = endonyms
+					any_country = {
+						limit = {
+							is_czechoslovak_tag = yes
+						}
+						controls_state = 71
+					}
+				}
+				71 = { set_state_name = "Prešov" }
+				set_province_name = { id = 3581 name = "Prešov" }
+				else_if = {
+					limit = {
+						has_global_flag = endonyms
+						any_country = {
+							limit = {
+								is_hungarian_tag = yes
+							}
+							controls_state = 71
+						}
+					}
+					71 = { set_state_name = "Eperjes" }
+					set_province_name = { id = 3581 name = "Eperjes" }
+				}
+				else_if = {
+					limit = {
+						has_global_flag = endonyms
+						any_country = {
+							limit = {
+								is_german_tag = yes
+							}
+							controls_state = 71
+						}
+					}
+					71 = { set_state_name = "Eperies" }
+					set_province_name = { id = 3581 name = "Eperies" }
+				}
+				else = {
+					71 = { set_state_name = "Presov" }
+					set_province_name = { id = 3581 name = "Presov" }
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = endonyms
+					any_country = {
+						limit = {
 							is_polish_tag = yes
 						}
 						controls_state = 784
@@ -91,6 +164,49 @@ on_actions = {
 					has_global_flag = endonyms
 					any_country = {
 						limit = {
+							is_czechoslovak_tag = yes
+						}
+						controls_state = 1042
+					}
+				}
+				1042 = { set_state_name = "Trenčín" }
+				set_province_name = { id = 13748 name = "Trenčín" }
+				else_if = {
+					limit = {
+						has_global_flag = endonyms
+						any_country = {
+							limit = {
+								is_hungarian_tag = yes
+							}
+							controls_state = 1042
+						}
+					}
+					1042 = { set_state_name = "Trencsén" }
+					set_province_name = { id = 13748 name = "Trencsén" }
+				}
+				else_if = {
+					limit = {
+						has_global_flag = endonyms
+						any_country = {
+							limit = {
+								is_german_tag = yes
+							}
+							controls_state = 1042
+						}
+					}
+					1042 = { set_state_name = "Trentschin" }
+					set_province_name = { id = 13748 name = "Trentschin" }
+				}
+				else = {
+					1042 = { set_state_name = "Trencin" }
+					set_province_name = { id = 13748 name = "Trencin" }
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = endonyms
+					any_country = {
+						limit = {
 							is_polish_tag = yes
 						}
 						controls_state = 1063
@@ -131,6 +247,53 @@ on_actions = {
 				else = {
 					1068 = { set_state_name = "Olivenza" }
 					set_province_name = { id = 13740 name = "Olivenza" }
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = endonyms
+					any_country = {
+						limit = {
+							is_czechoslovak_tag = yes
+						}
+						controls_state = 1074
+					}
+				}
+				1074 = { set_state_name = "Banská Bystrica" }
+				set_province_name = { id = 11539 name = "Banská Bystrica" }
+				set_province_name = { id = 13749 name = "Žilina" }
+				else_if = {
+					limit = {
+						has_global_flag = endonyms
+						any_country = {
+							limit = {
+								is_hungarian_tag = yes
+							}
+							controls_state = 1074
+						}
+					}
+					1074 = { set_state_name = "Besztercebánya" }
+					set_province_name = { id = 11539 name = "Besztercebánya" }
+					set_province_name = { id = 13749 name = "Zsolna" }
+				}
+				else_if = {
+					limit = {
+						has_global_flag = endonyms
+						any_country = {
+							limit = {
+								is_german_tag = yes
+							}
+							controls_state = 1074
+						}
+					}
+					1074 = { set_state_name = "Byzterchebana" }
+					set_province_name = { id = 11539 name = "Byzterchebana" }
+					set_province_name = { id = 13749 name = "Sillein" }
+				}
+				else = {
+					1074 = { set_state_name = "Banska Bystrica" }
+					set_province_name = { id = 11539 name = "Banska Bystrica" }
+					set_province_name = { id = 13749 name = "Zilina" }
 				}
 			}
 		}

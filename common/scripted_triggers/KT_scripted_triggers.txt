@@ -172,3 +172,22 @@ is_ukrainian_tag = {
 		original_tag = UKR
 	}
 }
+
+is_czech_tag = {
+	OR = {
+		original_tag = CZE
+	}
+}
+
+is_slovak_tag = {
+	OR = {
+		original_tag = SLO
+	}
+}
+
+is_czechoslovak_tag = {
+	OR = {
+		original_tag = CZE
+		original_tag = SLO
+	}
+}
