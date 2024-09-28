@@ -82,6 +82,7 @@ pontiac_revolt = {
 			}
 
 		complete_effect = {
+		swap_ideas = { remove_idea = GRE_megali_idea_partial_restoration add_idea = GRE_megali_idea_full_restoration }
 			set_country_flag = GRE_GREATER_GREECE_flag
 			GRE_set_appropriate_cosmetic_tag = yes
 			# Greece
@@ -917,6 +918,7 @@ form_macedonian_empire_category = {
          fire_only_once = yes
 		complete_effect = {
 		add_timed_idea = { idea = GRE_integrade_muslims_majorities days = 365 }
+		swap_ideas = { remove_idea = GRE_megali_idea_partial_restoration add_idea = GRE_megali_idea_mac }
 			set_country_flag = GRE_mae_flag
 			GRE_set_appropriate_cosmetic_tag = yes
 			# Iran

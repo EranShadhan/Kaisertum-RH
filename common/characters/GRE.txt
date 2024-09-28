@@ -116,6 +116,7 @@ characters={
 				allowed = {
 					original_tag = GRE
 					has_country_flag = GRE_metaxas_army
+					NOT = { has_country_flag = GRE_metaxas_almost_died }
 				}
 				available = {
 					has_country_flag = GRE_metaxas_army
@@ -144,7 +145,7 @@ characters={
 				idea_token = GRE_ioannis_metaxas
 				allowed = {
 					original_tag = GRE
-			NOT = { has_completed_focus = GRE_ally_the_mafia_to_assasinate_metaxas }
+				NOT = { has_country_flag = GRE_metaxas_almost_died }
 				}
 				can_be_fired = no
 				available = {

@@ -1,6 +1,13 @@
 
 spriteTypes = {
-	
+	spriteType = {
+		name = "GFX_report_event_GRE_metaxas"
+		texturefile = "gfx/event_pictures/report_event_GRE_metaxas.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_GRE_strait"
+		texturefile = "gfx/event_pictures/report_event_GRE_strait.dds"
+	}
 	spriteType = {
 		name = "GFX_report_event_GRE_smrna_fire"
 		texturefile = "gfx/event_pictures/news_event_GRE_smrna_fire.dds"

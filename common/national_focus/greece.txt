@@ -1023,6 +1023,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		leave_faction = yes
 	         set_politics = { ruling_party = fascism elections_allowed = no }	
 			add_popularity = { 
 				ideology = fascism 
@@ -1559,6 +1560,7 @@ add_ideas = GRE_like_the_beasts
 
 		
 		available = {
+		has_global_flag = form_byzantine_empire_flag
 		}
 		x = -3
 		y = 1
@@ -1571,6 +1573,7 @@ add_ideas = GRE_like_the_beasts
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
+		swap_ideas = { remove_idea = GRE_megali_idea_partial_restoration add_idea = GRE_megali_idea_roman }
 	set_cosmetic_tag = SPQR_UNIFIED
 	custom_effect_tooltip = GRE_rome_induvidually_tt
 		    }
@@ -2353,7 +2356,9 @@ add_ideas = GRE_like_the_beasts
 		search_filters = {  }
 		completion_reward = {
 		set_cosmetic_tag = MED_UN
+		
 		custom_effect_tooltip = GRE_red_med_tt
+		swap_ideas = { remove_idea = GRE_megali_idea_partial_restoration add_idea = GRE_megali_idea_med }
 		hidden_effect = {
 		168 = {add_core_of = GRE }
 		167 = {add_core_of = GRE }
@@ -3071,7 +3076,7 @@ add_ideas = GRE_like_the_beasts
 		search_filters = {  }
 		completion_reward = {
 		 
-		  	remove_ideas = victory_in_the_sgtwgre
+		  	remove_ideas = victory_in_the_sgtw_gr
 		}
 	}	
 	focus = {
@@ -4299,6 +4304,7 @@ focus = {
 		prerequisite = { focus = GRE_royal_hellenic_army  }
 		available = {
 		}
+		bypass = { has_country_flag = GRE_metaxas_almost_died}
 		x = 0
 		y = 1
 		relative_position_id = GRE_royal_hellenic_army
@@ -4736,12 +4742,8 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = {  }
 		completion_reward = {
-	       add_ideas = GRE_modern_construction_technique_idea
-		   add_tech_bonus = {
-				bonus = 1
-				uses = 2
-				category = electronics
-				}
+	       add_ideas = GRE_oiliveoil_exports
+		  
 			}
 		}
 		focus = { 
@@ -6022,7 +6024,7 @@ prerequisite = { focus = GRE_pan_hellenic_rail_way}
 		icon = GFX_focus_GRE_following_in_the_footsteps_of_giants
         prerequisite = { focus = GRE_have_faith_in_the_army }
 		relative_position_id = GRE_have_faith_in_the_army
-  		available = { has_war = yes}
+  		available = { threat > 0.25}
 		x = 0
 		y = 1
 		cost = 5

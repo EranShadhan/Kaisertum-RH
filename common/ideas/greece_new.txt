@@ -269,7 +269,7 @@ ideas = {
 		}
 		GRE_communism_uni2 = { 
 			removal_cost = -1
-
+             name = GRE_communism_uni
 			picture = ITA_il_sol_dell_avvenire_ns
 
 			modifier = {
@@ -312,44 +312,6 @@ ideas = {
 				trade_cost_for_target_factor = -0.1
 				extra_trade_to_target_factor = 0.2
 				trade_opinion_factor = 0.5
-			}
-		}
-		SWE_ball_bearing_idea_food_partner = {
-			picture = can_wartime_prices_and_trade_board
-			allowed = {
-				always = yes
-			}
-
-			cancel = {
-				has_war_with = SWE
-			}
-
-			equipment_bonus = { #To future confused Viktor when he inevitably checks this for the 10th time, yes this works without DLCs I just checked again, best regards, past Viktor
-				small_plane_airframe = {
-					build_cost_ic = -0.08 instant = yes
-				}
-				medium_plane_airframe = {
-					build_cost_ic = -0.06 instant = yes
-				}
-				large_plane_airframe = {
-					build_cost_ic = -0.05 instant = yes
-				}
-
-				light_tank_chassis = {
-					build_cost_ic = -0.08  instant = yes
-				}
-
-				medium_tank_chassis = {
-					build_cost_ic = -0.06 instant = yes
-				}
-
-				heavy_tank_chassis = {
-					build_cost_ic = -0.05 instant = yes
-				}
-			}
-
-			modifier = {
-				consumer_goods_factor = 0.05
 			}
 		}
 		GRE_integrade_muslims_majorities = {
@@ -715,7 +677,7 @@ GRE_macedonean_spirit = {
 			}
 		}
 		GRE_ace_women2 = { 
-
+        name = GRE_ace_women
 			allowed = {
 				original_tag = GRE
 			}
@@ -742,7 +704,7 @@ GRE_macedonean_spirit = {
 	 GRE_trusted_our_ships_to_ger = {
 		     picture = generic_naval_manufacturer_1
 			 removal_cost = -1
-			 
+			 name = GRE_trusted_us_ger
 			 modifier = {
 			    political_power_cost = 0.5
 				consumer_goods_factor = 0.2
@@ -753,7 +715,7 @@ GRE_macedonean_spirit = {
 	GRE_trusted_us_eng = {
 		     picture = generic_naval_manufacturer_1
 			 removal_cost = -1
-			 
+			 name= GRE_trusted_us_ger
 			 modifier = {
 			    political_power_gain = 1
 				consumer_goods_factor = -0.4
@@ -764,7 +726,7 @@ GRE_macedonean_spirit = {
 	 GRE_trusted_our_ships_to_eng = {
 		     picture = generic_naval_manufacturer_1
 			 removal_cost = -1
-			 
+			 name = GRE_trusted_us_ger
 			 modifier = {
 			    political_power_cost = 1
 				consumer_goods_factor = 0.4
@@ -875,6 +837,7 @@ GRE_macedonean_spirit = {
 			removal_cost = -1
             modifier = {
 			conscription = 0.01
+			weekly_manpower = 250
 			}
 			
 		}
@@ -887,6 +850,7 @@ GRE_macedonean_spirit = {
 			removal_cost = -1
             modifier = {
 			conscription = 0.01
+			mobilization_speed = 0.1
 			}
 			
 		}
@@ -1616,7 +1580,7 @@ GRE_macedonean_spirit = {
 				air_fuel_consumption_factor = -0.3
 				navy_fuel_consumption_factor = -0.3
 				production_speed_fuel_silo_factor = 0.5
-				consumer_goods_factor = 0.1
+				consumer_goods_factor = 0.05
 			}
 		}
 		GRE_trade_fleet = {
@@ -2147,6 +2111,90 @@ allowed = {
 			}
 			
 		}
+		GRE_megali_idea_full_restoration = {
+			
+            allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = GRE_megali
+
+			
+			removal_cost = -1
+            modifier = {
+			surrender_limit = 0.15
+			war_support_factor = 0.1
+			army_attack_against_major_factor = 0.05
+			}
+			
+		}
+		GRE_megali_idea_roman = {
+			
+            allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = ITA_new_roman_empire_ns
+
+			
+			removal_cost = -1
+            modifier = {surrender_limit = 0.1
+			war_support_factor = 0.05
+			production_speed_arms_factory_factor = 0.1
+			industrial_capacity_factory = 0.1
+			}
+			
+		}
+		GRE_megali_idea_mac = {
+			
+            allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = alexander
+
+			
+			removal_cost = -1
+            modifier = {
+			surrender_limit = 0.1
+			war_support_factor = 0.05
+			compliance_growth = 0.1
+			non_core_manpower = 0.05
+			army_speed_factor = 0.05
+			}
+			
+		}
+		GRE_megali_idea_med = {
+			
+            allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = NORDIC_northern_union
+
+			
+			removal_cost = -1
+            modifier = {
+			surrender_limit = 0.1
+			war_support_factor = 0.05
+			research_speed_factor = 0.05
+			repair_speed_factor = 0.1
+			production_speed_dockyard_factor = 0.1
+			}
+			
+		}
 		GRE_on_going_population_exchange = {
 			
 
@@ -2184,7 +2232,7 @@ allowed = {
   		}
     	GRE_drachma_2 = {
         	picture = GRE_drachma_id
-
+name = GRE_drachma_1
         	allowed = {
         	    always = no
         	}
@@ -2199,7 +2247,7 @@ allowed = {
   		}	
 		GRE_drachma_3 = {
         	picture = GRE_drachma_id
-
+name = GRE_drachma_1
         	allowed = {
         	    always = no
         	}
@@ -2318,7 +2366,7 @@ allowed = {
 			removal_cost = -1
             modifier = {
 						
-			research_speed_factor = 0.1
+			research_speed_factor = 0.05
 			
 
 			}
@@ -2483,6 +2531,25 @@ allowed = {
 				local_resources = 0.25
 				fuel_gain_factor_from_states = 0.15
 				min_export = 0.1
+			}
+		}
+		GRE_oiliveoil_exports = {
+			picture = can_wartime_prices_and_trade_board
+
+			allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				economy_cost_factor = -0.1
+		        min_export = 0.1
+				production_factory_start_efficiency_factor = 0.05
 			}
 		}
    }
