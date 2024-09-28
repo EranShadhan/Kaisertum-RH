@@ -274,7 +274,7 @@ focus = { # CAPITAL
 }
 
 focus = { # CAPITAL
-    id = TUR_expand_the_engürü_railway_station
+    id = TUR_expand_the_enguru_railway_station
     icon = GFX_focus_POL_warsaw_main_station
     prerequisite = { focus = TUR_reopen_cement_factories }
     x = 0
@@ -328,7 +328,7 @@ focus = { # CAPITAL
 
     }
 
-    completion_reward = { # Further upgrade engürü state
+    completion_reward = { # Further upgrade enguru state
          IF = {
 			limit = {
 				49 = {
@@ -379,7 +379,7 @@ focus = { # CAPITAL
 
     }
 
-    completion_reward = { # Further upgrade engürü state
+    completion_reward = { # Further upgrade enguru state
          IF = {
 			limit = {
 				49 = {
@@ -422,7 +422,7 @@ focus = { # CAPITAL
     id = TUR_open_the_OSTIM_industrial_park
     icon = GFX_focus_SWE_landsverk
     prerequisite = { focus = TUR_electrification_of_Ulus }
-    prerequisite = { focus = TUR_expand_the_engürü_railway_station }
+    prerequisite = { focus = TUR_expand_the_enguru_railway_station }
     x = 1
     y = 1
     relative_position_id = TUR_electrification_of_Ulus
@@ -475,7 +475,7 @@ focus = { # CAPITAL
 
     }
 
-    completion_reward = { # Gives engürü/ankara +1 infrastructure
+    completion_reward = { # Gives enguru/ankara +1 infrastructure
 		IF = {
 			limit = {
 				49 = {
@@ -504,7 +504,7 @@ focus = { # CAPITAL
 } 
 
 focus = { # CAPITAL
-    id = TUR_open_the_university_of_engürü
+    id = TUR_open_the_university_of_enguru
     icon = GFX_focus_generic_university_2
     prerequisite = { focus = TUR_connect_the_eastern_regions }
     prerequisite = { focus = TUR_connect_the_western_regions }
@@ -631,7 +631,7 @@ focus = { # INDUSTRIALIZATION
     id = TUR_invite_the_Kaiserbahn_to_turkey
     icon = thisgfxiswrong
     prerequisite = { focus = TUR_invite_MAN_company }
-    prerequisite = { focus = TUR_expand_the_engürü_railway_station }
+    prerequisite = { focus = TUR_expand_the_enguru_railway_station }
     x = -1
     y = 1
     relative_position_id = TUR_invite_MAN_company
@@ -1251,7 +1251,7 @@ focus = {
 }
 
 focus = {
-    id = TUR_fund_the_Çubuk_dam
+    id = TUR_fund_the_cubuk_dam
     icon = GFX_focus_generic_hydroelectric_energy
     prerequisite = { focus = TUR_tame_the_land }
     x = 1
@@ -1299,10 +1299,10 @@ focus = {
 focus = {
     id = TUR_irrigate_the_land
     icon = thisgfxiswrong
-    prerequisite = { focus = TUR_fund_the_Çubuk_dam }
+    prerequisite = { focus = TUR_fund_the_cubuk_dam }
     x = -1
     y = 1
-    relative_position_id = TUR_fund_the_Çubuk_dam
+    relative_position_id = TUR_fund_the_cubuk_dam
     cost = 4
 
     available = {
@@ -1322,10 +1322,10 @@ focus = {
 focus = {
     id = TUR_cross_the_mountains
     icon = GFX_focus_generic_road_investment
-    prerequisite = { focus = TUR_fund_the_Çubuk_dam }
+    prerequisite = { focus = TUR_fund_the_cubuk_dam }
     x = 0
     y = 2
-    relative_position_id = TUR_fund_the_Çubuk_dam
+    relative_position_id = TUR_fund_the_cubuk_dam
     cost = 4
 
     available = {
