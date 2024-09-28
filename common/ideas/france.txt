@@ -40,7 +40,9 @@ ideas = {
 		}
 		FRA_communist_opposition_2 = {
 
-			picture = FRA_communist_opposition
+			name = FRA_communist_opposition
+
+			picture = jap_the_unthinkable_option
 			
 			allowed = {
 				always = no
@@ -60,7 +62,7 @@ ideas = {
 		}
 		FRA_communist_opposition = {
 
-			picture = FRA_communist_opposition
+			picture = jap_the_unthinkable_option
 			
 			allowed = {
 				always = no
@@ -241,8 +243,10 @@ ideas = {
 		}
 
 		FRA_developed_colonial_army = {
+	
+			name = FRA_colonial_army
 
-			picture = FRA_developed_colonial_army
+			picture = por_colonial_army
 			
 			allowed = {
 				always = no
@@ -277,6 +281,28 @@ ideas = {
 			modifier = {
 				war_support_factor = -0.1
 			}
-		}		
+		}	
+		
+		FRA_cheap_workforce = { #duplicate of a generic with a custom icon
+
+			name = cheap_workforce
+
+			picture = FRA_slave_worker_nat
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
 	}
 }

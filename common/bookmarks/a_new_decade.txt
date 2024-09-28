@@ -130,8 +130,8 @@ bookmarks = {
 			focuses = {
 				ROM_pol_3
 				ROM_pol_2
-				ROM_pol_4
 				ROM_pol_5
+				ROM_army1
 			}
 		}
 		YUG={

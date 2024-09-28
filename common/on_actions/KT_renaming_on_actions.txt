@@ -1,5 +1,5 @@
 on_actions = {
-	daily = {
+	on_daily = {
 		effect = {
 			if = {
 				limit = {
@@ -58,7 +58,12 @@ on_actions = {
 				else_if = {
 					limit = {
 						has_global_flag = endonyms
-						original_tag = LAT
+						any_country = {
+							limit = {
+								is_latvian_tag = yes
+							}
+							controls_state = 784
+						}
 					}
 					784 = { set_state_name = "Viļņa" }
 					set_province_name = { id = 3320 name = "Viļņa" }
@@ -66,7 +71,12 @@ on_actions = {
 				else_if = {
 					limit = {
 						has_global_flag = endonyms
-						original_tag = UKR
+						any_country = {
+							limit = {
+								is_ukrainian_tag = yes
+							}
+							controls_state = 784
+						}
 					}
 					784 = { set_state_name = "Vilno" }
 					set_province_name = { id = 3320 name = "Vilno" }
@@ -79,14 +89,24 @@ on_actions = {
 			if = {
 				limit = {
 					has_global_flag = endonyms
-					original_tag = POL
+					any_country = {
+						limit = {
+							is_polish_tag = yes
+						}
+						controls_state = 1063
+					}
 				}
 				1063 = { set_state_name = "Suwałki" }
 				set_province_name = { id = 3254 name = "Suwałki" }
 				else_if = {
 					limit = {
 						has_global_flag = endonyms
-						original_tag = LIT
+						any_country = {
+							limit = {
+								is_lithuanian_tag = yes
+							}
+							controls_state = 1063
+						}
 					}
 					1063 = { set_state_name = "Suvalkai" }
 					set_province_name = { id = 3254 name = "Suvalkai" }
@@ -99,7 +119,12 @@ on_actions = {
 			if = {
 				limit = {
 					has_global_flag = endonyms
-					is_portuguese_tag = yes
+					any_country = {
+						limit = {
+							is_portuguese_tag = yes
+						}
+						controls_state = 1068
+					}
 				}
 				1068 = { set_state_name = "Olivença" }
 				set_province_name = { id = 13740 name = "Olivença" }

@@ -1,0 +1,13 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_FRA_slave_worker_nat"
+		texturefile = "gfx/interface/ideas/FRA/FRA_slave_worker_nat.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_FRA_worker_nat"
+		texturefile = "gfx/interface/ideas/FRA/FRA_worker_nat.png"
+	}
+
+}

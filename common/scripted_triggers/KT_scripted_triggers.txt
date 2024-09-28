@@ -154,3 +154,21 @@ is_polish_tag = {
 		original_tag = POL
 	}
 }
+
+is_lithuanian_tag = {
+	OR = {
+		original_tag = LIT
+	}
+}
+
+is_latvian_tag = {
+	OR = {
+		original_tag = LAT
+	}
+}
+
+is_ukrainian_tag = {
+	OR = {
+		original_tag = UKR
+	}
+}

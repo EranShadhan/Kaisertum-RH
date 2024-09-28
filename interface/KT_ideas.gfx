@@ -1,17 +1,12 @@
 spriteTypes = {	
 
 	spriteType = {
-		name = "GFX_idea_FRA_communist_opposition"
-		texturefile = "gfx/interface/ideas/idea_FRA_communist_opposition.dds"
-	}
-
-	spriteType = {
 		name = "GFX_idea_german_customs_union_member"
-		texturefile = "gfx/interface/ideas/idea_german_customs_union_member.dds"
+		texturefile = "gfx/interface/ideas/idea_german_customs_union_member.png"
 	}
 
 	spriteType = {
 		name = "GFX_idea_islam_religion"
-		texturefile = "gfx/interface/ideas/islam_religion.dds"
+		texturefile = "gfx/interface/ideas/islam_religion.png"
 	}
 }

@@ -519,7 +519,11 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_stability = 0.2
+			add_timed_idea = {
+				idea = supress_revolts
+				days = 150
+			}
+			add_stability = 0.1
 		}
 	}
 
@@ -1245,7 +1249,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = cheap_workforce
+			add_ideas = FRA_cheap_workforce
 			add_stability = -0.05
 		}
 	}
@@ -1822,6 +1826,7 @@
 
 	focus = {
 		id = FRA_focus_on_fighters
+		text = fighter_focus
 		icon = GFX_goal_generic_air_fighter
 		x = 0
 		y = 1
@@ -1846,6 +1851,7 @@
 
 	focus = {
 		id = FRA_focus_on_cas
+		text = CAS_effort
 		icon = GFX_focus_generic_armored_air_support
 		x = 2
 		y = 1
