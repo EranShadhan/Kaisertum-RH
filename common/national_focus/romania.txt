@@ -3260,7 +3260,7 @@ focus = {
 	}
 	focus = {
 		id = ROM_mechanize_agricultural_equipment
-		icon = GFX_ROM_ind_1
+		icon = GFX_ROM_mechanize_farms
 		relative_position_id = ROM_promote_agricultural_life
 		prerequisite = { focus = ROM_promote_agricultural_life }
 		prerequisite = { focus = ROM_invest_in_agriculture }
@@ -3307,7 +3307,7 @@ focus = {
 	}
 	focus = {
 		id = ROM_transilvanian_industry
-		icon = GFX_ROM_ind_1
+		icon = GFX_ROM_invest_in_transilvania
 		relative_position_id = ROM_mechanize_agricultural_equipment
 		prerequisite = { focus = ROM_mechanize_agricultural_equipment }
 		x = 0
@@ -3565,7 +3565,7 @@ focus = {
 	}
 	focus = {
 		id = ROM_buy_tiraspol
-		icon = GFX_ROM_ind_1
+		icon = GFX_ROM_Transnistria
 		relative_position_id = ROM_moldovan_industry
 		prerequisite = { focus = ROM_moldovan_industry }
 		x = -1
@@ -3603,7 +3603,7 @@ focus = {
 	}
 	focus = {
 		id = ROM_mutenian_industry
-		icon = GFX_ROM_ind_1
+		icon = GFX_ROM_muntenia
 		relative_position_id = ROM_mechanize_agricultural_equipment
 		prerequisite = { focus = ROM_mechanize_agricultural_equipment }
 		x = 2
@@ -3665,7 +3665,7 @@ focus = {
 	}
 	focus = {
 		id = ROM_invest_in_oltenia
-		icon = GFX_ROM_ind_1
+		icon = GFX_ROM_oltenia
 		relative_position_id = ROM_mutenian_industry
 		prerequisite = { focus = ROM_mutenian_industry }
 		x = -1
@@ -3713,7 +3713,7 @@ focus = {
 	}
 	focus = {
 		id = ROM_help_the_poor
-		icon = GFX_ROM_ind_1
+		icon = GFX_ROM_help_the_poor
 		relative_position_id = ROM_promote_agricultural_life
 		prerequisite = { focus = ROM_invest_in_agriculture }
 		x = -4
@@ -3758,7 +3758,7 @@ focus = {
 	}
 	focus = {
 		id = ROM_promote_small_business
-		icon = GFX_ROM_ind_1
+		icon = GFX_ROM_support_bussinessowner
 		relative_position_id = ROM_help_the_poor
 		prerequisite = { focus = ROM_help_the_poor }
 		x = 0
@@ -3856,7 +3856,7 @@ focus = {
 	}
 	focus = {
 		id = ROM_the_men_of_his_people
-		icon = GFX_ROM_ind_1
+		icon = GFX_ROM_help_farmers
 		relative_position_id = ROM_promote_agricultural_life
 		prerequisite = { focus = ROM_promote_agricultural_life }
 		x = 7
@@ -3901,7 +3901,7 @@ focus = {
 	}
 	focus = {
 		id = ROM_food_surplus
-		icon = GFX_ROM_ind_1
+		icon = GFX_ROM_export
 		relative_position_id = ROM_the_men_of_his_people
 		prerequisite = { focus = ROM_the_men_of_his_people }
 		x = 3
@@ -4019,7 +4019,7 @@ focus = {
 	}
 	focus = {
 		id = ROM_promote_turism
-		icon = GFX_ROM_ind_1
+		icon = GFX_ROM_tourism
 		relative_position_id = ROM_focus_on_food_crops
 		prerequisite = { focus = ROM_focus_on_food_crops focus = ROM_focus_on_cash_crops }
 		x = 1
@@ -4051,7 +4051,7 @@ focus = {
 	}
 	focus = {
 		id = ROM_mobilze_the_econoomy 
-		icon = GFX_ROM_ind_1
+		icon = GFX_ROM_mobilize_the_economy
 		relative_position_id = ROM_focus_on_food_crops
 		prerequisite = { focus = ROM_focus_on_food_crops focus = ROM_focus_on_cash_crops }
 		x = 3
@@ -4084,7 +4084,7 @@ focus = {
 	}
 	focus = {
 		id = ROM_invest_in_bucarest
-		icon = GFX_ROM_ind_1
+		icon = GFX_ROM_capitalinvest
 		relative_position_id = ROM_connect_the_roads
 		prerequisite = { focus = ROM_connect_the_roads }
 		prerequisite = { focus = ROM_invest_in_oltenia }
@@ -4176,7 +4176,7 @@ focus = {
 	}
 	focus = {
 		id = ROM_develop_the_ports
-		icon = GFX_ROM_ind_1
+		icon = GFX_ROM_invest_in_black_sea
 		relative_position_id = ROM_connect_the_roads
 		prerequisite = { focus = ROM_connect_the_roads }
 		x = 1

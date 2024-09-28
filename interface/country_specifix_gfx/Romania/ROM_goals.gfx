@@ -2331,4 +2331,472 @@ spriteTypes = {
 			}
 			legacy_lazy_load = no
 	}
+
+	SpriteType = {
+		name = "GFX_ROM_tourism"
+		texturefile = "gfx/interface/goals/ROM/ROM_tourism.png"			
+		}
+		SpriteType = {
+			name = "GFX_ROM_tourism_shine"
+			texturefile = "gfx/interface/goals/ROM/ROM_tourism.png"
+					effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/ROM/ROM_tourism.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+	
+			animation = {
+				animationmaskfile = "gfx/interface/goals/ROM/ROM_tourism.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_invest_in_transilvania"
+		texturefile = "gfx/interface/goals/ROM/ROM_invest_in_transilvania.png"			
+		}
+		SpriteType = {
+			name = "GFX_ROM_invest_in_transilvania_shine"
+			texturefile = "gfx/interface/goals/ROM/ROM_invest_in_transilvania.png"
+					effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/ROM/ROM_invest_in_transilvania.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+	
+			animation = {
+				animationmaskfile = "gfx/interface/goals/ROM/ROM_invest_in_transilvania.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+	}
+
+
+	SpriteType = {
+		name = "GFX_ROM_Transnistria"
+		texturefile = "gfx/interface/goals/ROM/ROM_Transnistria.png"			
+		}
+		SpriteType = {
+			name = "GFX_ROM_Transnistria_shine"
+			texturefile = "gfx/interface/goals/ROM/ROM_Transnistria.png"
+					effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/ROM/ROM_Transnistria.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+	
+			animation = {
+				animationmaskfile = "gfx/interface/goals/ROM/ROM_Transnistria.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_invest_in_black_sea"
+		texturefile = "gfx/interface/goals/ROM/ROM_invest_in_black_sea.png"			
+		}
+		SpriteType = {
+			name = "GFX_ROM_invest_in_black_sea_shine"
+			texturefile = "gfx/interface/goals/ROM/ROM_invest_in_black_sea.png"
+					effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/ROM/ROM_invest_in_black_sea.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+	
+			animation = {
+				animationmaskfile = "gfx/interface/goals/ROM/ROM_invest_in_black_sea.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_mobilize_the_economy"
+		texturefile = "gfx/interface/goals/ROM/ROM_mobilize_the_economy.png"			
+		}
+		SpriteType = {
+			name = "GFX_ROM_mobilize_the_economy_shine"
+			texturefile = "gfx/interface/goals/ROM/ROM_mobilize_the_economy.png"
+					effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/ROM/ROM_mobilize_the_economy.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+	
+			animation = {
+				animationmaskfile = "gfx/interface/goals/ROM/ROM_mobilize_the_economy.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_capitalinvest"
+		texturefile = "gfx/interface/goals/ROM/ROM_capitalinvest.png"			
+		}
+		SpriteType = {
+			name = "GFX_ROM_capitalinvest_shine"
+			texturefile = "gfx/interface/goals/ROM/ROM_capitalinvest.png"
+					effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/ROM/ROM_capitalinvest.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+	
+			animation = {
+				animationmaskfile = "gfx/interface/goals/ROM/ROM_capitalinvest.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_export"
+		texturefile = "gfx/interface/goals/ROM/ROM_export.png"			
+		}
+		SpriteType = {
+			name = "GFX_ROM_export_shine"
+			texturefile = "gfx/interface/goals/ROM/ROM_export.png"
+					effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/ROM/ROM_export.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+	
+			animation = {
+				animationmaskfile = "gfx/interface/goals/ROM/ROM_export.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_mechanize_farms"
+		texturefile = "gfx/interface/goals/ROM/ROM_mechanize_farms.png"			
+		}
+		SpriteType = {
+			name = "GFX_ROM_mechanize_farms_shine"
+			texturefile = "gfx/interface/goals/ROM/ROM_mechanize_farms.png"
+					effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/ROM/ROM_mechanize_farms.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+	
+			animation = {
+				animationmaskfile = "gfx/interface/goals/ROM/ROM_mechanize_farms.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_help_farmers"
+		texturefile = "gfx/interface/goals/ROM/ROM_help_farmers.png"			
+		}
+		SpriteType = {
+			name = "GFX_ROM_help_farmers_shine"
+			texturefile = "gfx/interface/goals/ROM/ROM_help_farmers.png"
+					effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/ROM/ROM_help_farmers.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+	
+			animation = {
+				animationmaskfile = "gfx/interface/goals/ROM/ROM_help_farmers.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_ROM_help_the_poor"
+		texturefile = "gfx/interface/goals/ROM/ROM_help_the_poor.png"			
+		}
+		SpriteType = {
+			name = "GFX_ROM_help_the_poor_shine"
+			texturefile = "gfx/interface/goals/ROM/ROM_help_the_poor.png"
+					effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/ROM/ROM_help_the_poor.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+	
+			animation = {
+				animationmaskfile = "gfx/interface/goals/ROM/ROM_help_the_poor.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_support_bussinessowner"
+		texturefile = "gfx/interface/goals/ROM/ROM_support_bussinessowner.png"			
+		}
+		SpriteType = {
+			name = "GFX_ROM_support_bussinessowner_shine"
+			texturefile = "gfx/interface/goals/ROM/ROM_support_bussinessowner.png"
+					effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/ROM/ROM_support_bussinessowner.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+	
+			animation = {
+				animationmaskfile = "gfx/interface/goals/ROM/ROM_support_bussinessowner.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+	}
+
+
+	SpriteType = {
+		name = "GFX_ROM_muntenia"
+		texturefile = "gfx/interface/goals/ROM/ROM_muntenia.png"			
+		}
+		SpriteType = {
+			name = "GFX_ROM_muntenia_shine"
+			texturefile = "gfx/interface/goals/ROM/ROM_muntenia.png"
+					effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/ROM/ROM_muntenia.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+	
+			animation = {
+				animationmaskfile = "gfx/interface/goals/ROM/ROM_muntenia.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_ROM_oltenia"
+		texturefile = "gfx/interface/goals/ROM/ROM_oltenia.png"			
+		}
+		SpriteType = {
+			name = "GFX_ROM_oltenia_shine"
+			texturefile = "gfx/interface/goals/ROM/ROM_oltenia.png"
+					effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/ROM/ROM_oltenia.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+	
+			animation = {
+				animationmaskfile = "gfx/interface/goals/ROM/ROM_oltenia.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+	}
 }
