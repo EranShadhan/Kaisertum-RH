@@ -15,4 +15,28 @@ spriteTypes = {
 		name = "GFX_idea_humiliation_of_25"
 		texturefile = "gfx/interface/ideas/turkish_ideas/humiliation_of_25.png"
 	}
+	spriteType = {
+		name = "GFX_idea_TUR_federation"
+		texturefile = "gfx/interface/ideas/turkish_ideas/TUR_federation.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ahmed_IV_idea"
+		texturefile = "gfx/interface/ideas/turkish_ideas/ahmed_IV_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_collectivized_agriculture"
+		texturefile = "gfx/interface/ideas/turkish_ideas/collectivized_agriculture.png"
+	}
+	spriteType = {
+		name = "GFX_idea_educated_society"
+		texturefile = "gfx/interface/ideas/turkish_ideas/educated_society.png"
+	}
+	spriteType = {
+		name = "GFX_idea_islamic_bastion_of_socialism"
+		texturefile = "gfx/interface/ideas/turkish_ideas/islamic_bastion_of_socialism.png"
+	}
+	spriteType = {
+		name = "GFX_idea_minority_representation"
+		texturefile = "gfx/interface/ideas/turkish_ideas/minority_representation.png"
+	}
 }

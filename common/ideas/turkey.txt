@@ -750,6 +750,7 @@ ideas = {
 			}
 		}
 		TUR_constitution_of_1930_idea = {
+			picture = generic_constitutional_guarantees
 			allowed = {
 				always = no
 			}
@@ -764,6 +765,7 @@ ideas = {
 			}
 		}
 		TUR_educated_society = {
+			picture = educated_society
 			allowed = {
 				always = no
 			}
@@ -779,6 +781,7 @@ ideas = {
 			}
 		}
 		TUR_reformed_penal_code = {
+			picture = HUN_treaty_of_triannon
 			allowed = {
 				always = no
 			}
@@ -791,6 +794,7 @@ ideas = {
 			}
 		}
 		TUR_civil_code_idea = {
+			picture = generic_constitutional_guarantees
 			allowed = {
 				always = no
 			}
@@ -804,6 +808,7 @@ ideas = {
 			}
 		}
 		TUR_ahmed_IV_idea = {
+			picture = ahmed_IV_idea
 			allowed = {
 				always = no
 			}
@@ -820,6 +825,7 @@ ideas = {
 
 		}
 		TUR_shining_light_of_democracy = {
+			picture = generic_democratic_drift_bonus
 			allowed = {
 				always = no
 			}
@@ -870,6 +876,7 @@ ideas = {
 
     }
 	TUR_incompetent_ultranationalist_opposition = {
+			picture = generic_fascism_banned
 			allowed = {
 				always = no
 			}
@@ -884,6 +891,7 @@ ideas = {
 			}
 		}
 	TUR_collectivized_agriculture = {
+			picture = collectivized_agriculture
 			allowed = {
 				always = no
 			}
@@ -899,6 +907,7 @@ ideas = {
 		}
 	
 	TUR_islamic_bastion_of_socialism_idea = {
+			picture = islamic_bastion_of_socialism
 			allowed = {
 				always = no
 			}
@@ -915,6 +924,7 @@ ideas = {
 			}
 		}
 	TUR_minority_representation = {
+			picture = minority_representation
 			allowed = {
 				always = no
 			}
@@ -930,6 +940,7 @@ ideas = {
 			}
 		}
 		TUR_federation = {
+			picture = TUR_federation
 			allowed = {
 				always = no
 			}
@@ -946,6 +957,7 @@ ideas = {
 			}
 		}
 		TUR_federalist_constitution = {
+			picture = generic_constitutional_guarantees
 			allowed = {
 				always = no
 			}
