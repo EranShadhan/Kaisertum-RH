@@ -1,6 +1,18 @@
 ideas = {
 
 	country = { 
+	  GRE_wargames = {
+		     picture = SWE_wargames
+			 removal_cost = -1
+			 
+			 modifier = {
+				experience_gain_army = 0.15
+				experience_gain_air = 0.15
+				experience_gain_navy = 0.15
+			 }
+		
+		
+		}
        GRE_flying_eagles = {
 		     picture = ast_abandon_the_westminster_system_fascism
 			 removal_cost = -1

@@ -1217,7 +1217,7 @@ GRE_expand_influence_in_FROM = {
 		
 		}
 	priority = 99999
-		days_mission_timeout = 250
+		days_mission_timeout = 225
       
 		fire_only_once = yes
 
@@ -1262,7 +1262,7 @@ GRE_expand_influence_in_FROM = {
 		
 		}
 	priority = 99999
-		days_mission_timeout = 170
+		days_mission_timeout = 225
       
 		fire_only_once = yes
 
@@ -1307,7 +1307,7 @@ GRE_expand_influence_in_FROM = {
 		
 		}
 	priority = 99999
-		days_mission_timeout = 210
+		days_mission_timeout = 255
       
 		fire_only_once = yes
 
@@ -1354,7 +1354,7 @@ GRE_expand_influence_in_FROM = {
 		
 		}
 
-		days_mission_timeout = 140
+		days_mission_timeout = 255
       
 		fire_only_once = yes
 

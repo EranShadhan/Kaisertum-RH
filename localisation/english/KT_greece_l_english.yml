@@ -738,3 +738,19 @@
  KT_greece_events.10.c:0 "Smyrni, the New York of the old world"
  KT_greece_events.10.dd:0 "Constantinople, the eternal capital"
  GRE_metaxas_almost_died:0 "Metaxas' assasination attemp has took place"
+ 
+ GRE_small_installment_payment_RUS:0 "Small Debt Repayment to the [FROM.GetAdjective]s"
+ GRE_small_installment_payment_ger:0 "Small Debt Repayment to the [FROM.GetAdjective]s"
+ GRE_small_installment_payment_aus:0 "Small Debt Repayment to the [FROM.GetAdjective]s"
+ GRE_small_installment_payment_HUN:0 "Small Debt Repayment to the [FROM.GetAdjective]s"
+ 
+ GRE_large_installment_payment_rus:0 "Large Debt Repayment to the [FROM.GetAdjective]s"
+ GRE_large_installment_payment_ger:0 "Large Debt Repayment to the [FROM.GetAdjective]s"
+ GRE_large_installment_payment_aus:0 "Large Debt Repayment to the [FROM.GetAdjective]s"
+ GRE_large_installment_payment_hun:0 "Large Debt Repayment to the [FROM.GetAdjective]s"
+ 
+ GRE_protest_over_low_mil_spending:0 "EEE Protests Over Low Military Spending"
+ GRE_engage_in_violence_with_refuges:0 "EEE Members Engage In Violence With Turkish Refuges"
+ GRE_raid_factories_and_distribute_goods:0 "EEE Members Raid Factories And Steal Weapons"
+ GRE_eee_arms_anatolian_citizens_to_fight_turks:0 "The EEE Arms Civilians In Anatolia To Fight Turks"
+ GRE_wargames:0 "Hellenic Armed Forces"
