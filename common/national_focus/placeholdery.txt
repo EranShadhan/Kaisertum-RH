@@ -12,10 +12,26 @@ search_filter_prios = {
 }
 
 focus_tree = {
-	id = generic_focus_ph
+	id = gg_focus_no
 	
 	country = {
-		factor = 1
+		factor = 0
+		modifier = {
+			add = 10
+			tag = YUG
+		}
+		modifier = {
+			add = 10
+			tag = SER
+		}
+		modifier = {
+			add = 10
+			tag = UBD
+		}
+		modifier = {
+			add = 10
+			tag = UKR
+		}
 	}
 	
 	default = no
