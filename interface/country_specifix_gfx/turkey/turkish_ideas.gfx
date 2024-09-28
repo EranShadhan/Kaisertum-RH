@@ -16,13 +16,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/turkish_ideas/humiliation_of_25.png"
 	}
 	spriteType = {
-<<<<<<< Updated upstream
 		name = "GFX_idea_TUR_federation"
 		texturefile = "gfx/interface/ideas/turkish_ideas/TUR_federation.png"
-	}
-	spriteType = {
-		name = "GFX_idea_ahmed_IV_idea"
-		texturefile = "gfx/interface/ideas/turkish_ideas/ahmed_IV_idea.png"
 	}
 	spriteType = {
 		name = "GFX_idea_collectivized_agriculture"
@@ -39,7 +34,8 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_minority_representation"
 		texturefile = "gfx/interface/ideas/turkish_ideas/minority_representation.png"
-=======
+	}
+	spriteType = {
 		name = "GFX_idea_germany_economy"
 		texturefile = "gfx/interface/ideas/turkish_ideas/germany_economy.png"
 	}
@@ -97,7 +93,26 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_ahmed_idea"
-		texturefile = "gfx/interface/ideas/turkish_ideas/ahmed_idea.png"
->>>>>>> Stashed changes
+		texturefile = "gfx/interface/ideas/turkish_ideas/ahmed_IV_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_control_in_turkey"
+		texturefile = "gfx/interface/ideas/turkish_ideas/control_in_turkey.png"
+	}
+	spriteType = {
+		name = "GFX_idea_anti_russian_propaganda"
+		texturefile = "gfx/interface/ideas/turkish_ideas/anti_russian_propaganda.png"
+	}
+	spriteType = {
+		name = "GFX_idea_turkification"
+		texturefile = "gfx/interface/ideas/turkish_ideas/turkification.png"
+	}
+	spriteType = {
+		name = "GFX_idea_turkish_empire"
+		texturefile = "gfx/interface/ideas/turkish_ideas/turkish_empire.png"
+	}
+	spriteType = {
+		name = "GFX_idea_siryan_problems"
+		texturefile = "gfx/interface/ideas/turkish_ideas/siryan_problems.png"
 	}
 }
