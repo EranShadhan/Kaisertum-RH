@@ -3121,7 +3121,7 @@ focus = {
 	focus = {
 
 		id = ROM_rural_plan
-		icon = GFX_ROM_ind_1
+		icon = GFX_ROM_focus_on_rural_side
 		relative_position_id = ROM_ind_democracy_1
 		prerequisite = { focus = ROM_ind_democracy_1 }
 		x = 0
@@ -3218,7 +3218,7 @@ focus = {
 	}
 	focus = {
 		id = ROM_promote_agricultural_life
-		icon = GFX_ROM_ind_1
+		icon = GFX_ROM_promote_rural_life
 		relative_position_id = ROM_rural_plan
 		prerequisite = { focus = ROM_rural_plan }
 		x = 1
@@ -3381,7 +3381,7 @@ focus = {
 	}
 	focus = {
 		id = ROM_develop_the_new_lands
-		icon = GFX_ROM_ind_1
+		icon = GFX_ROM_develop_newlands
 		relative_position_id = ROM_transilvanian_industry
 		prerequisite = { focus = ROM_transilvanian_industry }
 		x = -1
@@ -3933,7 +3933,7 @@ focus = {
 	}
 	focus = {
 		id = ROM_focus_on_cash_crops
-		icon = GFX_ROM_ind_1
+		icon = GFX_ROM_cash_crops
 		relative_position_id = ROM_the_men_of_his_people
 		prerequisite = { focus = ROM_the_men_of_his_people }
 		mutually_exclusive = { focus = ROM_focus_on_food_crops }
@@ -3976,7 +3976,7 @@ focus = {
 	}
 	focus = {
 		id = ROM_focus_on_food_crops
-		icon = GFX_ROM_ind_1
+		icon = GFX_ROM_food_crop
 		relative_position_id = ROM_the_men_of_his_people
 		prerequisite = { focus = ROM_the_men_of_his_people }
 		mutually_exclusive = { focus = ROM_focus_on_cash_crops }
@@ -4810,7 +4810,6 @@ focus = {
 	
 			completion_reward = {
 				custom_effect_tooltip = attack_civil_war_bul
-				custom_effect_tooltip = food_surplus_needed
 				hidden_effect = {
 				BUL = {
 					leave_faction = yes
@@ -4839,6 +4838,7 @@ focus = {
 								type = puppet_wargoal_focus
 							}
 						}
+						remove_ideas = ROM_lack_of_food
 					}
 					
 					

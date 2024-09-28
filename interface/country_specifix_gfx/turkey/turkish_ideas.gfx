@@ -16,6 +16,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/turkish_ideas/humiliation_of_25.png"
 	}
 	spriteType = {
+<<<<<<< Updated upstream
 		name = "GFX_idea_TUR_federation"
 		texturefile = "gfx/interface/ideas/turkish_ideas/TUR_federation.png"
 	}
@@ -38,5 +39,65 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_minority_representation"
 		texturefile = "gfx/interface/ideas/turkish_ideas/minority_representation.png"
+=======
+		name = "GFX_idea_germany_economy"
+		texturefile = "gfx/interface/ideas/turkish_ideas/germany_economy.png"
+	}
+	spriteType = {
+		name = "GFX_idea_german_companies"
+		texturefile = "gfx/interface/ideas/turkish_ideas/german_companies.png"
+	}
+	spriteType = {
+		name = "GFX_idea_russian_companies"
+		texturefile = "gfx/interface/ideas/turkish_ideas/russian_companies.png"
+	}
+	spriteType = {
+		name = "GFX_idea_farmer_loans"
+		texturefile = "gfx/interface/ideas/turkish_ideas/farmer_loans.png"
+	}
+	spriteType = {
+		name = "GFX_idea_recontruction"
+		texturefile = "gfx/interface/ideas/turkish_ideas/recontruction.png"
+	}
+	spriteType = {
+		name = "GFX_idea_quick_construction"
+		texturefile = "gfx/interface/ideas/turkish_ideas/quick_construction.png"
+	}
+	spriteType = {
+		name = "GFX_idea_german_experts"
+		texturefile = "gfx/interface/ideas/turkish_ideas/german_experts.png"
+	}
+	spriteType = {
+		name = "GFX_idea_commercial_agriculture"
+		texturefile = "gfx/interface/ideas/turkish_ideas/commercial_agriculture.png"
+	}
+	spriteType = {
+		name = "GFX_idea_final_economic_idea"
+		texturefile = "gfx/interface/ideas/turkish_ideas/final_economic_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_german_mission"
+		texturefile = "gfx/interface/ideas/turkish_ideas/german_mission.png"
+	}
+	spriteType = {
+		name = "GFX_idea_russian_mission"
+		texturefile = "gfx/interface/ideas/turkish_ideas/russian_mission.png"
+	}
+	spriteType = {
+		name = "GFX_idea_tukiye_tspecial_forces"
+		texturefile = "gfx/interface/ideas/turkish_ideas/tukiye_tspecial_forces.png"
+	}
+	spriteType = {
+		name = "GFX_idea_germannavalmission"
+		texturefile = "gfx/interface/ideas/turkish_ideas/germannavalmission.png"
+	}
+	spriteType = {
+		name = "GFX_idea_navy_modernization"
+		texturefile = "gfx/interface/ideas/turkish_ideas/navy_modernization.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ahmed_idea"
+		texturefile = "gfx/interface/ideas/turkish_ideas/ahmed_idea.png"
+>>>>>>> Stashed changes
 	}
 }
