@@ -163,7 +163,7 @@ ideas = {
                 	}
             	}
 			equipment_bonus = {
-				trains_equipment = {
+				train_equipment = {
                     instant = yes
 					build_cost_ic = -0.2
                 	}
@@ -193,7 +193,7 @@ ideas = {
                 	}
             	}
 			equipment_bonus = {
-				trains_equipment = {
+				train_equipment = {
                     instant = yes
 					build_cost_ic = -0.2
                 	}
