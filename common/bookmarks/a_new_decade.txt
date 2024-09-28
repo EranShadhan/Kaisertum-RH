@@ -257,10 +257,10 @@ bookmarks = {
 				TUR_traditional_society
 			}
 			focuses = {
-				TUR_constitution_of_1930
-				TUR_focus_on_internal_matters
-				TUR_the_sultans_grip_remains_firm
-				TUR_greater_engürü_plan
+				TUR_the_islamic_bastion_of_socialism
+				TUR_create_konya_accords
+				TUR_kickstart_the_syrian_revolution
+				TUR_revenge_for_the_first_balkan_war
 			}
 		}
 		"SAU"={

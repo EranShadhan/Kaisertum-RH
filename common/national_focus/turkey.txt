@@ -2360,6 +2360,7 @@ focus = {
 		x = -1
 		y = 1
 		icon = GFX_TUR_monarchy_compromise
+		mutually_exclusive = { focus = TUR_the_sultans_abdication }
 
 		prerequisite = {
 			focus = TUR_abolish_traditionalism
@@ -2468,6 +2469,7 @@ focus = {
 		x = -4
 		y = 1
 		icon = GFX_TUR_commies_elected
+		mutually_exclusive = { focus = TUR_federalists_elected }
 
 		prerequisite = {
 			focus = TUR_snap_election
@@ -2494,6 +2496,7 @@ focus = {
 		x = 4
 		y = 1
 		icon = GFX_TUR_federalists_elected
+		mutually_exclusive = { focus = TUR_commies_elected }
 
 		prerequisite = {
 			focus = TUR_snap_election
@@ -4233,6 +4236,7 @@ focus = {
 		x = -2
 		y = 1
 		icon = GFX_TUR_rostov_agreement
+		mutually_exclusive = { focus = TUR_the_lone_wolf }
 
 		prerequisite = {
 			focus = TUR_send_diplomats_to_russia
@@ -4255,6 +4259,7 @@ focus = {
 		x = 2
 		y = 1
 		icon = GFX_TUR_lone_wolf
+		mutually_exclusive = { focus = TUR_rostov_agreement }
 
 		prerequisite = {
 			focus = TUR_send_diplomats_to_russia

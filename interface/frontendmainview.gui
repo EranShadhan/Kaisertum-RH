@@ -278,18 +278,10 @@ guiTypes = {
 
 		
 
-		ButtonType = {
-            name = "Join the discord"
-            position = { x=680 y=25 }
-			quadTextureSprite ="GFX_kt_ds"
-            clicksound = click_default
-            scale = 1
-            web_link = "https://discord.gg/gpYkFcNG7U"
-        }
 		instantTextBoxType = {
 
 			name ="recent_updates"
-			position = { x = 680 y = 205 }
+			position = { x = 680 y = 55 }
 			textureFile = ""
 			font = "garamond_24"
 			borderSize = {x = 0 y = 0}
