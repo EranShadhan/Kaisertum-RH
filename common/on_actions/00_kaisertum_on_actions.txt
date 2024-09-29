@@ -1,10 +1,10 @@
 on_actions = {
 	on_startup = {
 		effect = {
-			every_country = {
+			AUS = {
 				country_event = {
 					id = austria.1
-					days = 125
+					days = 18
 					random_hours = 6
 				}
 			}

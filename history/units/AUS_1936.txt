@@ -29,6 +29,9 @@ division_template = {
 		mountaineers = { x = 1 y = 0 }
 		mountaineers = { x = 1 y = 1 }
 		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }   # Pioneer Bn
@@ -55,7 +58,7 @@ units = {
 		location = 11666  # Vienna
 		division_template = "Schnelle Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.7
 
 	}
 	division= {	# "1. Division"
@@ -65,7 +68,7 @@ units = {
 		}
 		location = 11666  # Vienna
 		division_template = "Infanterie Division"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.5
 		start_equipment_factor = 0.5
 
 	}
@@ -76,7 +79,7 @@ units = {
 		}
 		location = 11666  # Vienna
 		division_template = "Infanterie Division"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.5
 		start_equipment_factor = 0.5
 
 	}
@@ -87,8 +90,8 @@ units = {
 		}
 		location = 11651 # St Poelten
 		division_template = "Infanterie Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
 
 	}
 
@@ -100,8 +103,8 @@ units = {
 		}
 		location = 9665 # Linz
 		division_template = "Infanterie Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
 
 	}
 	division= {	# "5. Division"			# Used to form 3. Gebirgs-division post-Anschluss
@@ -109,10 +112,10 @@ units = {
 				is_name_ordered = yes
 				name_order = 5
 		}
-		location = 9648  # Graz
+		location = 11556  # Graz
 		division_template = "Alpenjäger Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
 
 	}
 	division= {	# "6. Division"			# Used to form 2. Gebirgs-division post-Anschluss
@@ -120,10 +123,63 @@ units = {
 				is_name_ordered = yes
 				name_order = 6
 		}
-		location = 673  # Innsbruck
+		location = 3585  # Innsbruck
+		division_template = "Alpenjäger Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "7. Division"			# Used to form 3. Gebirgs-division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 688  # Salzburg
+		division_template = "Alpenjäger Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+
+	}
+
+	division= {	
+		name = "8. Brigade"				# Used to form 2. Gebirgs-division post-Anschluss
+		location = 11666  # Vienna
+		division_template = "Alpenjäger Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "4. Division"			# Used to form 45. Infanterie--division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 3569 # Linz
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "5. Division"			# Used to form 3. Gebirgs-division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 6626  # Graz
 		division_template = "Alpenjäger Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "6. Division"			# Used to form 2. Gebirgs-division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 3585  # Innsbruck
+		division_template = "Alpenjäger Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
 
 	}
 	division= {	# "7. Division"			# Used to form 3. Gebirgs-division post-Anschluss
@@ -134,7 +190,7 @@ units = {
 		location = 688  # Salzburg
 		division_template = "Alpenjäger Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.7
 
 	}
 
@@ -143,7 +199,153 @@ units = {
 		location = 11666  # Vienna
 		division_template = "Alpenjäger Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "4. Division"			# Used to form 45. Infanterie--division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 3569 # Linz
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "5. Division"			# Used to form 3. Gebirgs-division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 6626  # Graz
+		division_template = "Alpenjäger Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "6. Division"			# Used to form 2. Gebirgs-division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 11542  # Innsbruck
+		division_template = "Alpenjäger Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "7. Division"			# Used to form 3. Gebirgs-division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 11479  # Salzburg
+		division_template = "Alpenjäger Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+
+	division= {	
+		name = "8. Brigade"				# Used to form 2. Gebirgs-division post-Anschluss
+		location = 11666  # Vienna
+		division_template = "Alpenjäger Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "9. Brigade"				# Used to form 2. Gebirgs-division post-Anschluss
+		location = 9427  
+		division_template = "Alpenjäger Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}	
+	division= {	
+		name = "10. Brigade"				# Used to form 2. Gebirgs-division post-Anschluss
+		location = 6678 
+		division_template = "Alpenjäger Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}	
+	division= {	
+		name = "11. Brigade"				# Used to form 2. Gebirgs-division post-Anschluss
+		location = 5283
+		division_template = "Alpenjäger Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}		
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 9
+		}
+					# Used to form 2. Gebirgs-division post-Anschluss
+		location = 6562
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 10
+		}
+				# Used to form 2. Gebirgs-division post-Anschluss
+		location = 6562
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 11
+		}
+				# Used to form 2. Gebirgs-division post-Anschluss
+		location = 6562
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 12
+		}
+					# Used to form 2. Gebirgs-division post-Anschluss
+		location = 3483
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "7. Division"			# Used to form 3. Gebirgs-division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 11479  # Salzburg
+		division_template = "Alpenjäger Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+
+	division= {	
+		name = "8. Brigade"				# Used to form 2. Gebirgs-division post-Anschluss
+		location = 11666  # Vienna
+		division_template = "Alpenjäger Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
 
 	}
 	division= {	# "4. Division"			# Used to form 45. Infanterie--division post-Anschluss
@@ -154,7 +356,7 @@ units = {
 		location = 9665 # Linz
 		division_template = "Infanterie Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.7
 
 	}
 	division= {	# "5. Division"			# Used to form 3. Gebirgs-division post-Anschluss
@@ -165,7 +367,7 @@ units = {
 		location = 9648  # Graz
 		division_template = "Alpenjäger Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.7
 
 	}
 	division= {	# "6. Division"			# Used to form 2. Gebirgs-division post-Anschluss
@@ -176,7 +378,49 @@ units = {
 		location = 673  # Innsbruck
 		division_template = "Alpenjäger Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "7. Division"			# Used to form 3. Gebirgs-division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 11479  # Salzburg
+		division_template = "Alpenjäger Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+
+	division= {	
+		name = "8. Brigade"				# Used to form 2. Gebirgs-division post-Anschluss
+		location = 9412  # Vienna
+		division_template = "Alpenjäger Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "5. Division"			# Used to form 3. Gebirgs-division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 9648  # Graz
+		division_template = "Alpenjäger Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "6. Division"			# Used to form 2. Gebirgs-division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 673  # Innsbruck
+		division_template = "Alpenjäger Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
 
 	}
 	division= {	# "7. Division"			# Used to form 3. Gebirgs-division post-Anschluss
@@ -186,17 +430,17 @@ units = {
 		}
 		location = 688  # Salzburg
 		division_template = "Alpenjäger Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
 
 	}
 
 	division= {	
 		name = "8. Brigade"				# Used to form 2. Gebirgs-division post-Anschluss
-		location = 11666  # Vienna
+		location = 11401  # Vienna
 		division_template = "Alpenjäger Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
 
 	}
 	division= {	# "4. Division"			# Used to form 45. Infanterie--division post-Anschluss
@@ -206,8 +450,8 @@ units = {
 		}
 		location = 9665 # Linz
 		division_template = "Infanterie Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
 
 	}
 	division= {	# "5. Division"			# Used to form 3. Gebirgs-division post-Anschluss
@@ -215,10 +459,10 @@ units = {
 				is_name_ordered = yes
 				name_order = 5
 		}
-		location = 9648  # Graz
+		location = 9627  # Graz
 		division_template = "Alpenjäger Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
 
 	}
 	division= {	# "6. Division"			# Used to form 2. Gebirgs-division post-Anschluss
@@ -228,8 +472,8 @@ units = {
 		}
 		location = 673  # Innsbruck
 		division_template = "Alpenjäger Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
 
 	}
 	division= {	# "7. Division"			# Used to form 3. Gebirgs-division post-Anschluss
@@ -239,229 +483,17 @@ units = {
 		}
 		location = 688  # Salzburg
 		division_template = "Alpenjäger Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
 
 	}
 
 	division= {	
 		name = "8. Brigade"				# Used to form 2. Gebirgs-division post-Anschluss
-		location = 11666  # Vienna
+		location = 11401  # Vienna
 		division_template = "Alpenjäger Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-	division= {	# "4. Division"			# Used to form 45. Infanterie--division post-Anschluss
-		division_name = {
-				is_name_ordered = yes
-				name_order = 4
-		}
-		location = 9665 # Linz
-		division_template = "Infanterie Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-	division= {	# "5. Division"			# Used to form 3. Gebirgs-division post-Anschluss
-		division_name = {
-				is_name_ordered = yes
-				name_order = 5
-		}
-		location = 9648  # Graz
-		division_template = "Alpenjäger Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-	division= {	# "6. Division"			# Used to form 2. Gebirgs-division post-Anschluss
-		division_name = {
-				is_name_ordered = yes
-				name_order = 6
-		}
-		location = 673  # Innsbruck
-		division_template = "Alpenjäger Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-	division= {	# "7. Division"			# Used to form 3. Gebirgs-division post-Anschluss
-		division_name = {
-				is_name_ordered = yes
-				name_order = 7
-		}
-		location = 688  # Salzburg
-		division_template = "Alpenjäger Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-
-	division= {	
-		name = "8. Brigade"				# Used to form 2. Gebirgs-division post-Anschluss
-		location = 11666  # Vienna
-		division_template = "Alpenjäger Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-	division= {	# "4. Division"			# Used to form 45. Infanterie--division post-Anschluss
-		division_name = {
-				is_name_ordered = yes
-				name_order = 4
-		}
-		location = 9665 # Linz
-		division_template = "Infanterie Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-	division= {	# "5. Division"			# Used to form 3. Gebirgs-division post-Anschluss
-		division_name = {
-				is_name_ordered = yes
-				name_order = 5
-		}
-		location = 9648  # Graz
-		division_template = "Alpenjäger Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-	division= {	# "6. Division"			# Used to form 2. Gebirgs-division post-Anschluss
-		division_name = {
-				is_name_ordered = yes
-				name_order = 6
-		}
-		location = 673  # Innsbruck
-		division_template = "Alpenjäger Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-	division= {	# "7. Division"			# Used to form 3. Gebirgs-division post-Anschluss
-		division_name = {
-				is_name_ordered = yes
-				name_order = 7
-		}
-		location = 688  # Salzburg
-		division_template = "Alpenjäger Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-
-	division= {	
-		name = "8. Brigade"				# Used to form 2. Gebirgs-division post-Anschluss
-		location = 11666  # Vienna
-		division_template = "Alpenjäger Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-	division= {	# "4. Division"			# Used to form 45. Infanterie--division post-Anschluss
-		division_name = {
-				is_name_ordered = yes
-				name_order = 4
-		}
-		location = 9665 # Linz
-		division_template = "Infanterie Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-	division= {	# "5. Division"			# Used to form 3. Gebirgs-division post-Anschluss
-		division_name = {
-				is_name_ordered = yes
-				name_order = 5
-		}
-		location = 9648  # Graz
-		division_template = "Alpenjäger Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-	division= {	# "6. Division"			# Used to form 2. Gebirgs-division post-Anschluss
-		division_name = {
-				is_name_ordered = yes
-				name_order = 6
-		}
-		location = 673  # Innsbruck
-		division_template = "Alpenjäger Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-	division= {	# "7. Division"			# Used to form 3. Gebirgs-division post-Anschluss
-		division_name = {
-				is_name_ordered = yes
-				name_order = 7
-		}
-		location = 688  # Salzburg
-		division_template = "Alpenjäger Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-
-	division= {	
-		name = "8. Brigade"				# Used to form 2. Gebirgs-division post-Anschluss
-		location = 11666  # Vienna
-		division_template = "Alpenjäger Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-	division= {	# "4. Division"			# Used to form 45. Infanterie--division post-Anschluss
-		division_name = {
-				is_name_ordered = yes
-				name_order = 4
-		}
-		location = 9665 # Linz
-		division_template = "Infanterie Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-	division= {	# "5. Division"			# Used to form 3. Gebirgs-division post-Anschluss
-		division_name = {
-				is_name_ordered = yes
-				name_order = 5
-		}
-		location = 9648  # Graz
-		division_template = "Alpenjäger Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-	division= {	# "6. Division"			# Used to form 2. Gebirgs-division post-Anschluss
-		division_name = {
-				is_name_ordered = yes
-				name_order = 6
-		}
-		location = 673  # Innsbruck
-		division_template = "Alpenjäger Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-	division= {	# "7. Division"			# Used to form 3. Gebirgs-division post-Anschluss
-		division_name = {
-				is_name_ordered = yes
-				name_order = 7
-		}
-		location = 688  # Salzburg
-		division_template = "Alpenjäger Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-
-	division= {	
-		name = "8. Brigade"				# Used to form 2. Gebirgs-division post-Anschluss
-		location = 11666  # Vienna
-		division_template = "Alpenjäger Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
 
 	}
 }
