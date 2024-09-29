@@ -10,6 +10,11 @@ spriteTypes = {
 		name = "GFX_french_flag"
 		texturefile = "gfx/interface/french_flag.png"
 	}
+	
+	spriteType = {
+		name = "GFX_japanese_flag"
+		texturefile = "gfx/interface/japanese_flag.png"
+	}
 
 	spriteType = {
 		name = "GFX_country_selection_minor_entry"
