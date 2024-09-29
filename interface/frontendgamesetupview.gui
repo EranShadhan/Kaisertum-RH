@@ -121,53 +121,45 @@ guiTypes = {
 			orientation = "CENTER"
 			centerPosition = yes
 		}
+		
 	}
 
 	### country entry
 	containerWindowType = {
 		name = "country_entry"
-
-		buttonType = {
-			name = "country_leader"
-			quadTextureSprite ="GFX_leader_unknown"
-			position = { x = 17 y = 22 }
-			scale=0.75
-			clicksound = click_checkbox
-		}
-
-		iconType = {
-			name = "country_flag"
-			quadTextureSprite ="GFX_shield_medium"
-			position = { x = 34 y = 188 }
-			Orientation = "UPPER_LEFT"
-			alwaystransparent = yes
-		}
+		
+		#buttonType = {
+		#	name = "country_leader"
+		#	quadTextureSprite ="GFX_leader_unknown"
+		#	position = { x = 17 y = 22 }
+		#	scale=0.75
+		#	clicksound = click_checkbox
+		#}
 
 		buttonType = {
 			name = "country"
-			quadTextureSprite = "GFX_country_selection_entry"
-			position = { x=0 y =0 }
-			clicksound = click_checkbox
+			quadTextureSprite ="GFX_flag_test"
+			position = { x = 12 y = 0 }
 		}
 
-		instantTextBoxType = {
-			name = "country_name"
-			position = { x = 8 y = 247 }
-			font = "hoi_20b"
-			borderSize = {x = 0 y = 0}
-			maxWidth = 131
-			maxHeight = 20
-			fixedsize = yes
-			format = center
-			Orientation = "UPPER_LEFT"
-		}
+		#buttonType = {
+		#	name = "country"
+		#	quadTextureSprite = "GFX_country_selection_entry"
+		#	position = { x=0 y =0 }
+		#	clicksound = click_checkbox
+		#}
+		
+		
+		
+		
 	}
-
+	
+	
 	### country entry
 	containerWindowType = {
 		name = "country_entry_medium"
 
-
+		
 		iconType = {
 			name = "country_flag"
 			quadTextureSprite ="GFX_shield_medium"
@@ -175,6 +167,7 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
+		
 
 		buttonType = {
 			name = "country"
@@ -187,7 +180,7 @@ guiTypes = {
 	### country entry
 	containerWindowType = {
 		name = "country_entry_mini"
-
+		
 		iconType = {
 			name = "country_flag"
 			quadTextureSprite ="GFX_shield_medium"
@@ -195,7 +188,7 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
-
+		
 		buttonType = {
 			name = "country"
 			quadTextureSprite = "GFX_country_selection_minor_entry"
@@ -215,7 +208,7 @@ guiTypes = {
 		size = { width = 420 height = 500}
 		Orientation = lower_left
 		origo = lower_left
-
+		
 		iconType = {
 			name ="menu"
 			spriteType = "GFX_load_save_top_screen"
@@ -520,12 +513,14 @@ guiTypes = {
 			maxHeight = 30
 			format = center
 		}
-
+	
 		background = {
 			name = "single_player_date_bg"
 			quadTextureSprite ="GFX_select_date_bg"
 		}
-
+		
+		
+			
 		containerWindowType = {
 			name ="bookmarks"
 			position = { x = 43 y = 55 }
@@ -562,7 +557,7 @@ guiTypes = {
 			maxHeight = 30
 			format = left
 		}
-
+		
 		instantTextBoxType = {
 			name = "bookmark_desc"
 			position = { x = 25 y = 330 }
@@ -605,7 +600,11 @@ guiTypes = {
 		origo = center
 		clipping = no
 		moveable = yes
-
+		iconType = {
+				name = "french_flag_menu"
+				quadTextureSprite ="GFX_french_flag"
+				position = { x = 25 y = 50 }
+			}
 		instantTextBoxType = {
 			name = "title"
 			position = { x = 415 y = 12 }
@@ -861,13 +860,13 @@ guiTypes = {
 #			alwaystransparent = yes
 #		}
 
-		iconType = {
-			name = "country_gold_1"
-			quadTextureSprite ="GFX_country_selection_gold"
-			position = { x = 15 y = 45 }
-			Orientation = "UPPER_LEFT"
-			alwaystransparent = yes
-		}
+#		iconType = {
+#			name = "country_gold_1"
+#			quadTextureSprite ="GFX_country_selection_gold"
+#			position = { x = 15 y = 45 }
+#			Orientation = "UPPER_LEFT"
+#			alwaystransparent = yes
+#		}
 
 #		iconType = {
 #			name = "country_difficult_minor_1"
