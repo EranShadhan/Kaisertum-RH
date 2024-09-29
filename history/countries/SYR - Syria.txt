@@ -112,7 +112,7 @@ create_country_leader = {
 	name = "Antun Saadeh"
 	desc = ""
 	picture = GFX_portrait_Antun_Saadeh
-	ideology = neosocialism
+	ideology = national_socialism
 	traits = {
 		#
 	}

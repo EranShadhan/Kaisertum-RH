@@ -852,7 +852,7 @@ characters={
 		}
 	}
 
-	TUR_Antoun_Saadeh = {
+	TUR_antoun_saadeh = {
 		name = TUR_antoun_saadeh
 		portraits = {
 			civilian = {
@@ -860,7 +860,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = gen_nazism
+			ideology = national_socialism
 			expire = "1953.3.1.1"
 			traits={ emigree }
 			id = -1

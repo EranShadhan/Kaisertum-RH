@@ -2101,10 +2101,11 @@ focus = {
 		}
 	}
 	# POLITICAL
+
 	focus = {
 		id = TUR_start_of_a_new_decade
 		cost = 5
-		x = 27
+		x = 37
 		y = 0
 		icon = GFX_TUR_start_of_a_new_decade
 
@@ -3506,7 +3507,7 @@ focus = {
 	focus = {
 		id = TUR_take_advantage_of_arabian_minorities
 		cost = 5
-		x = -2
+		x = 0
 		y = 1
 		icon = GFX_TUR_arabian_minorities
 
@@ -3598,7 +3599,49 @@ focus = {
 			unlock_decision_category_tooltip = TUR_sponsor_syrian_revolution_nonaligned_category
 		}
 	}
+	focus = {
+		id = TUR_the_choice
+		cost = 5
+		x = 0
+		y = 1
+		icon = GFX_TUR_syrian_revolution
 
+		prerequisite = {
+			focus = TUR_kickstart_the_syrian_revolution
+		}
+		available = {
+			OR = {
+			has_global_flag = syria_wins
+			has_global_flag = syria_loses
+			}
+		}
+		relative_position_id = TUR_kickstart_the_syrian_revolution
+		completion_reward = {
+			country_event = {
+					id = KT_turkey_events.14
+					hours = 14
+					random_hours = 6
+				}
+		}
+	}
+	focus = {
+		id = TUR_moderatism
+		cost = 5
+		x = 4
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite = {
+			focus = TUR_the_choice
+		}
+		available = {
+			has_country_flag = TUR_moderatism_flag
+		}
+		relative_position_id = TUR_the_choice
+		completion_reward = {
+			
+		}
+	}
 	focus = {
 		id = TUR_place_a_puppet_sultan
 		cost = 5
@@ -3607,13 +3650,13 @@ focus = {
 		icon = GFX_TUR_puppet_sultan
 
 		prerequisite = {
-			focus = TUR_kickstart_the_syrian_revolution
+			focus = TUR_moderatism
 		}
 
 		available = {
 			has_global_flag = syria_wins
 		}
-		relative_position_id = TUR_kickstart_the_syrian_revolution
+		relative_position_id = TUR_moderatism
 		completion_reward = {
 			# SYRIAN LEADER IS NOW AHMED IV's SON
 			TUR = {
@@ -3636,7 +3679,7 @@ focus = {
 	focus = {
 		id = TUR_monopolize_syrian_oil
 		cost = 5
-		x = -2
+		x = 2
 		y = 1
 		icon = GFX_TUR_monopolize_syrian_oil
 
@@ -3660,11 +3703,11 @@ focus = {
 		icon = GFX_TUR_promote_a_turkish_cyprus
 
 		prerequisite = {
-			focus = TUR_middle_east_situation
+			focus = TUR_moderatism
 		}
 		available = {
 		}
-		relative_position_id = TUR_middle_east_situation
+		relative_position_id = TUR_moderatism
 		completion_reward = {
 			986 = {
 				add_core_of = NCY
@@ -3767,16 +3810,16 @@ focus = {
 	focus = {
 		id = TUR_the_looming_war
 		cost = 5
-		x = 0
-		y = 3
+		x = -2
+		y = 1
 		icon = GFX_TUR_the_looming_war
 
 		prerequisite = {
-			focus = TUR_middle_east_situation
+			focus = TUR_moderatism
 		}
 		available = {
 		}
-		relative_position_id = TUR_middle_east_situation
+		relative_position_id = TUR_moderatism
 		completion_reward = {
 			add_political_power = 50
 		}
@@ -3808,7 +3851,7 @@ focus = {
 	focus = {
 		id = TUR_prepare_for_sgw
 		cost = 5
-		x = 0
+		x = 1
 		y = 2
 		icon = GFX_prepare_for_sgw
 		prerequisite = {
@@ -3828,7 +3871,7 @@ focus = {
 	focus = {
 		id = TUR_the_sultans_grip_remains_firm
 		cost = 5
-		x = 18
+		x = 28
 		y = 1
 		icon = GFX_TUR_sultans_vision
 
@@ -4729,6 +4772,1128 @@ focus = {
 	}
 
 	# NATSOC PATH
+	focus = {
+		id = TUR_the_syrian_way
+		cost = 5
+		x = -3
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
 
+		prerequisite = {
+			focus = TUR_the_choice
+		}
+		available = {
+			has_country_flag = TUR_syrian_way
+		}
+		relative_position_id = TUR_the_choice
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUR_national_socialist_societies
+		cost = 5
+		x = -1
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
 
+		prerequisite = {
+			focus = TUR_the_syrian_way
+		}
+		available = {
+		}
+		relative_position_id = TUR_the_syrian_way
+		completion_reward = {
+			add_ideas = TUR_natsoc_societies
+		}
+	}
+	focus = {
+		id = TUR_national_evolution
+		cost = 5
+		x = 1
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite = {
+			focus = TUR_the_syrian_way
+		}
+		available = {
+		}
+		relative_position_id = TUR_the_syrian_way
+		completion_reward = {
+			add_political_power = 20
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.03
+			}
+		}
+	}
+	focus = {
+		id = TUR_invite_antoun
+		cost = 5
+		x = -1
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite = {
+			focus = TUR_national_socialist_societies
+		}
+		prerequisite = {
+			focus = TUR_national_evolution
+		}
+		available = {
+		}
+		relative_position_id = TUR_national_evolution
+		completion_reward = {
+			news_event = {
+				id = kaisertum_news.21
+				hours = 12
+				random_hours = 6
+			}
+			promote_character = {
+			character = TUR_antouh_saadeh
+			ideology = national_socialism
+			}
+		}
+	}
+	focus = {
+		id = TUR_oppressors_must_fall
+		cost = 5
+		x = 0
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite = {
+			focus = TUR_invite_antoun
+		}
+		available = {
+		}
+		relative_position_id = TUR_invite_antoun
+		completion_reward = {
+			news_event = {
+				
+			}
+			set_cosmetic_tag = TUR_natsoc
+			
+			leave_faction = yes
+			set_politics = {
+				ruling_party = fascism
+			}
+			978 = {
+				set_demilitarized_zone = no
+			}
+			start_civil_war = {
+					ideology = neutrality
+					size = 0.45
+					capital = 978
+					states = { 978 347 340 973 345 344 975 }
+			}
+		}
+	}
+	focus = {
+		id = TUR_commitment_to_the_state
+		cost = 5
+		x = -3
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite = {
+			focus = TUR_oppressors_must_fall
+		}
+		available = {
+		}
+		relative_position_id = TUR_oppressors_must_fall
+		completion_reward = {
+			add_timed_idea = {
+				idea = TUR_commitment_idea
+				days = 60
+			}
+		}
+	}
+	focus = {
+		id = TUR_the_fight_for_progress
+		cost = 5
+		x = -1
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite = {
+			focus = TUR_oppressors_must_fall
+		}
+		available = {
+		}
+		relative_position_id = TUR_oppressors_must_fall
+		completion_reward = {
+			army_experience = 30
+			add_manpower = 24000
+		}
+	}
+	focus = {
+		id = TUR_work_innovation
+		cost = 5
+		x = 1
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite = {
+			focus = TUR_oppressors_must_fall
+		}
+		available = {
+		}
+		relative_position_id = TUR_oppressors_must_fall
+		completion_reward = {
+			add_stability = -0.05
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_force_of_the_revolution
+		cost = 5
+		x = 3
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite = {
+			focus = TUR_oppressors_must_fall
+		}
+		available = {
+		}
+		relative_position_id = TUR_oppressors_must_fall
+		completion_reward = {
+			add_stability = -0.05
+			if = {
+				limit = {
+					NOT = { has_template = "National Revolutionary Militia" }
+				}
+				division_template = {
+					name = "National Revolutionary Militia"
+					regiments = {
+					    infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+					}
+				}
+			}
+			random_owned_state = {
+				create_unit = {
+                    division = "name = \"National Revolutionary Militia\" division_template = \"National Revolutionary Militia\" start_experience_factor = 0.5"
+                    owner = TUR
+                }
+			}
+		}
+	}
+	focus = {
+		id = TUR_the_hurricane_rises
+		cost = 5
+		x = 0
+		y = 2
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_work_innovation
+			focus = TUR_force_of_the_revolution
+			focus = TUR_commitment_to_the_state
+			focus = TUR_the_fight_for_progress
+		}
+		available = {
+			TUR = {
+				has_civil_war = no
+			}
+		}
+		relative_position_id = TUR_oppressors_must_fall
+		completion_reward = {
+			news_event = {
+					id = news
+					hours = 12
+				}
+			add_stability = 20
+		}
+	}
+	focus = {
+		id = TUR_all_hail_overlord_saadeh
+		cost = 5
+		x = 0
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_the_hurricane_rises
+		}
+		available = {
+		}
+		relative_position_id = TUR_the_hurricane_rises
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = TUR_hidden_under_the_mask
+		cost = 5
+		x = -2
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_all_hail_overlord_saadeh
+		}
+		available = {
+
+		}
+		relative_position_id = TUR_all_hail_overlord_saadeh
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -1
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -1
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -1
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = TUR_illegalized_party
+				name = TUR_illegalized_party
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = TUR_illegalized_party
+				name = TUR_illegalized_party
+			}
+		}
+	}
+	focus = {
+		id = TUR_the_man_of_the_nation
+		cost = 5
+		x = 0
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_all_hail_overlord_saadeh
+		}
+		available = {
+
+		}
+		relative_position_id = TUR_all_hail_overlord_saadeh
+		completion_reward = {
+			add_trait = {
+					character = TUR_antoun_saadeh
+					trait = TUR_the_man_of_the_nation
+				}
+		}
+	}
+	focus = {
+		id = TUR_the_architect_of_national_socialism
+		cost = 5
+		x = 2
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_all_hail_overlord_saadeh
+		}
+		available = {
+		}
+		relative_position_id = TUR_all_hail_overlord_saadeh
+		completion_reward = {
+			add_trait = {
+					character = TUR_antoun_saadeh
+					trait = TUR_architect_of_natsoc
+				}
+		}
+	}
+	focus = {
+		id = TUR_unification_of_turkey_and_syria
+		cost = 5
+		x = 0
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_hidden_under_the_mask
+		}
+		prerequisite  = {
+			focus = TUR_the_man_of_the_nation
+		}
+		prerequisite  = {
+			focus = TUR_the_architect_of_national_socialism
+		}
+		available = {
+		}
+		relative_position_id = TUR_the_man_of_the_nation
+		completion_reward = {
+			annex_country = {
+    			target = SYR
+    			transfer_troops = yes
+			}
+			set_cosmetic_tag = TUR_snfts
+		}
+	}
+	focus = {
+		id = TUR_overhaul_of_the_state
+		cost = 5
+		x = -12
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_unification_of_turkey_and_syria
+		}
+		available = {
+
+		}
+		relative_position_id = TUR_unification_of_turkey_and_syria
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = TUR_a_state_of_equals
+		cost = 5
+		x = -2
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_overhaul_of_the_state
+		}
+		available = {
+
+		}
+		relative_position_id = TUR_overhaul_of_the_state
+		completion_reward = {
+			add_ideas = TUR_state_of_equals_idea
+		}
+	}
+	focus = {
+		id = TUR_a_state_of_moderns
+		cost = 5
+		x = -1
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_a_state_of_equals
+		}
+		available = {
+
+		}
+		relative_position_id = TUR_a_state_of_equals
+		completion_reward = {
+			add_ideas = TUR_state_of_moderns_idea
+		}
+	}
+	focus = {
+		id = TUR_a_state_of_fighters
+		cost = 5
+		x = 1
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_a_state_of_equals
+		}
+		available = {
+
+		}
+		relative_position_id = TUR_a_state_of_equals
+		completion_reward = {
+			add_ideas = TUR_state_of_fighters_idea
+		}
+	}
+	focus = {
+		id = TUR_clampdown_on_europeans
+		cost = 5
+		x = 2
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_overhaul_of_the_state
+		}
+		available = {
+
+		}
+		relative_position_id = TUR_overhaul_of_the_state
+		completion_reward = {
+			custom_effect_tooltip = TUR_clampdown_on_europeans
+		}
+	}
+	focus = {
+		id = TUR_eradicate_german_influence
+		cost = 5
+		x = 1
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_clampdown_on_europeans
+		}
+		available = {
+
+		}
+		relative_position_id = TUR_clampdown_on_europeans
+		completion_reward = {
+			GER = {
+				TUR_decrease_foreign_influence = yes
+				TUR_decrease_foreign_influence = yes
+			}
+		}
+	}
+	focus = {
+		id = TUR_eradicate_russian_influence
+		cost = 5
+		x = -1
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_clampdown_on_europeans
+		}
+		available = {
+
+		}
+		relative_position_id = TUR_clampdown_on_europeans
+		completion_reward = {
+			SOV = {
+				TUR_decrease_foreign_influence = yes
+				TUR_decrease_foreign_influence = yes
+			}
+		}
+	}
+	focus = {
+		id = TUR_eradicate_french_influence
+		cost = 5
+		x = -2
+		y = 2
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_clampdown_on_europeans
+		}
+		available = {
+
+		}
+		relative_position_id = TUR_clampdown_on_europeans
+		completion_reward = {
+			FRA = {
+				TUR_decrease_foreign_influence = yes
+				TUR_decrease_foreign_influence = yes
+			}
+		}
+	}
+	focus = {
+		id = TUR_eradicate_italian_influence
+		cost = 5
+		x = 2
+		y = 2
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_clampdown_on_europeans
+		}
+		available = {
+
+		}
+		relative_position_id = TUR_clampdown_on_europeans
+		completion_reward = {
+			ITA = {
+				TUR_decrease_foreign_influence = yes
+				TUR_decrease_foreign_influence = yes
+			}
+		}
+	}
+	focus = {
+		id = TUR_no_place_for_europeans
+		cost = 5
+		x = 0
+		y = 3
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_eradicate_russian_influence
+		}
+		prerequisite  = {
+			focus = TUR_eradicate_german_influence
+		}
+		prerequisite  = {
+			focus = TUR_eradicate_italian_influence
+		}
+		prerequisite  = {
+			focus = TUR_eradicate_french_influence
+		}
+		available = {
+
+		}
+		relative_position_id = TUR_clampdown_on_europeans
+		completion_reward = {
+			ITA = {
+				TUR_decrease_foreign_influence = yes
+				TUR_decrease_foreign_influence = yes
+			}
+		}
+	}
+	focus = {
+		id = TUR_the_perfect_society
+		cost = 5
+		x = -1
+		y = 3
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_no_place_for_europeans
+		}
+		prerequisite  = {
+			focus = TUR_a_state_of_fighters
+			focus = TUR_a_state_of_moderns
+		}
+		available = {
+
+		}
+		relative_position_id = TUR_a_state_of_fighters
+		completion_reward = {
+			add_ideas = TUR_state_of_moderns_idea
+		}
+	}
+	focus = {
+		id = TUR_the_perfect_army
+		cost = 5
+		x = 1
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_the_perfect_society
+		}
+		available = {
+
+		}
+		relative_position_id = TUR_the_perfect_society
+		completion_reward = {
+			add_ideas = TUR_state_of_moderns_idea
+		}
+	}
+	focus = {
+		id = TUR_the_perfect_industry
+		cost = 5
+		x = -1
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_the_perfect_society
+		}
+		available = {
+
+		}
+		relative_position_id = TUR_the_perfect_society
+		completion_reward = {
+			add_ideas = TUR_state_of_moderns_idea
+		}
+	}
+	focus = {
+		id = TUR_seize_italian_assets
+		cost = 5
+		x = 12
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_unification_of_turkey_and_syria
+		}
+		available = {
+
+		}
+		relative_position_id = TUR_unification_of_turkey_and_syria
+		completion_reward = {
+			remove_ideas = TUR_italian_industrial_access
+		}
+	}
+	focus = {
+		id = TUR_workers_of_the_nation
+		cost = 5
+		x = -3
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_seize_italian_assets
+		}
+		available = {
+			has_full_control_of_state = 49
+		}
+		relative_position_id = TUR_seize_italian_assets
+		completion_reward = {
+			49 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+			}
+		}
+	}
+	focus = {
+		id = TUR_social_corporatism
+		cost = 5
+		x = 2
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_seize_italian_assets
+		}
+		available = {
+			has_full_control_of_state = 49
+		}
+		relative_position_id = TUR_seize_italian_assets
+		completion_reward = {
+			49 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_puppetmaster_of_the_monopolies
+		cost = 5
+		x = 1
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_social_corporatism
+		}
+		available = {
+		}
+		relative_position_id = TUR_social_corporatism
+		completion_reward = {
+			add_ideas = TUR_governmental_monopolies
+		}
+	}
+	focus = {
+		id = TUR_all_roads_lead_to_enguru
+		cost = 5
+		x = -3
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_social_corporatism
+			focus = TUR_workers_of_the_nation
+		}
+		available = {
+			has_full_control_of_state = 49
+		}
+		relative_position_id = TUR_social_corporatism
+		completion_reward = {
+			49 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			}
+		}
+	}
+	focus = {
+		id = TUR_the_right_side_of_kostantiniyye
+		cost = 5
+		x = -1
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_all_roads_lead_to_enguru
+		}
+		available = {
+			has_full_control_of_state = 978
+		}
+		relative_position_id = TUR_all_roads_lead_to_enguru
+		completion_reward = {
+			978 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			}
+		}
+	}
+	focus = {
+		id = TUR_industrialize_the_east
+		cost = 5
+		x = 1
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_all_roads_lead_to_enguru
+		}
+		available = {
+			AND = {
+				has_full_control_of_state = 799
+				has_full_control_of_state = 344
+				has_full_control_of_state = 349
+				has_full_control_of_state = 348
+			}
+		}
+		relative_position_id = TUR_all_roads_lead_to_enguru
+		completion_reward = {
+			799 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			}
+			344 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			}
+			349 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			}
+			348 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			}
+		}
+	}
+	focus = {
+		id = TUR_puppetmaster_of_the_trade_unions
+		cost = 5
+		x = -1
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_social_corporatism
+		}
+		available = {
+		}
+		relative_position_id = TUR_workers_of_the_nation
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+			add_ideas = TUR_governmental_trade_unions
+		}
+	}
+	focus = {
+		id = TUR_the_eternal_city
+		cost = 5
+		x = 0
+		y = 5
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_industrialize_the_east
+		}
+		prerequisite  = {
+			focus = TUR_the_right_side_of_kostantiniyye
+		}
+		prerequisite  = {
+			focus = TUR_puppetmaster_of_the_monopolies
+			focus = TUR_puppetmaster_of_the_trade_unions
+		}
+		available = {
+			has_completed_focus = TUR_the_jewel_of_turkey
+		}
+		relative_position_id = TUR_seize_italian_assets
+		completion_reward = {
+			set_province_name = {
+    			id = 11747
+    			name = "Achaladion"
+			}
+			add_war_support = 0.2
+		}
+	}
+	focus = {
+		id = TUR_a_look_outwards
+		cost = 5
+		x = 0
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_unification_of_turkey_and_syria
+		}
+		available = {
+		}
+		relative_position_id = TUR_unification_of_turkey_and_syria
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = TUR_the_goals_of_turkey
+		cost = 5
+		x = -2
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_a_look_outwards
+		}
+		available = {
+		}
+		relative_position_id = TUR_a_look_outwards
+		completion_reward = {
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = TUR_the_goals_of_syria
+		cost = 5
+		x = 2
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_a_look_outwards
+		}
+		available = {
+		}
+		relative_position_id = TUR_a_look_outwards
+		completion_reward = {
+			add_command_power = 20
+		}
+	}
+	focus = {
+		id = TUR_the_southern_imperialists
+		cost = 5
+		x = -1
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_the_goals_of_syria
+		}
+		available = {
+		}
+		relative_position_id = TUR_the_goals_of_syria
+		completion_reward = {
+			create_wargoal = {
+				target = SAU
+				type = annex_everything
+			}
+		}
+	}
+focus = {
+		id = TUR_sinai_or_war
+		cost = 5
+		x = 0
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_the_southern_imperialists
+		}
+		available = {
+		}
+		relative_position_id = TUR_the_southern_imperialists
+		completion_reward = {
+			EGY = {
+				country_event = {
+					id = KT_turkey_events.20
+					hours = 12
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_the_eastern_militarists
+		cost = 5
+		x = 2
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_the_goals_of_syria
+		}
+		available = {
+		}
+		relative_position_id = TUR_the_goals_of_syria
+		completion_reward = {
+			create_wargoal = {
+				target = PER
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = TUR_seize_the_suez
+		cost = 5
+		x = -1
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_sinai_or_war
+		}
+		available = {
+		}
+		relative_position_id = TUR_sinai_or_war
+		completion_reward = {
+			446 = {
+				add_core_of = TUR
+			}
+			ENG = {
+				country_event = {
+					id = KT_turkey_events.17
+					hours = 12
+				}
+			}
+		}
+	}
+
+	# GOALS OF TURKEY
+
+	focus = {
+		id = TUR_demand_the_return_of_our_lands
+		cost = 5
+		x = -1
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_the_goals_of_turkey
+		}
+		available = {
+		}
+		relative_position_id = TUR_the_goals_of_turkey
+		completion_reward = {
+			GRE = {
+				country_event = {
+					id = KT_turkey_events.15
+					hours = 12
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_a_fourth_balkan_war
+		cost = 1
+		x = 1
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_demand_the_return_of_our_lands
+		}
+		available = {
+			always = no
+		}
+		relative_position_id = TUR_demand_the_return_of_our_lands
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = TUR_negotiate_with_albania
+		cost = 1
+		x = 0
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_a_fourth_balkan_war
+		}
+		available = {
+			has_war_with = GRE
+		}
+		relative_position_id = TUR_a_fourth_balkan_war
+		completion_reward = {
+			ALB = {
+				country_event = {
+					id = KT_Turkey_events.16
+					hours = 12
+				}
+			}
+		}
+	}
 }

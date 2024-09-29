@@ -115,4 +115,8 @@ spriteTypes = {
 		name = "GFX_idea_siryan_problems"
 		texturefile = "gfx/interface/ideas/turkish_ideas/siryan_problems.png"
 	}
+	spriteType = {
+		name = "GFX_ideology_national_socialism"
+		texturefile = "gfx/interface/ideologies/national_socialism.dds"
+	}
 }

@@ -172,6 +172,10 @@ ideologies = {
 
 			rexism = {
 			}
+			national_socialism = {
+				color = { 24 8 8 }
+				can_be_randomly_selected = no
+			}
 		}
 
 		dynamic_faction_names = {

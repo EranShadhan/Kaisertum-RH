@@ -1539,6 +1539,13 @@
  TUR_empire:0 "Islamic Empire of All Turks"
  TUR_empire_DEF:0 "Islamic Empire of All Turks"
 
+ TUR_natsoc:0 "Turkish National Socialist State"
+ TUR_natsoc_DEF:0 "the Turkish National Socialist State"
+
+ TUR_snfts:0 "Turco-Syrian National Socialist Federation"
+ TUR_snfts_DEF:0 "the Turco-Syrian National Socialist Federation"
+ TUR_snfts_ADJ:0 "Turco-Syrian"
+
  SYR_vilayet:0 "Vilayet of Syria"
  SYR_vilayet_DEF:0 "the Vilayet of Syria"
  SYR_vilayet_ADJ:0 "Syrian"

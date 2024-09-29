@@ -193,6 +193,8 @@ news_event = {
 				transfer_state = 677
 				transfer_state = 554
 				transfer_state = 680
+				transfer_state = 455
+				transfer_state = 854
 			}
 			TUR = {
 				diplomatic_relation = {
@@ -874,6 +876,8 @@ news_event = {
 				transfer_state = 677
 				transfer_state = 554
 				transfer_state = 680
+				transfer_state = 455
+				transfer_state = 854
 			}
 			975 = {
 				add_core_of = TUR
@@ -883,5 +887,19 @@ news_event = {
 	
 	option = {
 		name = syria_wins_news.a
+	}
+}
+news_event = {
+	id = kaisertum_news.21
+	title = "Antoun Saadeh arrives in Turkey"
+	desc = Antoun_Saadeh_Arrivesnews.1.d
+	picture = GFX_report_event_royal_parade
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+	   name = "Oh Blimey!"
 	}
 }
