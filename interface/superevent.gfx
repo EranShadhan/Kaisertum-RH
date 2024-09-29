@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_superevent_frame"
+		texturefile = "gfx/interface/SUPEREVENT.dds"
+	}
+	spriteType = {
+		name = "GFX_SE_test"
+		texturefile = "gfx/interface/SE_test.png"
+	}
+}

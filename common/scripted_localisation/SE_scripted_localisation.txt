@@ -1,0 +1,27 @@
+defined_text = {
+	name = GetSupereventTitle
+	text = { 
+		trigger = {
+			has_country_flag = se_test
+		}
+		localization_key = SE_TEST_T
+	}
+}
+defined_text = {
+	name = GetSupereventQuote
+	text = { 
+		trigger = {
+			has_country_flag = se_test
+		}
+		localization_key = SE_TEST_Q
+	}
+}
+defined_text = { 
+	name = GetSupereventOption
+	text = { 
+		trigger = {
+			has_country_flag = se_test
+		}
+		localization_key = SE_TEST_A
+	}
+}	

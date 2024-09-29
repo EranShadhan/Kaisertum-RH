@@ -1,0 +1,22 @@
+scripted_gui = {
+	SE_Window = {
+		context_type = player_context
+		window_name = "SE_Window"
+
+		visible = {
+			OR = {
+				has_country_flag = se_test
+			}
+		}
+		triggers = {
+			SE_test_visible = {
+				has_country_flag = se_test
+			}
+		}
+		effects = {
+			SE_Option_click = {
+				clr_country_flag = se_test
+			}
+		}		
+	}		
+}
