@@ -7,12 +7,12 @@
 ### search_filters = {FOCUS_FILTER_ANNEXATION}
 
 focus_tree = {
-	id = united_baltic_duchy_tree
+	id = baltic_tree
 	
 	country = {
 		factor = 0
 		modifier = {
-			add = 200
+			add = 10
 			tag = UBD
 		}
 	}
@@ -21,42 +21,6 @@ focus_tree = {
 	default = no
 
 	continuous_focus_position = { x = 20 y = 1000 }
-
-#	focus = {
-#		id = LAT_
-#		icon = GFX_
-#		prerequisite = { focus = }
-#		mutually_exclusive = { focus =  }
-#		x = -3
-#		y = 0
-#		relative_position_id = 
-#
-#		cost = 10
-#
-#		ai_will_do = {
-#			factor = 1
-#		}
-#
-#		available = {
-#
-#		}
-#		
-#		bypass = {
-#
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		complete_tooltip = {
-#
-#		}
-#
-#		completion_reward = {
-#
-#		}
-#	}
 	
 	########################################
 	#### Continuing the status quo path ####
