@@ -4548,6 +4548,7 @@ focus = {
 
 		cost = 5
 
+		mutually_exclusive = { focus = ROM_pol_d_14 }
 
 		ai_will_do = {
 				factor = 1
