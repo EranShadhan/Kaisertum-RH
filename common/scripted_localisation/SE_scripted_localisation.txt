@@ -8,7 +8,7 @@ defined_text = {
 	}
 	text = { 
 		trigger = {
-			has_country_flag = se_austrian_collapse
+			has_global_flag = se_austrian_collapse
 		}
 		localization_key = SE_AUSTRIAN_COLLAPSE_T
 	}
@@ -23,7 +23,7 @@ defined_text = {
 	}
 	text = { 
 		trigger = {
-			has_country_flag = se_austrian_collapse
+			has_global_flag = se_austrian_collapse
 		}
 		localization_key = SE_AUSTRIAN_COLLAPSE_Q
 	}
@@ -38,7 +38,7 @@ defined_text = {
 	}
 	text = { 
 		trigger = {
-			has_country_flag = se_austrian_collapse
+			has_global_flag = se_austrian_collapse
 		}
 		localization_key = SE_AUSTRIAN_COLLAPSE_A
 	}
