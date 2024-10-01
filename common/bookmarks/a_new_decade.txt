@@ -105,6 +105,7 @@ bookmarks = {
 			ideology = democratic
 			ideas = {
 				german_customs_union_member
+				GER_aid_to_austria
 			}
 			focuses = {
 			}
@@ -134,8 +135,13 @@ bookmarks = {
 				german_customs_union_member
 				UKR_sugar_businesses
 				UKR_german_breadbasket
+				UKR_land_problem
 			}
 			focuses = {
+				UKR_ukraine_above_all
+				UKR_red_prince
+				UKR_state_stability
+				UKR_ostwall_1
 			}
 		}
 		effect = {

@@ -1,6 +1,25 @@
 ideas = {
 
 	country = {
+		GER_noones_else_bussiness = {
+
+			picture = chi_wargaming_division
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			ai_call_ally_desire_factor = -500
+				ai_join_ally_desire_factor = -500
+			}
+		}
 	GER_switching_to_oil = {
 
 			picture = changing_to_oil

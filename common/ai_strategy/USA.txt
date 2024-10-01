@@ -1,0 +1,33 @@
+
+
+USA_lets_stay_out = {
+enable = { original_tag = USA }
+	ai_strategy = {
+		type = alliance
+		id = "JAP"
+		value = -400
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "SOV"
+		value = -400
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "GER"
+		value = -400
+	}
+ai_strategy = {
+		type = alliance
+		id = "FRA"
+		value = -400
+	}
+	ai_strategy = {
+		type = alliance
+		id = "ENG"
+		value = -400
+	}
+
+}

@@ -24,12 +24,29 @@ joint_focus = {
 			tag = CRE
 		}
 	}
+	offset = {
+		x = 19
+		y = 0
+		trigger = {
+			tag = ROM
+		}
+	}
 	#relative_position_id = NORDIC_mutual_guarantees
 	cost = 10
 	joint_trigger = { BALKAN_is_balkan = yes }
 
 	available = {
 		
+	}
+	allow_branch = {
+		if = {
+			limit = {
+				tag = ROM
+			}
+			NOT = {
+				has_completed_focus = ROM_pol_kw_11
+			}
+		}
 	}
 	ai_will_do = {
 		base = 1

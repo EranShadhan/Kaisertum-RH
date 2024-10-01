@@ -7,4 +7,8 @@ spriteTypes = {
 		name = "GFX_SE_test"
 		texturefile = "gfx/interface/SE_test.png"
 	}
+	spriteType = {
+		name = "GFX_SE_austrian_collapse"
+		texturefile = "gfx/interface/SE_austrian_collapse.png"
+	}
 }

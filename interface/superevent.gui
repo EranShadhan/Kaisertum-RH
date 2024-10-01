@@ -12,6 +12,10 @@ guiTypes = {
 			name ="SE_test" 
 			spriteType = "GFX_SE_test" 
 			position = { x=38 y = 80 }
+		}iconType = {
+			name ="SE_austrian_collapse" 
+			spriteType = "GFX_SE_austrian_collapse" 
+			position = { x=38 y = 80 }
 		}
 		################################################################
 		containerWindowType = {

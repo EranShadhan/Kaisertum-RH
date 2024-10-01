@@ -1,5 +1,6 @@
 ﻿l_english:
- FE_SELECT_COUNTRY_GOLD:0 "Recommended"
+ FE_SELECT_COUNTRY_GOLD:0 "New Content"
+ FE_SELECT_COUNTRY_GOLD_PRE_RELEASE:0 "Recommended"
  FE_SELECT_COUNTRY_DIFF:0 "High Difficulty"
  FE_SELECT_COUNTRY_KT:0 "Select Country - Recommeding Golden"
  intro_lore:0 "[ROOT.GetLore]"

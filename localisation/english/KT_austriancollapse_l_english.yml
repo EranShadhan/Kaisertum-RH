@@ -1,0 +1,80 @@
+﻿l_english:
+ austria.1.t:0 "Minority Unrest in Galicia"
+ austria.1.d:0 "The region of Galicia, which has been under our occupation for hundreds of years has always been a problem. Polish and Ukrainians make up the biggest part of the population. Ever since they received their independence from Russia, they have been funding rebellions in the region. But every single time they fail"
+ austria.1.a:0 "Do nothing, they will die out as always"
+ AUS_ukraine_and_polish_states_tt:0 "Poland and Ukraine will core their claimed states in Galicia, and we will lose our cores. Resistance will start at 40% and Compliance at 30%" 
+ 
+ austria.2.t:0 "Hungarian Independence Movement Grows"
+ austria.2.d:0 "Inspired by the revolts in Galicia, and angered by the latest decisions of the Austrian Empire, Hungarian nationalism has been growing. A march took place in Budapest, in which it has been reported that over 200.000 ethnic Hungarians took place. Around 50.000 non-Hungarians, such as Slovaks and Romanians participated as well. Setting aside their differences, they all shared the same message, 'Break with the Crown'"
+ austria.2.a:0 "Let's give some autonomy to the Hungarians, this should calm them down"
+ AUS_romanian_and_hungarian_states_tt:0 "Hungary will become a Dominion. Romanian unification movements will grow in Transylvania, and Romania will be given cores there"
+ 
+ austria.3.t:0 "Italian Intervention"
+ austria.3.d:0 "During the Great War, Italy was greatly divided when it came down to participating. Both the Central Powers and the Entente offered Italy lands they were interested in. In the end, they were given Tunisia, Corsica, Malta, Savoia and Nizza by the Germans. But even though they stayed alligned with Germany and us, they never removed their claims from our lands. To make it worse, they developed an underground network with Illyria, trying to limit our control over the region. Seeing the situation we are in, Italy has went on to strengthen their claims on these lands, and even pushed Illyria to claim the protection of slavic minorities in our empire"
+ austria.3.a:0 "The pesky Italians are turning our own empire against us"
+ AUS_illyria_and_italy_tt:0 "With Italians trying to destroy us from the inside, we will lose our cores in lands claims by Italy, alongside Slovenia. Resistance will start at 40% and Compliance at 30%" 
+ 
+ austria.6.t:0 "The Fate of the Empire"
+ austria.6.d:0 "With the empire crumbling, it is high time we purge the traitors. We must send letters to all vassals of the empire, and find out who really is with us and who is against us. We will stay united"
+ austria.6.a:0 "Our vassals will stay loyal... hopefully"
+ AUS_collapse_tt:0 "§RThis is really likely to end with total war. Prepare§!"
+ 
+ austria.7.t:0 "Our Time to Shine"
+ austria.7.d:0 "Recently, Austria sent letters to all members of the crown, in an attempt to see who is against them and who is with them. It is patently obvious that their empire is about to collapse, and it would be wise to follow the public opinion, and put the nail in the coffin"
+ austria.7.a:0 "Austria is our enemy! Long live Hungary!"
+ 
+ austria.8.t:0 "The Perfect Moment"
+ austria.8.d:0 "Austria has sent us letters, asking what is our stance regarding the current state of the empire. Even though we have a lot to gain, alone we will probably fail. It is wise to ask our Italian allies if they are with us or not."
+ austria.8.a:0 "Ask Italy to declare war, meanwhile Mobilize"
+ 
+ austria.9.t:0 "Illyria Asks for Help"
+ austria.9.d:0 "Seeing the slow death of the empire, Illyria claims it is the perfect moment to attack. We are still unaware of the stance of both Hungary and Germany, but let's hope they won't be against us"
+ austria.9.a:0 "Italy and Illyria, united against Austria"
+ 
+ austria.10.t:0 "A Tough Choice"
+ austria.10.d:0 "With the empire being worse than ever before, it is time we decide what path to follow. Of course staying with Austria, our oppressors, is not a smart choice. We must look in the South for new allies. But doing so might require us to give up some lands"
+ austria.10.a:0 "Ask the Salonika pact for help, and give them whatever they ask for"
+ 
+ austria.11.t:0 "The Balkan Pact General Meeting"
+ austria.11.d:0 "Serbia has sent us an interesting request. They are willing to give up lands to our allies, but in exchange they ask for help against their Austrian oppressors in the collapse of the empire. This is an interesting deal we should definitely accept"
+ austria.11.a:0 "Let's carve up the empire!"
+ 
+ austria.12.t:0 "The Moment to Attack"
+ austria.12.d:0 "With Austria collapsing, it is high time we jump on the action. This is the perfect moment, the one we had been missing on for years. We will then finally be able to free our people from the Austrian occupation"
+ austria.12.a:0 "To arms to save our people!"
+ 
+ austria.4.t:0 "Jump in Action"
+ austria.4.d:0 "With Hungary being busy fighting the Austrians, it is the perfect change to reclaim our lands. Alongside the Salonika pact, we can attack and defeat the Hungarians, putting an end to their oppressive regime"
+ austria.4.a:0 "March for a Big Romania!"
+ 
+ austria.13.t:0 "Getting Our Claims"
+ austria.13.d:0 "Austria has always been a good and close ally to us. But they are now just an obstacle in our way to achieve greatness. They must be crashed"
+ austria.13.a:0 "Austria shall be German!"
+ 
+ austria.5.t:0 "The End of the Empire"
+ austria.5.d:0 "We have fought hard, but there is nothing more we can do. We have to accept our fate, and face the consequences of our poor governing decisions. Let's nagotiate a peace treaty"
+ austria.5.a:0 "There is nothing we can do..."
+ 
+ hungary.1.tt:0 "Tready of Budapest"
+ hungary.1.dd:0 "After recently gaining our independence from Austria, Romania saw a chance, and grabbed it. We fought hard trying to defend ourselves, but we were outnumbered. We have to surrender"
+ hungary.1.aa:0 "Let's nagotiate a peace deal..."
+ 
+ hungary.2.tt:0 "Our Darkest Hour"
+ hungary.2.dd:0 "More demands have arrived from Romania, asking us to further butcher our empire. Due to our poor state though, we have no choice but to accept"
+ hungary.2.aa:0 "Someday we will return"
+ 
+ hungary.3.tt:0 "Our Finest Hour"
+ hungary.3.dd:0 "We have managed to succeed in our war of independence, and our war against the German oppressors. Hungary will free to rise to the top!"
+ hungary.3.aa:0 "Long live Hungary!"
+ 
+ news.hungary.t:0 "The End of Hungary"
+ news.hungary.desc:0 "Romanian and Italian forces, heavily supported by the Salonika pact have managed to push deep into core Hungarian land, leaving the nation no other choice than to nagotiate peace. A bright day will start for the minorities in the Hungarian lands who finally got liberated, but the same cannot apply to Hungary"
+ news.hungary.a:0 "Good for them"
+ 
+ news.romania.t:0 "The End of Romania"
+ news.romania.desc:0 "Romania has surprisingly managed to do well in their war against the Salonika pact, pushing back the Romanian forces. Seeing the outcome of the war, Romania had no choice but to sue for peace. What they thought would be an easy war, turned into a catastrophe"
+ news.romania.a:0 "Really enexpected..."
+ 
+ news.austria.t:0 "The End of the Empire"
+ news.austria.desc:0 "The great Austro-Hungarian empire has found itself defeated in their war to protect their empire. The empire was forced to surrender, basically ending the existance of a sovereign Austrian state. Everyone had something to gain from then, and they all did"
+ news.austria.a:0 "The once great empire is now dead..."

@@ -8,7 +8,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 200
+			add = 10
 			tag = SER
 		}
 	}
@@ -24,8 +24,10 @@ focus_tree = {
 		cost = 5
 
 		allow_branch = {
-			is_puppet_of = AUS
+			is_subject_of = AUS
 		}
+
+		mutually_exclusive = { focus = SER_BUL_who_king focus = SER_BUL_king_is_useless }
 
 		available = {}
 		bypass = {}
@@ -74,13 +76,13 @@ focus_tree = {
 		cost = 2
 
 		allow_branch = {
-			is_puppet_of = BUL
+			is_subject_of = BUL
 		}
 		
 		available = {}
 		bypass = {}
 		completion_reward = {} # TODO: event to choose a monarch, also add a spirit to penalize for not choosing
-		mutually_exclusive = { focus = SER_BUL_king_is_useless }
+		mutually_exclusive = { focus = SER_BUL_king_is_useless focus = SER_AUS_arise_serbia }
 	}
 	
 	focus = {
@@ -108,7 +110,7 @@ focus_tree = {
 		y = 0
 		cost = 5
 		
-		mutually_exclusive = { focus = SER_BUL_who_king }
+		mutually_exclusive = { focus = SER_BUL_who_king focus = SER_AUS_arise_serbia }
 		available = {}
 		bypass = {}
 		completion_reward = {} # TODO: this is a shit focus. it should be intentionally shit. to all ye who wish to tone this down, stop bein a pussy ass bitch

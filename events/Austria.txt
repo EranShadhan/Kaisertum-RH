@@ -9,70 +9,162 @@ country_event = {
 	id = austria.1
 	title = austria.1.t
 	desc = austria.1.d
-	picture = GFX_report_event_second_vienna_award_pact
+	picture = GFX_report_event_polish_tanks_02
 	
-	mean_time_to_happen = {
-		days = 70
-	}
 
 	is_triggered_only = yes
-	
+	fire_only_once = yes
 	option = {
 		name = austria.1.a
+		custom_effect_tooltip = AUS_ukraine_and_polish_states_tt
 		hidden_effect = {
 			88 = {
 			add_core_of = POL
 			remove_core_of = AUS
+			force_enable_resistance = { 
+					clear = no
+					occupier = AUS
+					occupied = POL
+				}
+				start_resistance = POL
+			add_compliance = 30
+			add_resistance = 40
 			}
 			80 = {
 				add_core_of = UKR
 				remove_core_of = AUS
+				force_enable_resistance = { 
+					clear = no
+					occupier = AUS
+					occupied = UKR
+				}
+				start_resistance = UKR
+				add_compliance = 30
+			add_resistance = 40
 			}
 			990 = {
 				add_core_of = UKR
 				remove_core_of = AUS
-			}
-			91 = {
-				add_core_of = POL
-				remove_core_of = AUS
-			}
-			991 = {
-				add_core_of = POL
-				remove_core_of = AUS
-			}
-			992 = {
-				add_core_of = POL
-				remove_core_of = AUS
-			}
-			993 = {
-				add_core_of = POL
-				remove_core_of = AUS
-			}
-			994 = {
-				add_core_of = POL
-				remove_core_of = AUS
+				force_enable_resistance = { 
+					clear = no
+					occupier = AUS
+					occupied = UKR
+				}
+				start_resistance = UKR
+				add_compliance = 30
+			add_resistance = 40
 			}
 			89 = {
 				add_core_of = UKR
 				remove_core_of = AUS
+				force_enable_resistance = { 
+					clear = no
+					occupier = AUS
+					occupied = UKR
+				}
+				start_resistance = UKR
+				add_compliance = 30
+			add_resistance = 40
+			}
+			91 = {
+				add_core_of = POL
+				remove_core_of = AUS
+				force_enable_resistance = { 
+					clear = no
+					occupier = AUS
+					occupied = POL
+				}
+				start_resistance = POL
+				add_compliance = 30
+				
+			add_resistance = 40
+			}
+			1059 = {
+				add_core_of = POL
+				remove_core_of = AUS
+				force_enable_resistance = { 
+					clear = no
+					occupier = AUS
+					occupied = POL
+				}
+				start_resistance = POL
+				add_compliance = 30
+				
+			add_resistance = 40
+			}
+			991 = {
+				add_core_of = POL
+				remove_core_of = AUS
+				force_enable_resistance = { 
+					clear = no
+					occupier = AUS
+					occupied = POL
+				}
+				start_resistance = POL
+				add_compliance = 30
+			add_resistance = 40
+			}
+			992 = {
+				add_core_of = POL
+				remove_core_of = AUS
+				force_enable_resistance = { 
+					clear = no
+					occupier = AUS
+					occupied = POL
+				}
+				start_resistance = POL
+				add_compliance = 30
+			add_resistance = 40
+			}
+			993 = {
+				add_core_of = POL
+				remove_core_of = AUS
+				force_enable_resistance = { 
+					clear = no
+					occupier = AUS
+					occupied = POL
+				}
+				start_resistance = POL
+				add_compliance = 30
+			add_resistance = 40
+			}
+			994 = {
+				add_core_of = POL
+				remove_core_of = AUS
+				force_enable_resistance = { 
+					clear = no
+					occupier = AUS
+					occupied = POL
+				}
+				start_resistance = POL
+				add_compliance = 30
+			add_resistance = 40
 			}
 			72 = {
 				add_core_of = POL
 				remove_core_of = AUS
-			}
-			POL = {
-				declare_war_on = {
-					target = AUS
-					type = puppet_wargoal_focus
+				force_enable_resistance = { 
+					clear = no
+					occupier = AUS
+					occupied = POL
 				}
+				start_resistance = POL
+				add_compliance = 30
+			add_resistance = 40
 			}
-			UKR = {
-				declare_war_on = {
-					target = AUS
-					type = puppet_wargoal_focus
-				}
-			}
-			country_event = { days = 1 id = austria.2 }
+			#POL = {
+			#	declare_war_on = {
+			#		target = AUS
+			#		type = puppet_wargoal_focus
+			#	}
+			#}
+			#UKR = {
+			#	declare_war_on = {
+			#		target = AUS
+			#		type = puppet_wargoal_focus
+			#	}
+			#}
+			country_event = { days = 20 id = austria.2 }
 
 			
 		}
@@ -84,27 +176,28 @@ country_event = {
 	id = austria.2
 	title = austria.2.t
 	desc = austria.2.d
-	picture = GFX_report_event_second_vienna_award_pact
-	
+	picture = GFX_report_event_american_hunger_march
+	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
-		name = austria.1.a
+		name = austria.2.a
+		custom_effect_tooltip = AUS_romanian_and_hungarian_states_tt
 		hidden_effect = {
-			set_autonomy = { target = HUN autonomy_state = autonomy_free }
-			HUN = {
-				declare_war_on = {
-					target = AUS
-					type = puppet_wargoal_focus
-					rule = {
-						can_join_factions = no
-					}
-				}
-				set_cosmetic_tag = 0
-				white_peace = POL
-				white_peace = UKR
-				white_peace = GER
-			}
+			set_autonomy = { target = HUN autonomy_state = autonomy_dominion }
+			#HUN = {
+			#	declare_war_on = {
+			#		target = AUS
+			#		type = puppet_wargoal_focus
+			#		set_rule = {
+			#			can_join_factions = no
+			#		}
+			#	}
+			#	set_cosmetic_tag = 0
+			#	white_peace = POL
+			#	white_peace = UKR
+			#	white_peace = GER
+			#}
 			76 = {
 				add_core_of = ROM
 			}
@@ -120,57 +213,200 @@ country_event = {
 			764 = {
 				add_core_of = ROM
 			}
-			ITA = { country_event = { days = 10 id = austria.3 } }
+		 country_event = { days = 15 id = austria.3 } 
 		}
 	}
-	mean_time_to_happen = {
-		days = 71
-	}
+
 }
 
 country_event = {
 	id = austria.3
 	title = austria.3.t
 	desc = austria.3.d
-	picture = GFX_report_event_second_vienna_award_pact
-	
+	picture = GFX_report_event_generic_italian_celebration
+	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
-		name = austria.1.a
+		name = austria.3.a
+		custom_effect_tooltip = AUS_illyria_and_italy_tt
 		hidden_effect = {
+		country_event = { id = austria.6 days = 25 }
 			850 = {
 			add_core_of = ITA
 			remove_core_of = AUS
+			force_enable_resistance = { 
+					clear = no
+					occupier = AUS
+					occupied = ITA
+				}
+				start_resistance = ITA
+				add_compliance = 30
+			add_resistance = 40
 			}
 			39 = {
 				add_core_of = ITA
 				remove_core_of = AUS
+				force_enable_resistance = { 
+					clear = no
+					occupier = AUS
+					occupied = ITA
+				}
+				start_resistance = ITA
+				add_compliance = 30
+			add_resistance = 40
 			}
 			736 = { 
 				add_core_of = ITA
 				remove_core_of = AUS
+				force_enable_resistance = { 
+					clear = no
+					occupier = AUS
+					occupied = ITA
+				}
+				start_resistance = ITA
+				add_compliance = 30
+			add_resistance = 40
 			}
 			852 = {
 				add_core_of = ITA
 				remove_core_of = AUS
+				force_enable_resistance = { 
+					clear = no
+					occupier = AUS
+					occupied = ITA
+				}
+				start_resistance = ITA
+				add_compliance = 30
+			add_resistance = 40
 			}
 			853 = {
 				add_core_of = YUG
 				remove_core_of = AUS
+				force_enable_resistance = { 
+					clear = no
+					occupier = AUS
+					occupied = YUG
+				}
+				start_resistance = YUG
+				add_compliance = 30
+			add_resistance = 40
 			}
 			102 = {
 				add_core_of = YUG
 				remove_core_of = AUS
+				force_enable_resistance = { 
+					clear = no
+					occupier = AUS
+					occupied = YUG
+				}
+				start_resistance = YUG
+				add_compliance = 30
+			add_resistance = 40
 			}
 			163 = {
 				add_core_of = ITA
 			}
-			ITA = {
+			#ITA = {
+			#	declare_war_on = {
+			#		target = AUS
+			#		type = puppet_wargoal_focus
+			#	}
+			#	set_autonomy = {
+			#		target = YUG
+			#		autonomy_state = autonomy_personal_union
+			#	}	
+			#}
+			#YUG = {
+			#	remove_ideas = YUG_payment_to_hungary
+			#	remove_ideas = YUG_underground_italian_connections
+			#	set_cosmetic_tag = YUG_ITA
+			#	retire_country_leader = yes
+			#	promote_character = YUG_King_Amedeo
+			#}
+		}
+	}
+}
+country_event = { #this was made later, but i put it here because it is supposed to be the forth event about the collapse
+	id = austria.6 
+	title = austria.6.t
+	desc = austria.6.d
+	picture = GFX_report_event_gre_megali_conference_signing
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = austria.6.a
+		custom_effect_tooltip = AUS_collapse_tt
+		HUN = { country_event { id = austria.7 days = 30 } }
+		YUG = { country_event { id = austria.8 days = 21 } }
+		SER = { country_event { id = austria.10 days = 22 } }
+		hidden_effect = { ROM = { country_event = { id = austria.4 days = 45 } }
+		UKR = { country_event = { id = austria.12 days = 38 }}
+		POL = { country_event = { id = austria.14 days = 38 }}
+		}
+	}
+}
+country_event = { #this was made later, but i put it here because it is supposed to be the fifth event about the collapse
+	id = austria.7
+	title = austria.7.t
+	desc = austria.7.d
+	picture = GFX_report_event_hungarian_soldiers
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = austria.7.a
+		AUS = { set_autonomy = { target = HUN autonomy_state = autonomy_free }}
+			HUN = {
+			set_rule = {
+					can_join_factions = no
+					}
 				declare_war_on = {
 					target = AUS
 					type = puppet_wargoal_focus
+					set_rule = {
+					can_join_factions = no
+					}
 				}
+			     set_cosmetic_tag = 0
+				
+			}
+			every_country = { 
+			limit = { has_war_with = HUN 
+			NOT = { Original_tag = AUS }
+			}
+			white_peace = HUN
+			}
+	}
+}	
+country_event = { #this was made later, but i put it here because it is supposed to be the fifth event about the collapse
+	id = austria.8
+	title = austria.8.t
+	desc = austria.8.d
+	picture = GFX_report_event_yugoslavia_partisans
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = austria.8.a
+	    ITA = { country_event = { id = austria.9 days = 10} }
+	}
+}
+country_event = { #this was made later, but i put it here because it is supposed to be the fifth and a half event about the collapse
+	id = austria.9
+	title = austria.9.t
+	desc = austria.9.d
+	picture = GFX_report_event_ITA_partisans
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = austria.9.a
+		ITA = {
+				set_rule = {
+					can_join_factions = no
+					}
 				set_autonomy = {
 					target = YUG
 					autonomy_state = autonomy_personal_union
@@ -182,67 +418,157 @@ country_event = {
 				set_cosmetic_tag = YUG_ITA
 				retire_country_leader = yes
 				promote_character = YUG_King_Amedeo
+				every_country = { 
+			limit = { has_war_with = YUG
+			NOT = { Original_tag = AUS }
 			}
+			white_peace = YUG
+			}
+				declare_war_on = {
+					target = AUS
+					type = puppet_wargoal_focus
+				}
+			}
+			ITA = { declare_war_on = {
+					target = AUS
+					type = puppet_wargoal_focus
+				}}
+			
+	}
+}
+country_event = { #this was made later, but i put it here because it is supposed to be the fifth event about the collapse
+	id = austria.10
+	title = austria.10.t
+	desc = austria.10.d
+	picture = GFX_report_event_yugoslavian_cavalry
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = austria.10.a
+		
+			GRE = { country_event = { id = austria.11 days = 10 }
+	}
+}
+}
+country_event = { #this was made later, but i put it here because it is supposed to be the fifth ad a half event about the collapse
+	id = austria.11
+	title = austria.11.t
+	desc = austria.11.d
+	picture = GFX_report_event_gre_cabinet_meeting
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = austria.11.a
+		
+			802 = {
+				add_core_of = ALB
+				transfer_state_to = ALB
+			}
+			SER = { every_country = { 
+			limit = { has_war_with = SER 
+			NOT = { Original_tag = AUS }
+			}
+			white_peace = SER
+			}
+			set_cosmetic_tag = SER_BG}
+			BUL = {
+			puppet = SER
 		}
+		every_country = { 
+		limit = { is_in_faction_with = GRE } 
+		declare_war_on = {
+					target = AUS
+					type = puppet_wargoal_focus
+				}}
+	}
+}
+country_event = { #this was made later, but i put it here because it is supposed to be the sixth event
+	id = austria.12
+	title = austria.12.t
+	desc = austria.12.d
+	picture = GFX_report_event_ger_civil_war
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = austria.12.a
+		declare_war_on = {
+				target = AUS
+				type = puppet_wargoal_focus
+			}
+		every_country = { limit = { is_in_faction_with = ROOT }add_timed_idea = { days = 120 idea = GER_noones_else_bussiness}}
+	}
+}
+
+country_event = { #this was made later, but i put it here because it is supposed to be the sixth event
+	id = austria.14
+	title = austria.12.t
+	desc = austria.12.d
+	picture = GFX_report_event_ger_civil_war
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = austria.12.a
+		declare_war_on = {
+				target = AUS
+				type = puppet_wargoal_focus
+			}
+		every_country = { limit = { is_in_faction_with = ROOT }add_timed_idea = { days = 120 idea = GER_noones_else_bussiness}}
 	}
 }
 country_event = {
 	id = austria.4
 	title = austria.4.t
 	desc = austria.4.d
-	picture = GFX_report_event_second_vienna_award_pact
+	picture = GFX_report_event_romanian_soldiers
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = austria.1.a
-		hidden_effect = {
-			107 = {
-				add_core_of = BUL
-			}
-			105 = {
-				add_core_of = BUL
-			}
-			802 = {
-				add_core_of = ALB
-			}	
-			BUL = {
-				declare_war_on = {
-					target = SER
-					type = puppet_wargoal_focus
-				}
-			}
+		name = austria.4.a
 			ROM = {
 				declare_war_on = {
 					target = HUN
 					type = puppet_wargoal_focus
 				}
 			}
-			ALB = {
-				declare_war_on = {
-					target = SER
-					type = puppet_wargoal_focus
-				}
-			}
 			GRE = {
 				add_to_faction = ROM
 			}
-			CZE = {
-				transfer_state = 9
-				transfer_state = 75
-				set_cosmetic_tag = CZE_reichskommissariat
-			}
-			GER = {
-				transfer_state = 848
-				transfer_state = 152
-				transfer_state = 4
-				transfer_state = 153
-				transfer_state = 74
-				transfer_state = 69
-				transfer_state = 102
-				transfer_state = 1035
-			}
+			hidden_effect = { 
+			HUN = { add_ideas = HUN_debuff }
+			ROM = {
+				add_ai_strategy = {
+					type = alliance
+					id = GRE
+					value = 200
+				}}
+				GRE = {
+				add_ai_strategy = {
+					type = alliance
+					id = ROM
+					value = 200
+				}	} }
 		}
+	
+}
+country_event = { #this was made later, but i put it here because it is supposed to be the eigth event
+	id = austria.13
+	title = austria.13.t
+	desc = austria.13.d
+	picture = GFX_report_event_ger_civil_war
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = austria.13.a
+		declare_war_on = {
+				target = AUS
+				type = puppet_wargoal_focus
+			}
 	}
 }
 country_event = {
@@ -252,9 +578,9 @@ country_event = {
 	picture = GFX_report_event_second_vienna_award_pact
 	
 	is_triggered_only = yes
-
+fire_only_once = yes
 	option = {
-		name = austria.1.a
+		name = austria.5.a
 
 		CZE = {
 			transfer_state = 9
@@ -300,6 +626,7 @@ country_event = {
 
 				
 		set_global_flag = austrian_collapse
+		set_global_flag = se_austrian_collapse
 		
 		ITA = {
 			transfer_state = 850
@@ -318,10 +645,6 @@ country_event = {
 			set_variable = {
 				YUG_fiume_crisis_var = 5
 			}
-			white_peace = HUN
-			white_peace = GER
-			white_peace = POL
-			white_peace = UKR
 			set_variable = {
 				YUG_fiume_crisis_var = 5
 			}
@@ -335,30 +658,6 @@ country_event = {
 				add_core_of = FCF
 			}
 		}
-
-		BUL = {
-			puppet = {
-				target = SER
-				end_wars = yes
-			}
-
-			set_autonomy = {
-				target = SER
-				autonomous_state = autonomy_puppet
-			}
-
-			transfer_state = 108
-			transfer_state = 803
-		}
-
-		SER = {
-			set_cosmetic_tag = SER_BG
-		}
-
-		ALB = {
-			transfer_state = 802
-		}
-
 		CZE = {
 			set_cosmetic_tag = CZE_reichskommissariat
 		}
@@ -368,19 +667,9 @@ country_event = {
 			transfer_state = 995
 		}
 
-		hidden_effect = {
 			HUN = {
-					
-					if = {
-						limit = { HUN = { is_ai = yes } }
-						add_ideas = HUN_debuff
-					}
-					if = {
-						limit = { HUN = { is_ai = no } }
-						add_ideas = HUN_buff
-					}
+			
 				transfer_state = 982
-				white_peace = GER
 				982 = {
 					add_core_of = HUN
 				}
@@ -400,21 +689,7 @@ country_event = {
 				}
 			}
 
-			HUN = {
-				transfer_state = 982
-			}
-			107 = {
-				add_core_of = BUL
-			}
-			105 = {
-				add_core_of = BUL
-			}
-			802 = {
-				add_core_of = ALB
-			}
-			982 = {
-				add_core_of = HUN
-			}
+		hidden_effect = {
 			random = { 
 			chance = 0.01 #Who is the black person that is removing this is gay, this is just an easter egg with 1/1000 chances to work.
 			JAP = { #Denis_MD here, i removed it. But gonna leave the files for any future devs to say the stupidity of the mod when we started
@@ -443,51 +718,7 @@ country_event = {
 
 			
 
-			BUL = {
-				if = {
-					limit = { HUN = { is_ai = yes } }
-					add_ideas = against_hungary
-				}
-			}	
-			ROM = {
-				if = {
-					limit = { HUN = { is_ai = yes } }
-					add_ideas = against_hungary
-				}
-				declare_war_on = {
-					target = HUN
-					type = puppet_wargoal_focus
-				}
-			}
-			ALB = {
-				declare_war_on = {
-					target = SER
-					type = puppet_wargoal_focus
-				}
-			}
-			GRE = {
-				if = {
-					limit = { HUN = { is_ai = yes } }
-					add_ideas = against_hungary
-				}
-				add_to_faction = ROM
-				
-			}
-			hidden_effect = {
-			ROM = {
-				add_ai_strategy = {
-					type = alliance
-					id = GRE
-					value = 200
-				}}
-				GRE = {
-				add_ai_strategy = {
-					type = alliance
-					id = ROM
-					value = 200
-				}	}
-              				
-			}
+		
 		}
 	}
 }

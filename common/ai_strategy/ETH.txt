@@ -1,0 +1,52 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# contain
+# area_priority
+
+
+ETH_build_infrastructure_if_possible = {
+
+	allowed = { has_dlc = "By Blood Alone" }
+	enable = {
+		original_tag = ETH 
+		has_idea = ETH_rebuilding_the_country_idea
+	}
+
+	abort_when_not_enabled = yes 
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 271
+		value = 200
+	}
+}
+
+
+
+
+ETH_template_design = {
+	allowed = {
+		original_tag = ETH
+	}
+
+	enable = {
+		date > 1936.1.1
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = role_ratio
+		id = irregular_infantry
+		value = 5
+	}
+}
