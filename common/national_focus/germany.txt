@@ -2147,6 +2147,51 @@ focus = {
 	}
 
 	focus = {
+		id = GER_our_place_under_the_sun
+		icon = GFX_focus_SWE_privately_managed_vacation
+		prerequisite = { focus = GER_naval_improvement }
+		x = 2
+		y = 1
+		relative_position_id = GER_naval_improvement
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_fight_in_the_beac
+		icon = GFX_focus_SWE_coastal_support
+		prerequisite = { focus = GER_our_place_under_the_sun }
+		x = 1
+		y = 1
+		relative_position_id = GER_our_place_under_the_sun
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = GER_coastal_war
+		}
+	}
+	focus = {
 		id = GER_plan_WXYZ
 		icon = GFX_focus_generic_refit_civilian_ships
 		prerequisite = { focus = GER_naval_improvement }
