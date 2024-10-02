@@ -1,6 +1,48 @@
 ideas = {
 
+
 	country = {
+	
+		GER_rebuild_the_high_seas_fleet = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_navy_bonus
+
+			equipment_bonus = {
+				ship_hull_heavy = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		GER_cheap_sub = {
+
+
+
+			 allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+            removal_cost = -1
+			equipment_bonus = {
+				
+				submarine = {
+					build_cost_ic = -0.25  defense = -0.15  instant = yes
+			
+				}
+			}
+			picture = generic_the_london_naval_treaty
+			
+			removal_cost = -1	
+
+		}
 		GER_noones_else_bussiness = {
 
 			picture = chi_wargaming_division
