@@ -78,9 +78,10 @@ ideas = {
 			
 			modifier = {
 			refit_speed = -0.5
-			industrial_capacity_dockyard = -0.3
+			industrial_capacity_dockyard = -0.25
 			naval_retreat_speed = -0.15
 			ships_at_battle_start = -0.2
+			naval_speed_factor = -0.1
 			}
 		}	
 	german_customs_union_leader = {
