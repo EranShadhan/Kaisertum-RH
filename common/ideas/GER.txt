@@ -84,6 +84,27 @@ ideas = {
 			naval_speed_factor = -0.1
 			}
 		}	
+		GER_coastal_war = {
+           allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+            removal_cost = -1
+			picture = generic_coastal_navy
+			
+			modifier = {				
+			   
+				shore_bombardment_bonus = 0.2
+                 naval_invasion_penalty = -0.1
+				naval_invasion_capacity = 10
+				amphibious_invasion = 0.1
+				invasion_preparation = -0.15				
+				
+			}
+		}
 	german_customs_union_leader = {
 
 			picture = german_customs_union_member
