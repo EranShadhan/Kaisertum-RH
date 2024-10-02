@@ -1228,7 +1228,9 @@ ideas = {
 			}
 		}
 		TUR_turkish_empire = {
-		picture = turkish_empire
+
+			picture = turkish_empire
+
 			allowed = {
 				always = no
 			}
@@ -1236,13 +1238,58 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
+
 			removal_cost = -1
+
+			modifier = {
+				fascism_acceptance = 30
+				stability_factor = 0.1
+			}
+
+		}
+		TUR_turkish_empire_1 = {
+
+			picture = turkish_empire
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
 			modifier = {
 				fascism_acceptance = 40
-				political_power_factor = 0.55
-				stability_factor = 0.2
-				army_morale_factor = 0.4
+				political_power_factor = 0.5
+				stability_factor = 0.15
 			}
+
+		}
+		TUR_turkish_empire_2 = {
+
+			picture = turkish_empire
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				fascism_acceptance = 50
+				political_power_factor = 0.5
+				stability_factor = 0.15
+				war_support_factor = 0.05
+				army_morale_factor = 0.25
+			}
+
 		}
 		TUR_syrian_rebellion_idea = {
 		picture = siryan_problems

@@ -4706,67 +4706,121 @@ focus = {
 
 		relative_position_id = TUR_strike_the_bear
 		completion_reward = {
-			drop_cosmetic_tag = yes
 			add_ideas = TUR_turkish_empire
 			set_cosmetic_tag = TUR_empire
-			354 = {
-				add_core_of = TUR
-			}
-			353 = {
-				add_core_of = TUR
-			}
-			350 = {
-				add_core_of = TUR
-			}
-			352 = {
-				add_core_of = TUR
-			}
-			638 = {
-				add_core_of = TUR
-			}
-			419 = {
-				add_core_of = TUR
-			}
-			420 = {
-				add_core_of = TUR
-			}
-			229 = {
-				add_core_of = TUR
-			}
-			230 = {
-				add_core_of = TUR
-			}
-			900 = {
-				add_core_of = TUR
-			}
-			800 = {
-				add_core_of = TUR
-			}
-			986 = {
-				add_core_of = TUR
-			}
-			183 = {
-				add_core_of = TUR
-			}
-			339 = {
-				add_core_of = TUR
-			}
-			987 = {
-				add_core_of = TUR
-			}
-			164 = {
-				add_core_of = TUR
-			}
-			187 = {
-				add_core_of = TUR
-			}
-			184 = {
-				add_core_of = TUR
-			}
-			975 = {
-				add_core_of = TUR
-			}
+			add_state_core = 354
+			add_state_core = 353
+			add_state_core = 350
+			add_state_core = 352
+			add_state_core = 638
+			add_state_core = 419
+			add_state_core = 420
+			add_state_core = 229
+			add_state_core = 230
+			add_state_core = 900
+			add_state_core = 800
+			add_state_core = 986
+			add_state_core = 183
+			add_state_core = 339
+			add_state_core = 987
+			add_state_core = 164
+			add_state_core = 187
+			add_state_core = 184
+			add_state_core = 975
+		}
+	}
+	focus = {
+		id = TUR_the_northern_caliphate
+		cost = 5
+		x = 0
+		y = 1
+		icon = GFX_goal_zzz_WIP
 
+		prerequisite = {
+			focus = TUR_proclaim_the_turkish_empire
+		}
+
+
+		available = {
+		}
+
+		relative_position_id = TUR_proclaim_the_turkish_empire
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_turkish_empire
+				add_idea = TUR_turkish_empire_1
+			}
+		}
+	}
+	focus = {
+		id = TUR_an_islamic_army
+		cost = 5
+		x = 0
+		y = 1
+		icon = GFX_goal_zzz_WIP
+
+		prerequisite = {
+			focus = TUR_the_northern_caliphate
+		}
+
+
+		available = {
+		}
+
+		relative_position_id = TUR_the_northern_caliphate
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_turkish_empire_1
+				add_idea = TUR_turkish_empire_2
+			}
+		}
+	}
+	focus = {
+		id = TUR_ahmed_iv_the_great
+		cost = 5
+		x = -1
+		y = 1
+		icon = GFX_goal_zzz_WIP
+
+		prerequisite = {
+			focus = TUR_an_islamic_army
+		}
+		mutually_exclusive = {
+			focus = TUR_greatness_of_all_turks
+		}
+
+		available = {
+		}
+
+		relative_position_id = TUR_an_islamic_army
+		completion_reward = {
+			add_trait = {
+				character = TUR_ahmed_IV
+				ideology = absolute_monarchy
+				trait = TUR_ahmed_iv_the_great_trait
+			}
+		}
+	}
+	focus = {
+		id = TUR_greatness_of_all_turks
+		cost = 5
+		x = 1
+		y = 1
+		icon = GFX_goal_zzz_WIP
+
+		prerequisite = {
+			focus = TUR_an_islamic_army
+		}
+		mutually_exclusive = {
+			focus = TUR_ahmed_iv_the_great
+		}
+
+		available = {
+		}
+
+		relative_position_id = TUR_an_islamic_army
+		completion_reward = {
+			add_stability = 0.1
 		}
 	}
 
