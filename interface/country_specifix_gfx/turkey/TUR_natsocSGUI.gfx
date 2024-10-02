@@ -1,0 +1,142 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_TUR_nsgui_turkey"
+		texturefile = "gfx/interface/natsocSGUI/scripted1.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_TUR_nsgui_turkey_own"
+		texturefile = "gfx/interface/natsocSGUI/scripted1b.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_TUR_nsgui_ellada"
+		texturefile = "gfx/interface/natsocSGUI/scripted2.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_TUR_nsgui_ellada_own"
+		texturefile = "gfx/interface/natsocSGUI/scripted2b.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_TUR_nsgui_bulgaria"
+		texturefile = "gfx/interface/natsocSGUI/scripted3.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_TUR_nsgui_bulgaria_own"
+		texturefile = "gfx/interface/natsocSGUI/scripted3b.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_TUR_nsgui_illyria"
+		texturefile = "gfx/interface/natsocSGUI/scripted4.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_TUR_nsgui_illyria_own"
+		texturefile = "gfx/interface/natsocSGUI/scripted4b.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_TUR_nsgui_palestine"
+		texturefile = "gfx/interface/natsocSGUI/scripted5.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_TUR_nsgui_palestine_own"
+		texturefile = "gfx/interface/natsocSGUI/scripted5b.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_TUR_nsgui_hejaz"
+		texturefile = "gfx/interface/natsocSGUI/scripted6.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_TUR_nsgui_hejaz_own"
+		texturefile = "gfx/interface/natsocSGUI/scripted6b.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_TUR_nsgui_oman"
+		texturefile = "gfx/interface/natsocSGUI/scripted7.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_TUR_nsgui_oman_own"
+		texturefile = "gfx/interface/natsocSGUI/scripted7b.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_TUR_nsgui_nejd"
+		texturefile = "gfx/interface/natsocSGUI/scripted8.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_TUR_nsgui_nejd_own"
+		texturefile = "gfx/interface/natsocSGUI/scripted8b.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_TUR_nsgui_iraq"
+		texturefile = "gfx/interface/natsocSGUI/scripted9.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_TUR_nsgui_iraq_own"
+		texturefile = "gfx/interface/natsocSGUI/scripted9b.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_TUR_nsgui_georgia"
+		texturefile = "gfx/interface/natsocSGUI/scripted10.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_TUR_nsgui_georgia_own"
+		texturefile = "gfx/interface/natsocSGUI/scripted10b.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_TUR_nsgui_azerbaijan"
+		texturefile = "gfx/interface/natsocSGUI/scripted11.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_TUR_nsgui_azerbaijan_own"
+		texturefile = "gfx/interface/natsocSGUI/scripted11b.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_TUR_nsgui_central_iran"
+		texturefile = "gfx/interface/natsocSGUI/scripted12.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_TUR_nsgui_central_iran_own"
+		texturefile = "gfx/interface/natsocSGUI/scripted12b.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_TUR_nsgui_east_iran"
+		texturefile = "gfx/interface/natsocSGUI/scripted13.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_TUR_nsgui_east_iran_own"
+		texturefile = "gfx/interface/natsocSGUI/scripted13b.png"
+		transparencecheck = yes
+	}
+		spriteType = {
+		name = "GFX_TUR_nsgui_romania"
+		texturefile = "gfx/interface/natsocSGUI/scripted14.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_TUR_nsgui_romania_own"
+		texturefile = "gfx/interface/natsocSGUI/scripted14b.png"
+		transparencecheck = yes
+	}
+}

@@ -395,6 +395,7 @@ recruit_character = TUR_ahmed_IV
 recruit_character = TUR_hasan_prishtina
 recruit_character = TUR_yakup_kadri
 recruit_character = TUR_ali_fuat_cebesoy
+recruit_character = TUR_antoun_saadeh
 
 if = {
 	limit = { has_dlc = "Battle for the Bosporus" }

@@ -21,7 +21,7 @@ focus_tree = {
 focus = {
     id = TUR_finish_reconstruction
     icon = GFX_goal_generic_construct_infrastructure
-    x = 40
+    x = 45
     y = 0
 	relative_position_id = TUR_start_of_a_new_decade
     cost = 5
@@ -1394,7 +1394,7 @@ focus = {
 	focus = {
 		id = TUR_start_military_reforms
 		icon = GFX_TUR_start_military_reforms
-		x = 40
+		x = 45
 		y = 10
 
 		relative_position_id = TUR_start_of_a_new_decade
@@ -5729,7 +5729,7 @@ focus = {
 	focus = {
 		id = TUR_the_goals_of_syria
 		cost = 5
-		x = 2
+		x = 3
 		y = 1
 		icon = GFX_TUR_exploit_the_bidding_war
 
@@ -5802,6 +5802,68 @@ focus = {
 			create_wargoal = {
 				target = PER
 				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = TUR_befriend_afghanistan
+		cost = 5
+		x = -1
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		mutually_exclusive = { focus = TUR_the_end_of_the_graveyard }
+
+		prerequisite  = {
+			focus = TUR_the_eastern_militarists
+		}
+		available = {
+		}
+		relative_position_id = TUR_the_eastern_militarists
+		completion_reward = {
+			
+		}
+	}
+	focus = {	
+		id = TUR_the_end_of_the_graveyard
+		cost = 5
+		x = 1
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		mutually_exclusive = { focus = TUR_befriend_afghanistan }
+
+		prerequisite  = {
+			focus = TUR_the_eastern_militarists
+		}
+		available = {
+		}
+		relative_position_id = TUR_the_eastern_militarists
+		completion_reward = {
+			create_wargoal = {
+				target = AFG
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+	focus = {
+		id = TUR_the_northern_liars
+		cost = 5
+		x = -3
+		y = 1
+		icon = GFX_TUR_exploit_the_bidding_war
+
+		prerequisite  = {
+			focus = TUR_the_goals_of_syria
+			focus = TUR_the_goals_of_turkey
+		}
+		available = {
+		}
+		relative_position_id = TUR_the_goals_of_syria
+		completion_reward = {
+			create_wargoal = {
+				target = SOV
+				type = puppet_wargoal_focus
 			}
 		}
 	}

@@ -860,7 +860,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = national_socialism
+			ideology = national_socfialism
 			expire = "1953.3.1.1"
 			traits={ emigree }
 			id = -1
