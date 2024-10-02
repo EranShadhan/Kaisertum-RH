@@ -2322,6 +2322,28 @@ navy_experience = 50
 				category = shbb_tech
 			}
 		}
+	}	
+	focus = {
+		id = GER_complete_the_converation
+		icon = GFX_focus_generic_offshore_oil_rig
+		prerequisite = { focus = GER_the_antlatic_fleet focus = GER_improve_the_high_seas_feet focus = GER_u_boat_construction}
+		x = -2
+		y = 1
+		relative_position_id = GER_the_antlatic_fleet
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+				remove_ideas = GER_switching_to_oil
+		}
 	}		
 	focus = {
 		id = GER_the_great_war
