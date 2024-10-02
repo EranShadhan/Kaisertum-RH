@@ -1249,6 +1249,8 @@ ideas = {
 		}
 		TUR_turkish_empire_1 = {
 
+			name = TUR_turkish_empire
+
 			picture = turkish_empire
 
 			allowed = {
@@ -1269,6 +1271,8 @@ ideas = {
 
 		}
 		TUR_turkish_empire_2 = {
+
+			name = TUR_turkish_empire
 
 			picture = turkish_empire
 
