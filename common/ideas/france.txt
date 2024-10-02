@@ -16,7 +16,15 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.1
+				production_speed_infrastructure_factor = 0.3
+				production_speed_rail_way_factor = 0.1
+				production_speed_supply_node_factor = 0.05
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_fuel_silo_factor = 0.20
+				production_speed_synthetic_refinery_factor = 0.15
+				political_power_factor = -0.30
 			}
 		}
 		
@@ -113,7 +121,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				weekly_manpower = 5000
+				non_core_manpower = 0.15
 				consumer_goods_factor = 0.1
 			}
 		}
@@ -172,10 +180,14 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_armor_attack_factor = 0.5
-				army_armor_defence_factor = 0.5
-				army_armor_speed_factor = 0.5
-				breakthrough_factor = 0.3
+				army_armor_attack_factor = 0.1
+				army_armor_defence_factor = 0.1
+				research_speed_factor = -0.05
+				consumer_goods_factor = 0.1
+			}
+
+			research_bonus = {
+				armor = 0.1
 			}
 		}
 
