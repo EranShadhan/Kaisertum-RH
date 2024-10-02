@@ -44,8 +44,9 @@ if = {
 	}
 }
 
-set_research_slots = 3
-set_stability = 0.5
+set_research_slots = 4
+set_stability = 0.8
+set_war_support = 0.70
 add_command_power = 20
 
 
@@ -241,13 +242,6 @@ recruit_character = FRA_paul_baudouin
 recruit_character = FRA_maurice_gauche
 recruit_character = FRA_jacques_duclos
 recruit_character = FRA_marcel_bucard
-
-set_autonomy = {
-	target = FMG
-	autonomous_state = autonomy_colony
-	freedom_level = 0.1
-}
-
 
 if = {
 	limit = { has_dlc = "La Resistance" }
