@@ -30,6 +30,12 @@ on_actions = {
 			set_variable = { 
 				var_TUR_GFT_progressbar = 50
 			}
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				set_variable = { show_intro = 1.0 } # Intro screen
+			}
 		}
 	}
 	on_daily_CRI = {
