@@ -607,11 +607,11 @@ guiTypes = {
 			position = { x = 25 y = 50 }
 		}
 		
-		iconType = {
-			name = "japanese_flag_menu"
-			quadTextureSprite ="GFX_japanese_flag"
-			position = { x = 300 y = 50 }
-		}
+	#	iconType = {
+	#		name = "japanese_flag_menu"
+	#		quadTextureSprite ="GFX_japanese_flag"
+	#		position = { x = 300 y = 50 }
+	#	}
 
 		instantTextBoxType = {
 			name = "title"
