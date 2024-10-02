@@ -12,7 +12,7 @@ focus_tree = {
 
 	default = no
 
-	continuous_focus_position = { x = 20 y = 3600 }
+	continuous_focus_position = { x = 4200 y = 2300 }
 
 #############################################
 ##### START OF THE ECONOMIC FOCUS TREE ######
@@ -21,9 +21,8 @@ focus_tree = {
 focus = {
     id = TUR_finish_reconstruction
     icon = GFX_goal_generic_construct_infrastructure
-    x = 45
+    x = 53
     y = 0
-	relative_position_id = TUR_start_of_a_new_decade
     cost = 5
 
     available = {
@@ -1394,10 +1393,9 @@ focus = {
 	focus = {
 		id = TUR_start_military_reforms
 		icon = GFX_TUR_start_military_reforms
-		x = 45
-		y = 10
+		x = 53
+		y = 9
 
-		relative_position_id = TUR_start_of_a_new_decade
 		cost = 6
 
 		ai_will_do = {
@@ -2105,7 +2103,7 @@ focus = {
 	focus = {
 		id = TUR_start_of_a_new_decade
 		cost = 5
-		x = 37
+		x = 23
 		y = 0
 		icon = GFX_TUR_start_of_a_new_decade
 
@@ -2122,8 +2120,9 @@ focus = {
 	focus = {
 		id = TUR_constitution_of_1930
 		cost = 6
-		x = 7
+		x = -16
 		y = 1
+		relative_position_id = TUR_start_of_a_new_decade
 		icon = GFX_TUR_constitution_of_1930
 
 		prerequisite = {
@@ -2217,7 +2216,7 @@ focus = {
 		id = TUR_close_sufi_orders
 		cost = 5
 		x = -2
-		y = 2
+		y = 1
 		icon = GFX_TUR_crush_sufism
 
 		prerequisite = {
@@ -2252,7 +2251,7 @@ focus = {
 		id = TUR_abolish_traditional_headgear
 		cost = 5
 		x = 2
-		y = 2
+		y = 1
 		icon = GFX_TUR_hat_reform
 
 		prerequisite = {
@@ -2429,7 +2428,7 @@ focus = {
 		id = TUR_ataturk_dies
 		cost = 1
 		x = 0
-		y = 2
+		y = 1
 		icon = GFX_TUR_death_of_prishtina
 		
 		prerequisite = {
@@ -3604,7 +3603,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
-		icon = GFX_TUR_syrian_revolution
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite = {
 			focus = TUR_kickstart_the_syrian_revolution
@@ -3627,9 +3626,9 @@ focus = {
 	focus = {
 		id = TUR_moderatism
 		cost = 5
-		x = 4
+		x = 3
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite = {
 			focus = TUR_the_choice
@@ -3851,8 +3850,8 @@ focus = {
 	focus = {
 		id = TUR_prepare_for_sgw
 		cost = 5
-		x = 1
-		y = 2
+		x = 0
+		y = 1
 		icon = GFX_prepare_for_sgw
 		prerequisite = {
 			focus = TUR_anti_russian_propaganda
@@ -3871,7 +3870,7 @@ focus = {
 	focus = {
 		id = TUR_the_sultans_grip_remains_firm
 		cost = 5
-		x = 28
+		x = 16
 		y = 1
 		icon = GFX_TUR_sultans_vision
 
@@ -4775,9 +4774,9 @@ focus = {
 	focus = {
 		id = TUR_the_syrian_way
 		cost = 5
-		x = -3
+		x = -2
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite = {
 			focus = TUR_the_choice
@@ -4795,7 +4794,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite = {
 			focus = TUR_the_syrian_way
@@ -4812,7 +4811,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite = {
 			focus = TUR_the_syrian_way
@@ -4833,7 +4832,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite = {
 			focus = TUR_national_socialist_societies
@@ -4861,7 +4860,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite = {
 			focus = TUR_invite_antoun
@@ -4895,7 +4894,7 @@ focus = {
 		cost = 5
 		x = -3
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite = {
 			focus = TUR_oppressors_must_fall
@@ -4915,7 +4914,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite = {
 			focus = TUR_oppressors_must_fall
@@ -4933,7 +4932,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite = {
 			focus = TUR_oppressors_must_fall
@@ -4958,7 +4957,7 @@ focus = {
 		cost = 5
 		x = 3
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite = {
 			focus = TUR_oppressors_must_fall
@@ -5002,7 +5001,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 2
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_work_innovation
@@ -5029,7 +5028,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_the_hurricane_rises
@@ -5046,7 +5045,7 @@ focus = {
 		cost = 5
 		x = -2
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_all_hail_overlord_saadeh
@@ -5085,7 +5084,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_all_hail_overlord_saadeh
@@ -5106,7 +5105,7 @@ focus = {
 		cost = 5
 		x = 2
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_all_hail_overlord_saadeh
@@ -5126,7 +5125,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_hidden_under_the_mask
@@ -5151,9 +5150,9 @@ focus = {
 	focus = {
 		id = TUR_overhaul_of_the_state
 		cost = 5
-		x = -12
+		x = -11
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_unification_of_turkey_and_syria
@@ -5171,7 +5170,7 @@ focus = {
 		cost = 5
 		x = -2
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_overhaul_of_the_state
@@ -5189,7 +5188,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_a_state_of_equals
@@ -5207,7 +5206,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_a_state_of_equals
@@ -5225,7 +5224,7 @@ focus = {
 		cost = 5
 		x = 2
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_overhaul_of_the_state
@@ -5243,7 +5242,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_clampdown_on_europeans
@@ -5264,7 +5263,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_clampdown_on_europeans
@@ -5285,7 +5284,7 @@ focus = {
 		cost = 5
 		x = -2
 		y = 2
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_clampdown_on_europeans
@@ -5306,7 +5305,7 @@ focus = {
 		cost = 5
 		x = 2
 		y = 2
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_clampdown_on_europeans
@@ -5327,7 +5326,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 3
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_eradicate_russian_influence
@@ -5357,7 +5356,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 3
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_no_place_for_europeans
@@ -5379,7 +5378,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_the_perfect_society
@@ -5397,7 +5396,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_the_perfect_society
@@ -5413,9 +5412,9 @@ focus = {
 	focus = {
 		id = TUR_seize_italian_assets
 		cost = 5
-		x = 12
+		x = 11
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_unification_of_turkey_and_syria
@@ -5433,7 +5432,7 @@ focus = {
 		cost = 5
 		x = -3
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_seize_italian_assets
@@ -5458,7 +5457,7 @@ focus = {
 		cost = 5
 		x = 2
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_seize_italian_assets
@@ -5484,7 +5483,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_social_corporatism
@@ -5501,7 +5500,7 @@ focus = {
 		cost = 5
 		x = -3
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_social_corporatism
@@ -5537,7 +5536,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_all_roads_lead_to_enguru
@@ -5572,7 +5571,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_all_roads_lead_to_enguru
@@ -5646,7 +5645,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_social_corporatism
@@ -5668,7 +5667,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 5
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_industrialize_the_east
@@ -5697,7 +5696,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_unification_of_turkey_and_syria
@@ -5714,7 +5713,7 @@ focus = {
 		cost = 5
 		x = -2
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_a_look_outwards
@@ -5731,7 +5730,7 @@ focus = {
 		cost = 5
 		x = 3
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_a_look_outwards
@@ -5748,7 +5747,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_the_goals_of_syria
@@ -5768,7 +5767,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_the_southern_imperialists
@@ -5790,7 +5789,7 @@ focus = {
 		cost = 5
 		x = 2
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_the_goals_of_syria
@@ -5810,7 +5809,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		mutually_exclusive = { focus = TUR_the_end_of_the_graveyard }
 
@@ -5829,7 +5828,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_GEN_attack_afghanistan
 
 		mutually_exclusive = { focus = TUR_befriend_afghanistan }
 
@@ -5851,7 +5850,7 @@ focus = {
 		cost = 5
 		x = -3
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_the_goals_of_syria
@@ -5872,7 +5871,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_EGY_suez_soldier
 
 		prerequisite  = {
 			focus = TUR_sinai_or_war
@@ -5900,7 +5899,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_the_goals_of_turkey
@@ -5923,7 +5922,7 @@ focus = {
 		cost = 1
 		x = 1
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_demand_the_return_of_our_lands
@@ -5940,7 +5939,7 @@ focus = {
 		cost = 1
 		x = 0
 		y = 1
-		icon = GFX_TUR_exploit_the_bidding_war
+		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
 			focus = TUR_a_fourth_balkan_war
