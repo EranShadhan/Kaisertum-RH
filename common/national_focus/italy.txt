@@ -5577,23 +5577,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
@@ -8200,23 +8184,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
 		}
 	}
 	focus = {
@@ -8234,23 +8201,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -8268,23 +8219,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -8302,23 +8237,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -8337,23 +8256,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -8371,23 +8274,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	 
@@ -8399,7 +8286,7 @@ focus_tree = {
 		id = ITA_as_expected
 		icon = GFX_focus_ARG_defense_and_democracy
 
-		x = 10
+		x = 14
 		y = 1
 		prerequisite = { focus = ITA_elections_of_1930 }
 		mutually_exclusive = { focus = ITA_the_monopoly_broken }
@@ -8411,23 +8298,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -8446,23 +8317,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -8480,23 +8335,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -8514,23 +8353,25 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_annex_fiume
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 2
+		y = 1
+		prerequisite = { focus = ITA_ip_on_foreign_matters }
+		relative_position_id = ITA_ip_on_foreign_matters
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
 		}
 	}
 	focus = {
@@ -8550,23 +8391,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -8586,23 +8411,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -8620,23 +8429,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -8654,23 +8447,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -8689,23 +8466,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -8723,23 +8484,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -8757,23 +8502,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -8791,23 +8520,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -8827,23 +8540,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -8862,23 +8559,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -8897,23 +8578,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -8931,23 +8596,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -8965,23 +8614,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -8999,23 +8632,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -9033,23 +8650,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -9067,23 +8668,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -9101,23 +8686,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -9135,23 +8704,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -9173,23 +8726,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -9207,23 +8744,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -9243,23 +8764,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -9277,23 +8782,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -9311,23 +8800,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -9345,23 +8818,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -9379,23 +8836,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -9413,23 +8854,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -9447,23 +8872,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -9481,23 +8890,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -9515,23 +8908,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -9550,23 +8927,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -9585,23 +8946,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -9619,23 +8964,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -9654,23 +8983,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -9689,23 +9002,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -9723,23 +9020,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -9757,23 +9038,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -9791,23 +9056,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -9825,23 +9074,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -9859,23 +9092,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -9893,23 +9110,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -9928,23 +9129,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -9962,23 +9147,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -9997,23 +9166,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -10032,23 +9185,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -10067,23 +9204,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -10101,23 +9222,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -10135,23 +9240,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -10171,32 +9260,16 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
 		id = ITA_ip_glorify_our_king
-		icon = GFX_focus_ARG_defense_and_democracy
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
 
 		x = -1
 		y = 1
-		prerequisite = { focus = ITA_ip_balance_the_coalition prerequisite = ITA_ip_increase_king_power }
+		prerequisite = { focus = ITA_ip_balance_the_coalition focus = ITA_ip_increase_king_power }
 		relative_position_id = ITA_ip_increase_king_power
 		cost = 5
 		available = {
@@ -10205,30 +9278,105 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_fight_for_him
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
+
+		x = -1
+		y = 1
+		prerequisite = { focus = ITA_ip_glorify_our_king }
+		relative_position_id = ITA_ip_glorify_our_king
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_meet_with_scalea
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_increase_king_power }
+		relative_position_id = ITA_ip_increase_king_power
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_prepare_the_absolutism
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
+
+		x = -1
+		y = 1
+		prerequisite = { focus = ITA_ip_glorify_our_king }
+		prerequisite = { focus = ITA_ip_meet_with_scalea }
+		relative_position_id = ITA_ip_meet_with_scalea
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_reassure_italians
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
+
+		x = 0
+		y = 1
+		prerequisite = { focus = ITA_ip_prepare_the_absolutism }
+		relative_position_id = ITA_ip_prepare_the_absolutism
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_dissolve_parliment
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
+
+		x = 0
+		y = 1
+		prerequisite = { focus = ITA_ip_reassure_italians }
+		relative_position_id = ITA_ip_reassure_italians
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
 		}
 	}
 	focus = {
 		id = ITA_ip_balance_the_coalition
 		icon = GFX_focus_ARG_defense_and_democracy
 
-		x = 1
+		x = 0
 		y = 1
 		prerequisite = { focus = ITA_ip_the_policies_of_scalea }
 		mutually_exclusive = { focus = ITA_ip_increase_king_power }
@@ -10241,23 +9389,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -10275,27 +9407,29 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
-		id = ITA_ip_reach_a_commom_agreement
+		id = ITA_ip_reach_a_common_agreement
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = -1
+		y = 1
+		prerequisite = { focus = ITA_ip_discuss_togheter_the_issues }
+		relative_position_id = ITA_ip_discuss_togheter_the_issues
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_maintain_unity
 		icon = GFX_focus_ARG_defense_and_democracy
 
 		x = 1
@@ -10309,30 +9443,790 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_strenghten_the_militia
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_maintain_unity }
+		relative_position_id = ITA_ip_maintain_unity
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_army_inside_an_army
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_strenghten_the_militia focus = ITA_ip_fight_for_him }
+		relative_position_id = ITA_ip_strenghten_the_militia
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_army_loyal_to_the_king
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_army_inside_an_army }
+		prerequisite = { focus = ITA_ip_dissolve_parliment }
+		relative_position_id = ITA_ip_army_inside_an_army
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_ban_republican_press
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
+
+		x = 0
+		y = 1
+		prerequisite = { focus = ITA_ip_dissolve_parliment }
+		relative_position_id = ITA_ip_dissolve_parliment
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_emanuele_cult
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_ban_republican_press }
+		prerequisite = { focus = ITA_ip_army_loyal_to_the_king }
+		relative_position_id = ITA_ip_ban_republican_press
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_exile_the_pope
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_emanuele_cult }
+		relative_position_id = ITA_ip_emanuele_cult
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_rome_our_great_city
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
+
+		x = 0
+		y = 1
+		prerequisite = { focus = ITA_ip_exile_the_pope }
+		relative_position_id = ITA_ip_exile_the_pope
+		cost = 1
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_industructible
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_portray_him_to_the_public }
+		prerequisite = { focus = ITA_ip_rome_our_great_city }
+		prerequisite = { focus = ITA_ip_annexation_of_illyria }
+		relative_position_id = ITA_ip_rome_our_great_city
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_scalea_our_puppet
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
+
+		x = -1
+		y = 1
+		prerequisite = { focus = ITA_ip_emanuele_cult }
+		relative_position_id = ITA_ip_emanuele_cult
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_portray_him_to_the_public
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
+
+		x = 0
+		y = 1
+		prerequisite = { focus = ITA_ip_scalea_our_puppet }
+		relative_position_id = ITA_ip_scalea_our_puppet
+		cost = 1
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_indivisible
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_portray_him_to_the_public }
+		prerequisite = { focus = ITA_ip_rome_our_great_city }
+		prerequisite = { focus = ITA_ip_annexation_of_illyria }
+		relative_position_id = ITA_ip_portray_him_to_the_public
+		cost = 1
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_a_kingdom_great
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_industructible }
+		prerequisite = { focus = ITA_ip_indivisible }
+		relative_position_id = ITA_ip_indivisible
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_install_savoy_in_spain
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
+
+		x = 0
+		y = 1
+		prerequisite = { focus = ITA_ip_a_kingdom_great }
+		relative_position_id = ITA_ip_a_kingdom_great
+		cost = 6.4
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_install_savoy_in_hungary
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
+
+		x = -2
+		y = 1
+		prerequisite = { focus = ITA_ip_a_kingdom_great }
+		relative_position_id = ITA_ip_a_kingdom_great
+		cost = 6.4
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_unite_the_kingdoms
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_install_savoy_in_hungary }
+		prerequisite = { focus = ITA_ip_install_savoy_in_spain }
+		relative_position_id = ITA_ip_install_savoy_in_hungary
+		cost = 7.2
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ITA_ip_protector_of_islam
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
+
+		x = 4
+		y = 1
+		prerequisite = { focus = ITA_ip_industructible }
+		prerequisite = { focus = ITA_ip_indivisible }
+		relative_position_id = ITA_ip_indivisible
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_arabian_invasion
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_protector_of_islam }
+		relative_position_id = ITA_ip_protector_of_islam
+		cost = 2
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_moroccan_invasion
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
+
+		x = -1
+		y = 1
+		prerequisite = { focus = ITA_ip_protector_of_islam }
+		relative_position_id = ITA_ip_protector_of_islam
+		cost = 2
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_defeat_the_iranians
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_arabian_invasion }
+		prerequisite = { focus = ITA_ip_moroccan_invasion }
+		relative_position_id = ITA_ip_moroccan_invasion
+		cost = 6
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_final_civilization
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
+
+		x = -2
+		y = 1
+		prerequisite = { focus = ITA_ip_unite_the_kingdoms }
+		prerequisite = { focus = ITA_ip_defeat_the_iranians }
+		relative_position_id = ITA_ip_defeat_the_iranians
+		cost = 8.7
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_king_country_and_strength
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
+
+		x = 3
+		y = 1
+		prerequisite = { focus = ITA_ip_emanuele_cult }
+		relative_position_id = ITA_ip_emanuele_cult
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_annexation_of_illyria
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
+
+		x = 0
+		y = 1
+		prerequisite = { focus = ITA_ip_king_country_and_strength }
+		relative_position_id = ITA_ip_king_country_and_strength
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_issues_solved
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 0
+		y = 2
+		prerequisite = { focus = ITA_ip_maintain_unity }
+		prerequisite = { focus = ITA_ip_reach_a_common_agreement }
+		relative_position_id = ITA_ip_discuss_togheter_the_issues
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_intergrate_the_monarchists
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 0
+		y = 1
+		prerequisite = { focus = ITA_ip_issues_solved }
+		relative_position_id = ITA_ip_issues_solved
+		cost = 1.3
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_intergrate_the_oligarchs
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 0
+		y = 1
+		prerequisite = { focus = ITA_ip_intergrate_the_monarchists }
+		relative_position_id = ITA_ip_intergrate_the_monarchists
+		cost = 1.3
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_intergrate_the_merchants
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 0
+		y = 1
+		prerequisite = { focus = ITA_ip_intergrate_the_oligarchs }
+		relative_position_id = ITA_ip_intergrate_the_oligarchs
+		cost = 1.3
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_intergrate_the_militas
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 0
+		y = 1
+		prerequisite = { focus = ITA_ip_intergrate_the_merchants }
+		relative_position_id = ITA_ip_intergrate_the_merchants
+		cost = 1.3
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_a_well_oiled_machine
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 0
+		y = 1
+		prerequisite = { focus = ITA_ip_intergrate_the_militas }
+		relative_position_id = ITA_ip_intergrate_the_militas
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_everything_is_on_time
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 2
+		y = 1
+		prerequisite = { focus = ITA_ip_intergrate_the_militas }
+		relative_position_id = ITA_ip_intergrate_the_militas
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_no_cracks
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = -2
+		y = 1
+		prerequisite = { focus = ITA_ip_intergrate_the_militas }
+		relative_position_id = ITA_ip_intergrate_the_militas
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_current_idendity_is_fine
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_a_well_oiled_machine }
+		prerequisite = { focus = ITA_ip_no_cracks }
+		prerequisite = { focus = ITA_ip_everything_is_on_time }
+		mutually_exclusive = { focus = ITA_ip_rebrand }
+		relative_position_id = ITA_ip_a_well_oiled_machine
+		cost = 0.4
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_rebrand
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = -1
+		y = 1
+		prerequisite = { focus = ITA_ip_a_well_oiled_machine }
+		prerequisite = { focus = ITA_ip_no_cracks }
+		prerequisite = { focus = ITA_ip_everything_is_on_time }
+		mutually_exclusive = { focus = ITA_ip_current_idendity_is_fine }
+		relative_position_id = ITA_ip_a_well_oiled_machine
+		cost = 0.4
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_italy_ready_for_the_world
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_rebrand focus = ITA_ip_current_idendity_is_fine }
+		relative_position_id = ITA_ip_rebrand
+		cost = 12
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_new_times_new_oppertunities
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_italy_ready_for_the_world }
+		relative_position_id = ITA_ip_italy_ready_for_the_world
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_the_eastern_med_gamble
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 4
+		y = 1
+		prerequisite = { focus = ITA_ip_italy_ready_for_the_world }
+		relative_position_id = ITA_ip_italy_ready_for_the_world
+		cost = 4
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_ban_all_opposition
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = -1
+		y = 1
+		prerequisite = { focus = ITA_ip_italy_ready_for_the_world }
+		relative_position_id = ITA_ip_italy_ready_for_the_world
+		cost = 4
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_vauge_candle_of_liberty
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = -3
+		y = 1
+		prerequisite = { focus = ITA_ip_italy_ready_for_the_world }
+		relative_position_id = ITA_ip_italy_ready_for_the_world
+		cost = 4
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_new_type_of_press
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_vauge_candle_of_liberty focus = ITA_ip_ban_all_opposition }
+		relative_position_id = ITA_ip_vauge_candle_of_liberty
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_opression_is_needed
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_new_times_new_oppertunities focus = ITA_ip_ban_all_opposition }
+		relative_position_id = ITA_ip_ban_all_opposition
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_control_control_control
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = -1
+		y = 1
+		prerequisite = { focus = ITA_ip_opression_is_needed }
+		prerequisite = { focus = ITA_ip_new_type_of_press }
+		relative_position_id = ITA_ip_opression_is_needed
+		cost = 7.2
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_scalea_the_genious
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 0
+		y = 1
+		prerequisite = { focus = ITA_ip_control_control_control }
+		relative_position_id = ITA_ip_control_control_control
+		cost = 8.6
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_merchant_gold
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 3
+		y = 1
+		prerequisite = { focus = ITA_ip_an_older_italy focus = ITA_ip_balance_the_coalition }
+		relative_position_id = ITA_ip_an_older_italy
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
 		}
 	}
 	focus = {
 		id = ITA_ip_an_older_italy
 		icon = GFX_focus_generic_refit_civilian_ships
 
-		x = -4
+		x = -6
 		y = 1
 		prerequisite = { focus = ITA_ip_the_policies_of_scalea }
 		mutually_exclusive = { focus = ITA_ip_balance_the_coalition }
@@ -10345,23 +10239,470 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_discuss_with_regions
+		icon = GFX_focus_generic_refit_civilian_ships
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_an_older_italy focus = ITA_ip_balance_the_coalition }
+		relative_position_id = ITA_ip_an_older_italy
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_prepare_a_response
+		icon = GFX_focus_generic_refit_civilian_ships
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_an_older_italy }
+		prerequisite = { focus = ITA_ip_merchant_gold }
+		prerequisite = { focus = ITA_ip_discuss_with_regions }
+		relative_position_id = ITA_ip_discuss_with_regions
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_the_africa_question
+		icon = GFX_focus_generic_refit_civilian_ships
+
+		x = 2
+		y = 1
+		prerequisite = { focus = ITA_ip_stop_that_process }
+		prerequisite = { focus = ITA_ip_prepare_a_response }
+		relative_position_id = ITA_ip_stop_that_process
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_if_not_now_then_never
+		icon = GFX_focus_generic_refit_civilian_ships
+
+		x = 0
+		y = 1
+		prerequisite = { focus = ITA_ip_stop_that_process }
+		prerequisite = { focus = ITA_ip_prepare_a_response }
+		relative_position_id = ITA_ip_prepare_a_response
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_the_power_manuver
+		icon = GFX_focus_generic_refit_civilian_ships
+
+		x = -1
+		y = 1
+		prerequisite = { focus = ITA_ip_the_africa_question }
+		prerequisite = { focus = ITA_ip_if_not_now_then_never }
+		relative_position_id = ITA_ip_if_not_now_then_never
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_a_new_republic
+		icon = GFX_focus_generic_refit_civilian_ships
+
+		x = 2
+		y = 1
+		prerequisite = { focus = ITA_ip_the_power_manuver }
+		relative_position_id = ITA_ip_the_power_manuver
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_buisnessmen_dream
+		icon = GFX_focus_generic_refit_civilian_ships
+
+		x = -1
+		y = 1
+		prerequisite = { focus = ITA_ip_a_new_republic }
+		relative_position_id = ITA_ip_a_new_republic
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_the_merchant_state
+		icon = GFX_focus_generic_refit_civilian_ships
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_a_new_republic }
+		relative_position_id = ITA_ip_a_new_republic
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_united_by_diversity
+		icon = GFX_focus_generic_refit_civilian_ships
+
+		x = -6
+		y = 1
+		prerequisite = { focus = ITA_ip_buisnessmen_dream }
+		prerequisite = { focus = ITA_ip_the_merchant_state }
+		relative_position_id = ITA_ip_buisnessmen_dream
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_ford_as_an_example
+		icon = GFX_focus_generic_refit_civilian_ships
+
+		x = -1
+		y = 1
+		prerequisite = { focus = ITA_ip_united_by_diversity }
+		relative_position_id = ITA_ip_united_by_diversity
+		cost = 2.5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_venice_as_an_example
+		icon = GFX_focus_generic_refit_civilian_ships
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_united_by_diversity }
+		relative_position_id = ITA_ip_united_by_diversity
+		cost = 2.5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_trade_trade_everywhere
+		icon = GFX_focus_generic_refit_civilian_ships
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_ford_as_an_example }
+		prerequisite = { focus = ITA_ip_venice_as_an_example }
+		relative_position_id = ITA_ip_ford_as_an_example
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_strenghten_the_big_3
+		icon = GFX_focus_generic_refit_civilian_ships
+
+		x = 2
+		y = 1
+		prerequisite = { focus = ITA_ip_trade_trade_everywhere }
+		relative_position_id = ITA_ip_trade_trade_everywhere
+		cost = 3.6
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_ties_with_the_mafia
+		icon = GFX_focus_generic_refit_civilian_ships
+
+		x = 0
+		y = 1
+		prerequisite = { focus = ITA_ip_trade_trade_everywhere }
+		relative_position_id = ITA_ip_trade_trade_everywhere
+		cost = 3.6
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_blackest_market
+		icon = GFX_focus_generic_refit_civilian_ships
+
+		x = -2
+		y = 1
+		prerequisite = { focus = ITA_ip_trade_trade_everywhere }
+		relative_position_id = ITA_ip_trade_trade_everywhere
+		cost = 3.6
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_legalize_slavery
+		icon = GFX_focus_generic_refit_civilian_ships
+
+		x = -1
+		y = 1
+		prerequisite = { focus = ITA_ip_blackest_market }
+		relative_position_id = ITA_ip_blackest_market
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_legalize_child_labour
+		icon = GFX_focus_generic_refit_civilian_ships
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_blackest_market focus = ITA_ip_ties_with_the_mafia }
+		relative_position_id = ITA_ip_blackest_market
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_exploit_everyone
+		icon = GFX_focus_generic_refit_civilian_ships
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_legalize_slavery }
+		prerequisite = { focus = ITA_ip_legalize_child_labour }
+		relative_position_id = ITA_ip_legalize_slavery
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_the_most_profitable_company
+		icon = GFX_focus_generic_refit_civilian_ships
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_exploit_everyone }
+		relative_position_id = ITA_ip_exploit_everyone
+		cost = 6
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_expand_everywhere
+		icon = GFX_focus_generic_refit_civilian_ships
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_the_most_profitable_company }
+		prerequisite = { focus = ITA_ip_mandate_capitalism }
+		relative_position_id = ITA_ip_the_most_profitable_company
+		cost = 6
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ITA_ip_the_oceanic_drug_trade
+		icon = GFX_focus_generic_refit_civilian_ships
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_strenghten_the_big_3 focus = ITA_ip_ties_with_the_mafia }
+		relative_position_id = ITA_ip_ties_with_the_mafia
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_get_the_spice_trade
+		icon = GFX_focus_generic_refit_civilian_ships
+
+		x = 3
+		y = 1
+		prerequisite = { focus = ITA_ip_strenghten_the_big_3 }
+		prerequisite = { focus = ITA_ip_ties_with_the_mafia }
+		prerequisite = { focus = ITA_ip_blackest_market }
+		relative_position_id = ITA_ip_ties_with_the_mafia
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_extract_the_oil
+		icon = GFX_focus_generic_refit_civilian_ships
+
+		x = 4
+		y = 2
+		prerequisite = { focus = ITA_ip_strenghten_the_big_3 }
+		relative_position_id = ITA_ip_ties_with_the_mafia
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_sail_across_the_world
+		icon = GFX_focus_generic_refit_civilian_ships
+
+		x = 0
+		y = 1
+		prerequisite = { focus = ITA_ip_the_oceanic_drug_trade }
+		relative_position_id = ITA_ip_the_oceanic_drug_trade
+		cost = 6
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_ip_mandate_capitalism
+		icon = GFX_focus_generic_refit_civilian_ships
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_sail_across_the_world }
+		prerequisite = { focus = ITA_ip_get_the_spice_trade }
+		relative_position_id = ITA_ip_sail_across_the_world
+		cost = 6
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
 		}
 	}
 	focus = {
@@ -10379,32 +10720,17 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
 		id = ITA_ip_continue_italiaisation
 		icon = GFX_focus_ITA_a_colonial_empire
 
-		x = -2
+		x = -3
 		y = 1
 		prerequisite = { focus = ITA_ip_tackle_the_other_groups }
+		mutually_exclusive = { focus = ITA_ip_stop_that_process }
 		relative_position_id = ITA_ip_tackle_the_other_groups
 		cost = 5
 		available = {
@@ -10413,23 +10739,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -10447,23 +10757,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -10481,23 +10775,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -10515,23 +10793,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -10549,23 +10811,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -10583,23 +10829,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -10617,23 +10847,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -10651,23 +10865,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -10685,32 +10883,17 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
 		id = ITA_ip_stop_that_process
 		icon = GFX_focus_generic_refit_civilian_ships
 
-		x = -4
+		x = -1
 		y = 1
 		prerequisite = { focus = ITA_ip_tackle_the_other_groups }
+		mutually_exclusive = { focus = ITA_ip_continue_italiaisation }
 		relative_position_id = ITA_ip_tackle_the_other_groups
 		cost = 5
 		available = {
@@ -10719,23 +10902,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -10755,23 +10922,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 }

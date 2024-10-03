@@ -6,21 +6,26 @@ state={
 	history={
 		owner = ALB
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
+			infrastructure = 4
+			industrial_complex = 2
+			11767 = {
+				naval_base = 4
+
+			}
 
 		}
 		victory_points = {
-			3882 5 
+			11767 2 
 		}
 		add_core_of = ALB
+		add_claim_by = ITA
 
 	}
 
 	provinces={
-		13593 
+		11767 
 	}
-	manpower=14561
+	manpower=21542
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000
