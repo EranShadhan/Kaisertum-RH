@@ -42,25 +42,6 @@ focus_tree = {
 	}
 
 
-########  ##    ##    ########  ##        #######   #######  ########        ###    ##        #######  ##    ## ######## 
-##     ##  ##  ##     ##     ## ##       ##     ## ##     ## ##     ##      ## ##   ##       ##     ## ###   ## ##       
-##     ##   ####      ##     ## ##       ##     ## ##     ## ##     ##     ##   ##  ##       ##     ## ####  ## ##       
-########     ##       ########  ##       ##     ## ##     ## ##     ##    ##     ## ##       ##     ## ## ## ## ######   
-##     ##    ##       ##     ## ##       ##     ## ##     ## ##     ##    ######### ##       ##     ## ##  #### ##       
-##     ##    ##       ##     ## ##       ##     ## ##     ## ##     ##    ##     ## ##       ##     ## ##   ### ##       
-########     ##       ########  ########  #######   #######  ########     ##     ## ########  #######  ##    ## ######## 
-
-
-
- ######   #######  ##        #######  ##    ## ####    ###    ##                ##    #### ##    ## ########  ##     ##  ######  ######## ########  ####    ###    ##       
-##    ## ##     ## ##       ##     ## ###   ##  ##    ## ##   ##               ##      ##  ###   ## ##     ## ##     ## ##    ##    ##    ##     ##  ##    ## ##   ##       
-##       ##     ## ##       ##     ## ####  ##  ##   ##   ##  ##              ##       ##  ####  ## ##     ## ##     ## ##          ##    ##     ##  ##   ##   ##  ##       
-##       ##     ## ##       ##     ## ## ## ##  ##  ##     ## ##             ##        ##  ## ## ## ##     ## ##     ##  ######     ##    ########   ##  ##     ## ##       
-##       ##     ## ##       ##     ## ##  ####  ##  ######### ##            ##         ##  ##  #### ##     ## ##     ##       ##    ##    ##   ##    ##  ######### ##       
-##    ## ##     ## ##       ##     ## ##   ###  ##  ##     ## ##           ##          ##  ##   ### ##     ## ##     ## ##    ##    ##    ##    ##   ##  ##     ## ##       
- ######   #######  ########  #######  ##    ## #### ##     ## ########    ##          #### ##    ## ########   #######   ######     ##    ##     ## #### ##     ## ######## 
-
-
 	focus = {
 		id = ITA_ethiopian_war_logistics_bba
 		icon = GFX_goal_generic_position_armies
@@ -249,7 +230,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_develop_ethiopia
+		id = ITA_develop_illyria
 		icon = GFX_focus_generic_develop_ethiopia
 		prerequisite = { focus = ITA_ministry_of_italian_africa }
 
@@ -290,7 +271,7 @@ focus_tree = {
 						}
 					}
 				}
-				custom_effect_tooltip = ITA_develop_ethiopia_tt
+				custom_effect_tooltip = ITA_develop_illyria_tt
 			}
 
 			if = {
@@ -960,7 +941,7 @@ focus_tree = {
 	focus = {
 		id = ITA_regional_development
 		icon = GFX_goal_generic_construction
-		prerequisite = { focus = ITA_develop_eritrea focus = ITA_develop_libya focus = ITA_develop_somaliland focus = ITA_develop_ethiopia }
+		prerequisite = { focus = ITA_develop_eritrea focus = ITA_develop_libya focus = ITA_develop_somaliland focus = ITA_develop_illyria }
 
 		x = 1
 		y = 1
@@ -994,7 +975,7 @@ focus_tree = {
 			#ETHIOPIA
 			if = {
 				limit = {
-					has_completed_focus = ITA_develop_ethiopia
+					has_completed_focus = ITA_develop_illyria
 				}
 				if = {
 					limit = {
@@ -8204,19 +8185,2593 @@ focus_tree = {
 			custom_effect_tooltip = ITA_flotta_d_evasione_dockyards_tt #TODO_Manu: Dynamic tooltip
 		}
 	}
-
-
-
-##     ## ####  ######  ########  #######  ########  ####  ######     ###    ##       
-##     ##  ##  ##    ##    ##    ##     ## ##     ##  ##  ##    ##   ## ##   ##       
-##     ##  ##  ##          ##    ##     ## ##     ##  ##  ##        ##   ##  ##       
-#########  ##   ######     ##    ##     ## ########   ##  ##       ##     ## ##       
-##     ##  ##        ##    ##    ##     ## ##   ##    ##  ##       ######### ##       
-##     ##  ##  ##    ##    ##    ##     ## ##    ##   ##  ##    ## ##     ## ##       
-##     ## ####  ######     ##     #######  ##     ## ####  ######  ##     ## ######## 
-
-
 	
+	focus = {
+		id = ITA_status_report_1930
+		icon = GFX_goal_zzz_WIP
 
+		x = 20
+		y = 0
+		relative_position_id = ITA_naval_power_projection
+		cost = 5
+		available = {
+		}
 
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_the_dying_empire
+		icon = GFX_cancel_the_austrian_agreement
+
+		x = 0
+		y = 1
+		prerequisite = { focus = ITA_status_report_1930 }
+		relative_position_id = ITA_status_report_1930
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_snatch_the_illyria
+		icon = GFX_cancel_the_austrian_agreement
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_the_dying_empire }
+		relative_position_id = ITA_the_dying_empire
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_liberate_our_italian_brothers
+		icon = GFX_cancel_the_austrian_agreement
+
+		x = -1
+		y = 1
+		prerequisite = { focus = ITA_the_dying_empire }
+		relative_position_id = ITA_the_dying_empire
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_enter_the_austrian_conflict
+		icon = GFX_cancel_the_austrian_agreement
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_liberate_our_italian_brothers }
+		prerequisite = { focus = ITA_snatch_the_illyria }
+		relative_position_id = ITA_liberate_our_italian_brothers
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_elections_of_1930
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 0
+		y = 1
+		prerequisite = { focus = ITA_enter_the_austrian_conflict }
+		relative_position_id = ITA_enter_the_austrian_conflict
+		cost = 1
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	 
+	#####################
+	#### ITALY FIRST ####
+	#####################
+	
+	focus = {
+		id = ITA_as_expected
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 10
+		y = 1
+		prerequisite = { focus = ITA_elections_of_1930 }
+		mutually_exclusive = { focus = ITA_the_monopoly_broken }
+		relative_position_id = ITA_elections_of_1930
+		cost = 1
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_the_monopoly_broken
+		icon = GFX_focus_ITA_imperial_recognition
+
+		x = -10
+		y = 1
+		prerequisite = { focus = ITA_elections_of_1930 }
+		mutually_exclusive = { focus = ITA_as_expected }
+		relative_position_id = ITA_elections_of_1930
+		cost = 1
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_on_foreign_matters
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 20
+		y = 1
+		prerequisite = { focus = ITA_as_expected }
+		relative_position_id = ITA_as_expected
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_look_for_possible_allies
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = -1
+		y = 1
+		prerequisite = { focus = ITA_ip_on_foreign_matters }
+		relative_position_id = ITA_ip_on_foreign_matters
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_ally_with_the_phoenix
+		icon = GFX_ROM_sell_to_france
+
+		x = -7
+		y = 1
+		prerequisite = { focus = ITA_ip_look_for_possible_allies }
+		mutually_exclusive { focus = ITA_ip_ally_with_the_eagle }
+		mutually_exclusive { focus = ITA_ip_on_our_own }
+		relative_position_id = ITA_ip_look_for_possible_allies
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_ally_with_the_eagle
+		icon = GFX_TUR_invite_german_naval_mission
+
+		x = -3
+		y = 1
+		prerequisite = { focus = ITA_ip_look_for_possible_allies }
+		mutually_exclusive { focus = ITA_ip_ally_with_the_phoenix }
+		mutually_exclusive { focus = ITA_ip_on_our_own }
+		relative_position_id = ITA_ip_look_for_possible_allies
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_french_arms
+		icon = GFX_ROM_sell_to_france
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_ally_with_the_phoenix }
+		relative_position_id = ITA_ip_ally_with_the_phoenix
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_french_trade
+		icon = GFX_ROM_sell_to_france
+
+		x = -1
+		y = 1
+		prerequisite = { focus = ITA_ip_ally_with_the_phoenix }
+		relative_position_id = ITA_ip_ally_with_the_phoenix
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_join_french_faction
+		icon = GFX_ROM_sell_to_france
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_french_trade }
+		prerequisite = { focus = ITA_ip_french_arms }
+		relative_position_id = ITA_ip_french_trade
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_request_djibouti
+		icon = GFX_ROM_sell_to_france
+
+		x = -3
+		y = 1
+		prerequisite = { focus = ITA_ip_join_french_faction }
+		relative_position_id = ITA_ip_join_french_faction
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_claims_on_cislethania
+		icon = GFX_ROM_sell_to_france
+
+		x = -1
+		y = 1
+		prerequisite = { focus = ITA_ip_join_french_faction }
+		relative_position_id = ITA_ip_join_french_faction
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_resolve_border_issues
+		icon = GFX_ROM_sell_to_france
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_join_french_faction }
+		relative_position_id = ITA_ip_join_french_faction
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_togheter_against_tutonism
+		icon = GFX_ROM_sell_to_france
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_claims_on_cislethania }
+		prerequisite = { focus = ITA_ip_resolve_border_issues }
+		
+		relative_position_id = ITA_ip_claims_on_cislethania
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_split_switzerland
+		icon = GFX_ROM_sell_to_france
+
+		x = -1
+		y = 1
+		prerequisite = { focus = ITA_ip_claims_on_cislethania }
+		
+		relative_position_id = ITA_ip_claims_on_cislethania
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_march_across_the_alps
+		icon = GFX_ROM_sell_to_france
+
+		x = -1
+		y = 1
+		prerequisite = { focus = ITA_ip_togheter_against_tutonism focus = ITA_ip_split_switzerland }
+		
+		relative_position_id = ITA_ip_togheter_against_tutonism
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_german_arms
+		icon = GFX_TUR_invite_german_naval_mission
+
+		x = -1
+		y = 1
+		prerequisite = { focus = ITA_ip_ally_with_the_eagle }
+		relative_position_id = ITA_ip_ally_with_the_eagle
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_german_technology
+		icon = GFX_TUR_invite_german_naval_mission
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_ally_with_the_eagle }
+		relative_position_id = ITA_ip_ally_with_the_eagle
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_join_german_faction
+		icon = GFX_TUR_invite_german_naval_mission
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_german_technology focus = ITA_ip_german_arms }
+		relative_position_id = ITA_ip_german_arms
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_claim_madagascar
+		icon = GFX_TUR_invite_german_naval_mission
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_join_german_faction }
+		relative_position_id = ITA_ip_join_german_faction
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_requests_parts_of_somalia
+		icon = GFX_TUR_invite_german_naval_mission
+
+		x = -1
+		y = 1
+		prerequisite = { focus = ITA_ip_join_german_faction }
+		relative_position_id = ITA_ip_join_german_faction
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_just_like_1915
+		icon = GFX_TUR_invite_german_naval_mission
+
+		x = 0
+		y = 1
+		prerequisite = { focus = ITA_ip_claim_madagascar focus = ITA_ip_requests_parts_of_somalia focus = ITA_ip_are_occitanians_italian }
+		relative_position_id = ITA_ip_claim_madagascar
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_shared_special_projects_with_germany
+		icon = GFX_TUR_invite_german_naval_mission
+
+		x = 0
+		y = 1
+		prerequisite = { focus = ITA_ip_just_like_1915 }
+		relative_position_id = ITA_ip_just_like_1915
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_disputes_with_france
+		icon = GFX_TUR_invite_german_naval_mission
+
+		x = 4
+		y = 1
+		prerequisite = { focus = ITA_ip_german_technology focus = ITA_ip_german_arms }
+		prerequisite = { focus = ITA_ip_italian_irredentism }
+		relative_position_id = ITA_ip_german_arms
+		cost = 5
+		available = {
+			NOT = {
+				has_completed_focus = ITA_ip_ally_with_the_phoenix
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_are_occitanians_italian
+		icon = GFX_TUR_invite_german_naval_mission
+
+		x = 0
+		y = 1
+		prerequisite = { focus = ITA_ip_disputes_with_france }
+		relative_position_id = ITA_ip_disputes_with_france
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_on_our_own
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 5
+		y = 1
+		prerequisite = { focus = ITA_ip_look_for_possible_allies }
+		mutually_exclusive { focus = ITA_ip_ally_with_the_phoenix }
+		mutually_exclusive { focus = ITA_ip_ally_with_the_eagle }
+		relative_position_id = ITA_ip_look_for_possible_allies
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_the_balkan_issue
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_on_our_own focus = ITA_ip_ally_with_the_phoenix focus = ITA_ip_ally_with_the_eagle }
+		relative_position_id = ITA_ip_on_our_own
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_italian_irredentism
+		icon = GFX_focus_ITA_italian_irredentism
+
+		x = -1
+		y = 1
+		prerequisite = { focus = ITA_ip_on_our_own focus = ITA_ip_ally_with_the_phoenix focus = ITA_ip_ally_with_the_eagle }
+		relative_position_id = ITA_ip_on_our_own
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_request_belaric_islands
+		icon = GFX_focus_ITA_italian_irredentism
+
+		x = -2
+		y = 2
+		prerequisite = { focus = ITA_ip_italian_irredentism }
+		relative_position_id = ITA_ip_italian_irredentism
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_the_gibralter_request
+		icon = GFX_focus_ITA_italian_irredentism
+
+		x = 0
+		y = 1
+		prerequisite = { focus = ITA_ip_request_belaric_islands }
+		relative_position_id = ITA_ip_request_belaric_islands
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_battle_of_corfu
+		icon = GFX_focus_ITA_italian_irredentism
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_italian_irredentism focus = ITA_ip_the_balkan_issue }
+		relative_position_id = ITA_ip_italian_irredentism
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_the_port_of_vlore
+		icon = GFX_focus_ITA_italian_irredentism
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_italian_irredentism focus = ITA_ip_the_balkan_issue }
+		relative_position_id = ITA_ip_the_balkan_issue
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_hijack_yugoslavism
+		icon = GFX_focus_ITA_italian_irredentism
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_the_port_of_vlore focus = ITA_ip_battle_of_corfu }
+		relative_position_id = ITA_ip_battle_of_corfu
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_final_preperations_for_salonica
+		icon = GFX_focus_ITA_italian_irredentism
+
+		x = 0
+		y = 2
+		prerequisite = { focus = ITA_ip_hijack_yugoslavism }
+		relative_position_id = ITA_ip_hijack_yugoslavism
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_war_with_salonica
+		icon = GFX_focus_ITA_italian_irredentism
+
+		x = 0
+		y = 2
+		prerequisite = { focus = ITA_ip_final_preperations_for_salonica }
+		prerequisite = { focus = ITA_ip_ally_turkey focus = ITA_ip_not_forget_old_rivalry focus = ITA_ip_ally_romania }
+		relative_position_id = ITA_ip_final_preperations_for_salonica
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_get_local_allies
+		icon = GFX_focus_ITA_italian_irredentism
+
+		x = -1
+		y = 4
+		prerequisite = { focus = ITA_ip_italian_irredentism }
+		prerequisite = { focus = ITA_ip_the_balkan_issue }
+		relative_position_id = ITA_ip_italian_irredentism
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_ally_romania
+		icon = GFX_ROM_tourism
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_get_local_allies }
+		relative_position_id = ITA_ip_get_local_allies
+		cost = 3.4
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_ally_turkey
+		icon = GFX_TUR_start_of_a_new_decade
+
+		x = -1
+		y = 1
+		prerequisite = { focus = ITA_ip_get_local_allies }
+		mutually_exclusive = { focus = ITA_ip_not_forget_old_rivalry }
+		relative_position_id = ITA_ip_get_local_allies
+		cost = 3.4
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_not_forget_old_rivalry
+		icon = GFX_TUR_start_of_a_new_decade
+
+		x = -3
+		y = 1
+		prerequisite = { focus = ITA_ip_get_local_allies }
+		mutually_exclusive = { focus = ITA_ip_ally_turkey }
+		relative_position_id = ITA_ip_get_local_allies
+		cost = 3.4
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_the_trouble_spot
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 5
+		y = 1
+		prerequisite = { focus = ITA_ip_on_foreign_matters }
+		relative_position_id = ITA_ip_on_foreign_matters
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_send_ethiopea_our_demands
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 4
+		y = 1
+		prerequisite = { focus = ITA_ip_the_trouble_spot }
+		relative_position_id = ITA_ip_the_trouble_spot
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_enter_into_ethiopea
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_send_ethiopea_our_demands }
+		relative_position_id = ITA_ip_send_ethiopea_our_demands
+		cost = 1
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_the_new_protectorate
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 0
+		y = 2
+		prerequisite = { focus = ITA_ip_send_ethiopea_our_demands focus = ITA_ip_enter_into_ethiopea }
+		relative_position_id = ITA_ip_send_ethiopea_our_demands
+		cost = 1
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_promise_their_expansion
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_the_new_protectorate }
+		relative_position_id = ITA_ip_the_new_protectorate
+		cost = 1
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_settle_in_ethiopian_lands
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = -1
+		y = 1
+		prerequisite = { focus = ITA_ip_the_new_protectorate }
+		relative_position_id = ITA_ip_the_new_protectorate
+		cost = 1
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_plan_war_on_egypt
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 0
+		y = 2
+		prerequisite = { focus = ITA_ip_the_new_protectorate }
+		prerequisite = { focus = ITA_ip_settle_in_ethiopian_lands focus = ITA_ip_promise_their_expansion }
+		relative_position_id = ITA_ip_the_new_protectorate
+		cost = 1
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_support_the_copts
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 2
+		y = 1
+		prerequisite = { focus = ITA_ip_plan_war_on_egypt }
+		relative_position_id = ITA_ip_plan_war_on_egypt
+		cost = 1
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_promise_autonomy_to_sudan
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = -2
+		y = 1
+		prerequisite = { focus = ITA_ip_plan_war_on_egypt }
+		mutually_exclusive = { focus = ITA_ip_convince_sudanese_to_support }
+		relative_position_id = ITA_ip_plan_war_on_egypt
+		cost = 1
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_convince_sudanese_to_support
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 0
+		y = 1
+		prerequisite = { focus = ITA_ip_plan_war_on_egypt }
+		mutually_exclusive = { focus = ITA_ip_promise_autonomy_to_sudan }
+		relative_position_id = ITA_ip_plan_war_on_egypt
+		cost = 1
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_invasion_of_egypt
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 0
+		y = 1
+		prerequisite = { focus = ITA_ip_convince_sudanese_to_support focus = ITA_ip_promise_autonomy_to_sudan }
+		prerequisite = { focus = ITA_ip_support_the_copts }
+		relative_position_id = ITA_ip_convince_sudanese_to_support
+		cost = 4
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_establish_the_protectorates
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = -4
+		y = 1
+		prerequisite = { focus = ITA_ip_ally_with_the_eagle focus = ITA_ip_ally_with_the_phoenix focus = ITA_ip_on_our_own }
+		relative_position_id = ITA_ip_on_our_own
+		cost = 4
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_the_policies_of_scalea
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 0
+		y = 1
+		prerequisite = { focus = ITA_as_expected }
+		relative_position_id = ITA_as_expected
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_increase_king_power
+		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
+
+		x = 6
+		y = 1
+		prerequisite = { focus = ITA_ip_the_policies_of_scalea }
+		mutually_exclusive = { focus = ITA_ip_balance_the_coalition }
+		mutually_exclusive = { focus = ITA_ip_an_older_italy }
+		relative_position_id = ITA_ip_the_policies_of_scalea
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_glorify_our_king
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = -1
+		y = 1
+		prerequisite = { focus = ITA_ip_balance_the_coalition prerequisite = ITA_ip_increase_king_power }
+		relative_position_id = ITA_ip_increase_king_power
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_balance_the_coalition
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_the_policies_of_scalea }
+		mutually_exclusive = { focus = ITA_ip_increase_king_power }
+		mutually_exclusive = { focus = ITA_ip_an_older_italy }
+		relative_position_id = ITA_ip_the_policies_of_scalea
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_discuss_togheter_the_issues
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 0
+		y = 1
+		prerequisite = { focus = ITA_ip_balance_the_coalition }
+		relative_position_id = ITA_ip_balance_the_coalition
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_reach_a_commom_agreement
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_discuss_togheter_the_issues }
+		relative_position_id = ITA_ip_discuss_togheter_the_issues
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_an_older_italy
+		icon = GFX_focus_generic_refit_civilian_ships
+
+		x = -4
+		y = 1
+		prerequisite = { focus = ITA_ip_the_policies_of_scalea }
+		mutually_exclusive = { focus = ITA_ip_balance_the_coalition }
+		mutually_exclusive = { focus = ITA_ip_increase_king_power }
+		relative_position_id = ITA_ip_the_policies_of_scalea
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_tackle_the_other_groups
+		icon = GFX_focus_generic_refit_civilian_ships
+
+		x = -1
+		y = 1
+		prerequisite = { focus = ITA_ip_an_older_italy focus = ITA_ip_balance_the_coalition focus = ITA_ip_increase_king_power }
+		relative_position_id = ITA_ip_an_older_italy
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_continue_italiaisation
+		icon = GFX_focus_ITA_a_colonial_empire
+
+		x = -2
+		y = 1
+		prerequisite = { focus = ITA_ip_tackle_the_other_groups }
+		relative_position_id = ITA_ip_tackle_the_other_groups
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_italianize_sardinia
+		icon = GFX_focus_ITA_a_colonial_empire
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_continue_italiaisation }
+		relative_position_id = ITA_ip_continue_italiaisation
+		cost = 2
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_italianize_corsica
+		icon = GFX_focus_ITA_a_colonial_empire
+
+		x = -1
+		y = 1
+		prerequisite = { focus = ITA_ip_continue_italiaisation }
+		relative_position_id = ITA_ip_continue_italiaisation
+		cost = 2
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_italianize_corsica
+		icon = GFX_focus_ITA_a_colonial_empire
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_continue_italiaisation }
+		relative_position_id = ITA_ip_continue_italiaisation
+		cost = 2
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_italianize_savoy
+		icon = GFX_focus_ITA_a_colonial_empire
+
+		x = 0
+		y = 2
+		prerequisite = { focus = ITA_ip_italianize_corsica }
+		relative_position_id = ITA_ip_italianize_corsica
+		cost = 2
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_italianize_libya
+		icon = GFX_focus_ITA_a_colonial_empire
+
+		x = 0
+		y = 2
+		prerequisite = { focus = ITA_ip_continue_italiaisation }
+		relative_position_id = ITA_ip_continue_italiaisation
+		cost = 2
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_italianize_tunisia
+		icon = GFX_focus_ITA_a_colonial_empire
+
+		x = 1
+		y = 1
+		prerequisite = { focus = ITA_ip_italianize_libya }
+		relative_position_id = ITA_ip_italianize_libya
+		cost = 2
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_italianize_egypt
+		icon = GFX_focus_ITA_a_colonial_empire
+
+		x = 2
+		y = 2
+		prerequisite = { focus = ITA_ip_italianize_libya }
+		relative_position_id = ITA_ip_italianize_libya
+		cost = 2
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_italianize_ethiopea
+		icon = GFX_focus_ITA_a_colonial_empire
+
+		x = 3
+		y = 1
+		prerequisite = { focus = ITA_ip_italianize_libya }
+		relative_position_id = ITA_ip_italianize_libya
+		cost = 2
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_stop_that_process
+		icon = GFX_focus_generic_refit_civilian_ships
+
+		x = -4
+		y = 1
+		prerequisite = { focus = ITA_ip_tackle_the_other_groups }
+		relative_position_id = ITA_ip_tackle_the_other_groups
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_ip_we_are_all_italians
+		icon = GFX_focus_ITA_a_colonial_empire
+
+		x = 0
+		y = 2
+		prerequisite = { focus = ITA_ip_italianize_libya }
+		prerequisite = { focus = ITA_ip_italianize_corsica }
+		prerequisite = { focus = ITA_ip_italianize_sardinia }
+		relative_position_id = ITA_ip_italianize_libya
+		cost = 2
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
 }
