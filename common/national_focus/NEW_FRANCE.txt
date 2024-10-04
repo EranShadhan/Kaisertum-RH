@@ -19,13 +19,18 @@
 	continuous_focus_position = { x = 50 y = 2000 }
 
 	focus = {
-		id = FRA
+		id = FRA_the_first_dictatorial_discussion
 		icon = GFX_goal_GEN_workers_army
 		x = 2
 		y = 0
 		
 		prerequisite = {}
-		mutually_exclusive = { focus = FRA_eliminate_communist_opposition }
+
+		allow_branch = { 
+			NOT = {
+				has_country_flag = focus_picked
+			}
+		}
 
 		cost = 5
 			ai_will_do = {
@@ -37,10 +42,125 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			swap_ideas = { 
-				remove_idea = FRA_communist_opposition 
-				add_idea = FRA_communist_opposition_2 
-			}	
+			
+		}
+	}
+	focus = {
+		id = FRA_darnaud
+		icon = GFX_goal_GEN_workers_army
+		x = -10
+		y = 1
+		
+		prerequisite = { focus = FRA_the_first_dictatorial_discussion}
+		relative_position_id = FRA_the_first_dictatorial_discussion
+		
+		allow_branch = { 
+			NOT = {
+				has_country_flag = focus_picked
+			}
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_country_flag = {
+				flag = focus_picked
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	focus = {
+		id = FRA_Doriot
+		icon = GFX_goal_GEN_workers_army
+		x = -5
+		y = 1
+		
+		prerequisite = { focus = FRA_the_first_dictatorial_discussion}
+		relative_position_id = FRA_the_first_dictatorial_discussion
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_country_flag = {
+				flag = focus_picked
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	focus = {
+		id = FRA_Prince_Jean
+		icon = GFX_goal_GEN_workers_army
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_the_first_dictatorial_discussion}
+		relative_position_id = FRA_the_first_dictatorial_discussion
+
+		allow_branch = { 
+			NOT = {
+				has_country_flag = focus_picked
+			}
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_country_flag = {
+				flag = focus_picked
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	focus = {
+		id = FRA_Eugene_Deloncle 
+		icon = GFX_goal_GEN_workers_army
+		x = 5
+		y = 1
+		
+		prerequisite = { focus = FRA_the_first_dictatorial_discussion}
+		relative_position_id = FRA_the_first_dictatorial_discussion
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = { 
+			NOT = {
+				has_country_flag = focus_picked
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_country_flag = {
+				flag = focus_picked
+			}
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 }

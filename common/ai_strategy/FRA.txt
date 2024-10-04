@@ -152,10 +152,10 @@ FRA_armored_production = {
 FRA_highered_armored_production = {
 	allowed = { original_tag = FRA }
 	enable = {
-		num_of_military_factories > 109
+		num_of_military_factories > 40
 	}
 	abort = {
-		num_of_military_factories < 110
+		num_of_military_factories < 40
 	}
 
 	ai_strategy = {
@@ -182,25 +182,25 @@ FRA_area_priority = {
 	ai_strategy = {
 		type = area_priority
 		id = scandinavia
-		value = 0
+		value = -1000
 	}
 
 	ai_strategy = {
 		type = area_priority
 		id = north_america
-		value = 10
+		value = -1000
 	}
 
 	ai_strategy = {
 		type = area_priority
 		id = south_america
-		value = 10
+		value = -1000
 	}
 
 	ai_strategy = {
 		type = area_priority
 		id = asia
-		value = 75
+		value = 35
 	}
 
 	ai_strategy = {
@@ -212,24 +212,24 @@ FRA_area_priority = {
 	ai_strategy = {
 		type = area_priority
 		id = africa
-		value = -50
+		value = -5000
 	}
 	ai_strategy = {
         type = area_priority
         id = suez
-        value = -50
+        value = -5000
     }
 
 	ai_strategy = {
 		type = area_priority
 		id = pacific
-		value = 10 #less focus here
+		value = -1000 #less focus here
 	}
 
 	ai_strategy = {
 		type = area_priority
 		id = oceania
-		value = 10
+		value = -1000
 	}
 }
 
