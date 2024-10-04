@@ -88,8 +88,7 @@ UKR_habsburg_crown = {
             
             modifier = {
             neutrality_drift = 0.10
-            war_support_factor = 0.05
-            land_reinforce_rate = 0.05           
+            land_reinforce_rate = 0.1          
              }
          }
 

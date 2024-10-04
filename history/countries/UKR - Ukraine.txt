@@ -30,8 +30,8 @@ set_technology = {
 add_ideas = {
 	UKR_country_lore
 	german_customs_union_member
-	UKR_sugar_businesses
 	UKR_german_breadbasket
+	UKR_sugar_businesses
 	UKR_land_problem
 	}
 if = {
