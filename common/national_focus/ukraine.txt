@@ -1227,147 +1227,191 @@ focus = {
 	focus = {
 		id = UKR_time_to_act
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 5 
 		x = 16
 		y = 7
+		completion_reward = {
+           add_political_power = 100
+		}
+
 
 	}
 	focus = {
 		id = UKR_ukraine_irredenta
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = UKR_time_to_act
 		}
 		x = 8
 		y = 8
+		completion_reward = {
+           #event
+		}
+
 
 	}
 	focus = {
 		id = UKR_west_lands
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = UKR_ukraine_irredenta
 		}
 		x = 4
 		y = 9
+		completion_reward = {
+           #event
+		}
 
 	}
 	focus = {
 		id = UKR_polish_question
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = UKR_west_lands
 		}
 		x = 1
 		y = 10
+		completion_reward = {
+		add_state_claim = 1016
+		add_state_claim = 92
+           #spirit
+           #event
+		}
 
 	}
 	focus = {
 		id = UKR_zakarpattia
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = UKR_west_lands
 		}
 		x = 4
 		y = 11
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = UKR_romanian_question
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = UKR_west_lands
 		}
 		x = 8
 		y = 10
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = UKR_bukovina
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = UKR_romanian_question
 		}
 		x = 7
 		y = 11
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = UKR_bessarabia
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = UKR_romanian_question
 		}
 		x = 9
 		y = 11
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = UKR_east_lands
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = UKR_ukraine_irredenta
 		}
 		x = 13
 		y = 9
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = UKR_russian_problem
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = UKR_east_lands
 		}
 		x = 13
 		y = 10
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = UKR_polissya
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = UKR_russian_problem
 		}
 		x = 11
 		y = 11
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = UKR_slobozhanshchyna
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = UKR_russian_problem
 		}
 		x = 13
 		y = 11
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = UKR_kuban
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = UKR_russian_problem
 		}
 		x = 15
 		y = 11
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = UKR_far_eastern_brothers
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = UKR_kuban
 		}
@@ -1376,23 +1420,29 @@ focus = {
 		}
 		x = 14
 		y = 12
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = UKR_unite_cossacks
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = UKR_kuban
 		}
 		x = 17
 		y = 12
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = UKR_on_our_own
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = UKR_time_to_act
 		}
@@ -1402,12 +1452,15 @@ focus = {
 		}
 		x = 21
 		y = 8
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = UKR_cooperation
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = UKR_time_to_act
 		}
@@ -1417,46 +1470,58 @@ focus = {
 		}
 		x = 23
 		y = 8
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = UKR_zhytomyr_war_games
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = UKR_on_our_own
 			focus = UKR_cooperation
 		}
 		x = 22
 		y = 10
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = UKR_under_berlin_vision
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = UKR_time_to_act
 		}
 		x = 28
 		y = 8
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = UKR_expand_politics
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = UKR_under_berlin_vision
 		}
 		x = 28
 		y = 10
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = UKR_black_sea
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = UKR_zhytomyr_war_games
 		}
@@ -1465,12 +1530,15 @@ focus = {
 		}
 		x = 22
 		y = 11
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = UKR_support_greece
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = UKR_black_sea
 		}
@@ -1480,12 +1548,15 @@ focus = {
 		}
 		x = 21
 		y = 12
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = UKR_support_turkey
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = UKR_black_sea
 		}
@@ -1495,56 +1566,76 @@ focus = {
 		}
 		x = 23
 		y = 12
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = UKR_visit_zagreb
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = UKR_expand_politics
 		}
 		x = 28
 		y = 11
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = UKR_visit_belgrade
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = UKR_visit_zagreb
 		}
 		x = 28
 		y = 12
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = UKR_italian_friends
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = UKR_expand_politics
 		}
 		x = 30
 		y = 11
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = UKR_galician_brothers
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = UKR_polish_question
 		}
 		x = 1
 		y = 11
+		completion_reward = {
+           add_state_claim = 91
+           add_state_claim = 990
+           add_state_claim = 89
+           add_state_claim = 991
+           add_state_claim = 992
+           add_state_claim = 993
+		}
 
 	}
 	focus = {
 		id = UKR_united_again
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 8
 		prerequisite = {
 			focus = UKR_far_eastern_brothers
 		}
@@ -1565,17 +1656,23 @@ focus = {
 		}
 		x = 8
 		y = 13
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = UKR_bulgarian_friends
 		icon = GFX_goal_unknown
-		cost = 0
+		cost = 5 
 		prerequisite = {
 			focus = UKR_expand_politics
 		}
 		x = 32
 		y = 11
+		completion_reward = {
+
+		}
 
 	}
 
