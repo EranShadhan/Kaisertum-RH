@@ -1,0 +1,20 @@
+state={
+	id=1084
+	name="STATE_1084"
+
+	history={
+		owner = SAU
+		add_core_of = OMA
+		add_core_of = SAU
+
+	}
+
+	provinces={
+		13783 13785 
+	}
+	manpower=750
+	state_category=wasteland
+	impassable=yes
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
