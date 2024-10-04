@@ -176,6 +176,8 @@ ideologies = {
 				color = { 24 8 8 }
 				can_be_randomly_selected = no
 			}
+			junta_fas = {
+			}
 		}
 
 		dynamic_faction_names = {

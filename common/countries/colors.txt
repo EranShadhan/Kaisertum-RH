@@ -28,8 +28,8 @@ PRM = {
 	color_ui = rgb { 171 46 69 }
 }
 NMB = {
-	color = rgb { 115 115 115 }
-	color_ui = rgb { 100 100 100 }
+	color = HSV { 0.1 0.15 0.4 }
+	color_ui = rgb { 138 155 116 }
 }
 NFL = {
 	color = rgb { 225 47 47 }
