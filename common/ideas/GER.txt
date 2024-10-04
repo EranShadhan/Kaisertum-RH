@@ -105,29 +105,6 @@ ideas = {
 				
 			}
 		}
-	german_customs_union_leader = {
-
-			picture = german_customs_union_member
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				consumer_goods_factor = -0.05
-			}
-			targeted_modifier = {
-				tag = TUR
-				attack_bonus_against = 0.25
-				defense_bonus_against = 0.15
-			}
-		}
 GER_too_big_to_fail = {
          
             removal_cost = -1
