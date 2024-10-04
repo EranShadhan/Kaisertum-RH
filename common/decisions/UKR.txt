@@ -31,7 +31,7 @@ political_actions = {
 		}
 	}
 
-	UKR_ukranization = {
+	UKR_ukranization_1016 = {
 
 		allowed = {
 			original_tag = UKR
@@ -39,26 +39,30 @@ political_actions = {
 
 		available = {
 			owns_state = 1016
-			has_full_control_of_state = 1016
 		}
 
 		ai_will_do = {
 			factor = 200
 		}
 
+		state_target = yes
+		target_trigger = {
+		    FROM = {
+		    	state = 1016
+		    }
+		}
+		on_map_mode = map_and_decisions_view
+
 		visible = {
-			has_full_control_of_state = 1016
+			controls_state = 1016
 		}
 		fire_only_once = yes
 		complete_effect = {
-			set_province_name = { id = 3392 name = "Berestya" }
-			hidden_effect = { 
-				1016 = { set_state_name = "Berestya" }
-			}
+			add_state_core = 1016
 		}
 	}
 
-	UKR_ukranization1 = {
+	UKR_ukranization_92 = {
 
 		allowed = {
 			original_tag = UKR
@@ -66,26 +70,30 @@ political_actions = {
 
 		available = {
 			owns_state = 92
-			has_full_control_of_state = 92
 		}
 
 		ai_will_do = {
 			factor = 200
 		}
 
+		state_target = yes
+		target_trigger = {
+		    FROM = {
+		    	state = 92
+		    }
+		}
+		on_map_mode = map_and_decisions_view
+
 		visible = {
-			has_full_control_of_state = 92
+			controls_state = 92
 		}
 		fire_only_once = yes
 		complete_effect = {
-			set_province_name = { id = 11399 name = "Zamostya" }
-			hidden_effect = { 
-				92 = { set_state_name = "Kholmshchyna" }
-			}
+			add_state_core = 92
 		}
 	}
 
-	UKR_ukranization4 = {
+	UKR_ukranization_992 = {
 
 		allowed = {
 			original_tag = UKR
@@ -93,27 +101,30 @@ political_actions = {
 
 		available = {
 			owns_state = 992
-			has_full_control_of_state = 992
 		}
 
 		ai_will_do = {
 			factor = 200
 		}
 
+		state_target = yes
+		target_trigger = {
+		    FROM = {
+		    	state = 992
+		    }
+		}
+		on_map_mode = map_and_decisions_view
+
 		visible = {
-			has_full_control_of_state = 992
+			controls_state = 992
 		}
 		fire_only_once = yes
 		complete_effect = {
-			set_province_name = { id = 9494 name = "Peremyshl" }
-			hidden_effect = { 
-				992 = { set_state_name = "Peremyshl" }
-			}
+			add_state_core = 992
 		}
 	}
 
-
-	UKR_ukranization2 = {
+	UKR_ukranization_78 = {
 
 		allowed = {
 			original_tag = UKR
@@ -121,26 +132,30 @@ political_actions = {
 
 		available = {
 			owns_state = 78
-			has_full_control_of_state = 78
 		}
 
 		ai_will_do = {
 			factor = 200
 		}
 
+		state_target = yes
+		target_trigger = {
+		    FROM = {
+		    	state = 78
+		    }
+		}
+		on_map_mode = map_and_decisions_view
+
 		visible = {
-			has_full_control_of_state = 78
+			controls_state = 78
 		}
 		fire_only_once = yes
 		complete_effect = {
-			set_province_name = { id = 3707 name = "Kyshyniv" }
-			hidden_effect = { 
-				78 = { set_state_name = "Besarabia" }
-			}
+			add_state_core = 78
 		}
 	}
 
-	UKR_ukranization3 = {
+	UKR_ukranization_766 = {
 
 		allowed = {
 			original_tag = UKR
@@ -148,23 +163,26 @@ political_actions = {
 
 		available = {
 			owns_state = 766
-			has_full_control_of_state = 766
 		}
 
 		ai_will_do = {
 			factor = 200
 		}
 
+		state_target = yes
+		target_trigger = {
+		    FROM = {
+		    	state = 766
+		    }
+		}
+		on_map_mode = map_and_decisions_view
+
 		visible = {
-			has_full_control_of_state = 766
+			controls_state = 766
 		}
 		fire_only_once = yes
 		complete_effect = {
-			set_province_name = { id = 6727 name = "Akkerman" }
-			set_province_name = { id = 13371 name = "Zmiinyi" }
-			hidden_effect = { 
-				766 = { set_state_name = "Budzhak" }
-			}
+			add_state_core = 766
 		}
 	}
 
