@@ -1221,6 +1221,364 @@ focus = {
 		}
 	}
 
+     ###################################
+     ######## POLITICAL DIRECTION 2#####
+     ###################################
+	focus = {
+		id = UKR_time_to_act
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 16
+		y = 7
+
+	}
+	focus = {
+		id = UKR_ukraine_irredenta
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_time_to_act
+		}
+		x = 8
+		y = 8
+
+	}
+	focus = {
+		id = UKR_west_lands
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_ukraine_irredenta
+		}
+		x = 4
+		y = 9
+
+	}
+	focus = {
+		id = UKR_polish_question
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_west_lands
+		}
+		x = 1
+		y = 10
+
+	}
+	focus = {
+		id = UKR_zakarpattia
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_west_lands
+		}
+		x = 4
+		y = 11
+
+	}
+	focus = {
+		id = UKR_romanian_question
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_west_lands
+		}
+		x = 8
+		y = 10
+
+	}
+	focus = {
+		id = UKR_bukovina
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_romanian_question
+		}
+		x = 7
+		y = 11
+
+	}
+	focus = {
+		id = UKR_bessarabia
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_romanian_question
+		}
+		x = 9
+		y = 11
+
+	}
+	focus = {
+		id = UKR_east_lands
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_ukraine_irredenta
+		}
+		x = 13
+		y = 9
+
+	}
+	focus = {
+		id = UKR_russian_problem
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_east_lands
+		}
+		x = 13
+		y = 10
+
+	}
+	focus = {
+		id = UKR_polissya
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_russian_problem
+		}
+		x = 11
+		y = 11
+
+	}
+	focus = {
+		id = UKR_slobozhanshchyna
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_russian_problem
+		}
+		x = 13
+		y = 11
+
+	}
+	focus = {
+		id = UKR_kuban
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_russian_problem
+		}
+		x = 15
+		y = 11
+
+	}
+	focus = {
+		id = UKR_far_eastern_brothers
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_kuban
+		}
+		prerequisite = {
+			focus = UKR_slobozhanshchyna
+		}
+		x = 14
+		y = 12
+
+	}
+	focus = {
+		id = UKR_unite_cossacks
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_kuban
+		}
+		x = 17
+		y = 12
+
+	}
+	focus = {
+		id = UKR_on_our_own
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_time_to_act
+		}
+		mutually_exclusive = {
+			focus = UKR_cooperation
+			focus = UKR_cooperation
+		}
+		x = 21
+		y = 8
+
+	}
+	focus = {
+		id = UKR_cooperation
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_time_to_act
+		}
+		mutually_exclusive = {
+			focus = UKR_on_our_own
+			focus = UKR_on_our_own
+		}
+		x = 23
+		y = 8
+
+	}
+	focus = {
+		id = UKR_zhytomyr_war_games
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_on_our_own
+			focus = UKR_cooperation
+		}
+		x = 22
+		y = 10
+
+	}
+	focus = {
+		id = UKR_under_berlin_vision
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_time_to_act
+		}
+		x = 28
+		y = 8
+
+	}
+	focus = {
+		id = UKR_expand_politics
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_under_berlin_vision
+		}
+		x = 28
+		y = 10
+
+	}
+	focus = {
+		id = UKR_black_sea
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_zhytomyr_war_games
+		}
+		prerequisite = {
+			focus = UKR_expand_politics
+		}
+		x = 22
+		y = 11
+
+	}
+	focus = {
+		id = UKR_support_greece
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_black_sea
+		}
+		mutually_exclusive = {
+			focus = UKR_support_turkey
+			focus = UKR_support_turkey
+		}
+		x = 21
+		y = 12
+
+	}
+	focus = {
+		id = UKR_support_turkey
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_black_sea
+		}
+		mutually_exclusive = {
+			focus = UKR_support_greece
+			focus = UKR_support_greece
+		}
+		x = 23
+		y = 12
+
+	}
+	focus = {
+		id = UKR_visit_zagreb
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_expand_politics
+		}
+		x = 28
+		y = 11
+
+	}
+	focus = {
+		id = UKR_visit_belgrade
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_visit_zagreb
+		}
+		x = 28
+		y = 12
+
+	}
+	focus = {
+		id = UKR_italian_friends
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_expand_politics
+		}
+		x = 30
+		y = 11
+
+	}
+	focus = {
+		id = UKR_galician_brothers
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_polish_question
+		}
+		x = 1
+		y = 11
+
+	}
+	focus = {
+		id = UKR_united_again
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_far_eastern_brothers
+		}
+		prerequisite = {
+			focus = UKR_polissya
+		}
+		prerequisite = {
+			focus = UKR_zakarpattia
+		}
+		prerequisite = {
+			focus = UKR_galician_brothers
+		}
+		prerequisite = {
+			focus = UKR_bessarabia
+		}
+		prerequisite = {
+			focus = UKR_bukovina
+		}
+		x = 8
+		y = 13
+
+	}
+	focus = {
+		id = UKR_bulgarian_friends
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_expand_politics
+		}
+		x = 32
+		y = 11
+
+	}
+
 
 	#############################
 	#### Fortification focuses###
@@ -1253,6 +1611,12 @@ focus = {
 
 		completion_reward = {
 			army_experience = 10
+		 202 = {
+			     add_building_construction = { type = bunker province = 9568 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 3543 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 525 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3494 level = 1 instant_build = yes }
+			}
 			add_ideas = UKR_fortification_focus
 		}
 	}
@@ -1340,122 +1704,47 @@ focus = {
 
 		completion_reward = {
 			army_experience = 20
-			if = {
-				limit = { controls_state = 202 }
-				202 = {
-					set_building_level = {
-						type = bunker
-						level = 3
-						province = {
-                                      id = 9568
-							id = 3543
-							id = 525
-							id = 3494
-							limit_to_border = yes
-							level < 3
-						}
-					}
-				}
+			custom_effect_tooltip = "2 forts will be built next to the ruzzian border."
+			hidden_effect = { 
+			93 = {
+				add_building_construction = { type = bunker province = 9520 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3496 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11503 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 6579 level = 2 instant_build = yes }
+			}
+			194 = {
+				add_building_construction = { type = bunker province = 9554 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 6232 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11453 level = 2 instant_build = yes }
+			}
+			202 = {
+			     add_building_construction = { type = bunker province = 9568 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3543 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 525 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3494 level = 2 instant_build = yes }
+			}
+			203 = {
+				add_building_construction = { type = bunker province = 11454 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 488 level = 2 instant_build = yes }
 			}
 
-			if = {
-				limit = { controls_state = 203 }
-				203 = {
-					set_building_level = {
-						type = bunker
-						level = 3
-						province = {
-							id = 11454
-							id = 488
-							limit_to_border = yes
-							level < 3
-						}
-					}
-				}
+                1011 = {
+				add_building_construction = { type = bunker province = 3468 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 6478 level = 2 instant_build = yes }
 			}
-
-			if = {
-				limit = { controls_state = 1011 }
-				1011 = {
-					set_building_level = {
-						type = bunker
-						level = 3
-						province = {
-							id = 3468
-							id = 6478
-							limit_to_border = yes
-							level < 3
-						}
-					}
-				}
+			226 = {
+				add_building_construction = { type = bunker province = 9433 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11437 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 13394 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11422 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 9419 level = 2 instant_build = yes }
 			}
-
-			if = {
-				limit = { controls_state = 197 }
-				197 = {
-					set_building_level = {
-						type = bunker
-						level = 3
-						province = {
-							id = 3755
-							id = 11715
-							limit_to_border = yes
-							level < 3
-						}
-					}
-				}
+                197 = {
+				add_building_construction = { type = bunker province = 11715 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3755 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11683 level = 2 instant_build = yes }
 			}
-			if = {
-				limit = { controls_state = 93 }
-				93 = {
-					set_building_level = {
-						type = bunker
-						level = 3
-						province = {
-							id = 6579
-							id = 11503
-							id = 3496
-							id = 9520
-							limit_to_border = yes
-							level < 3
-						}
-					}
-				}
-			}
-			if = {
-				limit = { controls_state = 194 }
-				194 = {
-					set_building_level = {
-						type = bunker
-						level = 3
-						province = {
-							id = 11453
-							id = 6232
-							id = 9554
-							limit_to_border = yes
-							level < 3
-						}
-					}
-				}
-			}
-			if = {
-				limit = { controls_state = 226 }
-				226 = {
-					set_building_level = {
-						type = bunker
-						level = 3
-						province = {
-							id = 9419
-							id = 11422
-							id = 11437
-							id = 13394
-							id = 9433
-							limit_to_border = yes
-							level < 3
-						}
-					}
-				}
-			}
+                }
 			swap_ideas = {
 				add_idea = UKR_fortification_focus2
 				remove_idea = UKR_fortification_focus
@@ -1489,96 +1778,7 @@ focus = {
 			UKR = { controls_state = 202 }
 		}
 
-		bypass = {
-			NOT = {			
-				202 = {
-					any_province_building_level = {
-						province = {
-                                      id = 9568
-							id = 3543
-							id = 525
-							id = 3494
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 6
-					}
-				}
-				203 = {
-					any_province_building_level = {
-						province = {
-							id = 11454
-							id = 488
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 6
-					}
-				}
-				1011 = {
-					any_province_building_level = {
-						province = {
-							id = 3468
-							id = 6478
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 6
-					}
-				}
-				197 = {
-					any_province_building_level = {
-						province = {
-							id = 11683
-							id = 3755
-							id = 11715
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 6
-					}
-				}
-				93 = {
-					any_province_building_level = {
-						province = {
-							id = 6579
-							id = 11503
-							id = 3496
-							id = 9520
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 6
-					}
-				}
-				194 = {
-					any_province_building_level = {
-						province = {
-							id = 11453
-							id = 6232
-							id = 9554
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 6
-					}
-				}
-				226 = {
-					any_province_building_level = {
-						province = {
-							id = 9419
-							id = 11422
-							id = 11437
-							id = 13394
-							id = 9433
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 6
-					}
-				}
-			}
-		}
+		
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1587,122 +1787,47 @@ focus = {
 
 		completion_reward = {
 			army_experience = 20
-			if = {
-				limit = { controls_state = 202 }
-				202 = {
-					set_building_level = {
-						type = bunker
-						level = 6
-						province = {
-                                      id = 9568
-							id = 3543
-							id = 525
-							id = 3494
-							limit_to_border = yes
-							level < 6
-						}
-					}
-				}
+			custom_effect_tooltip = "2 more forts will be built next to the ruzzian border."
+			hidden_effect = { 
+			93 = {
+				add_building_construction = { type = bunker province = 9520 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3496 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11503 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 6579 level = 2 instant_build = yes }
+			}
+			194 = {
+				add_building_construction = { type = bunker province = 9554 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 6232 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11453 level = 2 instant_build = yes }
+			}
+			202 = {
+			     add_building_construction = { type = bunker province = 9568 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3543 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 525 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3494 level = 2 instant_build = yes }
+			}
+			203 = {
+				add_building_construction = { type = bunker province = 11454 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 488 level = 2 instant_build = yes }
 			}
 
-			if = {
-				limit = { controls_state = 203 }
-				203 = {
-					set_building_level = {
-						type = bunker
-						level = 6
-						province = {
-							id = 11454
-							id = 488
-							limit_to_border = yes
-							level < 6
-						}
-					}
-				}
+                1011 = {
+				add_building_construction = { type = bunker province = 3468 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 6478 level = 2 instant_build = yes }
 			}
-
-			if = {
-				limit = { controls_state = 1011 }
-				1011 = {
-					set_building_level = {
-						type = bunker
-						level = 6
-						province = {
-							id = 3468
-							id = 6478
-							limit_to_border = yes
-							level < 6
-						}
-					}
-				}
+			226 = {
+				add_building_construction = { type = bunker province = 9433 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11437 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 13394 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11422 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 9419 level = 2 instant_build = yes }
 			}
-
-			if = {
-				limit = { controls_state = 197 }
-				197 = {
-					set_building_level = {
-						type = bunker
-						level = 6
-						province = {
-							id = 3755
-							id = 11715
-							limit_to_border = yes
-							level < 6
-						}
-					}
-				}
+                197 = {
+				add_building_construction = { type = bunker province = 11715 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3755 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11683 level = 2 instant_build = yes }
 			}
-			if = {
-				limit = { controls_state = 93 }
-				93 = {
-					set_building_level = {
-						type = bunker
-						level = 6
-						province = {
-							id = 6579
-							id = 11503
-							id = 3496
-							id = 9520
-							limit_to_border = yes
-							level < 6
-						}
-					}
-				}
-			}
-			if = {
-				limit = { controls_state = 194 }
-				194 = {
-					set_building_level = {
-						type = bunker
-						level = 6
-						province = {
-							id = 11453
-							id = 6232
-							id = 9554
-							limit_to_border = yes
-							level < 6
-						}
-					}
-				}
-			}
-			if = {
-				limit = { controls_state = 226 }
-				226 = {
-					set_building_level = {
-						type = bunker
-						level = 6
-						province = {
-							id = 9419
-							id = 11422
-							id = 11437
-							id = 13394
-							id = 9433
-							limit_to_border = yes
-							level < 6
-						}
-					}
-				}
-			}
+                }
 			swap_ideas = {
 				add_idea = UKR_fortification_focus3
 				remove_idea = UKR_fortification_focus2
@@ -1736,96 +1861,6 @@ focus = {
 			UKR = { controls_state = 202 }
 		}
 
-		bypass = {
-			NOT = {			
-				202 = {
-					any_province_building_level = {
-						province = {
-                                      id = 9568
-							id = 3543
-							id = 525
-							id = 3494
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 9
-					}
-				}
-				203 = {
-					any_province_building_level = {
-						province = {
-							id = 11454
-							id = 488
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 9
-					}
-				}
-				1011 = {
-					any_province_building_level = {
-						province = {
-							id = 3468
-							id = 6478
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 9
-					}
-				}
-				197 = {
-					any_province_building_level = {
-						province = {
-							id = 11683
-							id = 3755
-							id = 11715
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 9
-					}
-				}
-				93 = {
-					any_province_building_level = {
-						province = {
-							id = 6579
-							id = 11503
-							id = 3496
-							id = 9520
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 9
-					}
-				}
-				194 = {
-					any_province_building_level = {
-						province = {
-							id = 11453
-							id = 6232
-							id = 9554
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 9
-					}
-				}
-				226 = {
-					any_province_building_level = {
-						province = {
-							id = 9419
-							id = 11422
-							id = 11437
-							id = 13394
-							id = 9433
-							limit_to_border = yes
-						}
-						building = bunker
-						level < 9
-					}
-				}
-			}
-		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1834,122 +1869,47 @@ focus = {
 
 		completion_reward = {
 			army_experience = 20
-			if = {
-				limit = { controls_state = 202 }
-				202 = {
-					set_building_level = {
-						type = bunker
-						level = 9
-						province = {
-                                      id = 9568
-							id = 3543
-							id = 525
-							id = 3494
-							limit_to_border = yes
-							level < 9
-						}
-					}
-				}
+			custom_effect_tooltip = "2 more forts will be built next to the ruzzian border."
+			hidden_effect = { 
+			93 = {
+				add_building_construction = { type = bunker province = 9520 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3496 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11503 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 6579 level = 2 instant_build = yes }
+			}
+			194 = {
+				add_building_construction = { type = bunker province = 9554 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 6232 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11453 level = 2 instant_build = yes }
+			}
+			202 = {
+			     add_building_construction = { type = bunker province = 9568 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3543 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 525 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3494 level = 2 instant_build = yes }
+			}
+			203 = {
+				add_building_construction = { type = bunker province = 11454 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 488 level = 2 instant_build = yes }
 			}
 
-			if = {
-				limit = { controls_state = 203 }
-				203 = {
-					set_building_level = {
-						type = bunker
-						level = 9
-						province = {
-							id = 11454
-							id = 488
-							limit_to_border = yes
-							level < 9
-						}
-					}
-				}
+                1011 = {
+				add_building_construction = { type = bunker province = 3468 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 6478 level = 2 instant_build = yes }
 			}
-
-			if = {
-				limit = { controls_state = 1011 }
-				1011 = {
-					set_building_level = {
-						type = bunker
-						level = 9
-						province = {
-							id = 3468
-							id = 6478
-							limit_to_border = yes
-							level < 9
-						}
-					}
-				}
+			226 = {
+				add_building_construction = { type = bunker province = 9433 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11437 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 13394 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11422 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 9419 level = 2 instant_build = yes }
 			}
-
-			if = {
-				limit = { controls_state = 197 }
-				197 = {
-					set_building_level = {
-						type = bunker
-						level = 9
-						province = {
-							id = 3755
-							id = 11715
-							limit_to_border = yes
-							level < 9
-						}
-					}
-				}
+                197 = {
+				add_building_construction = { type = bunker province = 11715 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3755 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11683 level = 2 instant_build = yes }
 			}
-			if = {
-				limit = { controls_state = 93 }
-				93 = {
-					set_building_level = {
-						type = bunker
-						level = 9
-						province = {
-							id = 6579
-							id = 11503
-							id = 3496
-							id = 9520
-							limit_to_border = yes
-							level < 9
-						}
-					}
-				}
-			}
-			if = {
-				limit = { controls_state = 194 }
-				194 = {
-					set_building_level = {
-						type = bunker
-						level = 9
-						province = {
-							id = 11453
-							id = 6232
-							id = 9554
-							limit_to_border = yes
-							level < 9
-						}
-					}
-				}
-			}
-			if = {
-				limit = { controls_state = 226 }
-				226 = {
-					set_building_level = {
-						type = bunker
-						level = 9
-						province = {
-							id = 9419
-							id = 11422
-							id = 11437
-							id = 13394
-							id = 9433
-							limit_to_border = yes
-							level < 9
-						}
-					}
-				}
-			}
+                }
 			swap_ideas = {
 				add_idea = UKR_fortification_focus4
 				remove_idea = UKR_fortification_focus3

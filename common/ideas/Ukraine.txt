@@ -64,7 +64,7 @@ UKR_land_problem = {
             }
             
             
-            picture = generic_supply_lines
+            picture = GFX_idea_UKR_land_problem
             
             modifier = {
             stability_factor = -0.10
