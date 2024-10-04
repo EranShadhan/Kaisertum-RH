@@ -1,0 +1,161 @@
+focus_tree = {
+	id = kuban_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = KUB
+		}
+	} 
+
+#	focus = {
+#		id = KUB
+#		icon = GFX_
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+#		x = -3
+#		y = 0
+#		relative_position_id =
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+
+	focus = {
+		id = KUB_independence
+		icon = GFX_
+		prerequisite = { focus = }
+		mutually_exclusive = { focus =  }
+		x = 3
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+           
+		}
+	}
+
+	focus = {
+		id = KUB_ukrainian_brothers
+		icon = GFX_
+		prerequisite = { focus = KUB_independence}
+		mutually_exclusive = { focus =  }
+		x = 0
+		y = 1
+		relative_position_id = KUB_independence
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+ 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+           #UKR guarantee KUB
+		}
+	}
+
+	focus = {
+		id = KUB_unite_with_ukr
+		icon = GFX_
+		prerequisite = { focus = KUB_ukrainian_brothers}
+		mutually_exclusive = { focus =  }
+		x = 0
+		y = 2
+		relative_position_id = KUB_independence
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		#UKR add_core = 234
+		#UKR add_core = 1062
+		#UKR add_core = 1061
+		#UKR add_core = 1060
+		#UKR add_core = 233
+           #UKR = annex KUB
+		}
+	}
+
+
+}
