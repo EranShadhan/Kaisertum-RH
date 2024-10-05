@@ -28,6 +28,7 @@ set_technology = {
 }
 
 add_ideas = {
+KUB_ukrainian_majority
 	}
 if = {
 	limit = { has_dlc = "By Blood Alone" }
