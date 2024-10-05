@@ -1,0 +1,18 @@
+###COUNTRY LEADERS###
+characters={
+	KUB_Vasyl_Ivanys = {
+		name = KUB_Vasyl_Ivanys
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KUB_Vasyl_Ivanys
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1965.1.1.1"
+			traits={ economic_reformer }
+		}
+	}
+
+
+}

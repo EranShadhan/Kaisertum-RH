@@ -96,6 +96,11 @@ if = {
 	}
 }
 
+<<<<<<< Updated upstream
+=======
+recruit_character = KUB_Vasyl_Ivanys
+
+>>>>>>> Stashed changes
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1927.1.1"
@@ -113,7 +118,11 @@ set_popularities = {
 create_country_leader = {
 	name = "Vasyl Ivanys"
 	desc = "Vasyl Ivanys"
+<<<<<<< Updated upstream
 	picture = gfx/leaders/KUB/Portrait_KUB_Vasyl_Ivanys.dds
+=======
+	picture = GFX_portrait_KUB_Vasyl_Ivanys
+>>>>>>> Stashed changes
 	expire = "1965.1.1"
 	ideology = despotism
 }
