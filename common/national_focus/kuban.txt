@@ -46,116 +46,282 @@ focus_tree = {
 #	}
 
 	focus = {
-		id = KUB_independence
-		icon = GFX_
-		prerequisite = { focus = }
-		mutually_exclusive = { focus =  }
-		x = 3
+		id = KUB_cossack_rada
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 6
 		y = 0
 
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-           
-		}
 	}
-
 	focus = {
-		id = KUB_ukrainian_brothers
-		icon = GFX_
-		prerequisite = { focus = KUB_independence}
-		mutually_exclusive = { focus =  }
-		x = 0
+		id = KUB_industry
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 18
+		y = 0
+
+	}
+	focus = {
+		id = KUB_navy_industry
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 24
+		y = 0
+
+	}
+	focus = {
+		id = KUB_cossack_army
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 31
+		y = 0
+
+	}
+	focus = {
+		id = KUB_chornomortsi_majority
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = KUB_cossack_rada
+		}
+		x = 6
 		y = 1
-		relative_position_id = KUB_independence
 
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
- 
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-           #UKR guarantee KUB
-		}
 	}
-
 	focus = {
-		id = KUB_unite_with_ukr
-		icon = GFX_
-		prerequisite = { focus = KUB_ukrainian_brothers}
-		mutually_exclusive = { focus =  }
-		x = 0
+		id = KUB_ukrainization_programs
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = KUB_chornomortsi_majority
+		}
+		x = 6
 		y = 2
-		relative_position_id = KUB_independence
 
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		#UKR add_core = 234
-		#UKR add_core = 1062
-		#UKR add_core = 1061
-		#UKR add_core = 1060
-		#UKR add_core = 233
-           #UKR = annex KUB
-		}
 	}
+	focus = {
+		id = KUB_ask_for_guarantee
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = KUB_ukrainization_programs
+		}
+		x = 6
+		y = 3
 
+	}
+	focus = {
+		id = KUB_union_with_ukr
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = KUB_ask_for_guarantee
+		}
+		x = 6
+		y = 4
 
+	}
+	focus = {
+		id = KUB_civs
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = KUB_industry
+		}
+		x = 17
+		y = 1
+
+	}
+	focus = {
+		id = KUB_civs1
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = KUB_civs
+		}
+		x = 17
+		y = 2
+
+	}
+	focus = {
+		id = KUB_civs2
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = KUB_civs1
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = KUB_mils
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = KUB_industry
+		}
+		x = 19
+		y = 1
+
+	}
+	focus = {
+		id = KUB_mils1
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = KUB_mils
+		}
+		x = 19
+		y = 2
+
+	}
+	focus = {
+		id = KUB_mils2
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = KUB_mils1
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = KUB_dockyards
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = KUB_navy_industry
+		}
+		x = 22
+		y = 1
+
+	}
+	focus = {
+		id = KUB_dockyards1
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = KUB_dockyards
+		}
+		x = 22
+		y = 2
+
+	}
+	focus = {
+		id = KUB_dockyards2
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = KUB_dockyards1
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = KUB_light_cruisers
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = KUB_navy_industry
+		}
+		mutually_exclusive = {
+			focus = KUB_submarine_effort
+			focus = KUB_submarine_effort
+		}
+		x = 25
+		y = 1
+
+	}
+	focus = {
+		id = KUB_submarine_effort
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = KUB_navy_industry
+		}
+		mutually_exclusive = {
+			focus = KUB_light_cruisers
+			focus = KUB_light_cruisers
+		}
+		x = 27
+		y = 1
+
+	}
+	focus = {
+		id = KUB_cavalry_tactics
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = KUB_cossack_army
+		}
+		mutually_exclusive = {
+			focus = KUB_more_men
+		}
+		x = 30
+		y = 1
+
+	}
+	focus = {
+		id = KUB_cavalry_divisions
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = KUB_cavalry_tactics
+		}
+		x = 30
+		y = 2
+
+	}
+	focus = {
+		id = KUB_full_integration
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = KUB_union_with_ukr
+		}
+		x = 6
+		y = 5
+
+	}
+	focus = {
+		id = KUB_more_men
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = KUB_cossack_army
+		}
+		mutually_exclusive = {
+			focus = KUB_cavalry_tactics
+		}
+		x = 32
+		y = 1
+
+	}
+	focus = {
+		id = KUB_cossack_spirit
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = KUB_infantry_divisions
+			focus = KUB_cavalry_divisions
+		}
+		x = 31
+		y = 3
+
+	}
+	focus = {
+		id = KUB_infantry_divisions
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = KUB_more_men
+		}
+		x = 32
+		y = 2
+
+	}
 }
+

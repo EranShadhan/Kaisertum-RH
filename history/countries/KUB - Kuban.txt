@@ -113,7 +113,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Vasyl Ivanys"
 	desc = "Vasyl Ivanys"
-	picture = gfx/leaders/KUB/Portrait_KUB_Vasyl_Ivanys.dds
+	picture = GFX_portrait_KUB_Vasyl_Ivanys
 	expire = "1965.1.1"
 	ideology = despotism
 }
