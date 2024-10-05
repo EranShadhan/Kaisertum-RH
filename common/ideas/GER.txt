@@ -495,7 +495,7 @@ GER_german_breadbasket_to_ukr = {
 			allowed = {
 				always = no
 			}
-
+            name = GER_wilhelm_ii
 			allowed_civil_war = {
 				has_government = democratic
 			}

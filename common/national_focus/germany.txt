@@ -2659,6 +2659,7 @@ navy_experience = 50
 		102 = { add_claim_by = GER }
 		69 = { add_claim_by = GER }
 		74 = { add_claim_by = GER }
+		72 = { add_claim_by = GER }
 		}
 	}	
 		focus = {
@@ -2776,7 +2777,7 @@ navy_experience = 50
 		x = -5
 		y = 1
 
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 2
 		}
@@ -2797,6 +2798,140 @@ navy_experience = 50
 		add_timed_idea = { idea = GER_expatriate_the_extremistss days = 180 }
 		FRA = { add_timed_idea = { idea = GER_exiles_to_france days = 180 } }
 		SOV = { add_timed_idea = { idea = GER_exiles_to_russia days = 180 } }
+		}
+	}	
+	focus = {
+		id = GER_wilhems_legacy
+		icon = GFX_GER_wilhems_legacy
+		x = 1
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_expartiate_the_extremists 
+		prerequisite = { focus = GER_expartiate_the_extremists}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_crush_the_trade_unions
+		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
+		x = -1
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_wilhems_legacy 
+		prerequisite = { focus = GER_wilhems_legacy focus = GER_continue_the_anti_king_reforms}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		swap_ideas = { remove_idea = GER_powerful_unions add_idea = GER_less_powerful_unions }
+		}
+	}	
+	focus = {
+		id = GER_the_king
+		icon = GFX_GER_the_monarchy
+		x = 1
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_crush_the_trade_unions 
+		prerequisite = { focus = GER_crush_the_trade_unions }
+		prerequisite = { focus = GER_wilhems_legacy }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		swap_ideas = { remove_idea = GER_wilhelm_ii add_idea = GER_wilhelm_ii_2 }
+		}
+	}	
+		focus = {
+		id = GER_continue_the_anti_king_reforms
+		icon = GFX_GER_continue_the_reforms
+		x = -1
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_expartiate_the_extremists 
+		prerequisite = { focus = GER_expartiate_the_extremists}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}	
+		focus = {
+		id = GER_the_red_black_yellow_banner
+		icon = GFX_GER_democratic_front
+		x = 0
+		y = 2
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_continue_the_anti_king_reforms 
+		prerequisite = { focus = GER_continue_the_anti_king_reforms}
+		prerequisite = { focus = GER_crush_the_trade_unions }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
 		}
 	}	
 }

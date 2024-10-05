@@ -128,18 +128,7 @@ country_event = {
 				add_compliance = 30
 			add_resistance = 40
 			}
-			72 = {
-				add_core_of = POL
-				remove_core_of = AUS
-				force_enable_resistance = { 
-					clear = no
-					occupier = AUS
-					occupied = POL
-				}
-				start_resistance = POL
-				add_compliance = 30
-			add_resistance = 40
-			}
+			
 			#POL = {
 			#	declare_war_on = {
 			#		target = AUS
@@ -590,6 +579,7 @@ fire_only_once = yes
 			transfer_state = 69
 			transfer_state = 102
 			transfer_state = 1035
+			transfer_state = 72
 			annex_country = {
 				country = AUS
 				transfer_troops = no
@@ -601,7 +591,7 @@ fire_only_once = yes
 			transfer_state = 994
 			transfer_state = 993
 			transfer_state = 992
-			transfer_state = 72
+			
 			transfer_state = 91
 			transfer_state = 991
 			transfer_state = 1059

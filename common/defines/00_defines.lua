@@ -1014,8 +1014,8 @@ NMilitary = {
 	DYNAMIC_MODIFIER_ATTACK_BIAS = 1.0,				--This factors the weighting bias of dynamic attack modifiers
 
 	FLANKED_PROVINCES_COUNT = 3,					-- Attacker has to attack from that many provinces for the attack to be considered as flanking
-	NUKE_MIN_DAMAGE_PERCENT = 0.3,					-- Minimum damage from nukes as a percentage of current strength/organisation
-	NUKE_MAX_DAMAGE_PERCENT = 0.5,					-- Minimum damage from nukes as a percentage of current strength/organisation
+	NUKE_MIN_DAMAGE_PERCENT = 0.09,					-- Minimum damage from nukes as a percentage of current strength/organisation
+	NUKE_MAX_DAMAGE_PERCENT = 0.1,					-- Minimum damage from nukes as a percentage of current strength/organisation
 	EQUIPMENT_REPLACEMENT_RATIO = 0.1,				-- Equipment min ratio after blocking the equipment type
 	NUKE_DELAY_HOURS = 12,							-- How many hours does it take for the nuclear drop to happen
 	PARADROP_PENALTY = -0.3, 						-- Combat penalty when recently paradropped
