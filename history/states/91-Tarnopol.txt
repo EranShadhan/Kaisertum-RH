@@ -6,7 +6,7 @@ state={
 	history={
 		owner = AUS
 		victory_points = {
-			11479 15
+			11479 20
 		}
 		buildings = {
 			infrastructure = 3
@@ -15,7 +15,6 @@ state={
 
 		}
 		add_core_of = AUS
-		add_claim_by = UKR
 		add_claim_by = POL
 
 	}

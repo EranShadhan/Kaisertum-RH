@@ -1,79 +1,4 @@
 on_actions = {
-	# country
-	on_new_term_election = {
-		random_events = {
-			100 = usa.6
-			100 = usa.7
-			100 = usa.8
-			100 = usa.9
-			100 = usa.10
-			100 = usa.11
-			100 = usa.12
-		}
-		random_events = {
-			100 = spain.9
-			100 = lar_spain.1
-		}
-		random_events = {
-			100 = election.2
-			100 = election.3
-			100 = election.4
-			100 = election.5
-			100 = election.6
-			100 = election.11
-			100 = election.12
-			100 = election.13
-			100 = election.14
-			100 = election.15
-		}
-	}
-
-	on_daily_SWE = {
-		effect = {
-			if = {
-				limit = {
-					#is_ironman =  = yes
-					original_tag = SWE
-					has_completed_focus = SWE_per_albin_bus
-					divisions_in_state = {
-						state = 141
-						size > 0 # use < or ><state_id>
-						unit = bus # optional. specific unit eg. mountaineers, light_tank
-					}
-				}
-				set_variable = { global.achievement_days_since_bus_left_stockholm = 0 }
-		
-			}
-
-			if = {
-				limit = {
-					divisions_in_state = {
-						state = 141
-						size < 1 # use < or ><state_id>
-						unit = bus # optional. specific unit eg. mountaineers, light_tank
-					}
-					check_variable = { global.achievement_days_since_bus_left_stockholm < 100 }
-				}
-				add_to_variable = { global.achievement_days_since_bus_left_stockholm = 1 }
-			}
-			
-			if = {
-				limit = {
-					original_tag = SWE
-					has_completed_focus = SWE_per_albin_bus
-					divisions_in_state = {
-						state = 681
-						size > 0 # use < or ><state_id>
-						unit = bus # optional. specific unit eg. mountaineers, light_tank
-					}
-
-					check_variable = { global.achievement_days_since_bus_left_stockholm < 19 }
-				}
-
-				set_global_flag = achievement_has_managed_to_travel_to_cape_town_in_18_days
-			}
-		}
-	}
 
 	# Ace pilots
 	# country, FROM = ace
@@ -153,7 +78,6 @@ on_actions = {
 			100 = war_justification.17
 			100 = war_justification.18
 			100 = war_justification.19
-			17000 = 0
 		}
 	}
 
@@ -256,15 +180,6 @@ on_actions = {
 		}
 	}
 
-	# country random events
-	#on_bi_yearly_pulse = {
-	#
-	#}
-
-	#on_five_year_pulse = {
-	#
-	#}
-
 	on_border_war_lost = {
 		effect = {
 			owner = {
@@ -307,156 +222,6 @@ on_actions = {
 		}
 	}
 
-	#FROM is the one that joins the faction
-	on_create_faction = {
-		effect = {
-			# Sunset invasion check
-			if = {
-				limit = {
-					FROM = { is_puppet = no }
-					OR = {
-						AND = {
-							tag = MEX
-							FROM = {
-								capital_scope = {
-									NOT = { is_on_continent = south_america }
-								}
-							}
-						}
-						AND = {
-							FROM = {
-								tag = MEX
-							}
-							capital_scope = {
-								NOT = { is_on_continent = south_america }
-							}
-						}
-					}
-				}
-				set_country_flag = achievement_failed_sunset_invasion
-			}
-		}
-	}
-
-	#FROM is country getting invited.
-	on_offer_join_faction = {
-		effect = {
-			#Give achievement to nation joining a faction, but not in one from game start
-			if = {
-				limit = {
-					date > 1936.01.02
-				}
-				FROM = {
-					if = {
-						limit = {
-							is_faction_leader = no
-						}
-						set_country_flag = achievement_has_joined_faction
-					}
-				}
-			}
-			#Remove anti_soviet_pact if joining commie Soviet in faction
-			if = {
-				limit = {
-					original_tag = SOV
-					has_government = communism
-					FROM = {
-						has_idea = anti_soviet_pact
-					}
-				}
-				FROM = {
-					remove_ideas = anti_soviet_pact
-				}
-			}
-
-			# Sunset invasion check
-			if = {
-				limit = {
-					is_puppet = no
-					OR = {
-						AND = {
-							tag = MEX
-							FROM = {
-								capital_scope = {
-									NOT = { is_on_continent = south_america }
-								}
-							}
-						}
-						AND = {
-							FROM = {
-								tag = MEX
-							}
-							capital_scope = {
-								NOT = { is_on_continent = south_america }
-							}
-						}
-					}
-				}
-				set_country_flag = achievement_failed_sunset_invasion
-			}
-		}
-	}
-
-	#FROM is faction leader on join faction requests. THIS DOES NOT FIRE ON ADD_TO_FACTION EFFECT! USE ON_OFFER_JOIN_FACTION!
-	on_join_faction = {
-		effect = {
-			set_country_flag = achievement_has_joined_faction
-			#Remove anti_soviet_pact if joining commie Soviet in faction
-			if = {
-				limit = {
-					has_idea = anti_soviet_pact
-					FROM = {
-						original_tag = SOV
-						has_government = communism
-					}
-				}
-				remove_ideas = anti_soviet_pact
-			}
-
-			# Sunset invasion check
-			if = {
-				limit = {
-					is_puppet = no
-					OR = {
-						AND = {
-							tag = MEX
-							FROM = {
-								capital_scope = {
-									NOT = { is_on_continent = south_america }
-								}
-							}
-						}
-						AND = {
-							FROM = {
-								tag = MEX
-							}
-							capital_scope = {
-								NOT = { is_on_continent = south_america }
-							}
-						}
-					}
-				}
-				set_country_flag = achievement_failed_sunset_invasion
-			}
-
-			# Romania shouldn't declare war on Bulgaria on historical mode, if both are going to join the Axis
-			if = {
-				limit = {
-					original_tag = BUL
-					FROM = { original_tag = GER }
-					is_historical_focus_on = yes
-				}
-				ROM = {
-					add_ai_strategy = {
-						type = befriend
-						id = "BUL"
-						value = 200
-					}
-				}
-			}
-		}
-	}
-
 	#FROM is war target
 	on_declare_war = {
 		effect = {
@@ -477,6 +242,8 @@ on_actions = {
 						original_tag = GXC
 						original_tag = SHX
 						original_tag = XSM
+						original_tag = PRM
+						original_tag = SIC
 					}
 				}
 				if = {
@@ -565,95 +332,6 @@ on_actions = {
 					remove_ideas = anti_soviet_pact
 				}
 			}
-			#Germany has started a war - allies should try to contain Germany
-			if = {
-				limit = {
-					ROOT = {
-						TAG = GER
-					}
-					NOT = {
-						has_global_flag = GER_has_started_war
-					}
-				}
-				set_global_flag = GER_has_started_war
-			}
-
-
-
-			#Call Anti-Soviet pact members to war
-			if = {
-				limit = {
-					ROOT = {
-						original_tag = SOV
-						has_government = communism
-					}
-					FROM = { has_idea = anti_soviet_pact }
-				}
-				save_event_target_as = anti_soviet_pact_aggressor
-				FROM = {
-					country_event = { id = germany.84 days = 1 }
-				}
-			}
-
-			#Remove MEFO bills if Germany goes to war
-			if = {
-				limit = {
-					ROOT = { original_tag = GER }
-					ROOT = { GER_has_mefo_bills = yes }
-					NOT = { FROM = { original_tag = GER } } # Don't remove it from Fascist Germany if they start the civil war
-				}
-				ROOT = {
-					GER_remove_mefo_bills = yes
-					set_country_flag = mefo_bills_removed_through_war
-				}
-			}
-
-			#Remove MEFO bills if Germany is declared war on
-			if = {
-				limit = {
-					FROM = { original_tag = GER }
-					FROM = { GER_has_mefo_bills = yes }
-				}
-				FROM = {
-					GER_remove_mefo_bills = yes
-					set_country_flag = mefo_bills_removed_through_war
-				}
-			}
-
-			#Remove previous ideology civil war faction from Democratic Germany faction and add Democratic civil war faction to Germany's faction
-			if = {
-				limit = {
-					FROM = {
-						is_in_faction_with = GER
-					#	has_civil_war = yes
-						NOT = { has_government = democratic }
-					}
-					has_government = democratic
-					GER = { has_government = democratic }
-				}
-				FROM = { set_country_flag = GER_civil_war_target }
-				GER = { remove_from_faction = FROM }
-				GER = { add_to_faction = ROOT }
-				GER = { country_event = wtt_germany.52 }
-			}
-
-			#If prepared by siphoning equipment, receive equipment back
-			if = {
-				limit = {
-					FROM = {
-						has_civil_war = yes
-						has_country_flag = siphoned_equipment_stockpiles_for_civil_war
-					}
-					has_civil_war = yes
-				}
-				FROM = {
-					clr_country_flag = siphoned_equipment_stockpiles_for_civil_war
-					add_equipment_to_stockpile = {
-						type = infantry_equipment
-						amount = 1000
-					}
-				}
-			}
 
 			#If prepared with surprise attack plan, get bonus
 			if = {
@@ -673,31 +351,9 @@ on_actions = {
 					}
 				}
 			}
-
-			if = {
-				limit = {
-					FROM = {
-						has_civil_war = yes
-						original_tag = SPR
-					}
-					has_civil_war = yes
-					original_tag = SPR
-
-				}
-				random_country = {
-					limit = {
-						original_tag = FRA
-						OR = {
-							has_completed_focus = FRA_right_wing_rhetoric
-							has_completed_focus = FRA_utilize_the_leagues
-						}
-					}
-					country_event = { id = france.32 }
-				}
-			}
 		}
 	}
-
+			
 	# When a new faction is formed
 	on_faction_formed = {
 		effect = {

@@ -2,7 +2,7 @@
 state={
 	id=854
 	name="STATE_854"
-	impassable = yes
+
 	history={
 		victory_points = {
 			12413 1 
@@ -13,10 +13,11 @@ state={
 	}
 
 	provinces={
-		1631 2057 4951 4974 7970 10815 10901 12413 12455 
+		1631 4951 4974 7970 10815 10901 12455 13894 
 	}
-	manpower=5000
+	manpower=10000
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=wasteland
+	impassable=yes
 	local_supplies=0.000
 }

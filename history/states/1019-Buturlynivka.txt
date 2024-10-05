@@ -6,7 +6,6 @@ state={
 		owner = SOV
 		buildings = {
 			infrastructure = 2
-			synthetic_refinery = 1
 
 		}
 		victory_points = {

@@ -1,36 +1,31 @@
-state = {
-	id = 765
-	name = "STATE_765"
-	manpower = 51600
-	state_category = pastoral
 
-	history = {
-		
+state={
+	id=765
+	name="STATE_765"
+
+	history={
 		owner = SAU
 		add_core_of = QAT
 		add_core_of = SAU
-
 		victory_points = {
-			8051 1
+			8051 1 
 		}
-		victory_points = {
-			13313 2
-		}
-
 		buildings = {
 			infrastructure = 1
 			8051 = {
 				naval_base = 2
+
 			}
-			13313 = {
-				naval_base = 2
-			}
+
 		}
+
 	}
 
-	provinces = {
-		8051 13313
+	provinces={
+		8051 13850 13856 
 	}
-
-	local_supplies = 0.0 
+	manpower=51600
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
 }

@@ -28,8 +28,8 @@ PRM = {
 	color_ui = rgb { 171 46 69 }
 }
 NMB = {
-	color = rgb { 115 115 115 }
-	color_ui = rgb { 100 100 100 }
+	color = HSV { 0.1 0.15 0.4 }
+	color_ui = rgb { 138 155 116 }
 }
 NFL = {
 	color = rgb { 225 47 47 }
@@ -117,8 +117,8 @@ ROM = {
 	color_ui = rgb { 255 255 120 }
 }
 YUG = {
-	color = rgb { 72 73 126 }
-	color_ui = rgb { 94 95 164 }
+	color = rgb { 13 152 186 }
+	color_ui = rgb { 13 152 186 }
 }
 SWI = {
 	color = rgb { 224 5 5 }
@@ -169,8 +169,8 @@ IRE = {
 	color_ui = rgb { 196 103 75 }
 }
 HUN = {
-	color = rgb { 249 126 98 }
-	color_ui = rgb { 255 164 127 }
+	color = rgb { 138 163 117 }
+	color_ui = rgb { 138 163 117 }
 }
 AFG = {
 	color = rgb { 242 239 242 }
@@ -400,8 +400,8 @@ SYR = {
 }
 
 SER = {
-	color = rgb { 160 110 110 }
-	color_ui = rgb { 160 110 110 }
+	color = rgb { 72 73 126 }
+	color_ui = rgb { 94 95 164 }
 }
 
 ICE = {

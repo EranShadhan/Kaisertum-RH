@@ -1,0 +1,93 @@
+ideas = {
+	customs_union_laws = {
+		law = yes
+		no_customs_union = {
+
+			default = yes
+			
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				hidden_trigger = {
+					NOT = {
+						has_idea = german_customs_union_leader
+					}
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
+		german_customs_union_leader = {
+
+			picture = german_customs_union_member
+
+			available = {
+				hidden_trigger = {
+					has_idea = german_customs_union_leader
+				}
+			}
+			
+			allowed = {
+				tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			cancel_if_invalid = no
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = TUR
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.15
+			}
+		}
+		german_customs_union_member = {
+
+			picture = tradeuniongermany
+			
+			available = {
+				hidden_trigger = {
+					has_idea = german_customs_union_member
+				}
+			}
+
+			allowed = {
+				NOT = {
+					tag = GER
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			cancel_if_invalid = no
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.05
+				local_resources = 0.2
+			}
+		}
+	}
+
+}

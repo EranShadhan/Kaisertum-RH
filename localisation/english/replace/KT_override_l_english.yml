@@ -10,3 +10,5 @@
  SOV_new_soviet_man_desc:0 "The New [ROOT.GetAdjective] Man is selfless, learned, disciplined and healthy; a living triumph over base instincts and false consciousness. Men will gladly lay down their lives for the good of all, and women will bear many children for the future of [ROOT.GetAdjective] society."
  SOV_progress_cult_desc:0 "We should celebrate the innovations of outstanding [ROOT.GetAdjective] scientists and encourage the correct kind of free thinking. The USSR will always be ahead of the decadent West when it comes to daring new fields of science; just look at the brilliant work of comrade Lysenko!"
  SOV_aviation_cult_desc:0 "The [ROOT.GetName] will impress the world with astounding feats of aviation. Our heroic pilots are the knights of Bolshevik culture and progress, demonstrating our technological mastery over nature. How far we have come since the days of the Tsar!"
+
+ government:0 "Cabinet Ministers"

@@ -7,20 +7,27 @@ state={
 		owner = SAU
 		add_core_of = SAU
 		victory_points = {
-			12758 2 
+			5037 10
+		}
+		victory_points = {
+			12883 5 
 		}
 		buildings = {
 			infrastructure = 2
+			dockyard=1
+			12883 = {
+				naval_base = 5
 
+			}
 		}
 
 	}
 
 	provinces={
-		2033 4981 5037 12883 
+		5037 12883 13794 13801 13802 13811 13812 
 	}
-	manpower=511000
+	manpower=361000
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=rural
 	local_supplies=0.000
 }

@@ -1,0 +1,30 @@
+state={
+	id=1094
+	name="STATE_1094"
+
+	history={
+		owner = SAU
+		#add_core_of = BHR # TODO add Bahrain tag
+		add_core_of = SAU
+		victory_points = {
+			13313 2 
+		}
+		buildings = {
+			infrastructure = 2
+			13313 = {
+				naval_base = 2
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		13313 
+	}
+	manpower=89970
+	state_category=small_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

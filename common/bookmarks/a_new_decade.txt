@@ -52,8 +52,11 @@ bookmarks = {
 			ideology = neutrality
 			ideas = {
                 german_customs_union_member
+				vittorio_emanuele
 			}	
 			focuses = {
+				ITA_ip_final_civilization
+				ITA_ip_war_with_salonica
 			}		
 		}
 		"ENG"={
