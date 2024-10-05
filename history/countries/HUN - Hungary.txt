@@ -105,10 +105,10 @@ set_popularities = {
 	neutrality = 44
 }
 
-#Start Horty as neutral if DOD
-recruit_character = HUN_miklos_horthy
+
+recruit_character = HUN_Karoly_Wolff
 recruit_character = HUN_matyas_rakosi
-recruit_character = HUN_arpad_szakasits
+recruit_character = HUN_provisional_governament
 recruit_character = HUN_geza_lakatos
 recruit_character = HUN_ivan_hindy
 recruit_character = HUN_karoly_beregfy

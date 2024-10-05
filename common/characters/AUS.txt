@@ -1,9 +1,9 @@
 characters={
-		AUS_otto_von_habsburg={
-		name=HUN_otto_von_habsburg
+	AUS_karl={
+		name=AUS_karl
 		portraits={
 			civilian={
-				large="GFX_Portrait_hungary_otto_von_hapsburg"
+				large=GFX_AUS_karl
 			}
 		}
 		country_leader={

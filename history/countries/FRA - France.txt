@@ -178,6 +178,7 @@ add_ideas = {
 	FRA_embargoed_by_germany
 	FRA_secret_rearmament
 	FRA_super_heavy_tank_programme
+	FRA_republican_collapse
 	
 	low_economic_mobilisation
 	limited_conscription

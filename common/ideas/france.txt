@@ -73,6 +73,23 @@ ideas = {
 			}
 		}
 
-		
+		FRA_republican_collapse = {
+
+			picture = FRA_political_violence
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
 	}
 }
