@@ -323,25 +323,7 @@ units = {
 			ship = { name = "Yahagi" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP} } }	
 		}
 	}
-	
-	### Pacific Forces ###
-	fleet = {
-		name = "Taiheiyo Kantai"			
-		naval_base = 2489  # Truk
-		#Truk
-		task_force = {
-			name = "Nanpo Yuso Sendan"
-			location = 2489  # Truk
-			ship = { name = "Oite" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Hayate" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Yugao" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-			#Former Dai 2 Kuchikutai
-			ship = { name = "Minekaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Sawakaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Okikaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Yakaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-		}
-	}
+
 }
 
 
