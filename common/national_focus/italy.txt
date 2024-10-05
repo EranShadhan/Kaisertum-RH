@@ -8277,19 +8277,18 @@ focus_tree = {
 			
 		}
 	}
-	 
-	#####################
-	#### ITALY FIRST ####
-	#####################
-	
-	focus = {
-		id = ITA_as_expected
-		icon = GFX_focus_ARG_defense_and_democracy
 
-		x = 14
+	#####################
+	#### OTHER PATHS ####
+	#####################
+	focus = {
+		id = ITA_the_monopoly_broken
+		icon = GFX_focus_ITA_imperial_recognition
+
+		x = -10
 		y = 1
 		prerequisite = { focus = ITA_elections_of_1930 }
-		mutually_exclusive = { focus = ITA_the_monopoly_broken }
+		mutually_exclusive = { focus = ITA_as_expected }
 		relative_position_id = ITA_elections_of_1930
 		cost = 1
 		available = {
@@ -8302,13 +8301,153 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ITA_the_monopoly_broken
+		id = ITA_np_seize_the_oppertunity
+		icon = GFX_TUR_commies_elected
+
+		x = 0
+		y = 1
+		prerequisite = { focus = ITA_the_monopoly_broken }
+		mutually_exclusive = { focus = ITA_np_new_elections }
+		relative_position_id = ITA_the_monopoly_broken
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_np_a_red_italy
+		icon = GFX_TUR_commies_elected
+
+		x = -3
+		y = 1
+		prerequisite = { focus = ITA_np_seize_the_oppertunity }
+		mutually_exclusive = { focus = ITA_np_dannuzio_takes_power }
+		relative_position_id = ITA_np_seize_the_oppertunity
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_np_dannuzio_takes_power
+		icon = GFX_ROM_pol_kw_6
+
+		x = -15
+		y = 1
+		prerequisite = { focus = ITA_np_seize_the_oppertunity }
+		mutually_exclusive = { focus = ITA_np_a_red_italy }
+		relative_position_id = ITA_np_seize_the_oppertunity
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_np_new_elections
 		icon = GFX_focus_ITA_imperial_recognition
 
-		x = -10
+		x = 4
+		y = 1
+		prerequisite = { focus = ITA_the_monopoly_broken }
+		mutually_exclusive = { focus = ITA_np_seize_the_oppertunity }
+		relative_position_id = ITA_the_monopoly_broken
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_np_npa_victroy
+		icon = GFX_focus_ITA_imperial_recognition
+
+		x = 4
+		y = 1
+		prerequisite = { focus = ITA_np_new_elections }
+		mutually_exclusive = { focus = ITA_np_ldr_victory }
+		mutually_exclusive = { focus = ITA_np_psi_victory }
+		relative_position_id = ITA_np_new_elections
+		cost = 0.4
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_np_ldr_victory
+		icon = GFX_focus_ITA_imperial_recognition
+
+		x = 2
+		y = 1
+		prerequisite = { focus = ITA_np_new_elections }
+		mutually_exclusive = { focus = ITA_np_npa_victroy }
+		mutually_exclusive = { focus = ITA_np_psi_victory }
+		relative_position_id = ITA_np_new_elections
+		cost = 0.4
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_np_psi_victory
+		icon = GFX_focus_ITA_imperial_recognition
+
+		x = 0
+		y = 1
+		prerequisite = { focus = ITA_np_new_elections }
+		mutually_exclusive = { focus = ITA_np_ldr_victory }
+		mutually_exclusive = { focus = ITA_np_npa_victroy }
+		relative_position_id = ITA_np_new_elections
+		cost = 0.4
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	#####################
+	#### ITALY FIRST ####
+	#####################
+	
+	focus = {
+		id = ITA_as_expected
+		icon = GFX_focus_ARG_defense_and_democracy
+
+		x = 14
 		y = 1
 		prerequisite = { focus = ITA_elections_of_1930 }
-		mutually_exclusive = { focus = ITA_as_expected }
+		mutually_exclusive = { focus = ITA_the_monopoly_broken }
 		relative_position_id = ITA_elections_of_1930
 		cost = 1
 		available = {
