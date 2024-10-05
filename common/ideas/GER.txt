@@ -84,6 +84,81 @@ ideas = {
 			naval_speed_factor = -0.1
 			}
 		}	
+		GER_expatriate_the_extremistss = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+
+			picture = generic_prisoner
+
+			modifier = {
+				communism_drift = -0.02
+				fascism_drift = -0.05
+			}
+		}
+		
+		GER_exiles_to_russia = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+
+			picture = generic_communist_army
+
+			modifier = {
+				
+				communism_drift = 0.02
+			}
+		}
+		GER_exiles_to_france = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascist_workers
+
+			modifier = {
+				
+				fascism_drift = 0.05
+			}
+		}
+		GER_the_reich_of_kaiser = {
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				drift_defence_factor = 0.1
+				repair_speed_factor = 0.1
+				industry_repair_factor = 0.1
+				training_time_factor = -0.05
+				conscription = 0.005
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
 		GER_coastal_war = {
            allowed = {
 				original_tag = GRE

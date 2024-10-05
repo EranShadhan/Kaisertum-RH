@@ -30,18 +30,6 @@ country_event = {
 			add_compliance = 30
 			add_resistance = 40
 			}
-			80 = {
-				add_core_of = UKR
-				remove_core_of = AUS
-				force_enable_resistance = { 
-					clear = no
-					occupier = AUS
-					occupied = UKR
-				}
-				start_resistance = UKR
-				add_compliance = 30
-			add_resistance = 40
-			}
 			990 = {
 				add_core_of = UKR
 				remove_core_of = AUS

@@ -2037,7 +2037,7 @@ focus = {
 		}
 
 		available_if_capitulated = yes
-
+        available = { has_completed_focus = GER_join_the_war }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			56 = {
@@ -2743,4 +2743,60 @@ navy_experience = 50
 		country_event = { id = austria.13 }
 		}
 	}		
+		focus = {
+		id = GER_the_future_of_the_empire
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = -3
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_join_the_war 
+		prerequisite = { focus = GER_join_the_war focus = GER_help_austria}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = GER_the_reich_of_kaiser
+		}
+	}			
+		focus = {
+		id = GER_expartiate_the_extremists
+		icon = GFX_focus_ARG_defense_and_democracy
+		x = -5
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_the_future_of_the_empire 
+		prerequisite = { focus = GER_the_future_of_the_empire}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_timed_idea = { idea = GER_expatriate_the_extremistss days = 180 }
+		FRA = { add_timed_idea = { idea = GER_exiles_to_france days = 180 } }
+		SOV = { add_timed_idea = { idea = GER_exiles_to_russia days = 180 } }
+		}
+	}	
 }
