@@ -23,7 +23,7 @@ focus = {
     icon = GFX_goal_generic_construct_infrastructure
     x = 53
     y = 0
-    cost = 5
+    cost = 10
 
     available = {
 
@@ -4757,7 +4757,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_TUR_islamist_paramilitaries
 
 		prerequisite = {
 			focus = TUR_the_northern_caliphate
@@ -4830,7 +4830,7 @@ focus = {
 		cost = 5
 		x = -2
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_TUR_turks_of_syria
 
 		prerequisite = {
 			focus = TUR_the_choice

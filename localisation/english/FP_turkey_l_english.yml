@@ -195,6 +195,10 @@
  TUR_no_mercy_for_the_enemies_of_islam:0 "No Mercy for the Enemies of Islam"
  TUR_strike_the_bear:0 "Strike the Bear"
  TUR_proclaim_the_turkish_empire:0 "The Proclamation of the Turkish Empire"
+ TUR_the_northern_caliphate:0 "The Northern Caliphate"
+ TUR_an_islamic_army:0 "The Islamic Army"
+ TUR_ahmed_iv_the_great:0 "All Hail our Caliph"
+ TUR_greatness_of_all_turks:0 "Every Turk Did a Good Job"
 
  TUR_finish_reconstruction:0 "Finish Reconstruction"
  TUR_industrialization_at_last:0 "Industrialization at Last"
@@ -216,7 +220,7 @@
  TUR_modernized_railways:0 "Modernized Railways"
  TUR_prussian_education:0 "Prussian Education"
  TUR_worker_exchange_programs:0 "Worker Exchange Programs"
- TUR_german_efficiency:0 "German Efficiency"
+ TUR_german_efficency:0 "German Efficiency"
  TUR_western_standards:0 "Western Standards"
  TUR_russian_industrial_base:0 "Russian Industrial Base"
  TUR_expand_chromium_mining:0 "Expand Chromium Mines"
@@ -268,9 +272,6 @@
  TUR_underwater_warfare:0 "Underwater Warfare"
  TUR_battlecruiser_improvements:0 "Battlecruiser Improvements"
  TUR_navy_modernization:0 "Modernization of the Navy"
-
- father_of_the_albanians:0 "Father of the Albanians"
- emigree:0 "Emigré"
 
  TUR_illegalized_party:0 "§RILLEGALIZED§!"
 
