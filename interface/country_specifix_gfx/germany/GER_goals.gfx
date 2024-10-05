@@ -27,6 +27,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GER/GER_the_monarchy.png"
 	}
 		SpriteType = {
+		name = "GFX_GER_joint_leadership"
+		texturefile = "gfx/interface/goals/GER/GER_joint_leadership.png"
+	}
+		SpriteType = {
 		name = "GFX_GER_wilhems_legacy"
 		texturefile = "gfx/interface/goals/GER/GER_wilhems_legacy.png"
 	}

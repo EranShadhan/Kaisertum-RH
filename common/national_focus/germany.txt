@@ -2934,4 +2934,83 @@ navy_experience = 50
 		completion_reward = {
 		}
 	}	
+	focus = {
+		id = GER_constitutional_monarchy
+		icon = GFX_GER_joint_leadership
+		x = 1
+		y = 2
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_the_red_black_yellow_banner 
+		prerequisite = { focus = GER_the_red_black_yellow_banner}
+		prerequisite = { focus = GER_the_king}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}	
+		focus = {
+		id = GER_the_republic_of_germany
+		icon = GFX_goal_support_democracy
+		x = -3
+		y = 2
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_the_red_black_yellow_banner 
+		prerequisite = { focus = GER_the_red_black_yellow_banner}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}	
+		focus = {
+		id = GER_total_power_to_the_kaiser
+		icon = GFX_focus_ger_return_of_the_kaiser
+		x = 3
+		y = 2
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_the_king 
+		prerequisite = { focus = GER_the_king}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}		
 }
