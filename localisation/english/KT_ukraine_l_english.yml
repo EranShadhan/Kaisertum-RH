@@ -53,13 +53,13 @@
  # Focuses
  UKR_royal_standart:0 "Royal Standart"
  UKR_royal_standart_desc:0 "The Royal Standard is not just a symbol of our monarchy but also the foundation of our military's doctrine and technological advancements. By standardizing equipment and strategies across the army, we ensure a unified, disciplined, and modern fighting force. This initiative will bolster our defensive capabilities and improve our ability to respond quickly and efficiently to any threat."
- UKR_royal_officer_corps_desc:0 "The Royal Officer Corps embodies elite leadership in our military, chosen for their loyalty, discipline, and strategic skill. Trained under monarchy and tradition, these officers ensure our forces operate with precision, boosting morale and battlefield efficiency."
+ UKR_royal_officer_corps_desc:0 "The Royal Officer Corps constitutes the best of the best in the military, notwithstanding – owing to their loyalty, discipline and ability for strategic planning – they have a little selection – they have been chosen. So to say underlong officers, who were raised in a monarchy style and brought up within a culture of a tradition, operate any of our forces with discipline, enhancing both the morale and operation effectiveness of the battlefield."
  UKR_sich_riflemen_legacy:0 "Sichovi Striltsi"
  UKR_royal_guard:0 "Establish a Royal Guard"
  UKR_expand_royal_guard:0 "Expand a Royal Guard"
  #Events
  KT_ukraine.1.t:0 "Habsburg Legacy"
- KT_ukraine.1.d:0 "The heritage of the Habsburgs is especially embodied by Vasyl Vyshivanyi. His dedication to Ukraine's independence and leadership in turbulent times symbolize the fusion of the Habsburg tradition and Ukrainian nationalism. By accepting this heritage, Ukraine confirms its place among European historical monarchies. The wisdom of Habsburg rule, strengthened by the vision of the Embroidered One, strengthens the stability of our state, strengthens our political power, and infuses our army with the discipline and resilience of a glorious past."
+ KT_ukraine.1.d:0 "The legacy of the Habsburgs has particular significance for Vasyl Vyshivanyi. The Habsburg tradition and Ukrainian nationalism are represented by his devotion to the independence of Ukraine and his leadership during the stormy times. Assuming that legacy places Ukraine into the advocates of the historical monarchies in Europe. Their vision of the Embroidered One lubricates the strength of the Habsburg rule, consolidates the stability of of our State, augments our political might, and helps to discipline and fortify our army with other glorious attributes of the past."
  KT_ukraine.1.a:0 "Our great future awaits!"
  
  KT_ukraine.2.t:0 "Legacy of Sichovi Striltsi"
