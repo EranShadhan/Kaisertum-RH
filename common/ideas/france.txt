@@ -3,7 +3,7 @@ ideas = {
 	
 		FRA_secret_rearmament = {
 
-			picture = chi_army_corruption3
+			picture = FRA_worker_nat
 			
 			allowed = {
 				always = no
@@ -30,7 +30,7 @@ ideas = {
 		
 		FRA_embargoed_by_germany = {
 
-			picture = can_wartime_prices_and_trade_board
+			picture = FRA_embargoed_by_germany
 			
 			allowed = {
 				always = no
@@ -46,128 +46,10 @@ ideas = {
 				local_resources = -0.3
 			}
 		}
-		FRA_communist_opposition_2 = {
-
-			name = FRA_communist_opposition
-
-			picture = jap_the_unthinkable_option
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				communism_drift = 0.15
-				stability_factor = -0.25
-				weekly_manpower = -2000
-			}
-		}
-		FRA_communist_opposition = {
-
-			picture = jap_the_unthinkable_option
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				communism_drift = 0.03
-				stability_factor = -0.2
-				weekly_manpower = -1000
-			}
-		}
 		
-		FRA_against_monarchy = {
-
-			picture = generic_king_handled
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-			}
-		}
-		FRA_colonial_army = {
-
-			picture = por_colonial_army
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				non_core_manpower = 0.15
-				consumer_goods_factor = 0.1
-			}
-		}
-		
-		FRA_republican_front_collapse = {
-
-			picture = FRA_political_violence
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				democratic_drift = -0.05
-				stability_factor = -0.1
-			}
-		}
-		
-		FRA_secret_police = {
-
-			picture = generic_secret_police
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				stability_weekly = -0.001
-			}
-		}
-
 		FRA_super_heavy_tank_programme = {
 
-			picture = generic_acquire_tanks
+			picture = FRA_tank_program
 			
 			allowed = {
 				always = no
@@ -191,130 +73,6 @@ ideas = {
 			}
 		}
 
-		FRA_eliminating_communist_opposition = {
-
-			picture = generic_communism_banned
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				stability_weekly = -0.005
-				fascism_drift = 0.05
-				communism_drift = -0.05
-			}
-		}
-
-		FRA_ultra_fascists = {
-
-			picture = generic_fascism_rising
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				recruitable_population = 0.3
-				production_speed_industrial_complex_factor = -0.2
-				production_speed_arms_factory_factor = 0.2
-				opinion_gain_monthly_factor = -0.3
-				justify_war_goal_time = -0.5
-			}
-		}
-
-		FRA_moderate_fascists = {
-
-			picture = generic_fascist_workers
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				enemy_justify_war_goal_time = 0.5
-			}
-		}
-
-		FRA_developed_colonial_army = {
-	
-			name = FRA_colonial_army
-
-			picture = por_colonial_army
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				weekly_manpower = 6000
-				consumer_goods_factor = 0.05
-			}
-		}
 		
-		FRA_small_scale_defeatism = {
-
-			picture = chi_army_corruption3
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				war_support_factor = -0.1
-			}
-		}	
-		
-		FRA_cheap_workforce = { #duplicate of a generic with a custom icon
-
-			name = cheap_workforce
-
-			picture = FRA_slave_worker_nat
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				production_factory_efficiency_gain_factor = 0.1
-				production_factory_start_efficiency_factor = 0.1
-			}
-		}
 	}
 }

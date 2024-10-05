@@ -1,179 +1,51 @@
 characters={
-	FRA_marcel_deat={ #Communist Leader
-		name=FRA_marcel_deat
+	FRA_fascist_pary={ #Starting leader
+		name=FRA_fascist_pary
 		portraits={
 			civilian={
-				large="GFX_portrait_FRA_marcel_deat"
-			}
-		}
-		country_leader={
-			ideology=neosocialism
-			traits={ militant_socialist warmonger }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-	
-	FRA_pierre_laval={ #Democratic Leader
-		name=FRA_pierre_laval
-		portraits={
-			civilian={
-				large="GFX_portrait_fra_pierre_laval"
-			}
-		}
-		country_leader={
-			ideology=liberalism
-			traits={ stout_defender }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-	
-	FRA_joseph_darnaud={ #Starting leader
-		name=FRA_joseph_darnaud
-		portraits={
-			civilian={
-				large="GFX_portrait_FRA_joseph_darnaud"
+				large=GFX_portrait_FRA_france_fascist_party
 			}
 		}
 		country_leader={
 			ideology=rexism
-			traits={ dictator warmonger }
+			traits={ }
 			expire="1965.1.1.1"
 			id=-1
 		}
 	}
-	FRA_georges_valois={ #Can seize power
-		name=FRA_georges_valois
+	FRA_joseph_darnaud={ #Fascist Leader
+		name=FRA_joseph_darnaud
 		portraits={
 			civilian={
-				large="GFX_portrait_fra_georges_valois"
+				large=GFX_portrait_FRA_joseph_darnaud
 			}
 		}
-		country_leader={
-			ideology=falangism
-			traits={ dictator warmonger }
-			expire="1965.1.1.1"
-			id=-1
+	}
+	FRA_Jacques_Doriot={ #Fascist Leader
+		name=FRA_Jacques_Doriot
+		portraits={
+			civilian={
+				large=GFX_portrait_Jacques_Doriot
+			}
+		}
+	}
+	FRA_Eugene_dolenclue={ #Fascist Leader
+		name=FRA_Eugene_dolenclue
+		portraits={
+			civilian={
+				large=GFX_portrait_Eugene_dolenclue
+			}
+		}
+	}
+	FRA_Prince_Jean={ #Fascist Leader
+		name=FRA_Prince_Jean
+		portraits={
+			civilian={
+				large=GFX_portrait_Prince_Jean
+			}
 		}
 	}
 
-	FRA_edouard_daladier={
-		name=FRA_edouard_daladier
-		portraits={
-			civilian={
-				large=GFX_portrait_FRA_edouard_daladier
-			}
-		}
-		country_leader={
-			ideology=socialism
-			traits={ stout_defender }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	FRA_denis_guillaumat={ #Non-Aligned Leader
-		name=FRA_denis_guillaumat
-		portraits={
-			civilian={
-				large=GFX_portrait_FRA_denis_guillaumat
-			}
-		}
-		country_leader={
-			ideology=centrism
-			traits={ editor eager_collaborator }
-			expire="1949.1.1.12"
-			id=-1
-		}
-	}
-
-	FRA_maurice_thorez={ #Communist Leader
-		name=FRA_maurice_thorez
-		portraits={
-			army={
-				small="GFX_idea_maurice_thorez"
-			}
-			civilian={
-				large="GFX_portrait_fra_maurice_thorez"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = maurice_thorez
-			allowed  = {
-				original_tag  = FRA
-			}
-			available  = {
-				or  = {
-					has_completed_focus  = FRA_leftist_rhetoric 
-					has_completed_focus  = FRA_invite_communist_ministers 
-				}
-				not  = {
-					has_country_leader  = {
-						character  = FRA_philippe_petain
-						ruling_only  = yes 
-					}
-				}
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					not  = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
-			}
-			traits  = {
-				communist_revolutionary 
-			}
-			do_effect  = {
-				not  = {
-					has_government  = communism 
-				}
-			}
-			on_add  = {
-				FRA_right_wing_riot_effect = yes 
-			}
-			ai_will_do  = {
-				factor  = 0.000
-			}
-		}
-		
-		country_leader={
-			ideology=stalinism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	FRA_rene_nicod={
-		name=FRA_rene_nicod
-		portraits={
-			civilian={
-				large="GFX_portrait_fra_rene_nicod"
-				small = GFX_portrait_FRA_rene_nicod_small
-			}
-		}
-		country_leader={
-			ideology=marxism
-			expire="1965.1.1.1"
-		}
-	}
-
-	FRA_philippe_petain={ #Fascist Leader
-		name=FRA_philippe_petain
-		portraits={
-			civilian={
-				large=GFX_portrait_FRA_philippe_petain
-			}
-		}
-		
-		
-		
-		
-		
-	}
 
 	FRA_jean_de_lattre_de_tassigny={
 		name=FRA_jean_de_lattre_de_tassigny

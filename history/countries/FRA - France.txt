@@ -67,6 +67,8 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 	basic_train = 1
+	atomic_research = 1
+	nuclear_reactor = 1
 }
 
 if = {
@@ -171,17 +173,15 @@ set_popularities = {
 }
 
 add_ideas = {
-	FRA_republican_front_collapse
-	FRA_communist_opposition
 	FRA_embargoed_by_germany
-	FRA_secret_police
 	FRA_secret_rearmament
 	FRA_super_heavy_tank_programme
-	FRA_colonial_army
-    FRA_small_scale_defeatism
-	international_isolation
 }
 
+recruit_character = FRA_Prince_Jean
+recruit_character = FRA_Eugene_dolenclue
+recruit_character = FRA_fascist_pary
+recruit_character = FRA_Jacques_Doriot
 recruit_character = FRA_joseph_darnaud
 recruit_character = FRA_marcel_deat
 recruit_character = FRA_georges_valois
