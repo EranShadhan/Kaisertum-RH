@@ -222,9 +222,7 @@ add_ideas = {
 	GER_too_big_to_fail
 	GER_switching_to_oil
 	
-	low_economic_mobilisation
-	limited_conscription
-	german_customs_union_leader
+	
 }
 
 recruit_character = GER_heinrich_bruening

@@ -165,6 +165,8 @@ set_politics = {
 	elections_allowed = no
 }
 
+create_faction = FRA_Axis
+
 set_popularities = {
 	democratic = 2
 	fascism = 56
@@ -176,6 +178,10 @@ add_ideas = {
 	FRA_embargoed_by_germany
 	FRA_secret_rearmament
 	FRA_super_heavy_tank_programme
+	
+	low_economic_mobilisation
+	limited_conscription
+	german_customs_union_leader
 }
 
 recruit_character = FRA_Prince_Jean
