@@ -12,4 +12,8 @@ spriteTypes = {
 		name = "GFX_HUN_provisional_governament"
 		texturefile = "gfx/leaders/AUS/HUN_provisional_governament.png"			
 	}
+	SpriteType = {
+		name = "GFX_CZE_Tomas_Masaryk"
+		texturefile = "gfx/leaders/AUS/CZE_Tomas_Masaryk.png"			
+	}
 }
