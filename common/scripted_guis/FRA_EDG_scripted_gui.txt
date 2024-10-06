@@ -1,0 +1,14 @@
+scripted_gui = {
+
+	decisions_FRA_EDG_scriptedgui = {
+		context_type = decision_category
+		window_name = "edg_container"
+		properties = {
+			progressbar_edg = {
+				frame = global.var_EDG_progressbar
+			}
+		}
+	}
+
+}
+

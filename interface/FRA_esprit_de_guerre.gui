@@ -1,0 +1,25 @@
+guiTypes = {
+	containerWindowType = {
+		name = "edg_container"
+		
+		position = { x = -5 y = 0 }
+		size = { width = 500 height = 570 }
+
+		
+		instantTextboxType = {
+			name = "progressbar_edg_title"
+			position = { x = 80 y = 330 }
+			font = hoi_33
+			format = centre
+			text = l_FRA_progressbar_edg_title
+			maxWidth = 500
+		}
+		
+		iconType = {
+			name = "progressbar_edg"
+			spriteType = GFX_decisions_FRA_EDG_progressbar
+			position = { x = 33 y = 33 }
+		}
+		
+	}
+}

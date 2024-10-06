@@ -987,3 +987,7 @@ NCY = {
 	color = rgb { 255 242 240 }
 	color_ui = rgb { 255 242 240 }
 }
+LEN = {
+	color = rgb { 168 72 72 }
+	color_ui = rgb { 168 72 72 }
+}
