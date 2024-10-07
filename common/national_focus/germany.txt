@@ -2990,7 +2990,7 @@ navy_experience = 50
 		focus = {
 		id = GER_total_power_to_the_kaiser
 		icon = GFX_focus_ger_return_of_the_kaiser
-		x = 3
+		x = 4
 		y = 2
 
 		cost = 3
@@ -3012,5 +3012,125 @@ navy_experience = 50
 
 		completion_reward = {
 		}
+	}	
+		focus = {
+		id = GER_prussian_militarism
+		icon = GFX_focus_generic_limited_social_mobilization
+		x = 2
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_total_power_to_the_kaiser 
+		prerequisite = { focus = GER_total_power_to_the_kaiser}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = GER_prussian_like_army
+		}
 	}		
+
+		focus = {
+		id = GER_mediums_program
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
+		x = -1
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_total_power_to_the_kaiser 
+		prerequisite = { focus = GER_total_power_to_the_kaiser}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = GER_med_tank
+		}
+	}
+		focus = {
+		id = GER_closer_ties_with_the_italians
+		icon = GFX_focus_ITA_imperial_recognition
+		x = 0
+		y = 2
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_total_power_to_the_kaiser 
+		prerequisite = { focus = GER_total_power_to_the_kaiser}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		 add_opinion_modifier = {
+					target = ITA# target of the relation
+					modifier = GER_SWE_historic_trade_Partners
+				}
+				ITA = {
+				
+				add_opinion_modifier = {
+					target =GER # target of the relation
+					modifier = GER_SWE_historic_trade_Partners
+				}
+				}
+		}
+	}	
+	focus = {
+		id = GER_german_italian_naval_exercise
+		icon = GFX_goal_generic_occupy_states_coastal
+		x = 1
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_closer_ties_with_the_italians 
+		prerequisite = { focus = GER_closer_ties_with_the_italians}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = GER_italian_naval_exercise
+		ITA = { add_ideas = GER_italian_naval_exercise }
+		}
+	}	
 }

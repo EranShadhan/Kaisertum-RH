@@ -150,12 +150,9 @@ ideas = {
 			picture = ger_revive_the_kaiserreich
 
 			modifier = {
-				drift_defence_factor = 0.1
 				repair_speed_factor = 0.1
 				industry_repair_factor = 0.1
-				training_time_factor = -0.05
-				conscription = 0.005
-				production_speed_industrial_complex_factor = 0.1
+				production_speed_industrial_complex_factor = 0.05
 				production_speed_infrastructure_factor = 0.1
 			}
 		}
@@ -491,6 +488,59 @@ GER_german_breadbasket_to_ukr = {
 				production_factory_max_efficiency_factor = 0.05
 			}
 		}
+		GER_med_tank = {
+			allowed = { always = no }
+			removal_cost = -1
+			allowed_civil_war = { always = yes }
+			picture = generic_acquire_tanks
+             equipment_bonus = {
+               cat_medium_armor = {
+                  instant = yes
+                   build_cost_ic = -0.1  instant = yes
+		           reliability = 0.2
+		           maximum_speed = 0.1
+                  }
+   
+              }			
+		}
+	GER_prussian_like_army = {
+			
+			allowed = {
+				always = no
+			}
+            picture= chi_army_corruption3
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+			training_time_factor = -0.1
+				conscription = 0.01
+				industrial_capacity_factory = 0.05
+				experience_gain_army = 0.1
+			}
+		}
+		GER_italian_naval_exercise = {
+			
+			allowed = {
+				always = no
+			}
+            picture= generic_navy_bonus
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+			naval_doctrine_cost_factor = -0.1
+				experience_gain_navy = 0.2
+				naval_invasion_capacity = 15
+				naval_speed_factor = 0.1
+			}
+		}	
 		GER_wilhelm_ii = {
 			allowed = {
 				always = no
@@ -502,7 +552,7 @@ GER_german_breadbasket_to_ukr = {
 
 			removal_cost = -1
 
-			traits = { popular_figurehead2 imperial_connections }
+			traits = { kaiser_of_germans}
 		}
 		GER_wilhelm_ii_2 = {
 
@@ -520,7 +570,7 @@ GER_german_breadbasket_to_ukr = {
 
 			removal_cost = -1
 
-			traits = { popular_figurehead3 imperial_connections }
+			traits = { kaiser_of_germans2 }
 		}
 	}
 }
