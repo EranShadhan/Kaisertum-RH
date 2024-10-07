@@ -1262,11 +1262,13 @@ focus = {
 
     }
 
-	select_effect = {
-			add_ideas = TUR_fund_the_dam
-	}
-
     completion_reward = {
+
+		add_timed_idea = {
+			idea = TUR_fund_the_dam
+			days = 120
+		}
+		
 		IF = {
 			limit = {
 				356 = {
