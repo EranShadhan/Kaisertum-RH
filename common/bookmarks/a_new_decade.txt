@@ -11,8 +11,7 @@ bookmarks = {
 			history = "FRA_NEW_DECADE_DESC"
 			ideology = fascism
 			ideas = {
-				FRA_republican_front_collapse
-				FRA_communist_opposition
+				FRA_embargoed_by_germany
 				FRA_secret_rearmament
 				FRA_super_heavy_tank_programme
 			}
@@ -27,6 +26,9 @@ bookmarks = {
 			history = "JAP_NEW_DECADE_DESC"
 			ideology = communism
 			ideas = {
+				JAP_hirohito
+				JAP_militarism
+				JAP_interservice_rivalry_balanced
 			}	
 			focuses = {
 			}
