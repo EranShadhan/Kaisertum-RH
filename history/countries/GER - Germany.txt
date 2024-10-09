@@ -457,7 +457,7 @@ if = {
 		icon = "GFX_gwtank_medium"
 	}
 	create_equipment_variant = { #Note: There is a copy of this variant in Finnish National Focus file (FIN_bring_foreign_armor_experts). Any changes here should also be applied there
-		name = "Panzer I Ausf. A"
+		name = "Panzer I Ausf. A" #This tank template was added to the United Baltic Duchy as well. Change it in their file as well if this is changed. -Cooldownboi
 		type = light_tank_chassis_1
 		parent_version = 0
 		modules = {

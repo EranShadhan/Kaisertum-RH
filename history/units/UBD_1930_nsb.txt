@@ -227,6 +227,7 @@ units = {
 		division_template = "Panzer-Division"
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.5
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "UBD" version_name = "Panzer I Ausf. A" } }
 	}
 
 }
