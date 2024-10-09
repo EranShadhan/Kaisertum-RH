@@ -20,7 +20,7 @@
 
 	focus = {
 		id = FRA_the_first_dictatorial_discussion
-		icon = GFX_goal_GEN_workers_army
+		icon = GFX_
 		x = 2
 		y = 0
 		
@@ -47,12 +47,14 @@
 	}
 	focus = {
 		id = FRA_darnaud
-		icon = GFX_goal_GEN_workers_army
+		icon = GFX_
 		x = -10
 		y = 1
 		
 		prerequisite = { focus = FRA_the_first_dictatorial_discussion}
 		relative_position_id = FRA_the_first_dictatorial_discussion
+		
+		mutually_exclusive = { focus = FRA_Doriot focus = FRA_Prince_Jean focus = FRA_Eugene_Deloncle }
 		
 		allow_branch = { 
 			
@@ -81,14 +83,819 @@
 		}
 	}
 	focus = {
+		id = FRA_foreign_relations
+		icon = GFX_
+		x = -6
+		y = 1
+		
+		prerequisite = { focus = FRA_darnaud focus = FRA_Doriot focus = FRA_Eugene_Deloncle focus = FRA_Prince_Jean}
+		relative_position_id = FRA_darnaud
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_marocco_war
+		icon = GFX_
+		x = -10
+		y = 1
+		
+		prerequisite = { focus = FRA_foreign_relations}
+		relative_position_id = FRA_foreign_relations
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_sao_paolo_treaty
+		icon = GFX_
+		x = 2
+		y = 1
+		
+		prerequisite = { focus = FRA_marocco_war}
+		relative_position_id = FRA_marocco_war
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_occupy_suriname
+		icon = GFX_
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_sao_paolo_treaty}
+		relative_position_id = FRA_sao_paolo_treaty
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_domenican_alliance
+		icon = GFX_
+		x = 3
+		y = 2
+		
+		prerequisite = { focus = FRA_sao_paolo_treaty}
+		relative_position_id = FRA_sao_paolo_treaty
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_support_united_carabean
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_domenican_alliance}
+		relative_position_id = FRA_domenican_alliance
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_el_salvador
+		icon = GFX_
+		x = 6
+		y = 2
+		
+		prerequisite = { focus = FRA_sao_paolo_treaty}
+		relative_position_id = FRA_sao_paolo_treaty
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_french_volunteers
+		icon = GFX_
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_el_salvador}
+		relative_position_id = FRA_el_salvador
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_french_advisors
+		icon = GFX_
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_el_salvador}
+		relative_position_id = FRA_el_salvador
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_liberia_subjegation
+		icon = GFX_
+		x = -2
+		y = 1
+		
+		prerequisite = { focus = FRA_marocco_war}
+		relative_position_id = FRA_marocco_war
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_claim_angola
+		icon = GFX_
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_liberia_subjegation}
+		relative_position_id = FRA_liberia_subjegation
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_claim_african_colonies
+		icon = GFX_
+		x = -3
+		y = 1
+		
+		prerequisite = { focus = FRA_liberia_subjegation}
+		relative_position_id = FRA_liberia_subjegation
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_invite_ethiopia
+		icon = GFX_
+		x = -2
+		y = 1
+		
+		prerequisite = { focus = FRA_claim_african_colonies}
+		relative_position_id = FRA_claim_african_colonies
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_spark_cerntral_african_revolt
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_claim_african_colonies}
+		relative_position_id = FRA_claim_african_colonies
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_defence_east_asia
+		icon = GFX_
+		x = -3
+		y = 2
+		
+		prerequisite = { focus = FRA_liberia_subjegation}
+		prerequisite = { focus = FRA_sao_paolo_treaty}
+		relative_position_id = FRA_sao_paolo_treaty
+		mutually_exclusive = { focus = FRA_concessions_to_japan }
+
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_siamese_war
+		icon = GFX_
+		x = -3
+		y = 1
+		
+		prerequisite = { focus = FRA_defence_east_asia}
+		relative_position_id = FRA_defence_east_asia
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_colonial_independence
+		icon = GFX_
+		x = -1
+		y = 2
+		
+		prerequisite = { focus = FRA_defence_east_asia}
+		relative_position_id = FRA_defence_east_asia
+		mutually_exclusive = { focus = FRA_colonial_independence }
+
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_martial_law
+		icon = GFX_
+		x = 1
+		y = 2
+		
+		prerequisite = { focus = FRA_defence_east_asia}
+		relative_position_id = FRA_defence_east_asia
+		mutually_exclusive = { focus = FRA_colonial_independence }
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_concessions_to_japan
+		icon = GFX_
+		x = -1
+		y = 2
+		
+		prerequisite = { focus = FRA_liberia_subjegation}
+		prerequisite = { focus = FRA_sao_paolo_treaty}
+		relative_position_id = FRA_sao_paolo_treaty
+		mutually_exclusive = { focus = FRA_defence_east_asia }
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_Persue_French_Claims
+		icon = GFX_
+		x = 3
+		y = 1
+		
+		prerequisite = { focus = FRA_foreign_relations}
+		relative_position_id = FRA_foreign_relations
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_prewar_claims
+		icon = GFX_
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_Persue_French_Claims}
+		relative_position_id = FRA_Persue_French_Claims
+		mutually_exclusive = { focus = FRA_greater_french_claims }
+
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_greater_french_claims
+		icon = GFX_
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_Persue_French_Claims}
+		relative_position_id = FRA_Persue_French_Claims
+		mutually_exclusive = { focus = FRA_prewar_claims }
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_invite_russia
+		icon = GFX_
+		x = -3
+		y = 1
+		
+		prerequisite = { focus = FRA_Persue_French_Claims }
+		relative_position_id = FRA_Persue_French_Claims
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_reinforce_Russian_claims
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_invite_russia }
+		relative_position_id = FRA_invite_russia
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_madrid_meeting
+		icon = GFX_
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_greater_french_claims focus = FRA_prewar_claims }
+		relative_position_id = FRA_greater_french_claims
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_french_advisors_spain
+		icon = GFX_
+		x = -2
+		y = 1
+		
+		prerequisite = { focus = FRA_madrid_meeting }
+		relative_position_id = FRA_madrid_meeting
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_french_generals_spain
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_madrid_meeting }
+		relative_position_id = FRA_madrid_meeting
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_french_volonteers_spain
+		icon = GFX_
+		x = 2
+		y = 1
+		
+		prerequisite = { focus = FRA_madrid_meeting }
+		relative_position_id = FRA_madrid_meeting
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_spanish_cw
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_french_advisors_spain focus = FRA_prewar_claims focus = FRA_french_volonteers_spain }
+		relative_position_id = FRA_french_generals_spain
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_portugal
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_spanish_cw }
+		relative_position_id = FRA_spanish_cw
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_invasion_of_switzerland
+		icon = GFX_
+		x = 5
+		y = 1
+		
+		prerequisite = { focus = FRA_greater_french_claims focus = FRA_prewar_claims }
+		relative_position_id = FRA_greater_french_claims
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
 		id = FRA_Doriot
-		icon = GFX_goal_GEN_workers_army
-		x = -5
+		icon = GFX_
+		x = 0
 		y = 1
 		
 		prerequisite = { focus = FRA_the_first_dictatorial_discussion}
 		relative_position_id = FRA_the_first_dictatorial_discussion
-
+		mutually_exclusive = { focus = FRA_Prince_Jean focus = FRA_Eugene_Deloncle focus = FRA_Doriot}
 		cost = 5
 			ai_will_do = {
 			factor = 1
@@ -113,13 +920,13 @@
 	}
 	focus = {
 		id = FRA_Prince_Jean
-		icon = GFX_goal_GEN_workers_army
+		icon = GFX_
 		x = 5
 		y = 1
 		
 		prerequisite = { focus = FRA_the_first_dictatorial_discussion}
 		relative_position_id = FRA_the_first_dictatorial_discussion
-
+		mutually_exclusive = { focus = FRA_Doriot focus = FRA_Eugene_Deloncle focus = FRA_Doriot}
 		allow_branch = { 
 			
 		}
@@ -148,13 +955,13 @@
 	}
 	focus = {
 		id = FRA_Eugene_Deloncle 
-		icon = GFX_goal_GEN_workers_army
-		x = 0
+		icon = GFX_
+		x = -5
 		y = 1
 		
 		prerequisite = { focus = FRA_the_first_dictatorial_discussion}
 		relative_position_id = FRA_the_first_dictatorial_discussion
-
+		mutually_exclusive = { focus = FRA_Doriot focus = FRA_Prince_Jean focus = FRA_Doriot}
 		cost = 5
 			ai_will_do = {
 			factor = 1
