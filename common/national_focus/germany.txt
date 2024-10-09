@@ -3068,9 +3068,10 @@ navy_experience = 50
 		add_ideas = GER_med_tank
 		}
 	}
-		focus = {
-		id = GER_closer_ties_with_the_italians
-		icon = GFX_focus_ITA_imperial_recognition
+
+	focus = {
+		id = GER_german_italian_naval_exercise
+		icon = GFX_goal_generic_occupy_states_coastal
 		x = 0
 		y = 2
 
@@ -3092,22 +3093,13 @@ navy_experience = 50
 		available_if_capitulated = no
 
 		completion_reward = {
-		 add_opinion_modifier = {
-					target = ITA# target of the relation
-					modifier = GER_SWE_historic_trade_Partners
-				}
-				ITA = {
-				
-				add_opinion_modifier = {
-					target =GER # target of the relation
-					modifier = GER_SWE_historic_trade_Partners
-				}
-				}
+		add_ideas = GER_italian_naval_exercise
+		ITA = { add_ideas = GER_italian_naval_exercise }
 		}
 	}	
 	focus = {
-		id = GER_german_italian_naval_exercise
-		icon = GFX_goal_generic_occupy_states_coastal
+		id = GER_secret_police
+		icon = GFX_focus_generic_secret_service_agency
 		x = 1
 		y = 1
 
@@ -3122,15 +3114,171 @@ navy_experience = 50
 		bypass = {
 
 		}
-        relative_position_id = GER_closer_ties_with_the_italians 
-		prerequisite = { focus = GER_closer_ties_with_the_italians}
+        relative_position_id = GER_german_italian_naval_exercise 
+		prerequisite = { focus = GER_german_italian_naval_exercise}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-		add_ideas = GER_italian_naval_exercise
-		ITA = { add_ideas = GER_italian_naval_exercise }
+		}
+	}
+	focus = {
+		id = GER_agency_expansion
+		icon = GFX_focus_generic_vatican_agents
+		x = 0
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_secret_police 
+		prerequisite = { focus = GER_secret_police}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
 		}
 	}	
+	focus = {
+		id = GER_anti_corruption_policy
+		icon = GFX_focus_ARG_crackdown_on_corruption
+		x = -1
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_german_italian_naval_exercise 
+		prerequisite = { focus = GER_german_italian_naval_exercise}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}		
+
+	focus = {
+		id = GER_end_the_black_money_scheme
+		icon = GFX_focus_mex_privatisation
+		x = 0
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_anti_corruption_policy 
+		prerequisite = { focus = GER_anti_corruption_policy}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}	
+	focus = {
+		id = GER_tour_the_empire
+		icon = GFX_focus_mex_privatisation
+		x = 1
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_end_the_black_money_scheme 
+		prerequisite = { focus = GER_end_the_black_money_scheme}
+		prerequisite = { focus = GER_agency_expansion}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}		
+	focus = {
+		id = GER_the_death_of_a_legend
+		icon = GFX_focus_mex_privatisation
+		x = 2
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_tour_the_empire
+		prerequisite = { focus = GER_tour_the_empire}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_the_regency_council
+		icon = GFX_ROM_pol_rc_1
+		x = 0
+		y = 1
+
+		cost = 3
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_the_death_of_a_legend
+		prerequisite = { focus = GER_the_death_of_a_legend}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
 }

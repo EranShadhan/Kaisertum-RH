@@ -42,7 +42,7 @@ FRA_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = armor
-		value = 45
+		value = 50
 	}
 
 	ai_strategy = {
