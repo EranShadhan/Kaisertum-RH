@@ -13,6 +13,15 @@ characters={
 			id = -1
 		}
 	}
+
+	TUR_antouh_saadeh = {
+		name = TUR_antouh_saadeh
+		portraits = {
+			civilian = {
+				large = GFX_portrait_TUR_antouh_saadeh
+			}
+		}
+	}
 	
 	TUR_yakup_kadri = {
 		name = TUR_yakup_kadri

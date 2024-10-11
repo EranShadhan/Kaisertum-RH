@@ -199,9 +199,11 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					AND = {
-						tag = CAN
-						NOT = { has_dlc = "Together for Victory" }
+					OR = {
+						original_tag = CAN
+						original_tag = RAJ
+						original_tag = MAL
+						original_tag = INS
 					}
 				}
 				abandon_colony_tag = yes

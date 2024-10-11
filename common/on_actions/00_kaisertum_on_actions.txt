@@ -36,6 +36,20 @@ on_actions = {
 				}
 				set_variable = { show_intro = 1.0 } # Intro screen
 			}
+			PER = {
+				give_resource_rights = {
+					receiver = GER
+					state = 291
+				}
+				give_resource_rights = {
+					receiver = GER
+					state = 413
+				}
+				give_resource_rights = {
+					receiver = GER
+					state = 412
+				}
+			}
 		}
 	}
 	on_daily_CRI = {
@@ -46,6 +60,44 @@ on_actions = {
 						overlord = GER
 					}
 					set_cosmetic_tag = german_crimea
+				}
+			}
+		}
+	}
+	on_daily_PER = {
+		effect = {
+			if = {
+				limit = {
+					has_idea = PER_disloyal_military
+					stability>0.3
+				}
+				PER = {
+					country_event = { country_event = KT_persia.1 }
+				}
+			}
+		}
+	}
+	on_daily_SER = {
+		effect = {
+			if = {
+				limit = {
+					SER = {
+						owns_state = 106
+						controls_state = 106
+						NOT = {
+							OR = {
+								has_idea = SER_imro
+								has_idea = SER_imro_2
+								has_idea = SER_imro_3
+								has_idea = SER_imro_4
+								has_completed_focus = SER_imro_5
+							}
+						}
+					}
+				}
+				SER = {
+					add_ideas = SER_imro
+					set_country_flag = imro_active
 				}
 			}
 		}
