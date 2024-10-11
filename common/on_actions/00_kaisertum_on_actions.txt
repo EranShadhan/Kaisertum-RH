@@ -50,4 +50,9 @@ on_actions = {
 			}
 		}
 	}
+	on_state_control_changed = {
+		effect = {
+			KT_endonyms = yes
+		}
+	}
 }
