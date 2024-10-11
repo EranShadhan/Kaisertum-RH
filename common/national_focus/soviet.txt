@@ -8,6 +8,7 @@
 			tag = SOV
 		}
 	}
+	
 	default = no
 	continuous_focus_position = { x = 50 y = 1000 }
 
@@ -31,6 +32,7 @@
 			
 		}
     }
+	
 	focus = {
 		id = SOV_the_governance_question
 		icon = GFX_
@@ -51,6 +53,7 @@
 			
 		}
     }
+	
 	focus = {
 		id = SOV_the_industrialisation_question
 		icon = GFX_
@@ -71,6 +74,7 @@
 			
 		}
     }
+	
 	focus = {
 		id = SOV_the_military_question
 		icon = GFX_
@@ -91,6 +95,7 @@
 			
 		}
     }
+	
 	focus = {
 		id = SOV_the_revenge_question
 		icon = GFX_
@@ -111,6 +116,7 @@
 			
 		}
     }
+	
 	focus = {
 		id = SOV_the_outcome_of_the_clash
 		icon = GFX_
