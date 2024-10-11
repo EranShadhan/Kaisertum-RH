@@ -2,474 +2,478 @@ spriteTypes = {
 
 	SpriteType = {
 	name = "GFX_TUR_start_military_reforms"
-	texturefile = "gfx/interface/goals/TUR/start_military_reforms.png"			
+	texturefile = "gfx/interface/goals/TUR/start_military_reforms.png"
 	}
 	SpriteType = {
 	name = "GFX_TUR_addressing_the_army"
-	texturefile = "gfx/interface/goals/TUR/addressing_the_army.png"			
+	texturefile = "gfx/interface/goals/TUR/addressing_the_army.png"
 	}
 	SpriteType = {
 	name = "GFX_TUR_invite_german_military_mission"
-	texturefile = "gfx/interface/goals/TUR/invite_german_military_mission.png"			
+	texturefile = "gfx/interface/goals/TUR/invite_german_military_mission.png"
 	}
 	SpriteType = {
 	name = "GFX_TUR_the_jewel_of_turkey"
-	texturefile = "gfx/interface/goals/TUR/the_jewel_of_turkey.png"			
+	texturefile = "gfx/interface/goals/TUR/the_jewel_of_turkey.png"
 	}
 	SpriteType = {
 	name = "GFX_TUR_invite_russian_military_mission"
-	texturefile = "gfx/interface/goals/TUR/invite_russian_military_mission.png"			
+	texturefile = "gfx/interface/goals/TUR/invite_russian_military_mission.png"
 	}
 	SpriteType = {
 	name = "GFX_TUR_cappadocia_exercises"
-	texturefile = "gfx/interface/goals/TUR/cappadocia_exercises.png"			
+	texturefile = "gfx/interface/goals/TUR/cappadocia_exercises.png"
 	}
 	SpriteType = {
 	name = "GFX_TUR_buy_german_artillery"
-	texturefile = "gfx/interface/goals/TUR/buy_german_artillery.png"			
+	texturefile = "gfx/interface/goals/TUR/buy_german_artillery.png"
 	}
 	SpriteType = {
 	name = "GFX_TUR_a_truly_modern_military"
-	texturefile = "gfx/interface/goals/TUR/a_truly_modern_military.png"			
+	texturefile = "gfx/interface/goals/TUR/a_truly_modern_military.png"
 	}
 	SpriteType = {
 	name = "GFX_TUR_invite_german_naval_mission"
-	texturefile = "gfx/interface/goals/TUR/invite_german_naval_mission.png"			
+	texturefile = "gfx/interface/goals/TUR/invite_german_naval_mission.png"
 	}
 	SpriteType = {
 		name = "GFX_TUR_fruits_of_competition"
-		texturefile = "gfx/interface/goals/TUR/fruits_of_competition.png"			
+		texturefile = "gfx/interface/goals/TUR/fruits_of_competition.png"
 	}
 	SpriteType = {
 		name = "GFX_TUR_focus_on_internal_matters"
-		texturefile = "gfx/interface/goals/TUR/2_focus_on_internal_matters.dds"			
+		texturefile = "gfx/interface/goals/TUR/2_focus_on_internal_matters.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_sultans_cabinet"
-		texturefile = "gfx/interface/goals/TUR/2_sultans_cabinet.dds"			
+		texturefile = "gfx/interface/goals/TUR/2_sultans_cabinet.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_exploit_the_bidding_war"
-		texturefile = "gfx/interface/goals/TUR/2_exploit_the_bidding_war.dds"			
+		texturefile = "gfx/interface/goals/TUR/2_exploit_the_bidding_war.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_limited_isolationism"
-		texturefile = "gfx/interface/goals/TUR/2_limited_isolation.dds"			
+		texturefile = "gfx/interface/goals/TUR/2_limited_isolation.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_denounce_ottomanism"
-		texturefile = "gfx/interface/goals/TUR/2_denounce_ottomanism.dds"			
+		texturefile = "gfx/interface/goals/TUR/2_denounce_ottomanism.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_our_place_in_the_new_world"
-		texturefile = "gfx/interface/goals/TUR/2_our_place.dds"			
+		texturefile = "gfx/interface/goals/TUR/2_our_place.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_promote_a_europeanized_parliament"
-		texturefile = "gfx/interface/goals/TUR/2_europeanized_parliament.dds"			
+		texturefile = "gfx/interface/goals/TUR/2_europeanized_parliament.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_appeal_to_italy"
-		texturefile = "gfx/interface/goals/TUR/2_appeal_to_italy.dds"			
+		texturefile = "gfx/interface/goals/TUR/2_appeal_to_italy.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_dodecanese_for_industry"
-		texturefile = "gfx/interface/goals/TUR/2_dodecanese_for_industry.dds"			
+		texturefile = "gfx/interface/goals/TUR/2_dodecanese_for_industry.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_middle_east_situation"
-		texturefile = "gfx/interface/goals/TUR/2_middle_east_situation.dds"			
+		texturefile = "gfx/interface/goals/TUR/2_middle_east_situation.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_arabian_minorities"
-		texturefile = "gfx/interface/goals/TUR/2_arabian_minorities.dds"			
+		texturefile = "gfx/interface/goals/TUR/2_arabian_minorities.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_anti_arabian_propaganda"
-		texturefile = "gfx/interface/goals/TUR/2_anti_arabian_propaganda.dds"			
+		texturefile = "gfx/interface/goals/TUR/2_anti_arabian_propaganda.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_sponsor_syrian_nationalism"
-		texturefile = "gfx/interface/goals/TUR/2_sponsor_syrian_nationalism.dds"			
+		texturefile = "gfx/interface/goals/TUR/2_sponsor_syrian_nationalism.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_syrian_revolution"
-		texturefile = "gfx/interface/goals/TUR/2_syrian_revolution.dds"			
+		texturefile = "gfx/interface/goals/TUR/2_syrian_revolution.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_puppet_sultan"
-		texturefile = "gfx/interface/goals/TUR/2_puppet_sultan.dds"			
+		texturefile = "gfx/interface/goals/TUR/2_puppet_sultan.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_monopolize_syrian_oil"
-		texturefile = "gfx/interface/goals/TUR/2_monopolize_syrian_oil.dds"			
+		texturefile = "gfx/interface/goals/TUR/2_monopolize_syrian_oil.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_promote_a_turkish_cyprus"
-		texturefile = "gfx/interface/goals/TUR/2_promote_a_turkish_cyprus.dds"			
+		texturefile = "gfx/interface/goals/TUR/2_promote_a_turkish_cyprus.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_arm_our_cooperators"
-		texturefile = "gfx/interface/goals/TUR/2_arm_our_cooperators.dds"			
+		texturefile = "gfx/interface/goals/TUR/2_arm_our_cooperators.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_erase_marks_of_involvement"
-		texturefile = "gfx/interface/goals/TUR/2_erase_marks_of_involvement.dds"			
+		texturefile = "gfx/interface/goals/TUR/2_erase_marks_of_involvement.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_start_cypriot_civil_war"
-		texturefile = "gfx/interface/goals/TUR/2_start_cypriot_civil_war.dds"			
+		texturefile = "gfx/interface/goals/TUR/2_start_cypriot_civil_war.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_status_quo"
-		texturefile = "gfx/interface/goals/TUR/2_status_quo.dds"			
+		texturefile = "gfx/interface/goals/TUR/2_status_quo.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_turkish_cyprus"
-		texturefile = "gfx/interface/goals/TUR/2_turkish_cyprus.dds"			
+		texturefile = "gfx/interface/goals/TUR/2_turkish_cyprus.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_prepare_for_sgw"
-		texturefile = "gfx/interface/goals/TUR/2_prepare_for_sgw.dds"			
+		texturefile = "gfx/interface/goals/TUR/2_prepare_for_sgw.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_the_looming_war"
-		texturefile = "gfx/interface/goals/TUR/2_the_looming_war.dds"			
+		texturefile = "gfx/interface/goals/TUR/2_the_looming_war.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_anti_russian_propaganda"
-		texturefile = "gfx/interface/goals/TUR/2_anti_russian_propaganda.dds"			
+		texturefile = "gfx/interface/goals/TUR/2_anti_russian_propaganda.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_promote_trade_unions"
-		texturefile = "gfx/interface/goals/TUR/11_trade_unions.dds"			
+		texturefile = "gfx/interface/goals/TUR/11_trade_unions.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_collectivize_agriculture"
-		texturefile = "gfx/interface/goals/TUR/11_collectivized_agriculture.dds"			
+		texturefile = "gfx/interface/goals/TUR/11_collectivized_agriculture.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_spirit_of_the_workers"
-		texturefile = "gfx/interface/goals/TUR/11_workers_spirit.dds"			
+		texturefile = "gfx/interface/goals/TUR/11_workers_spirit.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_deal_with_the_ultranationalists"
-		texturefile = "gfx/interface/goals/TUR/11_crush_fascism.dds"			
+		texturefile = "gfx/interface/goals/TUR/11_crush_fascism.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_deal_with_german_influence"
-		texturefile = "gfx/interface/goals/TUR/11_crush_german_influence.dds"			
+		texturefile = "gfx/interface/goals/TUR/11_crush_german_influence.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_spreading_the_revolution"
-		texturefile = "gfx/interface/goals/TUR/11_spreading_the_revolution.dds"			
+		texturefile = "gfx/interface/goals/TUR/11_spreading_the_revolution.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_socialist_syrian_revolution"
-		texturefile = "gfx/interface/goals/TUR/11_syrian_revolution.dds"			
+		texturefile = "gfx/interface/goals/TUR/11_syrian_revolution.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_alienate_enemies"
-		texturefile = "gfx/interface/goals/TUR/11_alien_capitalist.dds"			
+		texturefile = "gfx/interface/goals/TUR/11_alien_capitalist.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_closer_ties_with_japan"
-		texturefile = "gfx/interface/goals/TUR/11_ally_japan.dds"			
+		texturefile = "gfx/interface/goals/TUR/11_ally_japan.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_buy_japanese_guns"
-		texturefile = "gfx/interface/goals/TUR/11_buy_japanese_guns.dds"			
+		texturefile = "gfx/interface/goals/TUR/11_buy_japanese_guns.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_arabic_revolution"
-		texturefile = "gfx/interface/goals/TUR/11_arabic_revolution.dds"			
+		texturefile = "gfx/interface/goals/TUR/11_arabic_revolution.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_free_the_caucasian_workers"
-		texturefile = "gfx/interface/goals/TUR/11_free_the_caucasian_workers.dds"			
+		texturefile = "gfx/interface/goals/TUR/11_free_the_caucasian_workers.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_support_persian_commies"
-		texturefile = "gfx/interface/goals/TUR/11_persian_communism.dds"			
+		texturefile = "gfx/interface/goals/TUR/11_persian_communism.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_red_crescent_coalition"
-		texturefile = "gfx/interface/goals/TUR/11_red_crescent_coalition.dds"			
+		texturefile = "gfx/interface/goals/TUR/11_red_crescent_coalition.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_commies_elected"
-		texturefile = "gfx/interface/goals/TUR/11_commie_elections.dds"			
+		texturefile = "gfx/interface/goals/TUR/11_commie_elections.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_islamic_bastion_of_socialism"
-		texturefile = "gfx/interface/goals/TUR/11_the_man_the_myth_the_legend_kadri.dds"			
+		texturefile = "gfx/interface/goals/TUR/11_the_man_the_myth_the_legend_kadri.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_start_of_a_new_decade"
-		texturefile = "gfx/interface/goals/TUR/0_start_of_a_new_decade.dds"			
+		texturefile = "gfx/interface/goals/TUR/0_start_of_a_new_decade.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_constitution_of_1930"
-		texturefile = "gfx/interface/goals/TUR/1_constitution_of_1930.dds"			
+		texturefile = "gfx/interface/goals/TUR/1_constitution_of_1930.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_reconvene_the_enguru_parliament"
-		texturefile = "gfx/interface/goals/TUR/1_reconvene_the_enguru_parliament.dds"			
+		texturefile = "gfx/interface/goals/TUR/1_reconvene_the_enguru_parliament.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_triumph_of_prishtina"
-		texturefile = "gfx/interface/goals/TUR/1_triumph_of_prishtina.dds"			
+		texturefile = "gfx/interface/goals/TUR/1_triumph_of_prishtina.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_education_modernization"
-		texturefile = "gfx/interface/goals/TUR/1_education_modernization.dds"			
+		texturefile = "gfx/interface/goals/TUR/1_education_modernization.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_crush_sufism"
-		texturefile = "gfx/interface/goals/TUR/1_crush_sufism.dds"			
+		texturefile = "gfx/interface/goals/TUR/1_crush_sufism.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_reform_the_penal_code"
-		texturefile = "gfx/interface/goals/TUR/1_reform_the_penal_code.dds"			
+		texturefile = "gfx/interface/goals/TUR/1_reform_the_penal_code.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_hat_reform"
-		texturefile = "gfx/interface/goals/TUR/1_hat_reform.dds"			
+		texturefile = "gfx/interface/goals/TUR/1_hat_reform.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_womens_rights"
-		texturefile = "gfx/interface/goals/TUR/1_womens_rights.dds"			
+		texturefile = "gfx/interface/goals/TUR/1_womens_rights.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_new_civil_code"
-		texturefile = "gfx/interface/goals/TUR/1_new_civil_code.dds"			
+		texturefile = "gfx/interface/goals/TUR/1_new_civil_code.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_latinization"
-		texturefile = "gfx/interface/goals/TUR/1_latinization.dds"			
+		texturefile = "gfx/interface/goals/TUR/1_latinization.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_abolish_traditionalism"
-		texturefile = "gfx/interface/goals/TUR/1_abolish_traditionalism.dds"			
+		texturefile = "gfx/interface/goals/TUR/1_abolish_traditionalism.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_monarchy_compromise"
-		texturefile = "gfx/interface/goals/TUR/1_monarchy_compromise.dds"			
+		texturefile = "gfx/interface/goals/TUR/1_monarchy_compromise.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_forced_abdication"
-		texturefile = "gfx/interface/goals/TUR/1_forced_abdication.dds"			
+		texturefile = "gfx/interface/goals/TUR/1_forced_abdication.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_snap_election"
-		texturefile = "gfx/interface/goals/TUR/1_snap_elections.dds"			
+		texturefile = "gfx/interface/goals/TUR/1_snap_elections.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_federalists_elected"
-		texturefile = "gfx/interface/goals/TUR/12_federalists_win.dds"			
+		texturefile = "gfx/interface/goals/TUR/12_federalists_win.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_promote_the_turkish_nation"
-		texturefile = "gfx/interface/goals/TUR/12_promote_the_turkish_nation.dds"			
+		texturefile = "gfx/interface/goals/TUR/12_promote_the_turkish_nation.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_befriend_persia"
-		texturefile = "gfx/interface/goals/TUR/12_befriend_persia.dds"			
+		texturefile = "gfx/interface/goals/TUR/12_befriend_persia.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_befriend_arabia"
-		texturefile = "gfx/interface/goals/TUR/12_befriend_arabia.dds"			
+		texturefile = "gfx/interface/goals/TUR/12_befriend_arabia.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_konya_accords"
-		texturefile = "gfx/interface/goals/TUR/12_konya_accords.dds"			
+		texturefile = "gfx/interface/goals/TUR/12_konya_accords.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_invite_egypt"
-		texturefile = "gfx/interface/goals/TUR/12_ally_egypt.dds"			
+		texturefile = "gfx/interface/goals/TUR/12_ally_egypt.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_cooperate_with_germany"
-		texturefile = "gfx/interface/goals/TUR/12_cooperation_with_germany.dds"			
+		texturefile = "gfx/interface/goals/TUR/12_cooperation_with_germany.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_free_caucasians"
-		texturefile = "gfx/interface/goals/TUR/12_free_caucasians.dds"			
+		texturefile = "gfx/interface/goals/TUR/12_free_caucasians.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_kurdish_citizenship"
-		texturefile = "gfx/interface/goals/TUR/12_kurdish_citizenship.dds"			
+		texturefile = "gfx/interface/goals/TUR/12_kurdish_citizenship.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_armenian_citizenship"
-		texturefile = "gfx/interface/goals/TUR/12_armenian_citizenship.dds"			
+		texturefile = "gfx/interface/goals/TUR/12_armenian_citizenship.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_greek_citizenship"
-		texturefile = "gfx/interface/goals/TUR/12_greek_citizenship.dds"			
+		texturefile = "gfx/interface/goals/TUR/12_greek_citizenship.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_islam_compromise"
-		texturefile = "gfx/interface/goals/TUR/12_islam_compromise.dds"			
+		texturefile = "gfx/interface/goals/TUR/12_islam_compromise.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_new_constitution"
-		texturefile = "gfx/interface/goals/TUR/12_new_constitution.dds"			
+		texturefile = "gfx/interface/goals/TUR/12_new_constitution.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_form_the_turkish_federation"
-		texturefile = "gfx/interface/goals/TUR/12_form_the_turkish_federation.dds"			
+		texturefile = "gfx/interface/goals/TUR/12_form_the_turkish_federation.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_request_return_of_smyrna"
-		texturefile = "gfx/interface/goals/TUR/12_request_return_of_smyrna.dds"			
+		texturefile = "gfx/interface/goals/TUR/12_request_return_of_smyrna.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_new_kurdish_home"
-		texturefile = "gfx/interface/goals/TUR/12_new_kurdish_home.dds"			
+		texturefile = "gfx/interface/goals/TUR/12_new_kurdish_home.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_integrate_caucasia"
-		texturefile = "gfx/interface/goals/TUR/12_integrate_caucasia.dds"			
+		texturefile = "gfx/interface/goals/TUR/12_integrate_caucasia.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_death_of_prishtina"
-		texturefile = "gfx/interface/goals/TUR/1_death_of_prishtina.dds"			
+		texturefile = "gfx/interface/goals/TUR/1_death_of_prishtina.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_a_true_democracy"
-		texturefile = "gfx/interface/goals/TUR/1_a_true_democracy.dds"			
+		texturefile = "gfx/interface/goals/TUR/1_a_true_democracy.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_minority_representation"
-		texturefile = "gfx/interface/goals/TUR/12_minority_representation.dds"			
+		texturefile = "gfx/interface/goals/TUR/12_minority_representation.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_ally_russia"
-		texturefile = "gfx/interface/goals/TUR/3_ally_russia.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_ally_russia.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_claim_cyprus"
-		texturefile = "gfx/interface/goals/TUR/3_claim_cyprus.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_claim_cyprus.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_claim_east_thrace"
-		texturefile = "gfx/interface/goals/TUR/3_claim_east_thrace.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_claim_east_thrace.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_claim_izmir"
-		texturefile = "gfx/interface/goals/TUR/3_claim_izmir.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_claim_izmir.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_claim_latakia"
-		texturefile = "gfx/interface/goals/TUR/3_claim_latakia.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_claim_latakia.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_cleanse_germans"
-		texturefile = "gfx/interface/goals/TUR/3_cleanse_germans.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_cleanse_germans.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_cleanse_opposition"
-		texturefile = "gfx/interface/goals/TUR/3_cleanse_opposition.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_cleanse_opposition.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_commit_to_pan_turkism"
-		texturefile = "gfx/interface/goals/TUR/3_commit_to_pan_turkism.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_commit_to_pan_turkism.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_convince_the_people"
-		texturefile = "gfx/interface/goals/TUR/3_convince_the_peeps.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_convince_the_peeps.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_destroy_greece"
-		texturefile = "gfx/interface/goals/TUR/3_destroy_greece.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_destroy_greece.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_economic_intervention"
-		texturefile = "gfx/interface/goals/TUR/3_economic_intervention.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_economic_intervention.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_islamist_paramilitaries"
-		texturefile = "gfx/interface/goals/TUR/3_islamist_paramilitaries.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_islamist_paramilitaries.dds"
+	}
+	SpriteType = {
+		name = "GFX_TUR_islamic_army"
+		texturefile = "gfx/interface/goals/TUR/3_islamic_army.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_lands_which_were_stolen"
-		texturefile = "gfx/interface/goals/TUR/3_lands_which_were_stolen.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_lands_which_were_stolen.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_lone_wolf"
-		texturefile = "gfx/interface/goals/TUR/3_lone_wolf.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_lone_wolf.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_ministry_of_propaganda"
-		texturefile = "gfx/interface/goals/TUR/3_ministry_of_propaganda.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_ministry_of_propaganda.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_oppressed_caucasians"
-		texturefile = "gfx/interface/goals/TUR/3_oppressed_caucasians.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_oppressed_caucasians.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_pan_turkism"
-		texturefile = "gfx/interface/goals/TUR/3_pan_turkism.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_pan_turkism.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_panturkist_education"
-		texturefile = "gfx/interface/goals/TUR/3_panturkist_education.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_panturkist_education.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_purge_christians"
-		texturefile = "gfx/interface/goals/TUR/3_purge_christians.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_purge_christians.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_remilitarization_of_konstantiniyye"
-		texturefile = "gfx/interface/goals/TUR/3_remilitarization_of_konstantiniyye.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_remilitarization_of_konstantiniyye.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_revenge_for_balkan_war"
-		texturefile = "gfx/interface/goals/TUR/3_revenge_for_balkan_war.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_revenge_for_balkan_war.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_rostov_agreement"
-		texturefile = "gfx/interface/goals/TUR/3_rostov_agreement.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_rostov_agreement.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_send_diplomats_to_russia"
-		texturefile = "gfx/interface/goals/TUR/3_send_diplomats_to_russia.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_send_diplomats_to_russia.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_strike_the_bear"
-		texturefile = "gfx/interface/goals/TUR/3_strike_the_bear.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_strike_the_bear.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_sultan_kultu"
-		texturefile = "gfx/interface/goals/TUR/3_sultan_kultu.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_sultan_kultu.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_sultans_vision"
-		texturefile = "gfx/interface/goals/TUR/3_sultans_vision.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_sultans_vision.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_support_islamists"
-		texturefile = "gfx/interface/goals/TUR/3_support_islamists.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_support_islamists.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_turkification"
-		texturefile = "gfx/interface/goals/TUR/3_turkification.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_turkification.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_turks_of_syria"
-		texturefile = "gfx/interface/goals/TUR/3_turks_of_syria.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_turks_of_syria.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_war_with_iran"
-		texturefile = "gfx/interface/goals/TUR/3_war_with_iran.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_war_with_iran.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_wolf_of_islam"
-		texturefile = "gfx/interface/goals/TUR/3_wolf_of_islam.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_wolf_of_islam.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_proclaim_the_empire"
-		texturefile = "gfx/interface/goals/TUR/3_proclaim_the_empire.dds"			
+		texturefile = "gfx/interface/goals/TUR/3_proclaim_the_empire.dds"
 	}
 }
