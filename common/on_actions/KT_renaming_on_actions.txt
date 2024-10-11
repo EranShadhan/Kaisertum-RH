@@ -1,5 +1,5 @@
 on_actions = {
-	on_daily = {
+	on_state_control_changed = {
 		effect = {
 			if = {
 				limit = {
