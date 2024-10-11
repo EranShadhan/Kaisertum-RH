@@ -159,6 +159,8 @@
  SOV:0 "Russia"
  SOV_DEF:0 "Russia"
  SOV_ADJ:0 "Russian"
+
+
  LEN_communism:0 "Leningrad Soviet Socialist Republic"
  LEN_communism_DEF:0 "the Leningrad Soviet Socialist Republic"
  LEN_fascism:0 "Dictatorial State of Petrograd"
@@ -168,6 +170,28 @@
  LEN_democratic:0 "Republic of Petrograd"
  LEN_democratic_DEF:0 "The Republic of Petrograd"
  LEN_ADJ:0 "Leningrader"
+
+ RUD:0 "Russian Republic"
+ RUD_DEF:0 "the Russian Republic"
+ RUD_ADJ:0 "Russian Republican"
+
+ RUM:0 "Empire of All the Russias"
+ RUM_DEF:0 "the Empire of All the Russias"
+ RUM_ADJ:0 "Russian Monarchist"
+
+ RUF:0 "Russian State"
+ RUF_DEF:0 "the Russian State"
+ RUF_ADJ:0 "Russian Integralist"
+
+ UCS:0 "Union of Caucasian Soviet Socialist Republics"
+ UCS_DEF:0 "the Union of Caucasian Soviet Socialist Republics"
+ UCS_ADJ:0 "Caucasian"
+
+ CMG:0 "Crimean Military Governorate"
+ CMG_DEF:0 "the Crimean Military Governorate"
+ CMG_ADJ:0 "Crimean"
+
+
  USA_fascism:0 "Free American Empire"
  USA_fascism_DEF:0 "the Free American Empire"
  USA_democratic:0 "United States"

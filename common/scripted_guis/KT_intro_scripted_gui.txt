@@ -87,6 +87,7 @@ scripted_gui = {
 				}
 				else = {
 					set_global_flag = endonyms
+					KT_endonyms = yes #going to change the names immediately
 				}
 			}
 			intro_gui_button_settigns_two_click = {
