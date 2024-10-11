@@ -991,3 +991,23 @@ LEN = {
 	color = rgb { 168 72 72 }
 	color_ui = rgb { 168 72 72 }
 }
+RUD = {
+	color = rgb { 52 130 183 }
+	color_ui = rgb { 52 130 183 }
+}
+RUM = {
+	color = rgb { 26 147 26 }
+	color_ui = rgb { 26 147 26 }
+}
+RUF = {
+	color = rgb { 217 183 13 }
+	color_ui = rgb { 217 183 13 }
+}
+UCS = {
+	color = rgb { 155 3 3 }
+	color_ui = rgb { 155 3 3 }
+}
+CMG = {
+	color = rgb { 54 220 242 }
+	color_ui = rgb { 54 220 242 }
+}

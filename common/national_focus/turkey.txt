@@ -4333,7 +4333,6 @@ focus = {
 
 
 		available = {
-			has_country_flag = TUR_send_diplomats_to_russia
 		}
 		
 		relative_position_id = TUR_send_diplomats_to_russia
