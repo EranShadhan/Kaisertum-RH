@@ -36,6 +36,66 @@ on_actions = {
 					has_global_flag = endonyms
 					any_country = {
 						limit = {
+							is_polish_tag = yes
+						}
+						controls_state = 88
+					}
+				}
+				88 = { set_state_name = "Krakow" }
+				set_province_name = { id = 9427 name = "Krakow" }
+				else_if = {
+					limit = {
+						has_global_flag = endonyms
+						any_country = {
+							limit = {
+								is_german_tag = yes
+							}
+							controls_state = 88
+						}
+					}
+					88 = { set_state_name = "Krakau" }
+					set_province_name = { id = 9472 name = "Krakau" }
+				}
+				else = {
+					88 = { set_state_name = "Krakow" }
+					set_province_name = { id = 9472 name = "Krakow" }
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = endonyms
+					any_country = {
+						limit = {
+							is_polish_tag = yes
+						}
+						controls_state = 91
+					}
+				}
+				91 = { set_state_name = "Lwow" }
+				set_province_name = { id = 11479 name = "Lwow" }
+				else_if = {
+					limit = {
+						has_global_flag = endonyms
+						any_country = {
+							limit = {
+								is_german_tag = yes
+							}
+							controls_state = 91
+						}
+					}
+					91 = { set_state_name = "Lemberg" }
+					set_province_name = { id = 11479 name = "Lemberg" }
+				}
+				else = {
+					91 = { set_state_name = "Lviv" }
+					set_province_name = { id = 11479 name = "Lviv" }
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = endonyms
+					any_country = {
+						limit = {
 							is_czechoslovak_tag = yes
 						}
 						controls_state = 71
