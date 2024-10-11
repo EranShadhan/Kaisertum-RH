@@ -476,4 +476,21 @@ spriteTypes = {
 		name = "GFX_TUR_proclaim_the_empire"
 		texturefile = "gfx/interface/goals/TUR/3_proclaim_the_empire.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_goal_TUR_hail_to_antun"
+		texturefile = "gfx/interface/goals/TUR/TUR_hail_to_antun.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_TUR_invite_antun"
+		texturefile = "gfx/interface/goals/TUR/TUR_invite_antun.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_TUR_choice"
+		texturefile = "gfx/interface/goals/TUR/TUR_choice.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_TUR_oppresors"
+		texturefile = "gfx/interface/goals/TUR/TUR_oppresors.png"
+	}
 }
