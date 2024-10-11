@@ -82,8 +82,8 @@ KT_endonyms = {
 				controls_state = 88
 			}
 		}
-		88 = { set_state_name = "Krakow" }
-		set_province_name = { id = 9427 name = "Krakow" }
+		88 = { set_state_name = "Kraków" }
+		set_province_name = { id = 9427 name = "Kraków" }
 		else_if = {
 			limit = {
 				has_global_flag = endonyms
@@ -97,9 +97,22 @@ KT_endonyms = {
 			88 = { set_state_name = "Krakau" }
 			set_province_name = { id = 9472 name = "Krakau" }
 		}
+		else_if = {
+			limit = {
+				has_global_flag = endonyms
+				any_country = {
+					limit = {
+						is_czechoslovak_tag = yes
+					}
+					controls_state = 88
+				}
+			}
+			88 = { set_state_name = "Krakov" }
+			set_province_name = { id = 9472 name = "Krakov" }
+		}
 		else = {
-			88 = { set_state_name = "Krakow" }
-			set_province_name = { id = 9472 name = "Krakow" }
+			88 = { set_state_name = "Cracow" }
+			set_province_name = { id = 9472 name = "Cracow" }
 		}
 	}
 	if = {
@@ -127,9 +140,35 @@ KT_endonyms = {
 			91 = { set_state_name = "Lemberg" }
 			set_province_name = { id = 11479 name = "Lemberg" }
 		}
-		else = {
+		else_if = {
+			limit = {
+				has_global_flag = endonyms
+				any_country = {
+					limit = {
+						is_ukrainian_tag = yes
+					}
+					controls_state = 91
+				}
+			}
 			91 = { set_state_name = "Lviv" }
 			set_province_name = { id = 11479 name = "Lviv" }
+		}
+		else_if = {
+			limit = {
+				has_global_flag = endonyms
+				any_country = {
+					limit = {
+						is_ukrainian_tag = yes
+					}
+					controls_state = 91
+				}
+			}
+			91 = { set_state_name = "Lviv" }
+			set_province_name = { id = 11479 name = "Lviv" }
+		}
+		else = {
+			91 = { set_state_name = "Lvov" }
+			set_province_name = { id = 11479 name = "Lvov" }
 		}
 	}
 	if = {
