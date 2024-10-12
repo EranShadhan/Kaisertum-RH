@@ -89,11 +89,9 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.1
-				drift_defence_factor = -0.5
-				political_power_factor = -0.33
 			}
 		}
-		FRA_defeatismm = {
+		FRA_defeatism = {
 
 			picture = FRA_defeatism
 			
@@ -176,47 +174,81 @@ ideas = {
 				industrial_capacity_factory = 0.1
 			}
 		}
-		FRA_FRA_RUS_collaboration = {
+ FRA_spirit_of_the_war_1 = {
 
-			picture = FRA_RUS_collaboration
 			
 			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				always = yes
+				always = no
 			}
 
 			removal_cost = -1
+			
 			modifier = {
-				country_resource_aluminium = 10
-				country_resource_steel = 35
-				country_resource_oil = 25
-			}
-			targeted_modifier = {
-				tag = SOV    # this can also take a variable that stores a scope
-				cic_to_target_factor = 0.1
+				defence = 0.05
+				army_core_defence_factor = 0.1
+				army_morale_factor = 0.1
 			}
 		}
-		FRA_failure_of_marseille = {
+		FRA_spirit_of_the_war_2 = {
 
-			picture = FRA_the_failure_of_marseille
 			
 			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				industrial_capacity_dockyard = -0.33
-				war_support_factor = -0.15
+				always = no
 			}
 
 			removal_cost = -1
+			
+			modifier = {
+				defence = 0.15
+				army_core_defence_factor = 0.2
+				army_morale_factor = 0.2
+			}
+		}
+		FRA_spirit_of_the_war_3 = {
 
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				defence = 0.25
+				army_core_defence_factor = 0.3
+				army_morale_factor = 0.3
+			}
+		}
+		FRA_spirit_of_the_war_4 = {
+
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				defence = 0.35
+				army_core_defence_factor = 0.4
+				army_morale_factor = 0.4
+			}
 		}
 	}
 }

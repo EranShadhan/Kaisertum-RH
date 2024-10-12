@@ -1,12 +1,12 @@
 spriteTypes = {
 
 	progressbartype = {
-		name = "GFX_FRA_EDG_progressbar"
-		textureFile1 = "gfx/interface/decisions/FRA/FRA_progressbar_empty.png"
-		textureFile2 = "gfx/interface/decisions/FRA/FRA_progressbar_full.png"
+		name = "GFX_decisions_FRA_EDG_progressbar"
+		textureFile1 = "gfx/interface/decisions/FRA/FRA_progressbar_full.png"
+		textureFile2 = "gfx/interface/decisions/FRA/FRA_progressbar_empty.png"
 		hori
-		color = { 150 150 150 }
-		colortwo = { 4 4 73 }
+		color = { 13 59 8 }
+		colortwo = { 62 62 62 }
 		size = {
 			x = 99
 			y = 420

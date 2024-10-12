@@ -64,6 +64,91 @@ on_actions = {
 			}
 		}
 	}
+	on_daily_FRA = {
+		effect = {
+			if = {
+				limit = {
+					AND = {
+					check_variable = { var = global.var_EDG_progressbar value = 20 compare = greater_than_or_equals}
+					check_variable = { var = global.var_EDG_progressbar value = 40 compare = less_than }
+					}
+				}
+				add_ideas = FRA_spirit_of_the_war_1
+				if = {
+					limit = { has_idea = FRA_spirit_of_the_war_2 }
+					remove_ideas = FRA_spirit_of_the_war_2
+				}
+				if = {
+					limit = { has_idea = FRA_spirit_of_the_war_3 }
+					remove_ideas = FRA_spirit_of_the_war_3
+				}
+				if = {
+					limit = { has_idea = FRA_spirit_of_the_war_4 }
+					remove_ideas = FRA_spirit_of_the_war_4
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+					check_variable = { var = global.var_EDG_progressbar value = 40 compare = greater_than_or_equals}
+					check_variable = { var = global.var_EDG_progressbar value = 60 compare = less_than }
+					}
+				}
+				add_ideas = FRA_spirit_of_the_war_2
+				if = {
+					limit = { has_idea = FRA_spirit_of_the_war_1 }
+					remove_ideas = FRA_spirit_of_the_war_1
+				}
+				if = {
+					limit = { has_idea = FRA_spirit_of_the_war_3 }
+					remove_ideas = FRA_spirit_of_the_war_3
+				}
+				if = {
+					limit = { has_idea = FRA_spirit_of_the_war_4 }
+					remove_ideas = FRA_spirit_of_the_war_4
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+					check_variable = { var = global.var_EDG_progressbar value = 60 compare = greater_than_or_equals}
+					check_variable = { var = global.var_EDG_progressbar value = 80 compare = less_than }
+					}
+				}
+				add_ideas = FRA_spirit_of_the_war_3
+				if = {
+					limit = { has_idea = FRA_spirit_of_the_war_1 }
+					remove_ideas = FRA_spirit_of_the_war_1
+				}
+				if = {
+					limit = { has_idea = FRA_spirit_of_the_war_2 }
+					remove_ideas = FRA_spirit_of_the_war_2
+				}
+				if = {
+					limit = { has_idea = FRA_spirit_of_the_war_4 }
+					remove_ideas = FRA_spirit_of_the_war_4
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { var = global.var_EDG_progressbar value = 80 compare = greater_than_or_equals}
+				}
+				add_ideas = FRA_spirit_of_the_war_4
+				if = {
+					limit = { has_idea = FRA_spirit_of_the_war_1 }
+					remove_ideas = FRA_spirit_of_the_war_1
+				}
+				if = {
+					limit = { has_idea = FRA_spirit_of_the_war_2 }
+					remove_ideas = FRA_spirit_of_the_war_2
+				}
+				if = {
+					limit = { has_idea = FRA_spirit_of_the_war_3 }
+					remove_ideas = FRA_spirit_of_the_war_3
+				}
+			}
+		}
+	}
 	on_daily_PER = {
 		effect = {
 			if = {
@@ -102,9 +187,267 @@ on_actions = {
 			}
 		}
 	}
+
 	on_state_control_changed = {
 		effect = {
+			if = {
+				limit = {
+					FROM.FROM = { state = 16 }
+				}
+				if =  {
+				limit = {
+					AND = {
+						NOT = { 16 = { is_controlled_by = FRA } }
+						16 = { is_core_of = FRA }
+					}
+				}
+				add_to_variable = {
+					var = global.var_EDG_progressbar
+					value = 25
+				}
+
+				}
+				else = {
+					if =  {
+							limit = {
+								AND = {
+									{ 16 = { is_controlled_by = FRA } }
+									16 = { is_core_of = FRA }
+								}
+							}
+					add_to_variable = {
+						var = global.var_EDG_progressbar
+						value = -25
+					}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM.FROM = { state = 20 }
+				}
+				if =  {
+				limit = {
+					AND = {
+						NOT = { 20 = { is_controlled_by = FRA } }
+						20 = { is_core_of = FRA }
+					}
+				}
+				add_to_variable = {
+					var = global.var_EDG_progressbar
+					value = 15
+				}
+
+				}
+				else = {
+					if =  {
+							limit = {
+								AND = {
+									{ 20 = { is_controlled_by = FRA } }
+									20 = { is_core_of = FRA }
+								}
+							}
+					add_to_variable = {
+						var = global.var_EDG_progressbar
+						value = -15
+					}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM.FROM = { state = 19 }
+				}
+				if =  {
+				limit = {
+					AND = {
+						NOT = { 19 = { is_controlled_by = FRA } }
+						19 = { is_core_of = FRA }
+					}
+				}
+				add_to_variable = {
+					var = global.var_EDG_progressbar
+					value = 15
+				}
+
+				}
+				else = {
+					if =  {
+							limit = {
+								AND = {
+									{ 19 = { is_controlled_by = FRA } }
+									19 = { is_core_of = FRA }
+								}
+							}
+					add_to_variable = {
+						var = global.var_EDG_progressbar
+						value = -15
+					}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM.FROM = { state = 21 }
+				}
+				if =  {
+				limit = {
+					AND = {
+						NOT = { 21 = { is_controlled_by = FRA } }
+						21 = { is_core_of = FRA }
+					}
+				}
+				add_to_variable = {
+					var = global.var_EDG_progressbar
+					value = 10
+				}
+
+				}
+				else = {
+					if =  {
+							limit = {
+								AND = {
+									{ 21 = { is_controlled_by = FRA } }
+									21 = { is_core_of = FRA }
+								}
+							}
+					add_to_variable = {
+						var = global.var_EDG_progressbar
+						value = -10
+					}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM.FROM = { state = 14 }
+				}
+				if =  {
+				limit = {
+					AND = {
+						NOT = { 14 = { is_controlled_by = FRA } }
+						14 = { is_core_of = FRA }
+					}
+				}
+				add_to_variable = {
+					var = global.var_EDG_progressbar
+					value = 10
+				}
+
+				}
+				else = {
+					if =  {
+							limit = {
+								AND = {
+									{ 14 = { is_controlled_by = FRA } }
+									14 = { is_core_of = FRA }
+								}
+							}
+					add_to_variable = {
+						var = global.var_EDG_progressbar
+						value = -10
+					}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM.FROM = { state = 1076 }
+				}
+				if =  {
+				limit = {
+					AND = {
+						NOT = { 1076 = { is_controlled_by = FRA } }
+						1076 = { is_core_of = FRA }
+					}
+				}
+				add_to_variable = {
+					var = global.var_EDG_progressbar
+					value = 10
+				}
+
+				}
+				else = {
+					if =  {
+							limit = {
+								AND = {
+									{ 1076 = { is_controlled_by = FRA } }
+									1076 = { is_core_of = FRA }
+								}
+							}
+					add_to_variable = {
+						var = global.var_EDG_progressbar
+						value = -10
+					}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM.FROM = { state = 31 }
+				}
+				if =  {
+				limit = {
+					AND = {
+						NOT = { 31 = { is_controlled_by = FRA } }
+						31 = { is_core_of = FRA }
+					}
+				}
+				add_to_variable = {
+					var = global.var_EDG_progressbar
+					value = 10
+				}
+
+				}
+				else = {
+					if =  {
+							limit = {
+								AND = {
+									{ 31 = { is_controlled_by = FRA } }
+									31 = { is_core_of = FRA }
+								}
+							}
+					add_to_variable = {
+						var = global.var_EDG_progressbar
+						value = -10
+					}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM.FROM = { state = 30 }
+				}
+				if =  {
+				limit = {
+					AND = {
+						NOT = { 30 = { is_controlled_by = FRA } }
+						30 = { is_core_of = FRA }
+					}
+				}
+				add_to_variable = {
+					var = global.var_EDG_progressbar
+					value = 5
+				}
+
+				}
+				else = {
+					if =  {
+							limit = {
+								AND = {
+									{ 30 = { is_controlled_by = FRA } }
+									30 = { is_core_of = FRA }
+								}
+							}
+					add_to_variable = {
+						var = global.var_EDG_progressbar
+						value = -5
+					}
+					}
+				}
+			}
 			KT_endonyms = yes
 		}
 	}
+	
 }
