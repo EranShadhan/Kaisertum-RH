@@ -8,4 +8,5 @@ FRA_communists = {
 	disable_strategic_redeployment = 1
 	recruitable_population = -0.33
 	state_production_speed_buildings_factor = -0.1
+	communism_drift = 0.01
 }

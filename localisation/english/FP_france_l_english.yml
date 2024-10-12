@@ -18,12 +18,13 @@
  FRA_Carefully_Managed_Production:0 "Carefully Managed Production"
  FRA_Carefully_Managed_Production_desc:0 "Due to the territories we lost, our production capability has been neutered. We must make sure every gun we produce is as good as it can possibly be as to not waste our few materials."
  
- FRA_defeatism_desc:0 "Though the higher ups promise greatness and vow revenge, the situation on the ground is much different. Between 1870 and 1916, the people have fought and lost two massive wars to the Germans and are exhausted. Everyone wants their land back, but few are willing to go in for a war of revenge. The French spark is close to being snuffed out for good, and must be rekindled if if we don't want to lose a third time."
+ FRA_defeatismm_desc:0 "Though the higher ups promise greatness and vow revenge, the situation on the ground is much different. Between 1870 and 1916, the people have fought and lost two massive wars to the Germans and are exhausted. Everyone wants their land back, but few are willing to go in for a war of revenge. The French spark is close to being snuffed out for good, and must be rekindled if if we don't want to lose a third time."
+ FRA_defeatismm:0 "Defeatist Population"
  
  FRA_revanchism:0 "Revanchist Governament"
  FRA_revanchism_desc:0 "Our government has put as its priority the conquest of ex-French lands, if not more. We will make France great again, just like how Napoleon conquered the European continent, we shall do it again, even tho this time with a different ideology."
  
- FRA_fascist_pary:0 "Parti Revival Francais"
+ FRA_fascist_pary:0 "Parti du Renouveau National"
  FRA_Axis:0 "Treaty of Versailles"
 
  FRA_communists:0 "Communist Unrest" 

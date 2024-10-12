@@ -89,9 +89,11 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.1
+				drift_defence_factor = -0.5
+				political_power_factor = -0.33
 			}
 		}
-		FRA_defeatism = {
+		FRA_defeatismm = {
 
 			picture = FRA_defeatism
 			
@@ -173,6 +175,48 @@ ideas = {
 				production_factory_efficiency_gain_factor = -0.1
 				industrial_capacity_factory = 0.1
 			}
+		}
+		FRA_FRA_RUS_collaboration = {
+
+			picture = FRA_RUS_collaboration
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				country_resource_aluminium = 10
+				country_resource_steel = 35
+				country_resource_oil = 25
+			}
+			targeted_modifier = {
+				tag = SOV    # this can also take a variable that stores a scope
+				cic_to_target_factor = 0.1
+			}
+		}
+		FRA_failure_of_marseille = {
+
+			picture = FRA_the_failure_of_marseille
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_dockyard = -0.33
+				war_support_factor = -0.15
+			}
+
+			removal_cost = -1
+
 		}
 	}
 }

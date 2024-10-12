@@ -33,6 +33,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/FRA/FRA_carefully_manage_production.png"
 	}
 	spriteType = {
+		name = "GFX_idea_FRA_RUS_collaboration"
+		texturefile = "gfx/interface/ideas/FRA/FRA_RUS_collaboration.png"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_the_failure_of_marseille"
+		texturefile = "gfx/interface/ideas/FRA/FRA_the_failure_of_marseille.png"
+	}
+	spriteType = {
 		name = "GFX_portrait_FRA_france_fascist_party"
 		texturefile = "gfx/leaders/FRA/FRA_portrait_france_fascist_party.png"
 	}

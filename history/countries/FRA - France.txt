@@ -239,10 +239,12 @@ add_ideas = {
 	FRA_secret_rearmament
 	FRA_super_heavy_tank_programme
 	FRA_republican_collapse
-	FRA_defeatism
+	FRA_defeatismm
 	FRA_revanchism
 	FRA_Best_Teacher
 	FRA_Carefully_Managed_Production
+	FRA_FRA_RUS_collaboration
+	FRA_failure_of_marseille
 
 	low_economic_mobilisation
 	limited_conscription
