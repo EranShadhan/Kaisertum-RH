@@ -493,4 +493,16 @@ spriteTypes = {
 		name = "GFX_goal_TUR_oppresors"
 		texturefile = "gfx/interface/goals/TUR/TUR_oppresors.png"
 	}
+	SpriteType = {
+		name = "GFX_goal_TUR_moderatism"
+		texturefile = "gfx/interface/goals/TUR/TUR_moderatism.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_TUR_national_evolution"
+		texturefile = "gfx/interface/goals/TUR/TUR_national_evolution.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_TUR_natsoc_societies"
+		texturefile = "gfx/interface/goals/TUR/TUR_natsoc_societies.png"
+	}
 }

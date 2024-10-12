@@ -21,7 +21,7 @@ focus_tree = {
 focus = {
     id = TUR_finish_reconstruction
     icon = GFX_goal_generic_construct_infrastructure
-    x = 53
+    x = 49
     y = 0
     cost = 10
 
@@ -1395,7 +1395,7 @@ focus = {
 	focus = {
 		id = TUR_start_military_reforms
 		icon = GFX_TUR_start_military_reforms
-		x = 53
+		x = 48
 		y = 9
 
 		cost = 6
@@ -2105,7 +2105,7 @@ focus = {
 	focus = {
 		id = TUR_start_of_a_new_decade
 		cost = 5
-		x = 23
+		x = 21
 		y = 0
 		icon = GFX_TUR_start_of_a_new_decade
 
@@ -2122,7 +2122,7 @@ focus = {
 	focus = {
 		id = TUR_constitution_of_1930
 		cost = 6
-		x = -16
+		x = -14
 		y = 1
 		relative_position_id = TUR_start_of_a_new_decade
 		icon = GFX_TUR_constitution_of_1930
@@ -2217,7 +2217,7 @@ focus = {
 	focus = {
 		id = TUR_close_sufi_orders
 		cost = 5
-		x = -2
+		x = -1
 		y = 1
 		icon = GFX_TUR_crush_sufism
 
@@ -2252,7 +2252,7 @@ focus = {
 	focus = {
 		id = TUR_abolish_traditional_headgear
 		cost = 5
-		x = 2
+		x = 1
 		y = 1
 		icon = GFX_TUR_hat_reform
 
@@ -2294,7 +2294,7 @@ focus = {
 	focus = {
 		id = TUR_new_civil_code
 		cost = 5
-		x = -2
+		x = -1
 		y = 1
 		icon = GFX_TUR_new_civil_code
 
@@ -3077,7 +3077,7 @@ focus = {
 	focus = {
 		id = TUR_recognize_kurdish_citizenship
 		cost = 6
-		x = -1
+		x = -2
 		y = 2
 		icon = GFX_TUR_kurdish_citizenship
 
@@ -3099,7 +3099,7 @@ focus = {
 	focus = {
 		id = TUR_the_islam_compromise
 		cost = 5
-		x = 2
+		x = 1
 		y = 1
 		icon = GFX_TUR_islam_compromise
 
@@ -3630,7 +3630,7 @@ focus = {
 		cost = 5
 		x = 3
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_TUR_moderatism
 
 		prerequisite = {
 			focus = TUR_the_choice
@@ -3869,7 +3869,7 @@ focus = {
 	focus = {
 		id = TUR_the_sultans_grip_remains_firm
 		cost = 5
-		x = 16
+		x = 14
 		y = 1
 		icon = GFX_TUR_sultans_vision
 
@@ -4096,7 +4096,7 @@ focus = {
 		id = TUR_the_wolf_of_islam
 		cost = 5
 		x = -1
-		y = 2
+		y = 1
 		icon = GFX_TUR_wolf_of_islam
 
 		prerequisite = {
@@ -4118,7 +4118,7 @@ focus = {
 		id = TUR_islamist_paramilitaries
 		cost = 5
 		x = 1
-		y = 2
+		y = 1
 		icon = GFX_TUR_islamist_paramilitaries
 
 		prerequisite = {
@@ -4168,7 +4168,7 @@ focus = {
 		id = TUR_commit_to_pan_turkism
 		cost = 5
 		x = 0
-		y = 2
+		y = 1
 		icon = GFX_TUR_commit_to_pan_turkism
 
 		prerequisite = {
@@ -4358,7 +4358,7 @@ focus = {
 		id = TUR_pursue_an_alliance_with_russia
 		cost = 5
 		x = 0
-		y = 2
+		y = 1
 		icon = GFX_TUR_ally_russia
 
 		prerequisite = {
@@ -4542,7 +4542,7 @@ focus = {
 		id = TUR_the_lands_which_were_stolen
 		cost = 5
 		x = 0
-		y = 2
+		y = 1
 		icon = GFX_TUR_lands_which_were_stolen
 
 		prerequisite = {
@@ -4846,7 +4846,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_TUR_natsoc_societies
 
 		prerequisite = {
 			focus = TUR_the_syrian_way
@@ -4863,7 +4863,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_TUR_national_evolution
 
 		prerequisite = {
 			focus = TUR_the_syrian_way
