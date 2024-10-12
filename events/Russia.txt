@@ -198,9 +198,15 @@ country_event = {
 			CMG = {
 				transfer_state = 137
 				transfer_state = 1022
+
+				add_state_core = 137
+				add_state_core = 1022
 			}
 			UKR = {
 				transfer_state = 94
+				transfer_state = 1020
+			}
+			EUA = {
 				transfer_state = 193
 				transfer_state = 196
 				transfer_state = 200
@@ -219,11 +225,65 @@ country_event = {
 				transfer_state = 1014
 				transfer_state = 1015
 				transfer_state = 1018
-				transfer_state = 1020
 				transfer_state = 1045
 				transfer_state = 1046
 				transfer_state = 1047
+ 
+				add_state_core = 137
+				add_state_core = 193
+				add_state_core = 196
+				add_state_core = 200
+				add_state_core = 221
+				add_state_core = 225
+				add_state_core = 227
+				add_state_core = 228
+				add_state_core = 240
+				add_state_core = 241
+				add_state_core = 259
+				add_state_core = 1007
+				add_state_core = 1008
+				add_state_core = 1010
+				add_state_core = 1012
+				add_state_core = 1013
+				add_state_core = 1014
+				add_state_core = 1015
+				add_state_core = 1018
+				add_state_core = 1022
+				add_state_core = 1045
+				add_state_core = 1046
+				add_state_core = 1047
+
 			}
+			SOV = {
+			
+				remove_state_core = 94
+				remove_state_core = 137
+				remove_state_core = 193
+				remove_state_core = 196
+				remove_state_core = 200
+				remove_state_core = 221
+				remove_state_core = 225
+				remove_state_core = 227
+				remove_state_core = 228
+				remove_state_core = 240
+				remove_state_core = 241
+				remove_state_core = 259
+				remove_state_core = 1007
+				remove_state_core = 1008
+				remove_state_core = 1010
+				remove_state_core = 1012
+				remove_state_core = 1013
+				remove_state_core = 1014
+				remove_state_core = 1015
+				remove_state_core = 1018
+				remove_state_core = 1020
+				remove_state_core = 1022
+				remove_state_core = 1045
+				remove_state_core = 1046
+				remove_state_core = 1047
+
+			}
+
 		}
 	}
 }

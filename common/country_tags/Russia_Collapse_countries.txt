@@ -1,3 +1,4 @@
+EUA	= "countries/Hetmanat.txt"
 RUD	= "countries/Russian Democrats.txt"
 RUM	= "countries/Russian Monarchists.txt"
 RUF	= "countries/Russian Fascists.txt"
