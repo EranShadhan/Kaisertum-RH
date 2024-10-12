@@ -91,5 +91,88 @@ ideas = {
 				stability_factor = -0.1
 			}
 		}
+		FRA_defeatism = {
+
+			picture = FRA_defeatism
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = -0.1
+				conscription = -0.005
+				army_org_factor = -0.1
+			}
+		}
+		FRA_revanchism = {
+
+			picture = FRA_revanchism
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				fascism_acceptance = 10
+				fascism_drift = 0.02
+				justify_war_goal_time = -0.25
+			}
+		}
+		FRA_Best_Teacher = {
+
+			picture = FRA_Best_Teacher
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				land_doctrine_cost_factor = -0.05
+			}
+
+			research_bonus = {
+				infantry_weapons = 0.05
+			}
+		}
+
+		FRA_Carefully_Managed_Production = {
+
+			picture = FRA_carefully_manage_production
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
 	}
 }

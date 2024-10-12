@@ -13,6 +13,26 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/FRA/FRA_embargoed_by_germany.png"
 	}
 	spriteType = {
+		name = "GFX_idea_FRA_defeatism"
+		texturefile = "gfx/interface/ideas/FRA/FRA_defeatism.png"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_revanchism"
+		texturefile = "gfx/interface/ideas/FRA/FRA_revanchism.png"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Best_Teacher"
+		texturefile = "gfx/interface/ideas/FRA/FRA_Best_Teacher.png"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_south_communists"
+		texturefile = "gfx/interface/ideas/FRA/FRA_south_communists.png"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_carefully_manage_production"
+		texturefile = "gfx/interface/ideas/FRA/FRA_carefully_manage_production.png"
+	}
+	spriteType = {
 		name = "GFX_portrait_FRA_france_fascist_party"
 		texturefile = "gfx/leaders/FRA/FRA_portrait_france_fascist_party.png"
 	}

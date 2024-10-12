@@ -2,7 +2,67 @@
 
 	set_oob = "FRA_1930"
 
-
+	31 =  {
+		add_dynamic_modifier = { 
+			modifier = FRA_communists
+		}
+	}
+	806 =  {
+		add_dynamic_modifier = { 
+			modifier = FRA_communists
+		}
+	}
+	19 =  {
+		add_dynamic_modifier = { 
+			modifier = FRA_communists
+		}
+	}
+	25 =  {
+		add_dynamic_modifier = { 
+			modifier = FRA_communists
+		}
+	}
+	23 =  {
+		add_dynamic_modifier = { 
+			modifier = FRA_communists
+		}
+	}
+	33 =  {
+		add_dynamic_modifier = { 
+			modifier = FRA_communists
+		}
+	}
+	22 =  {
+		add_dynamic_modifier = { 
+			modifier = FRA_communists
+		}
+	}
+	26 =  {
+		add_dynamic_modifier = { 
+			modifier = FRA_communists
+		}
+	}
+	20 =  {
+		add_dynamic_modifier = { 
+			modifier = FRA_communists
+		}
+	}
+	32 =  {
+		add_dynamic_modifier = { 
+			modifier = FRA_communists
+		}
+	}
+	21 =  {
+		add_dynamic_modifier = { 
+			modifier = FRA_communists
+		}
+	}
+	851 =  {
+		add_dynamic_modifier = { 
+			modifier = FRA_communists
+		}
+	}
+	
 starting_train_buffer = 2
 
 if = {
@@ -179,10 +239,14 @@ add_ideas = {
 	FRA_secret_rearmament
 	FRA_super_heavy_tank_programme
 	FRA_republican_collapse
-	
+	FRA_defeatism
+	FRA_revanchism
+	FRA_Best_Teacher
+	FRA_Carefully_Managed_Production
+
 	low_economic_mobilisation
 	limited_conscription
-	german_customs_union_leader
+	
 }
 
 recruit_character = FRA_Prince_Jean

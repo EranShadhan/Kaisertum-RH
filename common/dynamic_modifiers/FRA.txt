@@ -1,0 +1,11 @@
+FRA_communists = { 
+	icon = GFX_idea_FRA_south_communists
+	remove_trigger = { 
+		controller = {
+			NOT = { tag = FRA }
+		}
+	}
+	disable_strategic_redeployment = 1
+	recruitable_population = -0.33
+	state_production_speed_buildings_factor = -0.1
+}
