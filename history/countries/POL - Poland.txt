@@ -5,7 +5,7 @@ set_cosmetic_tag = POL_KINGDOM
 add_ideas = {
 german_customs_union_member
 POL_pmo_insurgency
-POL_german_economic_influence
+POL_german_economic_exploitation
 }
 
 if = {

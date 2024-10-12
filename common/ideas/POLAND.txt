@@ -2,7 +2,7 @@ ideas = {
 
 country = {
 
-POL_german_economic_influence = {
+POL_german_economic_exploitation = {
 
 
 allowed = {
