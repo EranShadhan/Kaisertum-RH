@@ -8,6 +8,12 @@ characters={
 		}
 		country_leader = {
 			ideology = oligarchism
+			
+			traits = {
+				SER_puppet_ruler
+				SER_general_dumbass
+			}
+			
 			expire = "1953.3.1.1"
 			id = -1
 		}
