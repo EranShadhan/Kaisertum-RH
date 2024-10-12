@@ -75,6 +75,7 @@ set_cosmetic_tag = SER_MNT
 recruit_character = SER_filip_filipovic
 recruit_character = SER_sima_markovic
 recruit_character = SER_elisabeth_marie
+recruit_character = SER_kanye_west
 recruit_character = SER_acd2
 recruit_character = SER_communist_guy
 recruit_character = SER_acr
