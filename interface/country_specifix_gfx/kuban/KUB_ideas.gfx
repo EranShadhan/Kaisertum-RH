@@ -1,9 +1,11 @@
 spriteTypes = {
+
 	spriteType = {
-		name = "KUB_cossack_spirit"
-		texturefile = "gfx/interface/ideas/KUB/idea_KUB_cossack_spirit.png"
+		name = "GFX_idea_KUB_cossack"
+		texturefile = "gfx/interface/ideas/KUB/idea_KUB_cossack.png"
 	}
 	
-	
+
+
 }
 

@@ -83,9 +83,445 @@
 		}
 	}
 	focus = {
+		id = FRA_secure_fascist_state
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_darnaud}
+		relative_position_id = FRA_darnaud
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_clear_southern_communist_resistance
+		icon = GFX_
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_secure_fascist_state}
+		relative_position_id = FRA_secure_fascist_state
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_promote_nationalism
+		icon = GFX_
+		x = -3
+		y = 1
+		
+		prerequisite = { focus = FRA_secure_fascist_state}
+		relative_position_id = FRA_secure_fascist_state
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_luce_but_worse
+		icon = GFX_
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_promote_nationalism}
+		relative_position_id = FRA_promote_nationalism
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_free_the_marseilles_ports
+		icon = GFX_
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_promote_nationalism}
+		relative_position_id = FRA_promote_nationalism
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_suppress_dialects
+		icon = GFX_
+		x = 2
+		y = 1
+		
+		prerequisite = { focus = FRA_luce_but_worse}
+		relative_position_id = FRA_luce_but_worse
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_create_ep
+		icon = GFX_
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_luce_but_worse}
+		relative_position_id = FRA_luce_but_worse
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_ensure_ep_loyalty
+		icon = GFX_
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_create_ep}
+		relative_position_id = FRA_create_ep
+		mutually_exclusive = { focus = FRA_fake_burgundy}
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_fake_burgundy
+		icon = GFX_
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_create_ep}
+		relative_position_id = FRA_create_ep
+		mutually_exclusive = { focus = FRA_ensure_ep_loyalty}
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_stabilize_the_state
+		icon = GFX_
+		x = 3
+		y = 1
+		
+		prerequisite = { focus = FRA_clear_southern_communist_resistance}
+		relative_position_id = FRA_clear_southern_communist_resistance
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_promove_militarism
+		icon = GFX_
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_clear_southern_communist_resistance}
+		relative_position_id = FRA_clear_southern_communist_resistance
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_create_the_alleseeingeagle
+		icon = GFX_
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_clear_southern_communist_resistance}
+		relative_position_id = FRA_clear_southern_communist_resistance
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_promove_the_man
+		icon = GFX_
+		x = 1
+		y = 2
+		
+		prerequisite = { focus = FRA_stabilize_the_state}
+		prerequisite = { focus = FRA_create_the_alleseeingeagle}
+		relative_position_id = FRA_create_the_alleseeingeagle
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_propaganda_from_young_age
+		icon = GFX_
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_promove_the_man}
+		prerequisite = { focus = FRA_create_the_association_of_young_soldiers }
+		relative_position_id = FRA_promove_the_man
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = fra
+		icon = GFX_
+		x = 3
+		y = 1
+		
+		prerequisite = { focus = FRA_create_the_alleseeingeagle}
+		prerequisite = { focus = FRA_stabilize_the_state}
+		relative_position_id = FRA_create_the_alleseeingeagle
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_create_the_association_of_young_soldiers
+		icon = GFX_
+		x = -1
+		y = 2
+		
+		prerequisite = { focus = FRA_create_the_alleseeingeagle}
+		prerequisite = { focus = FRA_promove_militarism }
+		relative_position_id = FRA_create_the_alleseeingeagle
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
 		id = FRA_foreign_relations
 		icon = GFX_
-		x = -6
+		x = -15
 		y = 1
 		
 		prerequisite = { focus = FRA_darnaud focus = FRA_Doriot focus = FRA_Eugene_Deloncle focus = FRA_Prince_Jean}
@@ -844,6 +1280,31 @@
 		
 		prerequisite = { focus = FRA_spanish_cw }
 		relative_position_id = FRA_spanish_cw
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_germania...
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_portugal }
+		relative_position_id = FRA_portugal
 		allow_branch = { 
 			
 		}

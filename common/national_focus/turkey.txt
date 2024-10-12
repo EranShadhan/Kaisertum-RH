@@ -21,7 +21,7 @@ focus_tree = {
 focus = {
     id = TUR_finish_reconstruction
     icon = GFX_goal_generic_construct_infrastructure
-    x = 53
+    x = 49
     y = 0
     cost = 10
 
@@ -1395,7 +1395,7 @@ focus = {
 	focus = {
 		id = TUR_start_military_reforms
 		icon = GFX_TUR_start_military_reforms
-		x = 53
+		x = 48
 		y = 9
 
 		cost = 6
@@ -2105,7 +2105,7 @@ focus = {
 	focus = {
 		id = TUR_start_of_a_new_decade
 		cost = 5
-		x = 23
+		x = 21
 		y = 0
 		icon = GFX_TUR_start_of_a_new_decade
 
@@ -2122,7 +2122,7 @@ focus = {
 	focus = {
 		id = TUR_constitution_of_1930
 		cost = 6
-		x = -16
+		x = -14
 		y = 1
 		relative_position_id = TUR_start_of_a_new_decade
 		icon = GFX_TUR_constitution_of_1930
@@ -2217,7 +2217,7 @@ focus = {
 	focus = {
 		id = TUR_close_sufi_orders
 		cost = 5
-		x = -2
+		x = -1
 		y = 1
 		icon = GFX_TUR_crush_sufism
 
@@ -2252,7 +2252,7 @@ focus = {
 	focus = {
 		id = TUR_abolish_traditional_headgear
 		cost = 5
-		x = 2
+		x = 1
 		y = 1
 		icon = GFX_TUR_hat_reform
 
@@ -2294,7 +2294,7 @@ focus = {
 	focus = {
 		id = TUR_new_civil_code
 		cost = 5
-		x = -2
+		x = -1
 		y = 1
 		icon = GFX_TUR_new_civil_code
 
@@ -3077,7 +3077,7 @@ focus = {
 	focus = {
 		id = TUR_recognize_kurdish_citizenship
 		cost = 6
-		x = -1
+		x = -2
 		y = 2
 		icon = GFX_TUR_kurdish_citizenship
 
@@ -3099,7 +3099,7 @@ focus = {
 	focus = {
 		id = TUR_the_islam_compromise
 		cost = 5
-		x = 2
+		x = 1
 		y = 1
 		icon = GFX_TUR_islam_compromise
 
@@ -3605,24 +3605,24 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_TUR_choice
 
 		prerequisite = {
 			focus = TUR_kickstart_the_syrian_revolution
 		}
 		available = {
 			OR = {
-			has_global_flag = syria_wins
-			has_global_flag = syria_loses
+				has_global_flag = syria_wins
+				has_global_flag = syria_loses
 			}
 		}
 		relative_position_id = TUR_kickstart_the_syrian_revolution
 		completion_reward = {
 			country_event = {
-					id = KT_turkey_events.14
-					hours = 14
-					random_hours = 6
-				}
+				id = KT_turkey_events.14
+				hours = 14
+				random_hours = 6
+			}
 		}
 	}
 	focus = {
@@ -3630,7 +3630,7 @@ focus = {
 		cost = 5
 		x = 3
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_TUR_moderatism
 
 		prerequisite = {
 			focus = TUR_the_choice
@@ -3773,7 +3773,7 @@ focus = {
 	focus = {
 		id = TUR_turkish_cyprus
 		cost = 1
-		x = 0
+		x = -1
 		y = 1
 		icon = GFX_TUR_turkish_cyprus
 
@@ -3792,7 +3792,7 @@ focus = {
 	focus = {
 		id = TUR_status_quo
 		cost = 1
-		x = 2
+		x = 1
 		y = 1
 		icon = GFX_status_quo
 
@@ -3840,11 +3840,9 @@ focus = {
 		relative_position_id = TUR_the_looming_war
 		completion_reward = {
 			add_ideas = TUR_anti_russian_propaganda_idea
-			SAU = {
-					add_opinion_modifier = {
-						target = ROOT
-						modifier = medium_decrease
-					}
+			reverse_add_opinion_modifier = {
+				target = SAU
+				modifier = medium_decrease
 			}
 
 		}
@@ -3864,7 +3862,6 @@ focus = {
 		completion_reward = {
 			add_political_power = 50
 			custom_effect_tooltip = TUR_GFT_starts_tt
-
 		}
 	}
 
@@ -3872,7 +3869,7 @@ focus = {
 	focus = {
 		id = TUR_the_sultans_grip_remains_firm
 		cost = 5
-		x = 16
+		x = 14
 		y = 1
 		icon = GFX_TUR_sultans_vision
 
@@ -4099,7 +4096,7 @@ focus = {
 		id = TUR_the_wolf_of_islam
 		cost = 5
 		x = -1
-		y = 2
+		y = 1
 		icon = GFX_TUR_wolf_of_islam
 
 		prerequisite = {
@@ -4121,7 +4118,7 @@ focus = {
 		id = TUR_islamist_paramilitaries
 		cost = 5
 		x = 1
-		y = 2
+		y = 1
 		icon = GFX_TUR_islamist_paramilitaries
 
 		prerequisite = {
@@ -4171,7 +4168,7 @@ focus = {
 		id = TUR_commit_to_pan_turkism
 		cost = 5
 		x = 0
-		y = 2
+		y = 1
 		icon = GFX_TUR_commit_to_pan_turkism
 
 		prerequisite = {
@@ -4333,7 +4330,6 @@ focus = {
 
 
 		available = {
-			has_country_flag = TUR_send_diplomats_to_russia
 		}
 		
 		relative_position_id = TUR_send_diplomats_to_russia
@@ -4362,7 +4358,7 @@ focus = {
 		id = TUR_pursue_an_alliance_with_russia
 		cost = 5
 		x = 0
-		y = 2
+		y = 1
 		icon = GFX_TUR_ally_russia
 
 		prerequisite = {
@@ -4546,7 +4542,7 @@ focus = {
 		id = TUR_the_lands_which_were_stolen
 		cost = 5
 		x = 0
-		y = 2
+		y = 1
 		icon = GFX_TUR_lands_which_were_stolen
 
 		prerequisite = {
@@ -4759,7 +4755,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
-		icon = GFX_TUR_islamist_paramilitaries
+		icon = GFX_TUR_islamic_army
 
 		prerequisite = {
 			focus = TUR_the_northern_caliphate
@@ -4850,7 +4846,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_TUR_natsoc_societies
 
 		prerequisite = {
 			focus = TUR_the_syrian_way
@@ -4867,7 +4863,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_TUR_national_evolution
 
 		prerequisite = {
 			focus = TUR_the_syrian_way
@@ -4888,7 +4884,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_TUR_invite_antun
 
 		prerequisite = {
 			focus = TUR_national_socialist_societies
@@ -4900,14 +4896,17 @@ focus = {
 		}
 		relative_position_id = TUR_national_evolution
 		completion_reward = {
-			news_event = {
-				id = kaisertum_news.21
-				hours = 12
-				random_hours = 6
+			hidden_effect = {
+				news_event = { id = kaisertum_news.21 hours = 3 }
 			}
-			promote_character = {
-			character = TUR_antouh_saadeh
-			ideology = national_socialism
+			add_country_leader_role = {
+				character = TUR_antouh_saadeh
+				promote_leader = yes
+				country_leader = {
+					ideology = national_socialism
+					expire = "1965.1.1.1"
+					traits = { dictator }
+				}
 			}
 		}
 	}
@@ -4916,7 +4915,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_TUR_oppresors
 
 		prerequisite = {
 			focus = TUR_invite_antoun
@@ -4925,23 +4924,18 @@ focus = {
 		}
 		relative_position_id = TUR_invite_antoun
 		completion_reward = {
-			news_event = {
-				
-			}
+			#news_event = { id = kaisertum_news. hours = 3 }
 			set_cosmetic_tag = TUR_natsoc
-			
 			leave_faction = yes
-			set_politics = {
-				ruling_party = fascism
-			}
 			978 = {
 				set_demilitarized_zone = no
 			}
 			start_civil_war = {
-					ideology = neutrality
-					size = 0.45
-					capital = 978
-					states = { 978 347 340 973 345 344 975 }
+				ruling_party = fascism
+				ideology = neutrality
+				size = 0.45
+				capital = 978
+				states = { 978 347 340 973 345 344 975 }
 			}
 		}
 	}
@@ -5072,11 +5066,8 @@ focus = {
 		}
 		relative_position_id = TUR_oppressors_must_fall
 		completion_reward = {
-			news_event = {
-					id = news
-					hours = 12
-				}
-			add_stability = 20
+			hidden_effect = { news_event = { id = news hours = 3 } }
+			add_stability = 0.15
 		}
 	}
 	focus = {
@@ -5084,7 +5075,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_TUR_hail_to_antun
 
 		prerequisite  = {
 			focus = TUR_the_hurricane_rises

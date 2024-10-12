@@ -8,6 +8,12 @@ characters={
 		}
 		country_leader = {
 			ideology = oligarchism
+			
+			traits = {
+				SER_puppet_ruler
+				SER_general_dumbass
+			}
+			
 			expire = "1953.3.1.1"
 			id = -1
 		}
@@ -31,6 +37,19 @@ characters={
 			civilian = {
 				large = GFX_portrait_SER_sima_markovic
 			}
+		}
+	}
+	SER_kanye_west = {
+		name = SER_kanye_west
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SER_kanye_west
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			expire = "1953.3.1.1"
+			id = -1
 		}
 	}
 	SER_acd2={

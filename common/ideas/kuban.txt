@@ -9,7 +9,7 @@ ideas = {
             }
             
             
-            picture = KUB_cossack_spirit
+            picture = GFX_idea_KUB_cossack
             
             modifier = {
             war_support_factor = 0.10
@@ -30,7 +30,7 @@ KUB_ukrainian_majority = {
             }
             
             
-            picture = KUB_cossack_spirit
+            picture = KUB_ukrainian_majority
             
             modifier = {
             stability_factor = -0.05

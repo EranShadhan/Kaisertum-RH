@@ -5,7 +5,7 @@ country_event = {
 	title = kt_peacetreaties.1.t
 	desc = kt_peacetreaties.1.desc
 
-	is_triggered_only = no
+	is_triggered_only = yes ###### CHANGE TO NO FOR IT TO WORK!!!!1!!!11!!!!1!1!!!111!!!!11!!1!!11!!!!!!!!!!!!!!!!!!!!!1111!!!1!!
 	trigger = {
 		NOT = {
 			217 = {
@@ -32,7 +32,7 @@ country_event = {
 	
 	option = {
 		name = kt_peacetreaties.1.a
-		GER = { country_event = { id = kt_peacetreaties.2 days = 1 } }
+		#GER = { country_event = { id = kt_peacetreaties.2 days = 1 } }
 		ai_chance = {
 			base = 1000
 		}
