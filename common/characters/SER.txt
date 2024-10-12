@@ -39,6 +39,19 @@ characters={
 			}
 		}
 	}
+	SER_kanye_west = {
+		name = SER_kanye_west
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SER_kanye_west
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			expire = "1953.3.1.1"
+			id = -1
+		}
+	}
 	SER_acd2={
 		advisor={
 			slot = army_chief
