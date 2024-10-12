@@ -197,14 +197,3 @@ create_country_leader = {
 		#
 	}
 }
-
-create_country_leader = {
-	name = "Milan Nedic"
-	desc = ""
-	picture = GFX_portrait_Milan_Nedic
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
