@@ -115,61 +115,47 @@ KT_endonyms = {
 			set_province_name = { id = 9472 name = "Cracow" }
 		}
 	}
-	if = {
-		limit = {
-			has_global_flag = endonyms
-			any_country = {
-				limit = {
-					is_polish_tag = yes
-				}
-				controls_state = 91
-			}
-		}
-		91 = { set_state_name = "Lwow" }
-		set_province_name = { id = 11479 name = "Lwow" }
-		else_if = {
-			limit = {
-				has_global_flag = endonyms
-				any_country = {
-					limit = {
-						is_german_tag = yes
-					}
-					controls_state = 91
-				}
-			}
-			91 = { set_state_name = "Lemberg" }
-			set_province_name = { id = 11479 name = "Lemberg" }
-		}
-		else_if = {
-			limit = {
-				has_global_flag = endonyms
-				any_country = {
-					limit = {
-						is_ukrainian_tag = yes
-					}
-					controls_state = 91
-				}
-			}
-			91 = { set_state_name = "Lviv" }
-			set_province_name = { id = 11479 name = "Lviv" }
-		}
-		else_if = {
-			limit = {
-				has_global_flag = endonyms
-				any_country = {
-					limit = {
-						is_ukrainian_tag = yes
-					}
-					controls_state = 91
-				}
-			}
-			91 = { set_state_name = "Lviv" }
-			set_province_name = { id = 11479 name = "Lviv" }
-		}
-		else = {
-			91 = { set_state_name = "Lvov" }
-			set_province_name = { id = 11479 name = "Lvov" }
-		}
+#if = {
+#	any_country = {
+#		limit = {
+#			original_tag = AUS
+#		}
+#		controls_state = 91
+#	}
+#	91 = { set_state_name = "Lemberg" }
+#	set_province_name = { id = 11479 name = "Lemberg" }
+#}
+#else_if = {
+#	any_country = {
+#		limit = {
+#			original_tag = UKR
+#		}
+#		controls_state = 91
+#	}
+#	91 = { set_state_name = "Lviv" }
+#	set_province_name = { id = 11479 name = "Lviv" }
+#}
+#else_if = {
+#	any_country = {
+#		limit = {
+#			original_tag = POL
+#		}
+#		controls_state = 91
+#	}
+#	91 = { set_state_name = "Lwów" }
+#	set_province_name = { id = 11479 name = "Lwów" }
+#}
+#else_if = {
+#	any_country = {
+#		limit = {
+#			original_tag = SOV
+#		}
+#		controls_state = 91
+#	}
+#	91 = { set_state_name = "Lvov" }
+#	set_province_name = { id = 11479 name = "Lvov" }
+#}
+
 	}
 	if = {
 		limit = {

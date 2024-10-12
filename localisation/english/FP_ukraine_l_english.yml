@@ -50,6 +50,7 @@
  UKR_royal_officer_corps:0 "Royal Officer Corps"
  UKR_sich_riflemen:0 "Sich Riflemen Spirit"
  UKR_land_problem:0 "Land Problem"
+ KUB_cossack_spirit:0 "Cossack Spirit"
  # Focuses
  UKR_royal_standart:0 "Royal Standart"
  UKR_royal_standart_desc:0 "The Royal Standard is not just a symbol of our monarchy but also the foundation of our military's doctrine and technological advancements. By standardizing equipment and strategies across the army, we ensure a unified, disciplined, and modern fighting force. This initiative will bolster our defensive capabilities and improve our ability to respond quickly and efficiently to any threat."
@@ -58,14 +59,17 @@
  UKR_royal_guard:0 "Establish a Royal Guard"
  UKR_expand_royal_guard:0 "Expand a Royal Guard"
  #Events
- KT_ukraine.1.t:0 "Habsburg Legacy"
- KT_ukraine.1.d:0 "The legacy of the Habsburgs has particular significance for Vasyl Vyshivanyi. The Habsburg tradition and Ukrainian nationalism are represented by his devotion to the independence of Ukraine and his leadership during the stormy times. Assuming that legacy places Ukraine into the advocates of the historical monarchies in Europe. Their vision of the Embroidered One lubricates the strength of the Habsburg rule, consolidates the stability of of our State, augments our political might, and helps to discipline and fortify our army with other glorious attributes of the past."
- KT_ukraine.1.a:0 "Our great future awaits!"
+ FP_ukraine.1.t:0 "Habsburg Legacy"
+ FP_ukraine.1.d:0 "The legacy of the Habsburgs has particular significance for Vasyl Vyshivanyi. The Habsburg tradition and Ukrainian nationalism are represented by his devotion to the independence of Ukraine and his leadership during the stormy times. Assuming that legacy places Ukraine into the advocates of the historical monarchies in Europe. Their vision of the Embroidered One lubricates the strength of the Habsburg rule, consolidates the stability of of our State, augments our political might, and helps to discipline and fortify our army with other glorious attributes of the past."
+ FP_ukraine.1.a:0 "Our great future awaits!"
  
- KT_ukraine.2.t:0 "Legacy of Sichovi Striltsi"
- KT_ukraine.2.d:0 "The Ukrainian Sich Riflemen is a national military formation within the Austro-Hungarian army, formed from volunteers who responded to the call of the Main Ukrainian Council on August 6, 1914. The USS were the first Ukrainian units of Austria-Hungary, selected on national grounds, and influenced the creation of military vocabulary and terminology , folklore, song and music, to stabilize the form of Ukrainian unity."
- KT_ukraine.2.a:0 "for Ukraine!"
+ FP_ukraine.2.t:0 "Legacy of Sichovi Striltsi"
+ FP_ukraine.2.d:0 "The Ukrainian Sich Riflemen is a national military formation within the Austro-Hungarian army, formed from volunteers who responded to the call of the Main Ukrainian Council on August 6, 1914. The USS were the first Ukrainian units of Austria-Hungary, selected on national grounds, and influenced the creation of military vocabulary and terminology , folklore, song and music, to stabilize the form of Ukrainian unity."
+ FP_ukraine.2.a:0 "for Ukraine!"
  
+ FP_ukraine.3.t:0 "Kuban integration"
+ FP_ukraine.3.d:0 "After many months of hard work, improving relations, we can finally reunite, the historical memory of the homeland and Ukraine's economic position in Europe only increased Kuban's sympathy for becoming part of Ukraine, close economic, military and political ties only increased this sympathy in the hearts of the descendants of the Cossacks, now Ukraine is one step closer to the main goal of reuniting all its lands."
+ FP_ukraine.3.a:0 "Welcome home, brothers!"
  
  #Decisions
  UKR_move_capital_to_kyiv:0 "Return capital to Kyiv"
