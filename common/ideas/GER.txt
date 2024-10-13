@@ -2,7 +2,25 @@ ideas = {
 
 
 	country = {
-	
+
+	GER_colonial_exploitation = {
+
+			picture = GER_exploit_our_colonies
+			
+			allowed = {
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				local_resources = 0.1
+				production_lack_of_resource_penalty_factor = -0.05
+				fuel_gain_factor_from_states = 0.1
+			}
+		}
 		GER_rebuild_the_high_seas_fleet = {
 			allowed = {
 				always = no
@@ -267,8 +285,9 @@ GER_german_breadbasket_to_ukr = {
 			
 			modifier = {
 				communism_drift = 0.01
-				consumer_goods_factor = 0.1
+				consumer_goods_expected_value = 0.15
 				political_power_factor = -0.15
+				custom_modifier_tooltip = GER_strikes_by_unions
 			}
 		}
 		GER_less_powerful_unions = {

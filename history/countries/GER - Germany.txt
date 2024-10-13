@@ -221,7 +221,12 @@ add_ideas = {
 	GER_german_breadbasket_to_ukr
 	GER_too_big_to_fail
 	GER_switching_to_oil
+	GER_colonial_exploitation
 	german_customs_union_leader
+	
+	low_economic_mobilisation
+	limited_conscription
+	export_focus
 	
 }
 

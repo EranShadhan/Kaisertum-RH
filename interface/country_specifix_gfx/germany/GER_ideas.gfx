@@ -7,4 +7,8 @@ SpriteType = {
 		name = "GFX_idea_too_big_to_fail"
 		texturefile = "gfx/interface/ideas/GER/too_big_to_fail.png"
 	}
+	SpriteType = {
+		name = "GFX_idea_GER_exploit_our_colonies"
+		texturefile = "gfx/interface/ideas/GER/GER_colonial_exploitation.png"
+	}
 }
