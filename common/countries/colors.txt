@@ -1,7 +1,7 @@
 #reload countrycolors
 EUA = {
-	color = rgb { 114 153 147 }
-	color_ui = rgb { 114 153 147 }
+	color = rgb { 36 113 163  }
+	color_ui = rgb { 36 113 163  }
 }
 SIC = {
 	color = rgb { 222 41 16 }
@@ -1012,8 +1012,8 @@ UCS = {
 	color_ui = rgb { 155 3 3 }
 }
 CMG = {
-	color = rgb { 54 220 242 }
-	color_ui = rgb { 54 220 242 }
+	color = rgb { 208 211 212 }
+	color_ui = rgb { 208 211 212 }
 }
 TKS = {
 	color = rgb { 126 189 221 }

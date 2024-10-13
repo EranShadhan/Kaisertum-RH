@@ -9,7 +9,7 @@ ideas = {
             }
             
             
-            picture = GFX_idea_KUB_cossack
+            picture = gfx/interface/ideas/KUB/idea_KUB_cossack.png
             
             modifier = {
             war_support_factor = 0.10
