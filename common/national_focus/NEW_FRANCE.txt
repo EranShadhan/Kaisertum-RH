@@ -463,14 +463,68 @@
 		}
 	}
 	focus = {
-		id = fra
+		id = FRA_purge_communists
 		icon = GFX_
-		x = 3
+		x = 4
 		y = 1
 		
 		prerequisite = { focus = FRA_create_the_alleseeingeagle}
 		prerequisite = { focus = FRA_stabilize_the_state}
 		relative_position_id = FRA_create_the_alleseeingeagle
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_other_countries_spies
+		icon = GFX_
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_purge_communists}
+		relative_position_id = FRA_purge_communists
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_have_always_contacts
+		icon = GFX_
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_purge_communists}
+		relative_position_id = FRA_purge_communists
 		
 		
 		allow_branch = { 
@@ -1351,12 +1405,12 @@
 	focus = {
 		id = FRA_Doriot
 		icon = GFX_
-		x = 0
+		x = 25
 		y = 1
 		
 		prerequisite = { focus = FRA_the_first_dictatorial_discussion}
 		relative_position_id = FRA_the_first_dictatorial_discussion
-		mutually_exclusive = { focus = FRA_Prince_Jean focus = FRA_Eugene_Deloncle focus = FRA_Doriot}
+		mutually_exclusive = { focus = FRA_Prince_Jean focus = FRA_Eugene_Deloncle focus = FRA_darnaud}
 		cost = 5
 			ai_will_do = {
 			factor = 1
@@ -1382,12 +1436,12 @@
 	focus = {
 		id = FRA_Prince_Jean
 		icon = GFX_
-		x = 5
+		x = 20
 		y = 1
 		
 		prerequisite = { focus = FRA_the_first_dictatorial_discussion}
 		relative_position_id = FRA_the_first_dictatorial_discussion
-		mutually_exclusive = { focus = FRA_Doriot focus = FRA_Eugene_Deloncle focus = FRA_Doriot}
+		mutually_exclusive = { focus = FRA_Doriot focus = FRA_Eugene_Deloncle focus = FRA_darnaud}
 		allow_branch = { 
 			
 		}
@@ -1417,12 +1471,12 @@
 	focus = {
 		id = FRA_Eugene_Deloncle 
 		icon = GFX_
-		x = -5
+		x = 15
 		y = 1
 		
 		prerequisite = { focus = FRA_the_first_dictatorial_discussion}
 		relative_position_id = FRA_the_first_dictatorial_discussion
-		mutually_exclusive = { focus = FRA_Doriot focus = FRA_Prince_Jean focus = FRA_Doriot}
+		mutually_exclusive = { focus = FRA_Doriot focus = FRA_Prince_Jean focus = FRA_darnaud }
 		cost = 5
 			ai_will_do = {
 			factor = 1
