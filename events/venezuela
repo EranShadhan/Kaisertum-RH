@@ -1,0 +1,26 @@
+add_namespace = venezuela_political_event
+
+country_event = {
+    id = venezuela_political_event.1
+	title = venezuela_political_event.1.t
+	desc = venezuela_political_event.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	trigger = {
+	    tag = VEN
+	}
+	
+	mean_time_to_happen = {
+	    days = 300
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+	    name = venezuela_political_event.1.a
+		start_civil_war = {
+		    ideology = democratic
+			size = 0.5
+		}
+	}
+}
