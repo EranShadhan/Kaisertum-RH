@@ -40,6 +40,7 @@ idea_categories = {
 	economy = {
 		slot = trade_laws
 		slot = economy
+		slot = trade_union_laws
 		slot = customs_union_laws
 		
 		ledger = civilian

@@ -5197,7 +5197,7 @@ focus = {
 	focus = {
 		id = TUR_overhaul_of_the_state
 		cost = 5
-		x = -11
+		x = -9
 		y = 1
 		icon = GFX_goal_zzz_WIP
 
@@ -5459,7 +5459,7 @@ focus = {
 	focus = {
 		id = TUR_seize_italian_assets
 		cost = 5
-		x = 11
+		x = 9
 		y = 1
 		icon = GFX_goal_zzz_WIP
 
@@ -5477,9 +5477,9 @@ focus = {
 	focus = {
 		id = TUR_workers_of_the_nation
 		cost = 5
-		x = -3
+		x = -1
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_TUR_workers_of_the_nation
 
 		prerequisite  = {
 			focus = TUR_seize_italian_assets
@@ -5502,7 +5502,7 @@ focus = {
 	focus = {
 		id = TUR_social_corporatism
 		cost = 5
-		x = 2
+		x = 1
 		y = 1
 		icon = GFX_goal_zzz_WIP
 
@@ -5545,7 +5545,7 @@ focus = {
 	focus = {
 		id = TUR_all_roads_lead_to_enguru
 		cost = 5
-		x = -3
+		x = -1
 		y = 1
 		icon = GFX_goal_zzz_WIP
 
@@ -5713,7 +5713,7 @@ focus = {
 		id = TUR_the_eternal_city
 		cost = 5
 		x = 0
-		y = 5
+		y = 4
 		icon = GFX_goal_zzz_WIP
 
 		prerequisite  = {
@@ -5743,7 +5743,7 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_TUR_look_outwards
 
 		prerequisite  = {
 			focus = TUR_unification_of_turkey_and_syria
@@ -5794,7 +5794,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_GEN_arabia
 
 		prerequisite  = {
 			focus = TUR_the_goals_of_syria
