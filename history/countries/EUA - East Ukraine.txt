@@ -29,7 +29,10 @@ set_technology = {
 }
 
 add_ideas = {
-
+     KUB_cossack_spirit
+     partial_economic_mobilisation
+     limited_conscription
+     
 	}
 if = {
 	limit = { has_dlc = "By Blood Alone" }

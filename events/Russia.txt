@@ -310,7 +310,7 @@ country_event = {
 				transfer_state = 1046
 				transfer_state = 1047
  
-				add_state_core = 137
+				add_state_claim = 137
 				add_state_core = 193
 				add_state_core = 196
 				add_state_core = 200
@@ -329,7 +329,7 @@ country_event = {
 				add_state_core = 1014
 				add_state_core = 1015
 				add_state_core = 1018
-				add_state_core = 1022
+				add_state_claim = 1022
 				add_state_core = 1045
 				add_state_core = 1046
 				add_state_core = 1047
