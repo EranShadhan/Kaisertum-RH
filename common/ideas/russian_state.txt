@@ -1,0 +1,46 @@
+ideas = {
+
+	country = {
+
+		RUF_power_struggle = {
+
+			picture = generic_deal_with_the_devil2
+			
+			allowed = {
+				#always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.2
+				political_power_factor = -0.10
+			}
+		}
+		
+		RUF_slave_labour = {
+
+			picture = generic_deal_with_the_devil2
+			
+			allowed = {
+				#always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+				political_power_cost = 0.5
+				consumer_goods_factor = -0.1
+			}
+		}
+	}
+}

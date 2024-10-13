@@ -40,6 +40,14 @@ if = {
 	}
 }
 
+recruit_character = RUF_konstantin_rodzaevsky
+recruit_character = RUF_anastasy_vonsiatsky
+
+add_ideas = {
+	RUF_power_struggle
+	RUF_slave_labour
+}
+
 set_convoys = 10
 set_politics = {
 	ruling_party = fascism
@@ -48,9 +56,9 @@ set_politics = {
 }
 set_popularities = {
 	democratic = 0
-	fascism = 100
-	communism = 0
-	neutrality = 0
+	fascism = 80
+	communism = 5
+	neutrality = 15
 }
 
 
