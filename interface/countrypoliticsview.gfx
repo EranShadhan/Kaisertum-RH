@@ -493,6 +493,10 @@ spriteTypes = {
         texturefile = "gfx/interface/ideologies/titoism.dds"
     }
 	spriteType = {
+        name = "GFX_ideology_nazism"
+        texturefile = "gfx/interface/ideologies/nazism.dds"
+    }
+	spriteType = {
 		name = "GFX_ideology_unknown"
 		texturefile = "gfx/interface/ideologies/unknown.dds"
 		legacy_lazy_load = no
