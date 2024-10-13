@@ -1016,7 +1016,7 @@ focus = {
 
 focus = {
     id = TUR_invest_in_the_tobacco_industry
-    icon = GFX_goal_generic_construct_civ_factory
+    icon = GFX_goal_GEN_tobacco
     prerequisite = { focus = TUR_mechanize_the_farms }
     prerequisite = { focus = TUR_russian_industrial_base }
     x = -1

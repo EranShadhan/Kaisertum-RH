@@ -9,6 +9,10 @@ focus_tree = {
 		}
 	}
 	
+	shared_focus = army_effort
+	shared_focus = aviation_effort
+	shared_focus = naval_effort
+	shared_focus = political_effort
 
 	default = no
 
@@ -23,7 +27,7 @@ focus_tree = {
 				
 			}
 			
-		x = 0
+		x = 13
 		y = 0
 
 		cost = 4
@@ -165,17 +169,16 @@ focus_tree = {
 	focus = {
 		id = YUG_industry1
 		icon = GFX_YUG_yug_industry1
-		relative_position_id = YUG_death_of_an_empire
-		prerequisite = { focus = YUG_death_of_an_empire }
+		#relative_position_id = YUG_death_of_an_empire
+		#prerequisite = { focus = YUG_death_of_an_empire }
 		available = {
-				
-				
-				
-			}
+			has_completed_focus = YUG_death_of_an_empire
+		}
 			
-		x = 10
-		y = 1
-
+		x = 6
+		y = 5
+		#x = 10
+		#y = 1
 		cost = 5
 		
 			ai_will_do = {
@@ -1383,6 +1386,14 @@ focus_tree = {
 		icon = GFX_
 		relative_position_id = YUG_death_of_an_empire
 		prerequisite = { focus = YUG_death_of_an_empire }
+
+		allow_branch = {
+			always = no
+			NOT = {
+				has_global_flag = public_release
+			}
+		}
+
 		available = {
 				
 				
