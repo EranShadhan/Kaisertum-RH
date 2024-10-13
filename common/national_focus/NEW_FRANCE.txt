@@ -274,12 +274,11 @@
 	focus = {
 		id = FRA_ensure_ep_loyalty
 		icon = GFX_
-		x = -1
+		x = 0
 		y = 1
 		
 		prerequisite = { focus = FRA_create_ep}
 		relative_position_id = FRA_create_ep
-		mutually_exclusive = { focus = FRA_fake_burgundy}
 		
 		allow_branch = { 
 			
@@ -298,33 +297,7 @@
 			
 		}
 	}
-	focus = {
-		id = FRA_fake_burgundy
-		icon = GFX_
-		x = 1
-		y = 1
-		
-		prerequisite = { focus = FRA_create_ep}
-		relative_position_id = FRA_create_ep
-		mutually_exclusive = { focus = FRA_ensure_ep_loyalty}
-		
-		allow_branch = { 
-			
-		}
-
-		cost = 5
-			ai_will_do = {
-			factor = 1
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			
-		}
-	}
+	
 	focus = {
 		id = FRA_stabilize_the_state
 		icon = GFX_
@@ -1405,7 +1378,7 @@
 	focus = {
 		id = FRA_Doriot
 		icon = GFX_
-		x = 10
+		x = 3
 		y = 1
 		
 		prerequisite = { focus = FRA_the_first_dictatorial_discussion}
@@ -1464,7 +1437,7 @@
 	focus = {
 		id = FRA_superior_man
 		icon = GFX_
-		x = -2
+		x = 0
 		y = 1
 		
 		prerequisite = { focus = FRA_national_salvation}
@@ -1516,6 +1489,169 @@
 		}
 	}
 	focus = {
+		id = FRA_the_dreams_of_the_french
+		icon = GFX_
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_the_masters_of_europe}
+		relative_position_id = FRA_the_masters_of_europe
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_racist_army
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_the_dreams_of_the_french}
+		relative_position_id = FRA_the_dreams_of_the_french
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_enforce_strict_rules
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_racist_army}
+		relative_position_id = FRA_racist_army
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_strong_men
+		icon = GFX_
+		x = 2
+		y = 1
+		
+		prerequisite = { focus = FRA_the_dreams_of_the_french}
+		prerequisite = { focus = FRA_gaulic_race }
+		relative_position_id = FRA_the_dreams_of_the_french
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_household_women
+		icon = GFX_
+		x = -2
+		y = 2
+		
+		prerequisite = { focus = FRA_the_dreams_of_the_french}
+		relative_position_id = FRA_the_dreams_of_the_french
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_sons_of_war
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_household_women}
+		relative_position_id = FRA_household_women
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
 		id = FRA_gaulic_race
 		icon = GFX_
 		x = 1
@@ -1523,6 +1659,166 @@
 		
 		prerequisite = { focus = FRA_superior_man}
 		relative_position_id = FRA_superior_man
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_crate_the_ep
+		icon = GFX_
+		x = 2
+		y = 1
+		
+		prerequisite = { focus = FRA_gaulic_race}
+		relative_position_id = FRA_gaulic_race
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_recruit_the_ep
+		icon = GFX_
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_crate_the_ep}
+		relative_position_id = FRA_crate_the_ep
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_fake_burgundy
+		icon = GFX_
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_recruit_the_ep}
+		relative_position_id = FRA_recruit_the_ep
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_execute_traitors
+		icon = GFX_
+		x = 3
+		y = 1
+		
+		prerequisite = { focus = FRA_recruit_the_ep}
+		relative_position_id = FRA_recruit_the_ep
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_french_culture_enforced
+		icon = GFX_
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_crate_the_ep}
+		relative_position_id = FRA_crate_the_ep
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_enforce_french_superiority
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_french_culture_enforced}
+		relative_position_id = FRA_french_culture_enforced
 		
 		
 		allow_branch = { 
