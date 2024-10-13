@@ -156,6 +156,8 @@ ideologies = {
 		types = {
 
 			nazism = {
+				color = { 47 47 47 }
+				can_be_randomly_selected = no
 			}
 
 			gen_nazism = {
@@ -165,6 +167,8 @@ ideologies = {
 			}
 			
 			absolute_monarchy_fas = {
+				color = { 255 235 192 }
+				can_be_randomly_selected = no
 			}
 
 			falangism = {
