@@ -505,4 +505,12 @@ spriteTypes = {
 		name = "GFX_goal_TUR_natsoc_societies"
 		texturefile = "gfx/interface/goals/TUR/TUR_natsoc_societies.png"
 	}
+	SpriteType = {
+		name = "GFX_goal_TUR_look_outwards"
+		texturefile = "gfx/interface/goals/TUR/TUR_look_outwards.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_TUR_workers_of_the_nation"
+		texturefile = "gfx/interface/goals/TUR/TUR_workers_of_the_nation.png"
+	}
 }

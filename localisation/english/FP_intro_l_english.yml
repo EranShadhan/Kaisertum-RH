@@ -5,7 +5,7 @@
  FE_SELECT_COUNTRY_KT:0 "Select Country - Recommeding Golden"
  intro_lore:0 "[ROOT.GetLore]"
 
- INTRO_CREDITS:0 "Kaisertum/KT is an HOI4 mod based of Rewriting History's 'Project Kaisertum' YouTube series up to episode 6.\n\nOriginal Creators:\nRewriting History, Girrambe\n\nCouncil and Lead Developers:\nLevko, DenisMD, IWillExplode, Xaelor, IsGlitch, Adam29\n\nSenior Developers:\nTheHalfBot, Kash, Derp\n\nDevelopers:\nKliver, Lvcky, Señor Mango, Gallipoli, Raven, H4dra, BigBrother, Lolungs29, Notaserb, IHaveNoEnemies, MrSpecialKittyCat, Bye, CoolDownBoi, CubicCM, ponsword, wackster, Fiorin, Kliver, karadzic, MPGP\n\nArtists:\nHuckleberryMan13, Tenshi, GooberGlobber, Hezetro\n\nWriters:\nReski, shadowgallade, zsozso1944, ShoftSoap, Geo, Hunter, KaiserMickey, Xenomorph\n\nComposers:\nAlßtraje\n\nContributors:\nElise, Robloxfanboy86, Raccio, Rei, Ghost"
+ INTRO_CREDITS:0 "Fallen Phoenix/FP is an HOI4 mod based of Rewriting History's 'Project Kaisertum' YouTube series up to the 6th episode.\n\nOriginal Creators:\nRewriting History, Girrambe\n\nCouncil and Lead Developers:\nLevko, DenisMD, IWillExplode, Xaelor, IsGlitch, Adam29\n\nSenior Developers:\nTheHalfBot, Kash, Derp\n\nDevelopers:\nKliver, Lvcky, Señor Mango, Raven, H4dra, BigBrother, Lolungs29, IHaveNoEnemies, MrSpecialKittyCat, CoolDownBoi, CubicCM, ponsword, wackster, Fiorin, Kliver, karadzic, MPGP, Coder\n\nArtists:\nHuckleberryMan13, Tenshi, GooberGlobber, Hezetro\n\nWriters:\nReski, shadowgallade, zsozso1944, Geo, Hunter, KaiserMickey\n\nComposers:\nAlßtraje\n\nContributors:\nElise, Robloxfanboy86, Raccio, Rei, Ghost, Notaserb, Bye, Gallipoli, NickTheBetterBrother, ShoftSoap, Xenomorph, sketeoss"
 
  EMPTY:0 ""
  intro_gui_button_one_tt:0 "[GetStateRenamingToggle] §YState Renaming§!"

@@ -1,0 +1,92 @@
+ideas = {
+	trade_union_laws = {
+		law = yes
+		use_list_view = yes
+		unions_banned = {
+			
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = democratic
+					}
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.25
+				industrial_capacity_factory = -0.1
+			}
+		}
+		unions_suppressed = {
+
+			default = yes
+
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			cancel_if_invalid = no
+			
+			modifier = {
+				political_power_factor = 0.1
+				industrial_capacity_factory = -0.05
+			}
+		}
+		unions_supported = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			cancel_if_invalid = no
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		unions_mandatory = {
+
+			available = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			cancel_if_invalid = no
+			
+			modifier = {
+				political_power_factor = -0.1
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.05
+			}
+		}
+	}
+
+}

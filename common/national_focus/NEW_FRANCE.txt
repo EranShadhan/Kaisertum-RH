@@ -1426,11 +1426,12 @@
 			character = FRA_Jacques_Doriot
 			promote_leader = yes
 				country_leader = {
-					ideology = rexism
+					ideology = nazism
 					expire = "1965.1.1.1"
 					traits = { dictator warmonger }
 				}
 			}
+			set_cosmetic_tag = FRA_doriot_fascist
 		}
 	}
 	focus = {
@@ -1569,7 +1570,7 @@
 			character = FRA_Prince_Jean
 			promote_leader = yes
 				country_leader = {
-					ideology = rexism
+					ideology = absolute_monarchy_fas
 					expire = "1965.1.1.1"
 					traits = { dictator warmonger }
 				}

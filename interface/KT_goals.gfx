@@ -28,6 +28,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_goal_GEN_arabia"
+		texturefile = "gfx/interface/goals/GEN_arabia.png"
+	}
+
+	SpriteType = {
 		name = "GFX_goal_GEN_peace"
 		texturefile = "gfx/interface/goals/GEN_peace.png"
 	}
