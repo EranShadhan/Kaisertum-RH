@@ -1405,7 +1405,7 @@
 	focus = {
 		id = FRA_Doriot
 		icon = GFX_
-		x = 25
+		x = 10
 		y = 1
 		
 		prerequisite = { focus = FRA_the_first_dictatorial_discussion}
@@ -1431,6 +1431,114 @@
 					traits = { dictator warmonger }
 				}
 			}
+		}
+	}
+	focus = {
+		id = FRA_national_salvation
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_Doriot}
+		relative_position_id = FRA_Doriot
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_superior_man
+		icon = GFX_
+		x = -2
+		y = 1
+		
+		prerequisite = { focus = FRA_national_salvation}
+		relative_position_id = FRA_national_salvation
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_the_masters_of_europe
+		icon = GFX_
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_superior_man}
+		relative_position_id = FRA_superior_man
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_gaulic_race
+		icon = GFX_
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_superior_man}
+		relative_position_id = FRA_superior_man
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
 		}
 	}
 	focus = {
