@@ -57,7 +57,7 @@ political_actions = {
 			controls_state = 1016
 		}
 		fire_only_once = yes
-		days_remove = 100
+		#days_remove = 100
 		complete_effect = {
 			add_state_core = 1016
 			set_province_name = { id = 3392 name = "Berestya" }
@@ -93,7 +93,7 @@ political_actions = {
 			controls_state = 92
 		}
 		fire_only_once = yes
-		days_remove = 100
+		#days_remove = 100
 		complete_effect = {
 			add_state_core = 92
 			set_province_name = { id = 9452 name = "Kholm" }
@@ -130,7 +130,7 @@ political_actions = {
 			controls_state = 992
 		}
 		fire_only_once = yes
-		days_remove = 100
+		#days_remove = 100
 		complete_effect = {
 			add_state_core = 992
 			set_province_name = { id = 9494 name = "Peremyshl" }
@@ -166,7 +166,7 @@ political_actions = {
 			controls_state = 993
 		}
 		fire_only_once = yes
-		days_remove = 100
+		#days_remove = 100
 		complete_effect = {
 			add_state_core = 993
 			hidden_effect = { 
@@ -201,7 +201,7 @@ political_actions = {
 			controls_state = 1043
 		}
 		fire_only_once = yes
-		days_remove = 100
+		#days_remove = 100
 		complete_effect = {
 			add_state_core = 1043
 			hidden_effect = { 
@@ -243,7 +243,7 @@ political_actions = {
 			controls_state = 73
 		}
 		fire_only_once = yes
-		days_remove = 100
+		#days_remove = 100
 		complete_effect = {
 			add_state_core = 73
 			hidden_effect = { 			
@@ -283,7 +283,7 @@ political_actions = {
 			controls_state = 996
 		}
 		fire_only_once = yes
-		days_remove = 100
+		#days_remove = 100
 		complete_effect = {
 			add_state_core = 996
 			hidden_effect = { 		
@@ -324,7 +324,7 @@ political_actions = {
 			controls_state = 78
 		}
 		fire_only_once = yes
-		days_remove = 100
+		#days_remove = 100
 		complete_effect = {
 			add_state_core = 78
 			set_province_name = { id = 3707 name = "Kyshyniv" }
@@ -360,10 +360,11 @@ political_actions = {
 			controls_state = 766
 		}
 		fire_only_once = yes
-		days_remove = 100
+		#days_remove = 100
 		complete_effect = {
 			add_state_core = 766
 			set_province_name = { id = 6727 name = "Akkerman" }
+			set_province_name = { id = 13371 name = "Zmiinyi" }
 			hidden_effect = { 
 				766 = { set_state_name = "Budzhak" }
 			}
@@ -396,6 +397,7 @@ political_actions = {
 			controls_state = 94
 		}
 		fire_only_once = yes
+		#days_remove = 100
 		complete_effect = {
 			add_state_core = 94
 			set_province_name = { id = 560 name = "Pinsk" }
@@ -431,7 +433,7 @@ political_actions = {
 			controls_state = 1020
 		}
 		fire_only_once = yes
-		days_remove = 100
+		#days_remove = 100
 		complete_effect = {
 			add_state_core = 1020
 		}
