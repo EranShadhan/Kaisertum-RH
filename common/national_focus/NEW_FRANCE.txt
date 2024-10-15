@@ -1841,7 +1841,7 @@
 	focus = {
 		id = FRA_Prince_Jean
 		icon = GFX_
-		x = 20
+		x = 30
 		y = 1
 		
 		prerequisite = { focus = FRA_the_first_dictatorial_discussion}
@@ -1876,7 +1876,7 @@
 	focus = {
 		id = FRA_Eugene_Deloncle 
 		icon = GFX_
-		x = 15
+		x = 25
 		y = 1
 		
 		prerequisite = { focus = FRA_the_first_dictatorial_discussion}
@@ -1905,6 +1905,410 @@
 					traits = { dictator warmonger }
 				}
 			}
+		}
+	}
+	focus = {
+		id = FRA_secure_grip
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_Prince_Jean}
+		relative_position_id = FRA_Prince_Jean
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_christian_values
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_secure_grip}
+		relative_position_id = FRA_secure_grip
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_force_religion_school
+		icon = GFX_
+		x = -2
+		y = 1
+		
+		prerequisite = { focus = FRA_christian_values}
+		relative_position_id = FRA_christian_values
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_gods_soldiers
+		icon = GFX_
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_force_religion_school}
+		relative_position_id = FRA_force_religion_school
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_propagandize_the_church
+		icon = GFX_
+		x = -2
+		y = 1
+		
+		prerequisite = { focus = FRA_gods_soldiers}
+		relative_position_id = FRA_gods_soldiers
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_god_of_the_french
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_gods_soldiers}
+		relative_position_id = FRA_gods_soldiers
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_gods_plan
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_god_of_the_french}
+		relative_position_id = FRA_god_of_the_french
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_the_crusaders
+		icon = GFX_
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_force_religion_school}
+		relative_position_id = FRA_force_religion_school
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_crusade_against_communism
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_the_crusaders}
+		relative_position_id = FRA_the_crusaders
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_rewrite_the_bible
+		icon = GFX_
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_christian_values}
+		relative_position_id = FRA_christian_values
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_pro_war_bible
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_rewrite_the_bible}
+		relative_position_id = FRA_rewrite_the_bible
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_invite_the_pope
+		icon = GFX_
+		x = 4
+		y = 1
+		
+		prerequisite = { focus = FRA_christian_values}
+		relative_position_id = FRA_christian_values
+		mutually_exclusive = { focus = FRA_new_church}
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_new_home_of_the_pope
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_invite_the_pope}
+		relative_position_id = FRA_invite_the_pope
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_new_church
+		icon = GFX_
+		x = 8
+		y = 1
+		
+		prerequisite = { focus = FRA_christian_values}
+		relative_position_id = FRA_christian_values
+		mutually_exclusive = { focus = FRA_invite_the_pope}
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_new_pope
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_new_church}
+		relative_position_id = FRA_new_church
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
 		}
 	}
 }
