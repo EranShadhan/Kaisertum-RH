@@ -817,7 +817,7 @@ focus = {
 		}
 
 		completion_reward = {
-		country_event = { id = KT_ukraine.2 days = 10 }
+		country_event = { id = KT_ukraine.2 days = 1 }
            add_ideas = UKR_sich_riflemen
 		}
 	}
@@ -1138,7 +1138,7 @@ focus = {
 		}
 
 		completion_reward = {
-		country_event = { id = KT_ukraine.1 days = 10 }
+		country_event = { id = KT_ukraine.1 days = 1 }
            army_experience = 55
 		}
 	}
