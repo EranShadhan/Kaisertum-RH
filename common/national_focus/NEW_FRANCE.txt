@@ -1350,13 +1350,38 @@
 		}
 	}
 	focus = {
-		id = FRA_invasion_of_switzerland
+		id = FRA_marseille_invasion
 		icon = GFX_
 		x = 5
 		y = 1
 		
 		prerequisite = { focus = FRA_greater_french_claims focus = FRA_prewar_claims }
 		relative_position_id = FRA_greater_french_claims
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_invasion_of_switzerland
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_marseille_invasion }
+		relative_position_id = FRA_marseille_invasion
 		allow_branch = { 
 			
 		}
@@ -1841,7 +1866,7 @@
 	focus = {
 		id = FRA_Prince_Jean
 		icon = GFX_
-		x = 30
+		x = 18
 		y = 1
 		
 		prerequisite = { focus = FRA_the_first_dictatorial_discussion}
@@ -1876,7 +1901,7 @@
 	focus = {
 		id = FRA_Eugene_Deloncle 
 		icon = GFX_
-		x = 25
+		x = 45
 		y = 1
 		
 		prerequisite = { focus = FRA_the_first_dictatorial_discussion}
@@ -1964,7 +1989,7 @@
 	focus = {
 		id = FRA_force_religion_school
 		icon = GFX_
-		x = -2
+		x = -3
 		y = 1
 		
 		prerequisite = { focus = FRA_christian_values}
@@ -2180,11 +2205,65 @@
 	focus = {
 		id = FRA_pro_war_bible
 		icon = GFX_
-		x = 0
+		x = 1
 		y = 1
 		
 		prerequisite = { focus = FRA_rewrite_the_bible}
 		relative_position_id = FRA_rewrite_the_bible
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_jesus_of_self_defence
+		icon = GFX_
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_rewrite_the_bible}
+		relative_position_id = FRA_rewrite_the_bible
+		
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_donations_for_jesus
+		icon = GFX_
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_jesus_of_self_defence focus = FRA_pro_war_bible }
+		relative_position_id = FRA_jesus_of_self_defence
 		
 		
 		allow_branch = { 
@@ -2293,6 +2372,84 @@
 		
 		prerequisite = { focus = FRA_new_church}
 		relative_position_id = FRA_new_church
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_french_christian_spirit
+		icon = GFX_
+		x = -2
+		y = 1
+		
+		prerequisite = { focus = FRA_new_pope focus = FRA_new_home_of_the_pope }
+		relative_position_id = FRA_new_pope
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_for_god
+		icon = GFX_
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_french_christian_spirit }
+		relative_position_id = FRA_french_christian_spirit
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_for_fatherland
+		icon = GFX_
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_french_christian_spirit }
+		relative_position_id = FRA_french_christian_spirit
 		
 		allow_branch = { 
 			
