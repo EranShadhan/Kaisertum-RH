@@ -41,17 +41,29 @@ if = {
 	}
 }
 
+recruit_character = RUD_5th_state_duma
+recruit_character = RUD_aleksandr_konovalov
+recruit_character = RUD_nikolai_nekrasov
+recruit_character = RUD_alexey_peshekhonov
+
+add_ideas = {
+	RUD_chaotic_government
+	RUD_democratic_transition
+	RUD_the_liberation_army
+	RUD_pacifism
+}
+
 set_convoys = 10
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 74
-	fascism = 0
-	communism = 20
-	neutrality = 6
+	democratic = 53
+	fascism = 4
+	communism = 3
+	neutrality = 40
 }
 
 

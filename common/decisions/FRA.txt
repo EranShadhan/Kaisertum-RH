@@ -1,3 +1,0 @@
-FRA_EDG_category = {
-    
-}

@@ -1,6 +1,0 @@
-ROM_agriculture = { 
-	icon = GFX_idea_ROM_agricultural_economy
-
-	conscription_factor = ROM_conscription
-	production_speed_industrial_complex_factor = ROM_civ_speed
-} 

@@ -1,9 +1,0 @@
-opinion_modifiers = {
-	
-	armed_against_our_governament = {
-		value = -45
-	}
-	armed_against_thier_governament = {
-		value = -45
-	}
-}

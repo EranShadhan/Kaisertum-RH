@@ -1,0 +1,36 @@
+state={
+	id=1101
+	name="STATE_1101"
+	resources={
+		steel=10
+	}
+	
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			4056 = {
+				naval_base = 2
+			}
+		}	
+		
+		victory_points = {
+			4056 5
+		}	
+
+		victory_points = {
+			13929 2
+		}	
+
+		add_core_of = KOR
+	}
+
+	provinces={
+		1054 1081 4056 4086 4103 7121 10085 10115 12060 12089 13917 13926 13928 13929 13930 
+	}
+	manpower=3342232
+	buildings_max_level_factor=1.000
+	state_category = large_city
+	local_supplies=0.000
+}

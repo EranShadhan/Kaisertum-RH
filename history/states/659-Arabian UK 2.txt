@@ -6,12 +6,12 @@ state={
 	history={
 		owner = SAU
 		victory_points = {
-			5074 1 
+			13885 1 
 		}
 		buildings = {
 			infrastructure = 2
 			air_base = 4
-			5074 = {
+			13885 = {
 				naval_base = 3
 
 			}

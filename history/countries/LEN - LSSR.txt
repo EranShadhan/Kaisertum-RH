@@ -41,6 +41,8 @@ if = {
 	}
 }
 
+recruit_character = LEN_Lev_Trotskiy
+
 set_convoys = 10
 set_politics = {
 	ruling_party = communism

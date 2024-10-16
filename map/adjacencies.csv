@@ -231,4 +231,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 13630;13631;sea;7452;-1;-1;-1;-1;;Limnos-Imbros
 13632;13631;sea;7452;-1;-1;-1;-1;;Samotharki-Imbros
 849;13631;sea;7452;-1;-1;-1;-1;;Imbros-Gallippoli
+13435;13371;sea;8131;-1;-1;-1;-1;;Serpent
+374;13375;sea;2729;-1;-1;-1;-1;;Heligoland
 -1;-1;;-1;-1;-1;-1;-1;-1 

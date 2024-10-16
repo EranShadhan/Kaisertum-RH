@@ -1,5 +1,0 @@
-PON	= "countries/Pontus.txt"
-CRE	= "countries/Crete.txt"
-CPE	= "countries/Persia.txt"
-FCF	= "countries/Free City Of Fiume.txt"
-FMG	= "countries/France.txt"

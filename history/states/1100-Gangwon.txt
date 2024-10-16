@@ -1,0 +1,32 @@
+state={
+	id=1100
+	name="STATE_1100"
+
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 3
+			7021 = {
+				naval_base = 1
+			}
+		}	
+		
+		victory_points = {
+			13921 4
+		}	
+
+		victory_points = {
+			7021 2
+		}	
+
+		add_core_of = KOR
+	}
+
+	provinces={
+		1148 4004 7021 9981 11912 11958 12011 13920 13921 13922 13923 13925 13933 
+	}
+	manpower=801392
+	buildings_max_level_factor=1.000
+	state_category = rural
+	local_supplies=0.000
+}

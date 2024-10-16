@@ -1,7 +1,0 @@
-﻿###########################
-# Irish Events
-###########################
-
-add_namespace = ireland
-
-#ireland.1 #Stir the Irish - France focus

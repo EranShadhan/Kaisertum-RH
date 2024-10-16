@@ -1,8 +1,0 @@
-spriteTypes = {	
-
-	spriteType = {
-		name = "GFX_idea_EGY_egyptology"
-		texturefile = "gfx/interface/ideas/EGY/EGY_egyptology.dds"
-	}
-
-}
