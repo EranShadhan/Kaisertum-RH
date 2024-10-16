@@ -1,0 +1,99 @@
+ideas = {
+
+country = {
+
+POL_german_economic_exploitation = {
+
+
+allowed = {
+
+}
+
+allowed_civil_war = {
+always = yes
+}
+
+removal_cost = -1
+
+picture = generic_goods_red_bonus
+
+modifier = {
+consumer_goods_factor =0.15
+add_stability = -0.15
+political_power_cost=0.15
+}
+
+}
+POL_massive_protests= {
+
+
+allowed = {
+
+}
+
+allowed_civil_war = {
+always = no
+}
+
+removal_cost = -1
+
+picture = generic_goods_red_bonus
+
+modifier = {
+political_power_gain=-0.50
+add_stability=-0.30
+add_war_support=-0.30
+stability_weekly=-0.1
+war_support_weekly=-0.05
+}
+}
+
+POL_pmo_insurgency={
+allowed = {
+
+}
+
+allowed_civil_war = {
+always = no
+}
+
+removal_cost = -1
+
+picture = generic_goods_red_bonus
+
+modifier = {
+
+stability_weekly=-0.001
+war_support_weekly=-0.001
+political_power_cost=0.2
+}
+}
+
+POL_nationwide_riots= {
+
+
+allowed = {
+
+}
+
+allowed_civil_war = {
+always = no
+}
+
+removal_cost = -1
+
+picture = generic_goods_red_bonus
+on_remove={
+add_stability=-0.50
+add_war_support=-0.40
+}
+modifier = {
+
+political_power_cost=0.50
+stability_weekly=-0.1
+war_support_weekly=-0.05
+
+}
+}
+}
+}

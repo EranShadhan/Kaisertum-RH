@@ -1,0 +1,122 @@
+ideas = {
+
+	country = {
+	
+		EGY_egyptology = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				research_speed_factor = 0.1
+				stability_factor = 0.05
+			}
+		}
+
+		EGY_ethnic_violence_1 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				stability_factor = -0.25
+				political_power_factor = -0.5
+				consumer_goods_factor = 0.2
+			}
+		}
+
+		EGY_ethnic_violence_2 = {
+
+			name = EGY_ethnic_violence_1
+
+			#picture = EGY_ethnic_violence_1
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				stability_factor = -0.2
+				political_power_factor = -0.4
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		EGY_ethnic_violence_christ = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.3
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		EGY_ethnic_violence_jude = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.3
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		EGY_sinai_synagogue = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = -0.1
+			}
+		}
+
+	}
+}

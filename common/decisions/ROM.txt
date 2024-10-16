@@ -1,0 +1,328 @@
+Elections = {
+	elections = {
+		activation = {
+			 NOT = {has_country_flag = ROM_had_elections}
+		}
+		available = {
+			
+				has_country_flag = ROM_had_elections
+				original_tag = ROM
+			
+		}
+		cancel_trigger = {
+			has_country_flag = ROM_had_elections
+		}
+		icon = mission_icon     # For GFX_decision_mission_icon
+		is_good = yes
+		days_mission_timeout = 155
+		selectable_mission = no
+		timeout_effect = {
+			if = {
+				limit = { has_completed_focus = ROM_pol_2 }
+				country_event = kt_romania.1
+				set_country_flag = ROM_had_elections
+			}
+			if = {
+				limit = { has_completed_focus = ROM_pol_3 }
+				country_event = kt_romania.10
+				set_country_flag = ROM_had_elections
+			}
+		}
+	}
+}
+
+Balkan_project = {
+	influnce_bul = {
+		available = {
+			has_completed_focus = ROM_pol_d_9
+			original_tag = ROM
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = ROM_influence_balkans_var
+				value = 5
+				tooltip = add_5
+			}
+		}
+		days_remove = 20
+	}
+
+	propaganda_bul = {
+		available = {
+			has_completed_focus = ROM_pol_d_9
+			original_tag = ROM
+			check_variable = {
+				var = ROM_influence_balkans_var
+				value = 15
+				compare = greater_than_or_equals
+				tooltip = more15
+			}
+		}
+		visible = {
+			has_completed_focus = ROM_pol_d_9
+			original_tag = ROM
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = ROM_influence_balkans_var
+				value = 10
+				tooltip = add_10
+			}
+		}
+		days_remove = 30
+	}
+
+	invest_bul = {
+		available = {
+			has_completed_focus = ROM_pol_d_9
+			original_tag = ROM
+			check_variable = {
+				var = ROM_influence_balkans_var
+				value = 15
+				compare = greater_than_or_equals
+				tooltip = more15
+			}
+		}
+
+		visible = {
+			has_completed_focus = ROM_pol_d_9
+			original_tag = ROM
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = ROM_influence_balkans_var
+				value = 20
+				tooltip = add_20
+			}
+		}
+		days_remove = 180
+	}
+
+	arm_bul = {
+		available = {
+			has_completed_focus = ROM_pol_d_9
+			original_tag = ROM
+			check_variable = {
+				var = ROM_influence_balkans_var
+				value = 45
+				compare = greater_than_or_equals
+				tooltip = more45
+			}
+			has_completed_focus = ROM_pol_d_19
+		}
+
+		visible = {
+			has_completed_focus = ROM_pol_d_9
+			original_tag = ROM
+			NOT = {
+				has_decision = arm_bul
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = ROM_influence_balkans_var
+				value = 20
+				tooltip = add_20
+			}
+			
+		}
+		days_remove = 45
+	}
+
+	inf_gre = {
+		available = {
+			has_completed_focus = ROM_pol_d_16
+			original_tag = ROM
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = ROM_pol_d_16
+			original_tag = ROM
+			NOT = {
+				has_decision = inf_gre
+
+			}
+		}
+		complete_effect = {
+			GRE = {
+				add_timed_idea = {
+					idea = BALK_debuff
+					days = 90
+				}
+			}
+		}
+	}
+	inf_yug = {
+		available = {
+			has_completed_focus = ROM_pol_d_16
+			original_tag = ROM
+		}
+
+		visible = {
+			has_completed_focus = ROM_pol_d_16
+			original_tag = ROM
+			NOT = {
+				has_decision = inf_yug
+
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			YUG = {
+				add_timed_idea = {
+					idea = BALK_debuff
+					days = 90
+				}
+			}
+		}
+	}
+	inf_alb = {
+		available = {
+			has_completed_focus = ROM_pol_d_16
+			original_tag = ROM
+		}
+
+		visible = {
+			has_completed_focus = ROM_pol_d_16
+			original_tag = ROM
+			NOT = {
+				has_decision = inf_alb
+
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			ALB = {
+				add_timed_idea = {
+					idea = BALK_debuff
+					days = 90
+				}
+			}
+		}
+	}
+}
+
+Balkan_integration = {
+
+	int_bul = {
+		available = {
+			48 = { is_owned_by = ROM }	
+		}
+
+		visible = {
+			has_completed_focus = ROM_pol_d_24
+		}
+
+		complete_effect = {
+			77 = {add_core_of = ROM}
+			108 = {add_core_of = ROM}
+			48 = {add_core_of = ROM}
+			801 = {add_core_of = ROM}
+			211 = {add_core_of = ROM}
+			212 = {add_core_of = ROM}
+			803 = {add_core_of = ROM}
+			106 = {add_core_of = ROM}
+			184 = {add_core_of = ROM}
+			981 = {add_core_of = ROM}
+		}
+	}
+
+	int_gre = {
+		available = {
+			47 = { is_owned_by = ROM }	
+		}
+
+		visible = {
+			has_completed_focus = ROM_pol_d_24
+		}
+
+		complete_effect = {
+			731 = {add_core_of = ROM}
+			184 = {add_core_of = ROM}
+			186 = {add_core_of = ROM}
+			341 = {add_core_of = ROM}
+			797 = {add_core_of = ROM}
+			185 = {add_core_of = ROM}
+			983 = {add_core_of = ROM}
+			47 = {add_core_of = ROM}
+			182 = {add_core_of = ROM}
+			985 = {add_core_of = ROM}
+			187 = {add_core_of = ROM}
+			984 = {add_core_of = ROM}
+			1039 = {add_core_of = ROM}
+			985 = {add_core_of = ROM}
+			TUR = {
+				if = {
+					limit = { 339 = {is_owned_by = ROM } }
+					transfer_state = 339
+				}
+				if = {
+					limit = { 987= {is_owned_by = ROM } }
+					transfer_state = 987
+				}
+				if = {
+					limit = { 986 = {is_owned_by = ROM } }
+					transfer_state = 986
+				}
+				if = {
+					limit = { 183 = {is_owned_by = ROM } }
+					transfer_state = 183
+				}
+				
+			}
+		}
+	}
+
+	int_yug = {
+		available = {
+			989 = { is_owned_by = ROM }	
+		}
+
+		visible = {
+			has_completed_focus = ROM_pol_d_24
+		}
+
+		complete_effect = {
+			989 = {add_core_of = ROM}
+			853 = {add_core_of = ROM}
+			852 = {add_core_of = ROM}
+			736 = {add_core_of = ROM}
+			163 = {add_core_of = ROM}
+			103 = {add_core_of = ROM}
+			977 = {add_core_of = ROM}
+			105 = {add_core_of = ROM}
+			804 = {add_core_of = ROM}
+			104 = {add_core_of = ROM}
+			109 = {add_core_of = ROM}
+			45 = {add_core_of = ROM}
+			102 = {add_core_of = ROM}
+			988 = {add_core_of = ROM}
+		}
+	}
+
+	int_ser_alb = {
+		available = {
+			107 = { is_owned_by = ROM }	
+		}
+
+		visible = {
+			has_completed_focus = ROM_pol_d_24
+		}
+
+		complete_effect = {
+			764 = {add_core_of = ROM}
+			107 = {add_core_of = ROM}
+			802 = {add_core_of = ROM}
+			979 = {add_core_of = ROM}
+			934 = {add_core_of = ROM}
+			44 = {add_core_of = ROM}
+			805 = {add_core_of = ROM}
+		}
+	}
+
+}

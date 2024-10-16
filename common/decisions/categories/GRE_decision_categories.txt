@@ -1,0 +1,62 @@
+################
+#### GREECE ####
+################
+
+GRE_1936_election_category = {
+	priority = 10
+	icon = generic_crisis
+
+	picture = GFX_decision_cat_picture_1936_election
+
+	allowed = {
+		tag = GRE
+	}
+}
+
+GRE_pay_back_debt_to_the_ifc_category2 = {
+	priority = 6
+	icon = gre_paying_ifc_debt
+
+	picture = GFX_decision_cat_generic_mefo_bills
+
+	allowed = {
+		original_tag = GRE
+	}
+}
+GRE_onassis_dec_category  = {
+	priority = 4
+	icon = GFX_decision_category_gre_onassis_plan
+
+	allowed = {
+		original_tag = GRE
+	}
+}
+GRE_investment_decisions_category  = {
+	priority = 4
+	icon = gre_investment_decisions	
+
+	allowed = {
+		original_tag = GRE
+	}
+}
+
+GRE_hellenic_academy_category  = {
+	priority = 2
+	icon = gre_hellenic_academy
+
+	allowed = {
+		original_tag = GRE
+	}
+}
+
+GRE_faction_management_category = {
+	priority = 9
+	icon = gre_faction_management
+
+	scripted_gui = gre_internal_factions_decision_ui
+
+	allowed = {
+		original_tag = GRE
+	}
+	visible_when_empty = yes
+}

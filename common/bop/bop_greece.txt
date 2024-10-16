@@ -1,0 +1,141 @@
+
+GRE_power_balance = {
+	initial_value = 0
+	left_side = GRE_default_left_side
+	right_side = GRE_default_right_side
+	decision_category = GRE_balance_of_power_category
+	range = {
+		id = GRE_mid_range
+		min = -0.05
+		max = 0.05
+		modifier = {
+		stability_factor = 0.01
+		}
+	}
+	side = {
+		id = GRE_default_left_side
+		icon = GFX_bop_GRE_metaxas
+		range = {
+			id = GRE_left_side_range
+			min = -0.2
+			max = -0.05
+			modifier = {
+			democratic_drift = 0.02
+			drift_defence_factor = -0.05
+			}
+		}
+		range = {
+			id = GRE_middle_left_side_range
+			min = -0.45
+			max = -0.2
+			modifier = {
+			democratic_drift = 0.05
+			drift_defence_factor = -0.1
+			stability_factor = -0.05
+			}
+		}
+		range = {
+			id = GRE_far_left_side_range
+			min = -0.60
+			max = -0.45
+			modifier = {
+			democratic_drift = 0.1
+			stability_factor = -0.05
+			}	
+		}
+		range = {
+			id = GRE_farr_left_side_range
+			min = -0.75
+			max = -0.60
+			modifier = {
+			democratic_drift = 0.1	
+			stability_factor = -0.1
+				war_support_factor = 0.05
+				political_power_factor = 0.05
+				
+			}
+		}
+		range = {
+			id = GRE_coup_left_side_range
+			min = -1
+			max = -0.75
+			modifier = {
+			democratic_drift = 0.15
+			stability_factor = -0.15
+				war_support_factor = 0.15
+				
+				political_power_factor = 0.15
+				conscription_factor = 0.05
+			}
+
+					
+		}
+	}
+
+	side = {
+		id = GRE_default_right_side
+		icon = GFX_bop_GRE_george
+		range = {
+			id = GRE_right_side_range
+			min = 0.05
+			max = 0.2
+			modifier = {
+			 neutrality_drift = 0.05
+			 drift_defence_factor = 0.05
+			}
+		}
+		range = {
+			id = GRE_middle_right_side_range
+			min = 0.2
+			max = 0.45
+			modifier = {
+			neutrality_drift = 0.05
+			 drift_defence_factor = 0.1
+			  war_support_factor = -0.05
+			}
+		}
+		range = {
+			id = GRE_far_right_side_range
+			min = 0.45
+			max = 0.6
+			modifier = {
+               
+				
+			    neutrality_drift = 0.1
+			 drift_defence_factor = 0.1
+			  war_support_factor = -0.05
+			}
+		}
+		range = {
+			id = GRE_farr_right_side_range
+			min = 0.6
+			max = 0.75
+			modifier = {
+                
+			    	
+			    neutrality_drift = 0.1
+			 drift_defence_factor = 0.1
+			  war_support_factor = -0.1
+			 stability_factor = 0.05
+			 
+			}
+		}
+		range = {
+			id = GRE_coup_right_side_range
+			min = 0.75
+			max = 1
+			modifier = {	
+			    neutrality_drift = 0.15
+				drift_defence_factor = 0.1
+				 war_support_factor = -0.15
+				stability_factor = 0.10
+				political_power_factor = 0.10
+				
+			}
+		
+
+		}
+	}
+	
+}
+

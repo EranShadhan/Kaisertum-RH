@@ -1,0 +1,424 @@
+ideas = {
+
+	country = {
+
+		PER_german_persian_oil_company = {
+
+			picture = generic_morale_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = -0.05
+				custom_modifier_tooltip = PER_german_persian_oil_company_tt
+			}
+			on_add = {
+				add_offsite_building = { type = industrial_complex level = 1 } #oil payment
+			}
+			on_remove = {
+				remove_offsite_building = { type = industrial_complex level = 1 } #oil payment
+			}
+		}
+
+		PER_german_persian_oil_company_2 = {
+
+			name = PER_german_persian_oil_company
+
+			picture = generic_morale_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = 0.1
+				custom_modifier_tooltip = PER_german_persian_oil_company_tt
+			}
+			on_add = {
+				add_offsite_building = { type = industrial_complex level = 2 } #oil payment
+			}
+			on_remove = {
+				remove_offsite_building = { type = industrial_complex level = 2 } #oil payment
+			}
+		}
+
+		PER_army_1_focus = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = -0.4
+				army_defence_factor = -0.4
+				army_speed_factor = -0.4
+			}
+		}
+
+		PER_army_2_focus = {
+
+			name = PER_army_1_focus
+
+			picture = PER_army_1_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = -0.3
+				army_defence_factor = -0.3
+				army_speed_factor = -0.3
+			}
+		}
+
+		PER_army_3_focus = {
+
+			name = PER_army_1_focus
+
+			picture = PER_army_1_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = -0.2
+				army_defence_factor = -0.2
+				army_speed_factor = -0.2
+			}
+		}
+
+		PER_army_4_focus = {
+
+			name = PER_army_1_focus
+
+			picture = PER_army_1_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				army_speed_factor = -0.1
+			}
+		}
+
+		PER_army_5_focus = {
+
+			picture = PER_army_1_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+
+		PER_monarchist_resistance = {
+
+			picture = generic_monarchist_uprising
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.15
+				drift_defence_factor = -0.25
+			}
+		}
+
+		PER_military_rule = {
+
+			picture = ARG_military_government
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.05
+				drift_defence_factor = 0.1
+			}
+		}
+
+		PER_mohammad_hassan_shah_qajar = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			traits = { popular_figurehead3 }
+		}
+
+		PER_mohammad_hassan_shah_qajar_2 = {
+
+			name = PER_mohammad_hassan_shah_qajar
+
+			picture = PER_mohammad_hassan_shah_qajar
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			traits = { popular_figurehead }
+		}
+
+		PER_disloyal_military = {
+
+			picture = ARG_military_government
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				custom_modifier_tooltip = PER_disloyal_military_tt
+			}
+		}
+
+		PER_imperialism = {
+
+			picture = FRA_scw_intervention_nationalists_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.15
+				subjects_autonomy_gain = -0.1
+			}
+		}
+
+		PER_carpets = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+		PER_tourism_baghdad = {
+
+			picture = generic_economic_increase
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		PER_traditional_islam_gov = {
+
+			picture = traditional_society
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.15
+				political_power_factor = -0.33
+				political_advisor_cost_factor = 2
+			}
+		}
+
+		PER_traditional_islam_gov_2 = {
+
+			picture = traditional_society
+
+			name = PER_traditional_islam_gov
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.2
+				political_power_factor = -0.05
+				political_advisor_cost_factor = 0.10
+			}
+		}
+
+		PER_radical_science_idea = {
+
+			picture = traditional_society
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.2
+			}
+		}
+
+		PER_dream = {
+
+			picture = FRA_national_mobilization_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.1
+				conscription = 0.015
+				justify_war_goal_time = -0.25
+			}
+		}
+
+		PER_agrarian_society = {
+
+			picture = generic_agrarian_society
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				industrial_capacity_factory = -0.20
+				industrial_capacity_dockyard = -0.3
+				research_speed_factor = -0.2
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,918 @@
+ideas = {
+
+	country = {
+
+        Inefective_constitution = {
+
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+                political_power_gain = -0.15
+                conscription_factor = -0.2
+				drift_defence_factor = -0.1
+			}
+		}
+
+		ROM_playboy = {
+
+			picture = ROM_carol_ii_KT
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			traits = { ROM_playboy_king }
+		}
+
+		ROM_war_songs = {
+			picture = ROM_war_songs
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.05
+				army_org_regain = 0.05	
+				recruitable_population = 0.1
+			}
+		}
+
+		BALK_debuff = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = -0.2
+				army_core_defence_factor = -0.2
+			}
+		}
+
+		ROM_sell_gold = {
+			picture = ROM_sell_gold
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		ROM_sell_gold_2 = {
+			picture = ROM_incoming_gold
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.10
+			}
+		}
+
+		ROM_total_equality = {
+			picture = ROM_rights_for_all
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				recruitable_population = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		ROM_resistant_culture_hun = {
+			picture = ROM_hungarian_culture_res
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.25
+				stability_factor = -0.15
+			}
+		}
+
+		ROM_resistant_culture = {
+			picture = ROM_people_angry
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.25
+				stability_factor = -0.15
+			}
+		}
+
+		ROM_import_food = {
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				recruitable_population = 0.1
+				stability_factor = 0.05
+			}
+		}
+
+		Carol_reforms = {
+
+			picture = ROM_carlist_reforms
+
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_weekly = 0.001
+				neutrality_drift = 0.1
+			}
+		}
+
+		suspend_constitution = {
+			picture = ROM_suspended_constitution
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.01
+				political_power_gain = -0.15
+				industrial_capacity_dockyard = -0.10
+				industrial_capacity_factory = -0.10
+				drift_defence_factor = -0.1
+			}
+		}
+
+		increase_taxes = {
+			picture = ROM_high_Taxes
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.10
+				political_power_gain = 0.15
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		revised_constitution = {
+			picture = ROM_revised_constitution
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.15
+				industrial_capacity_dockyard = 0.10
+				industrial_capacity_factory = 0.10
+				production_speed_buildings_factor = 0.05
+				recruitable_population = 0.4
+				democratic_drift = 0.05
+			}
+		}
+
+		rom_political_violence = {
+			picture = ROM_political_instability
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.003
+				neutrality_drift = 0.02
+			}
+		}
+
+		caramaila_sentinels = {
+			picture = ROM_sentinels
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = 0.05
+				recruitable_population = 0.10
+			}
+		}
+
+		hungarian_workforce = {
+			picture = ROM_hungarian_workforce
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.10
+				production_speed_bunker_factor = 0.10
+			}
+		}
+
+		total_equality = {
+			picture = ROM_rights_for_all
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				recruitable_population = 0.1
+				army_org_factor = 0.15
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		ineffective_regency = {
+			picture = ROM_inefective_regency
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.20
+				stability_factor = -0.2
+				political_power_gain = -0.1
+			}
+		}
+
+		bribing_holdouts = {
+			picture = ROM_bribing
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.10
+				political_power_gain = -0.25
+			}
+		}
+
+		ROM_national_plan = {
+			picture = ROM_national_plan
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				global_building_slots_factor = 0.1
+			}
+		}
+
+		ROM_peak_industry = {
+			picture = ROM_peak_industry
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = 0.005
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.20
+				industrial_capacity_factory = 0.1
+			}
+		}
+		ROM_helping_the_poor = {
+			picture = ROM_help_the_poor
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = 0.001
+				consumer_goods_factor = 0.15
+				civilian_factory_use = 2
+			}
+		}
+		ROM_helping_the_farmers = {
+			picture = ROM_help_the_farmers
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = 0.001
+				civilian_factory_use = 2
+				min_export = 0.35
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+		ROM_improved_school_system = {
+			picture = ROM_improved_school_system
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+		ROM_small_business_booming = {
+			picture = ROM_small_business_booming
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				min_export = -0.05
+				stability_factor = 0.1
+				drift_defence_factor = 0.15
+				local_resources_factor = 0.1
+			}
+		}
+		ROM_farmers_utiopia = {
+			picture = ROM_worker_utiopia
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+		ROM_exporting_food = {
+			picture = ROM_export_food
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				min_export = 0.15
+				consumer_goods_factor = -0.15
+			}
+		}
+		ROM_keeping_food = {
+			picture = ROM_keeping_the_food
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.10
+				consumer_goods_factor = -0.05
+				local_resources_factor = 0.1
+				monthly_population = 0.15
+			}
+		}
+		ROM_paris_of_the_east = {
+			picture = ROM_eastern_paris
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+ 
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				drift_defence_factor = 0.15
+				consumer_goods_factor = -0.05
+			}
+		}
+		ROM_turism = {
+			picture = ROM_turism
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.10
+			}
+		}
+		ROM_lack_of_food = {
+			picture = ROM_keeping_the_food
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = -0.5
+				army_core_attack_factor = -0.5
+			}
+		}
+	}
+
+	hidden_ideas = {
+
+		arm_ref_1 = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		arm_ref_2 = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+
+		arm_ref_3 = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+
+		arm_ref_4 = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.2 
+			}
+		}
+
+		ind_1 = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		ind_2 = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+		ind_3 = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory	 = 0.05
+			}
+		}
+
+		ind_4 = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		ind_5 = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.35
+				
+			}
+		}
+
+		ind_6 = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory	 = 0.25
+				
+			}
+		}
+
+		ind_7 = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		ind_8 = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+
+		ind_9 = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+		ind_10 = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.20
+				industrial_capacity_factory = -0.02
+				production_factory_efficiency_gain_factor = -0.05
+			}
+		}
+
+		ind_11 = {
+			picture = generic_social_reforms
+			
+			allowed = { 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.02
+				industrial_capacity_factory = 0.1
+				
+			}
+		}
+
+	}
+
+}

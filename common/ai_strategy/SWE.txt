@@ -1,0 +1,258 @@
+
+SWE_bofors_aa_production = {
+	allowed = {
+		original_tag = SWE
+	}
+	enable = {
+		num_of_military_factories > 4  # It's early but still later than IRL. Let's try.
+		has_tech = interwar_antiair
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = anti_air
+		value = 2
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_air
+		value = 50
+	}
+	ai_strategy = {
+		type = equipment_market_for_sale_factor
+		id = anti_air
+		value = 200
+	}
+}
+
+SWE_bofors_at_production = {
+	allowed = {
+		original_tag = SWE
+	}
+	enable = {
+		num_of_military_factories > 5  # It's early but still later than IRL. Let's try.
+		has_tech = interwar_antitank
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = anti_tank
+		value = 1
+	}
+	ai_strategy = {
+		type = equipment_market_for_sale_factor
+		id = anti_tank
+		value = 100
+	}
+}
+
+SWE_armored_production = {
+	enable = {
+				original_tag = SWE
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 5
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = armor
+		value = 1
+	}
+	ai_strategy = {
+		type = equipment_market_for_sale_factor
+		id = armor
+		value = 200
+	}
+	ai_strategy = {
+		type = equipment_market_spend_factories
+		id = armor
+		value = 1
+	}
+	ai_strategy = {
+		type = equipment_market_max_for_sale
+		id = armor
+		value = 200
+	}
+	
+}
+
+
+SWE_avoid_axis_or_comintern = {
+	allowed = { 
+		original_tag = SWE 
+		has_dlc = "By Blood Alone"
+	}
+	
+	enable = {
+		is_historical_focus_on = yes
+	}
+	
+	abort = {
+		date > 1945.1.1
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "JAP"
+		value = -400
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "SOV"
+		value = -400
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "GER"
+		value = -400
+	}
+}
+
+SWE_avoid_allies = {
+
+	allowed = { 
+		original_tag = SWE 
+		has_dlc = "Arms Against Tyranny"
+	}
+	
+	enable = {
+		is_historical_focus_on = yes
+		has_war = no
+	}
+	
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = alliance
+		id = "ENG"
+		value = -1000
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "USA"
+		value = -1000
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "FRA"
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "CAN"
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "AST"
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "SAF"
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "ICE"
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "NZL"
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "HOL"
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "LUX"
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "BEL"
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "DEN"
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "NOR"
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "MEX"
+		value = -1000
+	}
+}
+
+make_SWE_unpopular = { 
+
+	allowed = { 
+		has_dlc = "By Blood Alone"
+		OR = {
+			original_tag = JAP 
+			original_tag = SOV 
+			original_tag = GER 
+		}
+	}
+	
+	enable = {
+		is_historical_focus_on = yes
+		SWE = {
+			NOT = { has_government = fascism }
+			NOT = { has_government = neutrality }
+		}
+		date < 1946.1.1
+		OR = {
+			AND = {
+				original_tag = GER
+				SWE = { 
+					NOT = { 
+						has_completed_focus = SWE_join_the_anti_soviet_pact 
+					}
+				}
+			}
+			original_tag = SOV
+			original_tag = JAP
+		}
+	}
+	
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = alliance
+		id = "SWE"
+		value = -400
+	}
+}

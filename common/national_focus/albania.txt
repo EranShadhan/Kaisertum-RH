@@ -1,0 +1,22 @@
+﻿focus_tree = {
+	id = albanian_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ALB
+		}
+	}
+
+	joint_focus = BALKAN_joint_united_front
+	#Generic tree
+	shared_focus = army_effort
+	shared_focus = aviation_effort
+	shared_focus = naval_effort
+	shared_focus = industrial_effort
+	shared_focus = political_effort
+	
+	default = no
+
+}

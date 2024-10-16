@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_council_of_siam"
+		texturefile = "gfx/interface/ideas/SIA/council_of_siam.dds"
+	}
+
+}

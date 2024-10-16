@@ -1,0 +1,530 @@
+focus_tree = {
+	id = crete_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CRE
+		}
+	}
+	
+
+	default = no
+
+	#shared_focus = BALKAN_joint_united_front
+	continuous_focus_position = { x = 20 y = 1600 }
+	
+	
+	shared_focus = army_effort
+	shared_focus = aviation_effort
+	shared_focus = naval_effort
+	shared_focus = industrial_effort
+	shared_focus = political_effort
+	initial_show_position = {
+		focus = industrial_effort
+	}	
+
+	focus = {
+		id = CRE_the_new_state_of_crete
+		icon = GFX_focus_SWE_refuge_from_war
+
+		
+		available = {
+		}
+		x = 33
+		y = 0
+
+		cost = 3
+		ai_will_do = {
+			base = 0
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	         add_political_power = 75
+			 add_stability = 0.05
+			add_autonomy_score = {
+						value = 100
+					}
+		    }
+		}
+	
+	focus = {
+		id = CRE_ivnite_italians
+		icon = GFX_focus_ETH_invite_italian_settlers
+
+		
+		available = {
+		}
+		x = 1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		relative_position_id = CRE_the_new_state_of_crete
+		prerequisite = { focus = CRE_the_new_state_of_crete }
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	         capital_scope = {
+				ETH_upgrade_state_category = yes 
+				add_manpower = 150000
+			}
+		    }
+		}
+	focus = {
+		id = CRE_our_own_5_year_plan
+		icon = GFX_focus_generic_mining_industry
+
+		
+		available = {
+		}
+		x = -1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		relative_position_id = CRE_the_new_state_of_crete
+		prerequisite = { focus = CRE_the_new_state_of_crete }
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	          add_timed_idea = { idea = GRE_five_year_plan_idea days = 1825}
+		    }
+		}		
+	focus = {
+		id = CRE_the_state_stands_strong
+		icon = GFX_goal_generic_attack_allies
+
+		
+		available = {
+		}
+		x = 1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		relative_position_id = CRE_our_own_5_year_plan
+		mutually_exclusive = { focus = CRE_shady_alliance_like_slim_shady focus = CRE_friendship_with_italy }
+		prerequisite = { focus = CRE_our_own_5_year_plan focus = CRE_ivnite_italians }
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		add_war_support = 0.1
+		add_political_power = 100
+		    }
+		}
+	focus = {
+		id = CRE_the_cretan_movement
+		icon = GFX_GRE_cretan_state
+
+		
+		available = {
+		}
+		x = 1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		relative_position_id = CRE_the_state_stands_strong
+		mutually_exclusive = { focus = CRE_stay_with_greece  }
+		prerequisite = { focus = CRE_the_state_stands_strong }
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+					OVERLORD = {
+						set_autonomy = {
+							target = CRE
+							autonomy_state = autonomy_free
+						}
+					}
+				
+		    }
+		}
+		focus = {
+		id = CRE_power_to_the_militart
+		icon = GFX_GRE_sons_and_daugthers_of_greece
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		relative_position_id = CRE_the_cretan_movement
+		prerequisite = { focus = CRE_the_cretan_movement }
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		
+         hidden_effect = {
+				division_template = {
+					name = "Cretan Guard"
+					priority = 2
+					division_names_group = GRE_INF_01
+					regiments = {
+						cavalry = { x = 0 y = 0 }
+						cavalry = { x = 0 y = 1 }
+						cavalry = { x = 0 y = 2 }
+			
+	    	   		 	cavalry = { x = 1 y = 0 }
+						cavalry = { x = 1 y = 1 }
+						cavalry = { x = 1 y = 2 }
+			
+	    	   		 	cavalry = { x = 2 y = 0 }
+						cavalry = { x = 2 y = 1 }
+						cavalry = { x = 2 y = 2 }
+						
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }					
+					}
+				}			
+			}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					create_unit = {
+						division = "name = \"1. Cretan Guard\" division_template = \"Cretan Guard\" start_experience_factor = 1.0" 
+						owner = CRE
+					}
+					create_unit = {
+						division = "name = \"1. Cretan Guard\" division_template = \"Cretan Guard\" start_experience_factor = 1.0"  
+						owner = CRE
+					}
+					create_unit = {
+						division = "name = \"1. Cretan Guard\" division_template = \"Cretan Guard\" start_experience_factor = 1.0" 
+						owner = CRE
+					}
+					create_unit = {
+						division = "name = \"1. Cretan Guard\" division_template = \"Cretan Guard\" start_experience_factor = 1.0" 
+						owner = CRE
+					}
+					create_unit = {
+						division = "name = \"1. Cretan Guard\" division_template = \"Cretan Guard\" start_experience_factor = 1.0" 
+						owner = CRE
+					}					
+				}	
+		    }
+		}	
+	focus = {
+		id = CRE_stay_with_greece
+		icon = GFX_GRE_keep_crete
+
+		
+		available = {
+		}
+		x = -1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		relative_position_id = CRE_the_state_stands_strong
+		mutually_exclusive = { focus = CRE_the_cretan_movement  }
+		prerequisite = { focus = CRE_the_state_stands_strong }
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	add_ideas = CRE_paul
+		    }
+		}		
+	focus = {
+		id = CRE_request_cyprus
+		icon = GFX_gre_CYP_full_of_oil
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		relative_position_id = CRE_stay_with_greece
+		prerequisite = { focus = CRE_stay_with_greece }
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+	
+		    }
+			
+		}	
+	focus = {
+		id = CRE_minoans
+		icon = GFX_GRE_minoan_civ
+
+		available = {
+		}
+		x = 1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		relative_position_id = CRE_request_cyprus
+		prerequisite = { focus = CRE_request_cyprus focus = CRE_power_to_the_militart }
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+				custom_effect_tooltip = CRE_minoan_civ
+				show_ideas_tooltip = CRE_first_hellenic_civilisation_idea4
+				custom_effect_tooltip = CRE_minoan_civ2
+				
+				effect_tooltip = {
+				set_cosmetic_tag = CRE_minoan
+	 985 = { add_core_of = CRE }
+	  187 = { add_core_of = CRE }
+	   164 = { add_core_of = CRE }
+	    186 = { add_core_of = CRE }
+		 987 = { add_core_of = CRE }
+				
+				}
+			hidden_effect = {
+		if = { limit = { has_completed_focus = CRE_power_to_the_militart }
+	set_cosmetic_tag = CRE_minoan
+	 985 = { add_core_of = CRE }
+	  187 = { add_core_of = CRE }
+	   164 = { add_core_of = CRE }
+	    186 = { add_core_of = CRE }
+		 987 = { add_core_of = CRE }
+		 }
+		 
+		 if = { limit = { has_completed_focus = CRE_request_cyprus }
+	                add_ideas = CRE_first_hellenic_civilisation_idea4
+               	}
+		    }}
+			
+		}	
+		
+	focus = {
+		id = CRE_friendship_with_italy
+		icon = GFX_focus_ITA_italian_irredentism
+
+		
+		available = {
+		}
+		x = 4
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		relative_position_id = CRE_our_own_5_year_plan
+		prerequisite = { focus = CRE_our_own_5_year_plan focus = CRE_ivnite_italians }
+		mutually_exclusive = { focus = CRE_shady_alliance_like_slim_shady focus = CRE_the_state_stands_strong }
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}
+	focus = {
+		id = CRE_the_jewel_of_crete
+		icon = GFX_GRE_cretan_venice
+		
+		available = {
+		}
+		x = 1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		relative_position_id = CRE_friendship_with_italy
+		prerequisite = { focus = CRE_friendship_with_italy }
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}
+	focus = {
+		id = CRE_crete_and_Cyrenaica
+		icon = GFX_focus_generic_develop_libya
+		
+		available = {
+		}
+		x = 0
+		y = 2
+
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		relative_position_id = CRE_friendship_with_italy
+		prerequisite = { focus = CRE_friendship_with_italy }
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}	
+	focus = {
+		id = CRE_administrator_of_the_med
+		icon = GFX_focus_generic_mediterranean_sea_focus
+		
+		available = {
+		}
+		x = 1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		relative_position_id = CRE_crete_and_Cyrenaica
+		prerequisite = { focus = CRE_crete_and_Cyrenaica }
+		prerequisite = { focus = CRE_the_jewel_of_crete }
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		set_cosmetic_tag = CRE_VENIZE
+		    }
+		}		
+	focus = {
+		id = CRE_shady_alliance_like_slim_shady
+		icon = GFX_focus_secure_crete2
+
+		
+		available = {
+		}
+		x = -2
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		mutually_exclusive = { focus = CRE_friendship_with_italy focus = CRE_the_state_stands_strong }
+		relative_position_id = CRE_our_own_5_year_plan
+		prerequisite = { focus = CRE_our_own_5_year_plan focus = CRE_ivnite_italians }
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}	
+	focus = {
+		id = CRE_eyalet_of_crete_moria_and_kibris
+		icon = GFX_focus_TUR_pivot_to_the_past
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		relative_position_id = CRE_shady_alliance_like_slim_shady
+		prerequisite = { focus = CRE_shady_alliance_like_slim_shady }
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}	
+	focus = {
+		id = CRE_the_dark_97
+		icon = GFX_focus_GRE_expand_mercury
+
+		
+		available = {
+		}
+		x = -2
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		relative_position_id = CRE_shady_alliance_like_slim_shady
+		prerequisite = { focus = CRE_shady_alliance_like_slim_shady }
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}
+	focus = {
+		id = CRE_the_other_side
+		icon = GFX_gre_other_side_of_megali
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		relative_position_id = CRE_the_dark_97
+		prerequisite = { focus = CRE_the_dark_97 }
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		    }
+		}	
+	focus = {
+		id = CRE_the_rumelia_deal
+		icon = GFX_focus_generic_balkan_diplomacy
+
+		
+		available = {
+		}
+		x = 1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		relative_position_id = CRE_the_other_side
+		prerequisite = { focus = CRE_the_other_side }
+		prerequisite = { focus = CRE_the_wasted_sacrifice_of_1866 }
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		set_cosmetic_tag = CRE_ottoman
+		    }
+		}			
+	focus = {
+		id = CRE_the_wasted_sacrifice_of_1866
+		icon = GFX_focus_BRA_utilize_security_law
+
+		
+		available = {
+		}
+		x = 0
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			base = 0
+		}
+		relative_position_id = CRE_eyalet_of_crete_moria_and_kibris
+		prerequisite = { focus = CRE_eyalet_of_crete_moria_and_kibris }
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+		
+		    }
+		}		
+}

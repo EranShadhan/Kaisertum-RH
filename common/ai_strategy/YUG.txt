@@ -1,0 +1,48 @@
+YUG_get_fiume = {
+
+    allowed = { 
+		OR = {
+			original_tag = YUG
+			original_tag = ITA
+		}
+	}
+    
+    enable = {
+        has_global_flag = austrian_collapse
+    }
+    
+    abort = {
+        has_global_flag = illirya_meccanic_finished
+    }
+
+    ai_strategy = {
+        type = pp_spend_priority
+        id = decision
+        value = 4000
+    }
+	
+}
+YUG_get_fiume_1 = {
+
+    allowed = { 
+		OR = {
+			original_tag = YUG
+			original_tag = ITA
+		}
+	}
+    
+    enable = {
+        has_global_flag = austrian_collapse
+    }
+    
+    abort = {
+        has_global_flag = illirya_meccanic_finished
+    }
+
+    ai_strategy = {
+		type = pp_spend_amount
+		id = idea
+		value = 2000
+	}
+	
+}

@@ -1,0 +1,113 @@
+spriteTypes = {
+
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+#####################
+
+	spriteType = {
+		name = "GFX_UKR_zhbt"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_zhbtz.dds"
+		  
+	}
+	spriteType = {
+		name = "GFX_UKR_kbtz"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_kbtz.dds"
+		  
+	}
+		spriteType = {
+		name = "GFX_UKR_hkbm"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_hkbm.dds"
+		  
+	}
+	
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+	
+			spriteType = {
+		name = "GFX_UKR_chsz"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_chsz.dds"
+		  
+	}
+		spriteType = {
+		name = "GFX_UKR_srdsc"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_srdsc.dds"
+		  
+	}
+		spriteType = {
+		name = "GFX_UKR_thunderbird"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_thunderbird.dds"
+		  
+	}
+	
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+	
+		spriteType = {
+		name = "GFX_UKR_aviant"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_Aviant.dds"
+		  
+	}
+		spriteType = {
+		name = "GFX_UKR_anatra"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_Anatra.dds"
+		  
+	}
+		spriteType = {
+		name = "GFX_UKR_motorsich"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_MotorSich.dds"
+		  
+	}
+		spriteType = {
+		name = "GFX_UKR_haz"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_HAZ.dds"
+		  
+	}
+	
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+	
+		spriteType = {
+		name = "GFX_UKR_sgc"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_sgc.dds"
+		  
+	}
+		spriteType = {
+		name = "GFX_UKR_dob"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_dob.dds"
+		  
+	}
+		spriteType = {
+		name = "GFX_UKR_zaz"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_zaz.dds"
+		  
+	}
+
+}

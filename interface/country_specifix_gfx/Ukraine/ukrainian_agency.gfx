@@ -1,0 +1,17 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_UKR_GUR_agency"
+		texturefile = "gfx/interface/operatives/agencies/GFX_UKR_GUR_agency.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_UKR_OVDV_agency"
+		texturefile = "gfx/interface/operatives/agencies/GFX_UKR_OVDV_agency.dds"
+		noOfFrames = 2
+	}
+		spriteType = {
+		name = "GFX_UKR_VARTA_agency"
+		texturefile = "gfx/interface/operatives/agencies/GFX_UKR_VARTA_agency.dds"
+		noOfFrames = 2
+	}
+}

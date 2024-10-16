@@ -1,0 +1,22 @@
+
+
+spriteTypes = {	
+
+   #GREECE 
+   spriteType = {
+		name = "GFX_portrait_Greece_George_II_temp"
+		texturefile = "gfx/leaders/GRE/Portrait_Greece_George_II_temp.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_Greece_george_the_second"
+		texturefile = "gfx/leaders/GRE/portrait_Greece_george_the_second.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_Greece_ioannis_metaxas"
+		texturefile = "gfx/leaders/GRE/portrait_Greece_ioannis_metaxas.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_George_of_crete"
+		texturefile = "gfx/leaders/GRE/portrait_George_of_crete.dds"
+	}
+}

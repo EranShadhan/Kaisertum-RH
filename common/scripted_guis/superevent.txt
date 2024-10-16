@@ -1,0 +1,27 @@
+scripted_gui = {
+	SE_Window = {
+		context_type = player_context
+		window_name = "SE_Window"
+
+		visible = {
+			OR = {
+				has_country_flag = se_test
+				has_global_flag = se_austrian_collapse
+			}
+		}
+		triggers = {
+			SE_test_visible = {
+				has_country_flag = se_test
+			}
+			SE_austrian_collapse_visible = {
+				has_global_flag = se_austrian_collapse
+			}
+		}
+		effects = {
+			SE_Option_click = {
+				clr_country_flag = se_test
+				clr_global_flag = se_austrian_collapse
+			}
+		}		
+	}		
+}

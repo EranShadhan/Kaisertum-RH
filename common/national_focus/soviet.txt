@@ -1,0 +1,143 @@
+﻿focus_tree = {
+	id = russian_focus
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 50 y = 1000 }
+
+	###DUMA-COUNCIL SPLIT###
+
+	focus = {
+		id = SOV_duma_council_split
+		icon = GFX_
+		x = 5
+		y = 0
+		
+		available = {
+
+		}
+		bypass = {
+		}
+
+		cost = 5
+
+		completion_reward = {
+			
+		}
+    }
+	
+	focus = {
+		id = SOV_the_governance_question
+		icon = GFX_
+		x = -3
+		y = 1
+		relative_position_id = SOV_duma_council_split
+		
+		prerequisite = { focus = SOV_duma_council_split }
+		available = {
+
+		}
+		bypass = {
+		}
+
+		cost = 5
+
+		completion_reward = {
+			
+		}
+    }
+	
+	focus = {
+		id = SOV_the_industrialisation_question
+		icon = GFX_
+		x = -1
+		y = 1
+		relative_position_id = SOV_duma_council_split
+		
+		prerequisite = { focus = SOV_duma_council_split }
+		available = {
+
+		}
+		bypass = {
+		}
+
+		cost = 5
+
+		completion_reward = {
+			
+		}
+    }
+	
+	focus = {
+		id = SOV_the_military_question
+		icon = GFX_
+		x = 1
+		y = 1
+		relative_position_id = SOV_duma_council_split
+		
+		prerequisite = { focus = SOV_duma_council_split }
+		available = {
+
+		}
+		bypass = {
+		}
+
+		cost = 5
+
+		completion_reward = {
+			
+		}
+    }
+	
+	focus = {
+		id = SOV_the_revenge_question
+		icon = GFX_
+		x = 3
+		y = 1
+		relative_position_id = SOV_duma_council_split
+		
+		prerequisite = { focus = SOV_duma_council_split }
+		available = {
+
+		}
+		bypass = {
+		}
+
+		cost = 5
+
+		completion_reward = {
+			
+		}
+    }
+	
+	focus = {
+		id = SOV_the_outcome_of_the_clash
+		icon = GFX_
+		x = 0
+		y = 2
+		relative_position_id = SOV_duma_council_split
+		
+		prerequisite = { focus = SOV_the_governance_question }
+		prerequisite = { focus = SOV_the_industrialisation_question }
+		prerequisite = { focus = SOV_the_military_question }
+		prerequisite = { focus = SOV_the_revenge_question }
+		available = {
+
+		}
+		bypass = {
+		}
+
+		cost = 5
+
+		completion_reward = {
+			
+		}
+    }
+}

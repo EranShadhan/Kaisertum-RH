@@ -1,0 +1,458 @@
+ideas = {
+
+	country = {
+
+		victory_in_the_sgtw = { #replaced by different spirits for each nation. can be found in the greek file
+
+			picture = ENG_the_war_to_end_all_wars
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_army_factor = -0.33
+				experience_gain_navy_factor = -0.33
+				experience_gain_air_factor = -0.33
+			}
+		}
+
+		islam_religion = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.02
+				communism_drift = -0.05
+			}
+		}
+
+		catholicism_focus = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.25
+				communism_drift = -0.03
+			}
+		}
+
+		discrimination_focus = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				stability_factor=-0.05
+				war_support_factor=0.2
+			}
+		}
+
+		centralization_focus = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.25
+			}
+		}
+
+		welfare_focus = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
+
+		casino_profits = {
+			picture = casino_profits
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.20
+				monthly_population = 1
+				stability_factor = 0.4
+				war_support_factor = -0.3
+				production_speed_buildings_factor = -0.2
+			}
+		}
+
+		casino_profits2 = {
+			picture = casino_profits
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.30
+				monthly_population = 2
+				stability_factor = 0.5
+				war_support_factor = -0.4
+				production_speed_buildings_factor = -0.3
+			}
+		}
+
+		unpopular_monarchy = {
+			picture = unpopular_monarchy 
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = -0.1
+				war_support_factor = -0.2
+				production_speed_buildings_factor = -0.1
+			}
+		}
+
+		foreign_spies = {
+			picture = foreign_spies
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.1
+				intel_network_gain_factor = -0.5
+				own_operative_forced_into_hiding_time_factor = 0.5
+				own_operative_capture_chance_factor = 0.5
+				operation_cost = 0.5
+			}
+		}
+
+		focus_on_production = {
+			picture = focus_on_production
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				industrial_capacity_factory = 0.2
+				line_change_production_efficiency_factor = 0.2
+			}
+		}
+
+		focus_on_production2 = {
+			picture = focus_on_production
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				industrial_capacity_factory = 0.3
+				line_change_production_efficiency_factor = 0.3
+				production_speed_industrial_complex_factor = 0.2
+			}
+		}
+
+		supress_revolts = {
+
+			picture = ARG_subdue_dissension
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+
+		work_with_revolutionaries = {
+			picture = work_with_revolutionaries
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.1
+			}
+		}
+
+		improve_worker_conditions = {
+			picture = improve_worker_conditions
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				industrial_capacity_factory = 0.2
+			}
+		}
+
+		crackdown_on_corruption = {
+			picture = crackdown_on_corruption
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				production_speed_buildings_factor = 0.2
+			}
+		}
+
+		tourism_capital = {
+			picture = tourism_capital
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				monthly_population = 5
+				stability_factor = -0.1
+				war_support_factor = -0.1
+			}
+		}
+
+		Democracy_increase = {
+
+			picture = tradeuniongermany
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = 0.1
+			}
+		}
+
+		employed_public = {
+
+			name = FRA_full_employment
+
+			picture = generic_production_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = -0.015
+				production_speed_industrial_complex_factor = 0.1
+				stability_factor = 0.05
+			}
+		}
+
+		increased_taxes_idea = {
+
+			picture = ARG_civilian_economy_boost
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+
+		focused_civilian_factories = {
+
+			picture = civilian_economy
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+
+		against_hungary = {
+
+			picture = increased_taxes_idea
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.5
+				army_defence_factor = 0.5
+				army_speed_factor = 0.5
+			}
+		}
+
+		focused_military_factories = {
+
+			picture = war_economy
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+
+		cheap_workforce = {
+
+			picture = cheap_workforce
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+
+	}
+
+}

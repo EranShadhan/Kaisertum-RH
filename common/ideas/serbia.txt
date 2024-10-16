@@ -1,0 +1,86 @@
+ideas = {
+
+	country = {
+
+		SER_imro = {
+
+			picture = bul_imro
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				controls_state = 106 owns_state = 106
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly_factor = -0.01
+			}
+		}
+
+		SER_imro_2 = {
+
+			name = SER_imro
+			picture = bul_imro
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				controls_state = 106 owns_state = 106
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly_factor = -0.007
+			}
+		}
+
+		SER_imro_3 = {
+
+			name = SER_imro
+			picture = bul_imro
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				controls_state = 106 owns_state = 106
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly_factor = -0.005
+			}
+		}
+
+		SER_imro_4 = {
+
+			name = SER_imro
+			picture = bul_imro
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				controls_state = 106 owns_state = 106
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly_factor = -0.002
+			}
+		}
+
+	}
+
+}

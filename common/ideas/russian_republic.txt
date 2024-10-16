@@ -1,0 +1,89 @@
+ideas = {
+
+	country = {
+
+		RUD_chaotic_government = {
+
+			picture = generic_deal_with_the_devil2
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.2
+				political_power_factor = -0.25
+			}
+		}
+		
+		RUD_democratic_transition = {
+
+			picture = generic_deal_with_the_devil2
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = -0.30
+				democratic_drift = 0.03
+			}
+		}
+		
+		RUD_the_liberation_army = {
+
+			picture = generic_deal_with_the_devil2
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.1
+				mobilization_speed = 0.1
+				army_attack_factor = 0.1
+				army_org_factor = -0.1
+			}
+		}
+		
+		RUD_pacifism = {
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = 0.5
+				guarantee_cost = 0.5
+				guarantee_tension = 0.5
+				opinion_gain_monthly_factor = -0.25
+			}
+		}
+	}
+}

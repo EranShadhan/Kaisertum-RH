@@ -1,0 +1,222 @@
+defined_text = { 
+	name = GetLore
+
+	text = {
+		trigger = {
+			check_variable = { show_paths < 0.1 }
+			check_variable = { show_lore < 0.1 }
+		}
+		localization_key = INTRO_CREDITS
+	}
+	text = {
+		trigger = {
+			check_variable = { show_paths > 0.0 }
+			original_tag = GRE
+		}
+		localization_key = GRE_PATH_GUIDES
+	}
+	text = {
+		trigger = {
+			check_variable = { show_paths > 0.0 }
+			original_tag = FRA
+		}
+		localization_key = FRA_PATH_GUIDES
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = GER
+		}
+		localization_key = GER_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = FRA
+		}
+		localization_key = FRA_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = USA
+		}
+		localization_key = USA_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = ITA
+		}
+		localization_key = ITA_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = JAP
+		}
+		localization_key = JAP_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = ROM
+		}
+		localization_key = ROM_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = BUL
+		}
+		localization_key = BUL_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = TUR
+		}
+		localization_key = TUR_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = ENG
+		}
+		localization_key = ENG_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = GRE
+		}
+		localization_key = GRE_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = SOV
+		}
+		localization_key = SOV_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = UBD
+		}
+		localization_key = UBD_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = POL
+		}
+		localization_key = POL_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = EGY
+		}
+		localization_key = EGY_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = AUS
+		}
+		localization_key = AUS_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = HUN
+		}
+		localization_key = HUN_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = YUG
+		}
+		localization_key = YUG_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = SER
+		}
+		localization_key = SER_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = POR
+		}
+		localization_key = POR_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = UKR
+		}
+		localization_key = UKR_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			OR = {
+				original_tag = PER
+				original_tag = CPE
+			}
+		}
+		localization_key = PER_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = IRE
+		}
+		localization_key = IRE_NEW_DECADE_DESC
+	}
+}
+
+defined_text = { 
+	name = GetStateRenamingToggle
+
+	text = {
+		trigger = {
+			has_global_flag = endonyms
+		}
+		localization_key = settings_nein
+	}
+
+	text = {
+		trigger = {
+			NOT = {
+				has_global_flag = endonyms
+			}
+		}
+		localization_key = settings_ja
+	}
+}
+
+defined_text = { 
+	name = GetScriptedDealsToggle
+
+	text = {
+		trigger = {
+			has_global_flag = scripted_deals
+		}
+		localization_key = settings_nein
+	}
+
+	text = {
+		trigger = {
+			NOT = {
+				has_global_flag = scripted_deals
+			}
+		}
+		localization_key = settings_ja
+	}
+}

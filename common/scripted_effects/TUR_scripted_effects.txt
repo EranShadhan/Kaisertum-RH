@@ -1,0 +1,184 @@
+
+
+#Turkey influence
+TUR_increase_foreign_influence = {
+	custom_effect_tooltip = TUR_increase_foreign_influence_tt
+	if = {
+		limit = { 
+			NOT = {
+				OR = {
+					has_idea = TUR_influence_over_turkey_1 
+					has_idea = TUR_influence_over_turkey_2 
+					has_idea = TUR_influence_over_turkey_3 
+					has_idea = TUR_influence_over_turkey_4 
+					has_idea = TUR_influence_over_turkey_5 
+					has_idea = TUR_influence_over_turkey_6 
+				}
+			}
+		}
+		add_ideas = TUR_influence_over_turkey_1
+	}
+	else_if = {
+		limit = { has_idea = TUR_influence_over_turkey_1 }
+		swap_ideas = {
+			remove_idea = TUR_influence_over_turkey_1
+			add_idea = TUR_influence_over_turkey_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_influence_over_turkey_2 }
+		swap_ideas = {
+			remove_idea = TUR_influence_over_turkey_2
+			add_idea = TUR_influence_over_turkey_3
+		}		
+	}
+	else_if = {
+		limit = { has_idea = TUR_influence_over_turkey_3 }
+		swap_ideas = {
+			remove_idea = TUR_influence_over_turkey_3
+			add_idea = TUR_influence_over_turkey_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_influence_over_turkey_4 }
+		swap_ideas = {
+			remove_idea = TUR_influence_over_turkey_4
+			add_idea = TUR_influence_over_turkey_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_influence_over_turkey_5 }
+		swap_ideas = {
+			remove_idea = TUR_influence_over_turkey_5
+			add_idea = TUR_influence_over_turkey_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_influence_over_turkey_6 }
+			if = { 
+				limit = { tag = GER }
+				TUR = {
+					country_event = {
+						id = KT_turkey_events.7
+						hours = 12
+						random_hours = 6
+					}
+				}
+			}
+			else_if = { 
+				limit = { tag = SOV }
+				TUR = {
+					country_event = {
+						id = KT_turkey_events.8
+						hours = 12
+						random_hours = 6
+					}
+				}
+			}
+			if = { 
+				limit = { tag = FRA }
+				TUR = {
+					country_event = {
+						id = KT_turkey_events.9
+						hours = 12
+						random_hours = 6
+					}
+				}
+			}
+			if = { 
+				limit = { tag = ITA }
+				TUR = {
+					country_event = {
+						id = KT_turkey_events.10
+						hours = 12
+						random_hours = 6
+					}
+				}
+			}
+		}
+	}
+
+TUR_decrease_foreign_influence = {
+	custom_effect_tooltip = TUR_decrease_foreign_influence_tt
+	if = {
+		limit = { has_idea = TUR_influence_over_turkey_6 }
+		swap_ideas = {
+			remove_idea = TUR_influence_over_turkey_6
+			add_idea = TUR_influence_over_turkey_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_influence_over_turkey_5 }
+		swap_ideas = {
+			remove_idea = TUR_influence_over_turkey_5
+			add_idea = TUR_influence_over_turkey_4
+		}		
+	}
+	else_if = {
+		limit = { has_idea = TUR_influence_over_turkey_4 }
+		swap_ideas = {
+			remove_idea = TUR_influence_over_turkey_4
+			add_idea = TUR_influence_over_turkey_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_influence_over_turkey_3 }
+		swap_ideas = {
+			remove_idea = TUR_influence_over_turkey_3
+			add_idea = TUR_influence_over_turkey_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_influence_over_turkey_2 }
+		swap_ideas = {
+			remove_idea = TUR_influence_over_turkey_2
+			add_idea = TUR_influence_over_turkey_1
+		}
+	}
+	else_if = {
+		limit = { has_idea = TUR_influence_over_turkey_1 }
+		remove_ideas = TUR_influence_over_turkey_1
+	}
+}
+TUR_small_drift_to_aor = {
+	custom_effect_tooltip = TUR_small_drift_to_aor_tt 
+	add_to_variable = {
+				var = global.var_TUR_GFT_progressbar
+    			value = 10
+	}
+}
+TUR_medium_drift_to_aor = {
+	custom_effect_tooltip = TUR_medium_drift_to_aor_tt 
+	add_to_variable = {
+				var = global.var_TUR_GFT_progressbar
+    			value = 20
+	}
+}
+TUR_large_drift_to_aor = {
+	custom_effect_tooltip = TUR_large_drift_to_aor_tt 
+	add_to_variable = {
+				var = global.var_TUR_GFT_progressbar
+    			value = 30
+	}
+}
+TUR_small_drift_to_germany = {
+	custom_effect_tooltip = TUR_small_drift_to_germany_tt 
+	add_to_variable = {
+				var = global.var_TUR_GFT_progressbar
+    			value = -10
+	}
+}
+TUR_medium_drift_to_germany = {
+	custom_effect_tooltip = TUR_medium_drift_to_germany_tt 
+	add_to_variable = {
+				var = global.var_TUR_GFT_progressbar
+    			value = -20
+	}
+}
+TUR_large_drift_to_germany = {
+	custom_effect_tooltip = TUR_large_drift_to_germany_tt 
+	add_to_variable = {
+				var = global.var_TUR_GFT_progressbar
+    			value = -30
+	}
+}

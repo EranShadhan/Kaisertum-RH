@@ -1,0 +1,104 @@
+scripted_gui = {
+
+	intro_gui_button_gui = {
+		context_type = player_context
+		window_name = "intro_gui_button_container"
+		parent_window_token = topbar
+
+		visible = {
+            always = yes
+		}
+
+		effects = {
+			intro_gui_button_enable_click = {
+				if = {
+					limit = {
+						check_variable = { show_intro > 0.0 }
+					}
+					set_variable = { show_intro = 0.0 }
+					else = {
+						set_variable = { show_intro = 1.0 }
+					}
+				}
+			}
+		}
+	}
+
+	intro_gui = {
+		context_type = player_context
+		window_name = "intro_gui_container"
+		parent_window_token = topbar
+
+		visible = {
+            is_ai = no
+			check_variable = { show_intro > 0.0 }
+		}
+
+		effects = {
+			intro_gui_button_exit_click = {
+				set_variable = { show_intro = 0.0 }
+				set_variable = { show_lore = 0.0 }
+				set_variable = { show_paths = 0.0 }
+			}
+			intro_gui_button_one_click = {
+				set_variable = { show_lore = 0.0 }
+				set_variable = { show_paths = 0.0 }
+			}
+			intro_gui_button_two_click = {
+				set_variable = { show_lore = 1.0 }
+				set_variable = { show_paths = 0.0 }
+			}
+			intro_gui_button_three_click = {
+				set_variable = { show_lore = 0.0 }
+				set_variable = { show_paths = 1.0 }
+			}
+			intro_gui_button_four_click = {
+				if = {
+					limit = {
+						check_variable = { show_settings > 0.0 }
+					}
+					set_variable = { show_settings = 0.0 }
+					else = {
+						set_variable = { show_settings = 1.0 }
+					}
+				}
+			}
+		}
+	}
+
+	intro_gui_settings = {
+		context_type = player_context
+		window_name = "intro_gui_settings_container"
+		parent_window_token = topbar
+
+		visible = {
+            is_ai = no
+			check_variable = { show_settings > 0.0 }
+		}
+
+		effects = {
+			intro_gui_button_settigns_exit_click = {
+				set_variable = { show_settings = 0.0 }
+			}
+			intro_gui_button_settigns_one_click = {
+				if = {
+					limit = { has_global_flag = endonyms }
+					clr_global_flag = endonyms
+				}
+				else = {
+					set_global_flag = endonyms
+					KT_endonyms = yes #going to change the names immediately
+				}
+			}
+			intro_gui_button_settigns_two_click = {
+				if = {
+					limit = { has_global_flag = scripted_deals }
+					clr_global_flag = scripted_deals
+				}
+				else = {
+					set_global_flag = scripted_deals
+				}
+			}
+		}
+	}
+}

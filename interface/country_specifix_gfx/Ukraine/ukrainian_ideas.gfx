@@ -1,0 +1,23 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_UKR_sugar_businesses"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_sugar_businesses.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_idea_UKR_german_breadbasket"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_german_breadbasket.dds"
+	}
+
+		spriteType = {
+		name = "GFX_idea_UKR_land_problem"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_land_problem.dds"
+	}
+		spriteType = {
+		name = "GFX_idea_UKR_uss_legacy"
+		texturefile = "gfx/interface/ideas/UKR/idea_UKR_uss_legacy.png"
+	}
+
+
+}
+

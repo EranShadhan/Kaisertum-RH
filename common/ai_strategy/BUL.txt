@@ -1,0 +1,62 @@
+common/ai_strategy/ARG.txt
+-31
+Original file line number	Diff line number	Diff line change
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+ARG_avoid_china = {
+	allowed = { 
+		original_tag = CHI 
+		has_dlc = "Trial of Allegiance" 
+	}
+	enable = {
+		is_historical_focus_on = yes
+	}
+	
+	abort = {
+		date > 1945.1.1
+	}
+	ai_strategy = {
+		type = alliance
+		id = "ARG"
+		value = -1000
+	}
+}
+common/ai_strategy/BUL.txt
+-29
+Original file line number	Diff line number	Diff line change
+BUL_befriend_GRE = {
+	allowed = {
+		original_tag = GRE
+	}
+	enable = {
+		
+		country_exists = GRE
+		
+	}
+	abort = {
+		OR = {
+			NOT = { country_exists = GRE }
+			has_war_with = GRE
+			
+		}
+	}
+	ai_strategy = {
+		type = befriend
+		id = "GRE"
+		value = 100
+	}
+	ai_strategy = {
+		type = alliance
+		id = "GRE"
+		value = 100
+	}
+}

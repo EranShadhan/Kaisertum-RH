@@ -1,0 +1,161 @@
+﻿UBD_GERINF_01 = 
+{
+	name = "German Infantry Divisions"
+
+	for_countries = { UBD }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { UBD_Gar_01 }
+
+	fallback_name = "%d. Infanterie-Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Infanterie-Division 'Wolter von Plettenberg'" }
+		2 = { "%d. Infanterie-Division 'Master Sibrand'" }
+		3 = { "%d. Infanterie-Division 'Heinrich Walpot von Bassenheim'" }
+		4 = { "%d. Infanterie-Division 'Hermann von Salza'" }
+		5 = { "%d. Infanterie-Division 'Gerhard von Malberg'" }
+		6 = { "%d. Infanterie-Division 'Heinrich von Hohenlohe'" }
+		7 = { "%d. Infanterie-Division 'Gunther von Wüllersleben'" }
+		8 = { "%d. Infanterie-Division 'Anno von Sangershausen'" }
+		9 = { "%d. Infanterie-Division 'Hartmann von Heldrungen'" }
+		10 = { "%d. Infanterie-Division 'Winrich von Kniprode'" }
+		11 = { "%d. Infanterie-Division 'Konrad von Jungingen'" }
+		12 = { "%d. Infanterie-Division 'Paul von Rusdorf'" }
+		13 = { "%d. Infanterie-Division 'Konrad von Erlichshausen'" }
+		14 = { "%d. Infanterie-Division 'Ludwig von Erlichshausen'" }
+		15 = { "%d. Infanterie-Division 'Heinrich Reffle von Richtenberg'" }
+		16 = { "%d. Infanterie-Division 'Johann von Tiefen'" }
+		17 = { "%d. Infanterie-Division 'Walter von Cronberg'" }
+		18 = { "%d. Infanterie-Division 'Wolfgang Schutzbar'" }
+		19 = { "%d. Infanterie-Division 'Georg Hund von Wenkheim'" }
+		20 = { "%d. Infanterie-Division 'Ludwig Anton von Pfalz-Neuburg'" }
+	}
+}
+
+UBD_LIGHTINF_01 = 
+{
+	name = "Light Infantry Divisions"
+
+	for_countries = { UBD }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Leichte Infanterie-Division"
+
+	ordered = { 1 = { "%d. Leichte Infanterie-Division" } }
+}
+
+UBD_ESTINF_01 = 
+{
+	name = "Estonian Infantry Divisions"
+
+	for_countries = { UBD }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Jalaväe diviis"
+
+	ordered = { 1 = { "%d. Jalaväe diviis" } }
+}
+
+UBD_LATINF_01 = 
+{
+	name = "Latvian Infantry Divisions"
+
+	for_countries = { UBD }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. kājnieku divīzija"
+
+	ordered = { 1 = { "%d. kājnieku divīzija" } }
+}
+
+UBD_LITINF_01 = 
+{
+	name = "Litvanian Infantry Divisions"
+
+	for_countries = { UBD }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. pėstininkų divizija"
+
+	ordered = { 1 = { "%d. pėstininkų divizija" } }
+}
+
+UBD_CAV_01 = 
+{
+	name = "Cavalry Divisions"
+
+	for_countries = { UBD }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	fallback_name = "%d. Kavallerie-Division"
+
+	ordered = { 1 = { "%d. Kavallerie-Division" } }
+}
+
+UBD_MOT_01 = 
+{
+	name = "Motorized Divisions"
+
+	for_countries = { UBD }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	fallback_name = "%d. Infanterie-Division (mot.)"
+
+	ordered = { 1 = { "%d. Infanterie-Division (mot.)" } }
+}
+
+UBD_MEC_01 = 
+{
+	name = "Mechanized Divisions"
+
+	for_countries = { UBD }
+
+	can_use = { always = yes }
+
+	division_types = { "mechanized" }
+
+	fallback_name = "%d. Panzergrenadier-Division"
+
+	ordered = { 1 = { "%d. Panzergrenadier-Division" } } 
+}
+
+UBD_ARM_01 = 
+{
+	name = "Tank Divisions"
+
+	for_countries = { UBD }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	fallback_name = "%d. Panzer-Division"
+
+	ordered = { 1 = { "%d. Panzer-Division" } }
+}

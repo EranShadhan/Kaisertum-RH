@@ -1,0 +1,13 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_UBD_germanization"
+		texturefile = "gfx/interface/ideas/UBD/UBD_germanization.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_UBD_lack_of_workers_idea"
+		texturefile = "gfx/interface/ideas/UBD/UBD_lack_of_workers.dds"
+	}
+
+}

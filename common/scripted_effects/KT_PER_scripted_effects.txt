@@ -1,0 +1,41 @@
+PER_improve_army = {
+	if = {
+		limit = {
+			has_idea = PER_army_1_focus
+		}
+		swap_ideas = {
+			remove_idea = PER_army_1_focus
+			add_idea = PER_army_2_focus
+		}
+		else_if = {
+			limit = {
+				has_idea = PER_army_2_focus
+			}
+			swap_ideas = {
+				remove_idea = PER_army_2_focus
+				add_idea = PER_army_3_focus
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = PER_army_3_focus
+			}
+			swap_ideas = {
+				remove_idea = PER_army_3_focus
+				add_idea = PER_army_4_focus
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = PER_army_4_focus
+			}
+			swap_ideas = {
+				remove_idea = PER_army_4_focus
+				add_idea = PER_army_5_focus
+			}
+		}
+		else = {
+			remove_ideas = PER_army_5_focus
+		}
+	}
+}
