@@ -5217,7 +5217,7 @@ focus = {
 		cost = 5
 		x = -2
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_TUR_state_of_equals
 
 		prerequisite  = {
 			focus = TUR_overhaul_of_the_state
@@ -5235,7 +5235,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_TUR_modern_turkey
 
 		prerequisite  = {
 			focus = TUR_a_state_of_equals
@@ -5253,7 +5253,7 @@ focus = {
 		cost = 5
 		x = 1
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_TUR_state_fighters
 
 		prerequisite  = {
 			focus = TUR_a_state_of_equals
@@ -5403,7 +5403,7 @@ focus = {
 		cost = 5
 		x = -1
 		y = 3
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_TUR_perfect_society
 
 		prerequisite  = {
 			focus = TUR_no_place_for_europeans
@@ -5777,7 +5777,7 @@ focus = {
 		cost = 5
 		x = 3
 		y = 1
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_goal_TUR_goals_of_syria
 
 		prerequisite  = {
 			focus = TUR_a_look_outwards

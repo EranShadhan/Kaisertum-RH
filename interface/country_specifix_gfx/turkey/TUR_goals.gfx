@@ -513,4 +513,24 @@ spriteTypes = {
 		name = "GFX_goal_TUR_workers_of_the_nation"
 		texturefile = "gfx/interface/goals/TUR/TUR_workers_of_the_nation.png"
 	}
+	SpriteType = {
+		name = "GFX_goal_TUR_goals_of_syria"
+		texturefile = "gfx/interface/goals/TUR/TUR_goals_of_syria.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_TUR_modern_turkey"
+		texturefile = "gfx/interface/goals/TUR/TUR_modern_turkey.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_TUR_state_fighters"
+		texturefile = "gfx/interface/goals/TUR/TUR_state_fighters.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_TUR_state_of_equals"
+		texturefile = "gfx/interface/goals/TUR/TUR_state_of_equals.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_TUR_perfect_society"
+		texturefile = "gfx/interface/goals/TUR/TUR_perfect_society.png"
+	}
 }
