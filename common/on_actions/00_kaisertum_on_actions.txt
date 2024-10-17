@@ -1,0 +1,53 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			AUS = {
+				country_event = {
+					id = austria.1
+					days = 18
+					random_hours = 6
+				}
+			}
+			UBD = {
+				set_variable = {
+					baltic_manpower = -0.3
+				}
+				every_owned_state = {
+					limit = {
+						NOT = { state = 808 }
+					}
+					add_dynamic_modifier = {
+						modifier = UBD_local_resistance_modifier
+					}
+				}
+			}
+			if = {
+				limit {
+					zion_malagasy_path = yes
+				}
+				set_global_flag = zionist_malagasy_toggle_flag
+			}
+			set_variable = { 
+				var_TUR_GFT_progressbar = 50
+			}
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				set_variable = { show_intro = 1.0 } # Intro screen
+			}
+		}
+	}
+	on_daily_CRI = {
+		effect = {
+			CRI = {
+				if = {
+					limit = {
+						overlord = GER
+					}
+					set_cosmetic_tag = german_crimea
+				}
+			}
+		}
+	}
+}

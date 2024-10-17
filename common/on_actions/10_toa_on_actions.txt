@@ -1,0 +1,207 @@
+
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {	
+				limit = {
+					OR = {
+						original_tag = URG
+						original_tag = BRA
+						original_tag = PAR
+						original_tag = CHL
+						original_tag = BOL
+						original_tag = ARG
+						original_tag = PRU
+						original_tag = VEN
+						original_tag = ECU
+						original_tag = COL
+						
+					}
+				}
+
+				add_ai_strategy = { 
+					type = alliance 
+					id = JAP
+					value = -250
+				}
+
+				add_ai_strategy = { 
+					type = alliance 
+					id = CHI
+					value = -250
+				}
+
+				add_ai_strategy = { 
+					type = alliance 
+					id = PRC
+					value = -250
+				}
+
+				add_ai_strategy = { 
+					type = alliance 
+					id = USA
+					value = -15
+				}
+
+				add_ai_strategy = { 
+					type = alliance 
+					id = GER
+					value = -15
+				}
+
+				add_ai_strategy = { 
+					type = alliance 
+					id = ENG
+					value = -15
+				}
+
+				add_ai_strategy = { 
+					type = alliance 
+					id = SOV
+					value = -50
+				}
+			}
+		}
+		effect = {
+			#Monroe Doctrine
+			IF = {
+				limit = { has_dlc = "Trial of Allegiance" }
+				every_country = {
+					limit = {
+						exists = yes
+						NOT = { tag = USA }
+						OR = {
+							capital_scope = { is_on_continent = south_america }
+							capital_scope = { is_on_continent = north_america }
+							tag = CUB
+							tag = DOM
+							tag = HAI
+						}
+					}
+					add_ideas = USA_monroe_doctrine_idea
+				}
+			}
+		}
+	}
+
+	#ROOT is subject FROM is previous overlord
+	on_subject_free = {
+		effect = {
+			IF = {
+				limit = {
+					ROOT = {
+						original_tag = URG
+					}
+					FROM = {
+						original_tag = GER
+					}
+				}
+				ROOT = {
+					drop_cosmetic_tag = yes
+				}
+			}
+		}
+		effect = {
+			IF = {
+				limit = {
+					ROOT = {
+						original_tag = BOL
+					}
+					FROM = {
+						original_tag = CHL
+					}
+				}
+				ROOT = {
+					drop_cosmetic_tag = yes
+				}
+			}
+		}
+		effect = {
+			USA_add_monroe_doctrine_to_target = yes
+		}
+
+	}
+
+	#ROOT = attacking side
+	#FROM = defending side
+	on_declare_war = {
+		effect = {
+			IF = {
+				limit = {
+					NOT = {
+						OR = {
+							ROOT = {
+								tag = USA
+							}
+							FROM = {
+								tag = USA
+							}
+						}
+					}
+					USA = {
+						exists = yes
+						has_idea = USA_monroe_doctrine_enforcer
+						NOT = {
+							OR = { 
+								has_war_with = FROM
+								has_war_with = ROOT
+								is_in_faction_with = ROOT
+								is_in_faction_with = FROM
+							}
+						}
+					}
+					FROM = {
+						has_idea = USA_monroe_doctrine_idea
+						is_in_faction = no
+					}
+				}
+				# Both countries are in Americas
+				IF = {
+					limit = {
+						ROOT = {
+							has_idea = USA_monroe_doctrine_idea
+						}
+					}
+					# Do Nothing for now, may add more content here in future!
+				}
+				# Only defender is in Americas
+				ELSE = {
+					FROM = {
+						USA = {
+							set_variable = { monroe_defender = PREV }
+							country_event = {
+								id = south_american_events.50
+								days = 1
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#ROOT is the nation being released, FROM is the overlord
+	on_release_as_free = { 
+		effect = {
+			USA_add_monroe_doctrine_to_target = yes
+		}
+		effect = {
+			IF = {
+				limit = {
+					ROOT = {
+						tag = WLA
+					}
+				}
+				WLA = {
+					load_oob = "WLA_1936"
+				}
+			}
+		}
+	}	
+
+	on_liberate = {
+		effect = {
+			USA_add_monroe_doctrine_to_target = yes
+		}
+	}
+}

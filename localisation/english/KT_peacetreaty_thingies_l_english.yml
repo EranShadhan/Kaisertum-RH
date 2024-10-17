@@ -1,0 +1,88 @@
+﻿l_english:
+ caucasian_neutrality:0 "United Caucasian Republics"
+ caucasian_neutrality_ADJ:0 "Caucasian"
+ caucasian_neutrality_DEF:0 "the United Caucasian Republics"
+ 
+ caucasian_democratic:0 "United Caucasian Republics"
+ caucasian_democratic_ADJ:0 "Caucasian"
+ caucasian_democratic_DEF:0 "the United Caucasian Republics"
+ 
+ caucasian_communism:0 "United Caucasian Republics"
+ caucasian_communism_ADJ:0 "Caucasian"
+ caucasian_communism_DEF:0 "the United Caucasian Republics"
+ 
+ caucasian_fascism:0 "United Caucasian Republics"
+ caucasian_fascism_ADJ:0 "Caucasian"
+ caucasian_fascism_DEF:0 "the United Caucasian Republics"
+ 
+ Mountaineous_neutrality:0 "United Mountain Republics"
+ Mountaineous_neutrality_ADJ:0 "Mountaineous"
+ Mountaineous_neutrality_DEF:0 "the United Mountain Republics"
+ 
+ Mountaineous_democratic:0 "United Mountain Republics"
+ Mountaineous_democratic_ADJ:0 "Mountaineous"
+ Mountaineous_democratic_DEF:0 "the United Mountain Republics"
+ 
+ Mountaineous_communism:0 "United Mountain Republics"
+ Mountaineous_communism_ADJ:0 "Mountaineous"
+ Mountaineous_communism_DEF:0 "the United Mountain Republics"
+ 
+ Mountaineous_fascism:0 "United Mountain Republics"
+ Mountaineous_fascism_ADJ:0 "Mountaineous"
+ Mountaineous_fascism_DEF:0 "the United Mountain Republics"
+ 
+ german_crimea:0 "German Crimea"
+ german_crimea_ADJ:0 "Crimean"
+ german_crimea_DEF:0 "German Crimea"
+
+ kt_peacetreaties.1.t:0 "The Time to Surrender"
+ kt_peacetreaties.1.d:0 "'General, Smolensk and Volgograd fell!' shouts a private running into the High Command Office. The Enemies of Russia are now reaching its heartland and closing in from the West and the South. The Caucasus and Belarus already fell, the sounds of foreign bombshells and firing rifles are heard all across Minsk and what was once Yekaterinodar. There is no need to be Tesla to know where this is going. It is crystal clear that the Motherland is losing. Perhaps it is best to peace out now with minor losses than to fight and get defeated?"
+ kt_peacetreaties.1.a:0 "There is nothing we can do."
+ kt_peacetreaties.1.b:0 "The Motherland will never surrender!"
+
+ kt_peacetreaties.2.t:0 "Russia offers capitulation?"
+ kt_peacetreaties.2.d:0 "We have received a message from the Russian government offering to capitulate whilst keeping all of their heartland. Though the temptation of controlling all of Russia is tempting, we must recognize that our and our allies' soldiers are tired of the fight. Shall we start negotiations or continue fighting?"
+ kt_peacetreaties.2.a:0 "Our soldiers need some rest."
+ kt_peacetreaties.2.b:0 "Onwards! To Moskau!"
+
+ kt_peacetreaties.3.t:0 "Negotiations: Ukraine"
+ kt_peacetreaties.3.desc:0 "The rumble of guns changed to the screeching of pens as diplomats sat to negotiate the future of Eastern Europe. The target of these negotiations is the future outlook of Ukraine. Ukrainian nationalists advocate for a Greater Ukraine, but making Ukraine too powerful doesn't come without dangers. How shall Ukraine be treated after this conflict?"
+ kt_peacetreaties.3.a:0 "Perhaps a medium-sized Ukraine is best."
+ kt_peacetreaties.3.b:0 "We must satisfy the Ukrainians."
+ kt_peacetreaties.3.c:0 "Ukraine must be Great, but we will secure Crimea for our own interests"
+ kt_peacetreaties.3.d:0 "Go to page 2"
+
+ kt_peacetreaties.4.t:0 "Negotiations: Ukraine (Page 2)"
+ kt_peacetreaties.4.desc:0 "The rumble of guns changed to the screeching of pens as diplomats sat to negotiate the future of Eastern Europe. The target of these negotiations is the future outlook of Ukraine. Ukrainian nationalists advocate for a Greater Ukraine, but making Ukraine too powerful doesn't come without dangers. How shall Ukraine be treated after this conflict?"
+ kt_peacetreaties.4.a:0 "Ukraine is none of our interest. A foothold in the Black Sea, however, is."
+ kt_peacetreaties.4.b:0 "We shall let Ukrainians get their land for a small price of Sevastopol"
+ kt_peacetreaties.4.c:0 "Ukraine? Pfft. The Baltic Sea shall be a playground for the German Navy, no more"
+ kt_peacetreaties.4.d:0 "Go to page 1"
+
+ kt_peacetreaties.5.t:0 "Negotiations: White Ruthenia"
+ kt_peacetreaties.5.desc:0 "The rumble of guns changed to the screeching of pens as diplomats sat to negotiate the future of Eastern Europe. The negotiations have moved on North, to the region where people who call themselves "Belorussians" live. They were long overshadowed by Russians, but perhaps, just perhaps, we can grant them the recognition they deserve."
+ kt_peacetreaties.5.a:0 "We must establish a White Ruthenian state."
+ kt_peacetreaties.5.b:0 "A Belarus is needed, but the United Baltic Duchy needs to be rewarded appropriately."
+ kt_peacetreaties.5.c:0 "Belarus shall be created, but so it can benefit all of our allies"
+ kt_peacetreaties.5.d:0 "Belarus? Split them between the Baltics and Ukraine."
+
+ kt_peacetreaties.6.t:0 "Negotiations: Caucasus"
+ kt_peacetreaties.6.desc:0 "The rumble of guns changed to the screeching of pens as diplomats sat to negotiate the future of Eastern Europe. The negotiations are now to the south, the ethnical stew of the Russian Empire, the Caucasus. The Caucasians have for a long time been subjects to the Russians due to the sheer amount of different quarelling ethnical groups in the region. Luckily for them, they are now under our grasp and it is up to us to decide what to do with all of these small groups fighting for their freedom"
+ kt_peacetreaties.6.a:0 "The old kingdoms of Georgia and Armenia shall be freed."
+ kt_peacetreaties.6.b:0 "A United Kingdom of the Georgians and Armenians shall be established"
+ kt_peacetreaties.6.c:0 "Georgia and Armenia have to be freed. Turkey, however, needs a return of their old lands."
+ kt_peacetreaties.6.d:0 "Straight up annex Georgia and Erivan!"
+ kt_peacetreaties.6.e:0 "We have a third of the Caucasus, we should get the rest"
+
+ kt_peacetreaties.7.t:0 "Negotiations: Northern Caucasus"
+ kt_peacetreaties.7.desc:0 "The rumble of guns changed to the screeching of pens as diplomats sat to negotiate the future of Eastern Europe. The negotiations are now to the south, the ethnical stew of the Russian Empire, the Caucasus. The Caucasians have for a long time been subjects to the Russians due to the sheer amount of different quarelling ethnical groups in the region. Luckily for them, they are now under our grasp and it is up to us to decide what to do with all of these small groups fighting for their freedom"
+ kt_peacetreaties.7.a:0 "Every ethnicity gets their own state."
+ kt_peacetreaties.7.b:0 "Small nations are unstable, so we shall make a united and strong Northern Caucasus"
+
+ kt_peacetreaties.8.t:0 "Negotiations: The Don"
+ kt_peacetreaties.8.desc:0 "The rumble of guns changed to the screeching of pens as diplomats sat to negotiate the future of Eastern Europe. North of the Caucasian region lies the river of Don which has long been a stronghold of Cossacks on the borderline of the now-begone Russian Empire. This region developed its own culture and characteristics because of its specifics, so why should it be left under the Russian grasp?""
+ kt_peacetreaties.8.a:0 "Independent nations for Don, Kuban and Kalmykia shall be established."
+ kt_peacetreaties.8.b:0 "Ukraine deserves Kuban and Don, Kalmykia will be independent."
+ kt_peacetreaties.8.c:0 "A greater Crimea, independent Kalmykia."
+ kt_peacetreaties.8.d:0 "A greater Don state shall be created."
+

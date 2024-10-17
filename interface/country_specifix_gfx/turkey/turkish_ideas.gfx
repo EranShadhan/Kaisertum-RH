@@ -1,0 +1,122 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_german_influence_in_government"
+		texturefile = "gfx/interface/ideas/turkish_ideas/german_influence_in_government.png"
+	}
+	spriteType = {
+		name = "GFX_idea_international_bidding_war"
+		texturefile = "gfx/interface/ideas/turkish_ideas/international_bidding_war.png"
+	}
+	spriteType = {
+		name = "GFX_idea_traditional_society"
+		texturefile = "gfx/interface/ideas/turkish_ideas/traditional_society.png"
+	}
+	spriteType = {
+		name = "GFX_idea_humiliation_of_25"
+		texturefile = "gfx/interface/ideas/turkish_ideas/humiliation_of_25.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_federation"
+		texturefile = "gfx/interface/ideas/turkish_ideas/TUR_federation.png"
+	}
+	spriteType = {
+		name = "GFX_idea_collectivized_agriculture"
+		texturefile = "gfx/interface/ideas/turkish_ideas/collectivized_agriculture.png"
+	}
+	spriteType = {
+		name = "GFX_idea_educated_society"
+		texturefile = "gfx/interface/ideas/turkish_ideas/educated_society.png"
+	}
+	spriteType = {
+		name = "GFX_idea_islamic_bastion_of_socialism"
+		texturefile = "gfx/interface/ideas/turkish_ideas/islamic_bastion_of_socialism.png"
+	}
+	spriteType = {
+		name = "GFX_idea_minority_representation"
+		texturefile = "gfx/interface/ideas/turkish_ideas/minority_representation.png"
+	}
+	spriteType = {
+		name = "GFX_idea_germany_economy"
+		texturefile = "gfx/interface/ideas/turkish_ideas/germany_economy.png"
+	}
+	spriteType = {
+		name = "GFX_idea_german_companies"
+		texturefile = "gfx/interface/ideas/turkish_ideas/german_companies.png"
+	}
+	spriteType = {
+		name = "GFX_idea_russian_companies"
+		texturefile = "gfx/interface/ideas/turkish_ideas/russian_companies.png"
+	}
+	spriteType = {
+		name = "GFX_idea_farmer_loans"
+		texturefile = "gfx/interface/ideas/turkish_ideas/farmer_loans.png"
+	}
+	spriteType = {
+		name = "GFX_idea_recontruction"
+		texturefile = "gfx/interface/ideas/turkish_ideas/recontruction.png"
+	}
+	spriteType = {
+		name = "GFX_idea_quick_construction"
+		texturefile = "gfx/interface/ideas/turkish_ideas/quick_construction.png"
+	}
+	spriteType = {
+		name = "GFX_idea_german_experts"
+		texturefile = "gfx/interface/ideas/turkish_ideas/german_experts.png"
+	}
+	spriteType = {
+		name = "GFX_idea_commercial_agriculture"
+		texturefile = "gfx/interface/ideas/turkish_ideas/commercial_agriculture.png"
+	}
+	spriteType = {
+		name = "GFX_idea_final_economic_idea"
+		texturefile = "gfx/interface/ideas/turkish_ideas/final_economic_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_german_mission"
+		texturefile = "gfx/interface/ideas/turkish_ideas/german_mission.png"
+	}
+	spriteType = {
+		name = "GFX_idea_russian_mission"
+		texturefile = "gfx/interface/ideas/turkish_ideas/russian_mission.png"
+	}
+	spriteType = {
+		name = "GFX_idea_tukiye_tspecial_forces"
+		texturefile = "gfx/interface/ideas/turkish_ideas/tukiye_tspecial_forces.png"
+	}
+	spriteType = {
+		name = "GFX_idea_germannavalmission"
+		texturefile = "gfx/interface/ideas/turkish_ideas/germannavalmission.png"
+	}
+	spriteType = {
+		name = "GFX_idea_navy_modernization"
+		texturefile = "gfx/interface/ideas/turkish_ideas/navy_modernization.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ahmed_idea"
+		texturefile = "gfx/interface/ideas/turkish_ideas/ahmed_IV_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_control_in_turkey"
+		texturefile = "gfx/interface/ideas/turkish_ideas/control_in_turkey.png"
+	}
+	spriteType = {
+		name = "GFX_idea_anti_russian_propaganda"
+		texturefile = "gfx/interface/ideas/turkish_ideas/anti_russian_propaganda.png"
+	}
+	spriteType = {
+		name = "GFX_idea_turkification"
+		texturefile = "gfx/interface/ideas/turkish_ideas/turkification.png"
+	}
+	spriteType = {
+		name = "GFX_idea_turkish_empire"
+		texturefile = "gfx/interface/ideas/turkish_ideas/turkish_empire.png"
+	}
+	spriteType = {
+		name = "GFX_idea_siryan_problems"
+		texturefile = "gfx/interface/ideas/turkish_ideas/siryan_problems.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_national_socialism"
+		texturefile = "gfx/interface/ideologies/national_socialism.dds"
+	}
+}

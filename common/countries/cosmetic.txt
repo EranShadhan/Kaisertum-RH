@@ -2,6 +2,10 @@ IRE_UK = {
     color = rgb { 242 71 71 }
     color_ui = rgb { 242 71 71 }
 }
+SIK_RUS = {
+	color = rgb { 88 147 105 }
+	color_ui = rgb { 88 147 105 }
+}
 MED_UN = {
 	color = rgb { 155 13 24 }
 	color_ui = rgb { 173 17 31 }

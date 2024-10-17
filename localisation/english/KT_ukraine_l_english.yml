@@ -1,0 +1,79 @@
+﻿l_english:
+ # Traits
+ UKR_red_prince: "Red Prince"
+ UKR_king_of_ukraine:0 "King of All Ukraine"
+ 
+ # MIOS
+ # Tanks #
+ UKR_zhbtz_organization:0 "Zhytomyr Armored Plant"
+ UKR_kbtz_organization:0 "Kyiv Armoured Plant"
+ UKR_hkbm_organization:0 "Kharkiv Machine-Building Design Bureau"
+ UKR_cossack_tanks: "Cossack Tanks"
+ # Navy #
+ UKR_chsz_organization:0 "Black Sea Shipyard"
+ UKR_srdsc_organization:0 "Research and Design Center of Shipbuilding"
+ UKR_thunderbird_organization:0 "CGZ "Burevisnyk""
+ # Aviation #
+ UKR_haz_organization:0 "Kharkiv Aircraft Plant"
+ UKR_motorsich_organization:0 "Motor Sich"
+ UKR_aviant_organization:0 "Aviant"
+ UKR_anatra_organization:0 "Anatra"
+ # Infantry # Artillery # Automotive #
+ UKR_sgc_organization:0 "State Armoured Cannon Enterprise"
+ UKR_dob_organization:0 "Dnipro Arms Bureau"
+ UKR_zaz_organization:0 "ZAZ"
+ # MIOS
+ 
+ # Countries
+ UKR_fascism:0 "Ukraine"
+ UKR_fascism_DEF:0 "Ukraine"
+ UKR_democratic:0 "Ukrainian People's Republic"
+ UKR_democratic_DEF:0 "the Ukrainian People's Republic"
+ UKR_neutrality:0 "Kingdom of Ukraine"
+ UKR_neutrality_DEF:0 "the Kingdom of Ukraine"
+ UKR_communism:1 "Ukrainian Socialist Republic"
+ UKR_communism_DEF:1 "the Ukrainian Socialist Republic"
+ UKR_fascism_ADJ:0 "Ukrainian"
+ UKR_democratic_ADJ:0 "Ukrainian"
+ UKR_neutrality_ADJ:0 "Ukrainian"
+ UKR_communism_ADJ:0 "Ukrainian"
+ UKR:0 "Ukraine"
+ UKR_DEF:0 "Ukraine"
+ UKR_ADJ:0 "Ukrainian"
+ 
+ # Ideas
+ UKR_sugar_businesses:0 "Sugar Businesses"
+ UKR_sugar_businesses_desc:0 "Before the Great War, the right bank of Ukraine produced almost 80% of the sugar in the Russian Empire, today Ukraine actively uses this opportunity to improve the economic capabilities of the state."
+ UKR_german_breadbasket:0 "German Breadbasket"
+ UKR_educational_programs:0 "Educational Programs"
+ UKR_state_stability:0 "State Stability"
+ UKR_royal_officer_corps:0 "Royal Officer Corps"
+ UKR_sich_riflemen:0 "Sich Riflemen Spirit"
+ UKR_land_problem:0 "Land Problem"
+ # Focuses
+ UKR_royal_standart:0 "Royal Standart"
+ UKR_royal_standart_desc:0 "The Royal Standard is not just a symbol of our monarchy but also the foundation of our military's doctrine and technological advancements. By standardizing equipment and strategies across the army, we ensure a unified, disciplined, and modern fighting force. This initiative will bolster our defensive capabilities and improve our ability to respond quickly and efficiently to any threat."
+ UKR_royal_officer_corps_desc:0 "The Royal Officer Corps embodies elite leadership in our military, chosen for their loyalty, discipline, and strategic skill. Trained under monarchy and tradition, these officers ensure our forces operate with precision, boosting morale and battlefield efficiency."
+ UKR_sich_riflemen_legacy:0 "Sichovi Striltsi"
+ UKR_royal_guard:0 "Establish a Royal Guard"
+ UKR_expand_royal_guard:0 "Expand a Royal Guard"
+ #Events
+ KT_ukraine.1.t:0 "Habsburg Legacy"
+ KT_ukraine.1.d:0 "The heritage of the Habsburgs is especially embodied by Vasyl Vyshivanyi. His dedication to Ukraine's independence and leadership in turbulent times symbolize the fusion of the Habsburg tradition and Ukrainian nationalism. By accepting this heritage, Ukraine confirms its place among European historical monarchies. The wisdom of Habsburg rule, strengthened by the vision of the Embroidered One, strengthens the stability of our state, strengthens our political power, and infuses our army with the discipline and resilience of a glorious past."
+ KT_ukraine.1.a:0 "Our great future awaits!"
+ 
+ KT_ukraine.2.t:0 "Legacy of Sichovi Striltsi"
+ KT_ukraine.2.d:0 "The Ukrainian Sich Riflemen is a national military formation within the Austro-Hungarian army, formed from volunteers who responded to the call of the Main Ukrainian Council on August 6, 1914. The USS were the first Ukrainian units of Austria-Hungary, selected on national grounds, and influenced the creation of military vocabulary and terminology , folklore, song and music, to stabilize the form of Ukrainian unity."
+ KT_ukraine.2.a:0 "for Ukraine!"
+ 
+ 
+ #Decisions
+ UKR_move_capital_to_kyiv:0 "Return capital to Kyiv"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
