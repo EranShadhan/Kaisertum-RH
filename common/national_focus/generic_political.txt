@@ -6,6 +6,15 @@ shared_focus = {
 	y = 0
 	cost = 10
 
+	available = {
+		if = {
+			limit = {
+				tag = YUG
+			}
+			has_completed_focus = YUG_death_of_an_empire
+		}
+	}
+
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	
 	available_if_capitulated = yes

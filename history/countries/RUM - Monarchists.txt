@@ -41,6 +41,9 @@ if = {
 	}
 }
 
+recruit_character = RUM_kirill_vladimirovich
+recruit_character = RUM_vladimir_kirillovich
+
 set_convoys = 10
 set_politics = {
 	ruling_party = neutrality
@@ -48,10 +51,10 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 8
-	fascism = 0
-	communism = 0
-	neutrality = 92
+	democratic = 10
+	fascism = 2
+	communism = 3
+	neutrality = 85
 }
 
 

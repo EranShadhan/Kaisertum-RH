@@ -2,29 +2,33 @@
 state={
 	id=527
 	name="STATE_527"
-	manpower = 6774200
-	state_category = town
+	manpower = 2632453
+	state_category = rural
 	resources={
-		steel=18 # was: 30
-		tungsten=28 # was: 52
+		steel=9
+		tungsten=5
 	}
 
 	history={
 		owner = KOR
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 2
+			industrial_complex = 1
 		}
 		
 		victory_points = {
-			4052 1
+			1003 3
+		}	
+
+		victory_points = {
+			11915 1
 		}	
 
 		add_core_of = KOR
 	}
 
 	provinces={
-		848 852 898 906 912 959 978 1003 3803 3852 3860 3904 3912 3981 4052 4107 6822 6922 6928 6944 6963 7070 7155 7171 9790 9795 9899 9918 9981 10065 10083 11770 11775 11828 11835 11878 11896 11915 12040 
+		1003 4107 7155 11915 10065 13919 13934 13935
 	}
 
 	local_supplies=0.0 

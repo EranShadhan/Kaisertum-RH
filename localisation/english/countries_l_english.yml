@@ -191,6 +191,10 @@
  CMG_DEF:0 "the Crimean Military Governorate"
  CMG_ADJ:0 "Crimean"
 
+ TKS:0 "Federation of Central Asian States"
+ TKS_DEF:0 "the Federation of Central Asian States"
+ TKS_ADJ:0 "Central Asian"
+
 
  USA_fascism:0 "Free American Empire"
  USA_fascism_DEF:0 "the Free American Empire"

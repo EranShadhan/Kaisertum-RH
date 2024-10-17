@@ -14,6 +14,46 @@ guiTypes = {
 			text = l_FRA_progressbar_edg_title
 			maxWidth = 500
 		}
+		instantTextboxType = {
+			name = "progressbar_edg_marking_1"
+			position = { x = 132 y = 33 }
+			font = hoi_18b
+			format = left
+			text = l_FRA_progressbar_edg_marking1
+			maxWidth = 500
+		}
+		instantTextboxType = {
+			name = "progressbar_edg_marking_2"
+			position = { x = 132 y = 109 }
+			font = hoi_18b
+			format = left
+			text = l_FRA_progressbar_edg_marking2
+			maxWidth = 500
+		}
+		instantTextboxType = {
+			name = "progressbar_edg_marking_3"
+			position = { x = 132 y = 185 }
+			font = hoi_18b
+			format = left
+			text = l_FRA_progressbar_edg_marking3
+			maxWidth = 500
+		}
+		instantTextboxType = {
+			name = "progressbar_edg_marking_4"
+			position = { x = 132 y = 261 }
+			font = hoi_18b
+			format = left
+			text = l_FRA_progressbar_edg_marking4
+			maxWidth = 500
+		}
+		instantTextboxType = {
+			name = "progressbar_edg_marking_5"
+			position = { x = 132 y = 337 }
+			font = hoi_18b
+			format = left
+			text = l_FRA_progressbar_edg_marking5
+			maxWidth = 500
+		}
 		
 		iconType = {
 			name = "progressbar_edg"
@@ -22,4 +62,4 @@ guiTypes = {
 		}
 		
 	}
-}
+} 

@@ -1,4 +1,8 @@
 #reload countrycolors
+EUA = {
+	color = rgb { 36 113 163  }
+	color_ui = rgb { 36 113 163  }
+}
 SIC = {
 	color = rgb { 222 41 16 }
 	color_ui = rgb { 222 41 16 }
@@ -173,8 +177,8 @@ HUN = {
 	color_ui = rgb { 138 163 117 }
 }
 AFG = {
-	color = rgb { 242 239 242 }
-	color_ui = rgb { 242 239 242 }
+	color = rgb { 135 175 117 }
+	color_ui = rgb { 135 175 117 }
 }
 ARG = {
 	color = rgb { 145 157 236 }
@@ -1008,6 +1012,10 @@ UCS = {
 	color_ui = rgb { 155 3 3 }
 }
 CMG = {
-	color = rgb { 54 220 242 }
-	color_ui = rgb { 54 220 242 }
+	color = rgb { 208 211 212 }
+	color_ui = rgb { 208 211 212 }
+}
+TKS = {
+	color = rgb { 126 189 221 }
+	color_ui = rgb { 126 189 221 }
 }

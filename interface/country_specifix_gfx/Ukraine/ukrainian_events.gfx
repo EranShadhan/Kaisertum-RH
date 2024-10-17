@@ -13,6 +13,10 @@ spriteTypes = {
 		name = "GFX_ukr_kuban"
 		texturefile = "gfx/event_pictures/UKR/UKR_kuban.png"
 	}
+	spriteType = {
+		name = "GFX_ukr_army"
+		texturefile = "gfx/event_pictures/UKR/UKR_army.png"
+	}
 
 	
 }

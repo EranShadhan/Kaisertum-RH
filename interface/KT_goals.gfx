@@ -1,7 +1,5 @@
 spriteTypes = {
 
-	
-	#OTHER
 	SpriteType = {
 		name = "GFX_goal_FRA_solidify_neosocialism"
 		texturefile = "gfx/interface/goals/FRA/FRA_solidify_neosocialism.png"
@@ -25,6 +23,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_FRA_nationalist_industry"
 		texturefile = "gfx/interface/goals/FRA/FRA_nationalist_industry.png"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_GEN_arabia"
+		texturefile = "gfx/interface/goals/GEN_arabia.png"
 	}
 
 	SpriteType = {
@@ -90,6 +93,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_GEN_jesus"
 		texturefile = "gfx/interface/goals/GEN_jesus.png"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_GEN_tobacco"
+		texturefile = "gfx/interface/goals/GEN_tobacco.png"
 	}
 
 	SpriteType = {

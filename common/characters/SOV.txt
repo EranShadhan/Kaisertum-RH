@@ -25,6 +25,15 @@ characters = {
 			id = -1
 		}
 	}
+	
+	SOV_prov_court = {
+		name = SOV_prov_court
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SER_kanye_west
+			}
+		}
+	}
 
 	SOV_nikolay_ustryalov = {
 		name = SOV_nikolay_ustryalov

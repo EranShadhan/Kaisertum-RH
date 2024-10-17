@@ -20,569 +20,1477 @@ focus_tree = {
 
 	default = no
 
-	continuous_focus_position = { x = 20 y = 1000 }
+	continuous_focus_position = { x = 20 y = 1200 }
+
+# # # # ECONOMIC TREE # # # #
+
+focus = {
+	id = UBD_baltic_economic_plan
+	icon = GFX_focus_mex_privatisation
+	x = 8
+	y = 0
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
 	
-	########################################
-	#### Continuing the status quo path ####
-	########################################
-	focus = {
-		id = UBD_status_quo
-		icon = GFX_focus_UBD_status_quo
-		mutually_exclusive = { focus = UBD_dreams_of_baltic_freedom }
-		x = 10
-		y = 0
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 2
+			uses = 1
+			category = construction_tech
 		}
-
-		available = {
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = UBD_halt_germanisation
-		icon = GFX_focus_UBD_status_quo
-		prerequisite = {
-			focus = UBD_status_quo
-		}
-		x = 0
-		y = 1
-		relative_position_id = UBD_status_quo
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		
-		completion_reward = {
-			remove_ideas = UBD_germanisation_programme_idea
-			GER = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = large_decrease
+		IF = {
+			limit = {
+				49 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+			49 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
 				}
 			}
 		}
 	}
-	focus = {
-		id = UBD_employ_local_governors
-		icon = GFX_focus_UBD_status_quo
-		prerequisite = {
-			focus = UBD_halt_germanisation
-		}
-		x = -1
-		y = 1
-		relative_position_id = UBD_halt_germanisation
+}
 
-		cost = 5
+focus = {
+	id = UBD_urbanization_drive
+	icon = GFX_focus_generic_low_cost_housing
+	x = -3
+	y = 1
+	relative_position_id = UBD_baltic_economic_plan
+	prerequisite = { focus = UBD_baltic_economic_plan }  
 
-		ai_will_do = {
-			factor = 1
-		}
+	cost = 10
 
-		available = {
-			has_completed_focus = UBD_form_the_bundestag
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = UBD_overworked_administration_idea_2
-				add_idea = UBD_overworked_administration_idea_3
-			}
-		}
-	}
-	focus = {
-		id = UBD_form_the_bundestag
-		icon = GFX_focus_UBD_status_quo
-		prerequisite = {
-			focus = UBD_halt_germanisation
-		}
-		x = 1
-		y = 1
-		relative_position_id = UBD_halt_germanisation
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = UBD_overworked_administration_idea
-				add_idea = UBD_overworked_administration_idea_2
-			}
-		}
-	}
-	focus = {
-		id = UBD_address_the_workers_shortage
-		icon = GFX_focus_UBD_status_quo
-		prerequisite = {
-			focus = UBD_halt_germanisation
-		}
-		x = 0
-		y = 2
-		relative_position_id = UBD_halt_germanisation
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		
-		completion_reward = {
-			add_stability = 0.05
-		}
-	}
-	focus = {
-		id = UBD_employ_baltic_workers
-		icon = GFX_focus_UBD_status_quo
-		prerequisite = {
-			focus = UBD_address_the_workers_shortage
-		}
-		x = 0
-		y = 1
-		relative_position_id = UBD_address_the_workers_shortage
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = UBD_lack_of_workers_idea
-				add_idea = UBD_lack_of_workers_idea_2
-			}
-			custom_effect_tooltip = unlock_industrial_branch_tt
-		}
-	}
-	focus = {
-		id = UBD_governate_of_estonia
-		icon = GFX_focus_UBD_status_quo
-		prerequisite = {
-			focus = UBD_employ_local_governors
-		}
-		x = 0
-		y = 3
-		relative_position_id = UBD_employ_local_governors
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			democratic > 0.2
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		
-		completion_reward = {
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.05
-			}
-			every_state = {
-				limit = {
-					is_core_of = EST
-				}
-				remove_dynamic_modifier = {
-					modifier = UBD_local_resistance_modifier
-				}
-			}
-			IF = {
-				limit = {
-					has_idea = UBD_overworked_administration_idea_3
-				}
-				swap_ideas = {
-					remove_idea = UBD_overworked_administration_idea_3
-					add_idea = UBD_overworked_administration_idea_4
-				}
-			}
-			else = {
-				swap_ideas = {
-					remove_idea = UBD_overworked_administration_idea_4
-					add_idea = UBD_overworked_administration_idea_5
-				}
-			}
-		}
-	}
-	focus = {
-		id = UBD_governate_of_lithuania
-		icon = GFX_focus_UBD_status_quo
-		prerequisite = {
-			focus = UBD_form_the_bundestag
-		}
-		x = 0
-		y = 3
-		relative_position_id = UBD_form_the_bundestag
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			democratic > 0.2
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		
-		completion_reward = {
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.05
-			}
-			every_state = {
-				limit = {
-					is_core_of = LIT
-				}
-				remove_dynamic_modifier = {
-					modifier = UBD_local_resistance_modifier
-				}
-			}
-			IF = {
-				limit = {
-					has_idea = UBD_overworked_administration_idea_3
-				}
-				swap_ideas = {
-					remove_idea = UBD_overworked_administration_idea_3
-					add_idea = UBD_overworked_administration_idea_4
-				}
-			}
-			else = {
-				swap_ideas = {
-					remove_idea = UBD_overworked_administration_idea_4
-					add_idea = UBD_overworked_administration_idea_5
-				}
-			}
-		}
-	}
-	focus = {
-		id = UBD_governate_of_latvia
-		icon = GFX_focus_UBD_status_quo
-		prerequisite = {
-			focus = UBD_governate_of_estonia
-		}
-		prerequisite = {
-			focus = UBD_governate_of_lithuania
-		}
-		x = 0
-		y = 2
-		relative_position_id = UBD_employ_baltic_workers
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			democratic > 0.35
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		
-		completion_reward = {
-			every_state = {
-				limit = {
-					is_core_of = LAT
-				}
-				remove_dynamic_modifier = {
-					modifier = UBD_local_resistance_modifier
-				}
-			}
-			remove_ideas = UBD_overworked_administration_idea_5
-		}
-	}
-	focus = {
-		id = UBD_form_the_baltic_federation
-		icon = GFX_focus_UBD_status_quo
-		prerequisite = {
-			focus = UBD_governate_of_latvia
-		}
-		x = 0
-		y = 1
-		relative_position_id = UBD_governate_of_latvia
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			democratic > 0.5
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		
-		completion_reward = {
-			set_politics = {
-				ruling_party = democratic
-				elections_allowed = yes
-				election_frequency = 48
-			}
-		}
+	ai_will_do = {
+		factor = 1
 	}
 
-
-
-
-
-
-
-
-
-
-
-	focus = {
-		id = UBD_dreams_of_baltic_freedom
-		icon = GFX_focus_UBD_dreams_of_baltic_freedom
-		mutually_exclusive = { focus = UBD_status_quo }
-		x = 15
-		y = 0
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
+	available = {
 		
-		completion_reward = {
-			country_event = UBD_events.1
-			swap_ideas = {
-				remove_idea = UBD_baltic_resistance_idea_5
-				add_idea = UBD_baltic_resistance_idea_6
-			}
-		}
 	}
-	focus = {
-		id = UBD_establish_underground_resistance_networks
-		icon = GFX_focus_UBD_dreams_of_baltic_freedom
-		prerequisite = {
-			focus = UBD_dreams_of_baltic_freedom
-		}
-		relative_position_id = UBD_dreams_of_baltic_freedom
-		x = -1
-		y = 1
 
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
+	bypass = {
 		
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = UBD_baltic_resistance_idea_6
-				add_idea = UBD_baltic_resistance_idea_7
-			}
-		}
 	}
-	focus = {
-		id = UBD_establish_underground_resistance_networks
-		icon = GFX_focus_UBD_dreams_of_baltic_freedom
-		prerequisite = {
-			focus = UBD_establish_underground_resistance_networks
-		}
-		relative_position_id = UBD_establish_underground_resistance_networks
-		x = 0
-		y = 1
 
-		cost = 10
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = UBD_violent_protests_1
-				add_idea = UBD_violent_protests_2
-			}
-		}
-	}
-	focus = {
-		id = UBD_seek_russian_support
-		icon = GFX_focus_UBD_dreams_of_baltic_freedom
-		prerequisite = {
-			focus = UBD_dreams_of_baltic_freedom
-		}
-		relative_position_id = UBD_dreams_of_baltic_freedom
-		x = 1
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-
-		bypass = {
-			SOV = {
-				exists = no
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		
-		completion_reward = {
-			SOV = {
-				country_event = {
-					id = UBD_events.2
-					days = 3
-				}
-			}
-		}
-	}
 	
-	###END OF DEMOCRACY###
+	completion_reward = {
+		IF = {
+			limit = {
+				11 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+				11 = {
+				increase_state_category = yes
+				add_extra_state_shared_building_slots = 2
+				}	
+		}
+
+		IF = {
+			limit = {
+				784 = {
+					is_owned_and_controlled_by = ROOT
+				}		
+			}
+			784 = {
+				increase_state_category = yes
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+
+		IF = {
+			limit = {
+				191 = {
+					is_owned_and_controlled_by = ROOT
+				}		
+			}
+			191 = {
+				increase_state_category = yes
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+
+		swap_ideas = {
+   			remove_idea = UBD_economy_debuff_starting
+    		add_idea = UBD_economy_debuff
+		}
+	}
+}
+
+focus = {
+	id = UBD_autobahn_program
+	icon = GFX_focus_generic_road_investment
+	x = -4
+	y = 1
+	relative_position_id = UBD_urbanization_drive
+	prerequisite = { focus = UBD_urbanization_drive }  
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	
+	completion_reward = {
+		IF = {
+			limit = {
+				809 = {
+					is_owned_and_controlled_by = ROOT
+				}		
+			}
+			809 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		IF = {
+			limit = {
+				810 = {
+					is_owned_and_controlled_by = ROOT
+				}		
+			}
+			810 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		IF = {
+			limit = {
+				12 = {
+					is_owned_and_controlled_by = ROOT
+				}		
+			}
+			12 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		IF = {
+			limit = {
+				808 = {
+					is_owned_and_controlled_by = ROOT
+				}		
+			}
+			808 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		IF = {
+			limit = {
+				190 = {
+					is_owned_and_controlled_by = ROOT
+				}		
+			}
+			190 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		add_ideas = UBD_logistics_1
+	}
+}
+
+focus = {
+	id = UBD_integration_with_germany
+	icon = GFX_focus_generic_improve_roads
+	x = -1
+	y = 1
+	relative_position_id = UBD_autobahn_program
+	prerequisite = { focus = UBD_autobahn_program }  
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	
+	completion_reward = {
+		IF = {
+			limit = {
+				189 = {
+					is_owned_and_controlled_by = ROOT
+				}		
+			}
+			189 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		IF = {
+			limit = {
+				815 = {
+					is_owned_and_controlled_by = ROOT
+				}		
+			}
+			815 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		IF = {
+			limit = {
+			784 = {
+					is_owned_and_controlled_by = ROOT
+				}		
+			}
+			784 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		IF = {
+			limit = {
+				11 = {
+					is_owned_and_controlled_by = ROOT
+				}		
+			}
+			11 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		IF = {
+			limit = {
+				814 = {
+					is_owned_and_controlled_by = ROOT
+				}		
+			}
+			814 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		IF = {
+			limit = {
+				1063 = {
+					is_owned_and_controlled_by = ROOT
+				}		
+			}
+			1063 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		IF = {
+			limit = {
+				188 = {
+					is_owned_and_controlled_by = ROOT
+				}		
+			}
+			188 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+
+focus = {
+	id = UBD_connect_the_northern_roads
+	icon = GFX_focus_generic_improve_roads
+	x = 0
+	y = 1
+	relative_position_id = UBD_integration_with_germany
+	prerequisite = { focus = UBD_integration_with_germany }  
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	
+	completion_reward = {
+
+		IF = {
+			limit = {
+				13 = {
+					is_owned_and_controlled_by = ROOT
+				}		
+			}
+			13 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		IF = {
+			limit = {
+				191 = {
+					is_owned_and_controlled_by = ROOT
+				}		
+			}
+			191 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		IF = {
+			limit = {
+				813 = {
+					is_owned_and_controlled_by = ROOT
+				}		
+			}
+			813 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		IF = {
+			limit = {
+				812 = {
+					is_owned_and_controlled_by = ROOT
+				}		
+			}
+			812 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		IF = {
+			limit = {
+				811 = {
+					is_owned_and_controlled_by = ROOT
+				}		
+			}
+			811 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+
+focus = {
+	id = UBD_kickstart_automobile_production
+	icon = GFX_focus_CHL_domestic_production_of_the_willys_mb
+	x = 1
+	y = 2
+	relative_position_id = UBD_autobahn_program
+	prerequisite = { focus = UBD_autobahn_program }  
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	
+	completion_reward = {
+		IF = {
+			limit = {
+				808 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+			808 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+
+focus = {
+	id = UBD_modernize_baltic_railways
+	icon = GFX_focus_generic_railroad
+	x = -1
+	y = 1
+	relative_position_id = UBD_connect_the_northern_roads
+	prerequisite = { focus = UBD_connect_the_northern_roads }
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	
+	completion_reward = {
+			add_equipment_to_stockpile = {
+    		type = train_equipment
+    		amount = 100
+    		producer = GER
+		}
+	}
+}
+
+focus = {
+	id = UBD_truck_logistics
+	icon = GFX_focus_generic_truck
+	x = 1
+	y = 1
+	relative_position_id = UBD_connect_the_northern_roads
+	prerequisite = { focus = UBD_connect_the_northern_roads focus = UBD_kickstart_automobile_production }
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	
+	completion_reward = {
+		swap_ideas = {
+   			remove_idea = UBD_logistics_1
+    		add_idea = UBD_logistics_2
+		}
+
+		add_equipment_to_stockpile = {
+    		type = motorized_equipment
+    		amount = 500
+    		producer = GER
+		}
+
+		build_railway = {
+       		level = 2
+       		build_only_on_allied = yes
+        	path = { 310 341 222 3298 13739 }
+        }
+
+		build_railway = {
+       		level = 1
+       		build_only_on_allied = yes
+        	path = { 9340 10323 7482 310 }
+        }
+
+		add_building_construction = {
+    		type = supply_node
+   			level = 1
+    		instant_build = yes
+    		province = 222
+		}
+	}
+}
+
+focus = {
+	id = UBD_baltic_industrial_plan
+	icon = GFX_focus_generic_industrialists
+	x = 1
+	y = 1
+	relative_position_id = UBD_urbanization_drive
+	prerequisite = { focus = UBD_urbanization_drive }  
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	
+	completion_reward = {
+		swap_ideas = {
+   			remove_idea = UBD_economy_debuff
+    		add_idea = UBD_economy_1
+		}
+	}
+}
+
+focus = {
+	id = UBD_open_the_kaunas_industrial_district
+	icon = GFX_goal_generic_construction
+	x = -2
+	y = 1
+	relative_position_id = UBD_baltic_industrial_plan
+	prerequisite = { focus = UBD_baltic_industrial_plan }  
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	
+	completion_reward = {
+		IF = {
+			limit = {
+				11 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+			11 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+
+focus = {
+	id = UBD_open_the_tallin_industrial_district
+	icon = GFX_goal_generic_construct_civilian
+	x = 0
+	y = 1
+	relative_position_id = UBD_open_the_kaunas_industrial_district
+	prerequisite = { focus = UBD_open_the_kaunas_industrial_district }  
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	
+	completion_reward = {
+		IF = {
+			limit = {
+				812 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+			812 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+
+focus = {
+	id = UBD_form_the_KaBAuP #Kaiserliche Baltische Automobile und Panzerwagen Werke
+	icon = GFX_focus_SWE_lynx_armored_car
+	x = -1
+	y = 1
+	relative_position_id = UBD_open_the_tallin_industrial_district
+	prerequisite = { focus = UBD_open_the_tallin_industrial_district focus = UBD_kickstart_automobile_production }  
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	
+	completion_reward = {
+
+		#NEW MIO UNLOCKED
+
+		IF = {
+			limit = {
+				809 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+			809 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+		create_equipment_variant = {
+    		name = "Panzer II Ausf. KaBAuP. G"
+    		type = 	light_tank_chassis_2
+   			parent_version = 1
+   			modules = {
+				main_armament_slot = tank_small_cannon_2
+				turret_type_slot = tank_light_two_man_tank_turret
+				suspension_type_slot = tank_christie_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_1
+    		}
+    		upgrades = {
+				tank_nsb_engine_upgrade = 9
+				tank_nsb_armor_upgrade = 4
+    		}
+    		icon = "GFX_GER_improved_light_tank_medium"
+    		#design_team = mio: NEW MIO GOES HERE
+		}
+
+		add_equipment_production = {
+			equipment = {
+				type = light_tank_chassis_2
+				creator = "UBD" 
+				version_name = "Panzer II Ausf. KaBAuP. G"
+			}
+			requested_factories = 3
+			progress = 0.4
+			efficiency = 50
+			#industrial_manufacturer = mio:NEW MIO GOES HERE
+	}
+	}
+}
+
+focus = {
+	id = UBD_expand_the_university_of_riga
+	icon = GFX_focus_generic_university_3
+	x = 0
+	y = 1
+	relative_position_id = UBD_baltic_industrial_plan
+	prerequisite = { focus = UBD_baltic_industrial_plan }  
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	
+	completion_reward = {
+		add_research_slot = 1
+	}
+}
+
+focus = {
+	id = UBD_german_model
+	icon = GFX_focus_NORDIC_dem_capstone_civilian
+	x = 2
+	y = 1
+	relative_position_id = UBD_baltic_industrial_plan
+	prerequisite = { focus = UBD_baltic_industrial_plan }  
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	
+	completion_reward = {
+		swap_ideas = {
+   			remove_idea = UBD_economy_1
+    		add_idea = UBD_economy_2
+		}
+	}
+}
+
+focus = {
+	id = UBD_land_reform
+	icon = GFX_focus_generic_farmland
+	x = 1
+	y = 1
+	relative_position_id = UBD_german_model
+	prerequisite = { focus = UBD_german_model }  
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	
+	completion_reward = { # WIP
+		IF = { has_country_flag = did_efficency_reform }
+		swap_ideas = {
+   			remove_idea = UBD_economy_2_efficency
+    		add_idea = UBD_economy_3
+		}
+		ELSE = {
+		swap_ideas = {
+   			remove_idea = UBD_economy_2
+    		add_idea = UBD_economy_2_land
+		}
+		}
+
+		set_country_flag = did_land_reform
+	}
+}
+
+focus = {
+	id = UBD_german_efficency
+	icon = GFX_focus_SWE_radiotjanst
+	x = -1
+	y = 1
+	relative_position_id = UBD_german_model
+	prerequisite = { focus = UBD_german_model }  
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	
+	completion_reward = { #WIP
+    	add_to_variable = { UBD_economy = 0.1 tooltip = production_speed_buildings_factor_tt }
+
+		# Unlocks an advisor 
+	}
+}
+
+focus = {
+	id = UBD_expand_german_arms_production
+	icon = GFX_focus_generic_reorient_production
+	x = -1
+	y = 1
+	relative_position_id = UBD_german_efficency
+	prerequisite = { focus = UBD_german_efficency }
+	prerequisite = { focus = UBD_open_the_tallin_industrial_district }
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	
+	completion_reward = {
+		#DECISIONS TO INVITE GERMAN COMPANIES FOR MILS
+	}
+}
+
+focus = {
+	id = UBD_optimized_production
+	icon = GFX_focus_SOV_organize_wreckers
+	x = 1
+	y = 1
+	relative_position_id = UBD_german_efficency
+	prerequisite = { focus = UBD_german_efficency }  
+	prerequisite = { focus = UBD_land_reform }
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	
+	completion_reward = {
+		swap_ideas = {
+   			remove_idea = UBD_economy_3
+    		add_idea = UBD_economy_final
+		}
+
+		IF = {
+			limit = {
+				189 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+			189 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+
+focus = {
+	id = UBD_wartime_alternatives
+	icon = GFX_
+	x = 1
+	y = 1
+	relative_position_id = UBD_optimized_production
+	prerequisite = { focus = UBD_optimized_production }  
+	prerequisite = { focus = UBD_ration_resources }
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = UBD_produce_german_aircraft
+	icon = GFX_goal_generic_construct_mil_factory
+	x = -1
+	y = 1
+	relative_position_id = UBD_expand_german_arms_production
+	prerequisite = { focus = UBD_expand_german_arms_production }
+	prerequisite = { focus = UBD_form_the_KaBAuP }
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	
+	completion_reward = {
+		#DECISIONS TO INVITE GERMAN COMPANIES FOR MILS
+	}
+}
+
+focus = {
+	id = UBD_autarky_efforts
+	icon = GFX_
+	x = 5
+	y = 1
+	relative_position_id = UBD_baltic_economic_plan
+	prerequisite = { focus = UBD_baltic_economic_plan }  
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = UBD_the_resource_shortage
+	icon = GFX_
+	x = -2
+	y = 1
+	relative_position_id = UBD_autarky_efforts
+	prerequisite = { focus = UBD_autarky_efforts }  
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = UBD_daugavpils_stahlwerke
+	icon = GFX_
+	x = -1
+	y = 1
+	relative_position_id = UBD_the_resource_shortage
+	prerequisite = { focus = UBD_the_resource_shortage }  
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = UBD_offshore_oil_drilling
+	icon = GFX_
+	x = 1
+	y = 1
+	relative_position_id = UBD_the_resource_shortage
+	prerequisite = { focus = UBD_the_resource_shortage }  
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = UBD_german_trade_deals
+	icon = GFX_
+	x = -1
+	y = 1
+	relative_position_id = UBD_offshore_oil_drilling
+	prerequisite = { focus = UBD_offshore_oil_drilling }  
+	prerequisite = { focus = UBD_daugavpils_stahlwerke }  
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = UBD_ration_resources
+	icon = GFX_
+	x = -1
+	y = 1
+	relative_position_id = UBD_german_trade_deals
+	prerequisite = { focus = UBD_german_trade_deals }  
+	prerequisite = { focus = UBD_land_reform }  
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = UBD_the_worker_shortage
+	icon = GFX_
+	x = 2
+	y = 1
+	relative_position_id = UBD_autarky_efforts
+	prerequisite = { focus = UBD_autarky_efforts }  
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = UBD_invite_german_workers
+	icon = GFX_
+	x = -1
+	y = 1
+	relative_position_id = UBD_the_worker_shortage
+	prerequisite = { focus = UBD_the_worker_shortage }  
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = UBD_national_employment_program
+	icon = GFX_
+	x = -1
+	y = 1
+	relative_position_id = UBD_invite_german_workers
+	prerequisite = { focus = UBD_invite_german_workers }  
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = UBD_electrify_factories
+	icon = GFX_
+	x = 1
+	y = 1
+	relative_position_id = UBD_invite_german_workers
+	prerequisite = { focus = UBD_invite_german_workers }  
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = UBD_establish_work_camps
+	icon = GFX_
+	x = -1
+	y = 1
+	relative_position_id = UBD_electrify_factories
+	prerequisite = { focus = UBD_national_employment_program }  
+	prerequisite = { focus = UBD_electrify_factories } 
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	
+	completion_reward = {
+
+	}
+}
+
 }

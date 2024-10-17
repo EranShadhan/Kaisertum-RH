@@ -1,5 +1,7 @@
 ﻿#COUNTRY LEADERS
 recruit_character = SOV_alexander_kelensky
+recruit_character = SOV_prov_court
+
 recruit_character = SOV_iosif_stalin
 recruit_character = SOV_supreme_soviet #This is a fake character! Proper country leader role is added via focus
 

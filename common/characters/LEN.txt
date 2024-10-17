@@ -1,0 +1,17 @@
+characters = {
+	LEN_Lev_Trotskiy = {
+		name = LEN_Lev_Trotskiy
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_lev_trotsky
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1965.1.1.1"
+			traits={  }
+		}
+	}
+
+
+}
