@@ -125,4 +125,8 @@ spriteTypes = {
 		name = "GFX_CZE_Tomas_Masaryk"
 		texturefile = "gfx/leaders/AUS/CZE_Tomas_Masaryk.png"
 	}
+	spriteType = {
+		name = "GFX_UBD_Adolf_Friedrich"
+		textureFile = "gfx/leaders/UBD/portrait_ubd_adolf_friedrich.dds"
+	}
 }
