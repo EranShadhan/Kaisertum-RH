@@ -1,0 +1,110 @@
+characters = {
+	DEV_iwillexplode = {
+        name = "IWillExplode"
+        portraits = {
+            army = {
+				small = GFX_DEV_iwillexplode
+			}
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = DEV_iwillexplode_idea
+            ledger = civilian
+            allowed = { original_tag = DEV }
+            available = {
+                always = yes
+            }
+            traits = { restless_workaholic }
+        }
+    }
+	DEV_isglitch = {
+        name = "IsGlitch"
+        portraits = {
+            army = {
+				small = GFX_DEV_isglitch
+			}
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = DEV_isglitch_idea
+            ledger = civilian
+            allowed = { original_tag = DEV }
+            available = {
+                always = yes
+            }
+            traits = { scriptedgui_addict }
+        }
+    }
+	DEV_xaelor = {
+        name = "Xaelor"
+        portraits = {
+            army = {
+				small = GFX_DEV_xaelor
+			}
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = DEV_xaelor_idea
+            ledger = civilian
+            allowed = { original_tag = DEV }
+            available = {
+                always = yes
+            }
+            traits = { map_dude }
+        }
+    }
+	DEV_girrambe = {
+        name = "Girrambe"
+        portraits = {
+            army = {
+				small = GFX_DEV_girrambe
+			}
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = DEV_girrambe_idea
+            ledger = civilian
+            allowed = { original_tag = DEV }
+            available = {
+                always = yes
+            }
+            traits = { his_holiness_mod_creator }
+        }
+    }
+	DEV_denis_md = {
+        name = "Denis_MetaDev"
+        portraits = {
+            army = {
+				small = GFX_DEV_denis_metadev
+			}
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = DEV_denis_md_idea
+            ledger = civilian
+            allowed = { original_tag = DEV }
+            available = {
+                always = yes
+            }
+            traits = { ultimate_greek_dev }
+        }
+    }
+	DEV_levko = {
+        name = "Levko"
+        portraits = {
+            army = {
+				small = GFX_DEV_levko
+			}
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = DEV_levko_idea
+            ledger = civilian
+            allowed = { original_tag = DEV }
+            available = {
+                always = yes
+            }
+            traits = { proud_ukrainian_nationalist }
+        }
+    }
+}

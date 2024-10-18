@@ -12,132 +12,324 @@
 	default = no
 	continuous_focus_position = { x = 50 y = 1000 }
 
-	###DUMA-COUNCIL SPLIT###
-
 	focus = {
-		id = SOV_duma_council_split
-		icon = GFX_
-		x = 5
+		id = SOV_sunrise_over_moscow
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 8
 		y = 0
-		
+		cost = 2
+
 		available = {
 
 		}
-		bypass = {
-		}
-
-		cost = 5
 
 		completion_reward = {
-			
+			add_political_power = 50
 		}
-    }
-	
+		ai_will_do = {
+			factor = 5
+    	}
+
+	}
 	focus = {
-		id = SOV_the_governance_question
-		icon = GFX_
-		x = -3
+		id = SOV_fixing_the_nation
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 2
 		y = 1
-		relative_position_id = SOV_duma_council_split
-		
-		prerequisite = { focus = SOV_duma_council_split }
+		cost = 5
+		relative_position_id = SOV_sunrise_over_moscow
+		prerequisite = { focus = SOV_sunrise_over_moscow }
+
 		available = {
 
 		}
-		bypass = {
-		}
-
-		cost = 5
 
 		completion_reward = {
-			
+			add_ideas = RUS_repairing_the_nation
 		}
-    }
-	
+		ai_will_do = {
+			factor = 10
+    	}
+
+	}
 	focus = {
-		id = SOV_the_industrialisation_question
-		icon = GFX_
+		id = SOV_empower_the_okhrana
+		icon = GFX_goal_generic_construct_infrastructure
 		x = -1
 		y = 1
-		relative_position_id = SOV_duma_council_split
-		
-		prerequisite = { focus = SOV_duma_council_split }
+		cost = 5
+		relative_position_id = SOV_fixing_the_nation
+		prerequisite = { focus = SOV_fixing_the_nation }
+		mutually_exclusive = { focus = SOV_empower_the_armiya }
+
 		available = {
 
 		}
-		bypass = {
-		}
-
-		cost = 5
 
 		completion_reward = {
-			
+			add_stability = 0.1
+			add_political_power = 25
 		}
-    }
-	
+		ai_will_do = {
+			factor = 10
+    	}
+
+	}
 	focus = {
-		id = SOV_the_military_question
-		icon = GFX_
+		id = SOV_empower_the_armiya
+		icon = GFX_goal_generic_construct_infrastructure
 		x = 1
 		y = 1
-		relative_position_id = SOV_duma_council_split
-		
-		prerequisite = { focus = SOV_duma_council_split }
+		cost = 5
+		relative_position_id = SOV_fixing_the_nation
+		prerequisite = { focus = SOV_fixing_the_nation }
+		mutually_exclusive = { focus = SOV_empower_the_okhrana }
+
 		available = {
 
 		}
-		bypass = {
-		}
-
-		cost = 5
 
 		completion_reward = {
-			
+			add_war_support = 0.1
+			add_political_power = 25
 		}
-    }
-	
+		ai_will_do = {
+			factor = 10
+    	}
+
+	}
 	focus = {
-		id = SOV_the_revenge_question
-		icon = GFX_
+		id = SOV_from_the_fields_into_the_factories
+		icon = GFX_goal_generic_construct_infrastructure
 		x = 3
 		y = 1
-		relative_position_id = SOV_duma_council_split
-		
-		prerequisite = { focus = SOV_duma_council_split }
+		cost = 5
+		relative_position_id = SOV_fixing_the_nation
+		prerequisite = { focus = SOV_fixing_the_nation }
+
 		available = {
 
 		}
-		bypass = {
-		}
-
-		cost = 5
 
 		completion_reward = {
-			
+			add_war_support = 0.1
+			add_political_power = 25
 		}
-    }
-	
+		ai_will_do = {
+			factor = 10
+    	}
+
+	}
 	focus = {
-		id = SOV_the_outcome_of_the_clash
-		icon = GFX_
-		x = 0
-		y = 2
-		relative_position_id = SOV_duma_council_split
-		
-		prerequisite = { focus = SOV_the_governance_question }
-		prerequisite = { focus = SOV_the_industrialisation_question }
-		prerequisite = { focus = SOV_the_military_question }
-		prerequisite = { focus = SOV_the_revenge_question }
+		id = SOV_industrializing_the_west
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -1
+		y = 1
+		cost = 5
+		relative_position_id = SOV_from_the_fields_into_the_factories
+		prerequisite = { focus = SOV_from_the_fields_into_the_factories }
+
 		available = {
 
 		}
-		bypass = {
-		}
-
-		cost = 5
 
 		completion_reward = {
-			
+			206 = { 
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+			1005 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+			1066 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+
 		}
-    }
+		ai_will_do = {
+			factor = 10
+    	}
+
+	}
+	focus = {
+		id = SOV_industrializing_the_east
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 1
+		y = 1
+		cost = 5
+		relative_position_id = SOV_from_the_fields_into_the_factories
+		prerequisite = { focus = SOV_from_the_fields_into_the_factories }
+
+		available = {
+
+		}
+
+		completion_reward = {
+			408 = { 
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+			562 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+
+		}
+		ai_will_do = {
+			factor = 10
+    	}
+
+	}
+	focus = {
+		id = SOV_great_minds_of_russia
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 0
+		y = 3
+		cost = 5
+		relative_position_id = SOV_fixing_the_nation
+		prerequisite = { focus = SOV_empower_the_okhrana focus = SOV_empower_the_armiya}
+		prerequisite = { focus = SOV_industrializing_the_east }
+		prerequisite = { focus = SOV_industrializing_the_west }
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_ideas = RUS_great_minds
+		}
+		ai_will_do = {
+			factor = 10
+    	}
+
+	}
+	focus = {
+		id = SOV_securing_the_state
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = SOV_sunrise_over_moscow
+		prerequisite = { focus = SOV_sunrise_over_moscow }
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_command_power = 20
+			army_experience = 20
+		}
+		ai_will_do = {
+			factor = 10
+    	}
+
+	}
+	focus = {
+		id = SOV_further_integration_of_puppets
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 1
+		y = 1
+		cost = 5
+		relative_position_id = SOV_securing_the_state
+		prerequisite = { focus = SOV_securing_the_state }
+
+		available = {
+
+		}
+
+		completion_reward = {
+		SIK = {
+			add_autonomy_score = {
+				value = -50
+				localization = RUS_lower_autonomy_tt
+			}
+		}
+		MON = {
+			add_autonomy_score = {
+				value = -50
+				localization = RUS_lower_autonomy_tt
+			}
+		}
+		}
+		ai_will_do = {
+			factor = 10
+    	}
+	}
+	focus = {
+		id = SOV_fight_against_extremism
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -1
+		y = 1
+		cost = 5
+		relative_position_id = SOV_securing_the_state
+		prerequisite = { focus = SOV_securing_the_state }
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}
+		}
+		ai_will_do = {
+			factor = 10
+    	}
+
+	}
+
 }

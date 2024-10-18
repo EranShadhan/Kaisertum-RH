@@ -1,0 +1,32 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_DEV_iwillexplode"
+		texturefile = "gfx/ideas/DEV/DEV_esplode.png"
+	}
+	spriteType = {
+		name = "GFX_DEV_isglitch"
+		texturefile = "gfx/ideas/DEV/DEV_glutch.png"
+	}
+	spriteType = {
+		name = "GFX_DEV_xaelor"
+		texturefile = "gfx/ideas/DEV/DEV_xaelor.png"
+	}
+	spriteType = {
+		name = "GFX_DEV_denis_metadev"
+		texturefile = "gfx/ideas/DEV/DEV_denis.png"
+	}
+	spriteType = {
+		name = "GFX_DEV_girrambe"
+		texturefile = "gfx/ideas/DEV/DEV_girrambe.png"
+	}
+	spriteType = {
+		name = "GFX_DEV_levko"
+		texturefile = "gfx/ideas/DEV/DEV_levko.png"
+	}
+	spriteType = {
+		name = "GFX_idea_island_of_the_devs"
+		texturefile = "gfx/ideas/DEV/island_of_the_devs.png"
+	}
+
+}

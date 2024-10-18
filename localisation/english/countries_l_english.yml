@@ -195,6 +195,10 @@
  TKS_DEF:0 "the Federation of Central Asian States"
  TKS_ADJ:0 "Central Asian"
 
+ DEV:0 "Dev Island"
+ DEV_DEF:0 "the Dev Island"
+ DEV_ADJ:0 "Dev"
+
 
  USA_fascism:0 "Free American Empire"
  USA_fascism_DEF:0 "the Free American Empire"

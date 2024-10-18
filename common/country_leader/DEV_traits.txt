@@ -1,0 +1,36 @@
+leader_traits = {
+
+	restless_workaholic = {
+		random = no
+		research_speed_factor = 0.1
+		production_speed_buildings_factor = 0.15
+	}
+	scriptedgui_addict = {
+		random = no
+		mobilization_speed = 0.1
+		stability_weekly = -0.0005
+		political_power_gain = 0.1
+	}
+	map_dude = {
+		random = no
+		war_support_factor = 0.2
+		cas_damage_reduction = 0.05
+		max_planning_factor = 0.1
+		army_core_attack_factor = 0.05
+	}
+	his_holiness_mod_creator = {
+		random = no
+		political_power_gain = 0.6
+	}
+	ultimate_greek_dev = {
+		random = no
+		production_speed_arms_factory_factor = 0.2
+		production_speed_industrial_complex_factor = -0.05
+	}
+	proud_ukrainian_nationalist = {
+		random = no
+		monthly_population = 0.15
+		stability_factor = 0.2
+		
+	}
+}

@@ -2,6 +2,88 @@ ideas = {
 
 	country = {
 
+		RUS_repairing_the_nation = {
+
+			picture = generic_deal_with_the_devil2
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				political_power_cost = -0.05
+			}
+		}
+
+		RUS_rapid_industrialization = {
+
+			picture = generic_deal_with_the_devil2
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				production_speed_industrial_complex_factor = 0.2
+				production_cost_industrial_complex_factor = -0.1
+			}
+		}
+		RUS_great_minds = {
+
+			picture = generic_deal_with_the_devil2
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+
+		RUS_suppressing_political_opponents = {
+			picture = generic_deal_with_the_devil2
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.05
+				political_power_gain = 0.2
+			}
+		}
+
+
+
+
+
 		RUS_transistion = {
 
 			picture = generic_deal_with_the_devil2

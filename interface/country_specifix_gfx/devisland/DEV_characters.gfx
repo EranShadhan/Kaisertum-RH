@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_portrait_FP_Devs"
+		texturefile = "gfx/leaders/DEV/portrait_FP_devs.png"
+	}
+
+}

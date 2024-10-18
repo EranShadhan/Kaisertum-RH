@@ -1,0 +1,28 @@
+ideas = {
+
+	country = {
+		island_of_the_devs = {
+			picture = GFX_idea_island_of_the_devs
+			
+			allowed = {
+				always = no
+			}
+			
+			available = {
+			}
+			
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				defence = 10000
+			}
+		}
+	}
+}
