@@ -1,0 +1,26 @@
+state={
+	id=1063
+	name="STATE_1063"
+
+	history={
+		owner = UBD
+		victory_points = {
+			3254 1 
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = POL
+		add_core_of = LIT
+
+	}
+
+	provinces={
+		3254 13735 
+	}
+	manpower=69206
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

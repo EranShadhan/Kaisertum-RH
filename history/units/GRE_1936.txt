@@ -1,0 +1,412 @@
+﻿division_template = {
+	name = "Trigonikó Pezikoú" 				# Triangular Infantry Division
+	division_names_group = GRE_INF_01
+	# Prior to 1940 mobilization = 3rd, 4th, 5th, 9th, 10, 13th;
+	# 	6th, 7th, 11th, and 12th had 2 regiments; 14th had 1 regiment
+	# Note: sources have all Greek regular infantry as mountain-trained
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Tethorakismeni Merarchía" 				
+	division_names_group = GRE_ARM_01
+												# Also represents groups of independent tank, mech brigades of the time, though groups are best represented by tank bge 
+													# (2x M/L tank + 1x mot), and 2x mech bge (2x L tank + 1x mot)
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+		light_armor = { x = 1 y = 0 }		
+		light_armor = { x = 1 y = 1 }		
+		light_armor = { x = 1 y = 2 }	
+        light_armor = { x = 1 y = 3 }		
+		motorized = { x = 2 y = 0 }		
+		motorized = { x = 2 y = 1 }	
+		motorized = { x = 2 y = 2 }		
+		motorized = { x = 2 y = 3 }		
+	}
+}
+division_template = {
+	name = "Tetrágono Pezikoú" 				# Square Infantry Division
+	division_names_group = GRE_MNT_01
+	# Prior to 1940 mobilization = 1st, 2nd, 8th
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Merarchía Ippikoú" 			# Cavalry Division
+	division_names_group = GRE_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # Motorized recon inf bn
+	}
+}
+
+units = {
+	######## Ellinikó Genikó Epiteleío ########
+	division = { # "I Tethorakismeni Merarchía"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9921
+		division_template = "Tethorakismeni Merarchía" 
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+
+	}
+	division = { # "II Tethorakismeni Merarchía"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 6992
+		division_template = "Tethorakismeni Merarchía" 
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+
+	}
+	division = { # "III Tethorakismeni Merarchía"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 3879
+		division_template = "Tethorakismeni Merarchía" 
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+
+	}
+	division = { # "III Tethorakismeni Merarchía"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 4109
+		division_template = "Tethorakismeni Merarchía" 
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "V Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 12058
+		division_template = "Trigonikó Pezikoú" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = { # "XX Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 20
+		}
+		location = 9805
+		division_template = "Tetrágono Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+
+	}
+	division = { # "XVII Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 17
+		}
+		location = 9837
+		division_template = "Tetrágono Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+
+	}
+	division = { # "XVIII Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 18
+		}
+		location = 11984
+		division_template = "Tetrágono Pezikoú" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "XIX Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 19
+		}
+		location = 7193
+		division_template = "Tetrágono Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "VIII Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 3914
+		division_template = "Tetrágono Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "XIII Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 13
+		}
+		location = 9799
+		division_template = "Trigonikó Pezikoú" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = { # "XX Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 20
+		}
+		location = 4112
+		division_template = "Trigonikó Pezikoú" 
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "XIV Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 14
+		}
+		location = 9929
+		division_template = "Trigonikó Pezikoú" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = { # "XVI Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 16
+		}
+		location = 8435
+		division_template = "Tetrágono Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Merarchía Ippikoú"
+		location = 11818
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		division_template = "Merarchía Ippikoú" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+    division = {
+		name = "Merarchía Ippikoú"
+		location = 3973
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		division_template = "Merarchía Ippikoú" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	  division = {
+		name = "Merarchía Ippikoú"
+		location = 6895
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		division_template = "Merarchía Ippikoú" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	# A Sóma Stratoú
+	division = { # "II Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 4109
+		division_template = "Tetrágono Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "III Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 4193
+		division_template = "Trigonikó Pezikoú" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = { # "IV Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 7096
+		division_template = "Trigonikó Pezikoú" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# B Sóma Stratoú
+	division = { # "I Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 863
+		division_template = "Tetrágono Pezikoú" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "IX Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 9
+		}
+		location = 966
+		division_template = "Trigonikó Pezikoú" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# C Sóma Stratoú
+	division = { # "VI Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 3526
+		division_template = "Trigonikó Pezikoú" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+
+	}
+	division = { # "X Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 10
+		}
+		location = 10163
+		division_template = "Trigonikó Pezikoú" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = { # "XI Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 11
+		}
+		location = 11818
+		division_template = "Trigonikó Pezikoú" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+
+	}
+
+	# D Sóma Stratoú
+	division = { # "VII Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 9791
+		division_template = "Trigonikó Pezikoú" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+
+	}
+
+	# E Sóma Stratoú
+	division = { # "XII Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 12
+		}
+		location = 849
+		division_template = "Trigonikó Pezikoú" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "GRE"
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "GRE"
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 100
+	}
+}

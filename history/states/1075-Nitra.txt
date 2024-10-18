@@ -1,0 +1,25 @@
+state={
+	id=1075
+	name="STATE_1075"
+
+	history = {
+		owner = HUN
+		buildings = {
+			infrastructure = 2
+		}
+		
+		add_core_of = HUN
+		add_core_of = SLO
+		victory_points = {
+			11679 1
+		}
+	}
+
+	provinces={
+		6561 11679 13618 
+	}
+	manpower=95000
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

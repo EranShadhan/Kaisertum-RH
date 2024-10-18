@@ -1,0 +1,216 @@
+﻿###########################
+# German Events
+###########################
+
+add_namespace = germany
+
+country_event = {
+	id = germany.1
+	title = germany.1.t
+	desc = germany.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.1.a
+		add_war_support = 0.1
+		declare_war_on = {
+			target = AUS
+			type = annex_everything
+		}
+		set_global_flag = ger_intervention_side_hun
+		ai_will_do = {
+			factor = 50
+		}
+	}
+
+	option = {
+		name = germany.1.b
+		add_stability = 0.1
+		add_war_support = 0.05
+		if = {
+			limit = {
+				AUS = {
+					has_war_with = HUN
+				}
+			}
+			add_to_war = {
+				targeted_alliance = AUS
+				enemy = HUN
+			}
+		}
+		if = {
+			limit = {
+				AUS = {
+					has_war_with = ITA
+				}
+			}
+			add_to_war = {
+				targeted_alliance = AUS
+				enemy = ITA
+			}
+		}
+		if = {
+			limit = {
+				AUS = {
+					has_war_with = POL
+				}
+			}
+			POL = {
+				white_peace = AUS
+			}
+		}
+		if = {
+			limit = {
+				AUS = {
+					has_war_with = UKR
+				}
+				UKR = {
+					is_in_faction_with = GER
+				}
+			}
+			UKR = {
+				leave_faction = GER
+			}
+			declare_war_on = {
+				target = UKR
+				type = puppet_wargoal_focus
+			}
+		}
+		if = {
+			limit = {
+				AUS = {
+					has_war_with = YUG
+				}
+			}
+			add_to_war = {
+				targeted_alliance = AUS
+				enemy = YUG
+			}
+		}
+		if = {
+			limit = {
+				AUS = {
+					has_war_with = SER
+				}
+			}
+			add_to_war = {
+				targeted_alliance = AUS
+				enemy = SER
+			}
+		}
+		if = {
+			limit = {
+				AUS = {
+					has_war_with = ROM
+				}
+			}
+			add_to_war = {
+				targeted_alliance = BUL
+				enemy = ROM
+			}
+		}
+		if = {
+			limit = {
+				AUS = {
+					has_war_with = GRE
+				}
+			}
+			add_to_war = {
+				targeted_alliance = AUS
+				enemy = GRE
+			}
+		}
+		if = {
+			limit = {
+				AUS = {
+					has_war_with = ALB
+				}
+			}
+			add_to_war = {
+				targeted_alliance = AUS
+				enemy = ALB
+			}
+		}
+		set_global_flag = ger_intervention_side_aus
+	}
+}
+
+country_event = {
+	id = germany.4
+	title = germany.4.t
+	desc = germany.4.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+ 	immediate = {
+ 		hidden_effect = {
+ 			add_named_threat = { threat = 12 name = germany.4.t }
+ 		}
+ 	}
+
+	option = {
+		name = germany.4.a
+		4 = {
+			if = {
+				limit = { is_owned_by = AUS }
+				add_core_of = GER
+			}
+		}
+		152 = {
+			if = {
+				limit = { is_owned_by = AUS }
+				add_core_of = GER
+			}
+		}
+		153 = {
+			if = {
+				limit = { is_owned_by = AUS }
+				add_core_of = GER
+			}
+		}
+		848 = {
+			if = {
+				limit = { is_owned_by = AUS }
+				add_core_of = GER
+			}
+		}
+		AUS = {
+			every_unit_leader = {
+				set_nationality = GER
+			}
+		}
+		annex_country = { target = AUS transfer_troops = yes }
+		add_political_power = 75
+		set_country_flag = AUS_annexed
+		add_war_support = 0.1
+		add_stability = 0.05
+		USA = {
+			set_country_flag = { flag = USA_anschluss_window days = 60 value = 1 }
+		}
+		custom_effect_tooltip = anschluss_mefo_bills_tt
+		hidden_effect = { # Having it appear twice might be confusing
+			GER_mefo_bills_level_down = yes
+			GER_mefo_bills_level_down = yes
+		}
+		custom_effect_tooltip = anschluss_mefo_bills_double_reduction
+		add_to_variable = { var = GER_mefo_bill_counter value = -10 }
+
+		if = {
+			limit = {
+				has_dlc = "Death or Dishonor"
+				country_exists = YUG
+				YUG = { has_war = no }
+			}
+			country_event = {
+				id = DOD_yugoslavia.30
+				days = 4
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = news.36 }
+		}
+	}
+}

@@ -1,0 +1,26 @@
+state={
+	id=1068
+	name="STATE_1068"
+
+	history={
+		victory_points = {
+			13740 1
+		}
+		owner = SPR
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = SPR
+		add_core_of = POR
+
+	}
+
+	provinces={
+		13740 
+	}
+	manpower=11871
+	state_category=enclave
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

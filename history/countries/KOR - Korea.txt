@@ -1,0 +1,28 @@
+﻿capital = 1099
+
+oob = "KOR_1936"
+
+recruit_character = KOR_Kim_Tu-bong
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_trucks = 1
+	mass_assault = 1
+}
+
+set_convoys = 5
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1928.12.5"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 15
+	fascism = 5
+	communism = 55
+	neutrality = 25
+}
+

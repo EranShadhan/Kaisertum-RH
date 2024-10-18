@@ -1,0 +1,16 @@
+state={
+	id=976
+	name="STATE_976"
+	provinces={
+		12761 8013 5075 
+	}
+	history={
+		owner = AFG
+		add_core_of = AFG
+		add_core_of = PAK
+	}
+	manpower=10000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = pastoral
+}

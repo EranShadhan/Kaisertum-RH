@@ -1,0 +1,18 @@
+state={
+	id=1073
+	name="STATE_1073"
+
+	history={
+		owner = SOV
+		add_core_of = SOV
+
+	}
+
+	provinces={
+		464 477 615 3459 3622 6498 6514 6523 9469 11578 
+	}
+	manpower=38905
+	state_category=wasteland
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

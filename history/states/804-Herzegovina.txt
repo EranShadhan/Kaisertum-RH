@@ -1,0 +1,29 @@
+
+state={
+	id=804
+	name="STATE_804"
+	resources={
+		aluminium=7.000
+	}
+
+	history={
+		owner = YUG
+		victory_points = {
+			9894 3 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = YUG
+
+	}
+
+	provinces={
+		953 6942 9894 11845 13579 
+	}
+	manpower=547200
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

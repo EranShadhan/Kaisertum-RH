@@ -1,0 +1,24 @@
+
+state={
+	id=884
+	name="STATE_884"
+
+	history={
+		owner = EGY
+		add_core_of = SUD
+		add_core_of = EGY
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		2096 4033 10859 10877 12744 12800 12887 13635 13638 13639 13642 13644 13645 13648 13650 13652 13655 13656 13660 13663 13665 13668 13669 13676 13725 
+	}
+	manpower=1040121
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

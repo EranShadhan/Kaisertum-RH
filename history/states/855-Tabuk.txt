@@ -1,0 +1,19 @@
+
+state={
+	id=855
+	name="STATE_855"
+
+	history={
+		owner = SAU
+		add_core_of = SAU
+
+	}
+
+	provinces={
+		1033 2027 2095 8092 13863 13873 13875 13891 13892 
+	}
+	manpower=500000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

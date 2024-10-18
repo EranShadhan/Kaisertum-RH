@@ -1,0 +1,30 @@
+state={
+	id=973
+	name="STATE_973"
+	
+	history={
+		owner = TUR
+		victory_points = {
+			1005 5 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			1005 = {
+				naval_base = 4
+
+			}
+
+		}
+		add_core_of = TUR
+
+	}
+	
+	provinces={
+		1005 1119 1122 4008 4127 
+	}
+	manpower=362689
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

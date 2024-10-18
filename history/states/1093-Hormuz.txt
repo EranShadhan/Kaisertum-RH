@@ -1,0 +1,32 @@
+state={
+	id=1093
+	name="STATE_1093"
+	resources={
+		oil=1.000
+	}
+
+	history={
+		add_core_of = OMA
+		add_core_of = SAU
+		owner = PER
+		victory_points = {
+			13860 1
+		}
+		buildings = {
+			infrastructure = 1
+			13860 = {
+				naval_base = 1
+
+			}
+
+		}
+
+	}
+	provinces={
+		13860 
+	}
+	manpower=18727
+	state_category=enclave
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

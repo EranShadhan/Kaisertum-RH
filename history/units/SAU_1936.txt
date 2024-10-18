@@ -1,0 +1,232 @@
+﻿division_template = {
+	name = "Alfurqat Almasha"		# 'Infantry Division' - Represents local tribal levies (militia)
+
+	division_names_group = SAU_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Alfurqat Alfursan"		# Camel-mounted levies (militia)
+
+	division_names_group = SAU_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+
+units = {
+	##### Royal Saudi Army #####
+	division = {
+		#name = "Alfursan Almalika 'Medina'"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4981
+		division_template = "Alfurqat Alfursan"		
+		start_equipment_factor = 0.95
+
+	}
+	division = {
+		#name = "Alfurqat Ar Riyad"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12727
+		division_template = "Alfurqat Almasha"	
+		start_equipment_factor = 0.9
+
+	}
+	division = {
+		#name = "Alfurqat Jiddah"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 12883
+		division_template = "Alfurqat Almasha"
+		start_equipment_factor = 0.95
+
+	}
+	division = {
+        #name = "Desert Falcons Division"
+        division_name = {    # New syntax for compatibility with name lists
+            is_name_ordered = yes
+            name_order = 2
+        }
+        location = 10835
+        division_template = "Alfurqat Almasha"
+        start_equipment_factor = 0.95
+
+    }
+	division = {
+        #name = "Bedouin Warriors Division"
+        division_name = {    # New syntax for compatibility with name lists
+            is_name_ordered = yes
+            name_order = 2
+        }
+        location = 12702
+        division_template = "Alfurqat Alfursan"
+        start_equipment_factor = 0.95
+
+    }
+	division = {
+        #name = "Sands of Arabia Division"
+        division_name = {    # New syntax for compatibility with name lists
+            is_name_ordered = yes
+            name_order = 2
+        }
+        location = 5037
+        division_template = "Alfurqat Almasha"
+        start_equipment_factor = 0.95
+
+    }
+	division = {
+        #name = "Red Crescent Division"
+        division_name = {    # New syntax for compatibility with name lists
+            is_name_ordered = yes
+            name_order = 2
+        }
+        location = 4603
+        division_template = "Alfurqat Almasha"
+        start_equipment_factor = 0.95
+
+    }\
+	division = {
+        #name = "Sword of the Prophet Division"
+        division_name = {    # New syntax for compatibility with name lists
+            is_name_ordered = yes
+            name_order = 2
+        }
+        location = 5081
+        division_template = "Alfurqat Alfursan"
+        start_equipment_factor = 0.95
+
+    }
+	division = {
+        #name = "Sands of Arabia Division"
+        division_name = {    # New syntax for compatibility with name lists
+            is_name_ordered = yes
+            name_order = 2
+        }
+        location = 12473
+        division_template = "Alfurqat Alfursan"
+        start_equipment_factor = 0.95
+
+    }
+	division = {
+        #name = "Anfal Division"
+        division_name = {    # New syntax for compatibility with name lists
+            is_name_ordered = yes
+            name_order = 2
+        }
+        location = 4111
+        division_template = "Alfurqat Almasha"
+        start_equipment_factor = 0.95
+
+    }
+	division = {
+        #name = "Guardians of Mecca Division"
+        division_name = {    # New syntax for compatibility with name lists
+            is_name_ordered = yes
+            name_order = 2
+        }
+        location = 792
+        division_template = "Alfurqat Almasha"
+        start_equipment_factor = 0.95
+
+    }
+	division = {
+        #name = "The Hashimite Brigade"
+        division_name = {    # New syntax for compatibility with name lists
+            is_name_ordered = yes
+            name_order = 2
+        }
+        location = 1065
+        division_template = "Alfurqat Almasha"
+        start_equipment_factor = 0.95
+
+    }
+	division = {
+        #name = "Arabian Knights Division"
+        division_name = {    # New syntax for compatibility with name lists
+            is_name_ordered = yes
+            name_order = 2
+        }
+        location = 10840
+        division_template = "Alfurqat Almasha"
+        start_equipment_factor = 0.95
+
+    }
+	division = {
+        #name = "Ghazi Corps Division"
+        division_name = {    # New syntax for compatibility with name lists
+            is_name_ordered = yes
+            name_order = 2
+        }
+        location = 5074
+        division_template = "Alfurqat Almasha"
+        start_equipment_factor = 0.95
+
+    }
+	division = {
+        #name = "Jazeera Infantry Division"
+        division_name = {    # New syntax for compatibility with name lists
+            is_name_ordered = yes
+            name_order = 2
+        }
+        location = 8051
+        division_template = "Alfurqat Almasha"
+        start_equipment_factor = 0.95
+
+    }
+	division = {
+        #name = "Emirs’ Legion Division"
+        division_name = {    # New syntax for compatibility with name lists
+            is_name_ordered = yes
+            name_order = 2
+        }
+        location = 7960
+        division_template = "Alfurqat Almasha"
+        start_equipment_factor = 0.95
+
+    }
+	division = {
+        #name = "Al-Nakheel Division"
+        division_name = {    # New syntax for compatibility with name lists
+            is_name_ordered = yes
+            name_order = 2
+        }
+        location = 10760
+        division_template = "Alfurqat Almasha"
+        start_equipment_factor = 0.95
+
+    }
+}
+
+	######## No notable air force ########
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "SAU"
+		}
+		requested_factories = 1
+		progress = 0.38
+		efficiency = 100
+	}
+}

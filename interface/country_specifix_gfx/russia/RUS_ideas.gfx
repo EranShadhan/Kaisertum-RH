@@ -1,0 +1,8 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_RUS_russification"
+		texturefile = "gfx/interface/ideas/SOV/RUS_russification.dds"
+	}
+
+}

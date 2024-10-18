@@ -1,0 +1,34 @@
+
+state={
+	id=845
+	name="STATE_845"
+	resources={
+		aluminium=18.000
+	}
+
+	history={
+		owner = SWI
+		victory_points = {
+			9638 5 
+		}
+		victory_points = {
+			6666 5 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+
+		}
+		add_core_of = SWI
+
+	}
+
+	provinces={
+		6666 6683 9622 11590 13124 
+	}
+	manpower=2067296
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

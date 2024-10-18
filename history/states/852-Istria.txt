@@ -1,0 +1,33 @@
+
+state={
+	id=852
+	name="STATE_852"
+
+	history={
+		owner = AUS
+		victory_points = {
+			11564 10 
+		}
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+			11564 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_claim_by = ITA
+		add_claim_by = YUG
+		add_core_of = AUS
+		add_core_of = SLV
+	}
+
+	provinces={
+		11564 13252 13591 
+	}
+	manpower=125850
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

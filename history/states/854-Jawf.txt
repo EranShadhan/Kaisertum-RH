@@ -1,0 +1,23 @@
+
+state={
+	id=854
+	name="STATE_854"
+
+	history={
+		victory_points = {
+			12413 1 
+		}
+		owner = SAU
+		add_core_of = SAU
+
+	}
+
+	provinces={
+		1631 4951 4974 7970 10815 10901 12455 13894 
+	}
+	manpower=10000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable=yes
+	local_supplies=0.000
+}

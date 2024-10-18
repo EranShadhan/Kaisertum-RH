@@ -1,0 +1,24 @@
+
+state={
+	id=109
+	name="STATE_109"
+
+	history={
+		owner = YUG
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = YUG
+
+	}
+
+	provinces={
+		624 3627 6647 9595 9611 11577 11594 13746 
+	}
+	manpower=1966376
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

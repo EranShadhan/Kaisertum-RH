@@ -1,0 +1,27 @@
+
+state={
+	id=565
+	name="STATE_565"
+	resources={
+		steel=19.000
+		chromium=8.000
+	}
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SOV
+
+	}
+
+	provinces={
+		1666 1761 4762 4795 4868 7759 7854 10583 10654 12538 13405 13410 13414 13416 
+	}
+	manpower=195325
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=5.000
+}

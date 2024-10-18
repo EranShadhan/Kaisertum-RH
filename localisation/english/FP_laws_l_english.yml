@@ -1,0 +1,10 @@
+﻿l_english:
+ customs_union_laws:0 "Customs Union"
+ trade_union_laws:0 "Status of Trade Unions"
+ no_customs_union:0 "No Joint Trade Pact"
+ conscription:0 "Conscription"
+
+ unions_banned:0 "Trade Unions Prohibited"
+ unions_suppressed:0 "Trade Unions Suppressed"
+ unions_supported:0 "Trade Unions Protected"
+ unions_mandatory:0 "Trade Unions Empowered"

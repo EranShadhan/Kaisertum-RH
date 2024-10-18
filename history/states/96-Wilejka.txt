@@ -1,0 +1,27 @@
+
+state={
+	id=96
+	name="STATE_96"
+
+	history={
+		victory_points = {
+			406 3
+		}
+		owner = SOV
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = SOV
+		add_core_of = BLR
+
+	}
+
+	provinces={
+		233 358 406 9341 11391 
+	}
+	manpower=526000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

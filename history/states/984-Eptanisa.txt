@@ -1,0 +1,34 @@
+state={
+	id=984
+	name="STATE_984"
+	provinces={
+		1106 10203 
+	}
+	history={
+		victory_points = {
+			10203 5
+		}
+	
+		owner = GRE
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 4
+			10203 = {
+				naval_base = 4
+
+			}
+            1106 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = GRE
+
+	}
+	manpower=72367
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

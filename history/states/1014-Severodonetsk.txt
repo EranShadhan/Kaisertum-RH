@@ -1,0 +1,30 @@
+
+state={
+	id=1014
+	name="STATE_1014"
+	resources={
+		aluminium=10.000
+	}
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 3
+
+		}
+		victory_points = {
+			11487 3 
+		}
+		add_core_of = SOV
+		add_core_of = UKR
+
+	}
+
+	provinces={
+		523 547 570 6519 9476 11487 11513 
+	}
+	manpower=715245
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

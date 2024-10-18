@@ -1,0 +1,36 @@
+
+state={
+	id=564
+	name="STATE_564"
+	resources={
+		steel=19.000
+		chromium=16.000
+		tungsten=13.000
+		aluminium=8.000
+	}
+
+	history={
+		owner = SOV
+		victory_points = {
+			7835 2 
+		}
+		victory_points = {
+			12644 1 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = SOV
+		add_core_of = BYA
+
+	}
+
+	provinces={
+		1696 1762 4716 4766 4835 4837 7736 7816 7835 10524 10528 10658 12506 12575 12644 13152 13398 13399 13409 13411 13433 13434 
+	}
+	manpower=390893
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

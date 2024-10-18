@@ -1,0 +1,27 @@
+state={
+	id=1018
+	name="STATE_1018"
+resources={
+		steel=8
+	}
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 3
+                	synthetic_refinery = 1
+		}
+		victory_points = {
+			11412 1
+		}
+		add_core_of = SOV
+
+	}
+
+	provinces={
+		473 3469 3567 6432 6591 9424 9489 9552 11412 11475 
+	}
+	manpower=998794
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

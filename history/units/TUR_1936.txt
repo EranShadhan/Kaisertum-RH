@@ -1,0 +1,463 @@
+﻿division_template = {
+	name = "Toprak Savunması"  			# Territorial Defense Division
+
+	division_names_group = TUR_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+	support = {
+        military_police = { x = 0 y = 0 }
+    }
+
+	template_counter = 67
+}
+
+division_template = {
+	name = "Piyade Tümeni"  			# Infantry Division
+
+	division_names_group = TUR_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+    }
+}
+division_template = {
+	name = "Dag Tugayi" 				# Mountain Brigade
+
+	division_names_group = TUR_MTN_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 3 y = 0 }
+		mountaineers = { x = 3 y = 1 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+    }
+}
+division_template = {
+	name = "Süvari Tümeni" 				# Cavalry Division
+
+	division_names_group = TUR_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+}
+
+units = {
+	######## LAND UNITS ########
+
+	### SHITTY INFANTRY
+
+	division = {
+		#name = "101. Toprak Savunması"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 101
+		}
+		location = 9887
+		division_template = "Toprak Savunması" 
+		start_experience_factor = 0.03
+		start_equipment_factor = 0.5
+	}
+
+	division = {
+		#name = "102. Toprak Savunması"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 102
+		}
+		location = 11778
+		division_template = "Toprak Savunması" 
+		start_experience_factor = 0.03
+		start_equipment_factor = 0.4
+	}
+
+	division = {
+		#name = "103. Toprak Savunması"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 103
+		}
+		location = 11778
+		division_template = "Toprak Savunması" 
+		start_experience_factor = 0.03
+		start_equipment_factor = 0.9
+	}
+
+	division = {
+		#name = "104. Toprak Savunması"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 104
+		}
+		location = 11898
+		division_template = "Toprak Savunması" 
+		start_experience_factor = 0.03
+		start_equipment_factor = 0.7
+	}
+
+	division = {
+		#name = "105. Toprak Savunması"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 105
+		}
+		location = 10041
+		division_template = "Toprak Savunması" 
+		start_experience_factor = 0.03
+		start_equipment_factor = 0.9
+	}
+
+	division = {
+		#name = "106. Toprak Savunması"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 106
+		}
+		location = 11917
+		division_template = "Toprak Savunması" 
+		start_experience_factor = 0.03
+		start_equipment_factor = 0.7
+	}
+
+	division = {
+		#name = "107. Toprak Savunması"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 107
+		}
+		location = 12016
+		division_template = "Toprak Savunması" 
+		start_experience_factor = 0.03
+		start_equipment_factor = 0.6
+	}
+
+	division = {
+		#name = "108. Toprak Savunması"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 108
+		}
+		location = 856
+		division_template = "Toprak Savunması" 
+		start_experience_factor = 0.03
+		start_equipment_factor = 0.5
+	}
+
+	division = {
+		#name = "109. Toprak Savunması"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 109
+		}
+		location = 886
+		division_template = "Toprak Savunması" 
+		start_experience_factor = 0.03
+		start_equipment_factor = 0.2
+	}
+
+	division = {
+		#name = "110. Toprak Savunması"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 110
+		}
+		location = 9823
+		division_template = "Toprak Savunması" 
+		start_experience_factor = 0.03
+		start_equipment_factor = 0.7
+	}
+
+	division = {
+		#name = "111. Toprak Savunması"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 111
+		}
+		location = 12416
+		division_template = "Toprak Savunması" 
+		start_experience_factor = 0.03
+		start_equipment_factor = 0.3
+	}
+
+	division = {
+		#name = "112. Toprak Savunması"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 112
+		}
+		location = 12416
+		division_template = "Toprak Savunması" 
+		start_experience_factor = 0.03
+		start_equipment_factor = 0.4
+	}
+
+	division = {
+		#name = "113. Toprak Savunması"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 113
+		}
+		location = 11759
+		division_template = "Toprak Savunması" 
+		start_experience_factor = 0.03
+		start_equipment_factor = 0.3
+	}
+
+	division = {
+		#name = "114. Toprak Savunması"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 114
+		}
+		location = 11797
+		division_template = "Toprak Savunması" 
+		start_experience_factor = 0.03
+		start_equipment_factor = 0.2
+	}
+
+	division = {
+		#name = "115. Toprak Savunması"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 115
+		}
+		location = 9886
+		division_template = "Toprak Savunması" 
+		start_experience_factor = 0.03
+		start_equipment_factor = 0.6
+	}
+
+	division = {
+		#name = "116. Toprak Savunması"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 116
+		}
+		location = 3714
+		division_template = "Toprak Savunması" 
+		start_experience_factor = 0.03
+		start_equipment_factor = 0.6
+	}
+
+	division = {
+		#name = "117. Toprak Savunması"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 117
+		}
+		location = 3979
+		division_template = "Toprak Savunması" 
+		start_experience_factor = 0.03
+		start_equipment_factor = 0.4
+	}
+
+	division = {
+		#name = "118. Toprak Savunması"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 118
+		}
+		location = 3979
+		division_template = "Toprak Savunması" 
+		start_experience_factor = 0.03
+		start_equipment_factor = 0.3
+	}
+
+	### GOOD INFANTRY
+
+	division = {
+		#name = "1. Piyade Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6864
+		division_template = "Piyade Tümeni" 
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.95
+	}
+
+	division = {
+		#name = "2. Piyade Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3927
+		division_template = "Piyade Tümeni" 
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.95
+	}
+
+	division = {
+		#name = "3. Piyade Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 947
+		division_template = "Piyade Tümeni" 
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.95
+	}
+
+	division = {
+		#name = "4. Piyade Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 947
+		division_template = "Piyade Tümeni" 
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.95
+	}
+
+	division = {
+		#name = "5. Piyade Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 11811
+		division_template = "Piyade Tümeni" 
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.95
+	}
+
+	division = {
+		#name = "6. Piyade Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 9755
+		division_template = "Piyade Tümeni" 
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.95
+	}
+
+	division = {
+		#name = "7. Piyade Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 3862
+		division_template = "Piyade Tümeni" 
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.95
+	}
+
+	division = {
+		#name = "8. Piyade Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 9893
+		division_template = "Piyade Tümeni" 
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.95
+	}
+
+	division = {
+		#name = "9. Piyade Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 9932
+		division_template = "Piyade Tümeni" 
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.95
+	}
+
+	### CAVALRY
+
+	division = {
+		#name = "121. Süvari Tümeni"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 121
+		}
+		location = 6894
+		division_template = "Süvari Tümeni" 
+		start_experience_factor = 0.12
+		start_equipment_factor = 0.6
+	}
+
+	### MOUNTAINEERS
+
+	division = {
+		#name = "10. Dag Tugayi"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 3951
+		division_template = "Dag Tugayi" 
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.95
+	}
+
+	division = {
+		#name = "11. Dag Tugayi"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 6938
+		division_template = "Dag Tugayi" 
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.95
+	}
+
+}
+
+
+
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "TUR"
+		}
+		requested_factories = 1
+		progress = 0.43
+		efficiency = 100
+	}
+}

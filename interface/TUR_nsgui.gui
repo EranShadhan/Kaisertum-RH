@@ -1,0 +1,178 @@
+guiTypes = {
+	containerWindowType = {
+		name = "nsgui_container"
+		
+		position = { x = -5 y = 0 }
+		size = { width = 500 height = 450 }
+		
+		iconType = {
+			name = "iconTurkey"
+			position = { x = 21 y = -20 }
+			spriteType = GFX_TUR_nsgui_turkey
+			pdx_tooltip = NSGUIturkey_tt
+		} 
+		iconType = {
+			name = "iconTurkeyOwned"
+			position = { x = 21 y = -20 }
+			spriteType = GFX_TUR_nsgui_turkey_own
+			pdx_tooltip = NSGUIturkeyowned_tt
+		} 
+		iconType = {
+			name = "iconEllada"
+			position = { x = 21 y = -20 }
+			spriteType = GFX_TUR_nsgui_ellada
+			pdx_tooltip = NSGUIellada_tt
+		} 
+		iconType = {
+			name = "iconElladaOwned"
+			position = { x = 21 y = -20 }
+			spriteType = GFX_TUR_nsgui_ellada_own
+			pdx_tooltip = NSGUIelladaowned_tt
+		}
+		iconType = {
+			name = "iconBulgaria"
+			position = { x = 21 y = -20 }
+			spriteType = GFX_TUR_nsgui_bulgaria
+			pdx_tooltip = NSGUIbulgaria_tt
+		} 
+		iconType = {
+			name = "iconBulgariaOwned"
+			position = { x = 21 y = -20 }
+			spriteType = GFX_TUR_nsgui_bulgaria_own
+			pdx_tooltip = NSGUIbulgariaowned_tt
+		}  
+		iconType = {
+			name = "iconIllyria"
+			position = { x = 21 y = -20 }
+			spriteType = GFX_TUR_nsgui_illyria
+			pdx_tooltip = NSGUIillyria_tt
+		} 
+		iconType = {
+			name = "iconIllyriaOwned"
+			position = { x = 21 y = -20 }
+			spriteType = GFX_TUR_nsgui_illyria_own
+			pdx_tooltip = NSGUIillyriaowned_tt
+		} 
+		iconType = {
+			name = "iconRomania"
+			position = { x = 21 y = -20 }
+			spriteType = GFX_TUR_nsgui_romania
+			pdx_tooltip = NSGUIromania_tt
+		} 
+		iconType = {
+			name = "iconRomaniaOwned"
+			position = { x = 21 y = -20 }
+			spriteType = GFX_TUR_nsgui_romania_own
+			pdx_tooltip = NSGUIromaniaowned_tt
+		} 
+		iconType = {
+			name = "iconPalestine"
+			position = { x = 21 y = -20 }
+			spriteType = GFX_TUR_nsgui_palestine
+			pdx_tooltip = NSGUIpalestine_tt
+		} 
+		iconType = {
+			name = "iconPalestineOwned"
+			position = { x = 21 y = -20 }
+			spriteType = GFX_TUR_nsgui_palestine_own
+			pdx_tooltip = NSGUIpalestineowned_tt
+		} 
+		iconType = {
+			name = "iconHejaz"
+			position = { x = 21 y = -20 }
+			spriteType = GFX_TUR_nsgui_hejaz
+			pdx_tooltip = NSGUIhejaz_tt
+		} 
+		iconType = {
+			name = "iconHejazOwned"
+			position = { x = 21 y = -20 }
+			spriteType = GFX_TUR_nsgui_hejaz_own
+			pdx_tooltip = NSGUIhejazowned_tt
+		} 
+		iconType = {
+			name = "iconOman"
+			position = { x = 21 y = -20 }
+			spriteType = GFX_TUR_nsgui_oman
+			pdx_tooltip = NSGUIoman_tt
+		} 
+		iconType = {
+			name = "iconOmanOwned"
+			position = { x = 21 y = -20 }
+			spriteType = GFX_TUR_nsgui_oman_own
+			pdx_tooltip = NSGUIomanowned_tt
+		} 
+		iconType = {
+			name = "iconNejd"
+			position = { x = 21 y = -20 }
+			spriteType = GFX_TUR_nsgui_nejd
+			pdx_tooltip = NSGUInejd_tt
+		} 
+		iconType = {
+			name = "iconNejdOwned"
+			position = { x = 21 y = -20 }
+			spriteType = GFX_TUR_nsgui_nejd_own
+			pdx_tooltip = NSGUInejdowned_tt
+		} 
+		iconType = {
+			name = "iconIraq"
+			position = { x = 21 y = -20 }
+			spriteType = GFX_TUR_nsgui_iraq
+			pdx_tooltip = NSGUIiraq_tt
+		} 
+		iconType = {
+			name = "iconIraqOwned"
+			position = { x = 21 y = -20 }
+			spriteType = GFX_TUR_nsgui_iraq_own
+			pdx_tooltip = NSGUIiraqowned_tt
+		} 
+		iconType = {
+			name = "iconGeorgia"
+			position = { x = 21 y = -20 }
+			spriteType = GFX_TUR_nsgui_georgia
+			pdx_tooltip = NSGUIgeorgia_tt
+		} 
+		iconType = {
+			name = "iconGeorgiaOwned"
+			position = { x = 21 y = -20 }
+			spriteType = GFX_TUR_nsgui_georgia_own
+			pdx_tooltip = NSGUIgeorgiaowned_tt
+		} 
+		iconType = {
+			name = "iconAzerbaijan"
+			position = { x = 21 y = -20 }
+			spriteType = GFX_TUR_nsgui_azerbaijan
+			pdx_tooltip = NSGUIazerbaijan_tt
+		} 
+		iconType = {
+			name = "iconAzerbaijanOwned"
+			position = { x = 21 y = -20 }
+			spriteType = GFX_TUR_nsgui_azerbaijan_own
+			pdx_tooltip = NSGUIazerbaijanowned_tt
+		} 
+		iconType = {
+			name = "iconCentralIran"
+			position = { x = 21 y = -20 }
+			spriteType = GFX_TUR_nsgui_central_iran
+			pdx_tooltip = NSGUIcentraliran_tt
+		} 
+		iconType = {
+			name = "iconCentralIranOwned"
+			position = { x = 21 y = -20 }
+			spriteType = GFX_TUR_nsgui_central_iran_own
+			pdx_tooltip = NSGUIcentraliranowned_tt
+		} 
+		iconType = {
+			name = "iconEastIran"
+			position = { x = 21 y = -20 }
+			spriteType = GFX_TUR_nsgui_east_iran
+			pdx_tooltip = NSGUIeastiran_tt
+		} 
+		iconType = {
+			name = "iconEastIranOwned"
+			position = { x = 21 y = -20 }
+			spriteType = GFX_TUR_nsgui_east_iran_own
+			pdx_tooltip = NSGUIeastiranowned_tt
+		} 
+		
+	}
+}

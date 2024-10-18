@@ -1,0 +1,33 @@
+state={
+	id=978
+	name="STATE_978"
+	
+	history={
+		owner = TUR
+		victory_points = {
+			11829 12 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
+			air_base = 4
+			11829 = {
+				naval_base = 8
+
+			}
+
+		}
+		add_core_of = TUR
+		add_claim_by = GRE
+		set_demilitarized_zone = yes
+	}
+
+	provinces={
+		11829 
+	}
+	manpower=250250
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

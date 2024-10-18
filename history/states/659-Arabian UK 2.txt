@@ -1,0 +1,32 @@
+
+state={
+	id=659
+	name="STATE_659"
+
+	history={
+		owner = SAU
+		victory_points = {
+			13885 1 
+		}
+		buildings = {
+			infrastructure = 2
+			air_base = 4
+			13885 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = YEM
+		add_core_of = SAU
+
+	}
+
+	provinces={
+		5074 13757 13758 13759 13763 13764 13885 
+	}
+	manpower=871202
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

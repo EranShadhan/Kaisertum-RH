@@ -1,0 +1,38 @@
+state={
+	id=970
+	name="STATE_970"
+	
+	resources={
+		steel=36 #was:20 was: 112
+		aluminium=12 # was: 22
+	}
+	history={
+		owner = BEL
+		victory_points = {
+			575 5 
+		}
+		victory_points = {
+			11483 10 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			air_base = 3
+			575 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = BEL
+		add_claim_by = FRA
+
+	}
+	provinces={
+		575 11483 
+	}
+	manpower=1376400
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

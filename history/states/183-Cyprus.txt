@@ -1,0 +1,35 @@
+
+state={
+	id=183
+	name="STATE_183"
+	resources={
+		chromium=3.000
+	}
+
+	history={
+		owner = GRE
+		add_core_of = CYP
+		add_core_of = GRE
+		victory_points = {
+			7193 3 
+		}
+		buildings = {
+			infrastructure = 2
+			air_base = 2
+			7193 = {
+				naval_base = 2
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		7193 
+	}
+	manpower=277959
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

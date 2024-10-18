@@ -1,0 +1,31 @@
+
+state={
+	id=73
+	name="STATE_73"
+	resources={
+		aluminium=10.000
+		oil = 6
+	}
+
+	history={
+		victory_points = {
+			3548 2
+		}
+		owner = HUN
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = SLO
+		add_core_of = HUN
+
+	}
+
+	provinces={
+		3548 6571 9563 
+	}
+	manpower=854300
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -1,0 +1,36 @@
+state=
+{
+	id=597
+	name="STATE_597"
+	manpower = 37773200
+	state_category = town
+	
+	
+	history=
+	{
+		owner = PRC
+		add_core_of = PRC
+		victory_points = {
+			1069 3 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 3
+			4205 = {
+				naval_base = 2
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+
+		1938.10.25 = {
+			controller = JAP
+		}
+	}
+	provinces={
+		1069 1124 1154 1084 4037 4071 4089 4181 7055 7160 7189 9971 9987 10043 10072 10102 11933 11962 12015 12045 12069 12093 
+	}
+
+	local_supplies=4.0 
+}

@@ -1,0 +1,25 @@
+state={
+	id=1040
+	name="STATE_1040"
+
+	history={
+		owner = TUR
+		victory_points = {
+			11917 1
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = TUR
+
+	}
+
+	provinces={
+		785 3927 10041 11796 11898 11917 
+	}
+	manpower=246377
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

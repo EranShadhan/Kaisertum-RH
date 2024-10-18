@@ -1,0 +1,26 @@
+
+state={
+	id=655
+	name="STATE_655"
+
+	history={
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = FER
+		add_claim_by = JAP
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+
+		}
+
+	}
+
+	provinces={
+		855 1742 1755 13903 13959 13960 
+	}
+	manpower=94759
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

@@ -1,0 +1,22 @@
+state={
+	id=1054
+	name="STATE_1054"
+
+	history={
+		owner = ALB
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = ALB
+
+	}
+
+	provinces={
+		13572 13593 
+	}
+	manpower=68148
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

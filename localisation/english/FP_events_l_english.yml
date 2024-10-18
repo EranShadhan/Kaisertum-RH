@@ -1,0 +1,72 @@
+﻿l_english:
+ UBD_events.1.t: "Violent Protests"
+ UBD_events.1.d: "We cannot hide the fact that there are protests in our great state"
+ UBD_events.1.a: "Ignore it"
+ UBD_events.1.b: "Arrest all suspects"
+
+ UBD_events.2.t: "Baltic resistance groups seek support"
+ UBD_events.2.d: "We have gotten requests from several baltic resistance groups to give aid for a future rebellion. This could lend us an oppurunity to gain infuence in the baltic"
+ UBD_events.2.a: "Grant them aid"
+ UBD_events.2.b: "Deny the requests"
+
+ UBD_events.3.t: "Russia accepts"
+ UBD_events.3.d: "Russia has accepted our proposal"
+ UBD_events.3.a: "Yay"
+ russian_support_independance_war_tt: "Upon our rebellion, we will get "
+
+ KT_turkey_events.1.t: "The Engürü Parliament is Reconvened"
+ KT_turkey_events.1.d: "For centuries, the Turkish Civilization has lived and prospered under absolutism. But the recent years have highlighted all of the key wrongdoings with the system. Just as the Ottoman Empire was on the brink of slow democratization under the Young Turks, the Sultan has reclaimed his absolute power and returned the nation to traditionalism. This action led our once great nation to become a mere shell of what it once was. And as the nation was at the lowest of its lows, the Sultan took the first step to making Turkey great under a free liberal system. The Engürü Parliament has been reconvened, and the public is sure that more reforms are already on the way"
+ KT_turkey_events.1.a: "Turkish Democracy? You're kidding mes"
+
+ KT_turkey_events.2.t: "Hasan Prishtina Shot!"
+ KT_turkey_events.2.d: "This morning, our Prime Minister, Hasan Prishtina was shot in a café while drinking his morning coffee. After an investigation, the assasin turned out to be an Albanian-hired mercenary. After our police force captured him, he refused to provide any information on behalf of who or why he was acting. But if we take Prishtina's ties to the Albanian Government into account, they have to be involved in this."
+ KT_turkey_events.2.a: "They will pay!"
+
+ KT_turkey_events.3.t: "The Snap Election"
+ KT_turkey_events.3.d: "After Prishtina's death, a snap election was called. Though an oasis of parties with drastically different ideologies is competing for power, only two of the factions are important. The first being Yakup Kadri and his socialist supporters who rally to create a Socialist state on the model of Japan. On the other side is Ali Fuat Cebesoy, a general of the past who abandoned the military for politics. He and his supporters wish to continue what Prishtina had started and to liberalize the Turkish Nation. And the question on everyone's minds is: Who will emerge on top?"
+ KT_turkey_events.3.a: "Yakup Kadri deserves this title"
+ KT_turkey_events.3.b: "Only Liberalism can save Turkey!"
+
+ KT_turkey_events.4.t: "Turkey invites us to the Konya Accords"
+ KT_turkey_events.4.d: "Turkey seeks to secure and preserve the nations of the Middle East from outside invasions, thus inviting us to their co-operation alliance"
+ KT_turkey_events.4.a: "We will happily join!"
+ KT_turkey_events.4.b: "Screw the Turkish scum!"
+
+ KT_turkey_events.5.t: "Turkey requests the return of Smyrna"
+ KT_turkey_events.5.d: "Recently, the Turkish nation started federalizing, liberalizing and modernizing. As the rights of ethnic Greeks in their country increase, they request to regain control over Smyrna to restore Anatolian territorial integrity."
+ KT_turkey_events.5.a: "We have bigger problems to think about"
+ KT_turkey_events.5.b: "Smyrna is rightful Greek territory!"
+
+ KT_turkey_events.6.t: "Turkey offers an Exchange"
+ KT_turkey_events.6.d: "The Turkish-Italian Relations are at their all-time high in the recent times. Now, Turkey offers us access to some of their industry in exchange for On Iki Ada, or Dodecaneso in Italian. Though Dodecaneso is an important naval base of Italy in the Eastern Mediterranean, the Turkish Nation has a lot of potential in industrialization and such a cooperation could potentially lead to the Italian economy prospering and overcoming its neighbours."
+ KT_turkey_events.6.a: "More factories? Yes please."
+ KT_turkey_events.6.b: "We will not lose Dodecaneso"
+
+ KT_turkey_events.7.t: "German influence in Turkey reaches the extreme"
+ KT_turkey_events.7.d: "Our government has always been influenced by foreign powers, but now is the moment when this influence harms us. Almost all of our government officials are influenced by Germany to such an extent that we have basically become a German Puppet."
+ KT_turkey_events.7.a: "There is nothing we can do."
+
+ KT_turkey_events.8.t: "Russian influence in Turkey reaches the extreme"
+ KT_turkey_events.8.d: "Our government has always been influenced by foreign powers, but now is the moment when this influence harms us. Almost all of our government officials are influenced by Russia to such an extent that we have basically become a Russian Puppet."
+
+ KT_turkey_events.9.t: "French influence in Turkey reaches the extreme"
+ KT_turkey_events.9.d: "Our government has always been influenced by foreign powers, but now is the moment when this influence harms us. Almost all of our government officials are influenced by France to such an extent that we have basically become a French Puppet."
+
+ KT_turkey_events.10.t: "Italian influence in Turkey reaches the extreme"
+ KT_turkey_events.10.d: "Our government has always been influenced by foreign powers, but now is the moment when this influence harms us. Almost all of our government officials are influenced by Italy to such an extent that we have basically become an Italian Puppet."
+
+
+ KT_turkey_events.11.t: "Turkey remilitarizes East Constantinople"
+ KT_turkey_events.11.d: "The Turkish Government has recently chose a path of militarization and rebuilding. But they are now stretching our acceptance by remilitarizing East Constantinople, or what they call "Kostantiniyye". If we do not take immediate action, the Turkish State may grow moe influential which may lead to our own demise."
+ KT_turkey_events.11.a: "We have bigger problems"
+ KT_turkey_events.11.b: "This is unacceptable!"
+
+ KT_turkey_events.12.t: "Turkish diplomats in Rostov"
+ KT_turkey_events.12.d: "Turkey has recently sent a diplomatic delegation in the coastal city of Rostov, seeking to negotiate with the Russian State. They propose to partition Persia and invite us to negotiate on the exact terms of the partition. Our government is to decide if we want to continue with this plan or not"
+ KT_turkey_events.12.a: "No."
+ KT_turkey_events.12.b: "Seems reasonable, but the Baku Oil Fields have to be Russian"
+
+ KT_turkey_events.13.t: "Russia presses for Azerbaijan"
+ KT_turkey_events.13.d: "The Russian government has accepted our proposal of splitting Persia, but under one condition. The Russian State has to receive Azerbaijan and the Baku Oil Fields. Though Russia has owned it in the past, Azerbaijan and the Azeris are a Turkic Peoples and letting them rot under a foreign power is unacceptable for our doctrine of Pan-Turkism. On the other hand, an alliance with Russia would be beneficial in the future."
+ KT_turkey_events.13.a: "It is a sacrifice we have to make"
+ KT_turkey_events.13.b: "Only Turkey deserves Baku"

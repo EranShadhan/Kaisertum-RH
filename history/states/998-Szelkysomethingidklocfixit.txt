@@ -1,0 +1,24 @@
+state={
+	id=998
+	name="STATE_998"
+
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = HUN
+		add_core_of = TRA
+		add_claim_by = ROM
+
+	}
+
+	provinces={
+		711 3689 9668 
+	}
+	manpower=774560 # Wikipedia soruce
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

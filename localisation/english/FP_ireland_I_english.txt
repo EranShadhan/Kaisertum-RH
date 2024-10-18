@@ -1,0 +1,9 @@
+l_english:
+IRE_king_George_V:0 "King Geroge V"
+IRE_king_George_V_desc:0 "King George V is the current King of British Empire and a Symbol of its rule. For this reason King george is seen as a symbol of opressoin in the south and a symbol of order and stability in the North."
+IRE_British_Investment:0 "British Investment"
+IRE_British_Investment_desc:0 "Ever since the signing of the Anglo Irish Treaty in 1920 Britian has held a policy of encouraging investmnet in Ireland. While this heavily bolsters the Irish economy it damages are autonomy from britian and makes us dependant on Britians money."
+IRE_IRA_Presence:0 "IRA Remnatnts"
+IRE_IRA_Presence_desc:0 "The Irish Republican army was ordered to stand down after after the signing of the Anglo Irish treaty. While many returned to civilian life some refused and continue a war on britian. Refusing to follow british laws and attacks on British personnel are commonly linked to IRA remnants primarily based in Western Ireland."
+IRE_Govenor_Churchil:0 "Govenor General Winston Churchil"
+IRE_Govenor_Churchil_desc:0 ""

@@ -1,0 +1,29 @@
+
+state = {
+	id = 39
+	name = "STATE_39" # (South Tyrol) Alto Adige -> #TODO_Manu: Should change name to Südtirol when under Austrian/German control
+	manpower = 298290 # was 641650 before Trentino split
+	
+	state_category = town
+	
+	resources = {
+		aluminium = 14 # was: 22
+	}
+
+	history = {
+		owner = AUS
+		buildings = {
+			infrastructure = 2 # was 3 before split
+			industrial_complex = 1 #Bolzano's industrial zone started in 1934-35 (Steel meels, Lancia...)
+		}
+		add_core_of = AUS
+		add_core_of = LBV
+		add_claim_by = ITA
+	}
+
+	provinces = {
+		6675 9630 11615
+	}
+
+	local_supplies = 0.0 
+}
