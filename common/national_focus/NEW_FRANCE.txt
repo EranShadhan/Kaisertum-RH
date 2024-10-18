@@ -1900,6 +1900,710 @@
 		}
 	}
 	focus = {
+		id = FRA_infrastructure
+		icon = GFX_
+		x = -15
+		y = 1
+		
+		prerequisite = { focus = FRA_economy}
+		relative_position_id = FRA_economy
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_new_france
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_infrastructure}
+		relative_position_id = FRA_infrastructure
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_rebuild_the_railways
+		icon = GFX_
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_new_france}
+		relative_position_id = FRA_new_france
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_Expand_the_Civil_Network
+		icon = GFX_
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_rebuild_the_railways}
+		relative_position_id = FRA_rebuild_the_railways
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_Civilian_revival
+		icon = GFX_
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_Expand_the_Civil_Network}
+		relative_position_id = FRA_Expand_the_Civil_Network
+		
+		mutually_exclusive = { focus = FRA_Fortress_Industry }
+
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_urban_renewal
+		icon = GFX_
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_Civilian_revival}
+		relative_position_id = FRA_Civilian_revival
+		
+
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_green_cities
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_urban_renewal}
+		relative_position_id = FRA_urban_renewal
+		
+
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_countryside_electricity
+		icon = GFX_
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_Civilian_revival}
+		relative_position_id = FRA_Civilian_revival
+		
+
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_transport_for_all
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_countryside_electricity}
+		relative_position_id = FRA_countryside_electricity
+		
+
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_health_and_education
+		icon = GFX_
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_green_cities}
+		prerequisite = { focus = FRA_transport_for_all}
+		relative_position_id = FRA_green_cities
+		
+
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_Industrial_Cities
+		icon = GFX_
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_new_france}
+		relative_position_id = FRA_new_france
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_Worker_Cities
+		icon = GFX_
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_Industrial_Cities}
+		relative_position_id = FRA_Industrial_Cities
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_Fortress_Industry
+		icon = GFX_
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_Worker_Cities}
+		relative_position_id = FRA_Worker_Cities
+
+		mutually_exclusive = { focus = FRA_Civilian_revival }
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_steamline_logistics
+		icon = GFX_
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_Fortress_Industry}
+		relative_position_id = FRA_Fortress_Industry
+
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_war_roads_initiative
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_steamline_logistics}
+		relative_position_id = FRA_steamline_logistics
+
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_steel_rails
+		icon = GFX_
+		x = 2
+		y = 1
+		
+		prerequisite = { focus = FRA_steamline_logistics}
+		relative_position_id = FRA_steamline_logistics
+
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}	
+	focus = {
+		id = FRA_costal_bastion_of_industry
+		icon = GFX_
+		x = 3
+		y = 2
+		
+		prerequisite = { focus = FRA_Fortress_Industry}
+		relative_position_id = FRA_Fortress_Industry
+
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_skywars_defence
+		icon = GFX_
+		x = 5
+		y = 2
+		
+		prerequisite = { focus = FRA_Fortress_Industry}
+		relative_position_id = FRA_Fortress_Industry
+
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_secure_industrial_core
+		icon = GFX_
+		x = -3
+		y = 1
+		
+		prerequisite = { focus = FRA_skywars_defence}
+		prerequisite = { focus = FRA_costal_bastion_of_industry}
+		prerequisite = { focus = FRA_steel_rails}
+		prerequisite = { focus = FRA_war_roads_initiative}
+		relative_position_id = FRA_skywars_defence
+
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_Industrie_Militare
+		icon = GFX_
+		x = -60
+		y = 1
+		
+		prerequisite = { focus = FRA_economy}
+		relative_position_id = FRA_economy
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_Les_Fondations_du_Pouvoir
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_Industrie_Militare}
+		relative_position_id = FRA_Industrie_Militare
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_arsenal_de_la_republique
+		icon = GFX_
+		x = -2
+		y = 1
+		
+		prerequisite = { focus = FRA_Les_Fondations_du_Pouvoir}
+		relative_position_id = FRA_Les_Fondations_du_Pouvoir
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_moderazitation_of_Machine_Tools
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_Les_Fondations_du_Pouvoir}
+		relative_position_id = FRA_Les_Fondations_du_Pouvoir
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_Centraliser_la_Production_de_Guerre
+		icon = GFX_
+		x = 2
+		y = 1
+		
+		prerequisite = { focus = FRA_Les_Fondations_du_Pouvoir}
+		relative_position_id = FRA_Les_Fondations_du_Pouvoir
+		
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_War_Foundries
+		icon = GFX_
+		x = -6
+		y = 1
+		
+		prerequisite = { focus = FRA_Centraliser_la_Production_de_Guerre}
+		prerequisite = { focus = FRA_moderazitation_of_Machine_Tools}
+		prerequisite = { focus = FRA_arsenal_de_la_republique}
+		relative_position_id = FRA_moderazitation_of_Machine_Tools
+		
+		mutually_exclusive = { focus = FRA_Armor_Forge }
+
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_Armor_Forge
+		icon = GFX_
+		x = 6
+		y = 1
+		
+		prerequisite = { focus = FRA_Centraliser_la_Production_de_Guerre}
+		prerequisite = { focus = FRA_moderazitation_of_Machine_Tools}
+		prerequisite = { focus = FRA_arsenal_de_la_republique}
+		relative_position_id = FRA_moderazitation_of_Machine_Tools
+		
+		mutually_exclusive = { focus = FRA_War_Foundries }
+
+		allow_branch = { 
+			
+		}
+
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
 		id = FRA_Doriot
 		icon = GFX_
 		x = 3

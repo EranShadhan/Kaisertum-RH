@@ -9,12 +9,7 @@ ideas = {
 			}
 
 			available = {
-				NOT = {
-					OR = {
-						has_government = communism
-						has_government = democratic
-					}
-				}
+				always = no
 			}
 
 			allowed_civil_war = {
@@ -33,9 +28,7 @@ ideas = {
 			default = yes
 
 			available = {
-				NOT = {
-					has_government = communism
-				}
+				always = no
 			}
 
 			allowed_civil_war = {
@@ -58,7 +51,11 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
+			available = {
+				always = no
+			}
+			
 			cancel_if_invalid = no
 			
 			modifier = {
@@ -68,9 +65,7 @@ ideas = {
 		unions_mandatory = {
 
 			available = {
-				NOT = {
-					has_government = democratic
-				}
+				always = no
 			}
 
 			allowed_civil_war = {

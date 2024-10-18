@@ -49,7 +49,9 @@ country_event = {
 				set_province_controller = 5317
 				set_province_controller = 8050
 				set_province_controller = 5000
+				set_cosmetic_tag = DEMOCRATIC_VENEZUELA
 			}
+			set_cosmetic_tag = FASCIST_VENEZUELA
 			delete_units = {
 				division_template = "División de Caballería"
 				disband = no
@@ -89,6 +91,9 @@ country_event = {
 			transfer_state = 1108
 			transfer_state = 1107
 			add_threat = 3
+		}
+		VEN = {
+			add_ideas = french_phoenix_membership
 		}
 		FRA = { add_to_faction = VEN }
 	}

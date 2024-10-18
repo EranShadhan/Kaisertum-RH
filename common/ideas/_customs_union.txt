@@ -21,7 +21,7 @@ ideas = {
 				always = yes
 			}
 
-			removal_cost = -1
+			removal_cost = 9999
 			
 			modifier = {
 				political_power_factor = 0.1
@@ -39,13 +39,14 @@ ideas = {
 			
 			allowed = {
 				tag = GER
+				
 			}
 
 			allowed_civil_war = {
 				always = yes
 			}
 
-			removal_cost = -1
+			removal_cost = 9999
 
 			cancel_if_invalid = no
 			
@@ -67,7 +68,7 @@ ideas = {
 					has_idea = german_customs_union_member
 				}
 			}
-
+			
 			allowed = {
 				NOT = {
 					tag = GER
@@ -78,7 +79,7 @@ ideas = {
 				always = yes
 			}
 
-			removal_cost = -1
+			removal_cost = 9999
 
 			cancel_if_invalid = no
 			
@@ -86,6 +87,34 @@ ideas = {
 				consumer_goods_factor = -0.05
 				production_factory_efficiency_gain_factor = 0.05
 				local_resources = 0.2
+			}
+		}
+		
+		
+		french_phoenix_membership = {
+
+			picture = french_poenix
+			
+			available = {
+				hidden_trigger = {
+					has_idea = french_phoenix_membership
+				}
+			}
+			
+			allowed = {
+				
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 9999
+
+			cancel_if_invalid = no
+			
+			modifier = {
+				local_resources = 0.33
 			}
 		}
 	}

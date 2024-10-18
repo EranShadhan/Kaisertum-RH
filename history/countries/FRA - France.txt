@@ -245,6 +245,7 @@ add_ideas = {
 	FRA_Carefully_Managed_Production
 	FRA_FRA_RUS_collaboration
 	FRA_failure_of_marseille
+	french_phoenix_membership
 
 	low_economic_mobilisation
 	limited_conscription
