@@ -580,6 +580,7 @@ fire_only_once = yes
 			transfer_state = 102
 			transfer_state = 1035
 			transfer_state = 72
+			transfer_state = 1106
 			annex_country = {
 				country = AUS
 				transfer_troops = no
