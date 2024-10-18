@@ -1,7 +1,0 @@
-spriteTypes = {
-
-	SpriteType = {
-	name = "GFX_UBD_a_new_decade"
-	texturefile = "gfx/interface/goals/UBD/ubd_a_new_decade.dds"			
-	}
-}
