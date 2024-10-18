@@ -1,13 +1,9 @@
 
 state={
 	id=489
-	name="STATE_489" # Zulia
-	manpower = 1576373
-	
-	state_category = town
-	
+	name="STATE_489"
 	resources={
-		oil=35 # was: 126
+		oil=35.000
 	}
 
 	history={
@@ -15,20 +11,19 @@ state={
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
-			1944 = {
-				naval_base = 5
-			}
+			
+
 		}
 		add_core_of = VEN
-		victory_points = {
-			1944 1 
-		}
+		
 
 	}
 
 	provinces={
-		1944 1997 2052 4526 5088 10855 12772 
+		1997 2052 4526 5088 10855 
 	}
-
-	local_supplies=6.0 
+	manpower=740206
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=6.000
 }

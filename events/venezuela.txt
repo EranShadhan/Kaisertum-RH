@@ -1,9 +1,25 @@
 add_namespace = venezuela_political_event
 
-country_event = {
-    id = venezuela_political_event.1
+# Marco Polo Bridge I
+news_event = {
+	id = venezuela_political_event.1
 	title = venezuela_political_event.1.t
 	desc = venezuela_political_event.1.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = venezuela_political_event.1.a
+	}
+}
+
+country_event = {
+    id = venezuela_political_event.2
+	title = venezuela_political_event.2.t
+	desc = venezuela_political_event.2.d
 	picture = GFX_report_event_generic_read_write
 	
 	trigger = {
@@ -14,28 +30,66 @@ country_event = {
 	fire_only_once = yes
 	
 	option = {
-	    name = venezuela_political_event.1.a
+	    name = venezuela_political_event.2.a
 		VEN = {
 			start_civil_war = {
 				ideology = democratic
 				size = 0.5
-				capital = 489
+				capital = 1108
 				states = {
-					489 
+					489 1108 1107
 				}
-				division_template = {
-					name = "Test"
-					division_names_group = SPAN_INF_01
-					priority = 0
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 0 y = 3 }
-					}
-				}
-				
+				load_oob = VEN_1930_antifascist
+				set_province_controller = 4942
+				set_province_controller = 4892
+				set_province_controller = 5056
+				set_province_controller = 7915
+				set_province_controller = 10849
+				set_province_controller = 13362
+				set_province_controller = 5317
+				set_province_controller = 8050
+				set_province_controller = 5000
+			}
+			delete_units = {
+				division_template = "División de Caballería"
+				disband = no
+			}
+			delete_units = {
+				division_template = "División de Infanteria"
+				disband = no
+			}
+			load_oob = VEN_1930_pro_fascist_coup
+			set_global_flag = venezuelan_civil_war
+			news_event = venezuela_political_event.1
+		}
+	}
+}
+
+country_event = {
+    id = venezuela_political_event.3
+	title = venezuela_political_event.3.t
+	desc = venezuela_political_event.3.d
+	picture = GFX_report_event_generic_read_write
+	
+	trigger = {
+		has_global_flag = venezuelan_civil_war
+		1108 = {
+			controller = { 
+				has_government = fascism
 			}
 		}
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+	    name = venezuela_political_event.3.a
+		
+		COL = {
+			transfer_state = 1108
+			transfer_state = 1107
+			add_threat = 3
+		}
+		FRA = { add_to_faction = VEN }
 	}
 }
