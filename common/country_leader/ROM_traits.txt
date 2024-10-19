@@ -1,0 +1,9 @@
+leader_traits = {
+
+	ROM_minister_of_the_interior = {
+	    random = no
+		stability_weekly = 0.01
+		political_power_gain = 0.05
+	}
+
+}

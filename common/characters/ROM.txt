@@ -6,24 +6,37 @@ characters={
 			civilian={
 				large = GFX_portrait_ROM_Corneliu_Zelea_Codreanu
 			}
+			army = {
+				small = GFX_idea_ROM_Corneliu_Zelea_Codreanu
+			}
 		}
 		country_leader={
-			ideology= nazism
+			ideology= legionarism
 			traits={ economic_reformer }
 			expire="1965.1.1.1"
 			id=-1
 		}
 		advisor={
-				cost = 150
-				slot = political_advisor
-				idea_token = codreanu
-				ledger = civilian
-				allowed = {
-					original_tag = ROM
+			slot = political_advisor
+			idea_token = ROM_corneliu_zelea_codreanu
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = {
+						has_autonomy_state = autonomy_supervised_state
+					}
 				}
-				traits = {
-					fasicm_drift = 0.01
-				}
+				has_completed_focus = ROM_pol_4
+				is_country_leader = no
+			}
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				fascist_demagogue
+			}
 		}
 	}
 
@@ -122,7 +135,7 @@ characters={
 				original_tag = ROM
 			}
 			traits = {
-				prince_of_terror 
+				ROM_minister_of_the_interior 
 			}
 		}
 
@@ -517,6 +530,7 @@ characters={
 						has_autonomy_state = autonomy_supervised_state
 					}
 				}
+				has_completed_focus = ROM_pol_3
 			}
 			traits = {
 				democratic_reformer 
