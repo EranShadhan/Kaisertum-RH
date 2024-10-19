@@ -29,16 +29,38 @@ scripted_map_modes = {
 				set_temp_variable = { thickness = 10.0 }
 			}
 		}
-		type = country
-			color = {
+		color = {
 				FROM = {
-					else_if = {
+					if = {
 						limit = { 
 							has_idea = french_phoenix_membership 
 						}
 						set_temp_variable = { red = 0.3 }
 						set_temp_variable = { green = 0.3 }
 						set_temp_variable = { blue = 0.80 }
+					}
+				}
+				set_temp_variable = { alpha = 1.0 }
+				set_temp_variable = { thickness = 10.0 }
+			}
+		color = {
+				FROM = {
+					if = {
+						limit = {
+							has_idea = east_asia_trade_leader
+						}
+						set_temp_variable = { red = 0.7 }
+						set_temp_variable = { green = 0.1 }
+						set_temp_variable = { blue = 0.1 }
+						
+					}
+					else_if = {
+						limit = { 
+							has_idea = east_asia_trade_membership 
+						}
+						set_temp_variable = { red = 0.7 }
+						set_temp_variable = { green = 0.3 }
+						set_temp_variable = { blue = 0.3 }
 					}
 					else_if = { 
 						limit = {
@@ -47,18 +69,18 @@ scripted_map_modes = {
 									has_idea = french_phoenix_membership
 									has_idea = german_customs_union_member
 									has_idea = german_customs_union_member2
+									has_idea = east_asia_trade_leader
+									has_idea = east_asia_trade_membership
 									TAG = GER
 									TAG = FRA
 									} 
 								}
 							}
-						set_temp_variable = { red = 0.7 }
-						set_temp_variable = { green = 0.7 }
-						set_temp_variable = { blue = 0.7 }
+						set_temp_variable = { alpha = 0.1}
+						set_temp_variable = { thickness = 10.0 }
 					}
 				}
-				set_temp_variable = { alpha = 1.0 }
-				set_temp_variable = { thickness = 10.0 }
+				
 			}
 		}
 		bottom = {

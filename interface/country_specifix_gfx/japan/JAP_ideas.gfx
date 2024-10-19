@@ -1,0 +1,7 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_japan_economic_union"
+		texturefile = "gfx/interface/ideas/japan_economic_union.png"
+	}
+}

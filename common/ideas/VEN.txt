@@ -1,0 +1,26 @@
+ideas = {
+
+	country = {
+
+		VEN_fast_changing_frontlines = {
+
+			picture = devided_brothers
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_defence_factor = -0.33
+				army_attack_factor = 0.67
+				ai_focus_aggressive_factor = 1
+			}
+		}
+	}
+}

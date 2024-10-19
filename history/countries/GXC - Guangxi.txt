@@ -10,6 +10,10 @@ set_technology = {
 	mass_assault = 1
 }
 
+add_ideas = {
+	east_asia_trade_membership
+}
+
 recruit_character = GXC_li_zongren
 recruit_character = GXC_chen_jitang
 recruit_character = GXC_liu_peng
