@@ -4,7 +4,6 @@
 oob = "SWE_1936"
 
 add_ideas = {
-	german_customs_union_member
 }
 
 if = {
