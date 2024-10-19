@@ -331,5 +331,55 @@
     	}
 
 	}
+	focus = {
+		id = SOV_fight_against_extremism
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -1
+		y = 1
+		cost = 5
+		relative_position_id = SOV_securing_the_state
+		prerequisite = { focus = SOV_securing_the_state }
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}
+		}
+		ai_will_do = {
+			factor = 10
+    	}
+
+	}
+	focus = {
+		id = SOV_extinguish_enemies
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 1
+		y = 1
+		cost = 5
+		relative_position_id = SOV_fight_against_extremism
+		prerequisite = { focus = SOV_fight_against_extremism }
+		prerequisite = { focus = SOV_further_integration_of_puppets }
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_ideas = RUS_suppressing_political_opponents
+		}
+		ai_will_do = {
+			factor = 10
+    	}
+
+	}
 
 }
