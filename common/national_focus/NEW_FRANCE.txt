@@ -3397,7 +3397,7 @@
 	focus = {
 		id = FRA_Eugene_Deloncle 
 		icon = GFX_
-		x = 45
+		x = 33
 		y = 1
 		
 		prerequisite = { focus = FRA_the_first_dictatorial_discussion}
@@ -3430,13 +3430,374 @@
 		}
 	}
 	focus = {
-		id = FRA 
+		id = FRA_temporary_dictatorship
 		icon = GFX_
 		x = 0
 		y = 1
 		
 		prerequisite = { focus = FRA_Eugene_Deloncle}
 		relative_position_id = FRA_Eugene_Deloncle
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = { 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_promises_of_democracy
+		icon = GFX_
+		x = -3
+		y = 1
+		
+		prerequisite = { focus = FRA_temporary_dictatorship}
+		relative_position_id = FRA_temporary_dictatorship
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = { 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_unban_trade_unions
+		icon = GFX_
+		x = -2
+		y = 1
+		
+		prerequisite = { focus = FRA_promises_of_democracy}
+		relative_position_id = FRA_promises_of_democracy
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = { 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_crackdown_on_hard_communists
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_unban_trade_unions}
+		relative_position_id = FRA_unban_trade_unions
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = { 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_create_parties
+		icon = GFX_
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_promises_of_democracy}
+		relative_position_id = FRA_promises_of_democracy
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = { 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_war_is_peace
+		icon = GFX_
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_create_parties}
+		relative_position_id = FRA_create_parties
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = { 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_soldiers_of_a_dictatorial_regime
+		icon = GFX_
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_against_the_german_scum }
+		prerequisite = { focus = FRA_for_france }
+		relative_position_id = FRA_for_france
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = { 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_for_the_free_children
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_soldiers_of_a_dictatorial_regime}
+		relative_position_id = FRA_soldiers_of_a_dictatorial_regime
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = { 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_german_monster
+		icon = GFX_
+		x = 3
+		y = 1
+		
+		prerequisite = { focus = FRA_temporary_dictatorship}
+		relative_position_id = FRA_temporary_dictatorship
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = { 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_for_france
+		icon = GFX_
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_german_monster}
+		relative_position_id = FRA_german_monster
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = { 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_french_greatness
+		icon = GFX_
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = FRA_for_france}
+		relative_position_id = FRA_for_france
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = { 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_third_time_will_be_the_charm
+		icon = GFX_
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_against_the_german_scum}
+		relative_position_id = FRA_against_the_german_scum
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = { 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_gods_side
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_war_is_peace}
+		relative_position_id = FRA_war_is_peace
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = { 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_unkillable_spirit
+		icon = GFX_
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = FRA_french_greatness}
+		relative_position_id = FRA_french_greatness
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = { 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_against_the_german_scum
+		icon = GFX_
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_german_monster}
+		relative_position_id = FRA_german_monster
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = { 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_a_needed_war_for_freedom
+		icon = GFX_
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = FRA_create_parties}
+		relative_position_id = FRA_create_parties
 		cost = 5
 			ai_will_do = {
 			factor = 1
