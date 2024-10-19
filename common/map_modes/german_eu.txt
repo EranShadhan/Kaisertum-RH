@@ -9,34 +9,67 @@ scripted_map_modes = {
 						limit = {
 							original_tag = GER
 						}
-						set_temp_variable = { red = 0 }
-						set_temp_variable = { green = 0 }
-						set_temp_variable = { blue = 0 }
+						set_temp_variable = { red = 0.1 }
+						set_temp_variable = { green = 0.1 }
+						set_temp_variable = { blue = 0.1 }
 						
 					}
 					else_if = { limit = { OR = { has_idea = german_customs_union_member 
 					                              has_idea = german_customs_union_member2}}
-						set_temp_variable = { red = 0.12 }
-						set_temp_variable = { green = 0.12 }
-						set_temp_variable = { blue = 0.20	 }
+						set_temp_variable = { red = 0.3 }
+						set_temp_variable = { green = 0.3 }
+						set_temp_variable = { blue = 0.3	 }
 					}
 					else_if = { limit = { NOT = { has_idea = german_customs_union_member } }
-					set_temp_variable = { red = 1 }
-						set_temp_variable = { blue = 1 }
-						set_temp_variable = { green = 1 }
+					set_temp_variable = { red = 0.7 }
+					set_temp_variable = { green = 0.7 }
+					set_temp_variable = { blue = 0.7 }
 				}
 				set_temp_variable = { alpha = 1.0 }
 				set_temp_variable = { thickness = 10.0 }
 			}
 		}
+		type = country
+			color = {
+				FROM = {
+					else_if = {
+						limit = { 
+							has_idea = french_phoenix_membership 
+						}
+						set_temp_variable = { red = 0.3 }
+						set_temp_variable = { green = 0.3 }
+						set_temp_variable = { blue = 0.80 }
+					}
+					else_if = { 
+						limit = {
+							OR = {
+								NOT = { 
+									has_idea = french_phoenix_membership
+									has_idea = german_customs_union_member
+									has_idea = german_customs_union_member2
+									TAG = GER
+									TAG = FRA
+									} 
+								}
+							}
+						set_temp_variable = { red = 0.7 }
+						set_temp_variable = { green = 0.7 }
+						set_temp_variable = { blue = 0.7 }
+					}
+				}
+				set_temp_variable = { alpha = 1.0 }
+				set_temp_variable = { thickness = 10.0 }
+			}
 		}
 		bottom = {
 			type = country
 			color = {
-							set_temp_variable = { alpha = 0.1}
+				set_temp_variable = { alpha = 0.1}
+				set_temp_variable = { thickness = 10.0 }
+				set_temp_variable = { red = 0.3 }
+				set_temp_variable = { green = 0.3 }
+				set_temp_variable = { blue = 0.3 }
 			}
-
-			thickness = yes
 		}
 
 		far_text = country

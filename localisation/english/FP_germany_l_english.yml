@@ -77,5 +77,9 @@
  GER_strikes_by_unions:0 "§RIf Stability drops below 65%, workers will be really likely to go on Strike§!"
  GER_colonial_exploitation:0 "Colonial Exploitation"
  GER_colonial_exploitation_desc:0 "Our colonies, especially in Africa are rich in goods and natural resources. We must fully take advantage of these resources if we want our economy to grow as fast as possible"
- 
  GER_towards_greater_germany:0 "Towards Greater Germany"
+ 
+ german_customs_union_member:0 "Deutsche Wirtschaftszollunion Member"
+ german_customs_union_member_desc:0 "The Deutsche Wirtschaftszollunion, or German Economic-Customs Union was formed among members in the German Sphere right after the Great War. It's aim was to have a shared customs union and a shared market. \n\nThis would help the poorer nations that Germany had just conquered the most, as they can sell their resources for a higher price. The Germans would benefit from this the most, however, as they would be getting cheap resources from the countries that they had just conquered. \n\nStill, a lot of countries in Europe, mostly former German allies in the Great War, saw an economic opportunity in joining this Customs Union and it was expanded again in 1921. \n\nThe German Customs Union has put an embargo on France, due to them becoming Fascist and eliminating the political opposition, as well as terrorizing it's own people. This has damaged France greatly, as they cannot trade for coal and steel, which are vital war resources. \n\nThe future of the German Customs Union is uncertain, as the main beneficiary is Germany, and with Eastern Europe starting to recover economically, some may wish to leave the Customs Union behind."
+ german_customs_union_leader:0 "Deutsche Wirtschaftszollunion Leader"
+ GER_cheaper_stuff:0 "We willl receive §Y15% more resources§! from any member of the Deutsche Wirtschaftszollunion we trade with"

@@ -1,0 +1,27 @@
+state={
+	id=1108
+	name="STATE_1108"
+	history={
+		owner = VEN
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			1944 = {
+				naval_base = 5
+
+			}
+		}
+		add_core_of = VEN
+		
+		victory_points = {
+			1944 10
+		}
+	}
+	provinces={
+		1944 12772 
+	}
+	manpower=836167
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

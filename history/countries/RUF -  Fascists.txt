@@ -44,7 +44,7 @@ recruit_character = RUF_konstantin_rodzaevsky
 recruit_character = RUF_anastasy_vonsiatsky
 
 add_ideas = {
-	RUF_power_struggle
+	#RUF_power_struggle
 	RUF_slave_labour
 }
 

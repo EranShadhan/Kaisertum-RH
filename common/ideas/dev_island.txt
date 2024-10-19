@@ -1,0 +1,36 @@
+ideas = {
+
+	country = {
+		
+		island_of_the_devs = {
+			allowed = {
+				original_tag = DEV
+			}
+
+			
+			removal_cost = -1
+
+			picture = island_of_the_devs
+
+			modifier = {
+				defence = 10000
+			}
+		}
+		terminator_sees_terminator_terminates = {
+			allowed = {
+				original_tag = DEV
+			}
+
+			
+
+			removal_cost = -1
+
+			picture = DEV_terminator
+
+			traits = {
+				Terminator
+			}
+		}
+		
+	}
+}
