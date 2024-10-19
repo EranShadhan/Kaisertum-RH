@@ -35,10 +35,10 @@ ideologies = {
 
 		rules = {
 			can_create_collaboration_government = no
-			can_declare_war_on_same_ideology = no
+			can_declare_war_on_same_ideology = yes
 			can_force_government = yes
-			can_send_volunteers = no
-			can_puppet = no
+			can_send_volunteers = yes
+			can_puppet = yes
 			can_lower_tension = yes
 			can_only_justify_war_on_threat_country = yes
 			can_guarantee_other_ideologies = yes
@@ -53,7 +53,7 @@ ideologies = {
 			generate_wargoal_tension = 1.00
 			join_faction_tension = 0.80
 			lend_lease_tension = 0.50
-			send_volunteers_tension = 0.50
+			send_volunteers_tension = 0.0
 			guarantee_tension = 0.25
 			# annex_cost_factor = 0.5 # Deprecated, use common\peace_conference\00_generic_peace.txt instead
 			civilian_intel_to_others = 20.0
@@ -142,6 +142,7 @@ ideologies = {
 			airforce_intel_to_others = 7.5
 			hidden_modifier = { join_faction_tension = -0.1 }
 			embargo_threshold_factor = 0.5
+			send_volunteers_tension = 0.0
 			lend_lease_tension = 0.50
 		}
 
@@ -214,6 +215,7 @@ ideologies = {
 			hidden_modifier = { join_faction_tension = -0.1 }
 			embargo_cost_factor = 1
 			lend_lease_tension = 0.50
+			send_volunteers_tension = 0.0
 		}
 
 		ai_fascist = yes # uses the fascist AI behaviour
@@ -272,7 +274,7 @@ ideologies = {
 			generate_wargoal_tension = 0.5
 			join_faction_tension = 0.4
 			lend_lease_tension = 0.6
-			send_volunteers_tension = 0.4
+			send_volunteers_tension = 0.0
 			guarantee_tension = 0.4
 			drift_defence_factor = -0.3
 			civilian_intel_to_others = 20.0

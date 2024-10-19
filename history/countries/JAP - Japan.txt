@@ -11,6 +11,7 @@ set_fuel_ratio = 1.0
 add_ideas = {
 JAP_hirohito
 JAP_shattered_military
+east_asia_trade_leader
 }
 set_autonomy = {
 		target = KOR

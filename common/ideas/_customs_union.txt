@@ -118,6 +118,69 @@ ideas = {
 				local_resources = 0.33
 			}
 		}
+		
+		
+		east_asia_trade_leader = {
+
+			picture = japan_economic_union
+			
+			
+			available = {
+				hidden_trigger = {
+					has_idea = east_asia_trade_leader
+				}
+			}
+			
+			allowed = {
+				has_idea = east_asia_trade_leader
+			}
+			
+			allowed = {
+				
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 9999
+
+			cancel_if_invalid = no
+			
+			modifier = {
+				production_speed_buildings_factor = 0.0
+				industrial_capacity_factory = 0.1 
+				local_resources = 0.1
+			}
+		}
+		east_asia_trade_membership = {
+
+			picture = japan_economic_union
+			
+			available = {
+				hidden_trigger = {
+					has_idea = east_asia_trade_membership
+				}
+			}
+			
+			allowed = {
+				
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = 9999
+
+			cancel_if_invalid = no
+			
+			modifier = {
+				production_speed_buildings_factor = 0.0
+				industrial_capacity_factory = 0.1 
+				local_resources = 0.1
+			}
+		}
 	}
 
 }

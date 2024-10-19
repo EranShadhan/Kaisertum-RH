@@ -1,3 +1,4 @@
+characters = {
 	DEV_iwillexplode = {
         name = "IWillExplode"
         portraits = {
@@ -115,7 +116,7 @@
         }
         advisor = {
             slot = political_advisor
-            idea_token = DEV_levko_idea
+            idea_token = DEV_adam_idea
             ledger = civilian
             allowed = { original_tag = DEV }
             available = {

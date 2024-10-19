@@ -1,0 +1,6 @@
+DVE = {
+	original_tag = VEN
+	OR = {
+		has_country_flag = DEMOCRATIC_VENEZUELA
+	}
+}
