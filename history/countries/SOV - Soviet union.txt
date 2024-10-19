@@ -1,15 +1,12 @@
 ﻿#COUNTRY LEADERS
-recruit_character = SOV_alexander_kelensky
-recruit_character = SOV_prov_court
-
-####
-#### VANILLA ####
-####
 
 capital = 219
 puppet = SIK
 puppet = MON
 puppet = MAN
+
+recruit_character = SOV_aleksandr_kerensky
+recruit_character = SOV_prov_court
 
 starting_train_buffer = 3.0
 
