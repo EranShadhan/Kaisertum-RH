@@ -27,8 +27,9 @@ spriteType = {
 spriteType = {
 		name = "GFX_portrait_Xaelor"
 		texturefile = "gfx/interface/ideas/DEV/DEV_xaelor.png"
+		}
 spriteType = {
-		name = "GFX_portrait_adam29"
+		name = "GFX_portrait_Adam29"
 		texturefile = "gfx/interface/ideas/DEV/DEV_adam29.png"
 	}		
 }

@@ -111,7 +111,7 @@ characters = {
         name = "Adam29"
         portraits = {
             civilian = {
-				small = GFX_portrait_adam29
+				small = GFX_portrait_Adam29
 			}
         }
         advisor = {
