@@ -49,6 +49,13 @@ country_event = {
 				set_province_controller = 5317
 				set_province_controller = 8050
 				set_province_controller = 5000
+				set_province_controller = 1997
+				set_province_controller = 2052
+				set_province_controller = 13989
+				set_province_controller = 13991
+				set_province_controller = 13984
+				set_province_controller = 13983
+				set_province_controller = 13979
 				add_ideas = VEN_fast_changing_frontlines
 				set_country_flag = DEMOCRATIC_VENEZUELA
 				set_cosmetic_tag = DEMOCRATIC_VENEZUELA
@@ -100,7 +107,7 @@ country_event = {
 				size = 0.5
 				capital = 1108
 				states = {
-					489 1108 1107
+					489 1108 1107 1112
 				}
 				load_oob = VEN_1930_antifascist
 				set_province_controller = 4942
@@ -112,6 +119,13 @@ country_event = {
 				set_province_controller = 5317
 				set_province_controller = 8050
 				set_province_controller = 5000
+				set_province_controller = 1997
+				set_province_controller = 2052
+				set_province_controller = 13989
+				set_province_controller = 13991
+				set_province_controller = 13984
+				set_province_controller = 13983
+				set_province_controller = 13979
 				add_ideas = VEN_fast_changing_frontlines
 				set_country_flag = DEMOCRATIC_VENEZUELA
 				set_cosmetic_tag = DEMOCRATIC_VENEZUELA
