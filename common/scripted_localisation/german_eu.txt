@@ -1,0 +1,8 @@
+defined_text = {
+	name = GetIsGCU
+
+	
+	text = {
+		localization_key = IS_SOMEWEHRE
+	}
+}
