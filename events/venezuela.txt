@@ -179,7 +179,7 @@ country_event = {
 	
 	trigger = {
 		has_global_flag = venezuelan_civil_war
-		1108 = {
+		489 = {
 			controller = { 
 				has_government = fascism
 			}
@@ -192,7 +192,7 @@ country_event = {
 	    name = venezuela_political_event.3.a
 		
 		COL = {
-			transfer_state = 1108
+			transfer_state = 489
 			transfer_state = 1107
 			add_threat = 3
 		}
