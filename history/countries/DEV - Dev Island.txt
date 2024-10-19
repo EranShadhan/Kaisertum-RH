@@ -19,6 +19,7 @@ set_technology = {
 
 add_ideas = {
 island_of_the_devs
+terminator_sees_terminator_terminates
 }
 oob = "DEV_1936"
 recruit_character = DEV_iwillexplode

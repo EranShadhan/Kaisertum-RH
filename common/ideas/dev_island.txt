@@ -4,13 +4,10 @@ ideas = {
 		
 		island_of_the_devs = {
 			allowed = {
-				original_tag = GER
+				original_tag = DEV
 			}
 
-			allowed_civil_war = {
-				has_government = fascism
-			}
-
+			
 			removal_cost = -1
 
 			picture = island_of_the_devs
@@ -19,7 +16,21 @@ ideas = {
 				defence = 10000
 			}
 		}
-		
+		terminator_sees_terminator_terminates = {
+			allowed = {
+				original_tag = DEV
+			}
+
+			
+
+			removal_cost = -1
+
+			picture = DEV_terminator
+
+			traits = {
+				Terminator
+			}
+		}
 		
 	}
 }

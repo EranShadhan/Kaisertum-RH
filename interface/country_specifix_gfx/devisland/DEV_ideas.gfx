@@ -6,4 +6,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/DEV/island_of_the_devs.png"
 	}
 
+	spriteType = {
+		name = "GFX_idea_DEV_terminator"
+		texturefile = "gfx/interface/ideas/DEV/DEV_terminator.png"
+	}
+
 }
