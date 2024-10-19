@@ -36,6 +36,7 @@ recruit_character = ROM_iuliu_maniu
 recruit_character = ROM_king_carol
 recruit_character = ROM_constantin_ion_parhon
 recruit_character = ROM_armand_calinescu
+recruit_character = ROM_gheorghe_tatarescu
 recruit_character = ROM_corneliu_zelea_codreanu
 recruit_character = ROM_petre_dumitrescu
 recruit_character = ROM_ion_antonescu
@@ -59,6 +60,8 @@ recruit_character = ROM_nicolae_iorga
 recruit_character = ROM_gheorghe_gheorghiu_dej
 recruit_character = ROM_constantin_prezan
 recruit_character = ROM_elena_lupescu
+recruit_character = ROM_nicolae_titulescu
+recruit_character = ROM_grigore_gafencu
 
 # Starting tech
 set_technology = {

@@ -28,7 +28,6 @@ characters={
 						has_autonomy_state = autonomy_supervised_state
 					}
 				}
-				has_completed_focus = ROM_pol_4
 				is_country_leader = no
 			}
 			allowed = {
@@ -94,11 +93,27 @@ characters={
 			civilian={
 				large="GFX_Portrait_romania_gheorghe_tatarescu"
 			}
+			army ={
+				
+				small = "GFX_idea_ROM_gheorghe_tatarescu"
+
+			}
 		}
 		country_leader={
 			ideology=conservatism
 			expire="1965.1.1.1"
 			id=-1
+		}
+
+		advisor={
+			slot = political_advisor
+			idea_token = ROM_gheorghe_tatarescu
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				ROM_stabilizator
+			}
 		}
 	}
 
@@ -549,7 +564,6 @@ characters={
 			slot = political_advisor
 			idea_token = ROM_gheorghe_gheorghiu_dej
 			available = {
-				has_completed_focus = ROM_pol_4
 				if = {
 					limit = {
 						has_dlc = "Man the Guns"
@@ -594,6 +608,44 @@ characters={
 			}
 			traits = {
 				ROM_kings_advisor
+			}
+		}
+	}
+
+	ROM_nicolae_titulescu = {
+		name=ROM_nicolae_titulescu 
+		portraits={
+			army={
+				small="GFX_idea_ROM_nicolae_titulescu"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ROM_nicolae_titulescu 
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				ROM_foreign_minister
+			}
+		}
+	}
+
+	ROM_grigore_gafencu = {
+		name=ROM_grigore_gafencu
+		portraits={
+			army={
+				small="GFX_idea_ROM_grigore_gafencu"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ROM_grigore_gafencu
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				ROM_diplomatic_advisor
 			}
 		}
 	}
