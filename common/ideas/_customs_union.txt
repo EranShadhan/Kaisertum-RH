@@ -51,13 +51,10 @@ ideas = {
 			cancel_if_invalid = no
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = 0.1
+				custom_modifier_tooltip = GER_cheaper_stuff
 			}
-			targeted_modifier = {
-				tag = TUR
-				attack_bonus_against = 0.25
-				defense_bonus_against = 0.15
-			}
+			
 		}
 		german_customs_union_member = {
 
@@ -86,7 +83,11 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.05
 				production_factory_efficiency_gain_factor = 0.05
-				local_resources = 0.2
+				local_resources = 0.1
+			}
+			targeted_modifier = {
+				tag = GER
+				trade_cost_for_target_factor = -0.15
 			}
 		}
 		
