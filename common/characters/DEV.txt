@@ -1,4 +1,3 @@
-characters = {
 	DEV_iwillexplode = {
         name = "IWillExplode"
         portraits = {
