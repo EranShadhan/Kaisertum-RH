@@ -568,6 +568,36 @@ characters={
 		}
 	}
 
+	ROM_elena_lupescu = {
+		name=ROM_elena_lupescu
+		portraits={
+			army={
+				small="GFX_idea_ROM_elena_lupescu"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ROM_elena_lupescu
+			available = {
+				has_completed_focus = ROM_pol_2
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = {
+						has_autonomy_state = autonomy_supervised_state
+					}
+				}
+			}
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				ROM_kings_advisor
+			}
+		}
+	}
+
 	ROM_constantin_argetoianu={
 		name=ROM_constantin_argetoianu
 		portraits={
@@ -608,6 +638,7 @@ characters={
 			}
 		}
 	}
+
 
 	ROM_nicolae_malaxa={
 		name=ROM_nicolae_malaxa
