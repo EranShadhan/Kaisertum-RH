@@ -108,6 +108,9 @@ characters={
 		advisor={
 			slot = political_advisor
 			idea_token = ROM_gheorghe_tatarescu
+			available = {
+				is_country_leader = no
+			}
 			allowed = {
 				original_tag = ROM
 			}
@@ -269,20 +272,6 @@ characters={
 			army={
 				small="GFX_idea_ROM_constantin_sanatescu"
 				large="GFX_Portrait_romania_constantin_sanatescu"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = ROM_constantin_sanatescu
-			allowed = {
-				original_tag = ROM
-			}
-			traits = {
-				army_chief_defensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
 			}
 		}
 
@@ -815,7 +804,24 @@ characters={
 		name=ROM_constantin_prezan
 		portraits={
 			army={
-				large="GFX_Portrait_romania_ion_antonescu"
+				large="GFX_Portrait_ROM_constantin_prezan"
+
+				small="GFX_ROM_constantin_prezan"
+			}
+		}
+
+		advisor={
+			slot = army_chief
+			idea_token = ROM_constantin_prezam
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 		
