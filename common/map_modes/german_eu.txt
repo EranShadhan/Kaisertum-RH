@@ -32,16 +32,6 @@ scripted_map_modes = {
 		type = country
 			color = {
 				FROM = {
-					
-					if = {
-						limit = {
-							original_tag = FRA
-						}
-						set_temp_variable = { red = 0.1 }
-						set_temp_variable = { green = 0.1 }
-						set_temp_variable = { blue = 0.80 }
-						
-					}
 					else_if = {
 						limit = { 
 							has_idea = french_phoenix_membership 
