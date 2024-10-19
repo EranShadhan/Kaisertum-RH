@@ -16,8 +16,10 @@ set_technology = {
 	basic_train = 1
 }
 
-add_ideas = island_of_the_devs
 
+add_ideas = {
+island_of_the_devs
+}
 oob = "DEV_1936"
 recruit_character = DEV_iwillexplode
 recruit_character = DEV_isglitch
@@ -54,13 +56,12 @@ if = {
 
 create_country_leader = {
 	name = "Fallen Phoenix Developers"
-	desc = "In the vast seas of coffee, surrounded by energy drinks and being stinky in their computer basement, the developers of the Fallen Phoenix mod are using 1% of their brain cells to code this mod."
+	description = "In the vast seas of coffee, surrounded by energy drinks and being stinky in their computer basement, the developers of the Fallen Phoenix mod are using 1% of their brain cells to code this mod."
 	picture = GFX_portrait_FP_Devs
 	ideology = oligarchism
 	traits = {
 	}
 }
-
 set_convoys = 10
 set_politics = {
 	ruling_party = neutrality

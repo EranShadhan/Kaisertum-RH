@@ -1,28 +1,25 @@
 ideas = {
 
 	country = {
+		
 		island_of_the_devs = {
-			picture = GFX_idea_island_of_the_devs
-			
 			allowed = {
-				always = no
-			}
-			
-			available = {
-			}
-			
-			cancel = {
+				original_tag = GER
 			}
 
 			allowed_civil_war = {
-				always = yes
+				has_government = fascism
 			}
 
 			removal_cost = -1
-			
+
+			picture = island_of_the_devs
+
 			modifier = {
 				defence = 10000
 			}
 		}
+		
+		
 	}
 }

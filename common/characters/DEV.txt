@@ -2,8 +2,8 @@ characters = {
 	DEV_iwillexplode = {
         name = "IWillExplode"
         portraits = {
-            army = {
-				small = GFX_DEV_iwillexplode
+            civilian = {
+				small = GFX_portrait_Esplode
 			}
         }
         advisor = {
@@ -20,8 +20,8 @@ characters = {
 	DEV_isglitch = {
         name = "IsGlitch"
         portraits = {
-            army = {
-				small = GFX_DEV_isglitch
+            civilian = {
+				small = GFX_portrait_Glitch
 			}
         }
         advisor = {
@@ -38,8 +38,8 @@ characters = {
 	DEV_xaelor = {
         name = "Xaelor"
         portraits = {
-            army = {
-				small = GFX_DEV_xaelor
+            civilian = {
+				small = GFX_portrait_Xaelor
 			}
         }
         advisor = {
@@ -56,8 +56,8 @@ characters = {
 	DEV_girrambe = {
         name = "Girrambe"
         portraits = {
-            army = {
-				small = GFX_DEV_girrambe
+            civilian = {
+				small = GFX_portrait_Girrambe
 			}
         }
         advisor = {
@@ -74,8 +74,8 @@ characters = {
 	DEV_denis_md = {
         name = "Denis_MetaDev"
         portraits = {
-            army = {
-				small = GFX_DEV_denis_metadev
+            civilian = {
+				small = GFX_portrait_Denis
 			}
         }
         advisor = {
@@ -92,8 +92,8 @@ characters = {
 	DEV_levko = {
         name = "Levko"
         portraits = {
-            army = {
-				small = GFX_DEV_levko
+            civilian = {
+				small = GFX_portrait_Levko
 			}
         }
         advisor = {
