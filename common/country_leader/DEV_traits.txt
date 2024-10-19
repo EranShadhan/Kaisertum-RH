@@ -37,4 +37,9 @@ leader_traits = {
 		stability_factor = 0.2
 		weekly_manpower = 100
 	}
+	LET_THE_COOK = {
+		random = no
+		enemy_justify_war_goal_time = 10
+		custom_modifier_tooltip = DEVS_ARE_COOKING
+	}
 }

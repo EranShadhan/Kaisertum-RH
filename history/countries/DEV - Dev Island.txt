@@ -56,10 +56,10 @@ if = {
 
 create_country_leader = {
 	name = "Fallen Phoenix Developers"
-	description = "In the vast seas of coffee, surrounded by energy drinks and being stinky in their computer basement, the developers of the Fallen Phoenix mod are using 1% of their brain cells to code this mod."
 	picture = GFX_portrait_FP_Devs
 	ideology = oligarchism
 	traits = {
+	LET_THE_COOK
 	}
 }
 set_convoys = 10
