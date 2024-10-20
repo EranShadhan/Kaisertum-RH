@@ -39,20 +39,30 @@ scripted_gui = {
 				set_variable = { show_intro = 0.0 }
 				set_variable = { show_lore = 0.0 }
 				set_variable = { show_paths = 0.0 }
+				set_variable = { show_changes = 0.0 }
+				set_variable = { show_settings = 0.0 }
 			}
 			intro_gui_button_one_click = {
 				set_variable = { show_lore = 0.0 }
 				set_variable = { show_paths = 0.0 }
+				set_variable = { show_changes = 0.0 }
 			}
 			intro_gui_button_two_click = {
 				set_variable = { show_lore = 1.0 }
 				set_variable = { show_paths = 0.0 }
+				set_variable = { show_changes = 0.0 }
 			}
 			intro_gui_button_three_click = {
 				set_variable = { show_lore = 0.0 }
 				set_variable = { show_paths = 1.0 }
+				set_variable = { show_changes = 0.0 }
 			}
 			intro_gui_button_four_click = {
+				set_variable = { show_lore = 0.0 }
+				set_variable = { show_paths = 0.0 }
+				set_variable = { show_changes = 1.0 }
+			}
+			intro_gui_button_five_click = {
 				if = {
 					limit = {
 						check_variable = { show_settings > 0.0 }
@@ -87,6 +97,7 @@ scripted_gui = {
 				}
 				else = {
 					set_global_flag = endonyms
+					KT_endonyms = yes #going to change the names immediately
 				}
 			}
 			intro_gui_button_settigns_two_click = {

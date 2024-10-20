@@ -8,3 +8,5 @@ Official Github page for the HOI4 mod Kaisertum based of Rewriting History's "Pr
 - Beta 0.1 - The New Empire - Persia, France, introscreen - August 21 2024 ✔
 - Beta 0.2 - A Divided City - Greece, Turkey - August 28 2024 ✔
 - Beta 0.3 - The Wold and the Lynx - Tukey, Romania, Starting Menu - September 28 2024 ✔
+- Beta 0.3.1 - The Wold and the Lynx - changelog added - October 22 2024 ✔
+
