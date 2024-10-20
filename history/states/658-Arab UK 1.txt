@@ -2,33 +2,33 @@
 state={
 	id=658
 	name="STATE_658"
+	manpower = 170200
 	resources={
-		oil=15.000
+		oil=5 # was: 6
 	}
+	
+	state_category = pastoral
+
 
 	history={
 		add_core_of = UAE
 		add_core_of = SAU
 		owner = SAU
 		victory_points = {
-			7960 2
+			7960 1 
 		}
 		buildings = {
 			infrastructure = 1
 			7960 = {
 				naval_base = 3
-
 			}
-
 		}
 
 	}
 
 	provinces={
-		2048 7960 8108 13831 13833 13840 
+		2048 7960 8108 10904 
 	}
-	manpower=114034
-	buildings_max_level_factor=1.000
-	state_category=pastoral
-	local_supplies=4.000
+
+	local_supplies=4.0 
 }

@@ -805,7 +805,7 @@
  military_police_tech:0 "Military Police Technology"
  signal_company_tech:0 "Signal Company Technology"
  construction_tech:0 "Construction technology"
- nuclear:0 "Chemical Weapons Technology"
+ nuclear:0 "Nuclear Technology"
  rocketry:0 "Rocketry technology"
  land_doctrine:0 "Land Doctrine"
  air_doctrine:0 "Air Doctrine"

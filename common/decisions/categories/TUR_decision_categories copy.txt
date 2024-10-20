@@ -104,16 +104,3 @@ TUR_GFT_category = {
 		}
 	}
 }
-
-TUR_NATSOC_category = {
-	priority = 150
-	icon = GFX_category_icon
-
-	scripted_gui = decisions_TUR_NSGUI_scriptedgui
-
-	visible_when_empty = yes
-
-	allowed = {
-		original_tag = TUR
-	}
-}

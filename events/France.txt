@@ -1,7 +1,7 @@
 #Hon Hon
 add_namespace = kt_france
 
-country_event = { # dictator choose
+country_event = { # France surrender event
 	id = kt_france.1
 	title = kt_france.1.t
 	desc = kt_france.1.d
@@ -11,11 +11,104 @@ country_event = { # dictator choose
 	fire_only_once = yes
 
 	trigger = {
-		
+	#	GER = {
+	#		controls_state = 16
+	#	}
 	}
 	
 	option = {
-		
+		name = kt_france.1.a
+		set_global_flag = france_surrenders
+		GER = {
+			country_event = kt_france.2
+		}
+	}
+
+	option = {
+		name = kt_france.1.b
+		set_global_flag = france_not_surrenders
+		add_stability = -0.4
+		add_war_support = -0.5
+	}
+	
+}
+
+country_event = { # Treaty of Lille
+	id = kt_france.2
+	title = kt_france.2.t
+	desc = kt_france.2.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kt_france.2.a
+		GER = {
+			#transfer_state = # TODO states: Nanzig/Nancy, Sedan
+			white_peace = FRA
+		}
+		BEL = {
+			transfer_state = 29
+		}
+		BRI = {
+			transfer_state = 14
+		}
+		ENG = {
+			transfer_state = 15
+		}
+		OCC = {
+			transfer_state = 851
+			transfer_state = 21
+			transfer_state = 32
+			transfer_state = 22
+			transfer_state = 20
+			transfer_state = 26
+			transfer_state = 25
+			transfer_state = 31
+		}
+		NAV = {
+			transfer_state = 806
+		}
+		SPR = {
+			#transfer_state = # TODO state: Rousselion
+		}
+	}
+
+	option = {
+		name = kt_france.2.b
+		GER = {
+			#transfer_state = # TODO states: Nanzig/Nancy, Sedan
+			white_peace = FRA
+		}
+		BEL = {
+			transfer_state = 29
+		}
+		BRI = {
+			transfer_state = 14
+		}
+		ENG = {
+			transfer_state = 15
+		}
+	}
+	
+}
+
+country_event = { # Split in Nats
+	id = kt_france.3
+	title = kt_france.3.t
+	desc = kt_france.3.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kt_france.3.a
+		complete_national_focus = FRA_support_ultra_fascists
+	}
+
+	option = {
+		name = kt_france.3.b
+		complete_national_focus = FRA_support_moderate_fascists
 	}
 	
 }

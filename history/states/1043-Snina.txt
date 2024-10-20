@@ -14,6 +14,7 @@ state={
 		}
 		add_core_of = HUN
 		add_core_of = SLO
+		add_claim_by = UKR
 
 	}
 

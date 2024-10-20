@@ -2,9 +2,7 @@
 state={
 	id=735
 	name="STATE_735"
-	resources={
-		aluminium=60 # was: 120
-	}
+
 	history={
 		owner = ITA
 		add_core_of = OCC

@@ -12,10 +12,6 @@ spriteTypes = {
 		texturefile = "gfx/leaders/SER/Portrait_SER_sima_markovic.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_SER_kanye_west"
-		texturefile = "gfx/leaders/SER/Portrait_SER_kanye_west.dds"
-	}
-	spriteType = {
 		name = "GFX_portrait_GER_otto_wels"
 		texturefile = "gfx/leaders/GER/portrait_germany_otto_wels.dds"
 	}
@@ -101,28 +97,12 @@ spriteTypes = {
 		name = "GFX_portrait_BRA_washington_luis"
 		texturefile = "gfx/leaders/BRA/Portrait_Brazil_Luis_washington.dds"
 	}
-	SpriteType = {
-		name = "GFX_AUS_karl"
-		texturefile = "gfx/leaders/AUS/AUS_karl.png"
-	}
-	SpriteType = {
-		name = "GFX_HUN_KARoly_Wolff"
-		texturefile = "gfx/leaders/AUS/HUN_KARoly_Wolff.png"
-	}
-	SpriteType = {
-		name = "GFX_HUN_provisional_governament"
-		texturefile = "gfx/leaders/AUS/HUN_provisional_governament.png"
-	}
-	SpriteType = {
-		name = "GFX_CZE_Tomas_Masaryk"
-		texturefile = "gfx/leaders/AUS/CZE_Tomas_Masaryk.png"
+	spriteType = {
+		name = "GFX_portrait_italy_amadeo_bordiga"
+		texturefile = "gfx/leaders/ITA/portrait_ITA_amadeo_bordiga.dds"
 	}
 	spriteType = {
-		name = "GFX_UBD_Adolf_Friedrich"
-		textureFile = "gfx/leaders/UBD/portrait_ubd_adolf_friedrich.dds"
-	}
-	spriteType = {
-		name = "GFX_portrait_NAT_george_villiers"
-		textureFile = "gfx/leaders/NAT/Portrait_Natal_George_Villiers.png"
+		name = "GFX_portrait_italy_lanza_scalea"
+		texturefile = "gfx/leaders/ITA/portrait_ITA_lanza_scalea.dds"
 	}
 }

@@ -2,11 +2,6 @@ state={
 	id=523
 	name="STATE_523"
 
-resources={
-		steel=27.000
-		tungsten=11.000
-		rubber=33.000
-	}
 	history={
 		add_core_of = PNG
 		add_core_of = GPI

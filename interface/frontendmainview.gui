@@ -281,7 +281,7 @@ guiTypes = {
 		instantTextBoxType = {
 
 			name ="recent_updates"
-			position = { x = 680 y = 25 }
+			position = { x = 680 y = 55 }
 			textureFile = ""
 			font = "garamond_24"
 			borderSize = {x = 0 y = 0}

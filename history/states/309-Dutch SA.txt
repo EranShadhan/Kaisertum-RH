@@ -2,33 +2,32 @@
 state={
 	id=309
 	name="STATE_309"
+	manpower = 152000
+
 	resources={
-		aluminium=60.000
-	}
+		aluminium=60 # was: 104
+	}	
+	
+	state_category = rural
 
 	history={
 		add_core_of = SUR
 		owner = HOL
 		victory_points = {
-			10906 1 
+			10906 1
 		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 			12828 = {
 				naval_base = 1
-
 			}
-
 		}
-
 	}
 
 	provinces={
-		1928 10906 12828 13968 13970 
+		1928 10906 12828 
 	}
-	manpower=152000
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
+
+	local_supplies=0.0 
 }

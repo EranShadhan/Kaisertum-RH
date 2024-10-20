@@ -6,36 +6,24 @@ characters={
 			civilian={
 				large = GFX_portrait_ROM_Corneliu_Zelea_Codreanu
 			}
-			army = {
-				small = GFX_idea_ROM_Corneliu_Zelea_Codreanu
-			}
 		}
 		country_leader={
-			ideology= legionarism
+			ideology= nazism
 			traits={ economic_reformer }
 			expire="1965.1.1.1"
 			id=-1
 		}
 		advisor={
-			slot = political_advisor
-			idea_token = ROM_corneliu_zelea_codreanu
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
+				cost = 150
+				slot = political_advisor
+				idea_token = codreanu
+				ledger = civilian
+				allowed = {
+					original_tag = ROM
 				}
-				is_country_leader = no
-			}
-			allowed = {
-				original_tag = ROM
-			}
-			traits = {
-				fascist_demagogue
-			}
+				traits = {
+					fasicm_drift = 0.01
+				}
 		}
 	}
 
@@ -93,30 +81,11 @@ characters={
 			civilian={
 				large="GFX_Portrait_romania_gheorghe_tatarescu"
 			}
-			army ={
-				
-				small = "GFX_idea_ROM_gheorghe_tatarescu"
-
-			}
 		}
 		country_leader={
 			ideology=conservatism
 			expire="1965.1.1.1"
 			id=-1
-		}
-
-		advisor={
-			slot = political_advisor
-			idea_token = ROM_gheorghe_tatarescu
-			available = {
-				is_country_leader = no
-			}
-			allowed = {
-				original_tag = ROM
-			}
-			traits = {
-				ROM_stabilizator
-			}
 		}
 	}
 
@@ -153,7 +122,7 @@ characters={
 				original_tag = ROM
 			}
 			traits = {
-				ROM_minister_of_the_interior 
+				prince_of_terror 
 			}
 		}
 
@@ -272,6 +241,20 @@ characters={
 			army={
 				small="GFX_idea_ROM_constantin_sanatescu"
 				large="GFX_Portrait_romania_constantin_sanatescu"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = ROM_constantin_sanatescu
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 
@@ -534,7 +517,6 @@ characters={
 						has_autonomy_state = autonomy_supervised_state
 					}
 				}
-				has_completed_focus = ROM_pol_3
 			}
 			traits = {
 				democratic_reformer 
@@ -553,6 +535,7 @@ characters={
 			slot = political_advisor
 			idea_token = ROM_gheorghe_gheorghiu_dej
 			available = {
+				has_completed_focus = ROM_pol_4
 				if = {
 					limit = {
 						has_dlc = "Man the Guns"
@@ -567,74 +550,6 @@ characters={
 			}
 			traits = {
 				communist_revolutionary 
-			}
-		}
-	}
-
-	ROM_elena_lupescu = {
-		name=ROM_elena_lupescu
-		portraits={
-			army={
-				small="GFX_idea_ROM_elena_lupescu"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = ROM_elena_lupescu
-			available = {
-				has_completed_focus = ROM_pol_2
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
-			}
-			allowed = {
-				original_tag = ROM
-			}
-			traits = {
-				ROM_kings_advisor
-			}
-		}
-	}
-
-	ROM_nicolae_titulescu = {
-		name=ROM_nicolae_titulescu 
-		portraits={
-			army={
-				small="GFX_idea_ROM_nicolae_titulescu"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = ROM_nicolae_titulescu 
-			allowed = {
-				original_tag = ROM
-			}
-			traits = {
-				ROM_foreign_minister
-			}
-		}
-	}
-
-	ROM_grigore_gafencu = {
-		name=ROM_grigore_gafencu
-		portraits={
-			army={
-				small="GFX_idea_ROM_grigore_gafencu"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = ROM_grigore_gafencu
-			allowed = {
-				original_tag = ROM
-			}
-			traits = {
-				ROM_diplomatic_advisor
 			}
 		}
 	}
@@ -679,7 +594,6 @@ characters={
 			}
 		}
 	}
-
 
 	ROM_nicolae_malaxa={
 		name=ROM_nicolae_malaxa
@@ -804,24 +718,7 @@ characters={
 		name=ROM_constantin_prezan
 		portraits={
 			army={
-				large="GFX_Portrait_ROM_constantin_prezan"
-
-				small="GFX_ROM_constantin_prezan"
-			}
-		}
-
-		advisor={
-			slot = army_chief
-			idea_token = ROM_constantin_prezam
-			allowed = {
-				original_tag = ROM
-			}
-			traits = {
-				army_chief_defensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
+				large="GFX_Portrait_romania_ion_antonescu"
 			}
 		}
 		

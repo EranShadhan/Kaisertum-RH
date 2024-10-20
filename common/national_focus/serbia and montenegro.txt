@@ -1,0 +1,372 @@
+## SERBIA AND MONTENEGRO ##
+## HABSBURG OVERLORDSHIP ##
+
+focus_tree = {
+	id = serbia_montenegro_tree
+	default = no
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+			tag = SER
+		}
+	}
+	
+	continuous_focus_position = { x = 20 y = 1000 }
+	
+	focus = {
+		id = SER_AUS_arise_serbia
+		icon = GFX_focus_generic_diplomatic_treaty
+		
+		x = 5
+		y = 0
+		cost = 5
+
+		allow_branch = {
+			is_puppet_of = AUS
+		}
+
+		available = {}
+		bypass = {}
+		prerequisite = {}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = SER_AUS_rouse_the_serbs
+		icon = GFX_goal_support_democracy
+		
+		relative_position_id = SER_AUS_arise_serbia
+		x = -2
+		y = 1
+		cost = 5
+		
+		available = {}
+		bypass = {}
+		prerequisite = {focus = SER_AUS_arise_serbia}
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.1
+			}
+			add_political_power = 50
+		}
+		
+	}
+	
+	focus = {
+		id = SER_BUL_who_king
+		icon = GFX_focus_generic_monarchy_2
+		
+		x = 4
+		y = 0
+		cost = 2
+
+		allow_branch = {
+			is_puppet_of = BUL
+		}
+		
+		available = {}
+		bypass = {}
+		completion_reward = {} # TODO: event to choose a monarch, also add a spirit to penalize for not choosing
+		mutually_exclusive = { focus = SER_BUL_king_is_useless }
+	}
+	
+	focus = {
+		id = SER_BUL_bulgarian_queen
+		icon = GFX_goal_generic_major_alliance
+		
+		relative_position_id = SER_BUL_who_king
+		x = -3
+		y = 1
+		cost = 5
+		
+		prerequisite = {focus = SER_BUL_who_king}
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		completion_reward = {}
+	}
+	
+	focus = {
+		id = SER_BUL_king_is_useless
+		icon = GFX_focus_rom_handle_king
+		
+		relative_position_id = SER_BUL_who_king
+		x = 9
+		y = 0
+		cost = 5
+		
+		mutually_exclusive = { focus = SER_BUL_who_king }
+		available = {}
+		bypass = {}
+		completion_reward = {} # TODO: this is a shit focus. it should be intentionally shit. to all ye who wish to tone this down, stop bein a pussy ass bitch
+	}
+	
+	focus = {
+		id = SER_BUL_go_communist			# this is where it gets... spicy
+		icon = GFX_goal_support_communism
+		
+		relative_position_id = SER_BUL_king_is_useless
+		x = 6
+		y = 1
+		cost = 5
+		
+		prerequisite = {focus = SER_BUL_king_is_useless}
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.12
+			}
+		}
+	}
+	
+	focus = {
+		id = SER_BUL_recruit_the_workers
+		icon = GFX_focus_generic_communist_industry
+		
+		relative_position_id = SER_BUL_go_communist
+		x = -2
+		y = 1
+		cost = 10
+		
+		prerequisite = {focus = SER_BUL_go_communist}
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+	}
+	
+	focus = {
+		id = SER_BUL_road_workers
+		icon = GFX_focus_SOV_the_road_of_life
+		
+		relative_position_id = SER_BUL_recruit_the_workers
+		x = -2
+		y = 1
+		cost = 5
+		
+		prerequisite = {focus = SER_BUL_recruit_the_workers}
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		completion_reward = {}
+	}
+	
+	focus = {
+		id = SER_BUL_communist_left
+		icon = GFX_focus_NOR_a_new_norway_Trotsky_communism
+		
+		relative_position_id = SER_BUL_road_workers
+		x = 0
+		y = 1
+		cost = 10
+		
+		prerequisite = {focus = SER_BUL_road_workers}
+		mutually_exclusive = {focus = SER_BUL_communist_right}
+		available = {}
+		bypass = {}
+		completion_reward = {}
+	}
+	
+	focus = {
+		id = SER_BUL_recruit_the_peasants
+		icon = GFX_focus_generic_workers_and_farmers_rise
+		
+		relative_position_id = SER_BUL_recruit_the_workers
+		x = 4
+		y = 0
+		cost = 10
+		
+		prerequisite = {focus = SER_BUL_go_communist}
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+	}
+	
+	focus = {
+		id = SER_BUL_church_collab
+		icon = GFX_focus_BRA_socialist_theologians
+		
+		relative_position_id = SER_BUL_recruit_the_peasants
+		x = 2
+		y = 1
+		cost = 5
+		
+		prerequisite = {focus = SER_BUL_recruit_the_peasants}
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+	}
+	
+	focus = {
+		id = SER_BUL_communist_right
+		icon = GFX_focus_prc_agrarian_socialism
+		
+		relative_position_id = SER_BUL_church_collab
+		x = 0
+		y = 1
+		cost = 10
+		
+		prerequisite = {focus = SER_BUL_church_collab}
+		mutually_exclusive = {focus = SER_BUL_communist_left}
+		available = {}
+		bypass = {}
+		completion_reward = {
+			remove_country_leader_role = {
+				character = SER_filip_filipovic
+				ideology = leninism
+			}
+			add_country_leader_role = {
+				character = SER_sima_markovic
+				promote_leader = yes
+				country_leader = {
+					ideology = leninism
+					expire = "1953.3.1.1"
+					traits = {}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SER_BUL_peasant_militias
+		icon = GFX_focus_ITA_peasants_rise
+		
+		relative_position_id = SER_BUL_recruit_the_workers
+		x = 2
+		y = 1
+		cost = 5
+		
+		prerequisite = {focus = SER_BUL_recruit_the_peasants}
+		prerequisite = {focus = SER_BUL_recruit_the_workers}
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = SER_imro_1
+		icon = GFX_goal_zzz_WIP
+
+		x = 5
+		y = 11
+		cost = 5
+
+		allow_branch = {
+			has_country_flag = imro_active
+		}
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		completion_reward = {
+			SER_crush_imro = yes
+		}
+	}
+	focus = {
+		id = SER_imro_2
+		icon = GFX_goal_zzz_WIP
+
+		x = -1
+		y = 1
+		relative_position_id = SER_imro_1
+		cost = 5
+
+		prerequisite = { focus = SER_imro_1 }
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		completion_reward = {
+			SER_crush_imro = yes
+		}
+	}
+	focus = {
+		id = SER_imro_3
+		icon = GFX_goal_zzz_WIP
+
+		x = 0
+		y = 1
+		relative_position_id = SER_imro_2
+		cost = 5
+
+		prerequisite = { focus = SER_imro_2 }
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		completion_reward = {
+			SER_crush_imro = yes
+		}
+	}
+	focus = {
+		id = SER_imro_4
+		icon = GFX_goal_zzz_WIP
+
+		x = 1
+		y = 1
+		relative_position_id = SER_imro_1
+		cost = 5
+
+		prerequisite = { focus = SER_imro_1 }
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		completion_reward = {
+			SER_crush_imro = yes
+		}
+	}
+	focus = {
+		id = SER_imro_5
+		icon = GFX_goal_zzz_WIP
+
+		x = -1
+		y = 2
+		relative_position_id = SER_imro_4
+		cost = 5
+
+		prerequisite = { focus = SER_imro_4 }
+		prerequisite = { focus = SER_imro_3 }
+		mutually_exclusive = {}
+		available = {}
+		bypass = {}
+		completion_reward = {
+			SER_crush_imro = yes
+		}
+	}
+}

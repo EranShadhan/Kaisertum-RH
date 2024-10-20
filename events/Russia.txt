@@ -1,982 +1,3 @@
-add_namespace = SOV_events
-
-####### 1930 Constitutient Assembly
-
-### Kerensky sets up the Assembly
-country_event = {
-	id = SOV_events.1
-	title = SOV_events.1.t
-	desc = SOV_events.1.d
-	
-	picture = GFX_report_event_generic_parliament
-	
-	is_triggered_only = yes
-
-	option = {
-		name = SOV_events.1.a
-		add_political_power = 50
-		hidden_effect = {
-			country_event = {
-				id = SOV_events.2
-				days = 14
-			}
-		}
-	}
-}
-
-### Discussions begin!
-country_event = {
-	id = SOV_events.2
-	title = SOV_events.2.t
-	desc = SOV_events.2.d
-	
-	picture = GFX_report_event_generic_parliament
-	
-	is_triggered_only = yes
-
-	option = {
-		name = SOV_events.2.a
-		
-		hidden_effect = {
-			
-		}
-	}
-}
-
-### Discussion: Elections
-country_event = {
-	id = SOV_events.3
-	title = SOV_events.3.t
-	desc = SOV_events.3.d
-	
-	picture = GFX_report_event_generic_parliament
-	
-	is_triggered_only = yes
-
-	option = { # Free and Fair Elections
-		name = SOV_events.3.a
-		
-		hidden_effect = {
-			
-		}
-	}
-	option = { # Unfair Elections
-		name = SOV_events.3.b
-		
-		hidden_effect = {
-			
-		}
-	}
-	option = { # No Elections
-		name = SOV_events.3.c
-		
-		hidden_effect = {
-			
-		}
-	}
-}
-
-add_namespace = RUS_collapse
-
-### Leningrad
-country_event = {
-	id = RUS_collapse.1
-	title = RUS_collapse.1.t
-	desc = RUS_collapse.1.d
-	
-	#picture = 
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	#hidden = yes
-
-	option = {
-		name = RUS_collapse.1.a
-		
-		hidden_effect = {
-		
-			set_global_flag = RUS_collapse_fired
-			
-			retire_country_leader = yes
-			add_country_leader_role = {
-				character = SOV_prov_court
-				promote_leader = yes
-				country_leader = {
-					ideology = oligarchism
-					expire = "1965.1.1.1"
-					traits = { }
-				}
-			}
-			
-			country_event = {
-				id = RUS_collapse.2
-				hours = 12
-				random_hours = 8
-			}
-			country_event = {
-				id = RUS_collapse.3
-				hours = 16
-				random_hours = 8
-			}
-			country_event = {
-				id = RUS_collapse.4
-				hours = 22
-				random_hours = 10
-			}
-			country_event = {
-				id = RUS_collapse.5
-				days = 1
-				hours = 10
-				random_hours = 10
-			}
-			country_event = {
-				id = RUS_collapse.6
-				days = 2
-				hours = 6
-				random_hours = 10
-			}
-			country_event = {
-				id = RUS_collapse.7
-				days = 3
-				hours = 12
-				random_hours = 10
-			}
-			country_event = {
-				id = RUS_collapse.8
-				days = 3
-				hours = 12
-				random_hours = 3
-			}
-			country_event = {
-				id = RUS_collapse.9
-				days = 3
-				hours = 22
-				random_hours = 8
-			}
-			country_event = {
-				id = RUS_collapse.10
-				days = 4
-				hours = 2
-				random_hours = 8
-			}
-			country_event = {
-				id = RUS_collapse.11
-				days = 4
-				hours = 2
-				random_hours = 8
-			}
-			
-			country_event = {
-				id = RUS_collapse.12
-				days = 10
-			}
-		}
-	}
-}
-
-### Leningrad
-country_event = {
-	id = RUS_collapse.8
-	title = RUS_collapse.8.t
-	desc = RUS_collapse.8.d
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	hidden = yes
-
-	immediate = {
-		hidden_effect = {
-			UBD = {
-				transfer_state = 1064
-			}
-			
-			LEN = {
-				transfer_state = 95
-				transfer_state = 96
-				transfer_state = 195
-				transfer_state = 204
-				transfer_state = 205
-				transfer_state = 206
-				transfer_state = 207
-				transfer_state = 208
-				transfer_state = 209
-				transfer_state = 210
-				transfer_state = 220
-				transfer_state = 222
-				transfer_state = 223
-				transfer_state = 224
-				transfer_state = 239
-				transfer_state = 242
-				transfer_state = 243
-				transfer_state = 244
-				transfer_state = 246
-				#transfer_state = 247
-				#transfer_state = 248
-				transfer_state = 250
-				transfer_state = 252
-				#transfer_state = 253
-				transfer_state = 254
-				transfer_state = 255
-				transfer_state = 256
-				transfer_state = 257
-				transfer_state = 258
-				transfer_state = 260
-				transfer_state = 263
-				transfer_state = 265
-				transfer_state = 1005
-				transfer_state = 1009
-				transfer_state = 1019
-				transfer_state = 1021
-				#transfer_state = 1064
-				transfer_state = 1065
-				transfer_state = 1066
-				
-				add_state_core = 95
-				add_state_core = 96
-				add_state_core = 195
-				add_state_core = 204
-				add_state_core = 205
-				add_state_core = 206
-				add_state_core = 207
-				add_state_core = 208
-				add_state_core = 209
-				add_state_core = 210
-				add_state_core = 220
-				add_state_core = 222
-				add_state_core = 223
-				add_state_core = 224
-				add_state_core = 239
-				add_state_core = 242
-				add_state_core = 243
-				add_state_core = 244
-				add_state_core = 246
-				#add_state_core = 247
-				#add_state_core = 248
-				add_state_core = 250
-				add_state_core = 252
-				#add_state_core = 253
-				add_state_core = 254
-				add_state_core = 255
-				add_state_core = 256
-				add_state_core = 257
-				add_state_core = 258
-				add_state_core = 260
-				add_state_core = 263
-				add_state_core = 265
-				add_state_core = 1005
-				add_state_core = 1009
-				add_state_core = 1019
-				add_state_core = 1021
-				#add_state_core = 1064
-				add_state_core = 1065
-				add_state_core = 1066
-			}
-		}
-	}
-}
-
-### Caucasus
-country_event = {
-	id = RUS_collapse.2
-	title = RUS_collapse.2.t
-	desc = RUS_collapse.2.d
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	hidden = yes
-
-	immediate = {
-		hidden_effect = {
-			
-			UCS = {
-				transfer_state = 230
-				transfer_state = 231
-				transfer_state = 232
-				transfer_state = 821
-				transfer_state = 826
-				transfer_state = 827
-				transfer_state = 828
-				transfer_state = 980
-				transfer_state = 1067
-				
-				add_state_core = 230
-				add_state_core = 231
-				add_state_core = 232
-				add_state_core = 821
-				add_state_core = 826
-				add_state_core = 827
-				add_state_core = 828
-				add_state_core = 980
-				add_state_core = 1067
-			}
-		}
-	}
-}
-
-### Kuban
-country_event = {
-	id = RUS_collapse.3
-	title = RUS_collapse.3.t
-	desc = RUS_collapse.3.d
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	hidden = yes
-
-	immediate = {
-		hidden_effect = {
-			KUB = {
-				transfer_state = 233
-				transfer_state = 234
-				transfer_state = 1060
-				transfer_state = 1061
-				transfer_state = 1062
-				
-				add_state_core = 233
-				add_state_core = 234
-				add_state_core = 1060
-				add_state_core = 1061
-				add_state_core = 1062
-			}
-		}
-	}
-}
-
-### Ukraine + Crimea
-country_event = {
-	id = RUS_collapse.4
-	title = RUS_collapse.4.t
-	desc = RUS_collapse.4.d
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	hidden = yes
-
-	immediate = {
-		hidden_effect = {
-			CMG = {
-				transfer_state = 137
-				transfer_state = 1022
-
-				add_state_core = 137
-				add_state_core = 1022
-			}
-			UKR = {
-				transfer_state = 94
-				transfer_state = 1020
-			}
-			EUA = {
-				transfer_state = 193
-				transfer_state = 196
-				transfer_state = 200
-				transfer_state = 221
-				transfer_state = 225
-				transfer_state = 227
-				transfer_state = 228
-				transfer_state = 240
-				transfer_state = 241
-				transfer_state = 259
-				transfer_state = 1007
-				transfer_state = 1008
-				transfer_state = 1010
-				transfer_state = 1012
-				transfer_state = 1013
-				transfer_state = 1014
-				transfer_state = 1015
-				transfer_state = 1018
-				transfer_state = 1045
-				transfer_state = 1046
-				transfer_state = 1047
- 
-				add_state_claim = 137
-				add_state_core = 193
-				add_state_core = 196
-				add_state_core = 200
-				add_state_core = 221
-				add_state_core = 225
-				add_state_core = 227
-				add_state_core = 228
-				add_state_core = 240
-				add_state_core = 241
-				add_state_core = 259
-				add_state_core = 1007
-				add_state_core = 1008
-				add_state_core = 1010
-				add_state_core = 1012
-				add_state_core = 1013
-				add_state_core = 1014
-				add_state_core = 1015
-				add_state_core = 1018
-				add_state_claim = 1022
-				add_state_core = 1045
-				add_state_core = 1046
-				add_state_core = 1047
-                      
-                      country_event = { id = fp_eua.1 days = 35 }
-
-			}
-			SOV = {
-			
-				remove_state_core = 94
-				remove_state_core = 137
-				remove_state_core = 193
-				remove_state_core = 196
-				remove_state_core = 200
-				remove_state_core = 221
-				remove_state_core = 225
-				remove_state_core = 227
-				remove_state_core = 228
-				remove_state_core = 240
-				remove_state_core = 241
-				remove_state_core = 259
-				remove_state_core = 1007
-				remove_state_core = 1008
-				remove_state_core = 1010
-				remove_state_core = 1012
-				remove_state_core = 1013
-				remove_state_core = 1014
-				remove_state_core = 1015
-				remove_state_core = 1018
-				remove_state_core = 1020
-				remove_state_core = 1022
-				remove_state_core = 1045
-				remove_state_core = 1046
-				remove_state_core = 1047
-
-			}
-
-		}
-	}
-}
-
-### Karelia
-country_event = {
-	id = RUS_collapse.5
-	title = RUS_collapse.5.t
-	desc = RUS_collapse.5.d
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	hidden = yes
-
-	immediate = {
-		hidden_effect = {
-			KAR = {
-				transfer_state = 213
-				transfer_state = 215
-				transfer_state = 216
-				transfer_state = 722
-				
-				add_state_core = 213
-				add_state_core = 215
-				add_state_core = 216
-				add_state_core = 722
-			}
-		}
-	}
-}
-
-### Monarchists
-country_event = {
-	id = RUS_collapse.6
-	title = RUS_collapse.6.t
-	desc = RUS_collapse.6.d
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	hidden = yes
-
-	immediate = {
-		hidden_effect = {
-			RUM = {
-				transfer_state = 516
-				transfer_state = 563
-				transfer_state = 564
-				transfer_state = 565
-				transfer_state = 566
-				transfer_state = 567
-				transfer_state = 568
-				transfer_state = 575
-				transfer_state = 576
-				transfer_state = 876
-				transfer_state = 878
-				
-				add_state_core = 516
-				add_state_core = 563
-				add_state_core = 564
-				add_state_core = 565
-				add_state_core = 566
-				add_state_core = 567
-				add_state_core = 568
-				add_state_core = 575
-				add_state_core = 576
-				add_state_core = 876
-				add_state_core = 878
-			}
-			TAN = {
-				transfer_state = 329
-			}
-		}
-	}
-}
-
-### Fascists
-country_event = {
-	id = RUS_collapse.7
-	title = RUS_collapse.7.t
-	desc = RUS_collapse.7.d
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	hidden = yes
-
-	immediate = {
-		hidden_effect = {
-			RUF = {
-				transfer_state = 560
-				transfer_state = 561
-				transfer_state = 562
-				transfer_state = 574
-				transfer_state = 637
-				transfer_state = 644
-				transfer_state = 657
-				transfer_state = 822
-				transfer_state = 874
-				transfer_state = 875
-				transfer_state = 877
-				
-				add_state_core = 560
-				add_state_core = 561
-				add_state_core = 562
-				add_state_core = 574
-				add_state_core = 637
-				add_state_core = 644
-				add_state_core = 657
-				add_state_core = 822
-				add_state_core = 874
-				add_state_core = 875
-				add_state_core = 877
-			}
-			FER = {
-				transfer_state = 408
-				transfer_state = 409
-				transfer_state = 655
-				
-				add_state_core = 408
-				add_state_core = 409
-				add_state_core = 655
-			}
-		}
-	}
-}
-
-### Don
-country_event = {
-	id = RUS_collapse.9
-	title = RUS_collapse.9.t
-	desc = RUS_collapse.9.d
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	hidden = yes
-
-	immediate = {
-		hidden_effect = {
-			DON = {
-				transfer_state = 217
-				transfer_state = 218
-				transfer_state = 235
-				transfer_state = 236
-				transfer_state = 237
-				transfer_state = 238
-				transfer_state = 245
-				transfer_state = 1017
-				
-				add_state_core = 217
-				add_state_core = 218
-				add_state_core = 235
-				add_state_core = 236
-				add_state_core = 237
-				add_state_core = 238
-				add_state_core = 245
-				add_state_core = 1017
-			}
-		}
-	}
-}
-
-### Democrats
-country_event = {
-	id = RUS_collapse.10
-	title = RUS_collapse.10.t
-	desc = RUS_collapse.10.d
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	hidden = yes
-
-	immediate = {
-		hidden_effect = {
-			RUD = {
-				transfer_state = 40
-				transfer_state = 214
-				transfer_state = 249
-				transfer_state = 251
-				transfer_state = 262
-				transfer_state = 264
-				transfer_state = 351
-				transfer_state = 397
-				transfer_state = 398
-				transfer_state = 399
-				transfer_state = 400
-				transfer_state = 401
-				transfer_state = 403
-				transfer_state = 407
-				transfer_state = 569
-				transfer_state = 570
-				transfer_state = 571
-				transfer_state = 572
-				transfer_state = 573
-				transfer_state = 577
-				transfer_state = 578
-				transfer_state = 579
-				transfer_state = 580
-				transfer_state = 581
-				transfer_state = 582
-				transfer_state = 651
-				transfer_state = 652
-				transfer_state = 653
-				transfer_state = 654
-				transfer_state = 824
-				transfer_state = 825
-				transfer_state = 829
-				transfer_state = 833
-				transfer_state = 879
-				transfer_state = 880
-				transfer_state = 1041
-				transfer_state = 1072
-				transfer_state = 1073
-				
-				add_state_core = 40
-				add_state_core = 214
-				add_state_core = 249
-				add_state_core = 251
-				add_state_core = 262
-				add_state_core = 264
-				add_state_core = 351
-				add_state_core = 397
-				add_state_core = 398
-				add_state_core = 399
-				add_state_core = 400
-				add_state_core = 401
-				add_state_core = 403
-				add_state_core = 407
-				add_state_core = 569
-				add_state_core = 570
-				add_state_core = 571
-				add_state_core = 572
-				add_state_core = 573
-				add_state_core = 577
-				add_state_core = 578
-				add_state_core = 579
-				add_state_core = 580
-				add_state_core = 581
-				add_state_core = 582
-				add_state_core = 651
-				add_state_core = 652
-				add_state_core = 653
-				add_state_core = 654
-				add_state_core = 824
-				add_state_core = 825
-				add_state_core = 829
-				add_state_core = 833
-				add_state_core = 879
-				add_state_core = 880
-				add_state_core = 1041
-				add_state_core = 1072
-				add_state_core = 1073
-			}
-		}
-	}
-}
-
-### Turkestan
-country_event = {
-	id = RUS_collapse.11
-	title = RUS_collapse.11.t
-	desc = RUS_collapse.11.d
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	hidden = yes
-
-	immediate = {
-		hidden_effect = {
-			TKS = {
-				transfer_state = 402
-				transfer_state = 404
-				transfer_state = 405
-				transfer_state = 406
-				transfer_state = 583
-				transfer_state = 584
-				transfer_state = 585
-				transfer_state = 586
-				transfer_state = 587
-				transfer_state = 588
-				transfer_state = 589
-				transfer_state = 590
-				transfer_state = 732
-				transfer_state = 742
-				transfer_state = 823
-				transfer_state = 830
-				transfer_state = 831
-				transfer_state = 832
-				transfer_state = 881
-				transfer_state = 882
-				transfer_state = 1069
-				transfer_state = 1070
-				transfer_state = 1071
-				
-				add_state_core = 402
-				add_state_core = 404
-				add_state_core = 405
-				add_state_core = 406
-				add_state_core = 583
-				add_state_core = 584
-				add_state_core = 585
-				add_state_core = 586
-				add_state_core = 587
-				add_state_core = 588
-				add_state_core = 589
-				add_state_core = 590
-				add_state_core = 732
-				add_state_core = 742
-				add_state_core = 823
-				add_state_core = 830
-				add_state_core = 831
-				add_state_core = 832
-				add_state_core = 881
-				add_state_core = 882
-				add_state_core = 1069
-				add_state_core = 1070
-				add_state_core = 1071
-			}
-		}
-	}
-}
-
-### Choose country event
-country_event = {
-	id = RUS_collapse.12
-	title = RUS_collapse.12.t
-	desc = RUS_collapse.12.d
-	
-	is_triggered_only = yes
-
-	option = {
-		name = RUS_collapse.12.a ### North-East
-		country_event = {
-			id = RUS_collapse.13
-		}
-	}
-	option = {
-		name = RUS_collapse.12.b ### Stay SOV
-		custom_effect_tooltip = RUS_collapse_no_content
-		
-	}
-	option = {
-		name = RUS_collapse.12.c ### South
-		country_event = {
-			id = RUS_collapse.17
-		}
-	}
-}
-
-### Choose country event (North-East)
-country_event = {
-	id = RUS_collapse.13
-	title = RUS_collapse.13.t
-	desc = RUS_collapse.13.desc
-	
-	is_triggered_only = yes
-
-	option = {
-		name = RUS_collapse.13.a ### Karelia
-		custom_effect_tooltip = RUS_collapse_no_content
-		KAR = { change_tag_from = SOV }
-	}
-	option = {
-		name = RUS_collapse.13.b ### Democrats
-		custom_effect_tooltip = RUS_collapse_no_content
-		RUD = { change_tag_from = SOV }
-	}
-	option = {
-		name = RUS_collapse.13.c ### Go Further East
-		country_event = {
-			id = RUS_collapse.14
-		}
-	}
-	option = {
-		name = RUS_collapse.13.d ### Go Back
-		country_event = {
-			id = RUS_collapse.12
-		}
-	}
-}
-
-### Choose country event (Further East)
-country_event = {
-	id = RUS_collapse.14
-	title = RUS_collapse.14.t
-	desc = RUS_collapse.14.desc
-	
-	is_triggered_only = yes
-
-	option = {
-		name = RUS_collapse.14.a ### Monarchists
-		custom_effect_tooltip = RUS_collapse_no_content
-		RUM = { change_tag_from = SOV }
-	}
-	option = {
-		name = RUS_collapse.14.b ### Go South (Central Asia)
-		country_event = {
-			id = RUS_collapse.16
-		}
-	}
-	option = {
-		name = RUS_collapse.14.c ### Go Far East
-		country_event = {
-			id = RUS_collapse.15
-		}
-	}
-	option = {
-		name = RUS_collapse.14.d ### Go Back
-		country_event = {
-			id = RUS_collapse.13
-		}
-	}
-}
-
-### Choose country event (Far East)
-country_event = {
-	id = RUS_collapse.15
-	title = RUS_collapse.15.t
-	desc = RUS_collapse.15.d
-	
-	is_triggered_only = yes
-
-	option = {
-		name = RUS_collapse.15.a ### Fascists
-		custom_effect_tooltip = RUS_collapse_no_content
-		RUF = { change_tag_from = SOV }
-	}
-	option = {
-		name = RUS_collapse.15.b ### Far Eastern Republic
-		custom_effect_tooltip = RUS_collapse_no_content
-		FER = { change_tag_from = SOV }
-	}
-	option = {
-		name = RUS_collapse.15.c ### Go Back
-		country_event = {
-			id = RUS_collapse.14
-		}
-	}
-}
-
-### Choose country event (South - Central Asia)
-country_event = {
-	id = RUS_collapse.16
-	title = RUS_collapse.16.t
-	desc = RUS_collapse.16.d
-	
-	is_triggered_only = yes
-
-	option = {
-		name = RUS_collapse.16.a ### Federation of Central Asian States
-		custom_effect_tooltip = RUS_collapse_no_content
-		TKS = { change_tag_from = SOV }
-	}
-	option = {
-		name = RUS_collapse.16.b ### Tannu Tuva
-		custom_effect_tooltip = RUS_collapse_no_content
-		TAN = { change_tag_from = SOV }
-	}
-	option = {
-		name = RUS_collapse.16.c ### Go Back
-		country_event = {
-			id = RUS_collapse.14
-		}
-	}
-}
-
-### Choose country event (South)
-country_event = {
-	id = RUS_collapse.17
-	title = RUS_collapse.17.t
-	desc = RUS_collapse.17.desc
-	
-	is_triggered_only = yes
-
-	option = {
-		name = RUS_collapse.17.a ### Leningrad
-		#custom_effect_tooltip = RUS_collapse_no_content
-		
-		LEN = { change_tag_from = SOV }
-	}
-	option = {
-		name = RUS_collapse.17.b ### Don Republic
-		custom_effect_tooltip = RUS_collapse_no_content
-		
-		DON = { change_tag_from = SOV }
-	}
-	option = {
-		name = RUS_collapse.17.c ### Go Further South
-		country_event = {
-			id = RUS_collapse.18
-		}
-	}
-	option = {
-		name = RUS_collapse.17.d ### Go Back
-		country_event = {
-			id = RUS_collapse.12
-		}
-	}
-}
-
-### Choose country event (Further South)
-country_event = {
-	id = RUS_collapse.18
-	title = RUS_collapse.18.t
-	desc = RUS_collapse.18.desc
-	
-	is_triggered_only = yes
-
-	option = {
-		name = RUS_collapse.18.a ### Crimean Military Governorate
-		custom_effect_tooltip = RUS_collapse_no_content
-		
-		CMG = { change_tag_from = SOV }
-	}
-	option = {
-		name = RUS_collapse.18.b ### Kuban Republic
-		#custom_effect_tooltip = RUS_collapse_no_content
-		
-		KUB = { change_tag_from = SOV }
-	}
-	option = {
-		name = RUS_collapse.18.c ### Caucasus - UCSSR
-		custom_effect_tooltip = RUS_collapse_no_content
-		
-		UCS = { change_tag_from = SOV }
-	}
-	option = {
-		name = RUS_collapse.18.d ### Go Back
-		country_event = {
-			id = RUS_collapse.17
-		}
-	}
-}
-
 ###########################
 # Shared Russian Events
 ###########################
@@ -988,43 +9,36 @@ country_event = {
 	id = RUS_events.1
 	title = RUS_events.1.t
 	desc = RUS_events.1.d
-	
 	picture = GFX_report_event_sanation_left_victory
 	
 	is_triggered_only = yes
 
 	option = {
 		name = RUS_events.1.a
-		
 		ai_chance = {
 			base = 10
 		}
-		
-		add_popularity = {
+		        add_popularity = {
    			ideology = neutrality
     		popularity = 0.1
-		}
+			}
 	}
 	option = {
 		name = RUS_events.1.b
-		
 		ai_chance = {
 			base = 10
 		}
-		
-		add_popularity = {
+		        add_popularity = {
    			ideology = democratic
     		popularity = 0.1
-		}
+			}
 	}
 }
-
 # A Sluggish Giant
 country_event = {
 	id = RUS_events.2
 	title = RUS_events.2.t
 	desc = RUS_events.2.d
-	
 	picture = GFX_report_event_sanation_left_victory
 	
 	is_triggered_only = yes
@@ -1034,126 +48,101 @@ country_event = {
 		ai_chance = {
 			base = 10
 		}
-		
-		add_popularity = {
+		        add_popularity = {
    			ideology = neutrality
     		popularity = 0.1
-		}
-		
-		#add_timed_idea = { idea = Systemic_Corruption_Military days = 700}
+			}
+		add_timed_idea = { idea = Systemic_Corruption_Military days = 700}
 	}
 	option = {
 		name = RUS_events.2.b
-		
 		ai_chance = {
 			base = 10
 		}
-		
-		add_popularity = {
+		        add_popularity = {
    			ideology = democratic
     		popularity = 0.1
-		}
-		
-		#add_timed_idea = { idea = Systemic_Corruption_Industry days = 700}
+			}
+		add_timed_idea = { idea = Systemic_Corruption_Industry days = 700}
 	}
 }
-
 # Minority Status
 country_event = {
 	id = RUS_events.3
 	title = RUS_events.3.t
 	desc = RUS_events.3.d
-	
 	picture = GFX_report_event_sanation_left_victory
 	
 	is_triggered_only = yes
-	option = {
+		option = {
 		name = RUS_events.3.c
-		
 		ai_chance = {
 			base = 10
 		}
-		
-		add_popularity = {
+		        add_popularity = {
    			add_political_power = -25
    			add_stability = 0.05
-		}
-		
-		#add_ideas = Slight_Derussification
+			}
+		add_ideas = Slight_Derussification
 	}
-	option = {
+		option = {
 		name = RUS_events.3.e
-		
 		ai_chance = {
 			base = 10
 		}
-		
-		add_popularity = {
+		        add_popularity = {
    			add_political_power = 75
    			add_stability = -0.05
-		}
-		
-		#add_ideas = Defacto_Derussification
+			}
+		add_ideas = Defacto_Derussification
 	}
 }
-
 # Stance on France
 country_event = {
 	id = RUS_events.4
 	title = RUS_events.4.t
 	desc = RUS_events.4.d
-	
 	picture = GFX_report_event_sanation_left_victory
 	
 	is_triggered_only = yes
 
 	option = {
 		name = RUS_events.4.a
-		
 		ai_chance = {
 			base = 10
 		}
-		
-		add_opinion_modifier = { target = FRA modifier = medium_increase }
+			add_opinion_modifier = { target = FRA modifier = medium_increase }
 	}
 	option = {
 		name = RUS_events.4.b
-		
 		ai_chance = {
 			base = 10
 		}
-		
 		add_opinion_modifier = { target = FRA modifier = small_decrease }
 		add_ideas = Revanchism_For_WW1_Solo
 	}
 }
-
 # State Council Dilemma
 country_event = {
 	id = RUS_events.5
 	title = RUS_events.5.t
 	desc = RUS_events.5.d
-	
 	picture = GFX_report_event_sanation_left_victory
 	
 	is_triggered_only = yes
 
 	option = {
 		name = RUS_events.5.a
-
 		ai_chance = {
 			base = 10
-		}
-		
-		#add_ideas = 
+		}  
+		add_ideas = 
 	}
 	option = {
 		name = RUS_events.5.b
-
 		ai_chance = {
 			base = 10
 		}
-		
-		#add_ideas = 
+		add_ideas = 
 	}
 }

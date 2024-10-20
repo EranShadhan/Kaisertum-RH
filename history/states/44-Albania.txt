@@ -14,6 +14,9 @@ state={
 			9914 5 
 		}
 		victory_points = {
+			11767 2 
+		}
+		victory_points = {
 			13255 2 
 		}
 		victory_points = {
@@ -24,6 +27,10 @@ state={
 			arms_factory = 1
 			industrial_complex = 1
 			air_base = 3
+			11767 = {
+				naval_base = 4
+
+			}
 			13255 = {
 				naval_base = 2
 
@@ -41,9 +48,9 @@ state={
 	}
 
 	provinces={
-		3448 3884 6900 9875 9914 13255 13566 
+		3448 3884 6900 9875 9914 11767 13255 13566 
 	}
-	manpower=472325
+	manpower=493867
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=5.000

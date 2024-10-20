@@ -14,11 +14,13 @@ state={
 		victory_points = {
 			3211 10 
 		}
-
+		victory_points = {
+			9498 20 
+		}
 		buildings = {
 			infrastructure = 3
-			arms_factory = 3
-			industrial_complex = 2
+			arms_factory = 4
+			industrial_complex = 3
 			dockyard = 3
 			air_base = 5
 			3314 = {
@@ -35,9 +37,9 @@ state={
 	}
 
 	provinces={
-		68 391 3211 3314 
+		68 391 3211 3314 9498 
 	}
-	manpower=3572000
+	manpower=4123000
 	buildings_max_level_factor=1.000
 	state_category=metropolis
 

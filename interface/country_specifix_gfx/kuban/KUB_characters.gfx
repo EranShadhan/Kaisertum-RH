@@ -1,8 +1,0 @@
-spriteTypes = {
-
-	spriteType = {
-		name = "GFX_portrait_KUB_Vasyl_Ivanys"
-		texturefile = "gfx/leaders/KUB/Portrait_KUB_Vasyl_Ivanys.png"
-	}
-
-}

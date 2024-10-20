@@ -2,8 +2,6 @@
 
 oob = "BEL_1936"
 
-set_cosmetic_tag = KDGG_BEL
-
 add_ideas = {
 	german_customs_union_member
 }

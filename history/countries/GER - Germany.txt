@@ -49,8 +49,7 @@ set_autonomy = {
 	target = BEL
 	autonomous_state = autonomy_puppet
 }
-set_variable = { GER_narvik_shipments = 0 }
-set_variable = { GER_narvik_civs = 0 }
+
 starting_train_buffer = 2
 set_fuel_ratio = 0.8
 
@@ -218,18 +217,18 @@ add_to_faction = FIN
 add_ideas = {
 	GER_wilhelm_ii
 	GER_victory_tgw
+	german_customs_union_member
 	GER_powerful_unions
 	GER_german_breadbasket_to_ukr
-	GER_too_big_to_fail
-	GER_switching_to_oil
-	GER_colonial_exploitation
-	german_customs_union_leader
+	#GER_too_big_to_fail
+	#german_customs_union_leader
+	#GER_switching_to_oil
 	
 	low_economic_mobilisation
 	limited_conscription
-	export_focus
-	
 }
+
+activate_mission = GER_mefo_bills_mission
 
 recruit_character = GER_heinrich_bruening
 recruit_character = GER_ludwig_kaas
@@ -463,7 +462,7 @@ if = {
 		icon = "GFX_gwtank_medium"
 	}
 	create_equipment_variant = { #Note: There is a copy of this variant in Finnish National Focus file (FIN_bring_foreign_armor_experts). Any changes here should also be applied there
-		name = "Panzer I Ausf. A" #This tank template was added to the United Baltic Duchy as well. Change it in their file as well if this is changed. -Cooldownboi
+		name = "Panzer I Ausf. A"
 		type = light_tank_chassis_1
 		parent_version = 0
 		modules = {

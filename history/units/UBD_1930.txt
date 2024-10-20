@@ -1,71 +1,38 @@
-﻿# # # # TEMPLATES # # # #
-
-division_template = {
-	name = "Infanterie-Division"   # Regular german infantry division, an extension of the german army, under control of the United Baltic Duchy
-
-	division_names_group = UBD_GERINF_01
-
+﻿division_template = {
+	name = "Infantrie-Division"		# Infantry Division
+	division_names_group = UBD_INF_01
+	# German Military Divisions
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
+        infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
-		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 2 }
 	}
+	
 	support = {
         engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-    }
-}
-
-division_template = {
-	name = "Leichte Infanterie-Division"   # Smaller german infantry division, under control of the Duchy.
-
-	division_names_group = UBD_LIGHTINF_01
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-	}
-	support = {
-		recon = { x = 0 y = 0 }
-    }
-}
-
-division_template = {
-	name = "Kavallerie-Brigade"   # Cavalry brigade.
-
-	division_names_group = UBD_CAV_01
-
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-        cavalry = { x = 0 y = 1 }
-        cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-	}
-	support = {
-	    recon = { x = 0 y = 0 }
-	    artillery = { x = 0 y = 1 }
+        artillery = { x = 0 y = 1 }
 	}
 }
 
 division_template = {
-	name = "Infanterie-Division (mot.)"   # Regular motorized divisions.
-	division_names_group = UBD_MOT_01
-
+	name = "Infanterie-Division (mot.)"			# Motorized Division
+	division_names_group = UBD_INF_01
+	# German Military Divisions
 	regiments = {
 		motorized = { x = 0 y = 0 }
 	    motorized = { x = 0 y = 1 }
 		motorized = { x = 0 y = 2 }
+		
 		motorized = { x = 1 y = 0 }
 		motorized = { x = 1 y = 1 }
 		motorized = { x = 1 y = 2 }
+		
 		motorized = { x = 2 y = 0 }
 	    motorized = { x = 2 y = 1 }
 		motorized = { x = 2 y = 2 }
@@ -78,189 +45,151 @@ division_template = {
 }
 
 division_template = {
-	name = "Panzer-Division"   # Regular tank divisions.
-
-	division_names_group = UBD_ARM_01
-
+	name = "Miliz-Division"			# Militia Divisions
+	division_names_group = UBD_INF_01
+	# German Militias
 	regiments = {
-		light_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }
-        light_armor = { x = 1 y = 0 }
-		light_armor = { x = 1 y = 1 }
-		motorized = { x = 2 y = 0 }
-        motorized = { x = 2 y = 1 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
 	}
 	support = {
-        mot_recon = { x = 0 y = 0 }
-        engineer = { x = 0 y = 1 }
-        artillery = { x = 0 y = 2 }
 	}
+	priority = 0
 }
 
-
-
-# # # # STARTING DIVISIONS # # # #
-
 units = {
-
-	division = {	
+	division= {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 9340
+		location = 3320
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
 	}
-
-	division = {	
+	division= {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 310
+		location = 6296
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
 	}
-
-	division = {	
+	division= {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 3320
+		location = 9483
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
 	}
-
-	division = {	
+	division= {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 3254
+		location = 11342
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
 	}
-
-	division = {	
+	division= {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 592
+		location = 310
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
 	}
-
-	division = {	
+	division= {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 6
 		}
-		location = 4640
+		location = 9430
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
 	}
-
-	division = {	
+	division= {	
 		division_name = {
 			is_name_ordered = yes
-			name_order = 21
-		}
-		location = 3152
-		division_template = "Leichte Infanterie-Division"
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.75
-	}
-
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 22
-		}
-		location = 9485
-		division_template = "Leichte Infanterie-Division"
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.75
-	}
-
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 23
-		}
-		location = 11222
-		division_template = "Leichte Infanterie-Division"
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.75
-	}
-
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 24
-		}
-		location = 9404
-		division_template = "Leichte Infanterie-Division"
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.75
-	}
-
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 25
-		}
-		location = 3296
-		division_template = "Leichte Infanterie-Division"
-		start_experience_factor = 0.05
-		start_equipment_factor = 0.75
-	}
-
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 67
+			name_order = 7
 		}
 		location = 222
-		division_template = "Panzer-Division"
-		start_experience_factor = 0.4
-		start_equipment_factor = 0.5
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
 	}
-
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 592
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 3152
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 4640
+		division_template = "Infanterie-Division (mot.)"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 4640
+		division_template = "Infanterie-Division (mot.)"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 9340
+		division_template = "Infanterie-Division (mot.)"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
 }
 
-# # # # STARTING PRODUCTION # # # #
-
+### Starting Production ###
 instant_effect = {
-    add_equipment_production = {
-        equipment = {
-	    type = infantry_equipment_1
-	    creator = "UBD"
-	}
-	requested_factories = 3
-	progress = 0.24
-	efficiency = 50
-    }
-
 	add_equipment_production = {
 		equipment = {
-			type = support_equipment_1
-			creator = "UBD" 
+			type = infantry_equipment_1
+			creator = "UBD"
 		}
-		requested_factories = 1
-		progress = 0.24
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = artillery_equipment_1
-			creator = "UBD" 
-		}
-		requested_factories = 1
-		progress = 0.24
-		efficiency = 50
+		requested_factories = 4
+		progress = 0.3
+		efficiency = 100
 	}
 }

@@ -1,0 +1,33 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			PER = {
+				give_resource_rights = {
+					receiver = GER
+					state = 291
+				}
+				give_resource_rights = {
+					receiver = GER
+					state = 413
+				}
+				give_resource_rights = {
+					receiver = GER
+					state = 412
+				}
+			}
+		}
+	}
+	on_daily_PER = {
+		effect = {
+			if = {
+				limit = {
+					has_idea = PER_disloyal_military
+					stability>0.3
+				}
+				PER = {
+					country_event = { country_event = KT_persia.1 }
+				}
+			}
+		}
+	}
+}

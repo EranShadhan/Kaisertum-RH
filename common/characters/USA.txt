@@ -241,8 +241,10 @@ characters={
 			slot = army_chief
 			idea_token = dwight_eisenhower
 			allowed = {
+				OR = {
 					original_tag = USA
-				
+					is_literally_china = yes
+				}
 			}
 			available = {
 				NOT = {
@@ -359,6 +361,7 @@ characters={
 			idea_token = douglas_macarthur
 			allowed = {
 				OR = {
+					is_literally_china = yes
 					original_tag = USA
 				}
 			}
@@ -673,7 +676,10 @@ characters={
 			idea_token = joseph_stilwell
 			ledger = army
 			allowed = {
-				original_tag = USA
+				OR = {
+					is_literally_china = yes
+					original_tag = USA
+				}
 			}
 			available = {
 				NOT = {
@@ -1426,6 +1432,7 @@ characters={
 					}
 
 					AND = {
+						CHL_hub_of_the_revolution_trigger = yes
 						USA = { has_completed_focus = USA_america_first }
 					}	
 				}
@@ -1479,10 +1486,12 @@ characters={
 					}
 
 					AND = {
+						SWE_refuge_for_revolutionaries_trigger = yes
 						USA = { has_completed_focus = USA_america_first }
 					}
 
 					AND = {
+						CHL_hub_of_the_revolution_trigger = yes
 						USA = { has_completed_focus = USA_america_first }
 					}	
 				}
@@ -1531,9 +1540,11 @@ characters={
 						has_completed_focus  = USA_reach_out_to_the_ware_group 
 					}
 					AND = {
+						SWE_refuge_for_revolutionaries_trigger = yes
 						USA = { has_completed_focus = USA_america_first }
 					}
 					AND = {
+						CHL_hub_of_the_revolution_trigger = yes
 						USA = { has_completed_focus = USA_america_first }
 					}	
 				}

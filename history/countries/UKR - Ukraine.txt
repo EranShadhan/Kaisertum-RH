@@ -1,4 +1,4 @@
-﻿capital = 202
+﻿capital = 192
 
 oob = "UKR_1936"
 
@@ -30,8 +30,8 @@ set_technology = {
 add_ideas = {
 	UKR_country_lore
 	german_customs_union_member
-	UKR_german_breadbasket
 	UKR_sugar_businesses
+	UKR_german_breadbasket
 	UKR_land_problem
 	}
 if = {
@@ -152,7 +152,7 @@ create_country_leader = {
 	desc = "Vasyl Vyshyvanyi"
 	picture = gfx/leaders/UKR/Portrait_UKR_Vasyl_Habsburg.dds
 	expire = "1965.1.1"
-	ideology = absolute_monarchy
+	ideology = despotism
 	traits = {
 	 UKR_king_of_ukraine
 	}

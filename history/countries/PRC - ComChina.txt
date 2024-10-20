@@ -54,11 +54,6 @@ set_popularities = {
 	communism = 70
 	neutrality = 10
 }
-
-add_ideas = {
-	east_asia_trade_membership
-}
-
 set_autonomy = {
 		target = GXC
 		autonomous_state = autonomy_wtt_imperial_associate

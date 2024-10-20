@@ -1,88 +1,6 @@
 ideas = {
 
-
 	country = {
-
-	GER_colonial_exploitation = {
-
-			picture = GER_exploit_our_colonies
-			
-			allowed = {
-			}
-
-			allowed_civil_war = {
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				local_resources = 0.1
-				production_lack_of_resource_penalty_factor = -0.05
-				fuel_gain_factor_from_states = 0.1
-				country_resource_rubber = 25
-			
-			}
-			
-		}
-		GER_rebuild_the_high_seas_fleet = {
-			allowed = {
-				always = no
-			}
-
-
-			removal_cost = -1
-
-			picture = generic_navy_bonus
-
-			equipment_bonus = {
-				ship_hull_heavy = {
-					build_cost_ic = -0.1 instant = yes
-				}
-			}
-		}
-		GER_cheap_sub = {
-
-
-
-			 allowed = {
-				original_tag = GER
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-            removal_cost = -1
-			equipment_bonus = {
-				
-				submarine = {
-					build_cost_ic = -0.25  defense = -0.15  instant = yes
-			
-				}
-			}
-			picture = generic_the_london_naval_treaty
-			
-			removal_cost = -1	
-
-		}
-		GER_noones_else_bussiness = {
-
-			picture = chi_wargaming_division
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-			ai_call_ally_desire_factor = -500
-				ai_join_ally_desire_factor = -500
-			}
-		}
 	GER_switching_to_oil = {
 
 			picture = changing_to_oil
@@ -99,103 +17,32 @@ ideas = {
 			
 			modifier = {
 			refit_speed = -0.5
-			industrial_capacity_dockyard = -0.25
+			industrial_capacity_dockyard = -0.3
 			naval_retreat_speed = -0.15
 			ships_at_battle_start = -0.2
-			naval_speed_factor = -0.1
 			}
 		}	
-		GER_expatriate_the_extremistss = {
-			allowed = {
-				always = no
-			}
+	german_customs_union_leader = {
 
-			allowed_civil_war = {
-			}
-
-			removal_cost = -1
-
-			picture = generic_prisoner
-
-			modifier = {
-				communism_drift = -0.02
-				fascism_drift = -0.05
-			}
-		}
-		
-		GER_exiles_to_russia = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-			removal_cost = -1
-
-			picture = generic_communist_army
-
-			modifier = {
-				
-				communism_drift = 0.02
-			}
-		}
-		GER_exiles_to_france = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-			removal_cost = -1
-
-			picture = generic_fascist_workers
-
-			modifier = {
-				
-				fascism_drift = 0.05
-			}
-		}
-		GER_the_reich_of_kaiser = {
-			allowed = {
-				original_tag = GER
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = ger_revive_the_kaiserreich
-
-			modifier = {
-				repair_speed_factor = 0.1
-				industry_repair_factor = 0.1
-				production_speed_industrial_complex_factor = 0.05
-				production_speed_infrastructure_factor = 0.1
-			}
-		}
-		GER_coastal_war = {
-           allowed = {
-				original_tag = GRE
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-            removal_cost = -1
-			picture = generic_coastal_navy
+			picture = german_customs_union_member
 			
-			modifier = {				
-			   
-				shore_bombardment_bonus = 0.2
-                 naval_invasion_penalty = -0.1
-				naval_invasion_capacity = 10
-				amphibious_invasion = 0.1
-				invasion_preparation = -0.15				
-				
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = TUR
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.15
 			}
 		}
 GER_too_big_to_fail = {
@@ -213,9 +60,6 @@ GER_too_big_to_fail = {
             stability_factor = 0.1
             production_factory_efficiency_gain_factor = -0.15
             consumer_goods_factor = 0.15
-			production_speed_buildings_factor = -0.25
-			industrial_capacity_dockyard = -0.1
-			industrial_capacity_factory = -0.15
             
              }
          }	
@@ -277,7 +121,24 @@ GER_german_breadbasket_to_ukr = {
 				war_support_factor = 0.05
 			}
 		}
-		
+		GER_powerful_unions = {
+
+			picture = NORDIC_northern_union
+			
+			allowed = {
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.01
+				consumer_goods_factor = 0.1
+				political_power_factor = -0.15
+			}
+		}
 		GER_less_powerful_unions = {
 
 			picture = NORDIC_northern_union
@@ -374,8 +235,7 @@ GER_german_breadbasket_to_ukr = {
 
 			modifier = {
 				local_resources_factor = 0.1
-			production_lack_of_resource_penalty_factor = -0.05
-			fuel_gain_factor_from_states = 0.1
+			production_lack_of_resource_penalty_factor = -0.15
 			}
 		}
 		GER_grosraumwirtschaft = {
@@ -496,71 +356,18 @@ GER_german_breadbasket_to_ukr = {
 				production_factory_max_efficiency_factor = 0.05
 			}
 		}
-		GER_med_tank = {
-			allowed = { always = no }
-			removal_cost = -1
-			allowed_civil_war = { always = yes }
-			picture = generic_acquire_tanks
-             equipment_bonus = {
-               cat_medium_armor = {
-                  instant = yes
-                   build_cost_ic = -0.1  instant = yes
-		           reliability = 0.2
-		           maximum_speed = 0.1
-                  }
-   
-              }			
-		}
-	GER_prussian_like_army = {
-			
-			allowed = {
-				always = no
-			}
-            picture= chi_army_corruption3
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			modifier = {
-			training_time_factor = -0.1
-				conscription = 0.01
-				industrial_capacity_factory = 0.05
-				experience_gain_army = 0.1
-			}
-		}
-		GER_italian_naval_exercise = {
-			
-			allowed = {
-				always = no
-			}
-            picture= generic_navy_bonus
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			modifier = {
-			naval_doctrine_cost_factor = -0.1
-				experience_gain_navy = 0.2
-				naval_invasion_capacity = 15
-				naval_speed_factor = 0.1
-			}
-		}	
 		GER_wilhelm_ii = {
 			allowed = {
 				always = no
 			}
-            name = GER_wilhelm_ii
+
 			allowed_civil_war = {
 				has_government = democratic
 			}
 
 			removal_cost = -1
 
-			traits = { kaiser_of_germans}
+			traits = { popular_figurehead2 imperial_connections }
 		}
 		GER_wilhelm_ii_2 = {
 
@@ -578,7 +385,7 @@ GER_german_breadbasket_to_ukr = {
 
 			removal_cost = -1
 
-			traits = { kaiser_of_germans2 }
+			traits = { popular_figurehead3 imperial_connections }
 		}
 	}
 }

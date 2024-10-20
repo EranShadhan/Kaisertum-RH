@@ -1,12 +1,3 @@
-DEMOCRATIC_VENEZUELA = {
-    color = rgb { 43 48 105 }
-    color_ui = rgb { 43 48 105 }
-}
-FASCIST_VENEZUELA = {
-    color = rgb { 212 161 140 }
-    color_ui = rgb { 212 161 140 }
-}
-
 IRE_UK = {
     color = rgb { 242 71 71 }
     color_ui = rgb { 242 71 71 }
@@ -43,8 +34,8 @@ TUR_the_horde = {
 }
 
 HUN_AS = {
-    color = rgb { 154 160 149 }
-    color_ui = rgb { 154 160 149 }
+    color = rgb { 181 186 209 }
+    color_ui = rgb { 255 255 255 }
 }
 
 AUS_JAP = {
@@ -68,13 +59,13 @@ MOL_HUN = {
 }
 
 YUG_AS = {
-    color = rgb { 137 175 183 }
-    color_ui = rgb { 137 175 183 }
+    color = rgb { 202 207 229 }
+    color_ui = rgb { 255 255 255 }
 }
 
 SER_MNT = {
-    color = rgb { 148 148 158 }
-    color_ui = rgb { 148 148 158 }
+    color = rgb { 224 225 223 }
+    color_ui = rgb { 255 255 255 }
 }
 
 SER_BG= {
@@ -1360,9 +1351,4 @@ URG_is_unaligned_URG_but_has_normal_URG_flag = {
 LGF_UNIFIED = {
 	color = rgb { 205 69 69 }
 	color_ui = rgb { 205 69 69 }
-}
-
-KDGG_BEL = {
-	color = rgb { 115 115 115 }
-	color_ui = rgb { 122 145 93 }
 }

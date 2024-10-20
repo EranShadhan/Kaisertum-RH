@@ -5,13 +5,23 @@ focus_tree = {
 		factor = 0
 		
 		modifier = {
-			add = 10
+			add = 0
 			tag = IRE
 		}
 
+		#modifier = {
+		#	add = 10
+		#	original_tag = IRE	
+		#}
 	}
 	
 	default = no
+
+
+
+
+
+
 
 	############################
 	##### INDUSTRY SECTION #####

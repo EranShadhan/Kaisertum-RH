@@ -11,7 +11,8 @@ bookmarks = {
 			history = "FRA_NEW_DECADE_DESC"
 			ideology = fascism
 			ideas = {
-				FRA_embargoed_by_germany
+				FRA_republican_front_collapse
+				FRA_communist_opposition
 				FRA_secret_rearmament
 				FRA_super_heavy_tank_programme
 			}
@@ -21,45 +22,6 @@ bookmarks = {
 				FRA_strike_germany
 				FRA_double_down_on_tanks
 			}
-		}
-		"JAP"={
-			history = "JAP_NEW_DECADE_DESC"
-			ideology = communism
-			ideas = {
-				JAP_hirohito
-				JAP_militarism
-				JAP_interservice_rivalry_balanced
-			}	
-			focuses = {
-			}
-		}
-		"SOV"={
-			history = "SOV_NEW_DECADE_DESC"
-			ideology = neutrality
-			ideas = {
-				RUS_transistion
-				RUS_stagnant_russification
-				RUS_rampant_corruption
-				RUS_revanchism
-			}
-			focuses = {
-				RUS_initial_reforms
-				RUS_authoritarian_path
-				RUS_kerensky
-				RUS_socialist_candidate
-			}
-		}
-		"ITA"={
-			history = "ITA_NEW_DECADE_DESC"
-			ideology = neutrality
-			ideas = {
-                german_customs_union_member
-				vittorio_emanuele
-			}	
-			focuses = {
-				ITA_ip_final_civilization
-				ITA_ip_war_with_salonica
-			}		
 		}
 		"ENG"={
 			history = "ENG_NEW_DECADE_DESC"
@@ -88,7 +50,39 @@ bookmarks = {
 				GER_hre
 			}
 		}
-		
+		"ITA"={
+			history = "ITA_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+                german_customs_union_member
+			}	
+			focuses = {
+			}		
+		}
+		"SOV"={
+			history = "SOV_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+				RUS_transistion
+				RUS_stagnant_russification
+				RUS_rampant_corruption
+				RUS_revanchism
+			}
+			focuses = {
+				RUS_initial_reforms
+				RUS_authoritarian_path
+				RUS_kerensky
+				RUS_socialist_candidate
+			}
+		}
+		"JAP"={
+			history = "JAP_NEW_DECADE_DESC"
+			ideology = communism
+			ideas = {
+			}	
+			focuses = {
+			}
+		}
 		"USA"={
 			history = "USA_NEW_DECADE_DESC"
 			ideology = democratic
@@ -100,17 +94,154 @@ bookmarks = {
 			}
 		}
 
-		"---"={
+       "---"={
 			history = "OTHER_NEW_DECADE_DESC"
 		}
 		###  MINORS ###
+		"FIN"={
+			minor = yes
+			history = "FIN_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+				german_customs_union_member
+			}
+			focuses = {
+			}
+		}
 		"AUS"={
 			minor = yes
 			history = "AUS_NEW_DECADE_DESC"
 			ideology = democratic
 			ideas = {
 				german_customs_union_member
-				GER_aid_to_austria
+			}
+			focuses = {
+			}
+		}
+		"ROM"={
+			minor = yes
+			history = "ROM_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+				german_customs_union_member
+				Inefective_constitution
+				ROM_playboy
+			}
+			focuses = {
+				ROM_pol_3
+				ROM_pol_2
+				ROM_pol_5
+				ROM_army1
+			}
+		}
+		YUG={
+			minor = yes
+			history = "YUG_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+				YUG_devided_brothers
+				YUG_payment_to_hungary
+				YUG_muslim_cristian_tensions
+				YUG_underground_italian_connections
+			}
+			focuses = {
+				YUG_the_mareshall_of_the_people
+			}
+		}
+		"GRE"={
+			minor = yes
+			history = "GRE_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+				GRE_megali_idea_partial_restoration
+				GRE_eee_enemy
+				victory_in_the_sgtwgre
+				GRE_on_going_population_exchange
+			}
+			focuses = {
+				GRE_metaxas_project_megisti_idea
+				GRE_the_house_always_wins
+				GRE_deimos_and_fobos
+				GRE_the_economic_crush
+			}
+		}
+		"PER"={
+			minor = yes
+			history = "PER_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+				PER_german_persian_oil_company
+				PER_army_1_focus
+				PER_traditional_islam_gov
+				PER_dream
+			}
+			focuses = {
+				PER_go_german
+				PER_our_place_in_the_world
+				PER_persian_carpets
+				PER_army_xp_2
+			}
+		}
+		"RAJ"={
+			minor = yes
+			history = "RAJ_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"BRA"={
+			minor = yes
+			history = "BRA_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"UBD"={
+			minor = yes
+			history = "UBD_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+				german_customs_union_member
+				UBD_germanisation_programme_idea
+				UBD_overworked_administration_idea
+				UBD_lack_of_workers_idea
+			}
+			focuses = {
+			}
+		}
+		"UKR"={
+			minor = yes
+			history = "UKR_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+				german_customs_union_member
+				UKR_sugar_businesses
+				UKR_german_breadbasket
+			}
+			focuses = {
+			}
+		}
+		"BUL"={
+			minor = yes
+			history = "BUL_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+				german_customs_union_member
+				victory_in_the_sgtwbul
+			}
+			focuses = {
+			}
+		}
+		"SER"={
+			minor = yes
+			history = "SER_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+				german_customs_union_member
 			}
 			focuses = {
 			}
@@ -132,21 +263,35 @@ bookmarks = {
 				TUR_revenge_for_the_first_balkan_war
 			}
 		}
-		"UKR"={
+		"SAU"={
 			minor = yes
-			history = "UKR_NEW_DECADE_DESC"
-			ideology = neutrality
+			history = "SAU_NEW_DECADE_DESC"
+			ideology = fascism
 			ideas = {
-				german_customs_union_member
-				UKR_sugar_businesses
-				UKR_german_breadbasket
-				UKR_land_problem
+				victory_in_the_sgtwsau
+				SAU_pre_modern_economy
+				SAU_traditional_society
+				islam_religion
 			}
 			focuses = {
-				UKR_ukraine_above_all
-				UKR_red_prince
-				UKR_state_stability
-				UKR_ostwall_1
+			}
+		}
+		"CHI"={
+			minor = yes
+			history = "CHI_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"ARG"={
+			minor = yes
+			history = "ARG_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
 			}
 		}
 		effect = {

@@ -221,17 +221,4 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 761;13315;sea;9092;-1;-1;-1;-1;;Ontario
 13196;13314;sea;9092;-1;-1;-1;-1;;Northern Quebec
 13369;13370;sea;5709;-1;-1;-1;-1;;Providence n San Andrés
-13840;2048;sea;2666;-1;-1;-1;-1;;Abu Al Abyad
-13313;8051;sea;2691;-1;-1;-1;-1;;Bahrain-Qatar
-13313;12702;sea;2691;-1;-1;-1;-1;;Bahrain-Mainland
-13884;2089;sea;2896;-1;-1;-1;-1;;Bubiyan-Basra
-13884;13883;sea;2896;-1;-1;-1;-1;;Bubiyan-Kuwait
-13778;8073;sea;2800;-1;-1;-1;-1;;Farasan
-13630;13632;sea;7452;-1;-1;-1;-1;;Limnos-Samotharki
-13630;13631;sea;7452;-1;-1;-1;-1;;Limnos-Imbros
-13632;13631;sea;7452;-1;-1;-1;-1;;Samotharki-Imbros
-849;13631;sea;7452;-1;-1;-1;-1;;Imbros-Gallippoli
-13435;13371;sea;8131;-1;-1;-1;-1;;Serpent
-374;13375;sea;2729;-1;-1;-1;-1;;Heligoland
-10124;11932;sea;8499;-1;-1;-1;-1;;Okinawa
 -1;-1;;-1;-1;-1;-1;-1;-1 

@@ -4,10 +4,7 @@ spriteTypes = {
 		name = "GFX_country_selection_minor_gold"
 		texturefile = "gfx/interface/country_selection_minor_entry_gold.dds"
 	}
-    spriteType = {
-		name = "GFX_new_patch"
-		texturefile = "gfx/interface/new_patch.dds"
-	}
+
 	spriteType = {
 		name = "GFX_country_selection_gold"
 		texturefile = "gfx/interface/country_selection_entry_gold.dds"
@@ -21,11 +18,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_book_button"
 		texturefile = "gfx/interface/book_button.dds"
-	}
-
-	spriteType = {
-		name = "GFX_setting_button"
-		texturefile = "gfx/interface/setting_button.dds"
 	}
 
 }

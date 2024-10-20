@@ -2,7 +2,7 @@
 state={
 	id=857
 	name="STATE_857"
-
+	impassable = yes
 	history={
 		owner = SAU
 		add_core_of = SAU
@@ -10,9 +10,9 @@ state={
 	}
 
 	provinces={
-		2057 4968 5027 5058 5099 10892 10923 12749 13857 13859 13861 13867 13870 13871 13872 13874 13876 13877 13878 13881 
+		4968 5027 5058 5099 7934 10748 10892 10923 12749 12758 
 	}
-	manpower=175000
+	manpower=5000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

@@ -16,14 +16,6 @@ music = {
 		}		
 	}
 }
-music = {
-	song = "theme_turk"
-	chance = {
-		modifier = {
-			factor = 0
-		}		
-	}
-}
 
 # PEACE SONGS ##################
 music = {

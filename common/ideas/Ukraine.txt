@@ -64,7 +64,7 @@ UKR_land_problem = {
             }
             
             
-            picture = GFX_idea_UKR_land_problem
+            picture = generic_supply_lines
             
             modifier = {
             stability_factor = -0.10
@@ -88,7 +88,8 @@ UKR_habsburg_crown = {
             
             modifier = {
             neutrality_drift = 0.10
-            land_reinforce_rate = 0.1          
+            war_support_factor = 0.05
+            land_reinforce_rate = 0.05           
              }
          }
 
@@ -329,7 +330,7 @@ UKR_sich_riflemen = {
             }
             
             
-            picture = GFX_idea_UKR_uss_legacy
+            picture = GFX_idea_UKR_royal_officer_corps
             
             modifier = {
         experience_gain_army_unit_factor = 0.15

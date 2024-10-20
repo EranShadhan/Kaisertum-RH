@@ -1,8 +1,4 @@
 #reload countrycolors
-EUA = {
-	color = rgb { 36 113 163  }
-	color_ui = rgb { 36 113 163  }
-}
 SIC = {
 	color = rgb { 222 41 16 }
 	color_ui = rgb { 222 41 16 }
@@ -32,8 +28,8 @@ PRM = {
 	color_ui = rgb { 171 46 69 }
 }
 NMB = {
-	color = HSV { 0.1 0.15 0.4 }
-	color_ui = rgb { 138 155 116 }
+	color = rgb { 115 115 115 }
+	color_ui = rgb { 100 100 100 }
 }
 NFL = {
 	color = rgb { 225 47 47 }
@@ -121,8 +117,8 @@ ROM = {
 	color_ui = rgb { 255 255 120 }
 }
 YUG = {
-	color = rgb { 13 152 186 }
-	color_ui = rgb { 13 152 186 }
+	color = rgb { 72 73 126 }
+	color_ui = rgb { 94 95 164 }
 }
 SWI = {
 	color = rgb { 224 5 5 }
@@ -173,12 +169,12 @@ IRE = {
 	color_ui = rgb { 196 103 75 }
 }
 HUN = {
-	color = rgb { 138 163 117 }
-	color_ui = rgb { 138 163 117 }
+	color = rgb { 249 126 98 }
+	color_ui = rgb { 255 164 127 }
 }
 AFG = {
-	color = rgb { 135 175 117 }
-	color_ui = rgb { 135 175 117 }
+	color = rgb { 242 239 242 }
+	color_ui = rgb { 242 239 242 }
 }
 ARG = {
 	color = rgb { 145 157 236 }
@@ -404,8 +400,8 @@ SYR = {
 }
 
 SER = {
-	color = rgb { 72 73 126 }
-	color_ui = rgb { 94 95 164 }
+	color = rgb { 160 110 110 }
+	color_ui = rgb { 160 110 110 }
 }
 
 ICE = {
@@ -990,32 +986,4 @@ CPE = {
 NCY = {
 	color = rgb { 255 242 240 }
 	color_ui = rgb { 255 242 240 }
-}
-LEN = {
-	color = rgb { 168 72 72 }
-	color_ui = rgb { 168 72 72 }
-}
-RUD = {
-	color = rgb { 52 130 183 }
-	color_ui = rgb { 52 130 183 }
-}
-RUM = {
-	color = rgb { 26 147 26 }
-	color_ui = rgb { 26 147 26 }
-}
-RUF = {
-	color = rgb { 217 183 13 }
-	color_ui = rgb { 217 183 13 }
-}
-UCS = {
-	color = rgb { 155 3 3 }
-	color_ui = rgb { 155 3 3 }
-}
-CMG = {
-	color = rgb { 208 211 212 }
-	color_ui = rgb { 208 211 212 }
-}
-TKS = {
-	color = rgb { 126 189 221 }
-	color_ui = rgb { 126 189 221 }
 }

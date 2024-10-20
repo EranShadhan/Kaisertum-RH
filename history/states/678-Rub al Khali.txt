@@ -2,19 +2,22 @@
 state={
 	id=678
 	name="STATE_678"
-
+	impassable = yes
 	history={
 		owner = SAU
+		buildings = {
+			infrastructure = 0
+
+		}
 		add_core_of = SAU
 
 	}
 
 	provinces={
-		4932 8118 10870 12740 12768 13815 13818 
+		4932 5081 8118 
 	}
-	manpower=742
+	manpower=42
 	buildings_max_level_factor=1.000
 	state_category=wasteland
-	impassable = yes
 	local_supplies=0.000
 }

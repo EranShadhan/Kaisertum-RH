@@ -1,34 +1,32 @@
-
-state={
+state= {
 	id=537
 	name="STATE_537"
+	manpower = 295196
 	resources={
-		oil=3.000
+		oil=3 # was: 4
 	}
+	
+	state_category = rural
 
-	history={
+	history= {
 		owner = JAP
 		add_core_of = JAP
-		add_claim_by = SOV
+		
 		buildings = {
 			infrastructure = 2
 			12446 = {
 				naval_base = 1
 
 			}
-
 		}
 		victory_points = {
-			12446 1 
+			12446 1
 		}
 
 	}
+	provinces=
+	{
+1322 1820 12446 	}
 
-	provinces={
-		1322 1820 12446 13958 
-	}
-	manpower=295196
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
+	local_supplies=0.0 
 }

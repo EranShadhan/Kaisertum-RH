@@ -1,7 +1,7 @@
 ﻿###########################
 # German Events
 ###########################
-add_namespace = FP_germany
+
 add_namespace = germany
 
 country_event = {
@@ -213,54 +213,4 @@ country_event = {
 			news_event = { hours = 6 id = news.36 }
 		}
 	}
-}
-
-country_event = {
-	id = FP_germany.1
-	title = FP_germany.1.t
-	desc = FP_germany.1.d
-	picture = GFX_report_event_german_speech
-
-	is_triggered_only = yes
-
-	option = {
-		name = FP_germany.1.a
-		ai_will_do = {
-			factor = 100
-		}
-		ROOT = { add_ideas = german_customs_union_member }
-		hidden_effect = { remove_ideas = french_phoenix_membership
-		remove_ideas = no_customs_union }
-		GER = { add_offsite_building = { type = industrial_complex level = 1 } }
-	}
-	option = {
-		name = FP_germany.1.b
-		
-	}
-	
-}
-
-country_event = {
-	id = FP_germany.2
-	title = FP_germany.2.t
-	desc = FP_germany.2.d
-	picture = GFX_report_event_german_speech
-
-	is_triggered_only = yes
-
-	option = {
-		name = FP_germany.2.a
-		ai_will_do = {
-			factor = 100
-		}
-		ROOT = { add_ideas = german_customs_union_member }
-		hidden_effect = { remove_ideas = french_phoenix_membership
-		remove_ideas = no_customs_union }
-		set_global_flag = SWE_accepted_ger_trade
-	}
-	option = {
-		name = FP_germany.2	.b
-		
-	}
-	
 }

@@ -92,6 +92,7 @@ if = {
 set_research_slots = 3
 
 add_ideas = {
+	german_customs_union_member
 }
 
 set_stability = 0.60

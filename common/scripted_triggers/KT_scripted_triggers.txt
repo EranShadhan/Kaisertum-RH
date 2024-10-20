@@ -191,9 +191,3 @@ is_czechoslovak_tag = {
 		original_tag = SLO
 	}
 }
-
-is_hungarian_tag = {
-	OR = {
-		original_tag = HUN
-	}
-}

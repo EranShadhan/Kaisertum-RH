@@ -92,15 +92,7 @@ guiTypes = {
 			name = "intro_gui_button_four"
 			position = { x = 365 y = -18 }
 			quadTextureSprite ="GFX_button_intro"
-			buttonText = "Changelog"
-			buttonFont = "Main_22"
-			clicksound = click_ok
-			oversound = ui_menu_over
-		}
-		buttonType = {
-			name = "intro_gui_button_five"
-			position = { x = 480 y = -5 }
-			quadTextureSprite ="GFX_setting_button"
+			buttonText = "Mod Options"
 			buttonFont = "Main_22"
 			clicksound = click_ok
 			oversound = ui_menu_over

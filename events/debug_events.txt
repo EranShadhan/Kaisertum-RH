@@ -19,7 +19,6 @@ country_event = {
 
 	option = {
 		name = excellent
-		set_cosmetic_tag = EUR_UNIFIED
 	}
 }
 

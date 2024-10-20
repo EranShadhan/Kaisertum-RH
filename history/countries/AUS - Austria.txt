@@ -35,7 +35,7 @@ add_ideas = {
 		GER_aid_to_austria 
 	
 }
-recruit_character = AUS_karl
+recruit_character = AUS_otto_von_habsburg
 recruit_character = AUS_kurt_schuschnigg
 recruit_character = AUS_karl_renner
 recruit_character = AUS_arthur_seyss-inquart

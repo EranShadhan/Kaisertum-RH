@@ -14,8 +14,4 @@ opinion_modifiers = {
 		value = -25
 		decay = 0.5
 	}
-	
-	RUF_deviation_from_france = {
-		value = -25
-	}
 }
