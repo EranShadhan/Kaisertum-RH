@@ -1,0 +1,11 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_portrait_italy_amadeo_bordiga"
+		texturefile = "gfx/leaders/ITA/portrait_ITA_amadeo_bordiga.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_italy_lanza_scalea"
+		texturefile = "gfx/leaders/ITA/portrait_ITA_lanza_scalea.dds"
+	}
+}

@@ -101,14 +101,6 @@ spriteTypes = {
 		name = "GFX_portrait_BRA_washington_luis"
 		texturefile = "gfx/leaders/BRA/Portrait_Brazil_Luis_washington.dds"
 	}
-	spriteType = {
-		name = "GFX_portrait_italy_amadeo_bordiga"
-		texturefile = "gfx/leaders/ITA/portrait_ITA_amadeo_bordiga.dds"
-	}
-	spriteType = {
-		name = "GFX_portrait_italy_lanza_scalea"
-		texturefile = "gfx/leaders/ITA/portrait_ITA_lanza_scalea.dds"
-	}
 	SpriteType = {
 		name = "GFX_AUS_karl"
 		texturefile = "gfx/leaders/AUS/AUS_karl.png"
