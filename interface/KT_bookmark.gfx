@@ -23,4 +23,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/book_button.dds"
 	}
 
+	spriteType = {
+		name = "GFX_setting_button"
+		texturefile = "gfx/interface/setting_button.dds"
+	}
+
 }
