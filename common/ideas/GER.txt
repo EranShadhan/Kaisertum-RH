@@ -274,25 +274,7 @@ GER_german_breadbasket_to_ukr = {
 				war_support_factor = 0.05
 			}
 		}
-		GER_powerful_unions = {
-
-			picture = NORDIC_northern_union
-			
-			allowed = {
-			}
-
-			allowed_civil_war = {
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				communism_drift = 0.01
-				consumer_goods_expected_value = 0.15
-				political_power_factor = -0.15
-				custom_modifier_tooltip = GER_strikes_by_unions
-			}
-		}
+		
 		GER_less_powerful_unions = {
 
 			picture = NORDIC_northern_union
