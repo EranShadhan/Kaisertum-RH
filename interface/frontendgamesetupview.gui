@@ -882,26 +882,34 @@ guiTypes = {
 #			alwaystransparent = yes
 #		}
 
-#		iconType = {
-#			name = "country_gold_1"
-#			quadTextureSprite ="GFX_country_selection_gold"
-#			position = { x = 15 y = 45 }
-#			Orientation = "UPPER_LEFT"
-#			alwaystransparent = yes
-#		}
+		iconType = {
+			name = "country_gold_1"
+			quadTextureSprite ="GFX_country_selection_gold"
+			position = { x = 15 y = 46 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
 
 #		iconType = {
 #			name = "country_gold_2"
 #			quadTextureSprite ="GFX_country_selection_gold"
-#			position = { x = 165 y = 45 }
+#			position = { x = 165 y = 46 }
 #			Orientation = "UPPER_LEFT"
 #			alwaystransparent = yes
 #		}
 
 		iconType = {
+			name = "country_gold_4"
+			quadTextureSprite ="GFX_country_selection_gold"
+			position = { x = 465 y = 46 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+
+		iconType = {
 			name = "country_gold_6"
 			quadTextureSprite ="GFX_country_selection_gold"
-			position = { x = 765 y = 45 }
+			position = { x = 765 y = 46 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
