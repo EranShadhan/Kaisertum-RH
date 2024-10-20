@@ -121,4 +121,8 @@ spriteTypes = {
 		name = "GFX_UBD_Adolf_Friedrich"
 		textureFile = "gfx/leaders/UBD/portrait_ubd_adolf_friedrich.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_NAT_george_villiers"
+		textureFile = "gfx/leaders/NAT/Portrait_Natal_George_Villiers.png"
+	}
 }

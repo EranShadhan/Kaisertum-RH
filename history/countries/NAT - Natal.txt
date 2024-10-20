@@ -7,27 +7,7 @@ set_technology = {
 
 set_convoys = 20
 
-recruit_character = NMB_stc
-recruit_character = NMB_aco2
-recruit_character = NMB_aa2
-recruit_character = NMB_ncs
-recruit_character = NMB_nt
-recruit_character = NMB_acas
-recruit_character = NMB_acd2
-recruit_character = NMB_democratic_guy
-recruit_character = NMB_mt
-recruit_character = NMB_ai2
-recruit_character = NMB_coi
-recruit_character = NMB_acr
-recruit_character = NMB_pot
-recruit_character = NMB_awt
-recruit_character = NMB_communist_guy
-recruit_character = NMB_ncm
-recruit_character = NMB_acgs
-recruit_character = NMB_nccr
-recruit_character = NMB_fascist_guy
-recruit_character = NMB_ar
-
+recruit_character = NAT_george_villiers
 
 set_politics = {
 	ruling_party = neutrality
@@ -36,8 +16,8 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 25
-	fascism = 20
+	democratic = 10
+	fascism = 5
 	communism = 5
-	neutrality = 50
+	neutrality = 80
 }
