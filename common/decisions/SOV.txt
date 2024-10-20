@@ -1,0 +1,97 @@
+SOV_balance_of_power_category = {
+	SOV_expatriate_the_okhrana = {
+        picture = GFX_decision_generic_nationalism
+		priority = 91
+		visible = {
+		}
+        cost = 30
+        fire_only_once = no
+		complete_effect = {
+			add_power_balance_value = {
+                id = SOV_power_balance
+                value = 0.15
+                tooltip_side = SOV_default_right_side
+            }
+		}
+	}
+    SOV_exploit_military_corruption = {
+        picture = GFX_decision_generic_break_treaty
+		priority = 91
+		visible = {
+		}
+        fire_only_once = no
+        cost = 50
+		complete_effect = {
+			add_power_balance_value = {
+                id = SOV_power_balance
+                value = -0.25
+                tooltip_side = SOV_default_left_side
+                stability = -0.05
+            }
+		}
+	}
+    SOV_assasinate_savinkov = {
+        picture = GFX_decision_generic_assassination
+		visible = {
+		}
+        cost = 150
+        fire_only_once = yes
+		complete_effect = {
+            hidden_effect = {
+                add_country_flag = SOV_savinkov_dead
+            }
+			add_power_balance_value = {
+                id = SOV_power_balance
+                value = 0.75
+                tooltip_side = SOV_default_right_side
+                stability = -0.15
+            }
+		}
+	}
+    SOV_blackmail_military_officials = {
+        picture = GFX_decision_generic_prepare_civil_war
+		priority = 91
+		visible = {
+		}
+        cost = 20
+        fire_only_once = no
+		complete_effect = {
+			add_power_balance_value = {
+                id = SOV_power_balance
+                value = -0.1
+                tooltip_side = SOV_default_left_side
+            }
+		}
+	}
+    SOV_send_spies_in_the_okhrana = {
+        picture = GFX_decision_generic_intelligence_operation
+		priority = 91
+		visible = {
+		}
+        cost = 40
+        fire_only_once = no
+		complete_effect = {
+			add_power_balance_value = {
+                id = SOV_power_balance
+                value = 0.2
+                tooltip_side = SOV_default_right_side
+            }
+		}
+	}
+    SOV_create_military_disarray = {
+        picture = GFX_decision_generic_ignite_civil_war
+		priority = 91
+		visible = {
+		}
+        cost = 50
+        fire_only_once = no
+		complete_effect = {
+			add_power_balance_value = {
+                id = SOV_power_balance
+                value = -0.2
+                tooltip_side = SOV_default_left_side
+            }
+		}
+	}
+    
+}

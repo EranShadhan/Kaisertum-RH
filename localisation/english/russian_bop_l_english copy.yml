@@ -1,0 +1,16 @@
+﻿l_english:
+ SOV_power_balance:0 "The Okhrana-Armiya Split"
+ 
+ SOV_mid_range:0 "Equilibrium"
+ 
+ SOV_default_left_side:0 "Empowering the Okhrana"
+ SOV_left_side_range:0 "Discreditation of the Military"
+ SOV_middle_left_side_range:0 "Public Support of the Okhrana"
+ SOV_far_left_side_range:0 "Substantial Influence of the Okhrana"
+ SOV_further_left_side_range:0 "Military Puppeted"
+ 
+ SOV_default_right_side:0 "Entrusting the Military"
+ SOV_right_side_range:0 "Dishonouring the Okhrana"
+ SOV_middle_right_side_range:0 "Civilian Support of the Military"
+ SOV_far_right_side_range:0 "Heavy Influence of the Military"
+ SOV_further_right_side_range:0 "Okhrana Absorbed"
