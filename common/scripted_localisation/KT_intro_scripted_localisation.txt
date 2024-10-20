@@ -179,6 +179,20 @@ defined_text = {
 		}
 		localization_key = IRE_NEW_DECADE_DESC
 	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = SAF
+		}
+		localization_key = SAF_NEW_DECADE_DESC
+	}
+	text = {
+		trigger = {
+			check_variable = { show_lore > 0.0 }
+			original_tag = NAT
+		}
+		localization_key = NAT_NEW_DECADE_DESC
+	}
 }
 
 defined_text = { 
