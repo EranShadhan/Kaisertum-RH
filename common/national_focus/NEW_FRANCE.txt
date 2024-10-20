@@ -228,7 +228,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_ideas = FRA_nationalism
 		}
 	}
 	focus = {
@@ -241,7 +241,7 @@
 		relative_position_id = FRA_promote_nationalism
 		
 		
-		allow_branch = { 
+		allow_branch = {  
 			
 		}
 
@@ -255,7 +255,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = FRA_nationalism
+				add_idea = FRA_propaganda_films
+			}
 		}
 	}
 	focus = {
@@ -287,7 +290,7 @@
 	}
 	focus = {
 		id = FRA_create_ep
-		icon = GFX_
+		icon = GFX_focus_FRA_create_the_ep
 		x = -1
 		y = 1
 		
