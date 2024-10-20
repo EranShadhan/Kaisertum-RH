@@ -24,12 +24,16 @@
 		x = 2
 		y = 0
 		
-		prerequisite = {}
+		available = {
+			always = no
+		}
+
+		prerequisite = {
+			
+		}
 
 		allow_branch = { 
-			NOT = {
-				has_country_flag = focus_picked
-			}
+			
 		}
 
 		cost = 5
@@ -107,6 +111,70 @@
 
 		completion_reward = {
 			
+			add_timed_idea = {
+				idea = FRA_commie_repression
+				days = 270
+			}
+			31 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			806 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			19 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			25 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			23 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			33 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			22 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			26 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			20 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			32 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			21 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			851 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
 		}
 	}
 	focus = {
@@ -138,7 +206,7 @@
 	}
 	focus = {
 		id = FRA_promote_nationalism
-		icon = GFX_
+		icon = GFX_focus_FRA_promote_militarism
 		x = -3
 		y = 1
 		
@@ -147,7 +215,7 @@
 		
 		
 		allow_branch = { 
-			
+			 
 		}
 
 		cost = 5
@@ -492,7 +560,7 @@
 	}
 	focus = {
 		id = FRA_create_the_association_of_young_soldiers
-		icon = GFX_
+		icon = GFX_focus_FRA_unionofyoungsoldier
 		x = -1
 		y = 2
 		
@@ -2897,7 +2965,7 @@
 	}
 	focus = {
 		id = FRA_Doriot
-		icon = GFX_
+		icon = GFX_focus_FRA_doriot
 		x = 3
 		y = 1
 		
@@ -2951,7 +3019,66 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			31 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			806 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			19 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			25 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			23 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			33 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			22 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			26 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			20 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			32 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			21 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			851 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
 		}
 	}
 	focus = {
@@ -3173,7 +3300,7 @@
 	}
 	focus = {
 		id = FRA_gaulic_race
-		icon = GFX_
+		icon = GFX_focus_FRA_gaulic_race
 		x = 1
 		y = 1
 		
@@ -3450,7 +3577,66 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			31 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			806 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			19 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			25 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			23 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			33 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			22 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			26 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			20 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			32 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			21 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			851 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
 		}
 	}
 	focus = {
@@ -3838,7 +4024,66 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			31 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			806 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			19 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			25 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			23 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			33 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			22 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			26 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			20 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			32 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			21 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
+			851 =  {
+				remove_dynamic_modifier = { 
+					modifier = FRA_communists
+				}
+			}
 		}
 	}
 	focus = {
