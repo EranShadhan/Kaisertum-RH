@@ -209,6 +209,22 @@ ideas = {
 			}
 			removal_cost = -1
 		}
+		FRA_commie_repression = {
+			picture = FRA_the_failure_of_marseille
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				communism_drift = -0.15
+				neutrality_drift = 0.1
+				fascism_drift = 0.1
+			}
+			removal_cost = -1
+		}
  FRA_spirit_of_the_war_1 = {
 
 			

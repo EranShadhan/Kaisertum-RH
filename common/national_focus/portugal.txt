@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 ﻿focus_tree = {
 	id = portuguese_focus
 	
@@ -19,3 +20,203 @@
 	default = no
 
 }
+=======
+focus_tree = {
+    id = portuguese_focus
+    
+    country = {
+        factor = 0
+        modifier = {
+            add = 20
+            tag = POR
+        }
+
+    }
+    
+    default = no
+
+	continuous_focus_position = { x = 20 y = 1200 }
+
+    focus = {
+		id = POR_solidifying_the_kings_dominance
+		icon = GFX_goal_generic_major_war
+		mutually_exclusive = { focus = POR_solidifying_the_kings_dominance=POR_preserve_constitutionalism=POR_depose_the_german_prince
+        y = 0
+		x = 3
+		# relative_position_id = POR_crack_down_on_extremism
+		offset = {
+			x = -8
+			y = 0
+			trigger = {
+				OR = {
+					NOT = { has_dlc = "viva la Resistance" }
+					AND = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+						has_completed_focus = POR_solidifying_the_kings_dominance
+					}
+				}
+			}
+		}
+
+		 cost = 10}
+         ai_will_do = {
+			factor = 4
+		}
+
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_popularity = {neutrality 10}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					}
+					mark_focus_tree_layout_dirty = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+			hidden_effect = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					}
+					mark_focus_tree_layout_dirty = yes
+				}
+			}
+		}
+	}
+	POR_crack_down_on_extremism
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = POR_crack_down_on_extremism }
+		x = -1
+		y = 1
+		relative_position_id = POR_crack_down_on_extremism
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_party_popularity communism -10
+			add_party_popularity fascism -10
+			
+			}
+		}
+	}
+	focus = {
+		id = POR_all_eyes_on_europe
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = POR_crack_down_on_extremism}
+		x = -1
+		y = 1
+		relative_position_id = POR_crack_down_on_extremism
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+			is_subject = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 100
+			IF = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				
+			}
+		}
+	}
+	focus = {
+		id = POR_Invasion!
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = { focus = POR_all_eyes_on_europe }
+		will_lead_to_war_with = SPA SPR
+		x = -1
+		y = 1
+		relative_position_id = POR_all_eyes_on_europe
+
+		cost = 10
+
+		available = { is_puppet = no }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				date < 1937.1.1
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = { instant_wargoal = SPR SPA }
+			
+>>>>>>> Stashed changes

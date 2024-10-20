@@ -1,0 +1,11 @@
+ITA_add_correct_mafia_rising_modifier_version = {
+	if = {
+		limit = {
+			has_dlc = "La Resistance"
+		}
+		add_dynamic_modifier = { log = test }
+	}
+	else = {
+		add_dynamic_modifier = { log = test }
+	}
+}

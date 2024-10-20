@@ -48,4 +48,9 @@ leader_traits = {
 		army_attack_factor = 0.1
 		supply_consumption_factor = -0.1
 	}
+	the_romanian_enjoyer ={
+		random = no
+		equipment_capture = 1
+		compliance_growth_on_our_occupied_states = 0.5
+	}
 }

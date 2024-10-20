@@ -49,6 +49,13 @@ country_event = {
 				set_province_controller = 5317
 				set_province_controller = 8050
 				set_province_controller = 5000
+				set_province_controller = 1997
+				set_province_controller = 2052
+				set_province_controller = 13989
+				set_province_controller = 13991
+				set_province_controller = 13984
+				set_province_controller = 13983
+				set_province_controller = 13979
 				add_ideas = VEN_fast_changing_frontlines
 				set_country_flag = DEMOCRATIC_VENEZUELA
 				set_cosmetic_tag = DEMOCRATIC_VENEZUELA
@@ -90,6 +97,78 @@ country_event = {
             }
 		}
 	}
+	
+	
+	option = {
+	    name = venezuela_political_event.2.b
+		VEN = {
+			start_civil_war = {
+				ideology = democratic
+				size = 0.5
+				capital = 1108
+				states = {
+					489 1108 1107 1112
+				}
+				load_oob = VEN_1930_antifascist
+				set_province_controller = 4942
+				set_province_controller = 4892
+				set_province_controller = 5056
+				set_province_controller = 7915
+				set_province_controller = 10849
+				set_province_controller = 13362
+				set_province_controller = 5317
+				set_province_controller = 8050
+				set_province_controller = 5000
+				set_province_controller = 1997
+				set_province_controller = 2052
+				set_province_controller = 13989
+				set_province_controller = 13991
+				set_province_controller = 13984
+				set_province_controller = 13983
+				set_province_controller = 13979
+				add_ideas = VEN_fast_changing_frontlines
+				set_country_flag = DEMOCRATIC_VENEZUELA
+				set_cosmetic_tag = DEMOCRATIC_VENEZUELA
+				
+				GER = {
+					add_ai_strategy= {
+						type = send_volunteers_desire
+						id = "DVE"
+						value = 20000
+					}
+					add_relation_rule_override = {
+						target = DVE
+						can_send_volunteers = yes 
+					}
+				}
+			}
+			change_tag_from = DVE
+			set_cosmetic_tag = FASCIST_VENEZUELA
+			delete_units = {
+				division_template = "División de Caballería"
+				disband = no
+			}
+			delete_units = {
+				division_template = "División de Infanteria"
+				disband = no
+			}
+			load_oob = VEN_1930_pro_fascist_coup
+			set_global_flag = venezuelan_civil_war
+			add_ideas = VEN_fast_changing_frontlines
+			news_event = venezuela_political_event.1
+		}
+		FRA = {
+			add_ai_strategy= {
+				type = send_volunteers_desire
+				id = "VEN"
+				value = 20000
+			}
+            add_relation_rule_override = {
+                target = VEN
+                can_send_volunteers = yes 
+            }
+		}
+	}
 }
 
 country_event = {
@@ -100,7 +179,7 @@ country_event = {
 	
 	trigger = {
 		has_global_flag = venezuelan_civil_war
-		1108 = {
+		489 = {
 			controller = { 
 				has_government = fascism
 			}
@@ -113,7 +192,7 @@ country_event = {
 	    name = venezuela_political_event.3.a
 		
 		COL = {
-			transfer_state = 1108
+			transfer_state = 489
 			transfer_state = 1107
 			add_threat = 3
 		}

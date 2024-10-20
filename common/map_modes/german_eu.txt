@@ -1,21 +1,22 @@
 scripted_map_modes = {
 	GERMAN_eu = {
 		top = {
-			type = country
+			type = state
 			color = {
 				FROM = {
 					
 					if = {
 						limit = {
-							original_tag = GER
+							owner = { original_tag = GER }
+							
 						}
 						set_temp_variable = { red = 0.1 }
 						set_temp_variable = { green = 0.1 }
 						set_temp_variable = { blue = 0.1 }
 						
 					}
-					else_if = { limit = { OR = { has_idea = german_customs_union_member 
-					                              has_idea = german_customs_union_member2}}
+					else_if = { limit = owner = { { OR = { has_idea = german_customs_union_member 
+					                              has_idea = german_customs_union_member2}}}
 						set_temp_variable = { red = 0.3 }
 						set_temp_variable = { green = 0.3 }
 						set_temp_variable = { blue = 0.3	 }
@@ -33,7 +34,7 @@ scripted_map_modes = {
 				FROM = {
 					if = {
 						limit = { 
-							has_idea = french_phoenix_membership 
+							owner = {has_idea = french_phoenix_membership} 
 						}
 						set_temp_variable = { red = 0.3 }
 						set_temp_variable = { green = 0.3 }
@@ -47,7 +48,7 @@ scripted_map_modes = {
 				FROM = {
 					if = {
 						limit = {
-							has_idea = east_asia_trade_leader
+							owner={has_idea = east_asia_trade_leader}
 						}
 						set_temp_variable = { red = 0.7 }
 						set_temp_variable = { green = 0.1 }
@@ -56,7 +57,9 @@ scripted_map_modes = {
 					}
 					else_if = {
 						limit = { 
+							owner = {
 							has_idea = east_asia_trade_membership 
+							}
 						}
 						set_temp_variable = { red = 0.7 }
 						set_temp_variable = { green = 0.3 }
@@ -64,6 +67,7 @@ scripted_map_modes = {
 					}
 					else_if = { 
 						limit = {
+							owner = {
 							OR = {
 								NOT = { 
 									has_idea = french_phoenix_membership
@@ -76,6 +80,7 @@ scripted_map_modes = {
 									} 
 								}
 							}
+						}
 						set_temp_variable = { alpha = 0.1}
 						set_temp_variable = { thickness = 10.0 }
 					}

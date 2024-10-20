@@ -1,0 +1,35 @@
+leader_traits = {
+
+	ROM_minister_of_the_interior = {
+	    random = no
+		stability_weekly = 0.01
+		political_power_gain = 0.05
+	}
+
+	ROM_kings_advisor = {
+	    random = no
+		neutrality_drift = 0.05
+		political_power_cost = 0.02
+	}
+
+	ROM_foreign_minister ={
+		random = no
+		consumer_goods_factor = -0.075
+		trade_opinion_factor = 0.15 
+	}
+
+	ROM_diplomatic_advisor = {
+		random = no
+		political_power_gain = 0.05
+		political_power_cost = -0.01
+		stability_factor = 0.05
+	}
+
+	ROM_stabilizator = {
+		random = no
+		stability_factor = 0.05
+		political_power_factor = 0.03
+		compliance_gain = 0.1
+	}
+
+}

@@ -1,0 +1,28 @@
+state={
+	id=1111
+	name="STATE_1111"
+
+	history={
+		owner = VEN
+		add_core_of = VEN
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 1
+			10912 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = VEN
+	}
+
+	provinces={
+		8080 10767 10823 10912 13994 13995 13996 13997 13999 14013 
+	}
+	manpower=246217
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -97,6 +97,9 @@ focus_tree = {
 			add_political_power = 100
 			add_stability = 0.1
 			add_ideas = { RUF_power_struggle }
+			set_power_balance = {
+				id = RUF_power_balance
+			}
 		}
 		ai_will_do = {
 			factor = 5

@@ -138,17 +138,7 @@
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 5
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 5
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 5
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -156,7 +146,7 @@
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -164,7 +154,7 @@
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 5
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -193,22 +183,7 @@
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 5
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 5
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 5
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 5
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -216,7 +191,7 @@
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 5
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -375,6 +350,153 @@
 
 		completion_reward = {
 			add_ideas = RUS_suppressing_political_opponents
+		}
+		ai_will_do = {
+			factor = 10
+    	}
+
+	}
+	focus = {
+		id = SOV_guardians_of_orthodoxy
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -3
+		y = 1
+		cost = 5
+		relative_position_id = SOV_securing_the_state
+		prerequisite = { focus = SOV_securing_the_state }
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_ideas = RUS_guardians_of_orthodoxy
+		}
+		ai_will_do = {
+			factor = 10
+    	}
+
+	}
+	focus = {
+		id = SOV_protector_of_the_southern_slavs
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 1
+		y = 1
+		cost = 5
+		relative_position_id = SOV_guardians_of_orthodoxy
+		prerequisite = { focus = SOV_guardians_of_orthodoxy }
+
+		available = {
+
+		}
+
+		completion_reward = {
+			YUG = {
+
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+				
+			}
+			SER = {
+
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+				
+			}
+			BUL = {
+
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+				
+			}
+			
+		}
+		ai_will_do = {
+			factor = 10
+    	}
+
+	}
+	focus = {
+		id = SOV_call_of_the_motherland
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 2
+		y = 2
+		cost = 5
+		relative_position_id = SOV_guardians_of_orthodoxy
+		prerequisite = { focus = SOV_protector_of_the_southern_slavs }
+		prerequisite = { focus = SOV_extinguish_enemies }
+
+		available = {
+
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = RUS_guardians_of_orthodoxy_2
+				remove_idea = RUS_guardians_of_orthodoxy
+			}
+			
+		}
+		ai_will_do = {
+			factor = 10
+    	}
+
+	}
+	focus = {
+		id = SOV_continue_russification
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = SOV_call_of_the_motherland
+		prerequisite = { focus = SOV_call_of_the_motherland }
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_ideas = RUS_state_sponsored_russification
+			
+		}
+		ai_will_do = {
+			factor = 10
+    	}
+
+	}
+
+
+# 	░░░░░██╗██╗░░██╗░█████╗░███╗░░██╗  ██████╗░██╗░░░░░░██████╗  ██████╗░███████╗░█████╗░██████╗░
+# 	░░░░░██║██║░░██║██╔══██╗████╗░██║  ██╔══██╗██║░░░░░██╔════╝  ██╔══██╗██╔════╝██╔══██╗██╔══██╗
+# 	░░░░░██║███████║██║░░██║██╔██╗██║  ██████╔╝██║░░░░░╚█████╗░  ██████╔╝█████╗░░███████║██║░░██║
+# 	██╗░░██║██╔══██║██║░░██║██║╚████║  ██╔═══╝░██║░░░░░░╚═══██╗  ██╔══██╗██╔══╝░░██╔══██║██║░░██║
+# 	╚█████╔╝██║░░██║╚█████╔╝██║░╚███║  ██║░░░░░███████╗██████╔╝  ██║░░██║███████╗██║░░██║██████╔╝
+# 	░╚════╝░╚═╝░░╚═╝░╚════╝░╚═╝░░╚══╝  ╚═╝░░░░░╚══════╝╚═════╝░  ╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═════╝░
+
+	
+	focus = {
+		id = SOV_1930_constitutient_assembly
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = SOV_continue_russification
+		prerequisite = { focus = SOV_continue_russification }
+		prerequisite = { focus = SOV_great_minds_of_russia }
+
+		available = {
+
+		}
+
+		completion_reward = {
+			# there will be a chain of constitutional assembly events which will lead to kerensky or the russian collapse
+			
 		}
 		ai_will_do = {
 			factor = 10

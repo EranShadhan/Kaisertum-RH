@@ -183,6 +183,10 @@ ideologies = {
 			}
 			junta_fas = {
 			}
+			legionarism = {
+				color = { 0 51 0 }
+				can_be_randomly_selected = no
+			}
 		}
 
 		dynamic_faction_names = {

@@ -28,7 +28,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 10855
+		location = 13983
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -98,7 +98,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 1944
+		location = 13993
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3

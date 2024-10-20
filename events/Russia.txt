@@ -1,3 +1,81 @@
+add_namespace = SOV_events
+
+####### 1930 Constitutient Assembly
+
+### Kerensky sets up the Assembly
+country_event = {
+	id = SOV_events.1
+	title = SOV_events.1.t
+	desc = SOV_events.1.d
+	
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+
+	option = {
+		name = SOV_events.1.a
+		add_political_power = 50
+		hidden_effect = {
+			country_event = {
+				id = SOV_events.2
+				days = 14
+			}
+		}
+	}
+}
+
+### Discussions begin!
+country_event = {
+	id = SOV_events.2
+	title = SOV_events.2.t
+	desc = SOV_events.2.d
+	
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+
+	option = {
+		name = SOV_events.2.a
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+### Discussion: Elections
+country_event = {
+	id = SOV_events.3
+	title = SOV_events.3.t
+	desc = SOV_events.3.d
+	
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+
+	option = { # Free and Fair Elections
+		name = SOV_events.3.a
+		
+		hidden_effect = {
+			
+		}
+	}
+	option = { # Unfair Elections
+		name = SOV_events.3.b
+		
+		hidden_effect = {
+			
+		}
+	}
+	option = { # No Elections
+		name = SOV_events.3.c
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
 add_namespace = RUS_collapse
 
 ### Leningrad

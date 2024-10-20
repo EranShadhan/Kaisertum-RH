@@ -24,11 +24,25 @@
  RUS_events.5.a:0 "Keep it as an advisory body"
  RUS_events.5.b:0 "Make it confirm laws"
  
+ SOV_events.1.t:0 "Constitutient Assembly of 1930"
+ SOV_events.1.d:0 "People are clearly not happy with the state of the government. Technically, the Provisional Government is not fully legitimate and is in need of a reform. By setting up the Assembly, Kerensky hopes to cease the protests and somehow stay in power after this.\n\nHowever, if the people won't agree with the new Constitution, it could lead to a total collapse of the government..."
+ SOV_events.1.a:0 "Let's see how this goes"
+ 
+ SOV_events.2.t:0 "Members of Assembly Appointed"
+ SOV_events.2.d:0 "Members of the Constitutient Assembly have been recently appointed by Kerensky. The Assembly consists of members of which 114 were directly elected, 38 were appointed by Kerensky and the rest were government ministers. The Assembly will begin its work in a week, after everyone arrives to Moscow, where all of the discussion will take place."
+ SOV_events.2.a:0 "Let the Discussions Begin!"
+ 
+ SOV_events.3.t:0 "Discussion: Elections"
+ SOV_events.3.d:0 "If elections are allowed in Russia, there is a high chance Kerensky will lose his power, so he might become... angry..."
+ SOV_events.3.a:0 "Free and Fair Elections"
+ SOV_events.3.b:0 "Unfair Elections"
+ SOV_events.3.c:0 "No Elections"
+ 
  RUS_collapse.1.t:0 "Letter To: Alexander Kerensky"
  RUS_collapse.1.d:0 "People have decided to take the matter into their own hands. They are rioting all across the country. It can't be stopped now. I hope you understand the damage you have done. It's very likely that new governments will appear - all because of you...\n\nIt is highly recommended that you retire and watch the Russian Collapse from far away."
  RUS_collapse.1.a:0 "So be it."
  
- RUS_collapse_no_content: "The content for this country is §Rnot done§! yet! It is recommended you choose §Ganother country§!. §RThough, who am I to stop you, right?...§!\n"
+ RUS_collapse_no_content: "Content for this country is §RWIP§!!\n"
  
  RUS_collapse.12.t:0 "Choose country"
  RUS_collapse.12.d:0 ""
