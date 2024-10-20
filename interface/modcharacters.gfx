@@ -105,4 +105,8 @@ spriteTypes = {
 		name = "GFX_portrait_italy_lanza_scalea"
 		texturefile = "gfx/leaders/ITA/portrait_ITA_lanza_scalea.dds"
 	}
+	spriteType = {
+		name = "GFX_UBD_Adolf_Friedrich"
+		textureFile = "gfx/leaders/UBD/portrait_ubd_adolf_friedrich.dds"
+	}
 }

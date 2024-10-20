@@ -100,7 +100,7 @@ bookmarks = {
 		}
 
 		"---"={
-			history = "OTHER_NEW_DECADE_DESC"
+			history = "OTHER_GATHERING_STORM_DESC"
 		}
 		###  MINORS ###
 		"TUR"={
