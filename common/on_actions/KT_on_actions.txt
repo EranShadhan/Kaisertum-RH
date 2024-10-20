@@ -188,6 +188,34 @@ on_actions = {
 			}
 		}
 	}
+	on_monthly_GER = {
+		effect = {
+			if = {
+				limit = {
+                  GER = { has_completed_focus = GER_renew_swedisn_trade }
+				  has_global_flag = SWE_accepted_ger_trade
+				}
+
+				add_to_variable = { GER_narvik_shipments = 1 }
+				if = {
+					limit = {
+						check_variable = { GER_narvik_shipments > 3 }
+					}
+
+					add_offsite_building = {
+						type = industrial_complex
+						level = 1
+					}
+                    add_offsite_building = {
+						type = arms_factory
+						level = 1
+					}
+					set_variable = { GER_narvik_shipments = 0 }
+					add_to_variable = { GER_narvik_civs = 1 }
+				}
+			}
+		}
+	}
 
 	on_state_control_changed = {
 		effect = {
