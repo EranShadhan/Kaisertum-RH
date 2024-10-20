@@ -1,5 +1,5 @@
 ﻿capital = 221 #Kharkiv
-#or 1046 Zaporizhzhia
+#or 259 Poltava
 
 oob = "EUA_1936"
 
