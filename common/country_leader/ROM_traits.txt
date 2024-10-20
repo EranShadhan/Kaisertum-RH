@@ -9,12 +9,12 @@ leader_traits = {
 	ROM_kings_advisor = {
 	    random = no
 		neutrality_drift = 0.05
-		stability_weekly = 0.02
+		political_power_cost = 0.02
 	}
 
 	ROM_foreign_minister ={
 		random = no
-		consumer_goods_factor = -0.75
+		consumer_goods_factor = -0.075
 		trade_opinion_factor = 0.15 
 	}
 
