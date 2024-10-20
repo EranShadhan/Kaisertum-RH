@@ -49,6 +49,1226 @@ focus_tree = {
 #		}
 #	}
 
+     ################
+     ##### ARMY #####
+     ################
+	focus = {
+		id = UKR_army
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 46
+		y = 0
+
+	}
+	focus = {
+		id = UKR_uaf
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_army
+		}
+		x = 37
+		y = 1
+
+	}
+	focus = {
+		id = UKR_patriotic_education
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_uaf
+		}
+		mutually_exclusive = {
+			focus = UKR_prof_army
+			focus = UKR_prof_army
+		}
+		x = 35
+		y = 2
+
+	}
+	focus = {
+		id = UKR_divisions
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_patriotic_education
+		}
+		x = 35
+		y = 3
+
+	}
+	focus = {
+		id = UKR_prof_army
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_uaf
+		}
+		mutually_exclusive = {
+			focus = UKR_patriotic_education
+			focus = UKR_patriotic_education
+		}
+		x = 39
+		y = 2
+
+	}
+	focus = {
+		id = UKR_modernisation
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_prof_army
+			focus = UKR_patriotic_education
+		}
+		x = 37
+		y = 3
+
+	}
+	focus = {
+		id = UKR_gw_legacy
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_modernisation
+		}
+		mutually_exclusive = {
+			focus = UKR_experimental_doctrine
+			focus = UKR_experimental_doctrine
+		}
+		x = 35
+		y = 4
+
+	}
+	focus = {
+		id = UKR_artillery
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_gw_legacy
+		}
+		x = 32
+		y = 5
+
+	}
+	focus = {
+		id = UKR_new_weapons
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_gw_legacy
+		}
+		x = 34
+		y = 5
+
+	}
+	focus = {
+		id = UKR_experimental_doctrine
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_modernisation
+		}
+		mutually_exclusive = {
+			focus = UKR_gw_legacy
+			focus = UKR_gw_legacy
+		}
+		x = 39
+		y = 4
+
+	}
+	focus = {
+		id = UKR_big_war_experience
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_experimental_doctrine
+			focus = UKR_gw_legacy
+		}
+		x = 38
+		y = 5
+
+	}
+	focus = {
+		id = UKR_general_stuff_reform
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_experimental_doctrine
+			focus = UKR_gw_legacy
+		}
+		x = 36
+		y = 5
+
+	}
+	focus = {
+		id = UKR_doctrine
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_prof_army
+		}
+		x = 39
+		y = 3
+
+	}
+	focus = {
+		id = UKR_modern_warfare
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_experimental_doctrine
+		}
+		x = 40
+		y = 5
+
+	}
+	focus = {
+		id = UKR_mobile_focus
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_experimental_doctrine
+		}
+		x = 42
+		y = 5
+
+	}
+	focus = {
+		id = UKR_develop_tanks
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_mobile_focus
+		}
+		prerequisite = {
+			focus = UKR_modern_warfare
+		}
+		x = 40
+		y = 6
+
+	}
+	focus = {
+		id = UKR_armor_production
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_develop_tanks
+		}
+		x = 40
+		y = 7
+
+	}
+	focus = {
+		id = UKR_special_forces
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_army
+		}
+		x = 43
+		y = 1
+
+	}
+	focus = {
+		id = UKR_mountain
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_special_forces
+		}
+		x = 41
+		y = 2
+
+	}
+	focus = {
+		id = UKR_mountain2
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_mountain
+		}
+		x = 41
+		y = 3
+
+	}
+	focus = {
+		id = UKR_zaz1
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_mobile_focus
+		}
+		x = 42
+		y = 6
+
+	}
+	focus = {
+		id = UKR_zaporozhets
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_zaz1
+		}
+		x = 42
+		y = 7
+
+	}
+	focus = {
+		id = UKR_expand_intelligence
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_special_forces
+		}
+		x = 43
+		y = 2
+
+	}
+	focus = {
+		id = UKR_decryption
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_expand_intelligence
+		}
+		x = 43
+		y = 3
+
+	}
+	focus = {
+		id = UKR_intellgence_war
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_decryption
+		}
+		x = 43
+		y = 4
+
+	}
+	focus = {
+		id = UKR_motorized_logistic
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_zaz1
+		}
+		x = 44
+		y = 7
+
+	}
+	focus = {
+		id = UKR_odessa_navy
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_army
+		}
+		x = 50
+		y = 1
+
+	}
+	focus = {
+		id = UKR_marines
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_odessa_navy
+		}
+		prerequisite = {
+			focus = UKR_special_forces
+		}
+		x = 45
+		y = 2
+
+	}
+	focus = {
+		id = UKR_marines2
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_marines
+		}
+		x = 45
+		y = 3
+
+	}
+	focus = {
+		id = UKR_sea_wolves
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_odessa_navy
+		}
+		x = 49
+		y = 2
+
+	}
+	focus = {
+		id = UKR_modular_construction
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_sea_wolves
+		}
+		x = 47
+		y = 3
+
+	}
+	focus = {
+		id = UKR_destroyers
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_sea_wolves
+		}
+		x = 49
+		y = 3
+
+	}
+	focus = {
+		id = UKR_submarine_effort
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_destroyers
+		}
+		prerequisite = {
+			focus = UKR_modular_construction
+		}
+		x = 49
+		y = 4
+
+	}
+	focus = {
+		id = UKR_light_cruisers
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_odessa_navy
+		}
+		x = 51
+		y = 2
+
+	}
+	focus = {
+		id = UKR_battleships
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_light_cruisers
+		}
+		x = 51
+		y = 3
+
+	}
+	focus = {
+		id = UKR_black_sea_ruler
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_battleships
+		}
+		prerequisite = {
+			focus = UKR_submarine_effort
+		}
+		x = 50
+		y = 5
+
+	}
+	focus = {
+		id = UKR_navy_doc
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_odessa_navy
+		}
+		x = 53
+		y = 2
+
+	}
+	focus = {
+		id = UKR_navy_doc1
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_navy_doc
+		}
+		x = 53
+		y = 3
+
+	}
+	focus = {
+		id = UKR_navy_aviation
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_destroyers
+			focus = UKR_battleships
+		}
+		x = 53
+		y = 4
+
+	}
+	focus = {
+		id = UKR_aviation_forces
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_army
+		}
+		x = 58
+		y = 1
+
+	}
+	focus = {
+		id = UKR_naval_bombers
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_odessa_navy
+		}
+		prerequisite = {
+			focus = UKR_aviation_forces
+		}
+		x = 55
+		y = 2
+
+	}
+	focus = {
+		id = UKR_light_air
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_aviation_forces
+		}
+		mutually_exclusive = {
+			focus = UKR_medium_air
+			focus = UKR_medium_air
+		}
+		x = 57
+		y = 2
+
+	}
+	focus = {
+		id = UKR_medium_air
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_aviation_forces
+		}
+		mutually_exclusive = {
+			focus = UKR_light_air
+			focus = UKR_light_air
+		}
+		x = 59
+		y = 2
+
+	}
+	focus = {
+		id = UKR_aero_institute
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_medium_air
+			focus = UKR_light_air
+		}
+		prerequisite = {
+			focus = UKR_naval_bombers
+		}
+		x = 58
+		y = 3
+
+	}
+	focus = {
+		id = UKR_light_air_effort
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_aero_institute
+		}
+		prerequisite = {
+			focus = UKR_light_air
+		}
+		mutually_exclusive = {
+			focus = UKR_medium_air_effort
+			focus = UKR_medium_air_effort
+		}
+		x = 56
+		y = 4
+
+	}
+	focus = {
+		id = UKR_medium_air_effort
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_aero_institute
+		}
+		prerequisite = {
+			focus = UKR_medium_air
+		}
+		mutually_exclusive = {
+			focus = UKR_light_air_effort
+			focus = UKR_light_air_effort
+		}
+		x = 58
+		y = 4
+
+	}
+	focus = {
+		id = UKR_air_domination
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_medium_air_effort
+			focus = UKR_light_air_effort
+		}
+		prerequisite = {
+			focus = UKR_navy_aviation
+		}
+		x = 57
+		y = 5
+
+	}
+	focus = {
+		id = UKR_avia_doctrine
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_aero_institute
+		}
+		x = 60
+		y = 4
+
+	}
+	focus = {
+		id = UKR_avia_doctrine1
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_avia_doctrine
+		}
+		x = 60
+		y = 5
+
+	}
+	
+	#############################
+	#### Fortification focuses###
+	#############################
+
+	focus = {
+		id = UKR_fortification_studies
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = UKR_army }
+		x = 64
+		y = 1 
+
+		cost = 5 
+
+		ai_will_do = {
+			factor = 200			
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_MANPOWER }
+
+		completion_reward = {
+			army_experience = 10
+		 202 = {
+			     add_building_construction = { type = bunker province = 9568 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 3543 level = 1 instant_build = yes }
+				add_building_construction = { type = bunker province = 525 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3494 level = 1 instant_build = yes }
+			}
+			add_ideas = UKR_fortification_focus
+		}
+	}
+
+	focus = {
+		id = UKR_fallback_line
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = UKR_fortification_studies }
+		x = -2
+		y = 1
+		relative_position_id = UKR_fortification_studies
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 60
+			modifier = {
+				factor = 0.5
+				is_in_faction_with = GER
+			}
+		}
+
+		available = {
+			UKR = { controls_state = 202 }
+			UKR = { controls_state = 198 }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 20
+			202 = {
+				add_building_construction = { type = bunker province = 9465 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 504 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 6497 level = 3 instant_build = yes }
+			}
+			198 = {
+				add_building_construction = { type = bunker province = 6480 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 9435 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 9423 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 476 level = 3 instant_build = yes }
+			}
+		}
+	}
+
+	focus = {
+		id = UKR_ostwall_1
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = UKR_fortification_studies }
+		x = 0
+		y = 1
+		relative_position_id = UKR_fortification_studies
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 90
+			modifier = {
+				factor = 0.5
+				is_in_faction_with = GER
+			}
+			modifier = {
+				factor = 1.5
+				is_in_faction = no
+			}
+		}
+
+		available = {
+			UKR = { controls_state = 202 }
+		}
+
+		bypass = {
+					}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_MANPOWER }
+
+		completion_reward = {
+			army_experience = 20
+			custom_effect_tooltip = "2 forts will be built next to the ruzzian border."
+			hidden_effect = { 
+			93 = {
+				add_building_construction = { type = bunker province = 9520 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3496 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11503 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 6579 level = 2 instant_build = yes }
+			}
+			194 = {
+				add_building_construction = { type = bunker province = 9554 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 6232 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11453 level = 2 instant_build = yes }
+			}
+			202 = {
+			     add_building_construction = { type = bunker province = 9568 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3543 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 525 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3494 level = 2 instant_build = yes }
+			}
+			203 = {
+				add_building_construction = { type = bunker province = 11454 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 488 level = 2 instant_build = yes }
+			}
+
+                1011 = {
+				add_building_construction = { type = bunker province = 3468 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 6478 level = 2 instant_build = yes }
+			}
+			226 = {
+				add_building_construction = { type = bunker province = 9433 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11437 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 13394 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11422 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 9419 level = 2 instant_build = yes }
+			}
+                197 = {
+				add_building_construction = { type = bunker province = 11715 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3755 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11683 level = 2 instant_build = yes }
+			}
+                }
+			swap_ideas = {
+				add_idea = UKR_fortification_focus2
+				remove_idea = UKR_fortification_focus
+			}	
+		}
+	}
+
+	focus = {
+		id = UKR_ostwall_2
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = UKR_ostwall_1 }
+		x = 0
+		y = 1
+		relative_position_id = UKR_ostwall_1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 90
+			modifier = {
+				factor = 0.5
+				is_in_faction_with = GER
+			}
+			modifier = {
+				factor = 1.5
+				is_in_faction = no
+			}
+		}
+
+		available = {
+			UKR = { controls_state = 202 }
+		}
+
+		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_MANPOWER }
+
+		completion_reward = {
+			army_experience = 20
+			custom_effect_tooltip = "2 more forts will be built next to the ruzzian border."
+			hidden_effect = { 
+			93 = {
+				add_building_construction = { type = bunker province = 9520 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3496 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11503 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 6579 level = 2 instant_build = yes }
+			}
+			194 = {
+				add_building_construction = { type = bunker province = 9554 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 6232 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11453 level = 2 instant_build = yes }
+			}
+			202 = {
+			     add_building_construction = { type = bunker province = 9568 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3543 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 525 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3494 level = 2 instant_build = yes }
+			}
+			203 = {
+				add_building_construction = { type = bunker province = 11454 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 488 level = 2 instant_build = yes }
+			}
+
+                1011 = {
+				add_building_construction = { type = bunker province = 3468 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 6478 level = 2 instant_build = yes }
+			}
+			226 = {
+				add_building_construction = { type = bunker province = 9433 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11437 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 13394 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11422 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 9419 level = 2 instant_build = yes }
+			}
+                197 = {
+				add_building_construction = { type = bunker province = 11715 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3755 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11683 level = 2 instant_build = yes }
+			}
+                }
+			swap_ideas = {
+				add_idea = UKR_fortification_focus3
+				remove_idea = UKR_fortification_focus2
+			}	
+		}
+	}
+
+	focus = {
+		id = UKR_ostwall_3
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = UKR_ostwall_2 }
+		x = 0
+		y = 2
+		relative_position_id = UKR_ostwall_1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+			modifier = {
+				factor = 0.5
+				is_in_faction_with = GER
+			}
+			modifier = {
+				factor = 1.5
+				is_in_faction = no
+			}
+		}
+
+		available = {
+			UKR = { controls_state = 202 }
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_MANPOWER }
+
+		completion_reward = {
+			army_experience = 20
+			custom_effect_tooltip = "2 more forts will be built next to the ruzzian border."
+			hidden_effect = { 
+			93 = {
+				add_building_construction = { type = bunker province = 9520 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3496 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11503 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 6579 level = 2 instant_build = yes }
+			}
+			194 = {
+				add_building_construction = { type = bunker province = 9554 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 6232 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11453 level = 2 instant_build = yes }
+			}
+			202 = {
+			     add_building_construction = { type = bunker province = 9568 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3543 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 525 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3494 level = 2 instant_build = yes }
+			}
+			203 = {
+				add_building_construction = { type = bunker province = 11454 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 488 level = 2 instant_build = yes }
+			}
+
+                1011 = {
+				add_building_construction = { type = bunker province = 3468 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 6478 level = 2 instant_build = yes }
+			}
+			226 = {
+				add_building_construction = { type = bunker province = 9433 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11437 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 13394 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11422 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 9419 level = 2 instant_build = yes }
+			}
+                197 = {
+				add_building_construction = { type = bunker province = 11715 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 3755 level = 2 instant_build = yes }
+				add_building_construction = { type = bunker province = 11683 level = 2 instant_build = yes }
+			}
+                }
+			swap_ideas = {
+				add_idea = UKR_fortification_focus4
+				remove_idea = UKR_fortification_focus3
+			}	
+		}
+	}
+
+	focus = {
+		id = UKR_romanian_line
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = UKR_ostwall_2 }
+		x = -2
+		y = 2
+		relative_position_id = UKR_ostwall_1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 60
+			modifier = {
+				factor = 0.5
+				is_in_faction_with = GER
+			}
+			modifier = {
+				factor = 0.5
+				is_in_faction_with = HUN
+			}
+			modifier = {
+				factor = 0.5
+				HUN = { exists = no }
+			}
+		}
+
+		available = {
+			UKR = { controls_state = 192 }
+			UKR = { controls_state = 834 }
+			UKR = { controls_state = 198 }
+			UKR = { controls_state = 199 }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {       
+			army_experience = 30
+			834 = {
+				add_building_construction = { type = bunker province = 13433 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 13438 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 13436 level = 3 instant_build = yes }
+			}
+			
+			199 = {
+				add_building_construction = { type = bunker province = 3430 level = 3 instant_build = yes }
+			}
+			198 = {
+				add_building_construction = { type = bunker province = 6455 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 9423 level = 3 instant_build = yes }
+			}
+			192 = {
+				add_building_construction = { type = bunker province = 11670 level = 3 instant_build = yes }
+			}
+		}
+	}
+
+	focus = {
+		id = UKR_polish_line
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = UKR_ostwall_2 }
+		x = 2
+		y = 2
+		relative_position_id = UKR_ostwall_1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				is_in_faction_with = POL
+			}
+		}
+
+		available = {
+			UKR = { controls_state = 93 }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+			93 = {
+				add_building_construction = { type = bunker province = 422 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 11441 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 3412 level = 3 instant_build = yes }
+			}
+		}
+	}
+
+focus = {
+		id = UKR_polish_line2
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = UKR_polish_line }
+		x = 2
+		y = 3
+		relative_position_id = UKR_ostwall_1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				is_in_faction_with = POL
+			}
+		}
+
+		available = {
+			UKR = { controls_state = 990 }
+			UKR = { controls_state = 89 }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+			990 = {
+				add_building_construction = { type = bunker province = 9558 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 491 level = 3 instant_build = yes }
+			}
+			89 = {      
+				add_building_construction = { type = bunker province = 11411 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 9425 level = 3 instant_build = yes }
+			}
+		}
+	}
+
+	focus = {
+		id = UKR_Odessa_line
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = UKR_fortification_studies }
+		x = 2
+		y = 1
+		relative_position_id = UKR_fortification_studies
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		available = {
+			UKR = { controls_state = 834 }
+			UKR = { controls_state = 192 }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 20
+			834 = {
+				add_building_construction = { type = bunker province = 13433 level = 3 instant_build = yes }
+			}
+			192 = {
+				add_building_construction = { type = bunker province = 11703 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 3575 level = 3 instant_build = yes }
+				add_building_construction = { type = coastal_bunker province = 11703 level = 3 instant_build = yes }
+				add_building_construction = { type = coastal_bunker province = 3738 level = 3 instant_build = yes }
+				add_building_construction = { type = coastal_bunker province = 11670 level = 5 instant_build = yes }
+			}
+		}
+	}
+
+
+
+	focus = {
+		id = UKR_guns_effort
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_new_weapons
+		}
+		x = 34
+		y = 6
+
+	}
+	focus = {
+		id = UKR_assault_guns
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_artillery
+		}
+		x = 32
+		y = 6
+
+	}
+	focus = {
+		id = UKR_modern_army
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_motorized_logistic
+			focus = UKR_zaporozhets
+		}
+		prerequisite = {
+			focus = UKR_armor_production
+		}
+		x = 42
+		y = 8
+
+	}
+	focus = {
+		id = UKR_logistic_improvement
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_new_weapons
+		}
+		x = 36
+		y = 6
+
+	}
+	focus = {
+		id = UKR_dnipro39
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_guns_effort
+		}
+		x = 34
+		y = 7
+
+	}
+	focus = {
+		id = UKR_imroved_artillery
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_assault_guns
+		}
+		x = 32
+		y = 7
+
+	}
+	focus = {
+		id = UKR_superior_firepower
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_dnipro39
+		}
+		prerequisite = {
+			focus = UKR_imroved_artillery
+		}
+		x = 33
+		y = 8
+
+	}
+
+
+
      ##################################
      ######## POLITICAL DIRECTION #####
      ##################################
@@ -1447,7 +2667,7 @@ focus = {
 			focus = UKR_cooperation
 			focus = UKR_cooperation
 		}
-		x = 21
+		x = 19
 		y = 8
 		completion_reward = {
 
@@ -1465,7 +2685,7 @@ focus = {
 			focus = UKR_on_our_own
 			focus = UKR_on_our_own
 		}
-		x = 23
+		x = 21
 		y = 8
 		completion_reward = {
 
@@ -1480,7 +2700,7 @@ focus = {
 			focus = UKR_on_our_own
 			focus = UKR_cooperation
 		}
-		x = 22
+		x = 20
 		y = 10
 		completion_reward = {
 
@@ -1525,7 +2745,7 @@ focus = {
 		prerequisite = {
 			focus = UKR_expand_politics
 		}
-		x = 22
+		x = 20
 		y = 11
 		completion_reward = {
 
@@ -1543,7 +2763,7 @@ focus = {
 			focus = UKR_support_turkey
 			focus = UKR_support_turkey
 		}
-		x = 21
+		x = 19
 		y = 12
 		completion_reward = {
 
@@ -1561,7 +2781,7 @@ focus = {
 			focus = UKR_support_greece
 			focus = UKR_support_greece
 		}
-		x = 23
+		x = 21
 		y = 12
 		completion_reward = {
 
@@ -1677,1004 +2897,5 @@ focus = {
 	}
 
 
-	#############################
-	#### Fortification focuses###
-	#############################
-
-	focus = {
-		id = UKR_fortification_studies
-		icon = GFX_goal_generic_construct_military
-		x = 23
-		y = 0 
-
-		cost = 5 
-
-		ai_will_do = {
-			factor = 200			
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_MANPOWER }
-
-		completion_reward = {
-			army_experience = 10
-		 202 = {
-			     add_building_construction = { type = bunker province = 9568 level = 1 instant_build = yes }
-				add_building_construction = { type = bunker province = 3543 level = 1 instant_build = yes }
-				add_building_construction = { type = bunker province = 525 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 3494 level = 1 instant_build = yes }
-			}
-			add_ideas = UKR_fortification_focus
-		}
-	}
-
-	focus = {
-		id = UKR_fallback_line
-		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = UKR_fortification_studies }
-		x = -2
-		y = 1
-		relative_position_id = UKR_fortification_studies
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 60
-			modifier = {
-				factor = 0.5
-				is_in_faction_with = GER
-			}
-		}
-
-		available = {
-			UKR = { controls_state = 202 }
-			UKR = { controls_state = 198 }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			army_experience = 20
-			202 = {
-				add_building_construction = { type = bunker province = 9465 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 504 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 6497 level = 3 instant_build = yes }
-			}
-			198 = {
-				add_building_construction = { type = bunker province = 6480 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 9435 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 9423 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 476 level = 3 instant_build = yes }
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_ostwall_1
-		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = UKR_fortification_studies }
-		x = 0
-		y = 1
-		relative_position_id = UKR_fortification_studies
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 90
-			modifier = {
-				factor = 0.5
-				is_in_faction_with = GER
-			}
-			modifier = {
-				factor = 1.5
-				is_in_faction = no
-			}
-		}
-
-		available = {
-			UKR = { controls_state = 202 }
-		}
-
-		bypass = {
-					}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_MANPOWER }
-
-		completion_reward = {
-			army_experience = 20
-			custom_effect_tooltip = "2 forts will be built next to the ruzzian border."
-			hidden_effect = { 
-			93 = {
-				add_building_construction = { type = bunker province = 9520 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 3496 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 11503 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 6579 level = 2 instant_build = yes }
-			}
-			194 = {
-				add_building_construction = { type = bunker province = 9554 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 6232 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 11453 level = 2 instant_build = yes }
-			}
-			202 = {
-			     add_building_construction = { type = bunker province = 9568 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 3543 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 525 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 3494 level = 2 instant_build = yes }
-			}
-			203 = {
-				add_building_construction = { type = bunker province = 11454 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 488 level = 2 instant_build = yes }
-			}
-
-                1011 = {
-				add_building_construction = { type = bunker province = 3468 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 6478 level = 2 instant_build = yes }
-			}
-			226 = {
-				add_building_construction = { type = bunker province = 9433 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 11437 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 13394 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 11422 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 9419 level = 2 instant_build = yes }
-			}
-                197 = {
-				add_building_construction = { type = bunker province = 11715 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 3755 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 11683 level = 2 instant_build = yes }
-			}
-                }
-			swap_ideas = {
-				add_idea = UKR_fortification_focus2
-				remove_idea = UKR_fortification_focus
-			}	
-		}
-	}
-
-	focus = {
-		id = UKR_ostwall_2
-		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = UKR_ostwall_1 }
-		x = 0
-		y = 1
-		relative_position_id = UKR_ostwall_1
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 90
-			modifier = {
-				factor = 0.5
-				is_in_faction_with = GER
-			}
-			modifier = {
-				factor = 1.5
-				is_in_faction = no
-			}
-		}
-
-		available = {
-			UKR = { controls_state = 202 }
-		}
-
 		
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_MANPOWER }
-
-		completion_reward = {
-			army_experience = 20
-			custom_effect_tooltip = "2 more forts will be built next to the ruzzian border."
-			hidden_effect = { 
-			93 = {
-				add_building_construction = { type = bunker province = 9520 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 3496 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 11503 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 6579 level = 2 instant_build = yes }
-			}
-			194 = {
-				add_building_construction = { type = bunker province = 9554 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 6232 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 11453 level = 2 instant_build = yes }
-			}
-			202 = {
-			     add_building_construction = { type = bunker province = 9568 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 3543 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 525 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 3494 level = 2 instant_build = yes }
-			}
-			203 = {
-				add_building_construction = { type = bunker province = 11454 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 488 level = 2 instant_build = yes }
-			}
-
-                1011 = {
-				add_building_construction = { type = bunker province = 3468 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 6478 level = 2 instant_build = yes }
-			}
-			226 = {
-				add_building_construction = { type = bunker province = 9433 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 11437 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 13394 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 11422 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 9419 level = 2 instant_build = yes }
-			}
-                197 = {
-				add_building_construction = { type = bunker province = 11715 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 3755 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 11683 level = 2 instant_build = yes }
-			}
-                }
-			swap_ideas = {
-				add_idea = UKR_fortification_focus3
-				remove_idea = UKR_fortification_focus2
-			}	
-		}
-	}
-
-	focus = {
-		id = UKR_ostwall_3
-		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = UKR_ostwall_2 }
-		x = 0
-		y = 2
-		relative_position_id = UKR_ostwall_1
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 80
-			modifier = {
-				factor = 0.5
-				is_in_faction_with = GER
-			}
-			modifier = {
-				factor = 1.5
-				is_in_faction = no
-			}
-		}
-
-		available = {
-			UKR = { controls_state = 202 }
-		}
-
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_MANPOWER }
-
-		completion_reward = {
-			army_experience = 20
-			custom_effect_tooltip = "2 more forts will be built next to the ruzzian border."
-			hidden_effect = { 
-			93 = {
-				add_building_construction = { type = bunker province = 9520 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 3496 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 11503 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 6579 level = 2 instant_build = yes }
-			}
-			194 = {
-				add_building_construction = { type = bunker province = 9554 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 6232 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 11453 level = 2 instant_build = yes }
-			}
-			202 = {
-			     add_building_construction = { type = bunker province = 9568 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 3543 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 525 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 3494 level = 2 instant_build = yes }
-			}
-			203 = {
-				add_building_construction = { type = bunker province = 11454 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 488 level = 2 instant_build = yes }
-			}
-
-                1011 = {
-				add_building_construction = { type = bunker province = 3468 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 6478 level = 2 instant_build = yes }
-			}
-			226 = {
-				add_building_construction = { type = bunker province = 9433 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 11437 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 13394 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 11422 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 9419 level = 2 instant_build = yes }
-			}
-                197 = {
-				add_building_construction = { type = bunker province = 11715 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 3755 level = 2 instant_build = yes }
-				add_building_construction = { type = bunker province = 11683 level = 2 instant_build = yes }
-			}
-                }
-			swap_ideas = {
-				add_idea = UKR_fortification_focus4
-				remove_idea = UKR_fortification_focus3
-			}	
-		}
-	}
-
-	focus = {
-		id = UKR_romanian_line
-		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = UKR_ostwall_2 }
-		x = -2
-		y = 2
-		relative_position_id = UKR_ostwall_1
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 60
-			modifier = {
-				factor = 0.5
-				is_in_faction_with = GER
-			}
-			modifier = {
-				factor = 0.5
-				is_in_faction_with = HUN
-			}
-			modifier = {
-				factor = 0.5
-				HUN = { exists = no }
-			}
-		}
-
-		available = {
-			UKR = { controls_state = 192 }
-			UKR = { controls_state = 834 }
-			UKR = { controls_state = 198 }
-			UKR = { controls_state = 199 }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {       
-			army_experience = 30
-			834 = {
-				add_building_construction = { type = bunker province = 13433 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 13438 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 13436 level = 3 instant_build = yes }
-			}
-			
-			199 = {
-				add_building_construction = { type = bunker province = 3430 level = 3 instant_build = yes }
-			}
-			198 = {
-				add_building_construction = { type = bunker province = 6455 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 9423 level = 3 instant_build = yes }
-			}
-			192 = {
-				add_building_construction = { type = bunker province = 11670 level = 3 instant_build = yes }
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_polish_line
-		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = UKR_ostwall_2 }
-		x = 2
-		y = 2
-		relative_position_id = UKR_ostwall_1
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 50
-			modifier = {
-				factor = 0.25
-				is_in_faction_with = POL
-			}
-		}
-
-		available = {
-			UKR = { controls_state = 93 }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			army_experience = 30
-			93 = {
-				add_building_construction = { type = bunker province = 422 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 11441 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 3412 level = 3 instant_build = yes }
-			}
-		}
-	}
-
-focus = {
-		id = UKR_polish_line2
-		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = UKR_polish_line }
-		x = 2
-		y = 3
-		relative_position_id = UKR_ostwall_1
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 50
-			modifier = {
-				factor = 0.25
-				is_in_faction_with = POL
-			}
-		}
-
-		available = {
-			UKR = { controls_state = 990 }
-			UKR = { controls_state = 89 }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			army_experience = 30
-			990 = {
-				add_building_construction = { type = bunker province = 9558 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 491 level = 3 instant_build = yes }
-			}
-			89 = {      
-				add_building_construction = { type = bunker province = 11411 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 9425 level = 3 instant_build = yes }
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_Odessa_line
-		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = UKR_fortification_studies }
-		x = 2
-		y = 1
-		relative_position_id = UKR_fortification_studies
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 60
-		}
-
-		available = {
-			UKR = { controls_state = 834 }
-			UKR = { controls_state = 192 }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			army_experience = 20
-			834 = {
-				add_building_construction = { type = bunker province = 13433 level = 3 instant_build = yes }
-			}
-			192 = {
-				add_building_construction = { type = bunker province = 11703 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 3575 level = 3 instant_build = yes }
-				add_building_construction = { type = coastal_bunker province = 11703 level = 3 instant_build = yes }
-				add_building_construction = { type = coastal_bunker province = 3738 level = 3 instant_build = yes }
-				add_building_construction = { type = coastal_bunker province = 11670 level = 5 instant_build = yes }
-			}
-		}
-	}
-	
-	###################################
-	######## INDUSTRIAL LEGACY ########
-	###################################
-
-	focus = {
-		id = UKR_industrial_legacy
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 7
-		y = 0
-		relative_position_id = UKR_fortification_studies
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 90
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			add_ideas = UKR_industrial_legacy_idea
-		}
-	}
-
-	focus = {
-		id = UKR_mils1
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = UKR_industrial_legacy }
-		x = -2
-		y = 1
-		relative_position_id = UKR_industrial_legacy
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 40
-			modifier = {
-				factor = 2
-				has_completed_focus = UKR_go_right
-			}
-			modifier = {
-				factor = 2
-				has_completed_focus = UKR_german_leanings
-			}
-		}
-
-		available = {
-			UKR = { controls_state = 93 }
-			UKR = { controls_state = 199 }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			93 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			199 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = { 
-					type = arms_factory  
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_mils2
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = UKR_mils1 }
-		x = 0
-		y = 1
-		relative_position_id = UKR_mils1 
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 80
-		}
-
-		available = {
-			UKR = { controls_state = 201 }
-			UKR = { controls_state = 198 }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			201 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			198 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_mils3 
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = UKR_mils2 }
-		x = 0
-		y = 2
-		relative_position_id = UKR_mils1
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 80
-		}
-
-		available = {
-			UKR = { controls_state = 202 }
-			UKR = { controls_state = 201 }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			202 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			201 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = { 
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_civs_1
-		icon = GFX_goal_generic_construction
-		prerequisite = { focus = UKR_industrial_legacy }
-		x = 0
-		y = 1
-		relative_position_id = UKR_industrial_legacy
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 70
-			modifier = {
-				factor = 0.5
-				has_completed_focus = UKR_go_right
-			}
-			modifier = {
-				factor = 0.5
-				has_completed_focus = UKR_german_leanings
-			}
-		}
-
-		available = {
-			UKR = { controls_state = 93 }
-			UKR = { controls_state = 199 }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			93 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			199 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_civs_2
-		icon = GFX_goal_generic_construction
-		prerequisite = { focus = UKR_civs_1 }
-		x = 0
-		y = 1
-		relative_position_id = UKR_civs_1
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 80
-		}
-
-		available = {
-			UKR = { controls_state = 201 }
-			UKR = { controls_state = 198 }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			201 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			198 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_civs_3
-		icon = GFX_goal_generic_construction
-		prerequisite = { focus = UKR_civs_2 }
-		x = 0
-		y = 2
-		relative_position_id = UKR_civs_1
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 80
-		}
-
-		available = {
-			UKR = { controls_state = 192 }
-			UKR = { controls_state = 834 }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			192 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			834 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = UKR_arms_exports_1
-		icon = GFX_goal_generic_production
-		prerequisite = { focus = UKR_industrial_legacy }
-		x = 2
-		y = 1
-		relative_position_id = UKR_industrial_legacy
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 80
-			modifier = {
-				factor = 2
-				has_completed_focus = UKR_go_right
-			}
-			modifier = {
-				factor = 2
-				has_completed_focus = UKR_german_leanings
-			}
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			add_ideas = UKR_export_focus1
-		}
-	}
-
-	focus = {
-		id = UKR_arms_exports_2
-		icon = GFX_goal_generic_production
-		prerequisite = { focus = UKR_arms_exports_1 }
-		x = 0
-		y = 1
-		relative_position_id = UKR_arms_exports_1
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 70
-			modifier = {
-				factor = 2
-				has_completed_focus = UKR_go_right
-			}
-			modifier = {
-				factor = 2
-				has_completed_focus = UKR_german_leanings
-			}
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			swap_ideas = { remove_idea = UKR_export_focus1 add_idea = UKR_export_focus2  }
-		}
-	}
-
-	focus = {
-		id = UKR_arms_exports_3
-		icon = GFX_goal_generic_production
-		prerequisite = { focus = UKR_arms_exports_2 }
-		x = 0
-		y = 2
-		relative_position_id = UKR_arms_exports_1
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 70
-			modifier = {
-				factor = 2
-				has_completed_focus = UKR_go_right
-			}
-			modifier = {
-				factor = 2
-				has_completed_focus = UKR_german_leanings
-			}
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			swap_ideas = { remove_idea = UKR_export_focus2 add_idea = UKR_export_focus3 }
-		}
-	}
-
-	
 }
