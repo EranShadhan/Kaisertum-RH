@@ -21,7 +21,7 @@ focus_tree = {
 focus = {
     id = TUR_finish_reconstruction
     icon = GFX_goal_generic_construct_infrastructure
-    x = 40
+    x = 23
     y = 0
 	relative_position_id = TUR_start_of_a_new_decade
     cost = 5
@@ -1394,8 +1394,8 @@ focus = {
 	focus = {
 		id = TUR_start_military_reforms
 		icon = GFX_TUR_start_military_reforms
-		x = 40
-		y = 10
+		x = 23
+		y = 9
 
 		relative_position_id = TUR_start_of_a_new_decade
 		cost = 6
@@ -2104,7 +2104,7 @@ focus = {
 	focus = {
 		id = TUR_start_of_a_new_decade
 		cost = 5
-		x = 27
+		x = 15
 		y = 0
 		icon = GFX_TUR_start_of_a_new_decade
 
@@ -2121,8 +2121,9 @@ focus = {
 	focus = {
 		id = TUR_constitution_of_1930
 		cost = 6
-		x = 7
+		x = -8
 		y = 1
+		relative_position_id = TUR_start_of_a_new_decade
 		icon = GFX_TUR_constitution_of_1930
 
 		prerequisite = {
@@ -2215,8 +2216,8 @@ focus = {
 	focus = {
 		id = TUR_close_sufi_orders
 		cost = 5
-		x = -2
-		y = 2
+		x = -1
+		y = 1
 		icon = GFX_TUR_crush_sufism
 
 		prerequisite = {
@@ -2250,8 +2251,8 @@ focus = {
 	focus = {
 		id = TUR_abolish_traditional_headgear
 		cost = 5
-		x = 2
-		y = 2
+		x = 1
+		y = 1
 		icon = GFX_TUR_hat_reform
 
 		prerequisite = {
@@ -2292,7 +2293,7 @@ focus = {
 	focus = {
 		id = TUR_new_civil_code
 		cost = 5
-		x = -2
+		x = -1
 		y = 1
 		icon = GFX_TUR_new_civil_code
 
@@ -2428,7 +2429,7 @@ focus = {
 		id = TUR_ataturk_dies
 		cost = 1
 		x = 0
-		y = 2
+		y = 1
 		icon = GFX_TUR_death_of_prishtina
 		
 		prerequisite = {
@@ -3828,8 +3829,9 @@ focus = {
 	focus = {
 		id = TUR_the_sultans_grip_remains_firm
 		cost = 5
-		x = 18
+		x = 8
 		y = 1
+		relative_position_id = TUR_start_of_a_new_decade
 		icon = GFX_TUR_sultans_vision
 
 		prerequisite = {
@@ -4055,7 +4057,7 @@ focus = {
 		id = TUR_the_wolf_of_islam
 		cost = 5
 		x = -1
-		y = 2
+		y = 1
 		icon = GFX_TUR_wolf_of_islam
 
 		prerequisite = {
@@ -4077,7 +4079,7 @@ focus = {
 		id = TUR_islamist_paramilitaries
 		cost = 5
 		x = 1
-		y = 2
+		y = 1
 		icon = GFX_TUR_islamist_paramilitaries
 
 		prerequisite = {
@@ -4127,7 +4129,7 @@ focus = {
 		id = TUR_commit_to_pan_turkism
 		cost = 5
 		x = 0
-		y = 2
+		y = 1
 		icon = GFX_TUR_commit_to_pan_turkism
 
 		prerequisite = {
