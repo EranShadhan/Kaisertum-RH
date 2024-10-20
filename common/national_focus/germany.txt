@@ -17,7 +17,7 @@
 	focus = {
 		id = GER_four_year_plan
 		icon = GFX_goal_generic_construction
-		x = 6
+		x = 88
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -75,7 +75,7 @@
 		id = GER_autarky
 		icon = GFX_focus_generic_mining_industry
 		prerequisite = { focus = GER_four_year_plan }
-		x = 4
+		x = 8
 		y = 1
 		relative_position_id = GER_four_year_plan
 		cost = 10
@@ -95,7 +95,7 @@
 				technology = excavation4
 				technology = excavation5
 			}
-			add_ideas = GER_autarky_idea
+		
 		}
 	}
 
@@ -265,7 +265,7 @@
 		id = GER_coal_liquidization
 		icon = GFX_focus_generic_resource_extraction
 		prerequisite = { focus = GER_autarky }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = GER_autarky
 		cost = 10
@@ -318,10 +318,10 @@
 		id = GER_synthetic_rubber
 		icon = GFX_focus_BRA_rubber_war
 		prerequisite = { focus = GER_coal_liquidization }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = GER_coal_liquidization
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 4
 		}
@@ -335,13 +335,64 @@
         	}
 		}
 	}
+	focus = {
+		id = GER_the_oil_must_flow
+		icon = GFX_focus_generic_offshore_oil_rig
+		prerequisite = { focus = GER_coal_liquidization }
+		x = 1
+		y = 1
+		relative_position_id = GER_coal_liquidization
+		cost = 5
+		ai_will_do = {
+			factor = 4
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+	
+        	modify_building_resources = {
+        	   building = synthetic_refinery
+        	   resource = oil
+        	   amount = 2
+        	}
+                if = { limit = { controls_state = 4 } 
+				4 = { add_resource = { 
+					type = oil
+					amount = 37
+				}		}
+            }
+ else = { 
+				
+				custom_effect_tooltip = GRE_making_use_of_austria_tt
+			}			
+		
+		}
+	}
+	focus = {
+		id = GER_autarky_achieved
+		icon = GFX_focus_ICE_embrace_the_workers_revolution
+		prerequisite = { focus = GER_synthetic_rubber }
+		prerequisite = { focus = GER_the_oil_must_flow }
+		prerequisite = { focus = GER_kdf_wagen }
+		x = -1
+		y = 1
+		relative_position_id = GER_kdf_wagen
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
 
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+				add_ideas = GER_autarky_idea
+		}
+	}
 	focus = {
 		id = GER_extra_tech_slot
 		icon = GFX_focus_research
 		text = extra_tech_slot
 		prerequisite = { focus = GER_kdf_wagen focus = GER_synthetic_rubber }
-		x = -1
+		x = 1
 		y = 1
 		relative_position_id = GER_kdf_wagen
 		cost = 10
@@ -359,10 +410,10 @@
 	focus = {
 		id = GER_autobahn
 		icon = GFX_focus_generic_road_investment
-		prerequisite = { focus = GER_autarky }
-		x = -2
+		prerequisite = { focus = GER_grosraumwirtschaft }
+		x = 0
 		y = 1
-		relative_position_id = GER_autarky
+		relative_position_id = GER_grosraumwirtschaft
 		cost = 10
 		ai_will_do = {
 			factor = 12
@@ -426,13 +477,60 @@
 	}
 
 	focus = {
+		id = GER_Kapitalverbindung
+		icon = GFX_focus_generic_railroad
+		prerequisite = { focus = GER_grosraumwirtschaft }
+		x = -2
+		y = 1
+		relative_position_id = GER_grosraumwirtschaft
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+
+		available = {
+		
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		custom_effect_tooltip = GER_construction_of_railway
+			every_country = {
+					limit = {
+					is_in_faction_with = GER
+						capital_scope = {
+							OR = {
+								is_on_continent = europe
+								is_on_continent = asia
+								is_on_continent = middle_east
+							}
+						}
+					}
+
+					if = {
+						limit = {
+							can_build_railway = {
+								start_state = ROOT.capital
+								target_state = THIS.capital
+								build_only_on_allied = yes
+							}
+						}
+						build_railway = {				
+							start_state = ROOT.capital
+							target_state = THIS.capital
+							build_only_on_allied = yes
+							level = 2
+						}
+					}		
+				}
+		}
+	}
+	focus = {
 		id = GER_german_war_economy
 		icon = GFX_focus_SWI_issue_war_bonds
-		prerequisite = { focus = GER_autobahn }
-		mutually_exclusive = { focus = GER_integrate_war_economies }
-		x = 0
+		prerequisite = { focus = GER_four_year_plan }
+		x = 3
 		y = 1
-		relative_position_id = GER_autobahn
+		relative_position_id = GER_four_year_plan
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -442,7 +540,67 @@
 		available = {
 			has_war_support > 0.49
 		}
-		complete_tooltip = {
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = { has_idea = war_economy }
+					NOT = { has_idea = tot_economic_mobilisation }
+				}
+				add_ideas = war_economy
+			}
+		}
+	}
+	focus = {
+		id = GER_increase_in_construction
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = GER_german_war_economy }
+		x = 1
+		y = 1
+		relative_position_id = GER_german_war_economy
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = no
+		available = {
+		}
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		random_owned_controlled_state = {
+		add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+         }       
+		 }
+		
+		 random_owned_controlled_state = {
+		add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+         }       
+		 }
+		}
+	}
+	focus = {
+		id = GER_war_economics
+		icon = GFX_focus_generic_reorient_production
+		prerequisite = { focus = GER_german_war_economy }
+		x = -1
+		y = 1
+		relative_position_id = GER_german_war_economy
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+complete_tooltip = {
 			every_state = {
 				limit = { has_state_flag = GER_german_war_economy }
 				add_extra_state_shared_building_slots = 2
@@ -453,9 +611,13 @@
 				}
 			}
 		}
+		available_if_capitulated = no
+		available = {
+		}
+		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			
+		
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -520,8 +682,69 @@
 				set_state_flag = GER_german_war_economy
 			}
 		}
-	}
+	}	
+	focus = {
+		id = GER_demonize_the_enemy
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = GER_war_economics focus = GER_increase_in_construction }
+		x = 1
+		y = 1
+		relative_position_id = GER_war_economics
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
 
+		available_if_capitulated = no
+		available = {
+		}
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+		28 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = bunker
+							level = 5
+							province = 678
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 5
+							province = 6529
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 5
+							province = 1346
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 5
+							province = 3629
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 5
+							province = 11502
+							instant_build = yes
+						}
+							add_building_construction = {
+							type = bunker
+							level = 5
+							province = 9559
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+		
 	focus = {
 		id = GER_grosraumwirtschaft
 		icon = GFX_focus_generic_supply_line
@@ -1077,11 +1300,10 @@ focus = {
 	focus = {
 		id = GER_rocketry_focus
 		icon = GFX_focus_rocketry
-		prerequisite = { focus = GER_extra_tech_slot }
 		prerequisite = { focus = GER_air_innovation_2 }
-		x = 2
+		x = 1
 		y = 1
-		relative_position_id = GER_extra_tech_slot
+		relative_position_id = GER_air_innovation_2
 		cost = 10
 		ai_will_do = {
 			factor = 1
