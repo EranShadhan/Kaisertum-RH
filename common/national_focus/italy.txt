@@ -34,7 +34,7 @@ focus_tree = {
 	
 	default = no
 
-	continuous_focus_position = { x = 1500 y = 1500 }
+	continuous_focus_position = { x = 1000 y = 300 }
 
 	initial_show_position = {
 		x = 0
@@ -43,11 +43,13 @@ focus_tree = {
 
 
 	focus = {
-		id = ITA_ethiopian_war_logistics_bba
+		id = ITA_lessons_from_illyria
 		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = ITA_the_monopoly_broken focus = ITA_as_expected }
 
-		x = 2
-		y = 0
+		x = 36
+		y = 1
+		relative_position_id = ITA_as_expected
 		offset = {
 			x = 6
 			y = 0
@@ -125,9 +127,10 @@ focus_tree = {
 	focus = {
 		id = ITA_italian_highways_bba
 		icon = GFX_focus_generic_truck
+		prerequisite = { focus = ITA_the_monopoly_broken focus = ITA_as_expected }
 		x = 6
 		y = 0
-		relative_position_id = ITA_ethiopian_war_logistics_bba
+		relative_position_id = ITA_lessons_from_illyria
 		cost = 5
 		available = {
 			OR = {
@@ -200,14 +203,14 @@ focus_tree = {
 		id = ITA_ministry_of_italian_africa
 		icon = GFX_focus_ITA_ministry_of_italian_africa
 		prerequisite = { focus = ITA_italian_highways_bba }
-		prerequisite = { focus = ITA_ethiopian_war_logistics_bba }
+		prerequisite = { focus = ITA_lessons_from_illyria }
 
 		x = -5
 		y = 1
 		relative_position_id = ITA_italian_highways_bba
 		cost = 5
 		available = {
-			NOT = { has_global_flag = second_italo_ethiopian_war_flag }
+			
 			OR = {
 				any_owned_state = { is_on_continent = africa }
 				any_subject_country = { capital_scope = { is_on_continent = africa } }
@@ -230,7 +233,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_develop_illyria
+		id = ITA_develop_tunisia
 		icon = GFX_focus_generic_develop_ethiopia
 		prerequisite = { focus = ITA_ministry_of_italian_africa }
 
@@ -241,12 +244,12 @@ focus_tree = {
 		available = {
 			OR = {
 				any_controlled_state = {
-					is_core_of = ETH
+					is_core_of = TUN
 					is_fully_controlled_by = ROOT
 				}
 				any_subject_country = { #FOR PUPPETS
 					any_controlled_state = {
-						is_core_of = ETH
+						is_core_of = TUN
 						is_fully_controlled_by = PREV
 					}
 				}
@@ -271,12 +274,12 @@ focus_tree = {
 						}
 					}
 				}
-				custom_effect_tooltip = ITA_develop_illyria_tt
+				custom_effect_tooltip = ITA_develop_tunisia_tt
 			}
 
 			if = {
 				limit = {
-					271 = { #SHEWA (Addis Ababa)
+					458 = { 
 						OR = {
 							is_fully_controlled_by = ROOT
 							controller = {
@@ -287,7 +290,7 @@ focus_tree = {
 						NOT = { has_state_flag = ITA_improved_infrastructure_in_state_flag }
 					}
 				}
-				271 = { #SHEWA (Addis Ababa)
+				458 = { 
 					set_state_flag = ITA_improved_infrastructure_in_state_flag
 					add_building_construction = {
 						type = infrastructure
@@ -301,7 +304,7 @@ focus_tree = {
 				limit = {
 					ROOT = {
 						any_controlled_state = {
-							is_core_of = ETH
+							is_core_of = TUN
 							is_fully_controlled_by = ROOT
 							NOT = { has_state_flag = ITA_improved_infrastructure_in_state_flag }
 						}
@@ -309,217 +312,10 @@ focus_tree = {
 				}
 				ROOT = {
 					random_controlled_state = {
-						prioritize = { 835 } #HARARGHE
+						prioritize = { 665 } #HARARGHE
 						limit = {
-							is_core_of = ETH
+							is_core_of = TUN
 							is_fully_controlled_by = ROOT
-							NOT = { has_state_flag = ITA_improved_infrastructure_in_state_flag }
-						}
-						set_state_flag = ITA_improved_infrastructure_in_state_flag
-						add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-						}
-						add_extra_state_shared_building_slots = 1
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					any_subject_country = { #FOR PUPPETS
-						any_controlled_state = {
-							is_core_of = ETH
-							is_fully_controlled_by = PREV
-						}
-					}
-				}
-				random_other_country = {
-					limit = {
-						is_subject_of = ROOT
-						any_controlled_state = {
-							is_core_of = ETH
-							is_fully_controlled_by = PREV
-						}
-					}
-					random_controlled_state = {
-						prioritize = { 835 } #HARARGHE
-						limit = {
-							is_core_of = ETH
-							is_fully_controlled_by = PREV
-							NOT = { has_state_flag = ITA_improved_infrastructure_in_state_flag }
-						}
-						set_state_flag = ITA_improved_infrastructure_in_state_flag
-						add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-						}
-						add_extra_state_shared_building_slots = 1
-					}
-				}
-			}
-			if = {
-				limit = {
-					843 = { #WELLO
-						OR = {
-							is_fully_controlled_by = ROOT
-							controller = {
-								is_subject_of = ROOT
-								has_full_control_of_state = PREV
-							}
-						}
-						NOT = { has_state_flag = ITA_improved_infrastructure_in_state_flag }
-					}
-				}
-				843 = { #WELLO
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-					add_extra_state_shared_building_slots = 1
-				}
-			}
-			else_if = {
-				limit = {
-					ROOT = {
-						any_controlled_state = {
-							is_core_of = ETH
-							is_fully_controlled_by = ROOT
-							NOT = { has_state_flag = ITA_improved_infrastructure_in_state_flag }
-						}
-					}
-				}
-				ROOT = {
-					random_controlled_state = {
-						prioritize = { 837 } #SIDAMO
-						limit = {
-							is_core_of = ETH
-							is_fully_controlled_by = ROOT
-							NOT = { has_state_flag = ITA_improved_infrastructure_in_state_flag }
-						}
-						set_state_flag = ITA_improved_infrastructure_in_state_flag
-						add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-						}
-						add_extra_state_shared_building_slots = 1
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					any_subject_country = { #FOR PUPPETS
-						any_controlled_state = {
-							is_core_of = ETH
-							is_fully_controlled_by = PREV
-							NOT = { has_state_flag = ITA_improved_infrastructure_in_state_flag }
-						}
-					}
-				}
-				random_other_country = {
-					limit = {
-						is_subject_of = ROOT
-						any_controlled_state = {
-							is_core_of = ETH
-							is_fully_controlled_by = PREV
-							NOT = { has_state_flag = ITA_improved_infrastructure_in_state_flag }
-						}
-					}
-					random_controlled_state = {
-						prioritize = { 837 } #SIDAMO
-						limit = {
-							is_core_of = ETH
-							is_fully_controlled_by = PREV
-							NOT = { has_state_flag = ITA_improved_infrastructure_in_state_flag }
-						}
-						set_state_flag = ITA_improved_infrastructure_in_state_flag
-						add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-						}
-						add_extra_state_shared_building_slots = 1
-					}
-				}
-			}
-
-			if = {
-				limit = {
-					842 = { #TIGRAY
-						OR = {
-							is_fully_controlled_by = ROOT
-							controller = {
-								is_subject_of = ROOT
-								has_full_control_of_state = PREV
-							}
-						}
-						NOT = { has_state_flag = ITA_improved_infrastructure_in_state_flag }
-					}
-				}
-				842 = { #TIGRAY
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-					add_extra_state_shared_building_slots = 1
-				}
-			}
-			else_if = {
-				limit = {
-					ROOT = {
-						any_controlled_state = {
-							is_core_of = ETH
-							is_fully_controlled_by = ROOT
-							NOT = { has_state_flag = ITA_improved_infrastructure_in_state_flag }
-						}
-					}
-				}
-				ROOT = {
-					random_controlled_state = {
-						prioritize = { 841 } #BEGEMDER
-						limit = {
-							is_core_of = ETH
-							is_fully_controlled_by = ROOT
-							NOT = { has_state_flag = ITA_improved_infrastructure_in_state_flag }
-						}
-						set_state_flag = ITA_improved_infrastructure_in_state_flag
-						add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-						}
-						add_extra_state_shared_building_slots = 1
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					any_subject_country = { #FOR PUPPETS
-						any_controlled_state = {
-							is_core_of = ETH
-							is_fully_controlled_by = PREV
-							NOT = { has_state_flag = ITA_improved_infrastructure_in_state_flag }
-						}
-					}
-				}
-				random_other_country = {
-					limit = {
-						is_subject_of = ROOT
-						any_controlled_state = {
-							is_core_of = ETH
-							is_fully_controlled_by = PREV
-							NOT = { has_state_flag = ITA_improved_infrastructure_in_state_flag }
-						}
-					}
-					random_controlled_state = {
-						prioritize = { 841 } #BEGEMDER
-						limit = {
-							is_core_of = ETH
-							is_fully_controlled_by = PREV
 							NOT = { has_state_flag = ITA_improved_infrastructure_in_state_flag }
 						}
 						set_state_flag = ITA_improved_infrastructure_in_state_flag
@@ -536,7 +332,7 @@ focus_tree = {
 			every_controlled_state = {
 				limit = {
 					  = yes
-					is_core_of = ETH
+					is_core_of = TUN
 					has_resistance = yes
 				}
 				add_compliance = 5
@@ -941,7 +737,7 @@ focus_tree = {
 	focus = {
 		id = ITA_regional_development
 		icon = GFX_goal_generic_construction
-		prerequisite = { focus = ITA_develop_eritrea focus = ITA_develop_libya focus = ITA_develop_somaliland focus = ITA_develop_illyria }
+		prerequisite = { focus = ITA_develop_eritrea focus = ITA_develop_libya focus = ITA_develop_somaliland focus = ITA_develop_tunisia }
 
 		x = 1
 		y = 1
@@ -975,7 +771,7 @@ focus_tree = {
 			#ETHIOPIA
 			if = {
 				limit = {
-					has_completed_focus = ITA_develop_illyria
+					has_completed_focus = ITA_develop_tunisia
 				}
 				if = {
 					limit = {
@@ -1175,7 +971,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_litoranea_balbo
+		id = ITA_libyan_roads
 		icon = GFX_focus_generic_improve_roads
 		prerequisite = { focus = ITA_regional_development }
 
@@ -1265,11 +1061,11 @@ focus_tree = {
 	focus = {
 		id = ITA_via_della_vittoria
 		icon = GFX_goal_reichsautobahn
-		prerequisite = { focus = ITA_litoranea_balbo }
+		prerequisite = { focus = ITA_libyan_roads }
 
 		x = 0
 		y = 1
-		relative_position_id = ITA_litoranea_balbo
+		relative_position_id = ITA_libyan_roads
 		cost = 10
 		available = {
 			451 = {
@@ -1568,11 +1364,11 @@ focus_tree = {
 	focus = {
 		id = ITA_libyan_railway
 		icon = GFX_focus_generic_railroad
-		prerequisite = { focus = ITA_litoranea_balbo }
+		prerequisite = { focus = ITA_libyan_roads }
 		prerequisite = { focus = ITA_prospect_for_oil }
 		x = 1
 		y = 2
-		relative_position_id = ITA_litoranea_balbo
+		relative_position_id = ITA_libyan_roads
 		cost = 10
 		available = {
 			448 = {
@@ -1708,6 +1504,47 @@ focus_tree = {
 			450 = {
 				ITA_check_for_cooperatives_and_add_dm = yes #If appropriate, apply dm from Cooperatives for Intensive Exploitation 
 				set_state_flag = benghazi_oil_developed
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}	
+		
+		}
+	}
+	focus = {
+		id = ITA_tunisian_refineries
+		icon = GFX_focus_generic_rubber
+		prerequisite = { focus = ITA_libyan_refineries }
+
+		x = 1
+		y = 1
+		relative_position_id = ITA_libyan_refineries
+		cost = 5
+
+		available = {
+			458 = {
+				  = yes
+				NOT = {
+					has_state_flag = tunisia_oil_developed
+				}
+			}
+			has_tech = synth_oil_experiments
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 8
+				state = 458
+			}
+			458 = {
+				ITA_check_for_cooperatives_and_add_dm = yes #If appropriate, apply dm from Cooperatives for Intensive Exploitation 
+				set_state_flag = tunisia_oil_developed
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = synthetic_refinery
@@ -3401,6 +3238,23 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
+	focus = {
+		id = ITA_chemical_weapons_program
+		icon = GFX_focus_BRA_italian_aircraft_development
+		prerequisite = { focus = ITA_expand_national_universities }
+
+		x = -1
+		y = 1
+		relative_position_id = ITA_expand_national_universities
+		cost = 8
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+		}
+	}
 
 	focus = {
 		id = ITA_fiocchi_munizioni
@@ -3733,6 +3587,7 @@ focus_tree = {
 	focus = {
 		id = ITA_army_primacy_bba
 		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = { focus = ITA_the_monopoly_broken focus = ITA_as_expected }
 
 		x = 13
 		y = 0
@@ -4104,6 +3959,28 @@ focus_tree = {
 			custom_effect_tooltip = ITA_moschettieri_del_duce_re_tt
 		}
 	}
+	focus = {
+		id = ITA_proper_heritage
+		icon = GFX_focus_ITA_redirect_alfa_romeo_production
+		prerequisite = { focus = ITA_moschettieri_del_duce }
+
+		dynamic = yes
+
+		x = -1
+		y = 1
+		relative_position_id = ITA_moschettieri_del_duce
+		cost = 5
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_to_variable = { ITA_re_army_core_defence_factor = 0.05 }
+			add_to_variable = { ITA_re_modifier_army_sub_unit_militia_max_org_factor = 0.05 }
+			custom_effect_tooltip = ITA_moschettieri_del_duce_re_tt
+		}
+	}
 
 	focus = {
 		id = ITA_a_bandits_war
@@ -4208,7 +4085,7 @@ focus_tree = {
 		relative_position_id = ITA_preserve_army_traditions
 		cost = 10
 		available = {
-			NOT = { has_global_flag = second_italo_ethiopian_war_flag }
+			
 			#NTH_Manu: Should probably also require a completed focus in any of the ME political paths, so that it can unlock appropriate generals
 		}
 
@@ -4452,6 +4329,37 @@ focus_tree = {
 				name = ITA_divisioni_alpine
 				bonus = 1
 				uses = 1
+				category = mountaineers_tech
+			}
+			
+		}
+	}
+	focus = {
+		id = ITA_expand_alpine_plan
+		icon = GFX_focus_ITA_alpine_division
+		prerequisite = { focus = ITA_divisioni_alpine }
+
+		x = -1
+		y = 1
+		relative_position_id = ITA_divisioni_alpine
+		cost = 10
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			add_to_variable = { ITA_re_special_forces_cap = 0.02 }
+			add_to_variable = { ITA_re_modifier_army_sub_unit_mountaineers_defence_factor = 0.03 }
+			add_to_variable = { ITA_re_modifier_army_sub_unit_mountaineers_max_org_factor = 0.05 }
+			custom_effect_tooltip = ITA_divisioni_alpine_re_tt
+
+			army_experience = 20
+
+			add_tech_bonus = {
+				name = ITA_divisioni_alpine
+				bonus = 1
+				uses = 2
 				category = mountaineers_tech
 			}
 			
@@ -4881,6 +4789,7 @@ focus_tree = {
 	focus = {
 		id = ITA_air_innovations_bba
 		icon = GFX_goal_expand_the_luftwaffe
+		prerequisite = { focus = ITA_the_monopoly_broken focus = ITA_as_expected }
 
 		x = 7
 		y = 0
@@ -5566,6 +5475,7 @@ focus_tree = {
 	focus = {
 		id = ITA_naval_power_projection
 		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = ITA_the_monopoly_broken focus = ITA_as_expected }
 
 		x = 11
 		y = 0
@@ -8174,9 +8084,9 @@ focus_tree = {
 		id = ITA_status_report_1930
 		icon = GFX_goal_zzz_WIP
 
-		x = 20
+		x = 30
 		y = 0
-		relative_position_id = ITA_naval_power_projection
+		#relative_position_id = ITA_air_innovations_bba
 		cost = 5
 		available = {
 		}
@@ -8268,165 +8178,6 @@ focus_tree = {
 		prerequisite = { focus = ITA_enter_the_austrian_conflict }
 		relative_position_id = ITA_enter_the_austrian_conflict
 		cost = 1
-		available = {
-		}
-
-		search_filters = {FOCUS_FILTER_POLITICAL}
-
-		completion_reward = {
-			
-		}
-	}
-
-	#####################
-	#### OTHER PATHS ####
-	#####################
-	focus = {
-		id = ITA_the_monopoly_broken
-		icon = GFX_focus_ITA_imperial_recognition
-
-		x = -10
-		y = 1
-		prerequisite = { focus = ITA_elections_of_1930 }
-		mutually_exclusive = { focus = ITA_as_expected }
-		relative_position_id = ITA_elections_of_1930
-		cost = 1
-		available = {
-		}
-
-		search_filters = {FOCUS_FILTER_POLITICAL}
-
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = ITA_np_seize_the_oppertunity
-		icon = GFX_TUR_commies_elected
-
-		x = 0
-		y = 1
-		prerequisite = { focus = ITA_the_monopoly_broken }
-		mutually_exclusive = { focus = ITA_np_new_elections }
-		relative_position_id = ITA_the_monopoly_broken
-		cost = 5
-		available = {
-		}
-
-		search_filters = {FOCUS_FILTER_POLITICAL}
-
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = ITA_np_a_red_italy
-		icon = GFX_TUR_commies_elected
-
-		x = -3
-		y = 1
-		prerequisite = { focus = ITA_np_seize_the_oppertunity }
-		mutually_exclusive = { focus = ITA_np_dannuzio_takes_power }
-		relative_position_id = ITA_np_seize_the_oppertunity
-		cost = 5
-		available = {
-		}
-
-		search_filters = {FOCUS_FILTER_POLITICAL}
-
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = ITA_np_dannuzio_takes_power
-		icon = GFX_ROM_pol_kw_6
-
-		x = -15
-		y = 1
-		prerequisite = { focus = ITA_np_seize_the_oppertunity }
-		mutually_exclusive = { focus = ITA_np_a_red_italy }
-		relative_position_id = ITA_np_seize_the_oppertunity
-		cost = 5
-		available = {
-		}
-
-		search_filters = {FOCUS_FILTER_POLITICAL}
-
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = ITA_np_new_elections
-		icon = GFX_focus_ITA_imperial_recognition
-
-		x = 4
-		y = 1
-		prerequisite = { focus = ITA_the_monopoly_broken }
-		mutually_exclusive = { focus = ITA_np_seize_the_oppertunity }
-		relative_position_id = ITA_the_monopoly_broken
-		cost = 5
-		available = {
-		}
-
-		search_filters = {FOCUS_FILTER_POLITICAL}
-
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = ITA_np_npa_victroy
-		icon = GFX_focus_ITA_imperial_recognition
-
-		x = 4
-		y = 1
-		prerequisite = { focus = ITA_np_new_elections }
-		mutually_exclusive = { focus = ITA_np_ldr_victory }
-		mutually_exclusive = { focus = ITA_np_psi_victory }
-		relative_position_id = ITA_np_new_elections
-		cost = 0.4
-		available = {
-		}
-
-		search_filters = {FOCUS_FILTER_POLITICAL}
-
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = ITA_np_ldr_victory
-		icon = GFX_focus_ITA_imperial_recognition
-
-		x = 2
-		y = 1
-		prerequisite = { focus = ITA_np_new_elections }
-		mutually_exclusive = { focus = ITA_np_npa_victroy }
-		mutually_exclusive = { focus = ITA_np_psi_victory }
-		relative_position_id = ITA_np_new_elections
-		cost = 0.4
-		available = {
-		}
-
-		search_filters = {FOCUS_FILTER_POLITICAL}
-
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = ITA_np_psi_victory
-		icon = GFX_focus_ITA_imperial_recognition
-
-		x = 0
-		y = 1
-		prerequisite = { focus = ITA_np_new_elections }
-		mutually_exclusive = { focus = ITA_np_ldr_victory }
-		mutually_exclusive = { focus = ITA_np_npa_victroy }
-		relative_position_id = ITA_np_new_elections
-		cost = 0.4
 		available = {
 		}
 
@@ -11055,6 +10806,28 @@ focus_tree = {
 		prerequisite = { focus = ITA_ip_italianize_sardinia }
 		relative_position_id = ITA_ip_italianize_libya
 		cost = 2
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			
+		}
+	}
+	#####################
+	#### OTHER PATHS ####
+	#####################
+	focus = {
+		id = ITA_the_monopoly_broken
+		icon = GFX_focus_ITA_imperial_recognition
+
+		x = -10
+		y = 1
+		prerequisite = { focus = ITA_elections_of_1930 }
+		mutually_exclusive = { focus = ITA_as_expected }
+		relative_position_id = ITA_elections_of_1930
+		cost = 1
 		available = {
 		}
 
