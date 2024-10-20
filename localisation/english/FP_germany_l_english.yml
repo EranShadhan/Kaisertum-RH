@@ -85,3 +85,6 @@
  GER_cheaper_stuff:0 "We willl receive §Y15% more resources§! from any member of the Deutsche Wirtschaftszollunion we trade with"
  GRE_making_use_of_austria_tt:0 "If we control §YLower Austria§!, we will be able to invest heavily into the Oil Fields there"
  GER_construction_of_railway:0 "Build a level §Y2§! railway from §YBerlin§! to the §Ycapital of every allied country§! accessible by land"
+ GER_anti_french_tank:0 "We will equip our soldiers with Anti-Tank Weapons specifically designed to fight of the French Super Heavy Tank. Specifically §YAll $infantry$§! & §Y$motorized$§!/§Y$mechanized$§! will receive: Hard Attack: §G+25%§!, Piercing: §G+100%§!\n"
+ GER_total_economic_war:0 "Total Economic War"
+ GER_sweden_deal_tt:0 "If They Accept:\n We will increase our exports to Sweden, and make a special deal with them. Every §Y3 months§! we will receive §Y1 civillian factory§!"

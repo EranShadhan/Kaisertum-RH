@@ -84,7 +84,7 @@ ideas = {
 		}
 		GER_powerful_unions = {
 
-			picture = NORDIC_northern_union
+			picture = FIN_finnish_federation_of_trade_unions
 			
 			allowed = {
 			original_tag = GER 

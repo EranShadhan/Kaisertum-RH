@@ -534,6 +534,34 @@ ideas = {
 			cancel_if_invalid = no
 		}
 
+		GER_total_economic_war = {
+
+
+			available = {
+				has_war = yes
+			}
+			ai_will_do = {
+   				factor = 1
+
+   			}
+            visible = { original_tag = GER }
+			cost = 150
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_expected_value = 0.10
+				conscription = -0.015
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				industrial_capacity_dockyard = 0.15
+			industrial_capacity_factory = 0.1
+				conversion_cost_civ_to_mil_factor= -0.3
+				conversion_cost_mil_to_civ_factor = -0.3
+				stability_weekly = -0.002
+			}
+
+			cancel_if_invalid = no
+		}
 		new_economic_policy = {
 
 			picture = new_economic_policy
