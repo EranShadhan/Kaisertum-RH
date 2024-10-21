@@ -727,8 +727,8 @@ guiTypes = {
 			gridboxType = {
 				name ="countries_grid"
 				#position = { x = 530 y = 0 } #1 countries
-				position = { x = 450 y = 0 } #2 countries
-				#position = { x = 375 y = 0 } #3 countries
+				#position = { x = 450 y = 0 } #2 countries
+				position = { x = 375 y = 0 } #3 countries
 				#position = { x = 0 y = 0 } #8 countries
 				size = { width = 100% height = 100% }
 				slotsize = { width = 150 height = 90 }

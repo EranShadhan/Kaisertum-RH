@@ -15,6 +15,12 @@
 			is_coastal = yes
 			is_controlled_by = ROOT
 		}
+		if = {
+			limit = {
+				tag = YUG
+			}
+			has_completed_focus = YUG_death_of_an_empire
+		}
 	}
 
 	complete_tooltip = {

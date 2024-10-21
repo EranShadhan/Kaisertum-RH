@@ -105,18 +105,74 @@ bookmarks = {
 			history = "OTHER_NEW_DECADE_DESC"
 		}
 		###  MINORS ###
-		"ROM"={
+		#"PER"={ #0.1
+		#	minor = yes
+		#	history = "PER_NEW_DECADE_DESC"
+		#	ideology = neutrality
+		#	ideas = {
+		#		PER_german_persian_oil_company
+		#		PER_army_1_focus
+		#		PER_traditional_islam_gov
+		#		PER_dream
+		#	}
+		#	focuses = {
+		#		PER_go_german
+		#		PER_our_place_in_the_world
+		#		PER_persian_carpets
+		#		PER_army_xp_2
+		#	}
+		#}
+		#"GRE"={ #0.2
+		#	minor = yes
+		#	history = "GRE_NEW_DECADE_DESC"
+		#	ideology = neutrality
+		#	ideas = {
+		#		GRE_megali_idea_partial_restoration
+		#		GRE_eee_enemy
+		#		victory_in_the_sgtwgre
+		#		GRE_on_going_population_exchange
+		#	}
+		#	focuses = {
+		#		GRE_metaxas_project_megisti_idea
+		#		GRE_the_house_always_wins
+		#		GRE_deimos_and_fobos
+		#		GRE_the_economic_crush
+		#	}
+		#}
+		YUG={ #0.3.1
 			minor = yes
-			history = "ROM_NEW_DECADE_DESC"
-			ideology = democratic
+			history = "YUG_NEW_DECADE_DESC"
+			ideology = neutrality
 			ideas = {
-				german_customs_union_member
-				GER_aid_to_austria
+				YUG_devided_brothers
+				YUG_payment_to_hungary
+				YUG_muslim_cristian_tensions
+				YUG_underground_italian_connections
 			}
 			focuses = {
+				YUG_anti_austrian_preparements
+				YUG_sponsor_slovenian_revolts
+				YUG_death_of_an_empire
+				YUG_a_new_illyria
 			}
 		}
-		"TUR"={
+		"ROM"={ #0.3
+			minor = yes
+			history = "ROM_NEW_DECADE_DESC"
+			ideology = neutrality
+			ideas = {
+				german_customs_union_member
+				Inefective_constitution
+				ROM_playboy
+			}
+			focuses = {
+				ROM_pol_kw_12
+				ROM_pol_kw_13
+				ROM_pol_d_24
+				ROM_paris_of_the_east
+			}
+		}
+		"TUR"={ #0.3
 			minor = yes
 			history = "TUR_NEW_DECADE_DESC"
 			ideology = neutrality
