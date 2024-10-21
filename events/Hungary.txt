@@ -154,37 +154,42 @@ country_event = {
 				79 = {
 					add_core_of = MOl
 				}
-				set_cosmetic_tag = MOL_HUN
+
+				hidden_effect = {
+					set_politics = {
+						ruling_party = communism
+						elections_allowed = no
+						last_election = "1935.12.17"
+						election_frequency = 48
+					}
+					add_victory_points = {
+						province = 9716
+						value = 10
+					}
+					set_capital = {
+						state = 79
+						remember_old_capital = no
+					  }
+				}
 			}
 
 			ROM = {
-				set_cosmetic_tag = ROM_HUN
+				set_cosmetic_tag = WAL
+				country_event = {
+					id = kt_romania.17
+					days = 1
+				}
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+				}
 			}
 
-			SER = {
-				set_cosmetic_tag = SER_HUN
-				transfer_state = 108
-				transfer_state = 802
-				transfer_state = 803
-			}
-
-		HUN = {
-			diplomatic_relation = {
-				country = MOL
-				relation = puppet
-				active = yes
-			}
-			diplomatic_relation = {
-				country = ROM
-				relation = puppet
-				active = yes
-			}
-			diplomatic_relation = {
-				country = SER
-				relation = puppet
-				active = yes
-			}
-
+			active = yes
+			
+		
 			
 		ITA = {
 		set_rule = {
@@ -195,7 +200,7 @@ country_event = {
 
 		
 
-		}	
+		
 	}
 	
 }

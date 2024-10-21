@@ -454,3 +454,30 @@ country_event = { #ukraine accepted
 		}
 	}
 }
+
+country_event = { #switch to moldova or romania
+	id = kt_romania.17
+	title = kt_romania.17.t
+	desc = kt_romania.17.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kt_romania.17.a
+		
+		MOL = { change_tag_from = ROM }
+
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = kt_romania.17.b
+
+		ai_will_do = {
+			base = 100
+		}
+	}
+}
