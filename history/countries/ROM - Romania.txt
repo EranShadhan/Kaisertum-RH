@@ -62,6 +62,7 @@ recruit_character = ROM_constantin_prezan
 recruit_character = ROM_elena_lupescu
 recruit_character = ROM_nicolae_titulescu
 recruit_character = ROM_grigore_gafencu
+recruit_character = ROM_mihail_lascar
 
 # Starting tech
 set_technology = {

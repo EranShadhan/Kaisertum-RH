@@ -718,14 +718,30 @@ news_event = {
     immediate = { 
                     set_global_flag = fall_of_GRE_ROM_2
 					ITA = {
-						leave_faction = yes
+						if = {
+							limit = {
+								is_in_faction_with = GRE
+							}
+							leave_faction = yes
+						}
+						
 					}
                     ROM = {
-                        puppet = GRE
-						puppet = ALB
-						puppet = SER
 						white_peace = GRE
+						release_puppet_on_controlled = GRE
+                        puppet = GRE
+						release_puppet_on_controlled = ALB
+						puppet = ALB
+						release_puppet_on_controlled = SER
+						puppet = SER
                     }
+					BUL = {
+						transfer_state = 212
+						transfer_state = 106
+						transfer_state = 184
+						transfer_state = 981
+						transfer_state = 211
+					}
                 }
 
     mean_time_to_happen = {

@@ -302,6 +302,9 @@ Balkan_integration = {
 			45 = {add_core_of = ROM}
 			102 = {add_core_of = ROM}
 			988 = {add_core_of = ROM}
+			1057 = {add_core_of = ROM}
+			1055 = {add_core_of = ROM}
+			1056 = {add_core_of = ROM}
 		}
 	}
 
@@ -322,6 +325,7 @@ Balkan_integration = {
 			934 = {add_core_of = ROM}
 			44 = {add_core_of = ROM}
 			805 = {add_core_of = ROM}
+			1054 = {add_core_of = ROM}
 		}
 	}
 

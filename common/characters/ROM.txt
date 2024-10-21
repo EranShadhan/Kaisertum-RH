@@ -409,21 +409,6 @@ characters={
 				large="GFX_Portrait_romania_gheorghe_avramescu"
 			}
 		}
-		advisor={	
-			slot = high_command
-			idea_token = ROM_gheorghe_avramescu
-			ledger = army
-			allowed = {
-				original_tag = ROM
-			}
-			traits = {
-				army_infantry_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
 
 		corps_commander={
 			skill=3
@@ -834,6 +819,34 @@ characters={
 			logistics_skill=3
 			legacy_id=-1
 		}
+	}
+
+	ROM_mihail_lascar={
+		name=ROM_constantin_prezan
+		portraits={
+			army={
+				large="GFX_Portrait_ROM_mihail_lascar"
+
+				small="GFX_ROM_mihail_lascar"
+			}
+		}
+
+		advisor={	
+			slot = high_command
+			idea_token = ROM_mihail_lascar
+			ledger = army
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
 	}
 
 }
