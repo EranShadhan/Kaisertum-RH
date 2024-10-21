@@ -279,16 +279,15 @@ guiTypes = {
 		
 
 		instantTextBoxType = {
-
 			name ="recent_updates"
-			position = { x = 680 y = 55 }
+			position = { x = 680 y = 25 }
 			textureFile = ""
 			font = "garamond_24"
 			borderSize = {x = 0 y = 0}
 			text = "kaisertumrecent_updates"
 			format = centre
 			maxWidth = 250
-			maxHeight = 20	
+			maxHeight = 20
 		}
 	}
 	
