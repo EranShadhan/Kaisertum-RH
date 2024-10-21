@@ -2,6 +2,10 @@ state={
 	id=970
 	name="STATE_970"
 	
+	resources={
+		steel=36 #was:20 was: 112
+		aluminium=12 # was: 22
+	}
 	history={
 		owner = BEL
 		victory_points = {

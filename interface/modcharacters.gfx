@@ -109,4 +109,20 @@ spriteTypes = {
 		name = "GFX_UBD_Adolf_Friedrich"
 		textureFile = "gfx/leaders/UBD/portrait_ubd_adolf_friedrich.dds"
 	}
+	SpriteType = {
+		name = "GFX_portrait_AUS_karl"
+		texturefile = "gfx/leaders/AUS/AUS_karl.png"
+	}
+	SpriteType = {
+		name = "GFX_HUN_KARoly_Wolff"
+		texturefile = "gfx/leaders/AUS/HUN_KARoly_Wolff.png"
+	}
+	SpriteType = {
+		name = "GFX_HUN_provisional_governament"
+		texturefile = "gfx/leaders/AUS/HUN_provisional_governament.png"
+	}
+	SpriteType = {
+		name = "GFX_CZE_Tomas_Masaryk"
+		texturefile = "gfx/leaders/AUS/CZE_Tomas_Masaryk.png"
+	}
 }

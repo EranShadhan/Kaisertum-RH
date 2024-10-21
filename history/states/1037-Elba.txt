@@ -1,3 +1,4 @@
+
 state={
 	id=1037
 	name="STATE_1037"
@@ -5,7 +6,7 @@ state={
 	history={
 		owner = ITA
 		victory_points = {
-			13374 1
+			13374 1 
 		}
 		buildings = {
 			infrastructure = 3
@@ -16,13 +17,14 @@ state={
 
 		}
 		add_core_of = ITA
+
 	}
 
 	provinces={
-		13374 
+		3968 6972 9856 
 	}
-	manpower=25000 # estimate
-	state_category = small_island
+	manpower=513712
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
 }

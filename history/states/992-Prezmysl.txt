@@ -13,7 +13,6 @@ state={
 		}
 		add_core_of = AUS
 		add_claim_by = POL
-		add_claim_by = UKR
 
 	}
 
