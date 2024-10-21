@@ -1,0 +1,25 @@
+state={
+	id=1112
+	name="STATE_1112"
+	resources={
+		oil=13.000
+	}
+
+	history={
+		owner = VEN
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = VEN
+
+	}
+
+	provinces={
+		1997 2052 4892 5000 7915 13979 13983 13984 13989 13991 
+	}
+	manpower=208187
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

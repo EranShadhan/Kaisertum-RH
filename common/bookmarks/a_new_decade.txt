@@ -11,7 +11,6 @@ bookmarks = {
 			history = "FRA_NEW_DECADE_DESC"
 			ideology = fascism
 			ideas = {
-				FRA_communist_opposition
 				FRA_embargoed_by_germany
 				FRA_secret_rearmament
 				FRA_super_heavy_tank_programme
@@ -58,6 +57,8 @@ bookmarks = {
 				vittorio_emanuele
 			}	
 			focuses = {
+				ITA_ip_final_civilization
+				ITA_ip_war_with_salonica
 			}		
 		}
 		"ENG"={
@@ -100,9 +101,20 @@ bookmarks = {
 		}
 
 		"---"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "OTHER_NEW_DECADE_DESC"
 		}
 		###  MINORS ###
+		"ROM"={
+			minor = yes
+			history = "ROM_NEW_DECADE_DESC"
+			ideology = democratic
+			ideas = {
+				german_customs_union_member
+				GER_aid_to_austria
+			}
+			focuses = {
+			}
+		}
 		"TUR"={
 			minor = yes
 			history = "TUR_NEW_DECADE_DESC"
@@ -120,20 +132,21 @@ bookmarks = {
 				TUR_revenge_for_the_first_balkan_war
 			}
 		}
-		"ROM"={
+		"GRE"={
 			minor = yes
-			history = "ROM_NEW_DECADE_DESC"
+			history = "GRE_NEW_DECADE_DESC"
 			ideology = neutrality
 			ideas = {
-				german_customs_union_member
-				Inefective_constitution
-				ROM_playboy
+				GRE_memories_of_the_nationa_schism
+				victory_in_the_sgtwgre
+				GRE_megali_idea_partial_restoration
+				GRE_eee_enemy
 			}
 			focuses = {
-				ROM_pol_3
-				ROM_pol_2
-				ROM_pol_5
-				ROM_army1
+				GRE_recruit_the_fascists_eee
+				GRE_the_greek_golden_age
+				GRE_make_the_med_red
+				GRE_mexatas_project_megisti_idea
 			}
 		}
 		effect = {

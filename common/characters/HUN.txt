@@ -1,40 +1,9 @@
 characters={
-	HUN_miklos_horthy={
-		instance = {
-			allowed = {
-				has_dlc = "Death or Dishonor"
-			}
-			name=HUN_miklos_horthy
-			portraits={
-				navy = { #Can become Navy leader and therefore navy advisor
-					large = "GFX_Portrait_hungary_miklos_horthy_admiral"
-					small = "GFX_idea_HUN_miklos_horthy_admiral"
-				}
-				civilian={
-					large="GFX_Portrait_hungary_miklos_horthy"
-				}
-			}
-			country_leader={
-				ideology=oligarchism
-				traits={ fascist_sympathies anti_communist }
-				expire="1965.1.1.1"
-				id=500
-			}
-			country_leader={
-				ideology=fascism_ideology
-				traits={ anti_communist }
-				expire="1965.1.1.1"
-				id=503
-			}
-		}
-		instance = {
-			allowed = {
-				NOT = { has_dlc = "Death or Dishonor" }
-			}
-			name=HUN_miklos_horthy
+	HUN_Karoly_Wolff={
+			name=HUN_Karoly_Wolff
 			portraits={
 				civilian={
-					large="GFX_Portrait_hungary_miklos_horthy"
+					large=GFX_HUN_KARoly_Wolff
 				}
 			}
 			country_leader={
@@ -42,28 +11,21 @@ characters={
 				expire="1965.1.1.1"
 				id=500
 			}
+		}
+		
+	HUN_provisional_governament={
+			name=HUN_provisional_governament
+			portraits={
+				civilian={
+					large=GFX_HUN_provisional_governament
+				}
+			}
 			country_leader={
-				ideology=fascism_ideology
+				ideology=socialism
 				expire="1965.1.1.1"
 				id=500
 			}
-		}
-	}
-
-	HUN_otto_von_habsburg={
-		name=HUN_otto_von_habsburg
-		portraits={
-			civilian={
-				large="GFX_Portrait_hungary_otto_von_hapsburg"
-			}
-		}
-		country_leader={
-			ideology=despotism
-			traits={  }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
+		}	
 
 	HUN_matyas_rakosi={
 		name=HUN_matyas_rakosi
@@ -74,21 +36,6 @@ characters={
 		}
 		country_leader={
 			ideology=stalinism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	HUN_arpad_szakasits={
-		name=HUN_arpad_szakasits
-		portraits={
-			civilian={
-				large="GFX_portrait_HUN_arpad_szakasits"
-				small = "GFX_portrait_HUN_arpad_szakasits_small"
-			}
-		}
-		country_leader={
-			ideology=socialism
 			expire="1965.1.1.1"
 			id=-1
 		}

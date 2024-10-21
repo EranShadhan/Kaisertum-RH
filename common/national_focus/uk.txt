@@ -14,7 +14,7 @@ focus_tree = {
 		factor = 0
 		
 		modifier = {
-			add = 0
+			add = 10
 			tag = ENG
 		}
 	}
@@ -1408,6 +1408,8 @@ focus = {
 			add_ideas = ENG_peace_and_prosperity_idea
 		}
 	}
+}
+# TO BE LATER ADDED
 	focus = {
 		id = ENG_a_change_in_course
 		mutually_exclusive = { focus = ENG_steady_as_she_goes }
