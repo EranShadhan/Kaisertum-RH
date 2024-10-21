@@ -1,4 +1,8 @@
 #reload countrycolors
+EUA = {
+	color = rgb { 36 113 163  }
+	color_ui = rgb { 36 113 163  }
+}
 SIC = {
 	color = rgb { 222 41 16 }
 	color_ui = rgb { 222 41 16 }
@@ -22,6 +26,10 @@ XSM = {
 SHX = {
 	color = rgb { 199 168 43 }
 	color_ui = rgb { 199 168 43 }
+}
+MOL= {
+	color = rgb { 95 0 0 }
+	color_ui = rgb { 95 0 0 }
 }
 PRM = {
 	color = rgb { 171 46 69 }
@@ -986,4 +994,32 @@ CPE = {
 NCY = {
 	color = rgb { 255 242 240 }
 	color_ui = rgb { 255 242 240 }
+}
+LEN = {
+	color = rgb { 168 72 72 }
+	color_ui = rgb { 168 72 72 }
+}
+RUD = {
+	color = rgb { 52 130 183 }
+	color_ui = rgb { 52 130 183 }
+}
+RUM = {
+	color = rgb { 26 147 26 }
+	color_ui = rgb { 26 147 26 }
+}
+RUF = {
+	color = rgb { 217 183 13 }
+	color_ui = rgb { 217 183 13 }
+}
+UCS = {
+	color = rgb { 155 3 3 }
+	color_ui = rgb { 155 3 3 }
+}
+CMG = {
+	color = rgb { 208 211 212 }
+	color_ui = rgb { 208 211 212 }
+}
+TKS = {
+	color = rgb { 126 189 221 }
+	color_ui = rgb { 126 189 221 }
 }

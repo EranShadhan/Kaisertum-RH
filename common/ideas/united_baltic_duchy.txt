@@ -2,6 +2,249 @@ ideas = {
 
 	country = {
 
+		UBD_logistics_1 = {
+
+			picture = GFX_
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				global_building_slots_factor = 0.05
+				supply_node_range = 0.1
+				supply_consumption_factor = -0.1
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+
+		UBD_logistics_2 = {
+
+			picture = GFX_
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				global_building_slots_factor = 0.05
+				supply_node_range = 0.25
+				supply_consumption_factor = -0.1
+				army_fuel_consumption_factor = -0.15
+				production_speed_infrastructure_factor = 0.1
+			}
+
+			equipment_bonus = {
+                motorized_equipment = {
+                    instant = yes
+					build_cost_ic = -0.1
+                }
+            }
+		}
+
+		UBD_economy_debuff_starting = {
+
+			picture = GFX_
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_factory_efficiency_gain_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1
+				monthly_population = 0.4
+				conscription_factor = -0.2
+			}
+		}
+
+		UBD_economy_debuff = {
+
+			picture = GFX_
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_factory_efficiency_gain_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1
+				monthly_population = 0.2
+				conscription_factor = -0.2
+				global_building_slots_factor = 0.05
+			}
+		}
+
+		UBD_economy_1 = {
+
+			picture = GFX_
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_factory_efficiency_gain_factor = -0.05
+				production_factory_max_efficiency_factor = -0.05
+				monthly_population = 0.2
+				conscription_factor = -0.2
+				global_building_slots_factor = 0.1
+			}
+		}
+
+		UBD_economy_2 = {
+
+			picture = GFX_
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = -0.05
+				monthly_population = 0.1
+				conscription_factor = -0.1
+				global_building_slots_factor = 0.1
+			}
+		}
+
+		UBD_economy_2_efficency = {
+
+			picture = GFX_
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				monthly_population = 0.1
+				conscription_factor = -0.1
+				global_building_slots_factor = 0.1
+			}
+		}
+
+		UBD_economy_2_land = {
+
+			picture = GFX_
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = -0.05
+				production_speed_buildings_factor = 0.1
+				monthly_population = 0.2
+				global_building_slots_factor = 0.2
+			}
+		}
+
+		UBD_economy_3 = {
+
+			picture = GFX_
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				monthly_population = 0.2
+				global_building_slots_factor = 0.2
+			}
+		}
+
+		UBD_economy_final = {
+
+			picture = GFX_
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				monthly_population = 0.2
+				global_building_slots_factor = 0.2
+			}
+		}
+
 		UBD_germanisation_programme_idea = {
 
 			picture = UBD_germanization

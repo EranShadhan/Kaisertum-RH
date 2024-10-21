@@ -7,4 +7,6 @@ spriteTypes = {
 		tilingCenter = no
 		effectFile = "gfx/FX/buttonstate.shader"
 	}
+	
+	
 }

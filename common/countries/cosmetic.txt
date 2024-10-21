@@ -1,3 +1,12 @@
+DEMOCRATIC_VENEZUELA = {
+    color = rgb { 43 48 105 }
+    color_ui = rgb { 43 48 105 }
+}
+FASCIST_VENEZUELA = {
+    color = rgb { 212 161 140 }
+    color_ui = rgb { 212 161 140 }
+}
+
 IRE_UK = {
     color = rgb { 242 71 71 }
     color_ui = rgb { 242 71 71 }
@@ -43,9 +52,9 @@ AUS_JAP = {
 	color_ui = rgb {120 0 150}
 }
 
-ROM_HUN = {
-	color = rgb { 249 126 98 }
-	color_ui = rgb { 255 164 127 }
+WAL = {
+	color = rgb { 255 230 230 }
+	color_ui = rgb { 255 230 230 }
 }
 
 SER_HUN = {
@@ -53,9 +62,9 @@ SER_HUN = {
 	color_ui = rgb { 255 164 127 }
 }
 
-MOL_HUN = {
-	color = rgb { 249 126 98 }
-	color_ui = rgb { 255 164 127 }
+MOL = {
+	color = rgb { 95 0 0 }
+	color_ui = rgb { 95 0 0 }
 }
 
 YUG_AS = {

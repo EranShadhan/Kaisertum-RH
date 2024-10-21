@@ -9,7 +9,7 @@
 		}
 	}
 
-	#shared_focus = BALKAN_joint_united_front
+	#joint_focus = BALKAN_joint_united_front
 	#Generic tree
 	shared_focus = army_effort
 	shared_focus = aviation_effort

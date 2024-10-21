@@ -14,6 +14,42 @@ spriteTypes = {
 		name = "GFX_goal_GER_bavaria"
 		texturefile = "gfx/interface/goals/GER/GER_bavaria.png"
 	}
+		SpriteType = {
+		name = "GFX_GER_continue_the_reforms"
+		texturefile = "gfx/interface/goals/GER/GER_continue_the_reforms.png"
+	}
+		SpriteType = {
+		name = "GFX_GER_democratic_front"
+		texturefile = "gfx/interface/goals/GER/GER_democratic_front.png"
+	}
+		SpriteType = {
+		name = "GFX_GER_the_monarchy"
+		texturefile = "gfx/interface/goals/GER/GER_the_monarchy.png"
+	}
+		SpriteType = {
+		name = "GFX_GER_joint_leadership"
+		texturefile = "gfx/interface/goals/GER/GER_joint_leadership.png"
+	}
+	SpriteType = {
+		name = "GFX_GER_the_third"
+		texturefile = "gfx/interface/goals/GER/GER_the_third.png"
+	}
+	SpriteType = {
+		name = "GFX_GER_victoria"
+		texturefile = "gfx/interface/goals/GER/GER_victoria.png"
+	}
+	SpriteType = {
+		name = "GFX_GER_death_of_kaiser"
+		texturefile = "gfx/interface/goals/GER/GER_death_of_kaiser.png"
+	}
+		SpriteType = {
+		name = "GFX_GER_tour_of_the_empire"
+		texturefile = "gfx/interface/goals/GER/GER_tour_of_the_empire.png"
+	}
+		SpriteType = {
+		name = "GFX_GER_wilhems_legacy"
+		texturefile = "gfx/interface/goals/GER/GER_wilhems_legacy.png"
+	}
 	SpriteType = {
 		name = "GFX_GER_central_powers"
 		texturefile = "gfx/interface/goals/GER/GER_central_powers.png"

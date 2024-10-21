@@ -11,6 +11,8 @@ focus_tree = {
 
     default = no
 
+	#joint_focus = BALKAN_joint_united_front
+
     continuous_focus_position = { x = 2000 y = 2000 }
 
     
@@ -4548,6 +4550,7 @@ focus = {
 
 		cost = 5
 
+		mutually_exclusive = { focus = ROM_pol_d_14 }
 
 		ai_will_do = {
 				factor = 1

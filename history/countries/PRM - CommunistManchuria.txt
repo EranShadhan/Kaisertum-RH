@@ -4,6 +4,10 @@ set_research_slots = 2
 
 oob = "PRM_1930"
 
+add_ideas = {
+	east_asia_trade_membership
+}
+
 recruit_character = PRM_Zhao_Shangzhi
 
 set_technology = {

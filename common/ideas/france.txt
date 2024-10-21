@@ -3,7 +3,7 @@ ideas = {
 	
 		FRA_secret_rearmament = {
 
-			picture = chi_army_corruption3
+			picture = FRA_worker_nat
 			
 			allowed = {
 				always = no
@@ -16,13 +16,21 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.1
+				production_speed_infrastructure_factor = 0.3
+				production_speed_rail_way_factor = 0.1
+				production_speed_supply_node_factor = 0.05
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_fuel_silo_factor = 0.20
+				production_speed_synthetic_refinery_factor = 0.15
+				political_power_factor = -0.30
 			}
 		}
 		
 		FRA_embargoed_by_germany = {
 
-			picture = can_wartime_prices_and_trade_board
+			picture = FRA_embargoed_by_germany
 			
 			allowed = {
 				always = no
@@ -38,69 +46,10 @@ ideas = {
 				local_resources = -0.3
 			}
 		}
-		FRA_communist_opposition_2 = {
-
-			name = FRA_communist_opposition
-
-			picture = jap_the_unthinkable_option
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				communism_drift = 0.15
-				stability_factor = -0.25
-				weekly_manpower = -2000
-			}
-		}
-		FRA_communist_opposition = {
-
-			picture = jap_the_unthinkable_option
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				communism_drift = 0.03
-				stability_factor = -0.2
-				weekly_manpower = -1000
-			}
-		}
 		
-		FRA_against_monarchy = {
+		FRA_super_heavy_tank_programme = {
 
-			picture = generic_king_handled
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-			}
-		}
-		FRA_colonial_army = {
-
-			picture = por_colonial_army
+			picture = FRA_tank_program
 			
 			allowed = {
 				always = no
@@ -113,12 +62,18 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				weekly_manpower = 5000
+				army_armor_attack_factor = 0.1
+				army_armor_defence_factor = 0.1
+				research_speed_factor = -0.05
 				consumer_goods_factor = 0.1
 			}
+
+			research_bonus = {
+				armor = 0.1
+			}
 		}
-		
-		FRA_republican_front_collapse = {
+
+		FRA_republican_collapse = {
 
 			picture = FRA_political_violence
 			
@@ -133,140 +88,12 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				democratic_drift = -0.05
 				stability_factor = -0.1
 			}
 		}
-		
-		FRA_secret_police = {
+		FRA_defeatism = {
 
-			picture = generic_secret_police
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				stability_weekly = -0.001
-			}
-		}
-
-		FRA_super_heavy_tank_programme = {
-
-			picture = generic_acquire_tanks
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				army_armor_attack_factor = 0.5
-				army_armor_defence_factor = 0.5
-				army_armor_speed_factor = 0.5
-				breakthrough_factor = 0.3
-			}
-		}
-
-		FRA_eliminating_communist_opposition = {
-
-			picture = generic_communism_banned
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				stability_weekly = -0.005
-				fascism_drift = 0.05
-				communism_drift = -0.05
-			}
-		}
-
-		FRA_ultra_fascists = {
-
-			picture = generic_fascism_rising
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				recruitable_population = 0.3
-				production_speed_industrial_complex_factor = -0.2
-				production_speed_arms_factory_factor = 0.2
-				opinion_gain_monthly_factor = -0.3
-				justify_war_goal_time = -0.5
-			}
-		}
-
-		FRA_moderate_fascists = {
-
-			picture = generic_fascist_workers
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				enemy_justify_war_goal_time = 0.5
-			}
-		}
-
-		FRA_developed_colonial_army = {
-	
-			name = FRA_colonial_army
-
-			picture = por_colonial_army
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				weekly_manpower = 6000
-				consumer_goods_factor = 0.05
-			}
-		}
-		
-		FRA_small_scale_defeatism = {
-
-			picture = chi_army_corruption3
+			picture = FRA_defeatism
 			
 			allowed = {
 				always = no
@@ -280,15 +107,14 @@ ideas = {
 			
 			modifier = {
 				war_support_factor = -0.1
+				conscription = -0.005
+				army_org_factor = -0.1
 			}
-		}	
-		
-		FRA_cheap_workforce = { #duplicate of a generic with a custom icon
+		}
+		FRA_revanchism = {
 
-			name = cheap_workforce
-
-			picture = FRA_slave_worker_nat
-
+			picture = FRA_revanchism
+			
 			allowed = {
 				always = no
 			}
@@ -300,8 +126,219 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.1
-				production_factory_start_efficiency_factor = 0.1
+				fascism_acceptance = 10
+				fascism_drift = 0.02
+				justify_war_goal_time = -0.25
+			}
+		}
+		FRA_Best_Teacher = {
+
+			picture = FRA_Best_Teacher
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				land_doctrine_cost_factor = -0.05
+			}
+
+			research_bonus = {
+				infantry_weapons = 0.05
+			}
+		}
+
+		FRA_Carefully_Managed_Production = {
+
+			picture = FRA_carefully_manage_production
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		FRA_FRA_RUS_collaboration = {
+			picture = FRA_RUS_collaboration
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				country_resource_aluminium = 10
+				country_resource_steel = 35
+				country_resource_oil = 25
+			}
+			targeted_modifier = {
+				tag = SOV    # this can also take a variable that stores a scope
+				cic_to_target_factor = 0.1
+			}
+		}
+		FRA_failure_of_marseille = {
+			picture = FRA_the_failure_of_marseille
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_dockyard = -0.33
+				war_support_factor = -0.15
+			}
+			removal_cost = -1
+		}
+		FRA_commie_repression = {
+			picture = FRA_the_failure_of_marseille
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				communism_drift = -0.15
+				neutrality_drift = 0.1
+				fascism_drift = 0.1
+			}
+			removal_cost = -1
+		}
+		FRA_nationalism = {
+			picture = FRA_the_failure_of_marseille
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.05
+				drift_defence_factor = 0.1
+				offensive_war_stability_factor = 0.10
+			}
+			removal_cost = -1
+		}
+		FRA_propaganda_films = {
+			picture = FRA_the_failure_of_marseille
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.1
+				drift_defence_factor = 0.2
+				offensive_war_stability_factor = 0.25
+			}
+			removal_cost = -1
+		}
+
+
+
+
+
+
+
+
+		FRA_spirit_of_the_war_1 = {
+
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				defence = 0.05
+				army_core_defence_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		FRA_spirit_of_the_war_2 = {
+
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				defence = 0.15
+				army_core_defence_factor = 0.2
+				army_morale_factor = 0.2
+			}
+		}
+		FRA_spirit_of_the_war_3 = {
+
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				defence = 0.25
+				army_core_defence_factor = 0.3
+				army_morale_factor = 0.3
+			}
+		}
+		FRA_spirit_of_the_war_4 = {
+
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				defence = 0.35
+				army_core_defence_factor = 0.4
+				army_morale_factor = 0.4
 			}
 		}
 	}

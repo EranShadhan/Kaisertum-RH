@@ -5,7 +5,7 @@
  RUS_events.1.b:0 "Kerensky is right..."
 
  RUS_events.2.t:0 "Anti-Corruption Purges"
- RUS_events.2.d:0 "Russia has awlays been rooted with corruption in every way since the Rus'. Provisional Government has to get rid of corruption to have a bright future."
+ RUS_events.2.d:0 "Russia has always been rooted with corruption in every way since the Rus'. Provisional Government has to get rid of corruption to have a bright future."
  RUS_events.2.a:0 "Purge the Military"
  RUS_events.2.b:0 "Purge the Monopolists"
 
@@ -23,3 +23,69 @@
  RUS_events.5.d:0 "State Council in tsarist Russia was an advisory body to the Duma. The status of it in the Russian Republic is still unknown."
  RUS_events.5.a:0 "Keep it as an advisory body"
  RUS_events.5.b:0 "Make it confirm laws"
+ 
+ SOV_events.1.t:0 "Constitutient Assembly of 1930"
+ SOV_events.1.d:0 "People are clearly not happy with the state of the government. Technically, the Provisional Government is not fully legitimate and is in need of a reform. By setting up the Assembly, Kerensky hopes to cease the protests and somehow stay in power after this.\n\nHowever, if the people won't agree with the new Constitution, it could lead to a total collapse of the government..."
+ SOV_events.1.a:0 "Let's see how this goes"
+ 
+ SOV_events.2.t:0 "Members of Assembly Appointed"
+ SOV_events.2.d:0 "Members of the Constitutient Assembly have been recently appointed by Kerensky. The Assembly consists of members of which 114 were directly elected, 38 were appointed by Kerensky and the rest were government ministers. The Assembly will begin its work in a week, after everyone arrives to Moscow, where all of the discussion will take place."
+ SOV_events.2.a:0 "Let the Discussions Begin!"
+ 
+ SOV_events.3.t:0 "Discussion: Elections"
+ SOV_events.3.d:0 "If elections are allowed in Russia, there is a high chance Kerensky will lose his power, so he might become... angry..."
+ SOV_events.3.a:0 "Free and Fair Elections"
+ SOV_events.3.b:0 "Unfair Elections"
+ SOV_events.3.c:0 "No Elections"
+ 
+ RUS_collapse.1.t:0 "Letter To: Alexander Kerensky"
+ RUS_collapse.1.d:0 "People have decided to take the matter into their own hands. They are rioting all across the country. It can't be stopped now. I hope you understand the damage you have done. It's very likely that new governments will appear - all because of you...\n\nIt is highly recommended that you retire and watch the Russian Collapse from far away."
+ RUS_collapse.1.a:0 "So be it."
+ 
+ RUS_collapse_no_content: "Content for this country is §RWIP§!!\n"
+ 
+ RUS_collapse.12.t:0 "Choose country"
+ RUS_collapse.12.d:0 ""
+ RUS_collapse.12.a:0 "Go North-East"
+ RUS_collapse.12.b:0 "Play as Russian Provisional Government"
+ RUS_collapse.12.c:0 "Go South"
+ 
+ RUS_collapse.13.t:0 "North-East"
+ RUS_collapse.13.desc:0 ""
+ RUS_collapse.13.a:0 "Play as Karelia"
+ RUS_collapse.13.b:0 "Play as Russian Republic"
+ RUS_collapse.13.c:0 "Go Further East"
+ RUS_collapse.13.d:0 "Go Back"
+ 
+ RUS_collapse.14.t:0 "Further East"
+ RUS_collapse.14.desc:0 ""
+ RUS_collapse.14.a:0 "Play as Empire of All the Russias (Monarchists)"
+ RUS_collapse.14.b:0 "Go South (Central Asia)"
+ RUS_collapse.14.c:0 "Go Far East"
+ RUS_collapse.14.d:0 "Go Back"
+ 
+ RUS_collapse.15.t:0 "Far East"
+ RUS_collapse.15.d:0 ""
+ RUS_collapse.15.a:0 "Play as Russian State (Integralists)"
+ RUS_collapse.15.b:0 "Play as Far Eastern Republic"
+ RUS_collapse.15.c:0 "Go Back"
+ 
+ RUS_collapse.16.t:0 "South (Central Asia)"
+ RUS_collapse.16.d:0 ""
+ RUS_collapse.16.a:0 "Play as Federation of Central Asian States (Turkestan)"
+ RUS_collapse.16.b:0 "Play as Tannu Tuva"
+ RUS_collapse.16.c:0 "Go Back"
+ 
+ RUS_collapse.17.t:0 "South"
+ RUS_collapse.17.desc:0 ""
+ RUS_collapse.17.a:0 "Play as LSSR"
+ RUS_collapse.17.b:0 "Play as Don Republic"
+ RUS_collapse.17.c:0 "Go Further South"
+ RUS_collapse.17.d:0 "Go Back"
+ 
+ RUS_collapse.18.t:0 "South"
+ RUS_collapse.18.desc:0 ""
+ RUS_collapse.18.a:0 "Play as Crimean Military Governorate"
+ RUS_collapse.18.b:0 "Play as Kuban Republic"
+ RUS_collapse.18.c:0 "Play as UCSSR"
+ RUS_collapse.18.d:0 "Go Back"

@@ -2,7 +2,67 @@
 
 	set_oob = "FRA_1930"
 
-
+	31 =  {
+		add_dynamic_modifier = { 
+			modifier = FRA_communists
+		}
+	}
+	806 =  {
+		add_dynamic_modifier = { 
+			modifier = FRA_communists
+		}
+	}
+	19 =  {
+		add_dynamic_modifier = { 
+			modifier = FRA_communists
+		}
+	}
+	25 =  {
+		add_dynamic_modifier = { 
+			modifier = FRA_communists
+		}
+	}
+	23 =  {
+		add_dynamic_modifier = { 
+			modifier = FRA_communists
+		}
+	}
+	33 =  {
+		add_dynamic_modifier = { 
+			modifier = FRA_communists
+		}
+	}
+	22 =  {
+		add_dynamic_modifier = { 
+			modifier = FRA_communists
+		}
+	}
+	26 =  {
+		add_dynamic_modifier = { 
+			modifier = FRA_communists
+		}
+	}
+	20 =  {
+		add_dynamic_modifier = { 
+			modifier = FRA_communists
+		}
+	}
+	32 =  {
+		add_dynamic_modifier = { 
+			modifier = FRA_communists
+		}
+	}
+	21 =  {
+		add_dynamic_modifier = { 
+			modifier = FRA_communists
+		}
+	}
+	851 =  {
+		add_dynamic_modifier = { 
+			modifier = FRA_communists
+		}
+	}
+	
 starting_train_buffer = 2
 
 if = {
@@ -44,8 +104,9 @@ if = {
 	}
 }
 
-set_research_slots = 3
-set_stability = 0.5
+set_research_slots = 4
+set_stability = 0.8
+set_war_support = 0.70
 add_command_power = 20
 
 
@@ -66,6 +127,8 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 	basic_train = 1
+	atomic_research = 1
+	nuclear_reactor = 1
 }
 
 if = {
@@ -162,6 +225,8 @@ set_politics = {
 	elections_allowed = no
 }
 
+create_faction = FRA_Axis
+
 set_popularities = {
 	democratic = 2
 	fascism = 56
@@ -170,17 +235,27 @@ set_popularities = {
 }
 
 add_ideas = {
-	FRA_republican_front_collapse
-	FRA_communist_opposition
 	FRA_embargoed_by_germany
-	FRA_secret_police
 	FRA_secret_rearmament
 	FRA_super_heavy_tank_programme
-	FRA_colonial_army
-    FRA_small_scale_defeatism
-	international_isolation
+	FRA_republican_collapse
+	FRA_defeatismm
+	FRA_revanchism
+	FRA_Best_Teacher
+	FRA_Carefully_Managed_Production
+	FRA_FRA_RUS_collaboration
+	FRA_failure_of_marseille
+	french_phoenix_membership
+
+	low_economic_mobilisation
+	limited_conscription
+	
 }
 
+recruit_character = FRA_Prince_Jean
+recruit_character = FRA_Eugene_dolenclue
+recruit_character = FRA_fascist_pary
+recruit_character = FRA_Jacques_Doriot
 recruit_character = FRA_joseph_darnaud
 recruit_character = FRA_marcel_deat
 recruit_character = FRA_georges_valois
@@ -241,13 +316,6 @@ recruit_character = FRA_paul_baudouin
 recruit_character = FRA_maurice_gauche
 recruit_character = FRA_jacques_duclos
 recruit_character = FRA_marcel_bucard
-
-set_autonomy = {
-	target = FMG
-	autonomous_state = autonomy_colony
-	freedom_level = 0.1
-}
-
 
 if = {
 	limit = { has_dlc = "La Resistance" }

@@ -9,6 +9,15 @@
 
 	available_if_capitulated = yes
 
+	available = {
+		if = {
+			limit = {
+				tag = YUG
+			}
+			has_completed_focus = YUG_death_of_an_empire
+		}
+	}
+
 
 	complete_tooltip = {
 		air_experience = 25

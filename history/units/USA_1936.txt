@@ -420,14 +420,7 @@ units = {
 		start_equipment_factor = 0.15
 
 	}				
-	division= {				
-		name = "Guam Garrison"			
-		location = 12140
-		division_template = "Garrison Brigade"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.15
-
-	}				
+			
 	
 	# South Pacific Defenses #
 	division= {			

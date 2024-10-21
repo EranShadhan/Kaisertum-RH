@@ -104,9 +104,9 @@ bookmarks = {
 			history = "OTHER_NEW_DECADE_DESC"
 		}
 		###  MINORS ###
-		"ROM"={
+		"AUS"={
 			minor = yes
-			history = "ROM_NEW_DECADE_DESC"
+			history = "AUS_NEW_DECADE_DESC"
 			ideology = democratic
 			ideas = {
 				german_customs_union_member
@@ -132,21 +132,21 @@ bookmarks = {
 				TUR_revenge_for_the_first_balkan_war
 			}
 		}
-		"GRE"={
+		"UKR"={
 			minor = yes
-			history = "GRE_NEW_DECADE_DESC"
+			history = "UKR_NEW_DECADE_DESC"
 			ideology = neutrality
 			ideas = {
-				GRE_memories_of_the_nationa_schism
-				victory_in_the_sgtwgre
-				GRE_megali_idea_partial_restoration
-				GRE_eee_enemy
+				german_customs_union_member
+				UKR_sugar_businesses
+				UKR_german_breadbasket
+				UKR_land_problem
 			}
 			focuses = {
-				GRE_recruit_the_fascists_eee
-				GRE_the_greek_golden_age
-				GRE_make_the_med_red
-				GRE_mexatas_project_megisti_idea
+				UKR_ukraine_above_all
+				UKR_red_prince
+				UKR_state_stability
+				UKR_ostwall_1
 			}
 		}
 		effect = {

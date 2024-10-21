@@ -21,8 +21,10 @@
 	focus = {
 		id = AFG_graveyard
 		icon = GFX_focus_generic_support_the_left_right
-		x = 16
-		y = 7
+		prerequisite = { focus = political_effort }
+		x = 8
+		y = 1
+		relative_position_id = political_effort
 	
 		cost = 5
 	
@@ -62,7 +64,7 @@
 		cost = 10
 	
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	
 		available = {
@@ -96,7 +98,7 @@
 		cost = 10
 	
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	
 		available = {

@@ -13,6 +13,15 @@ characters={
 			id = -1
 		}
 	}
+
+	TUR_antouh_saadeh = {
+		name = TUR_antouh_saadeh
+		portraits = {
+			civilian = {
+				large = GFX_portrait_TUR_antouh_saadeh
+			}
+		}
+	}
 	
 	TUR_yakup_kadri = {
 		name = TUR_yakup_kadri
@@ -852,7 +861,7 @@ characters={
 		}
 	}
 
-	TUR_Antoun_Saadeh = {
+	TUR_antoun_saadeh = {
 		name = TUR_antoun_saadeh
 		portraits = {
 			civilian = {
@@ -860,7 +869,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = gen_nazism
+			ideology = national_socfialism
 			expire = "1953.3.1.1"
 			traits={ emigree }
 			id = -1

@@ -4,38 +4,20 @@ add_namespace = Hungary
 
 country_event = {
 	id = hungary.1
-	title = hungary.1.t
-	desc = hungary.1.d
+	title = hungary.1.tt
+	desc = hungary.1.dd
 	picture = GFX_report_event_second_vienna_award_pact
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = hungary.1
-		hidden_effect = {
-
-			ROM= {
-				annex_country = {
-					target = HUN
-				}
-				release = HUN
-				remove_ideas = {
-					against_hungary
-				}
+		name = hungary.1.aa
+		every_country = { 
+			limit = { has_war_with = HUN 
+			NOT = { original_tag = AUS }
 			}
-
-			BUL = {
-				remove_ideas = {
-					against_hungary
-				}
+			white_peace = HUN
 			}
-
-			GRE = {
-				remove_ideas = {
-					against_hungary
-				}
-			}
-
 			ROM = {
 				transfer_state = 82
 				transfer_state = 84
@@ -43,21 +25,6 @@ country_event = {
 				transfer_state = 83
 				transfer_state = 998
 				transfer_state = 997
-			}
-			82 = {
-				add_core_of = ROM
-			}
-			83	 = {
-				add_core_of = ROM
-			}
-			84 = {
-				add_core_of = ROM
-			}
-			76 = {
-				add_core_of = ROM
-			}
-			997 = {
-				add_core_of = ROM
 			}
 
 			SER = {
@@ -83,10 +50,6 @@ country_event = {
 					ruling_party = democratic
 				}
 				release = SLO
-				remove_ideas = {
-					HUN_debuff
-					HUN_buff
-				}
 			}
 
 			CZE = {
@@ -99,25 +62,33 @@ country_event = {
 			998 = {
 				set_demilitarized_zone = yes
 			}
+			hidden_effect = { 
 			country_event = { days = 10 id = hungary.2 }
-
 			}
 			
-	}
+ITA = {
+		set_rule = {
+					can_join_factions = yes
+			}
+		}
+		
+
+		}
+			
+	
 	
 }
 
 country_event = {
 	id = hungary.2
-	title = hungary.2.t
-	desc = hungary.2.d
+	title = hungary.2.tt
+	desc = hungary.2.dd
 	picture = GFX_report_event_second_vienna_award_pact
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = hungary.2.a
-		hidden_effect = {
+		name = hungary.2.aa
 
 		HUN = {
 
@@ -143,23 +114,28 @@ country_event = {
 
 		}
 
-		}	
+			
 	}
 	
 }
 
 country_event = {
 	id = hungary.3
-	title = hungary.3.t
-	desc = hungary.3.d
+	title = hungary.3.tt
+	desc = hungary.3.dd
 	picture = GFX_report_event_second_vienna_award_pact
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = hungary.3.a
-		hidden_effect = {
+		name = hungary.3.aa
 
+		every_country = { 
+			limit = { has_war_with = HUN 
+			NOT = { Original_tag = AUS }
+			}
+			white_peace = HUN
+			}
 			MOL = {
 				transfer_state = 78
 				transfer_state = 766
@@ -178,72 +154,53 @@ country_event = {
 				79 = {
 					add_core_of = MOl
 				}
-				set_cosmetic_tag = MOL_HUN
+
+				hidden_effect = {
+					set_politics = {
+						ruling_party = communism
+						elections_allowed = no
+						last_election = "1935.12.17"
+						election_frequency = 48
+					}
+					add_victory_points = {
+						province = 9716
+						value = 10
+					}
+					set_capital = {
+						state = 79
+						remember_old_capital = no
+					  }
+				}
 			}
 
 			ROM = {
-				set_cosmetic_tag = ROM_HUN
+				set_cosmetic_tag = WAL
+				country_event = {
+					id = kt_romania.17
+					days = 1
+				}
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+				}
 			}
 
-			SER = {
-				set_cosmetic_tag = SER_HUN
-				transfer_state = 108
-				transfer_state = 802
-				transfer_state = 803
-			}
-
-		HUN = {
-			diplomatic_relation = {
-				country = MOL
-				relation = puppet
-				active = yes
-			}
-			diplomatic_relation = {
-				country = ROM
-				relation = puppet
-				active = yes
-			}
-			diplomatic_relation = {
-				country = SER
-				relation = puppet
-				active = yes
-			}
-
-			white_peace = GRE
-			white_peace = BUL
-
-			remove_ideas = {
-				HUN_debuff
-				HUN_buff
-			}
+			active = yes
 			
-		}
-
-		GRE = {
-			dismantle_faction = yes
-		}
-
-		BUL = {
-			remove_ideas = {
-				against_hungary
+		
+			
+		ITA = {
+		set_rule = {
+					can_join_factions = yes
 			}
 		}
 
-		GRE = {
-			remove_ideas = {
-				against_hungary
-			}
-		}
-
-		ROM = {
-			remove_ideas = {
-				against_hungary
-			}
-		}
 
 		
 
-		}	
+		
 	}
 	
 }

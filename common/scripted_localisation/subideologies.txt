@@ -149,6 +149,25 @@ defined_text = {
 		}
 		localization_key = rexism
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = national_socialism
+		}
+		localization_key = national_socialism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = legionarism
+		}
+		localization_key = legionarism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = junta_fas
+		}
+		localization_key = junta_fas
+		
+	}
 }
 defined_text = {
 	name = GetSubIdeologyCom

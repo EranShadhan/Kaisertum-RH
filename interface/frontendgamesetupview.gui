@@ -727,8 +727,8 @@ guiTypes = {
 			gridboxType = {
 				name ="countries_grid"
 				#position = { x = 530 y = 0 } #1 countries
-				position = { x = 450 y = 0 } #2 countries
-				#position = { x = 375 y = 0 } #3 countries
+				#position = { x = 450 y = 0 } #2 countries
+				position = { x = 375 y = 0 } #3 countries
 				#position = { x = 0 y = 0 } #8 countries
 				size = { width = 100% height = 100% }
 				slotsize = { width = 150 height = 90 }
@@ -882,13 +882,13 @@ guiTypes = {
 #			alwaystransparent = yes
 #		}
 
-#		iconType = {
-#			name = "country_gold_1"
-#			quadTextureSprite ="GFX_country_selection_gold"
-#			position = { x = 15 y = 46 }
-#			Orientation = "UPPER_LEFT"
-#			alwaystransparent = yes
-#		}
+		iconType = {
+			name = "country_gold_1"
+			quadTextureSprite ="GFX_country_selection_gold"
+			position = { x = 15 y = 46 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
 
 #		iconType = {
 #			name = "country_gold_2"
@@ -898,21 +898,21 @@ guiTypes = {
 #			alwaystransparent = yes
 #		}
 
-#		iconType = {
-#			name = "country_gold_4"
-#			quadTextureSprite ="GFX_country_selection_gold"
-#			position = { x = 465 y = 46 }
-#			Orientation = "UPPER_LEFT"
-#			alwaystransparent = yes
-#		}
+		iconType = {
+			name = "country_gold_4"
+			quadTextureSprite ="GFX_country_selection_gold"
+			position = { x = 465 y = 46 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
 
-#		iconType = {
-#			name = "country_gold_6"
-#			quadTextureSprite ="GFX_country_selection_gold"
-#			position = { x = 765 y = 46 }
-#			Orientation = "UPPER_LEFT"
-#			alwaystransparent = yes
-#		}
+		iconType = {
+			name = "country_gold_6"
+			quadTextureSprite ="GFX_country_selection_gold"
+			position = { x = 765 y = 46 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
 
 #		iconType = {
 #			name = "country_difficult_minor_1"

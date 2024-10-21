@@ -1,4 +1,4 @@
-﻿capital = 525 #South Korea - Seoul or Busan
+﻿capital = 1099
 
 oob = "KOR_1936"
 
@@ -11,11 +11,15 @@ set_technology = {
 	mass_assault = 1
 }
 
+add_ideas = {
+	east_asia_trade_membership
+}
+
 set_convoys = 5
 
 set_politics = {
 	ruling_party = communism
-	last_election = "1936.1.1"
+	last_election = "1928.12.5"
 	election_frequency = 48
 	elections_allowed = yes
 }

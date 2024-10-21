@@ -2,8 +2,7 @@ leader_traits = {
 
 Terminator = {
 		random = no
-		army_attack_factor = 1
-		army_defence_factor = 1
+		army_attack_factor = 0.25
 	}
 	VICTORIA_SUPER = {
 	    random = no
