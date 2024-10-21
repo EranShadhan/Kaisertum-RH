@@ -1,4 +1,18 @@
 characters={
+	GER_adolf_hitler={
+		name=GER_adolf_hitler
+		portraits={
+			civilian={
+				large=GFX_portrait_GER_adolf_hitler
+			}
+		}
+		country_leader={
+			ideology=nazism
+			traits={ dictator }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 
 	GER_heinrich_bruening={
 		name=GER_heinrich_bruening
@@ -89,7 +103,7 @@ characters={
 			}	
 		}
 		country_leader={
-			ideology=absolute_monarchy
+			ideology=stalinism
 			traits={ popular_figurehead3 imperial_connections }
 			expire="1941.1.1.1"
 			id=-1
@@ -104,7 +118,7 @@ characters={
 			}	
 		}
 		country_leader={
-			ideology=absolute_monarchy
+			ideology=stalinism
 			traits={ popular_figurehead conservative_grandee }
 			expire="1965.1.1.1"
 			id=-1
@@ -127,12 +141,6 @@ characters={
 			civilian={
 				large="GFX_portrait_ger_august_von_mackensen"
 			}
-		}
-		country_leader={
-			ideology=junta_fas
-			traits={ popular_figurehead }
-			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 
@@ -168,24 +176,6 @@ characters={
 			planning_skill=3
 			logistics_skill=2
 			legacy_id=1
-		}
-	}
-
-	GER_adolf_hitler={
-		name=GER_adolf_hitler
-		portraits={
-			civilian={
-				large=GFX_portrait_GER_adolf_hitler
-				#small=GFX_portrait_GER_adolf_hitler #TODO
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer engineer_officer trait_reckless media_personality }
-			skill=3
-			attack_skill=5
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=2
 		}
 	}
 
@@ -1238,23 +1228,23 @@ characters={
 		name=GER_hermann_goring
 		portraits={
 			army={
-				large="GFX_portrait_GER_hermann_goring"
 				small="GFX_idea_goering"
 			}
-		}
-		corps_commander={
-			traits={ infantry_officer }
-			skill=3
-			attack_skill=4
-			defense_skill=4
-			planning_skill=1
-			logistics_skill=4
+			civilian={
+				large=GFX_portrait_GER_hermann_goring
+			}
 		}
 		advisor={
 			slot = air_chief
 			idea_token = goering
 			allowed = {
 				original_tag = GER
+			}
+			available = {
+				or = {
+					has_government = fascism
+					has_country_flag = GER_reinstated_nazi_leadership
+				}
 			}
 			traits = {
 				air_chief_ground_support_2

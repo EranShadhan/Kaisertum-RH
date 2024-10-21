@@ -21,25 +21,25 @@ news_event = {
 
 news_event = {
 	id = kaisertum_news.2
-	title = news.hungary.t
-	desc = news.hungary.desc
+	title = news.411.t
+	desc = news.411.desc
 	picture = GFX_news_event_074
 	
 	major = yes
 
 	trigger = {
 		OR = {
-			surrender_progress > 0.6
+			surrender_progress > 0.25
 			76 = { is_owned_by = HUN is_controlled_by = ROM }
 		}
 		
 		
 		HUN = { has_war_with = ROM }
-		NOT = { has_global_flag = fall_of_cluj }
+		NOT = { has_global_flag = fall_of_buda }
 	}
 
 	immediate = { 
-					set_global_flag = fall_of_cluj
+					set_global_flag = fall_of_buda
 					HUN = {
 						country_event = hungary.1
 					}
@@ -50,14 +50,14 @@ news_event = {
 	}
 	
 	option = {
-		name = news.hungary.a
+		name = news.410a
 	}
 }
 
 news_event = {
     id = kaisertum_news.3
-    title = news.romania.t
-    desc = news.romania.desc
+    title = news.411.t
+    desc = news.411.desc
     picture = GFX_news_event_074
 
     major = yes
@@ -82,23 +82,31 @@ news_event = {
     }
 
     option = {
-        name = news.romania.a
+        name = news.410a
     }
 
 }
 news_event = {
     id = kaisertum_news.4
-    title = news.austria.t
-    desc = news.austria.desc
+    title = news.410.t
+    desc = news.410.desc
     picture = GFX_news_event_074
 
     major = yes
 
     trigger = {
-       AUS = {
-            surrender_progress > 0.5
+        OR = {
+            4 = { is_controlled_by = HUN 
+				is_owned_by = AUS 
+			}
+            9 = { is_controlled_by = GER 
+				is_owned_by = AUS
+		 	}
+            surrender_progress > 0.25
         }
-		NOT = { has_global_flag = fall_of_viena }
+
+        HUN = { has_war_with = AUS }
+        NOT = { has_global_flag = fall_of_viena }
     }
 
     immediate = { 
@@ -108,10 +116,28 @@ news_event = {
                     }
                 }
 
+    mean_time_to_happen = {
+        days = 2
+    }
 
     option = {
-        name = news.austria.a
+        name = news.410.a
+        trigger = {
+            TAG = { has_war_with = AUS }
+        }
+        AUS = {
+            country_event = {
+                id = austria.5
+            }
+        }
     }
+    option = {
+        name = news.410.b
+        trigger = {
+                TAG = AUS
+        }
+    }
+
 }
 news_event = {
 	id = kaisertum_news.5
@@ -167,8 +193,6 @@ news_event = {
 				transfer_state = 677
 				transfer_state = 554
 				transfer_state = 680
-				transfer_state = 455
-				transfer_state = 854
 			}
 			TUR = {
 				diplomatic_relation = {
@@ -850,8 +874,6 @@ news_event = {
 				transfer_state = 677
 				transfer_state = 554
 				transfer_state = 680
-				transfer_state = 455
-				transfer_state = 854
 			}
 			975 = {
 				add_core_of = TUR
@@ -861,19 +883,5 @@ news_event = {
 	
 	option = {
 		name = syria_wins_news.a
-	}
-}
-news_event = {
-	id = kaisertum_news.21
-	title = "Antoun Saadeh arrives in Turkey"
-	desc = Antoun_Saadeh_Arrivesnews.1.d
-	picture = GFX_report_event_royal_parade
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-	   name = "Oh Blimey!"
 	}
 }

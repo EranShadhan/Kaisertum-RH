@@ -1,16 +1,4 @@
 spriteTypes = {
-
-	spriteType = {
-		name = "GFX_flag_test"
-		textureFile = "gfx/interface/flag_test.dds"
-		noOfFrames = 2
-	}
-	
-	spriteType = {
-		name = "GFX_french_flag"
-		texturefile = "gfx/interface/french_flag.png"
-	}
-
 	corneredTileSpriteType = {
 		name = "GFX_background_for_menu_screen"
 		size= { x=192 y=192 }

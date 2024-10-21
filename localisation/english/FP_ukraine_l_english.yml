@@ -1,9 +1,7 @@
 ﻿l_english:
  # Traits
- UKR_hetman_of_ukraine:0 "Hetman"
  UKR_red_prince: "Red Prince"
  UKR_king_of_ukraine:0 "King of All Ukraine"
- 
  
  # MIOS
  # Tanks #
@@ -26,7 +24,7 @@
  UKR_zaz_organization:0 "ZAZ"
  # MIOS
  
- # UKR
+ # Countries
  UKR_fascism:0 "Ukraine"
  UKR_fascism_DEF:0 "Ukraine"
  UKR_democratic:0 "Ukrainian People's Republic"
@@ -42,23 +40,6 @@
  UKR:0 "Ukraine"
  UKR_DEF:0 "Ukraine"
  UKR_ADJ:0 "Ukrainian"
-  # EUA
- EUA_fascism:0 "Ukraine"
- EUA_fascism_DEF:0 "Ukraine"
- EUA_democratic:0 "Ukrainian People's Republic"
- EUA_democratic_DEF:0 "the Ukrainian People's Republic"
- EUA_neutrality:0 "Ukrainian Hetmanate"
- EUA_neutrality_DEF:0 "Ukrainian Hetmanate"
- EUA_communism:1 "Ukrainian Socialist Republic"
- EUA_communism_DEF:1 "the Ukrainian Socialist Republic"
- EUA_fascism_ADJ:0 "Ukrainian"
- EUA_democratic_ADJ:0 "Ukrainian"
- EUA_neutrality_ADJ:0 "Ukrainian"
- EUA_communism_ADJ:0 "Ukrainian"
- EUA:0 "Ukraine"
- EUA_DEF:0 "Ukraine"
- EUA_ADJ:0 "Ukrainian"
-
  
  # Ideas
  UKR_sugar_businesses:0 "Sugar Businesses"
@@ -73,22 +54,19 @@
  # Focuses
  UKR_royal_standart:0 "Royal Standart"
  UKR_royal_standart_desc:0 "The Royal Standard is not just a symbol of our monarchy but also the foundation of our military's doctrine and technological advancements. By standardizing equipment and strategies across the army, we ensure a unified, disciplined, and modern fighting force. This initiative will bolster our defensive capabilities and improve our ability to respond quickly and efficiently to any threat."
- UKR_royal_officer_corps_desc:0 "The Royal Officer Corps constitutes the best of the best in the military, notwithstanding – owing to their loyalty, discipline and ability for strategic planning – they have a little selection – they have been chosen. So to say underlong officers, who were raised in a monarchy style and brought up within a culture of a tradition, operate any of our forces with discipline, enhancing both the morale and operation effectiveness of the battlefield."
+ UKR_royal_officer_corps_desc:0 "The Royal Officer Corps embodies elite leadership in our military, chosen for their loyalty, discipline, and strategic skill. Trained under monarchy and tradition, these officers ensure our forces operate with precision, boosting morale and battlefield efficiency."
  UKR_sich_riflemen_legacy:0 "Sichovi Striltsi"
  UKR_royal_guard:0 "Establish a Royal Guard"
  UKR_expand_royal_guard:0 "Expand a Royal Guard"
  #Events
- FP_ukraine.1.t:0 "Habsburg Legacy"
- FP_ukraine.1.d:0 "The legacy of the Habsburgs has particular significance for Vasyl Vyshivanyi. The Habsburg tradition and Ukrainian nationalism are represented by his devotion to the independence of Ukraine and his leadership during the stormy times. Assuming that legacy places Ukraine into the advocates of the historical monarchies in Europe. Their vision of the Embroidered One lubricates the strength of the Habsburg rule, consolidates the stability of of our State, augments our political might, and helps to discipline and fortify our army with other glorious attributes of the past."
- FP_ukraine.1.a:0 "Our great future awaits!"
+ KT_ukraine.1.t:0 "Habsburg Legacy"
+ KT_ukraine.1.d:0 "The heritage of the Habsburgs is especially embodied by Vasyl Vyshivanyi. His dedication to Ukraine's independence and leadership in turbulent times symbolize the fusion of the Habsburg tradition and Ukrainian nationalism. By accepting this heritage, Ukraine confirms its place among European historical monarchies. The wisdom of Habsburg rule, strengthened by the vision of the Embroidered One, strengthens the stability of our state, strengthens our political power, and infuses our army with the discipline and resilience of a glorious past."
+ KT_ukraine.1.a:0 "Our great future awaits!"
  
- FP_ukraine.2.t:0 "Legacy of Sichovi Striltsi"
- FP_ukraine.2.d:0 "The Ukrainian Sich Riflemen is a national military formation within the Austro-Hungarian army, formed from volunteers who responded to the call of the Main Ukrainian Council on August 6, 1914. The USS were the first Ukrainian units of Austria-Hungary, selected on national grounds, and influenced the creation of military vocabulary and terminology , folklore, song and music, to stabilize the form of Ukrainian unity."
- FP_ukraine.2.a:0 "for Ukraine!"
+ KT_ukraine.2.t:0 "Legacy of Sichovi Striltsi"
+ KT_ukraine.2.d:0 "The Ukrainian Sich Riflemen is a national military formation within the Austro-Hungarian army, formed from volunteers who responded to the call of the Main Ukrainian Council on August 6, 1914. The USS were the first Ukrainian units of Austria-Hungary, selected on national grounds, and influenced the creation of military vocabulary and terminology , folklore, song and music, to stabilize the form of Ukrainian unity."
+ KT_ukraine.2.a:0 "for Ukraine!"
  
- FP_ukraine.3.t:0 "Kuban integration"
- FP_ukraine.3.d:0 "After many months of hard work, improving relations, we can finally reunite, the historical memory of the homeland and Ukraine's economic position in Europe only increased Kuban's sympathy for becoming part of Ukraine, close economic, military and political ties only increased this sympathy in the hearts of the descendants of the Cossacks, now Ukraine is one step closer to the main goal of reuniting all its lands."
- FP_ukraine.3.a:0 "Welcome home, brothers!"
  
  #Decisions
  UKR_move_capital_to_kyiv:0 "Return capital to Kyiv"

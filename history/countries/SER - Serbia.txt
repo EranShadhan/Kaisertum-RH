@@ -75,7 +75,6 @@ set_cosmetic_tag = SER_MNT
 recruit_character = SER_filip_filipovic
 recruit_character = SER_sima_markovic
 recruit_character = SER_elisabeth_marie
-recruit_character = SER_kanye_west
 recruit_character = SER_acd2
 recruit_character = SER_communist_guy
 recruit_character = SER_acr
@@ -194,6 +193,17 @@ create_country_leader = {
 	picture = GFX_portrait_Draza_Mihailovic
 	expire = "1965.1.1"
 	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Milan Nedic"
+	desc = ""
+	picture = GFX_portrait_Milan_Nedic
+	expire = "1965.1.1"
+	ideology = fascism_ideology
 	traits = {
 		#
 	}

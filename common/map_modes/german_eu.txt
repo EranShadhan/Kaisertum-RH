@@ -1,102 +1,42 @@
 scripted_map_modes = {
 	GERMAN_eu = {
 		top = {
-			type = state
+			type = country
 			color = {
 				FROM = {
 					
 					if = {
 						limit = {
-							owner = { original_tag = GER }
-							
+							original_tag = GER
 						}
-						set_temp_variable = { red = 0.1 }
-						set_temp_variable = { green = 0.1 }
-						set_temp_variable = { blue = 0.1 }
+						set_temp_variable = { red = 0 }
+						set_temp_variable = { green = 0 }
+						set_temp_variable = { blue = 0 }
 						
 					}
-					else_if = { limit = owner = { { OR = { has_idea = german_customs_union_member 
-					                              has_idea = german_customs_union_member2}}}
-						set_temp_variable = { red = 0.3 }
-						set_temp_variable = { green = 0.3 }
-						set_temp_variable = { blue = 0.3	 }
+					else_if = { limit = { OR = { has_idea = german_customs_union_member 
+					                              has_idea = german_customs_union_member2}}
+						set_temp_variable = { red = 0.12 }
+						set_temp_variable = { green = 0.12 }
+						set_temp_variable = { blue = 0.20	 }
 					}
 					else_if = { limit = { NOT = { has_idea = german_customs_union_member } }
-					set_temp_variable = { red = 0.7 }
-					set_temp_variable = { green = 0.7 }
-					set_temp_variable = { blue = 0.7 }
+					set_temp_variable = { red = 1 }
+						set_temp_variable = { blue = 1 }
+						set_temp_variable = { green = 1 }
 				}
 				set_temp_variable = { alpha = 1.0 }
 				set_temp_variable = { thickness = 10.0 }
 			}
 		}
-		color = {
-				FROM = {
-					if = {
-						limit = { 
-							owner = {has_idea = french_phoenix_membership} 
-						}
-						set_temp_variable = { red = 0.3 }
-						set_temp_variable = { green = 0.3 }
-						set_temp_variable = { blue = 0.80 }
-					}
-				}
-				set_temp_variable = { alpha = 1.0 }
-				set_temp_variable = { thickness = 10.0 }
-			}
-		color = {
-				FROM = {
-					if = {
-						limit = {
-							owner={has_idea = east_asia_trade_leader}
-						}
-						set_temp_variable = { red = 0.7 }
-						set_temp_variable = { green = 0.1 }
-						set_temp_variable = { blue = 0.1 }
-						
-					}
-					else_if = {
-						limit = { 
-							owner = {
-							has_idea = east_asia_trade_membership 
-							}
-						}
-						set_temp_variable = { red = 0.7 }
-						set_temp_variable = { green = 0.3 }
-						set_temp_variable = { blue = 0.3 }
-					}
-					else_if = { 
-						limit = {
-							owner = {
-							OR = {
-								NOT = { 
-									has_idea = french_phoenix_membership
-									has_idea = german_customs_union_member
-									has_idea = german_customs_union_member2
-									has_idea = east_asia_trade_leader
-									has_idea = east_asia_trade_membership
-									TAG = GER
-									TAG = FRA
-									} 
-								}
-							}
-						}
-						set_temp_variable = { alpha = 0.1}
-						set_temp_variable = { thickness = 10.0 }
-					}
-				}
-				
-			}
 		}
 		bottom = {
 			type = country
 			color = {
-				set_temp_variable = { alpha = 0.1}
-				set_temp_variable = { thickness = 10.0 }
-				set_temp_variable = { red = 0.3 }
-				set_temp_variable = { green = 0.3 }
-				set_temp_variable = { blue = 0.3 }
+							set_temp_variable = { alpha = 0.1}
 			}
+
+			thickness = yes
 		}
 
 		far_text = country

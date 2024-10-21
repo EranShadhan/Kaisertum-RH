@@ -2156,7 +2156,3 @@ TUR_GFT_category = {
 		}
 	}
 }
-
-TUR_NATSOC_category = {
-	
-}

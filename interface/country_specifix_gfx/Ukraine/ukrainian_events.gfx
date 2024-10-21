@@ -2,20 +2,12 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_habsburg_legacy"
-		texturefile = "gfx/event_pictures/UKR/UKR_habsburg_legacy.png"
+		texturefile = "gfx/event_pictures/UKR/UKR_habsburg_legacy.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_uss"
-		texturefile = "gfx/event_pictures/UKR/UKR_uss_legacy.png"
-	}
-	spriteType = {
-		name = "GFX_ukr_kuban"
-		texturefile = "gfx/event_pictures/UKR/UKR_kuban.png"
-	}
-	spriteType = {
-		name = "GFX_ukr_army"
-		texturefile = "gfx/event_pictures/UKR/UKR_army.png"
+		texturefile = "gfx/event_pictures/UKR/UKR_uss_legacy.dds"
 	}
 
 	

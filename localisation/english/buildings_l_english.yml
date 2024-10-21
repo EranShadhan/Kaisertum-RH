@@ -46,7 +46,7 @@
  BUILDING_REPAIRED:0 "$BUILDING$ repaired!"
  BUILDING_DAMAGE_REASON_COLLATERAL:0 "$BUILDING$ suffered collateral damage!"
  BUILDING_SCORCHED:0 "$BUILDING$ scorched!"
- NUKE_DROPPED:0 "Mustard Bomb dropped!"
+ NUKE_DROPPED:0 "Mustard bomb dropped!"
  BUILDING_DAMAGED:0 "Damaged levels: $DAMAGED|-$/$CURRENT|H$"
  CAPACITY:0 "$VAL$/$MAX$"
  CAPACITY_PLUS:0 "$VAL$+$PLUS$/$MAX$"

@@ -1,17 +1,20 @@
-﻿capital = 1096
+﻿capital = 282
 
 
 
-set_stability = 0.2
+set_stability = 0.2 #baseline, THE EMPEROR PROTECTS
 set_war_support = 0.8
 
 set_research_slots = 4
 set_fuel_ratio = 1.0
-
 add_ideas = {
-JAP_hirohito
-JAP_shattered_military
-east_asia_trade_leader
+	JAP_hirohito
+	state_shintoism
+	limited_exports
+	limited_conscription
+	partial_economic_mobilisation
+	JAP_duplicate_research_efforts
+	JAP_militarism
 }
 set_autonomy = {
 		target = KOR
@@ -75,6 +78,19 @@ set_autonomy = {
 	set_compliance = 20
 	set_resistance = 0
 	set_garrison_strength = 1.0
+}
+
+if = {
+	limit = { has_dlc = "Waking the Tiger" }
+	add_ideas = {
+		JAP_interservice_rivalry_balanced		
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	add_ideas = MTG_naval_treaty_adherent
 }
 
 create_faction = JAP_asian_communism_alliance

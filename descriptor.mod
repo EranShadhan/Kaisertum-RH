@@ -1,10 +1,9 @@
-version="0.1"
+version="0.3.1"
 tags={
 	"Alternative History"
 	"Graphics"
 	"Gameplay"
 }
-replace_path="common/on_actions"
 replace_path="common/national_focus"
 replace_path="events"
 replace_path="common/bookmarks"

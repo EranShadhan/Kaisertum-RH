@@ -454,5 +454,27 @@ ideas = {
 		}
 
 	}
+	hidden_ideas = {
+		german_customs_union_member = {
+
+			picture = tradeuniongermany
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.05
+				local_resources = 0.2
+			}
+		}
+	}
 
 }
