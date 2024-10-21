@@ -1,0 +1,41 @@
+## 0.5 - The Fallen Phoenix
+ - Added new states
+
+## 0.4 - The Fallen Phoenix
+ - New national focus tree for **France**
+ - New national focus tree for **Italy**
+ - New national focus tree for **Ukraine**
+ - New national focus tree for **Russia**
+ - New national focus tree for **Germany**
+ - Added the National Socialist path for **Turkey**
+ - Added the Communist and Legionary path for **Romania**
+ - Laws overhauled
+ - Added new states
+ - Added the **Russian Collapse**
+ - Added the **South African Collapse**
+ - Added the **Venezuelan Civil War**
+
+## 0.3.1 - The Wolf and the Lynx
+ - Mod name changed from **Kaisertum** to **Fallen Phoenix**
+ - Added the economic path for **Illyria**
+ - In-game Changelog added
+ - Added new states
+
+## 0.3 - The Wolf and the Lynx
+ - New national focus tree for **Turkey**
+ - New national focus tree for **Romania**
+ - Added chemical weapons
+ - Added new states
+ - removed the **Austrian Manchu** placeholder tree
+ - Major bugfixes for **Greece**
+
+## 0.2 - A Divided City
+ - New national focus tree for **Greece**
+ - Added new states
+
+## 0.1 - The New Empire
+ - New national focus tree for **Iran**
+ - Added the Communist path for **France**
+ - Added a mini tree for **Afghanistan**
+ - Added new states
+ - Added the **Intro Screen GUI**
