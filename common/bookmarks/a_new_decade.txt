@@ -11,6 +11,7 @@ bookmarks = {
 			history = "FRA_NEW_DECADE_DESC"
 			ideology = fascism
 			ideas = {
+				FRA_communist_opposition
 				FRA_embargoed_by_germany
 				FRA_secret_rearmament
 				FRA_super_heavy_tank_programme
@@ -130,23 +131,6 @@ bookmarks = {
 				TUR_create_konya_accords
 				TUR_kickstart_the_syrian_revolution
 				TUR_revenge_for_the_first_balkan_war
-			}
-		}
-		"GRE"={
-			minor = yes
-			history = "GRE_NEW_DECADE_DESC"
-			ideology = neutrality
-			ideas = {
-				GRE_memories_of_the_nationa_schism
-				victory_in_the_sgtwgre
-				GRE_megali_idea_partial_restoration
-				GRE_eee_enemy
-			}
-			focuses = {
-				GRE_recruit_the_fascists_eee
-				GRE_the_greek_golden_age
-				GRE_make_the_med_red
-				GRE_mexatas_project_megisti_idea
 			}
 		}
 		effect = {
