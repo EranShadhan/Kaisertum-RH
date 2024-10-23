@@ -2091,6 +2091,21 @@ ideas = {
 				stability_factor = 0.05
 			}
 		}
+		ITA_political_reforms_IF_coalition = {
+			name = ITA_political_reforms
+
+			removal_cost = -1
+
+			picture = generic_constitutional_guarantees
+				
+			allowed = {
+				original_tag = ITA
+			}
+
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
 
 		ITA_setting_course_ns = {
 			removal_cost = -1
@@ -2536,6 +2551,24 @@ ideas = {
 				subversive_activites_upkeep = -0.3
 			}
 		}
+		ITA_locking_political_dissidents = {
+		
+			picture = ast_classify_aliens 
+		
+			removal_cost = -1	
+		
+			allowed = {
+				original_tag = ITA 
+			}
+			
+			modifier = {
+				fascism_drift = -0.01
+				communism_drift = -0.01
+				democratic_drift = -0.01
+				stability_factor = -0.05
+				party_popularity_stability_factor = 0.15
+			}
+		}
 
 		ITA_ALB_italian_settlers = {
 		
@@ -2593,19 +2626,38 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_guarantee_austrian_independence
 			}
 			
 			modifier = {
-				industrial_capacity_factory = 0.05
-				supply_factor = 0.1
+				supply_factor = 0.2
+				special_forces_attack_factor = 0.1
+				special_forces_defence_factor = 0.1
 			}
 			targeted_modifier = {
-				tag = GER 
+				tag = AUS 
 				defense_bonus_against = 0.15
+				attack_bonus_against = 0.15
 			}
 		}
 
+		ITA_italys_future_idea = {
+		
+			picture = FRA_la_deluge 
+		
+			removal_cost = -1	
+		
+			allowed = {
+				original_tag = ITA 
+			}
+
+			allowed_civil_war = {
+			}
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.05
+				stability_factor = -0.05
+			}
+		}
 		ITA_italys_destiny_idea = {
 		
 			picture = FRA_la_deluge 

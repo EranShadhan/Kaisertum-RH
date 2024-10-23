@@ -8082,7 +8082,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_status_report_1930
-		icon = GFX_goal_zzz_WIP
+		icon = GFX_TUR_remilitarization_of_konstantiniyye
 
 		x = 30
 		y = 0

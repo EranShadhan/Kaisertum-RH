@@ -13,6 +13,10 @@ add_ideas = {
 	partial_economic_mobilisation
     german_customs_union_member
 	vittorio_emanuele
+	ITA_alpine_defence
+	ITA_italys_future_idea
+	ITA_political_reforms_IF_coalition
+	ITA_locking_up_political_dissidents
 }
 
 # RESISTANCE / COMPLIANCE
@@ -166,12 +170,6 @@ if = {
 	}
 }
 
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	add_ideas = MTG_naval_treaty_cheating
-}
 
 set_convoys = 200
 
@@ -189,6 +187,9 @@ set_popularities = {
 }
 
 recruit_character = ITA_lanza_scalea
+recruit_character = ITA_rodolfo_graziani
+recruit_character = ITA_pietro_badoglio
+recruit_character = ITA_italo_balbo
 
 if = {
 	limit = {

@@ -38,3 +38,112 @@ characters = {
  #     #  #   #   #    #    #        #        #       #    #  #    #  #       #   #   #    # 
  #     #  #    #  #    #    #        #######  ######  #    #  #####   ######  #    #   ####  
                                                                                              
+	ITA_rodolfo_graziani = {
+		name = ITA_rodolfo_graziani
+		portraits = {
+			army = {
+				small = GFX_idea_rodolfo_graziani
+				large = GFX_portrait_ITA_rodolfo_graziani
+			}
+		}
+
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = rodolfo_graziani
+			ledger = army
+			allowed = {
+				ITA_is_italian_tag = yes
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				grand_battle_plan_expert
+			}
+			ai_will_do = {
+				base = 3.000
+			}
+		}
+
+		field_marshal = {
+			traits = { trait_cautious politically_connected offensive_doctrine desert_fox }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = 0
+			visible = { has_government = fascism }
+		}
+	}
+	ITA_pietro_badoglio = {
+		name = ITA_pietro_badoglio
+		portraits = {
+			army = {
+				small = GFX_idea_pietro_badoglio
+				large = GFX_portrait_ITA_pietro_badoglio
+			}
+		}
+
+		advisor = {
+			slot = army_chief
+			idea_token = pietro_badoglio
+			allowed = {
+				ITA_is_italian_tag = yes
+			}
+			traits = {
+				army_chief_morale_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+
+		field_marshal = {
+			traits = { old_guard inflexible_strategist politically_connected defensive_doctrine organizer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}
+	}
+	ITA_italo_balbo = {
+		name = ITA_italo_balbo
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_italo_balbo_small
+				large = GFX_portrait_ITA_italo_balbo
+			}
+		}
+
+		advisor = {
+			slot = air_chief
+			idea_token = italo_balbo
+			
+			traits = {
+				air_chief_all_weather_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+		
+		field_marshal = {
+			traits = { career_officer politically_connected trait_reckless media_personality }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+			visible = {
+				ITA_is_advisor_available = yes
+			}
+		}
+	}
+}

@@ -49,6 +49,416 @@ focus_tree = {
 #		}
 #	}
 
+     ###################
+     ##### ECONOMY #####
+     ###################
+
+	focus = {
+		id = UKR_start_industrialization
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 24
+		y = 0
+
+	}
+	focus = {
+		id = UKR_raise_taxes
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_start_industrialization
+		}
+		mutually_exclusive = {
+			focus = UKR_german_loans
+			focus = UKR_german_loans
+		}
+		x = 22
+		y = 1
+
+	}
+	focus = {
+		id = UKR_german_loans
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_start_industrialization
+		}
+		mutually_exclusive = {
+			focus = UKR_raise_taxes
+			focus = UKR_raise_taxes
+		}
+		x = 26
+		y = 1
+
+	}
+	focus = {
+		id = UKR_kyiv_odessa_railway
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_raise_taxes
+			focus = UKR_german_loans
+		}
+		x = 16
+		y = 2
+
+	}
+	focus = {
+		id = UKR_proskuriv_yelisavet
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_kyiv_odessa_railway
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = UKR_kovel_mykolaiv
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_kyiv_odessa_railway
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = UKR_zhytomyr_dnipro
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_kovel_mykolaiv
+		}
+		prerequisite = {
+			focus = UKR_proskuriv_yelisavet
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = UKR_transukrainian_railway
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_zhytomyr_dnipro
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = UKR_electrification
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_german_loans
+			focus = UKR_raise_taxes
+		}
+		x = 19
+		y = 2
+
+	}
+	focus = {
+		id = UKR_zhytomyr_power_plant
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_electrification
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = UKR_shipbuilding
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_kovel_mykolaiv
+		}
+		prerequisite = {
+			focus = UKR_zhytomyr_power_plant
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = UKR_expand_odessa
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_shipbuilding
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = UKR_heavy_industry
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_german_loans
+			focus = UKR_raise_taxes
+		}
+		x = 21
+		y = 2
+
+	}
+	focus = {
+		id = UKR_kyiv_arsenal
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_heavy_industry
+		}
+		x = 21
+		y = 3
+
+	}
+	focus = {
+		id = UKR_dnipro_zaz
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_kyiv_arsenal
+		}
+		prerequisite = {
+			focus = UKR_zhytomyr_power_plant
+		}
+		x = 21
+		y = 4
+
+	}
+	focus = {
+		id = UKR_free_market
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_heavy_industry
+		}
+		mutually_exclusive = {
+			focus = UKR_controlled_economy
+			focus = UKR_controlled_economy
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = UKR_trade_improving
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_free_market
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = UKR_civilian_boom
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_trade_improving
+		}
+		x = 23
+		y = 5
+
+	}
+	focus = {
+		id = UKR_controlled_economy
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_heavy_industry
+		}
+		mutually_exclusive = {
+			focus = UKR_free_market
+			focus = UKR_free_market
+		}
+		x = 29
+		y = 3
+
+	}
+	focus = {
+		id = UKR_dnipro_hes
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_controlled_economy
+			focus = UKR_free_market
+		}
+		x = 25
+		y = 4
+
+	}
+	focus = {
+		id = UKR_oil
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_free_market
+			focus = UKR_controlled_economy
+		}
+		x = 25
+		y = 5
+
+	}
+	focus = {
+		id = UKR_rubber
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_controlled_economy
+			focus = UKR_free_market
+		}
+		x = 27
+		y = 5
+
+	}
+	focus = {
+		id = UKR_autarky
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_controlled_economy
+		}
+		x = 28
+		y = 4
+
+	}
+	focus = {
+		id = UKR_develop_natural_riches
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_controlled_economy
+		}
+		x = 29
+		y = 5
+
+	}
+	focus = {
+		id = UKR_light_industry
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_german_loans
+			focus = UKR_raise_taxes
+		}
+		x = 32
+		y = 2
+
+	}
+	focus = {
+		id = UKR_small_manufacturers
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_light_industry
+		}
+		x = 31
+		y = 3
+
+	}
+	focus = {
+		id = UKR_vineyards
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_small_manufacturers
+		}
+		x = 31
+		y = 4
+
+	}
+	focus = {
+		id = UKR_loans_for_small_business
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_vineyards
+		}
+		x = 31
+		y = 5
+
+	}
+	focus = {
+		id = UKR_prosperous_country
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_develop_natural_riches
+			focus = UKR_civilian_boom
+		}
+		prerequisite = {
+			focus = UKR_loans_for_small_business
+		}
+		prerequisite = {
+			focus = UKR_expand_odessa
+		}
+		prerequisite = {
+			focus = UKR_transukrainian_railway
+		}
+		x = 23
+		y = 6
+
+	}
+	focus = {
+		id = UKR_kryvyi_rih_textile
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_light_industry
+		}
+		x = 33
+		y = 3
+
+	}
+
+	focus = {
+		id = UKR_expand_galician_oil
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_kryvyi_rih_textile
+		}
+		x = 33
+		y = 4
+
+	}
+
+	focus = {
+		id = UKR_economic_boom
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_prosperous_country
+		}
+		x = 23
+		y = 7
+
+	}
+	focus = {
+		id = UKR_new_and_strong
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = UKR_economic_boom
+		}
+		x = 23
+		y = 8
+
+	}
+
+
      ################
      ##### ARMY #####
      ################
@@ -147,7 +557,7 @@ focus_tree = {
 			focus = UKR_gw_legacy
 		}
 		x = 32
-		y = 5
+		y = 6
 
 	}
 	focus = {
@@ -1190,7 +1600,7 @@ focus = {
 			focus = UKR_new_weapons
 		}
 		x = 34
-		y = 6
+		y = 7
 
 	}
 	focus = {
@@ -1201,7 +1611,7 @@ focus = {
 			focus = UKR_artillery
 		}
 		x = 32
-		y = 6
+		y = 7
 
 	}
 	focus = {
@@ -1226,7 +1636,7 @@ focus = {
 		prerequisite = {
 			focus = UKR_new_weapons
 		}
-		x = 36
+		x = 35
 		y = 6
 
 	}
@@ -1238,7 +1648,7 @@ focus = {
 			focus = UKR_guns_effort
 		}
 		x = 34
-		y = 7
+		y = 8
 
 	}
 	focus = {
@@ -1249,7 +1659,7 @@ focus = {
 			focus = UKR_assault_guns
 		}
 		x = 32
-		y = 7
+		y = 8
 
 	}
 	focus = {
@@ -1263,7 +1673,7 @@ focus = {
 			focus = UKR_imroved_artillery
 		}
 		x = 33
-		y = 8
+		y = 9
 
 	}
 
@@ -1276,7 +1686,7 @@ focus = {
 	focus = {
 		id = UKR_our_kingdom
 		icon = GFX_our_kingdom
-		x = 9
+		x = 6
 		y = 0
 
 		cost = 5
@@ -1308,7 +1718,7 @@ focus = {
 		id = UKR_expand_varta
 		icon = GFX_
 		prerequisite = { focus = UKR_our_kingdom}
-		x = 16
+		x = 14
 		y = 1
 
 		cost = 5
@@ -1347,7 +1757,7 @@ focus = {
 		id = UKR_state_stability
 		icon = GFX_
 		prerequisite = { focus = UKR_expand_varta}
-		x = 16
+		x = 14
 		y = 2
 
 		cost = 5
@@ -1378,9 +1788,9 @@ focus = {
 	focus = {
 		id = UKR_suppress_communist
 		icon = GFX_
-		prerequisite = { focus = UKR_expand_varta}
-		x = 18
-		y = 2
+		prerequisite = { focus = UKR_state_stability}
+		x = 14
+		y = 4
 
 		cost = 5
 
@@ -1411,7 +1821,7 @@ focus = {
 		id = UKR_king_power
 		icon = GFX_
 		prerequisite = { focus = UKR_our_kingdom}
-		x = 11
+		x = 9
 		y = 1
 
 		cost = 5
@@ -1446,7 +1856,7 @@ focus = {
 		id = UKR_crown_glory
 		icon = GFX_
 		prerequisite = { focus = UKR_our_kingdom}
-		x = 13
+		x = 11
 		y = 1
 
 		cost = 5
@@ -1477,7 +1887,7 @@ focus = {
 		id = UKR_educational_programs
 		icon = GFX_
 		prerequisite = { focus = UKR_crown_glory}
-		x = 14
+		x = 12
 		y = 2
 
 		cost = 5
@@ -1508,7 +1918,7 @@ focus = {
 		id = UKR_forced_ukrainization
 		icon = GFX_
 		prerequisite = { focus = UKR_educational_programs}
-		x = 15
+		x = 12
 		y = 3
 
 		cost = 5
@@ -1540,7 +1950,7 @@ focus = {
 		id = UKR_national_revival
 		icon = GFX_
 		prerequisite = { focus = UKR_forced_ukrainization}
-		x = 15
+		x = 12
 		y = 4
 
 		cost = 5
@@ -1571,7 +1981,7 @@ focus = {
 		id = UKR_national_unity
 		icon = GFX_
 		prerequisite = { focus = UKR_national_revival}
-		x = 15
+		x = 12
 		y = 5
 
 		cost = 5
@@ -1604,7 +2014,7 @@ focus = {
 		prerequisite = { focus = UKR_european_breadbasket}
 		prerequisite = { focus = UKR_flexible_working_laws}
 		prerequisite = { focus = UKR_national_unity}
-		x = 13
+		x = 10
 		y = 6
 
 		cost = 5
@@ -1635,7 +2045,7 @@ focus = {
 		id = UKR_ukraine_above_all
 		icon = GFX_
 		prerequisite = { focus = UKR_kyivan_rus_legacy}
-		x = 13
+		x = 10
 		y = 7
 
 		cost = 5
@@ -1668,7 +2078,7 @@ focus = {
 		icon = GFX_
 		prerequisite = { focus = UKR_educational_programs}
 		prerequisite = { focus = UKR_land_reform}
-		x = 13
+		x = 10
 		y = 3
 
 		cost = 5
@@ -1703,7 +2113,7 @@ focus = {
 		id = UKR_flexible_working_laws
 		icon = GFX_
 		prerequisite = { focus = UKR_private_property}
-		x = 13
+		x = 10
 		y = 5
 
 		cost = 5
@@ -1735,7 +2145,7 @@ focus = {
 		icon = GFX_
 		prerequisite = { focus = UKR_crown_glory}
 		prerequisite = { focus = UKR_king_power}
-		x = 12
+		x = 10
 		y = 2
 
 		cost = 5
@@ -1806,7 +2216,7 @@ focus = {
 		id = UKR_peoples_reforms
 		icon = GFX_
 		prerequisite = { focus = UKR_our_kingdom}
-		x = 9
+		x = 6
 		y = 1
 
 		cost = 5
@@ -1837,7 +2247,7 @@ focus = {
 		id = UKR_communities
 		icon = GFX_
 		prerequisite = { focus = UKR_peoples_reforms}
-		x = 10
+		x = 7
 		y = 2
 
 		cost = 5
@@ -1869,7 +2279,7 @@ focus = {
 		icon = GFX_
 		prerequisite = { focus = UKR_communities}
 		prerequisite = { focus = UKR_land_reform}
-		x = 11
+		x = 8
 		y = 3
 
 		cost = 5
@@ -1904,7 +2314,7 @@ focus = {
 		id = UKR_develop_agricultural_regions
 		icon = GFX_
 		prerequisite = { focus = UKR_peoples_reforms}
-		x = 9
+		x = 6
 		y = 3
 
 		cost = 5
@@ -1940,7 +2350,7 @@ focus = {
 		icon = GFX_
 		prerequisite = { focus = UKR_develop_agricultural_regions}
 		prerequisite = { focus = UKR_farms_grants}
-		x = 11
+		x = 7
 		y = 5
 
 		cost = 5
@@ -2448,7 +2858,7 @@ focus = {
 		id = UKR_time_to_act
 		icon = GFX_goal_unknown
 		cost = 5 
-		x = 16
+		x = 14
 		y = 7
 		completion_reward = {
            add_political_power = 100
@@ -2478,7 +2888,7 @@ focus = {
 		prerequisite = {
 			focus = UKR_ukraine_irredenta
 		}
-		x = 4
+		x = 3
 		y = 9
 		completion_reward = {
            #event
@@ -2509,7 +2919,7 @@ focus = {
 		prerequisite = {
 			focus = UKR_west_lands
 		}
-		x = 4
+		x = 3
 		y = 11
 		completion_reward = {
 
@@ -2523,7 +2933,7 @@ focus = {
 		prerequisite = {
 			focus = UKR_west_lands
 		}
-		x = 8
+		x = 5
 		y = 10
 		completion_reward = {
 
@@ -2537,7 +2947,7 @@ focus = {
 		prerequisite = {
 			focus = UKR_romanian_question
 		}
-		x = 7
+		x = 5
 		y = 11
 		completion_reward = {
 
@@ -2551,7 +2961,7 @@ focus = {
 		prerequisite = {
 			focus = UKR_romanian_question
 		}
-		x = 9
+		x = 7
 		y = 11
 		completion_reward = {
 
@@ -2565,7 +2975,7 @@ focus = {
 		prerequisite = {
 			focus = UKR_ukraine_irredenta
 		}
-		x = 13
+		x = 11
 		y = 9
 		completion_reward = {
 
@@ -2579,7 +2989,7 @@ focus = {
 		prerequisite = {
 			focus = UKR_east_lands
 		}
-		x = 13
+		x = 11
 		y = 10
 		completion_reward = {
 
@@ -2593,7 +3003,7 @@ focus = {
 		prerequisite = {
 			focus = UKR_russian_problem
 		}
-		x = 11
+		x = 9
 		y = 11
 		completion_reward = {
 
@@ -2607,7 +3017,7 @@ focus = {
 		prerequisite = {
 			focus = UKR_russian_problem
 		}
-		x = 13
+		x = 11
 		y = 11
 		completion_reward = {
 
@@ -2621,7 +3031,7 @@ focus = {
 		prerequisite = {
 			focus = UKR_russian_problem
 		}
-		x = 15
+		x = 13
 		y = 11
 		completion_reward = {
 
@@ -2649,7 +3059,7 @@ focus = {
 		prerequisite = {
 			focus = UKR_kuban
 		}
-		x = 17
+		x = 13
 		y = 12
 		completion_reward = {
 
@@ -2667,7 +3077,7 @@ focus = {
 			focus = UKR_cooperation
 			focus = UKR_cooperation
 		}
-		x = 19
+		x = 15
 		y = 8
 		completion_reward = {
 
@@ -2685,7 +3095,7 @@ focus = {
 			focus = UKR_on_our_own
 			focus = UKR_on_our_own
 		}
-		x = 21
+		x = 17
 		y = 8
 		completion_reward = {
 
@@ -2700,7 +3110,7 @@ focus = {
 			focus = UKR_on_our_own
 			focus = UKR_cooperation
 		}
-		x = 20
+		x = 16
 		y = 10
 		completion_reward = {
 
@@ -2714,7 +3124,7 @@ focus = {
 		prerequisite = {
 			focus = UKR_time_to_act
 		}
-		x = 28
+		x = 21
 		y = 8
 		completion_reward = {
 
@@ -2728,7 +3138,7 @@ focus = {
 		prerequisite = {
 			focus = UKR_under_berlin_vision
 		}
-		x = 28
+		x = 21
 		y = 10
 		completion_reward = {
 
@@ -2745,7 +3155,7 @@ focus = {
 		prerequisite = {
 			focus = UKR_expand_politics
 		}
-		x = 20
+		x = 16
 		y = 11
 		completion_reward = {
 
@@ -2763,7 +3173,7 @@ focus = {
 			focus = UKR_support_turkey
 			focus = UKR_support_turkey
 		}
-		x = 19
+		x = 15
 		y = 12
 		completion_reward = {
 
@@ -2781,7 +3191,7 @@ focus = {
 			focus = UKR_support_greece
 			focus = UKR_support_greece
 		}
-		x = 21
+		x = 17
 		y = 12
 		completion_reward = {
 
@@ -2795,7 +3205,7 @@ focus = {
 		prerequisite = {
 			focus = UKR_expand_politics
 		}
-		x = 28
+		x = 19
 		y = 11
 		completion_reward = {
 
@@ -2809,7 +3219,7 @@ focus = {
 		prerequisite = {
 			focus = UKR_visit_zagreb
 		}
-		x = 28
+		x = 19
 		y = 12
 		completion_reward = {
 
@@ -2823,7 +3233,7 @@ focus = {
 		prerequisite = {
 			focus = UKR_expand_politics
 		}
-		x = 30
+		x = 21
 		y = 11
 		completion_reward = {
 
@@ -2888,7 +3298,7 @@ focus = {
 		prerequisite = {
 			focus = UKR_expand_politics
 		}
-		x = 32
+		x = 23
 		y = 11
 		completion_reward = {
 
