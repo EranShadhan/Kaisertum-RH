@@ -180,6 +180,12 @@
  ITA_refit_civilian_ships_desc:0 "While proper fleet carriers are far more capable, if we want carriers quickly corners need to be cut. By converting existing passenger liners like Rex and Conte di Savoia we can get air cover for our fleet quickly."
  ITA_flotta_d_evasione:0 "Flotta d'Evasione"
  ITA_flotta_d_evasione_desc:0 "For too long Italy has been content to limit its naval ambitions to the Mediterranean and Red Sea. By committing to a ‘Breakout Fleet’ and building ships designed for the Atlantic and Indian Oceans, we will be able to exert our influence across the oceans of the world."
- ITA_status_report_1930:0 "status report"
+ ITA_status_report_1930:0 "Status Report of 1930"
 
  ITA_develop_illyria_tt:0 "test"
+ 
+ # IDEAS
+ ITA_italys_future_idea:0 "Italy's Future"
+ ITA_italys_future_idea_desc:0 "After our Victory in the Great war against the French, many had wondered what is the direction of our country, will the Italy First coalition continue to rule?"
+ ITA_locking_political_dissidents:0 "Locking Political dissidents"
+ ITA_locking_political_dissidents_desc:0 "Ever since 1918 and the start of the domination of the Italy first coalition, the Italian political landscape was dominated by them and their inceasing authority, The Coalition's reach is ever increasing"

@@ -8,4 +8,28 @@ spriteTypes = {
 		name = "GFX_portrait_italy_lanza_scalea"
 		texturefile = "gfx/leaders/ITA/portrait_ITA_lanza_scalea.dds"
 	}
+	spriteType = {
+		name = GFX_portrait_ITA_rodolfo_graziani
+		texturefile = "gfx/leaders/ITA/portrait_italy_radolfo_graziani.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_rodolfo_graziani"
+		texturefile = "gfx/interface/ideas/ITA/idea_rodolfo_graziani.dds"
+	}
+	spriteType = {
+		name = GFX_portrait_ITA_pietro_badoglio
+		texturefile = "gfx/leaders/ITA/Portrait_Italy_Pietro_Badoglio.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_pietro_badoglio"
+		texturefile = "gfx/interface/ideas/ITA/idea_pietro_badoglio.dds"
+	}
+	spriteType = {
+		name = GFX_portrait_ITA_italo_balbo
+		texturefile = "gfx/leaders/ITA/portrait_italy_italo_balbo.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ITA_italo_balbo_small"
+		texturefile = "gfx/interface/ideas/ITA/portrait_ITA_italo_balbo_small.dds"
+	}
 }
