@@ -63,6 +63,15 @@ recruit_character = ROM_elena_lupescu
 recruit_character = ROM_nicolae_titulescu
 recruit_character = ROM_grigore_gafencu
 recruit_character = ROM_mihail_lascar
+recruit_character = ROM_alexandru_averescu
+recruit_character = ROM_nicolae_ciuperca
+recruit_character = ROM_leonard_mociulschi
+recruit_character = ROM_ion_glogojanu
+recruit_character = ROM_constantin_constantinescu
+recruit_character = ROM_nicolae_mazarini
+recruit_character = ROM_victor_dombrovski
+recruit_character = ROM_gheorghe_mihail
+recruit_character = ROM_radu_korne
 
 # Starting tech
 set_technology = {

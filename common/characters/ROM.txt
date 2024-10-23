@@ -822,7 +822,7 @@ characters={
 	}
 
 	ROM_mihail_lascar={
-		name=ROM_constantin_prezan
+		name=ROM_mihail_lascar
 		portraits={
 			army={
 				large="GFX_Portrait_ROM_mihail_lascar"
@@ -845,6 +845,194 @@ characters={
 			ai_will_do = {
 				factor = 1.000
 			}
+		}
+		
+	}
+
+	ROM_alexandru_averescu={
+		name=ROM_alexandru_averescu
+		portraits={
+			army={
+				large="GFX_Portrait_ROM_alexandru_averescu"
+
+				small="GFX_ROM_alexandru_averescu"
+			}
+		}
+
+		advisor={	
+			slot = high_command
+			idea_token = ROM_alexandru_averescu
+			ledger = army
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				army_regrouping_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+	}
+
+	ROM_nicolae_ciuperca={
+		name=ROM_nicolae_ciuperca
+		portraits={
+			army={
+				large="GFX_Portrait_romania_nicolae_ciuperca"
+			}
+		}
+
+		corps_commander={
+			traits={ infantry_expert }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+		
+	}
+
+	ROM_leonard_mociulschi={
+		name=ROM_leonard_mociulschi
+		portraits={
+			army={
+				large="GFX_Portrait_romania_leonard_mociulschi"
+			}
+		}
+
+		corps_commander={
+			traits={ infantry_expert }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+		
+	}
+
+	ROM_ion_glogojanu={
+		name=ROM_ion_glogojanu
+		portraits={
+			army={
+				large="GFX_Portrait_romania_ion_glogojanu"
+			}
+		}
+
+		corps_commander={
+			traits={ infantry_expert }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+		
+	}
+
+	ROM_constantin_constantinescu={
+		name=ROM_constantin_constantinescu
+		portraits={
+			army={
+				large="GFX_Portrait_romania_constantin_constantinescu"
+			}
+		}
+
+		corps_commander={
+			traits={ infantry_expert }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+		
+	}
+
+	ROM_nicolae_mazarini={
+		name=ROM_nicolae_mazarini
+		portraits={
+			army={
+				large="GFX_Portrait_romania_nicolae_marzini"
+			}
+		}
+
+		corps_commander={
+			traits={ infantry_expert }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+		
+	}
+
+	ROM_victor_dombrovski={
+		name=ROM_victor_dombrovski
+		portraits={
+			army={
+				large="GFX_Portrait_romania_victor_dombrovski"
+			}
+		}
+
+		corps_commander={
+			traits={ infantry_expert }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+		
+	}
+
+	ROM_gheorghe_mihail={
+		name=ROM_gheorghe_mihail
+		portraits={
+			army={
+				large="GFX_Portrait_romania_gheorghe_mihail"
+			}
+		}
+
+		corps_commander={
+			traits={ infantry_expert }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+		
+	}
+
+	ROM_radu_korne={
+		name=ROM_radu_korne
+		portraits={
+			army={
+				large="GFX_Portrait_romania_radu_korne"
+			}
+		}
+
+		corps_commander={
+			traits={ infantry_expert }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
 		}
 		
 	}
