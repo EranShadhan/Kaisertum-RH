@@ -3138,6 +3138,474 @@ navy_experience = 50
 		completion_reward = {
 		}
 	}	
+		
+	focus = {
+		id = GER_up_with_marriance
+		icon = GFX_focus_focus_fra_down_marianne
+		x = 2
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_constitutional_monarchy 
+		prerequisite = { focus = GER_constitutional_monarchy}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}	
+	focus = {
+		id = GER_sell_arms
+		icon = GFX_focus_ARG_crackdown_on_corruption
+		x = 1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		mutually_exclusive = { focus = GER_stockpile_arms }
+		bypass = {
+
+		}
+        relative_position_id = GER_up_with_marriance 
+		prerequisite = { focus = GER_up_with_marriance}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}	
+	focus = {
+		id = GER_stockpile_arms
+		icon = GFX_focus_generic_combined_arms
+		x = -1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		mutually_exclusive = { focus = GER_sell_arms }
+		bypass = {
+
+		}
+        relative_position_id = GER_up_with_marriance 
+		prerequisite = { focus = GER_up_with_marriance}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}	
+	focus = {
+		id = GER_joint_parade
+		icon = GFX_focus_BRA_anaue
+		x = 1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		bypass = {
+
+		}
+        relative_position_id = GER_stockpile_arms 
+		prerequisite = { focus = GER_stockpile_arms focus = GER_sell_arms}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}	
+	focus = {
+		id = GER_berlin_london_pact_question_mark
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 0
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		bypass = {
+
+		}
+        relative_position_id = GER_joint_parade 
+		prerequisite = { focus = GER_joint_parade}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}		
+	focus = {
+		id = GER_strengthen_berlin_accords
+		icon = GFX_focus_generic_limited_social_mobilization
+		x = -2
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_constitutional_monarchy 
+		prerequisite = { focus = GER_constitutional_monarchy}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}	
+	focus = {
+		id = GER_support_polish_resistance_in_belarus
+		icon = GFX_focus_POL_reach_out_to_underground_state
+		x = 0
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_strengthen_berlin_accords 
+		prerequisite = { focus = GER_strengthen_berlin_accords}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_protect_the_baltics
+		icon = GFX_focus_generic_forest_brothers
+		x = 1
+		y = 2
+
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_strengthen_berlin_accords 
+		prerequisite = { focus = GER_strengthen_berlin_accords}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+    }
+
+	focus = {
+		id = GER_finish_claims
+		icon = GFX_focus_FIN_a_new_course_for_kokoomus
+		x = -1
+		y = 2
+
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_strengthen_berlin_accords 
+		prerequisite = { focus = GER_strengthen_berlin_accords}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}	
+	focus = {
+		id = GER_ukrainian_reunification
+		icon = GFX_focus_FIN_a_new_course_for_kokoomus
+		x = 1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_finish_claims 
+		prerequisite = { focus = GER_finish_claims focus = GER_support_polish_resistance_in_belarus focus = GER_protect_the_baltics}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_strikethe_phoenix
+		icon = GFX_focus_FIN_a_new_course_for_kokoomus
+		x = 1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_ukrainian_reunification 
+		prerequisite = { focus = GER_ukrainian_reunification focus = GER_berlin_london_pact_question_mark}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_down_with_joan
+		icon = GFX_focus_up_joan_of_arc
+		x = -2
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_strikethe_phoenix 
+		prerequisite = { focus = GER_strikethe_phoenix }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}	
+	focus = {
+		id = GER_cut_of_their_supplies
+		icon = GFX_focus_FIN_motti_tactics
+		x = 1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_down_with_joan 
+		prerequisite = { focus = GER_down_with_joan focus = GER_hold_the_line }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}	
+	focus = {
+		id = GER_hold_the_line
+		icon = GFX_goal_generic_fortify_city
+		x = 0
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_strikethe_phoenix 
+		prerequisite = { focus = GER_strikethe_phoenix }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_strikethe_bear
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		x = 3
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_ukrainian_reunification 
+		prerequisite = { focus = GER_ukrainian_reunification focus = GER_berlin_london_pact_question_mark}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}	
+		focus = {
+		id = GER_key_to_moscow
+		icon = GFX_focus_GRE_our_slavic_commitments
+		x = 1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_strikethe_bear 
+		prerequisite = { focus = GER_strikethe_bear }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}	
+	focus = {
+		id = GER_expand_supply_lines
+		icon = GFX_focus_generic_supply_line
+		x = 0
+		y = 2
+
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_strikethe_bear 
+		prerequisite = { focus = GER_strikethe_bear }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}	
+focus = {
+		id = GER_kaiser_in_the_army
+		icon = GFX_focus_generic_supply_line
+		x = -1
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+        relative_position_id = GER_expand_supply_lines 
+		prerequisite = { focus = GER_expand_supply_lines focus = GER_cut_of_their_supplies}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}	
 		focus = {
 		id = GER_the_republic_of_germany
 		icon = GFX_goal_support_democracy
@@ -3167,7 +3635,7 @@ navy_experience = 50
 		focus = {
 		id = GER_total_power_to_the_kaiser
 		icon = GFX_focus_ger_return_of_the_kaiser
-		x = 4
+		x = 6
 		y = 2
 
 		cost = 3
