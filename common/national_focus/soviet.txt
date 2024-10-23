@@ -14,7 +14,7 @@
 
 	focus = {
 		id = SOV_sunrise_over_moscow
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_RUS_sunrise_over_moscow
 		x = 8
 		y = 0
 		cost = 2
@@ -33,7 +33,7 @@
 	}
 	focus = {
 		id = SOV_fixing_the_nation
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_RUS_fixing_the_nation
 		x = 2
 		y = 1
 		cost = 5
@@ -54,7 +54,7 @@
 	}
 	focus = {
 		id = SOV_empower_the_okhrana
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_RUS_okhrana_focus
 		x = -1
 		y = 1
 		cost = 5
@@ -77,7 +77,7 @@
 	}
 	focus = {
 		id = SOV_empower_the_armiya
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_RUS_armiya_focus
 		x = 1
 		y = 1
 		cost = 5
@@ -100,7 +100,7 @@
 	}
 	focus = {
 		id = SOV_from_the_fields_into_the_factories
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_RUS_fields_to_factories
 		x = 3
 		y = 1
 		cost = 5
@@ -122,7 +122,7 @@
 	}
 	focus = {
 		id = SOV_industrializing_the_west
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_RUS_industrialize_the_west
 		x = -1
 		y = 1
 		cost = 5
@@ -167,7 +167,7 @@
 	}
 	focus = {
 		id = SOV_industrializing_the_east
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_RUS_industrialize_the_east
 		x = 1
 		y = 1
 		cost = 5
@@ -204,7 +204,7 @@
 	}
 	focus = {
 		id = SOV_great_minds_of_russia
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_RUS_great_minds_of_russia
 		x = 0
 		y = 3
 		cost = 5
@@ -227,7 +227,7 @@
 	}
 	focus = {
 		id = SOV_securing_the_state
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_RUS_securing_the_state
 		x = -2
 		y = 1
 		cost = 5
@@ -249,7 +249,7 @@
 	}
 	focus = {
 		id = SOV_further_integration_of_puppets
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_RUS_further_integration_of_puppets
 		x = 1
 		y = 1
 		cost = 5
@@ -280,35 +280,7 @@
 	}
 	focus = {
 		id = SOV_fight_against_extremism
-		icon = GFX_goal_generic_construct_infrastructure
-		x = -1
-		y = 1
-		cost = 5
-		relative_position_id = SOV_securing_the_state
-		prerequisite = { focus = SOV_securing_the_state }
-
-		available = {
-
-		}
-
-		completion_reward = {
-			add_popularity = {
-				ideology = fascism
-				popularity = -0.1
-			}
-			add_popularity = {
-				ideology = communism
-				popularity = -0.1
-			}
-		}
-		ai_will_do = {
-			factor = 10
-    	}
-
-	}
-	focus = {
-		id = SOV_fight_against_extremism
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_RUS_deal_with_extremism
 		x = -1
 		y = 1
 		cost = 5
@@ -336,7 +308,7 @@
 	}
 	focus = {
 		id = SOV_extinguish_enemies
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_RUS_eliminate_enemies
 		x = 1
 		y = 1
 		cost = 5
@@ -358,7 +330,7 @@
 	}
 	focus = {
 		id = SOV_guardians_of_orthodoxy
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_RUS_guardians_of_orthodoxy
 		x = -3
 		y = 1
 		cost = 5
@@ -379,7 +351,7 @@
 	}
 	focus = {
 		id = SOV_protector_of_the_southern_slavs
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_RUS_protector_of_southern_slavs
 		x = 1
 		y = 1
 		cost = 5
@@ -424,7 +396,7 @@
 	}
 	focus = {
 		id = SOV_call_of_the_motherland
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_RUS_motherland_calls
 		x = 2
 		y = 2
 		cost = 5
@@ -450,7 +422,7 @@
 	}
 	focus = {
 		id = SOV_continue_russification
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_RUS_further_russification
 		x = 2
 		y = 1
 		cost = 5
@@ -482,7 +454,7 @@
 	
 	focus = {
 		id = SOV_1930_constitutient_assembly
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_RUS_1930_assembly
 		x = 2
 		y = 1
 		cost = 5

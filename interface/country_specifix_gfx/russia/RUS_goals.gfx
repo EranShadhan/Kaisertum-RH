@@ -73,5 +73,73 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_goal_RUS_sunrise_over_moscow"
+		texturefile = "gfx/interface/goals/SOV/RUS_moskau_sunrise.png"
+	}
+	spriteType = {
+		name = "GFX_goal_RUS_okhrana_focus"
+		texturefile = "gfx/interface/goals/SOV/RUS_okhrana_focus.png"
+	}
+	spriteType = {
+		name = "GFX_goal_RUS_armiya_focus"
+		texturefile = "gfx/interface/goals/SOV/RUS_empower_the_armiya.png"
+	}
+	spriteType = {
+		name = "GFX_goal_RUS_fields_to_factories"
+		texturefile = "gfx/interface/goals/SOV/RUS_fields_to_factories.png"
+	}
+	spriteType = {
+		name = "GFX_goal_RUS_fixing_the_nation"
+		texturefile = "gfx/interface/goals/SOV/RUS_fixing_the_nation.png"
+	}
+	spriteType = {
+		name = "GFX_goal_RUS_industrialize_the_west"
+		texturefile = "gfx/interface/goals/SOV/RUS_industrializing_the_west.png"
+	}
+	spriteType = {
+		name = "GFX_goal_RUS_industrialize_the_east"
+		texturefile = "gfx/interface/goals/SOV/RUS_industrialize_the_east.png"
+	}
+	spriteType = {
+		name = "GFX_goal_RUS_securing_the_state"
+		texturefile = "gfx/interface/goals/SOV/RUS_securing_the_state.png"
+	}
+	spriteType = {
+		name = "GFX_goal_RUS_great_minds_of_russia"
+		texturefile = "gfx/interface/goals/SOV/RUS_great_minds_of_russia.png"
+	}
+	spriteType = {
+		name = "GFX_goal_RUS_deal_with_extremism"
+		texturefile = "gfx/interface/goals/SOV/RUS_deal_with_extremism.png"
+	}
+	spriteType = {
+		name = "GFX_goal_RUS_further_integration_of_puppets"
+		texturefile = "gfx/interface/goals/SOV/RUS_further_integration_of_puppets.png"
+	}
+	spriteType = {
+		name = "GFX_goal_RUS_eliminate_enemies"
+		texturefile = "gfx/interface/goals/SOV/RUS_eliminate_enemies.png"
+	}
+	spriteType = {
+		name = "GFX_goal_RUS_guardians_of_orthodoxy"
+		texturefile = "gfx/interface/goals/SOV/RUS_guardians_of_orthodoxy.png"
+	}
+	spriteType = {
+		name = "GFX_goal_RUS_protector_of_southern_slavs"
+		texturefile = "gfx/interface/goals/SOV/RUS_southern_slavs_protector.png"
+	}
+	spriteType = {
+		name = "GFX_goal_RUS_motherland_calls"
+		texturefile = "gfx/interface/goals/SOV/RUS_motherland_calls.png"
+	}
+	spriteType = {
+		name = "GFX_goal_RUS_further_russification"
+		texturefile = "gfx/interface/goals/SOV/RUS_continue_russification.png"
+	}
+	spriteType = {
+		name = "GFX_goal_RUS_1930_assembly"
+		texturefile = "gfx/interface/goals/SOV/RUS_1930_constitutient_assembly.png"
+	}
 
 }
