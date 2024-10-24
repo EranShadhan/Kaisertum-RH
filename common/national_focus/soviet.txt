@@ -69,6 +69,11 @@
 		completion_reward = {
 			add_stability = 0.1
 			add_political_power = 25
+			add_power_balance_value = {
+                id = SOV_power_balance
+                value = -0.15
+                tooltip_side = SOV_default_left_side
+            }
 		}
 		ai_will_do = {
 			factor = 10
@@ -92,6 +97,11 @@
 		completion_reward = {
 			add_war_support = 0.1
 			add_political_power = 25
+			add_power_balance_value = {
+                id = SOV_power_balance
+                value = 0.15
+                tooltip_side = SOV_default_right_side
+            }
 		}
 		ai_will_do = {
 			factor = 10
@@ -468,7 +478,10 @@
 
 		completion_reward = {
 			# there will be a chain of constitutional assembly events which will lead to kerensky or the russian collapse
-			
+			country_event = {
+				id = SOV_events.1
+				days = 4
+			}
 		}
 		ai_will_do = {
 			factor = 10
