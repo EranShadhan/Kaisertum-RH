@@ -31,6 +31,43 @@ Elections = {
 	}
 }
 
+	ROM_romanization_80 = {
+
+		allowed = {
+			original_tag = ROM
+		}
+
+		available = {
+			owns_state = 80
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+           days_remove = 100
+		state_target = yes
+		target_trigger = {
+		    FROM = {
+		    	state = 94
+		    }
+		}
+		on_map_mode = map_and_decisions_view
+
+		visible = {
+			controls_state = 80
+		}
+		fire_only_once = yes
+		#days_remove = 100
+		complete_effect = {
+			add_state_core = 80
+			hidden_effect = { 	
+				ROM = {
+				remove_state_claim = 80
+				}	
+			}
+		}
+	}
+
 Balkan_project = {
 	influnce_bul = {
 		available = {
