@@ -1107,7 +1107,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_ideas = FRA_reunited_vengence
 		}
 	}
 	focus = {
@@ -1134,7 +1134,15 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_state_core = 28
+			add_state_core = 970
+			add_state_core = 972
+			add_state_core = 735
+			add_state_core = 1
+			add_named_threat = { threat = 5 name = FRA_prewar_claims }
+			GER = {
+				add_ideas = GER_the_phoenix_flies
+			}
 		}
 	}
 	focus = {
@@ -1160,7 +1168,27 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_state_core = 28
+			add_state_core = 970
+			add_state_core = 972
+			add_state_core = 735
+			add_state_core = 1
+			add_state_core = 34
+			add_state_core = 1078
+			add_state_core = 8
+			add_state_core = 845
+			add_state_claim = 6
+			add_state_claim = 35
+			add_state_claim = 51
+			add_state_claim = 971
+			add_state_claim = 51
+			add_state_claim = 42
+			add_state_claim = 114
+			add_state_claim = 158
+			add_named_threat = { threat = 10 name = FRA_greater_french_claims }
+			GER = {
+				add_ideas = GER_the_phoenix_screams
+			}
 		}
 	}
 	focus = {
@@ -1185,11 +1213,13 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			SOV = {
+				country_event = FP_france.5
+			}
 		}
 	}
 	focus = {
-		id = FRA_reinforce_Russian_claims
+		id = FRA_german_division_agreement
 		icon = GFX_
 		x = 0
 		y = 1
@@ -1210,7 +1240,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			custom_effect_tooltip = german_division_agreement
 		}
 	}
 	focus = {
@@ -1235,7 +1265,9 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			SPR = {
+				country_event = FP_france.6
+			}
 		}
 	}
 	focus = {
@@ -1260,7 +1292,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			custom_effect_tooltip = FRA_french_advisors_spain_tooltip
 		}
 	}
 	focus = {
@@ -1285,7 +1317,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			custom_effect_tooltip = FRA_french_generals_spain_tooltip
 		}
 	}
 	focus = {
@@ -1310,7 +1342,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			custom_effect_tooltip = FRA_french_volonteers_spain_tooltip
 		}
 	}
 	focus = {
@@ -1335,7 +1367,47 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			1068 = {
+				transfer_state_to = POR
+			}
+			297 = {
+				transfer_state_to = NMB
+			}
+			SPR = {
+				start_civil_war = {
+					ideology = fascism
+					size = 0.4
+					capital = 167
+					states = {
+						167 794 166 176 790 791 174
+					}
+					set_country_flag = FascistSpain
+					remove_ideas = SPR_abbandoned_by_germany
+				}
+			}
+			FRA = {
+				puppet = NSP
+			}
+			171 = {
+				transfer_state_to = GLC
+			}
+			SPR = {
+				declare_war_on = {
+					target = GLC
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = NSP
+					type = annex_everything
+				}
+			}
+			FRA = {
+				add_to_war = {
+					targeted_alliance = NSP
+					enemy = SPR
+					hostility_reason = asked_to_join
+				}
+			}
 		}
 	}
 	focus = {

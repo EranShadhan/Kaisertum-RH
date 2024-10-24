@@ -8,6 +8,9 @@ state={
 		victory_points = {
 			911 1 
 		}
+		victory_points = {
+			11834 10 
+		}
 		set_demilitarized_zone = yes
 		buildings = {
 			infrastructure = 2
@@ -21,7 +24,11 @@ state={
 				coastal_bunker = 1
 
 			}
+			11834 = {
+				naval_base = 3
+				coastal_bunker = 1
 
+			}
 		}
 		add_core_of = FRA
 

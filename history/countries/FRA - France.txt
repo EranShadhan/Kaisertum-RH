@@ -230,8 +230,8 @@ create_faction = FRA_Axis
 set_popularities = {
 	democratic = 2
 	fascism = 56
-	neutrality = 0
-	communism = 42
+	neutrality = 10
+	communism = 32
 }
 
 add_ideas = {

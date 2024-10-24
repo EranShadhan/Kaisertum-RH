@@ -257,10 +257,66 @@ ideas = {
 			}
 			removal_cost = -1
 		}
-		
-
-
-
+		FRA_reunited_vengence = {
+			picture = FRA_the_failure_of_marseille
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_org_regain = 0.15
+				army_defence_factor = 0.05
+			}
+			removal_cost = -1
+		}
+		GER_the_phoenix_screams = {
+			picture = FRA_the_failure_of_marseille
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_org_regain = 0.1
+				army_defence_factor = 0.1
+			}
+			removal_cost = -1
+		}
+		GER_the_phoenix_flies = {
+			picture = FRA_the_failure_of_marseille
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_org_regain = 0.05
+				army_defence_factor = 0.05
+			}
+			removal_cost = -1
+		}
+		SPR_abbandoned_by_germany = {
+			picture = FRA_the_failure_of_marseille
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_org_regain = -0.15
+				army_defence_factor = -0.25
+			}
+			removal_cost = -1
+		}
 
 
 

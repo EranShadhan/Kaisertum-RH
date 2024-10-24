@@ -182,11 +182,102 @@ country_event = { # suriname occupied
 	}
 	
 	option = {
-		name = FP_france.4.a #anger surrenders
+		name = FP_france.4.a #anger
 		add_opinion_modifier = { 
 			target = FRA
 			modifier = hostile_status
 		}  
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = { # russian alliance
+	id = FP_france.5
+	title = FP_france.5.t
+	desc = FP_france.5.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			add_named_threat = { threat = 10 name = FP_france.5.t }
+		}
+	}
+
+	trigger = {
+
+	}
+	
+	option = {
+		name = FP_france.5.a #anger
+		FRA = {
+			add_to_faction = SOV
+		}
+		SOV = {
+			add_ideas = french_phoenix_membership
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = { # madrid meeting
+	id = FP_france.6
+	title = FP_france.6.t
+	desc = FP_france.6.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			FRA = {
+				add_named_threat = { threat = 5 name = FP_france.6.t }
+			}
+		}
+	}
+
+	trigger = {
+
+	}
+	
+	option = {
+		name = FP_france.6.a #surrender
+		FRA = {
+			add_state_claim = 172
+			add_state_claim = 792
+			add_state_claim = 165
+			add_state_claim = 177
+		}
+		172 = {
+			transfer_state_to = FRA
+		}
+		792 = {
+			transfer_state_to = FRA
+		}
+		165 = {
+			transfer_state_to = FRA
+		}
+		177 = {
+			transfer_state_to = FRA
+		}
+
+		290 = {
+			transfer_state_to = FRA
+		}
+		783 = {
+			transfer_state_to = FRA
+		}
+		699 = {
+			transfer_state_to = FRA
+		}
+		SPR = {
+			add_ideas = SPR_abbandoned_by_germany
+		}
 		ai_chance = {
 			factor = 10
 		}

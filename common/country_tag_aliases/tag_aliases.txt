@@ -4,3 +4,9 @@ DVE = {
 		has_country_flag = DEMOCRATIC_VENEZUELA
 	}
 }
+
+NSP = {
+	original_tag = SPR
+	has_country_flag = FascistSpain
+	
+}
