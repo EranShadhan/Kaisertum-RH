@@ -1241,6 +1241,9 @@
 
 		completion_reward = {
 			custom_effect_tooltip = german_division_agreement
+			hidden_effect = {
+				set_global_flag = german_division_agreement
+			}
 		}
 	}
 	focus = {
@@ -1505,7 +1508,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			851 = {
+				set_demilitarized_zone = no
+			}
+			remove_ideas = FRA_failure_of_marseille
 		}
 	}
 	focus = {
