@@ -1,0 +1,438 @@
+﻿division_template = {
+	name = "Brigada del Ejército"
+	division_names_group = SPR_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = {
+  	      engineer = { x = 0 y = 0 }
+ 	}
+}
+
+
+units = {
+	# GALICIAN FRONT
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 3725
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 11843
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 3744
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 9719
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+
+
+
+
+	# MAIN FRONTTT
+	# MAIN FRONTTT
+	# MAIN FRONTTT
+	# MAIN FRONTTT
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 6907
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 13232
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 9846
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 9827
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 3820
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 13227
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 11806
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 3859
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 11766
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 813
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 948
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 7213
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 9812
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 871
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 3799
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 6856
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 9889
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 4096
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 6907
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 13232
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 9846
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 9827
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 3820
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 13227
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 11806
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 3859
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 11766
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 813
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 948
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 7213
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 9812
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 871
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 3799
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 6856
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 9889
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 4096
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "NSP"
+		}
+		requested_factories = 1
+		progress = 0.33
+		efficiency = 100
+	}
+}

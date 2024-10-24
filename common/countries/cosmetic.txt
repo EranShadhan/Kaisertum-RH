@@ -6,7 +6,14 @@ FASCIST_VENEZUELA = {
     color = rgb { 212 161 140 }
     color_ui = rgb { 212 161 140 }
 }
-
+FascistSpain = {
+    color = rgb { 78 162 181 }
+    color_ui = rgb { 78 162 181 }
+}
+Exiled_portugal = {
+    color = rgb { 111 173 144 }
+    color_ui = rgb { 111 173 144 }
+}
 IRE_UK = {
     color = rgb { 242 71 71 }
     color_ui = rgb { 242 71 71 }

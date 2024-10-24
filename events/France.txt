@@ -74,12 +74,14 @@ country_event = { # liberian_subjegation
 
 	immediate = {
 		hidden_effect = {
+			FRA = {
 			add_named_threat = { threat = 3 name = FP_france.2.t }
+			}
 		}
 	}
-
+	is_triggered_only = yes 
 	trigger = {
-
+		
 	}
 	
 	option = {
@@ -128,12 +130,15 @@ country_event = { # guiana
 
 	immediate = {
 		hidden_effect = {
+			FRA = {
 			add_named_threat = { threat = 1 name = FP_france.3.t }
+			}
 		}
 	}
 
+	is_triggered_only = yes 
 	trigger = {
-
+		
 	}
 	
 	option = {
@@ -173,12 +178,15 @@ country_event = { # suriname occupied
 
 	immediate = {
 		hidden_effect = {
+			FRA = {
 			add_named_threat = { threat = 4 name = FP_france.4.t }
+			}
 		}
 	}
 
+	is_triggered_only = yes 
 	trigger = {
-
+		
 	}
 	
 	option = {
@@ -203,12 +211,15 @@ country_event = { # russian alliance
 
 	immediate = {
 		hidden_effect = {
-			add_named_threat = { threat = 10 name = FP_france.5.t }
+			SOV = {
+				add_named_threat = { threat = 10 name = FP_france.5.t }
+			}
 		}
 	}
 
+	is_triggered_only = yes 
 	trigger = {
-
+		
 	}
 	
 	option = {
@@ -241,8 +252,9 @@ country_event = { # madrid meeting
 		}
 	}
 
+	is_triggered_only = yes 
 	trigger = {
-
+		
 	}
 	
 	option = {
@@ -280,6 +292,105 @@ country_event = { # madrid meeting
 		}
 		ai_chance = {
 			factor = 10
+		}
+	}
+}
+country_event = { # portugal_kill_death
+	id = FP_france.7
+	title = FP_france.7.t
+	desc = FP_france.7.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			FRA = {
+				add_named_threat = { threat = 10 name = FP_france.7.t }
+			}
+		}
+	}
+
+	is_triggered_only = yes 
+	trigger = {
+		
+	}
+	
+	option = {
+		name = FP_france.7.a #surrender
+		NSP = {
+			annex_country = {
+				target = POR
+				transfer_troops = no
+			}
+		}
+		721 = {
+			transfer_state_to = AST
+		}
+		296 = {
+			transfer_state_to = FRA
+		}
+		every_state = { 
+			limit = {
+				is_core_of = POR
+			} 
+			add_core_of = NSP
+		}
+		every_state = { 
+			limit = {
+				is_core_of = ANG
+			} 
+			transfer_state_to = POR 
+		}
+		every_state = { 
+			limit = {
+				is_core_of = MZB
+			} 
+			transfer_state_to = POR 
+		}
+		add_opinion_modifier = { 
+			target = FRA
+			modifier = hostile_status
+		}
+		
+		POR = {
+			set_capital = {
+				state = 892
+				remember_old_capital = yes
+			}
+			set_cosmetic_tag = Exiled_portugal
+		}
+		892 = { 
+			add_core_of = POR
+		}
+		GER = {
+			add_to_faction = POR
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+	option = {
+		name = FP_france.7.a #heroes never die
+		FRA = {
+			declare_war_on = {
+				target = POR
+			}
+			add_to_war = {
+				targeted_alliance = NSP
+				enemy = POR
+				hostility_reason = asked_to_join
+			}
+		}
+		BRA = {
+			diplomatic_relation = {
+				country = POR
+				relation = guarantee
+				active = no
+			}
+		}
+		ai_chance = {
+			factor = 0
 		}
 	}
 }

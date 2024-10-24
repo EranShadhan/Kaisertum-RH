@@ -1,0 +1,60 @@
+﻿division_template = {
+	name = "Brigada del Ejército"
+	division_names_group = SPR_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = {
+  	      engineer = { x = 0 y = 0 }
+ 	}
+}
+
+
+units = {
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 11840
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 729 
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 6764
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "GAL"
+		}
+		requested_factories = 1
+		progress = 0.33
+		efficiency = 100
+	}
+}

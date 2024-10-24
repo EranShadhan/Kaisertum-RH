@@ -1381,8 +1381,11 @@
 					states = {
 						167 794 166 176 790 791 174
 					}
+					load_oob = "FASCIST_SPAIN_1930"
 					set_country_flag = FascistSpain
+					set_cosmetic_tag = FascistSpain
 					remove_ideas = SPR_abbandoned_by_germany
+					add_ideas = french_phoenix_membership
 				}
 			}
 			FRA = {
@@ -1390,6 +1393,9 @@
 			}
 			171 = {
 				transfer_state_to = GLC
+			}
+			GLC = {
+				load_oob = "GAL_1930"
 			}
 			SPR = {
 				declare_war_on = {
@@ -1401,17 +1407,28 @@
 					type = annex_everything
 				}
 			}
+			NSP = {
+				declare_war_on = {
+					target = GLC
+					type = annex_everything
+				}
+			}
 			FRA = {
 				add_to_war = {
 					targeted_alliance = NSP
 					enemy = SPR
 					hostility_reason = asked_to_join
 				}
+				add_to_war = {
+					targeted_alliance = NSP
+					enemy = GLC
+					hostility_reason = asked_to_join
+				}
 			}
 		}
 	}
 	focus = {
-		id = FRA_portugal
+		id = FRA_portugal 
 		icon = GFX_
 		x = 0
 		y = 1
@@ -1432,11 +1449,13 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			POR = {
+				country_event = FP_france.7
+			}
 		}
 	}
 	focus = {
-		id = FRA_germania...
+		id = FRA_germania
 		icon = GFX_
 		x = 0
 		y = 1
@@ -1457,7 +1476,11 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			declare_war_on = {
+				target = GER
+				type = take_state_focus
+				generator = { 28 }
+			}
 		}
 	}
 	focus = {
