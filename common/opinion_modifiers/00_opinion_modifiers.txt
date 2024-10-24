@@ -22,6 +22,10 @@ opinion_modifiers = {
 		value = -10
 	}
 
+	denounced = {
+		value = -15
+	}
+
 	holds_our_cores = {
 		value = -30
 	}

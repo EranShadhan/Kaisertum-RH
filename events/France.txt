@@ -15,24 +15,180 @@ country_event = { # dictator choose
 	}
 	
 	option = {
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 9999
+				is_historical_focus_on = yes
+			}
+		}
 		name = FP_france.1.a
 		complete_national_focus = FRA_the_first_dictatorial_discussion
 		complete_national_focus = FRA_darnaud
 	}
 	option = {
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = -9999
+				is_historical_focus_on = yes
+			}
+		}
 		name = FP_france.1.b
 		complete_national_focus = FRA_the_first_dictatorial_discussion
 		complete_national_focus = FRA_Doriot
 	}
 	option = {
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = -9999
+				is_historical_focus_on = yes
+			}
+		}
 		name = FP_france.1.c
 		complete_national_focus = FRA_the_first_dictatorial_discussion
 		complete_national_focus = FRA_Prince_Jean
 	}
 	option = {
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = -9999
+				is_historical_focus_on = yes
+			}
+		}
 		name = FP_france.1.d
 		complete_national_focus = FRA_the_first_dictatorial_discussion
 		complete_national_focus = FRA_Eugene_Deloncle
 	}
 	
+}
+country_event = { # liberian_subjegation
+	id = FP_france.2
+	title = FP_france.2.t
+	desc = FP_france.2.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			add_named_threat = { threat = 3 name = FP_france.2.t }
+		}
+	}
+
+	trigger = {
+
+	}
+	
+	option = {
+		name = FP_france.2.a #liberia surrenders
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 9999
+				is_historical_focus_on = yes
+			}
+		}
+		FRA = {
+			annex_country = {
+				target = LIB
+				transfer_troops = no
+			}
+		}
+
+	}
+	option = {
+		name = FP_france.2.b #liberia refuses
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = -9999
+				is_historical_focus_on = yes
+			}
+		}
+		FRA = {
+			declare_war_on = {
+				target = LIB
+				type = annex_everything
+			}
+		}
+	}
+	
+}
+
+country_event = { # guiana
+	id = FP_france.3
+	title = FP_france.3.t
+	desc = FP_france.3.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			add_named_threat = { threat = 1 name = FP_france.3.t }
+		}
+	}
+
+	trigger = {
+
+	}
+	
+	option = {
+		name = FP_france.3.a #guiana surrenders
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 9999
+				is_historical_focus_on = yes
+			}
+		}
+		310 = {
+			transfer_state_to = FRA
+		}
+
+	}
+	option = {
+		name = FP_france.3.b #guiana refuses
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = -9999
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+}
+
+country_event = { # suriname occupied
+	id = FP_france.4
+	title = FP_france.4.t
+	desc = FP_france.4.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			add_named_threat = { threat = 4 name = FP_france.4.t }
+		}
+	}
+
+	trigger = {
+
+	}
+	
+	option = {
+		name = FP_france.4.a #anger surrenders
+		add_opinion_modifier = { 
+			target = FRA
+			modifier = hostile_status
+		}  
+		ai_chance = {
+			factor = 10
+		}
+	}
 }

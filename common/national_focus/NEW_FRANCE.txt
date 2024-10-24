@@ -639,7 +639,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			declare_war_on = {
+				target = MOR
+				type = annex_everything
+			}
 		}
 	}
 	focus = {
@@ -665,7 +668,9 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			BRA = {
+				country_event = FP_france.3
+			}
 		}
 	}
 	focus = {
@@ -691,7 +696,12 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			309 = {
+				transfer_state_to = FRA
+			}
+			HOL = { 
+				country_event = FP_france.4
+			}
 		}
 	}
 	focus = {
@@ -847,33 +857,9 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FRA_claim_angola
-		icon = GFX_
-		x = -1
-		y = 1
-		
-		prerequisite = { focus = FRA_liberia_subjegation}
-		relative_position_id = FRA_liberia_subjegation
-		
-		allow_branch = { 
-			
-		}
-
-		cost = 5
-			ai_will_do = {
-			factor = 1
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			
+			LIB = {
+				country_event = FP_france.2
+			}
 		}
 	}
 	focus = {
@@ -899,13 +885,50 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_state_claim = 290
+			add_state_claim = 461
+			add_state_claim = 462
+			add_state_claim = 783
+			add_state_claim = 699
+			add_state_claim = 701
+			add_state_claim = 296
+			add_state_claim = 700
+			add_state_claim = 274
+			add_state_claim = 777
+			add_state_claim = 458
+			add_state_claim = 665
+			add_state_claim = 902
+			add_state_claim = 901
+			add_state_claim = 558
+			add_state_claim = 900
+			add_state_claim = 773
+			add_state_claim = 774
+			add_state_claim = 660
+			add_state_claim = 297
+			add_state_claim = 539
+			add_state_claim = 772
+			add_state_claim = 538
+			add_state_claim = 295
+			add_state_claim = 888
+			add_state_claim = 889
+			add_state_claim = 771
+			add_state_claim = 770
+			add_state_claim = 897
+			add_state_claim = 896
+			add_state_claim = 540
+			add_state_claim = 796
+			add_state_claim = 892
+			add_state_claim = 891
+			add_state_claim = 894
+			add_state_claim = 895
+			add_state_claim = 541
+			add_state_claim = 893
 		}
 	}
 	focus = {
 		id = FRA_invite_ethiopia
 		icon = GFX_
-		x = -2
+		x = 1
 		y = 1
 		
 		prerequisite = { focus = FRA_claim_african_colonies}
@@ -931,7 +954,7 @@
 	focus = {
 		id = FRA_spark_cerntral_african_revolt
 		icon = GFX_
-		x = 0
+		x = -1
 		y = 1
 		
 		prerequisite = { focus = FRA_claim_african_colonies}
@@ -957,13 +980,12 @@
 	focus = {
 		id = FRA_defence_east_asia
 		icon = GFX_
-		x = -3
+		x = -1
 		y = 2
 		
 		prerequisite = { focus = FRA_liberia_subjegation}
 		prerequisite = { focus = FRA_sao_paolo_treaty}
 		relative_position_id = FRA_sao_paolo_treaty
-		mutually_exclusive = { focus = FRA_concessions_to_japan }
 
 		allow_branch = { 
 			
@@ -1044,34 +1066,6 @@
 		prerequisite = { focus = FRA_defence_east_asia}
 		relative_position_id = FRA_defence_east_asia
 		mutually_exclusive = { focus = FRA_colonial_independence }
-		
-		allow_branch = { 
-			
-		}
-
-		cost = 5
-			ai_will_do = {
-			factor = 1
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = FRA_concessions_to_japan
-		icon = GFX_
-		x = -1
-		y = 2
-		
-		prerequisite = { focus = FRA_liberia_subjegation}
-		prerequisite = { focus = FRA_sao_paolo_treaty}
-		relative_position_id = FRA_sao_paolo_treaty
-		mutually_exclusive = { focus = FRA_defence_east_asia }
 		
 		allow_branch = { 
 			
