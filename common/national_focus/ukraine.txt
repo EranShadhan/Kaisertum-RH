@@ -11,7 +11,7 @@ focus_tree = {
 	
 	default = no
 
-	continuous_focus_position = { x = 150 y = 2000 }
+	continuous_focus_position = { x = 150 y = 2500 }
 
 #	focus = {
 #		id = UKR_
@@ -466,7 +466,7 @@ focus_tree = {
 		id = UKR_army
 		icon = GFX_goal_unknown
 		cost = 0
-		x = 46
+		x = 55
 		y = 0
 
 	}
@@ -927,7 +927,7 @@ focus_tree = {
 		prerequisite = {
 			focus = UKR_army
 		}
-		x = 58
+		x = 74
 		y = 1
 
 	}
@@ -941,7 +941,7 @@ focus_tree = {
 		prerequisite = {
 			focus = UKR_aviation_forces
 		}
-		x = 55
+		x = 71
 		y = 2
 
 	}
@@ -956,7 +956,7 @@ focus_tree = {
 			focus = UKR_medium_air
 			focus = UKR_medium_air
 		}
-		x = 57
+		x = 73
 		y = 2
 
 	}
@@ -971,7 +971,7 @@ focus_tree = {
 			focus = UKR_light_air
 			focus = UKR_light_air
 		}
-		x = 59
+		x = 75
 		y = 2
 
 	}
@@ -986,7 +986,7 @@ focus_tree = {
 		prerequisite = {
 			focus = UKR_naval_bombers
 		}
-		x = 58
+		x = 74
 		y = 3
 
 	}
@@ -1072,7 +1072,7 @@ focus_tree = {
 		id = UKR_fortification_studies
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = UKR_army }
-		x = 64
+		x = 80
 		y = 1 
 
 		cost = 5 
@@ -2859,7 +2859,7 @@ focus = {
 		icon = GFX_goal_unknown
 		cost = 5 
 		x = 14
-		y = 7
+		y = 12
 		completion_reward = {
            add_political_power = 100
 		}
@@ -2874,7 +2874,7 @@ focus = {
 			focus = UKR_time_to_act
 		}
 		x = 8
-		y = 8
+		y = 13
 		completion_reward = {
            #event
 		}
@@ -2889,7 +2889,7 @@ focus = {
 			focus = UKR_ukraine_irredenta
 		}
 		x = 3
-		y = 9
+		y = 14
 		completion_reward = {
            #event
 		}
@@ -2903,7 +2903,7 @@ focus = {
 			focus = UKR_west_lands
 		}
 		x = 1
-		y = 10
+		y = 15
 		completion_reward = {
 		add_state_claim = 1016
 		add_state_claim = 92
@@ -2920,7 +2920,7 @@ focus = {
 			focus = UKR_west_lands
 		}
 		x = 3
-		y = 11
+		y = 16
 		completion_reward = {
 
 		}
@@ -2934,7 +2934,7 @@ focus = {
 			focus = UKR_west_lands
 		}
 		x = 5
-		y = 10
+		y = 15
 		completion_reward = {
 
 		}
@@ -2948,7 +2948,7 @@ focus = {
 			focus = UKR_romanian_question
 		}
 		x = 5
-		y = 11
+		y = 16
 		completion_reward = {
 
 		}
@@ -2962,7 +2962,7 @@ focus = {
 			focus = UKR_romanian_question
 		}
 		x = 7
-		y = 11
+		y = 16
 		completion_reward = {
 
 		}
@@ -2976,7 +2976,7 @@ focus = {
 			focus = UKR_ukraine_irredenta
 		}
 		x = 11
-		y = 9
+		y = 14
 		completion_reward = {
 
 		}
@@ -2990,7 +2990,7 @@ focus = {
 			focus = UKR_east_lands
 		}
 		x = 11
-		y = 10
+		y = 15
 		completion_reward = {
 
 		}
@@ -3004,7 +3004,7 @@ focus = {
 			focus = UKR_russian_problem
 		}
 		x = 9
-		y = 11
+		y = 16
 		completion_reward = {
 
 		}
@@ -3018,7 +3018,7 @@ focus = {
 			focus = UKR_russian_problem
 		}
 		x = 11
-		y = 11
+		y = 16
 		completion_reward = {
 
 		}
@@ -3032,7 +3032,7 @@ focus = {
 			focus = UKR_russian_problem
 		}
 		x = 13
-		y = 11
+		y = 16
 		completion_reward = {
 
 		}
@@ -3046,7 +3046,7 @@ focus = {
 			focus = UKR_united_again
 		}
 		x = 8
-		y = 13
+		y = 18
 		completion_reward = {
 
 		}
@@ -3059,8 +3059,8 @@ focus = {
 		prerequisite = {
 			focus = UKR_kuban
 		}
-		x = 13
-		y = 12
+		x = 14
+		y = 17
 		completion_reward = {
 
 		}
@@ -3078,7 +3078,7 @@ focus = {
 			focus = UKR_cooperation
 		}
 		x = 15
-		y = 8
+		y = 13
 		completion_reward = {
 
 		}
@@ -3096,7 +3096,7 @@ focus = {
 			focus = UKR_on_our_own
 		}
 		x = 17
-		y = 8
+		y = 13
 		completion_reward = {
 
 		}
@@ -3111,7 +3111,7 @@ focus = {
 			focus = UKR_cooperation
 		}
 		x = 16
-		y = 10
+		y = 14
 		completion_reward = {
 
 		}
@@ -3125,7 +3125,7 @@ focus = {
 			focus = UKR_time_to_act
 		}
 		x = 21
-		y = 8
+		y = 13
 		completion_reward = {
 
 		}
@@ -3139,7 +3139,7 @@ focus = {
 			focus = UKR_under_berlin_vision
 		}
 		x = 21
-		y = 10
+		y = 14
 		completion_reward = {
 
 		}
@@ -3156,7 +3156,7 @@ focus = {
 			focus = UKR_expand_politics
 		}
 		x = 16
-		y = 11
+		y = 15
 		completion_reward = {
 
 		}
@@ -3174,7 +3174,7 @@ focus = {
 			focus = UKR_support_turkey
 		}
 		x = 15
-		y = 12
+		y = 16
 		completion_reward = {
 
 		}
@@ -3192,7 +3192,7 @@ focus = {
 			focus = UKR_support_greece
 		}
 		x = 17
-		y = 12
+		y = 16
 		completion_reward = {
 
 		}
@@ -3206,7 +3206,7 @@ focus = {
 			focus = UKR_expand_politics
 		}
 		x = 19
-		y = 11
+		y = 15
 		completion_reward = {
 
 		}
@@ -3220,7 +3220,7 @@ focus = {
 			focus = UKR_visit_zagreb
 		}
 		x = 19
-		y = 12
+		y = 16
 		completion_reward = {
 
 		}
@@ -3234,7 +3234,7 @@ focus = {
 			focus = UKR_expand_politics
 		}
 		x = 21
-		y = 11
+		y = 15
 		completion_reward = {
 
 		}
@@ -3248,7 +3248,7 @@ focus = {
 			focus = UKR_polish_question
 		}
 		x = 1
-		y = 11
+		y = 16
 		completion_reward = {
            add_state_claim = 91
            add_state_claim = 990
@@ -3285,7 +3285,7 @@ focus = {
 			focus = UKR_bukovina
 		}
 		x = 8
-		y = 12
+		y = 17
 		completion_reward = {
 
 		}
@@ -3299,7 +3299,7 @@ focus = {
 			focus = UKR_expand_politics
 		}
 		x = 23
-		y = 11
+		y = 15
 		completion_reward = {
 
 		}
